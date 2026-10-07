@@ -542,6 +542,7 @@ button { font: inherit; }
 .site-header:has(.opera-header-search) .main-nav > a, .site-header:has(.opera-header-search) .main-nav > a.is-active { color: #f7f3ed; }
 .site-header:has(.opera-header-search) .main-nav > a.is-active::after { background: #f7f3ed; }
 .opera-header-search { width: min(365px, 29vw); height: 44px; display: flex; align-items: center; gap: 12px; padding: 0 13px; border: 1px solid rgba(235,239,241,.26); border-radius: 12px; background: rgba(255,255,255,.08); }
+.site-header:has(.opera-header-search) .opera-header-search { grid-column: 3; justify-self: end; }
 .opera-header-search svg { flex: 0 0 22px; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; }
 .opera-header-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: #fff; font: 14px var(--serif); }
 .opera-header-search input::placeholder { color: rgba(255,255,255,.78); }
