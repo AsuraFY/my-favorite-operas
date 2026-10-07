@@ -17,7 +17,7 @@ const arrow = `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-
 function header(active) {
   return `<header class="site-header">
     <a class="brand" href="#/" aria-label="My favorite Operas home">
-      <span class="brand__name">My favorite Operas</span>
+      <svg class="brand__sprig" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 39C20 29 26 20 39 8M15 33l-1-10m8 4 8-12m-3 19 10-8M10 38l-6-2m13-8-7-6m14 0-2-8m8 5 8-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M15 33c-2-4-1-7-1-10 3 2 5 5 5 8m4-4c-1-5 1-8 4-12 1 5 0 8-2 11m6 7c2-4 5-6 10-8-2 5-5 7-9 9M10 38c-3-2-5-3-6-2 2 3 4 4 7 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="brand__name">My favorite Operas</span>
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation">
@@ -141,34 +141,112 @@ function speakerClass(speaker) {
   return speaker.toLocaleLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
-function cosiOperaPage(selectedNumber = 1, query = "") {
-  const scenes = cosiActOneScenes;
-  const searchTerm = query.trim().toLocaleLowerCase();
-  const foundScene = searchTerm ? scenes.find((scene) => scene.sections.some((section) => section.turns.some((turn) => `${turn.speaker} ${turn.it} ${turn.en}`.toLocaleLowerCase().includes(searchTerm)))) : null;
-  const scene = scenes.find((item) => item.number === (foundScene?.number || selectedNumber)) || scenes[0];
-  const safeQuery = escapeHtml(query);
-  const sceneRows = scene.sections.map((section) => `<div class="libretto-section"><p class="libretto-section__label">${escapeHtml(section.label)}</p>${section.turns.map((turn) => `<div class="libretto-row"><div class="libretto-cell libretto-cell--italian"><span class="libretto-speaker libretto-speaker--${speakerClass(turn.speaker)}">${escapeHtml(turn.speaker)}</span><p>${escapeHtml(turn.it)}</p></div><div class="libretto-cell libretto-cell--english"><span class="libretto-speaker libretto-speaker--${speakerClass(turn.speaker)}">${escapeHtml(turn.speaker)}</span><p>${escapeHtml(turn.en)}</p></div></div>`).join("")}</div>`).join("");
-  const sceneLinks = scenes.map((item) => `<a class="scene-link ${item.number === scene.number ? "is-current" : ""}" href="#/operas/cosi-fan-tutte?scene=${item.number}" ${item.number === scene.number ? 'aria-current="page"' : ""}><span class="scene-link__number">${item.number}</span><span class="scene-link__text"><b>${escapeHtml(item.kind)}</b><span>${escapeHtml(item.title)}</span></span></a>`).join("");
-  const previous = scene.number > 1 ? `<a class="scene-step" href="#/operas/cosi-fan-tutte?scene=${scene.number - 1}">‹ <span>Previous</span></a>` : `<span class="scene-step is-disabled" aria-disabled="true">‹ <span>Previous</span></span>`;
-  const next = scene.number < scenes.length ? `<a class="scene-step" href="#/operas/cosi-fan-tutte?scene=${scene.number + 1}"><span>Next</span> ›</a>` : `<span class="scene-step is-disabled" aria-disabled="true"><span>Next</span> ›</span>`;
-  return `<div class="opera-reading-page">
-    <section class="reading-identity">
-      <div class="reading-identity__image" role="img" aria-label="Lake Como landscape"></div>
-      <div class="reading-identity__content"><div class="reading-identity__title"><h1>Così fan tutte</h1><p>Wolfgang Amadeus Mozart <span>·</span> 1790</p><p>Opera buffa in two acts <span>·</span> Libretto by Lorenzo Da Ponte</p></div><nav class="opera-tabs" aria-label="Opera sections"><a href="#/operas/cosi-fan-tutte" title="Overview coming later">Overview</a><a class="is-active" href="#/operas/cosi-fan-tutte?scene=1" aria-current="page">Act I</a><span aria-disabled="true" title="Coming later">Act II</span><span aria-disabled="true" title="Coming later">Characters</span><span aria-disabled="true" title="Coming later">Synopsis</span></nav></div>
-    </section>
-    <div class="reading-layout">
-      <aside class="scene-sidebar" aria-label="Libretto navigation"><div class="act-heading"><h2>Act I</h2><span aria-hidden="true">⌃</span></div><nav aria-label="Scenes in Act I">${sceneLinks}</nav><p class="scene-sidebar__note">Scenes 4–11 are being prepared.</p><div class="act-heading act-heading--later"><h2>Act II</h2><span aria-hidden="true">›</span></div><p class="scene-sidebar__note">Translation coming later.</p></aside>
-      <div class="reading-main"><section class="scene-panel"><div class="scene-panel__top"><div><p class="scene-kicker">Act I</p><p class="scene-number">${escapeHtml(scene.cue)}</p><h2>${escapeHtml(scene.title)}</h2><p class="scene-cast">${escapeHtml(scene.cast)}</p><p class="scene-summary">${escapeHtml(scene.summary)}</p></div><div class="scene-pager">${previous}${next}</div></div>
-        ${searchTerm ? `<p class="libretto-search-result" role="status">${foundScene ? `Showing the first scene containing “${safeQuery}”.` : `No line in the first three scenes contains “${safeQuery}”. Showing Scene ${scene.number}.`}</p>` : ""}
-        <div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text">${sceneRows}<p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>
-        <div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>
-      </section></div>
-    </div>
-  </div>`;
+function romanNumeral(value) {
+  return ["", "I", "II", "III", "IV", "V", "VI"][value] || String(value);
 }
 
-function operaPage(opera, selectedScene = 1, query = "") {
-  if (opera.slug === "cosi-fan-tutte") return cosiOperaPage(selectedScene, query);
+function sectionNavigationLabel(section) {
+  const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
+  if (match) return "N. " + match[1] + " · " + match[2];
+  return section.label.toLocaleLowerCase() === "recitative" ? "Recitativo" : section.label;
+}
+
+function sectionPresentation(scene, section, sectionIndex) {
+  const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
+  const form = match ? match[2] : "Recitativo";
+  let title = "";
+  let translationTitle = "";
+  if (scene.number === 1 && sectionIndex === 0) title = scene.title;
+  if (scene.number === 1 && sectionIndex === 2) {
+    title = "È la fede delle femmine";
+    translationTitle = "A woman’s faith";
+  }
+  if (scene.number === 1 && sectionIndex === 4) {
+    title = "Una bella serenata";
+    translationTitle = "A lovely serenade";
+  }
+  if (scene.number === 2 && sectionIndex === 0) {
+    title = scene.title;
+    translationTitle = "Ah, look, sister";
+  }
+  if (scene.number === 3 && section.label.startsWith("No. 5")) {
+    title = scene.title;
+    translationTitle = "I would speak, but have no heart";
+  }
+  const number = match ? "N. " + match[1] + " · " : "";
+  const heading = number + form + (title ? " · " + title : "");
+  const translatedForm = ({ Terzetto: "Trio", Duetto: "Duet", Aria: "Aria" })[form] || "";
+  const subtitle = [translatedForm, translationTitle].filter(Boolean).join(" · ");
+  return { heading, subtitle, form, number: match ? Number(match[1]) : null };
+}
+
+function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
+  const scenes = cosiActOneScenes;
+  const searchTerm = query.trim().toLocaleLowerCase();
+  let found = null;
+  if (searchTerm) {
+    scenes.some((candidate) => candidate.sections.some((section, sectionIndex) => {
+      const hasMatch = section.turns.some((turn) => (turn.speaker + " " + turn.it + " " + turn.en).toLocaleLowerCase().includes(searchTerm));
+      if (hasMatch) {
+        found = { scene: candidate.number, item: sectionIndex };
+        return true;
+      }
+      return false;
+    }));
+  }
+  const scene = scenes.find((item) => item.number === (found?.scene || selectedNumber)) || scenes[0];
+  const itemIndex = Math.max(0, Math.min(found?.item ?? selectedItem, scene.sections.length - 1));
+  const section = scene.sections[itemIndex];
+  const presentation = sectionPresentation(scene, section, itemIndex);
+  const safeQuery = escapeHtml(query);
+  const settingByScene = {
+    1: "Bottega di caffè · Coffee shop",
+    2: "Giardino sulla spiaggia · Seaside garden",
+  };
+  const sceneSetting = settingByScene[scene.number] || "";
+  const sceneLabel = "Scene " + romanNumeral(scene.number);
+  const sectionRows = section.turns.map((turn) => {
+    const speaker = '<span class="libretto-speaker libretto-speaker--' + speakerClass(turn.speaker) + '">' + escapeHtml(turn.speaker) + '</span>';
+    return '<div class="libretto-row"><div class="libretto-cell libretto-cell--italian">' + speaker + '<p>' + escapeHtml(turn.it) + '</p></div><div class="libretto-cell libretto-cell--english">' + speaker + '<p>' + escapeHtml(turn.en) + '</p></div></div>';
+  }).join("");
+  const sceneLinks = scenes.map((item) => {
+    const itemSections = item.sections.map((subsection, subsectionIndex) => {
+      const active = item.number === scene.number && subsectionIndex === itemIndex;
+      const label = sectionNavigationLabel(subsection);
+      const isSong = /^No\./i.test(subsection.label);
+      const href = "#/operas/cosi-fan-tutte?scene=" + item.number + "&item=" + subsectionIndex;
+      return '<a class="section-nav-link' + (active ? " is-current" : "") + '" href="' + href + '"' + (active ? ' aria-current="page"' : "") + '><span class="section-nav-link__icon section-nav-link__icon--' + (isSong ? "song" : "recitative") + '" aria-hidden="true">' + (isSong ? "♫" : "▤") + '</span><span>' + escapeHtml(label) + '</span></a>';
+    }).join("");
+    return '<details class="scene-group' + (item.number === scene.number ? " is-current" : "") + '" open><summary class="scene-group__summary"><span>' + "Scene " + romanNumeral(item.number) + '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">' + itemSections + '</div></details>';
+  }).join("");
+  const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
+  const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
+  const backToContents = '<a class="back-to-scenes" href="#/operas/cosi-fan-tutte?scene=' + scene.number + '&item=' + itemIndex + '&contents=1">← Back to scenes</a>';
+  const sectionBreadcrumb = presentation.number ? "N. " + presentation.number + " " + presentation.form : "Recitativo";
+  const sceneClass = mobileContents ? " opera-reading-page--contents" : "";
+  return '<div class="opera-reading-page' + sceneClass + '">' +
+    '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
+    '<div class="reading-layout">' +
+      '<aside class="scene-sidebar" aria-label="Libretto contents"><div class="act-heading"><h2>Act I</h2><span aria-hidden="true">⌄</span></div><nav aria-label="Scenes in Act I">' + sceneLinks + '</nav></aside>' +
+      '<main class="reading-main"><section class="scene-panel">' +
+        '<div class="mobile-reader-toolbar">' + backToContents + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
+        '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto Primo · Act I <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
+          '<h1 class="scene-page-title">' + sceneLabel + '</h1>' +
+          (sceneSetting ? '<p class="scene-page-setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
+          '<p class="scene-summary">' + escapeHtml(scene.summary) + '</p>' +
+          '<p class="scene-context">ATTO PRIMO · ACT I <span>/</span> SCENA ' + romanNumeral(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
+          (sceneSetting ? '<p class="scene-context__setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
+        '</div>' +
+        (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No line in the first three scenes contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
+        '<div class="selected-section-heading"><h2>' + escapeHtml(presentation.heading) + '</h2>' + (presentation.subtitle ? '<p>' + escapeHtml(presentation.subtitle) + '</p>' : '') + '</div>' +
+        '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section)) + '</div>' + sectionRows + '</section><p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>' +
+        '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
+      '</section></main>' +
+    '</div>' +
+  '</div>';
+}
+function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false) {
+  if (opera.slug === "cosi-fan-tutte") return cosiOperaPage(selectedScene, query, selectedItem, mobileContents);
   return `<div class="opera-detail">
     <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>
     <section class="detail-hero section-wrap">
@@ -209,7 +287,9 @@ function render() {
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
     const scene = Number(routeParams.get("scene")) || 1;
-    shell(opera ? operaPage(opera, scene, query) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
+    const item = Number(routeParams.get("item")) || 0;
+    const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
+    shell(opera ? operaPage(opera, scene, query, item, mobileContents) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
     const operaSearch = app.querySelector("#opera-search");
     if (operaSearch) operaSearch.value = query;
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
