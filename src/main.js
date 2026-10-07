@@ -1,4 +1,5 @@
 import { operas, getOpera } from "./data/operas.js";
+import { cosiActOneScenes } from "./data/libretti.js";
 
 const app = document.querySelector("#app");
 
@@ -21,10 +22,10 @@ function header(active) {
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation">
       <a class="${active === "home" ? "is-active" : ""}" href="#/">Home</a>
-      <a class="${active === "operas" ? "is-active" : ""}" href="#/operas">Operas</a>
+      <a class="${active === "operas" || active === "opera" ? "is-active" : ""}" href="#/operas">Operas</a>
       <a class="${active === "about" ? "is-active" : ""}" href="#/about">About</a>
     </nav>
-    <button class="search-trigger" aria-label="Search operas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+    ${active === "opera" ? `<form class="opera-header-search" data-libretto-search role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><label class="sr-only" for="opera-search">Search in this opera</label><input id="opera-search" type="search" placeholder="Search in this opera..." autocomplete="off" /></form>` : `<button class="search-trigger" aria-label="Search operas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>`}
   </header>`;
 }
 
@@ -53,6 +54,11 @@ function shell(content, active) {
       const query = form.querySelector("input")?.value.trim() || "";
       window.location.hash = query ? `#/operas?q=${encodeURIComponent(query)}` : "#/operas";
     });
+  });
+  app.querySelector("[data-libretto-search]")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const query = event.currentTarget.querySelector("input")?.value.trim() || "";
+    window.location.hash = query ? `#/operas/cosi-fan-tutte?q=${encodeURIComponent(query)}` : "#/operas/cosi-fan-tutte";
   });
 }
 
@@ -127,7 +133,42 @@ function aboutPage() {
   return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> About</p><h1>A personal collection<br /><em>of opera.</em></h1><p>This is a place for the operas I love: their libretti, translations, characters, and the details that make each one worth returning to.</p><a class="text-link" href="#/operas">Explore the collection ${arrow}</a></section>`;
 }
 
-function operaPage(opera) {
+function escapeHtml(value = "") {
+  return String(value).replace(/[&<>\"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;", "'": "&#39;" })[character]);
+}
+
+function speakerClass(speaker) {
+  return speaker.toLocaleLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function cosiOperaPage(selectedNumber = 1, query = "") {
+  const scenes = cosiActOneScenes;
+  const searchTerm = query.trim().toLocaleLowerCase();
+  const foundScene = searchTerm ? scenes.find((scene) => scene.sections.some((section) => section.turns.some((turn) => `${turn.speaker} ${turn.it} ${turn.en}`.toLocaleLowerCase().includes(searchTerm)))) : null;
+  const scene = scenes.find((item) => item.number === (foundScene?.number || selectedNumber)) || scenes[0];
+  const safeQuery = escapeHtml(query);
+  const sceneRows = scene.sections.map((section) => `<div class="libretto-section"><p class="libretto-section__label">${escapeHtml(section.label)}</p>${section.turns.map((turn) => `<div class="libretto-row"><div class="libretto-cell libretto-cell--italian"><span class="libretto-speaker libretto-speaker--${speakerClass(turn.speaker)}">${escapeHtml(turn.speaker)}</span><p>${escapeHtml(turn.it)}</p></div><div class="libretto-cell libretto-cell--english"><span class="libretto-speaker libretto-speaker--${speakerClass(turn.speaker)}">${escapeHtml(turn.speaker)}</span><p>${escapeHtml(turn.en)}</p></div></div>`).join("")}</div>`).join("");
+  const sceneLinks = scenes.map((item) => `<a class="scene-link ${item.number === scene.number ? "is-current" : ""}" href="#/operas/cosi-fan-tutte?scene=${item.number}" ${item.number === scene.number ? 'aria-current="page"' : ""}><span class="scene-link__number">${item.number}</span><span class="scene-link__text"><b>${escapeHtml(item.kind)}</b><span>${escapeHtml(item.title)}</span></span></a>`).join("");
+  const previous = scene.number > 1 ? `<a class="scene-step" href="#/operas/cosi-fan-tutte?scene=${scene.number - 1}">‹ <span>Previous</span></a>` : `<span class="scene-step is-disabled" aria-disabled="true">‹ <span>Previous</span></span>`;
+  const next = scene.number < scenes.length ? `<a class="scene-step" href="#/operas/cosi-fan-tutte?scene=${scene.number + 1}"><span>Next</span> ›</a>` : `<span class="scene-step is-disabled" aria-disabled="true"><span>Next</span> ›</span>`;
+  return `<div class="opera-reading-page">
+    <section class="reading-identity">
+      <div class="reading-identity__image" role="img" aria-label="Lake Como landscape"></div>
+      <div class="reading-identity__content"><div class="reading-identity__title"><h1>Così fan tutte</h1><p>Wolfgang Amadeus Mozart <span>·</span> 1790</p><p>Opera buffa in two acts <span>·</span> Libretto by Lorenzo Da Ponte</p></div><nav class="opera-tabs" aria-label="Opera sections"><a href="#/operas/cosi-fan-tutte" title="Overview coming later">Overview</a><a class="is-active" href="#/operas/cosi-fan-tutte?scene=1" aria-current="page">Act I</a><span aria-disabled="true" title="Coming later">Act II</span><span aria-disabled="true" title="Coming later">Characters</span><span aria-disabled="true" title="Coming later">Synopsis</span></nav></div>
+    </section>
+    <div class="reading-layout">
+      <aside class="scene-sidebar" aria-label="Libretto navigation"><div class="act-heading"><h2>Act I</h2><span aria-hidden="true">⌃</span></div><nav aria-label="Scenes in Act I">${sceneLinks}</nav><p class="scene-sidebar__note">Scenes 4–11 are being prepared.</p><div class="act-heading act-heading--later"><h2>Act II</h2><span aria-hidden="true">›</span></div><p class="scene-sidebar__note">Translation coming later.</p></aside>
+      <div class="reading-main"><section class="scene-panel"><div class="scene-panel__top"><div><p class="scene-kicker">Act I</p><p class="scene-number">No. ${scene.number} — ${escapeHtml(scene.kind)}</p><h2>${escapeHtml(scene.title)}</h2><p class="scene-cast">${escapeHtml(scene.cast)}</p><p class="scene-summary">${escapeHtml(scene.summary)}</p></div><div class="scene-pager">${previous}${next}</div></div>
+        ${searchTerm ? `<p class="libretto-search-result" role="status">${foundScene ? `Showing the first scene containing “${safeQuery}”.` : `No line in the first three scenes contains “${safeQuery}”. Showing Scene ${scene.number}.`}</p>` : ""}
+        <div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text">${sceneRows}<p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>
+        <div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>
+      </section></div>
+    </div>
+  </div>`;
+}
+
+function operaPage(opera, selectedScene = 1, query = "") {
+  if (opera.slug === "cosi-fan-tutte") return cosiOperaPage(selectedScene, query);
   return `<div class="opera-detail">
     <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>
     <section class="detail-hero section-wrap">
@@ -167,7 +208,10 @@ function render() {
     document.title = "About — My favorite Operas";
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
-    shell(opera ? operaPage(opera) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? "operas" : "");
+    const scene = Number(routeParams.get("scene")) || 1;
+    shell(opera ? operaPage(opera, scene, query) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
+    const operaSearch = app.querySelector("#opera-search");
+    if (operaSearch) operaSearch.value = query;
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
   } else {
     window.location.hash = "#/";
