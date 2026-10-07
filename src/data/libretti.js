@@ -2,6 +2,7 @@ export const cosiActOneScenes = [
   {
     number: 1,
     kind: "Terzetto",
+    cue: "No. 1 — Terzetto",
     title: "La mia Dorabella capace non è",
     cast: "Ferrando, Guglielmo, Don Alfonso",
     summary: "Ferrando and Guglielmo praise their fiancées’ constancy. Don Alfonso doubts them and proposes a wager to prove his point.",
@@ -75,6 +76,7 @@ export const cosiActOneScenes = [
   {
     number: 2,
     kind: "Duetto",
+    cue: "No. 4 — Duetto",
     title: "Ah, guarda, sorella",
     cast: "Fiordiligi, Dorabella",
     summary: "The sisters admire portraits of their beloveds and imagine their approaching marriages, while waiting for the men to arrive.",
@@ -102,6 +104,7 @@ export const cosiActOneScenes = [
   {
     number: 3,
     kind: "Aria",
+    cue: "No. 5 — Aria",
     title: "Vorrei dir, e cor non ho",
     cast: "Fiordiligi, Dorabella, Don Alfonso",
     summary: "Don Alfonso arrives with terrible news: the men have been called away to war and must leave at once.",
