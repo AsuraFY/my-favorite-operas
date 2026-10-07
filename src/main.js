@@ -107,7 +107,12 @@ function directoryPage(query = "") {
 function operaDirectoryPage(query = "", sort = "title") {
   const normalizedQuery = query.trim().toLocaleLowerCase();
   const matches = operas.filter((opera) => `${opera.title} ${opera.composer} ${opera.displayTitle} ${opera.genre}`.toLocaleLowerCase().includes(normalizedQuery));
-  matches.sort((a, b) => sort === "composer" ? a.composer.localeCompare(b.composer) : sort === "year" ? Number(b.premiered.match(/\d{4}/)?.[0]) - Number(a.premiered.match(/\d{4}/)?.[0]) : a.title.localeCompare(b.title, undefined, { sensitivity: "base" }));
+  matches.sort((a, b) => {
+    if (sort === "composer") return a.composer.localeCompare(b.composer);
+    if (sort === "year") return Number(b.premiered.match(/\d{4}/)?.[0]) - Number(a.premiered.match(/\d{4}/)?.[0]);
+    const titleKey = (title) => title.replace(/^Il\s+/i, "");
+    return titleKey(a.title).localeCompare(titleKey(b.title), undefined, { sensitivity: "base" });
+  });
   const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
   const images = { "il-barbiere-di-siviglia": "barber", "cosi-fan-tutte": "cosi", "tristan-und-isolde": "tristan", macbeth: "macbeth" };
   const teasers = { "il-barbiere-di-siviglia": "A joyful comedy full of clever tricks, disguises and unforgettable music.", "cosi-fan-tutte": "A witty exploration of love, loyalty and human nature.", "tristan-und-isolde": "A passionate, tragic love story with extraordinary music.", macbeth: "A powerful drama of ambition, fate and conscience." };
