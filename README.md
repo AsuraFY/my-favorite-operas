@@ -16,12 +16,13 @@ Then open [http://localhost:4173](http://localhost:4173). You can also open `ind
 
 - `#/` — Home
 - `#/operas` — Opera directory
+- `#/about` — About this collection
 - `#/operas/il-barbiere-di-siviglia`
 - `#/operas/tristan-und-isolde`
 - `#/operas/cosi-fan-tutte`
 - `#/operas/macbeth`
 
-Hash routes keep navigation compatible with GitHub Pages without a server-side rewrite. Opera information lives in `src/data/operas.js`; the shared page shell and route rendering live in `src/main.js`.
+Hash routes keep navigation compatible with GitHub Pages without a server-side rewrite. Home and directory search send queries to the directory. Opera information lives in `src/data/operas.js`; the shared page shell and route rendering live in `src/main.js`. The homepage theater image is the generated asset at `public/images/opera-house-hero.webp`.
 
 ## Publish with GitHub Pages
 

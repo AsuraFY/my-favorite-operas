@@ -16,20 +16,20 @@ const arrow = `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-
 function header(active) {
   return `<header class="site-header">
     <a class="brand" href="#/" aria-label="My favorite Operas home">
-      <span class="brand__mark" aria-hidden="true">M<span>f</span>O</span>
-      <span class="brand__name">My favorite <i>Operas</i></span>
+      <span class="brand__name">My favorite Operas</span>
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation">
       <a class="${active === "home" ? "is-active" : ""}" href="#/">Home</a>
       <a class="${active === "operas" ? "is-active" : ""}" href="#/operas">Operas <span class="nav-count">04</span></a>
-      <span class="nav-note">A personal collection</span>
+      <a class="${active === "about" ? "is-active" : ""}" href="#/about">About</a>
     </nav>
+    <button class="search-trigger" aria-label="Search operas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
   </header>`;
 }
 
 function footer() {
-  return `<footer class="site-footer"><a class="footer-brand" href="#/">My favorite <i>Operas</i></a><span>Stories that stay with us.</span><span>Made for the love of opera <span aria-hidden="true">♪</span></span></footer>`;
+  return `<footer class="site-footer"><span>@AsuraFY</span><span>My favorite Operas</span></footer>`;
 }
 
 function shell(content, active) {
@@ -41,6 +41,18 @@ function shell(content, active) {
     toggle.setAttribute("aria-expanded", String(!open));
     toggle.setAttribute("aria-label", open ? "Open navigation" : "Close navigation");
     nav.classList.toggle("is-open", !open);
+  });
+  app.querySelector(".search-trigger")?.addEventListener("click", () => {
+    const field = app.querySelector("#hero-search, #directory-search");
+    if (field) field.focus();
+    else window.location.hash = "#/operas";
+  });
+  app.querySelectorAll("[data-search-form]").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const query = form.querySelector("input")?.value.trim() || "";
+      window.location.hash = query ? `#/operas?q=${encodeURIComponent(query)}` : "#/operas";
+    });
   });
 }
 
@@ -57,37 +69,43 @@ function operaCard(opera, index) {
 }
 
 function homePage() {
-  const featured = operas.find((opera) => opera.featured);
-  return `<section class="home-hero">
-      <div class="hero-copy">
-        <p class="eyebrow hero-kicker"><span class="eyebrow-rule"></span> An invitation to listen</p>
-        <h1>Some stories<br />stay with <em>you.</em></h1>
-        <p class="hero-intro">A personal collection of operas I love, the worlds they create, and the music that follows us home.</p>
-        <a class="button button--dark" href="#/operas">Explore the collection ${arrow}</a>
-        <div class="hero-footnote"><span class="hero-footnote__line"></span><span>Four operas to begin with<br /><b>More stories, in time.</b></span></div>
+  return `<section class="home-banner" aria-label="Welcome">
+      <div class="home-banner__shade">
+        <div class="home-banner__content">
+          <h1>My favorite Operas</h1>
+          <p>Libretti, translations and notes<br />for the operas I love.</p>
+          <form class="opera-search opera-search--hero" data-search-form role="search">
+            <label class="sr-only" for="hero-search">Search an opera</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+            <input id="hero-search" name="q" type="search" placeholder="Search an opera..." autocomplete="off" />
+          </form>
+        </div>
       </div>
-      <div class="hero-art-wrap">
-        <div class="hero-art-label"><span>01</span><span>On this stage</span></div>
-        ${artwork(featured, "artwork--hero")}
-        <div class="hero-title-card"><span class="eyebrow">Featured opera</span><h2>${featured.title}</h2><p>${featured.composer}</p><a href="#/operas/${featured.slug}" aria-label="Explore Tristan und Isolde">${arrow}</a></div>
-      </div>
-      <div class="hero-side-note" aria-hidden="true">MUSIC · STORY · MEMORY</div>
     </section>
-    <section class="collection-preview section-wrap">
-      <div class="section-heading"><div><p class="eyebrow">The collection <span class="eyebrow-rule"></span></p><h2>Begin anywhere.</h2></div><a class="text-link text-link--large" href="#/operas">View all operas ${arrow}</a></div>
-      <div class="opera-grid">${operas.map(operaCard).join("")}</div>
+    <section class="home-notes" aria-label="About the collection">
+      <article class="home-note"><span class="home-note__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 8.5c-3.1-2-6.3-2.1-10-1.3v16c3.7-.8 6.9-.7 10 1.3m0-16c3.1-2 6.3-2.1 10-1.3v16c-3.7-.8-6.9-.7-10 1.3m0-16v17.3"/></svg></span><p>Original language<br />and English translation<br />side by side</p></article>
+      <article class="home-note"><span class="home-note__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="8" cy="9" r="1.2"/><circle cx="8" cy="16" r="1.2"/><circle cx="8" cy="23" r="1.2"/><path d="M13 9h12M13 16h12M13 23h12"/></svg></span><p>Easy navigation<br />by act, scene and aria</p></article>
+      <article class="home-note"><span class="home-note__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4.5 11.5 16 6l11.5 5.5L16 17zM7 13v7c5.6 4.2 12.4 4.2 18 0v-7M27.5 12v9"/><path d="M14 11.2c-2.4-2.3-5.7.4-1.8 3.4L14 16l1.8-1.4c3.9-3-.1-5.7-1.8-3.4z"/></svg></span><p>Main characters<br />and synopsis</p></article>
+      <article class="home-note"><span class="home-note__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19 7v17.2a4 4 0 1 1-2-3.5V11l10-2.5v12.7a4 4 0 1 1-2-3.5V6z"/></svg></span><p>A growing collection<br />of my favorite operas</p></article>
     </section>
-    <section class="closing-note"><span class="closing-note__ornament" aria-hidden="true">❧</span><p>“The opera is where the impossible gets to sing.”</p><span class="eyebrow">A collection made with affection</span></section>`;
+    <div class="home-spacer" aria-hidden="true"></div>`;
 }
 
-function directoryPage() {
+function directoryPage(query = "") {
+  const normalizedQuery = query.trim().toLocaleLowerCase();
+  const matches = operas.filter((opera) => `${opera.title} ${opera.composer} ${opera.displayTitle} ${opera.genre}`.toLocaleLowerCase().includes(normalizedQuery));
+  const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
   return `<section class="page-intro section-wrap">
     <p class="eyebrow"><span class="eyebrow-rule"></span> The collection</p>
     <div class="page-intro__row"><h1>Operas to<br /><em>return to.</em></h1><p>Every opera is a world of its own. Explore the stories, meet the composers, and find a place to begin listening.</p></div>
-    <div class="directory-meta"><span>${String(operas.length).padStart(2, "0")} works</span><span>Curated, not ranked</span></div>
+    <div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search an opera</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search an opera..." value="${safeQuery}" autocomplete="off" /></form><div class="directory-meta"><span>${String(matches.length).padStart(2, "0")} ${matches.length === 1 ? "work" : "works"}</span><span>Curated, not ranked</span></div></div>
   </section>
-  <section class="directory-grid section-wrap" aria-label="Opera directory">${operas.map(operaCard).join("")}</section>
+  <section class="directory-grid section-wrap" aria-label="Opera directory">${matches.map(operaCard).join("") || `<p class="empty-results">No operas match “${safeQuery}”. Try another title or composer.</p>`}</section>
   <section class="directory-note section-wrap"><span class="directory-note__mark">✳</span><p>This collection is just beginning.<br /><b>There is always room for one more.</b></p></section>`;
+}
+
+function aboutPage() {
+  return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> About</p><h1>A personal collection<br /><em>of opera.</em></h1><p>This is a place for the operas I love: their libretti, translations, characters, and the details that make each one worth returning to.</p><a class="text-link" href="#/operas">Explore the collection ${arrow}</a></section>`;
 }
 
 function operaPage(opera) {
@@ -108,13 +126,18 @@ function operaPage(opera) {
 }
 
 function render() {
-  const path = window.location.hash.replace(/^#/, "") || "/";
+  const route = window.location.hash.replace(/^#/, "") || "/";
+  const [path, queryString = ""] = route.split("?");
+  const query = new URLSearchParams(queryString).get("q") || "";
   if (path === "/" || path === "") {
     shell(homePage(), "home");
-    document.title = "My favorite Operas — Stories that stay with us";
+    document.title = "My favorite Operas";
   } else if (path === "/operas") {
-    shell(directoryPage(), "operas");
+    shell(directoryPage(query), "operas");
     document.title = "The collection — My favorite Operas";
+  } else if (path === "/about") {
+    shell(aboutPage(), "about");
+    document.title = "About — My favorite Operas";
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
     shell(opera ? operaPage(opera) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? "operas" : "");
