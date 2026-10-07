@@ -21,7 +21,7 @@ function header(active) {
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation">
       <a class="${active === "home" ? "is-active" : ""}" href="#/">Home</a>
-      <a class="${active === "operas" ? "is-active" : ""}" href="#/operas">Operas <span class="nav-count">04</span></a>
+      <a class="${active === "operas" ? "is-active" : ""}" href="#/operas">Operas</a>
       <a class="${active === "about" ? "is-active" : ""}" href="#/about">About</a>
     </nav>
     <button class="search-trigger" aria-label="Search operas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>

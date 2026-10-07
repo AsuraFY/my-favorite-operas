@@ -304,6 +304,8 @@ button { font: inherit; }
 }
 
 /* Homepage refresh: the reference-led opera house banner and blue navigation. */
+#app { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+#app > main { flex: 1 0 auto; }
 .site-header {
   height: 54px;
   display: grid;
@@ -349,6 +351,7 @@ button { font: inherit; }
 .menu-toggle { display: none; }
 .site-footer {
   min-height: 58px;
+  margin-top: auto;
   padding: 14px 30px;
   display: flex;
   justify-content: center;
@@ -359,6 +362,7 @@ button { font: inherit; }
   letter-spacing: .02em;
 }
 .site-footer span + span::before { content: "·"; margin-right: 7px; color: #b9c9d5; }
+.site-footer > span:last-child { color: #d8dee4; }
 .home-banner {
   width: 100%;
   min-height: 318px;
