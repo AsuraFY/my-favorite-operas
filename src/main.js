@@ -1,5 +1,5 @@
 import { operas, getOpera } from "./data/operas.js";
-import { cosiActOneScenes } from "./data/libretti.js";
+import { cosiActOneScenes } from "./data/libretti.js?v=cosi-libretto-2";
 
 const app = document.querySelector("#app");
 
