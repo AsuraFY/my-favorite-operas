@@ -287,7 +287,7 @@ function render() {
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
     const scene = Number(routeParams.get("scene")) || 1;
-    const item = Number(routeParams.get("item")) || 0;
+    const item = routeParams.has("item") ? (Number(routeParams.get("item")) || 0) : (scene === 1 ? 2 : 0);
     const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
     shell(opera ? operaPage(opera, scene, query, item, mobileContents) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
     const operaSearch = app.querySelector("#opera-search");
