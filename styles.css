@@ -17,6 +17,8 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { min-height: 100vh; display: flex; flex-direction: column; margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+#app { min-height: 100vh; flex: 1; display: flex; flex-direction: column; }
+#app > main { flex: 1; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 ::selection { background: #ddc8a6; color: var(--ink); }
@@ -474,4 +476,61 @@ button { font: inherit; }
   .about-page { min-height: 65vh; padding-top: 57px; }
   .about-page h1 { font-size: 49px; }
   .about-page > p:not(.eyebrow) { font-size: 15px; }
+}
+
+
+/* Opera directory: scenic header and illustrated catalogue cards. */
+.directory-scenic {
+  height: 176px;
+  background: #a9c6d8 url("./public/images/lake-como-banner.webp") center 51% / cover no-repeat;
+}
+.directory-intro { position: relative; margin-top: -88px; padding: 0 0 23px; }
+.directory-intro__panel { width: min(720px, 82%); padding: 12px 32px 18px; background: var(--paper); }
+.directory-intro__panel h1 { margin: 0; color: #142e43; font: 500 clamp(40px, 4.3vw, 52px)/1.05 var(--serif); letter-spacing: -.04em; }
+.directory-intro__panel p { margin: 5px 0 0; color: #343a3f; font: 15px/1.5 var(--serif); }
+.directory-intro .directory-tools { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 8px 0 0; border: 0; }
+.directory-intro .opera-search--directory { width: min(372px, 48%); }
+.directory-intro .directory-sort { display: flex; align-items: center; gap: 12px; color: #1d2932; font: 14px var(--serif); }
+.directory-sort select { min-width: 145px; height: 38px; padding: 0 30px 0 12px; border: 1px solid #d6d0c8; border-radius: 6px; color: #202a31; background: #faf8f4; font: 13px var(--serif); }
+.directory-grid { padding-top: 0; padding-bottom: 72px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.directory-card { min-width: 0; overflow: hidden; display: block; border: 1px solid #e6dfd6; border-radius: 9px; background: #faf8f4; box-shadow: 0 2px 8px rgba(49, 38, 25, .035); color: #192b3a; animation: rise .45s both; animation-delay: calc(var(--card-index, 0) * 45ms); transition: box-shadow .2s ease, transform .2s ease; }
+.directory-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(49, 38, 25, .1); }
+.directory-card__image { height: clamp(138px, 14vw, 176px); background-image: url("./public/images/opera-card-art.webp"); background-size: 200% auto; background-repeat: no-repeat; background-color: #d6cabb; }
+.directory-card__image--barber { background-position: 0 0; }
+.directory-card__image--cosi { background-position: 100% 0; }
+.directory-card__image--tristan { background-position: 0 66%; }
+.directory-card__image--macbeth { background-position: 100% 66%; }
+.directory-card__body { padding: 10px 14px 13px; }
+.directory-card__body h2 { margin: 0 0 4px; color: #172b3c; font: 500 20px/1.25 var(--serif); letter-spacing: -.02em; }
+.directory-card__byline { display: flex; align-items: center; gap: 9px; margin: 0 0 7px; color: #555c60; font: 15px var(--serif); }
+.directory-card__byline span { color: #907c65; }
+.directory-card__summary { min-height: 38px; margin: 0 0 12px; color: #545552; font: 14px/1.35 var(--serif); }
+.directory-card__button { width: fit-content; min-height: 36px; padding: 0 14px; display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; background: #f2e2df; color: #202b34; font: 13px var(--serif); transition: background .2s ease; }
+.directory-card:hover .directory-card__button { background: #ead2ce; }
+.directory-card__button svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.directory-grid .empty-results { grid-column: 1 / -1; }
+@media (max-width: 780px) {
+  .directory-scenic { height: 158px; }
+  .directory-intro { margin-top: -72px; }
+  .directory-intro__panel { width: min(670px, 88%); }
+  .directory-grid { gap: 12px; }
+  .directory-card__image { height: clamp(132px, 20vw, 165px); }
+  .directory-card__body h2 { font-size: 18px; }
+  .directory-card__summary { font-size: 13px; }
+}
+@media (max-width: 580px) {
+  .directory-scenic { height: 142px; background-position: 61% center; }
+  .directory-intro { width: calc(100% - 34px); margin-top: -54px; padding-bottom: 19px; }
+  .directory-intro__panel { width: 100%; padding: 12px 18px 13px; }
+  .directory-intro__panel h1 { font-size: 42px; }
+  .directory-intro__panel p { font-size: 14px; }
+  .directory-intro .directory-tools { align-items: stretch; flex-direction: column; gap: 12px; padding: 10px 0 0; }
+  .directory-intro .opera-search--directory { width: 100%; }
+  .directory-intro .directory-sort { justify-content: space-between; }
+  .directory-sort select { flex: 1; max-width: 210px; }
+  .directory-grid { width: calc(100% - 34px); grid-template-columns: 1fr; gap: 13px; padding-bottom: 40px; }
+  .directory-card__image { height: clamp(150px, 53vw, 205px); }
+  .directory-card__body { padding: 11px 13px 13px; }
+  .directory-card__body h2 { font-size: 21px; }
+  .directory-card__summary { min-height: 0; margin-bottom: 11px; font-size: 14px; }
 }

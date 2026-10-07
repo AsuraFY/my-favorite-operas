@@ -104,6 +104,20 @@ function directoryPage(query = "") {
   <section class="directory-note section-wrap"><span class="directory-note__mark">✳</span><p>This collection is just beginning.<br /><b>There is always room for one more.</b></p></section>`;
 }
 
+function operaDirectoryPage(query = "", sort = "title") {
+  const normalizedQuery = query.trim().toLocaleLowerCase();
+  const matches = operas.filter((opera) => `${opera.title} ${opera.composer} ${opera.displayTitle} ${opera.genre}`.toLocaleLowerCase().includes(normalizedQuery));
+  matches.sort((a, b) => sort === "composer" ? a.composer.localeCompare(b.composer) : sort === "year" ? Number(b.premiered.match(/\d{4}/)?.[0]) - Number(a.premiered.match(/\d{4}/)?.[0]) : a.title.localeCompare(b.title, undefined, { sensitivity: "base" }));
+  const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+  const images = { "il-barbiere-di-siviglia": "barber", "cosi-fan-tutte": "cosi", "tristan-und-isolde": "tristan", macbeth: "macbeth" };
+  const teasers = { "il-barbiere-di-siviglia": "A joyful comedy full of clever tricks, disguises and unforgettable music.", "cosi-fan-tutte": "A witty exploration of love, loyalty and human nature.", "tristan-und-isolde": "A passionate, tragic love story with extraordinary music.", macbeth: "A powerful drama of ambition, fate and conscience." };
+  const cards = matches.map((opera, index) => {
+    const year = opera.premiered.match(/\d{4}/)?.[0] || "";
+    return `<a class="directory-card" href="#/operas/${opera.slug}" style="--card-index:${index}"><div class="directory-card__image directory-card__image--${images[opera.slug]}" role="img" aria-label="Illustration inspired by ${opera.title}"></div><div class="directory-card__body"><h2>${opera.title}</h2><p class="directory-card__byline">${opera.composer}<span aria-hidden="true">·</span>${year}</p><p class="directory-card__summary">${teasers[opera.slug] || opera.summary}</p><span class="directory-card__button">View opera ${arrow}</span></div></a>`;
+  }).join("");
+  return `<section class="directory-scenic" aria-hidden="true"></section><section class="directory-intro section-wrap"><div class="directory-intro__panel"><h1>Operas</h1><p>A collection of the operas I’m exploring, with libretti and English translations.</p></div><div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search an opera</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search an opera..." value="${safeQuery}" autocomplete="off" /></form><label class="directory-sort"><span>Sort by</span><select id="directory-sort" aria-label="Sort operas"><option value="title" ${sort === "title" ? "selected" : ""}>Title (A–Z)</option><option value="composer" ${sort === "composer" ? "selected" : ""}>Composer</option><option value="year" ${sort === "year" ? "selected" : ""}>Year (newest)</option></select></label></div></section><section class="directory-grid section-wrap" aria-label="Opera directory">${cards || `<p class="empty-results">No operas match “${safeQuery}”. Try another title or composer.</p>`}</section>`;
+}
+
 function aboutPage() {
   return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> About</p><h1>A personal collection<br /><em>of opera.</em></h1><p>This is a place for the operas I love: their libretti, translations, characters, and the details that make each one worth returning to.</p><a class="text-link" href="#/operas">Explore the collection ${arrow}</a></section>`;
 }
@@ -128,12 +142,20 @@ function operaPage(opera) {
 function render() {
   const route = window.location.hash.replace(/^#/, "") || "/";
   const [path, queryString = ""] = route.split("?");
-  const query = new URLSearchParams(queryString).get("q") || "";
+  const routeParams = new URLSearchParams(queryString);
+  const query = routeParams.get("q") || "";
+  const sort = routeParams.get("sort") || "title";
   if (path === "/" || path === "") {
     shell(homePage(), "home");
     document.title = "My favorite Operas";
   } else if (path === "/operas") {
-    shell(directoryPage(query), "operas");
+    shell(operaDirectoryPage(query, sort), "operas");
+    app.querySelector("#directory-sort")?.addEventListener("change", (event) => {
+      const params = new URLSearchParams();
+      if (query) params.set("q", query);
+      params.set("sort", event.currentTarget.value);
+      window.location.hash = `#/operas?${params.toString()}`;
+    });
     document.title = "The collection — My favorite Operas";
   } else if (path === "/about") {
     shell(aboutPage(), "about");
