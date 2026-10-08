@@ -198,4 +198,4 @@ export const cosiActOneScenes = [
       ] },
     ],
   },
-];\n
+];
