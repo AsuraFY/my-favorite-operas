@@ -100,7 +100,7 @@ export const cosiActOneScenes = [
       { label: "Recitative", turns: [
         { speaker: "Fiordiligi", it: "Mi par che stamattina volentieri\nFarei la pazzarella: ho un certo foco,\nUn certo pizzicor entro le vene...\nQuando Guglielmo viene... se sapessi\nChe burla gli vo' far!", en: "I feel that this morning\nI could happily play the fool. There is a certain fire,\na certain tingling in my veins...\nWhen Guglielmo comes... if only you knew\nwhat a trick I mean to play on him!" },
         { speaker: "Dorabella", it: "Per dirti il vero,\nQualche cosa di nuovo\nAnch'io nell'alma provo: io giurerei\nChe lontane non siam dagli imenei.", en: "To tell you the truth,\nI too feel something new\nwithin my soul. I would swear\nour weddings cannot be far away." },
-        { speaker: "Fiordiligi", it: "Dammi la mano: io voglio astrologarti.\nUh, che bell'Emme! E questo\nÈ un Pi! Va bene: matrimonio presto.", en: "Give me your hand; I shall read your stars.\nOh, what a lovely M! And this\nis a P! Good: marriage soon." },
+        { speaker: "Fiordiligi", it: "Dammi la mano: io voglio astrologarti.\nUh, che bell'Emme! E questo\nÈ un Pi! Va bene: matrimonio presto.", en: "Give me your hand; I’ll tell your fortune.\nOh, what a lovely M! And this\nis a P! Good: marriage soon." },
         { speaker: "Dorabella", it: "Affé che ci avrei gusto!", en: "Indeed, I should like that!" },
         { speaker: "Fiordiligi", it: "Ed io non ci avrei rabbia.", en: "And I would not object." },
         { speaker: "Dorabella", it: "Ma che diavol vuol dir che i nostri sposi\nRitardano a venir? Son già le sei.", en: "But what on earth can it mean that our husbands-to-be\nare so late? It is already six." },
