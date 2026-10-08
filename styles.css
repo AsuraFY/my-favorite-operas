@@ -1415,7 +1415,7 @@ button { font: inherit; }
   outline: 2px solid #1a5d8c; outline-offset: 3px;
 }
 @media (max-width: 700px) {
-  body.act-outline-open { overflow: hidden; touch-action: none; }
+  body.act-outline-open { overflow: hidden; }
   .opera-reading-page .act-outline__backdrop:not([hidden]) {
     display: block; position: fixed; z-index: 99; inset: 0;
     background: rgba(13, 30, 46, .5);
