@@ -323,5 +323,45 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 3,
+    "kind": "Recitativo",
+    "cue": "Recitative",
+    "title": "Ah, correte al giardino",
+    "cast": "Fiordiligi, Dorabella, Don Alfonso",
+    "summary": "Don Alfonso calls the sisters into the garden to witness an elaborate musical surprise.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi, Dorabella e Don Alfonso.",
+            "en": "Fiordiligi, Dorabella and Don Alfonso."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Ah, correte al giardino,\nLe mie care ragazze! che allegria!\nChe musica! che canto!\nChe brillante spettacolo! che incanto!\nFate presto, correte!",
+            "en": "Ah, hurry into the garden,\nmy dear girls! What merriment!\nWhat music! What singing!\nWhat a splendid spectacle, what enchantment!\nMake haste, run!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Che diamine esser può?",
+            "en": "What on earth could it be?"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Tosto vedrete.",
+            "en": "You'll soon see."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Partono.",
+            "en": "They leave."
+          }
+        ]
+      }
+    ]
   }
 ];
