@@ -458,9 +458,16 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const sceneLinks = renderActSceneLinks(act, scene.number, itemIndex, true);
   const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
   const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
+  const followingAct = cosiActCatalog().find(group => group.number > act);
+  const bottomNext = scene.number < scenes.length ? next : followingAct ?
+    '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + followingAct.number + '&scene=1&item=0">Continue to Act ' + romanNumeral(followingAct.number) + ' →</a>' :
+    '<span class="mobile-scene-step is-disabled" aria-disabled="true">End of opera</span>';
+  const bottomSceneNavigation = '<nav class="scene-bottom-nav" aria-label="Scene navigation at end of scene">' +
+    '<p class="scene-bottom-nav__label">End of ' + sceneLabel + '</p>' +
+    '<div class="scene-bottom-nav__controls">' + previous + bottomNext + '</div></nav>';
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
   const sectionBreadcrumb = presentation.number ? "N. " + presentation.number + " " + presentation.form : "Recitativo";
-  return '<div class="opera-reading-page" data-act="' + act + '" data-scene="' + scene.number + '">' +
+  return '<div class="opera-reading-page" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
     cosiOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
     '<div class="reading-layout">' +
@@ -478,7 +485,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
         scene.sections.map((part, index) => renderCosiSceneSection(scene, part, index, act)).join("") +
-        '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
+        bottomSceneNavigation +
       '</section></div>' +
     '</div>' +
     '<button class="libretto-back-to-top" type="button" data-reader-top hidden aria-label="Back to scene navigation" title="Back to scene navigation"><span aria-hidden="true">↑</span><span aria-hidden="true">Top</span></button>' +
@@ -654,7 +661,7 @@ function render() {
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
     const scene = Number(routeParams.get("scene")) || 1;
-    const item = routeParams.has("item") ? (Number(routeParams.get("item")) || 0) : (scene === 1 ? 2 : 0);
+    const item = Number(routeParams.get("item")) || 0;
     const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
     const hasLibrettoDestination = routeParams.has("act") || routeParams.has("scene") || routeParams.has("item") || Boolean(query) || routeParams.has("contents");
     const selectedView = routeParams.get("view") || (opera?.slug === "cosi-fan-tutte" && !hasLibrettoDestination ? "synopsis" : "");
@@ -669,7 +676,7 @@ function render() {
   const reader = currentSceneReader();
   readerJumping = Boolean(reader);
   window.scrollTo(0, 0);
-  if (reader) restoreSceneReadingPosition(item);
+  if (reader) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);
   updateReaderTopButton();
 }
 

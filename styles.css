@@ -1488,3 +1488,35 @@ button { font: inherit; }
     scrollbar-width: thin;
   }
 }
+
+/* Previous and next scene controls at the end of each complete scene. */
+.scene-bottom-nav {
+  margin: 46px 0 0; padding: 22px 0 10px;
+  border-top: 1px solid #d6c6a9;
+}
+.scene-bottom-nav__label {
+  margin: 0 0 16px; color: #6c7884;
+  font: 600 12px/1.4 var(--serif); letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.scene-bottom-nav__controls {
+  display: flex; align-items: stretch;
+  justify-content: space-between; gap: 16px;
+}
+.scene-bottom-nav .mobile-scene-step {
+  min-height: 48px; max-width: 48%; padding: 12px 18px;
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid #ccb990; border-radius: 7px;
+  color: #173856; background: #f8f3e9;
+  text-decoration: none; font: 600 16px/1.3 var(--serif);
+}
+.scene-bottom-nav .mobile-scene-step:not(.is-disabled):hover { background: #f0e7d5; }
+.scene-bottom-nav .mobile-scene-step.is-disabled { opacity: .52; cursor: default; }
+@media (max-width: 700px) {
+  .scene-bottom-nav { margin-top: 32px; padding-top: 17px; }
+  .scene-bottom-nav__controls { gap: 8px; }
+  .scene-bottom-nav .mobile-scene-step {
+    padding: 11px 12px; min-height: 44px;
+    font-size: 14px; white-space: normal;
+  }
+}
