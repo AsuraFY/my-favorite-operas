@@ -863,5 +863,85 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 6,
+    "kind": "Recitativo e aria",
+    "cue": "No. 24 — Aria",
+    "title": "Ah, lo veggio, quell'anima bella",
+    "cast": "Fiordiligi, Ferrando",
+    "summary": "Ferrando follows Fiordiligi as she tries to escape his advances. He interprets her sighs as a sign of tenderness, but she runs away.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Entra Fiordiligi agitata, seguita da Ferrando.",
+            "en": "Fiordiligi enters in agitation, followed by Ferrando."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Barbara! Perché fuggi?",
+            "en": "Cruel woman! Why are you running away?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Ho visto un aspide,\nUn'idra, un basilisco!",
+            "en": "I've seen a viper,\na hydra, a basilisk!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Ah, crudel, ti capisco!\nL'aspide, l'idra, il basilisco, e quanto\nI libici deserti han di più fiero,\nIn me solo tu vedi.",
+            "en": "Ah, cruel one, I understand!\nThe viper, the hydra, the basilisk,\nand every fiercest creature of the Libyan desert,\nyou see all of them in me."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "È vero, è vero!\nTu vuoi tormi la pace.",
+            "en": "It's true, it's true!\nYou want to rob me of my peace."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Ma per farti felice.",
+            "en": "Only to make you happy."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Cessa di molestarmi.",
+            "en": "Stop tormenting me."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Non ti chiedo che un guardo.",
+            "en": "I ask you for just one glance."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Pàrtiti.",
+            "en": "Go away."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Non sperarlo\nSe pria gli occhi men fieri a me non giri.\nO ciel! Ma tu mi guardi, e poi sospiri?",
+            "en": "Don't expect me to,\nunless you first turn less severe eyes upon me.\nHeavens! You look at me—and then you sigh?"
+          }
+        ]
+      },
+      {
+        "label": "No. 24 — Aria",
+        "turns": [
+          {
+            "speaker": "Ferrando",
+            "it": "(lietissimo)\nAh, lo veggio, quell'anima bella\nAl mio pianto resister non sa;\nNon è fatta per esser rubella\nAgli affetti di amica pietà.\nIn quel guardo, in quei cari sospiri\nDolce raggio lampeggia al mio cor:\nGià rispondi a' miei caldi desiri,\nGià tu cedi al più tenero amor.\n(mesto)\nMa tu fuggi, spietata, tu taci\nEd invano mi senti languir?\nAh, cessate, speranze fallaci:\nLa crudel mi condanna a morir.",
+            "en": "(Overjoyed)\nAh, I can see it: that beautiful soul\ncannot withstand my tears;\nit was not made to resist\nthe feelings of tender compassion.\nIn that look, those precious sighs,\na gentle ray shines upon my heart:\nyou already answer my ardent longing,\nyou already yield to the tenderest love.\n(Sadly)\nBut you flee, merciless one; you are silent,\nand you hear me pine in vain.\nAh, cease, deceptive hopes:\nthe cruel woman condemns me to death."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando parte.",
+            "en": "Ferrando leaves."
+          }
+        ]
+      }
+    ]
   }
 ];
