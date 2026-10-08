@@ -2228,5 +2228,235 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 18,
+    "kind": "Finale",
+    "cue": "No. 31 — Finale (conclusion)",
+    "title": "Fortunato l'uom che prende",
+    "cast": "Fiordiligi, Dorabella, Ferrando, Guglielmo, Despina, Don Alfonso, Chorus",
+    "summary": "The officers return apparently from the war, reveal the false marriages and finally disclose their disguises. Don Alfonso makes the lovers reconcile, and everyone concludes with a chorus praising the guidance of reason.",
+    "sections": [
+      {
+        "label": "No. 31 — Finale (final revelation)",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Scena ultima. Fiordiligi e Dorabella; Ferrando e Guglielmo con mantelli e cappelli militari; Despina in camera; Don Alfonso.",
+            "en": "Final scene. Fiordiligi and Dorabella; Ferrando and Guglielmo wearing military cloaks and hats; Despina in another room; Don Alfonso."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Sani e salvi, agli amplessi amorosi\nDelle nostre fidissime amanti\nRitorniamo, di gioia esultanti,\nPer dar premio alla lor fedeltà.",
+            "en": "Safe and sound, we return\nwith hearts rejoicing\nto the loving embraces of our faithful sweethearts,\nto reward their constancy."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Giusti numi, Guglielmo! Ferrando!\nOh, che giubilo, qui, come, e quando?",
+            "en": "Merciful heavens, Guglielmo! Ferrando!\nWhat joy! Here? How and when?"
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Richiamati da regio contrordine,\nPieno il cor di contento e di giolito,\nRitorniamo alle spose adorabili,\nRitorniamo alla vostra amistà.",
+            "en": "Recalled by a royal counter-order,\nour hearts full of joy and happiness,\nwe return to our adored brides,\nand to your friendship."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(a Fiordiligi)\nMa cos'è quel pallor, quel silenzio?",
+            "en": "(To Fiordiligi)\nBut why are you so pale and silent?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(a Dorabella)\nL'idol mio perché mesto si sta?",
+            "en": "(To Dorabella)\nWhy does my beloved look so sad?"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Dal diletto confuse ed attonite\nMute mute si restano là.",
+            "en": "Overwhelmed and speechless with joy,\nthey stand there utterly silent."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "(fra sé)\nAh, che al labbro le voci mi mancano,\nSe non moro un prodigio sarà.",
+            "en": "(Aside)\nAh, words fail upon my lips;\nit will be a miracle if I survive."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "I servi portano un baule.",
+            "en": "The servants bring in a trunk."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Permettete che sia posto\nQuel baul in quella stanza.",
+            "en": "Please allow that trunk\nto be placed in that room."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Guglielmo esce dalla porta per la quale è uscita Despina, e rientra immediatamente.",
+            "en": "Guglielmo goes through the door used by Despina and immediately returns."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Dei, che veggio! Un uom nascosto?\nUn notaio? Qui che fa?",
+            "en": "Gods, what do I see! A man hiding?\nA notary? What's he doing here?"
+          },
+          {
+            "speaker": "Despina",
+            "it": "(rientrando, ma senza cappello)\nNo, signor, non è un notaio;\nÈ Despina mascherata\nChe dal ballo or è tornata\nE a spogliarsi or venne qua.",
+            "en": "(Reentering without her hat)\nNo, sir, it isn't a notary;\nit's Despina in costume,\nwho has just returned from a ball\nand came here to change."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "(fra sé)\nUna furba uguale a questa\nDove mai si troverà?",
+            "en": "(Aside)\nWhere could one find\nanother trickster like her?"
+          },
+          {
+            "speaker": "Despina",
+            "it": "Una furba che m'agguagli\nDove mai si troverà?",
+            "en": "Where could anyone find\nanother trickster as clever as I am?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso lascia cadere accortamente il contratto sottoscritto dalle donne.",
+            "en": "Don Alfonso deliberately drops the marriage contract signed by the women."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "La Despina? La Despina?\nNon capisco come va.",
+            "en": "Despina? Despina?\nI don't understand what's happening."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "(sottovoce agli amanti)\nGià cader lasciai le carte,\nRaccoglietele con arte.",
+            "en": "(Softly to the men)\nI've dropped the papers;\npick them up artfully."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(raccogliendo il contratto)\nMa che carte sono queste?",
+            "en": "(Picking up the contract)\nBut what are these papers?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Un contratto nuziale?",
+            "en": "A marriage contract?"
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "(alle ragazze)\nGiusto ciel! Voi qui scriveste;\nContradirci omai non vale:\nTradimento, tradimento!\nAh si faccia il scoprimento\nE a torrenti, a fiumi, a mari\nIndi il sangue scorrerà!",
+            "en": "(To the ladies)\nHeavens! You signed this!\nIt's useless now to deny it:\nbetrayal, betrayal!\nLet the truth be uncovered;\nthen blood will flow\nin torrents, rivers and seas!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Vanno per entrare nell'altra camera; le donne li arrestano.",
+            "en": "They move toward the adjoining room, but the women stop them."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Ah, signor, son rea di morte\nE la morte io sol vi chiedo.\nIl mio fallo tardi vedo:\nCon quel ferro un sen ferite\nChe non merita pietà!",
+            "en": "Ah, sir, I deserve to die,\nand death is all I ask of you.\nToo late I recognize my fault:\npierce with that sword a heart\nthat does not deserve pity!"
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Cosa fu?",
+            "en": "What happened?"
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "(additando Don Alfonso e Despina)\nPer noi favelli\nIl crudel, la seduttrice!",
+            "en": "(Pointing to Don Alfonso and Despina)\nLet that cruel man\nand that temptress speak for us!"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Troppo vero è quel che dice,\nE la prova è chiusa lì.",
+            "en": "What she says is all too true,\nand the proof is hidden there."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Accenna la camera dov'erano entrati prima gli amanti.",
+            "en": "He points toward the room the suitors entered earlier."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "(fra sé)\nDal timor io gelo, io palpito;\nPerché mai li discoprì!",
+            "en": "(Aside)\nI'm frozen and trembling with fear;\nwhy did he reveal them?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando e Guglielmo entrano un momento in camera, poi sortono senza cappello, senza mantelli e senza mustacchi, ma coll'abito finto, e burlano le amanti e Despina.",
+            "en": "Ferrando and Guglielmo briefly enter the room and come back without hats, cloaks, or moustaches, though still in their disguises, teasing the sisters and Despina."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(a Fiordiligi)\nA voi s'inchina,\nBella damina,\nIl cavaliere\nDell'Albania!",
+            "en": "(To Fiordiligi)\nThe gentleman\nfrom Albania\nbows before you,\nmy lovely lady!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(a Dorabella)\nIl ritrattino\nPel coricino\nEcco io le rendo,\nSignora mia.",
+            "en": "(To Dorabella)\nHere, my lady,\nI return your little portrait\nin exchange for\nthe little heart."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "(a Despina)\nEd al magnetico\nSignor dottore\nRendo l'onore\nChe meritò!",
+            "en": "(To Despina)\nAnd to the magnetic\ndoctor, sir,\nI pay the honor\nhe so richly deserves!"
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella & Despina",
+            "it": "Stelle, che veggo!",
+            "en": "Heavens, what do I see!"
+          },
+          {
+            "speaker": "Ferrando, Guglielmo & Don Alfonso",
+            "it": "Son stupefatte!",
+            "en": "They are stunned!"
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella & Despina",
+            "it": "Al duol non reggo!",
+            "en": "I can't bear the pain!"
+          },
+          {
+            "speaker": "Ferrando, Guglielmo & Don Alfonso",
+            "it": "Son mezze matte.",
+            "en": "They are half out of their minds."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "(accennando Don Alfonso)\nEcco là il barbaro\nChe c'ingannò.",
+            "en": "(Pointing at Don Alfonso)\nThere is the cruel man\nwho deceived us."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "V'ingannai, ma fu l'inganno\nDisinganno ai vostri amanti,\nChe più saggi omai saranno,\nChe faran quel ch'io vorrò.\nQua le destre, siete sposi.\nAbbracciatevi e tacete.\nTutti quattro ora ridete,\nCh'io già risi e riderò.",
+            "en": "I deceived you, but that deception\nopened your lovers' eyes;\nthey will be wiser from now on\nand do what I wish.\nGive each other your right hands; you are betrothed.\nEmbrace and say no more.\nNow all four of you laugh,\nas I have laughed and shall laugh again."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso li unisce e li fa abbracciare.",
+            "en": "Don Alfonso joins the couples' hands and has them embrace."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Idol mio, se questo è vero,\nColla fede e coll'amore\nCompensar saprò il tuo core,\nAdorarti ognor saprò.",
+            "en": "My beloved, if this is true,\nwith fidelity and love\nI shall make amends to your heart\nand adore you always."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Te lo credo, gioia bella,\nMa la prova io far non vo'.",
+            "en": "I believe you, my lovely joy,\nbut I don't wish to put it to the test."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Io non so se veglio o sogno,\nMi confondo, mi vergogno.\nManco mal, se a me l'han fatta,\nChe a molt'altri anch'io la fo.",
+            "en": "I don't know whether I'm awake or dreaming;\nI'm confused and ashamed.\nIt's just as well they played this trick on me,\nfor I've played tricks on many others."
+          },
+          {
+            "speaker": "All",
+            "it": "Fortunato l'uom che prende\nOgni cosa pel buon verso,\nE tra i casi e le vicende\nDa ragion guidar si fa.\nQuel che suole altrui far piangere\nFia per lui cagion di riso,\nE del mondo in mezzo ai turbini\nBella calma proverà.",
+            "en": "Happy is the person who takes\neverything in the proper spirit,\nand through life's events and reversals\nlets reason be the guide.\nWhat makes others weep\nwill give that person cause to smile,\nand amid the storms of the world\na lovely calm will prevail."
+          }
+        ]
+      }
+    ]
   }
 ];
