@@ -500,6 +500,11 @@ export const cosiActOneScenes = [
             "en": "Ah, I can hold back no longer!\nMy whole soul is filled\nwith outrage and fury!"
           },
           {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso dalla porta",
+            "en": "Don Alfonso remains at the doorway."
+          },
+          {
             "speaker": "Despina & Don Alfonso",
             "it": "(fra sé)\nMi dà un poco di sospetto\nQuella rabbia e quel furor!",
             "en": "(Aside)\nThat anger and fury\nmake me a little uneasy!"
@@ -641,8 +646,18 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Fiordiligi",
-            "it": "Temerari, sortite\nFuori di questo loco, e non profani\nL'alito infausto degli infami detti\nNostro cor, nostro orecchio e nostri affetti!\nInvan per voi, per gli altri invan si cerca\nLe nostr'alme sedur: l'intatta fede\nChe per noi già si diede ai cari amanti,\nSaprem loro serbar infino a morte,\nA dispetto del mondo e della sorte!",
-            "en": "You reckless men, get out\nof this place, and let the foul breath\nof your shameful words not defile\nour hearts, our ears, or our affections!\nYou and others may try in vain\nto seduce our souls: the unsullied faith\nwe pledged to our dear lovers\nwe shall keep for them until death,\ndespite the world and all it brings!"
+            "it": "Temerari, sortite",
+            "en": "You reckless men, get out"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Despina esce impaurita",
+            "en": "Despina exits in fright."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Fuori di questo loco, e non profani\\nL'alito infausto degli infami detti\\nNostro cor, nostro orecchio e nostri affetti!\\nInvan per voi, per gli altri invan si cerca\\nLe nostr'alme sedur: l'intatta fede\\nChe per noi già si diede ai cari amanti,\\nSaprem loro serbar infino a morte,\\nA dispetto del mondo e della sorte!",
+            "en": "of this place, and let the foul breath\\nof your shameful words not defile\\nour hearts, our ears, or our affections!\\nYou and others may try in vain\\nto seduce our souls: the unsullied faith\\nwe pledged to our dear lovers\\nwe shall keep for them until death,\\ndespite the world and all it brings!"
           }
         ]
       },
