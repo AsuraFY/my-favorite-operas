@@ -1208,5 +1208,105 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 9,
+    "kind": "Recitativo e cavatina",
+    "cue": "No. 27 — Cavatina",
+    "title": "Tradito, schernito",
+    "cast": "Ferrando, Guglielmo, Don Alfonso",
+    "summary": "Ferrando agonizes over Dorabella's betrayal, yet still loves her. Don Alfonso refuses to concede the wager and orders another test.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando solo; poi Guglielmo e Don Alfonso.",
+            "en": "Ferrando alone; later Guglielmo and Don Alfonso."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "In qual fietro contrasto, in qual disordine\nDi pensieri e di affetti io mi ritrovo?\nTanto insolito e novo è il caso mio,\nChe non altri, non io\nBasto per consigliarmi... Alfonso, Alfonso,\nQuanto rider vorrai\nDella mia stupidezza!\nMa mi vendicherò: saprò dal seno\nCancellar quell'iniqua... cancellarla?\nTroppo, oddio, questo cor per lei mi parla.",
+            "en": "What fierce conflict, what confusion\nof thoughts and feelings I find myself in!\nMy situation is so strange and new\nthat neither anyone else nor I myself\ncan tell me what to do. Alfonso, Alfonso,\nhow you will laugh\nat my foolishness!\nBut I shall avenge myself: I'll erase\nthat wicked woman from my heart... erase her?\nAlas, my heart still speaks too strongly for her."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso arriva con Guglielmo e resta ad ascoltare.",
+            "en": "Don Alfonso arrives with Guglielmo and listens."
+          }
+        ]
+      },
+      {
+        "label": "No. 27 — Cavatina",
+        "turns": [
+          {
+            "speaker": "Ferrando",
+            "it": "Tradito, schernito\nDal perfido cor,\nIo sento che ancora\nQuest'alma l'adora,\nIo sento per essa\nLe voci d'amor.",
+            "en": "Betrayed and mocked\nby a faithless heart,\nI feel that my soul\nstill adores her;\nI still hear within me\nthe voice of love for her."
+          }
+        ]
+      },
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Don Alfonso",
+            "it": "(avvicinandosi a Ferrando)\nBravo, questa è costanza!",
+            "en": "(Approaching Ferrando)\nBravo, that's constancy!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Andate, o barbaro!\nPer voi misero sono.",
+            "en": "Go away, cruel man!\nIt's because of you that I am miserable."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Via, se sarete buono\nVi tornerò l'antica calma. Udite:\n(mostrando Guglielmo)\nFiordiligi a Guglielmo\nSi conserva fedel, e Dorabella\nInfedel a voi fu.",
+            "en": "Come now, be good\nand your former peace will return. Listen:\n(Indicating Guglielmo)\nFiordiligi remains\nfaithful to Guglielmo, but Dorabella\nhas been unfaithful to you."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Per mia vergogna.",
+            "en": "To my shame."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Caro amico, bisogna\nFar delle differenza in ogni cosa.\nTi pare che una sposa\nMancar possa a un Guglielmo? Un picciuol calcolo,\nNon parlo per lodarmi,\nSe facciamo tra noi... Tu vedi, amico,\nChe un poco più di merto...",
+            "en": "My friend, one must\nrecognize differences in everything.\nCould a woman be unfaithful\nto a Guglielmo? A little comparison,\nnot that I mean to praise myself,\nbetween us... you see, my friend,\na little more merit..."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Eh, anch'io lo dico.",
+            "en": "That's what I say too."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Intanto mi darete\nCinquanta zecchinetti.",
+            "en": "Meanwhile, you'll give me\nfifty sequins."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Volentieri.\nPria però di pagar, vo' che facciamo\nQualche altra esperienza.",
+            "en": "Gladly.\nBut before I pay, I want us\nto perform another experiment."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Come!",
+            "en": "What!"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Abbiate pazienza; infin domani\nSiete entrambi miei schiavi, a me voi deste\nParola da soldati\nDi far quel ch'io dirò. Venite, io spero\nMostrarvi ben che folle è quel cervello\nChe sulla frasca ancor vende l'uccello.",
+            "en": "Be patient; until tomorrow\nyou are both at my command; you gave me\nyour word as soldiers\nto do as I say. Come, I hope\nto show you how foolish it is\nto count a bird before it's caught."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Partono.",
+            "en": "They leave."
+          }
+        ]
+      }
+    ]
   }
 ];
