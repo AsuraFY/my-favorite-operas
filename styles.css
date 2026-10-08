@@ -1571,3 +1571,37 @@ button { font: inherit; }
 .opera-reading-page[data-act] .scene-panel__top {
   scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
 }
+
+/* Full libretto index: every act, scene and musical section visible in one column. */
+.opera-outline { max-width: 980px; }
+.opera-outline__heading h1 { margin-bottom: 26px; }
+.opera-outline__acts { display: block; grid-template-columns: none; }
+.opera-outline__act {
+  display: block; margin: 0 0 46px; overflow: visible;
+  border: 0; border-radius: 0; background: transparent;
+}
+.opera-outline__act > h2 {
+  margin: 0 0 20px; padding: 13px 0; border-bottom: 2px solid #d0ae72;
+  color: #173856; font: 600 clamp(27px, 3vw, 34px)/1.25 var(--serif);
+}
+.opera-outline__act > h2 span, .opera-outline__scene > h3 span { margin-inline: 7px; color: #ba9760; }
+.opera-outline__scene { margin: 0 0 25px; padding: 0 0 20px; border-bottom: 1px solid #e2d8c7; }
+.opera-outline__scene > h3 {
+  margin: 0 0 9px; color: #173856;
+  font: 600 clamp(19px, 2.2vw, 23px)/1.35 var(--serif);
+}
+.opera-outline__sections { display: flex; flex-direction: column; gap: 2px; }
+.opera-outline__section.section-nav-link {
+  display: block; min-height: auto; margin: 0; padding: 11px 13px;
+  border-radius: 5px; color: #173856; font: 500 17px/1.4 var(--serif);
+}
+.opera-outline__section:hover, .opera-outline__section:focus-visible { background: #eee7da; }
+.opera-outline__section-title { display: block; }
+.opera-outline__section .libretto-participants { margin-top: 3px; font-size: 14px; }
+@media (max-width: 700px) {
+  .opera-outline { padding-inline: 17px; }
+  .opera-outline__act { margin-bottom: 32px; }
+  .opera-outline__scene { margin-bottom: 17px; padding-bottom: 15px; }
+  .opera-outline__section.section-nav-link { padding: 9px 6px; font-size: 15px; white-space: normal; }
+  .opera-outline__section .libretto-participants { font-size: 12px; }
+}

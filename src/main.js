@@ -292,6 +292,8 @@ function sectionTitles(scene, section, sectionIndex) {
   // Musical sections use the Italian incipit, rather than the scene-wide title.
   if (cosiActTwoScenes.includes(scene) && scene.number === 18)
     return { original: "Fortunato l'uom che prende", translation: "" };
+  if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 0)
+    return { original: scene.title, translation: "" };
   if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 2)
     return { original: "È la fede delle femmine", translation: "A woman’s faith" };
   if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 4)
@@ -372,16 +374,36 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
 }
+function renderCompleteOutlineAct(act) {
+  const group = cosiActCatalog().find(entry => entry.number === act);
+  if (!group) return "";
+  const actName = act === 1 ? "Primo" : act === 2 ? "Secondo" : "Terzo";
+  return '<section class="opera-outline__act" aria-labelledby="outline-act-' + act + '">' +
+    '<h2 id="outline-act-' + act + '">Atto ' + actName + ' <span>·</span> Act ' + romanNumeral(act) + '</h2>' +
+    group.scenes.map(scene => {
+      const sceneId = 'outline-scene-' + act + '-' + scene.number;
+      return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
+        '<h3 id="' + sceneId + '">Scena ' + italianSceneOrdinal(scene.number).toLocaleLowerCase("it-IT") +
+        ' <span>·</span> Scene ' + scene.number + '</h3>' +
+        '<div class="opera-outline__sections">' +
+        scene.sections.map((section, index) => {
+          const title = sectionPresentation(scene, section, index).heading;
+          const href = '#/operas/cosi-fan-tutte?act=' + act +
+            '&scene=' + scene.number + '&item=' + index;
+          return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
+            '<span class="opera-outline__section-title">' + escapeHtml(title) + '</span>' +
+            sectionParticipantCredits(section, act, scene.number) +
+          '</a>';
+        }).join("") +
+        '</div></section>';
+    }).join("") + '</section>';
+}
 function cosiOutlinePage() {
-  return '<div class="opera-reading-page opera-outline-page">'+cosiOperaBar(1,"outline")+
-    '<section class="opera-outline" aria-labelledby="opera-outline-title"><div class="opera-outline__heading">'+
-    '<p class="opera-synopsis__eyebrow">Così fan tutte · Complete libretto</p>'+
-    '<h1 id="opera-outline-title">Libretto Outline</h1>'+
-    '<p>Choose an act, scene, recitative or musical number to read its Italian and English text.</p></div>'+
-    '<div class="opera-outline__acts">'+cosiActCatalog().map(({number})=>
-      '<details class="act-group opera-outline__act" open><summary class="act-heading"><h2>Act '+
-      romanNumeral(number)+'</h2><span aria-hidden="true">⌄</span></summary><div class="opera-outline__scenes">'+
-      renderActSceneLinks(number)+'</div></details>').join('')+
+  return '<div class="opera-reading-page opera-outline-page">' + cosiOperaBar(1, "outline") +
+    '<section class="opera-outline" aria-labelledby="opera-outline-title">' +
+    '<div class="opera-outline__heading"><h1 id="opera-outline-title">Libretto Outline</h1></div>' +
+    '<div class="opera-outline__acts">' +
+    cosiActCatalog().map(({ number }) => renderCompleteOutlineAct(number)).join("") +
     '</div></section></div>';
 }
 
