@@ -1,5 +1,7 @@
 import { cosiActOneScenes } from "./data/libretti.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./data/libretti-act2.js?v=act2-18";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-1";
+const cosiLibretto = getLibretto("cosi-fan-tutte");
 
 function escapeHtml(value = "") {
   return String(value).replace(/[&<>\"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;", "'": "&#39;" })[character]);
@@ -21,25 +23,14 @@ function italianSceneOrdinal(value) {
 
 function sectionTitles(scene, section, sectionIndex) {
   if (!/^No\./i.test(section.label)) return { original: "", translation: "" };
-  // Musical sections use the Italian incipit, rather than the scene-wide title.
-  if (cosiActTwoScenes.includes(scene) && scene.number === 18)
-    return { original: "Fortunato l'uom che prende", translation: "" };
-  if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 0)
-    return { original: scene.title, translation: "" };
-  if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 2)
-    return { original: "È la fede delle femmine", translation: "A woman’s faith" };
-  if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 4)
-    return { original: "Una bella serenata", translation: "A lovely serenade" };
-  if (cosiActOneScenes.includes(scene) && scene.number === 2 && sectionIndex === 0)
-    return { original: scene.title, translation: "Ah, look, sister" };
-  if (cosiActOneScenes.includes(scene) && scene.number === 3 && section.label.startsWith("No. 5"))
-    return { original: scene.title, translation: "I would speak, but have no heart" };
-  const sung = section.turns.find(turn => turn.speaker !== "Stage direction" && turn.it?.trim());
+  const act = cosiLibretto.acts.find(group => group.scenes.includes(scene))?.number;
+  const title = cosiLibretto.sectionTitleOverrides?.[act + ":" + scene.number + ":" + sectionIndex];
+  if (title) return { original: title.original || "", translation: title.translation || "" };
+  const sung = section.turns.find(turn => turn.speaker !== cosiLibretto.stageDirectionSpeaker && turn.it?.trim());
   const firstLine = sung?.it.split(/\r?\n/).map(line => line.trim())
     .find(line => line && !/^\([^)]*\)$/.test(line)) || "";
   return { original: firstLine.replace(/[.,;:!?…]+$/, ""), translation: "" };
 }
-
 function sectionNavigationLabel(section, scene, sectionIndex) {
   const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
   const form = match ? match[2] : (section.label.toLocaleLowerCase() === "recitative" ? "Recitativo" : section.label);
@@ -142,47 +133,27 @@ function cosiOutlinePage() {
 }
 
 function cosiSynopsisPage() {
-  const characters = [
-    ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
-    ["Dorabella", "Mezzo-soprano", "Fiordiligi’s sister, engaged to Ferrando; her feelings shift during the disguised courtship."],
-    ["Ferrando", "Tenor", "A young officer engaged to Dorabella, who joins Alfonso’s wager and disguises himself."],
-    ["Guglielmo", "Baritone", "An officer engaged to Fiordiligi, who joins Ferrando in the test of fidelity."],
-    ["Don Alfonso", "Bass", "An older philosopher who doubts constancy and devises the wager."],
-    ["Despina", "Soprano", "The sisters’ quick-witted maid, enlisted to help carry out Alfonso’s scheme."]
-  ];
+  const synopsis = cosiLibretto.synopsis;
+  const characters = synopsis.characters;
   return '<div class="opera-reading-page">' + cosiOperaBar(1, "synopsis") +
     '<article class="opera-synopsis">' +
-    '<p class="opera-synopsis__eyebrow">W. A. Mozart · Opera buffa in two acts</p>' +
+    '<p class="opera-synopsis__eyebrow">' + escapeHtml(synopsis.eyebrow) + '</p>' +
     '<h1>Synopsis</h1>' +
-    '<p>Two young officers, Ferrando and Guglielmo, are certain their fiancées, Dorabella and Fiordiligi, will always be faithful. Don Alfonso challenges their confidence with a wager: the officers must pretend to leave for war, return in disguise, and attempt to win each other’s beloved.</p>' +
-    '<p>With help from the sisters’ maid Despina, Alfonso engineers increasingly elaborate encounters. The deception tests all four lovers, culminating in a staged wedding and a final revelation that forces them to confront love, loyalty and human inconsistency.</p>' +
+    synopsis.paragraphs.map(paragraph => '<p>' + escapeHtml(paragraph) + '</p>').join("") +
     '<h2>Principal characters</h2><div class="opera-synopsis__characters">' +
-    characters.map(([name, role, description]) => '<div class="opera-synopsis__character"><h3>' + name +
-      '</h3><span>' + role + '</span><p>' + description + '</p></div>').join('') +
+    characters.map(([name, role, description]) => '<div class="opera-synopsis__character"><h3>' + escapeHtml(name) +
+      '</h3><span>' + role + '</span><p>' + escapeHtml(description) + '</p></div>').join('') +
     '</div></article></div>';
 }
-
-
-
 function sectionParticipantCredits(section, act, sceneNumber) {
-  const named = ["Fiordiligi", "Dorabella", "Ferrando", "Guglielmo", "Don Alfonso", "Despina"];
-  const speakers = section.turns.filter(t => t.speaker !== "Stage direction").map(t => t.speaker);
-  const costumes = {
-    "1:11": ["Ferrando", "Guglielmo"], "1:15": ["Ferrando", "Guglielmo"],
-    "1:16": ["Ferrando", "Guglielmo"], "2:4": ["Ferrando", "Guglielmo"],
-    "2:5": ["Guglielmo"], "2:6": ["Ferrando"],
-    "2:12": ["Ferrando"], "2:16": ["Ferrando", "Guglielmo"],
-    "2:17": ["Ferrando", "Guglielmo"]
-  };
-  const names = named.filter(name => speakers.some(s => s.includes(name))).map(name => {
-    if (name === "Despina" && act === 1 && sceneNumber === 16) return name + " (disguised as a doctor)";
-    if (name === "Despina" && act === 2 && sceneNumber === 17) return name + " (disguised as a notary)";
-    if ((costumes[act + ":" + sceneNumber] || []).includes(name)) return name + " (disguised as an Albanian suitor)";
-    return name;
-  });
-  if (speakers.includes("Soldiers & townspeople")) names.push("Soldiers & townspeople");
-  if (speakers.includes("Chorus of Servants & Musicians")) names.push("Servants & musicians (chorus)");
-  else if (speakers.includes("Chorus")) names.push("Chorus");
+  const speakers = section.turns.filter(t => t.speaker !== cosiLibretto.stageDirectionSpeaker).map(t => t.speaker);
+  const notes = cosiLibretto.disguises?.[act + ":" + sceneNumber] || {};
+  const names = cosiLibretto.characters.filter(name => speakers.some(s => s.includes(name))).map(name =>
+    name + (notes[name] ? " (" + notes[name] + ")" : ""));
+  const groups = cosiLibretto.ensembleLabels || {};
+  if (speakers.includes("Soldiers & townspeople")) names.push(groups["Soldiers & townspeople"]);
+  if (speakers.includes("Chorus of Servants & Musicians")) names.push(groups["Chorus of Servants & Musicians"]);
+  else if (speakers.includes("Chorus")) names.push(groups.Chorus);
   if (!names.length) return "";
   const icon = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">' +
     '<circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2"/>' +
@@ -190,7 +161,6 @@ function sectionParticipantCredits(section, act, sceneNumber) {
   return '<div class="libretto-participants" aria-label="Singers and speakers in this section">' +
     icon + '<span>' + escapeHtml(names.join(", ")) + '</span></div>';
 }
-
 function renderCosiSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
   const rows = section.turns.map(turn => {
