@@ -1,8 +1,7 @@
-import { cosiActOneScenes } from "./data/libretti.js?v=cosi-libretto-2";
-import { cosiActTwoScenes } from "./data/libretti-act2.js?v=act2-18";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-1";
-const cosiLibretto = getLibretto("cosi-fan-tutte");
 
+
+function createLibrettoRenderer(libretto) {
 function escapeHtml(value = "") {
   return String(value).replace(/[&<>\"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;", "'": "&#39;" })[character]);
 }
@@ -23,10 +22,10 @@ function italianSceneOrdinal(value) {
 
 function sectionTitles(scene, section, sectionIndex) {
   if (!/^No\./i.test(section.label)) return { original: "", translation: "" };
-  const act = cosiLibretto.acts.find(group => group.scenes.includes(scene))?.number;
-  const title = cosiLibretto.sectionTitleOverrides?.[act + ":" + scene.number + ":" + sectionIndex];
+  const act = libretto.acts.find(group => group.scenes.includes(scene))?.number;
+  const title = libretto.sectionTitleOverrides?.[act + ":" + scene.number + ":" + sectionIndex];
   if (title) return { original: title.original || "", translation: title.translation || "" };
-  const sung = section.turns.find(turn => turn.speaker !== cosiLibretto.stageDirectionSpeaker && turn.it?.trim());
+  const sung = section.turns.find(turn => turn.speaker !== libretto.stageDirectionSpeaker && turn.it?.trim());
   const firstLine = sung?.it.split(/\r?\n/).map(line => line.trim())
     .find(line => line && !/^\([^)]*\)$/.test(line)) || "";
   return { original: firstLine.replace(/[.,;:!?…]+$/, ""), translation: "" };
@@ -52,7 +51,7 @@ function sectionPresentation(scene, section, sectionIndex) {
 
 
 function cosiActCatalog() {
-  return [[1,cosiActOneScenes],[2,cosiActTwoScenes]].filter(([,s])=>s.length).map(([number,scenes])=>({number,scenes}));
+  return (libretto.acts || []).filter(group => group.scenes?.length);
 }
 function cosiOperaBar(act = 1, page = "libretto") {
   const base = "#/operas/cosi-fan-tutte";
@@ -133,7 +132,7 @@ function cosiOutlinePage() {
 }
 
 function cosiSynopsisPage() {
-  const synopsis = cosiLibretto.synopsis;
+  const synopsis = libretto.synopsis;
   const characters = synopsis.characters;
   return '<div class="opera-reading-page">' + cosiOperaBar(1, "synopsis") +
     '<article class="opera-synopsis">' +
@@ -146,11 +145,11 @@ function cosiSynopsisPage() {
     '</div></article></div>';
 }
 function sectionParticipantCredits(section, act, sceneNumber) {
-  const speakers = section.turns.filter(t => t.speaker !== cosiLibretto.stageDirectionSpeaker).map(t => t.speaker);
-  const notes = cosiLibretto.disguises?.[act + ":" + sceneNumber] || {};
-  const names = cosiLibretto.characters.filter(name => speakers.some(s => s.includes(name))).map(name =>
+  const speakers = section.turns.filter(t => t.speaker !== libretto.stageDirectionSpeaker).map(t => t.speaker);
+  const notes = libretto.disguises?.[act + ":" + sceneNumber] || {};
+  const names = libretto.characters.filter(name => speakers.some(s => s.includes(name))).map(name =>
     name + (notes[name] ? " (" + notes[name] + ")" : ""));
-  const groups = cosiLibretto.ensembleLabels || {};
+  const groups = libretto.ensembleLabels || {};
   if (speakers.includes("Soldiers & townspeople")) names.push(groups["Soldiers & townspeople"]);
   if (speakers.includes("Chorus of Servants & Musicians")) names.push(groups["Chorus of Servants & Musicians"]);
   else if (speakers.includes("Chorus")) names.push(groups.Chorus);
@@ -248,4 +247,9 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   '</div>';
 }
 
-export { cosiOperaPage, cosiOutlinePage, cosiSynopsisPage };
+return { scene: cosiOperaPage, outline: cosiOutlinePage, synopsis: cosiSynopsisPage };
+}
+
+const cosiReader = createLibrettoRenderer(getLibretto("cosi-fan-tutte"));
+const { scene: cosiOperaPage, outline: cosiOutlinePage, synopsis: cosiSynopsisPage } = cosiReader;
+export { createLibrettoRenderer, cosiOperaPage, cosiOutlinePage, cosiSynopsisPage };
