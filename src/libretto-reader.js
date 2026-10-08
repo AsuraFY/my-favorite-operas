@@ -21,35 +21,40 @@ function italianSceneOrdinal(value) {
 }
 
 function sectionTitles(scene, section, sectionIndex) {
-  if (!/^No\./i.test(section.label)) return { original: "", translation: "" };
   const act = libretto.acts.find(group => group.scenes.includes(scene))?.number;
   const title = libretto.sectionTitleOverrides?.[act + ":" + scene.number + ":" + sectionIndex];
-  if (title) return { original: title.original || "", translation: title.translation || "" };
-  const sung = section.turns.find(turn => turn.speaker !== libretto.stageDirectionSpeaker && turn.it?.trim());
-  const firstLine = sung?.it.split(/\r?\n/).map(line => line.trim())
+  const numbered = section.number != null || /^No\./i.test(section.label || "");
+  if (!numbered) return { original: "", translation: "" };
+  if (section.originalTitle || section.title || title) return {
+    original: section.originalTitle || section.title || title?.original || "",
+    translation: section.translatedTitle || title?.translation || ""
+  };
+  const sung = section.turns.find(turn => turn.speaker !== (libretto.stageDirectionSpeaker || "Stage direction") &&
+    (turn.original ?? turn.it)?.trim());
+  const firstLine = (sung?.original ?? sung?.it ?? "").split(/\r?\n/).map(line => line.trim())
     .find(line => line && !/^\([^)]*\)$/.test(line)) || "";
   return { original: firstLine.replace(/[.,;:!?…]+$/, ""), translation: "" };
 }
 function sectionNavigationLabel(section, scene, sectionIndex) {
-  const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  const form = match ? match[2] : (section.label.toLocaleLowerCase() === "recitative" ? "Recitativo" : section.label);
-  if (!match) return form;
+  const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
+  const no = section.number ?? (match ? Number(match[1]) : null);
+  const form = section.type || (match ? match[2] :
+    ((section.label || "").toLocaleLowerCase() === "recitative" ? (libretto.recitativeLabel || "Recitative") : section.label));
+  if (no == null) return form;
   const title = scene ? sectionTitles(scene, section, sectionIndex).original : "";
-  return "N. " + match[1] + " · " + form + (title ? " · " + title : "");
+  return (libretto.numberLabel || "N.") + " " + no + " · " + form + (title ? " · " + title : "");
 }
-
 function sectionPresentation(scene, section, sectionIndex) {
-  const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  const form = match ? match[2] : "Recitativo";
+  const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
+  const no = section.number ?? (match ? Number(match[1]) : null);
+  const form = section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
   const titles = sectionTitles(scene, section, sectionIndex);
-  const number = match ? "N. " + match[1] + " · " : "";
+  const number = no == null ? "" : (libretto.numberLabel || "N.") + " " + no + " · ";
   const heading = number + form + (titles.original ? " · " + titles.original : "");
-  const translatedForm = ({ Terzetto: "Trio", Duetto: "Duet", Aria: "Aria" })[form] || "";
+  const translatedForm = libretto.translatedForms?.[form] || "";
   const subtitle = [translatedForm, titles.translation].filter(Boolean).join(" · ");
-  return { heading, subtitle, form, number: match ? Number(match[1]) : null };
+  return { heading, subtitle, form, number: no };
 }
-
-
 function cosiActCatalog() {
   return (libretto.acts || []).filter(group => group.scenes?.length);
 }
@@ -145,14 +150,18 @@ function cosiSynopsisPage() {
     '</div></article></div>';
 }
 function sectionParticipantCredits(section, act, sceneNumber) {
-  const speakers = section.turns.filter(t => t.speaker !== libretto.stageDirectionSpeaker).map(t => t.speaker);
+  const speakers = section.turns.filter(t => t.speaker !== (libretto.stageDirectionSpeaker || "Stage direction")).map(t => t.speaker);
   const notes = libretto.disguises?.[act + ":" + sceneNumber] || {};
-  const names = libretto.characters.filter(name => speakers.some(s => s.includes(name))).map(name =>
-    name + (notes[name] ? " (" + notes[name] + ")" : ""));
+  const participants = section.participants || (libretto.characters || []).filter(name => speakers.some(s => s.includes(name)));
+  const names = participants.map(person => {
+    const name = typeof person === "string" ? person : person.name;
+    const note = typeof person === "string" ? notes[name] : (person.note || notes[name]);
+    return name + (note ? " (" + note + ")" : "");
+  });
   const groups = libretto.ensembleLabels || {};
-  if (speakers.includes("Soldiers & townspeople")) names.push(groups["Soldiers & townspeople"]);
-  if (speakers.includes("Chorus of Servants & Musicians")) names.push(groups["Chorus of Servants & Musicians"]);
-  else if (speakers.includes("Chorus")) names.push(groups.Chorus);
+  for (const [source, label] of Object.entries(groups)) {
+    if (speakers.includes(source) && !(source === "Chorus" && speakers.includes("Chorus of Servants & Musicians"))) names.push(label);
+  }
   if (!names.length) return "";
   const icon = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">' +
     '<circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2"/>' +
@@ -165,22 +174,21 @@ function renderCosiSceneSection(scene, section, sectionIndex, act) {
   const rows = section.turns.map(turn => {
     const className = speakerClass(turn.speaker);
     const speaker = '<span class="libretto-speaker libretto-speaker--' + className + '">' + escapeHtml(turn.speaker) + '</span>';
-    const type = className === 'stage-direction' ? ' libretto-row--stage-direction' : '';
+    const type = turn.speaker === (libretto.stageDirectionSpeaker || "Stage direction") ? ' libretto-row--stage-direction' : '';
     return '<div class="libretto-row' + type + '"><div class="libretto-cell libretto-cell--italian">' +
-      speaker + '<p>' + escapeHtml(turn.it) + '</p></div><div class="libretto-cell libretto-cell--english">' +
-      speaker + '<p>' + escapeHtml(turn.en) + '</p></div></div>';
+      speaker + '<p>' + escapeHtml(turn.original ?? turn.it ?? "") + '</p></div><div class="libretto-cell libretto-cell--english">' +
+      speaker + '<p>' + escapeHtml(turn.translation ?? turn.en ?? "") + '</p></div></div>';
   }).join('');
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
     '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '">' +
     '<div class="selected-section-heading"><h2>' + escapeHtml(heading.heading) + '</h2>' +
     sectionParticipantCredits(section, act, scene.number) + '</div>' +
-    '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div>' +
-    '<div class="libretto-column-heading">English</div><div class="libretto-text">' +
+    '<div class="libretto-columns"><div class="libretto-column-heading">' + escapeHtml(libretto.originalLanguage) + '</div>' +
+    '<div class="libretto-column-heading">' + escapeHtml(libretto.translationLanguage) + '</div><div class="libretto-text">' +
     '<section class="libretto-section"><div class="libretto-section__label">' +
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>' +
     rows + '</section></div></div></section>';
 }
-
 function conciseSceneSummary(scene) {
   const text = (scene.summary || "").trim();
   const sentences = (text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || []).map(s => s.trim());
