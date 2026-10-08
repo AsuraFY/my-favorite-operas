@@ -1,5 +1,6 @@
-import { operas, getOpera } from "./data/operas.js";
-import { cosiActOneScenes } from "./data/libretti.js?v=cosi-libretto-2";
+import { operas, getOpera } from "./data/operas.js?v=opera-search-1";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-6";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-4";
 
 const app = document.querySelector("#app");
 
@@ -16,8 +17,8 @@ const arrow = `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-
 
 function header(active) {
   return `<header class="site-header">
-    <a class="brand" href="#/" aria-label="My favorite Operas home">
-      <span class="brand__name">My favorite Operas</span>
+    <a class="brand" href="#/" aria-label="My Favorite Operas home">
+      <span class="brand__name">My Favorite Operas</span>
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation">
@@ -33,8 +34,221 @@ function footer() {
   return `<footer class="site-footer"><span>@AsuraFY</span><span>My favorite Operas</span></footer>`;
 }
 
+
+let outlinePreviousFocus = null;
+
+function closeActOutline(restoreFocus = true) {
+  const drawer = app.querySelector("[data-act-outline]");
+  const trigger = app.querySelector("[data-outline-open]");
+  const backdrop = app.querySelector("[data-outline-backdrop]");
+  if (!drawer) {
+    document.body.classList.remove("act-outline-open");
+    return;
+  }
+  const wasOpen = drawer.classList.contains("is-open");
+  drawer.classList.remove("is-open");
+  drawer.removeAttribute("role");
+  drawer.removeAttribute("aria-modal");
+  drawer.inert = window.matchMedia("(max-width: 700px)").matches;
+  if (drawer.inert) drawer.setAttribute("aria-hidden", "true");
+  else drawer.removeAttribute("aria-hidden");
+  if (backdrop) backdrop.hidden = true;
+  trigger?.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("act-outline-open");
+  if (wasOpen && restoreFocus && outlinePreviousFocus?.isConnected) outlinePreviousFocus.focus();
+  outlinePreviousFocus = null;
+}
+
+function setupActOutline() {
+  const trigger = app.querySelector("[data-outline-open]");
+  const drawer = app.querySelector("[data-act-outline]");
+  const close = app.querySelector("[data-outline-close]");
+  const backdrop = app.querySelector("[data-outline-backdrop]");
+  if (!drawer || !trigger || !backdrop) return;
+  const isMobile = window.matchMedia("(max-width: 700px)").matches;
+  drawer.inert = isMobile;
+  if (isMobile) drawer.setAttribute("aria-hidden", "true");
+
+  trigger.addEventListener("click", () => {
+    if (!window.matchMedia("(max-width: 700px)").matches) {
+      drawer.querySelector(".act-heading")?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+      });
+      return;
+    }
+    outlinePreviousFocus = document.activeElement;
+    drawer.inert = false;
+    drawer.removeAttribute("aria-hidden");
+    drawer.classList.add("is-open");
+    drawer.setAttribute("role", "dialog");
+    drawer.setAttribute("aria-modal", "true");
+    trigger.setAttribute("aria-expanded", "true");
+    backdrop.hidden = false;
+    document.body.classList.add("act-outline-open");
+    close?.focus();
+    // Bring the currently read aria or recitative into view within the drawer.
+    const selected = drawer.querySelector(".section-nav-link.is-current");
+    if (selected) {
+      const targetBounds = selected.getBoundingClientRect();
+      const drawerBounds = drawer.getBoundingClientRect();
+      drawer.scrollTop += targetBounds.top - drawerBounds.top - 100;
+    }
+  });
+  close?.addEventListener("click", () => closeActOutline());
+  backdrop.addEventListener("click", () => closeActOutline());
+  drawer.addEventListener("click", (event) => {
+    if (event.target.closest(".section-nav-link")) closeActOutline(false);
+  });
+}
+
+function onOutlineKeydown(event) {
+  const drawer = app.querySelector("[data-act-outline]");
+  if (!drawer?.classList.contains("is-open")) return;
+  if (event.key === "Escape") {
+    event.preventDefault();
+    closeActOutline();
+    return;
+  }
+  if (event.key !== "Tab") return;
+  const focusable = [...drawer.querySelectorAll('button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])')]
+    .filter(element => !element.closest("details:not([open])"));
+  if (!focusable.length) {
+    event.preventDefault();
+    drawer.focus();
+    return;
+  }
+  const first = focusable[0], last = focusable[focusable.length - 1];
+  if (event.shiftKey && (document.activeElement === first || document.activeElement === drawer)) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  } else if (!drawer.contains(document.activeElement)) {
+    event.preventDefault();
+    first.focus();
+  }
+}
+
+// Desktop Act Outline preference is intentionally kept in memory for this visit only.
+let desktopOutlineCollapsed = false;
+
+function syncDesktopOutline() {
+  const root = currentSceneReader();
+  if (!root) return;
+  const layout = root.querySelector(".reading-layout");
+  const sidebar = root.querySelector("[data-act-outline]");
+  const collapse = root.querySelector("[data-desktop-outline-collapse]");
+  const expand = root.querySelector("[data-desktop-outline-expand]");
+  if (!layout || !sidebar || !collapse || !expand) return;
+
+  const mobile = window.matchMedia("(max-width: 700px)").matches;
+  const collapsed = !mobile && desktopOutlineCollapsed;
+  layout.classList.toggle("is-outline-collapsed", collapsed);
+  collapse.hidden = mobile || collapsed;
+  expand.closest(".desktop-outline-reopen").hidden = mobile || !collapsed;
+  collapse.setAttribute("aria-expanded", String(!collapsed));
+  expand.setAttribute("aria-expanded", String(!collapsed));
+
+  if (mobile) {
+    // Keep the separate mobile drawer inaccessible while closed after resizing.
+    const drawerOpen = sidebar.classList.contains("is-open");
+    sidebar.inert = !drawerOpen;
+    if (drawerOpen) sidebar.removeAttribute("aria-hidden");
+    else sidebar.setAttribute("aria-hidden", "true");
+  } else {
+    sidebar.inert = collapsed;
+    if (collapsed) sidebar.setAttribute("aria-hidden", "true");
+    else sidebar.removeAttribute("aria-hidden");
+  }
+}
+
+function setupDesktopOutline() {
+  const root = currentSceneReader();
+  if (!root) return;
+  syncDesktopOutline();
+  const collapse = root.querySelector("[data-desktop-outline-collapse]");
+  const expand = root.querySelector("[data-desktop-outline-expand]");
+  collapse?.addEventListener("click", () => setDesktopOutlineCollapsed(true));
+  expand?.addEventListener("click", () => setDesktopOutlineCollapsed(false));
+}
+
+function setDesktopOutlineCollapsed(collapsed) {
+  const root = currentSceneReader();
+  if (!root || window.matchMedia("(max-width: 700px)").matches) return;
+  if (desktopOutlineCollapsed === collapsed) return;
+
+  // Anchor a visible dialogue row even if widening the columns reflows the text.
+  const siteHeight = app.querySelector(".site-header")?.getBoundingClientRect().height || 0;
+  const operaHeight = root.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0;
+  const readingTop = siteHeight + operaHeight + 12;
+  const markers = [root.querySelector(".scene-panel__top"),
+    ...root.querySelectorAll(".libretto-row"),
+    root.querySelector(".scene-bottom-nav")].filter(Boolean);
+  const anchor = markers.find(node => node.getBoundingClientRect().bottom > readingTop) ||
+    markers[markers.length - 1];
+  const anchorY = anchor?.getBoundingClientRect().top;
+
+  readerJumping = true;
+  desktopOutlineCollapsed = collapsed;
+  syncDesktopOutline();
+  const focusTarget = root.querySelector(collapsed ? "[data-desktop-outline-expand]" : "[data-desktop-outline-collapse]");
+  focusTarget?.focus({ preventScroll: true });
+
+  window.requestAnimationFrame(() => {
+    if (root.isConnected && anchor?.isConnected && Number.isFinite(anchorY)) {
+      const change = anchor.getBoundingClientRect().top - anchorY;
+      if (Math.abs(change) > 1) window.scrollBy(0, change);
+    }
+    window.requestAnimationFrame(() => {
+      readerJumping = false;
+      scheduleReaderSectionUpdate();
+    });
+  });
+}
+
+let stickyBarObserver = null;
+
+function measureStickyNavigation() {
+  const header = app.querySelector(".site-header");
+  const operaBar = app.querySelector(".opera-subnav");
+  const mobileToolbar = app.querySelector(".mobile-reader-toolbar");
+  document.documentElement.style.setProperty("--sticky-site-height", (header?.getBoundingClientRect().height || 0) + "px");
+  document.documentElement.style.setProperty("--sticky-opera-height", (operaBar?.getBoundingClientRect().height || 0) + "px");
+  document.documentElement.style.setProperty("--sticky-reader-height", (mobileToolbar?.getBoundingClientRect().height || 0) + "px");
+}
+
+function setupStickyNavigation() {
+  stickyBarObserver?.disconnect();
+  stickyBarObserver = null;
+  measureStickyNavigation();
+  if (typeof ResizeObserver === "function") {
+    stickyBarObserver = new ResizeObserver(measureStickyNavigation);
+    const header = app.querySelector(".site-header");
+    const operaBar = app.querySelector(".opera-subnav");
+    const toolbar = app.querySelector(".mobile-reader-toolbar");
+    if (header) stickyBarObserver.observe(header);
+    if (operaBar) stickyBarObserver.observe(operaBar);
+    if (toolbar) stickyBarObserver.observe(toolbar);
+  }
+}
+
 function shell(content, active) {
+  closeActOutline(false);
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
+  setupStickyNavigation();
+  setupActOutline();
+  setupDesktopOutline();
+  app.querySelector("[data-reader-top]")?.addEventListener("click", () => {
+    const panel = app.querySelector(".scene-panel");
+    if (!panel) return;
+    const toolbar = app.querySelector(".mobile-reader-toolbar");
+    const target = toolbar && getComputedStyle(toolbar).display !== "none" ? toolbar : panel;
+    target.scrollIntoView({
+      block: "start",
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+    });
+  });
   const toggle = app.querySelector(".menu-toggle");
   const nav = app.querySelector(".main-nav");
   toggle?.addEventListener("click", () => {
@@ -58,7 +272,9 @@ function shell(content, active) {
   app.querySelector("[data-libretto-search]")?.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = event.currentTarget.querySelector("input")?.value.trim() || "";
-    window.location.hash = query ? `#/operas/cosi-fan-tutte?q=${encodeURIComponent(query)}` : "#/operas/cosi-fan-tutte";
+    const slug = app.querySelector("[data-libretto-slug]")?.dataset.librettoSlug;
+    if (!slug) return;
+    window.location.hash = query ? `#/operas/${slug}?q=${encodeURIComponent(query)}` : `#/operas/${slug}`;
   });
 }
 
@@ -81,9 +297,9 @@ function homePage() {
           <h1>My favorite Operas</h1>
           <p>Libretti, translations and notes<br />for the operas I love.</p>
           <form class="opera-search opera-search--hero" data-search-form role="search">
-            <label class="sr-only" for="hero-search">Search an opera</label>
+            <label class="sr-only" for="hero-search">Search opera title, composer or librettist</label>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
-            <input id="hero-search" name="q" type="search" placeholder="Search an opera..." autocomplete="off" />
+            <input id="hero-search" name="q" type="search" placeholder="Search title, composer or librettist..." autocomplete="off" />
           </form>
         </div>
       </div>
@@ -97,22 +313,40 @@ function homePage() {
     <div class="home-spacer" aria-hidden="true"></div>`;
 }
 
+// Shared opera-catalog matching: ignore diacritics, capitalization and common punctuation.
+function normalizeOperaSearch(value = "") {
+  return String(value).normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    .toLocaleLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function filterOperasByQuery(query = "") {
+  const term = normalizeOperaSearch(query);
+  if (!term) return [...operas];
+  return operas.filter(opera => [
+    opera.title, opera.displayTitle, opera.composer, opera.librettist,
+    opera.genre, ...(opera.aliases || [])
+  ].some(value => normalizeOperaSearch(value).includes(term)));
+}
+
 function directoryPage(query = "") {
-  const normalizedQuery = query.trim().toLocaleLowerCase();
-  const matches = operas.filter((opera) => `${opera.title} ${opera.composer} ${opera.displayTitle} ${opera.genre}`.toLocaleLowerCase().includes(normalizedQuery));
+  const matches = filterOperasByQuery(query);
   const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
   return `<section class="page-intro section-wrap">
     <p class="eyebrow"><span class="eyebrow-rule"></span> The collection</p>
     <div class="page-intro__row"><h1>Operas to<br /><em>return to.</em></h1><p>Every opera is a world of its own. Explore the stories, meet the composers, and find a place to begin listening.</p></div>
-    <div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search an opera</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search an opera..." value="${safeQuery}" autocomplete="off" /></form><div class="directory-meta"><span>${String(matches.length).padStart(2, "0")} ${matches.length === 1 ? "work" : "works"}</span><span>Curated, not ranked</span></div></div>
+    <div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search opera title, composer or librettist</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search title, composer or librettist..." value="${safeQuery}" autocomplete="off" /></form><div class="directory-meta"><span>${String(matches.length).padStart(2, "0")} ${matches.length === 1 ? "work" : "works"}</span><span>Curated, not ranked</span></div></div>
   </section>
-  <section class="directory-grid section-wrap" aria-label="Opera directory">${matches.map(operaCard).join("") || `<p class="empty-results">No operas match “${safeQuery}”. Try another title or composer.</p>`}</section>
+  <section class="directory-grid section-wrap" aria-label="Opera directory">${matches.map(operaCard).join("") || `<p class="empty-results">No operas match “${safeQuery}”. Try another title, composer or librettist.</p>`}</section>
   <section class="directory-note section-wrap"><span class="directory-note__mark">✳</span><p>This collection is just beginning.<br /><b>There is always room for one more.</b></p></section>`;
 }
 
 function operaDirectoryPage(query = "", sort = "title") {
-  const normalizedQuery = query.trim().toLocaleLowerCase();
-  const matches = operas.filter((opera) => `${opera.title} ${opera.composer} ${opera.displayTitle} ${opera.genre}`.toLocaleLowerCase().includes(normalizedQuery));
+  const matches = filterOperasByQuery(query);
   matches.sort((a, b) => {
     if (sort === "composer") return a.composer.localeCompare(b.composer);
     if (sort === "year") return Number(b.premiered.match(/\d{4}/)?.[0]) - Number(a.premiered.match(/\d{4}/)?.[0]);
@@ -126,49 +360,21 @@ function operaDirectoryPage(query = "", sort = "title") {
     const year = opera.premiered.match(/\d{4}/)?.[0] || "";
     return `<a class="directory-card" href="#/operas/${opera.slug}" style="--card-index:${index}"><div class="directory-card__image directory-card__image--${images[opera.slug]}" role="img" aria-label="Illustration inspired by ${opera.title}"></div><div class="directory-card__body"><h2>${opera.title}</h2><p class="directory-card__byline">${opera.composer}<span aria-hidden="true">·</span>${year}</p><p class="directory-card__summary">${teasers[opera.slug] || opera.summary}</p><span class="directory-card__button">View opera ${arrow}</span></div></a>`;
   }).join("");
-  return `<section class="directory-scenic" aria-hidden="true"></section><section class="directory-intro section-wrap"><div class="directory-intro__panel"><h1>Operas</h1><p>A collection of the operas I’m exploring, with libretti and English translations.</p></div><div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search an opera</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search an opera..." value="${safeQuery}" autocomplete="off" /></form><label class="directory-sort"><span>Sort by</span><select id="directory-sort" aria-label="Sort operas"><option value="title" ${sort === "title" ? "selected" : ""}>Title (A–Z)</option><option value="composer" ${sort === "composer" ? "selected" : ""}>Composer</option><option value="year" ${sort === "year" ? "selected" : ""}>Year (newest)</option></select></label></div></section><section class="directory-grid section-wrap" aria-label="Opera directory">${cards || `<p class="empty-results">No operas match “${safeQuery}”. Try another title or composer.</p>`}</section>`;
+  return `<section class="directory-scenic" aria-hidden="true"></section><section class="directory-intro section-wrap"><div class="directory-intro__panel"><h1>Operas</h1><p>A collection of the operas I’m exploring, with libretti and English translations.</p></div><div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search opera title, composer or librettist</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search title, composer or librettist..." value="${safeQuery}" autocomplete="off" /></form><label class="directory-sort"><span>Sort by</span><select id="directory-sort" aria-label="Sort operas"><option value="title" ${sort === "title" ? "selected" : ""}>Title (A–Z)</option><option value="composer" ${sort === "composer" ? "selected" : ""}>Composer</option><option value="year" ${sort === "year" ? "selected" : ""}>Year (newest)</option></select></label></div></section><section class="directory-grid section-wrap" aria-label="Opera directory">${cards || `<p class="empty-results">No operas match “${safeQuery}”. Try another title, composer or librettist.</p>`}</section>`;
 }
 
 function aboutPage() {
   return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> About</p><h1>A personal collection<br /><em>of opera.</em></h1><p>This is a place for the operas I love: their libretti, translations, characters, and the details that make each one worth returning to.</p><a class="text-link" href="#/operas">Explore the collection ${arrow}</a></section>`;
 }
 
-function escapeHtml(value = "") {
-  return String(value).replace(/[&<>\"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '\"': "&quot;", "'": "&#39;" })[character]);
-}
-
-function speakerClass(speaker) {
-  return speaker.toLocaleLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-}
-
-function cosiOperaPage(selectedNumber = 1, query = "") {
-  const scenes = cosiActOneScenes;
-  const searchTerm = query.trim().toLocaleLowerCase();
-  const foundScene = searchTerm ? scenes.find((scene) => scene.sections.some((section) => section.turns.some((turn) => `${turn.speaker} ${turn.it} ${turn.en}`.toLocaleLowerCase().includes(searchTerm)))) : null;
-  const scene = scenes.find((item) => item.number === (foundScene?.number || selectedNumber)) || scenes[0];
-  const safeQuery = escapeHtml(query);
-  const sceneRows = scene.sections.map((section) => `<div class="libretto-section"><p class="libretto-section__label">${escapeHtml(section.label)}</p>${section.turns.map((turn) => `<div class="libretto-row"><div class="libretto-cell libretto-cell--italian"><span class="libretto-speaker libretto-speaker--${speakerClass(turn.speaker)}">${escapeHtml(turn.speaker)}</span><p>${escapeHtml(turn.it)}</p></div><div class="libretto-cell libretto-cell--english"><span class="libretto-speaker libretto-speaker--${speakerClass(turn.speaker)}">${escapeHtml(turn.speaker)}</span><p>${escapeHtml(turn.en)}</p></div></div>`).join("")}</div>`).join("");
-  const sceneLinks = scenes.map((item) => `<a class="scene-link ${item.number === scene.number ? "is-current" : ""}" href="#/operas/cosi-fan-tutte?scene=${item.number}" ${item.number === scene.number ? 'aria-current="page"' : ""}><span class="scene-link__number">${item.number}</span><span class="scene-link__text"><b>${escapeHtml(item.kind)}</b><span>${escapeHtml(item.title)}</span></span></a>`).join("");
-  const previous = scene.number > 1 ? `<a class="scene-step" href="#/operas/cosi-fan-tutte?scene=${scene.number - 1}">‹ <span>Previous</span></a>` : `<span class="scene-step is-disabled" aria-disabled="true">‹ <span>Previous</span></span>`;
-  const next = scene.number < scenes.length ? `<a class="scene-step" href="#/operas/cosi-fan-tutte?scene=${scene.number + 1}"><span>Next</span> ›</a>` : `<span class="scene-step is-disabled" aria-disabled="true"><span>Next</span> ›</span>`;
-  return `<div class="opera-reading-page">
-    <section class="reading-identity">
-      <div class="reading-identity__image" role="img" aria-label="Lake Como landscape"></div>
-      <div class="reading-identity__content"><div class="reading-identity__title"><h1>Così fan tutte</h1><p>Wolfgang Amadeus Mozart <span>·</span> 1790</p><p>Opera buffa in two acts <span>·</span> Libretto by Lorenzo Da Ponte</p></div><nav class="opera-tabs" aria-label="Opera sections"><a href="#/operas/cosi-fan-tutte" title="Overview coming later">Overview</a><a class="is-active" href="#/operas/cosi-fan-tutte?scene=1" aria-current="page">Act I</a><span aria-disabled="true" title="Coming later">Act II</span><span aria-disabled="true" title="Coming later">Characters</span><span aria-disabled="true" title="Coming later">Synopsis</span></nav></div>
-    </section>
-    <div class="reading-layout">
-      <aside class="scene-sidebar" aria-label="Libretto navigation"><div class="act-heading"><h2>Act I</h2><span aria-hidden="true">⌃</span></div><nav aria-label="Scenes in Act I">${sceneLinks}</nav><p class="scene-sidebar__note">Scenes 4–11 are being prepared.</p><div class="act-heading act-heading--later"><h2>Act II</h2><span aria-hidden="true">›</span></div><p class="scene-sidebar__note">Translation coming later.</p></aside>
-      <div class="reading-main"><section class="scene-panel"><div class="scene-panel__top"><div><p class="scene-kicker">Act I</p><p class="scene-number">${escapeHtml(scene.cue)}</p><h2>${escapeHtml(scene.title)}</h2><p class="scene-cast">${escapeHtml(scene.cast)}</p><p class="scene-summary">${escapeHtml(scene.summary)}</p></div><div class="scene-pager">${previous}${next}</div></div>
-        ${searchTerm ? `<p class="libretto-search-result" role="status">${foundScene ? `Showing the first scene containing “${safeQuery}”.` : `No line in the first three scenes contains “${safeQuery}”. Showing Scene ${scene.number}.`}</p>` : ""}
-        <div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text">${sceneRows}<p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>
-        <div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>
-      </section></div>
-    </div>
-  </div>`;
-}
-
-function operaPage(opera, selectedScene = 1, query = "") {
-  if (opera.slug === "cosi-fan-tutte") return cosiOperaPage(selectedScene, query);
+function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
+  const libretto = getLibretto(opera.slug);
+  if (libretto) {
+    const renderer = createLibrettoRenderer(libretto);
+    return selectedView === "synopsis" ? renderer.synopsis()
+      : selectedView === "outline" ? renderer.outline()
+      : renderer.scene(selectedScene, query, selectedItem, mobileContents);
+  }
   return `<div class="opera-detail">
     <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>
     <section class="detail-hero section-wrap">
@@ -183,6 +389,134 @@ function operaPage(opera, selectedScene = 1, query = "") {
     <section class="libretto-placeholder section-wrap"><div><p class="eyebrow">Coming in a later chapter</p><h2>The libretto, line by line.</h2><p>The libretto and side-by-side translation will live here. For now, this page is a place to meet the opera.</p></div><span class="placeholder-mark" aria-hidden="true">Aa<br /><i>↔</i><br />Aa</span></section>
     <section class="more-operas section-wrap"><div class="section-heading"><div><p class="eyebrow">Keep wandering</p><h2>Another world awaits.</h2></div><a class="text-link text-link--large" href="#/operas">All operas ${arrow}</a></div><div class="opera-grid opera-grid--compact">${operas.filter((item) => item.slug !== opera.slug).slice(0, 3).map(operaCard).join("")}</div></section>
   </div>`;
+}
+
+
+let readerJumping = false;
+let readerScrollTick = false;
+
+function currentSceneReader() {
+  return app.querySelector(".opera-reading-page[data-act][data-scene]");
+}
+
+function highlightReaderSection(index, syncUrl = false) {
+  const root = currentSceneReader();
+  if (!root) return;
+  const act = Number(root.dataset.act), scene = Number(root.dataset.scene);
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  if (!items.length) return;
+  const current = Math.max(0, Math.min(index, items.length - 1));
+  const sidebar = root.querySelector("[data-act-outline]");
+  sidebar?.querySelectorAll(".section-nav-link").forEach(link => {
+    const url = link.getAttribute("href");
+    const params = new URLSearchParams(url.split("?")[1] || "");
+    const selected = Number(params.get("act")) === act &&
+      Number(params.get("scene")) === scene && Number(params.get("item")) === current;
+    link.classList.toggle("is-current", selected);
+    if (selected) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
+  root.querySelectorAll(".libretto-scene-section").forEach((el, i) => el.classList.toggle("is-reading", i === current));
+  if (syncUrl) {
+    const hash = window.location.hash;
+    const [path, query = ""] = hash.split("?");
+    if (path !== "#/operas/" + root.dataset.librettoSlug) return;
+    const params = new URLSearchParams(query);
+    if (params.get("item") !== String(current)) {
+      params.set("act", String(act));
+      params.set("scene", String(scene));
+      params.set("item", String(current));
+      window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search + path + "?" + params.toString());
+    }
+  }
+  if (sidebar && window.matchMedia("(min-width: 701px)").matches) {
+    const active = sidebar.querySelector(".section-nav-link.is-current");
+    if (active) {
+      const bounds = active.getBoundingClientRect(), panel = sidebar.getBoundingClientRect();
+      if (bounds.top < panel.top + 20) sidebar.scrollTop += bounds.top - panel.top - 45;
+      else if (bounds.bottom > panel.bottom - 25) sidebar.scrollTop += bounds.bottom - panel.bottom + 45;
+    }
+  }
+}
+
+function jumpToReaderSection(index, smooth = false) {
+  const root = currentSceneReader();
+  if (!root) return;
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  const target = items[index];
+  if (!target) return;
+  readerJumping = true;
+  highlightReaderSection(index, true);
+  target.scrollIntoView({
+    block: "start",
+    behavior: smooth && !window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "smooth" : "auto"
+  });
+  // Defer scroll tracking until the intentional jump has settled.
+  window.setTimeout(() => {
+    readerJumping = false;
+    scheduleReaderSectionUpdate();
+  }, smooth ? 600 : 100);
+}
+
+function updateReaderSectionPosition() {
+  if (readerJumping) return;
+  const root = currentSceneReader();
+  if (!root) return;
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  if (!items.length) return;
+  const siteHeight = app.querySelector(".site-header")?.getBoundingClientRect().height || 0;
+  const barHeight = root.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0;
+  const toolbarHeight = root.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0;
+  const threshold = siteHeight + barHeight + toolbarHeight + 18;
+  // Preserve the scene heading as the landing point until the first musical section is reached.
+  if (items[0].getBoundingClientRect().top > threshold) {
+    highlightReaderSection(0, false);
+    return;
+  }
+  let active = 0;
+  for (const section of items) {
+    if (section.getBoundingClientRect().top <= threshold) active = Number(section.dataset.librettoItem);
+    else break;
+  }
+  highlightReaderSection(active, true);
+}
+
+function scheduleReaderSectionUpdate() {
+  if (readerScrollTick) return;
+  readerScrollTick = true;
+  window.requestAnimationFrame(() => {
+    readerScrollTick = false;
+    updateReaderSectionPosition();
+  });
+}
+
+function handleSceneSectionLink(event) {
+  const link = event.target.closest?.(".section-nav-link[href]");
+  const root = currentSceneReader();
+  if (!link || !root) return;
+  const href = link.getAttribute("href") || "";
+  if (!href.startsWith("#/operas/" + root.dataset.librettoSlug + "?")) return;
+  const params = new URLSearchParams(href.split("?")[1] || "");
+  if (Number(params.get("act")) !== Number(root.dataset.act) ||
+      Number(params.get("scene")) !== Number(root.dataset.scene)) return;
+  event.preventDefault();
+  closeActOutline(false);
+  jumpToReaderSection(Number(params.get("item")) || 0, true);
+}
+
+function restoreSceneReadingPosition(item) {
+  if (!currentSceneReader()) return;
+  readerJumping = true;
+  highlightReaderSection(item, false);
+  window.requestAnimationFrame(() => jumpToReaderSection(item, false));
+}
+
+function updateReaderTopButton() {
+  const button = app.querySelector("[data-reader-top]");
+  const panel = app.querySelector(".scene-panel");
+  if (!button || !panel) return;
+  const panelStart = window.scrollY + panel.getBoundingClientRect().top;
+  button.hidden = window.scrollY < panelStart + 280;
 }
 
 function render() {
@@ -209,7 +543,11 @@ function render() {
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
     const scene = Number(routeParams.get("scene")) || 1;
-    shell(opera ? operaPage(opera, scene, query) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
+    const item = Number(routeParams.get("item")) || 0;
+    const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
+    const hasLibrettoDestination = routeParams.has("act") || routeParams.has("scene") || routeParams.has("item") || Boolean(query) || routeParams.has("contents");
+    const selectedView = routeParams.get("view") || (opera && getLibretto(opera.slug) && !hasLibrettoDestination ? "synopsis" : "");
+    shell(opera ? operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (getLibretto(opera.slug) ? "opera" : "operas") : "");
     const operaSearch = app.querySelector("#opera-search");
     if (operaSearch) operaSearch.value = query;
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
@@ -217,8 +555,24 @@ function render() {
     window.location.hash = "#/";
     return;
   }
+  const reader = currentSceneReader();
+  const hasSectionDestination = Boolean(reader && (routeParams.has("item") || query));
+  readerJumping = hasSectionDestination;
   window.scrollTo(0, 0);
+  if (hasSectionDestination) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);
+  else if (reader) highlightReaderSection(0, false);
+  updateReaderTopButton();
 }
 
+document.addEventListener("keydown", onOutlineKeydown);
+window.addEventListener("resize", () => {
+  if (!window.matchMedia("(max-width: 700px)").matches) closeActOutline(false);
+  syncDesktopOutline();
+  measureStickyNavigation();
+  scheduleReaderSectionUpdate();
+});
+app.addEventListener("click", handleSceneSectionLink);
+window.addEventListener("scroll", scheduleReaderSectionUpdate, { passive: true });
+window.addEventListener("scroll", updateReaderTopButton, { passive: true });
 window.addEventListener("hashchange", render);
 render();
