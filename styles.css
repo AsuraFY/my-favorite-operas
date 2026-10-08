@@ -1192,3 +1192,22 @@ button { font: inherit; }
     cursor: text;
   }
 }
+
+
+@media (max-width: 700px) {
+  /* Keep the scene accordion in the same vertical reading order as the reference. */
+  .scene-sidebar nav {
+    display: block;
+    gap: 0;
+    overflow: visible;
+    padding: 0;
+  }
+  .scene-sidebar nav .scene-group {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+  .scene-sidebar { overflow: hidden; }
+  .scene-summary { display: none; }
+}
