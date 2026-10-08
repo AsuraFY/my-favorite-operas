@@ -150,7 +150,13 @@ function syncDesktopOutline() {
   collapse.setAttribute("aria-expanded", String(!collapsed));
   expand.setAttribute("aria-expanded", String(!collapsed));
 
-  if (!mobile) {
+  if (mobile) {
+    // Keep the separate mobile drawer inaccessible while closed after resizing.
+    const drawerOpen = sidebar.classList.contains("is-open");
+    sidebar.inert = !drawerOpen;
+    if (drawerOpen) sidebar.removeAttribute("aria-hidden");
+    else sidebar.setAttribute("aria-hidden", "true");
+  } else {
     sidebar.inert = collapsed;
     if (collapsed) sidebar.setAttribute("aria-hidden", "true");
     else sidebar.removeAttribute("aria-hidden");
@@ -172,11 +178,33 @@ function setDesktopOutlineCollapsed(collapsed) {
   if (!root || window.matchMedia("(max-width: 700px)").matches) return;
   if (desktopOutlineCollapsed === collapsed) return;
 
+  // Anchor a visible dialogue row even if widening the columns reflows the text.
+  const siteHeight = app.querySelector(".site-header")?.getBoundingClientRect().height || 0;
+  const operaHeight = root.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0;
+  const readingTop = siteHeight + operaHeight + 12;
+  const markers = [root.querySelector(".scene-panel__top"),
+    ...root.querySelectorAll(".libretto-row"),
+    root.querySelector(".scene-bottom-nav")].filter(Boolean);
+  const anchor = markers.find(node => node.getBoundingClientRect().bottom > readingTop) ||
+    markers[markers.length - 1];
+  const anchorY = anchor?.getBoundingClientRect().top;
+
+  readerJumping = true;
   desktopOutlineCollapsed = collapsed;
   syncDesktopOutline();
   const focusTarget = root.querySelector(collapsed ? "[data-desktop-outline-expand]" : "[data-desktop-outline-collapse]");
   focusTarget?.focus({ preventScroll: true });
-  scheduleReaderSectionUpdate();
+
+  window.requestAnimationFrame(() => {
+    if (root.isConnected && anchor?.isConnected && Number.isFinite(anchorY)) {
+      const change = anchor.getBoundingClientRect().top - anchorY;
+      if (Math.abs(change) > 1) window.scrollBy(0, change);
+    }
+    window.requestAnimationFrame(() => {
+      readerJumping = false;
+      scheduleReaderSectionUpdate();
+    });
+  });
 }
 
 let stickyBarObserver = null;
