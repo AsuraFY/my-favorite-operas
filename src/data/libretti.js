@@ -265,4 +265,17 @@ export const cosiActOneScenes = [
       ] },
     ],
   },
+  {
+    number: 7,
+    kind: "Recitativo",
+    cue: "Recitativo",
+    title: "Non son cattivo comico!",
+    cast: "Don Alfonso",
+    summary: "Alfonso congratulates himself on the deception and heads to meet Ferrando and Guglielmo, mocking their confidence in their fiancées.",
+    sections: [
+      { label: "Recitativo", turns: [
+        { speaker: "Don Alfonso", it: "Non son cattivo comico! Va bene...\nAl concertato loco i due campioni\nDi Ciprigna e di Marte\nMi staranno attendendo: or senza indugio\nRaggiungerli conviene. Quante smorfie,\nQuante buffonerie!\nTanto meglio per me...\nCadran più facilmente:\nQuesta razza di gente è la più presta\nA cangiarsi d'umore. Oh, poverini!\nPer femmina giocar cento zecchini?\n«Nel mare solca e nell'arena semina\nE il vago vento spera in rete accogliere\nChi fonda sue speranze in cor di femmina.»", en: "I'm not a bad actor! Very well...\nAt the appointed place, the two champions\nof Venus and Mars will be waiting for me;\nI should join them without delay. Such grimaces,\nsuch antics! All the better for me...\nThey'll fall more easily. People of this sort\nare quickest to change their minds. Poor fools!\nWagering a hundred gold pieces on a woman?\n\nHe ploughs the sea and sows the sand,\nhoping to catch the wandering wind in a net,\nwhoever places his hopes in a woman's heart." },
+      ] },
+    ],
+  },
 ];
