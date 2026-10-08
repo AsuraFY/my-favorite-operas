@@ -86,6 +86,13 @@ function setupActOutline() {
     backdrop.hidden = false;
     document.body.classList.add("act-outline-open");
     close?.focus();
+    // Bring the currently read aria or recitative into view within the drawer.
+    const selected = drawer.querySelector(".section-nav-link.is-current");
+    if (selected) {
+      const targetBounds = selected.getBoundingClientRect();
+      const drawerBounds = drawer.getBoundingClientRect();
+      drawer.scrollTop += targetBounds.top - drawerBounds.top - 100;
+    }
   });
   close?.addEventListener("click", () => closeActOutline());
   backdrop.addEventListener("click", () => closeActOutline());
@@ -449,12 +456,6 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const sceneSetting = settingByScene[scene.number] || "";
   const sceneLabel = "Scene " + romanNumeral(scene.number);
   const actLabel = "Act " + romanNumeral(act);
-  const sectionRows = section.turns.map((turn) => {
-    const speakerClassName = speakerClass(turn.speaker);
-    const speaker = '<span class="libretto-speaker libretto-speaker--' + speakerClassName + '">' + escapeHtml(turn.speaker) + '</span>';
-    const rowClass = speakerClassName === "stage-direction" ? " libretto-row--stage-direction" : "";
-    return '<div class="libretto-row' + rowClass + '"><div class="libretto-cell libretto-cell--italian">' + speaker + '<p>' + escapeHtml(turn.it) + '</p></div><div class="libretto-cell libretto-cell--english">' + speaker + '<p>' + escapeHtml(turn.en) + '</p></div></div>';
-  }).join("");
   const sceneLinks = renderActSceneLinks(act, scene.number, itemIndex, true);
   const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
   const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
