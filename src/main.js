@@ -149,38 +149,31 @@ function italianSceneOrdinal(value) {
   return ["", "PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA"][value] || String(value);
 }
 
-function sectionNavigationLabel(section) {
+function sectionTitles(scene, section, sectionIndex) {
+  if (scene.number === 1 && sectionIndex === 0) return { original: scene.title, translation: "" };
+  if (scene.number === 1 && sectionIndex === 2) return { original: "È la fede delle femmine", translation: "A woman’s faith" };
+  if (scene.number === 1 && sectionIndex === 4) return { original: "Una bella serenata", translation: "A lovely serenade" };
+  if (scene.number === 2 && sectionIndex === 0) return { original: scene.title, translation: "Ah, look, sister" };
+  if (scene.number === 3 && section.label.startsWith("No. 5")) return { original: scene.title, translation: "I would speak, but have no heart" };
+  return { original: "", translation: "" };
+}
+
+function sectionNavigationLabel(section, scene, sectionIndex) {
   const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  if (match) return "N. " + match[1] + " · " + match[2];
-  return section.label.toLocaleLowerCase() === "recitative" ? "Recitativo" : section.label;
+  const form = match ? match[2] : (section.label.toLocaleLowerCase() === "recitative" ? "Recitativo" : section.label);
+  if (!match) return form;
+  const title = scene ? sectionTitles(scene, section, sectionIndex).original : "";
+  return "N. " + match[1] + " · " + form + (title ? " · " + title : "");
 }
 
 function sectionPresentation(scene, section, sectionIndex) {
   const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
   const form = match ? match[2] : "Recitativo";
-  let title = "";
-  let translationTitle = "";
-  if (scene.number === 1 && sectionIndex === 0) title = scene.title;
-  if (scene.number === 1 && sectionIndex === 2) {
-    title = "È la fede delle femmine";
-    translationTitle = "A woman’s faith";
-  }
-  if (scene.number === 1 && sectionIndex === 4) {
-    title = "Una bella serenata";
-    translationTitle = "A lovely serenade";
-  }
-  if (scene.number === 2 && sectionIndex === 0) {
-    title = scene.title;
-    translationTitle = "Ah, look, sister";
-  }
-  if (scene.number === 3 && section.label.startsWith("No. 5")) {
-    title = scene.title;
-    translationTitle = "I would speak, but have no heart";
-  }
+  const titles = sectionTitles(scene, section, sectionIndex);
   const number = match ? "N. " + match[1] + " · " : "";
-  const heading = number + form + (title ? " · " + title : "");
+  const heading = number + form + (titles.original ? " · " + titles.original : "");
   const translatedForm = ({ Terzetto: "Trio", Duetto: "Duet", Aria: "Aria" })[form] || "";
-  const subtitle = [translatedForm, translationTitle].filter(Boolean).join(" · ");
+  const subtitle = [translatedForm, titles.translation].filter(Boolean).join(" · ");
   return { heading, subtitle, form, number: match ? Number(match[1]) : null };
 }
 
@@ -210,13 +203,15 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const sceneSetting = settingByScene[scene.number] || "";
   const sceneLabel = "Scene " + romanNumeral(scene.number);
   const sectionRows = section.turns.map((turn) => {
-    const speaker = '<span class="libretto-speaker libretto-speaker--' + speakerClass(turn.speaker) + '">' + escapeHtml(turn.speaker) + '</span>';
-    return '<div class="libretto-row"><div class="libretto-cell libretto-cell--italian">' + speaker + '<p>' + escapeHtml(turn.it) + '</p></div><div class="libretto-cell libretto-cell--english">' + speaker + '<p>' + escapeHtml(turn.en) + '</p></div></div>';
+    const speakerClassName = speakerClass(turn.speaker);
+    const speaker = '<span class="libretto-speaker libretto-speaker--' + speakerClassName + '">' + escapeHtml(turn.speaker) + '</span>';
+    const rowClass = speakerClassName === "stage-direction" ? " libretto-row--stage-direction" : "";
+    return '<div class="libretto-row' + rowClass + '"><div class="libretto-cell libretto-cell--italian">' + speaker + '<p>' + escapeHtml(turn.it) + '</p></div><div class="libretto-cell libretto-cell--english">' + speaker + '<p>' + escapeHtml(turn.en) + '</p></div></div>';
   }).join("");
   const sceneLinks = scenes.map((item) => {
     const itemSections = item.sections.map((subsection, subsectionIndex) => {
       const active = item.number === scene.number && subsectionIndex === itemIndex;
-      const label = sectionNavigationLabel(subsection);
+      const label = sectionNavigationLabel(subsection, item, subsectionIndex);
       const isSong = /^No\./i.test(subsection.label);
       const href = "#/operas/cosi-fan-tutte?scene=" + item.number + "&item=" + subsectionIndex;
       return '<a class="section-nav-link' + (active ? " is-current" : "") + '" href="' + href + '"' + (active ? ' aria-current="page"' : "") + '><span class="section-nav-link__icon section-nav-link__icon--' + (isSong ? "song" : "recitative") + '" aria-hidden="true">' + (isSong ? "♫" : "▤") + '</span><span>' + escapeHtml(label) + '</span></a>';
@@ -242,7 +237,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No line in the first three scenes contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
         '<div class="selected-section-heading"><h2>' + escapeHtml(presentation.heading) + '</h2>' + (presentation.subtitle ? '<p>' + escapeHtml(presentation.subtitle) + '</p>' : '') + '</div>' +
-        '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section)) + '</div>' + sectionRows + '</section><p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>' +
+        '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section, scene, itemIndex)) + '</div>' + sectionRows + '</section><p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>' +
         '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
       '</section></div>' +
     '</div>' +
