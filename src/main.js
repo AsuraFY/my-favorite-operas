@@ -228,7 +228,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
     '<div class="reading-layout">' +
       '<aside class="scene-sidebar" aria-label="Libretto contents"><details class="act-group" open><summary class="act-heading"><h2>Act I</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in Act I">' + sceneLinks + '</nav></details></aside>' +
-      '<main class="reading-main"><section class="scene-panel">' +
+      '<div class="reading-main"><section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + backToContents + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
         '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto Primo · Act I <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
           '<h1 class="scene-page-title">' + sceneLabel + '</h1>' +
@@ -241,7 +241,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '<div class="selected-section-heading"><h2>' + escapeHtml(presentation.heading) + '</h2>' + (presentation.subtitle ? '<p>' + escapeHtml(presentation.subtitle) + '</p>' : '') + '</div>' +
         '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section)) + '</div>' + sectionRows + '</section><p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>' +
         '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
-      '</section></main>' +
+      '</section></div>' +
     '</div>' +
   '</div>';
 }
