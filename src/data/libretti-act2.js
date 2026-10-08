@@ -1723,5 +1723,140 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 13,
+    "kind": "Recitativo e andante",
+    "cue": "No. 30 — Andante",
+    "title": "Tutti accusan le donne",
+    "cast": "Guglielmo, Don Alfonso, Ferrando",
+    "summary": "Guglielmo discovers Fiordiligi's betrayal and rages. Don Alfonso advises both men to accept human fallibility and delivers his famous reflection on fidelity.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Guglielmo e Don Alfonso; poi Ferrando.",
+            "en": "Guglielmo and Don Alfonso; later Ferrando."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Oh poveretto me! cosa ho veduto,\nCosa ho sentito mai!",
+            "en": "Oh, poor me! What have I seen,\nwhat have I heard!"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Per carità, silenzio!",
+            "en": "For heaven's sake, be quiet!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Mi pelerei la barba,\nMi graffierei la pelle,\nE darei colle corna entro le stelle!\nFu quella Fiordiligi! la Penelope,\nL'Artemisia del secolo! Briccona!\nAssassina... furfante... ladra... cagna...",
+            "en": "I'd tear out my beard,\nscratch my own skin,\nand toss my horns up among the stars!\nThat was Fiordiligi! The Penelope,\nthe Artemisia of our age! Rogue!\nMurderess... scoundrel... thief... wretch!"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "(lieto, fra sé)\nLasciamolo sfogar.",
+            "en": "(Pleased, aside)\nLet him vent his anger."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(entrando)\nEbben!",
+            "en": "(Entering)\nWell then!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Dov'è?",
+            "en": "Where is she?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Chi? La tua Fiordiligi?",
+            "en": "Who? Your Fiordiligi?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "La mia Fior... fior di diavolo, che strozzi\nLei prima e dopo me!",
+            "en": "My Fior... devil's flower! May it strangle\nher first and me afterward!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(ironicamente)\nTu vedi bene:\nV'han delle differenze in ogni cosa...\nUn poco di più merto...",
+            "en": "(Ironically)\nYou see:\nthere are differences in everything...\nA little more merit..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Ah, cessa amico,\nCessa di tormentarmi\nEd una via piuttosto\nStudiam di castigarle\nSonoramente.",
+            "en": "Stop, my friend,\nstop tormenting me.\nInstead, let us devise\na way to punish them\nproperly."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Io so qual è: sposarle.",
+            "en": "I know how: marry them."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Vorrei sposar piuttosto\nLa barca di Caronte!",
+            "en": "I'd sooner marry\nCharon's boat!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "La grotta di Vulcano.",
+            "en": "Vulcan's cave."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "La porta dell'inferno.",
+            "en": "The gates of hell."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Dunque, restate celibi in eterno.",
+            "en": "Then remain bachelors forever."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Mancheran forse donne\nAd uomin come noi?",
+            "en": "Will there be any shortage of women\nfor men like us?"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Non c'è abbondanza d'altro.\nMa l'altre che faran, se ciò fer queste?\nIn fondo, voi le amate\nQueste vostre cornacchie spennacchiate.",
+            "en": "There is nothing more plentiful.\nBut what would other women do, if these behaved this way?\nDeep down, you love\nthese bedraggled crows of yours."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Ah pur troppo!",
+            "en": "Alas, too true!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Pur troppo!",
+            "en": "Too true!"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Ebben pigliatele\nCom'elle son. Natura non potea\nFare l'eccezione, il privilegio\nDi creare due donne d'altra pasta\nPer i vostri bei musi; in ogni cosa\nCi vuol filosofia. Venite meco;\nDi combinar la cosa\nStudierem la maniera.\nVo' che ancor questa sera\nDoppie nozze si facciano. Frattanto\nUn'ottava ascoltate:\nFelicissimi voi, se la imparate.",
+            "en": "Then accept them\nas they are. Nature could not\nmake an exception, the special favor\nof creating two women of different stuff\njust for your pretty faces. In everything,\none needs philosophy. Come with me;\nwe'll devise a way\nto settle the matter.\nI want two weddings to take place\nthis very evening. Meanwhile,\nlisten to a verse:\nyou'll be happiest if you learn it."
+          }
+        ]
+      },
+      {
+        "label": "No. 30 — Andante",
+        "turns": [
+          {
+            "speaker": "Don Alfonso",
+            "it": "Tutti accusan le donne, ed io le scuso\nSe mille volte al dì cangiano amore;\nAltri un vizio lo chiama ed altri un uso,\nEd a me par necessità del core.\nL'amante che si trova alfin deluso\nNon condanni l'altrui, ma il proprio errore;\nGià che giovani, vecchie, e belle e brutte,\nRipetetel con me: «Così fan tutte!»",
+            "en": "Everyone blames women, but I forgive them\nif they change lovers a thousand times a day;\none calls it vice and another calls it custom,\nbut to me it seems a need of the heart.\nA lover who finds himself disappointed\nshould blame his own mistake, not another's;\nfor young and old, beautiful and plain,\nrepeat with me: 'That's what all women do!'"
+          },
+          {
+            "speaker": "Ferrando, Guglielmo & Don Alfonso",
+            "it": "Così fan tutte!",
+            "en": "That's what all women do!"
+          }
+        ]
+      }
+    ]
   }
 ];
