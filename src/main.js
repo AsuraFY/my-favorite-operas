@@ -34,8 +34,99 @@ function footer() {
   return `<footer class="site-footer"><span>@AsuraFY</span><span>My favorite Operas</span></footer>`;
 }
 
+
+let outlinePreviousFocus = null;
+
+function closeActOutline(restoreFocus = true) {
+  const drawer = app.querySelector("[data-act-outline]");
+  const trigger = app.querySelector("[data-outline-open]");
+  const backdrop = app.querySelector("[data-outline-backdrop]");
+  if (!drawer) {
+    document.body.classList.remove("act-outline-open");
+    return;
+  }
+  const wasOpen = drawer.classList.contains("is-open");
+  drawer.classList.remove("is-open");
+  drawer.removeAttribute("role");
+  drawer.removeAttribute("aria-modal");
+  drawer.inert = window.matchMedia("(max-width: 700px)").matches;
+  if (drawer.inert) drawer.setAttribute("aria-hidden", "true");
+  else drawer.removeAttribute("aria-hidden");
+  if (backdrop) backdrop.hidden = true;
+  trigger?.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("act-outline-open");
+  if (wasOpen && restoreFocus && outlinePreviousFocus?.isConnected) outlinePreviousFocus.focus();
+  outlinePreviousFocus = null;
+}
+
+function setupActOutline() {
+  const trigger = app.querySelector("[data-outline-open]");
+  const drawer = app.querySelector("[data-act-outline]");
+  const close = app.querySelector("[data-outline-close]");
+  const backdrop = app.querySelector("[data-outline-backdrop]");
+  if (!drawer || !trigger || !backdrop) return;
+  const isMobile = window.matchMedia("(max-width: 700px)").matches;
+  drawer.inert = isMobile;
+  if (isMobile) drawer.setAttribute("aria-hidden", "true");
+
+  trigger.addEventListener("click", () => {
+    if (!window.matchMedia("(max-width: 700px)").matches) {
+      drawer.querySelector(".act-heading")?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+      });
+      return;
+    }
+    outlinePreviousFocus = document.activeElement;
+    drawer.inert = false;
+    drawer.removeAttribute("aria-hidden");
+    drawer.classList.add("is-open");
+    drawer.setAttribute("role", "dialog");
+    drawer.setAttribute("aria-modal", "true");
+    trigger.setAttribute("aria-expanded", "true");
+    backdrop.hidden = false;
+    document.body.classList.add("act-outline-open");
+    close?.focus();
+  });
+  close?.addEventListener("click", () => closeActOutline());
+  backdrop.addEventListener("click", () => closeActOutline());
+  drawer.addEventListener("click", (event) => {
+    if (event.target.closest(".section-nav-link")) closeActOutline(false);
+  });
+}
+
+function onOutlineKeydown(event) {
+  const drawer = app.querySelector("[data-act-outline]");
+  if (!drawer?.classList.contains("is-open")) return;
+  if (event.key === "Escape") {
+    event.preventDefault();
+    closeActOutline();
+    return;
+  }
+  if (event.key !== "Tab") return;
+  const focusable = [...drawer.querySelectorAll('button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])')]
+    .filter(element => !element.closest("details:not([open])"));
+  if (!focusable.length) {
+    event.preventDefault();
+    drawer.focus();
+    return;
+  }
+  const first = focusable[0], last = focusable[focusable.length - 1];
+  if (event.shiftKey && (document.activeElement === first || document.activeElement === drawer)) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
+  } else if (!drawer.contains(document.activeElement)) {
+    event.preventDefault();
+    first.focus();
+  }
+}
+
 function shell(content, active) {
+  closeActOutline(false);
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
+  setupActOutline();
   app.querySelector("[data-reader-top]")?.addEventListener("click", () => {
     const panel = app.querySelector(".scene-panel");
     if (!panel) return;
@@ -317,16 +408,18 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const sceneLinks = renderActSceneLinks(act, scene.number, itemIndex, true);
   const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
   const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
-  const backToContents = '<a class="back-to-scenes" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + scene.number + '&item=' + itemIndex + '&contents=1">← Back to scenes</a>';
+  const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
   const sectionBreadcrumb = presentation.number ? "N. " + presentation.number + " " + presentation.form : "Recitativo";
-  const sceneClass = mobileContents ? " opera-reading-page--contents" : "";
-  return '<div class="opera-reading-page' + sceneClass + '">' +
+  return '<div class="opera-reading-page">' +
     cosiOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
     '<div class="reading-layout">' +
-      '<aside class="scene-sidebar" aria-label="Libretto contents"><details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
+      '<div class="act-outline__backdrop" data-outline-backdrop hidden aria-hidden="true"></div>' +
+      '<aside class="scene-sidebar" id="act-outline" data-act-outline aria-label="' + actLabel + ' outline" tabindex="-1">' +
+        '<div class="act-outline__top"><span>' + actLabel + ' · Outline</span><button type="button" data-outline-close aria-label="Close outline">×</button></div>' +
+        '<details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
       '<div class="reading-main"><section class="scene-panel">' +
-        '<div class="mobile-reader-toolbar">' + backToContents + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
+        '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
         '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto ' + (act === 2 ? "Secondo" : "Primo") + ' · ' + actLabel + ' <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
           '<p class="scene-context">ATTO ' + (act === 2 ? "SECONDO" : "PRIMO") + ' · ' + actLabel.toUpperCase() + ' <span>/</span> SCENA ' + italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
           '<h1 class="scene-page-title">' + sceneLabel + '</h1>' +
@@ -411,6 +504,10 @@ function render() {
   updateReaderTopButton();
 }
 
+document.addEventListener("keydown", onOutlineKeydown);
+window.addEventListener("resize", () => {
+  if (!window.matchMedia("(max-width: 700px)").matches) closeActOutline(false);
+});
 window.addEventListener("scroll", updateReaderTopButton, { passive: true });
 window.addEventListener("hashchange", render);
 render();

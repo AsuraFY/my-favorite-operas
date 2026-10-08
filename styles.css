@@ -1403,3 +1403,58 @@ button { font: inherit; }
 .opera-outline__scenes .scene-group__summary { font-size:20px; }
 .opera-outline__scenes .section-nav-link { font-size:16px; }
 @media(max-width:800px) { .opera-outline__acts { grid-template-columns:1fr; } }
+
+/* Act-specific outline: desktop keeps its persistent sidebar; mobile uses a left drawer. */
+.act-outline__top, .act-outline__backdrop { display: none; }
+.act-outline__backdrop[hidden] { display: none !important; }
+.act-outline__trigger {
+  cursor: pointer; border: 0; background: transparent;
+  padding: 0 4px; font: 600 14px var(--serif); color: #173856;
+}
+.act-outline__trigger:focus-visible, [data-outline-close]:focus-visible {
+  outline: 2px solid #1a5d8c; outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  body.act-outline-open { overflow: hidden; touch-action: none; }
+  .opera-reading-page .act-outline__backdrop:not([hidden]) {
+    display: block; position: fixed; z-index: 99; inset: 0;
+    background: rgba(13, 30, 46, .5);
+  }
+  .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] {
+    display: block; position: fixed; z-index: 100;
+    top: 0; bottom: 0; left: 0;
+    width: min(88vw, 380px); max-width: 100%;
+    overflow-y: auto; overscroll-behavior: contain;
+    padding: 0 13px 26px;
+    background: #fbf8f0;
+    box-shadow: 7px 0 28px rgba(8, 27, 43, .2);
+    transform: translateX(-105%);
+    transition: transform 220ms ease;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .opera-reading-page .reading-layout .scene-sidebar[data-act-outline].is-open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .act-outline__top {
+    position: sticky; z-index: 2; top: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 17px 10px; background: #fbf8f0;
+    border-bottom: 1px solid #e1dbce;
+    color: #15395d; font: 600 22px var(--serif);
+  }
+  [data-outline-close] {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 42px; height: 42px; border: 0; border-radius: 50%;
+    background: #e8eff4; color: #173856;
+    font: 28px/1 var(--sans); cursor: pointer;
+  }
+  .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .act-group { margin-top: 10px; }
+  .opera-reading-page .scene-panel { display: block; }
+  .opera-reading-page .reading-main { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] { transition: none; }
+}
