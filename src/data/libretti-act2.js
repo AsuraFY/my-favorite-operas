@@ -1943,5 +1943,110 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 16,
+    "kind": "Finale",
+    "cue": "No. 31 — Finale (continued)",
+    "title": "Benedetti i doppi coniugi",
+    "cast": "Fiordiligi, Dorabella, Ferrando, Guglielmo, Chorus",
+    "summary": "The two purported newlywed couples enter for their wedding celebration. The chorus blesses them while Guglielmo privately seethes over their deception.",
+    "sections": [
+      {
+        "label": "No. 31 — Finale (banquet)",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi, Dorabella, Ferrando, Guglielmo, servi e suonatori.",
+            "en": "Fiordiligi, Dorabella, Ferrando, Guglielmo, servants and musicians."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Benedetti i doppi coniugi\nE le amabili sposine!\nSplenda lor il ciel benefico\nEd a guisa di galline\nSien di figli ognor prolifiche,\nChe le agguaglino in beltà.",
+            "en": "Blessings upon the two bridegrooms\nand their lovely brides!\nMay kindly heaven smile on them,\nand, like hens,\nmay they always have many children,\neach as beautiful as they are."
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella, Ferrando & Guglielmo",
+            "it": "Come par che qui prometta\nTutto gioia e tutto amore!\nDella cara Despinetta\nCerto il merito sarà.\nRaddoppiate il lieto suono,\nReplicate il dolce canto,\nE noi qui seggiamo intanto\nIn maggior giovialità.",
+            "en": "Everything here seems to promise\njoy and love!\nSurely we have dear Despina\nto thank for it.\nPlay your happy music twice as loudly,\nrepeat your joyful song,\nand meanwhile we'll sit down\nin even greater merriment."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Gli sposi si mettono alla tavola.",
+            "en": "The couples sit at the table."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Benedetti i doppi coniugi\nE le amabili sposine!\nSplenda lor il ciel benefico\nEd a guisa di galline\nSien di figli ognor prolifiche,\nChe le agguaglino in beltà.",
+            "en": "Blessings upon the two bridegrooms\nand their lovely brides!\nMay kindly heaven smile on them,\nand, like hens,\nmay they always have many children,\neach as beautiful as they are."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Il coro parte: restano quattro servitori per servire gli sposi.",
+            "en": "The chorus departs; four servants remain to serve the couples."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Tutto, tutto, o vita mia,\nAl mio fuoco or ben risponde.",
+            "en": "Everything, my beloved,\nnow answers my ardent love."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Pel mio sangue l'allegria\nCresce, cresce e si diffonde.",
+            "en": "Joy grows and spreads\nthroughout my being."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Sei pur bella!",
+            "en": "You are so beautiful!"
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Sei pur vago!",
+            "en": "You are so handsome!"
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Che bei rai!",
+            "en": "What lovely eyes!"
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Che bella bocca!",
+            "en": "What a lovely mouth!"
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Tocca e bevi!",
+            "en": "Clink glasses and drink!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Toccano i bicchieri.",
+            "en": "They clink their glasses."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Bevi e tocca!",
+            "en": "Drink and clink!"
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella & Ferrando",
+            "it": "E nel tuo, nel mio bicchiero\nSi sommerga ogni pensiero.\nE non resti più memoria\nDel passato ai nostri cor.",
+            "en": "May every thought\nbe drowned in your glass and mine;\nmay no memory of the past\nremain in our hearts."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Le donne bevono.",
+            "en": "The women drink."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(fra sé)\nAh, bevessero del tossico,\nQueste volpi senza onor!",
+            "en": "(Aside)\nIf only these shameless foxes\nwere drinking poison!"
+          }
+        ]
+      }
+    ]
   }
 ];
