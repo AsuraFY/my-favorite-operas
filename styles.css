@@ -1458,3 +1458,14 @@ button { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] { transition: none; }
 }
+
+/* One complete reading page per scene: all musical sections in order. */
+.libretto-scene-section { scroll-margin-top: 80px; }
+.libretto-scene-section + .libretto-scene-section {
+  margin-top: 34px; padding-top: 22px; border-top: 1px solid #d9c9ac;
+}
+.libretto-scene-section + .libretto-scene-section .selected-section-heading { padding-top: 0; }
+@media (max-width: 700px) {
+  .libretto-scene-section { scroll-margin-top: 68px; }
+  .libretto-scene-section + .libretto-scene-section { margin-top: 24px; padding-top: 18px; }
+}

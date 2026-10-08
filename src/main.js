@@ -372,6 +372,28 @@ function cosiSynopsisPage() {
     '</div></article></div>';
 }
 
+
+function renderCosiSceneSection(scene, section, sectionIndex, act) {
+  const heading = sectionPresentation(scene, section, sectionIndex);
+  const rows = section.turns.map(turn => {
+    const className = speakerClass(turn.speaker);
+    const speaker = '<span class="libretto-speaker libretto-speaker--' + className + '">' + escapeHtml(turn.speaker) + '</span>';
+    const type = className === 'stage-direction' ? ' libretto-row--stage-direction' : '';
+    return '<div class="libretto-row' + type + '"><div class="libretto-cell libretto-cell--italian">' +
+      speaker + '<p>' + escapeHtml(turn.it) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+      speaker + '<p>' + escapeHtml(turn.en) + '</p></div></div>';
+  }).join('');
+  return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
+    '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '">' +
+    '<div class="selected-section-heading"><h2>' + escapeHtml(heading.heading) + '</h2>' +
+    (heading.subtitle ? '<p>' + escapeHtml(heading.subtitle) + '</p>' : '') + '</div>' +
+    '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div>' +
+    '<div class="libretto-column-heading">English</div><div class="libretto-text">' +
+    '<section class="libretto-section"><div class="libretto-section__label">' +
+    escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>' +
+    rows + '</section></div></div></section>';
+}
+
 function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
   const requested=Number(new URLSearchParams(window.location.hash.split("?")[1]||"").get("act"))||1;
   const group=cosiActCatalog().find(group=>group.number===requested)||cosiActCatalog()[0];
@@ -427,8 +449,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
           '<p class="scene-summary">' + escapeHtml(scene.summary) + '</p>' +
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
-        '<div class="selected-section-heading"><h2>' + escapeHtml(presentation.heading) + '</h2>' + (presentation.subtitle ? '<p>' + escapeHtml(presentation.subtitle) + '</p>' : '') + '</div>' +
-        '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section, scene, itemIndex)) + '</div>' + sectionRows + '</section></div></div>' +
+        scene.sections.map((part, index) => renderCosiSceneSection(scene, part, index, act)).join("") +
         '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
       '</section></div>' +
     '</div>' +
