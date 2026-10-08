@@ -373,6 +373,34 @@ function cosiSynopsisPage() {
 }
 
 
+
+function sectionParticipantCredits(section, act, sceneNumber) {
+  const named = ["Fiordiligi", "Dorabella", "Ferrando", "Guglielmo", "Don Alfonso", "Despina"];
+  const speakers = section.turns.filter(t => t.speaker !== "Stage direction").map(t => t.speaker);
+  const costumes = {
+    "1:11": ["Ferrando", "Guglielmo"], "1:15": ["Ferrando", "Guglielmo"],
+    "1:16": ["Ferrando", "Guglielmo"], "2:4": ["Ferrando", "Guglielmo"],
+    "2:5": ["Guglielmo"], "2:6": ["Ferrando"],
+    "2:12": ["Ferrando"], "2:16": ["Ferrando", "Guglielmo"],
+    "2:17": ["Ferrando", "Guglielmo"]
+  };
+  const names = named.filter(name => speakers.some(s => s.includes(name))).map(name => {
+    if (name === "Despina" && act === 1 && sceneNumber === 16) return name + " (disguised as a doctor)";
+    if (name === "Despina" && act === 2 && sceneNumber === 17) return name + " (disguised as a notary)";
+    if ((costumes[act + ":" + sceneNumber] || []).includes(name)) return name + " (disguised as an Albanian suitor)";
+    return name;
+  });
+  if (speakers.includes("Soldiers & townspeople")) names.push("Soldiers & townspeople");
+  if (speakers.includes("Chorus of Servants & Musicians")) names.push("Servants & musicians (chorus)");
+  else if (speakers.includes("Chorus")) names.push("Chorus");
+  if (!names.length) return "";
+  const icon = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">' +
+    '<circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2"/>' +
+    '<path d="M16.5 4.7a3 3 0 0 1 0 5.6M18 14a4 4 0 0 1 3 4v2"/></svg>';
+  return '<div class="libretto-participants" aria-label="Singers and speakers in this section">' +
+    icon + '<span>' + escapeHtml(names.join(", ")) + '</span></div>';
+}
+
 function renderCosiSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
   const rows = section.turns.map(turn => {
@@ -386,7 +414,7 @@ function renderCosiSceneSection(scene, section, sectionIndex, act) {
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
     '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '">' +
     '<div class="selected-section-heading"><h2>' + escapeHtml(heading.heading) + '</h2>' +
-    (heading.subtitle ? '<p>' + escapeHtml(heading.subtitle) + '</p>' : '') + '</div>' +
+    sectionParticipantCredits(section, act, scene.number) + '</div>' +
     '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div>' +
     '<div class="libretto-column-heading">English</div><div class="libretto-text">' +
     '<section class="libretto-section"><div class="libretto-section__label">' +

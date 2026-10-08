@@ -1469,3 +1469,12 @@ button { font: inherit; }
   .libretto-scene-section { scroll-margin-top: 68px; }
   .libretto-scene-section + .libretto-scene-section { margin-top: 24px; padding-top: 18px; }
 }
+
+/* Compact section credits: discreet person icon and names, no text label. */
+.libretto-participants { display:flex; align-items:flex-start; gap:6px; max-width:100%; margin-top:6px; color:#516679; font:italic 15px/1.32 var(--serif); }
+.libretto-participants svg { flex:0 0 15px; margin-top:2px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.libretto-participants > span { min-width:0; overflow-wrap:break-word; }
+@media(max-width:700px) {
+  .libretto-participants { gap:5px; margin-top:4px; font-size:13px; line-height:1.28; }
+  .libretto-participants svg { flex-basis:14px; width:14px; height:14px; }
+}
