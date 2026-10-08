@@ -200,6 +200,44 @@ function sectionPresentation(scene, section, sectionIndex) {
   return { heading, subtitle, form, number: match ? Number(match[1]) : null };
 }
 
+
+function cosiOperaBar(act = 1, page = "libretto") {
+  const base = "#/operas/cosi-fan-tutte";
+  const tabs = [
+    { label: "Act I", href: base + "?act=1&scene=1&item=0&contents=1", current: page !== "synopsis" && act === 1 },
+    { label: "Act II", href: base + "?act=2&scene=1&item=0&contents=1", current: page !== "synopsis" && act === 2 },
+    { label: "Synopsis", href: base + "?view=synopsis", current: page === "synopsis" }
+  ];
+  return '<nav class="opera-subnav" aria-label="Così fan tutte sections">' +
+    '<div class="opera-subnav__identity"><span class="opera-subnav__title">Così fan tutte</span>' +
+    '<span class="opera-subnav__composer">W. A. MOZART</span></div>' +
+    '<div class="opera-subnav__links">' + tabs.map(tab =>
+      '<a class="opera-subnav__link' + (tab.current ? ' is-active' : '') + '" href="' + tab.href + '"' +
+      (tab.current ? ' aria-current="page"' : '') + '>' + tab.label + '</a>'
+    ).join('') + '</div></nav>';
+}
+
+function cosiSynopsisPage() {
+  const characters = [
+    ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
+    ["Dorabella", "Mezzo-soprano", "Fiordiligi’s sister, engaged to Ferrando; her feelings shift during the disguised courtship."],
+    ["Ferrando", "Tenor", "A young officer engaged to Dorabella, who joins Alfonso’s wager and disguises himself."],
+    ["Guglielmo", "Baritone", "An officer engaged to Fiordiligi, who joins Ferrando in the test of fidelity."],
+    ["Don Alfonso", "Bass", "An older philosopher who doubts constancy and devises the wager."],
+    ["Despina", "Soprano", "The sisters’ quick-witted maid, enlisted to help carry out Alfonso’s scheme."]
+  ];
+  return '<div class="opera-reading-page">' + cosiOperaBar(1, "synopsis") +
+    '<article class="opera-synopsis">' +
+    '<p class="opera-synopsis__eyebrow">W. A. Mozart · Opera buffa in two acts</p>' +
+    '<h1>Synopsis</h1>' +
+    '<p>Two young officers, Ferrando and Guglielmo, are certain their fiancées, Dorabella and Fiordiligi, will always be faithful. Don Alfonso challenges their confidence with a wager: the officers must pretend to leave for war, return in disguise, and attempt to win each other’s beloved.</p>' +
+    '<p>With help from the sisters’ maid Despina, Alfonso engineers increasingly elaborate encounters. The deception tests all four lovers, culminating in a staged wedding and a final revelation that forces them to confront love, loyalty and human inconsistency.</p>' +
+    '<h2>Principal characters</h2><div class="opera-synopsis__characters">' +
+    characters.map(([name, role, description]) => '<div class="opera-synopsis__character"><h3>' + name +
+      '</h3><span>' + role + '</span><p>' + description + '</p></div>').join('') +
+    '</div></article></div>';
+}
+
 function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
   const act = window.location.hash.includes("act=2") ? 2 : 1;
   const scenes = act === 2 ? cosiActTwoScenes : cosiActOneScenes;
@@ -252,9 +290,10 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const sectionBreadcrumb = presentation.number ? "N. " + presentation.number + " " + presentation.form : "Recitativo";
   const sceneClass = mobileContents ? " opera-reading-page--contents" : "";
   return '<div class="opera-reading-page' + sceneClass + '">' +
+    cosiOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
     '<div class="reading-layout">' +
-      '<aside class="scene-sidebar" aria-label="Libretto contents"><nav class="section-nav" aria-label="Choose act"><a class="section-nav-link" href="#/operas/cosi-fan-tutte?act=1&scene=1&item=0">Act I</a><a class="section-nav-link" href="#/operas/cosi-fan-tutte?act=2&scene=1&item=0">Act II</a></nav><details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
+      '<aside class="scene-sidebar" aria-label="Libretto contents"><details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
       '<div class="reading-main"><section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + backToContents + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
         '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto ' + (act === 2 ? "Secondo" : "Primo") + ' · ' + actLabel + ' <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
@@ -272,8 +311,10 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
     '<button class="libretto-back-to-top" type="button" data-reader-top hidden aria-label="Back to scene navigation" title="Back to scene navigation"><span aria-hidden="true">↑</span><span aria-hidden="true">Top</span></button>' +
   '</div>';
 }
-function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false) {
-  if (opera.slug === "cosi-fan-tutte") return cosiOperaPage(selectedScene, query, selectedItem, mobileContents);
+function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
+  if (opera.slug === "cosi-fan-tutte") return selectedView === "synopsis"
+    ? cosiSynopsisPage()
+    : cosiOperaPage(selectedScene, query, selectedItem, mobileContents);
   return `<div class="opera-detail">
     <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>
     <section class="detail-hero section-wrap">
@@ -324,7 +365,8 @@ function render() {
     const scene = Number(routeParams.get("scene")) || 1;
     const item = routeParams.has("item") ? (Number(routeParams.get("item")) || 0) : (scene === 1 ? 2 : 0);
     const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
-    shell(opera ? operaPage(opera, scene, query, item, mobileContents) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
+    const selectedView = routeParams.get("view") || "";
+    shell(opera ? operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
     const operaSearch = app.querySelector("#opera-search");
     if (operaSearch) operaSearch.value = query;
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";

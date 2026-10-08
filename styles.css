@@ -1318,3 +1318,73 @@ button { font: inherit; }
   font-weight: 600;
   letter-spacing: -.01em;
 }
+
+/* New responsive opera navigation, below the existing navy site header */
+.opera-subnav {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  min-height: 76px; padding: 0 clamp(20px, 4vw, 56px);
+  background: #fbf8f0; color: #123554; border-bottom: 1px solid #ddc9a7;
+}
+.opera-subnav__identity {
+  display: flex; align-items: center; gap: 22px; min-width: 0;
+  flex: 0 1 auto; white-space: nowrap;
+}
+.opera-subnav__title { font: 600 clamp(24px, 2.5vw, 36px)/1.1 var(--serif); letter-spacing: -.025em; }
+.opera-subnav__composer {
+  border-left: 1px solid #d8c5a4; padding-left: 22px;
+  color: #34506d; font: 600 12px/1.5 var(--serif); letter-spacing: .20em;
+}
+.opera-subnav__links { display: flex; align-items: stretch; align-self: stretch; gap: clamp(18px, 3.1vw, 52px); }
+.opera-subnav__link {
+  position: relative; display: inline-flex; align-items: center; white-space: nowrap;
+  padding: 5px 4px; color: #173856; font: 500 21px/1.2 var(--serif);
+}
+.opera-subnav__link:hover { color: #28618e; }
+.opera-subnav__link.is-active { font-weight: 700; }
+.opera-subnav__link.is-active::after {
+  position: absolute; content: ""; left: 3px; right: 3px; bottom: 9px;
+  height: 3px; background: #d6ae65;
+}
+.opera-subnav__link:focus-visible { outline: 2px solid #1a5d8c; outline-offset: -3px; }
+
+.opera-synopsis {
+  max-width: 1000px; margin: 0 auto;
+  padding: clamp(26px, 4vw, 58px) clamp(20px, 5vw, 64px) 80px; color: #173856;
+}
+.opera-synopsis__eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
+.opera-synopsis h1 { margin: 16px 0 22px; font: 600 clamp(32px, 4vw, 48px)/1.15 var(--serif); }
+.opera-synopsis > p:not(.opera-synopsis__eyebrow) {
+  max-width: 75ch; margin-bottom: 18px; font: 19px/1.65 var(--serif);
+}
+.opera-synopsis h2 {
+  margin: 44px 0 22px; padding-top: 22px; border-top: 1px solid #ded6c8;
+  font: 600 30px/1.25 var(--serif);
+}
+.opera-synopsis__characters { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px 24px; }
+.opera-synopsis__character {
+  padding: 20px; border: 1px solid #e3dcd0;
+  border-radius: 7px; background: #fffdf8;
+}
+.opera-synopsis__character h3 { margin: 0 0 6px; font: 600 24px var(--serif); }
+.opera-synopsis__character > span { color: #866936; font: 600 12px var(--sans); }
+.opera-synopsis__character p { margin: 10px 0 0; font: 16px/1.5 var(--serif); }
+@media (max-width: 1050px) {
+  .opera-subnav__composer { display: none; }
+  .opera-subnav__link { font-size: 19px; }
+}
+@media (max-width: 700px) {
+  .opera-subnav { display: block; min-height: 0; padding: 14px 16px 0; }
+  .opera-subnav__title { font-size: 26px; }
+  .opera-subnav__links {
+    height: 49px; max-width: 100%; margin-top: 7px;
+    gap: clamp(26px, 7vw, 42px);
+    overflow-x: auto; overscroll-behavior-x: contain;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .opera-subnav__links::-webkit-scrollbar { display: none; }
+  .opera-subnav__link { font-size: 17px; padding: 0 2px; }
+  .opera-subnav__link.is-active::after { bottom: 3px; }
+  .opera-synopsis { padding: 25px 20px 54px; }
+  .opera-synopsis > p:not(.opera-synopsis__eyebrow) { font-size: 17px; }
+  .opera-synopsis__characters { grid-template-columns: 1fr; }
+}
