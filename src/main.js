@@ -237,7 +237,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No line in the first three scenes contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
         '<div class="selected-section-heading"><h2>' + escapeHtml(presentation.heading) + '</h2>' + (presentation.subtitle ? '<p>' + escapeHtml(presentation.subtitle) + '</p>' : '') + '</div>' +
-        '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section, scene, itemIndex)) + '</div>' + sectionRows + '</section><p class="source-credit">Italian libretto: <a href="https://opera-guide.ch/operas/cosi+fan+tutte/libretto/it/" target="_blank" rel="noreferrer">Opera Guide</a>. English translation prepared for this site.</p></div></div>' +
+        '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section, scene, itemIndex)) + '</div>' + sectionRows + '</section></div></div>' +
         '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
       '</section></div>' +
     '</div>' +
