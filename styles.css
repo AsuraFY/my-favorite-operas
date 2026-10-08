@@ -1211,3 +1211,74 @@ button { font: inherit; }
   .scene-sidebar { overflow: hidden; }
   .scene-summary { display: none; }
 }
+
+
+/* Shared warm paper and blue navigation for the homepage and libretto reader. */
+.opera-reading-page,
+.opera-reading-page .reading-layout,
+.opera-reading-page .reading-main,
+.opera-reading-page .scene-panel {
+  background: var(--paper);
+}
+.opera-reading-page .scene-sidebar {
+  background: var(--paper-deep);
+}
+.opera-reading-page .section-nav-link__label {
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-wrap: anywhere;
+}
+.site-header:has(+ #main .opera-reading-page) {
+  background: #102b40;
+}
+.opera-reading-page .libretto-row--stage-direction {
+  border-left: 2px solid var(--gold);
+  padding-left: 8px;
+  background: rgba(189, 155, 94, .08);
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-speaker {
+  color: #957642;
+  font-style: italic;
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-cell p {
+  color: #76684f;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .site-header:has(+ #main .opera-reading-page) {
+    background: #102b40;
+    color: #f7f3ed;
+    border-bottom-color: rgba(255,255,255,.16);
+  }
+  .site-header:has(+ #main .opera-reading-page) .brand__sprig {
+    color: #e4c47d;
+  }
+  .site-header:has(+ #main .opera-reading-page) .brand__name {
+    color: #f1d291;
+  }
+  .site-header:has(+ #main .opera-reading-page) .menu-toggle span {
+    background: #f7f3ed;
+  }
+  .site-header:has(+ #main .opera-reading-page) .main-nav {
+    background: #102b40;
+    color: #f7f3ed;
+    border-bottom-color: rgba(255,255,255,.16);
+  }
+  .site-header:has(+ #main .opera-reading-page) .main-nav > a,
+  .site-header:has(+ #main .opera-reading-page) .main-nav > a.is-active {
+    color: #f7f3ed;
+  }
+  .opera-reading-page .act-heading {
+    background: var(--paper-deep);
+  }
+  .opera-reading-page .scene-group {
+    background: var(--paper);
+  }
+  .opera-reading-page .section-nav-link__label {
+    line-height: 1.25;
+  }
+  .opera-reading-page .libretto-row--stage-direction {
+    padding-left: 9px;
+  }
+}
