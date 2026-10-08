@@ -1,4 +1,4 @@
-import { getLibretto } from "./data/libretto-registry.js?v=registry-2";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-3";
 
 
 function createLibrettoRenderer(libretto) {
@@ -204,11 +204,12 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const requested=Number(new URLSearchParams(window.location.hash.split("?")[1]||"").get("act"))||1;
   const group=cosiActCatalog().find(group=>group.number===requested)||cosiActCatalog()[0];
   const act=group.number, scenes=group.scenes;
+  const base = "#/operas/" + libretto.slug;
   const searchTerm = query.trim().toLocaleLowerCase();
   let found = null;
   if (searchTerm) {
     scenes.some((candidate) => candidate.sections.some((section, sectionIndex) => {
-      const hasMatch = section.turns.some((turn) => (turn.speaker + " " + turn.it + " " + turn.en).toLocaleLowerCase().includes(searchTerm));
+      const hasMatch = section.turns.some((turn) => (turn.speaker + " " + (turn.original ?? turn.it ?? "") + " " + (turn.translation ?? turn.en ?? "")).toLocaleLowerCase().includes(searchTerm));
       if (hasMatch) {
         found = { scene: candidate.number, item: sectionIndex };
         return true;
@@ -222,19 +223,19 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const sceneLabel = "Scene " + romanNumeral(scene.number);
   const actLabel = "Act " + romanNumeral(act);
   const sceneLinks = renderActSceneLinks(act, scene.number, itemIndex, true);
-  const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
-  const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
+  const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="' + base + '?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
+  const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="' + base + '?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
   const followingAct = cosiActCatalog().find(group => group.number > act);
   const bottomNext = scene.number < scenes.length ? next : followingAct ?
-    '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + followingAct.number + '&scene=1&item=0">Continue to Act ' + romanNumeral(followingAct.number) + ' →</a>' :
+    '<a class="mobile-scene-step" href="' + base + '?act=' + followingAct.number + '&scene=1&item=0">Continue to Act ' + romanNumeral(followingAct.number) + ' →</a>' :
     '<span class="mobile-scene-step is-disabled" aria-disabled="true">End of opera</span>';
   const bottomSceneNavigation = '<nav class="scene-bottom-nav" aria-label="Scene navigation at end of scene">' +
     '<p class="scene-bottom-nav__label">End of ' + sceneLabel + '</p>' +
     '<div class="scene-bottom-nav__controls">' + previous + bottomNext + '</div></nav>';
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
-  return '<div class="opera-reading-page" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
+  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
     cosiOperaBar(act) +
-    '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
+    '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="' + escapeHtml(libretto.mobileArtworkLabel || libretto.opera.title) + '"></div><div class="mobile-opera-intro__title"><h1>' + escapeHtml(libretto.opera.title) + '</h1><p>' + escapeHtml(libretto.mobileComposer || libretto.opera.composer) + '</p></div></section>' +
     '<div class="reading-layout">' +
       '<div class="act-outline__backdrop" data-outline-backdrop hidden aria-hidden="true"></div>' +
       '<aside class="scene-sidebar" id="act-outline" data-act-outline aria-label="' + actLabel + ' outline" tabindex="-1">' +
@@ -246,9 +247,11 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '<section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
         '<div class="scene-panel__top">' +
-          '<h1 class="scene-context">ATTO ' + (act === 2 ? "SECONDO" : "PRIMO") +
-          ' · ' + actLabel.toUpperCase() + ' <span>/</span> SCENA ' +
-          italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</h1>' +
+          '<h1 class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
+          ' · ' + actLabel.toUpperCase() + ' <span>/</span> ' +
+          escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " +
+            (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number))).toUpperCase() +
+          ' · ' + sceneLabel.toUpperCase() + '</h1>' +
           '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(scene)) + '</p>' +
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
