@@ -1478,3 +1478,13 @@ button { font: inherit; }
   .libretto-participants { gap:5px; margin-top:4px; font-size:13px; line-height:1.28; }
   .libretto-participants svg { flex-basis:14px; width:14px; height:14px; }
 }
+
+/* A sticky, independently scrollable act sidebar on desktop. */
+@media (min-width: 701px) {
+  .opera-reading-page[data-act] .reading-layout > .scene-sidebar[data-act-outline] {
+    position: sticky; top: 0;
+    height: 100vh; min-height: 0; align-self: start;
+    overflow-y: auto; overscroll-behavior-y: contain;
+    scrollbar-width: thin;
+  }
+}

@@ -460,7 +460,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
   const sectionBreadcrumb = presentation.number ? "N. " + presentation.number + " " + presentation.form : "Recitativo";
-  return '<div class="opera-reading-page">' +
+  return '<div class="opera-reading-page" data-act="' + act + '" data-scene="' + scene.number + '">' +
     cosiOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
     '<div class="reading-layout">' +
@@ -470,7 +470,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '<details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
       '<div class="reading-main"><section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
-        '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto ' + (act === 2 ? "Secondo" : "Primo") + ' · ' + actLabel + ' <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
+        '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto ' + (act === 2 ? "Secondo" : "Primo") + ' · ' + actLabel + ' <span>›</span> ' + sceneLabel + ' <span>›</span> <span data-active-breadcrumb>' + escapeHtml(sectionBreadcrumb) + '</span></p>' +
           '<p class="scene-context">ATTO ' + (act === 2 ? "SECONDO" : "PRIMO") + ' · ' + actLabel.toUpperCase() + ' <span>/</span> SCENA ' + italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
           '<h1 class="scene-page-title">' + sceneLabel + '</h1>' +
           (sceneSetting ? '<p class="scene-context__setting scene-page-setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
@@ -503,6 +503,123 @@ function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobil
     <section class="libretto-placeholder section-wrap"><div><p class="eyebrow">Coming in a later chapter</p><h2>The libretto, line by line.</h2><p>The libretto and side-by-side translation will live here. For now, this page is a place to meet the opera.</p></div><span class="placeholder-mark" aria-hidden="true">Aa<br /><i>↔</i><br />Aa</span></section>
     <section class="more-operas section-wrap"><div class="section-heading"><div><p class="eyebrow">Keep wandering</p><h2>Another world awaits.</h2></div><a class="text-link text-link--large" href="#/operas">All operas ${arrow}</a></div><div class="opera-grid opera-grid--compact">${operas.filter((item) => item.slug !== opera.slug).slice(0, 3).map(operaCard).join("")}</div></section>
   </div>`;
+}
+
+
+let readerJumping = false;
+let readerScrollTick = false;
+
+function currentSceneReader() {
+  return app.querySelector(".opera-reading-page[data-act][data-scene]");
+}
+
+function highlightReaderSection(index, syncUrl = false) {
+  const root = currentSceneReader();
+  if (!root) return;
+  const act = Number(root.dataset.act), scene = Number(root.dataset.scene);
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  if (!items.length) return;
+  const current = Math.max(0, Math.min(index, items.length - 1));
+  const sidebar = root.querySelector("[data-act-outline]");
+  sidebar?.querySelectorAll(".section-nav-link").forEach(link => {
+    const url = link.getAttribute("href");
+    const params = new URLSearchParams(url.split("?")[1] || "");
+    const selected = Number(params.get("act")) === act &&
+      Number(params.get("scene")) === scene && Number(params.get("item")) === current;
+    link.classList.toggle("is-current", selected);
+    if (selected) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
+  root.querySelectorAll(".libretto-scene-section").forEach((el, i) => el.classList.toggle("is-reading", i === current));
+  const match = cosiActCatalog().find(group => group.number === act)?.scenes.find(s => s.number === scene);
+  const part = match?.sections[current];
+  const details = part ? sectionPresentation(match, part, current) : null;
+  const crumb = root.querySelector("[data-active-breadcrumb]");
+  if (crumb && details) crumb.textContent = details.number ? "N. " + details.number + " " + details.form : "Recitativo";
+  if (syncUrl) {
+    const hash = window.location.hash;
+    const [path, query = ""] = hash.split("?");
+    if (path !== "#/operas/cosi-fan-tutte") return;
+    const params = new URLSearchParams(query);
+    if (params.get("item") !== String(current)) {
+      params.set("act", String(act));
+      params.set("scene", String(scene));
+      params.set("item", String(current));
+      window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search + path + "?" + params.toString());
+    }
+  }
+  if (sidebar && window.matchMedia("(min-width: 701px)").matches) {
+    const active = sidebar.querySelector(".section-nav-link.is-current");
+    if (active) {
+      const bounds = active.getBoundingClientRect(), panel = sidebar.getBoundingClientRect();
+      if (bounds.top < panel.top + 20) sidebar.scrollTop += bounds.top - panel.top - 45;
+      else if (bounds.bottom > panel.bottom - 25) sidebar.scrollTop += bounds.bottom - panel.bottom + 45;
+    }
+  }
+}
+
+function jumpToReaderSection(index, smooth = false) {
+  const root = currentSceneReader();
+  if (!root) return;
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  const target = items[index];
+  if (!target) return;
+  readerJumping = true;
+  highlightReaderSection(index, true);
+  target.scrollIntoView({
+    block: "start",
+    behavior: smooth && !window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "smooth" : "auto"
+  });
+  // Defer scroll tracking until the intentional jump has settled.
+  window.setTimeout(() => {
+    readerJumping = false;
+    scheduleReaderSectionUpdate();
+  }, smooth ? 600 : 100);
+}
+
+function updateReaderSectionPosition() {
+  if (readerJumping) return;
+  const root = currentSceneReader();
+  if (!root) return;
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  if (!items.length) return;
+  const threshold = window.matchMedia("(max-width: 700px)").matches ? 130 : 85;
+  let active = 0;
+  for (const section of items) {
+    if (section.getBoundingClientRect().top <= threshold) active = Number(section.dataset.librettoItem);
+    else break;
+  }
+  highlightReaderSection(active, true);
+}
+
+function scheduleReaderSectionUpdate() {
+  if (readerScrollTick) return;
+  readerScrollTick = true;
+  window.requestAnimationFrame(() => {
+    readerScrollTick = false;
+    updateReaderSectionPosition();
+  });
+}
+
+function handleSceneSectionLink(event) {
+  const link = event.target.closest?.(".section-nav-link[href]");
+  const root = currentSceneReader();
+  if (!link || !root) return;
+  const href = link.getAttribute("href") || "";
+  if (!href.startsWith("#/operas/cosi-fan-tutte?")) return;
+  const params = new URLSearchParams(href.split("?")[1] || "");
+  if (Number(params.get("act")) !== Number(root.dataset.act) ||
+      Number(params.get("scene")) !== Number(root.dataset.scene)) return;
+  event.preventDefault();
+  closeActOutline(false);
+  jumpToReaderSection(Number(params.get("item")) || 0, true);
+}
+
+function restoreSceneReadingPosition(item) {
+  if (!currentSceneReader()) return;
+  readerJumping = true;
+  highlightReaderSection(item, false);
+  window.requestAnimationFrame(() => jumpToReaderSection(item, false));
 }
 
 function updateReaderTopButton() {
@@ -549,7 +666,10 @@ function render() {
     window.location.hash = "#/";
     return;
   }
+  const reader = currentSceneReader();
+  readerJumping = Boolean(reader);
   window.scrollTo(0, 0);
+  if (reader) restoreSceneReadingPosition(item);
   updateReaderTopButton();
 }
 
@@ -557,6 +677,8 @@ document.addEventListener("keydown", onOutlineKeydown);
 window.addEventListener("resize", () => {
   if (!window.matchMedia("(max-width: 700px)").matches) closeActOutline(false);
 });
+app.addEventListener("click", handleSceneSectionLink);
+window.addEventListener("scroll", scheduleReaderSectionUpdate, { passive: true });
 window.addEventListener("scroll", updateReaderTopButton, { passive: true });
 window.addEventListener("hashchange", render);
 render();
