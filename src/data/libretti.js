@@ -416,43 +416,43 @@ export const cosiActOneScenes = [
         "turns": [
           {
             "speaker": "Don Alfonso",
-            "it": "Alla bella Despinetta\\nVi presento, amici miei;\\nNon dipende che da lei\\nConsolar il vostro cor.",
-            "en": "To lovely Despina\\nI present you, my friends;\\nOnly she can now\\nbring comfort to your hearts."
+            "it": "Alla bella Despinetta\nVi presento, amici miei;\nNon dipende che da lei\nConsolar il vostro cor.",
+            "en": "To lovely Despina\nI present you, my friends;\nOnly she can now\nbring comfort to your hearts."
           },
           {
             "speaker": "Ferrando & Guglielmo",
-            "it": "Per la man, che lieto io bacio,\\nPer quei rai di grazia pieni,\\nFa' che volga a me sereni\\nI begli occhi il mio tesor.",
-            "en": "For the hand I gladly kiss,\\nfor those eyes so full of grace,\\nlet my beloved turn her lovely eyes\\ntoward me with kindness."
+            "it": "Per la man, che lieto io bacio,\nPer quei rai di grazia pieni,\nFa' che volga a me sereni\nI begli occhi il mio tesor.",
+            "en": "For the hand I gladly kiss,\nfor those eyes so full of grace,\nlet my beloved turn her lovely eyes\ntoward me with kindness."
           },
           {
             "speaker": "Despina",
-            "it": "(ridendo fra sé)\\nChe sembianze! Che vestiti!\\nChe figure! Che mustacchi!\\nIo non so se son Valacchi\\nO se Turchi son costor.",
-            "en": "(Laughing to herself)\\nWhat faces! What clothes!\\nWhat figures! What moustaches!\\nI cannot tell whether these men are Wallachs\\nor whether they are Turks."
+            "it": "(ridendo fra sé)\nChe sembianze! Che vestiti!\nChe figure! Che mustacchi!\nIo non so se son Valacchi\nO se Turchi son costor.",
+            "en": "(Laughing to herself)\nWhat faces! What clothes!\nWhat figures! What moustaches!\nI cannot tell whether these men are Wallachs\nor whether they are Turks."
           },
           {
             "speaker": "Don Alfonso",
-            "it": "(piano a Despina)\\nChe ti par di quell'aspetto?",
-            "en": "(Quietly to Despina)\\nWhat do you think of their appearance?"
+            "it": "(piano a Despina)\nChe ti par di quell'aspetto?",
+            "en": "(Quietly to Despina)\nWhat do you think of their appearance?"
           },
           {
             "speaker": "Despina",
-            "it": "(piano a Don Alfonso)\\nPer parlarvi schietto schietto,\\nHanno un muso fuor dell'uso,\\nVero antidoto d'amor.",
-            "en": "(Quietly to Don Alfonso)\\nTo speak quite frankly,\\nthey have faces quite out of the ordinary,\\na sure antidote to love."
+            "it": "(piano a Don Alfonso)\nPer parlarvi schietto schietto,\nHanno un muso fuor dell'uso,\nVero antidoto d'amor.",
+            "en": "(Quietly to Don Alfonso)\nTo speak quite frankly,\nthey have faces quite out of the ordinary,\na sure antidote to love."
           },
           {
             "speaker": "Ferrando, Guglielmo & Don Alfonso",
-            "it": "(fra sé)\\nOr la cosa è appien decisa;\\nSe costei non li/ci ravvisa\\nNon c'è più nessun timor.",
-            "en": "(Aside)\\nNow the matter is settled;\\nif she does not recognize them/us,\\nthere is nothing more to fear."
+            "it": "(fra sé)\nOr la cosa è appien decisa;\nSe costei non li/ci ravvisa\nNon c'è più nessun timor.",
+            "en": "(Aside)\nNow the matter is settled;\nif she does not recognize them/us,\nthere is nothing more to fear."
           },
           {
             "speaker": "Despina",
-            "it": "(ridendo fra sé)\\nChe figure! Che mustacchi!\\nIo non so se son Valacchi\\nO se Turchi son costor.",
-            "en": "(Laughing to herself)\\nWhat figures! What moustaches!\\nI cannot tell whether these men are Wallachs\\nor whether they are Turks."
+            "it": "(ridendo fra sé)\nChe figure! Che mustacchi!\nIo non so se son Valacchi\nO se Turchi son costor.",
+            "en": "(Laughing to herself)\nWhat figures! What moustaches!\nI cannot tell whether these men are Wallachs\nor whether they are Turks."
           },
           {
             "speaker": "Fiordiligi & Dorabella",
-            "it": "(di dentro)\\nEh, Despina! Olà, Despina!",
-            "en": "(Offstage)\\nHey, Despina! Despina, there!"
+            "it": "(di dentro)\nEh, Despina! Olà, Despina!",
+            "en": "(Offstage)\nHey, Despina! Despina, there!"
           },
           {
             "speaker": "Despina",
@@ -461,8 +461,8 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Don Alfonso",
-            "it": "(a Despina)\\nEcco l'istante!\\nFa' con arte; io qui m'ascondo.",
-            "en": "(To Despina)\\nHere is the moment!\\nPlay your part carefully; I shall hide here."
+            "it": "(a Despina)\nEcco l'istante!\nFa' con arte; io qui m'ascondo.",
+            "en": "(To Despina)\nHere is the moment!\nPlay your part carefully; I shall hide here."
           },
           {
             "speaker": "Stage direction",
@@ -471,8 +471,8 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Fiordiligi & Dorabella",
-            "it": "(entrando)\\nRagazzaccia tracotante,\\nChe fai lì con simil gente?\\nFalli uscire immantinente,\\nO ti fo pentir con lor.",
-            "en": "(Entering)\\nYou insolent little girl,\\nwhat are you doing here with these people?\\nMake them leave at once,\\nor you will regret it along with them."
+            "it": "(entrando)\nRagazzaccia tracotante,\nChe fai lì con simil gente?\nFalli uscire immantinente,\nO ti fo pentir con lor.",
+            "en": "(Entering)\nYou insolent little girl,\nwhat are you doing here with these people?\nMake them leave at once,\nor you will regret it along with them."
           },
           {
             "speaker": "Stage direction",
@@ -481,13 +481,13 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Despina, Ferrando & Guglielmo",
-            "it": "Ah, madame, perdonate!\\nAl bel piè languir mirate\\nDue meschin, di vostro merto\\nSpasimanti adorator.",
-            "en": "Ah, ladies, forgive us!\\nLook at two poor men languishing\\nat your lovely feet,\\nadores who yearn for your charms."
+            "it": "Ah, madame, perdonate!\nAl bel piè languir mirate\nDue meschin, di vostro merto\nSpasimanti adorator.",
+            "en": "Ah, ladies, forgive us!\nLook at two poor men languishing\nat your lovely feet,\nadores who yearn for your charms."
           },
           {
             "speaker": "Fiordiligi & Dorabella",
-            "it": "Giusti Numi! Cosa sento?\\nDell'enorme tradimento\\nChi fu mai l'indegno autor?",
-            "en": "Just heavens! What am I hearing?\\nWho could have been the vile author\\nof this outrageous betrayal?"
+            "it": "Giusti Numi! Cosa sento?\nDell'enorme tradimento\nChi fu mai l'indegno autor?",
+            "en": "Just heavens! What am I hearing?\nWho could have been the vile author\nof this outrageous betrayal?"
           },
           {
             "speaker": "Despina, Ferrando & Guglielmo",
@@ -496,23 +496,23 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Fiordiligi & Dorabella",
-            "it": "Ah, che più non ho ritegno!\\nTutta piena ho l'alma in petto\\nDi dispetto e di furor!",
-            "en": "Ah, I can hold back no longer!\\nMy whole soul is filled\\nwith outrage and fury!"
+            "it": "Ah, che più non ho ritegno!\nTutta piena ho l'alma in petto\nDi dispetto e di furor!",
+            "en": "Ah, I can hold back no longer!\nMy whole soul is filled\nwith outrage and fury!"
           },
           {
             "speaker": "Despina & Don Alfonso",
-            "it": "(fra sé)\\nMi dà un poco di sospetto\\nQuella rabbia e quel furor!",
-            "en": "(Aside)\\nThat anger and fury\\nmake me a little uneasy!"
+            "it": "(fra sé)\nMi dà un poco di sospetto\nQuella rabbia e quel furor!",
+            "en": "(Aside)\nThat anger and fury\nmake me a little uneasy!"
           },
           {
             "speaker": "Ferrando & Guglielmo",
-            "it": "(fra sé)\\nQual diletto è a questo petto\\nQuella rabbia e quel furor!",
-            "en": "(Aside)\\nHow delightful to our hearts\\nare that anger and fury!"
+            "it": "(fra sé)\nQual diletto è a questo petto\nQuella rabbia e quel furor!",
+            "en": "(Aside)\nHow delightful to our hearts\nare that anger and fury!"
           },
           {
             "speaker": "Fiordiligi & Dorabella",
-            "it": "(fra sé)\\nAh, perdon, mio bel diletto!\\nInnocente è questo cor.",
-            "en": "(Aside)\\nAh, forgive me, my beloved!\\nThis heart is innocent."
+            "it": "(fra sé)\nAh, perdon, mio bel diletto!\nInnocente è questo cor.",
+            "en": "(Aside)\nAh, forgive me, my beloved!\nThis heart is innocent."
           }
         ]
       },
@@ -521,28 +521,28 @@ export const cosiActOneScenes = [
         "turns": [
           {
             "speaker": "Don Alfonso",
-            "it": "(dalla porta)\\nChe sussurro! Che strepito!\\nChe scompiglio è mai questo! Siete pazze,\\nCare le mie ragazze?\\nVolete sollevar il vicinato?\\nCos'avete? Ch'è nato?",
-            "en": "(From the doorway)\\nWhat whispering! What a commotion!\\nWhat is all this uproar? Have you gone mad,\\nmy dear girls?\\nDo you mean to rouse the whole neighborhood?\\nWhat is the matter? What has happened?"
+            "it": "(dalla porta)\nChe sussurro! Che strepito!\nChe scompiglio è mai questo! Siete pazze,\nCare le mie ragazze?\nVolete sollevar il vicinato?\nCos'avete? Ch'è nato?",
+            "en": "(From the doorway)\nWhat whispering! What a commotion!\nWhat is all this uproar? Have you gone mad,\nmy dear girls?\nDo you mean to rouse the whole neighborhood?\nWhat is the matter? What has happened?"
           },
           {
             "speaker": "Dorabella",
-            "it": "(con furia)\\nOh, ciel! Mirate:\\nUomini in casa nostra?",
-            "en": "(Furiously)\\nHeavens! Look: there are men in our house?"
+            "it": "(con furia)\nOh, ciel! Mirate:\nUomini in casa nostra?",
+            "en": "(Furiously)\nHeavens! Look: there are men in our house?"
           },
           {
             "speaker": "Don Alfonso",
-            "it": "(senza badare alle donne)\\nChe male c'è?",
-            "en": "(Ignoring the women)\\nWhat harm is there in that?"
+            "it": "(senza badare alle donne)\nChe male c'è?",
+            "en": "(Ignoring the women)\nWhat harm is there in that?"
           },
           {
             "speaker": "Fiordiligi",
-            "it": "(con passione)\\nChe male? In questo giorno!...\\nDopo il caso funesto!...",
-            "en": "(Passionately)\\nWhat harm? On this very day!...\\nAfter that dreadful misfortune!..."
+            "it": "(con passione)\nChe male? In questo giorno!...\nDopo il caso funesto!...",
+            "en": "(Passionately)\nWhat harm? On this very day!...\nAfter that dreadful misfortune!..."
           },
           {
             "speaker": "Don Alfonso",
-            "it": "Stelle! Sogno o son desto? Amici miei,\\nMiei dolcissimi amici!\\nVoi qui? Come? Perché? Quando? In qual modo?\\nNumi! Quanto ne godo!\\n(sottovoce) Secondatemi.",
-            "en": "Heavens! Am I dreaming or awake? My friends,\\nmy dearest friends!\\nYou here? How? Why? When? By what means?\\nGood heavens, how glad I am!\\n(Quietly) Play along with me."
+            "it": "Stelle! Sogno o son desto? Amici miei,\nMiei dolcissimi amici!\nVoi qui? Come? Perché? Quando? In qual modo?\nNumi! Quanto ne godo!\n(sottovoce) Secondatemi.",
+            "en": "Heavens! Am I dreaming or awake? My friends,\nmy dearest friends!\nYou here? How? Why? When? By what means?\nGood heavens, how glad I am!\n(Quietly) Play along with me."
           },
           {
             "speaker": "Ferrando",
@@ -566,13 +566,13 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Despina",
-            "it": "(a Don Alfonso)\\nLi conoscete voi?",
-            "en": "(To Don Alfonso)\\nDo you know them?"
+            "it": "(a Don Alfonso)\nLi conoscete voi?",
+            "en": "(To Don Alfonso)\nDo you know them?"
           },
           {
             "speaker": "Don Alfonso",
-            "it": "Se li conosco! Questi\\nSono i più dolci amici\\nCh'io mai abbia in questo mondo,\\nE i vostri ancor saranno.",
-            "en": "Know them? They are the dearest friends\\nI have in all the world,\\nand they will be yours as well."
+            "it": "Se li conosco! Questi\nSono i più dolci amici\nCh'io mai abbia in questo mondo,\nE i vostri ancor saranno.",
+            "en": "Know them? They are the dearest friends\nI have in all the world,\nand they will be yours as well."
           },
           {
             "speaker": "Fiordiligi",
@@ -581,8 +581,8 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Guglielmo",
-            "it": "Ai vostri piedi\\nDue rei, due delinquenti, ecco, madame!\\nAmor...",
-            "en": "At your feet are two guilty men,\\ntwo offenders, madam! Love..."
+            "it": "Ai vostri piedi\nDue rei, due delinquenti, ecco, madame!\nAmor...",
+            "en": "At your feet are two guilty men,\ntwo offenders, madam! Love..."
           },
           {
             "speaker": "Dorabella",
@@ -591,8 +591,8 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Ferrando",
-            "it": "Amor, il Nume...\\nSì possente per voi qui ci conduce...",
-            "en": "Love, that god...\\nso powerful, has brought us here for you..."
+            "it": "Amor, il Nume...\nSì possente per voi qui ci conduce...",
+            "en": "Love, that god...\nso powerful, has brought us here for you..."
           },
           {
             "speaker": "Stage direction",
@@ -601,8 +601,8 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Guglielmo",
-            "it": "...Vista appena la luce\\nDi vostre fulgidissime pupille...",
-            "en": "...The moment we saw the light\\nof your radiant eyes..."
+            "it": "...Vista appena la luce\nDi vostre fulgidissime pupille...",
+            "en": "...The moment we saw the light\nof your radiant eyes..."
           },
           {
             "speaker": "Ferrando",
@@ -641,8 +641,8 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Fiordiligi",
-            "it": "Temerari, sortite\\nFuori di questo loco, e non profani\\nL'alito infausto degli infami detti\\nNostro cor, nostro orecchio e nostri affetti!\\nInvan per voi, per gli altri invan si cerca\\nLe nostr'alme sedur: l'intatta fede\\nChe per noi già si diede ai cari amanti,\\nSaprem loro serbar infino a morte,\\nA dispetto del mondo e della sorte!",
-            "en": "You reckless men, get out\\nof this place, and let the foul breath\\nof your shameful words not defile\\nour hearts, our ears, or our affections!\\nYou and others may try in vain\\nto seduce our souls: the unsullied faith\\nwe pledged to our dear lovers\\nwe shall keep for them until death,\\ndespite the world and all it brings!"
+            "it": "Temerari, sortite\nFuori di questo loco, e non profani\nL'alito infausto degli infami detti\nNostro cor, nostro orecchio e nostri affetti!\nInvan per voi, per gli altri invan si cerca\nLe nostr'alme sedur: l'intatta fede\nChe per noi già si diede ai cari amanti,\nSaprem loro serbar infino a morte,\nA dispetto del mondo e della sorte!",
+            "en": "You reckless men, get out\nof this place, and let the foul breath\nof your shameful words not defile\nour hearts, our ears, or our affections!\nYou and others may try in vain\nto seduce our souls: the unsullied faith\nwe pledged to our dear lovers\nwe shall keep for them until death,\ndespite the world and all it brings!"
           }
         ]
       },
@@ -651,8 +651,8 @@ export const cosiActOneScenes = [
         "turns": [
           {
             "speaker": "Fiordiligi",
-            "it": "Come scoglio immoto resta\\nContro i venti e la tempesta,\\nCosì ognor quest'alma è forte\\nNella fede e nell'amor.\\nCon noi nacque quella face\\nChe ci piace, e ci consola,\\nE potrà la morte sola\\nFar che cangi affetto il cor.\\nRispettate, anime ingrate,\\nQuest'esempio di costanza;\\nE una barbara speranza\\nNon vi renda audaci ancor!",
-            "en": "As a rock stands unmoved\\nagainst the winds and storm,\\nso this soul is ever steadfast\\nin faith and love.\\nThe flame that delights and comforts us\\nwas born with us,\\nand death alone could make\\nour hearts change their love.\\nRespect, ungrateful souls,\\nthis example of constancy;\\nlet no cruel hope\\nmake you bold again!"
+            "it": "Come scoglio immoto resta\nContro i venti e la tempesta,\nCosì ognor quest'alma è forte\nNella fede e nell'amor.\nCon noi nacque quella face\nChe ci piace, e ci consola,\nE potrà la morte sola\nFar che cangi affetto il cor.\nRispettate, anime ingrate,\nQuest'esempio di costanza;\nE una barbara speranza\nNon vi renda audaci ancor!",
+            "en": "As a rock stands unmoved\nagainst the winds and storm,\nso this soul is ever steadfast\nin faith and love.\nThe flame that delights and comforts us\nwas born with us,\nand death alone could make\nour hearts change their love.\nRespect, ungrateful souls,\nthis example of constancy;\nlet no cruel hope\nmake you bold again!"
           }
         ]
       },
@@ -666,38 +666,38 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Ferrando",
-            "it": "(a Fiordiligi)\\nAh, non partite!",
-            "en": "(To Fiordiligi)\\nAh, do not leave!"
+            "it": "(a Fiordiligi)\nAh, non partite!",
+            "en": "(To Fiordiligi)\nAh, do not leave!"
           },
           {
             "speaker": "Guglielmo",
-            "it": "(a Dorabella)\\nAh, barbare, restate!",
-            "en": "(To Dorabella)\\nAh, cruel ladies, stay!"
+            "it": "(a Dorabella)\nAh, barbare, restate!",
+            "en": "(To Dorabella)\nAh, cruel ladies, stay!"
           },
           {
             "speaker": "Guglielmo",
-            "it": "(a Don Alfonso)\\nChe vi pare?",
-            "en": "(To Don Alfonso)\\nWhat do you think?"
+            "it": "(a Don Alfonso)\nChe vi pare?",
+            "en": "(To Don Alfonso)\nWhat do you think?"
           },
           {
             "speaker": "Don Alfonso",
-            "it": "(sottovoce a Guglielmo)\\nAspettate.",
-            "en": "(Quietly to Guglielmo)\\nWait."
+            "it": "(sottovoce a Guglielmo)\nAspettate.",
+            "en": "(Quietly to Guglielmo)\nWait."
           },
           {
             "speaker": "Don Alfonso",
-            "it": "(alle donne)\\nPer carità, ragazze,\\nNon mi fate più far trista figura.",
-            "en": "(To the women)\\nFor pity's sake, girls,\\ndon't make me look any worse."
+            "it": "(alle donne)\nPer carità, ragazze,\nNon mi fate più far trista figura.",
+            "en": "(To the women)\nFor pity's sake, girls,\ndon't make me look any worse."
           },
           {
             "speaker": "Dorabella",
-            "it": "(con furia)\\nE che pretendereste?",
-            "en": "(Furiously)\\nAnd what would you expect?"
+            "it": "(con furia)\nE che pretendereste?",
+            "en": "(Furiously)\nAnd what would you expect?"
           },
           {
             "speaker": "Don Alfonso",
-            "it": "Eh, nulla... ma mi pare...\\nChe un pochin di dolcezza...\\nAlfin son galantuomini,\\nE sono amici miei.",
-            "en": "Oh, nothing... but it seems to me...\\na little kindness...\\nAfter all, they are gentlemen\\nand they are my friends."
+            "it": "Eh, nulla... ma mi pare...\nChe un pochin di dolcezza...\nAlfin son galantuomini,\nE sono amici miei.",
+            "en": "Oh, nothing... but it seems to me...\na little kindness...\nAfter all, they are gentlemen\nand they are my friends."
           },
           {
             "speaker": "Fiordiligi",
@@ -706,8 +706,8 @@ export const cosiActOneScenes = [
           },
           {
             "speaker": "Guglielmo",
-            "it": "Le nostre pene,\\nE sentirne pietà!\\nLa celeste beltà degli occhi vostri\\nLa piaga aprì nei nostri,\\nCui rimediar può solo\\nIl balsamo d'amore.\\nUn solo istante il core aprite, o belle,\\nA sue dolci facelle, o a voi davanti\\nSpirar vedrete i più fedeli amanti.",
-            "en": "Our suffering,\\nand take pity on it!\\nThe heavenly beauty of your eyes\\nopened a wound in us\\nthat only love's balm can heal.\\nOpen your hearts for just one moment, fair ladies,\\nto love's sweet flames, or before you\\nyou will see your most faithful lovers die."
+            "it": "Le nostre pene,\nE sentirne pietà!\nLa celeste beltà degli occhi vostri\nLa piaga aprì nei nostri,\nCui rimediar può solo\nIl balsamo d'amore.\nUn solo istante il core aprite, o belle,\nA sue dolci facelle, o a voi davanti\nSpirar vedrete i più fedeli amanti.",
+            "en": "Our suffering,\nand take pity on it!\nThe heavenly beauty of your eyes\nopened a wound in us\nthat only love's balm can heal.\nOpen your hearts for just one moment, fair ladies,\nto love's sweet flames, or before you\nyou will see your most faithful lovers die."
           }
         ]
       },
@@ -716,8 +716,8 @@ export const cosiActOneScenes = [
         "turns": [
           {
             "speaker": "Guglielmo",
-            "it": "Non siate ritrosi,\\nOcchietti vezzosi;\\nDue lampi amorosi\\nVibrate un po' qua.\\nFelici rendeteci,\\nAmate con noi;\\nE noi felicissime\\nFaremo anche voi.\\nGuardate, toccate,\\nIl tutto osservate:\\nSiam forti e ben fatti,\\nE come ognun vede,\\nSia merto, sia caso,\\nAbbiamo bel piede,\\nBell'occhio, bel naso;\\nGuardate, bel piede, osservate, bell'occhio,\\nToccate, bel naso, il tutto osservate:\\nE questi mustacchi\\nChiamare si possono\\nTrionfi degli uomini,\\nPennacchi d'amor.",
-            "en": "Do not be shy,\\nyou lovely little eyes;\\nflash a couple of loving sparks\\nthis way.\\nMake us happy;\\nlove along with us,\\nand we shall make you\\nvery happy too.\\nLook, touch,\\ninspect us all over: we are strong\\nand well built, and, as everyone can see,\\nwhether by merit or by chance,\\nwe have handsome feet,\\nbeautiful eyes and noses.\\nLook at the feet, observe the eyes;\\ntouch the noses, inspect us all over.\\nAnd these moustaches\\nmay well be called\\nthe triumphs of men,\\nthe plumes of love."
+            "it": "Non siate ritrosi,\nOcchietti vezzosi;\nDue lampi amorosi\nVibrate un po' qua.\nFelici rendeteci,\nAmate con noi;\nE noi felicissime\nFaremo anche voi.\nGuardate, toccate,\nIl tutto osservate:\nSiam forti e ben fatti,\nE come ognun vede,\nSia merto, sia caso,\nAbbiamo bel piede,\nBell'occhio, bel naso;\nGuardate, bel piede, osservate, bell'occhio,\nToccate, bel naso, il tutto osservate:\nE questi mustacchi\nChiamare si possono\nTrionfi degli uomini,\nPennacchi d'amor.",
+            "en": "Do not be shy,\nyou lovely little eyes;\nflash a couple of loving sparks\nthis way.\nMake us happy;\nlove along with us,\nand we shall make you\nvery happy too.\nLook, touch,\ninspect us all over: we are strong\nand well built, and, as everyone can see,\nwhether by merit or by chance,\nwe have handsome feet,\nbeautiful eyes and noses.\nLook at the feet, observe the eyes;\ntouch the noses, inspect us all over.\nAnd these moustaches\nmay well be called\nthe triumphs of men,\nthe plumes of love."
           },
           {
             "speaker": "Stage direction",
