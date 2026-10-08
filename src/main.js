@@ -1,6 +1,8 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-search-1";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-6";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-4";
+import { operaInformation } from "./data/opera-information.js?v=info-1";
+import { renderOperaInformationPage } from "./opera-info-page.js?v=info-page-1";
 
 const app = document.querySelector("#app");
 
@@ -370,27 +372,15 @@ function aboutPage() {
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
   const libretto = getLibretto(opera.slug);
   if (libretto) {
-    const renderer = createLibrettoRenderer(libretto);
-    return selectedView === "synopsis" ? renderer.synopsis()
-      : selectedView === "outline" ? renderer.outline()
-      : renderer.scene(selectedScene, query, selectedItem, mobileContents);
+    const reader = createLibrettoRenderer(libretto);
+    if (selectedView === "outline") return reader.outline();
+    if (selectedView === "synopsis" || (!selectedView && !query && !window.location.hash.includes("act=") && !window.location.hash.includes("scene="))) {
+      return renderOperaInformationPage(opera, operaInformation[opera.slug], { navigation: reader.navigation(), hasLibretto: true });
+    }
+    return reader.scene(selectedScene, query, selectedItem, mobileContents);
   }
-  return `<div class="opera-detail">
-    <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>
-    <section class="detail-hero section-wrap">
-      <div class="detail-copy"><p class="eyebrow">${opera.composer}</p><h1>${opera.title}</h1><p class="detail-subtitle">${opera.displayTitle !== opera.title ? opera.displayTitle : opera.genre}</p><p class="detail-summary">${opera.summary}</p><a href="#libretto" class="text-link">About this opera ${arrow}</a></div>
-      ${artwork(opera, "artwork--detail")}
-      <span class="detail-index">${String(operas.indexOf(opera) + 1).padStart(2, "0")} <i>/</i> ${String(operas.length).padStart(2, "0")}</span>
-    </section>
-    <section class="detail-facts section-wrap"><div class="facts-heading"><p class="eyebrow">At a glance</p><h2>The essentials.</h2></div><dl>
-      <div><dt>Composer</dt><dd>${opera.composer}</dd></div><div><dt>Libretto</dt><dd>${opera.librettist}</dd></div><div><dt>First performed</dt><dd>${opera.premiered}</dd></div><div><dt>Premiere venue</dt><dd>${opera.premieredAt}</dd></div><div><dt>Language</dt><dd>${opera.language}</dd></div><div><dt>Structure</dt><dd>${opera.acts} acts</dd></div>
-    </dl></section>
-    <section class="detail-note section-wrap" id="libretto"><div class="detail-note__label"><span class="eyebrow">A personal note</span><span class="detail-note__ornament">✳</span></div><p>${opera.note}</p></section>
-    <section class="libretto-placeholder section-wrap"><div><p class="eyebrow">Coming in a later chapter</p><h2>The libretto, line by line.</h2><p>The libretto and side-by-side translation will live here. For now, this page is a place to meet the opera.</p></div><span class="placeholder-mark" aria-hidden="true">Aa<br /><i>↔</i><br />Aa</span></section>
-    <section class="more-operas section-wrap"><div class="section-heading"><div><p class="eyebrow">Keep wandering</p><h2>Another world awaits.</h2></div><a class="text-link text-link--large" href="#/operas">All operas ${arrow}</a></div><div class="opera-grid opera-grid--compact">${operas.filter((item) => item.slug !== opera.slug).slice(0, 3).map(operaCard).join("")}</div></section>
-  </div>`;
+  return renderOperaInformationPage(opera, operaInformation[opera.slug]);
 }
-
 
 let readerJumping = false;
 let readerScrollTick = false;
