@@ -943,5 +943,45 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 7,
+    "kind": "Recitativo e rondò",
+    "cue": "No. 25 — Rondò",
+    "title": "Per pietà, ben mio, perdona",
+    "cast": "Fiordiligi",
+    "summary": "Alone and shaken, Fiordiligi condemns her attraction to Ferrando and begs her absent fiancé Guglielmo to forgive her heart's moment of weakness.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi sola.",
+            "en": "Fiordiligi alone."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Ei parte... senti... ah no... partir si lasci,\nSi tolga ai sguardi miei l'infausto oggetto\nDella mia debolezza. A qual cimento\nIl barbaro mi pose!... Un premio è questo\nBen dovuto a mie colpe!... In tale istante\nDovea di nuovo amante\nI sospiri ascoltar? L'altrui querele\nDovea volger in gioco? Ah, questo core\nA ragione condanni, o giusto amore!\nIo ardo, e l'ardor mio non è più effetto\nD'un amor virtuoso: è smania, affanno,\nRimorso, pentimento,\nLeggerezza, perfidia e tradimento!\n(Guglielmo, anima mia! Perché sei tanto\nora lungi da me? Solo potresti...\nahimè! tu mi detesti,\nmi rigetti, m'aborri... io già ti veggio\nminaccioso, sdegnato; io sento\ni rimproveri amari, e il tuo tormento.)",
+            "en": "He's leaving... Listen... ah, no, let him go;\nlet that fateful cause of my weakness\ndisappear from my sight. What an ordeal\nthat cruel man has put me through!\nWhat punishment my wrongdoing deserves!\nWas this the time to listen\nto the sighs of another lover?\nShould I have treated his pleas as a game?\nJust Love, you have every reason to condemn this heart!\nI burn, and this flame no longer springs\nfrom honorable love: it is frenzy, anguish,\nremorse, repentance,\nfickleness, treachery and betrayal!\n(Guglielmo, my dearest! Why are you\nso far from me now? You alone could...\nalas! You despise me,\nreject me, abhor me. I can already see you\nthreatening and indignant; I hear\nyour bitter reproaches and feel your suffering.)"
+          }
+        ]
+      },
+      {
+        "label": "No. 25 — Rondò",
+        "turns": [
+          {
+            "speaker": "Fiordiligi",
+            "it": "Per pietà, ben mio, perdona\nAll'error di un'alma amante;\nFra quest'ombre e queste piante\nSempre ascoso, oh Dio, sarà!\nSvenerà quest'empia voglia\nL'ardir mio, la mia costanza;\nPerderà la rimembranza\nChe vergogna e orror mi fa.\nA chi mai mancò di fede\nQuesto vano ingrato cor!\nSi dovea miglior mercede,\nCaro bene, al tuo candor.",
+            "en": "Have pity, my love, forgive\nthe error of a loving soul;\nhere among these shadows and trees\nit shall remain forever hidden, oh God!\nMy courage and constancy\nshall destroy this guilty desire;\nits memory, which fills me\nwith shame and horror, shall fade.\nTo whom did this vain, ungrateful heart\nfail in faithfulness?\nYour honesty, my dearest,\ndeserved a better reward."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi parte.",
+            "en": "Fiordiligi leaves."
+          }
+        ]
+      }
+    ]
   }
 ];
