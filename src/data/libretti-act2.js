@@ -1473,5 +1473,110 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 11,
+    "kind": "Recitativo",
+    "cue": "Recitative",
+    "title": "Come tutto congiura",
+    "cast": "Fiordiligi, Guglielmo, Don Alfonso, Despina",
+    "summary": "Fiordiligi resolves to flee to the military camp in disguise to preserve her loyalty. Unseen, the officers and Alfonso overhear her intentions.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi sola; poi Ferrando, Guglielmo e Don Alfonso in altra camera; indi Despina.",
+            "en": "Fiordiligi alone; later Ferrando, Guglielmo, and Don Alfonso in an adjoining room, and then Despina."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Come tutto congiura\nA sedurre il mio cor! Ma no... si mora\nE non si ceda... errai quando alla suora\nIo mi scopersi, ed alla serva mia.\nEsse a lui diran tutto, ed ei più audace,\nFia di tutto capace... agli occhi miei\nMai più non comparisca... a tutti i servi\nMinaccerò il congedo.",
+            "en": "Everything conspires\nto seduce my heart! But no: better to die\nthan yield. I was wrong to confide\nin my sister and my maid.\nThey'll tell him everything; emboldened,\nhe will dare anything. He must never\nappear before my eyes again; I'll threaten\nevery servant with dismissal."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando, Guglielmo e Don Alfonso entrano in un'altra camera che si vede per la porta della prima.",
+            "en": "Ferrando, Guglielmo and Don Alfonso enter an adjoining room visible through the door."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Se lo lascian passar... veder nol voglio,\nQuel seduttor.",
+            "en": "If they let him in... I won't see him,\nthat seducer."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(agli amici)\nBravissima!\nLa mia casta Artemisia! La sentite?",
+            "en": "(To his friends)\nSplendid!\nMy chaste Artemisia! Do you hear her?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Ma potria Dorabella,\nSenza saputa mia... Piano... un pensiero\nPer la mente mi passa: in casa mia\nRestar molte uniformi\nDi Guglielmo e di Ferrando... ardir!...\nDespina! Despina!",
+            "en": "But Dorabella might,\nwithout my knowing... Wait, a thought\noccurs to me: there are still\nmany uniforms belonging\nto Guglielmo and Ferrando in my house.\nCourage! Despina! Despina!"
+          },
+          {
+            "speaker": "Despina",
+            "it": "(entrando)\nCosa c'è?",
+            "en": "(Entering)\nWhat is it?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Tieni un po' questa chiave, e senza replica,\nSenza replica alcuna,\nPrendi nel guardaroba e qui mi porta\nDue spade, due cappelli e due vestiti\nDe' nostri sposi.",
+            "en": "Take this key and, without argument,\nnot another word,\ngo to the wardrobe and bring me\ntwo swords, two hats and two sets\nof our lovers' clothes."
+          },
+          {
+            "speaker": "Despina",
+            "it": "E che volete fare?",
+            "en": "What are you planning?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Vanne, non replicare.",
+            "en": "Go. No arguments."
+          },
+          {
+            "speaker": "Despina",
+            "it": "(fra sé)\nComanda in abrégé donna Arroganza!",
+            "en": "(Aside)\nLady Arrogance gives her orders in short!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Despina parte.",
+            "en": "Despina leaves."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Non c'è altro, ho speranza\nChe Dorabella stessa\nSeguirà il bell'esempio. Al campo, al campo:\nAltra strada non resta\nPer serbarci innocenti.",
+            "en": "There is no other way. I hope\nDorabella herself\nwill follow my good example. To camp, to camp!\nNo other path is left\nto preserve our innocence."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "(fra sé)\nHo capito abbastanza.\n(a Despina, che ritorna)\nVanne pur, non temer.",
+            "en": "(Aside)\nI've heard enough.\n(To Despina, who returns)\nGo along, don't be afraid."
+          },
+          {
+            "speaker": "Despina",
+            "it": "(a Fiordiligi)\nEccomi.",
+            "en": "(To Fiordiligi)\nHere I am."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Vanne.\nSei cavalli di posta\nVoli un servo a ordinar... di' a Dorabella\nChe parlar le vorrei...",
+            "en": "Go.\nSend a servant at once\nto order six post horses... Tell Dorabella\nthat I wish to speak to her."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Sarà servita.\n(fra sé)\nQuesta donna mi par di senno uscita.",
+            "en": "As you wish.\n(Aside)\nThis woman seems to have lost her senses."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Despina parte.",
+            "en": "Despina leaves."
+          }
+        ]
+      }
+    ]
   }
 ];
