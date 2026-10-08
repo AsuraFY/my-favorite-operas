@@ -145,6 +145,10 @@ function romanNumeral(value) {
   return ["", "I", "II", "III", "IV", "V", "VI"][value] || String(value);
 }
 
+function italianSceneOrdinal(value) {
+  return ["", "PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA"][value] || String(value);
+}
+
 function sectionNavigationLabel(section) {
   const match = section.label.match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
   if (match) return "N. " + match[1] + " · " + match[2];
@@ -231,11 +235,10 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
       '<div class="reading-main"><section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + backToContents + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
         '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto Primo · Act I <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
+          '<p class="scene-context">ATTO PRIMO · ACT I <span>/</span> SCENA ' + italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
           '<h1 class="scene-page-title">' + sceneLabel + '</h1>' +
-          (sceneSetting ? '<p class="scene-page-setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
+          (sceneSetting ? '<p class="scene-context__setting scene-page-setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
           '<p class="scene-summary">' + escapeHtml(scene.summary) + '</p>' +
-          '<p class="scene-context">ATTO PRIMO · ACT I <span>/</span> SCENA ' + romanNumeral(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
-          (sceneSetting ? '<p class="scene-context__setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No line in the first three scenes contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
         '<div class="selected-section-heading"><h2>' + escapeHtml(presentation.heading) + '</h2>' + (presentation.subtitle ? '<p>' + escapeHtml(presentation.subtitle) + '</p>' : '') + '</div>' +
