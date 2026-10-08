@@ -36,6 +36,16 @@ function footer() {
 
 function shell(content, active) {
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
+  app.querySelector("[data-reader-top]")?.addEventListener("click", () => {
+    const panel = app.querySelector(".scene-panel");
+    if (!panel) return;
+    const toolbar = app.querySelector(".mobile-reader-toolbar");
+    const target = toolbar && getComputedStyle(toolbar).display !== "none" ? toolbar : panel;
+    target.scrollIntoView({
+      block: "start",
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+    });
+  });
   const toggle = app.querySelector(".menu-toggle");
   const nav = app.querySelector(".main-nav");
   toggle?.addEventListener("click", () => {
@@ -246,6 +256,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
       '</section></div>' +
     '</div>' +
+    '<button class="libretto-back-to-top" type="button" data-reader-top hidden aria-label="Back to scene navigation" title="Back to scene navigation"><span aria-hidden="true">↑</span><span aria-hidden="true">Top</span></button>' +
   '</div>';
 }
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false) {
@@ -264,6 +275,14 @@ function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobil
     <section class="libretto-placeholder section-wrap"><div><p class="eyebrow">Coming in a later chapter</p><h2>The libretto, line by line.</h2><p>The libretto and side-by-side translation will live here. For now, this page is a place to meet the opera.</p></div><span class="placeholder-mark" aria-hidden="true">Aa<br /><i>↔</i><br />Aa</span></section>
     <section class="more-operas section-wrap"><div class="section-heading"><div><p class="eyebrow">Keep wandering</p><h2>Another world awaits.</h2></div><a class="text-link text-link--large" href="#/operas">All operas ${arrow}</a></div><div class="opera-grid opera-grid--compact">${operas.filter((item) => item.slug !== opera.slug).slice(0, 3).map(operaCard).join("")}</div></section>
   </div>`;
+}
+
+function updateReaderTopButton() {
+  const button = app.querySelector("[data-reader-top]");
+  const panel = app.querySelector(".scene-panel");
+  if (!button || !panel) return;
+  const panelStart = window.scrollY + panel.getBoundingClientRect().top;
+  button.hidden = window.scrollY < panelStart + 280;
 }
 
 function render() {
@@ -301,7 +320,9 @@ function render() {
     return;
   }
   window.scrollTo(0, 0);
+  updateReaderTopButton();
 }
 
+window.addEventListener("scroll", updateReaderTopButton, { passive: true });
 window.addEventListener("hashchange", render);
 render();
