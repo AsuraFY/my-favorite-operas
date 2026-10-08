@@ -135,8 +135,10 @@ let stickyBarObserver = null;
 function measureStickyNavigation() {
   const header = app.querySelector(".site-header");
   const operaBar = app.querySelector(".opera-subnav");
+  const mobileToolbar = app.querySelector(".mobile-reader-toolbar");
   document.documentElement.style.setProperty("--sticky-site-height", (header?.getBoundingClientRect().height || 0) + "px");
   document.documentElement.style.setProperty("--sticky-opera-height", (operaBar?.getBoundingClientRect().height || 0) + "px");
+  document.documentElement.style.setProperty("--sticky-reader-height", (mobileToolbar?.getBoundingClientRect().height || 0) + "px");
 }
 
 function setupStickyNavigation() {
@@ -147,8 +149,10 @@ function setupStickyNavigation() {
     stickyBarObserver = new ResizeObserver(measureStickyNavigation);
     const header = app.querySelector(".site-header");
     const operaBar = app.querySelector(".opera-subnav");
+    const toolbar = app.querySelector(".mobile-reader-toolbar");
     if (header) stickyBarObserver.observe(header);
     if (operaBar) stickyBarObserver.observe(operaBar);
+    if (toolbar) stickyBarObserver.observe(toolbar);
   }
 }
 
@@ -614,7 +618,10 @@ function updateReaderSectionPosition() {
   if (!root) return;
   const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
   if (!items.length) return;
-  const threshold = window.matchMedia("(max-width: 700px)").matches ? 130 : 85;
+  const siteHeight = app.querySelector(".site-header")?.getBoundingClientRect().height || 0;
+  const barHeight = root.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0;
+  const toolbarHeight = root.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0;
+  const threshold = siteHeight + barHeight + toolbarHeight + 18;
   let active = 0;
   for (const section of items) {
     if (section.getBoundingClientRect().top <= threshold) active = Number(section.dataset.librettoItem);
@@ -707,6 +714,8 @@ function render() {
 document.addEventListener("keydown", onOutlineKeydown);
 window.addEventListener("resize", () => {
   if (!window.matchMedia("(max-width: 700px)").matches) closeActOutline(false);
+  measureStickyNavigation();
+  scheduleReaderSectionUpdate();
 });
 app.addEventListener("click", handleSceneSectionLink);
 window.addEventListener("scroll", scheduleReaderSectionUpdate, { passive: true });

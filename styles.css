@@ -1541,3 +1541,33 @@ button { font: inherit; }
   .opera-reading-page .opera-subnav__title { font-size: 22px; }
   .opera-reading-page .opera-subnav__links { height: 43px; margin-top: 2px; }
 }
+
+/* Mobile Outline toolbar remains in view beneath both sticky navigation bars. */
+:root { --sticky-reader-height: 0px; }
+.opera-reading-page[data-act] .scene-panel { overflow: visible; }
+@media (min-width: 701px) {
+  .opera-reading-page[data-act] .reading-layout > .scene-sidebar[data-act-outline] {
+    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    height: calc(100dvh - var(--sticky-site-height) - var(--sticky-opera-height));
+    max-height: 100vh;
+  }
+}
+@media (max-width: 700px) {
+  .opera-reading-page[data-act] .mobile-reader-toolbar {
+    position: sticky;
+    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    z-index: 65;
+    min-height: 46px;
+    margin-bottom: 15px;
+    padding-inline: 12px;
+    box-shadow: 0 3px 7px rgba(20, 36, 52, .08);
+  }
+  .opera-reading-page[data-act] .mobile-reader-toolbar .mobile-scene-step { font-size: 12px; }
+  .opera-reading-page[data-act] .mobile-reader-toolbar nav { gap: 7px; }
+}
+.opera-reading-page[data-act] .libretto-scene-section {
+  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
+}
+.opera-reading-page[data-act] .scene-panel__top {
+  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
+}
