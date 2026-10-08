@@ -23,10 +23,10 @@ export function renderOperaInformationPage(opera, details, { navigation = "", ha
           (hasLibretto ? '<a class="opera-info__read-link" href="#/operas/' + escape(opera.slug) + '?act=1">Read the libretto <span aria-hidden="true">→</span></a>' : '') +
         '</div>' +
       '</div>' +
-      '<div class="opera-info__facts section-wrap" aria-label="Opera information">' +
+      '<dl class="opera-info__facts section-wrap" aria-label="Opera information">' +
         [['Composer',opera.composer],['Librettist',opera.librettist],['Premiere',opera.premiered],['First performed at',opera.premieredAt],['Original language',opera.language],['Genre',opera.genre],['Acts',String(opera.acts)]]
         .map(([label,value]) => '<div><dt>' + escape(label) + '</dt><dd>' + escape(value) + '</dd></div>').join("") +
-      '</div>' +
+      '</dl>' +
       '<div class="opera-info__content section-wrap">' +
         '<section class="opera-info__synopsis" aria-labelledby="opera-info-synopsis"><h2 id="opera-info-synopsis">Synopsis</h2>' +
           synopsis.map(paragraph => '<p>' + escape(paragraph) + '</p>').join("") +
