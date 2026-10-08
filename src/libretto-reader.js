@@ -1,4 +1,4 @@
-import { getLibretto } from "./data/libretto-registry.js?v=registry-3";
+
 
 
 function createLibrettoRenderer(libretto) {
@@ -13,11 +13,6 @@ function speakerClass(speaker) {
 function romanNumeral(value) {
   const numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII"];
   return numerals[value] || String(value);
-}
-
-function italianSceneOrdinal(value) {
-  const ordinals = ["", "PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA", "DECIMA", "UNDICESIMA", "DODICESIMA", "TREDICESIMA", "QUATTORDICESIMA", "QUINDICESIMA", "SEDICESIMA", "DICIASSETTESIMA", "ULTIMA"];
-  return ordinals[value] || String(value);
 }
 
 function sectionTitles(scene, section, sectionIndex) {
@@ -55,12 +50,12 @@ function sectionPresentation(scene, section, sectionIndex) {
   const subtitle = [translatedForm, titles.translation].filter(Boolean).join(" · ");
   return { heading, subtitle, form, number: no };
 }
-function cosiActCatalog() {
+function actCatalog() {
   return (libretto.acts || []).filter(group => group.scenes?.length);
 }
-function cosiOperaBar(act = 1, page = "libretto") {
+function renderOperaBar(act = 1, page = "libretto") {
   const base = "#/operas/" + libretto.slug;
-  const availableActs = cosiActCatalog();
+  const availableActs = actCatalog();
   const tabs = [
     { label: "Synopsis", href: base + "?view=synopsis", current: page === "synopsis" },
     { label: "Libretto Outline", href: base + "?view=outline", current: page === "outline" },
@@ -82,7 +77,7 @@ function cosiOperaBar(act = 1, page = "libretto") {
 
 
 function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=false) {
-  const scenes=cosiActCatalog().find(group=>group.number===act)?.scenes||[];
+  const scenes=actCatalog().find(group=>group.number===act)?.scenes||[];
   return scenes.map(item=>{
     const links=item.sections.map((section,index)=>{
       const active=item.number===selectedScene&&index===selectedItem;
@@ -104,7 +99,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
 }
 
 function renderCompleteOutlineAct(act) {
-  const group = cosiActCatalog().find(entry => entry.number === act);
+  const group = actCatalog().find(entry => entry.number === act);
   if (!group) return "";
   const actName = group.originalHeading || "Act " + romanNumeral(act);
   return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
@@ -130,20 +125,20 @@ function renderCompleteOutlineAct(act) {
     }).join("") + '</details>';
 }
 
-function cosiOutlinePage() {
-  return '<div class="opera-reading-page opera-outline-page" data-libretto-slug="' + libretto.slug + '">' + cosiOperaBar(1, "outline") +
+function renderOutlinePage() {
+  return '<div class="opera-reading-page opera-outline-page" data-libretto-slug="' + libretto.slug + '">' + renderOperaBar(1, "outline") +
     '<section class="opera-outline" aria-labelledby="opera-outline-title">' +
     '<div class="opera-outline__heading"><h1 id="opera-outline-title">Libretto Outline</h1></div>' +
     '<div class="opera-outline__acts">' +
-    cosiActCatalog().map(({ number }) => renderCompleteOutlineAct(number)).join("") +
+    actCatalog().map(({ number }) => renderCompleteOutlineAct(number)).join("") +
     '</div></section></div>';
 }
 
 
-function cosiSynopsisPage() {
+function renderSynopsisPage() {
   const synopsis = libretto.synopsis;
   const characters = synopsis.characters;
-  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '">' + cosiOperaBar(1, "synopsis") +
+  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '">' + renderOperaBar(1, "synopsis") +
     '<article class="opera-synopsis">' +
     '<p class="opera-synopsis__eyebrow">' + escapeHtml(synopsis.eyebrow) + '</p>' +
     '<h1>Synopsis</h1>' +
@@ -174,7 +169,7 @@ function sectionParticipantCredits(section, act, sceneNumber) {
   return '<div class="libretto-participants" aria-label="Singers and speakers in this section">' +
     icon + '<span>' + escapeHtml(names.join(", ")) + '</span></div>';
 }
-function renderCosiSceneSection(scene, section, sectionIndex, act) {
+function renderSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
   const rows = section.turns.map(turn => {
     const className = speakerClass(turn.speaker);
@@ -200,9 +195,9 @@ function conciseSceneSummary(scene) {
   return (text.split(/\s+/).length > 35 ? sentences.slice(0, 1) : sentences.slice(0, 2)).join(" ");
 }
 
-function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
+function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
   const requested=Number(new URLSearchParams(window.location.hash.split("?")[1]||"").get("act"))||1;
-  const group=cosiActCatalog().find(group=>group.number===requested)||cosiActCatalog()[0];
+  const group=actCatalog().find(group=>group.number===requested)||actCatalog()[0];
   const act=group.number, scenes=group.scenes;
   const base = "#/operas/" + libretto.slug;
   const searchTerm = query.trim().toLocaleLowerCase();
@@ -225,7 +220,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const sceneLinks = renderActSceneLinks(act, scene.number, itemIndex, true);
   const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="' + base + '?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
   const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="' + base + '?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
-  const followingAct = cosiActCatalog().find(group => group.number > act);
+  const followingAct = actCatalog().find(group => group.number > act);
   const bottomNext = scene.number < scenes.length ? next : followingAct ?
     '<a class="mobile-scene-step" href="' + base + '?act=' + followingAct.number + '&scene=1&item=0">Continue to Act ' + romanNumeral(followingAct.number) + ' →</a>' :
     '<span class="mobile-scene-step is-disabled" aria-disabled="true">End of opera</span>';
@@ -234,7 +229,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
     '<div class="scene-bottom-nav__controls">' + previous + bottomNext + '</div></nav>';
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
   return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
-    cosiOperaBar(act) +
+    renderOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="' + escapeHtml(libretto.mobileArtworkLabel || libretto.opera.title) + '"></div><div class="mobile-opera-intro__title"><h1>' + escapeHtml(libretto.opera.title) + '</h1><p>' + escapeHtml(libretto.mobileComposer || libretto.opera.composer) + '</p></div></section>' +
     '<div class="reading-layout">' +
       '<div class="act-outline__backdrop" data-outline-backdrop hidden aria-hidden="true"></div>' +
@@ -255,7 +250,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
           '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(scene)) + '</p>' +
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
-        scene.sections.map((part, index) => renderCosiSceneSection(scene, part, index, act)).join("") +
+        scene.sections.map((part, index) => renderSceneSection(scene, part, index, act)).join("") +
         bottomSceneNavigation +
       '</section></div>' +
     '</div>' +
@@ -263,9 +258,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   '</div>';
 }
 
-return { scene: cosiOperaPage, outline: cosiOutlinePage, synopsis: cosiSynopsisPage };
+return { scene: renderScenePage, outline: renderOutlinePage, synopsis: renderSynopsisPage };
 }
 
-const cosiReader = createLibrettoRenderer(getLibretto("cosi-fan-tutte"));
-const { scene: cosiOperaPage, outline: cosiOutlinePage, synopsis: cosiSynopsisPage } = cosiReader;
-export { createLibrettoRenderer, cosiOperaPage, cosiOutlinePage, cosiSynopsisPage };
+export { createLibrettoRenderer };
