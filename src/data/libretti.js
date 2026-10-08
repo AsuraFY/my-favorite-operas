@@ -1017,5 +1017,30 @@ export const cosiActOneScenes = [
       ]
     }
   ]
+},
+{
+  "number": 14,
+  "kind": "Finale",
+  "cue": "No. 18 — Finale",
+  "title": "Ah, che tutta in un momento",
+  "cast": "Fiordiligi, Dorabella",
+  "summary": "In the garden, the sisters grieve over their lovers' departure and lament how suddenly their happiness has changed into suffering.",
+  "sections": [
+    {
+      "label": "No. 18 — Finale",
+      "turns": [
+        {
+          "speaker": "Stage direction",
+          "it": "Giardinetto gentile; due sofà d'erba ai lati.",
+          "en": "A pleasant little garden, with two turf-covered sofas on either side."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Ah, che tutta in un momento\nSi cangiò la sorte mia,\nAh, che un mar pien di tormento\nÈ la vita ormai per me!\nFinché meco il caro bene\nMi lasciar le ingrate stelle,\nNon sapea cos'eran pene,\nNon sapea languir cos'è.\nAh, che tutta in un momento\nSi cangiò la sorte mia...\nAh, che un mar pien di tormento\nÈ la vita ormai per me!",
+          "en": "Ah, how in a single moment\nmy fate has changed!\nAh, life for me is now\na sea full of torment!\nAs long as the unkind stars\nleft my beloved by my side,\nI knew nothing of sorrow;\nI did not know what it meant to pine.\nAh, how in a single moment\nmy fate has changed...\nAh, life for me is now\na sea full of torment!"
+        }
+      ]
+    }
+  ]
 }
 ];
