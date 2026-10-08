@@ -363,5 +363,185 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 4,
+    "kind": "Duetto con coro e quartetto",
+    "cue": "Nos. 21–22 — Duet with Chorus & Quartet",
+    "title": "Secondate, aurette amiche / La mano a me date",
+    "cast": "Ferrando, Guglielmo, Fiordiligi, Dorabella, Don Alfonso, Despina, Chorus",
+    "summary": "In a seaside garden, the disguised officers serenade the sisters from a flower-decked boat. Don Alfonso and Despina arrange a formal reconciliation and leave the couples together.",
+    "sections": [
+      {
+        "label": "No. 21 — Duetto con coro",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Giardino alla riva del mare con sedili d'erba e due tavolini di pietra. Alla sponda una barca ornata di fiori. Ferrando e Guglielmo con banda di suonatori e coro di marinai nella barca; Despina nel giardino; Fiordiligi e Dorabella, accompagnate da Don Alfonso, vengono da lato; servi riccamente vestiti.",
+            "en": "A garden by the seashore, with turf seats and two stone tables. A flower-decked boat lies by the shore. Ferrando and Guglielmo are aboard with musicians and a sailors' chorus; Despina is in the garden; Fiordiligi and Dorabella enter with Don Alfonso. Richly dressed servants attend."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "Secondate, aurette amiche,\nSecondate i miei desiri,\nE portate i miei sospiri\nAlla Dea di questo cor.\nVoi che udiste mille volte\nIl tenor delle mie pene,\nRipetete al caro bene\nTutto quel che udiste allor.",
+            "en": "Gentle breezes, favor us,\nhelp fulfil my wishes,\nand carry my sighs\nto the goddess of this heart.\nYou who have heard a thousand times\nthe tale of my suffering,\nrepeat to my beloved\neverything you heard then."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Secondate, aurette amiche,\nIl desir di sì bei cor.",
+            "en": "Friendly breezes, grant\nthe wishes of such loving hearts."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Nel tempo del ritornello di questo coro, Ferrando e Guglielmo scendono con catene di fiori; Don Alfonso e Despina li conducono davanti le due amanti, che resteranno ammutite ed attonite.",
+            "en": "During the chorus's refrain, Ferrando and Guglielmo disembark with flower garlands. Don Alfonso and Despina lead them before the two women, who stand astonished and speechless."
+          }
+        ]
+      },
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Don Alfonso",
+            "it": "(ai servi che portano bacili con fiori)\nIl tutto deponete\nSopra quei tavolini, e nella barca\nRitiratevi, amici.",
+            "en": "(To the servants carrying trays of flowers)\nPut everything down\non those tables and withdraw\nto the boat, friends."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Cos'è tal mascherata?",
+            "en": "What is this masquerade?"
+          },
+          {
+            "speaker": "Despina",
+            "it": "(a Ferrando e Guglielmo)\nAnimo, via, coraggio: avete perso\nL'uso della favella?",
+            "en": "(To Ferrando and Guglielmo)\nCome, take courage! Have you lost\nthe power of speech?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "La barca s'allontana dalla sponda.",
+            "en": "The boat moves away from the shore."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Io tremo e palpito\nDalla testa alle piante.",
+            "en": "I tremble and quiver\nfrom head to foot."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Amor lega le membra a vero amante.",
+            "en": "Love binds the limbs of a true lover."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "(alle donne)\nDa brave, incoraggiateli.",
+            "en": "(To the ladies)\nCome now, encourage them."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "(agli amanti)\nParlate.",
+            "en": "(To the suitors)\nSpeak."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "(agli amanti)\nLiberi dite pur quel che bramate.",
+            "en": "(To the suitors)\nSay freely whatever you wish."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Madama...",
+            "en": "Madam..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Anzi, madame...",
+            "en": "Indeed, madam..."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(a Guglielmo)\nParla pur tu.",
+            "en": "(To Guglielmo)\nYou speak."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(a Ferrando)\nNo, no, parla pur tu.",
+            "en": "(To Ferrando)\nNo, no, you speak."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Oh cospetto del diavolo,\nLasciate tali smorfie\nDel secolo passato. Despinetta,\nTerminiam questa festa,\nFa' tu con lei quel ch'io farò con questa.",
+            "en": "Oh, for heaven's sake,\nstop these absurd formalities\nfrom the last century. Despina,\nlet's finish this performance;\ndo with one what I'll do with the other."
+          }
+        ]
+      },
+      {
+        "label": "No. 22 — Quartetto",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso prende per mano Dorabella, mentre Despina prende Fiordiligi.",
+            "en": "Don Alfonso takes Dorabella's hand, while Despina takes Fiordiligi's."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "La mano a me date,\nMovetevi un po'.\n(agli amanti)\nSe voi non parlate,\nPer voi parlerò.\n(alle signore)\nPerdono vi chiede\nUn schiavo tremante;\nV'offese, lo vede,\nMa solo un istante.\nOr pena, ma tace...",
+            "en": "Give me your hand,\nmove a little closer.\n(To the suitors)\nSince you won't speak,\nI'll speak for you.\n(To the ladies)\nA trembling servant\nbegs your pardon;\nhe sees he offended you,\nbut only for an instant.\nNow he suffers, but is silent..."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "(ripetono l'ultima parola con la stessa cantilena)\n...Tace...",
+            "en": "(Repeating the last word in the same singsong)\n...Silent..."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Or lasciavi in pace...",
+            "en": "Now he leaves you in peace..."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "(come sopra)\n...In pace...",
+            "en": "(As before)\n...In peace..."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Non può quel che vuole,\nVorrà quel che può.",
+            "en": "He cannot do what he wishes;\nhe will wish for what he can have."
+          },
+          {
+            "speaker": "Ferrando & Guglielmo",
+            "it": "(ripetono i due versi interi con un sospiro)\nNon può quel che vuole,\nVorrà quel che può.",
+            "en": "(Repeating both lines with a sigh)\nHe cannot do what he wishes;\nhe will wish for what he can have."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "(alle ragazze)\nSu via rispondete,\nGuardate e ridete?",
+            "en": "(To the women)\nCome, answer them!\nDo you only stare and laugh?"
+          },
+          {
+            "speaker": "Despina",
+            "it": "(mettendosi davanti alle due ragazze)\nPer voi la risposta\nA loro darò.\nQuello che è stato è stato,\nScordiamci del passato.\nRompasi omai quel laccio,\nSegno di servitù.",
+            "en": "(Stepping in front of the two women)\nI'll give them\nyour answer.\nWhat's done is done;\nlet's forget the past.\nLet us break that bond,\nthat mark of servitude."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Despina prende la mano di Dorabella, Don Alfonso quella di Fiordiligi; e fan rompere i lacci agli amanti, cui mettono al braccio dei medesimi.",
+            "en": "Despina takes Dorabella's hand and Don Alfonso Fiordiligi's. They have the lovers break their bonds and place the garlands upon the women's arms."
+          },
+          {
+            "speaker": "Despina",
+            "it": "A me porgete il braccio,\nNé sospirate più.",
+            "en": "Give me your arm,\nand sigh no more."
+          },
+          {
+            "speaker": "Despina & Don Alfonso",
+            "it": "(a parte, sottovoce)\nPer carità, partiamo:\nQuel che san far veggiamo;\nLe stimo più del diavolo\nS'ora non cascan giù.",
+            "en": "(Aside, quietly)\nFor heaven's sake, let's go;\nlet's see what they can do.\nI'll think them cleverer than the devil\nif they don't fall for it now."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Partono.",
+            "en": "They leave."
+          }
+        ]
+      }
+    ]
   }
 ];
