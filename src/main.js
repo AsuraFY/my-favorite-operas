@@ -130,9 +130,32 @@ function onOutlineKeydown(event) {
   }
 }
 
+let stickyBarObserver = null;
+
+function measureStickyNavigation() {
+  const header = app.querySelector(".site-header");
+  const operaBar = app.querySelector(".opera-subnav");
+  document.documentElement.style.setProperty("--sticky-site-height", (header?.getBoundingClientRect().height || 0) + "px");
+  document.documentElement.style.setProperty("--sticky-opera-height", (operaBar?.getBoundingClientRect().height || 0) + "px");
+}
+
+function setupStickyNavigation() {
+  stickyBarObserver?.disconnect();
+  stickyBarObserver = null;
+  measureStickyNavigation();
+  if (typeof ResizeObserver === "function") {
+    stickyBarObserver = new ResizeObserver(measureStickyNavigation);
+    const header = app.querySelector(".site-header");
+    const operaBar = app.querySelector(".opera-subnav");
+    if (header) stickyBarObserver.observe(header);
+    if (operaBar) stickyBarObserver.observe(operaBar);
+  }
+}
+
 function shell(content, active) {
   closeActOutline(false);
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
+  setupStickyNavigation();
   setupActOutline();
   app.querySelector("[data-reader-top]")?.addEventListener("click", () => {
     const panel = app.querySelector(".scene-panel");

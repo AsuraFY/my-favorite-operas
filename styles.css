@@ -1520,3 +1520,24 @@ button { font: inherit; }
     font-size: 14px; white-space: normal;
   }
 }
+
+/* Layered, persistent site and opera navigation; keep each bar in document flow. */
+:root { --sticky-site-height: 76px; --sticky-opera-height: 76px; }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  background: #102b40;
+}
+.opera-reading-page > .opera-subnav {
+  position: sticky;
+  top: var(--sticky-site-height);
+  z-index: 70;
+  box-shadow: 0 2px 7px rgba(21, 43, 62, .05);
+}
+@media (max-width: 700px) {
+  /* Keep the existing color palette but reduce the height of the sticky stack. */
+  .opera-reading-page > .opera-subnav { padding-top: 8px; }
+  .opera-reading-page .opera-subnav__title { font-size: 22px; }
+  .opera-reading-page .opera-subnav__links { height: 43px; margin-top: 2px; }
+}
