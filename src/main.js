@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js";
 import { cosiActOneScenes } from "./data/libretti.js?v=cosi-libretto-2";
-import { cosiActTwoScenes } from "./data/libretti-act2.js?v=act2-5";
+import { cosiActTwoScenes } from "./data/libretti-act2.js?v=act2-18";
 
 const app = document.querySelector("#app");
 
@@ -143,11 +143,13 @@ function speakerClass(speaker) {
 }
 
 function romanNumeral(value) {
-  return ["", "I", "II", "III", "IV", "V", "VI"][value] || String(value);
+  const numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII"];
+  return numerals[value] || String(value);
 }
 
 function italianSceneOrdinal(value) {
-  return ["", "PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA"][value] || String(value);
+  const ordinals = ["", "PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA", "DECIMA", "UNDICESIMA", "DODICESIMA", "TREDICESIMA", "QUATTORDICESIMA", "QUINDICESIMA", "SEDICESIMA", "DICIASSETTESIMA", "ULTIMA"];
+  return ordinals[value] || String(value);
 }
 
 function sectionTitles(scene, section, sectionIndex) {
