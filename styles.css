@@ -495,7 +495,7 @@ button { font: inherit; }
 .directory-grid { padding-top: 0; padding-bottom: 72px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .directory-card { min-width: 0; overflow: hidden; display: block; border: 1px solid #e6dfd6; border-radius: 9px; background: #faf8f4; box-shadow: 0 2px 8px rgba(49, 38, 25, .035); color: #192b3a; animation: rise .45s both; animation-delay: calc(var(--card-index, 0) * 45ms); transition: box-shadow .2s ease, transform .2s ease; }
 .directory-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(49, 38, 25, .1); }
-.directory-card__image { height: clamp(138px, 14vw, 176px); background-image: url("./public/images/opera-card-art.webp"); background-size: 200% 200%; background-repeat: no-repeat; background-color: #d6cabb; overflow: hidden; }
+.directory-card__image { height: clamp(138px, 14vw, 176px); background-image: url("./public/images/opera-card-art.webp"); background-size: 200% auto; background-repeat: no-repeat; background-color: #d6cabb; overflow: hidden; }
 .directory-card__image--barber { background-position: 0 0; }
 .directory-card__image--cosi { background-position: 100% 0; }
 .directory-card__image--tristan { background-position: 0 100%; }
@@ -1764,7 +1764,7 @@ button { font: inherit; }
 .opera-info__hero { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); gap: clamp(22px, 4vw, 60px); align-items: center; padding-bottom: 30px; }
 .opera-info__cover { overflow: hidden; aspect-ratio: 1.74; background: #d9c7ae; border-radius: 8px; box-shadow: 0 10px 25px rgba(19, 35, 45, .12); }
 .opera-info__cover img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.opera-info__art--sprite { width: 100%; height: 100%; background-image: url("./public/images/opera-card-art.webp"); background-size: 200% 200%; background-repeat: no-repeat; }
+.opera-info__art--sprite { width: 100%; height: 100%; background-image: url("./public/images/opera-card-art.webp"); background-size: 200% auto; background-repeat: no-repeat; }
 .opera-info__introduction h1 { font: 600 clamp(34px, 4.1vw, 60px)/1.12 var(--serif); margin: 8px 0 10px; }
 .opera-info__alternate { font: italic 21px/1.4 var(--serif); color: #906f47; margin: 0 0 18px; }
 .opera-info__summary { font: 19px/1.65 var(--serif); color: #424b50; max-width: 58ch; margin: 0 0 20px; }
