@@ -543,5 +543,325 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 5,
+    "kind": "Recitativo e duetto",
+    "cue": "No. 23 — Duetto",
+    "title": "Il core vi dono",
+    "cast": "Fiordiligi, Dorabella, Ferrando, Guglielmo",
+    "summary": "The two pairs begin courting in the garden. Fiordiligi and Ferrando stroll away, while Guglielmo presses Dorabella to accept a heart-shaped gift. She yields, and the pair exchange tokens of affection.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Guglielmo a braccio di Dorabella, Ferrando e Fiordiligi senza darsi braccio. Fanno una piccola scena muta guardandosi, sospirando, ridendo etc.",
+            "en": "Guglielmo walks arm in arm with Dorabella; Ferrando and Fiordiligi do not take each other's arms. They exchange glances, sighs and little laughs without speaking."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Oh che bella giornata!",
+            "en": "What a lovely day!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Caldetta anzi che no.",
+            "en": "Rather warm, if anything."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Che vezzosi arboscelli!",
+            "en": "What charming little trees!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Certo, certo: son belli,\nHan più foglie che frutti.",
+            "en": "Yes, certainly, they're lovely;\nthey have more leaves than fruit."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Quei viali\nCome son leggiadri.\nVolete passeggiar?",
+            "en": "How delightful\nthose paths are.\nWould you like to take a walk?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Son pronto, o cara,\nAd ogni vostro cenno.",
+            "en": "I am ready, my dear,\nto do whatever you wish."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Troppa grazia!",
+            "en": "You are too kind!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(a Guglielmo, nel passare)\nEccoci alla gran crisi.",
+            "en": "(To Guglielmo as he passes)\nNow comes the great test."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Cosa gli avete detto?",
+            "en": "What did you say to him?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Eh, gli raccomandai\nDi divertirla bene.",
+            "en": "Oh, I was asking him\nto entertain her well."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "(a Guglielmo)\nPasseggiamo anche noi.",
+            "en": "(To Guglielmo)\nLet us take a walk too."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Come vi piace.",
+            "en": "As you wish."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Passeggiano. Dopo un momento di silenzio.",
+            "en": "They walk. After a moment of silence."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Ahimè!",
+            "en": "Alas!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Che cosa avete?",
+            "en": "What's the matter with you?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Gli altri due fanno scena muta in lontananza.",
+            "en": "The other two continue their silent scene at a distance."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Io mi sento sì male,\nSì male, anima mia,\nChe mi par di morire.",
+            "en": "I feel so ill,\nso terribly ill, my dear,\nthat I seem about to die."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "(fra sé)\nNon otterrà nientissimo.\n(forte)\nSaranno rimasugli\nDel velen che beveste.",
+            "en": "(Aside)\nHe won't get anything from me.\n(Aloud)\nPerhaps it's the remains\nof the poison you drank."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(con fuoco)\nAh, che un veleno assai più forte io bevo\nIn que' crudi e focosi\nMongibelli amorosi!",
+            "en": "(Passionately)\nAh, I drink an even stronger poison\nfrom those cruel and fiery\nvolcanoes of love!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Sarà veleno calido:\nFatevi un poco fresco.",
+            "en": "It must be a hot poison:\ngo and cool yourself a little."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Gli altri due entrano in atto di passeggiare.",
+            "en": "The other two reappear, strolling."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Ingrata, voi burlate\nEd intanto io mi moro!\n(fra sé)\nSon spariti:\nDove diamin son iti?",
+            "en": "Ungrateful woman, you joke\nwhile I am dying!\n(Aside)\nThey've vanished!\nWhere the devil have they gone?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Eh, via, non fate...",
+            "en": "Come now, don't..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Io mi moro, crudele, e voi burlate?",
+            "en": "I'm dying, cruel lady, and you make jokes?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Io burlo? io burlo?",
+            "en": "I'm joking? I'm joking?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Dunque\nDatemi qualche segno, anima bella,\nDella vostra pietà.",
+            "en": "Then give me\nsome token, lovely soul,\nof your compassion."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Due, se volete;\nDite quel che far deggio, e lo vedrete.",
+            "en": "Two, if you wish;\ntell me what I should do, and you'll see."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(fra sé)\nScherza, o dice davvero?\n(forte, mostrandole un ciondolo)\nQuesta picciola offerta\nD'accettare degnatevi.",
+            "en": "(Aside)\nIs she joking or serious?\n(Aloud, showing her a pendant)\nPlease deign to accept\nthis little gift."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Un core?",
+            "en": "A heart?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Un core: è simbolo di quello\nCh'arde, languisce e spasima per voi.",
+            "en": "A heart: the symbol of the one\nthat burns, languishes and aches for you."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "(fra sé)\nChe dono prezioso!",
+            "en": "(Aside)\nWhat a precious gift!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "L'accettate?",
+            "en": "Will you accept it?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Crudele!\nDi sedur non tentate un cor fedele.",
+            "en": "Cruel man!\nDo not try to seduce a faithful heart."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(fra sé)\nLa montagna vacilla.\nMi spiace; ma impegnato\nÈ l'onor di soldato.\n(a Dorabella)\nV'adoro!",
+            "en": "(Aside)\nThe mountain is wavering.\nI am sorry, but a soldier's honor\nis at stake.\n(To Dorabella)\nI adore you!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Per pietà...",
+            "en": "Have mercy..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Son tutto vostro!",
+            "en": "I am entirely yours!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Oh, Dei!",
+            "en": "Oh heavens!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Cedete, o cara!",
+            "en": "Yield, my dear!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Mi farete morir...",
+            "en": "You will be the death of me..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Morremo insieme,\nAmorosa mia speme.\nL'accettate?",
+            "en": "We'll die together,\nmy beloved hope.\nWill you accept it?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "(dopo breve intervallo, con un sospiro)\nL'accetto.",
+            "en": "(After a brief pause, with a sigh)\nI accept it."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(fra sé)\nInfelice Ferrando!\n(a Dorabella)\nO che diletto!",
+            "en": "(Aside)\nPoor Ferrando!\n(To Dorabella)\nOh, what delight!"
+          }
+        ]
+      },
+      {
+        "label": "No. 23 — Duetto",
+        "turns": [
+          {
+            "speaker": "Guglielmo",
+            "it": "Il core vi dono,\nBell'idolo mio;\nMa il vostro vo' anch'io,\nVia, datelo a me.",
+            "en": "I give you my heart,\nmy lovely idol;\nbut I want yours as well,\ncome, give it to me."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Mel date, lo prendo,\nMa il mio non vi rendo:\nInvan mel chiedete,\nPiù meco ei non è.",
+            "en": "You give me yours; I'll take it,\nbut I cannot give you mine.\nYou ask for it in vain;\nit is no longer with me."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Se teco non l'hai,\nPerché batte qui?",
+            "en": "If you no longer have it,\nwhy does it beat here?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Se a me tu lo dai,\nChe mai balza lì?",
+            "en": "If you give yours to me,\nwhat is beating there?"
+          },
+          {
+            "speaker": "Dorabella & Guglielmo",
+            "it": "È il mio coricino\nChe più non è meco:\nEi venne a star teco,\nEi batte così.",
+            "en": "It's my little heart,\nno longer here with me;\nit has gone to live with you,\nand that's why it beats so."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(vuol metterle il core dov'ha il ritratto dell'amante)\nQui lascia che il metta.",
+            "en": "(Trying to put the heart where her lover's portrait hangs)\nLet me put it here."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Ei qui non può star.",
+            "en": "It cannot stay here."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "T'intendo, furbetta.",
+            "en": "I understand, you little rogue."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Che fai?",
+            "en": "What are you doing?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Non guardar.",
+            "en": "Don't look."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Le torce dolcemente la faccia dall'altra parte, le cava il ritratto e vi mette il core.",
+            "en": "He gently turns her face aside, removes the portrait and puts the heart-shaped gift in its place."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "(fra sé)\nNel petto un Vesuvio\nD'avere mi par.",
+            "en": "(Aside)\nI feel as though\nVesuvius is erupting in my breast."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(fra sé)\nFerrando meschino!\nPossibil non par.\n(a Dorabella)\nL'occhietto a me gira.",
+            "en": "(Aside)\nPoor Ferrando!\nIt hardly seems possible.\n(To Dorabella)\nTurn your lovely eyes toward me."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Che brami?",
+            "en": "What do you want?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Rimira\nSe meglio può andar.",
+            "en": "Look and see\nwhether it could fit better."
+          },
+          {
+            "speaker": "Dorabella & Guglielmo",
+            "it": "Oh cambio felice\nDi cori e d'affetti!\nChe nuovi diletti,\nChe dolce penar!",
+            "en": "Oh, happy exchange\nof hearts and affections!\nWhat new delights,\nwhat sweet yearning!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Partono abbracciati.",
+            "en": "They leave in an embrace."
+          }
+        ]
+      }
+    ]
   }
 ];
