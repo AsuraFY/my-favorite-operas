@@ -128,7 +128,7 @@ export const cosiActOneScenes = [
         { speaker: "Don Alfonso", it: "Vorrei dir, e cor non ho,\nBalbettando il labbro va.\nFuor la voce uscir non può,\nMa mi resta mezza qua.\nChe farete? Che farò?\nOh, che gran fatalità!\nDar di peggio non si può,\nHo di voi, di lor pietà.", en: "I would speak, but have no heart;\nmy lips can only stammer.\nMy voice cannot come out;\nit catches halfway here.\nWhat will you do? What shall I do?\nOh, what a terrible calamity!\nNothing worse could happen.\nI pity you, and I pity them." },
       ] },
       { label: "Recitative", turns: [
-        { speaker: "Fiordiligi", it: "Stelle! Per carità, signor Alfonso,\nNon ci fate morir.", en: "Heavens! For pity’s sake, Signor Alfonso,\ndo not leave us to die." },
+        { speaker: "Fiordiligi", it: "Stelle! Per carità, signor Alfonso,\nNon ci fate morir.", en: "Heavens! For pity’s sake, Signor Alfonso,\nplease don’t keep us in suspense." },
         { speaker: "Don Alfonso", it: "Convien armarvi,\nFiglie mie, di costanza.", en: "You must prepare yourselves,\nmy dear girls, to be steadfast." },
         { speaker: "Dorabella", it: "Oh Dei! Qual male\nÈ addivenuto mai, qual caso rio?\nForse è morto il mio bene?", en: "Oh, God! What disaster\nhas happened? What dreadful thing?\nIs my darling perhaps dead?" },
         { speaker: "Fiordiligi", it: "È morto il mio?", en: "Is mine dead?" },
