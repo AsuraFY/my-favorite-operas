@@ -1858,5 +1858,45 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 14,
+    "kind": "Recitativo",
+    "cue": "Recitative",
+    "title": "Vittoria, padroncini!",
+    "cast": "Ferrando, Guglielmo, Don Alfonso, Despina",
+    "summary": "Despina reports that the sisters have agreed to marry the disguised strangers and have sent for a notary to prepare the marriage contract.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando, Guglielmo, Don Alfonso e Despina.",
+            "en": "Ferrando, Guglielmo, Don Alfonso and Despina."
+          },
+          {
+            "speaker": "Despina",
+            "it": "(entrando)\nVittoria, padroncini!\nA sposarvi disposte\nSon le care madame; a nome vostro\nLoro io promisi che in tre giorni circa\nPartiranno con voi. L'ordin mi diero\nDi trovar un notaio\nChe stipuli il contratto; alla lor camera\nAttendendo vi stanno.\nSiete così contenti?",
+            "en": "(Entering)\nVictory, my young gentlemen!\nThe dear ladies\nare ready to marry you. On your behalf,\nI promised them they would depart\nwith you in about three days. They ordered me\nto find a notary\nto draw up the contract; they are waiting\nfor you in their room.\nAre you pleased?"
+          },
+          {
+            "speaker": "Ferrando, Guglielmo & Don Alfonso",
+            "it": "Contentissimi.",
+            "en": "Delighted."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Non è mai senza effetto\nQuand'entra la Despina in un progetto.",
+            "en": "Whenever Despina joins a scheme,\nit never fails."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Partono.",
+            "en": "They leave."
+          }
+        ]
+      }
+    ]
   }
 ];
