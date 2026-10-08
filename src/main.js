@@ -163,13 +163,22 @@ function italianSceneOrdinal(value) {
 }
 
 function sectionTitles(scene, section, sectionIndex) {
-  if (cosiActTwoScenes.includes(scene)) return { original: "", translation: "" };
-  if (scene.number === 1 && sectionIndex === 0) return { original: scene.title, translation: "" };
-  if (scene.number === 1 && sectionIndex === 2) return { original: "È la fede delle femmine", translation: "A woman’s faith" };
-  if (scene.number === 1 && sectionIndex === 4) return { original: "Una bella serenata", translation: "A lovely serenade" };
-  if (scene.number === 2 && sectionIndex === 0) return { original: scene.title, translation: "Ah, look, sister" };
-  if (scene.number === 3 && section.label.startsWith("No. 5")) return { original: scene.title, translation: "I would speak, but have no heart" };
-  return { original: "", translation: "" };
+  if (!/^No\./i.test(section.label)) return { original: "", translation: "" };
+  // Musical sections use the Italian incipit, rather than the scene-wide title.
+  if (cosiActTwoScenes.includes(scene) && scene.number === 18)
+    return { original: "Fortunato l'uom che prende", translation: "" };
+  if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 2)
+    return { original: "È la fede delle femmine", translation: "A woman’s faith" };
+  if (cosiActOneScenes.includes(scene) && scene.number === 1 && sectionIndex === 4)
+    return { original: "Una bella serenata", translation: "A lovely serenade" };
+  if (cosiActOneScenes.includes(scene) && scene.number === 2 && sectionIndex === 0)
+    return { original: scene.title, translation: "Ah, look, sister" };
+  if (cosiActOneScenes.includes(scene) && scene.number === 3 && section.label.startsWith("No. 5"))
+    return { original: scene.title, translation: "I would speak, but have no heart" };
+  const sung = section.turns.find(turn => turn.speaker !== "Stage direction" && turn.it?.trim());
+  const firstLine = sung?.it.split(/\r?\n/).map(line => line.trim())
+    .find(line => line && !/^\([^)]*\)$/.test(line)) || "";
+  return { original: firstLine.replace(/[.,;:!?…]+$/, ""), translation: "" };
 }
 
 function sectionNavigationLabel(section, scene, sectionIndex) {
@@ -229,7 +238,11 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
       const label = sectionNavigationLabel(subsection, item, subsectionIndex);
       const isSong = /^No\./i.test(subsection.label);
       const href = "#/operas/cosi-fan-tutte?act=" + act + "&scene=" + item.number + "&item=" + subsectionIndex;
-      return '<a class="section-nav-link' + (active ? " is-current" : "") + '" href="' + href + '"' + (active ? ' aria-current="page"' : "") + '><span class="section-nav-link__icon section-nav-link__icon--' + (isSong ? "song" : "recitative") + '" aria-hidden="true">' + (isSong ? "♫" : "▤") + '</span><span>' + escapeHtml(label) + '</span></a>';
+      const songTitle = isSong ? sectionTitles(item, subsection, subsectionIndex).original : "";
+      const labelText = songTitle ? label.slice(0, -(" · " + songTitle).length) : label;
+      const labelMarkup = '<span class="section-nav-link__label"><span class="section-nav-link__form">' + escapeHtml(labelText) + '</span>' +
+        (songTitle ? '<span class="section-nav-link__title">' + escapeHtml(songTitle) + '</span>' : '') + '</span>';
+      return '<a class="section-nav-link' + (active ? " is-current" : "") + '" href="' + href + '"' + (active ? ' aria-current="page"' : "") + '><span class="section-nav-link__icon section-nav-link__icon--' + (isSong ? "song" : "recitative") + '" aria-hidden="true">' + (isSong ? "♫" : "▤") + '</span>' + labelMarkup + '</a>';
     }).join("");
     return '<details class="scene-group' + (item.number === scene.number ? " is-current" : "") + '" open><summary class="scene-group__summary"><span>' + "Scene " + romanNumeral(item.number) + '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">' + itemSections + '</div></details>';
   }).join("");
