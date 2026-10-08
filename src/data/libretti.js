@@ -278,4 +278,24 @@ export const cosiActOneScenes = [
       ] },
     ],
   },
+  {
+    number: 8,
+    kind: "Recitativo",
+    cue: "Recitativo",
+    title: "Che vita maledetta",
+    cast: "Despina",
+    summary: "Alone in the house, Despina complains about her work as a maid, sneaks a taste of the chocolate, and notices her mistresses arriving.",
+    sections: [
+      { label: "Recitativo", turns: [
+        { speaker: "Stage direction", it: "Camera gentile con diverse sedie, un tavolino, ecc.; tre porte: due laterali, una di mezzo. Despina sola.", en: "A pleasant room with several chairs, a small table, and three doors: two at the sides and one in the middle. Despina is alone." },
+        { speaker: "Stage direction", it: "(frullando il cioccolatte)", en: "(Whipping the chocolate)" },
+        { speaker: "Despina", it: "Che vita maledetta\nÈ il far la cameriera!\nDal mattino alla sera\nSi fa, si suda, si lavora, e poi\nDi tanto che si fa nulla è per noi.", en: "What a wretched life\nbeing a maid can be!\nFrom morning till night, one works,\nsweats, and toils, and after all that,\nnone of it is for us." },
+        { speaker: "Despina", it: "È mezza ora che sbatto;\nIl cioccolatte è fatto, ed a me tocca\nRestar ad odorarlo a secca bocca?", en: "I've been whisking for half an hour;\nthe chocolate is ready, and now I'm left\nto smell it on an empty stomach?" },
+        { speaker: "Despina", it: "Non è forse la mia come la vostra,\nO garbate signore,\nChe a voi dèssi l'essenza, e a me l'odore?", en: "Isn't my mouth as good as yours,\ngraceful ladies? You get the rich taste,\nwhile I get only the smell." },
+        { speaker: "Despina", it: "Per Bacco, vo' assaggiarlo: cospettaccio!\nCom' è buono!", en: "By Bacchus, I'll taste it—blast it!\nIt's delicious!" },
+        { speaker: "Stage direction", it: "Si forbe la bocca", en: "She wipes her mouth." },
+        { speaker: "Despina", it: "Vien gente.\nOh ciel, son le padrone!", en: "Someone's coming.\nOh heavens, it's my mistresses!" },
+      ] },
+    ],
+  },
 ];
