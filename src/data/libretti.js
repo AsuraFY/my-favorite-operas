@@ -1042,5 +1042,235 @@ export const cosiActOneScenes = [
       ]
     }
   ]
+},
+{
+  "number": 15,
+  "kind": "Finale",
+  "cue": "No. 18 — Finale (continued)",
+  "title": "Si mora, sì, si mora",
+  "cast": "Fiordiligi, Dorabella, Ferrando, Guglielmo, Don Alfonso, Despina",
+  "summary": "The disguised suitors pretend to take poison for love. Their apparent collapse alarms the sisters, while Don Alfonso and Despina persuade them to help; pity begins to replace their earlier indignation.",
+  "sections": [
+    {
+      "label": "No. 18 — Finale (continued)",
+      "turns": [
+        {
+          "speaker": "Stage direction",
+          "it": "Fiordiligi e Dorabella; Ferrando, Guglielmo e Don Alfonso; poi Despina.",
+          "en": "Fiordiligi and Dorabella; Ferrando, Guglielmo and Don Alfonso; later Despina."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(di dentro)\nSi mora, sì, si mora\nOnde appagar le ingrate.",
+          "en": "(Offstage)\nLet us die, yes, let us die,\nto satisfy those ungrateful women!"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "(di dentro)\nC'è una speranza ancora;\nNon fate, o Dei, non fate!",
+          "en": "(Offstage)\nThere is still hope!\nDon't do it, for heaven's sake, don't!"
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Stelle, che grida orribili!",
+          "en": "Heavens, what dreadful cries!"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(di dentro)\nLasciatemi!",
+          "en": "(Offstage)\nLet me go!"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "(di dentro)\nAspettate!",
+          "en": "(Offstage)\nWait!"
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Ferrando e Guglielmo, portando ciascuno una boccetta, entrano seguiti da Don Alfonso.",
+          "en": "Ferrando and Guglielmo enter, each carrying a small bottle, followed by Don Alfonso."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "L'arsenico mi liberi\nDi tanta crudeltà!",
+          "en": "Let arsenic deliver me\nfrom such cruelty!"
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Bevono e gittan via il nappo. Nel voltarsi vedono le due donne.",
+          "en": "They drink and throw away their containers. Turning around, they see the two women."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Stelle, un velen fu quello?",
+          "en": "Heavens, was that poison?"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Veleno buono e bello,\nChe ad essi in pochi istanti\nLa vita toglierà.",
+          "en": "Poison indeed,\nwhich in a few moments\nwill take their lives."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Il tragico spettacolo\nGelare il cor mi fa!",
+          "en": "This tragic spectacle\nmakes my heart turn cold!"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "Barbare, avvicinatevi;\nD'un disperato affetto\nMirate il triste effetto\nE abbiate almen pietà.",
+          "en": "Cruel ladies, come nearer;\nbehold the tragic effect\nof desperate love,\nand at least have pity."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Il tragico spettacolo\nGelare il cor mi fa!",
+          "en": "This tragic spectacle\nmakes my heart turn cold!"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "Ah, che del sole il raggio\nFosco per me diventa!",
+          "en": "Ah, how the sunlight\ngrows dark before my eyes!"
+        },
+        {
+          "speaker": "Don Alfonso, Fiordiligi & Dorabella",
+          "it": "Tremo: le fibre e l'anima\nPar che mancar si senta,\nNé può la lingua o il labbro\nAccenti articolar!",
+          "en": "I tremble; body and soul\nseem to be failing,\nand neither tongue nor lips\ncan form a word!"
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Ferrando e Guglielmo cadono sopra i banchi d'erba.",
+          "en": "Ferrando and Guglielmo collapse onto the turf-covered benches."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Giacché a morir vicini\nSono quei meschinelli,\nPietade almeno a quelli\nCercate di mostrar.",
+          "en": "Since those poor fellows\nare so close to death,\nat least try to show them\na little compassion."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Gente, accorrete, gente!\nNessuno, oddio, ci sente!\nDespina!",
+          "en": "Help! Someone come quickly!\nOh God, nobody hears us!\nDespina!"
+        },
+        {
+          "speaker": "Despina",
+          "it": "(di dentro)\nChi mi chiama?",
+          "en": "(Offstage)\nWho is calling me?"
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Despina!",
+          "en": "Despina!"
+        },
+        {
+          "speaker": "Despina",
+          "it": "(entrando in scena)\nCosa vedo!\nMorti i meschini io credo,\nO prossimi a spirar!",
+          "en": "(Entering)\nWhat do I see!\nI believe the poor fellows are dead,\nor about to breathe their last!"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Ah, che purtroppo è vero!\nFurenti, disperati,\nSi sono avvelenati.\nOh, amore singolar!",
+          "en": "Ah, unfortunately it's true!\nFrantic and despairing,\nthey have poisoned themselves.\nOh, what extraordinary love!"
+        },
+        {
+          "speaker": "Despina",
+          "it": "Abbandonar i miseri\nSaria per voi vergogna:\nSoccorrerli bisogna.",
+          "en": "It would be shameful\nfor you to abandon these poor men;\nthey must be helped."
+        },
+        {
+          "speaker": "Fiordiligi, Dorabella & Don Alfonso",
+          "it": "Cosa possiam mai far?",
+          "en": "What can we possibly do?"
+        },
+        {
+          "speaker": "Despina",
+          "it": "Di vita ancor dan segno;\nColle pietose mani\nFate un po' lor sostegno.\n(a Don Alfonso)\nE voi con me correte:\nUn medico, un antidoto\nVoliamo a ricercar.",
+          "en": "They still show signs of life;\ngive them some support\nwith your compassionate hands.\n(To Don Alfonso)\nAnd you, come quickly with me:\nlet us hurry to find\na doctor and an antidote."
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Despina e Don Alfonso partono.",
+          "en": "Despina and Don Alfonso leave."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Dei, che cimento è questo!\nEvento più funesto\nNon si potea trovar.",
+          "en": "Gods, what an ordeal!\nNothing more disastrous\ncould have happened."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(fra sé)\nPiù bella commediola\nNon si potea trovar!\n(ad alta voce)\nAh!",
+          "en": "(Aside)\nOne couldn't devise\na finer little comedy!\n(Aloud)\nAh!"
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "(stando lontano dagli amanti)\nSospiran gli infelici.",
+          "en": "(Keeping their distance from the men)\nThe poor fellows are sighing."
+        },
+        {
+          "speaker": "Fiordiligi",
+          "it": "Che facciamo?",
+          "en": "What shall we do?"
+        },
+        {
+          "speaker": "Dorabella",
+          "it": "Tu che dici?",
+          "en": "What do you think?"
+        },
+        {
+          "speaker": "Fiordiligi",
+          "it": "In momenti sì dolenti,\nChi potriali abbandonar?",
+          "en": "In such terrible circumstances,\nwho could abandon them?"
+        },
+        {
+          "speaker": "Dorabella",
+          "it": "(si accosta un poco)\nChe figure interessanti!",
+          "en": "(Moving a little closer)\nWhat striking faces!"
+        },
+        {
+          "speaker": "Fiordiligi",
+          "it": "(si accosta un poco)\nPossiam farci un poco avanti.",
+          "en": "(Moving a little closer)\nWe can come a little nearer."
+        },
+        {
+          "speaker": "Dorabella",
+          "it": "Ha freddissima la testa.",
+          "en": "His head is icy cold."
+        },
+        {
+          "speaker": "Fiordiligi",
+          "it": "Fredda fredda è ancora questa.",
+          "en": "This one's is still cold, so cold."
+        },
+        {
+          "speaker": "Dorabella",
+          "it": "Ed il polso?",
+          "en": "And his pulse?"
+        },
+        {
+          "speaker": "Fiordiligi",
+          "it": "Io non gliel sento.",
+          "en": "I can't feel it."
+        },
+        {
+          "speaker": "Dorabella",
+          "it": "Questo batte lento lento.",
+          "en": "This one's beating very slowly."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Ah, se tarda ancor l'aita,\nSpeme più non v'è di vita!",
+          "en": "Ah, if help is delayed any longer,\nthere will be no hope of saving them!"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(fra sé)\nPiù domestiche e trattabili\nSono entrambe diventate;\nSta' a veder che lor pietade\nVa in amore a terminar.",
+          "en": "(Aside)\nBoth have become more approachable\nand easier to win over;\njust watch their pity\nturn into love."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Poverini! La lor morte\nMi farebbe lagrimar.",
+          "en": "Poor fellows! Their deaths\nwould make me weep."
+        }
+      ]
+    }
+  ]
 }
 ];
