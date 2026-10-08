@@ -1308,5 +1308,170 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 10,
+    "kind": "Recitativo e aria",
+    "cue": "No. 28 — Aria",
+    "title": "È amore un ladroncello",
+    "cast": "Dorabella, Despina, Fiordiligi",
+    "summary": "Dorabella admits her attraction and Despina rejoices. Fiordiligi confesses she also feels drawn to the stranger, but insists she will resist while Dorabella sings of love's power.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Camera con diverse porte, specchio e tavolini. Dorabella e Despina; poi Fiordiligi.",
+            "en": "A room with several doors, a mirror, and small tables. Dorabella and Despina; Fiordiligi enters later."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Ora vedo che siete\nUna donna di garbo.",
+            "en": "Now I see you are\na woman of good sense."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Invan, Despina,\nDi resister tentai: quel demonletto\nHa un artifizio, un'eloquenza, un tratto\nChe ti fa cader giù se sei di sasso.",
+            "en": "Despina, I tried\nin vain to resist: that little devil\nhas such charm, eloquence and manners\nhe could melt a stone."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Corpo di Satanasso!\nQuesto vuol dir saper! Tanto di raro\nNoi povere ragazze\nAbbiamo un po' di bene,\nChe bisogna pigliarlo allor ch'ei viene.",
+            "en": "By Satan himself!\nThat's what I call skill! So rarely\ndo we poor girls\nhave a little happiness\nthat we must seize it when it comes."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Entra Fiordiligi.",
+            "en": "Fiordiligi enters."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Ma ecco la sorella.\nChe ceffo!",
+            "en": "But here's your sister.\nWhat a face!"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Sciagurate!\nEcco per colpa vostra\nIn che stato mi trovo!",
+            "en": "Wretched women!\nLook at the state I'm in,\nand all because of you!"
+          },
+          {
+            "speaker": "Despina",
+            "it": "Cosa è nato,\nCara madamigella?",
+            "en": "What has happened,\nmy dear young lady?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Hai qualche mal, sorella?",
+            "en": "Are you ill, sister?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Ho il diavolo che porti\nMe, te, lei, Don Alfonso, i forestieri\nE quanti pazzi ha il mondo.",
+            "en": "May the devil take\nme, you, her, Don Alfonso, the strangers\nand every fool on earth!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Hai perduto il giudizio?",
+            "en": "Have you lost your mind?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Peggio, peggio...\nInorridisci: io amo, e l'amor mio\nNon è sol per Guglielmo.",
+            "en": "Worse, much worse...\nBe horrified: I'm in love,\nand not only with Guglielmo."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Meglio, meglio!",
+            "en": "Better and better!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "E che forse anche tu se' innamorata\nDel galante biondino?",
+            "en": "Are you perhaps in love too\nwith the charming fair-haired man?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "(sospirando)\nAh, purtroppo per noi.",
+            "en": "(Sighing)\nAlas, unfortunately for us."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Mo' brava!",
+            "en": "Well done!"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Tieni\nSettantamila baci:\nTu il biondino, io il brunetto,\nEccoci entrambe spose!",
+            "en": "Here, take\nseventy thousand kisses!\nYou the fair-haired one, I the dark-haired one;\nand both of us can be brides!"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Cosa dici?\nNon pensi agli infelici\nChe stamane partir? Ai loro pianti,\nAlla lor fedeltà tu più non pensi?\nCosì barbari sensi\nDove, dove apprendesti?\nSì diversa da te come ti festi?",
+            "en": "What are you saying?\nHave you forgotten the unfortunate men\nwho left this morning? Their tears,\ntheir faithfulness—do you think no more of those?\nWhere did you learn\nsuch cruel feelings?\nHow did you become so unlike yourself?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Odimi: sei tu certa\nChe non muoiano in guerra\nI nostri vecchi amanti? E allora entrambe\nResterem colle man piene di mosche.\nTra un ben certo e un incerto\nC'è sempre gran divario!",
+            "en": "Listen: can you be sure\nthat our former lovers\nwill not die in battle? Then we would both\nbe left empty-handed.\nThere is a great difference\nbetween a sure thing and an uncertain one!"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "E se poi torneranno?",
+            "en": "And if they return?"
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Se torneran, lor danno!\nNoi saremo allor mogli, noi saremo\nLontane mille miglia.",
+            "en": "If they return, that's their bad luck!\nBy then we'll be married,\na thousand miles away."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Ma non so come mai\nSi può cangiar in un sol giorno un core.",
+            "en": "I cannot understand\nhow a heart can change in just one day."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Che domanda ridicola! Siam donne!\nE poi, tu com'hai fatto?",
+            "en": "What a ridiculous question! We're women!\nAnd then, how have you done it yourself?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Io saprò vincermi.",
+            "en": "I shall master myself."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Voi non saprete nulla.",
+            "en": "You won't manage anything."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Farò che tu lo veda.",
+            "en": "I'll show you that I can."
+          },
+          {
+            "speaker": "Dorabella",
+            "it": "Credi, sorella, è meglio che tu ceda.",
+            "en": "Believe me, sister, it's better to yield."
+          }
+        ]
+      },
+      {
+        "label": "No. 28 — Aria",
+        "turns": [
+          {
+            "speaker": "Dorabella",
+            "it": "È amore un ladroncello,\nUn serpentello è amor;\nEi toglie e dà la pace,\nCome gli piace, ai cor.\nPer gli occhi al seno appena\nUn varco aprir si fa,\nChe l'anima incatena\nE toglie libertà.\nPorta dolcezza e gusto\nSe tu lo lasci far,\nMa t'empie di disgusto\nSe tenti di pugnar.\nSe nel tuo petto ei siede,\nS'egli ti becca qui,\nFa' tutto quel ch'ei chiede,\nChe anch'io farò così.",
+            "en": "Love is a little thief,\nlove is a little snake;\nit takes away and gives back peace\nto hearts as it pleases.\nOnce it finds a path\nthrough the eyes into the breast,\nit enchains the soul\nand steals its freedom.\nIt brings sweetness and delight\nif you let it have its way,\nbut fills you with misery\nif you try to fight.\nIf it takes its seat in your breast,\nif it bites you here,\ndo all that it demands,\nas I shall do."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Dorabella e Despina partono.",
+            "en": "Dorabella and Despina leave."
+          }
+        ]
+      }
+    ]
   }
 ];
