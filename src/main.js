@@ -1,5 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-search-1";
-import { cosiOperaPage, cosiOutlinePage, cosiSynopsisPage } from "./libretto-reader.js?v=reader-3";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-3";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-3";
 
 const app = document.querySelector("#app");
 
@@ -271,7 +272,9 @@ function shell(content, active) {
   app.querySelector("[data-libretto-search]")?.addEventListener("submit", (event) => {
     event.preventDefault();
     const query = event.currentTarget.querySelector("input")?.value.trim() || "";
-    window.location.hash = query ? `#/operas/cosi-fan-tutte?q=${encodeURIComponent(query)}` : "#/operas/cosi-fan-tutte";
+    const slug = app.querySelector("[data-libretto-slug]")?.dataset.librettoSlug;
+    if (!slug) return;
+    window.location.hash = query ? `#/operas/${slug}?q=${encodeURIComponent(query)}` : `#/operas/${slug}`;
   });
 }
 
@@ -365,10 +368,13 @@ function aboutPage() {
 }
 
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
-  if (opera.slug === "cosi-fan-tutte") return selectedView === "synopsis"
-    ? cosiSynopsisPage()
-    : selectedView === "outline" ? cosiOutlinePage()
-    : cosiOperaPage(selectedScene, query, selectedItem, mobileContents);
+  const libretto = getLibretto(opera.slug);
+  if (libretto) {
+    const renderer = createLibrettoRenderer(libretto);
+    return selectedView === "synopsis" ? renderer.synopsis()
+      : selectedView === "outline" ? renderer.outline()
+      : renderer.scene(selectedScene, query, selectedItem, mobileContents);
+  }
   return `<div class="opera-detail">
     <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>
     <section class="detail-hero section-wrap">
@@ -414,7 +420,7 @@ function highlightReaderSection(index, syncUrl = false) {
   if (syncUrl) {
     const hash = window.location.hash;
     const [path, query = ""] = hash.split("?");
-    if (path !== "#/operas/cosi-fan-tutte") return;
+    if (path !== "#/operas/" + root.dataset.librettoSlug) return;
     const params = new URLSearchParams(query);
     if (params.get("item") !== String(current)) {
       params.set("act", String(act));
@@ -489,7 +495,7 @@ function handleSceneSectionLink(event) {
   const root = currentSceneReader();
   if (!link || !root) return;
   const href = link.getAttribute("href") || "";
-  if (!href.startsWith("#/operas/cosi-fan-tutte?")) return;
+  if (!href.startsWith("#/operas/" + root.dataset.librettoSlug + "?")) return;
   const params = new URLSearchParams(href.split("?")[1] || "");
   if (Number(params.get("act")) !== Number(root.dataset.act) ||
       Number(params.get("scene")) !== Number(root.dataset.scene)) return;
@@ -540,8 +546,8 @@ function render() {
     const item = Number(routeParams.get("item")) || 0;
     const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
     const hasLibrettoDestination = routeParams.has("act") || routeParams.has("scene") || routeParams.has("item") || Boolean(query) || routeParams.has("contents");
-    const selectedView = routeParams.get("view") || (opera?.slug === "cosi-fan-tutte" && !hasLibrettoDestination ? "synopsis" : "");
-    shell(opera ? operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
+    const selectedView = routeParams.get("view") || (opera && getLibretto(opera.slug) && !hasLibrettoDestination ? "synopsis" : "");
+    shell(opera ? operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (getLibretto(opera.slug) ? "opera" : "operas") : "");
     const operaSearch = app.querySelector("#opera-search");
     if (operaSearch) operaSearch.value = query;
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
