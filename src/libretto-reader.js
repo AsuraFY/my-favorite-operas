@@ -19,7 +19,7 @@ function sectionTitles(scene, section, sectionIndex) {
   const act = libretto.acts.find(group => group.scenes.includes(scene))?.number;
   const title = libretto.sectionTitleOverrides?.[act + ":" + scene.number + ":" + sectionIndex];
   const numbered = section.number != null || /^No\./i.test(section.label || "");
-  if (!numbered) return { original: "", translation: "" };
+  if (!numbered && !section.originalTitle && !section.title && !title) return { original: "", translation: "" };
   if (section.originalTitle || section.title || title) return {
     original: section.originalTitle || section.title || title?.original || "",
     translation: section.translatedTitle || title?.translation || ""
@@ -35,8 +35,8 @@ function sectionNavigationLabel(section, scene, sectionIndex) {
   const no = section.number ?? (match ? Number(match[1]) : null);
   const form = section.type || (match ? match[2] :
     ((section.label || "").toLocaleLowerCase() === "recitative" ? (libretto.recitativeLabel || "Recitative") : section.label));
-  if (no == null) return form;
   const title = scene ? sectionTitles(scene, section, sectionIndex).original : "";
+  if (no == null) return form + (title ? " · " + title : "");
   return (libretto.numberLabel || "N.") + " " + no + " · " + form + (title ? " · " + title : "");
 }
 function sectionPresentation(scene, section, sectionIndex) {

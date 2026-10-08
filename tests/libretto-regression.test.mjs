@@ -87,3 +87,23 @@ test("a separate three-act German libretto uses the identical reader", () => {
   assert.equal(count(reader.outline(), /class="opera-outline__scene"/g), 3);
   assert.ok(reader.synopsis().includes("A fictional synopsis."));
 });
+
+test("unnumbered titled sections retain their original title", () => {
+  const libretto = {
+    slug: "unnumbered", opera: { title: "Another Opera", composer: "Composer" },
+    originalLanguage: "Deutsch", translationLanguage: "English",
+    characters: ["Helena"],
+    synopsis: { eyebrow: "Example", paragraphs: ["An example."], characters: [] },
+    acts: [{ number: 1, originalHeading: "Erster Akt", scenes: [{
+      number: 1, summary: "A short scene.", sections: [{
+        type: "Recitative", originalTitle: "Die Nachricht",
+        turns: [{ speaker: "Helena", original: "Guten Abend", translation: "Good evening" }]
+      }]
+    }] }]
+  };
+  window.location.hash = "#/operas/unnumbered?act=1&scene=1";
+  const output = createLibrettoRenderer(libretto);
+  assert.ok(output.scene(1).includes("Recitative · Die Nachricht"));
+  assert.ok(output.outline().includes("Recitative · Die Nachricht"));
+  assert.ok(output.scene(1).includes("Guten Abend"));
+});
