@@ -478,6 +478,12 @@ function renderCosiSceneSection(scene, section, sectionIndex, act) {
     rows + '</section></div></div></section>';
 }
 
+function conciseSceneSummary(scene) {
+  const text = (scene.summary || "").trim();
+  const sentences = (text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || []).map(s => s.trim());
+  return (text.split(/\s+/).length > 35 ? sentences.slice(0, 1) : sentences.slice(0, 2)).join(" ");
+}
+
 function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
   const requested=Number(new URLSearchParams(window.location.hash.split("?")[1]||"").get("act"))||1;
   const group=cosiActCatalog().find(group=>group.number===requested)||cosiActCatalog()[0];
@@ -496,13 +502,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   }
   const scene = scenes.find((item) => item.number === (found?.scene || selectedNumber)) || scenes[0];
   const itemIndex = Math.max(0, Math.min(found?.item ?? selectedItem, scene.sections.length - 1));
-  const section = scene.sections[itemIndex];
-  const presentation = sectionPresentation(scene, section, itemIndex);
   const safeQuery = escapeHtml(query);
-  const settingByScene = act === 2
-    ? { 1: "Camera · Room", 4: "Giardino alla riva del mare · Seaside garden" }
-    : { 1: "Bottega di caffè · Coffee shop", 2: "Giardino sulla spiaggia · Seaside garden" };
-  const sceneSetting = settingByScene[scene.number] || "";
   const sceneLabel = "Scene " + romanNumeral(scene.number);
   const actLabel = "Act " + romanNumeral(act);
   const sceneLinks = renderActSceneLinks(act, scene.number, itemIndex, true);
@@ -516,7 +516,6 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
     '<p class="scene-bottom-nav__label">End of ' + sceneLabel + '</p>' +
     '<div class="scene-bottom-nav__controls">' + previous + bottomNext + '</div></nav>';
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
-  const sectionBreadcrumb = presentation.number ? "N. " + presentation.number + " " + presentation.form : "Recitativo";
   return '<div class="opera-reading-page" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
     cosiOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
@@ -527,11 +526,11 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
         '<details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
       '<div class="reading-main"><section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
-        '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto ' + (act === 2 ? "Secondo" : "Primo") + ' · ' + actLabel + ' <span>›</span> ' + sceneLabel + ' <span>›</span> <span data-active-breadcrumb>' + escapeHtml(sectionBreadcrumb) + '</span></p>' +
-          '<p class="scene-context">ATTO ' + (act === 2 ? "SECONDO" : "PRIMO") + ' · ' + actLabel.toUpperCase() + ' <span>/</span> SCENA ' + italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
-          '<h1 class="scene-page-title">' + sceneLabel + '</h1>' +
-          (sceneSetting ? '<p class="scene-context__setting scene-page-setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
-          '<p class="scene-summary">' + escapeHtml(scene.summary) + '</p>' +
+        '<div class="scene-panel__top">' +
+          '<h1 class="scene-context">ATTO ' + (act === 2 ? "SECONDO" : "PRIMO") +
+          ' · ' + actLabel.toUpperCase() + ' <span>/</span> SCENA ' +
+          italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</h1>' +
+          '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(scene)) + '</p>' +
         '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
         scene.sections.map((part, index) => renderCosiSceneSection(scene, part, index, act)).join("") +
@@ -588,11 +587,6 @@ function highlightReaderSection(index, syncUrl = false) {
     else link.removeAttribute("aria-current");
   });
   root.querySelectorAll(".libretto-scene-section").forEach((el, i) => el.classList.toggle("is-reading", i === current));
-  const match = cosiActCatalog().find(group => group.number === act)?.scenes.find(s => s.number === scene);
-  const part = match?.sections[current];
-  const details = part ? sectionPresentation(match, part, current) : null;
-  const crumb = root.querySelector("[data-active-breadcrumb]");
-  if (crumb && details) crumb.textContent = details.number ? "N. " + details.number + " " + details.form : "Recitativo";
   if (syncUrl) {
     const hash = window.location.hash;
     const [path, query = ""] = hash.split("?");

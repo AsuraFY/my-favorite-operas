@@ -1605,3 +1605,31 @@ button { font: inherit; }
   .opera-outline__section.section-nav-link { padding: 9px 6px; font-size: 15px; white-space: normal; }
   .opera-outline__section .libretto-participants { font-size: 12px; }
 }
+
+/* Single bilingual scene heading, followed immediately by brief context. */
+.opera-reading-page[data-act] .scene-panel__top {
+  border-bottom: 1px solid #d9c9ac;
+  padding-bottom: 19px;
+}
+.opera-reading-page[data-act] .scene-panel__top .scene-context {
+  display: block;
+  margin: 0 0 8px;
+  color: #173856;
+  font: 600 clamp(13px, 1.3vw, 16px)/1.5 var(--serif);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+.opera-reading-page[data-act] .scene-panel__top .scene-context span { margin: 0 9px; color: #b99460; }
+.opera-reading-page[data-act] .scene-panel__top .scene-summary {
+  display: block; margin: 0; max-width: 70ch;
+  color: #566477; font: 16px/1.45 var(--serif);
+}
+@media (max-width: 700px) {
+  .opera-reading-page[data-act] .scene-panel__top { padding-top: 0; padding-bottom: 14px; }
+  .opera-reading-page[data-act] .scene-panel__top .scene-context {
+    font-size: 12px; line-height: 1.48; letter-spacing: .045em;
+  }
+  .opera-reading-page[data-act] .scene-panel__top .scene-context span { margin-inline: 4px; }
+  .opera-reading-page[data-act] .scene-panel__top .scene-summary { font-size: 14px; line-height: 1.4; }
+}
