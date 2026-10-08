@@ -983,5 +983,230 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 8,
+    "kind": "Recitativo e aria",
+    "cue": "No. 26 — Aria",
+    "title": "Donne mie, la fate a tanti",
+    "cast": "Ferrando, Guglielmo",
+    "summary": "Ferrando rejoices that Fiordiligi resisted temptation, but Guglielmo reveals Dorabella gave away his portrait. Ferrando is devastated and Guglielmo angrily addresses women's inconstancy.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Ferrando",
+            "it": "(lietissimo)\nAmico, abbiamo vinto!",
+            "en": "(Delighted)\nMy friend, we've won!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Un ambo o un terno?",
+            "en": "A pair or a triple?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Una cinquina, amico: Fiordiligi\nÈ la modestia in carne.",
+            "en": "A perfect five, my friend: Fiordiligi\nis modesty incarnate."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Niente meno?",
+            "en": "Nothing less?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Nientissimo. Sta' attento\nE ascolta come fu.",
+            "en": "Nothing less. Listen\nand hear what happened."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "T'ascolto: di' pur su.",
+            "en": "I'm listening. Go on."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Pel giardinetto,\nCome eravam d'accordo,\nA passeggiar mi metto;\nLe dò il braccio, si parla\nDi mille cose differenti; alfine\nViensi all'amor.",
+            "en": "As we agreed,\nI begin to walk with her\nthrough the little garden;\nI give her my arm, we talk\nof a thousand different things; at last\nwe come to love."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Avanti.",
+            "en": "Go on."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Fingo labbra tremanti,\nFingo di pianger, fingo\nDi morir al suo piè...",
+            "en": "I pretend my lips tremble,\npretend to weep, pretend\nto be dying at her feet..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Bravo assai, per mia fè.\nEd ella?",
+            "en": "Excellent, by my faith.\nAnd she?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Ella da prima\nRide, scherza, mi burla...",
+            "en": "At first she laughs,\njokes and mocks me..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "E poi?",
+            "en": "And then?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "E poi\nFinge d'impietosirsi...",
+            "en": "And then\nshe pretends to feel compassion..."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "O cospettaccio!",
+            "en": "Good heavens!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Alfin scoppia la bomba:\nPura come colomba\nAl suo caro Guglielmo ella si serba;\nMi discaccia superba,\nMi maltratta, mi fugge,\nTestimonio rendendomi e messaggio\nChe una femmina ell'è senza paraggio.",
+            "en": "At last comes the great revelation:\npure as a dove,\nshe saves herself for her dear Guglielmo;\nshe proudly dismisses me,\nrebukes me and runs away,\nmaking me both witness and messenger\nthat she is a woman without equal."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Bravo tu, bravo io,\nBrava la mia Penelope!\nLascia un po' ch'io ti abbracci\nPer sì felice augurio,\nO mio fido Mercurio!",
+            "en": "Bravo to you and me,\nand to my faithful Penelope!\nLet me embrace you\nfor this happy news,\nmy trusty Mercury!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Si abbracciano.",
+            "en": "They embrace."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "E la mia Dorabella?\nCome s'è diportata?\n(con trasporto)\nAh, non ci ho neppur dubbio! assai conosco\nQuella sensibil alma.",
+            "en": "And my Dorabella?\nHow did she behave?\n(With emotion)\nAh, I have no doubt! I know\nthat sensitive soul so well."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Eppur un dubbio,\nParlandoti a quattr'occhi,\nNon saria mal, se tu l'avessi.",
+            "en": "Still, between ourselves,\na little doubt\nwouldn't hurt."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Come?",
+            "en": "What?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Dico così per dir!\n(fra sé)\nAvrei piacere d'indorargli la pillola.",
+            "en": "I'm just saying!\n(Aside)\nI'd rather sweeten the bitter pill."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Stelle! Cesse ella forse\nAlle lusinghe tue? Ah, s'io potessi\nSospettarlo soltanto!...",
+            "en": "Heavens! Did she perhaps yield\nto your blandishments? Oh, if I could\neven suspect it!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "È sempre bene\nIl sospettare un poco in questo mondo.",
+            "en": "A little suspicion\nis always wise in this world."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Eterni Dei! favella: a foco lento\nNon mi far qui morir... ma no, tu vuoi\nPrenderti meco spasso: ella non ama,\nNon adora che me.",
+            "en": "Eternal gods! Speak: don't\nleave me to die slowly... No, you're teasing:\nshe loves and adores\nonly me."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Certo! Anzi in prova\nDi suo amor, di sua fede,\nQuesto bel ritrattino ella mi diede.",
+            "en": "Of course! Indeed, as proof\nof her love and loyalty,\nshe gave me this lovely portrait."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Gli mostra il ritratto che Dorabella gli ha dato.",
+            "en": "He shows Ferrando the portrait Dorabella gave him."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(furente)\nIl mio ritratto!\nAh, perfida!",
+            "en": "(Enraged)\nMy portrait!\nAh, traitress!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando vuol partire.",
+            "en": "Ferrando tries to leave."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Ove vai?",
+            "en": "Where are you going?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(furente)\nA trarle il cor dal scellerato petto\nE a vendicar il mio tradito affetto.",
+            "en": "(Furiously)\nTo tear the heart from her wicked breast\nand avenge my betrayed love."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Fermati!",
+            "en": "Stop!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(risoluto)\nNo, mi lascia!",
+            "en": "(Determined)\nNo, let me go!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Sei tu pazzo? Vuoi tu precipitarti\nPer una donna che non val due soldi?\n(fra sé)\nNon vorrei che facesse\nQualche corbelleria.",
+            "en": "Are you mad? Would you ruin yourself\nover a woman not worth two pennies?\n(Aside)\nI hope he doesn't\ndo something foolish."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Numi! Tante promesse,\nE lagrime, e sospiri, e giuramenti,\nIn sì pochi momenti\nCome l'empia obliò?",
+            "en": "Heavens! So many promises,\ntears, sighs and oaths—\nhow could that cruel woman forget them\nin so few moments?"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Perbacco, io non lo so.",
+            "en": "By heaven, I don't know."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Che fare or deggio?\nA qual partito, a qual idea m'appiglio?\nAbbi di me pietà, dammi consiglio.",
+            "en": "What am I to do?\nWhat course, what thought can I seize upon?\nHave pity and advise me."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Amico, non saprei\nQual consiglio a te dar.",
+            "en": "My friend, I don't know\nwhat advice to give you."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Barbara! Ingrata!\nIn un giorno!... In poche ore!...",
+            "en": "Cruel, ungrateful woman!\nIn a single day! In a few hours!"
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "Certo, un caso quest'è da far stupore.",
+            "en": "Certainly, it's astonishing."
+          }
+        ]
+      },
+      {
+        "label": "No. 26 — Aria",
+        "turns": [
+          {
+            "speaker": "Guglielmo",
+            "it": "Donne mie, la fate a tanti,\nChe, se il ver vi deggio dir,\nSe si lagnano gli amanti\nLi comincio a compatir.\nIo vo' bene al sesso vostro,\nLo sapete, ognun lo sa:\nOgni giorno ve lo mostro,\nVi dò segno d'amistà;\nMa quel farla a tanti e tanti\nM'avvilisce in verità.\nMille volte il brando presi\nPer salvar il vostro onor,\nMille volte vi difesi\nColla bocca, e più col cor.\nMa quel farla a tanti e tanti\nÈ un vizietto seccator.\nSiete vaghe, siete amabili,\nPiù tesori il ciel vi diè,\nE le grazie vi circondano\nDalla testa sin ai piè;\nMa la fate a tanti e tanti,\nChe credibile non è.\nChe, se gridano gli amanti,\nHanno certo un gran perché.",
+            "en": "My ladies, you deceive so many\nthat, to tell the truth,\nwhen lovers complain,\nI'm beginning to sympathize.\nI am fond of your sex,\nyou know it and so does everyone:\nevery day I show it,\nand give you tokens of friendship;\nbut your deceiving so many\ndispirits me indeed.\nA thousand times I've drawn my sword\nto defend your honor;\na thousand times I've defended you\nwith my words and still more with my heart.\nBut deceiving so many\nis a most tiresome vice.\nYou are lovely, you are charming,\nheaven gave you many treasures,\nand grace surrounds you\nfrom head to toe;\nyet you deceive so many\nthat it's beyond belief.\nSo if lovers raise their voices,\nthey certainly have good reason."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Guglielmo parte.",
+            "en": "Guglielmo leaves."
+          }
+        ]
+      }
+    ]
   }
 ];
