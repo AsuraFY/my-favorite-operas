@@ -1680,3 +1680,70 @@ button { font: inherit; }
 @media (max-width: 700px) {
   .opera-outline__scene > .opera-outline__sections { margin-inline-start: 14px; }
 }
+
+
+/* Desktop-only retractable Act Outline; expanded until the reader closes it. */
+.desktop-outline-collapse-bar,
+.desktop-outline-reopen { display: none; }
+@media (min-width: 701px) {
+  .opera-reading-page[data-act] .desktop-outline-collapse-bar {
+    display: flex;
+    position: sticky;
+    top: -25px;
+    justify-content: flex-end;
+    z-index: 3;
+    min-height: 35px;
+    padding: 1px 0 5px;
+    background: var(--paper-deep);
+  }
+  .desktop-outline-collapse[hidden],
+  .desktop-outline-reopen[hidden] { display: none !important; }
+  .desktop-outline-collapse,
+  .desktop-outline-reopen button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 33px;
+    border: 1px solid #d8c5a4;
+    border-radius: 5px;
+    background: #fbf8f0;
+    color: #173856;
+    cursor: pointer;
+    font: 600 14px/1.2 var(--serif);
+  }
+  .desktop-outline-collapse { width: 35px; padding: 5px; }
+  .desktop-outline-reopen button { padding: 6px 11px; }
+  .desktop-outline-collapse svg,
+  .desktop-outline-reopen svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.65;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .desktop-outline-collapse:hover,
+  .desktop-outline-reopen button:hover { background: #ece5d9; }
+  .desktop-outline-collapse:focus-visible,
+  .desktop-outline-reopen button:focus-visible {
+    outline: 2px solid #1a5d8c;
+    outline-offset: 2px;
+  }
+  .opera-reading-page[data-act] .reading-layout.is-outline-collapsed {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .opera-reading-page[data-act] .reading-layout.is-outline-collapsed > .scene-sidebar[data-act-outline] {
+    display: none;
+  }
+  .opera-reading-page[data-act] .desktop-outline-reopen:not([hidden]) {
+    display: flex;
+    position: sticky;
+    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    z-index: 64;
+    justify-content: flex-start;
+    min-height: 41px;
+    padding: 4px clamp(16px, 3vw, 40px);
+    background: #fbf9f3;
+    border-bottom: 1px solid #e8dfd1;
+  }
+}

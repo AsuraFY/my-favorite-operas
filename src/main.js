@@ -130,6 +130,55 @@ function onOutlineKeydown(event) {
   }
 }
 
+// Desktop Act Outline preference is intentionally kept in memory for this visit only.
+let desktopOutlineCollapsed = false;
+
+function syncDesktopOutline() {
+  const root = currentSceneReader();
+  if (!root) return;
+  const layout = root.querySelector(".reading-layout");
+  const sidebar = root.querySelector("[data-act-outline]");
+  const collapse = root.querySelector("[data-desktop-outline-collapse]");
+  const expand = root.querySelector("[data-desktop-outline-expand]");
+  if (!layout || !sidebar || !collapse || !expand) return;
+
+  const mobile = window.matchMedia("(max-width: 700px)").matches;
+  const collapsed = !mobile && desktopOutlineCollapsed;
+  layout.classList.toggle("is-outline-collapsed", collapsed);
+  collapse.hidden = mobile || collapsed;
+  expand.closest(".desktop-outline-reopen").hidden = mobile || !collapsed;
+  collapse.setAttribute("aria-expanded", String(!collapsed));
+  expand.setAttribute("aria-expanded", String(!collapsed));
+
+  if (!mobile) {
+    sidebar.inert = collapsed;
+    if (collapsed) sidebar.setAttribute("aria-hidden", "true");
+    else sidebar.removeAttribute("aria-hidden");
+  }
+}
+
+function setupDesktopOutline() {
+  const root = currentSceneReader();
+  if (!root) return;
+  syncDesktopOutline();
+  const collapse = root.querySelector("[data-desktop-outline-collapse]");
+  const expand = root.querySelector("[data-desktop-outline-expand]");
+  collapse?.addEventListener("click", () => setDesktopOutlineCollapsed(true));
+  expand?.addEventListener("click", () => setDesktopOutlineCollapsed(false));
+}
+
+function setDesktopOutlineCollapsed(collapsed) {
+  const root = currentSceneReader();
+  if (!root || window.matchMedia("(max-width: 700px)").matches) return;
+  if (desktopOutlineCollapsed === collapsed) return;
+
+  desktopOutlineCollapsed = collapsed;
+  syncDesktopOutline();
+  const focusTarget = root.querySelector(collapsed ? "[data-desktop-outline-expand]" : "[data-desktop-outline-collapse]");
+  focusTarget?.focus({ preventScroll: true });
+  scheduleReaderSectionUpdate();
+}
+
 let stickyBarObserver = null;
 
 function measureStickyNavigation() {
@@ -161,6 +210,7 @@ function shell(content, active) {
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
   setupStickyNavigation();
   setupActOutline();
+  setupDesktopOutline();
   app.querySelector("[data-reader-top]")?.addEventListener("click", () => {
     const panel = app.querySelector(".scene-panel");
     if (!panel) return;
@@ -525,8 +575,11 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
       '<div class="act-outline__backdrop" data-outline-backdrop hidden aria-hidden="true"></div>' +
       '<aside class="scene-sidebar" id="act-outline" data-act-outline aria-label="' + actLabel + ' outline" tabindex="-1">' +
         '<div class="act-outline__top"><span>' + actLabel + ' · Outline</span><button type="button" data-outline-close aria-label="Close outline">×</button></div>' +
+        '<div class="desktop-outline-collapse-bar"><button type="button" class="desktop-outline-collapse" data-desktop-outline-collapse aria-label="Collapse outline" title="Collapse outline" aria-controls="act-outline" aria-expanded="true"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16M16 9l-3 3 3 3"></path></svg></button></div>' +
         '<details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
-      '<div class="reading-main"><section class="scene-panel">' +
+      '<div class="reading-main">' +
+        '<div class="desktop-outline-reopen"><button type="button" data-desktop-outline-expand aria-controls="act-outline" aria-expanded="false" aria-label="Expand outline" title="Expand outline"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16m4-11 3 3-3 3"></path></svg><span>Outline</span></button></div>' +
+        '<section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
         '<div class="scene-panel__top">' +
           '<h1 class="scene-context">ATTO ' + (act === 2 ? "SECONDO" : "PRIMO") +
@@ -739,6 +792,7 @@ function render() {
 document.addEventListener("keydown", onOutlineKeydown);
 window.addEventListener("resize", () => {
   if (!window.matchMedia("(max-width: 700px)").matches) closeActOutline(false);
+  syncDesktopOutline();
   measureStickyNavigation();
   scheduleReaderSectionUpdate();
 });
