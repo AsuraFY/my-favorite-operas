@@ -1,5 +1,6 @@
 import { operas, getOpera } from "./data/operas.js";
 import { cosiActOneScenes } from "./data/libretti.js?v=cosi-libretto-2";
+import { cosiActTwoScenes } from "./data/libretti-act2.js?v=act2-5";
 
 const app = document.querySelector("#app");
 
@@ -150,6 +151,7 @@ function italianSceneOrdinal(value) {
 }
 
 function sectionTitles(scene, section, sectionIndex) {
+  if (cosiActTwoScenes.includes(scene)) return { original: "", translation: "" };
   if (scene.number === 1 && sectionIndex === 0) return { original: scene.title, translation: "" };
   if (scene.number === 1 && sectionIndex === 2) return { original: "È la fede delle femmine", translation: "A woman’s faith" };
   if (scene.number === 1 && sectionIndex === 4) return { original: "Una bella serenata", translation: "A lovely serenade" };
@@ -178,7 +180,8 @@ function sectionPresentation(scene, section, sectionIndex) {
 }
 
 function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
-  const scenes = cosiActOneScenes;
+  const act = window.location.hash.includes("act=2") ? 2 : 1;
+  const scenes = act === 2 ? cosiActTwoScenes : cosiActOneScenes;
   const searchTerm = query.trim().toLocaleLowerCase();
   let found = null;
   if (searchTerm) {
@@ -202,6 +205,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   };
   const sceneSetting = settingByScene[scene.number] || "";
   const sceneLabel = "Scene " + romanNumeral(scene.number);
+  const actLabel = "Act " + romanNumeral(act);
   const sectionRows = section.turns.map((turn) => {
     const speakerClassName = speakerClass(turn.speaker);
     const speaker = '<span class="libretto-speaker libretto-speaker--' + speakerClassName + '">' + escapeHtml(turn.speaker) + '</span>';
@@ -213,29 +217,29 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
       const active = item.number === scene.number && subsectionIndex === itemIndex;
       const label = sectionNavigationLabel(subsection, item, subsectionIndex);
       const isSong = /^No\./i.test(subsection.label);
-      const href = "#/operas/cosi-fan-tutte?scene=" + item.number + "&item=" + subsectionIndex;
+      const href = "#/operas/cosi-fan-tutte?act=" + act + "&scene=" + item.number + "&item=" + subsectionIndex;
       return '<a class="section-nav-link' + (active ? " is-current" : "") + '" href="' + href + '"' + (active ? ' aria-current="page"' : "") + '><span class="section-nav-link__icon section-nav-link__icon--' + (isSong ? "song" : "recitative") + '" aria-hidden="true">' + (isSong ? "♫" : "▤") + '</span><span>' + escapeHtml(label) + '</span></a>';
     }).join("");
     return '<details class="scene-group' + (item.number === scene.number ? " is-current" : "") + '" open><summary class="scene-group__summary"><span>' + "Scene " + romanNumeral(item.number) + '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">' + itemSections + '</div></details>';
   }).join("");
-  const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
-  const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
-  const backToContents = '<a class="back-to-scenes" href="#/operas/cosi-fan-tutte?scene=' + scene.number + '&item=' + itemIndex + '&contents=1">← Back to scenes</a>';
+  const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
+  const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
+  const backToContents = '<a class="back-to-scenes" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + scene.number + '&item=' + itemIndex + '&contents=1">← Back to scenes</a>';
   const sectionBreadcrumb = presentation.number ? "N. " + presentation.number + " " + presentation.form : "Recitativo";
   const sceneClass = mobileContents ? " opera-reading-page--contents" : "";
   return '<div class="opera-reading-page' + sceneClass + '">' +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="Lake Como landscape"></div><div class="mobile-opera-intro__title"><h1>Così fan tutte</h1><p>W. A. Mozart</p></div></section>' +
     '<div class="reading-layout">' +
-      '<aside class="scene-sidebar" aria-label="Libretto contents"><details class="act-group" open><summary class="act-heading"><h2>Act I</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in Act I">' + sceneLinks + '</nav></details></aside>' +
+      '<aside class="scene-sidebar" aria-label="Libretto contents"><nav class="section-nav" aria-label="Choose act"><a class="section-nav-link" href="#/operas/cosi-fan-tutte?act=1&scene=1&item=0">Act I</a><a class="section-nav-link" href="#/operas/cosi-fan-tutte?act=2&scene=1&item=0">Act II</a></nav><details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
       '<div class="reading-main"><section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + backToContents + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
-        '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto Primo · Act I <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
-          '<p class="scene-context">ATTO PRIMO · ACT I <span>/</span> SCENA ' + italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
+        '<div class="scene-panel__top"><p class="scene-breadcrumb">Atto ' + (act === 2 ? "Secondo" : "Primo") + ' · ' + actLabel + ' <span>›</span> ' + sceneLabel + ' <span>›</span> ' + escapeHtml(sectionBreadcrumb) + '</p>' +
+          '<p class="scene-context">ATTO ' + (act === 2 ? "SECONDO" : "PRIMO") + ' · ' + actLabel.toUpperCase() + ' <span>/</span> SCENA ' + italianSceneOrdinal(scene.number) + ' · ' + sceneLabel.toUpperCase() + '</p>' +
           '<h1 class="scene-page-title">' + sceneLabel + '</h1>' +
           (sceneSetting ? '<p class="scene-context__setting scene-page-setting">' + escapeHtml(sceneSetting) + '</p>' : '') +
           '<p class="scene-summary">' + escapeHtml(scene.summary) + '</p>' +
         '</div>' +
-        (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No line in the first three scenes contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
+        (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
         '<div class="selected-section-heading"><h2>' + escapeHtml(presentation.heading) + '</h2>' + (presentation.subtitle ? '<p>' + escapeHtml(presentation.subtitle) + '</p>' : '') + '</div>' +
         '<div class="libretto-columns"><div class="libretto-column-heading">Italiano</div><div class="libretto-column-heading">English</div><div class="libretto-text"><section class="libretto-section"><div class="libretto-section__label">' + escapeHtml(sectionNavigationLabel(section, scene, itemIndex)) + '</div>' + sectionRows + '</section></div></div>' +
         '<div class="scroll-cue" aria-hidden="true"><span>↓</span> Scroll for more</div>' +
