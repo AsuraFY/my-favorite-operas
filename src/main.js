@@ -203,10 +203,14 @@ function sectionPresentation(scene, section, sectionIndex) {
 
 function cosiOperaBar(act = 1, page = "libretto") {
   const base = "#/operas/cosi-fan-tutte";
+  const availableActs = [[1, cosiActOneScenes], [2, cosiActTwoScenes]].filter(([, scenes]) => scenes.length);
   const tabs = [
-    { label: "Act I", href: base + "?act=1&scene=1&item=0&contents=1", current: page !== "synopsis" && act === 1 },
-    { label: "Act II", href: base + "?act=2&scene=1&item=0&contents=1", current: page !== "synopsis" && act === 2 },
-    { label: "Synopsis", href: base + "?view=synopsis", current: page === "synopsis" }
+    { label: "Synopsis", href: base + "?view=synopsis", current: page === "synopsis" },
+    ...availableActs.map(([number]) => ({
+      label: "Act " + romanNumeral(number),
+      href: base + "?act=" + number + "&scene=1&item=0",
+      current: page === "libretto" && act === number
+    }))
   ];
   return '<nav class="opera-subnav" aria-label="Così fan tutte sections">' +
     '<div class="opera-subnav__identity"><span class="opera-subnav__title">Così fan tutte</span>' +
@@ -365,7 +369,8 @@ function render() {
     const scene = Number(routeParams.get("scene")) || 1;
     const item = routeParams.has("item") ? (Number(routeParams.get("item")) || 0) : (scene === 1 ? 2 : 0);
     const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
-    const selectedView = routeParams.get("view") || "";
+    const hasLibrettoDestination = routeParams.has("act") || routeParams.has("scene") || routeParams.has("item") || Boolean(query) || routeParams.has("contents");
+    const selectedView = routeParams.get("view") || (opera?.slug === "cosi-fan-tutte" && !hasLibrettoDestination ? "synopsis" : "");
     shell(opera ? operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (opera.slug === "cosi-fan-tutte" ? "opera" : "operas") : "");
     const operaSearch = app.querySelector("#opera-search");
     if (operaSearch) operaSearch.value = query;
