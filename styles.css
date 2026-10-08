@@ -1674,3 +1674,9 @@ button { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .opera-outline__chevron { transition: none; }
 }
+
+/* Visually nest musical sections below their scene heading, not the scenes themselves. */
+.opera-outline__scene > .opera-outline__sections { margin-inline-start: 24px; }
+@media (max-width: 700px) {
+  .opera-outline__scene > .opera-outline__sections { margin-inline-start: 14px; }
+}
