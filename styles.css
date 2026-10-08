@@ -1134,3 +1134,61 @@ button { font: inherit; }
   }
   .source-credit { margin-top: 8px; padding: 13px 0; }
 }
+
+
+/* Final reader refinements: match the compact reference header and make Act I collapsible. */
+.act-heading {
+  cursor: pointer;
+  list-style: none;
+}
+.act-heading::-webkit-details-marker { display: none; }
+.act-heading::marker { content: ""; }
+.act-heading > span { transition: transform .16s ease; }
+.act-group:not([open]) > .act-heading > span { transform: rotate(-90deg); }
+
+@media (min-width: 701px) {
+  .site-header:has(.opera-header-search) {
+    height: 76px;
+    padding-inline: 34px;
+  }
+  .opera-header-search {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    transition: width .18s ease, border-radius .18s ease, background .18s ease;
+  }
+  .opera-header-search svg {
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    left: 11px;
+    pointer-events: none;
+  }
+  .opera-header-search input {
+    position: absolute;
+    inset: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .opera-header-search:focus-within {
+    width: min(365px, 29vw);
+    border: 1px solid rgba(235,239,241,.26);
+    border-radius: 12px;
+    background: rgba(255,255,255,.08);
+  }
+  .opera-header-search:focus-within input {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 12px 0 42px;
+    opacity: 1;
+    cursor: text;
+  }
+}
