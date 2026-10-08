@@ -1898,5 +1898,50 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 15,
+    "kind": "Finale",
+    "cue": "No. 31 — Finale",
+    "title": "Fate presto, o cari amici",
+    "cast": "Despina, Don Alfonso, Chorus of Servants and Musicians",
+    "summary": "Servants and musicians prepare the wedding feast. Don Alfonso praises the festivities and shares a conspiratorial aside with Despina.",
+    "sections": [
+      {
+        "label": "No. 31 — Finale (opening)",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Sala ricchissima illuminata. Orchestra in fondo. Tavola per quattro persone con doppieri d'argento. Despina, servitori, servette e suonatori; poi Don Alfonso.",
+            "en": "A brilliantly illuminated, splendid hall. An orchestra stands at the rear, and a table for four is set with silver candlesticks. Despina, servants and musicians; Don Alfonso enters later."
+          },
+          {
+            "speaker": "Despina",
+            "it": "Fate presto, o cari amici,\nAlle faci il fuoco date\nE la mensa preparate\nCon ricchezza e nobiltà.\nDelle nostre padroncine\nGli imenei son già disposti.\n(ai suonatori)\nE voi gite ai vostri posti,\nFinché i sposi vengon qua.",
+            "en": "Hurry, dear friends,\nlight the torches\nand set the table\nwith richness and elegance.\nThe weddings of our young mistresses\nhave already been arranged.\n(To the musicians)\nTake your places\nuntil the bridal couples arrive."
+          },
+          {
+            "speaker": "Chorus of Servants & Musicians",
+            "it": "Facciam presto, o cari amici,\nAlle faci il fuoco diamo\nE la mensa prepariamo\nCon ricchezza e nobiltà.",
+            "en": "Let's hurry, dear friends,\nlight the torches\nand set the table\nwith richness and elegance."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "(entrando)\nBravi, bravi! Ottimamente!\nChe abbondanza! che eleganza!\nUna mancia conveniente\nL'un e l'altro a voi darà.\nLe due coppie omai si avanzano,\nFate plauso al loro arrivo,\nLieto canto e suon giulivo\nEmpia il ciel d'ilarità.",
+            "en": "(Entering)\nBravo, bravo! Excellent!\nWhat abundance, what elegance!\nBoth parties will give you\na suitable tip.\nThe two couples are approaching;\napplaud their entrance.\nLet joyful song and merry music\nfill the air with gladness."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Mentre Don Alfonso canta, i suonatori accordano.",
+            "en": "While Don Alfonso sings, the musicians tune their instruments."
+          },
+          {
+            "speaker": "Despina & Don Alfonso",
+            "it": "(sottovoce, partendo per diverse porte)\nNo, più bella commediola\nNon s'è vista, o si vedrà!",
+            "en": "(Quietly, departing through different doors)\nNo finer little comedy\nhas ever been or ever will be seen!"
+          }
+        ]
+      }
+    ]
   }
 ];
