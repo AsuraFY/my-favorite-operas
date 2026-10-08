@@ -600,8 +600,6 @@ button { font: inherit; }
 .libretto-speaker--guglielmo, .libretto-speaker--fiordiligi { color: #4e754e; }
 .libretto-speaker--don-alfonso { color: #984c4e; }
 .libretto-speaker--stage-direction { color: #837b71; font-style: italic; }
-.source-credit { grid-column: 1 / -1; margin: 0; padding: 16px 25px; border-top: 1px solid #eeeae5; color: #77736c; font: 12px/1.5 var(--serif); }
-.source-credit a { color: #245f91; text-decoration: underline; text-underline-offset: 2px; }
 .scroll-cue { padding: 11px 0 5px; text-align: center; color: #77736c; font: 12px var(--serif); }
 .scroll-cue span { margin-right: 8px; color: #2168a8; font: 20px var(--sans); vertical-align: -2px; }
 @media (max-width: 1050px) {
@@ -661,7 +659,6 @@ button { font: inherit; }
   .libretto-cell { grid-template-columns: minmax(80px, 25%) 1fr; gap: 9px; padding: 11px 13px; font-size: 16px; }
   .libretto-cell--english { border-left: 0; border-top: 1px dashed #e7e2dc; background: #fdfcfb; }
   .libretto-speaker { font-size: 10px; }
-  .source-credit { padding: 13px; }
 }
 
 
@@ -892,12 +889,6 @@ button { font: inherit; }
 .libretto-cell--english p {
   color: #263b5a;
   font-style: italic;
-}
-.source-credit {
-  margin: 9px 0 0;
-  padding: 13px 4px;
-  border-top: 1px solid #e5dccb;
-  font-size: 12px;
 }
 .mobile-reader-toolbar { display: none; }
 .scroll-cue { display: none; }
@@ -1132,7 +1123,6 @@ button { font: inherit; }
     color: #596677;
     font-style: italic;
   }
-  .source-credit { margin-top: 8px; padding: 13px 0; }
 }
 
 
