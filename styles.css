@@ -670,13 +670,6 @@ button { font: inherit; }
   background: #173852;
   color: #f8f4ec;
 }
-.site-header:has(+ #main .opera-reading-page) .brand__sprig {
-  display: block;
-  width: 43px;
-  height: 43px;
-  flex: 0 0 43px;
-  color: #e4c47d;
-}
 .site-header:has(+ #main .opera-reading-page) .brand__name {
   color: #efd08d;
   font: 500 29px/1 var(--serif);
@@ -916,13 +909,7 @@ button { font: inherit; }
     border-bottom: 1px solid #ded9cf;
   }
   .site-header:has(+ #main .opera-reading-page) .brand { gap: 9px; }
-  .site-header:has(+ #main .opera-reading-page) .brand__sprig {
-    width: 38px;
-    height: 38px;
-    flex-basis: 38px;
-    color: #25466a;
-  }
-  .site-header:has(+ #main .opera-reading-page) .brand__name {
+    .site-header:has(+ #main .opera-reading-page) .brand__name {
     color: #172b48;
     font-size: 20px;
   }
@@ -1241,10 +1228,7 @@ button { font: inherit; }
     color: #f7f3ed;
     border-bottom-color: rgba(255,255,255,.16);
   }
-  .site-header:has(+ #main .opera-reading-page) .brand__sprig {
-    color: #e4c47d;
-  }
-  .site-header:has(+ #main .opera-reading-page) .brand__name {
+    .site-header:has(+ #main .opera-reading-page) .brand__name {
     color: #f1d291;
   }
   .site-header:has(+ #main .opera-reading-page) .menu-toggle span {
@@ -1323,4 +1307,14 @@ button { font: inherit; }
 }
 @media (max-width: 700px) {
   .opera-reading-page .section-nav-link__title { font-size: 14px; }
+}
+
+/* Text-only gold wordmark: no logo mark on any page or viewport. */
+.site-header .brand { gap: 0; }
+.site-header .brand__name,
+.site-header:has(.opera-header-search) .brand__name,
+.site-header:has(+ #main .opera-reading-page) .brand__name {
+  color: #f1d291;
+  font-weight: 600;
+  letter-spacing: -.01em;
 }

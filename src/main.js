@@ -17,8 +17,8 @@ const arrow = `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-
 
 function header(active) {
   return `<header class="site-header">
-    <a class="brand" href="#/" aria-label="My favorite Operas home">
-      <svg class="brand__sprig" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 39C20 29 26 20 39 8M15 33l-1-10m8 4 8-12m-3 19 10-8M10 38l-6-2m13-8-7-6m14 0-2-8m8 5 8-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M15 33c-2-4-1-7-1-10 3 2 5 5 5 8m4-4c-1-5 1-8 4-12 1 5 0 8-2 11m6 7c2-4 5-6 10-8-2 5-5 7-9 9M10 38c-3-2-5-3-6-2 2 3 4 4 7 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="brand__name">My favorite Operas</span>
+    <a class="brand" href="#/" aria-label="My Favorite Operas home">
+      <span class="brand__name">My Favorite Operas</span>
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
     <nav class="main-nav" aria-label="Main navigation">
