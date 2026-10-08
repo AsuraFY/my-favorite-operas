@@ -1689,7 +1689,7 @@ button { font: inherit; }
   .opera-reading-page[data-act] .desktop-outline-collapse-bar {
     display: flex;
     position: sticky;
-    top: -25px;
+    top: 0;
     justify-content: flex-end;
     z-index: 3;
     min-height: 35px;
