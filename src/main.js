@@ -378,8 +378,10 @@ function renderCompleteOutlineAct(act) {
   const group = cosiActCatalog().find(entry => entry.number === act);
   if (!group) return "";
   const actName = act === 1 ? "Primo" : act === 2 ? "Secondo" : "Terzo";
-  return '<section class="opera-outline__act" aria-labelledby="outline-act-' + act + '">' +
-    '<h2 id="outline-act-' + act + '">Atto ' + actName + ' <span>·</span> Act ' + romanNumeral(act) + '</h2>' +
+  return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
+    '<summary class="opera-outline__act-toggle"><h2 id="outline-act-' + act +
+    '">Atto ' + actName + ' <span>·</span> Act ' + romanNumeral(act) +
+    '<span class="opera-outline__chevron" aria-hidden="true">⌄</span></h2></summary>' +
     group.scenes.map(scene => {
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
       return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
@@ -396,7 +398,7 @@ function renderCompleteOutlineAct(act) {
           '</a>';
         }).join("") +
         '</div></section>';
-    }).join("") + '</section>';
+    }).join("") + '</details>';
 }
 function cosiOutlinePage() {
   return '<div class="opera-reading-page opera-outline-page">' + cosiOperaBar(1, "outline") +

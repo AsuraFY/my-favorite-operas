@@ -1633,3 +1633,44 @@ button { font: inherit; }
   .opera-reading-page[data-act] .scene-panel__top .scene-context span { margin-inline: 4px; }
   .opera-reading-page[data-act] .scene-panel__top .scene-summary { font-size: 14px; line-height: 1.4; }
 }
+
+/* Compact native act toggles in the complete Libretto Outline. */
+.opera-outline__act > .opera-outline__act-toggle {
+  display: block;
+  cursor: pointer;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 13px 0;
+  border-bottom: 2px solid #d0ae72;
+  color: #173856;
+  font: 600 clamp(27px, 3vw, 34px)/1.25 var(--serif);
+}
+.opera-outline__act-toggle::-webkit-details-marker { display: none; }
+.opera-outline__act-toggle::marker { content: ""; }
+.opera-outline__act-toggle h2 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font: inherit;
+}
+.opera-outline__act-toggle h2 > span:not(.opera-outline__chevron) {
+  margin-inline: 7px;
+  color: #ba9760;
+}
+.opera-outline__chevron {
+  margin-left: auto;
+  padding-left: 16px;
+  color: #ba9760;
+  font: 400 .9em/1 var(--sans);
+  transition: transform .18s ease;
+}
+.opera-outline__act:not([open]) .opera-outline__chevron {
+  transform: rotate(-90deg);
+}
+.opera-outline__act-toggle:focus-visible {
+  outline: 2px solid #1a5d8c;
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .opera-outline__chevron { transition: none; }
+}
