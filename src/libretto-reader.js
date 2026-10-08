@@ -230,7 +230,9 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
   return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
     renderOperaBar(act) +
-    '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art" role="img" aria-label="' + escapeHtml(libretto.mobileArtworkLabel || libretto.opera.title) + '"></div><div class="mobile-opera-intro__title"><h1>' + escapeHtml(libretto.opera.title) + '</h1><p>' + escapeHtml(libretto.mobileComposer || libretto.opera.composer) + '</p></div></section>' +
+    '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art"' +
+      (libretto.mobileArtworkUrl ? ' style="--mobile-opera-art: url(&quot;' + escapeHtml(libretto.mobileArtworkUrl) + '&quot;)"' : '') +
+      ' role="img" aria-label="' + escapeHtml(libretto.mobileArtworkLabel || libretto.opera.title) + '"></div><div class="mobile-opera-intro__title"><h1>' + escapeHtml(libretto.opera.title) + '</h1><p>' + escapeHtml(libretto.mobileComposer || libretto.opera.composer) + '</p></div></section>' +
     '<div class="reading-layout">' +
       '<div class="act-outline__backdrop" data-outline-backdrop hidden aria-hidden="true"></div>' +
       '<aside class="scene-sidebar" id="act-outline" data-act-outline aria-label="' + actLabel + ' outline" tabindex="-1">' +

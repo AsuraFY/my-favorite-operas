@@ -28,6 +28,7 @@ const cosi = {
   composerShort: "W. A. MOZART",
   mobileComposer: "W. A. Mozart",
   mobileArtworkLabel: "Lake Como landscape",
+  mobileArtworkUrl: "./public/images/lake-como-banner.webp",
   originalLanguage: "Italiano",
   translationLanguage: "English",
   recitativeLabel: "Recitativo",

@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-search-1";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-4";
-import { getLibretto } from "./data/libretto-registry.js?v=registry-3";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-5";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-4";
 
 const app = document.querySelector("#app");
 

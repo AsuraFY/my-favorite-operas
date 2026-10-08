@@ -933,7 +933,7 @@ button { font: inherit; }
     inset: 0;
     background:
       linear-gradient(90deg, rgba(251,248,240,.96) 0%, rgba(251,248,240,.78) 50%, rgba(251,248,240,.08) 100%),
-      url("./public/images/lake-como-banner.webp") center 54% / cover no-repeat;
+      var(--mobile-opera-art, linear-gradient(125deg, #c4d7dd, #ebddcf)) center 54% / cover no-repeat;
   }
   .mobile-opera-intro__title {
     position: relative;
