@@ -2048,5 +2048,185 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 17,
+    "kind": "Finale",
+    "cue": "No. 31 — Finale (continued)",
+    "title": "Miei signori, tutto è fatto",
+    "cast": "Fiordiligi, Dorabella, Ferrando, Guglielmo, Don Alfonso, Despina, Chorus",
+    "summary": "Despina plays a notary and reads a false marriage contract. A soldiers' chorus suddenly announces the return of the original fiancés, sending the sisters into panic.",
+    "sections": [
+      {
+        "label": "No. 31 — Finale (notary and alarm)",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi, Dorabella, Ferrando, Guglielmo e Don Alfonso; poi Despina in veste di notaio.",
+            "en": "Fiordiligi, Dorabella, Ferrando, Guglielmo and Don Alfonso; then Despina dressed as a notary."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "(entrando)\nMiei signori, tutto è fatto.\nCol contratto nuziale\nIl notaio è sulle scale\nE ipso facto qui verrà.",
+            "en": "(Entering)\nLadies and gentlemen, all is settled.\nThe notary with the marriage contract\nis on the stairs\nand will be here forthwith."
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella, Ferrando & Guglielmo",
+            "it": "Bravo, bravo! Passi subito.",
+            "en": "Bravo, bravo! Let him come at once."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Vo a chiamarlo: eccolo qua.",
+            "en": "I'll call him: here he is."
+          },
+          {
+            "speaker": "Despina",
+            "it": "(entrando, con voce nasale)\nAugurandovi ogni bene\nIl notaio Beccavivi\nColl'usata a voi sen viene\nNotarile dignità.\nE il contratto stipulato\nColle regole ordinarie\nNelle forme giudiziarie,\nPria tossendo, poi sedendo,\nClara voce leggerà.",
+            "en": "(Entering, speaking through her nose)\nWishing you every happiness,\nnotary Beccavivi\ncomes before you\nwith the customary notarial dignity.\nThe contract, drawn up\naccording to ordinary rules\nand legal forms,\nhe will read in a clear voice,\nafter first coughing and sitting down."
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella, Ferrando & Guglielmo",
+            "it": "Bravo, bravo in verità!",
+            "en": "Bravo, truly bravo!"
+          },
+          {
+            "speaker": "Despina",
+            "it": "Per contratto da me fatto,\nSi congiunge in matrimonio\nFiordiligi con Sempronio,\nE con Tizio Dorabella\nSua legittima sorella,\nQuelle, dame ferraresi,\nQuesti, nobili albanesi.\nE, per dote e contradote...",
+            "en": "By the contract I have prepared,\nFiordiligi is joined in marriage\nto Sempronio,\nand her lawful sister Dorabella\nto Tizio;\nthe ladies are from Ferrara,\nthe gentlemen Albanian nobles.\nAs for dowries and marriage settlements..."
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella, Ferrando & Guglielmo",
+            "it": "Cose note, cose note,\nVi crediamo, ci fidiamo:\nSoscriviam, date pur qua.",
+            "en": "Those things are understood!\nWe believe and trust you:\nlet us sign, hand it over."
+          },
+          {
+            "speaker": "Despina & Don Alfonso",
+            "it": "Bravi, bravi in verità!",
+            "en": "Bravo, bravo indeed!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "La carta resta in mano di Don Alfonso. Si sente un gran suono di tamburo e canto lontano.",
+            "en": "Don Alfonso keeps hold of the document. A loud drum and distant singing are heard."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "(di dentro)\nBella vita militar!\nOgni dì si cangia loco,\nOggi molto e doman poco,\nOra in terra ed or sul mar.",
+            "en": "(Offstage)\nWhat a fine military life!\nEvery day we change our quarters,\nplenty today and little tomorrow,\nnow on land and now at sea."
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella, Despina, Ferrando & Guglielmo",
+            "it": "Che rumor! che canto è questo!",
+            "en": "What noise! What singing is that?"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "State cheti; io vo a guardar.",
+            "en": "Be quiet; I'll take a look."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso va alla finestra.",
+            "en": "Don Alfonso goes to the window."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Misericordia!\nNumi del cielo!\nChe caso orribile!\nIo tremo, io gelo!\nGli sposi vostri...",
+            "en": "Mercy!\nHeavenly gods!\nWhat a dreadful turn of events!\nI'm trembling and freezing!\nYour fiancés..."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Lo sposo mio...",
+            "en": "My fiancé..."
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "In questo istante\nTornaro, oddio!\nEd alla riva\nSbarcano già!",
+            "en": "Have returned\nthis very instant, alas!\nAnd they're already\ncoming ashore!"
+          },
+          {
+            "speaker": "Fiordiligi, Dorabella, Ferrando & Guglielmo",
+            "it": "Cosa mai sento!\nBarbare stelle!\nIn tal momento\nChe si farà?",
+            "en": "What am I hearing!\nCruel stars!\nWhat shall be done\nat such a moment?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "I servi portano via la tavola, e i suonatori partono in fretta.",
+            "en": "The servants carry away the table and the musicians depart in haste."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "(agli amanti)\nPresto partite!",
+            "en": "(To their new suitors)\nLeave quickly!"
+          },
+          {
+            "speaker": "Ferrando, Guglielmo, Despina & Don Alfonso",
+            "it": "Ma se ci/li veggono?",
+            "en": "But what if they see us/them?"
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Presto fuggite!",
+            "en": "Hurry, run away!"
+          },
+          {
+            "speaker": "Ferrando, Guglielmo, Despina & Don Alfonso",
+            "it": "Ma se ci/li incontrano?",
+            "en": "But what if they meet us/them?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso conduce Despina in una camera.",
+            "en": "Don Alfonso leads Despina into a room."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Là, là, celatevi,\nPer carità!",
+            "en": "There, there—hide,\nfor pity's sake!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Conducono gli amanti in un'altra camera. Essi ne escono non veduti e partono.",
+            "en": "They lead the lovers into another room; the men slip out unseen and leave."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Numi, soccorso!",
+            "en": "Heavens, help us!"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Rasserenatevi...",
+            "en": "Calm yourselves..."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Numi, consiglio!",
+            "en": "Heavens, guide us!"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "Ritranquillatevi...",
+            "en": "Compose yourselves..."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "(quasi frenetiche)\nChi dal periglio\nCi salverà?",
+            "en": "(Almost frantic)\nWho will save us\nfrom this danger?"
+          },
+          {
+            "speaker": "Don Alfonso",
+            "it": "In me fidatevi,\nBen tutto andrà.",
+            "en": "Trust in me;\nall will be well."
+          },
+          {
+            "speaker": "Fiordiligi & Dorabella",
+            "it": "Mille barbari pensieri\nTormentando il cor mi vanno.\nSe discoprono l'inganno,\nAh di noi che mai sarà?",
+            "en": "A thousand dreadful thoughts\ntorment my heart.\nIf they discover the deception,\nwhat will become of us?"
+          }
+        ]
+      }
+    ]
   }
 ];
