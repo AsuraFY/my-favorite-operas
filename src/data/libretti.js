@@ -238,4 +238,31 @@ export const cosiActOneScenes = [
       ] },
     ],
   },
+  {
+    number: 6,
+    kind: "Terzettino",
+    cue: "No. 10 — Terzettino",
+    title: "Soave sia il vento",
+    cast: "Fiordiligi, Dorabella, Don Alfonso",
+    summary: "The sisters watch the boat carry their lovers away and pray for a safe voyage. Don Alfonso joins their farewell, then the women leave.",
+    sections: [
+      { label: "Recitative", turns: [
+        { speaker: "Dorabella", it: "(in atto di chi rinviene da un letargo)\nDove son?", en: "(As if waking from a faint)\nWhere am I?" },
+        { speaker: "Don Alfonso", it: "Son partiti.", en: "They have left." },
+        { speaker: "Fiordiligi", it: "Oh dipartenza\nCrudelissima, amara!", en: "O cruel, bitter parting!" },
+        { speaker: "Don Alfonso", it: "Fate core,\nCarissime figliuole.", en: "Take heart,\nmy dearest girls." },
+        { speaker: "Stage direction", it: "Facendo moto col fazzoletto", en: "He waves his handkerchief." },
+        { speaker: "Don Alfonso", it: "Guardate: da lontano\nVi fan cenno con mano i cari sposi.", en: "Look: your beloveds are waving\nto you from afar." },
+        { speaker: "Fiordiligi", it: "(salutando)\nBuon viaggio, mia vita!", en: "(Waving)\nSafe travels, my love!" },
+        { speaker: "Dorabella", it: "(salutando)\nBuon viaggio!", en: "(Waving)\nSafe travels!" },
+        { speaker: "Fiordiligi", it: "Oh Dei! Come veloce\nSe ne va quella barca! Già sparisce,\nGià non si vede più. Deh, faccia il cielo\nCh'abbia prospero corso.", en: "O heavens! How swiftly that boat goes!\nIt's disappearing; I can no longer see it.\nMay heaven grant it\na safe voyage." },
+        { speaker: "Dorabella", it: "Faccia che al campo giunga\nCon fortunati auspici.", en: "May it reach the battlefield\nunder a happy omen." },
+        { speaker: "Don Alfonso", it: "E a voi salvi gli amanti, a me gli amici.", en: "May it bring your lovers safely back to you,\nand my friends safely back to me." },
+      ] },
+      { label: "No. 10 — Terzettino", turns: [
+        { speaker: "Fiordiligi, Dorabella & Don Alfonso", it: "Soave sia il vento,\nTranquilla sia l'onda,\nEd ogni elemento\nBenigno risponda\nAi nostri/vostri desir.", en: "May the breeze be gentle,\nmay the waves be calm,\nand may every element\nbe kind to our/your wishes." },
+        { speaker: "Stage direction", it: "partono le due donne", en: "The two women leave." },
+      ] },
+    ],
+  },
 ];
