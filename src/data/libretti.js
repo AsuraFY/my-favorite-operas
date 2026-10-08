@@ -742,5 +742,170 @@ export const cosiActOneScenes = [
         ]
       }
     ]
-  }
+  },
+{
+  "number": 12,
+  "kind": "Terzetto e aria",
+  "cue": "Nos. 16–17 — Terzetto & Aria",
+  "title": "E voi ridete? / Un'aura amorosa",
+  "cast": "Don Alfonso, Ferrando, Guglielmo",
+  "summary": "The officers laugh at Alfonso, convinced the sisters' rejection has won the bet. Alfonso demands obedience; Ferrando then sings of love's power to sustain him.",
+  "sections": [
+    {
+      "label": "No. 16 — Terzetto",
+      "turns": [
+        {
+          "speaker": "Stage direction",
+          "it": "I due amanti ridono smoderatamente e burlano Don Alfonso.",
+          "en": "The two lovers laugh uncontrollably and tease Don Alfonso."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "E voi ridete?",
+          "en": "And you are laughing?"
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Ferrando e Guglielmo ridono fortissimo.",
+          "en": "Ferrando and Guglielmo laugh very loudly."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "Certo, ridiamo.",
+          "en": "Of course we're laughing."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Ma cosa avete?",
+          "en": "But what's the matter with you?"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "Già lo sappiamo.",
+          "en": "We know already."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Ridete piano!",
+          "en": "Laugh more quietly!"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "Parlate invano!",
+          "en": "You're wasting your breath!"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Se vi sentissero,\nSe vi scoprissero,\nSi guasterebbe\nTutto l'affar.",
+          "en": "If they heard you,\nif they recognized you,\nthe whole affair\nwould be ruined."
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Ferrando e Guglielmo ridono sottovoce, sforzandosi di non ridere.",
+          "en": "Ferrando and Guglielmo try to stifle their laughter."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "Ah, che dal ridere\nL'alma dividere,\nAh, che le viscere\nSento scoppiar!",
+          "en": "Ah, laughter is tearing\nmy soul in two;\nah, I feel my insides\nabout to burst!"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "(fra sé)\nMi fa da ridere\nQuesto lor ridere,\nMa so che in piangere\nDee terminar.",
+          "en": "(Aside)\nTheir laughter\nmakes me laugh too,\nbut I know it must\nend in tears."
+        }
+      ]
+    },
+    {
+      "label": "Recitative",
+      "turns": [
+        {
+          "speaker": "Don Alfonso",
+          "it": "Si può sapere un poco\nLa cagion di quel riso?",
+          "en": "Might I at least know\nthe reason for your laughter?"
+        },
+        {
+          "speaker": "Guglielmo",
+          "it": "Oh cospettaccio!\nNon vi pare che abbiam giusta ragione,\nIl mio caro padrone?",
+          "en": "Good heavens!\nDon't you think we have every reason,\nmy dear master?"
+        },
+        {
+          "speaker": "Ferrando",
+          "it": "(scherzando)\nQuanto pagar volete,\nE a monte è la scommessa?",
+          "en": "(Teasing)\nHow much will you pay\nto call off the bet?"
+        },
+        {
+          "speaker": "Guglielmo",
+          "it": "(scherzando)\nPagate la metà.",
+          "en": "(Teasing)\nPay half."
+        },
+        {
+          "speaker": "Ferrando",
+          "it": "(scherzando)\nPagate solo\nVentiquattro zecchini.",
+          "en": "(Teasing)\nJust pay us\ntwenty-four sequins."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Poveri innocentini!\nVenite qua, vi voglio\nPorre il ditino in bocca!",
+          "en": "Poor little innocents!\nCome here; I'll put\na little finger in your mouths!"
+        },
+        {
+          "speaker": "Guglielmo",
+          "it": "E avete ancora\nCoraggio di fiatar?",
+          "en": "And you still have\nthe nerve to speak?"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Avanti sera\nCi parlerem.",
+          "en": "We'll talk about it\nbefore evening."
+        },
+        {
+          "speaker": "Ferrando",
+          "it": "Quando volete.",
+          "en": "Whenever you please."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Intanto,\nSilenzio e ubbidienza\nFino a doman mattina.",
+          "en": "Meanwhile,\nsilence and obedience\nuntil tomorrow morning."
+        },
+        {
+          "speaker": "Guglielmo",
+          "it": "Siam soldati, e amiam la disciplina.",
+          "en": "We're soldiers, and we love discipline."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Orbene, andate un poco\nAd attendermi entrambi in giardinetto,\nColà vi manderò gli ordini miei.",
+          "en": "Very well, go and wait for me,\nboth of you, in the little garden;\nI'll send my instructions there."
+        },
+        {
+          "speaker": "Guglielmo",
+          "it": "Ed oggi non si mangia?",
+          "en": "And aren't we eating today?"
+        },
+        {
+          "speaker": "Ferrando",
+          "it": "Cosa serve?\nA battaglia finita\nFia la cena per noi più saporita.",
+          "en": "What need is there?\nOnce the battle is over,\nour supper will taste all the better."
+        }
+      ]
+    },
+    {
+      "label": "No. 17 — Aria",
+      "turns": [
+        {
+          "speaker": "Ferrando",
+          "it": "Un'aura amorosa\nDel nostro tesoro\nUn dolce ristoro\nAl cor porgerà;\nAl cor che, nudrito\nDa speme, da amore,\nDi un'esca migliore\nBisogno non ha.",
+          "en": "A loving breath\nfrom our beloved\nwill bring sweet comfort\nto my heart;\nfor a heart sustained\nby hope and love\nneeds no finer\nnourishment."
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Ferrando e Guglielmo partono.",
+          "en": "Ferrando and Guglielmo leave."
+        }
+      ]
+    }
+  ]
+}
 ];
