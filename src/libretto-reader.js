@@ -1,4 +1,4 @@
-import { getLibretto } from "./data/libretto-registry.js?v=registry-1";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-2";
 
 
 function createLibrettoRenderer(libretto) {
@@ -59,7 +59,7 @@ function cosiActCatalog() {
   return (libretto.acts || []).filter(group => group.scenes?.length);
 }
 function cosiOperaBar(act = 1, page = "libretto") {
-  const base = "#/operas/cosi-fan-tutte";
+  const base = "#/operas/" + libretto.slug;
   const availableActs = cosiActCatalog();
   const tabs = [
     { label: "Synopsis", href: base + "?view=synopsis", current: page === "synopsis" },
@@ -70,14 +70,15 @@ function cosiOperaBar(act = 1, page = "libretto") {
       current: page === "libretto" && act === number
     }))
   ];
-  return '<nav class="opera-subnav" aria-label="Così fan tutte sections">' +
-    '<div class="opera-subnav__identity"><span class="opera-subnav__title">Così fan tutte</span>' +
-    '<span class="opera-subnav__composer">W. A. MOZART</span></div>' +
+  return '<nav class="opera-subnav" aria-label="' + escapeHtml(libretto.opera.title) + ' sections">' +
+    '<div class="opera-subnav__identity"><span class="opera-subnav__title">' + escapeHtml(libretto.opera.title) + '</span>' +
+    '<span class="opera-subnav__composer">' + escapeHtml(libretto.composerShort || libretto.opera.composer) + '</span></div>' +
     '<div class="opera-subnav__links">' + tabs.map(tab =>
       '<a class="opera-subnav__link' + (tab.current ? ' is-active' : '') + '" href="' + tab.href + '"' +
       (tab.current ? ' aria-current="page"' : '') + '>' + tab.label + '</a>'
     ).join('') + '</div></nav>';
 }
+
 
 
 function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=false) {
@@ -86,10 +87,10 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
     const links=item.sections.map((section,index)=>{
       const active=item.number===selectedScene&&index===selectedItem;
       const label=sectionNavigationLabel(section,item,index);
-      const isSong=/^No\./i.test(section.label);
+      const isSong=section.number != null || /^No\./i.test(section.label || "");
       const title=isSong?sectionTitles(item,section,index).original:"";
       const form=title?label.slice(0,-(" · "+title).length):label;
-      const href="#/operas/cosi-fan-tutte?act="+act+"&scene="+item.number+"&item="+index;
+      const href="#/operas/"+libretto.slug+"?act="+act+"&scene="+item.number+"&item="+index;
       return '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
         '><span class="section-nav-link__icon section-nav-link__icon--'+(isSong?'song':'recitative')+'" aria-hidden="true">'+(isSong?'♫':'▤')+
         '</span><span class="section-nav-link__label"><span class="section-nav-link__form">'+escapeHtml(form)+'</span>'+
@@ -101,23 +102,24 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
 }
+
 function renderCompleteOutlineAct(act) {
   const group = cosiActCatalog().find(entry => entry.number === act);
   if (!group) return "";
-  const actName = act === 1 ? "Primo" : act === 2 ? "Secondo" : "Terzo";
+  const actName = group.originalHeading || "Act " + romanNumeral(act);
   return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
     '<summary class="opera-outline__act-toggle"><h2 id="outline-act-' + act +
-    '">Atto ' + actName + ' <span>·</span> Act ' + romanNumeral(act) +
+    '">' + escapeHtml(actName) + ' <span>·</span> Act ' + romanNumeral(act) +
     '<span class="opera-outline__chevron" aria-hidden="true">⌄</span></h2></summary>' +
     group.scenes.map(scene => {
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
       return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
-        '<h3 id="' + sceneId + '">Scena ' + italianSceneOrdinal(scene.number).toLocaleLowerCase("it-IT") +
+        '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
         ' <span>·</span> Scene ' + scene.number + '</h3>' +
         '<div class="opera-outline__sections">' +
         scene.sections.map((section, index) => {
           const title = sectionPresentation(scene, section, index).heading;
-          const href = '#/operas/cosi-fan-tutte?act=' + act +
+          const href = '#/operas/' + libretto.slug + '?act=' + act +
             '&scene=' + scene.number + '&item=' + index;
           return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
             '<span class="opera-outline__section-title">' + escapeHtml(title) + '</span>' +
@@ -127,8 +129,9 @@ function renderCompleteOutlineAct(act) {
         '</div></section>';
     }).join("") + '</details>';
 }
+
 function cosiOutlinePage() {
-  return '<div class="opera-reading-page opera-outline-page">' + cosiOperaBar(1, "outline") +
+  return '<div class="opera-reading-page opera-outline-page" data-libretto-slug="' + libretto.slug + '">' + cosiOperaBar(1, "outline") +
     '<section class="opera-outline" aria-labelledby="opera-outline-title">' +
     '<div class="opera-outline__heading"><h1 id="opera-outline-title">Libretto Outline</h1></div>' +
     '<div class="opera-outline__acts">' +
@@ -136,10 +139,11 @@ function cosiOutlinePage() {
     '</div></section></div>';
 }
 
+
 function cosiSynopsisPage() {
   const synopsis = libretto.synopsis;
   const characters = synopsis.characters;
-  return '<div class="opera-reading-page">' + cosiOperaBar(1, "synopsis") +
+  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '">' + cosiOperaBar(1, "synopsis") +
     '<article class="opera-synopsis">' +
     '<p class="opera-synopsis__eyebrow">' + escapeHtml(synopsis.eyebrow) + '</p>' +
     '<h1>Synopsis</h1>' +
@@ -149,6 +153,7 @@ function cosiSynopsisPage() {
       '</h3><span>' + role + '</span><p>' + escapeHtml(description) + '</p></div>').join('') +
     '</div></article></div>';
 }
+
 function sectionParticipantCredits(section, act, sceneNumber) {
   const speakers = section.turns.filter(t => t.speaker !== (libretto.stageDirectionSpeaker || "Stage direction")).map(t => t.speaker);
   const notes = libretto.disguises?.[act + ":" + sceneNumber] || {};

@@ -1,5 +1,5 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-search-1";
-import { cosiOperaPage, cosiOutlinePage, cosiSynopsisPage } from "./libretto-reader.js?v=reader-1";
+import { cosiOperaPage, cosiOutlinePage, cosiSynopsisPage } from "./libretto-reader.js?v=reader-2";
 
 const app = document.querySelector("#app");
 
