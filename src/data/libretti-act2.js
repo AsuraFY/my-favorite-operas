@@ -1578,5 +1578,150 @@ export const cosiActTwoScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 12,
+    "kind": "Recitativo e duetto",
+    "cue": "No. 29 — Duetto",
+    "title": "Fra gli amplessi in pochi istanti",
+    "cast": "Fiordiligi, Ferrando, Guglielmo, Don Alfonso",
+    "summary": "Fiordiligi dresses as a soldier to rejoin her fiancé, but Ferrando intercepts her. During their duet, she finally yields to him while Guglielmo looks on in anguish.",
+    "sections": [
+      {
+        "label": "Recitative",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi; poi Ferrando. Guglielmo e Don Alfonso osservano dall'altra camera.",
+            "en": "Fiordiligi, then Ferrando. Guglielmo and Don Alfonso watch from the adjoining room."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "L'abito di Ferrando\nSarà buono per me; può Dorabella\nPrender quel di Guglielmo. In questi arnesi\nRaggiungerem gli sposi nostri, al loro\nFianco pugnar potremo\nE morir se fa d'uopo. Ite in malora,\nOrnamenti fatali!... Io vi detesto.",
+            "en": "Ferrando's uniform\nwill suit me; Dorabella can\nwear Guglielmo's. Disguised like this,\nwe'll reach our lovers, fight\nbeside them, and die\nif we must. Away with you,\nfateful ornaments! I detest you."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Fiordiligi si toglie l'ornamento che porta in testa.",
+            "en": "Fiordiligi removes her head ornament."
+          },
+          {
+            "speaker": "Guglielmo",
+            "it": "(agli amici)\nSi può dar un amor simile a questo?",
+            "en": "(To his friends)\nCould there be love like this?"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Di tornar non sperate alla mia fronte\nPria ch'io qui torni col mio ben; in vostro\nLoco porrò questo cappello... oh, come\nEi mi trasforma le sembianze e il viso!\nCome appena io medesma or mi ravviso!",
+            "en": "Don't hope to return to my brow\nuntil I come back here with my beloved;\nI'll put this hat in your place... Oh, how\nit changes my appearance and face!\nI can scarcely recognize myself!"
+          }
+        ]
+      },
+      {
+        "label": "No. 29 — Duetto",
+        "turns": [
+          {
+            "speaker": "Fiordiligi",
+            "it": "Fra gli amplessi in pochi istanti\nGiungerò del fido sposo,\nSconosciuta a lui davanti\nIn quest'abito verrò.\nOh, che gioia il suo bel core\nProverà nel ravvisarmi!",
+            "en": "In just a little while\nI shall reach my faithful fiancé's embrace;\nunrecognized, I shall appear\nbefore him in this uniform.\nOh, what joy his dear heart\nwill feel when he recognizes me!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "(a Fiordiligi, entrando)\nEd intanto di dolore\nMeschinello io mi morrò.",
+            "en": "(Entering, to Fiordiligi)\nAnd meanwhile, poor wretch,\nI shall die of grief."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Cosa veggio! Son tradita.\nDeh, partite!",
+            "en": "What do I see? I am betrayed!\nPlease go away!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Ah no, mia vita!\nCon quel ferro di tua mano\nQuesto cor tu ferirai,\nE se forza oddio non hai\nIo la man ti reggerò.",
+            "en": "Ah no, my life!\nWith that sword in your hand\nyou will pierce this heart;\nand if, alas, you lack the strength,\nI'll guide your hand."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando prende la spada dal tavolino, la sfodera e s'inginocchia.",
+            "en": "Ferrando takes the sword from the small table, draws it, and kneels."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Taci, ahimè! Son abbastanza\nTormentata ed infelice!",
+            "en": "Be silent, alas! I am already\nsufficiently tormented and unhappy!"
+          },
+          {
+            "speaker": "Fiordiligi & Ferrando",
+            "it": "Ah, che omai la mia/sua costanza\nA quei sguardi, a quel che dice,\nIncomincia a vacillar!",
+            "en": "Ah, my/her steadfastness\nunder those looks, at those words,\nis starting to waver!"
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Sorgi, sorgi...",
+            "en": "Rise, rise..."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Invan lo credi.",
+            "en": "Don't think I will."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Per pietà, da me che chiedi?",
+            "en": "For pity's sake, what do you ask of me?"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Il tuo cor, o la mia morte.",
+            "en": "Your heart, or my death."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Ah, non son, non son più forte...",
+            "en": "Ah, I can no longer be strong..."
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Cedi, cara!",
+            "en": "Yield, my dear!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Ferrando le prende la mano e gliela bacia.",
+            "en": "Ferrando takes her hand and kisses it."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "Dei, consiglio!",
+            "en": "Gods, give me counsel!"
+          },
+          {
+            "speaker": "Ferrando",
+            "it": "Volgi a me pietoso il ciglio:\nIn me sol trovar tu puoi\nSposo, amante, e più se vuoi.\n(tenerissimamente)\nIdol mio, più non tardar.",
+            "en": "Turn merciful eyes upon me:\nin me alone you may find\na husband, lover, and more if you wish.\n(Very tenderly)\nMy adored one, delay no longer."
+          },
+          {
+            "speaker": "Fiordiligi",
+            "it": "(tremando)\nGiusto ciel!... Crudel... hai vinto,\nFa' di me quel che ti par.",
+            "en": "(Trembling)\nJust heaven! Cruel man... you've won;\ndo with me what you will."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Don Alfonso trattiene Guglielmo che vorrebbe entrare.",
+            "en": "Don Alfonso holds back Guglielmo, who wants to enter."
+          },
+          {
+            "speaker": "Ferrando & Fiordiligi",
+            "it": "Abbracciamci, o caro bene,\nE un conforto a tante pene\nSia languir di dolce affetto,\nDi diletto sospirar!",
+            "en": "Let us embrace, my dearest,\nand let sweet affection comfort\nall this suffering;\nlet us sigh with delight!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Partono.",
+            "en": "They leave."
+          }
+        ]
+      }
+    ]
   }
 ];
