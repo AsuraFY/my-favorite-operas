@@ -907,5 +907,115 @@ export const cosiActOneScenes = [
       ]
     }
   ]
+},
+{
+  "number": 13,
+  "kind": "Recitativo",
+  "cue": "Recitative",
+  "title": "Oh, la faria da ridere",
+  "cast": "Don Alfonso, Despina",
+  "summary": "Don Alfonso doubts that the sisters can remain faithful. Despina dismisses their grief, argues that love should be pleasurable, and offers to arrange another encounter with the disguised suitors.",
+  "sections": [
+    {
+      "label": "Recitative",
+      "turns": [
+        {
+          "speaker": "Don Alfonso",
+          "it": "Oh, la faria da ridere: sì poche\nSon le donne costanti, in questo mondo,\nE qui ve ne son due! Non sarà nulla...",
+          "en": "Oh, what a joke it would be! So few\nwomen in this world are faithful,\nand here we have two of them! It will come to nothing..."
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Entra Despina.",
+          "en": "Despina enters."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Vieni, vieni, fanciulla, e dimmi un poco\nDove sono e che fan le tue padrone.",
+          "en": "Come, come, my girl, and tell me:\nwhere are your mistresses, and what are they doing?"
+        },
+        {
+          "speaker": "Despina",
+          "it": "Le povere buffone\nStanno nel giardinetto\nA lagnarsi coll'aria e colle mosche\nD'aver perso gli amanti.",
+          "en": "The poor silly things\nare in the little garden,\ncomplaining to the air and the flies\nthat they've lost their lovers."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "E come credi\nChe l'affar finirà?\nVogliam sperare\nChe faranno giudizio?",
+          "en": "And how do you think\nthis business will end?\nCan we hope\nthey'll come to their senses?"
+        },
+        {
+          "speaker": "Despina",
+          "it": "Io lo farei;\nE dove piangon esse io riderei.\nDisperarsi, strozzarsi\nPerché parte un amante?\nGuardate che pazzia!\nSe ne pigliano due, s'uno va via.",
+          "en": "I would, in their place;\nwhere they weep, I would laugh.\nTo despair and wring one's neck\nbecause a lover has gone away?\nWhat madness!\nIf one leaves, you take two more."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Brava, questa è prudenza.\n(fra sé)\nBisogna impuntigliarla.",
+          "en": "Well said—that's good sense.\n(Aside)\nI must make her determined to prove her point."
+        },
+        {
+          "speaker": "Despina",
+          "it": "È legge di natura,\nE non prudenza sola. Amor cos'è?\nPiacer, comodo, gusto,\nGioia, divertimento,\nPassatempo, allegria: non è più amore\nSe incomodo diventa,\nSe invece di piacer nuoce e tormenta.",
+          "en": "It's a law of nature,\nnot merely good sense. What is love?\nPleasure, comfort, enjoyment,\njoy, amusement,\npastime, merriment. It is no longer love\nif it becomes a burden,\nif, instead of giving pleasure, it hurts and torments."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Ma intanto quelle pazze...",
+          "en": "But meanwhile, those foolish girls..."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Quelle pazze\nFaranno a modo nostro.\nÈ buon che sappiano\nD'essere amate da color.",
+          "en": "Those foolish girls\nwill do as we wish.\nIt's good that they know\nthose men are in love with them."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Lo sanno.",
+          "en": "They know it."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Dunque riameranno.\n«Diglielo», si suol dire,\n«E lascia fare al diavolo».",
+          "en": "Then they'll love them in return.\nAs the saying goes, 'Tell them so,\nand leave the rest to the devil.'"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Ma come\nFar vuoi perché ritornino\nOr che partiti sono, e che li sentano\nE tentare si lascino\nQueste due bestioline?",
+          "en": "But how do you propose\nto bring them back now that they've gone,\nand make these two little creatures\nlisten to them\nand allow themselves to be tempted?"
+        },
+        {
+          "speaker": "Despina",
+          "it": "A me lasciate\nLa briglia di condur tutta la macchina.\nQuando Despina macchina una cosa\nNon può mancar d'effetto: ho già menati\nMill'uomini pel naso,\nSaprò menar due femmine.\nSon ricchi i due monsù mustacchi?",
+          "en": "Leave the reins of the entire scheme\nto me.\nWhen Despina plots something,\nit cannot fail: I've already led\na thousand men by the nose;\nI can surely manage two women.\nAre those two moustached gentlemen rich?"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Son ricchissimi.",
+          "en": "They're extremely rich."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Dove son?",
+          "en": "Where are they?"
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Sulla strada\nAttendendo mi stanno.",
+          "en": "They're waiting for me\nout on the road."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Ite e sul fatto\nPer la picciola porta\nA me riconduceteli; v'aspetto\nNella camera mia.\nPurché tutto facciate\nQuel ch'io v'ordinerò, pria di domani\nI vostri amici canteran vittoria;\nEd essi avranno il gusto, ed io la gloria.",
+          "en": "Go, and bring them straight back to me\nthrough the little door;\nI'll be waiting in my room.\nProvided you all do\nas I instruct, before tomorrow\nyour friends will be singing of victory;\nthey'll have their pleasure, and I'll have the glory."
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Partono.",
+          "en": "They leave."
+        }
+      ]
+    }
+  ]
 }
 ];
