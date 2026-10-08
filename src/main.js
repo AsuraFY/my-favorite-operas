@@ -339,7 +339,7 @@ function cosiOperaBar(act = 1, page = "libretto") {
     { label: "Libretto Outline", href: base + "?view=outline", current: page === "outline" },
     ...availableActs.map(({number}) => ({
       label: "Act " + romanNumeral(number),
-      href: base + "?act=" + number + "&scene=1&item=0",
+      href: base + "?act=" + number,
       current: page === "libretto" && act === number
     }))
   ];
@@ -640,6 +640,11 @@ function updateReaderSectionPosition() {
   const barHeight = root.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0;
   const toolbarHeight = root.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0;
   const threshold = siteHeight + barHeight + toolbarHeight + 18;
+  // Preserve the scene heading as the landing point until the first musical section is reached.
+  if (items[0].getBoundingClientRect().top > threshold) {
+    highlightReaderSection(0, false);
+    return;
+  }
   let active = 0;
   for (const section of items) {
     if (section.getBoundingClientRect().top <= threshold) active = Number(section.dataset.librettoItem);
@@ -723,9 +728,11 @@ function render() {
     return;
   }
   const reader = currentSceneReader();
-  readerJumping = Boolean(reader);
+  const hasSectionDestination = Boolean(reader && (routeParams.has("item") || query));
+  readerJumping = hasSectionDestination;
   window.scrollTo(0, 0);
-  if (reader) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);
+  if (hasSectionDestination) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);
+  else if (reader) highlightReaderSection(0, false);
   updateReaderTopButton();
 }
 
