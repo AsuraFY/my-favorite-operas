@@ -495,11 +495,11 @@ button { font: inherit; }
 .directory-grid { padding-top: 0; padding-bottom: 72px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .directory-card { min-width: 0; overflow: hidden; display: block; border: 1px solid #e6dfd6; border-radius: 9px; background: #faf8f4; box-shadow: 0 2px 8px rgba(49, 38, 25, .035); color: #192b3a; animation: rise .45s both; animation-delay: calc(var(--card-index, 0) * 45ms); transition: box-shadow .2s ease, transform .2s ease; }
 .directory-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(49, 38, 25, .1); }
-.directory-card__image { height: clamp(138px, 14vw, 176px); background-image: url("./public/images/opera-card-art.webp"); background-size: 200% auto; background-repeat: no-repeat; background-color: #d6cabb; }
+.directory-card__image { height: clamp(138px, 14vw, 176px); background-image: url("./public/images/opera-card-art.webp"); background-size: 200% 200%; background-repeat: no-repeat; background-color: #d6cabb; overflow: hidden; }
 .directory-card__image--barber { background-position: 0 0; }
 .directory-card__image--cosi { background-position: 100% 0; }
-.directory-card__image--tristan { background-position: 0 66%; }
-.directory-card__image--macbeth { background-position: 100% 66%; }
+.directory-card__image--tristan { background-position: 0 100%; }
+.directory-card__image--macbeth { background-position: 100% 100%; }
 .directory-card__body { padding: 10px 14px 13px; }
 .directory-card__body h2 { margin: 0 0 4px; color: #172b3c; font: 500 20px/1.25 var(--serif); letter-spacing: -.02em; }
 .directory-card__byline { display: flex; align-items: center; gap: 9px; margin: 0 0 7px; color: #555c60; font: 15px var(--serif); }
@@ -1797,3 +1797,8 @@ button { font: inherit; }
   .opera-info__facts dd { font-size: 14px; }
   .opera-info__characters { margin-top: 25px; }
 }
+
+/* Standalone artwork never shares a sprite cell with a neighboring opera. */
+.directory-card__image--standalone { background-image: none; }
+.directory-card__image--standalone img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.directory-card__image { position: relative; isolation: isolate; }
