@@ -199,10 +199,9 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
   const section = scene.sections[itemIndex];
   const presentation = sectionPresentation(scene, section, itemIndex);
   const safeQuery = escapeHtml(query);
-  const settingByScene = {
-    1: "Bottega di caffè · Coffee shop",
-    2: "Giardino sulla spiaggia · Seaside garden",
-  };
+  const settingByScene = act === 2
+    ? { 1: "Camera · Room", 4: "Giardino alla riva del mare · Seaside garden" }
+    : { 1: "Bottega di caffè · Coffee shop", 2: "Giardino sulla spiaggia · Seaside garden" };
   const sceneSetting = settingByScene[scene.number] || "";
   const sceneLabel = "Scene " + romanNumeral(scene.number);
   const actLabel = "Act " + romanNumeral(act);
