@@ -201,12 +201,16 @@ function sectionPresentation(scene, section, sectionIndex) {
 }
 
 
+function cosiActCatalog() {
+  return [[1,cosiActOneScenes],[2,cosiActTwoScenes]].filter(([,s])=>s.length).map(([number,scenes])=>({number,scenes}));
+}
 function cosiOperaBar(act = 1, page = "libretto") {
   const base = "#/operas/cosi-fan-tutte";
-  const availableActs = [[1, cosiActOneScenes], [2, cosiActTwoScenes]].filter(([, scenes]) => scenes.length);
+  const availableActs = cosiActCatalog();
   const tabs = [
     { label: "Synopsis", href: base + "?view=synopsis", current: page === "synopsis" },
-    ...availableActs.map(([number]) => ({
+    { label: "Libretto Outline", href: base + "?view=outline", current: page === "outline" },
+    ...availableActs.map(({number}) => ({
       label: "Act " + romanNumeral(number),
       href: base + "?act=" + number + "&scene=1&item=0",
       current: page === "libretto" && act === number
@@ -219,6 +223,41 @@ function cosiOperaBar(act = 1, page = "libretto") {
       '<a class="opera-subnav__link' + (tab.current ? ' is-active' : '') + '" href="' + tab.href + '"' +
       (tab.current ? ' aria-current="page"' : '') + '>' + tab.label + '</a>'
     ).join('') + '</div></nav>';
+}
+
+
+function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=false) {
+  const scenes=cosiActCatalog().find(group=>group.number===act)?.scenes||[];
+  return scenes.map(item=>{
+    const links=item.sections.map((section,index)=>{
+      const active=item.number===selectedScene&&index===selectedItem;
+      const label=sectionNavigationLabel(section,item,index);
+      const isSong=/^No\./i.test(section.label);
+      const title=isSong?sectionTitles(item,section,index).original:"";
+      const form=title?label.slice(0,-(" · "+title).length):label;
+      const href="#/operas/cosi-fan-tutte?act="+act+"&scene="+item.number+"&item="+index;
+      return '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
+        '><span class="section-nav-link__icon section-nav-link__icon--'+(isSong?'song':'recitative')+'" aria-hidden="true">'+(isSong?'♫':'▤')+
+        '</span><span class="section-nav-link__label"><span class="section-nav-link__form">'+escapeHtml(form)+'</span>'+
+        (title?'<span class="section-nav-link__title">'+escapeHtml(title)+'</span>':'')+'</span></a>';
+    }).join("");
+    const selected=item.number===selectedScene;
+    return '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
+      '><summary class="scene-group__summary"><span>Scene '+romanNumeral(item.number)+
+      '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
+  }).join("");
+}
+function cosiOutlinePage() {
+  return '<div class="opera-reading-page opera-outline-page">'+cosiOperaBar(1,"outline")+
+    '<section class="opera-outline" aria-labelledby="opera-outline-title"><div class="opera-outline__heading">'+
+    '<p class="opera-synopsis__eyebrow">Così fan tutte · Complete libretto</p>'+
+    '<h1 id="opera-outline-title">Libretto Outline</h1>'+
+    '<p>Choose an act, scene, recitative or musical number to read its Italian and English text.</p></div>'+
+    '<div class="opera-outline__acts">'+cosiActCatalog().map(({number})=>
+      '<details class="act-group opera-outline__act" open><summary class="act-heading"><h2>Act '+
+      romanNumeral(number)+'</h2><span aria-hidden="true">⌄</span></summary><div class="opera-outline__scenes">'+
+      renderActSceneLinks(number)+'</div></details>').join('')+
+    '</div></section></div>';
 }
 
 function cosiSynopsisPage() {
@@ -243,8 +282,9 @@ function cosiSynopsisPage() {
 }
 
 function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileContents = false) {
-  const act = window.location.hash.includes("act=2") ? 2 : 1;
-  const scenes = act === 2 ? cosiActTwoScenes : cosiActOneScenes;
+  const requested=Number(new URLSearchParams(window.location.hash.split("?")[1]||"").get("act"))||1;
+  const group=cosiActCatalog().find(group=>group.number===requested)||cosiActCatalog()[0];
+  const act=group.number, scenes=group.scenes;
   const searchTerm = query.trim().toLocaleLowerCase();
   let found = null;
   if (searchTerm) {
@@ -274,20 +314,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
     const rowClass = speakerClassName === "stage-direction" ? " libretto-row--stage-direction" : "";
     return '<div class="libretto-row' + rowClass + '"><div class="libretto-cell libretto-cell--italian">' + speaker + '<p>' + escapeHtml(turn.it) + '</p></div><div class="libretto-cell libretto-cell--english">' + speaker + '<p>' + escapeHtml(turn.en) + '</p></div></div>';
   }).join("");
-  const sceneLinks = scenes.map((item) => {
-    const itemSections = item.sections.map((subsection, subsectionIndex) => {
-      const active = item.number === scene.number && subsectionIndex === itemIndex;
-      const label = sectionNavigationLabel(subsection, item, subsectionIndex);
-      const isSong = /^No\./i.test(subsection.label);
-      const href = "#/operas/cosi-fan-tutte?act=" + act + "&scene=" + item.number + "&item=" + subsectionIndex;
-      const songTitle = isSong ? sectionTitles(item, subsection, subsectionIndex).original : "";
-      const labelText = songTitle ? label.slice(0, -(" · " + songTitle).length) : label;
-      const labelMarkup = '<span class="section-nav-link__label"><span class="section-nav-link__form">' + escapeHtml(labelText) + '</span>' +
-        (songTitle ? '<span class="section-nav-link__title">' + escapeHtml(songTitle) + '</span>' : '') + '</span>';
-      return '<a class="section-nav-link' + (active ? " is-current" : "") + '" href="' + href + '"' + (active ? ' aria-current="page"' : "") + '><span class="section-nav-link__icon section-nav-link__icon--' + (isSong ? "song" : "recitative") + '" aria-hidden="true">' + (isSong ? "♫" : "▤") + '</span>' + labelMarkup + '</a>';
-    }).join("");
-    return '<details class="scene-group' + (item.number === scene.number ? " is-current" : "") + '" open><summary class="scene-group__summary"><span>' + "Scene " + romanNumeral(item.number) + '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">' + itemSections + '</div></details>';
-  }).join("");
+  const sceneLinks = renderActSceneLinks(act, scene.number, itemIndex, true);
   const previous = scene.number > 1 ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number - 1) + '&item=0">‹ <span>Prev. scene</span></a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">‹ <span>Prev. scene</span></span>';
   const next = scene.number < scenes.length ? '<a class="mobile-scene-step" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + (scene.number + 1) + '&item=0"><span>Next scene</span> ›</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true"><span>Next scene</span> ›</span>';
   const backToContents = '<a class="back-to-scenes" href="#/operas/cosi-fan-tutte?act=' + act + '&scene=' + scene.number + '&item=' + itemIndex + '&contents=1">← Back to scenes</a>';
@@ -318,6 +345,7 @@ function cosiOperaPage(selectedNumber = 1, query = "", selectedItem = 0, mobileC
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
   if (opera.slug === "cosi-fan-tutte") return selectedView === "synopsis"
     ? cosiSynopsisPage()
+    : selectedView === "outline" ? cosiOutlinePage()
     : cosiOperaPage(selectedScene, query, selectedItem, mobileContents);
   return `<div class="opera-detail">
     <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>

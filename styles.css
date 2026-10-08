@@ -1388,3 +1388,18 @@ button { font: inherit; }
   .opera-synopsis > p:not(.opera-synopsis__eyebrow) { font-size: 17px; }
   .opera-synopsis__characters { grid-template-columns: 1fr; }
 }
+
+/* Complete Libretto Outline uses the reader's scene and section components */
+.opera-outline { max-width:1400px; margin:0 auto; padding:clamp(28px,4vw,55px) clamp(20px,4vw,56px) 80px; }
+.opera-outline__heading h1 { margin:11px 0 12px; color:#173856; font:600 clamp(32px,4vw,47px)/1.2 var(--serif); }
+.opera-outline__heading > p:last-child { max-width:65ch; margin:0 0 28px; color:#4f6274; font:17px/1.5 var(--serif); }
+.opera-outline__acts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:clamp(18px,3vw,34px); }
+.opera-outline__act { min-width:0; overflow:hidden; border:1px solid #ded7cb; border-radius:9px; background:#f8f6ef; }
+.opera-outline__act > .act-heading { margin:0; padding:14px 20px; background:#f4eee3; border-bottom:1px solid #ded7cb; }
+.opera-outline__act > .act-heading h2 { margin:0; }
+.opera-outline__scenes { padding:14px 17px 22px; }
+.opera-outline__scenes .scene-group { background:#fffdf8; border:1px solid #e5dfd4; }
+.opera-outline__scenes .scene-group + .scene-group { margin-top:8px; }
+.opera-outline__scenes .scene-group__summary { font-size:20px; }
+.opera-outline__scenes .section-nav-link { font-size:16px; }
+@media(max-width:800px) { .opera-outline__acts { grid-template-columns:1fr; } }
