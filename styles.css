@@ -1747,3 +1747,10 @@ button { font: inherit; }
     border-bottom: 1px solid #e8dfd1;
   }
 }
+
+/* Give the Italian column a little more left breathing room only with the desktop outline collapsed. */
+@media (min-width: 701px) {
+  .opera-reading-page[data-act] .reading-layout.is-outline-collapsed .scene-panel {
+    padding-left: calc(clamp(24px, 3vw, 52px) + 32px);
+  }
+}
