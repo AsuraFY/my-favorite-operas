@@ -1272,5 +1272,220 @@ export const cosiActOneScenes = [
       ]
     }
   ]
+},
+{
+  "number": 16,
+  "kind": "Finale",
+  "cue": "No. 18 — Finale (conclusion)",
+  "title": "Eccovi il medico / Dove son?",
+  "cast": "Fiordiligi, Dorabella, Ferrando, Guglielmo, Despina, Don Alfonso",
+  "summary": "Despina returns disguised as a doctor and theatrically revives the supposedly poisoned officers using a 'mesmeric' magnet. The suitors ask the sisters for kisses, causing renewed outrage; the act closes with the conspirators and lovers wondering how the wager will unfold.",
+  "sections": [
+    {
+      "label": "No. 18 — Finale (conclusion)",
+      "turns": [
+        {
+          "speaker": "Stage direction",
+          "it": "Fiordiligi, Dorabella, Ferrando e Guglielmo; entrano Despina travestita da medico e Don Alfonso.",
+          "en": "Fiordiligi, Dorabella, Ferrando and Guglielmo; Despina enters disguised as a doctor, accompanied by Don Alfonso."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Eccovi il medico,\nSignore belle!",
+          "en": "Here is the doctor,\nmy fair ladies!"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(fra sé)\nDespina in maschera:\nChe trista pelle!",
+          "en": "(Aside)\nDespina in disguise:\nwhat a sly creature!"
+        },
+        {
+          "speaker": "Despina",
+          "it": "Salvete, amabiles\nBuonae puellae!",
+          "en": "Greetings, lovable,\ngood young ladies!"
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Parla un linguaggio\nChe non sappiamo.",
+          "en": "He's speaking a language\nwe don't understand."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Come comandano\nDunque parliamo:\nSo il greco e l'arabo,\nSo il turco e il vandalo;\nLo svevo e il tartaro\nSo ancor parlar.",
+          "en": "Then let us speak\nas you command:\nI know Greek and Arabic,\nTurkish and Vandal;\nI can speak Swabian\nand Tatar as well."
+        },
+        {
+          "speaker": "Don Alfonso",
+          "it": "Tanti linguaggi\nPer sé conservi.\nQuei miserabili\nPer ora osservi;\nPreso hanno il tossico,\nChe si può far?",
+          "en": "Keep all those languages\nto yourself.\nFor now, examine\nthose unfortunate fellows;\nthey have taken poison.\nWhat can be done?"
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Signor dottore,\nChe si può far?",
+          "en": "Doctor, sir,\nwhat can be done?"
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Despina tocca il polso e la fronte all'uno e indi all'altro.",
+          "en": "Despina feels the pulse and forehead of first one man and then the other."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Saper bisognami\nPria la cagione,\nE quinci l'indole\nDella pozione:\nSe calda o frigida,\nSe poca o molta,\nSe in una volta\nBebberla o in più.",
+          "en": "First I must discover\nthe cause,\nand then the nature\nof the potion:\nwhether hot or cold,\na little or a lot,\nand whether they drank it\nin one gulp or several."
+        },
+        {
+          "speaker": "Fiordiligi, Dorabella & Don Alfonso",
+          "it": "Preso han l'arsenico,\nSignor dottore;\nQui dentro il bebbero.\nLa causa è amore,\nEd in un sorso\nSe 'l mandar giù.",
+          "en": "They took arsenic,\ndoctor;\nthey drank it right here.\nLove was the cause,\nand they swallowed it\nin a single gulp."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Non vi affannate,\nNon vi turbate:\nEcco una prova\nDi mia virtù.",
+          "en": "Do not distress yourselves,\ndo not be alarmed:\nhere is a demonstration\nof my skill."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Egli ha di un ferro\nLa man fornita.",
+          "en": "There's a piece of iron\nin his hand."
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Despina tocca con un pezzo di calamita la testa ai finti infermi e striscia dolcemente i loro corpi per lungo.",
+          "en": "Despina touches the supposedly sick men's heads with a magnet and gently passes it along their bodies."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Questo è quel pezzo\nDi calamita,\nPietra mesmerica,\nCh'ebbe l'origine\nNell'Alemagna,\nChe poi sì celebre\nLà in Francia fu.",
+          "en": "This is the piece\nof magnet,\nthe mesmeric stone,\nwhich originated\nin Germany\nand later became\nso famous in France."
+        },
+        {
+          "speaker": "Fiordiligi, Dorabella & Don Alfonso",
+          "it": "Come si muovono,\nTorcono, scuotono,\nIn terra il cranio\nPresto percuotono.",
+          "en": "Look how they move,\nwrithe and shake!\nThey're about to strike\ntheir heads against the ground."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Ah, lor la fronte\nTenete su.",
+          "en": "Ah, hold up\ntheir heads."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Eccoci pronte!",
+          "en": "We're ready!"
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Fiordiligi e Dorabella metton la mano sulla fronte dei due amanti.",
+          "en": "Fiordiligi and Dorabella place their hands on the two men's foreheads."
+        },
+        {
+          "speaker": "Despina",
+          "it": "Tenete forte!\nCorraggio; or liberi\nSiete da morte.",
+          "en": "Hold them firmly!\nTake heart; now you\nare saved from death."
+        },
+        {
+          "speaker": "Fiordiligi, Dorabella & Don Alfonso",
+          "it": "Attorno guardano,\nForze riprendono.\nAh, questo medico\nVale un Perù!",
+          "en": "They look about them\nand regain their strength.\nAh, this doctor\nis worth a fortune!"
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Ferrando e Guglielmo sorgono in piedi.",
+          "en": "Ferrando and Guglielmo rise to their feet."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "Dove son? che loco è questo?\nChi è colui? Color chi sono?\nSon di Giove innanzi al trono?",
+          "en": "Where am I? What place is this?\nWho is that man? Who are those people?\nAm I before Jupiter's throne?"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(Ferrando a Fiordiligi, Guglielmo a Dorabella)\nSei tu Palla o Citerea?\nNo, tu sei l'alma mia Dea!\nTi ravviso al dolce viso\nE alla man ch'or ben conosco\nE che sola è il mio tesor.",
+          "en": "(Ferrando to Fiordiligi, Guglielmo to Dorabella)\nAre you Pallas or Venus?\nNo, you are my beloved goddess!\nI recognize you by your lovely face\nand by the hand I know so well,\nthe only treasure I possess."
+        },
+        {
+          "speaker": "Stage direction",
+          "it": "Ferrando e Guglielmo abbracciano le amanti teneramente e bacian loro la mano.",
+          "en": "Ferrando and Guglielmo tenderly embrace the women and kiss their hands."
+        },
+        {
+          "speaker": "Despina & Don Alfonso",
+          "it": "Sono effetti ancor del tosco:\nNon abbiate alcun timor.",
+          "en": "These are still effects of the poison;\ndo not be afraid."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Sarà ver, ma tante smorfie\nFanno torto al nostro onor.",
+          "en": "That may be true, but such behavior\nis an affront to our honor."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(fra sé)\nDalla voglia ch'ho di ridere\nIl polmon mi scoppia or or.",
+          "en": "(Aside)\nI'm about to burst a lung\ntrying not to laugh!"
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(Ferrando a Fiordiligi, Guglielmo a Dorabella)\nPer pietà, bell'idol mio...",
+          "en": "(Ferrando to Fiordiligi, Guglielmo to Dorabella)\nHave mercy, my lovely idol..."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Più resister non poss'io.",
+          "en": "I can stand no more."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(come sopra)\n...Volgi a me le luci liete!",
+          "en": "(As before)\n...Turn your happy eyes toward me!"
+        },
+        {
+          "speaker": "Despina & Don Alfonso",
+          "it": "In poch'ore, lo vedrete,\nPer virtù del magnetismo\nFinirà quel parossismo,\nTorneranno al primo umor.",
+          "en": "Within a few hours, you'll see,\nthanks to the power of magnetism,\nthat fit will come to an end\nand they will return to their usual selves."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(come sopra)\nDammi un bacio, o mio tesoro;\nUn sol bacio, o qui mi moro.",
+          "en": "(As before)\nGive me a kiss, my treasure;\njust one kiss, or I'll die right here."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Stelle, un bacio?",
+          "en": "Heavens, a kiss?"
+        },
+        {
+          "speaker": "Despina",
+          "it": "Secondate\nPer effetto di bontate.",
+          "en": "Indulge them,\nas an act of kindness."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Ah, che troppo si richiede\nDa una fida onesta amante!\nOltraggiata è la mia fede,\nOltraggiato è questo cor!",
+          "en": "Ah, this is too much to ask\nof a faithful, honorable lover!\nMy fidelity is insulted,\nmy heart is outraged!"
+        },
+        {
+          "speaker": "Despina, Ferrando, Guglielmo & Don Alfonso",
+          "it": "(fra sé)\nUn quadretto più giocondo\nNon si vide in tutto il mondo;\nQuel che più mi fa da ridere\nÈ quell'ira e quel furor.",
+          "en": "(Aside)\nNo merrier little scene\nhas ever been seen in the world;\nwhat makes me laugh the most\nis that anger and fury."
+        },
+        {
+          "speaker": "Fiordiligi & Dorabella",
+          "it": "Disperati, attossicati,\nIte al diavol quanti siete;\nTardi inver vi pentirete\nSe più cresce il mio furor!",
+          "en": "Desperate fools, poisoned fools,\ngo to the devil, all of you!\nYou will bitterly regret it\nif my anger grows any stronger!"
+        },
+        {
+          "speaker": "Despina & Don Alfonso",
+          "it": "(fra sé)\nUn quadretto più giocondo\nNon si vide in tutto il mondo.\nQuel che più mi fa da ridere\nÈ quell'ira e quel furor.\nCh'io ben so che tanto foco\nCangerassi in quel d'amor.",
+          "en": "(Aside)\nNo merrier little scene\nhas ever been seen in the world.\nWhat makes me laugh the most\nis that anger and fury.\nFor I know full well that such fire\nwill turn into the fire of love."
+        },
+        {
+          "speaker": "Ferrando & Guglielmo",
+          "it": "(fra sé)\nUn quadretto più giocondo\nNon si vide in tutto il mondo.\nMa non so se finta o vera\nSian quell'ira e quel furor.\nNé vorrei che tanto foco\nTerminasse in quel d'amor.",
+          "en": "(Aside)\nNo merrier little scene\nhas ever been seen in the world.\nBut I cannot tell whether their anger\nand fury are feigned or real.\nAnd I would not want such fire\nto end as the fire of love."
+        }
+      ]
+    }
+  ]
 }
 ];
