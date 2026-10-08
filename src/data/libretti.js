@@ -256,8 +256,8 @@ export const cosiActOneScenes = [
         { speaker: "Fiordiligi", it: "(salutando)\nBuon viaggio, mia vita!", en: "(Waving)\nSafe travels, my love!" },
         { speaker: "Dorabella", it: "(salutando)\nBuon viaggio!", en: "(Waving)\nSafe travels!" },
         { speaker: "Fiordiligi", it: "Oh Dei! Come veloce\nSe ne va quella barca! Già sparisce,\nGià non si vede più. Deh, faccia il cielo\nCh'abbia prospero corso.", en: "O heavens! How swiftly that boat goes!\nIt's disappearing; I can no longer see it.\nMay heaven grant it\na safe voyage." },
-        { speaker: "Dorabella", it: "Faccia che al campo giunga\nCon fortunati auspici.", en: "May it reach the battlefield\nunder a happy omen." },
-        { speaker: "Don Alfonso", it: "E a voi salvi gli amanti, a me gli amici.", en: "May it bring your lovers safely back to you,\nand my friends safely back to me." },
+        { speaker: "Dorabella", it: "Faccia che al campo giunga\nCon fortunati auspici.", en: "May it reach the battlefield\nwith good omens." },
+        { speaker: "Don Alfonso", it: "E a voi salvi gli amanti, a me gli amici.", en: "May your lovers stay safe for you,\nand my friends for me." },
       ] },
       { label: "No. 10 — Terzettino", turns: [
         { speaker: "Fiordiligi, Dorabella & Don Alfonso", it: "Soave sia il vento,\nTranquilla sia l'onda,\nEd ogni elemento\nBenigno risponda\nAi nostri/vostri desir.", en: "May the breeze be gentle,\nmay the waves be calm,\nand may every element\nbe kind to our/your wishes." },
