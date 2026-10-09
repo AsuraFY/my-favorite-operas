@@ -794,13 +794,28 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Bartolo",
-            "it": "Ah disgraziato!... ed io non mi accorsi di nulla. Ah, don Basilio sa certo qualche cosa. Ehi, chi è di là? Corri da don Basilio qui rimpetto. Digli ch'io qua l'aspetto, che venga immantinente.",
-            "en": "That wretch!... And I noticed nothing. Don Basilio must know something. Hey, who is there? Run to Don Basilio across the street. Tell him I am waiting and that he must come at once."
+            "it": "Ah, disgraziato!... ed io non mi accorsi di nulla. Ah, don Basilio sa certo qualche cosa. (Dopo aver riflettuto) Ehi, chi è di là? Chi è di là?",
+            "en": "Ah, the scoundrels!... And I noticed nothing. Don Basilio must know something. (After thinking) Hey, who is there? Who is there?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Escono Ambrogio e Berta da parti opposte.",
+            "en": "Ambrogio and Berta enter from opposite sides."
           },
           {
             "speaker": "Bartolo",
-            "it": "Di guardia tu piàntati alla porta... no, no. (Non me ne fido.) Io stesso ci starò.",
-            "en": "Stand guard at the door... no, no. (I don't trust you.) I will keep watch myself."
+            "it": "Senti, Ambrogio?... Corri da don Basilio qui rimpetto. Digli ch'io qua l'aspetto, che venga immantinente, che ho gran cose da dirgli e ch'io non vado perché... perché... perché ho di gran ragioni. Va' subito.",
+            "en": "Listen, Ambrogio... Run to Don Basilio across the way. Tell him I am waiting here and that he must come at once. I have important things to tell him, and I cannot go because... because... I have very good reasons. Go quickly."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Ambrogio parte.",
+            "en": "Ambrogio leaves."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "(A Berta) Di guardia tu piàntati alla porta, e poi... no, no. (Non me ne fido.) Io stesso ci starò. (Parte.)",
+            "en": "(To Berta) You stand guard at the door, and then... no, no. (I cannot trust her.) I will stand guard myself. (He leaves.)"
           }
         ]
       }
@@ -845,8 +860,8 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Bartolo",
-            "it": "Dunque voi don Alonso non conoscete affatto?",
-            "en": "So you do not know Don Alonso at all?"
+            "it": "Dunque voi, don Basilio, non conoscete affatto don Alonso?",
+            "en": "So, Don Basilio, you do not know Don Alonso at all?"
           },
           {
             "speaker": "Basilio",
@@ -855,28 +870,43 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Bartolo",
-            "it": "Ah, certo il conte lo mandò. Qualche gran trama qua si prepara.",
-            "en": "The Count certainly sent him. Some great plot is being hatched here."
+            "it": "Ah, certo il Conte lo mandò. Qualche gran trama qua si prepara.",
+            "en": "Ah, the Count certainly sent him. Some great plot is being hatched here."
           },
           {
             "speaker": "Basilio",
-            "it": "Io poi dico che quell'amico era il conte in persona.",
-            "en": "I say that man was the Count himself."
+            "it": "Io poi dico che quell'amico era il Conte in persona.",
+            "en": "I say that fellow was the Count himself."
           },
           {
             "speaker": "Bartolo",
-            "it": "In questa sera stipular di mie nozze io vo' il contratto.",
-            "en": "Tonight I mean to draw up the contract for my marriage."
+            "it": "Il Conte?...",
+            "en": "The Count?..."
           },
           {
             "speaker": "Basilio",
-            "it": "Il notaro è impegnato con Figaro; il barbiere marita una nipote.",
-            "en": "The notary is busy with Figaro; the barber is marrying off a niece."
+            "it": "Il Conte. (La borsa parla chiaro.)",
+            "en": "The Count. (That purse says it plainly.)"
           },
           {
             "speaker": "Bartolo",
-            "it": "Una nipote? Il barbiere non ha nipoti. Ah, qui v'è qualche imbroglio. Questa notte i bricconi me la voglion far; presto il notaro qua venga sull'istante.",
-            "en": "A niece? The barber has no nieces. There is some trick here. Those rogues mean to fool me tonight; bring the notary here at once."
+            "it": "Sia che si vuole, amico, dal notaro vo' in questo punto andare: in questa sera stipular di mie nozze io vo' il contratto.",
+            "en": "Whatever the truth, my friend, I am going to the notary now. I want my marriage contract drawn up this very evening."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Il notaro?... Siete matto? Piove a torrenti; e poi questa sera il notaro è impegnato con Figaro: il barbiere marita una nipote.",
+            "en": "The notary? Are you mad? It is pouring rain, and the notary is engaged with Figaro this evening; the barber is marrying a niece."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Una nipote?... Che nipote? Il barbiere non ha nipoti. Ah, qui v'è qualche imbroglio. Questa notte i bricconi me la voglion far. Presto, il notaro qua venga sull'istante. Ecco la chiave del portone. Andate, presto, per carità.",
+            "en": "A niece? What niece? The barber has no nieces. There is some trick here. Those rogues mean to fool me tonight. Bring the notary here at once. Here is the front-door key. Go quickly, for heaven's sake."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Non temete: in due salti io torno qua.",
+            "en": "Do not worry; I shall be back in a flash."
           }
         ]
       }
@@ -893,13 +923,33 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Bartolo",
-            "it": "Per forza o per amore Rosina avrà da cedere. Questo biglietto che scrisse la ragazza ad Almaviva potria servir... Del vostro amor sappiate ch'ei si fa gioco in sen d'un'altra amante. Ecco la prova.",
-            "en": "By force or persuasion Rosina will give in. This note she wrote to Almaviva may be useful... Know that your beloved is making sport of your love with another woman. Here is the proof."
+            "it": "Per forza o per amore Rosina avrà da cedere. Cospetto!... mi viene un'altra idea. Questo biglietto che scrisse la ragazza ad Almaviva potria servir... Che colpo da maestro! Don Alonso, il briccone, senza volerlo mi diè l'armi in mano. Ehi, Rosina, Rosina!",
+            "en": "By force or persuasion Rosina will have to yield. Good heavens... I have another idea. This letter she wrote to Almaviva could be useful... What a masterstroke! The rogue Don Alonso has handed me a weapon without meaning to. Rosina! Rosina!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Rosina entra dalle sue camere senza parlare.",
+            "en": "Rosina enters from her room without speaking."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Avanti, avanti. Del vostro amante io vi vo' dar novella. Povera sciagurata! In verità collocaste assai bene il vostro affetto. Del vostro amor sappiate ch'ei si fa gioco in sen d'un'altra amante. Ecco la prova. (Le dà il biglietto.)",
+            "en": "Come in, come in. I have news of your lover. Poor, unhappy girl! You chose your love wisely indeed. Know that he is making sport of your love with another woman. Here is the proof. (He gives her the letter.)"
           },
           {
             "speaker": "Rosina",
-            "it": "Oh cielo! Il mio biglietto. (Ah Lindoro!... ah traditore! Vendetta! E vegga quell'empio chi è Rosina.) Dite, signore, di sposarmi voi bramavate...",
-            "en": "Heavens! My letter. (Ah, Lindoro!... Traitor! Revenge! Let that wicked man see who Rosina is.) You wished to marry me, sir..."
+            "it": "Oh cielo! Il mio biglietto.",
+            "en": "Heavens! My letter."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Don Alonso e il barbiere congiuran contro voi; non vi fidate. In potere del Conte d'Almaviva vi voglion condurre...",
+            "en": "Don Alonso and the barber are plotting against you; do not trust them. They mean to deliver you into Count Almaviva's power..."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "(In braccio a un altro!... che mai sento... ah Lindoro!... ah traditore! Ah sì!... vendetta! E vegga, vegga quell'empio chi è Rosina.) Dite, signore, di sposarmi voi bramavate...",
+            "en": "(In another woman's arms!... What do I hear? Ah, Lindoro!... Traitor! Revenge! Let that wicked man see who Rosina is.) Tell me, sir, you wanted to marry me..."
           },
           {
             "speaker": "Bartolo",
@@ -908,8 +958,8 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Rosina",
-            "it": "Ebben, si faccia! Io son contenta... ma all'istante. A mezza notte qui sarà l'indegno con Figaro; con lui fuggire, per sposarlo io voleva...",
-            "en": "Then let it be! I agree... but at once. At midnight that scoundrel will come here with Figaro; I meant to flee with him and marry him..."
+            "it": "Ebben, si faccia! Io... son contenta!... ma all'istante. Udite: a mezza notte qui sarà l'indegno con Figaro il barbiere; con lui fuggire... per sposarlo io voleva...",
+            "en": "Then let it be! I agree... but at once. Listen: at midnight that scoundrel will come here with the barber Figaro. I meant to flee with him and marry him..."
           },
           {
             "speaker": "Bartolo",
@@ -918,23 +968,23 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Rosina",
-            "it": "Entrano per la finestra. Hanno la chiave.",
-            "en": "They will come in through the window. They have the key."
+            "it": "Ah, mio signore! Entrano per la finestra. Hanno la chiave.",
+            "en": "My lord! They will come through the window. They have the key."
           },
           {
             "speaker": "Bartolo",
-            "it": "Chiuditi a chiave in camera, io vo a chiamar la forza: dirò che son due ladri.",
-            "en": "Lock yourself in your room. I will call the authorities and say they are two thieves."
+            "it": "Non mi muovo di qui! Ma... e se fossero armati? Figlia mia, poiché ti sei sì bene illuminata, facciam così. Chiuditi a chiave in camera; io vo a chiamar la forza. Dirò che son due ladri, e come tali... Corpo di Bacco! L'avrem da vedere! Figlia, chiuditi presto: io vado via.",
+            "en": "I will not leave this place! But... what if they are armed? My girl, since you have seen the truth so clearly, let us do this: lock yourself in your room. I will call the authorities and say they are thieves, and then... By Bacchus, we shall see! Lock yourself in quickly; I am going."
           },
           {
             "speaker": "Rosina",
-            "it": "Quanto è crudel la sorte mia!",
-            "en": "How cruel my fate is!"
+            "it": "Quanto, quanto è crudel la sorte mia!",
+            "en": "How cruel, how cruel is my fate!"
           },
           {
             "speaker": "Stage direction",
-            "it": "Scoppia un temporale. Figaro e il Conte entrano dalla finestra, bagnati dalla pioggia.",
-            "en": "A storm breaks. Figaro and the Count climb in through the window, soaked by the rain."
+            "it": "Scoppia un temporale. Lampi e tuoni; Figaro e il Conte entrano dalla finestra avvolti nei mantelli e bagnati dalla pioggia. Figaro ha una lanterna.",
+            "en": "A storm breaks, with lightning and thunder. Figaro and the Count climb through the window, cloaked and soaked by rain. Figaro carries a lantern."
           }
         ]
       }
@@ -956,18 +1006,68 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "The Count",
-            "it": "Che tempo indiavolato!",
-            "en": "What a devilish storm!"
+            "it": "Figaro, dammi man. Poter del mondo! Che tempo indiavolato!",
+            "en": "Figaro, give me your hand. Good heavens, what a devilish storm!"
           },
           {
-            "speaker": "Rosina",
-            "it": "Indietro, anima scellerata! Son venuta a dimostrarti quale amante perdesti, anima indegna e sconoscente.",
-            "en": "Back, you wretch! I came to show you what a lover you have lost, you base and thankless soul."
+            "speaker": "Figaro",
+            "it": "Tempo da innamorati.",
+            "en": "Weather for lovers."
           },
           {
             "speaker": "The Count",
-            "it": "Al conte?... Ah, sei delusa!... Tu di verace amore ami Lindor?",
-            "en": "The Count?... Ah, you are mistaken!... Do you truly love Lindoro?"
+            "it": "Ehi, fammi lume.",
+            "en": "Hey, give me some light."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Figaro accende i lumi.",
+            "en": "Figaro lights the lamps."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Dove sarà Rosina?",
+            "en": "Where can Rosina be?"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "(Spiando) Ora vedremo... Eccola appunto.",
+            "en": "(Looking around) We shall soon see... There she is."
+          },
+          {
+            "speaker": "The Count",
+            "it": "(Con trasporto) Ah, mio tesoro!...",
+            "en": "(With feeling) Ah, my treasure!..."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "(Respingendolo) Indietro, anima scellerata! Io qui di mia stolta credulità venni soltanto a riparar lo scorno; a dimostrarti qual sono e quale amante perdesti, anima indegna e sconoscente.",
+            "en": "(Pushing him away) Back, you wicked soul! I came here, foolishly trusting you, only to repair my shame and show you what kind of woman you have lost, unworthy and ungrateful man."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Io son di sasso.",
+            "en": "I am stunned."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Io non capisco niente.",
+            "en": "I understand nothing."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Ma, per pietà...",
+            "en": "But, for pity's sake..."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Taci. Fingesti amore sol per sacrificarmi a quel tuo vil Conte Almaviva...",
+            "en": "Be quiet. You pretended to love me only to sacrifice me to that vile Count Almaviva..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Al Conte?... Ah, sei delusa!... Oh me felice! Dunque tu di verace amore ami Lindoro? Rispondi.",
+            "en": "The Count?... Ah, you are mistaken!... How happy I am! So you truly love Lindoro? Answer me."
           },
           {
             "speaker": "Rosina",
@@ -976,8 +1076,8 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "The Count",
-            "it": "Almaviva son io: non son Lindoro.",
-            "en": "I am Almaviva; I am not Lindoro."
+            "it": "Ah, non è tempo di più celarsi. Anima mia, ravvisa colui che sì gran tempo seguì tue tracce, che per te sospira, che sua ti vuol, che fin da questo istante, a farti di tua sorte appien sicura, amore eterno, eterna fé ti giura. Mirami, o mio tesoro: Almaviva son io, non son Lindoro.",
+            "en": "Ah, there is no time for more concealment. My love, look upon the man who has followed you so long, who sighs for you and wants you as his own, and who from this moment swears eternal love and faith to secure your happiness. Look at me, my treasure: I am Almaviva, not Lindoro."
           }
         ]
       },
@@ -986,33 +1086,53 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Rosina",
-            "it": "Ah qual colpo inaspettato!\nEgli stesso!... oh ciel! che sento!\nDi sorpresa, di contento\nson vicina a delirar.",
-            "en": "What an unexpected blow!\nIt is he himself!... Heavens, what do I hear?\nWith surprise and joy\nI am near to losing my senses."
+            "it": "Ah, qual colpo inaspettato!... Egli stesso!... Oh ciel! che sento! Di sorpresa, di contento son vicina a delirar.",
+            "en": "What an unexpected blow!... It is he himself!... Heavens, what do I hear! With surprise and joy I am close to losing my senses."
           },
           {
             "speaker": "The Count",
-            "it": "Qual trionfo inaspettato!\nMe felice!... oh bel momento!\nAh d'amore, di contento\nson vicino a delirar.",
-            "en": "What an unexpected triumph!\nHow happy I am!... What a moment!\nWith love and delight\nI am near to losing my senses."
+            "it": "Qual trionfo inaspettato!... Me felice!... Oh bel momento! Ah, d'amore, di contento son vicino a delirar.",
+            "en": "What an unexpected triumph!... How happy I am!... What a moment! With love and delight I am close to losing my senses."
           },
           {
             "speaker": "Figaro",
-            "it": "Son rimasti senza fiato!\nOra muoion dal contento!\nGuarda, guarda il mio talento\nche bel colpo seppe far.",
-            "en": "They are both struck dumb!\nNow they will die of joy!\nLook, look at my cleverness;\nwhat a fine trick I have played."
+            "it": "Son rimasti senza fiato! Ora muoion dal contento! Guarda, guarda il mio talento: che bel colpo seppe far.",
+            "en": "They are both struck dumb! Now they will die of joy! Look at my cleverness: what a fine stroke I made."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Ma, signor... ma voi... ma io...",
+            "en": "But, sir... but you... but I..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Ah, non più, non più, ben mio; il bel nome di mia sposa, idol mio, t'attende già.",
+            "en": "No more, no more, my love; the lovely name of my wife, my idol, already awaits you."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Il bel nome di tua sposa, ah, qual gioia al cor mi dà!",
+            "en": "The lovely name of your wife—what joy it gives my heart!"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Bella coppia, Marte e Venere, gran poter del caduceo! E il baggiano di Vulcano è già in rete e non lo sa.",
+            "en": "A lovely pair, Mars and Venus; how mighty is the magic wand! And Vulcan's fool is already caught in the net and does not know it."
           },
           {
             "speaker": "The Count and Rosina",
-            "it": "Oh bel nodo avventurato\nche fai paghi i miei desiri!\nAlla fin de' miei martiri\ntu sentisti, amor, pietà.",
-            "en": "O fortunate bond\nthat fulfills my longing!\nAt last, after my suffering,\nLove has shown me pity."
+            "it": "Oh, bel nodo avventurato che fai paghi i miei desiri! Alla fin de' miei martiri tu sentisti, amor, pietà.",
+            "en": "O fortunate bond that fulfills my longing! At last, after all my suffering, Love has shown me pity."
           },
           {
             "speaker": "Figaro",
-            "it": "Presto andiamo: se si tarda i miei raggiri fanno fiasco. Alla porta... una lanterna... due persone... che si fa?",
-            "en": "Quick, let us go! If we delay, my schemes will fail. At the door... a lantern... two people... what shall we do?"
+            "it": "Presto andiamo, vi sbrigate; via, lasciate quei sospiri. Se si tarda, i miei raggiri fanno fiasco in verità. (Va al balcone.) Ah, cospetto, che ho veduto! Alla porta... una lanterna... due persone... che si fa?",
+            "en": "Quick, come along; leave off sighing. If we delay, my schemes will fail. (He goes to the balcony.) Good heavens, what do I see! At the door... a lantern... two people... what shall we do?"
           },
           {
             "speaker": "All three",
-            "it": "Zitti zitti, piano piano,\nnon facciamo confusione;\nper la scala dal balcone\npresto andiamo via di qua.",
-            "en": "Quietly, quietly, softly, softly;\nlet us make no noise.\nDown the ladder from the balcony,\nquickly let us get away."
+            "it": "Zitti zitti, piano piano, non facciamo confusione; per la scala dal balcone presto andiamo via di qua.",
+            "en": "Quietly, quietly, softly, softly; let us make no noise. Down the ladder from the balcony, quickly let us get away."
           }
         ]
       },
@@ -1021,23 +1141,63 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Figaro",
-            "it": "Ah, disgraziati noi! La scala non v'è più.",
-            "en": "Oh, wretched us! The ladder is gone."
+            "it": "Ah, disgraziati noi! Come si fa?...",
+            "en": "Oh, wretched us! What shall we do?"
           },
           {
             "speaker": "The Count",
-            "it": "Quale inciampo crudel!",
+            "it": "Che avvenne mai?...",
+            "en": "What has happened?"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "La scala...",
+            "en": "The ladder..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Ebben?...",
+            "en": "Well?..."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "La scala non v'è più.",
+            "en": "The ladder is gone."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Che dici?",
+            "en": "What are you saying?"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Chi mai l'avrà levata?",
+            "en": "Who could have taken it away?"
+          },
+          {
+            "speaker": "The Count",
+            "it": "Quale inciampo crudel!...",
             "en": "What a cruel obstacle!"
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Me sventurata!",
+            "en": "Unhappy me!"
           },
           {
             "speaker": "Figaro",
             "it": "Zitti... sento gente. Ora ci siamo, signor mio, che si fa?",
-            "en": "Quiet... I hear people. Here they come, my lord. What do we do?"
+            "en": "Quiet... I hear people. Here they come, my lord; what shall we do?"
           },
           {
             "speaker": "The Count",
-            "it": "Mia Rosina, coraggio.",
-            "en": "My Rosina, take heart."
+            "it": "(Si ravvolge nel mantello) Mia Rosina, coraggio.",
+            "en": "(Wrapping himself in his cloak) My Rosina, take heart."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Eccoli qua. (Si ritirano.)",
+            "en": "Here they are. (They withdraw.)"
           }
         ]
       }
@@ -1054,28 +1214,73 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Basilio",
-            "it": "Don Bartolo, don Bartolo...",
-            "en": "Don Bartolo, Don Bartolo..."
+            "it": "(Chiamando) Don Bartolo, don Bartolo...",
+            "en": "(Calling) Don Bartolo, Don Bartolo..."
           },
           {
             "speaker": "Figaro",
-            "it": "Signor notaro, dovevate in mia casa stipolar questa sera un contratto di nozze fra il conte d'Almaviva e mia nipote. Gli sposi, eccoli qua. Avete indosso la scrittura?",
-            "en": "Signor Notary, you were to draw up a marriage contract at my house tonight for Count Almaviva and my niece. Here are the couple. Do you have the document?"
+            "it": "(Al Conte) Don Basilio.",
+            "en": "(To the Count) Don Basilio."
           },
           {
             "speaker": "The Count",
-            "it": "Don Basilio, questo anello è per voi.",
-            "en": "Don Basilio, this ring is for you."
+            "it": "E quell'altro?",
+            "en": "And who is that?"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Ve', ve': il nostro notaro. Allegramente. Lasciate fare a me. Signor notaro...",
+            "en": "Look, our notary. Cheer up; leave this to me. Signor Notary..."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Basilio e il notaro si rivolgono sorpresi. Il notaro si avvicina a Figaro.",
+            "en": "Basilio and the notary turn in surprise. The notary approaches Figaro."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Dovevate in mia casa stipolar questa sera un contratto di nozze fra il Conte d'Almaviva e mia nipote. Gli sposi, eccoli qua. Avete indosso la scrittura?",
+            "en": "You were to draw up a marriage contract at my house this evening for Count Almaviva and my niece. Here are the couple. Do you have the document with you?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Il notaro cava una scrittura.",
+            "en": "The notary takes out a document."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Benissimo.",
+            "en": "Excellent."
           },
           {
             "speaker": "Basilio",
-            "it": "Per voi vi sono ancor due palle nel cervello se v'opponete... Oibò, prendo l'anello. Chi firma?",
-            "en": "If you oppose me, I have two bullets for your head... No, I will take the ring. Who is to sign?"
+            "it": "Ma piano, don Bartolo... dov'è?",
+            "en": "But wait, where is Don Bartolo?"
+          },
+          {
+            "speaker": "The Count",
+            "it": "(A Basilio, mostrandogli un anello e facendogli cenno di tacere) Ehi, don Basilio, questo anello è per voi.",
+            "en": "(To Basilio, showing him a ring and motioning him to be quiet) Don Basilio, this ring is for you."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Ma io...",
+            "en": "But I..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Per voi vi sono ancor due palle nel cervello se v'opponete. (Mostra una pistola.)",
+            "en": "If you oppose me, I have two bullets for your head. (He shows a pistol.)"
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Oibò, prendo l'anello. Chi firma?",
+            "en": "No, no, I will take the ring. Who is to sign?"
           },
           {
             "speaker": "The Count and Rosina",
             "it": "Eccoci qua. Son testimoni Figaro e don Basilio.",
-            "en": "Here we are. Figaro and Don Basilio will be the witnesses."
+            "en": "Here we are. Figaro and Don Basilio are the witnesses."
           },
           {
             "speaker": "The Count",
@@ -1083,14 +1288,19 @@ export const barbiereActTwoScenes = [
             "en": "She is my wife."
           },
           {
-            "speaker": "Rosina",
-            "it": "O sospirata mia felicità!",
-            "en": "O long-awaited happiness!"
-          },
-          {
             "speaker": "Figaro and Basilio",
             "it": "Evviva!",
             "en": "Hurray!"
+          },
+          {
+            "speaker": "The Count",
+            "it": "Oh mio contento!",
+            "en": "Oh, my joy!"
+          },
+          {
+            "speaker": "Rosina",
+            "it": "O sospirata mia felicità!",
+            "en": "O long-awaited happiness!"
           }
         ]
       }
@@ -1103,12 +1313,27 @@ export const barbiereActTwoScenes = [
     "summary": "Bartolo arrives with the authorities, but Almaviva reveals who he is and the marriage contract is accepted. The household makes peace.",
     "sections": [
       {
-        "label": "Recitativo accompagnato",
+        "label": "Recitativo",
         "turns": [
           {
+            "speaker": "Stage direction",
+            "it": "Il Conte bacia la mano a Rosina; Figaro abbraccia goffamente don Basilio. Entra don Bartolo con l'Alcalde e i soldati.",
+            "en": "The Count kisses Rosina's hand; Figaro awkwardly embraces Don Basilio. Don Bartolo enters with the magistrate and soldiers."
+          },
+          {
             "speaker": "Bartolo",
-            "it": "Fermi tutti. Eccoli qua! Signor, son ladri, arrestate, arrestate.",
-            "en": "Everyone stop! There they are! Officer, they are thieves; arrest them!"
+            "it": "Fermi tutti! Eccoli qua!",
+            "en": "Everyone stop! There they are!"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Colle buone, signor.",
+            "en": "Easy now, sir."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Signor, son ladri, arrestate, arrestate!",
+            "en": "Sir, they are thieves; arrest them!"
           },
           {
             "speaker": "Officer",
@@ -1117,33 +1342,143 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "The Count",
-            "it": "Il mio nome è quel d'un uom d'onor. Il conte d'Almaviva io sono.",
-            "en": "My name is that of an honourable man. I am Count Almaviva."
+            "it": "Il mio nome è quel d'un uom d'onor. Lo sposo io sono di questa...",
+            "en": "My name is that of an honourable man. I am the husband of this woman..."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Eh, andate al diavolo! Rosina esser deve mia sposa, non è vero?",
+            "en": "Go to the devil! Rosina is to be my wife, is she not?"
           },
           {
             "speaker": "Rosina",
-            "it": "Io sua sposa?... oh, nemmeno per pensiero.",
+            "it": "Io sua sposa?... Oh, nemmeno per pensiero.",
             "en": "His wife?... I would never dream of it."
           },
           {
             "speaker": "Bartolo",
-            "it": "Il Conte!... che mai sento!",
-            "en": "The Count!... What am I hearing!"
+            "it": "Come? Come, fraschetta?... Ah, son tradito! Arrestate, vi dico! È un ladro.",
+            "en": "What? What, you minx?... I am betrayed! Arrest him, I say! He is a thief."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Or or l'accoppo.",
+            "en": "I will kill him in a moment."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "È un birbante, è un briccon.",
+            "en": "He is a rascal, a scoundrel."
+          },
+          {
+            "speaker": "Officer",
+            "it": "Signore...",
+            "en": "Sir..."
           },
           {
             "speaker": "The Count",
-            "it": "In faccia al mondo io dichiaro altamente costei mia sposa. Respira omai: vieni a goder sorte più lieta.",
-            "en": "Before the world I declare her my wife. Take heart now; come enjoy a happier fate."
+            "it": "Indietro.",
+            "en": "Stand back."
+          },
+          {
+            "speaker": "Officer",
+            "it": "Il nome.",
+            "en": "Your name."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Indietro, dico, indietro.",
+            "en": "Stand back, I say."
+          },
+          {
+            "speaker": "Officer",
+            "it": "Ehi, mio signor, basso quel tono. Chi è lei?",
+            "en": "Sir, lower your voice. Who are you?"
+          },
+          {
+            "speaker": "The Count",
+            "it": "(Scoprendosi) Il Conte d'Almaviva io sono.",
+            "en": "(Uncovering himself) I am Count Almaviva."
           }
         ]
       },
       {
-        "label": "Aria — Cessa di più resistere",
+        "label": "Recitativo accompagnato",
         "turns": [
           {
+            "speaker": "Bartolo",
+            "it": "Il Conte!... che mai sento!... (All'Alcalde e ai soldati) Ma cospetto!...",
+            "en": "The Count!... What am I hearing!... (To the magistrate and soldiers) Good heavens!..."
+          },
+          {
             "speaker": "The Count",
-            "it": "Cessa di più resistere,\nnon cimentar mio sdegno;\nspezzato è il giogo indegno\ndi tanta crudeltà.\n\nDella beltà dolente\nd'un innocente amore\nl'avaro tuo furore\npiù non trionferà.\n\nE tu, infelice vittima,\nd'un reo poter tiranno\nsottratta al giogo barbaro,\ncangia in piacer l'affanno,\ne al fianco a un fido sposo\ngioisci in libertà.",
-            "en": "Resist no longer;\ndo not provoke my anger.\nThe shameful yoke\nof such cruelty is broken.\n\nYour greedy fury\nwill no longer triumph\nover the suffering beauty\nof innocent love.\n\nAnd you, unhappy victim\nof a tyrant's wicked power,\nfreed from the cruel yoke,\nturn sorrow into joy;\nwith a faithful husband at your side,\nrejoice in freedom."
+            "it": "T'accheta; invan t'adopri, resisti invan. De' tuoi rigori insani giunse l'ultimo istante.",
+            "en": "Be quiet. Your efforts are in vain; resist in vain. The final moment of your senseless harshness has come."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Il Conte toglie la scrittura di nozze dalle mani del notaro e la consegna all'Alcalde.",
+            "en": "The Count takes the marriage contract from the notary and gives it to the magistrate."
+          },
+          {
+            "speaker": "The Count",
+            "it": "In faccia al mondo io dichiaro altamente costei mia sposa: il nostro nodo, o cara, opra è d'amore; amore che ti fe' mia consorte a me ti stringerà fino alla morte. Respira omai: del fido sposo in braccio vieni, vieni a goder sorte più lieta.",
+            "en": "Before the world I proudly declare her my wife. Our bond, my dear, is made by love; the love that made you my bride will bind you to me until death. Take heart now; come into your faithful husband's arms and enjoy a happier fate."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Ma io...",
+            "en": "But I..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Taci.",
+            "en": "Be quiet."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Ma voi...",
+            "en": "But you..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Non più, t'accheta.",
+            "en": "No more; be quiet."
+          },
+          {
+            "speaker": "The Count",
+            "it": "(All'Alcalde e ai soldati) Cari amici...",
+            "en": "(To the magistrate and soldiers) Dear friends..."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Non temete.",
+            "en": "Do not fear."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Questo nodo...",
+            "en": "This bond..."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Non si scioglie; sempre a lei vi stringerà.",
+            "en": "Cannot be broken; it will bind you to her forever."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Il notaro presenta a Bartolo il contratto; egli lo legge con dispetto.",
+            "en": "The notary presents the contract to Bartolo; he reads it with displeasure."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Ah, il più lieto, il più felice è il mio cor de' cori amanti!... Non fuggite, o lieti istanti, della mia felicità.",
+            "en": "Ah, my heart is the happiest of all lovers!... Do not flee, joyful moments of my happiness."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Annodar due cori amanti è piacer che egual non ha.",
+            "en": "To join two loving hearts is a joy with no equal."
           }
         ]
       },
@@ -1152,18 +1487,28 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Bartolo",
-            "it": "In somma io ho tutti i torti!",
-            "en": "In short, I am entirely to blame!"
+            "it": "In somma, io ho tutti i torti!...",
+            "en": "In short, I am entirely to blame!..."
           },
           {
             "speaker": "Figaro",
             "it": "Eh, purtroppo è così!",
-            "en": "I'm afraid that is so!"
+            "en": "I am afraid that is so!"
           },
           {
             "speaker": "Bartolo",
-            "it": "Per meglio assicurare il matrimonio io portai via la scala dal balcone!",
-            "en": "To make sure of the marriage, I took away the ladder from the balcony!"
+            "it": "(A Basilio) Ma tu, briccone, tu per tradirmi e far da testimonio!...",
+            "en": "(To Basilio) And you, rogue, betraying me and serving as a witness!..."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Ah, don Bartolo mio, quel signor Conte certe ragioni ha in tasca, certi argomenti a cui non si risponde.",
+            "en": "My dear Don Bartolo, that Count has certain reasons in his pocket, certain arguments one cannot answer."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Ed io, bestia solenne, per meglio assicurare il matrimonio io portai via la scala dal balcone!",
+            "en": "And I, supreme fool, took away the ladder from the balcony to secure the marriage!"
           },
           {
             "speaker": "Figaro",
@@ -1171,14 +1516,54 @@ export const barbiereActTwoScenes = [
             "en": "That is what comes of a useless precaution."
           },
           {
+            "speaker": "Bartolo",
+            "it": "Ah, disgraziato!... Io crepo! Ma e la dote?... Io non posso...",
+            "en": "Ah, wretched me!... I am dying! But the dowry?... I cannot..."
+          },
+          {
             "speaker": "The Count",
-            "it": "Di dote io bisogno non ho: va, te la dono.",
-            "en": "I have no need of a dowry; I give it back to you."
+            "it": "Eh via; di dote io bisogno non ho: va, te la dono.",
+            "en": "Come now; I have no need of a dowry. I give it back to you."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Ah ah, ridete adesso?... Bravissimo, don Bartolo! Ho veduto alla fin rasserenarsi quel vostro ceffo amaro e furibondo. Ma già ci vuol fortuna in questo mondo.",
+            "en": "Ha, ha! Are you laughing now?... Excellent, Don Bartolo! At last I have seen your sour, furious face brighten. Fortune is certainly needed in this world."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Dunque, signor don Bartolo!...",
+            "en": "Well then, Don Bartolo!..."
           },
           {
             "speaker": "Bartolo",
-            "it": "Quel ch'è fatto è fatto. Andate pur che il ciel vi benedica.",
-            "en": "What is done is done. Go, and may heaven bless you."
+            "it": "Sì, sì, ho capito tutto.",
+            "en": "Yes, yes, I understand everything."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Ebben, dottore!...",
+            "en": "Well, doctor!..."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Sì, sì, che serve! Quel ch'è fatto è fatto. Andate pur che il ciel vi benedica.",
+            "en": "Yes, there is no use. What is done is done. Go, and may heaven bless you."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Bravo, bravo! Un abbraccio!... Venite qua, dottore.",
+            "en": "Bravo, bravo! A hug!... Come here, doctor."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Oh, noi felici!",
+            "en": "Oh, how happy we are!"
+          },
+          {
+            "speaker": "The Count",
+            "it": "Oh, fortunato amore.",
+            "en": "Oh, fortunate love."
           }
         ]
       },
@@ -1187,23 +1572,33 @@ export const barbiereActTwoScenes = [
         "turns": [
           {
             "speaker": "Figaro",
-            "it": "Di sì felice innesto\nserbiam memoria eterna;\nio smorzo la lanterna,\nqui più non ho che far.",
-            "en": "Let us keep an everlasting memory\nof this happy union;\nI will put out the lantern;\nI have nothing more to do here."
-          },
-          {
-            "speaker": "Rosina",
-            "it": "Costò sospiri e pene\nquesto felice istante;\nal fin quest'alma amante\ncomincia a respirar.",
-            "en": "This happy moment\ncost much sighing and pain;\nat last, my loving soul\nbegins to breathe again."
-          },
-          {
-            "speaker": "The Count",
-            "it": "Dell'umile Lindoro\nla fiamma a te fu accetta;\npiù bel destin t'aspetta,\nsu, vieni a giubilar.",
-            "en": "You welcomed the love\nof humble Lindoro;\na brighter fate awaits you;\ncome, rejoice!"
+            "it": "Di sì felice innesto serbiam memoria eterna; io smorzo la lanterna, qui più non ho che far. (Smorza la lanterna.)",
+            "en": "Let us keep an everlasting memory of this happy union; I will put out the lantern; I have nothing more to do here. (He extinguishes the lantern.)"
           },
           {
             "speaker": "Chorus",
-            "it": "Amore e fede eterna\nsi vegga in voi regnar.\nAnnodar due cori amanti\nè piacer che egual non ha.",
-            "en": "May love and lasting faith\nreign between you.\nTo join two loving hearts\nis a joy beyond compare."
+            "it": "Amore e fede eterna si vegga in voi regnar.",
+            "en": "May eternal love and faith be seen to reign in you."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Costò sospiri e pene questo felice istante; al fin quest'alma amante comincia a respirar.",
+            "en": "This happy moment cost sighs and pain; at last my loving soul begins to breathe again."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Amore e fede eterna si vegga in voi regnar.",
+            "en": "May eternal love and faith be seen to reign in you."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Dell'umile Lindoro la fiamma a te fu accetta; più bel destin t'aspetta, su, vieni a giubilar.",
+            "en": "You welcomed the love of humble Lindoro; a brighter fate awaits you, come, rejoice."
+          },
+          {
+            "speaker": "Chorus",
+            "it": "Amore e fede eterna si vegga in voi regnar.",
+            "en": "May eternal love and faith be seen to reign in you."
           }
         ]
       }
