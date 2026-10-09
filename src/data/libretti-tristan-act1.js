@@ -320,7 +320,7 @@ export const tristanActOneScenes = [
           {
             "speaker": "Brangäne",
             "it": "Was wähnst du, Arge? Ungeminnt? (Sie nähert sich schmeichelnd und kosend Isolde.) Wo lebte der Mann, der dich nicht liebte? Der Isolde säh und in Isolden selig nicht ganz verging? Doch, der dir erkoren, wär' er so kalt, zög ihn von dir ein Zauber ab: den Bösen wüsst ich bald zu binden; ihn bannte der Minne Macht. (Geheimnisvoll vertraulich) Kennst du der Mutter Künste nicht? Wähnst du, die alles klug erwägt, ohne Rat in fremdes Land hätt' sie mit dir mich entsandt?",
-            "en": "What are you imagining, cruel one? Unloved? Where is the man who could see Isolde and not be wholly overcome with joy? But if the one chosen for you were so cold, and some spell drew him away from you, I would soon know how to bind the villain; the power of love would hold him fast. (With secret intimacy) Do you not know your mother's arts? Do you think she, who considers everything so wisely, would have sent me with you to a foreign land without a remedy?"
+            "en": "What are you imagining, cruel one? Unloved? (She moves closer to Isolde, caressing her.) Where is the man who could see Isolde and not be wholly overcome with joy? But if the one chosen for you were so cold, and some spell drew him away from you, I would soon know how to bind the villain; the power of love would hold him fast. (With secret intimacy) Do you not know your mother's arts? Do you think she, who considers everything so wisely, would have sent me with you to a foreign land without a remedy?"
           },
           {
             "speaker": "Isolde",
