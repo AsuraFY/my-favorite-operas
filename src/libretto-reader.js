@@ -207,18 +207,18 @@ function sectionParticipantCredits(section, act, sceneNumber) {
     icon + '<span>' + escapeHtml(names.join(", ")) + '</span></div>';
 }
 function formatLibrettoText(value, breakVerseLines=true) {
-  let text = String(value || "").replace(/\\r/g, "").trim();
+  let text = String(value || "").replace(/\r/g, "").trim();
   if (breakVerseLines) {
-    text = text.replace(/([,;:!?])\\s+/g, "$1\\n")
-      .replace(/([.])\\s+(?=[A-ZÄÖÜ„“«])/g, "$1\\n")
-      .replace(/\\s+—\\s+/g, "\\n— ");
+    text = text.replace(/([,;:!?])\s+/g, "$1\n")
+      .replace(/([.])\s+(?=[A-ZÄÖÜ„“«])/g, "$1\n")
+      .replace(/\s+—\s+/g, "\n— ");
   }
-  return text.split(/\\n+/).map(line => escapeHtml(line.trim())).filter(Boolean).join("<br>");
+  return text.split(/\n+/).map(line => escapeHtml(line.trim())).filter(Boolean).join("<br>");
 }
 function splitInlineDirections(value) {
   const text = String(value || "");
   const parts = [];
-  const pattern = /\\(([^()]*)\\)/g;
+  const pattern = /\(([^()]*)\)/g;
   let last = 0, match;
   while ((match = pattern.exec(text))) {
     if (match.index > last) parts.push({ type: "text", value: text.slice(last, match.index) });
