@@ -11,24 +11,44 @@ export const barbiereActTwoScenes = [
   },
   {
     number: 2, title: "Pace e gioia il ciel vi dia", cast: "The Count, Bartolo",
-    summary: "Almaviva returns disguised as Don Alonso, a music teacher and Basilio's supposed substitute, and wins Bartolo's confidence with Rosina's intercepted note.",
+    summary: "Almaviva returns as Don Alonso, a music teacher and Basilio's supposed substitute. He persuades Bartolo to let him teach Rosina and hands him her intercepted note.",
     sections: [
       { label: "Duetto", turns: [
         { speaker: "The Count", it: "Pace e gioia il ciel vi dia.", en: "May heaven grant you peace and joy." },
         { speaker: "Bartolo", it: "Mille grazie, non s'incomodi.", en: "Many thanks; please don't trouble yourself." },
         { speaker: "The Count", it: "Gioia e pace per mill'anni.", en: "Joy and peace for a thousand years." },
-        { speaker: "Bartolo", it: "Obbligato in verità. (Questo volto non m'è ignoto, non ravviso... non ricordo...)", en: "I am truly obliged. (That face is familiar; I cannot place him... I don't remember...)" },
+        { speaker: "Bartolo", it: "Obbligato in verità. (Questo volto non m'è ignoto; non ravviso, non ricordo... ma quel volto, ma quell'abito... chi sarà?)", en: "I am truly obliged. (That face is familiar; I cannot place him... I don't remember... who can he be?)" },
         { speaker: "The Count", it: "(Ah, se un colpo è andato a vuoto a gabbar questo balordo, la mia nuova metamorfosi più propizia a me sarà.) Gioia e pace, pace e gioia.", en: "(If one attempt to fool this fool has failed, my new disguise may serve me better.) Joy and peace, peace and joy." },
-        { speaker: "Bartolo", it: "Basta, basta, per pietà. (Ma che perfido destino! Ma che barbara giornata!)", en: "Enough, enough, I beg you. (What a cruel fate! What a wretched day!)" }
+        { speaker: "Bartolo", it: "Ho capito. (Oh ciel! Che noia!)", en: "I understand. (Heavens, what a nuisance!)" },
+        { speaker: "The Count", it: "Gioia e pace, ben di cuore.", en: "Joy and peace, from the heart." },
+        { speaker: "Bartolo", it: "Basta, basta, per pietà. (Ma che perfido destino! Ma che barbara giornata! Tutti quanti a me davanti! Che crudel fatalità!)", en: "Enough, enough, I beg you. (What a cruel fate! What a wretched day! Everyone is here before me! What dreadful misfortune!)" },
+        { speaker: "The Count", it: "(Il vecchion non mi conosce: oh, mia sorte fortunata! Ah, mio ben, fra pochi istanti parlerem con libertà.)", en: "(The old man doesn't recognize me—how fortunate! In a few moments, my love, we will speak freely.)" }
       ] },
       { label: "Recitativo", turns: [
-        { speaker: "The Count", it: "Don Alonso, professore di musica, ed allievo di don Basilio. Don Basilio sta male, il poverino, ed in sua vece...", en: "Don Alonso, music teacher and pupil of Don Basilio. Poor Don Basilio is ill, so in his place..." },
-        { speaker: "Bartolo", it: "Sta mal?... corro a vederlo.", en: "He is ill? I will go and see him." },
-        { speaker: "The Count", it: "Piano, piano, non è un mal così grave.", en: "Easy, easy; it is not a serious illness." },
+        { speaker: "Bartolo", it: "Insomma, mio signore, chi è lei, si può sapere?", en: "In short, sir, may I know who you are?" },
+        { speaker: "The Count", it: "Don Alonso, professore di musica, ed allievo di don Basilio.", en: "Don Alonso, music teacher and pupil of Don Basilio." },
+        { speaker: "Bartolo", it: "Ebbene?", en: "Well?" },
+        { speaker: "The Count", it: "Don Basilio sta male, il poverino, ed in sua vece...", en: "Poor Don Basilio is ill, so in his place..." },
+        { speaker: "Bartolo", it: "Sta mal?... Corro a vederlo.", en: "He is ill?... I'll go see him." },
+        { speaker: "The Count", it: "(trattenendolo) Piano, piano, non è un mal così grave.", en: "(Holding him back) Easy, easy; it is not a serious illness." },
+        { speaker: "Bartolo", it: "(Di costui non mi fido.) Andiamo, andiamo.", en: "(I don't trust this fellow.) Let us go, then." },
+        { speaker: "The Count", it: "Ma, signore...", en: "But, sir..." },
+        { speaker: "Bartolo", it: "(brusco) Che c'è?", en: "(Abruptly) What is it?" },
+        { speaker: "The Count", it: "(sottovoce) Voleva dirvi...", en: "(Softly) I wanted to tell you..." },
+        { speaker: "Bartolo", it: "Parlate forte.", en: "Speak up." },
+        { speaker: "The Count", it: "(sottovoce) Ma...", en: "(Softly) But..." },
+        { speaker: "Bartolo", it: "(sdegnato) Forte vi dico.", en: "(Angrily) I said speak up." },
+        { speaker: "The Count", it: "(alzando la voce) Ebbene, come volete, ma chi sia don Alonso apprenderete. Vo dal conte Almaviva...", en: "(Raising his voice) Very well, as you wish; you will learn who Don Alonso is. I come from Count Almaviva..." },
+        { speaker: "Bartolo", it: "(trattenendolo, dolcemente) Piano, piano. Dite, dite, v'ascolto.", en: "(Stopping him, gently) Quietly, quietly. Tell me; I'm listening." },
+        { speaker: "The Count", it: "(a voce alta) Il conte...", en: "(Loudly) The Count..." },
+        { speaker: "Bartolo", it: "Pian, per carità.", en: "Softly, for mercy's sake." },
         { speaker: "The Count", it: "Stamane nella stessa locanda era meco d'alloggio, ed in mie mani per caso capitò questo biglietto dalla vostra pupilla a lui diretto.", en: "This morning he was staying at the same inn as I was, and by chance this note from your ward to him came into my hands." },
-        { speaker: "Bartolo", it: "Che vedo!... è sua scrittura!", en: "What do I see!... It is her handwriting!" },
-        { speaker: "The Count", it: "Si potrebbe farle credere che il conte di Rosina si fa gioco, e perciò...", en: "We might make her believe the Count is making sport of Rosina, and so..." },
-        { speaker: "Bartolo", it: "Una calunnia! Siete un vero scolar di don Basilio! Vo a chiamar la ragazza.", en: "A slander! You are a true pupil of Don Basilio! I will fetch the young lady." }
+        { speaker: "Bartolo", it: "(guardando il biglietto) Che vedo!... È sua scrittura!", en: "(Looking at the note) What do I see!... It is her handwriting!" },
+        { speaker: "The Count", it: "Don Basilio, occupato col curiale, nulla sa di quel foglio; ed io, per lui venendo a dar lezione alla ragazza, volea farmene un merito con voi... perché... con quel biglietto si potrebbe...", en: "Don Basilio is busy with the lawyer and knows nothing of the note. I came in his place to teach the girl, hoping to earn your favour... because... with this note we might..." },
+        { speaker: "Bartolo", it: "Che cosa?", en: "What?" },
+        { speaker: "The Count", it: "Se potessi parlare alla ragazza, le farei credere che il conte le mandò quel biglietto da un'altra amante: prova significante che il conte di Rosina si fa gioco, e perciò...", en: "If I could speak to the girl, I would make her believe the Count sent that note to her from another lover: proof that he is making sport of Rosina, and so..." },
+        { speaker: "Bartolo", it: "Piano un poco. Una calunnia!... Siete un vero scolar di don Basilio! Io saprò come merita ricompensar sì bel suggerimento. Vo a chiamar la ragazza.", en: "Wait a moment. Slander!... You are a true pupil of Don Basilio! I will reward such a fine suggestion as it deserves. I'll go fetch the girl." },
+        { speaker: "The Count", it: "(Non dubitare. L'affare del biglietto dalla bocca m'è uscito non volendo. Ma come far? Senza d'un tal ripiego mi toccava andar via come un baggiano. Il mio disegno a lei ora paleserò; s'ella acconsente io son felice appieno. Eccola. Ah, il cor sento balzarmi in seno.)", en: "(Don't worry. I let the matter of the note slip out by accident. But what could I do? Without this pretext I would have had to leave like a fool. Now I will reveal my plan to her; if she agrees, I shall be completely happy. Here she comes. My heart is leaping in my breast.)" }
       ] }
     ]
   },
