@@ -9,7 +9,7 @@ const count = (html, pattern) => (html.match(pattern) || []).length;
 
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 3);
+  assert.equal(librettoCatalog.length, 4);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
@@ -21,7 +21,7 @@ test("registry identifies prepared and unfinished libretti", () => {
       assert.equal(typeof turn.en, "string");
     }
   }
-  assert.equal(getLibretto("macbeth"), null);
+  assert.ok(getLibretto("macbeth"));
   assert.equal(getLibretto("unknown"), null);
 });
 
@@ -223,4 +223,38 @@ test("unnumbered titled sections retain their original title", () => {
   assert.ok(output.scene(1).includes("Recitative · Die Nachricht"));
   assert.ok(output.outline().includes("Recitative · Die Nachricht"));
   assert.ok(output.scene(1).includes("Guten Abend"));
+});
+
+
+test("Macbeth Act I Scene I pilot preserves the Italian source layout and paired translation", () => {
+  const macbeth = getLibretto("macbeth");
+  assert.ok(macbeth);
+  assert.equal(macbeth.originalLanguage, "Italiano");
+  assert.equal(macbeth.translationLanguage, "English");
+  assert.equal(macbeth.acts.length, 1);
+  assert.equal(macbeth.acts[0].prelude.title, "N. 1 - Preludio");
+  const scene = macbeth.acts[0].scenes[0];
+  assert.equal(scene.title, "Bosco");
+  assert.equal(scene.sections[0].number, 2);
+  for (const turn of scene.sections[0].turns) {
+    assert.ok(turn.it.trim());
+    assert.ok(turn.en.trim());
+    assert.equal(turn.it.split("\\n").length, turn.en.split("\\n").length,
+      "each Italian source line should have its own English counterpart");
+  }
+  window.location.hash = "#/operas/macbeth?act=1&scene=1";
+  const reader = createLibrettoRenderer(macbeth);
+  const page = reader.scene(1);
+  assert.ok(page.includes("Witch 1"));
+  assert.ok(page.includes("Witch 2"));
+  assert.ok(page.includes("Witch 3"));
+  assert.ok(page.includes("All Three Witches"));
+  assert.ok(page.includes('class="libretto-row libretto-row--stage-direction"'));
+  assert.ok(page.includes(">Stage direction</span>"));
+  assert.ok(page.includes("A drum is heard."));
+  const outline = reader.outline();
+  assert.ok(outline.includes("N. 1 - Preludio"));
+  assert.ok(outline.includes("No. 1 - Prelude"));
+  assert.ok(outline.includes("N. 2 · Introduzione"));
+  assert.ok(outline.includes("Introduction"));
 });
