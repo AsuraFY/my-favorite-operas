@@ -5,8 +5,8 @@ import { cosiActOneScenes } from "./libretti.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretti-act2.js?v=act2-18";
 import { barbiereActOneScenes } from "./libretti-barbiere-act1.js?v=barbiere-act1-2";
 import { barbiereActTwoScenes } from "./libretti-barbiere-act2.js?v=barbiere-act2-2";
-import { tristanActOneScenes } from "./libretti-tristan-act1.js?v=tristan-act1-4";
-import { tristanActTwoScenes } from "./libretti-tristan-act2.js?v=tristan-act2-6";
+import { tristanActOneScenes } from "./libretti-tristan-act1.js?v=tristan-act1-5";
+import { tristanActTwoScenes } from "./libretti-tristan-act2.js?v=tristan-act2-7";
 import { tristanActThreeScenes } from "./libretti-tristan-act3.js?v=tristan-act3-5";
 
 const characters = [
