@@ -1,4 +1,4 @@
-// Act III, Scenes 1–2 of Wagner's Tristan und Isolde.
+// Act III, Scenes 1–3 of Wagner's Tristan und Isolde.
 // German text follows the 1859 libretto; English is a new translation.
 export const tristanActThreeScenes = [
   {
@@ -347,6 +347,164 @@ export const tristanActThreeScenes = [
             "speaker": "Isolde",
             "it": "Ha! Ich bin's, ich bin's, süssester Freund! Auf, noch einmal hör' meinen Ruf! Isolde ruft: Isolde kam, mit Tristan treu zu sterben! Bleibst du mir stumm? Nur eine Stunde, nur eine Stunde bleibe mir wach! So bange Tage wachte sie sehnend, um eine Stunde, mit dir noch zu wachen: betrügt Isolden, betrügt sie Tristan um dieses einzige, ewig kurze letzte Weltenglück? Die Wunde? Wo? Lass sie mich heilen! Dass wonnig und hehr die Nacht wir teilen; nicht an der Wunde, an der Wunde stirb mir nicht: uns beiden vereint erlösche das Lebenslicht! Gebrochen der Blick! Still das Herz! Nicht eines Atems flücht'ges Wehn! Muss sie nun jammernd vor dir stehn, die sich wonnig dir zu vermählen mutig kam übers Meer? Zu spät! Trotziger Mann! Strafst du mich so mit härtestem Bann? Ganz ohne Huld meiner Leidens-Schuld? Nicht meine Klagen darf ich dir sagen? Nur einmal, ach! nur einmal noch! Tristan! Ha! horch! Er wacht! Geliebter! (Sie sinkt bewusstlos über der Leiche zusammen.)",
             "en": "Ah! It is I, it is I, sweetest friend! Rise, hear my call once more! Isolde cries: Isolde came, faithful to die with Tristan! Will you remain silent to me? Stay awake for just one hour, just one hour! Through such anxious days she kept watch in longing, longing to keep watch with you for one hour more. Will Tristan cheat Isolde of this one, eternally brief, final happiness in the world? Your wound—where is it? Let me heal it, so we may share the night in bliss and glory. Do not die of the wound—of the wound! Let the light of life go out for us together! Your gaze is broken; your heart is still. Not even a fleeting breath! Must she now stand grieving before you, she who came bravely across the sea to be joyfully joined to you? Too late! Defiant man! Do you punish me with the harshest ban? No mercy for the guilt of my suffering? May I not tell you my lament? Just once, ah, just once more! Tristan! Ah! Listen—he wakes! Beloved! (She collapses unconscious over his body.)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Isoldes Liebestod",
+    "cast": "Isolde, Marke, Brangäne, Kurwenal, der Hirt, der Steuermann, Melot, Ritter und Knappen",
+    "summary": "Marke arrives seeking reconciliation but finds Tristan dead. As the others mourn, Isolde sees Tristan in a vision of love and sinks over his body.",
+    "sections": [
+      {
+        "label": "Dialog",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Die Vorigen. Der Hirt, der Steuermann, Melot, Brangäne, Marke, Ritter und Knappen. Kurwenal ist Isolde gefolgt und steht sprachlos, erschüttert und regungslos bei Tristan. Dumpfes Gemurmel und Waffengeklirr erklingen aus der Tiefe. Der Hirt steigt über die Mauer.",
+            "en": "The people already present, with the shepherd, steersman, Melot, Brangäne, Marke, knights, and squires. Kurwenal has followed Isolde and stands speechless, shaken, and motionless beside Tristan. A low murmur and the clashing of weapons rise from below. The shepherd climbs over the wall."
+          },
+          {
+            "speaker": "Der Hirt",
+            "it": "(hastig und leise zu Kurwenal) Kurwenal! Hör'! Ein zweites Schiff.",
+            "en": "(Hastily and quietly to Kurwenal) Kurwenal! Listen! A second ship."
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "(in Wut ausbrechend) Tod und Hölle! Alles zur Hand! Marke und Melot hab' ich erkannt. Waffen und Steine! Hilf mir! Ans Tor! (Er eilt mit dem Hirten an das Tor, das sie zu verrammeln suchen.)",
+            "en": "(Exploding in fury) Death and hell! Everyone, to arms! I recognize Marke and Melot. Weapons and stones! Help me! To the gate! (He rushes with the shepherd to bar the gate.)"
+          },
+          {
+            "speaker": "Der Steuermann",
+            "it": "(stürzt herein) Marke mir nach mit Mann und Volk: vergebne Wehr! Bewältigt sind wir.",
+            "en": "(Rushing in) Marke follows with all his men; resistance is useless! We have been overcome."
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Stell dich, und hilf! Solange ich lebe, lugt mir keiner herein!",
+            "en": "Take your stand and help! As long as I live, no one will get in here!"
+          },
+          {
+            "speaker": "Stimme Brangänes",
+            "it": "(aussen, von unten her) Isolde! Herrin!",
+            "en": "(Outside, from below) Isolde! My lady!"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Brangänes Ruf? (hinabrufend) Was suchst du hier?",
+            "en": "Brangäne’s voice? (Calling down) What are you seeking here?"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Schliess' nicht, Kurwenal! Wo ist Isolde?",
+            "en": "Do not bar the gate, Kurwenal! Where is Isolde?"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Verrätrin auch du? Weh dir, Verruchte!",
+            "en": "Are you a traitor too? Woe to you, faithless woman!"
+          },
+          {
+            "speaker": "Melot",
+            "it": "(ausserhalb) Zurück, du Tor! Stemm dich nicht dort!",
+            "en": "(Outside) Stand back, fool! Do not brace yourself there!"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "(wütend auffahrend) Heiahaha! Dem Tag, an dem ich dich treffe! (Melot, mit gewaffneten Männern, erscheint unter dem Tor. Kurwenal stürzt sich auf ihn und streckt ihn zu Boden.) Stirb, schändlicher Wicht!",
+            "en": "(Rising in fury) Ha! This is the day I have waited for! (Melot appears beneath the gate with armed men. Kurwenal attacks and knocks him down.) Die, despicable wretch!"
+          },
+          {
+            "speaker": "Melot",
+            "it": "Weh mir, Tristan! (Er stirbt.)",
+            "en": "Woe is me, Tristan! (He dies.)"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(noch ausserhalb) Kurwenal! Wütender! Hör', du betrügst dich!",
+            "en": "(Still outside) Kurwenal! Fury! Listen, you are mistaken!"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Treulose Magd! (zu den Seinen) Drauf! Mir nach! Werft sie zurück! (Sie kämpfen.)",
+            "en": "Faithless maid! (To his men) Attack! Follow me! Drive them back! (They fight.)"
+          },
+          {
+            "speaker": "Marke",
+            "it": "(ausserhalb) Halte, Rasender! Bist du von Sinnen?",
+            "en": "(Outside) Stop, madman! Have you lost your senses?"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Hier wütet der Tod! Nichts andres, König, ist hier zu holen: willst du ihn kiesen, so komm! (Er dringt auf Marke und dessen Gefolge ein.)",
+            "en": "Death rages here! There is nothing else to be found here, king. If you choose death, come and take it! (He attacks Marke and his retinue.)"
+          },
+          {
+            "speaker": "Marke",
+            "it": "(unter dem Tor mit Gefolge erscheinend) Zurück! Wahnsinniger!",
+            "en": "(Appearing beneath the gate with his retinue) Back! Madman!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(hat sich seitwärts über die Mauer geschwungen und eilt in den Vordergrund) Isolde! Herrin! Glück und Heil! Was seh' ich! Ha! Lebst du? Isolde! (Sie müht sich um Isolde.)",
+            "en": "(Climbing over the wall at the side, she hurries forward) Isolde! My lady! Joy and blessing! What do I see? Ah! Are you alive? Isolde! (She tries to revive Isolde.)"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Marke und sein Gefolge haben Kurwenal und dessen Helfer vom Tor zurückgetrieben und dringen herein.",
+            "en": "Marke and his retinue have driven Kurwenal and his helpers back from the gate and enter."
+          },
+          {
+            "speaker": "Marke",
+            "it": "O Trug und Wahn! Tristan, wo bist du?",
+            "en": "O deceit and delusion! Tristan, where are you?"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "(schwer verwundet, vor Marke her zum Vordergrund schwankend) Da liegt er - hier - wo ich - liege. (Er sinkt bei Tristans Füssen zusammen.)",
+            "en": "(Gravely wounded, staggering toward the foreground before Marke) There he lies—here, where I lie. (He collapses at Tristan’s feet.)"
+          },
+          {
+            "speaker": "Marke",
+            "it": "Tristan! Tristan! Isolde! Weh!",
+            "en": "Tristan! Tristan! Isolde! Alas!"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "(nach Tristans Hand fassend) Tristan! Trauter! Schilt mich nicht, dass der Treue auch mitkommt! (Er stirbt.)",
+            "en": "(Taking Tristan’s hand) Tristan! Beloved friend! Do not scold me that your faithful servant comes with you too! (He dies.)"
+          },
+          {
+            "speaker": "Marke",
+            "it": "Tot denn alles! Alles tot! Mein Held, mein Tristan! Trautester Freund, auch heute noch musst du den Freund verraten? Heut', wo er kommt, dir höchste Treue zu bewähren? Erwache! Erwache! Erwache meinem Jammer! (schluchzend über die Leiche sich herabbeugend) Du treulos treuster Freund!",
+            "en": "Then all are dead! All dead! My hero, my Tristan! Dearest friend, must you betray your friend even today, when he comes to prove his deepest loyalty to you? Wake! Wake to my grief! (Bending over the body in sobs) You most faithless, most faithful friend!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(die Isolde in ihren Armen wieder zu sich gebracht) Sie wacht! Sie lebt! Isolde! Hör mich, vernimm meine Sühne! Des Trankes Geheimnis entdeckt' ich dem König: mit sorgender Eil' stach er in See, dich zu erreichen, dir zu entsagen, dir zuzuführen den Freund.",
+            "en": "(Reviving Isolde in her arms) She wakes! She lives! Isolde, hear me; receive my atonement! I revealed the secret of the potion to the king. In anxious haste he put to sea to reach you, to renounce you, and to bring your beloved to you."
+          },
+          {
+            "speaker": "Marke",
+            "it": "Warum, Isolde, warum mir das? Da hell mir enthüllt, was zuvor ich nicht fassen konnt', wie selig, dass den Freund ich frei von Schuld da fand! Dem holden Mann dich zu vermählen, mit vollen Segeln flog ich dir nach. Doch Unglückes Ungestüm, wie erreicht es, wer Frieden bringt? Die Ernte mehrt' ich dem Tod: der Wahn häufte die Not.",
+            "en": "Why, Isolde, why this? Now that what I could not understand before has been clearly revealed to me, how glad I was to find my friend free of guilt! I sailed at full speed to give you in marriage to the man you love. But how can one who brings peace overcome calamity’s violence? I only increased death’s harvest; delusion piled sorrow upon sorrow."
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Hörst du uns nicht? Isolde! Traute! Vernimmst du die Treue nicht?",
+            "en": "Can you not hear us? Isolde, dear one! Can you not hear my loyalty?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Mild und leise wie er lächelt, wie das Auge hold er öffnet, seht ihr's, Freunde? Säh't ihr's nicht? Immer lichter wie er leuchtet, sternumstrahlet hoch sich hebt? Seht ihr's nicht? Wie das Herz ihm mutig schwillt, voll und hehr im Busen ihm quillt? Wie den Lippen, wonnig mild, süsser Atem sanft entweht: Freunde! Seht! Fühlt und seht ihr's nicht? Hör ich nur diese Weise, die so wundervoll und leise, Wonne klagend, alles sagend, mild versöhnend aus ihm tönend, in mich dringet, auf sich schwinget, hold erhallend um mich klinget? Heller schallend, mich umwallend, sind es Wellen sanfter Lüfte? Sind es Wogen wonniger Düfte? Wie sie schwellen, mich umrauschen, soll ich atmen, soll ich lauschen? Soll ich schlürfen, untertauchen? Süss in Düften mich verhauchen? In dem wogenden Schwall, in dem tönenden Schall, in des Weltatems wehendem All, ertrinken, versinken, unbewusst, höchste Lust!",
+            "en": "Gently, softly, how he smiles; how tenderly his eyes open—do you see it, friends? Can you not see? Brighter and brighter he shines, rising high, ringed with stars. Can you not see? How bravely his heart swells, full and sublime within his breast! From his lips, sweetly and gently, a breath of bliss drifts away. Friends, look! Can you not feel and see? Is it only I who hear this melody, so wondrous and soft, lamenting bliss, telling all, sounding from him in gentle reconciliation, entering me, soaring upward, echoing sweetly all around? Growing brighter, flowing over me—is it a wave of gentle breezes? A billow of blissful fragrance? As they swell and murmur around me, shall I breathe, shall I listen? Shall I drink them in, plunge beneath them? Shall I dissolve sweetly in their fragrance? In the surging flood, in the ringing sound, in the breathing universe of the world’s breath—to drown, to sink, unconscious: supreme bliss!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Isolde sinkt, wie verklärt, in Brangänes Armen sanft auf Tristans Leiche. Die Umstehenden sind tief gerührt und entrückt. Marke segnet die Toten. Der Vorhang fällt langsam.",
+            "en": "As if transfigured, Isolde sinks gently in Brangäne’s arms over Tristan’s body. Those around them are deeply moved and rapt. Marke blesses the dead. The curtain falls slowly."
           }
         ]
       }
