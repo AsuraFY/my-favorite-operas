@@ -75,7 +75,8 @@ export const tristanActOneScenes = [
             "it": "Brangäne zieht eilig die Vorhänge in der Mitte auseinander.",
             "en": "Brangäne quickly draws the curtains apart at the center."
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
@@ -213,7 +214,8 @@ export const tristanActOneScenes = [
             "it": "Sein Haupt doch hängt im Irenland, als Zins gezahlt von Engeland: Hei! Unser Held Tristan, wie der Zins zahlen kann!",
             "en": "His head hangs in Ireland, tribute paid by England: Hail, our hero Tristan, who knows how to pay the price!"
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
@@ -351,7 +353,8 @@ export const tristanActOneScenes = [
             "it": "Das deutet schnelle Fahrt. Weh mir! Nahe das Land!",
             "en": "That means we are sailing fast. Woe is me! Land is near!"
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
@@ -494,7 +497,8 @@ export const tristanActOneScenes = [
             "it": "(Zu Kurwenal) Herr Tristan trete nah!",
             "en": "(To Kurwenal) Let Lord Tristan come near!"
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
@@ -857,7 +861,8 @@ export const tristanActOneScenes = [
             "it": "(Ausbruch allgemeinen Jauchzens) Kornwall Heil! (Trompeten vom Lande her. Leute gehen über Bord; andere legen eine Brücke aus. Die erwartete Ankunft steht unmittelbar bevor; rasch fällt der Vorhang.)",
             "en": "(A burst of general cheering) Hail Cornwall! (Trumpets sound from the shore. Some people climb overboard; others lay a gangplank. The expected arrival is imminent as the curtain falls.)"
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   }
