@@ -45,8 +45,9 @@ function sectionPresentation(scene, section, sectionIndex) {
   const form = section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
   const titles = sectionTitles(scene, section, sectionIndex);
   const number = no == null ? "" : (libretto.numberLabel || "N.") + " " + no + " · ";
-  const heading = number + form + (titles.original ? " · " + titles.original : "");
-  const translatedForm = libretto.translatedForms?.[form] || "";
+  const heading = section.type === "Passage" && titles.original ? titles.original :
+    number + form + (titles.original ? " · " + titles.original : "");
+  const translatedForm = section.type === "Passage" ? "" : (libretto.translatedForms?.[form] || "");
   const subtitle = [translatedForm, titles.translation].filter(Boolean).join(" · ");
   return { heading, subtitle, form, number: no };
 }
@@ -83,13 +84,16 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       const active=item.number===selectedScene&&index===selectedItem;
       const label=sectionNavigationLabel(section,item,index);
       const isSong=section.number != null || /^No\./i.test(section.label || "");
-      const title=isSong?sectionTitles(item,section,index).original:"";
-      const form=title?label.slice(0,-(" · "+title).length):label;
+      const isNamedPassage=section.type==="Passage";
+      const titles=(isSong||isNamedPassage)?sectionTitles(item,section,index):{original:"",translation:""};
+      const title=titles.original;
+      const form=title?(isNamedPassage?"Passage":label.slice(0,-(" · "+title).length)):label;
       const href="#/operas/"+libretto.slug+"?act="+act+"&scene="+item.number+"&item="+index;
       return '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
         '><span class="section-nav-link__icon section-nav-link__icon--'+(isSong?'song':'recitative')+'" aria-hidden="true">'+(isSong?'♫':'▤')+
         '</span><span class="section-nav-link__label"><span class="section-nav-link__form">'+escapeHtml(form)+'</span>'+
-        (title?'<span class="section-nav-link__title">'+escapeHtml(title)+'</span>':'')+'</span></a>';
+        (title?'<span class="section-nav-link__title">'+escapeHtml(title)+'</span>':'')+
+        (isNamedPassage&&titles.translation?'<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(titles.translation)+'</span>':'')+'</span></a>';
     }).join("");
     const selected=item.number===selectedScene;
     return '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
@@ -113,11 +117,13 @@ function renderCompleteOutlineAct(act) {
         ' <span>·</span> Scene ' + scene.number + '</h3>' +
         '<div class="opera-outline__sections">' +
         scene.sections.map((section, index) => {
-          const title = sectionPresentation(scene, section, index).heading;
+          const presentation = sectionPresentation(scene, section, index);
+          const title = presentation.heading;
           const href = '#/operas/' + libretto.slug + '?act=' + act +
             '&scene=' + scene.number + '&item=' + index;
           return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
             '<span class="opera-outline__section-title">' + escapeHtml(title) + '</span>' +
+            (section.type === "Passage" && presentation.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' : "") +
             sectionParticipantCredits(section, act, scene.number) +
           '</a>';
         }).join("") +
@@ -182,6 +188,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
     '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '">' +
     '<div class="selected-section-heading"><h2>' + escapeHtml(heading.heading) + '</h2>' +
+    (section.type === "Passage" && heading.subtitle ? '<p class="selected-section-heading__translation">' + escapeHtml(heading.subtitle) + '</p>' : "") +
     sectionParticipantCredits(section, act, scene.number) + '</div>' +
     '<div class="libretto-columns"><div class="libretto-column-heading">' + escapeHtml(libretto.originalLanguage) + '</div>' +
     '<div class="libretto-column-heading">' + escapeHtml(libretto.translationLanguage) + '</div><div class="libretto-text">' +
