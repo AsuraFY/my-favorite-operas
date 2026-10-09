@@ -440,15 +440,26 @@ export const barbiereActOneScenes = [
   },
   {
     number: 15, title: "Alto là", cast: "Figaro, The Count, Rosina, Bartolo, Basilio, Berta",
-    summary: "Figaro arrives amid the quarrel. The household tries to restrain the Count, and a crowd gathers outside.",
+    summary: "Figaro enters as the household quarrels. The crowd hears a disturbance and calls for the authorities.",
     sections: [{ label: "Finale I", turns: [
-      { speaker: "Figaro", it: "Alto là. Che cosa accadde, signori miei? Che chiasso è questo, eterni dèi! Già sulla piazza a questo strepito s'è radunata mezza città.", en: "Hold there! What has happened, my friends? What is all this noise, heavens above? Half the town has gathered in the square at this racket." },
-      { speaker: "Bartolo", it: "Questi è un birbante!", en: "This man is a rogue!" },
-      { speaker: "The Count", it: "Questi è un briccone!", en: "This man is a scoundrel!" },
-      { speaker: "Figaro", it: "Signor soldato, porti rispetto, o questo fusto corpo del diavolo or le creanze le insegnerà.", en: "Respect your manners, soldier, or this devil of a fellow will teach them to you." },
-      { speaker: "All", it: "Fate silenzio, per carità! Zitti, che battono... che mai sarà?", en: "Quiet, for mercy's sake! Hush, someone is knocking... what can it be?" },
-      { speaker: "Chorus", it: "La forza! Aprite qua.", en: "The police! Open up!" },
-      { speaker: "All", it: "La forza!... oh diavolo!... L'avete fatta! Quest'avventura ah, come diavolo mai finirà!", en: "The police!... Good heavens!... You've done it now! How on earth will this adventure end?" }
+      { speaker: "Figaro", it: "Alto là! Che cosa accadde, signori miei? Che chiasso è questo, eterni dèi! Già sulla piazza a questo strepito s'è radunata mezza città. (al Conte) Signor, prudenza, per carità.", en: "Hold there! What has happened, my friends? What is all this noise, heavens above? Half the town has gathered in the square at this racket. (To the Count) Be careful, sir, I beg you." },
+      { speaker: "Bartolo", it: "(al Conte) Questi è un birbante...", en: "(Pointing to the Count) This man is a rogue..." },
+      { speaker: "The Count", it: "Questi è un briccone...", en: "This man is a scoundrel..." },
+      { speaker: "Bartolo", it: "Ah, disgraziato!...", en: "You wretch!..." },
+      { speaker: "The Count", it: "(minacciandolo con la sciabola) Ah, maledetto!...", en: "(Threatening him with his sabre) You villain!..." },
+      { speaker: "Figaro", it: "(alzando il bacile) Signor soldato, porti rispetto, o questo fusto, corpo del diavolo, or le creanze le insegnerà.", en: "(Raising his shaving basin) Show some respect, soldier, or this devil of a fellow will teach you your manners." },
+      { speaker: "The Count", it: "(a Bartolo) Brutto scimmiotto...", en: "(To Bartolo) You ugly ape..." },
+      { speaker: "Bartolo", it: "Birbo malnato...", en: "You born rogue..." },
+      { speaker: "All", it: "(a Bartolo) Zitto, dottore...", en: "(To Bartolo) Quiet, Doctor..." },
+      { speaker: "Bartolo", it: "Voglio gridare...", en: "I want to shout..." },
+      { speaker: "All", it: "(al Conte) Fermo, signore...", en: "(To the Count) Hold still, sir..." },
+      { speaker: "The Count", it: "Voglio ammazzare...", en: "I want to kill him..." },
+      { speaker: "All", it: "Fate silenzio, per carità! (Si ode bussare con violenza alla porta.) Zitti, che battono... che mai sarà?", en: "Be quiet, for mercy's sake! (Violent knocking is heard at the door.) Hush, someone is knocking... what can it be?" },
+      { speaker: "Bartolo", it: "Chi è?", en: "Who is it?" },
+      { speaker: "Chorus", it: "(da dentro) La forza! Aprite qua.", en: "(From outside) The police! Open up!" },
+      { speaker: "All", it: "La forza!... Oh, diavolo!... L'avete fatta! Quest'avventura, ah, come diavolo mai finirà?", en: "The police!... Good heavens!... You've done it now! How on earth will this adventure end?" },
+      { speaker: "The Count and Bartolo", it: "Niente paura, vengan pur qua.", en: "No need to fear; let them come." },
+      { speaker: "All", it: "(Quest'avventura ah, come diavolo mai finirà?)", en: "(How on earth will this adventure end?)" }
     ] }]
   },
   {
