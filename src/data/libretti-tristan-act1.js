@@ -268,7 +268,7 @@ export const tristanActOneScenes = [
           },
           {
             "speaker": "Isolde",
-            "it": "(Schmerzlich bitter) «Wie lenkt' er sicher den Kiel zu König Markes Land?» (Greil und heftig) Den Zins ihm auszuzahlen, den er aus Irland zog!",
+            "it": "(Schmerzlich bitter) «Wie lenkt' er sicher den Kiel zu König Markes Land?» (Grell und heftig) Den Zins ihm auszuzahlen, den er aus Irland zog!",
             "en": "(With bitter pain) “How could he steer the ship safely to King Marke's land?” (Harshly) To deliver the tribute he took from Ireland!"
           },
           {
@@ -350,6 +350,149 @@ export const tristanActOneScenes = [
             "speaker": "Isolde",
             "it": "Das deutet schnelle Fahrt. Weh mir! Nahe das Land!",
             "en": "That means we are sailing fast. Woe is me! Land is near!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "title": "Der Sühnetrank",
+    "cast": "Isolde, Brangäne, Kurwenal",
+    "summary": "Isolde demands atonement before she will face King Marke, then commands Brangäne to prepare the death potion for Tristan.",
+    "sections": [
+      {
+        "label": "Dialog",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Die Vorigen. Kurwenal tritt ungestüm durch die Vorhänge.",
+            "en": "The others remain. Kurwenal bursts through the curtains."
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Auf! Auf! Ihr Frauen! Frisch und froh! Rasch gerüstet! Fertig nun, hurtig und flink! (Gemessener) Und Frau Isolden sollt ich sagen von Held Tristan, meinem Herrn: Vom Mast der Freude Flagge, sie wehe lustig ins Land; in Markes Königsschlosse mach sie ihr Nah'n bekannt. Drum Frau Isolde bät er eilen, fürs Land sich zu bereiten, dass er sie könnt geleiten.",
+            "en": "Up, up, ladies! Bright and cheerful! Get ready quickly; make haste! (More measured) And Lady Isolde, I was to tell you from the hero Tristan, my lord: the flag of joy flies from the mast; let it wave merrily toward land. Let it announce your approach at King Marke's castle. So he asks, Lady Isolde, that you hurry and prepare to go ashore, so he may escort you."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Zuerst erschauernd, dann gefasst und würdevoll) Herrn Tristan bringe meinen Gruss, und meld ihm, was ich sage. Sollt ich zur Seit' ihm gehen, vor König Marke zu stehen, nicht möcht es nach Zucht und Fug geschehn, empfing ich Sühne nicht zuvor für ungesühnte Schuld: drum such er meine Huld. (Kurwenal macht eine trotzige Gebärde. Isolde fährt mit Steigerung fort.) Du merke wohl und meld es gut! Nicht woll ich mich bereiten, ans Land ihn zu begleiten; nicht werd ich zur Seit' ihm gehen, vor König Marke zu stehen; begehrte Vergessen und Vergeben nach Zucht und Fug er nicht zuvor für ungebüsste Schuld: die böt' ihm meine Huld.",
+            "en": "(First shuddering, then composed and dignified) Give Lord Tristan my greeting, and tell him what I say. I will not go beside him to stand before King Marke in proper form unless he first makes amends for the wrong that remains unatoned; only then may he have my favour. (Kurwenal makes a defiant gesture. Isolde speaks with increasing force.) Mark my words and report them faithfully! I will not prepare to accompany him ashore; I will not go beside him to stand before King Marke. If he wants me to forget and forgive, he must first make proper amends for his unatoned guilt; only then will he have my favour."
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Sicher wisst, das sag' ich ihm; nun harrt, wie er mich hört!",
+            "en": "Indeed, I will tell him that. Now wait and see how he takes it!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Kurwenal geht schnell zurück. Isolde eilt auf Brangäne zu und umarmt sie heftig.",
+            "en": "Kurwenal quickly leaves. Isolde rushes to Brangäne and embraces her fiercely."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Nun leb wohl, Brangäne! Grüss mir die Welt, grüsse mir Vater und Mutter!",
+            "en": "Farewell now, Brangäne! Give my greetings to the world, and to my father and mother!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Was ist? Was sinnst du? Wolltest du fliehn? Wohin soll ich dir folgen?",
+            "en": "What is it? What are you thinking? Would you flee? Where should I follow you?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Fasst sich schnell) Hörtest du nicht? Hier bleib ich; Tristan will ich erwarten. Getreu befolg, was ich befehl: den Sühnetrank rüste schnell; du weisst, den ich dir wies. (Sie entnimmt dem Schrein das Fläschchen.)",
+            "en": "(Quickly composing herself) Did you not hear? I will stay here; I will wait for Tristan. Obey my command faithfully: prepare the potion of atonement at once, the one I showed you. (She takes the flask from the chest.)"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Und welchen Trank?",
+            "en": "Which potion?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Diesen Trank! In die goldne Schale giess ihn aus; gefüllt fasst sie ihn ganz.",
+            "en": "This potion! Pour it into the golden cup; it will hold the entire contents."
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Voll Grausen das Fläschchen empfangend) Trau ich dem Sinn?",
+            "en": "(Taking the flask in horror) Can I trust what I am hearing?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Sei du mir treu!",
+            "en": "Be faithful to me!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Den Trank — für wen?",
+            "en": "The potion—for whom?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Wer mich betrog.",
+            "en": "For the man who betrayed me."
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Tristan?",
+            "en": "Tristan?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Trinke mir Sühne!",
+            "en": "Let him drink and atone!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Zu Isoldes Füssen stürzend) Entsetzen! Schone mich Arme!",
+            "en": "(Falling at Isolde's feet) Horror! Spare me, poor wretch!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Sehr heftig) Schone du mich, untreue Magd! Kennst du der Mutter Künste nicht? Wähnst du, die alles klug erwägt, ohne Rat in fremdes Land hätt' sie mit dir mich entsandt? Für Weh und Wunden gab sie Balsam, für böse Gifte Gegengift: für tiefstes Weh, für höchstes Leid gab sie den Todestrank. Der Tod nun sag ihr Dank!",
+            "en": "(Fiercely) You should spare me, faithless maid! Do you not know my mother's arts? Do you think she, who considers everything wisely, would send me to a foreign land with you and no remedy? For pain and wounds she gave balm; for deadly poisons, an antidote. For the deepest sorrow, for the greatest anguish, she gave the death potion. Let death now thank her!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Kaum ihrer mächtig) O tiefstes Weh!",
+            "en": "(Barely able to speak) O deepest sorrow!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Gehorchst du mir nun?",
+            "en": "Will you obey me now?"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "O höchstes Leid!",
+            "en": "O greatest anguish!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Bist du mir treu?",
+            "en": "Are you faithful to me?"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Der Trank?",
+            "en": "The potion?"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "(Eintretend) Herr Tristan!",
+            "en": "(Entering) Lord Tristan!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Brangäne erhebt sich erschrocken und verwirrt. Isolde sucht mit furchtbarer Anstrengung sich zu fassen.",
+            "en": "Brangäne rises, startled and confused. Isolde struggles with terrible effort to compose herself."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Zu Kurwenal) Herr Tristan trete nah!",
+            "en": "(To Kurwenal) Let Lord Tristan come near!"
           }
         ]
       }
