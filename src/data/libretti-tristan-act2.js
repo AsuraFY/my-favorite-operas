@@ -86,7 +86,9 @@ export const tristanActTwoScenes = [
             "en": "Alarmed, Brangäne turns away and climbs an outer stair toward the battlements, slowly disappearing. Isolde listens and peers timidly down a tree-lined path. As her longing grows, she steps closer and looks more boldly. She waves a cloth, at first rarely, then more often, and at last with passionate impatience, faster and faster. A sudden gesture of delight shows she has spotted her beloved in the distance. She stretches higher to see him, then hurries back to the stairs and waves to him from the top step."
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Die Fackel und die Warnung",
+        "translatedTitle": "The Torch and the Warning"
       }
     ]
   },
@@ -285,7 +287,9 @@ export const tristanActTwoScenes = [
             "en": "Without names, without separation, newly recognized, newly aflame; endless, eternal, one in consciousness: from hearts glowing hot, the highest rapture of love! (They remain in an ecstatic embrace.)"
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "O sink hernieder, Nacht der Liebe",
+        "translatedTitle": "Descend, O Night of Love"
       }
     ]
   },
@@ -374,7 +378,9 @@ export const tristanActTwoScenes = [
             "en": "As Melot thrusts his sword toward him, Tristan drops his own and sinks wounded into Kurwenal’s arms. Isolde throws herself against his breast. Marke holds Melot back. The curtain falls swiftly."
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Markes Klage",
+        "translatedTitle": "Marke’s Lament"
       }
     ]
   }
