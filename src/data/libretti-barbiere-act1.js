@@ -340,13 +340,30 @@ export const barbiereActOneScenes = [
   },
   {
     number: 13, title: "Ehi di casa... buona gente", cast: "The Count, Bartolo",
-    summary: "Disguised as a tipsy cavalryman, the Count secures a lodging billet and enters Bartolo's house.",
+    summary: "Almaviva arrives disguised as a cavalryman and tricks Bartolo into accepting his lodging billet.",
     sections: [{ label: "Finale I", turns: [
-      { speaker: "The Count", it: "Ehi di casa... buona gente...\nEhi di casa... niun mi sente!", en: "Hey, people in the house... good people...\nHey, is no one listening?" },
-      { speaker: "Bartolo", it: "Chi è costui? Che brutta faccia! È ubbriaco! Cosa vuol, signor soldato?", en: "Who is this? What an ugly face! He's drunk! What do you want, soldier?" },
-      { speaker: "The Count", it: "Siete voi... dottor Balordo... Ah, Bertoldo! Dottor Barbaro! Sono anch'io dottor per cento, maniscalco al reggimento. Dell'alloggio sul biglietto osservate, eccolo qua.", en: "Are you Dr. Fool?... Ah, Bertoldo! Dr. Barbarous! I too am a doctor of sorts, a farrier with the regiment. See, here's the billet for my lodging." },
-      { speaker: "Bartolo", it: "Son dottore, sì, signore.", en: "I am a doctor, yes, sir." },
-      { speaker: "The Count", it: "Ah, benissimo; un abbraccio. Qua, collega!", en: "Excellent! A hug, then. Come here, colleague!" }
+      { speaker: "Stage direction", it: "Il Conte entra travestito da soldato di cavalleria.", en: "The Count enters disguised as a cavalry soldier." },
+      { speaker: "The Count", it: "Ehi di casa... buona gente...\nehi di casa... niun mi sente!", en: "Hey, people in the house... good people...\nIs no one listening?" },
+      { speaker: "Bartolo", it: "Chi è costui?... Che brutta faccia! È ubriaco!... Chi sarà?", en: "Who is this?... What an ugly face! He's drunk!... Who can he be?" },
+      { speaker: "The Count", it: "Ehi di casa... Maledetti!", en: "Hey, people in the house... Blast you!" },
+      { speaker: "Bartolo", it: "Cosa vuol, signor soldato?", en: "What do you want, soldier?" },
+      { speaker: "The Count", it: "(vedendolo) Ah... sì, sì... bene obbligato.", en: "(Seeing him) Ah... yes, yes... much obliged." },
+      { speaker: "Bartolo", it: "(Qui costui che mai vorrà?)", en: "(What can this fellow want?)" },
+      { speaker: "The Count", it: "Siete voi... Aspetta un poco... siete voi... dottor Balordo...", en: "You are... wait a moment... you are... Doctor Fool..." },
+      { speaker: "Bartolo", it: "Che «Balordo»?", en: "What do you mean, “Fool”?" },
+      { speaker: "The Count", it: "(leggendo) Ah ah, Bertoldo.", en: "(Reading) Ah, Bertoldo." },
+      { speaker: "Bartolo", it: "Che «Bertoldo»? Eh, andate al diavolo: dottor Bartolo.", en: "What “Bertoldo”? Go to the devil: Doctor Bartolo." },
+      { speaker: "The Count", it: "Ah, bravissimo, dottor Barbaro; benissimo... già c'è poca differenza. (Non si vede! Che impazienza! Quanto tarda!... dove sta?)", en: "Ah, excellent, Doctor Barbarous; very good... there isn't much difference. (I can't see her! What impatience! Why is she taking so long?... Where is she?)" },
+      { speaker: "Bartolo", it: "(Io già perdo la pazienza; qua prudenza ci vorrà.)", en: "(I am losing patience; I must be careful.)" },
+      { speaker: "The Count", it: "Dunque voi... siete dottore?", en: "So you... are a doctor?" },
+      { speaker: "Bartolo", it: "Son dottore... sì, signore.", en: "I am a doctor... yes, sir." },
+      { speaker: "The Count", it: "Ah, benissimo; un abbraccio. Qua, collega!", en: "Excellent! A hug, then. Come here, colleague!" },
+      { speaker: "Bartolo", it: "Indietro.", en: "Back!" },
+      { speaker: "The Count", it: "Qua!", en: "Come here!" },
+      { speaker: "Stage direction", it: "Il Conte abbraccia Bartolo per forza.", en: "The Count embraces Bartolo by force." },
+      { speaker: "The Count", it: "Sono anch'io dottor per cento, maniscalco al reggimento. Dell'alloggio sul biglietto osservate, eccolo qua.", en: "I too am a doctor of sorts, a farrier with the regiment. See, here is my billet for lodging." },
+      { speaker: "Bartolo", it: "(Dalla rabbia, dal dispetto io già crepo in verità. Ah, che fo, se mi ci metto, qualche gran bestialità!)", en: "(I am bursting with anger and spite. If I give in, I may do something dreadful!)" },
+      { speaker: "The Count", it: "(Ah, venisse il caro oggetto della mia felicità! Vieni, vieni; il tuo diletto pien d'amor t'attende qua.)", en: "(Ah, if only the dear object of my happiness would come! Come, come; your loving admirer waits here for you.)" }
     ] }]
   },
   {
