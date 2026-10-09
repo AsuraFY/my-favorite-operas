@@ -464,22 +464,47 @@ export const barbiereActOneScenes = [
   },
   {
     number: 16, title: "Mi par d'esser con la testa", cast: "The Count, Bartolo, Rosina, Basilio, Berta, Figaro, Officer, Soldiers",
-    summary: "The officer recognizes the Count and withdraws the soldiers. Everyone else is stunned; the act ends in a noisy ensemble.",
+    summary: "The officer recognizes Almaviva and withdraws the soldiers. The household is stunned, and the act ends in a rapid ensemble.",
     sections: [
-      { label: "Finale I", turns: [
+      { label: "Recitativo", turns: [
         { speaker: "Officer", it: "Fermi tutti. Niun si muova. Miei signori, che si fa? Questo chiasso donde è nato? La cagione presto qua.", en: "Everyone stay still. No one move. What is going on, my friends? What caused this noise? Tell me at once." },
-        { speaker: "Bartolo", it: "Questo soldato m'ha maltrattato...", en: "This soldier has mistreated me..." },
+        { speaker: "The Count", it: "La cagione...", en: "The cause..." },
+        { speaker: "Bartolo", it: "Non è vero.", en: "That's not true." },
+        { speaker: "The Count", it: "Sì, signore...", en: "It is, sir..." },
+        { speaker: "Bartolo", it: "Signor no.", en: "No, sir." },
+        { speaker: "The Count", it: "È un birbante...", en: "He is a rogue..." },
+        { speaker: "Bartolo", it: "È un impostore.", en: "He is an impostor." },
+        { speaker: "Officer", it: "Un per volta.", en: "One at a time." },
+        { speaker: "Bartolo", it: "Io parlerò. Questo soldato m'ha maltrattato...", en: "I will speak. This soldier has mistreated me..." },
         { speaker: "Rosina", it: "Il poverino cotto è dal vino...", en: "The poor fellow is muddled with wine..." },
         { speaker: "Berta", it: "Cava la sciabla...", en: "He's drawing his sabre..." },
         { speaker: "Basilio", it: "Parla d'uccidere...", en: "He's talking of killing..." },
         { speaker: "Figaro", it: "Io son venuto qui per dividere...", en: "I came here to break up the quarrel..." },
-        { speaker: "Officer", it: "Siete in arresto, fuori di qua.", en: "You are under arrest. Come with me." },
+        { speaker: "Officer", it: "Fate silenzio, che intesi già. (al Conte) Siete in arresto, fuori di qua.", en: "Silence; I have heard enough. (To the Count) You are under arrest; come with me." },
+        { speaker: "The Count", it: "Io in arresto? Io? Fermi, olà!", en: "Me under arrest? I? Stop, there!" },
+        { speaker: "Stage direction", it: "Con gesto autorevole il Conte ferma i soldati, mostra un foglio all'Uffiziale e gli impedisce di inchinarsi; l'Uffiziale fa ritirare i soldati. Tutti restano stupiti.", en: "With an authoritative gesture, the Count stops the soldiers and shows a document to the Officer. The Officer is surprised and starts to bow, but the Count stops him; the Officer signals the soldiers to stand back. Everyone is astonished." }
+      ] },
+      { label: "Quadro di stupore", turns: [
         { speaker: "Rosina and Berta", it: "Fredda ed immobile come una statua,\nfiato non restami da respirar.", en: "Cold and motionless as statues,\nwe have no breath left to breathe." },
-        { speaker: "Figaro", it: "Guarda don Bartolo! Sembra una statua? Ah ah, dal ridere sto per crepar.", en: "Look at Doctor Bartolo! Doesn't he look like a statue? I could die laughing!" },
-        { speaker: "Bartolo", it: "Ma, signor... Ma un dottor... Ma se lei...", en: "But, sir... But a doctor... But if she..." },
-        { speaker: "Chorus", it: "Zitto tu! Oh, non più! Non parlar! Non gridar!", en: "Quiet, you! No more! Don't speak! Don't shout!" },
-        { speaker: "All", it: "Mi par d'esser con la testa\nin un'orrida fucina,\ndove cresce e mai non resta\ndelle incudini sonore\nl'importuno strepitar.\n\nE il cervello poverello,\ngià stordito, sbalordito,\nnon ragiona, si confonde,\nsi riduce ad impazzar.", en: "It seems my head is in\na dreadful forge,\nwhere the clanging of the anvils\nkeeps rising without end\nand will not cease.\n\nMy poor brain, already dazed\nand utterly bewildered,\ncan no longer think; it loses its way\nand is close to madness." }
+        { speaker: "The Count", it: "Freddo ed immobile come una statua,\nfiato non restagli da respirar.", en: "Cold and motionless as a statue,\nhe has no breath left to breathe." },
+        { speaker: "Bartolo and Basilio", it: "Freddo ed immobile come una statua,\nfiato non restami da respirar.", en: "Cold and motionless as a statue,\nwe have no breath left to breathe." },
+        { speaker: "Figaro", it: "(ridendo) Guarda don Bartolo! Sembra una statua? Ah ah, dal ridere sto per crepar.", en: "(Laughing) Look at Doctor Bartolo! Doesn't he look like a statue? I could die laughing." }
+      ] },
+      { label: "Stretta del Finale I", turns: [
+        { speaker: "Bartolo", it: "(all'Uffiziale) Ma, signor...", en: "(To the Officer) But, sir..." },
+        { speaker: "Chorus", it: "Zitto tu!", en: "Quiet, you!" },
+        { speaker: "Bartolo", it: "Ma un dottor...", en: "But a doctor..." },
+        { speaker: "Chorus", it: "Oh, non più!", en: "No more!" },
+        { speaker: "Bartolo", it: "Ma se lei...", en: "But if she..." },
+        { speaker: "Chorus", it: "Non parlar...", en: "Don't speak..." },
+        { speaker: "Bartolo", it: "Ma vorrei...", en: "But I would..." },
+        { speaker: "Chorus", it: "Non gridar...", en: "Don't shout..." },
+        { speaker: "Berta, Bartolo and Basilio", it: "Ma se noi...", en: "But what about us..." },
+        { speaker: "Chorus", it: "Zitti voi.", en: "Quiet, all of you." },
+        { speaker: "Berta, Bartolo and Basilio", it: "Ma se poi...", en: "But then..." },
+        { speaker: "Chorus", it: "Pensiam noi. Vada ognun pe' fatti suoi, si finisca d'altercar.", en: "We'll take care of it. Let everyone mind their own business; let all this arguing end." },
+        { speaker: "All", it: "Mi par d'esser con la testa\nin un'orrida fucina,\ndove cresce e mai non resta\ndelle incudini sonore\nl'importuno strepitar.\n\nAlternando questo e quello\npesantissimo martello\nfa con barbara armonia\nmuri e volte rimbombar.\n\nE il cervello poverello,\ngià stordito, sbalordito,\nnon ragiona, si confonde,\nsi riduce ad impazzar.", en: "It seems my head is in\na dreadful forge,\nwhere the clanging of the anvils\nkeeps rising without end\nand will not cease.\n\nOne heavy hammer after another\nstrikes with savage harmony,\nmaking the walls and vaults\nresound.\n\nMy poor brain, already dazed\nand utterly bewildered,\ncan no longer think; it loses its way\nand is close to madness." }
       ] }
     ]
-  }
+  },
 ];
