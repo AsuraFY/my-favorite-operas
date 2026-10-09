@@ -1,5 +1,5 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-art-2";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-11";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-12";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-16";
 import { operaInformation } from "./data/opera-information.js?v=info-1";
 import { renderOperaInformationPage } from "./opera-info-page.js?v=info-page-1";
