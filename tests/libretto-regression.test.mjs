@@ -9,7 +9,7 @@ const count = (html, pattern) => (html.match(pattern) || []).length;
 
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 2);
+  assert.equal(librettoCatalog.length, 3);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
@@ -23,6 +23,38 @@ test("registry identifies prepared and unfinished libretti", () => {
   }
   assert.equal(getLibretto("macbeth"), null);
   assert.equal(getLibretto("unknown"), null);
+});
+
+test("Tristan und Isolde has three fully bilingual acts and renders every scene", () => {
+  const tristan = getLibretto("tristan-und-isolde");
+  assert.ok(tristan);
+  assert.equal(tristan.originalLanguage, "Deutsch");
+  assert.equal(tristan.translationLanguage, "English");
+  assert.deepEqual(tristan.acts.map(act => act.scenes.length), [5, 3, 3]);
+  const reader = createLibrettoRenderer(tristan);
+  let scenes = 0, rows = 0;
+  for (const act of tristan.acts) for (const scene of act.scenes) {
+    assert.ok(scene.summary);
+    assert.ok(scene.sections.length > 0);
+    window.location.hash = "#/operas/tristan-und-isolde?act=" + act.number + "&scene=" + scene.number;
+    const page = reader.scene(scene.number);
+    assert.ok(page.includes("Deutsch"));
+    assert.ok(page.includes("English"));
+    assert.equal(count(page, /class="libretto-row/g),
+      scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    for (const section of scene.sections) for (const turn of section.turns) {
+      assert.ok((turn.it || turn.original || "").trim());
+      assert.ok((turn.en || turn.translation || "").trim());
+    }
+    scenes++;
+    rows += scene.sections.reduce((n, section) => n + section.turns.length, 0);
+  }
+  const outline = reader.outline();
+  assert.equal(count(outline, /class="opera-outline__scene"/g), 11);
+  assert.ok(outline.includes("#/operas/tristan-und-isolde?act=3&scene=3&item=0"));
+  assert.ok(reader.synopsis().includes("King Marke"));
+  assert.equal(scenes, 11);
+  assert.ok(rows > 100);
 });
 
 test("Così retains all scenes and translated dialogue entries", () => {
