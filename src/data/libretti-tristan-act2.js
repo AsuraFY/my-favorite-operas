@@ -78,7 +78,7 @@ export const tristanActTwoScenes = [
           {
             "speaker": "Isolde",
             "it": "Die im Busen mir die Glut entfacht, die mir das Herze brennen macht, die mir als Tag der Seele lacht—Frau Minne will: es werde Nacht, dass hell sie dorten leuchte, wo sie dein Licht verscheuchte. (Sie eilt auf die Fackel zu) (Sie nimmt die Fackel von der Tür) Zur Warte du: dort wache treu! Die Leuchte, und wär’s meines Lebens Licht—lachend sie zu löschen zag ich nicht! (Sie wirft die Fackel zur Erde, wo sie allmählich verlischt)",
-            "en": "She who kindles the flame within me, who sets my heart ablaze, who shines upon my soul like day—Love wills it: let night fall, so that she may shine brightly where your light has been driven away. (She hurries to the torch and takes it from the door.) Go to your watch; keep faithful guard there! That light—even if it were the light of my life—I do not fear to put it out with laughter! (She throws the torch to the ground, where it slowly dies.)"
+            "en": "She who kindles the flame within me, who sets my heart ablaze, who shines upon my soul like day—Love wills it: let night fall, so that she may shine brightly where your light has been driven away. (She hurries to the torch.) (She takes the torch from the door.) Go to your watch; keep faithful guard there! That light—even if it were the light of my life—I do not fear to put it out with laughter! (She throws the torch to the ground, where it slowly dies.)"
           },
           {
             "speaker": "Stage direction",
