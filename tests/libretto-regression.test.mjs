@@ -57,7 +57,7 @@ test("Tristan outline follows Spotify tracks and formats the bilingual libretto 
   const outline = reader.outline();
   assert.equal(count(outline, /class="opera-outline__scene"/g), 11);
   assert.equal(count(outline, /class="opera-outline__section-title"/g), 29);
-  assert.equal(count(outline, /class="opera-outline__prelude"/g), 3);
+  assert.equal(count(outline, /opera-outline__prelude/g), 3);
   assert.ok(outline.includes("Westwärts schweift der Blick"));
   assert.ok(outline.includes("My gaze drifts westward"));
   assert.ok(outline.includes("Hab acht, Tristan!"));
