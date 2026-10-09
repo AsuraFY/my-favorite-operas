@@ -306,7 +306,9 @@ export const tristanActThreeScenes = [
             "en": "I’ll carry her up; trust my arms! But you, Tristan, stay faithfully on your couch! (Kurwenal hurries away.)"
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Die alte Weise",
+        "translatedTitle": "The Shepherd’s Old Tune"
       }
     ]
   },
@@ -350,7 +352,9 @@ export const tristanActThreeScenes = [
             "en": "Ah! It is I, it is I, sweetest friend! Rise, hear my call once more! Isolde cries: Isolde came, faithful to die with Tristan! Will you remain silent to me? Stay awake for just one hour, just one hour! Through such anxious days she kept watch in longing, longing to keep watch with you for one hour more. Will Tristan cheat Isolde of this one, eternally brief, final happiness in the world? Your wound—where is it? Let me heal it, so we may share the night in bliss and glory. Do not die of the wound—of the wound! Let the light of life go out for us together! Your gaze is broken; your heart is still. Not even a fleeting breath! Must she now stand grieving before you, she who came bravely across the sea to be joyfully joined to you? Too late! Defiant man! Do you punish me with the harshest ban? No mercy for the guilt of my suffering? May I not tell you my lament? Just once, ah, just once more! Tristan! Ah! Listen—he wakes! Beloved! (She collapses unconscious over his body.)"
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Tristans Tod",
+        "translatedTitle": "Tristan’s Death"
       }
     ]
   },
@@ -509,7 +513,9 @@ export const tristanActThreeScenes = [
             "en": "As if transfigured, Isolde sinks gently in Brangäne’s arms over Tristan’s body. Those around them are deeply moved and rapt. Marke blesses the dead. The curtain falls slowly."
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Isoldes Liebestod",
+        "translatedTitle": "Isolde’s Love-Death"
       }
     ]
   }
