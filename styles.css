@@ -1823,3 +1823,24 @@ button { font: inherit; }
     object-fit: contain;
   }
 }
+
+
+/* Tristan libretto: translated track labels and clearly separated stage directions. */
+.section-nav-link__translation {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font: italic 12px/1.35 var(--serif);
+}
+.opera-outline__sections--prelude {
+  margin: 0 0 1rem;
+}
+.opera-outline__prelude {
+  background: #f1eadf;
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-speaker {
+  display: none;
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-cell p {
+  line-height: 1.55;
+}
