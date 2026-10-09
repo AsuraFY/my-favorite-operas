@@ -327,15 +327,20 @@ export const barbiereActTwoScenes = [
         "label": "Arietta — Quando mi sei vicina",
         "turns": [
           {
-            "speaker": "Figaro",
-            "it": "Bravo, signor barbiere?... Eh, niente affatto, scusi, son debolezze.",
-            "en": "Bravo, Signor Barber? Oh, not at all, excuse me; it was a weakness."
+            "speaker": "Bartolo",
+            "it": "Quando mi sei vicina, amabile Rosina... L'aria dicea Giannina, ma io dico Rosina. Quando mi sei vicina, amabile Rosina, il cor mi balla in petto, mi balla il minuetto...",
+            "en": "When you are near me, charming Rosina... The song said Giannina, but I say Rosina. When you are near me, charming Rosina, my heart dances in my chest; it dances a minuet..."
           }
         ]
       },
       {
         "label": "Recitativo",
         "turns": [
+          {
+            "speaker": "Figaro",
+            "it": "Bravo, signor barbiere?... Eh, niente affatto, scusi; son debolezze.",
+            "en": "Bravo, Signor Barber?... Oh, not at all, excuse me; it is just a weakness."
+          },
           {
             "speaker": "Stage direction",
             "it": "Bartolo accompanies himself with a dance. Figaro enters with a shaving basin and mocks the dance behind him; Rosina laughs.",
@@ -511,13 +516,13 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Figaro",
-            "it": "(Quale intoppo!...) ",
-            "en": "(What an obstacle!...) "
+            "it": "(Quale intoppo!...)",
+            "en": "(What an obstacle!...)"
           },
           {
             "speaker": "Bartolo",
             "it": "Come qua?",
-            "en": "What brings you here?"
+            "en": "What are you doing here?"
           },
           {
             "speaker": "Basilio",
@@ -525,34 +530,159 @@ export const barbiereActTwoScenes = [
             "en": "At your service, everyone."
           },
           {
-            "speaker": "All",
-            "it": "(Che vuol dir tal novità? Qui franchezza ci vorrà; ah, di noi che mai sarà?)",
-            "en": "(What can this surprise mean? We must act boldly; what will become of us?)"
+            "speaker": "Bartolo",
+            "it": "(Che vuol dir tal novità?)",
+            "en": "(What can this surprise mean?)"
           },
           {
-            "speaker": "Figaro",
-            "it": "Or che s'aspetta? Questa barba benedetta la facciamo, sì o no?",
-            "en": "What are we waiting for? Shall we get on with this blessed shave or not?"
+            "speaker": "The Count and Figaro",
+            "it": "(Qui franchezza ci vorrà.)",
+            "en": "(We must be bold.)"
           },
           {
-            "speaker": "The Count",
-            "it": "Colla febbre, don Basilio, chi v'insegna a passeggiare? Siete giallo come un morto.",
-            "en": "With a fever, Don Basilio, who told you to go walking? You are as yellow as a corpse."
+            "speaker": "Rosina",
+            "it": "(Ah, di noi che mai sarà?)",
+            "en": "(Ah, what will become of us?)"
           },
           {
-            "speaker": "Figaro",
-            "it": "Questa è febbre scarlattina. Via, prendete medicina, non vi state a rovinar.",
-            "en": "This is scarlet fever. Come, take your medicine; don't ruin your health."
+            "speaker": "Bartolo",
+            "it": "Don Basilio, come state?",
+            "en": "Don Basilio, how are you?"
           },
           {
             "speaker": "Basilio",
-            "it": "(Una borsa!... andate a letto!... ma che tutti sian d'accordo!...) Eh, non son sordo, non mi faccio più pregar.",
-            "en": "(A purse!... go to bed!... are they all in league?) I am not deaf; you needn't ask me again."
+            "it": "Come sto?...",
+            "en": "How am I?..."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "(Interrompendo) Or che s'aspetta? Questa barba benedetta la facciamo, sì o no?",
+            "en": "(Interrupting) What are we waiting for? Shall we give this blessed shave or not?"
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Ora vengo. (A Basilio) Ehi, il curiale...",
+            "en": "In a moment. (To Basilio) And the notary..."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Il curiale?...",
+            "en": "The notary?..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "(A Bartolo) Io gli ho narrato che già tutto è combinato, non è ver?",
+            "en": "(To Bartolo) I told him everything was settled, didn't I?"
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Sì, tutto io so.",
+            "en": "Yes, I know it all."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Ma, don Bartolo, spiegatemi...",
+            "en": "But, Don Bartolo, explain to me..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "(To Bartolo) Ehi, dottore, una parola. (To Basilio) Don Basilio, son da voi. (To Bartolo) Ascoltate un poco qua. (Piano) Fate un po' ch'ei vada via, ch'ei ci scopra ho gran timore: della lettera, signore, ei l'affare ancor non sa. (To Basilio) Colla febbre, don Basilio, chi v'insegna a passeggiare?",
+            "en": "(To Bartolo) Doctor, a word. (To Basilio) I will speak with you in a moment. (To Bartolo) Listen. (Aside) Find a way to send him off; I fear he may discover us. He knows nothing of Rosina's letter. (To Basilio) Don Basilio, who told you to walk about with a fever?"
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Colla febbre?...",
+            "en": "With a fever?..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "E che vi pare? Siete giallo come un morto.",
+            "en": "What do you think? You are as pale as a corpse."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Come un morto?...",
+            "en": "As a corpse?..."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "(Tastandogli il polso) Bagattella! Cospetton! Che tremarella! Questa è febbre scarlattina.",
+            "en": "(Feeling his pulse) Nothing serious! Good heavens, what a tremor! This is scarlet fever."
+          },
+          {
+            "speaker": "The Count and Figaro",
+            "it": "Via, prendete medicina, non vi state a rovinar.",
+            "en": "Come, take your medicine; do not ruin your health."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Presto presto andate a letto...",
+            "en": "Quickly, go to bed..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Voi paura inver mi fate...",
+            "en": "You truly frighten me..."
+          },
+          {
+            "speaker": "Bartolo and Rosina",
+            "it": "Dice bene, andate, andate...",
+            "en": "He is right; go, go..."
           },
           {
             "speaker": "All",
-            "it": "Andate, andate. Buona sera, mio signore, pace, sonno e sanità. Presto andate via di qua.",
-            "en": "Go, go. Good evening, sir; peace, sleep, and good health. Quickly, be off."
+            "it": "Presto andate a riposar.",
+            "en": "Quickly, go and rest."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "(Una borsa!... Andate a letto!... ma che tutti sian d'accordo!...)",
+            "en": "(A purse!... Go to bed!... Could they all be in league?)"
+          },
+          {
+            "speaker": "All",
+            "it": "Presto a letto...",
+            "en": "Quickly, to bed..."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Eh, non son sordo, non mi faccio più pregar.",
+            "en": "I am not deaf; I will not make you ask again."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Che color!...",
+            "en": "What a complexion!..."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Che brutta cera!...",
+            "en": "What a dreadful look!..."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Brutta cera!...",
+            "en": "A dreadful look!..."
+          },
+          {
+            "speaker": "The Count and Figaro",
+            "it": "Oh, brutta assai!...",
+            "en": "Oh, very dreadful!..."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Dunque vado...",
+            "en": "Then I shall go..."
+          },
+          {
+            "speaker": "All",
+            "it": "Andate, andate. Buona sera, mio signore, pace, sonno e sanità. (Maledetto seccatore.) Presto andate via di qua.",
+            "en": "Go, go. Good night, sir; peace, sleep, and good health. (Confounded nuisance.) Quickly, get out of here."
+          },
+          {
+            "speaker": "Basilio",
+            "it": "Buona sera... ben di core... obbligato... in verità. (Ah, che in sacco va il tutore.) Non gridate, intesi già.",
+            "en": "Good night... from my heart... I am truly obliged. (Ah, the guardian will be caught.) Do not shout; I understand."
           }
         ]
       },
@@ -560,19 +690,94 @@ export const barbiereActTwoScenes = [
         "label": "Recitativo",
         "turns": [
           {
+            "speaker": "Figaro",
+            "it": "Orsù, signor don Bartolo.",
+            "en": "Now then, Don Bartolo."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Son qua.",
+            "en": "I am ready."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Bartolo sits for his shave. Figaro ties a towel around his neck and screens the lovers as he works.",
+            "en": "Bartolo sits for his shave. Figaro ties a towel around his neck and shields the lovers as he works."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Stringi, bravissimo.",
+            "en": "Tighten it; excellent."
+          },
+          {
             "speaker": "The Count",
-            "it": "A mezza notte in punto a prendervi qui siamo; or che la chiave abbiamo non v'è da dubitar.",
-            "en": "We will come to fetch you at midnight; now that we have the key, there can be no doubt."
+            "it": "Rosina, deh ascoltatemi.",
+            "en": "Rosina, please listen to me."
+          },
+          {
+            "speaker": "Rosina",
+            "it": "Vi ascolto, eccomi qua.",
+            "en": "I am listening; here I am."
+          },
+          {
+            "speaker": "The Count",
+            "it": "(Piano) A mezza notte in punto a prendervi qui siamo: or che la chiave abbiamo non v'è da dubitar.",
+            "en": "(Quietly) We shall be here to fetch you at midnight. Now that we have the key, there is no doubt."
+          },
+          {
+            "speaker": "Figaro",
+            "it": "(Distraendo Bartolo) Ahi!... ahi!...",
+            "en": "(Distracting Bartolo) Ow!... ow!..."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Che cosa è stato?",
+            "en": "What happened?"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Un non so che nell'occhio! Guardate... non toccate... soffiate, per pietà.",
+            "en": "Something got in my eye! Look... don't touch it... blow on it, please."
           },
           {
             "speaker": "Rosina",
             "it": "A mezza notte in punto, anima mia, t'aspetto. Io già l'istante affretto che teco mi unirà.",
-            "en": "At midnight, my love, I will wait for you. I already long for the moment that will unite us."
+            "en": "At midnight, my love, I shall be waiting. I long for the moment that will unite me with you."
           },
           {
             "speaker": "Bartolo",
-            "it": "Il suo travestimento?... Ma bravi, ma bravissimi! Bricconi, birbanti, ah voi tutti quanti avete giurato di farmi crepar!",
-            "en": "His disguise?... Well done, very well done! Rogues, villains, you have all sworn to be the death of me!"
+            "it": "Ma lasciami vedere!",
+            "en": "Let me see!"
+          },
+          {
+            "speaker": "Figaro",
+            "it": "Vedete; chi vi tiene?",
+            "en": "Look, who is stopping you?"
+          },
+          {
+            "speaker": "The Count and Rosina",
+            "it": "(Fingendo solfeggiare) Do, re, mi, fa, sol, la...",
+            "en": "(Pretending to sing scales) Do, re, mi, fa, sol, la..."
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Bartolo rises and approaches the lovers.",
+            "en": "Bartolo rises and approaches the lovers."
+          },
+          {
+            "speaker": "The Count",
+            "it": "Ora avvertir vi voglio, cara, che il vostro foglio, perché non fosse inutile, il mio travestimento...",
+            "en": "Now I must tell you, my dear, that your letter, so my disguise would not be wasted..."
+          },
+          {
+            "speaker": "Bartolo",
+            "it": "Il suo travestimento?... Ma bravi, ma bravissimi! Bricconi, birbanti! Ah, voi tutti quanti avete giurato di farmi crepar! Uscite, furfanti! Vi voglio accoppar. Di rabbia, di sdegno mi sento crepar.",
+            "en": "His disguise?... Excellent, simply excellent! Rogues, scoundrels! You have all sworn to be the death of me! Out, you villains! I will kill you. I am bursting with rage and fury."
+          },
+          {
+            "speaker": "Rosina, The Count and Figaro",
+            "it": "L'amico delira, la testa gli gira; dottore, tacete, vi fate burlar. Tacete, partiamo, non serve gridar. (Intesi ci siamo, non v'è a replicar.)",
+            "en": "Our friend is raving; his head is spinning. Doctor, be quiet; you are being made a fool of. Be quiet, let us go; there is no need to shout. (We understand; there is no reply.)"
           }
         ]
       }
