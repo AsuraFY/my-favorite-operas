@@ -5,6 +5,9 @@ import { cosiActOneScenes } from "./libretti.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretti-act2.js?v=act2-18";
 import { barbiereActOneScenes } from "./libretti-barbiere-act1.js?v=barbiere-act1-2";
 import { barbiereActTwoScenes } from "./libretti-barbiere-act2.js?v=barbiere-act2-2";
+import { tristanActOneScenes } from "./libretti-tristan-act1.js?v=tristan-act1-1";
+import { tristanActTwoScenes } from "./libretti-tristan-act2.js?v=tristan-act2-3";
+import { tristanActThreeScenes } from "./libretti-tristan-act3.js?v=tristan-act3-3";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -114,7 +117,42 @@ const barbiere = {
   source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Act I; public-domain Italian text, Acts I–II: https://www.librettidopera.it/barb_siv/a_01.html and https://www.librettidopera.it/barb_siv/a_02.html"
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere };
+const tristan = {
+  slug: "tristan-und-isolde",
+  opera: getOpera("tristan-und-isolde"),
+  composerShort: "R. WAGNER",
+  mobileComposer: "Richard Wagner",
+  mobileArtworkLabel: "Tristan und Isolde",
+  originalLanguage: "Deutsch",
+  translationLanguage: "English",
+  sceneOriginalPrefix: "Szene",
+  stageDirectionSpeaker: "Stage direction",
+  acts: [
+    { number: 1, originalHeading: "Erster Aufzug", scenes: tristanActOneScenes },
+    { number: 2, originalHeading: "Zweiter Aufzug", scenes: tristanActTwoScenes },
+    { number: 3, originalHeading: "Dritter Aufzug", scenes: tristanActThreeScenes }
+  ],
+  sceneOrdinals: ["ERSTE", "ZWEITE", "DRITTE", "VIERTE", "FÜNFTE"],
+  synopsis: {
+    eyebrow: "Richard Wagner · Musikdrama in drei Aufzügen",
+    paragraphs: [
+      "Tristan escorts the Irish princess Isolde to Cornwall to marry his uncle, King Marke. Isolde remembers that Tristan killed her former betrothed, Morold, yet she once healed Tristan’s wounds. She asks for a fatal potion, but her companion Brangäne substitutes a love potion.",
+      "Their forbidden love is discovered, and Tristan is gravely wounded. He waits for Isolde to return and heal him, but she arrives too late. Wagner’s drama explores a passion that cannot be reconciled with duty, time, or the ordinary world."
+    ],
+    characters: [
+      ["Tristan", "Tenor", "A knight torn between loyalty to King Marke and his love for Isolde."],
+      ["Isolde", "Soprano", "An Irish princess promised to King Marke."],
+      ["King Marke", "Bass", "Cornwall’s ruler and Tristan’s uncle."],
+      ["Brangäne", "Mezzo-soprano", "Isolde’s attendant and confidante."],
+      ["Kurwenal", "Baritone", "Tristan’s devoted companion."],
+      ["Melot", "Tenor", "A courtier who exposes the lovers."]
+    ]
+  },
+  characters: ["Tristan", "Isolde", "King Marke", "Brangäne", "Kurwenal", "Melot", "Der Hirt", "Der Steuermann", "Schiffsvolk", "Hofleute", "Männer", "Frauen"],
+  source: "Richard Wagner, Tristan und Isolde (1859), German libretto. Public-domain source text: https://www.librettoarchive.com/Tristan_und_Isolde_libretto_German_Act_1, https://www.librettoarchive.com/Tristan_und_Isolde_libretto_German_Act_2, and https://www.librettoarchive.com/Tristan_und_Isolde_libretto_German_Act_3. English translation prepared for this reader."
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
