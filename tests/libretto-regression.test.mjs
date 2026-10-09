@@ -239,7 +239,7 @@ test("Macbeth Act I Scene I pilot preserves the Italian source layout and paired
   for (const turn of scene.sections[0].turns) {
     assert.ok(turn.it.trim());
     assert.ok(turn.en.trim());
-    assert.equal(turn.it.split("\\n").length, turn.en.split("\\n").length,
+    assert.equal(turn.it.split("\n").length, turn.en.split("\n").length,
       "each Italian source line should have its own English counterpart");
   }
   window.location.hash = "#/operas/macbeth?act=1&scene=1";
