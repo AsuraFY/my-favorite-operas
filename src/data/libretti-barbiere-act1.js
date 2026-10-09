@@ -255,18 +255,37 @@ export const barbiereActOneScenes = [
     ]
   },
   {
-    number: 10, title: "A un dottor della mia sorte", cast: "Bartolo, Rosina",
-    summary: "Bartolo quizzes Rosina about Figaro and sings of the authority a doctor like him expects.",
+    number: 10, title: "A un dottor della mia sorte", cast: "Rosina, Bartolo",
+    summary: "Bartolo questions Rosina about Figaro and sings of his authority as her guardian.",
     sections: [
       { label: "Recitativo", turns: [
-        { speaker: "Bartolo", it: "Potrei sapere dalla mia Rosina che venne a far colui questa mattina?", en: "Could my Rosina tell me what that fellow came here to do this morning?" },
+        { speaker: "Rosina", it: "Ora mi sento meglio. Questo Figaro è un bravo giovinotto.", en: "I feel better now. Figaro is a fine young man." },
+        { speaker: "Bartolo", it: "In somma, colle buone, potrei sapere dalla mia Rosina che venne a far colui questa mattina?", en: "Perhaps, if I ask kindly, my Rosina will tell me what that fellow came to do this morning." },
         { speaker: "Rosina", it: "Figaro? Non so nulla.", en: "Figaro? I know nothing." },
-        { speaker: "Bartolo", it: "Che vuol dir questo dito così sporco d'inchiostro?", en: "Why is this finger so stained with ink?" },
-        { speaker: "Rosina", it: "Io me l'avea scottato, e coll'inchiostro or or l'ho medicato.", en: "I burned it, and just now treated it with ink." }
+        { speaker: "Bartolo", it: "Ti parlò?", en: "Did he speak to you?" },
+        { speaker: "Rosina", it: "Mi parlò.", en: "He did." },
+        { speaker: "Bartolo", it: "Che ti diceva?", en: "What did he say?" },
+        { speaker: "Rosina", it: "Oh, mi parlò di cento bagattelle; del figurin di Francia, del mal della sua figlia Marcellina...", en: "Oh, a hundred trivial things: a French fashion figure, his daughter Marcellina's illness..." },
+        { speaker: "Bartolo", it: "Davvero? Ed io scommetto che portò la risposta al tuo biglietto.", en: "Really? I would wager he brought the answer to your note." },
+        { speaker: "Rosina", it: "Qual biglietto?", en: "What note?" },
+        { speaker: "Bartolo", it: "Che serve! L'arietta dell'Inutil precauzione che ti cadde stamane giù dal balcone. Vi fate rossa?... Che vuol dir questo dito così sporco d'inchiostro?", en: "There's no point pretending! The little song from The Useless Precaution that fell from your balcony this morning. You're blushing?... Why is this finger so stained with ink?" },
+        { speaker: "Rosina", it: "Sporco? Oh, nulla! Io me l'avea scottato, e coll'inchiostro or ora l'ho medicato.", en: "Stained? Oh, nothing! I burned it and just treated it with ink." },
+        { speaker: "Bartolo", it: "(Diavolo!) E questi fogli? Or son cinque, eran sei.", en: "(Damn!) And these sheets? There are five now; there were six." },
+        { speaker: "Rosina", it: "Que' fogli?... È vero; d'uno mi son servita a mandar de' confetti a Marcellina.", en: "Those sheets?... That's true; I used one to send sweets to Marcellina." },
+        { speaker: "Bartolo", it: "Bravissima! E la penna perché fu temperata?", en: "Very clever! And why was the pen freshly sharpened?" },
+        { speaker: "Rosina", it: "(Maledetto.) La penna?... Per disegnare un fiore sul tamburo.", en: "(Damn him.) The pen?... To draw a flower on the tambourine." },
+        { speaker: "Bartolo", it: "Un fiore?", en: "A flower?" },
+        { speaker: "Rosina", it: "Un fiore.", en: "A flower." },
+        { speaker: "Bartolo", it: "Un fiore? Ah, fraschetta!", en: "A flower? You little minx!" },
+        { speaker: "Rosina", it: "Davver?", en: "Really?" },
+        { speaker: "Bartolo", it: "Zitto.", en: "Quiet." },
+        { speaker: "Rosina", it: "Credete...", en: "You think..." },
+        { speaker: "Bartolo", it: "Basta così...", en: "That's enough..." },
+        { speaker: "Rosina", it: "Signor...", en: "Sir..." },
+        { speaker: "Bartolo", it: "Non più, tacete.", en: "No more; be quiet." }
       ] },
       { label: "Aria — A un dottor della mia sorte", turns: [
-        { speaker: "Bartolo", it: "A un dottor della mia sorte\nqueste scuse, signorina?\nVi consiglio, mia carina,\nun po' meglio a imposturar.\n\nI confetti alla ragazza?\nIl ricamo sul tamburo?\nVi scottaste?... Eh via!... eh via!...\nCi vuol altro, figlia mia,\nper potermi corbellar.\n\nPerché manca là quel foglio?\nVo' saper cotesto imbroglio;\nsono inutili le smorfie...\nFerma là; non mi toccate;\nfiglia mia, non lo sperate,\nnon mi lascio infinocchiar.", en: "These excuses, miss,\nto a doctor of my standing?\nMy dear, I advise you\nto invent a better story.\n\nThe sweets for the girl?\nThe embroidery on the drum?\nYou burned yourself?... Come now!\nYou will need something better, my girl,\nto make a fool of me.\n\nWhy is that sheet missing?\nI want to know what this trick is.\nYour little gestures are useless...\nStay there; don't touch me.\nDon't hope to fool me, my girl;\nI won't be taken in." },
-        { speaker: "Bartolo", it: "Via, carina, confessate,\nson disposto a perdonar.\nNon parlate? Vi ostinate?\nSo ben io quel che ho da far.\n\nSignorina, un'altra volta\nquando Bartolo andrà fuori,\nla consegna ai servitori\na suo modo dar saprà.\n\nE non servono le smorfie;\nfaccia pur la gatta morta;\ncospetton, per quella porta\nnemmen l'aria entrar potrà.\n\nE Rosina innocentina,\nsconsolata e disperata,\nin sua camera serrata\nfin ch'io voglio star dovrà.", en: "Come, my dear, confess;\nI am ready to forgive.\nYou say nothing? You persist?\nI know exactly what to do.\n\nMiss, next time Bartolo\nhas to leave the house,\nhe will make sure the servants\nknow their orders well.\n\nYour little gestures won't help;\nplay the innocent if you like.\nBy heaven, through that door\nnot even air will get in.\n\nAnd innocent Rosina,\nfrustrated and despairing,\nwill stay locked in her room\nas long as I wish." }
+        { speaker: "Bartolo", it: "A un dottor della mia sorte\nqueste scuse, signorina?\nVi consiglio, mia carina,\nun po' meglio a imposturar.\n\nI confetti alla ragazza?\nIl ricamo sul tamburo?\nVi scottaste?... Eh via!... eh via!...\nCi vuol altro, figlia mia,\nper potermi corbellar.\n\nPerché manca là quel foglio?\nVo' saper cotesto imbroglio;\nsono inutili le smorfie...\nFerma là; non mi toccate;\nfiglia mia, non lo sperate,\nnon mi lascio infinocchiar.\n\nVia, carina, confessate,\nson disposto a perdonar.\nNon parlate? Vi ostinate?\nSo ben io quel che ho da far.\n\nSignorina, un'altra volta\nquando Bartolo andrà fuori,\nla consegna ai servitori\na suo modo dar saprà.\n\nE non servono le smorfie;\nfaccia pur la gatta morta;\ncospetton, per quella porta\nnemmen l'aria entrar potrà.\n\nE Rosina innocentina,\nsconsolata e disperata,\nin sua camera serrata\nfin ch'io voglio star dovrà.", en: "These excuses, miss,\nto a doctor of my standing?\nMy dear, I advise you\nto invent a better story.\n\nThe sweets for the girl?\nThe embroidery on the drum?\nYou burned yourself?... Come now!\nYou'll need something better, my girl,\nto make a fool of me.\n\nWhy is that sheet missing?\nI want to know what this trick is.\nYour little gestures are useless...\nStay there; don't touch me.\nDon't hope to fool me, my girl;\nI won't be taken in.\n\nCome, my dear, confess;\nI am ready to forgive.\nYou say nothing? You persist?\nI know exactly what to do.\n\nMiss, next time Bartolo\nhas to leave the house,\nhe will make sure the servants\nknow their orders well.\n\nYour little gestures won't help;\nplay the innocent if you like.\nBy heaven, through that door\nnot even air will get in.\n\nAnd innocent Rosina,\nfrustrated and despairing,\nwill stay locked in her room\nas long as I wish." }
       ] }
     ]
   },
