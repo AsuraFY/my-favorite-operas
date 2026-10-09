@@ -40,6 +40,8 @@ test("Tristan und Isolde has three fully bilingual acts and renders every scene"
     const page = reader.scene(scene.number);
     assert.ok(page.includes("Deutsch"));
     assert.ok(page.includes("English"));
+    assert.ok(page.includes(scene.sections[0].translatedTitle));
+    assert.ok(page.includes("Passage"));
     assert.equal(count(page, /class="libretto-row/g),
       scene.sections.reduce((n, section) => n + section.turns.length, 0));
     for (const section of scene.sections) for (const turn of section.turns) {
@@ -52,6 +54,9 @@ test("Tristan und Isolde has three fully bilingual acts and renders every scene"
   const outline = reader.outline();
   assert.equal(count(outline, /class="opera-outline__scene"/g), 11);
   assert.ok(outline.includes("#/operas/tristan-und-isolde?act=3&scene=3&item=0"));
+  assert.ok(outline.includes("Isoldes Aufbegehren"));
+  assert.ok(outline.includes("Descend, O Night of Love"));
+  assert.ok(!outline.includes(">Dialog</span>"));
   assert.ok(reader.synopsis().includes("King Marke"));
   assert.equal(scenes, 11);
   assert.ok(rows > 100);
