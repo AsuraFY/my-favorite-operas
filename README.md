@@ -1,6 +1,6 @@
 # My Favorite Operas
 
-A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte has a completed Italian/English libretto. Act I of Il barbiere di Siviglia is now available in the bilingual reader; the other works have introductory pages.
+A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte has a completed Italian/English libretto. Acts I and II of Il barbiere di Siviglia are now available in the bilingual reader; the other works have introductory pages.
 
 ## Run locally
 
@@ -18,7 +18,7 @@ Node 20+ is recommended. No npm dependencies need to be installed.
 npm test
 ```
 
-The tests check Così fan tutte’s 34 scenes, 69 sections and 871 bilingual entries, along with all 16 scenes and bilingual entries in the Barber of Seville Act I data, reader rendering, synopsis and outlines, links, and a fictional three-act German opera. Also perform manual desktop/mobile browser checks before deploying.
+The tests check Così fan tutte’s 34 scenes, 69 sections and 871 bilingual entries, along with all 27 scenes and bilingual entries across the Barber of Seville, reader rendering, synopsis and outlines, links, and a fictional three-act German opera. Also perform manual desktop/mobile browser checks before deploying.
 
 ## Opera collection and information pages
 
@@ -34,7 +34,8 @@ Factual editorial references include the Metropolitan Opera synopses for Turando
 - src/data/opera-information.js — synopses and principal characters for all six works.
 - src/opera-info-page.js — reusable opera information layout.
 - src/data/libretto-registry.js — complete libretti registered by opera slug, plus synopsis, character, and presentation metadata.
-- src/data/libretti.js and src/data/libretti-act2.js — the original Così act data, retained without changing translations.\n- src/data/libretti-barbiere-act1.js — the Italian/English scenes for Act I of Il barbiere di Siviglia.
+- src/data/libretti.js and src/data/libretti-act2.js — the original Così act data, retained without changing translations.
+- src/data/libretti-barbiere-act1.js and src/data/libretti-barbiere-act2.js — Italian/English scenes for Acts I and II of Il barbiere di Siviglia.
 - src/libretto-reader.js — shared reader factory, synopsis, full outline, act/scene navigation, credits and bilingual rows.
 - src/main.js — hash routing, metadata search, sticky navigation, desktop collapse, mobile drawer, deep-link and scroll controllers.
 - styles.css — responsive reader appearance.
