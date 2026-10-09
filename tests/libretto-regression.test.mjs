@@ -36,6 +36,29 @@ test("Così retains all scenes and translated dialogue entries", () => {
   }
 });
 
+test("Barber of Seville Act I scenes render bilingual sections and outline links", () => {
+  const barbiere = getLibretto("il-barbiere-di-siviglia");
+  const reader = createLibrettoRenderer(barbiere);
+  let sectionCount = 0, rowCount = 0;
+  for (const scene of barbiere.acts[0].scenes) {
+    window.location.hash = "#/operas/il-barbiere-di-siviglia?act=1&scene=" + scene.number;
+    const page = reader.scene(scene.number);
+    assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
+    assert.equal(count(page, /<div class="libretto-row/g),
+      scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    assert.ok(page.includes("Italiano"));
+    assert.ok(page.includes("English"));
+    sectionCount += scene.sections.length;
+    rowCount += scene.sections.reduce((n, section) => n + section.turns.length, 0);
+  }
+  const outline = reader.outline();
+  assert.equal(count(outline, /class="opera-outline__scene"/g), 16);
+  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), sectionCount);
+  assert.equal(sectionCount, 25);
+  assert.equal(rowCount, 117);
+  assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=1&scene=16&item=0"));
+});
+
 test("all Così scenes render their complete sections, dialogue and outline controls", () => {
   const reader = createLibrettoRenderer(cosi);
   let scenes = 0, sections = 0, rows = 0;
