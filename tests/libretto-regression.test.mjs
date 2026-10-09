@@ -25,12 +25,13 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.equal(getLibretto("unknown"), null);
 });
 
-test("Tristan und Isolde has three fully bilingual acts and renders every scene", () => {
+test("Tristan outline follows Spotify tracks and formats the bilingual libretto clearly", () => {
   const tristan = getLibretto("tristan-und-isolde");
   assert.ok(tristan);
   assert.equal(tristan.originalLanguage, "Deutsch");
   assert.equal(tristan.translationLanguage, "English");
   assert.deepEqual(tristan.acts.map(act => act.scenes.length), [5, 3, 3]);
+  assert.deepEqual(tristan.spotifyOutline.map(act => act.scenes.reduce((n, scene) => n + scene.tracks.length, 0) + 1), [10, 9, 10]);
   const reader = createLibrettoRenderer(tristan);
   let scenes = 0, rows = 0;
   for (const act of tristan.acts) for (const scene of act.scenes) {
@@ -40,10 +41,11 @@ test("Tristan und Isolde has three fully bilingual acts and renders every scene"
     const page = reader.scene(scene.number);
     assert.ok(page.includes("Deutsch"));
     assert.ok(page.includes("English"));
-    assert.ok(page.includes(scene.sections[0].translatedTitle));
-    assert.ok(page.includes("Passage"));
-    assert.equal(count(page, /class="libretto-row/g),
-      scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    assert.ok(page.includes('class="libretto-row libretto-row--stage-direction"'));
+    assert.ok(page.includes("<br>"), "verse lines should be separated");
+    assert.ok(!page.includes(">Stage direction</span>"), "stage directions should be distinguished by styling");
+    assert.ok(!page.includes(">Dialog</span>"));
+    assert.ok(count(page, /class="libretto-row/g) >= scene.sections.reduce((n, section) => n + section.turns.length, 0));
     for (const section of scene.sections) for (const turn of section.turns) {
       assert.ok((turn.it || turn.original || "").trim());
       assert.ok((turn.en || turn.translation || "").trim());
@@ -51,12 +53,23 @@ test("Tristan und Isolde has three fully bilingual acts and renders every scene"
     scenes++;
     rows += scene.sections.reduce((n, section) => n + section.turns.length, 0);
   }
+  window.location.hash = "#/operas/tristan-und-isolde?view=outline";
   const outline = reader.outline();
   assert.equal(count(outline, /class="opera-outline__scene"/g), 11);
+  assert.equal(count(outline, /class="opera-outline__section-title"/g), 29);
+  assert.equal(count(outline, /class="opera-outline__prelude"/g), 3);
+  assert.ok(outline.includes("Westwärts schweift der Blick"));
+  assert.ok(outline.includes("My gaze drifts westward"));
+  assert.ok(outline.includes("Hab acht, Tristan!"));
+  assert.ok(outline.includes("O sink hernieder, Nacht der Liebe"));
+  assert.ok(outline.includes("Mild und leise (Isoldes Liebestod)"));
   assert.ok(outline.includes("#/operas/tristan-und-isolde?act=3&scene=3&item=0"));
-  assert.ok(outline.includes("Isoldes Aufbegehren"));
-  assert.ok(outline.includes("Descend, O Night of Love"));
+  assert.ok(!outline.includes("Isoldes Aufbegehren"));
   assert.ok(!outline.includes(">Dialog</span>"));
+  window.location.hash = "#/operas/tristan-und-isolde?act=1&scene=1";
+  const firstScene = reader.scene(1);
+  assert.ok(firstScene.includes("Voice of a Young Sailor"));
+  assert.ok(firstScene.includes("Heard from above, as if from the mast"));
   assert.ok(reader.synopsis().includes("King Marke"));
   assert.equal(scenes, 11);
   assert.ok(rows > 100);
