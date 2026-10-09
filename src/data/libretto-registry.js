@@ -3,6 +3,7 @@
 import { getOpera } from "./operas.js?v=opera-search-1";
 import { cosiActOneScenes } from "./libretti.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretti-act2.js?v=act2-18";
+import { barbiereActOneScenes } from "./libretti-barbiere-act1.js?v=barbiere-act1-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -66,7 +67,50 @@ const cosi = {
   }
 };
 
-const completeLibretti = { [cosi.slug]: cosi };
+const barbiere = {
+  slug: "il-barbiere-di-siviglia",
+  opera: getOpera("il-barbiere-di-siviglia"),
+  composerShort: "G. ROSSINI",
+  mobileComposer: "G. Rossini",
+  mobileArtworkLabel: "Seville at dawn",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  recitativeLabel: "Recitativo",
+  sceneOriginalPrefix: "Scena",
+  stageDirectionSpeaker: "Stage direction",
+  translatedForms: { Cavatina: "Cavatina", Canzone: "Song", Duetto: "Duet", Aria: "Aria" },
+  acts: [{ number: 1, originalHeading: "Atto primo", scenes: barbiereActOneScenes }],
+  sceneOrdinals: ["PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA", "DECIMA", "UNDICESIMA", "DODICESIMA", "TREDICESIMA", "QUATTORDICESIMA", "QUINDICESIMA", "SEDICESIMA"],
+  synopsis: {
+    eyebrow: "Gioachino Rossini · Opera buffa in two acts",
+    paragraphs: [
+      "In Seville, the resourceful barber Figaro helps Count Almaviva approach Rosina, the young ward of Doctor Bartolo. Almaviva hides his identity and courts her as the poor student Lindoro, while Bartolo schemes to marry Rosina himself.",
+      "Act I brings their plans together through disguises, a forged lodging billet, and Figaro’s quick thinking. The act ends when a cavalry officer recognizes Almaviva and the household is left bewildered."
+    ],
+    characters: [
+      ["Figaro", "Baritone", "Seville’s ingenious barber and self-appointed fixer, who helps Almaviva reach Rosina."],
+      ["Rosina", "Soprano", "Bartolo’s clever young ward, determined to choose her own husband."],
+      ["Count Almaviva", "Tenor", "A nobleman who courts Rosina in disguise as the student Lindoro."],
+      ["Doctor Bartolo", "Bass-baritone", "Rosina’s suspicious guardian, intent on marrying her himself."],
+      ["Don Basilio", "Bass", "Rosina’s music teacher, who proposes using slander to remove Almaviva."],
+      ["Berta", "Mezzo-soprano", "A servant in Bartolo’s household."],
+      ["Fiorello", "Baritone", "Almaviva’s servant."],
+      ["Ambrogio", "Silent role", "Bartolo’s sleepy servant."],
+      ["Officer", "Speaking role", "A cavalry officer who recognizes Almaviva."]
+    ]
+  },
+  characters: ["Figaro", "Rosina", "The Count", "Bartolo", "Basilio", "Berta", "Fiorello", "Ambrogio", "Officer"],
+  disguises: {
+    "1:13": { "The Count": "disguised as a cavalry soldier" },
+    "1:14": { "The Count": "disguised as a cavalry soldier" },
+    "1:15": { "The Count": "disguised as a cavalry soldier" },
+    "1:16": { "The Count": "disguised as a cavalry soldier" }
+  },
+  ensembleLabels: { "The Count and Figaro": "The Count & Figaro", "All": "Ensemble", Chorus: "Chorus" },
+  source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Act I; public-domain Italian text: https://www.librettidopera.it/barb_siv/a_01.html"
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
