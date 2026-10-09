@@ -29,14 +29,14 @@ test("all six opera information pages contain verified metadata and full introdu
   }
 });
 
-test("Turandot and Figaro artworks are separate, complete image files", () => {
+test("Turandot and Figaro use optimized WebP artwork files", () => {
   for (const slug of ["turandot", "le-nozze-di-figaro"]) {
     const opera = operas.find(item => item.slug === slug);
     assert.ok(opera?.image);
-    const raw = readFileSync(opera.image.replace(/^\.\//, ""), "utf8");
-    assert.match(raw, /^<svg\s/);
-    assert.match(raw, /<title /);
-    assert.match(raw, /<\/svg>\s*$/);
+    assert.match(opera.image, /-art\.webp$/);
+    const raw = readFileSync(opera.image.replace(/^\.\//, ""));
+    assert.equal(raw.toString("ascii", 0, 4), "RIFF");
+    assert.equal(raw.toString("ascii", 8, 12), "WEBP");
   }
 });
 
