@@ -12,8 +12,8 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.equal(librettoCatalog.length, 2);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
-  assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16]);
-  assert.equal(barbiere.acts[0].originalHeading, "Atto primo");
+  assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
+  assert.deepEqual(barbiere.acts.map(act => act.originalHeading), ["Atto primo", "Atto secondo"]);
   for (const scene of barbiere.acts[0].scenes) for (const section of scene.sections) {
     assert.ok(section.turns.length > 0);
     for (const turn of section.turns) {
@@ -57,6 +57,30 @@ test("Barber of Seville Act I scenes render bilingual sections and outline links
   assert.equal(sectionCount, 25);
   assert.equal(rowCount, 117);
   assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=1&scene=16&item=0"));
+});
+
+test("Barber of Seville Act II scenes render bilingual sections and outline links", () => {
+  const barbiere = getLibretto("il-barbiere-di-siviglia");
+  const reader = createLibrettoRenderer(barbiere);
+  const act = barbiere.acts.find(item => item.number === 2);
+  assert.equal(act.scenes.length, 11);
+  let sectionCount = 0, rowCount = 0;
+  for (const scene of act.scenes) {
+    window.location.hash = "#/operas/il-barbiere-di-siviglia?act=2&scene=" + scene.number;
+    const page = reader.scene(scene.number);
+    assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
+    assert.equal(count(page, /<div class="libretto-row/g),
+      scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    assert.ok(page.includes("Italiano"));
+    assert.ok(page.includes("English"));
+    sectionCount += scene.sections.length;
+    rowCount += scene.sections.reduce((n, section) => n + section.turns.length, 0);
+  }
+  const outline = reader.outline();
+  assert.equal(count(outline, /class="opera-outline__scene"/g), 27);
+  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), 25 + sectionCount);
+  assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=2&scene=11&item=0"));
+  assert.ok(rowCount > 0);
 });
 
 test("all Così scenes render their complete sections, dialogue and outline controls", () => {
