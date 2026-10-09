@@ -216,5 +216,143 @@ export const tristanActOneScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 3,
+    "title": "Tantris",
+    "cast": "Isolde, Brangäne, Schiffsvolk",
+    "summary": "Isolde recounts how she nursed the wounded Tristan, spared him when she discovered his identity, and now sees his marriage mission as a betrayal.",
+    "sections": [
+      {
+        "label": "Dialog",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Isolde und Brangäne sind allein; die Vorhänge sind wieder geschlossen. Isolde erhebt sich mit verzweiflungsvoller Wutgebärde; Brangäne stürzt ihr zu Füssen.",
+            "en": "Isolde and Brangäne are alone behind the closed curtains. Isolde rises in despairing fury; Brangäne throws herself at her feet."
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Weh, ach wehe! Dies zu dulden!",
+            "en": "Alas, alas! To have to endure this!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Dem furchtbarsten Ausbruche nahe, schnell sich zusammenraffend) Doch nun von Tristan! Genau will ich's vernehmen.",
+            "en": "(On the verge of a terrible outburst, quickly mastering herself) Now tell me about Tristan! I want to know exactly."
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Ach, frage nicht!",
+            "en": "Ah, do not ask!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Frei sag's ohne Furcht!",
+            "en": "Speak freely, without fear!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Mit höf'schen Worten wich er aus.",
+            "en": "With courtly words he evaded me."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Doch als du deutlich mahntest?",
+            "en": "But when you urged him plainly?"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Da ich zur Stell ihn zu dir rief: wo er auch steh', so sagte er, getreulich dien er ihr, der Frauen höchster Ehr'; liess' er das Steuer jetzt zur Stund', wie lenkt' er sicher den Kiel zu König Markes Land?",
+            "en": "When I called him to you at once, he said that wherever he stood, he faithfully served you, the most honoured of women; if he left the helm now, how could he steer the ship safely to King Marke's land?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Schmerzlich bitter) «Wie lenkt' er sicher den Kiel zu König Markes Land?» (Greil und heftig) Den Zins ihm auszuzahlen, den er aus Irland zog!",
+            "en": "(With bitter pain) “How could he steer the ship safely to King Marke's land?” (Harshly) To deliver the tribute he took from Ireland!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Auf deine eignen Worte, als ich ihm die entbot, liess seinen Treuen Kurwenal.",
+            "en": "At your own words, when I delivered them, his faithful Kurwenal answered for him."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Den hab ich wohl vernommen, kein Wort, das mir entging. Erfuhrest du meine Schmach, nun höre, was sie mir schuf. Wie lachend sie mir Lieder singen, wohl könnt auch ich erwidern! Von einem Kahn, der klein und arm an Irlands Küste schwamm, darinnen krank ein siecher Mann elend im Sterben lag. Isoldes Kunst ward ihm bekannt; mit Heilsalben und Balsamsaft der Wunde, die ihn plagte, getreulich pflag sie da. Der «Tantris» mit sorgender List sich nannte; als Tristan Isold' ihn bald erkannte, da in des Müss'gen Schwerte eine Scharte sie gewahrte, darin genau sich fügt' ein Splitter, den einst im Haupt des Iren-Ritter, zum Hohn ihr heimgesandt, mit kund'ger Hand sie fand. Da schrie's mir auf aus tiefstem Grund! Mit dem hellen Schwert ich vor ihm stund, an ihm, dem Überfrechen, Herrn Morolds Tod zu rächen. Von seinem Lager blickt' er her, nicht auf das Schwert, nicht auf die Hand: er sah mir in die Augen. Seines Elendes jammerte mich; das Schwert, ich liess es fallen! Die Morold schlug, die Wunde, sie heilt' ich, dass er gesunde und heim nach Hause kehre, mit dem Blick mich nicht mehr beschwere!",
+            "en": "I heard him; not a word escaped me. You have learned of my disgrace; now hear what brought it about. They sing their songs of triumph over me, and I could answer them in kind. A small, poor boat drifted to Ireland's shore, carrying a sick man, wasting away and near death. He had heard of Isolde's skill; with healing salves and balm, she faithfully tended the wound that tormented him. He called himself “Tantris” in a careful disguise. Soon Isolde recognized him as Tristan, when she saw a notch in his sword, exactly matching a splinter she had skilfully found in the head of the Irish knight, sent home to her as an insult. Then something cried out from the depths of my heart! I stood before him with my bright sword, ready to avenge Lord Morold's death on that insolent man. From his bed he looked up—not at the sword, not at my hand—he looked into my eyes. I pitied his misery; I let the sword fall! I healed the wound that felled Morold, so Tristan could recover and return home, so his gaze would no longer trouble me!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "O Wunder! Wo hatt' ich die Augen? Der Gast, den einst ich pflegen half?",
+            "en": "What a wonder! Where were my eyes? The guest I once helped to nurse?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Sein Lob hörtest du eben: «Hei! Unser Held Tristan!» Der war jener traur'ge Mann. Er schwur mit tausend Eiden mir ew'gen Dank und Treue! Nun hör, wie ein Held Eide hält! Den als Tantris unerkannt ich entlassen, als Tristan kehrt' er kühn zurück; auf stolzem Schiff, von hohem Bord, Irlands Erbin begehrt er zur Eh' für Kornwalls müden König, für Marke, seinen Ohm. Da Morold lebte, wer hätt' es gewagt, uns je solche Schmach zu bieten? Für der zinspflicht'gen Kornen Fürsten um Irlands Krone zu werben! Ach, wehe mir! Ich ja war's, die heimlich selbst die Schmach sich schuf. Das rächende Schwert, statt es zu schwingen, machtlos liess ich's fallen! Nun dien ich dem Vasallen!",
+            "en": "You just heard his praise: “Hail, our hero Tristan!” That was the wretched man. He swore a thousand oaths of eternal gratitude and loyalty to me! Now hear how a hero keeps his oaths! I released him, not knowing him as Tristan, under the name Tantris; he returned boldly as Tristan, on a proud ship, from its lofty deck, to claim Ireland's heir as bride for Cornwall's ageing king, for Marke, his uncle. While Morold lived, who would have dared offer us such an insult—to seek Ireland's crown for the ruler of Cornwall, who owes us tribute? Alas for me! I was the one who secretly brought this disgrace upon myself. Instead of wielding the sword of vengeance, I let it fall helplessly! Now I serve the vassal!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Da Friede, Sühn' und Freundschaft von allen ward beschworen, wir freuten uns all des Tags; wie ahnte mir da, dass dir es Kummer schuf?",
+            "en": "When all had sworn to peace, reconciliation, and friendship, we all rejoiced that day. How could I have guessed it would bring you sorrow?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "O blinde Augen! Blöde Herzen! Zahmer Mut, verzagtes Schweigen! Wie anders prahlte Tristan aus, was ich verschlossen hielt! Die schweigend ihm das Leben gab, vor Feindes Rache ihn schweigend barg; was stumm ihr Schutz zum Heil ihm schuf, mit ihr gab er es preis! Wie siegprangend, heil und hehr, laut und hell wies er auf mich: «Das wär ein Schatz, mein Herr und Ohm; wie dünkt euch die zur Eh'? Die schmucke Irin hol ich her; mit Steg und Wegen wohlbekannt, ein Wink, ich flieg nach Irenland: Isolde, die ist euer! Mir lacht das Abenteuer!» Fluch dir, Verruchter! Fluch deinem Haupt! Rache! Tod! Tod uns beiden!",
+            "en": "O blind eyes! Foolish hearts! Tame courage, fearful silence! How differently Tristan boasted aloud of what I had kept secret! The woman who silently gave him life and silently sheltered him from an enemy's vengeance—he gave away the very secret that her silent protection had made his salvation! Triumphant, whole and noble, he pointed openly and proudly at me: “There is a treasure, my lord and uncle. What do you think of her as a bride? I shall bring you the lovely Irishwoman. I know every passage and route; one signal and I fly to Ireland. Isolde shall be yours! The adventure delights me!” Curse you, traitor! Curse your head! Revenge! Death! Death to us both!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Mit ungestümer Zärtlichkeit auf Isolde stürzend) O Süsse! Traute! Teure! Holde! Goldne Herrin! Lieb' Isolde! (Sie zieht Isolde allmählich nach dem Ruhebett.) Hör mich! Komme! Setz dich her! Welcher Wahn! Welch eitles Zürnen! Wie magst du dich betören, nicht hell zu sehn noch hören? Was je Herr Tristan dir verdankte, sag, konnt' er's höher lohnen, als mit der herrlichsten der Kronen? So dient' er treu dem edlen Ohm; dir gab er der Welt begehrlichsten Lohn: dem eignen Erbe, echt und edel, entsagt er zu deinen Füssen, als Königin dich zu grüssen! Und warb er Marke dir zum Gemahl, wie wolltest du die Wahl doch schelten, muss er nicht wert dir gelten? Von edler Art und mildem Mut, wer gliche dem Mann an Macht und Glanz? Dem ein hehrster Held so treulich dient, wer möchte sein Glück nicht teilen, als Gattin bei ihm weilen?",
+            "en": "(Throwing herself against Isolde with ardent tenderness) O sweet one! Beloved! Dear one! Precious one! Golden lady! Dearest Isolde! (She slowly leads Isolde back to the couch.) Listen to me! Come, sit here. What delusion! What empty anger! How can you deceive yourself, refusing to see or hear clearly? Tell me, could Tristan have repaid what he owed you with anything greater than the most splendid crown? He served his noble uncle faithfully; he gave you the world's most coveted reward: renouncing his own inheritance, he lays it at your feet and greets you as queen! And if he chose Marke as your husband, how can you condemn that choice? Is he not worthy of you? Noble in birth and gentle in spirit, who equals his power and splendour? Who would not share the happiness of the man whom the noblest hero serves so faithfully, and live beside him as his wife?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Starr vor sich hinblickend) Ungeminnt den hehrsten Mann stets mir nah zu sehen, wie könnt ich die Qual bestehen?",
+            "en": "(Staring ahead) To have the noblest man always near me, yet unloved by him—how could I endure that torment?"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Was wähnst du, Arge? Ungeminnt? (Sie nähert sich schmeichelnd und kosend Isolde.) Wo lebte der Mann, der dich nicht liebte? Der Isolde säh und in Isolden selig nicht ganz verging? Doch, der dir erkoren, wär' er so kalt, zög ihn von dir ein Zauber ab: den Bösen wüsst ich bald zu binden; ihn bannte der Minne Macht. (Geheimnisvoll vertraulich) Kennst du der Mutter Künste nicht? Wähnst du, die alles klug erwägt, ohne Rat in fremdes Land hätt' sie mit dir mich entsandt?",
+            "en": "What are you imagining, cruel one? Unloved? Where is the man who could see Isolde and not be wholly overcome with joy? But if the one chosen for you were so cold, and some spell drew him away from you, I would soon know how to bind the villain; the power of love would hold him fast. (With secret intimacy) Do you not know your mother's arts? Do you think she, who considers everything so wisely, would have sent me with you to a foreign land without a remedy?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Düster) Der Mutter Rat gemahnt mich recht; willkommen preis ich ihre Kunst: Rache für den Verrat, Ruh in der Not dem Herzen! Den Schrein dort bring mir her!",
+            "en": "(Darkly) My mother's counsel has reminded me well; I welcome her art: vengeance for betrayal, and rest for a heart in anguish! Bring me that chest!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Er birgt, was heil dir frommt. (Sie holt eine kleine goldne Truhe herbei, öffnet sie und deutet auf den Inhalt.) So reihte sie die Mutter, die mächtigen Zaubertränke. Für Weh und Wunden Balsam hier; für böse Gifte Gegengift. (Sie zieht ein Fläschchen hervor.) Den hehrsten Trank, ich halt' ihn hier.",
+            "en": "It holds what will bring you healing. (She brings over a small golden chest, opens it, and points to its contents.) Your mother arranged the mighty potions here: balm for pain and wounds, antidote for deadly poisons. (She takes out a small flask.) Here I have the finest potion."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Du irrst, ich kenn ihn besser; ein starkes Zeichen schnitt ich ihm ein. (Sie ergreift ein Fläschchen und zeigt es.) Der Trank ist's, der mir taugt!",
+            "en": "You are mistaken; I know it better. I marked it with a strong sign. (She takes a flask and shows it.) This is the potion I need!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Weicht entsetzt zurück) Der Todestrank!",
+            "en": "(Recoiling in horror) The death potion!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Isolde hat sich vom Ruhebett erhoben und vernimmt mit wachsendem Schrecken den Ruf des Schiffsvolks von aussen.",
+            "en": "Isolde rises from the couch and, with growing alarm, hears the crew calling from outside."
+          },
+          {
+            "speaker": "Schiffsvolk",
+            "it": "(Von aussen) Ho! He! Ha! He! Am Untermast die Segel ein! Ho! He! Ha! He!",
+            "en": "(Outside) Ho! He! Ha! He! Furl the sails at the lower mast! Ho! He! Ha! He!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Das deutet schnelle Fahrt. Weh mir! Nahe das Land!",
+            "en": "That means we are sailing fast. Woe is me! Land is near!"
+          }
+        ]
+      }
+    ]
   }
 ];
