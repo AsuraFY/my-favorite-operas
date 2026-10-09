@@ -103,26 +103,69 @@ export const barbiereActOneScenes = [
   },
   {
     number: 4, title: "Se il mio nome saper voi bramate", cast: "The Count, Figaro, Rosina, Bartolo",
-    summary: "The Count serenades Rosina as Lindoro. Figaro devises a plan to get him into Bartolo's house disguised as a soldier.",
+    summary: "Rosina's note asks Lindoro to reveal himself. Almaviva serenades her as Lindoro, then Figaro devises a soldier's disguise and a lodging billet.",
     sections: [
       { label: "Recitativo", turns: [
-        { speaker: "Figaro", it: "Le vostre assidue premure hanno eccitata la mia curiosità. Il mio tutore è per uscire di casa; procurate con qualche mezzo ingegnoso d'indicarmi il vostro nome, il vostro stato e le vostre intenzioni.", en: "Your constant attentions have stirred my curiosity. My guardian is about to leave the house; find some clever way to tell me your name, your station, and your intentions." },
-        { speaker: "The Count", it: "Il nome mio non le vo' dir, né il grado. Assicurarmi vo' pria che ella ami me, me solo al mondo, non le ricchezze e i titoli del conte d'Almaviva.", en: "I will not tell her my name or rank. First I must be sure she loves me—me alone in the world—not the wealth and titles of Count Almaviva." },
-        { speaker: "Figaro", it: "In una canzonetta, così, alla buona, il tutto spiegatele, signor.", en: "Explain it all in a little song, simply and plainly, sir." }
+        { speaker: "The Count", it: "Povera disgraziata! Il suo stato infelice sempre più m'interessa!", en: "Poor, unhappy girl! Her miserable situation moves me more and more." },
+        { speaker: "Figaro", it: "Presto, presto, vediamo cosa scrive.", en: "Quickly, quickly, let's see what she wrote." },
+        { speaker: "The Count", it: "Appunto, leggi.", en: "Just so; read it." },
+        { speaker: "Figaro", it: "(legge) Le vostre assidue premure hanno eccitata la mia curiosità. Il mio tutore è per uscire di casa; appena si sarà allontanato procurate con qualche mezzo ingegnoso d'indicarmi il vostro nome, il vostro stato e le vostre intenzioni. Io non posso giammai comparire al balcone senza l'indivisibile compagnia del mio tiranno. Siate però certo che tutto è disposta a fare per rompere le sue catene la sventurata Rosina.", en: "(Reading) Your constant attentions have stirred my curiosity. My guardian is about to leave the house; as soon as he is gone, find some clever way to tell me your name, your station, and your intentions. I can never appear at the balcony without my tyrant's inseparable company. But be sure that poor Rosina is ready to do anything to break her chains." },
+        { speaker: "The Count", it: "Sì, sì, le romperà. Su, dimmi un poco, che razza d'uomo è questo suo tutore?", en: "Yes, yes, she will break them. Tell me, what sort of man is her guardian?" },
+        { speaker: "Figaro", it: "Un vecchio indemoniato, avaro, sospettoso, brontolone... Avrà cent'anni indosso e vuol fare il galante. Per mangiare a Rosina tutta l'eredità, s'è fitto in capo di volerla sposare... aiuto!", en: "A demon of an old man, greedy, suspicious, always grumbling... He must be a hundred years old and still plays the gallant. To swallow Rosina's whole inheritance, he has got it into his head to marry her... help!" },
+        { speaker: "The Count", it: "Che?", en: "What?" },
+        { speaker: "Figaro", it: "S'apre la porta.", en: "The door is opening." },
+        { speaker: "Bartolo", it: "(verso le quinte) Fra momenti io torno; non aprite a nessun. Se don Basilio venisse a cercarmi, che m'aspetti. Le mie nozze con lei meglio è affrettare; sì, dentr'oggi finir vo' quest'affare.", en: "(Calling inside) I'll be back shortly; don't open the door to anyone. If Don Basilio comes looking for me, tell him to wait. I must hasten my marriage to her; yes, I mean to settle this today." },
+        { speaker: "The Count", it: "Dentr'oggi le sue nozze con Rosina? Ah, vecchio rimbambito! Ma dimmi or tu: chi è questo don Basilio?", en: "He means to marry Rosina today? That doddering old man! Tell me, who is this Don Basilio?" },
+        { speaker: "Figaro", it: "È un solenne imbroglion di matrimoni, un collo torto, un vero disperato sempre senza un quattrino. Già è maestro di musica: insegna alla ragazza.", en: "A shameless marriage-broker, a crooked schemer, a desperate fellow without a penny. He is Rosina's music teacher." },
+        { speaker: "The Count", it: "Bene, bene, tutto giova sapere. Il nome mio non le vo' dir, né il grado. Assicurarmi vo' pria che ella ami me, me solo al mondo, non le ricchezze e i titoli del conte d'Almaviva.", en: "Good, good; every detail helps. I will not tell her my name or rank. First I must be sure that she loves me—me alone in the world—not the wealth and titles of Count Almaviva." },
+        { speaker: "Figaro", it: "Io?... no, signor: voi stesso dovete...", en: "I?... No, sir; you must do it yourself..." },
+        { speaker: "The Count", it: "Io stesso? E come?", en: "I must? How?" },
+        { speaker: "Figaro", it: "Zitti... zitti! Dietro la gelosia sta la ragazza. Presto, presto, all'assalto: niun ci vede. In una canzonetta, così alla buona, il tutto spiegatele, signor. Ecco la chitarra.", en: "Quiet... the girl is behind the grille. Quickly, take your chance; no one sees us. Explain it all in a little song, simply and plainly, sir. Here is the guitar." }
       ] },
       { label: "Canzone — Se il mio nome saper voi bramate", turns: [
-        { speaker: "The Count", it: "Se il mio nome saper voi bramate,\ndal mio labbro il mio nome ascoltate.\nIo sono Lindoro, che fido, adoro,\nche sposa vi bramo, che a nome vi chiamo,\ndi voi sempre cantando così\ndall'aurora al tramonto del dì.\n\nL'amoroso sincero Lindoro\nnon può darvi, mia cara, un tesoro.\nIo ricco non sono, ma un core vi dono,\nun'anima amante, che fida e costante\nper voi sempre sospira così\ndall'aurora al tramonto del dì.", en: "If you long to know my name,\nhear it from my own lips.\nI am Lindoro, faithful, adoring,\nwho longs to wed you and calls you his own,\nalways singing of you\nfrom dawn until the day is done.\n\nYour loving, faithful Lindoro\nhas no treasure to offer you, my dear.\nI am not rich, but I give you my heart,\na loving soul, faithful and constant,\nalways sighing for you\nfrom dawn until the day is done." }
+        { speaker: "The Count", it: "Se il mio nome saper voi bramate,\ndal mio labbro il mio nome ascoltate.\nIo sono Lindoro, che fido, adoro,\nche sposa vi bramo, che a nome vi chiamo,\ndi voi sempre cantando così\ndall'aurora al tramonto del dì.\n\nL'amoroso sincero Lindoro\nnon può darvi, mia cara, un tesoro.\nIo ricco non sono, ma un core vi dono,\nun'anima amante, che fida e costante\nper voi sempre sospira così\ndall'aurora al tramonto del dì.", en: "If you long to know my name,\nhear it from my own lips.\nI am Lindoro, faithful, adoring,\nwho longs to wed you and calls you his own,\nalways singing of you\nfrom dawn until the day is done.\n\nYour loving, faithful Lindoro\nhas no treasure to offer you, my dear.\nI am not rich, but give you my heart,\na loving soul, faithful and constant,\nalways sighing for you\nfrom dawn until the day is done." },
+        { speaker: "Rosina", it: "(da dentro) L'amorosa sincera Rosina il suo core a Lindo...", en: "(From within) Loving, faithful Rosina gives her heart to Lindo..." },
+        { speaker: "Stage direction", it: "Si sente da dentro chiudere le finestre.", en: "The windows are heard closing from within." }
+      ] },
+      { label: "Recitativo", turns: [
+        { speaker: "The Count", it: "Oh cielo!", en: "Heavens!" },
+        { speaker: "Figaro", it: "Nella stanza convien dir che qualcuno entrato sia. Ella si è ritirata.", en: "Someone must have entered the room. She has withdrawn." },
+        { speaker: "The Count", it: "Ah, cospettone! Io già deliro, avvampo! Oh, ad ogni costo vederla io voglio, vo' parlarle. Ah, tu mi devi aiutar.", en: "Good heavens! I am beside myself, burning with passion! I must see her, whatever it takes; I must speak with her. You have to help me." },
+        { speaker: "Figaro", it: "Ih, ih! Che furia! Sì, sì, v'aiuterò.", en: "Ha, ha! What impatience! Yes, yes, I'll help you." },
+        { speaker: "The Count", it: "Da bravo: entr'oggi vo' che tu m'introduca in quella casa. Dimmi, come farai? Del tuo spirto vediam qualche prodezza.", en: "Good fellow, I want you to get me into that house today. Tell me, how will you manage it? Show me some of your cleverness." },
+        { speaker: "Figaro", it: "Del mio spirito!... bene... vedrò... ma in oggi...", en: "My cleverness!... Well... I'll see... today..." },
+        { speaker: "The Count", it: "Eh via, t'intendo, non dubitar; di tue fatiche largo compenso avrai.", en: "Come now, I understand. Don't worry; you will be well rewarded for your trouble." },
+        { speaker: "Figaro", it: "Davver?", en: "Really?" },
+        { speaker: "The Count", it: "Parola.", en: "You have my word." },
+        { speaker: "Figaro", it: "Dunque oro a discrezione?", en: "Then gold as much as I like?" },
+        { speaker: "The Count", it: "Oro a bizzeffe. Animo, via.", en: "Gold in abundance. Come on, then." }
       ] },
       { label: "Duetto — All'idea di quel metallo", turns: [
-        { speaker: "Figaro", it: "All'idea di quel metallo\nportentoso, onnipossente,\nun vulcano la mia mente\ngià comincia a diventar.", en: "At the thought of that metal,\nso wondrous, all-powerful,\nmy mind is already beginning\nto turn into a volcano." },
-        { speaker: "The Count", it: "Su, vediam di quel metallo\nqualche effetto sorprendente,\ndel vulcan della tua mente\nqualche mostro singolar.", en: "Come, let us see some astonishing effect\nof that metal,\nsome singular monster\nfrom your volcanic mind." },
-        { speaker: "Figaro", it: "Voi dovreste travestirvi, per esempio... da soldato. Oggi arriva un reggimento; dell'alloggio col biglietto quella porta s'aprirà.", en: "You should disguise yourself, for instance, as a soldier. A regiment arrives today; with a billet for lodging, that door will open." },
-        { speaker: "The Count", it: "Oh che testa originale! Bravo, bravo in verità!", en: "What an original mind! Bravo, truly bravo!" },
-        { speaker: "Figaro", it: "Ubbriaco... sì, ubbriaco, mio signor, si fingerà.", en: "Drunk... yes, my lord, you will pretend to be drunk." },
-        { speaker: "The Count and Figaro", it: "Oh che testa universale!\nBella, bella in verità!", en: "What a universal genius!\nSplendid, truly splendid!" },
-        { speaker: "Figaro", it: "Numero quindici a mano manca, quattro gradini, facciata bianca, cinque parrucche nella vetrina, sopra un cartello «Pomata fina»; là senza fallo mi troverà.", en: "Number fifteen, on the left; four steps, white facade, five wigs in the window, a sign above: “Fine pomade.” There you will surely find me." },
-        { speaker: "The Count", it: "Ah, che d'amore la fiamma io sento, nunzia di giubilo e di contento!", en: "Ah, I feel love's flame within me, heralding joy and delight!" },
-        { speaker: "Figaro", it: "Delle monete il suon già sento! L'oro già viene, viene l'argento!", en: "Already I hear the coins ring! Here comes the gold, here comes the silver!" }
+        { speaker: "Figaro", it: "Son pronto; ah, non sapete i simpatici effetti prodigiosi che ad appagare il mio signor Lindoro produce in me la dolce idea dell'oro.\n\nAll'idea di quel metallo\nportentoso, onnipossente,\nun vulcano la mia mente\ngià comincia a diventar.", en: "I'm ready; you cannot imagine the delightful, wondrous effects that the sweet thought of gold has on me when serving my lord Lindoro.\n\nAt the thought of that metal,\nso wondrous, all-powerful,\nmy mind is already beginning\nto turn into a volcano." },
+        { speaker: "The Count", it: "Su, vediam di quel metallo qualche effetto sorprendente, del vulcan della tua mente qualche mostro singolar.", en: "Come, let us see some astonishing effect of that metal, some singular monster from your volcanic mind." },
+        { speaker: "Figaro", it: "Voi dovreste travestirvi, per esempio... da soldato.", en: "You should disguise yourself, for instance... as a soldier." },
+        { speaker: "The Count", it: "Da soldato? E che si fa?", en: "As a soldier? What then?" },
+        { speaker: "Figaro", it: "Oggi arriva un reggimento.", en: "A regiment arrives today." },
+        { speaker: "The Count", it: "Sì, m'è amico il colonnello.", en: "Yes, the colonel is a friend of mine." },
+        { speaker: "Figaro", it: "Va benon. Cospetto! Dell'alloggio col biglietto quella porta s'aprirà. Che ne dite, mio signore? L'invenzione è naturale?", en: "Excellent. With a billet for lodging, that door will open. What do you say, my lord? Is the plan natural?" },
+        { speaker: "The Count", it: "Oh, che testa originale! Bravo, bravo in verità!", en: "What an original mind! Bravo, truly bravo!" },
+        { speaker: "Figaro", it: "Oh, che testa universale! Bella, bella in verità!", en: "What a universal genius! Splendid, truly splendid!" },
+        { speaker: "Figaro", it: "Piano, piano... un'altra idea! Veda l'oro cosa fa. Ubbriaco... sì, ubbriaco, mio signor, si fingerà.", en: "Wait, wait... another idea! See what gold can do. You will pretend to be drunk, my lord." },
+        { speaker: "The Count", it: "Ubbriaco?... Ma perché?", en: "Drunk?... But why?" },
+        { speaker: "Figaro", it: "Perché d'un che poco è in sé, che dal vino casca già, il tutor, credete a me, il tutore si fiderà.", en: "Because the guardian, believe me, will trust a man who is not himself, who is already staggering from wine." },
+        { speaker: "The Count and Figaro", it: "Questa è bella, per mia fé, bravo, bravo in verità!", en: "By my faith, that's a fine idea; bravo, truly bravo!" },
+        { speaker: "Figaro", it: "Numero quindici a mano manca, quattro gradini, facciata bianca, cinque parrucche nella vetrina; sopra un cartello «Pomata fina», mostra in azzurro alla moderna, v'è per insegna una lanterna... là senza fallo mi troverà.", en: "Number fifteen, on the left; four steps, white facade, five wigs in the window; above, a sign reading “Fine pomade,” a modern blue display, and a lantern for a sign... there you will surely find me." },
+        { speaker: "The Count", it: "Ho ben capito...", en: "I understand..." },
+        { speaker: "Figaro", it: "Or vada presto.", en: "Go quickly now." },
+        { speaker: "The Count", it: "Tu guarda bene...", en: "Keep a sharp lookout..." },
+        { speaker: "Figaro", it: "Io penso al resto.", en: "I'll take care of the rest." },
+        { speaker: "The Count", it: "Di te mi fido... Mio caro Figaro... Porterò meco...", en: "I trust you... My dear Figaro... I'll bring..." },
+        { speaker: "Figaro", it: "Colà l'attendo. Intendo, intendo. La borsa piena.", en: "I'll wait there. I understand. A purse full of money." },
+        { speaker: "The Count", it: "Sì, quel che vuoi, ma il resto poi...", en: "Yes, whatever you want, but the rest..." },
+        { speaker: "Figaro", it: "Oh, non si dubiti, che bene andrà.", en: "Don't worry; it will all go well." },
+        { speaker: "The Count", it: "Ah, che d'amore la fiamma io sento, nunzia di giubilo e di contento! Ecco propizia che in sen mi scende, d'ardore insolito quest'alma accende e di me stesso maggior mi fa.", en: "Ah, I feel love's flame within me, heralding joy and delight! It descends auspiciously into my heart, kindles my soul with an unfamiliar ardour, and makes me greater than myself." },
+        { speaker: "Figaro", it: "Delle monete il suon già sento! L'oro già viene, viene l'argento; eccolo, eccolo, che in tasca scende, d'ardore insolito quest'alma accende e di me stesso maggior mi fa.", en: "Already I hear the coins ring! Here comes the gold, here comes the silver; there it goes, down into my pocket, kindling my soul with an unfamiliar ardour and making me greater than myself." },
+        { speaker: "Stage direction", it: "Figaro entra in casa di Bartolo; il Conte parte.", en: "Figaro enters Bartolo's house; the Count leaves." }
       ] }
     ]
   },
