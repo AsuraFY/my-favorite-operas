@@ -72,7 +72,7 @@ export const operas = [
   },
   {
     slug: "turandot",
-    image: "./public/images/turandot-art.svg",
+    image: "./public/images/turandot-art.webp",
     title: "Turandot",
     displayTitle: "Turandot",
     aliases: ["Princess Turandot"],
@@ -91,7 +91,7 @@ export const operas = [
   },
   {
     slug: "le-nozze-di-figaro",
-    image: "./public/images/figaro-art.svg",
+    image: "./public/images/figaro-art.webp",
     title: "Le nozze di Figaro",
     displayTitle: "The Marriage of Figaro",
     aliases: ["Marriage of Figaro", "Figaro's Wedding", "Les Noces de Figaro"],
