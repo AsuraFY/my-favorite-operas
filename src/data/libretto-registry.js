@@ -127,6 +127,7 @@ const tristan = {
   translationLanguage: "English",
   sceneOriginalPrefix: "Szene",
   stageDirectionSpeaker: "Stage direction",
+  translatedForms: { Dialog: "Dialogue" },
   acts: [
     { number: 1, originalHeading: "Erster Aufzug", scenes: tristanActOneScenes },
     { number: 2, originalHeading: "Zweiter Aufzug", scenes: tristanActTwoScenes },
