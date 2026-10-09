@@ -126,10 +126,9 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
     '">' + escapeHtml(actName) + ' <span>·</span> Act ' + romanNumeral(act) +
     '<span class="opera-outline__chevron" aria-hidden="true">⌄</span></h2></summary>';
   if (spotifyAct) {
-    const prelude = spotifyAct.prelude ? '<a class="section-nav-link opera-outline__section opera-outline__prelude" href="#/operas/' +
-      libretto.slug + '?act=' + act + '&scene=1&item=0"><span class="opera-outline__section-title">' +
+    const prelude = spotifyAct.prelude ? '<div class="opera-outline__section opera-outline__prelude"><span class="opera-outline__section-title">' +
       escapeHtml(spotifyAct.prelude.title) + '</span><span class="opera-outline__section-translation">' +
-      escapeHtml(spotifyAct.prelude.translation) + '</span></a>' : "";
+      escapeHtml(spotifyAct.prelude.translation) + '</span></div>' : "";
     const scenes = spotifyAct.scenes.map(outlineScene => {
       const sceneId = 'outline-scene-' + act + '-' + outlineScene.number;
       return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
