@@ -138,8 +138,8 @@ export const tristanActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "it": "Brangäne geht auf Isoldes gebieterischen Wink verschämt über das Deck. Isolde watches her, then retreats to the couch, keeping her eyes fixed on Tristan.",
-            "en": "At Isolde's imperious gesture, Brangäne walks shyly across the deck. Isolde watches her, then retreats to the couch, never taking her eyes from Tristan."
+            "it": "Brangäne geht auf Isoldes gebieterischen Wink verschämt über das Deck. Isolde folgt ihr mit starrem Blick, zieht sich rückwärts zum Ruhebett zurück und bleibt dort sitzen, den Blick unabgewandt auf die Steuerbordseite gerichtet.",
+            "en": "At Isolde's imperious gesture, Brangäne walks shyly across the deck. Isolde follows her with a fixed gaze, then retreats backward to the couch and sits, her eyes still fixed on the starboard side."
           },
           {
             "speaker": "Kurwenal",
