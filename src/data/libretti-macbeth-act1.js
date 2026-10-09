@@ -4,6 +4,7 @@ export const macbethActOneScenes = [
   {
     number: 1,
     title: "Bosco",
+    translatedTitle: "Forest",
     cast: "Tre Streghe",
     summary: "Three groups of witches meet in a storm, trade reports, and welcome Macbeth.",
     sections: [
