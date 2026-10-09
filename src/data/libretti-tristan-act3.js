@@ -305,7 +305,8 @@ export const tristanActThreeScenes = [
             "it": "Sie trag' ich herauf: trau' meinen Armen! Doch du, Tristan, bleib mir treulich am Bett! (Kurwenal eilt fort.)",
             "en": "I’ll carry her up; trust my arms! But you, Tristan, stay faithfully on your couch! (Kurwenal hurries away.)"
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
@@ -348,7 +349,8 @@ export const tristanActThreeScenes = [
             "it": "Ha! Ich bin's, ich bin's, süssester Freund! Auf, noch einmal hör' meinen Ruf! Isolde ruft: Isolde kam, mit Tristan treu zu sterben! Bleibst du mir stumm? Nur eine Stunde, nur eine Stunde bleibe mir wach! So bange Tage wachte sie sehnend, um eine Stunde, mit dir noch zu wachen: betrügt Isolden, betrügt sie Tristan um dieses einzige, ewig kurze letzte Weltenglück? Die Wunde? Wo? Lass sie mich heilen! Dass wonnig und hehr die Nacht wir teilen; nicht an der Wunde, an der Wunde stirb mir nicht: uns beiden vereint erlösche das Lebenslicht! Gebrochen der Blick! Still das Herz! Nicht eines Atems flücht'ges Wehn! Muss sie nun jammernd vor dir stehn, die sich wonnig dir zu vermählen mutig kam übers Meer? Zu spät! Trotziger Mann! Strafst du mich so mit härtestem Bann? Ganz ohne Huld meiner Leidens-Schuld? Nicht meine Klagen darf ich dir sagen? Nur einmal, ach! nur einmal noch! Tristan! Ha! horch! Er wacht! Geliebter! (Sie sinkt bewusstlos über der Leiche zusammen.)",
             "en": "Ah! It is I, it is I, sweetest friend! Rise, hear my call once more! Isolde cries: Isolde came, faithful to die with Tristan! Will you remain silent to me? Stay awake for just one hour, just one hour! Through such anxious days she kept watch in longing, longing to keep watch with you for one hour more. Will Tristan cheat Isolde of this one, eternally brief, final happiness in the world? Your wound—where is it? Let me heal it, so we may share the night in bliss and glory. Do not die of the wound—of the wound! Let the light of life go out for us together! Your gaze is broken; your heart is still. Not even a fleeting breath! Must she now stand grieving before you, she who came bravely across the sea to be joyfully joined to you? Too late! Defiant man! Do you punish me with the harshest ban? No mercy for the guilt of my suffering? May I not tell you my lament? Just once, ah, just once more! Tristan! Ah! Listen—he wakes! Beloved! (She collapses unconscious over his body.)"
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
@@ -506,7 +508,8 @@ export const tristanActThreeScenes = [
             "it": "Isolde sinkt, wie verklärt, in Brangänes Armen sanft auf Tristans Leiche. Die Umstehenden sind tief gerührt und entrückt. Marke segnet die Toten. Der Vorhang fällt langsam.",
             "en": "As if transfigured, Isolde sinks gently in Brangäne’s arms over Tristan’s body. Those around them are deeply moved and rapt. Marke blesses the dead. The curtain falls slowly."
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   }
