@@ -1,4 +1,4 @@
-import { operas, getOpera } from "./data/operas.js?v=opera-search-1";
+import { operas, getOpera } from "./data/operas.js?v=opera-art-2";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-6";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-4";
 import { operaInformation } from "./data/opera-information.js?v=info-1";
