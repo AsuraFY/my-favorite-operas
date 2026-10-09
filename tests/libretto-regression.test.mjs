@@ -54,8 +54,8 @@ test("Barber of Seville Act I scenes render bilingual sections and outline links
   const outline = reader.outline();
   assert.equal(count(outline, /class="opera-outline__scene"/g), 16);
   assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), sectionCount);
-  assert.equal(sectionCount, 25);
-  assert.equal(rowCount, 117);
+  assert.equal(sectionCount, 29);
+  assert.equal(rowCount, 399);
   assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=1&scene=16&item=0"));
 });
 
@@ -80,7 +80,8 @@ test("Barber of Seville Act II scenes render bilingual sections and outline link
   assert.equal(count(outline, /class="opera-outline__scene"/g), 27);
   assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), 25 + sectionCount);
   assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=2&scene=11&item=0"));
-  assert.ok(rowCount > 0);
+  assert.equal(sectionCount, 23);
+  assert.equal(rowCount, 280);
 });
 
 test("all Così scenes render their complete sections, dialogue and outline controls", () => {
