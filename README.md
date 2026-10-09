@@ -1,6 +1,6 @@
 # My Favorite Operas
 
-A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte has a completed Italian/English libretto. Acts I and II of Il barbiere di Siviglia are now available in the bilingual reader; the other works have introductory pages.
+A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte has a completed Italian/English libretto. The complete Italian libretto and new English translation of both acts of Il barbiere di Siviglia are available in the bilingual reader; the other works have introductory pages.
 
 ## Run locally
 
@@ -18,7 +18,7 @@ Node 20+ is recommended. No npm dependencies need to be installed.
 npm test
 ```
 
-The tests check Così fan tutte’s 34 scenes, 69 sections and 871 bilingual entries, along with all 27 scenes and bilingual entries across the Barber of Seville, reader rendering, synopsis and outlines, links, and a fictional three-act German opera. Also perform manual desktop/mobile browser checks before deploying.
+The tests check Così fan tutte’s 34 scenes, 69 sections and 871 bilingual entries, along with all 27 scenes and 679 bilingual entries across the Barber of Seville, reader rendering, synopsis and outlines, links, and a fictional three-act German opera. Also perform manual desktop/mobile browser checks before deploying.
 
 ## Opera collection and information pages
 
