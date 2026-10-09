@@ -7,9 +7,20 @@ const cosi = getLibretto("cosi-fan-tutte");
 globalThis.window = { location: { hash: "" } };
 const count = (html, pattern) => (html.match(pattern) || []).length;
 
-test("registry identifies finished and unfinished libretti", () => {
+test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 1);
+  assert.equal(librettoCatalog.length, 2);
+  const barbiere = getLibretto("il-barbiere-di-siviglia");
+  assert.ok(barbiere);
+  assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16]);
+  assert.equal(barbiere.acts[0].originalHeading, "Atto primo");
+  for (const scene of barbiere.acts[0].scenes) for (const section of scene.sections) {
+    assert.ok(section.turns.length > 0);
+    for (const turn of section.turns) {
+      assert.equal(typeof turn.it, "string");
+      assert.equal(typeof turn.en, "string");
+    }
+  }
   assert.equal(getLibretto("macbeth"), null);
   assert.equal(getLibretto("unknown"), null);
 });
