@@ -85,13 +85,14 @@ export const tristanActTwoScenes = [
             "it": "Brangäne wendet sich bestürzt ab, um auf einer äusseren Treppe die Zinne zu ersteigen, wo sie langsam verschwindet. Isolde lauscht und späht, zunächst schüchtern, in einen Baumgang. Von wachsendem Verlangen bewegt, schreitet sie dem Baumgang näher und späht zuversichtlicher. Sie winkt mit einem Tuche, erst seltener, dann häufiger, und endlich, in leidenschaftlicher Ungeduld, immer schneller. Eine Gebärde des plötzlichen Entzückens sagt, dass sie den Freund in der Ferne gewahr geworden. Sie streckt sich höher und höher, und, um besser den Raum zu übersehen, eilt sie zur Treppe zurück, von deren oberster Stufe aus sie dem Herannahenden zuwinkt.",
             "en": "Alarmed, Brangäne turns away and climbs an outer stair toward the battlements, slowly disappearing. Isolde listens and peers timidly down a tree-lined path. As her longing grows, she steps closer and looks more boldly. She waves a cloth, at first rarely, then more often, and at last with passionate impatience, faster and faster. A sudden gesture of delight shows she has spotted her beloved in the distance. She stretches higher to see him, then hurries back to the stairs and waves to him from the top step."
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
   {
     "number": 2,
-    "title": "Der Liebesnacht",
+    "title": "Die Liebesnacht",
     "cast": "Tristan, Isolde, Stimme Brangänes",
     "summary": "Tristan and Isolde meet in secret and turn away from the daylight world, longing to dissolve into the night. Brangäne’s warnings go unheard until the hunt returns at dawn.",
     "sections": [
@@ -283,7 +284,8 @@ export const tristanActTwoScenes = [
             "it": "Ohne Nennen, ohne Trennen, neu Erkennen, neu Entbrennen; endlos ewig, ein-bewusst: heiss erglühter Brust höchste Liebeslust! (Sie bleiben in verzückter Stellung)",
             "en": "Without names, without separation, newly recognized, newly aflame; endless, eternal, one in consciousness: from hearts glowing hot, the highest rapture of love! (They remain in an ecstatic embrace.)"
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   },
@@ -371,7 +373,8 @@ export const tristanActTwoScenes = [
             "it": "Als Melot ihm das Schwert entgegenstreckt, lässt Tristan das seinige fallen und sinkt verwundet in Kurwenals Arme. Isolde stürzt sich an seine Brust. Marke hält Melot zurück. Der Vorhang fällt schnell.",
             "en": "As Melot thrusts his sword toward him, Tristan drops his own and sinks wounded into Kurwenal’s arms. Isolde throws herself against his breast. Marke holds Melot back. The curtain falls swiftly."
           }
-        ]
+        ],
+        "type": "Dialog"
       }
     ]
   }
