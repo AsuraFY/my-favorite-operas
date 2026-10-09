@@ -1,4 +1,4 @@
-// Act III, Scene 1 of Wagner's Tristan und Isolde.
+// Act III, Scenes 1–2 of Wagner's Tristan und Isolde.
 // German text follows the 1859 libretto; English is a new translation.
 export const tristanActThreeScenes = [
   {
@@ -304,6 +304,49 @@ export const tristanActThreeScenes = [
             "speaker": "Kurwenal",
             "it": "Sie trag' ich herauf: trau' meinen Armen! Doch du, Tristan, bleib mir treulich am Bett! (Kurwenal eilt fort.)",
             "en": "I’ll carry her up; trust my arms! But you, Tristan, stay faithfully on your couch! (Kurwenal hurries away.)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "title": "Tristans Tod",
+    "cast": "Tristan, Isolde, Kurwenal",
+    "summary": "Isolde arrives just as Tristan rises from his sickbed. He dies in her arms, and she begs him to wake for one last hour.",
+    "sections": [
+      {
+        "label": "Dialog",
+        "turns": [
+          {
+            "speaker": "Tristan",
+            "it": "(in höchster Aufregung auf dem Lager sich mühend) O diese Sonne! Ha, dieser Tag! Ha, dieser Wonne sonnigster Tag! Jagendes Blut! Jauchzender Mut! Lust ohne Massen, freudiges Rasen! Auf des Lagers Bann wie sie ertragen! Wohlauf und daran, wo die Herzen schlagen! Tristan der Held, in jubelnder Kraft, hat sich vom Tod emporgerafft! (Er richtet sich hoch auf) Mit blutender Wunde bekämpft' ich einst Morolden: mit blutender Wunde erjag' ich mir heut' Isolden! (Er reisst sich den Verband der Wunde auf) Heia, mein Blut! Lustig nun fliesse! (Er springt vom Lager herab und schwankt vorwärts) Die mir die Wunde ewig schliesse, sie naht wie ein Held, sie naht mir zum Heil! Vergeh' die Welt meiner jauchzenden Eil'!",
+            "en": "(Straining to rise from the couch in great agitation) O this sun! Ah, this day! Ah, sunniest day of bliss! Blood racing! Courage rejoicing! Boundless pleasure, joyful frenzy! How can I endure the prison of this bed? Up and away, where hearts beat! Tristan the hero, in exultant strength, has wrested himself from death! (He rises high.) With a bleeding wound I once fought Morold; with a bleeding wound I win Isolde today! (He tears open the bandage.) Hurrah, my blood! Flow freely now! (He leaps from the couch and staggers forward.) She who will close my wound forever approaches like a hero; she comes to save me! Let the world perish before my jubilant haste!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(von aussen) Tristan! Geliebter!",
+            "en": "(Outside) Tristan! Beloved!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(in der furchtbarsten Aufregung) Wie, hör' ich das Licht? Die Leuchte, ha! Die Leuchte verlischt! Zu ihr, zu ihr! (Isolde eilt atemlos herein. Tristan stürzt sich ihr schwankend entgegen; sie empfängt ihn in ihren Armen. Er sinkt langsam zu Boden.)",
+            "en": "(In terrible agitation) What—is that the light I hear? The beacon, ah! The beacon is going out! To her, to her! (Isolde rushes in breathlessly. Tristan staggers toward her; she catches him in her arms. He slowly sinks to the floor.)"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Tristan! Ha!",
+            "en": "Tristan! Ah!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(sterbend zu ihr aufblickend) Isolde! (Er stirbt.)",
+            "en": "(Looking up at her as he dies) Isolde! (He dies.)"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Ha! Ich bin's, ich bin's, süssester Freund! Auf, noch einmal hör' meinen Ruf! Isolde ruft: Isolde kam, mit Tristan treu zu sterben! Bleibst du mir stumm? Nur eine Stunde, nur eine Stunde bleibe mir wach! So bange Tage wachte sie sehnend, um eine Stunde, mit dir noch zu wachen: betrügt Isolden, betrügt sie Tristan um dieses einzige, ewig kurze letzte Weltenglück? Die Wunde? Wo? Lass sie mich heilen! Dass wonnig und hehr die Nacht wir teilen; nicht an der Wunde, an der Wunde stirb mir nicht: uns beiden vereint erlösche das Lebenslicht! Gebrochen der Blick! Still das Herz! Nicht eines Atems flücht'ges Wehn! Muss sie nun jammernd vor dir stehn, die sich wonnig dir zu vermählen mutig kam übers Meer? Zu spät! Trotziger Mann! Strafst du mich so mit härtestem Bann? Ganz ohne Huld meiner Leidens-Schuld? Nicht meine Klagen darf ich dir sagen? Nur einmal, ach! nur einmal noch! Tristan! Ha! horch! Er wacht! Geliebter! (Sie sinkt bewusstlos über der Leiche zusammen.)",
+            "en": "Ah! It is I, it is I, sweetest friend! Rise, hear my call once more! Isolde cries: Isolde came, faithful to die with Tristan! Will you remain silent to me? Stay awake for just one hour, just one hour! Through such anxious days she kept watch in longing, longing to keep watch with you for one hour more. Will Tristan cheat Isolde of this one, eternally brief, final happiness in the world? Your wound—where is it? Let me heal it, so we may share the night in bliss and glory. Do not die of the wound—of the wound! Let the light of life go out for us together! Your gaze is broken; your heart is still. Not even a fleeting breath! Must she now stand grieving before you, she who came bravely across the sea to be joyfully joined to you? Too late! Defiant man! Do you punish me with the harshest ban? No mercy for the guilt of my suffering? May I not tell you my lament? Just once, ah, just once more! Tristan! Ah! Listen—he wakes! Beloved! (She collapses unconscious over his body.)"
           }
         ]
       }
