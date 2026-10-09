@@ -156,7 +156,9 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
       return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
         '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
-        ' <span>·</span> Scene ' + scene.number + '</h3><div class="opera-outline__sections">' +
+        ' <span>·</span> Scene ' + scene.number +
+        (scene.title ? ' <span>·</span> ' + escapeHtml(scene.title) + (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') : '') +
+        '</h3><div class="opera-outline__sections">' +
         scene.sections.map((section, index) => {
           const presentation = sectionPresentation(scene, section, index);
           const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number + '&item=' + index;
