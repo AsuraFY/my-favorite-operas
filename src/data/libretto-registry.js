@@ -39,6 +39,7 @@ const cosi = {
   recitativeLabel: "Recitativo",
   sceneOriginalPrefix: "Scena",
   stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "Stage direction",
   translatedForms: { Terzetto: "Trio", Duetto: "Duet", Aria: "Aria" },
   acts: [
     { number: 1, originalHeading: "Atto Primo", scenes: cosiActOneScenes },

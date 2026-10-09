@@ -235,9 +235,12 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     if (speaker === directionSpeaker) {
       const original = turn.original ?? turn.it ?? "";
       const translation = turn.translation ?? turn.en ?? "";
-      return ['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german"><p>' +
-        formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
-        formatLibrettoText(translation, false) + '</p></div></div>'];
+      const stageDirectionLabel = libretto.stageDirectionLabel
+        ? '<span class="libretto-speaker libretto-speaker--stage-direction">' + escapeHtml(libretto.stageDirectionLabel) + '</span>'
+        : "";
+      return ['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
+        stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+        stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>'];
     }
     const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "");
     const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "");
