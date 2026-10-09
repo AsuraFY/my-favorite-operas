@@ -67,6 +67,10 @@ test("Tristan outline follows Spotify tracks and formats the bilingual libretto 
   assert.ok(outline.includes("Hab acht, Tristan!"));
   assert.ok(outline.includes("O sink hernieder, Nacht der Liebe"));
   assert.ok(outline.includes("Mild und leise (Isoldes Liebestod)"));
+  window.location.hash = "#/operas/tristan-und-isolde?act=2&scene=2";
+  const secondActOpening = reader.scene(2);
+  assert.ok(secondActOpening.includes("Isolde! Geliebte!"));
+  assert.ok(secondActOpening.includes("Tristan! Geliebter!"));
   assert.ok(outline.includes("#/operas/tristan-und-isolde?act=3&scene=3&item=0"));
   assert.ok(!outline.includes("Isoldes Aufbegehren"));
   assert.ok(!outline.includes(">Dialog</span>"));
