@@ -103,8 +103,23 @@ export const tristanActTwoScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "Tristan und Isolde stürzen einander entgegen und umarmen sich stürmisch.",
-            "en": "Tristan and Isolde rush toward one another and embrace passionately."
+            "it": "Tristan stürzt herein.",
+            "en": "Tristan rushes in."
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Isolde! Geliebte!",
+            "en": "Isolde! Beloved!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Tristan! Geliebter!",
+            "en": "Tristan! Beloved!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Stürmische Umarmungen beider, unter denen sie in den Vordergrund gelangen.",
+            "en": "They embrace passionately as they move toward the foreground."
           },
           {
             "speaker": "Isolde",
