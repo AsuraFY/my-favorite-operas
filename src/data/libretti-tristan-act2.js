@@ -1,4 +1,4 @@
-// Act II, Scenes 1–3 of Wagner's Tristan und Isolde.
+// Act II of Wagner's Tristan und Isolde.
 // German text follows the 1859 libretto; English is a new translation.
 export const tristanActTwoScenes = [
   {
@@ -42,7 +42,7 @@ export const tristanActTwoScenes = [
           },
           {
             "speaker": "Brangäne",
-            "it": "Der deiner harrt—oh, hear my warning!—des harren Späher zur Nacht. Weil du erblindet, wähnst du den Blick der Welt erblödet für euch? Da dort an Schiffes Bord von Tristans bebender Hand die bleiche Braut, kaum ihrer mächtig, König Marke empfing, als alles verwirrt auf die Wankende sah; der güt’ge König, mild besorgt, die Mühen der langen Fahrt, die du littest, laut beklagte: ein einz’ger war’s, ich achtet’ es wohl, der nur Tristan fasst’ ins Auge; mit böslicher List, lauerndem Blick, sucht’ er in seiner Miene zu finden, was ihm diene. Tückisch lauschend treff ich ihn oft: der heimlich euch umgarnt, vor Melot seid gewarnt!",
+            "it": "Der deiner harrt—o hör mein Warnen!—des harren Späher zur Nacht. Weil du erblindet, wähnst du den Blick der Welt erblödet für euch? Da dort an Schiffes Bord von Tristans bebender Hand die bleiche Braut, kaum ihrer mächtig, König Marke empfing, als alles verwirrt auf die Wankende sah; der güt’ge König, mild besorgt, die Mühen der langen Fahrt, die du littest, laut beklagte: ein einz’ger war’s, ich achtet’ es wohl, der nur Tristan fasst’ ins Auge; mit böslicher List, lauerndem Blick sucht er in seiner Miene zu finden, was ihm diene. Tückisch lauschend treff’ ich ihn oft: der heimlich euch umgarnt, vor Melot seid gewarnt!",
             "en": "The one who waits for you—oh, heed my warning!—is watched for in the night. Have you become so blind that you think the world has lost its sight of you? There on the ship, Tristan’s trembling hand led the pale bride, scarcely able to stand, to King Marke. All looked in confusion at her faltering steps; the kindly king openly lamented the hardships of your long voyage. But one man, I watched him closely, kept his eyes only on Tristan. With malicious cunning and a watchful gaze he searched Tristan’s face for something to use. I often catch him listening in secret. Beware of Melot, who is secretly ensnaring you!"
           },
           {
