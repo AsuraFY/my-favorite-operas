@@ -51,7 +51,7 @@ test("Tristan outline follows Spotify tracks and formats the bilingual libretto 
       const english = turn.en || turn.translation || "";
       assert.ok(german.trim());
       assert.ok(english.trim());
-      assert.equal((german.match(/\\([^()]*\\)/g) || []).length, (english.match(/\\([^()]*\\)/g) || []).length,
+      assert.equal((german.match(/\([^()]*\)/g) || []).length, (english.match(/\([^()]*\)/g) || []).length,
         "inline stage directions should have matching English translations");
     }
     scenes++;
