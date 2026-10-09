@@ -1,4 +1,4 @@
-// Act II, Scenes 1–2 of Wagner's Tristan und Isolde.
+// Act II, Scenes 1–3 of Wagner's Tristan und Isolde.
 // German text follows the 1859 libretto; English is a new translation.
 export const tristanActTwoScenes = [
   {
@@ -282,6 +282,94 @@ export const tristanActTwoScenes = [
             "speaker": "Beide",
             "it": "Ohne Nennen, ohne Trennen, neu Erkennen, neu Entbrennen; endlos ewig, ein-bewusst: heiss erglühter Brust höchste Liebeslust! (Sie bleiben in verzückter Stellung)",
             "en": "Without names, without separation, newly recognized, newly aflame; endless, eternal, one in consciousness: from hearts glowing hot, the highest rapture of love! (They remain in an ecstatic embrace.)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "title": "Der Tag bricht an",
+    "cast": "Tristan, Isolde, König Marke, Melot, Kurwenal, Brangäne, Hofleute",
+    "summary": "Marke and his court surprise the lovers at dawn. Marke grieves over Tristan’s betrayal; Tristan asks Isolde to follow him into the night, then falls wounded when Melot attacks.",
+    "sections": [
+      {
+        "label": "Dialog",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Die Vorigen. Kurwenal, Brangäne, Marke, Melot und Hofleute. Brangäne stösst einen grellen Schrei aus. Kurwenal stürzt mit entblösstem Schwerte herein. Marke, Melot und die Hofleute in Jägertracht kommen aus dem Baumgang und halten entsetzt vor den Liebenden an. Brangäne stürzt auf Isolde zu. Tristan breitet den Mantel aus, um Isolde vor den Blicken der Ankommenden zu verbergen. Morgendämmerung.",
+            "en": "The people already present, with Kurwenal, Brangäne, Marke, Melot, and members of the court. Brangäne gives a piercing cry. Kurwenal rushes in with his sword drawn. Marke, Melot, and the hunting party emerge from the trees and stop in horror before the lovers. Brangäne hurries to Isolde. Tristan spreads his cloak to shield her from the newcomers. Dawn breaks."
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Rette dich, Tristan!",
+            "en": "Save yourself, Tristan!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(nach längerem Schweigen) Der öde Tag zum letztenmal!",
+            "en": "(After a long silence) This desolate day, for the last time!"
+          },
+          {
+            "speaker": "Melot",
+            "it": "(zu Marke) Das sollst du, Herr, mir sagen, ob ich ihn recht verklagt? Das dir zum Pfand ich gab, ob ich mein Haupt gewahrt? Ich zeigt’ ihn dir in offner Tat: Namen und Ehr’ hab ich getreu vor Schande dir bewahrt.",
+            "en": "(To Marke) You must tell me, my lord: did I accuse him rightly? By giving you this pledge, have I safeguarded my own head? I showed him to you in the act itself; faithfully I preserved your name and honour from disgrace."
+          },
+          {
+            "speaker": "Marke",
+            "it": "(nach tiefer Erschütterung, mit bebender Stimme) Tatest du’s wirklich? Wähnst du das? Sieh ihn dort, den treuesten aller Treuen; blick auf ihn, den freundlichsten der Freunde: seiner Treue freister Tat traf mein Herz mit feindlichstem Verrat! Trog mich Tristan, sollt’ ich hoffen, was sein Trügen mir getroffen, sei durch Melots Rat redlich mir bewahrt?",
+            "en": "(Deeply shaken, his voice trembling) Did you truly do this? Do you believe it? Look there at the most faithful of the faithful; look at the kindest of friends. His freest act of loyalty has struck my heart as the bitterest betrayal! If Tristan deceived me, should I hope that Melot’s counsel could honestly preserve what Tristan’s deception has destroyed?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(krampfhaft heftig) Tagsgespenster! Morgenträume! Täuschend und wüst! Entschwebt! Entweicht!",
+            "en": "(With convulsive force) Phantoms of day! Dreams of morning! Deceptive and desolate! Disappear! Be gone!"
+          },
+          {
+            "speaker": "Marke",
+            "it": "(mit tiefer Ergriffenheit) Mir dies? Dies, Tristan, mir? Wohin nun Treue, da Tristan mich betrog? Wohin nun Ehr’ und echte Art, da aller Ehren Hort, da Tristan sie verlor? Die Tristan sich zum Schild erkor, wohin ist Tugend nun entflohn, da meinen Freund sie flieht, da Tristan mich verriet?",
+            "en": "(Deeply moved) This to me? This, Tristan, from you? Where now is loyalty, since Tristan deceived me? Where are honour and integrity, since Tristan, the very guardian of all honour, has lost them? Where has the virtue fled that Tristan chose as his shield, now that it abandons my friend and Tristan has betrayed me?"
+          },
+          {
+            "speaker": "Marke",
+            "it": "Wozu die Dienste ohne Zahl, der Ehren Ruhm, der Grösse Macht, die Marken du gewannst; musst’ Ehr’ und Ruhm, Gröss’ und Macht, musste die Dienste ohne Zahl dir Markes Schmach bezahlen? Dünkte zu wenig dich sein Dank, dass, was du ihm erworben, Ruhm und Reich, er zu Erb’ und Eigen dir gab? Da kinderlos einst schwand sein Weib, so liebt’ er dich, dass nie aufs neu sich Marke wollt vermählen. Da alles Volk zu Hof und Land mit Bitt’ und Dräuen in ihn drang, die Königin dem Lande, die Gattin sich zu kiesen; da selber du den Ohm beschworst, des Hofes Wunsch, des Landes Willen gütlich zu erfüllen; in Wehr wider Hof und Land, in Wehr selbst gegen dich, mit List und Güte weigerte er sich, bis, Tristan, du ihm drohtest, für immer zu meiden Hof und Land, würdest du selber nicht entsandt, dem König die Braut zu frein, da liess er’s denn so sein.",
+            "en": "What purpose had the countless services, the fame of honour, the power and greatness you won for me? Did my disgrace have to repay your honour, fame, greatness, power, and all those services? Was my gratitude too little for you, though I gave you as inheritance and property the fame and realm you had won for me? When my wife died childless, I loved you so much that I would never marry again. Yet the people of court and country pressed me, with pleas and threats, to choose a queen for the land and a wife for myself. You yourself urged your uncle to fulfil the court’s wish and the country’s will. Though I resisted the court, the land, and even you, with both cunning and kindness, I refused—until you threatened to leave court and country forever unless I sent you to win the bride for your king. Then I finally gave way."
+          },
+          {
+            "speaker": "Marke",
+            "it": "Dies wundervolle Weib, das mir dein Mut gewann, wer durft’ es sehen, wer es kennen, wer mit Stolze sein es nennen, ohne selig sich zu preisen? Der mein Wille nie zu nahen wagte, der mein Wunsch ehrfurchtscheu entsagte, die so herrlich hold erhaben mir die Seele musste laben, trotz Feind und Gefahr, die fürstliche Braut brachtest du mir dar. Nun, da durch solchen Besitz mein Herz du fühlsamer schufst als sonst dem Schmerz, dort wo am weichsten, zart und offen, würd’ ich getroffen, nie zu hoffen, dass je ich könnte gesunden: warum so sehrend, Unseliger, dort nun mich verwunden? Dort mit der Waffe quälendem Gift, das Sinn und Hirn mir sengend versehrt, das mir dem Freund die Treue verwehrt, mein offnes Herz erfüllt mit Verdacht, dass ich nun heimlich in dunkler Nacht den Freund lauschend beschleiche, meiner Ehren Ende erreiche? Die kein Himmel erlöst, warum mir diese Hölle? Die kein Elend sühnt, warum mir diese Schmach? Den unerforschlich tief geheimnisvollen Grund, wer macht der Welt ihn kund?",
+            "en": "Who dared behold this wondrous woman, whom your courage won for me, know her, call her proudly his own, without counting himself blessed? I never dared approach her; my desire renounced her in reverent awe. So wondrous, gracious, exalted, she had to nourish my soul. Despite enemy and danger, you brought me this royal bride. Now that such possession has made my heart more sensitive to pain than before, why, wretched man, wound me in the place where I am softest, tenderest, most exposed—where I can never hope to heal? Why poison me with this tormenting weapon, scorching mind and reason, denying me faith in my friend, filling my open heart with suspicion, until in the dark of night I secretly spy on my friend and bring my honour to ruin? If no heaven can redeem me, why this hell? If no suffering can atone for it, why this disgrace? Who can make known to the world the unfathomably deep and mysterious cause?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(mitleidig das Auge zu Marke erhebend) O König, das kann ich dir nicht sagen; und was du frägst, das kannst du nie erfahren. (Er wendet sich zu Isolde) Wohin nun Tristan scheidet, willst du, Isold’, ihm folgen? Dem Land, das Tristan meint, der Sonne Licht nicht scheint: es ist das dunkel nächt’ge Land, daraus die Mutter mich entsandt, als, den im Tode sie empfangen, im Tod sie liess an das Licht gelangen. Was, da sie mich gebar, ihr Liebesberge war, das Wunderreich der Nacht, aus der ich einst erwacht; das bietet dir Tristan, dahin geht er voran: ob sie ihm folge treu und hold, das sag’ ihm nun Isold’!",
+            "en": "(Raising his eyes to Marke with compassion) O king, I cannot tell you; and what you ask, you can never know. (Turning to Isolde) Where Tristan now departs, will you follow him, Isolde? To the land Tristan means, where the sun’s light does not shine: the dark land of night from which my mother sent me forth, having conceived me in death and brought me into the light in death. What was her refuge of love when she gave birth to me—the wondrous realm of night from which I once awoke—that is what Tristan offers you; he goes ahead. Whether she follows him faithfully and lovingly, Isolde must tell him now!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Als für ein fremdes Land der Freund sie einstens warb, dem Unholden treu und hold musst’ Isolde folgen. Nun führst du in dein Eigen, dein Erbe mir zu zeigen; wie flöh’ ich wohl das Land, das alle Welt umspannt? Wo Tristans Haus und Heim, da kehr Isolde ein: auf dem sie folge treu und hold, den Weg nun zeig Isold’!",
+            "en": "When once my beloved wooed her for a foreign land, Isolde had to follow him faithfully and lovingly into the hostile one. Now you lead me into your own domain, to show me your inheritance. How could I flee the land that embraces the whole world? Where Tristan’s home and hearth are, there Isolde will enter. She will follow him faithfully and lovingly; now show Isolde the way!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Tristan neigt sich langsam über Isolde und küsst sie sanft auf die Stirn. Melot fährt wütend auf.",
+            "en": "Tristan slowly bends over Isolde and gently kisses her forehead. Melot springs up in fury."
+          },
+          {
+            "speaker": "Melot",
+            "it": "(das Schwert ziehend) Verräter! Ha! Zur Rache, König! Duldest du diese Schmach?",
+            "en": "(Drawing his sword) Traitor! Ha! Avenge this, king! Will you endure this disgrace?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(zieht sein Schwert und wendet sich schnell um) Wer wagt sein Leben an das meine? (Er heftet den Blick auf Melot) Mein Freund war der, er minnte mich hoch und teuer; um Ehr’ und Ruhm mir war er besorgt wie keiner. Zum Übermut trieb er mein Herz; die Schar führt’ er, die mich gedrängt, Ehr’ und Ruhm mir zu mehren, dem König dich zu vermählen! Dein Blick, Isolde, blendet’ auch ihn; aus Eifer verriet mich der Freund dem König, den ich verriet! (Er dringt auf Melot ein) Wehr dich, Melot!",
+            "en": "(Drawing his sword and turning swiftly) Who dares stake his life against mine? (Fixing his eyes on Melot) He was my friend; he loved me dearly and treasured me. No one cared more for my honour and fame. He drove my heart toward daring; he led the band that urged me to win greater honour and fame by marrying you to the king! Your gaze, Isolde, blinded him too; in his zeal, my friend betrayed me to the king whom I betrayed! (He advances on Melot.) Defend yourself, Melot!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Als Melot ihm das Schwert entgegenstreckt, lässt Tristan das seinige fallen und sinkt verwundet in Kurwenals Arme. Isolde stürzt sich an seine Brust. Marke hält Melot zurück. Der Vorhang fällt schnell.",
+            "en": "As Melot thrusts his sword toward him, Tristan drops his own and sinks wounded into Kurwenal’s arms. Isolde throws herself against his breast. Marke holds Melot back. The curtain falls swiftly."
           }
         ]
       }
