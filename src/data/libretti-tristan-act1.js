@@ -76,7 +76,9 @@ export const tristanActOneScenes = [
             "en": "Brangäne quickly draws the curtains apart at the center."
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Isoldes Aufbegehren",
+        "translatedTitle": "Isolde’s Defiance"
       }
     ]
   },
@@ -215,7 +217,9 @@ export const tristanActOneScenes = [
             "en": "His head hangs in Ireland, tribute paid by England: Hail, our hero Tristan, who knows how to pay the price!"
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Tristans Bericht",
+        "translatedTitle": "Tristan’s Account"
       }
     ]
   },
@@ -354,7 +358,9 @@ export const tristanActOneScenes = [
             "en": "That means we are sailing fast. Woe is me! Land is near!"
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Isoldes Erinnerung an Tantris",
+        "translatedTitle": "Isolde Remembers Tantris"
       }
     ]
   },
@@ -498,7 +504,9 @@ export const tristanActOneScenes = [
             "en": "(To Kurwenal) Let Lord Tristan come near!"
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Isoldes Sühneforderung",
+        "translatedTitle": "Isolde’s Demand for Atonement"
       }
     ]
   },
@@ -862,7 +870,9 @@ export const tristanActOneScenes = [
             "en": "(A burst of general cheering) Hail Cornwall! (Trumpets sound from the shore. Some people climb overboard; others lay a gangplank. The expected arrival is imminent as the curtain falls.)"
           }
         ],
-        "type": "Dialog"
+        "type": "Passage",
+        "originalTitle": "Der Liebestrank",
+        "translatedTitle": "The Love Potion"
       }
     ]
   }
