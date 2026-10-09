@@ -497,5 +497,368 @@ export const tristanActOneScenes = [
         ]
       }
     ]
+  },
+  {
+    "number": 5,
+    "title": "Der Liebestrank",
+    "cast": "Tristan, Isolde, Brangäne, Kurwenal, Schiffsvolk, Ritter und Knappen",
+    "summary": "Tristan and Isolde drink what they believe is a death potion, but Brangäne has substituted the love potion. They declare their passion as King Marke arrives.",
+    "sections": [
+      {
+        "label": "Dialog",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Kurwenal geht zurück. Brangäne wendet sich kaum ihrer selbst mächtig ab; Isolde schreitet langsam und gefasst zum Ruhebett und stützt sich darauf, den Blick auf den Eingang gerichtet. Tristan tritt ein und bleibt ehrerbietig an der Tür stehen. Isolde versinkt aufgewühlt in seinen Anblick. Langes Schweigen.",
+            "en": "Kurwenal withdraws. Brangäne, barely master of herself, turns away. Isolde walks slowly and with dignity to the couch, leaning against it as she fixes her gaze on the entrance. Tristan enters and remains respectfully by the door. Isolde is swept up in looking at him. A long silence."
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Begehrt, Herrin, was Ihr wünscht.",
+            "en": "You sent for me, my lady. What do you wish?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Wüsstest du nicht, was ich begehre, da doch die Furcht, mir's zu erfüllen, fern meinem Blick dich hielt?",
+            "en": "Would you not know what I desire, since fear of granting it kept you far from my sight?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Ehrfurcht hielt mich in Acht.",
+            "en": "Respect held me back."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Der Ehre wenig botest du mir; mit off'nem Hohn verwehrtest du Gehorsam meinem Gebot.",
+            "en": "You showed me little respect; with open scorn you refused to obey my command."
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Gehorsam einzig hielt mich in Bann.",
+            "en": "Obedience alone held me bound."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "So dankt' ich Geringes deinem Herrn; riet dir sein Dienst Unsitte gegen sein eigen Gemahl?",
+            "en": "Was I so little in your lord's debt? Did service to him counsel such discourtesy toward his own bride?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Sitte lehrt, wo ich gelebt: zur Brautfahrt der Brautwerber meide fern die Braut.",
+            "en": "The custom of my homeland teaches that, on the bridal voyage, the bridegroom's envoy keeps far from the bride."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Aus welcher Sorg'?",
+            "en": "For what reason?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Fragt die Sitte!",
+            "en": "Ask the custom!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Da du so sittsam, mein Herr Tristan, auch einer Sitte sei nun gemahnt: den Feind dir zu sühnen, soll er als Freund dich rühmen.",
+            "en": "Since you are so mindful of custom, Lord Tristan, remember another: make amends to your enemy, so that she may praise you as a friend."
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Und welchen Feind?",
+            "en": "And what enemy?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Frag deine Furcht! Blutschuld schwebt zwischen uns.",
+            "en": "Ask your fear! A blood-debt lies between us."
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Die ward gesühnt.",
+            "en": "It was atoned."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Nicht zwischen uns!",
+            "en": "Not between us!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Im offnen Feld, vor allem Volk, ward Urfehde geschworen.",
+            "en": "In the open field, before all the people, a formal reconciliation was sworn."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Nicht da war's, wo ich Tantris barg, wo Tristan mir verfiel. Da stand er herrlich, hehr und heil; doch was er schwur, das schwurt ich nicht: zu schweigen hatt' ich gelernt. Da in stiller Kammer krank er lag, mit dem Schwerte stumm ich vor ihm stund: schwieg da mein Mund, bannt' ich meine Hand, doch was einst mit Hand und Mund ich gelobt, das schwur ich schweigend zu halten. Nun will ich des Eides walten.",
+            "en": "Not there, where I sheltered Tantris and Tristan lay at my mercy. He stood there then, noble, radiant, and whole; but what he swore, I did not swear: I had learned to keep silent. When he lay ill in the quiet chamber, I stood before him in silence with my sword. My mouth was silent and I restrained my hand, but what I had once pledged by hand and word, I swore silently to uphold. Now I will fulfil that oath."
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Was schwurt Ihr, Frau?",
+            "en": "What did you swear, my lady?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Rache für Morold!",
+            "en": "Revenge for Morold!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Müht Euch die?",
+            "en": "Does that still torment you?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Wagst du zu höhnen? Angelobt war er mir, der hehre Irenheld; seine Waffen hatt' ich geweiht; für mich zog er zum Streit. Da er gefallen, fiel meine Ehr': in des Herzens Schwere schwur ich den Eid, würd' ein Mann den Mord nicht sühnen, wollt' ich Magd mich des erkühnen. Siech und matt in meiner Macht, warum ich dich da nicht schlug? Das sag dir selbst mit leichtem Fug. Ich pflag des Wunden, dass den Heilgesunden rächend schlüge der Mann, der Isolde ihm abgewann. Dein Los nun selber magst du dir sagen! Da die Männer sich all ihm vertragen, wer muss nun Tristan schlagen?",
+            "en": "Do you dare mock me? The noble Irish hero was promised to me; I had blessed his weapons; he went to battle for me. When he fell, my honour fell with him. In the heaviness of my heart I swore that if no man avenged his murder, I, a maiden, would do it myself. You were sick and helpless in my power; why did I not strike you then? You can answer that easily enough. I tended your wound so that the man who won Isolde from him could avenge him once healed. Now tell me your own fate! Since all men have made peace with him, who must strike Tristan?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Bleich und düster) War Morold dir so wert, nun wieder nimm das Schwert und führ es sicher und fest, dass du nicht dir's entfallen lässt! (Er reicht ihr sein Schwert dar.)",
+            "en": "(Pale and dark) If Morold was so dear to you, take up the sword again and guide it firmly and surely, so you do not let it fall! (He offers her his sword.)"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Wie sorgt' ich schlecht um deinen Herren; was würde König Marke sagen, erschlüg' ich ihm den besten Knecht, der Kron und Land ihm gewann, den allertreusten Mann? Dünkt dich so wenig, was er dir dankt, bringst du die Irin ihm als Braut, dass er nicht schölte, schlüg' ich den Werber, der Urfehde-Pfand so treu ihm liefert zur Hand? Wahre dein Schwert! Da einst ich's schwang, als mir die Rache im Busen rang, als dein messender Blick mein Bild sich stahl, ob ich Herrn Marke taug als Gemahl: das Schwert, da liess ich's sinken. Nun lass uns Sühne trinken!",
+            "en": "How poorly I would serve your lord! What would King Marke say if I slew for him his finest servant, the man who won him crown and land, his most loyal knight? Do you think he values you so little, when you bring him the Irish bride, that he would blame me for striking down the envoy who so faithfully delivers his pledge of peace? Keep your sword! When I once raised it, while vengeance struggled in my breast, your measuring gaze stole my image away, judging whether I would suit King Marke as a bride: then I let the sword fall. Now let us drink to atonement!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Isolde winkt Brangäne. Diese schaudert, zögert und beginnt auf Isoldes drängende Gebärde den Trank zu bereiten.",
+            "en": "Isolde signals to Brangäne. Brangäne shudders and hesitates, then begins preparing the potion under Isolde's urgent gesture."
+          },
+          {
+            "speaker": "Schiffsvolk",
+            "it": "(Von aussen) Ho! He! Ha! He! Am Obermast die Segel ein! Ho! He! Ha! He!",
+            "en": "(Outside) Ho! He! Ha! He! Furl the sails at the upper mast! Ho! He! Ha! He!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Aus düsterem Brüten auffahrend) Wo sind wir?",
+            "en": "(Starting from his dark reverie) Where are we?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Hart am Ziel! Tristan, gewinn ich die Sühne? Was hast du mir zu sagen?",
+            "en": "At our destination! Tristan, will I receive atonement? What have you to say to me?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Finster) Des Schweigens Herrin heisst mich schweigen: fass' ich, was sie verschwieg, verschweig ich, was sie nicht fasst.",
+            "en": "(Darkly) The mistress of silence commands me to be silent: I grasp what she kept silent, and I keep silent about what she does not grasp."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Dein Schweigen fass' ich, weichst du mir aus. Weigerst du die Sühne mir?",
+            "en": "I understand your silence: you evade me. Do you refuse me atonement?"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Auf Isoldes ungeduldigem Wink reicht Brangäne ihr die gefüllte Trinkschale. Isolde tritt mit dem Becher zu Tristan; er blickt ihr starr in die Augen.",
+            "en": "At Isolde's impatient signal, Brangäne hands her the filled drinking cup. Isolde approaches Tristan with it; he stares into her eyes."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Du hörst den Ruf? Wir sind am Ziel: in kurzer Frist stehn wir vor König Marke. Geleitest du mich, dünkt dich's nicht lieb, darfst du so ihm sagen: «Mein Herr und Ohm, sieh die dir an: ein sanftres Weib gewännst du nie. Ihren Angelobten erschlug ich ihr einst, sein Haupt sandt' ich ihr heim; die Wunde, die seine Wehr mir schuf, die hat sie hold geheilt; mein Leben lag in ihrer Macht: das schenkte mir die holde Magd, und ihres Landes Schand und Schmach, die gab sie mit darein, dein Ehgemahl zu sein. So guter Gaben holden Dank schuf mir ein süsser Sühnetrank; den bot mir ihre Huld, zu sühnen alle Schuld.»",
+            "en": "Do you hear the call? We have reached our destination; shortly we shall stand before King Marke. If you escort me, would it not please you to tell him: “My lord and uncle, look at her: you could never win a gentler wife. I once slew the man promised to her and sent his head home to her; the wound his weapon dealt me, she healed with tenderness. My life was in her hands, and the sweet maiden gave it back to me, along with the shame and disgrace of her country, in order to become your wife. For such generous gifts, a sweet potion of atonement was prepared for me; her favour offered it to atone for every wrong.”"
+          },
+          {
+            "speaker": "Schiffsvolk",
+            "it": "(Aussen) Auf das Tau! Anker ab!",
+            "en": "(Outside) To the ropes! Weigh anchor!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Wild auffahrend) Los den Anker! Das Steuer dem Strom! Den Winden Segel und Mast! (Er entreisst ihr die Trinkschale.) Wohl kenn ich Irlands Königin und ihrer Künste Wunderkraft. Den Balsam nützt' ich, den sie bot; den Becher nehm ich nun, dass ganz ich heut genese. Und achte auch des Sühne-Eids, den ich zum Dank dir sage! Tristans Ehre — höchste Treu'! Tristans Elend — kühnster Trotz! Trug des Herzens! Traum der Ahnung! Ew'ger Trauer einz'ger Trost: Vergessens güt'ger Trank, dich trink ich sonder Wank! (Er setzt an und trinkt.)",
+            "en": "(Rising fiercely) Let go the anchor! Give the helm to the current! Give sail and mast to the winds! (He snatches the cup from her.) I know well the Queen of Ireland and the wondrous power of her arts. I used the balm she offered; now I take the cup so that I may be healed completely today. I will also honour the oath of atonement I swear to you in gratitude! Tristan's honour—highest loyalty! Tristan's misery—boldest defiance! Deception of the heart! Dream of foreboding! The only comfort of eternal sorrow: gracious potion of forgetfulness, I drink you without a tremor! (He drinks.)"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Betrug auch hier? Mein die Hälfte! (Sie entwindet ihm den Becher.) Verräter! Ich trink sie dir! (Sie trinkt und wirft die Schale fort.)",
+            "en": "Treachery here too? Give me my half! (She wrests the cup from him.) Traitor! I drink it with you! (She drinks and throws the cup away.)"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Beide blicken einander starr und erschüttert an. Das Todesverlangen in ihren Augen weicht der Glut der Liebe; sie zittern, pressen die Hände ans Herz und an die Stirn, suchen einander mit den Blicken und finden sich in wachsender Sehnsucht.",
+            "en": "They stare at one another, rigid and shaken. The defiance of death in their eyes gives way to the ardour of love; trembling, they clutch at their hearts and brows, then search for each other's gaze and find it with growing longing."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Mit bebender Stimme) Tristan!",
+            "en": "(With a trembling voice) Tristan!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Überströmend) Isolde!",
+            "en": "(Overcome) Isolde!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(An seine Brust sinkend) Treuloser Holder!",
+            "en": "(Falling against his breast) Faithless beloved!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Mit Glut sie umfassend) Seligste Frau!",
+            "en": "(Embracing her passionately) Most blessed of women!"
+          },
+          {
+            "speaker": "Männer",
+            "it": "(Aus der Ferne hört man Trompeten; von aussen) Heil! König Marke Heil!",
+            "en": "(Trumpets sound in the distance; outside) Hail! Hail King Marke!"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Sie hatte sich verwirrt und schaudernd abgewandt und über Bord gelehnt. Nun wendet sie sich dem in Liebesumarmung versunkenen Paar zu und stürzt verzweifelt in den Vordergrund.) Wehe! Weh! Unabwendbar ew'ge Not für kurzen Tod! Tör'ger Treue trugvolles Werk blüht nun jammernd empor!",
+            "en": "(She had turned away in confusion and horror, leaning over the rail. Now she turns toward the lovers, lost in their embrace, and rushes forward in despair.) Woe! Woe! Unavoidable, eternal anguish for a brief death! The deceitful work of foolish loyalty now blooms in misery!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Verwirrt) Was träumte mir von Tristans Ehre?",
+            "en": "(Confused) What was I dreaming of Tristan's honour?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Was träumte mir von Isoldes Schmach?",
+            "en": "What was I dreaming of Isolde's disgrace?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Du mir verloren?",
+            "en": "Were you lost to me?"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Du mich verstossen?",
+            "en": "Had you rejected me?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Trügenden Zaubers tückische List!",
+            "en": "The treacherous trick of a deceptive spell!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Törigen Zürnens eitles Dräu'n!",
+            "en": "The empty threat of foolish anger!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Isolde!",
+            "en": "Isolde!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Tristan!",
+            "en": "Tristan!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Süsseste Maid!",
+            "en": "Sweetest maiden!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Trautester Mann!",
+            "en": "Dearest man!"
+          },
+          {
+            "speaker": "Beide",
+            "it": "Wie sich die Herzen wogend erheben! Wie alle Sinne wonnig erbeben! Sehnender Minne schwellendes Blühen, schmachtender Liebe seliges Glühen! Jach in der Brust jauchzende Lust! Isolde! Tristan! Welten entronnen, du mir gewonnen! Du mir einzig bewusst, höchste Liebeslust!",
+            "en": "How our hearts rise and surge! How every sense trembles with delight! Longing love swells into bloom; yearning passion glows in bliss! A sudden joy cries out within the breast! Isolde! Tristan! Escaped from the world, you are mine! You alone fill my awareness, highest rapture of love!"
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "Die Vorhänge werden weit auseinandergerissen; das ganze Schiff ist mit Rittern und Schiffsvolk bedeckt, die jubelnd zum nahen Ufer mit der hoch aufragenden Felsenburg winken. Tristan und Isolde bleiben einander zugewandt und nehmen das Geschehen nicht wahr.",
+            "en": "The curtains are torn wide open. The ship is covered with knights and sailors, cheering and waving toward the nearby shore, crowned by a towering fortress. Tristan and Isolde remain absorbed in one another, unaware of what is happening around them."
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Zu den Frauen, die auf ihren Wink aus dem Schiffsraum heraufsteigen) Schnell, den Mantel, den Königsschmuck! (Sie stürzt zwischen Tristan und Isolde.) Unsel'ge! Auf! Hört, wo wir sind! (Sie legt Isolde den Königsmantel an, ohne dass diese es bemerkt.)",
+            "en": "(To the women coming up from below at her signal) Quickly, the cloak, the royal ornaments! (She rushes between Tristan and Isolde.) Unhappy pair! Wake! Hear where we are! (She puts the royal mantle on Isolde, who does not notice.)"
+          },
+          {
+            "speaker": "Männer",
+            "it": "Heil! Heil! Heil! König Marke Heil! Heil dem König!",
+            "en": "Hail! Hail! Hail! Hail King Marke! Hail the king!"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "(Lebhaft herantretend) Heil Tristan, glücklicher Held! Mit reichem Hofgesinde, dort auf Nachen naht Herr Marke. Hei! Wie die Fahrt ihn freut, dass er die Braut sich freit!",
+            "en": "(Coming forward lively) Hail, Tristan, fortunate hero! With a splendid retinue, Lord Marke approaches there in boats. Ah, how pleased he is with this voyage to claim his bride!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "(Verwirrt aufblickend) Wer naht?",
+            "en": "(Looking up in confusion) Who is approaching?"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "Der König!",
+            "en": "The king!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Welcher König?",
+            "en": "Which king?"
+          },
+          {
+            "speaker": "Männer",
+            "it": "(Die Hüte schwenkend) Heil! König Marke Heil!",
+            "en": "(Waving their hats) Hail! Hail King Marke!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Verwirrt) Was ist, Brangäne? Welcher Ruf?",
+            "en": "(Confused) What is it, Brangäne? What is that cry?"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "Isolde! Herrin! Fassung nur heut!",
+            "en": "Isolde! My lady! Compose yourself now!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Wo bin ich? Leb ich? Ha! Welcher Trank?",
+            "en": "Where am I? Am I alive? Ah! What potion?"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Verzweiflungsvoll) Der Liebestrank.",
+            "en": "(In despair) The love potion."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "(Starrt entsetzt auf Tristan) Tristan!",
+            "en": "(Staring at Tristan in horror) Tristan!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Isolde!",
+            "en": "Isolde!"
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Muss ich leben? (Sie stürzt ohnmächtig an seine Brust.)",
+            "en": "Must I live? (She collapses fainting against his breast.)"
+          },
+          {
+            "speaker": "Brangäne",
+            "it": "(Zu den Frauen) Helft der Herrin!",
+            "en": "(To the women) Help my lady!"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "O Wonne voller Tücke! O truggeweihtes Glücke!",
+            "en": "O joy filled with treachery! O happiness sworn to deception!"
+          },
+          {
+            "speaker": "Männer",
+            "it": "(Ausbruch allgemeinen Jauchzens) Kornwall Heil! (Trompeten vom Lande her. Leute gehen über Bord; andere legen eine Brücke aus. Die erwartete Ankunft steht unmittelbar bevor; rasch fällt der Vorhang.)",
+            "en": "(A burst of general cheering) Hail Cornwall! (Trumpets sound from the shore. Some people climb overboard; others lay a gangplank. The expected arrival is imminent as the curtain falls.)"
+          }
+        ]
+      }
+    ]
   }
 ];
