@@ -87,7 +87,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       const href="#/operas/"+libretto.slug+"?act="+act+"&scene="+targetScene+"&item=0";
       return '<a class="section-nav-link is-song'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
         '><span class="section-nav-link__icon section-nav-link__icon--song" aria-hidden="true">♫</span>'+
-        '<span class="section-nav-link__label"><span class="section-nav-link__form">Track</span>'+
+        '<span class="section-nav-link__label">'+
         '<span class="section-nav-link__title">'+escapeHtml(track.title)+'</span>'+
         '<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(track.translation)+'</span></span></a>';
     }).join("");
