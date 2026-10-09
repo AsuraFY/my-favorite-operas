@@ -47,8 +47,12 @@ test("Tristan outline follows Spotify tracks and formats the bilingual libretto 
     assert.ok(!page.includes(">Dialog</span>"));
     assert.ok(count(page, /class="libretto-row/g) >= scene.sections.reduce((n, section) => n + section.turns.length, 0));
     for (const section of scene.sections) for (const turn of section.turns) {
-      assert.ok((turn.it || turn.original || "").trim());
-      assert.ok((turn.en || turn.translation || "").trim());
+      const german = turn.it || turn.original || "";
+      const english = turn.en || turn.translation || "";
+      assert.ok(german.trim());
+      assert.ok(english.trim());
+      assert.equal((german.match(/\\([^()]*\\)/g) || []).length, (english.match(/\\([^()]*\\)/g) || []).length,
+        "inline stage directions should have matching English translations");
     }
     scenes++;
     rows += scene.sections.reduce((n, section) => n + section.turns.length, 0);
