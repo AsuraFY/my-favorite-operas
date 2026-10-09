@@ -4,6 +4,7 @@ import { getOpera } from "./operas.js?v=opera-art-2";
 import { cosiActOneScenes } from "./libretti.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretti-act2.js?v=act2-18";
 import { barbiereActOneScenes } from "./libretti-barbiere-act1.js?v=barbiere-act1-1";
+import { barbiereActTwoScenes } from "./libretti-barbiere-act2.js?v=barbiere-act2-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -79,7 +80,10 @@ const barbiere = {
   sceneOriginalPrefix: "Scena",
   stageDirectionSpeaker: "Stage direction",
   translatedForms: { Cavatina: "Cavatina", Canzone: "Song", Duetto: "Duet", Aria: "Aria" },
-  acts: [{ number: 1, originalHeading: "Atto primo", scenes: barbiereActOneScenes }],
+  acts: [
+    { number: 1, originalHeading: "Atto primo", scenes: barbiereActOneScenes },
+    { number: 2, originalHeading: "Atto secondo", scenes: barbiereActTwoScenes }
+  ],
   sceneOrdinals: ["PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA", "DECIMA", "UNDICESIMA", "DODICESIMA", "TREDICESIMA", "QUATTORDICESIMA", "QUINDICESIMA", "SEDICESIMA"],
   synopsis: {
     eyebrow: "Gioachino Rossini · Opera buffa in two acts",
@@ -107,7 +111,7 @@ const barbiere = {
     "1:16": { "The Count": "disguised as a cavalry soldier" }
   },
   ensembleLabels: { "The Count and Figaro": "The Count & Figaro", "All": "Ensemble", Chorus: "Chorus" },
-  source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Act I; public-domain Italian text: https://www.librettidopera.it/barb_siv/a_01.html"
+  source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Act I; public-domain Italian text, Acts I–II: https://www.librettidopera.it/barb_siv/a_01.html and https://www.librettidopera.it/barb_siv/a_02.html"
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere };
