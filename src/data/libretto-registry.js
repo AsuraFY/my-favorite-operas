@@ -165,6 +165,7 @@ const macbeth = {
   mobileComposer: "Giuseppe Verdi",
   originalLanguage: "Italiano",
   translationLanguage: "English",
+  preserveLineBreaks: true,
   sceneOriginalPrefix: "Scena",
   sceneOrdinals: ["PRIMA"],
   stageDirectionSpeaker: "Stage direction",
