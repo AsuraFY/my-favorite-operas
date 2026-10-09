@@ -1838,9 +1838,6 @@ button { font: inherit; }
 .opera-outline__prelude {
   background: #f1eadf;
 }
-.opera-reading-page .libretto-row--stage-direction .libretto-speaker {
-  display: none;
-}
 .opera-reading-page .libretto-row--stage-direction .libretto-cell p {
   line-height: 1.55;
 }
