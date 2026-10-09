@@ -1,0 +1,207 @@
+// Act II of Rossini's Il barbiere di Siviglia.
+// Italian text follows the 1816 libretto; English is a new translation.
+export const barbiereActTwoScenes = [
+  {
+    number: 1, title: "Ma vedi il mio destino!", cast: "Bartolo",
+    summary: "Bartolo suspects that the cavalryman was sent by Almaviva to test Rosina's feelings.",
+    sections: [{ label: "Recitativo", turns: [
+      { speaker: "Bartolo", it: "Ma vedi il mio destino! Quel soldato, per quanto abbia cercato, niun lo conosce in tutto il reggimento. Io dubito... eh, cospetto! Che dubitar? Scommetto che dal conte d'Almaviva è stato qua spedito quel signore ad esplorar della Rosina il core.", en: "What a fate is mine! Though I have asked around, no one in the whole regiment knows that soldier. I have my doubts... But no, what is there to doubt? I wager Count Almaviva sent him here to sound Rosina's heart." },
+      { speaker: "Bartolo", it: "Nemmeno in casa propria sicuri si può star!... Ma io... Chi batte? Ehi, chi è di là? In casa io son; non v'è timore, aprite.", en: "One cannot even feel safe in one's own home!... But I... Who is knocking? Hey, who is there? I am at home; there is nothing to fear. Open up." }
+    ] }]
+  },
+  {
+    number: 2, title: "Pace e gioia il ciel vi dia", cast: "The Count, Bartolo",
+    summary: "Almaviva returns disguised as Don Alonso, a music teacher and Basilio's supposed substitute, and wins Bartolo's confidence with Rosina's intercepted note.",
+    sections: [
+      { label: "Duetto", turns: [
+        { speaker: "The Count", it: "Pace e gioia il ciel vi dia.", en: "May heaven grant you peace and joy." },
+        { speaker: "Bartolo", it: "Mille grazie, non s'incomodi.", en: "Many thanks; please don't trouble yourself." },
+        { speaker: "The Count", it: "Gioia e pace per mill'anni.", en: "Joy and peace for a thousand years." },
+        { speaker: "Bartolo", it: "Obbligato in verità. (Questo volto non m'è ignoto, non ravviso... non ricordo...)", en: "I am truly obliged. (That face is familiar; I cannot place him... I don't remember...)" },
+        { speaker: "The Count", it: "(Ah, se un colpo è andato a vuoto a gabbar questo balordo, la mia nuova metamorfosi più propizia a me sarà.) Gioia e pace, pace e gioia.", en: "(If one attempt to fool this fool has failed, my new disguise may serve me better.) Joy and peace, peace and joy." },
+        { speaker: "Bartolo", it: "Basta, basta, per pietà. (Ma che perfido destino! Ma che barbara giornata!)", en: "Enough, enough, I beg you. (What a cruel fate! What a wretched day!)" }
+      ] },
+      { label: "Recitativo", turns: [
+        { speaker: "The Count", it: "Don Alonso, professore di musica, ed allievo di don Basilio. Don Basilio sta male, il poverino, ed in sua vece...", en: "Don Alonso, music teacher and pupil of Don Basilio. Poor Don Basilio is ill, so in his place..." },
+        { speaker: "Bartolo", it: "Sta mal?... corro a vederlo.", en: "He is ill? I will go and see him." },
+        { speaker: "The Count", it: "Piano, piano, non è un mal così grave.", en: "Easy, easy; it is not a serious illness." },
+        { speaker: "The Count", it: "Stamane nella stessa locanda era meco d'alloggio, ed in mie mani per caso capitò questo biglietto dalla vostra pupilla a lui diretto.", en: "This morning he was staying at the same inn as I was, and by chance this note from your ward to him came into my hands." },
+        { speaker: "Bartolo", it: "Che vedo!... è sua scrittura!", en: "What do I see!... It is her handwriting!" },
+        { speaker: "The Count", it: "Si potrebbe farle credere che il conte di Rosina si fa gioco, e perciò...", en: "We might make her believe the Count is making sport of Rosina, and so..." },
+        { speaker: "Bartolo", it: "Una calunnia! Siete un vero scolar di don Basilio! Vo a chiamar la ragazza.", en: "A slander! You are a true pupil of Don Basilio! I will fetch the young lady." }
+      ] }
+    ]
+  },
+  {
+    number: 3, title: "Contro un cor che accende amore", cast: "Rosina, The Count, Bartolo, Figaro",
+    summary: "Rosina sings a lesson while Almaviva promises to help her. Figaro arrives to shave Bartolo and quietly steals the balcony key.",
+    sections: [
+      { label: "Aria", turns: [
+        { speaker: "Rosina", it: "Contro un cor che accende amore\ndi verace invitto ardore\ns'arma invan poter tiranno\ndi rigor, di crudeltà.\nD'ogni assalto vincitore\nsempre amor trionferà.\n\n(Ah, Lindoro mio tesoro...\nquesto cane di tutore\nah, che rabbia che mi fa!\nCaro, a te mi raccomando,\ntu mi salva, per pietà.)", en: "Against a heart set alight by love,\na true and unconquerable flame,\na tyrant's power arms itself\nin vain with harshness and cruelty.\nLove, victor over every assault,\nwill always triumph.\n\n(Ah, my dear Lindoro...\nthis dog of a guardian\ninfuriates me!\nMy dear, I turn to you;\nplease rescue me.)" },
+        { speaker: "The Count", it: "(Non temer, ti rassicura,\nsorte amica a noi sarà.)", en: "(Do not fear; take heart.\nFortune will be kind to us.)" },
+        { speaker: "Rosina", it: "Cara immagine ridente,\ndolce idea d'un lieto amore,\ntu m'accendi in petto il core,\ntu mi porti a delirar.", en: "Dear smiling image,\nsweet vision of happy love,\nyou set my heart aflame\nand make me dream." }
+      ] },
+      { label: "Arietta", turns: [
+        { speaker: "Bartolo", it: "Quando mi sei vicina,\namabile Rosina...\nL'aria dicea Giannina,\nma io dico Rosina.\nQuando mi sei vicina,\namabile Rosina,\nil cor mi balla in petto,\nmi balla il minuetto.", en: "When you are near me,\ndear Rosina...\nThe song says Giannina,\nbut I say Rosina.\nWhen you are near me,\ndear Rosina,\nmy heart dances in my breast,\ndancing a minuet." },
+        { speaker: "Figaro", it: "Bravo, signor barbiere?... Eh, niente affatto, scusi, son debolezze.", en: "Bravo, Signor Barber? Oh, not at all, excuse me; it was a weakness." }
+      ] },
+      { label: "Recitativo", turns: [
+        { speaker: "Figaro", it: "Vengo a farvi la barba, oggi vi tocca.", en: "I've come to shave you; today it is your turn." },
+        { speaker: "Bartolo", it: "Oggi non voglio.", en: "I don't want a shave today." },
+        { speaker: "Figaro", it: "Dite; non è fra quelle la chiave che apre quella gelosia?", en: "Tell me, isn't the newest key the one that opens the balcony grille?" },
+        { speaker: "Rosina", it: "Sì, certo è la più nuova.", en: "Yes, that is the newest one." },
+        { speaker: "Bartolo", it: "Animo, va tu stesso. Passato il corridoio, sopra l'armadio il tutto troverai. Bada non toccar nulla.", en: "Go on, fetch it yourself. Past the corridor, you will find everything on top of the wardrobe. Be careful not to touch anything." },
+        { speaker: "Figaro", it: "Eh, non son matto. Vado e torno. (Il colpo è fatto.)", en: "I'm not mad. I'll be right back. (The trick is done.)" },
+        { speaker: "Bartolo", it: "Tutto mi ha rotto: sei piatti, otto bicchieri, una terrina.", en: "He has broken everything: six plates, eight glasses, and a tureen." },
+        { speaker: "Figaro", it: "Vedete che gran cosa: ad una chiave se io non mi attaccava per fortuna, per quel corridoio così oscuro spezzato mi sarei la testa al muro.", en: "What a lucky thing I found a key; in that dark corridor I would otherwise have cracked my head against the wall." }
+      ] }
+    ]
+  },
+  {
+    number: 4, title: "Don Basilio!", cast: "Rosina, The Count, Figaro, Bartolo, Basilio",
+    summary: "Basilio arrives unexpectedly. Almaviva and Figaro convince him he has scarlet fever and pay him to leave.",
+    sections: [
+      { label: "Quintetto", turns: [
+        { speaker: "Rosina", it: "Don Basilio!...", en: "Don Basilio!..." },
+        { speaker: "The Count", it: "Cosa veggo!", en: "What do I see!" },
+        { speaker: "Figaro", it: "(Quale intoppo!...) ", en: "(What an obstacle!...) " },
+        { speaker: "Bartolo", it: "Come qua?", en: "What brings you here?" },
+        { speaker: "Basilio", it: "Servitor di tutti quanti.", en: "At your service, everyone." },
+        { speaker: "All", it: "(Che vuol dir tal novità? Qui franchezza ci vorrà; ah, di noi che mai sarà?)", en: "(What can this surprise mean? We must act boldly; what will become of us?)" },
+        { speaker: "Figaro", it: "Or che s'aspetta? Questa barba benedetta la facciamo, sì o no?", en: "What are we waiting for? Shall we get on with this blessed shave or not?" },
+        { speaker: "The Count", it: "Colla febbre, don Basilio, chi v'insegna a passeggiare? Siete giallo come un morto.", en: "With a fever, Don Basilio, who told you to go walking? You are as yellow as a corpse." },
+        { speaker: "Figaro", it: "Questa è febbre scarlattina. Via, prendete medicina, non vi state a rovinar.", en: "This is scarlet fever. Come, take your medicine; don't ruin your health." },
+        { speaker: "Basilio", it: "(Una borsa!... andate a letto!... ma che tutti sian d'accordo!...) Eh, non son sordo, non mi faccio più pregar.", en: "(A purse!... go to bed!... are they all in league?) I am not deaf; you needn't ask me again." },
+        { speaker: "All", it: "Andate, andate. Buona sera, mio signore, pace, sonno e sanità. Presto andate via di qua.", en: "Go, go. Good evening, sir; peace, sleep, and good health. Quickly, be off." }
+      ] },
+      { label: "Recitativo", turns: [
+        { speaker: "The Count", it: "A mezza notte in punto a prendervi qui siamo; or che la chiave abbiamo non v'è da dubitar.", en: "We will come to fetch you at midnight; now that we have the key, there can be no doubt." },
+        { speaker: "Rosina", it: "A mezza notte in punto, anima mia, t'aspetto. Io già l'istante affretto che teco mi unirà.", en: "At midnight, my love, I will wait for you. I already long for the moment that will unite us." },
+        { speaker: "Bartolo", it: "Il suo travestimento?... Ma bravi, ma bravissimi! Bricconi, birbanti, ah voi tutti quanti avete giurato di farmi crepar!", en: "His disguise?... Well done, very well done! Rogues, villains, you have all sworn to be the death of me!" }
+      ] }
+    ]
+  },
+  {
+    number: 5, title: "Ah disgraziato!", cast: "Bartolo, Berta, Ambrogio",
+    summary: "Bartolo realizes he has been deceived and orders Ambrogio to summon Basilio.",
+    sections: [{ label: "Recitativo", turns: [
+      { speaker: "Bartolo", it: "Ah disgraziato!... ed io non mi accorsi di nulla. Ah, don Basilio sa certo qualche cosa. Ehi, chi è di là? Corri da don Basilio qui rimpetto. Digli ch'io qua l'aspetto, che venga immantinente.", en: "That wretch!... And I noticed nothing. Don Basilio must know something. Hey, who is there? Run to Don Basilio across the street. Tell him I am waiting and that he must come at once." },
+      { speaker: "Bartolo", it: "Di guardia tu piàntati alla porta... no, no. (Non me ne fido.) Io stesso ci starò.", en: "Stand guard at the door... no, no. (I don't trust you.) I will keep watch myself." }
+    ] }]
+  },
+  {
+    number: 6, title: "Il vecchiotto cerca moglie", cast: "Berta",
+    summary: "Left alone, Berta complains about the chaos in the house and reflects on love, age, and being overlooked.",
+    sections: [
+      { label: "Recitativo", turns: [
+        { speaker: "Berta", it: "Che vecchio sospettoso! Vada pure e ci stia finché crepa. Sempre gridi e tumulti in questa casa. Si litiga, si piange, si minaccia; non v'è un'ora di pace con questo vecchio avaro e brontolone. Oh, che casa in confusione!", en: "What a suspicious old man! Let him go and stand guard until he drops. There is always shouting and uproar in this house. Quarrelling, weeping, threats; not one peaceful hour with this stingy, grumbling old man. What a house of confusion!" }
+      ] },
+      { label: "Aria — Il vecchiotto cerca moglie", turns: [
+        { speaker: "Berta", it: "Il vecchiotto cerca moglie,\nvuol marito la ragazza;\nquello freme, questa è pazza,\ntutti e due son da legar.\n\nMa che cosa è questo amore\nche fa tutti delirar?\nEgli è un male universale,\nuna smania, un certo ardore\nche nel core dà un tormento...\nPoverina, anch'io lo sento,\nné so come finirà.\n\nAh, vecchiaia maledetta,\nche disdetta singolar!\nNiun mi bada, niun mi vuole,\nson da tutti disprezzata;\ne vecchietta disperata\nmi convien così crepar.", en: "The old man seeks a wife,\nthe girl is to be married;\none rages, the other is mad,\nboth of them should be locked away.\n\nBut what is this love\nthat makes everyone delirious?\nIt is a universal illness,\na fever, a certain ardour\nthat torments the heart...\nPoor me, I feel it too,\nand do not know how it will end.\n\nAh, cursed old age,\nwhat a singular misfortune!\nNo one notices me or wants me;\neveryone looks down on me,\nand so, a desperate old woman,\nI suppose I must die." }
+      ] }
+    ]
+  },
+  {
+    number: 7, title: "Il contratto di nozze", cast: "Bartolo, Basilio",
+    summary: "Bartolo learns that the notary is with Figaro and grows suspicious when Basilio mentions a niece.",
+    sections: [{ label: "Recitativo", turns: [
+      { speaker: "Bartolo", it: "Dunque voi don Alonso non conoscete affatto?", en: "So you do not know Don Alonso at all?" },
+      { speaker: "Basilio", it: "Affatto.", en: "Not at all." },
+      { speaker: "Bartolo", it: "Ah, certo il conte lo mandò. Qualche gran trama qua si prepara.", en: "The Count certainly sent him. Some great plot is being hatched here." },
+      { speaker: "Basilio", it: "Io poi dico che quell'amico era il conte in persona.", en: "I say that man was the Count himself." },
+      { speaker: "Bartolo", it: "In questa sera stipular di mie nozze io vo' il contratto.", en: "Tonight I mean to draw up the contract for my marriage." },
+      { speaker: "Basilio", it: "Il notaro è impegnato con Figaro; il barbiere marita una nipote.", en: "The notary is busy with Figaro; the barber is marrying off a niece." },
+      { speaker: "Bartolo", it: "Una nipote? Il barbiere non ha nipoti. Ah, qui v'è qualche imbroglio. Questa notte i bricconi me la voglion far; presto il notaro qua venga sull'istante.", en: "A niece? The barber has no nieces. There is some trick here. Those rogues mean to fool me tonight; bring the notary here at once." }
+    ] }]
+  },
+  {
+    number: 8, title: "Per forza o per amore", cast: "Bartolo, Rosina",
+    summary: "Bartolo uses the intercepted letter to make Rosina believe Lindoro has betrayed her. She agrees to marry Bartolo and reveals the midnight escape plan.",
+    sections: [
+      { label: "Recitativo", turns: [
+        { speaker: "Bartolo", it: "Per forza o per amore Rosina avrà da cedere. Questo biglietto che scrisse la ragazza ad Almaviva potria servir... Del vostro amor sappiate ch'ei si fa gioco in sen d'un'altra amante. Ecco la prova.", en: "By force or persuasion Rosina will give in. This note she wrote to Almaviva may be useful... Know that your beloved is making sport of your love with another woman. Here is the proof." },
+        { speaker: "Rosina", it: "Oh cielo! Il mio biglietto. (Ah Lindoro!... ah traditore! Vendetta! E vegga quell'empio chi è Rosina.) Dite, signore, di sposarmi voi bramavate...", en: "Heavens! My letter. (Ah, Lindoro!... Traitor! Revenge! Let that wicked man see who Rosina is.) You wished to marry me, sir..." },
+        { speaker: "Bartolo", it: "E il voglio.", en: "I still do." },
+        { speaker: "Rosina", it: "Ebben, si faccia! Io son contenta... ma all'istante. A mezza notte qui sarà l'indegno con Figaro; con lui fuggire, per sposarlo io voleva...", en: "Then let it be! I agree... but at once. At midnight that scoundrel will come here with Figaro; I meant to flee with him and marry him..." },
+        { speaker: "Bartolo", it: "Ah, scellerati! Corro a sbarrar la porta.", en: "Ah, villains! I will bar the door." },
+        { speaker: "Rosina", it: "Entrano per la finestra. Hanno la chiave.", en: "They will come in through the window. They have the key." },
+        { speaker: "Bartolo", it: "Chiuditi a chiave in camera, io vo a chiamar la forza: dirò che son due ladri.", en: "Lock yourself in your room. I will call the authorities and say they are two thieves." },
+        { speaker: "Rosina", it: "Quanto è crudel la sorte mia!", en: "How cruel my fate is!" },
+        { speaker: "Stage direction", it: "Scoppia un temporale. Figaro e il Conte entrano dalla finestra, bagnati dalla pioggia.", en: "A storm breaks. Figaro and the Count climb in through the window, soaked by the rain." }
+      ] }
+    ]
+  },
+  {
+    number: 9, title: "Ah qual colpo inaspettato!", cast: "Rosina, The Count, Figaro",
+    summary: "Rosina confronts Lindoro, then learns he is Almaviva. The three prepare to escape but discover the ladder is gone.",
+    sections: [
+      { label: "Recitativo", turns: [
+        { speaker: "Figaro", it: "Al fine eccoci qua.", en: "At last, here we are." },
+        { speaker: "The Count", it: "Che tempo indiavolato!", en: "What a devilish storm!" },
+        { speaker: "Rosina", it: "Indietro, anima scellerata! Son venuta a dimostrarti quale amante perdesti, anima indegna e sconoscente.", en: "Back, you wretch! I came to show you what a lover you have lost, you base and thankless soul." },
+        { speaker: "The Count", it: "Al conte?... Ah, sei delusa!... Tu di verace amore ami Lindor?", en: "The Count?... Ah, you are mistaken!... Do you truly love Lindoro?" },
+        { speaker: "Rosina", it: "Ah sì! T'amai purtroppo!", en: "Oh yes! I loved you, alas!" },
+        { speaker: "The Count", it: "Almaviva son io: non son Lindoro.", en: "I am Almaviva; I am not Lindoro." }
+      ] },
+      { label: "Terzetto", turns: [
+        { speaker: "Rosina", it: "Ah qual colpo inaspettato!\nEgli stesso!... oh ciel! che sento!\nDi sorpresa, di contento\nson vicina a delirar.", en: "What an unexpected blow!\nIt is he himself!... Heavens, what do I hear?\nWith surprise and joy\nI am near to losing my senses." },
+        { speaker: "The Count", it: "Qual trionfo inaspettato!\nMe felice!... oh bel momento!\nAh d'amore, di contento\nson vicino a delirar.", en: "What an unexpected triumph!\nHow happy I am!... What a moment!\nWith love and delight\nI am near to losing my senses." },
+        { speaker: "Figaro", it: "Son rimasti senza fiato!\nOra muoion dal contento!\nGuarda, guarda il mio talento\nche bel colpo seppe far.", en: "They are both struck dumb!\nNow they will die of joy!\nLook, look at my cleverness;\nwhat a fine trick I have played." },
+        { speaker: "The Count and Rosina", it: "Oh bel nodo avventurato\nche fai paghi i miei desiri!\nAlla fin de' miei martiri\ntu sentisti, amor, pietà.", en: "O fortunate bond\nthat fulfills my longing!\nAt last, after my suffering,\nLove has shown me pity." },
+        { speaker: "Figaro", it: "Presto andiamo: se si tarda i miei raggiri fanno fiasco. Alla porta... una lanterna... due persone... che si fa?", en: "Quick, let us go! If we delay, my schemes will fail. At the door... a lantern... two people... what shall we do?" },
+        { speaker: "All three", it: "Zitti zitti, piano piano,\nnon facciamo confusione;\nper la scala dal balcone\npresto andiamo via di qua.", en: "Quietly, quietly, softly, softly;\nlet us make no noise.\nDown the ladder from the balcony,\nquickly let us get away." }
+      ] },
+      { label: "Recitativo", turns: [
+        { speaker: "Figaro", it: "Ah, disgraziati noi! La scala non v'è più.", en: "Oh, wretched us! The ladder is gone." },
+        { speaker: "The Count", it: "Quale inciampo crudel!", en: "What a cruel obstacle!" },
+        { speaker: "Figaro", it: "Zitti... sento gente. Ora ci siamo, signor mio, che si fa?", en: "Quiet... I hear people. Here they come, my lord. What do we do?" },
+        { speaker: "The Count", it: "Mia Rosina, coraggio.", en: "My Rosina, take heart." }
+      ] }
+    ]
+  },
+  {
+    number: 10, title: "Il notaro", cast: "Basilio, The Count, Rosina, Figaro, Notary",
+    summary: "Figaro persuades the notary to marry Almaviva and Rosina. Basilio accepts a ring rather than risk the Count's anger.",
+    sections: [{ label: "Recitativo", turns: [
+      { speaker: "Basilio", it: "Don Bartolo, don Bartolo...", en: "Don Bartolo, Don Bartolo..." },
+      { speaker: "Figaro", it: "Signor notaro, dovevate in mia casa stipolar questa sera un contratto di nozze fra il conte d'Almaviva e mia nipote. Gli sposi, eccoli qua. Avete indosso la scrittura?", en: "Signor Notary, you were to draw up a marriage contract at my house tonight for Count Almaviva and my niece. Here are the couple. Do you have the document?" },
+      { speaker: "The Count", it: "Don Basilio, questo anello è per voi.", en: "Don Basilio, this ring is for you." },
+      { speaker: "Basilio", it: "Per voi vi sono ancor due palle nel cervello se v'opponete... Oibò, prendo l'anello. Chi firma?", en: "If you oppose me, I have two bullets for your head... No, I will take the ring. Who is to sign?" },
+      { speaker: "The Count and Rosina", it: "Eccoci qua. Son testimoni Figaro e don Basilio.", en: "Here we are. Figaro and Don Basilio will be the witnesses." },
+      { speaker: "The Count", it: "Essa è mia sposa.", en: "She is my wife." },
+      { speaker: "Rosina", it: "O sospirata mia felicità!", en: "O long-awaited happiness!" },
+      { speaker: "Figaro and Basilio", it: "Evviva!", en: "Hurray!" }
+    ] }]
+  },
+  {
+    number: 11, title: "Cessa di più resistere", cast: "The Count, Rosina, Figaro, Bartolo, Basilio, Officer, Chorus",
+    summary: "Bartolo arrives with the authorities, but Almaviva reveals who he is and the marriage contract is accepted. The household makes peace.",
+    sections: [
+      { label: "Recitativo accompagnato", turns: [
+        { speaker: "Bartolo", it: "Fermi tutti. Eccoli qua! Signor, son ladri, arrestate, arrestate.", en: "Everyone stop! There they are! Officer, they are thieves; arrest them!" },
+        { speaker: "Officer", it: "Mio signore, il suo nome.", en: "Sir, your name." },
+        { speaker: "The Count", it: "Il mio nome è quel d'un uom d'onor. Il conte d'Almaviva io sono.", en: "My name is that of an honourable man. I am Count Almaviva." },
+        { speaker: "Rosina", it: "Io sua sposa?... oh, nemmeno per pensiero.", en: "His wife?... I would never dream of it." },
+        { speaker: "Bartolo", it: "Il Conte!... che mai sento!", en: "The Count!... What am I hearing!" },
+        { speaker: "The Count", it: "In faccia al mondo io dichiaro altamente costei mia sposa. Respira omai: vieni a goder sorte più lieta.", en: "Before the world I declare her my wife. Take heart now; come enjoy a happier fate." }
+      ] },
+      { label: "Aria — Cessa di più resistere", turns: [
+        { speaker: "The Count", it: "Cessa di più resistere,\nnon cimentar mio sdegno;\nspezzato è il giogo indegno\ndi tanta crudeltà.\n\nDella beltà dolente\nd'un innocente amore\nl'avaro tuo furore\npiù non trionferà.\n\nE tu, infelice vittima,\nd'un reo poter tiranno\nsottratta al giogo barbaro,\ncangia in piacer l'affanno,\ne al fianco a un fido sposo\ngioisci in libertà.", en: "Resist no longer;\ndo not provoke my anger.\nThe shameful yoke\nof such cruelty is broken.\n\nYour greedy fury\nwill no longer triumph\nover the suffering beauty\nof innocent love.\n\nAnd you, unhappy victim\nof a tyrant's wicked power,\nfreed from the cruel yoke,\nturn sorrow into joy;\nwith a faithful husband at your side,\nrejoice in freedom." }
+      ] },
+      { label: "Recitativo", turns: [
+        { speaker: "Bartolo", it: "In somma io ho tutti i torti!", en: "In short, I am entirely to blame!" },
+        { speaker: "Figaro", it: "Eh, purtroppo è così!", en: "I'm afraid that is so!" },
+        { speaker: "Bartolo", it: "Per meglio assicurare il matrimonio io portai via la scala dal balcone!", en: "To make sure of the marriage, I took away the ladder from the balcony!" },
+        { speaker: "Figaro", it: "Ecco che fa un'Inutil precauzione.", en: "That is what comes of a useless precaution." },
+        { speaker: "The Count", it: "Di dote io bisogno non ho: va, te la dono.", en: "I have no need of a dowry; I give it back to you." },
+        { speaker: "Bartolo", it: "Quel ch'è fatto è fatto. Andate pur che il ciel vi benedica.", en: "What is done is done. Go, and may heaven bless you." }
+      ] },
+      { label: "Finaletto II", turns: [
+        { speaker: "Figaro", it: "Di sì felice innesto\nserbiam memoria eterna;\nio smorzo la lanterna,\nqui più non ho che far.", en: "Let us keep an everlasting memory\nof this happy union;\nI will put out the lantern;\nI have nothing more to do here." },
+        { speaker: "Rosina", it: "Costò sospiri e pene\nquesto felice istante;\nal fin quest'alma amante\ncomincia a respirar.", en: "This happy moment\ncost much sighing and pain;\nat last, my loving soul\nbegins to breathe again." },
+        { speaker: "The Count", it: "Dell'umile Lindoro\nla fiamma a te fu accetta;\npiù bel destin t'aspetta,\nsu, vieni a giubilar.", en: "You welcomed the love\nof humble Lindoro;\na brighter fate awaits you;\ncome, rejoice!" },
+        { speaker: "Chorus", it: "Amore e fede eterna\nsi vegga in voi regnar.\nAnnodar due cori amanti\nè piacer che egual non ha.", en: "May love and lasting faith\nreign between you.\nTo join two loving hearts\nis a joy beyond compare." }
+      ] }
+    ]
+  }
+];
