@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 670" role="img" aria-labelledby="title desc">
+<title id="title">Turandot, an imperial princess by lantern light</title><desc id="desc">Original illustration of a Chinese imperial palace at night, with a princess in crimson and gold robes.</desc>
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#0d253f"/><stop offset=".66" stop-color="#263858"/><stop offset="1" stop-color="#aa6f60"/></linearGradient>
+<linearGradient id="robe" x2=".2" y2="0" x1=".9" y1="1"><stop stop-color="#a92d30"/><stop offset=".43" stop-color="#781d2e"/><stop offset="1" stop-color="#310d23"/></linearGradient>
+<radialGradient id="lantern"><stop stop-color="#fff6ba"/><stop offset=".6" stop-color="#f9ae49"/><stop offset="1" stop-color="#9b392f"/></radialGradient>
+<linearGradient id="gold" x2="1" y2=".8"><stop stop-color="#fff3b6"/><stop offset=".4" stop-color="#c99443"/><stop offset="1" stop-color="#78522e"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="19"/></filter>
+<pattern id="embroidery" patternUnits="userSpaceOnUse" width="59" height="53"><path d="M7 45Q32 0 52 44M14 14q16 22 30 0" stroke="#d3a354" stroke-width="2" fill="none" opacity=".62"/><circle cx="30" cy="26" r="4" fill="#f3ca7e"/></pattern>
+</defs>
+<rect width="1200" height="670" fill="url(#sky)"/>
+<circle cx="920" cy="118" r="68" fill="#f8dfb0" opacity=".25" filter="url(#glow)"/><circle cx="920" cy="118" r="48" fill="#f8e9c3"/>
+<path d="M0 375L80 270L152 346L255 221L340 351L474 249L555 388L685 271L770 350L858 240L974 341L1135 252L1200 316V670H0" fill="#152d40" opacity=".87"/>
+<path d="M678 317v235h514V330l-90-39-338 2Z" fill="#6b443f"/><path d="M633 316l90-72h403l74 72-31 29H660Z" fill="#142b3a" stroke="#dca15d" stroke-width="9"/>
+<path d="M736 241v-70h354v70" fill="#9e5548"/><path d="M704 175l56-50h319l51 50-17 18H718Z" fill="#192638" stroke="#c98d4b" stroke-width="8"/>
+<path d="M764 352v190m83-195v195m84-195v195m83-195v195m84-195v195" stroke="#dbad74" stroke-width="13" opacity=".6"/>
+<path d="M0 504q280-120 620 0t580-12v178H0" fill="#172d3c" opacity=".78"/>
+<g fill="#ffbd60" opacity=".38" filter="url(#glow)"><circle cx="745" cy="357" r="43"/><circle cx="1080" cy="345" r="40"/><circle cx="1144" cy="520" r="51"/></g>
+<g stroke="#e0ae69" stroke-width="5" fill="url(#lantern)"><path d="M732 292v26m350-38v31M1144 459v27"/><rect x="706" y="312" width="55" height="72" rx="14"/><rect x="1052" y="308" width="55" height="72" rx="14"/><rect x="1115" y="480" width="55" height="72" rx="14"/></g>
+<path d="M-40 669L103 386l158-58 165 77 174 264Z" fill="url(#robe)" stroke="#d4a15b" stroke-width="9"/>
+<path d="M-40 669L103 386l158-58 165 77 174 264Z" fill="url(#embroidery)"/>
+<path d="M124 379q67-87 111-62l120 54q-23 52-39 93l-157 37Z" fill="#151d2d" stroke="#d6aa69" stroke-width="12"/>
+<path d="M198 293q-55-42-30-132 25-92 129-83 110 13 102 124-8 95-72 112Z" fill="#101720"/>
+<path d="M197 190q25-88 101-82 77 4 68 77-5 66-46 103-41 31-80-8-30-29-43-90Z" fill="#dbad8a"/>
+<path d="M179 192q10-103 97-122 116-7 135 105-51-31-61-79-49 61-171 96Z" fill="#171923"/>
+<path d="M232 186q15-8 28 0m52-1q15-9 27-1" stroke="#4a2c32" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M263 235q23 10 43-2" stroke="#a65a5b" stroke-width="5" fill="none"/>
+<path d="M160 95L195 28l41 43 27-62 35 48 43-38 21 67 45-26-13 68-84-20-74 12Z" fill="url(#gold)" stroke="#ffe0a1" stroke-width="4"/>
+<g fill="#f4d695"><circle cx="185" cy="89" r="9"/><circle cx="265" cy="56" r="9"/><circle cx="350" cy="83" r="9"/><circle cx="295" cy="103" r="13"/></g>
+<g stroke="#e8b85f" stroke-width="4"><path d="M166 100l-25 176m262-182 33 177M191 122l-14 124m210-116 27 135"/></g>
+<g fill="#e8ba63"><circle cx="144" cy="285" r="11"/><circle cx="437" cy="281" r="11"/><circle cx="177" cy="252" r="8"/><circle cx="408" cy="256" r="8"/></g>
+<path d="M0 642Q570 575 1200 639" stroke="#f9c77b" stroke-width="5" opacity=".3" fill="none"/>
+</svg>

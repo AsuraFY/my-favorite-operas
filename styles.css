@@ -495,11 +495,11 @@ button { font: inherit; }
 .directory-grid { padding-top: 0; padding-bottom: 72px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
 .directory-card { min-width: 0; overflow: hidden; display: block; border: 1px solid #e6dfd6; border-radius: 9px; background: #faf8f4; box-shadow: 0 2px 8px rgba(49, 38, 25, .035); color: #192b3a; animation: rise .45s both; animation-delay: calc(var(--card-index, 0) * 45ms); transition: box-shadow .2s ease, transform .2s ease; }
 .directory-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(49, 38, 25, .1); }
-.directory-card__image { height: clamp(138px, 14vw, 176px); background-image: url("./public/images/opera-card-art.webp"); background-size: 200% auto; background-repeat: no-repeat; background-color: #d6cabb; }
+.directory-card__image { height: clamp(138px, 14vw, 176px); background-image: url("./public/images/opera-card-art.webp"); background-size: 200% auto; background-repeat: no-repeat; background-color: #d6cabb; overflow: hidden; }
 .directory-card__image--barber { background-position: 0 0; }
 .directory-card__image--cosi { background-position: 100% 0; }
-.directory-card__image--tristan { background-position: 0 66%; }
-.directory-card__image--macbeth { background-position: 100% 66%; }
+.directory-card__image--tristan { background-position: 0 100%; }
+.directory-card__image--macbeth { background-position: 100% 100%; }
 .directory-card__body { padding: 10px 14px 13px; }
 .directory-card__body h2 { margin: 0 0 4px; color: #172b3c; font: 500 20px/1.25 var(--serif); letter-spacing: -.02em; }
 .directory-card__byline { display: flex; align-items: center; gap: 9px; margin: 0 0 7px; color: #555c60; font: 15px var(--serif); }
@@ -1754,3 +1754,51 @@ button { font: inherit; }
     padding-left: calc(clamp(24px, 3vw, 52px) + 32px);
   }
 }
+
+
+/* Shared introduction for every opera, including works whose libretti are not yet available. */
+.opera-information { background: #fbf8f1; color: #19364b; min-height: 75vh; }
+.opera-info__breadcrumbs { display: flex; align-items: center; gap: 12px; padding-block: 21px 13px; font: 500 14px/1.5 var(--sans); color: #5f6870; }
+.opera-info__breadcrumbs a, .opera-info__back a { color: #244e70; text-decoration: none; }
+.opera-info__breadcrumbs a:hover, .opera-info__back a:hover { text-decoration: underline; }
+.opera-info__hero { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); gap: clamp(22px, 4vw, 60px); align-items: center; padding-bottom: 30px; }
+.opera-info__cover { overflow: hidden; aspect-ratio: 1.74; background: #d9c7ae; border-radius: 8px; box-shadow: 0 10px 25px rgba(19, 35, 45, .12); }
+.opera-info__cover img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.opera-info__art--sprite { width: 100%; height: 100%; background-image: url("./public/images/opera-card-art.webp"); background-size: 200% auto; background-repeat: no-repeat; }
+.opera-info__introduction h1 { font: 600 clamp(34px, 4.1vw, 60px)/1.12 var(--serif); margin: 8px 0 10px; }
+.opera-info__alternate { font: italic 21px/1.4 var(--serif); color: #906f47; margin: 0 0 18px; }
+.opera-info__summary { font: 19px/1.65 var(--serif); color: #424b50; max-width: 58ch; margin: 0 0 20px; }
+.opera-info__read-link { display: inline-flex; gap: 16px; align-items: center; text-decoration: none; color: #173856; background: #eddcd3; padding: 10px 17px; border-radius: 5px; font: 600 15px var(--sans); }
+.opera-info__read-link:hover { background: #e5c9bc; }
+.opera-info__facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; overflow: hidden; border-radius: 6px; background: #d9cfbf; margin-block: 12px 32px; padding: 1px; }
+.opera-info__facts > div { background: #f4eee5; padding: 15px 17px; min-width: 0; }
+.opera-info__facts dt { font: 600 12px/1.5 var(--sans); color: #7d715f; text-transform: uppercase; letter-spacing: .05em; }
+.opera-info__facts dd { margin: 4px 0 0; font: 500 16px/1.4 var(--serif); overflow-wrap: anywhere; }
+.opera-info__content { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .85fr); gap: clamp(20px, 4vw, 56px); padding-bottom: 24px; }
+.opera-info__content h2 { margin: 0 0 19px; font: 600 clamp(25px, 2.8vw, 34px)/1.2 var(--serif); }
+.opera-info__synopsis p { margin: 0 0 18px; font: 17px/1.78 var(--serif); max-width: 66ch; }
+.opera-info__characters { background: #f1ebdf; padding: 22px 22px 10px; border-radius: 8px; align-self: start; }
+.opera-info__characters ul { list-style: none; padding: 0; margin: 0; }
+.opera-info__characters li { border-top: 1px solid #d9cdba; padding: 12px 0; }
+.opera-info__character-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; font: 15px/1.35 var(--sans); }
+.opera-info__character-top strong { color: #173856; }
+.opera-info__character-top span { font-size: 13px; color: #8b6d4b; }
+.opera-info__characters p { font: 15px/1.45 var(--serif); color: #5a5b59; margin: 5px 0 0; }
+.opera-info__back { padding-block: 12px 35px; font: 600 15px/1.5 var(--sans); }
+@media (max-width: 900px) { .opera-info__facts { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 700px) {
+  .opera-info__hero, .opera-info__content { display: block; }
+  .opera-info__hero { padding-bottom: 15px; }
+  .opera-info__cover { margin-bottom: 23px; }
+  .opera-info__introduction h1 { font-size: clamp(32px, 8vw, 43px); }
+  .opera-info__summary { font-size: 17px; }
+  .opera-info__facts { gap: 1px; margin-bottom: 27px; }
+  .opera-info__facts > div { padding: 11px 12px; }
+  .opera-info__facts dd { font-size: 14px; }
+  .opera-info__characters { margin-top: 25px; }
+}
+
+/* Standalone artwork never shares a sprite cell with a neighboring opera. */
+.directory-card__image--standalone { background-image: none; }
+.directory-card__image--standalone img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.directory-card__image { position: relative; isolation: isolate; }

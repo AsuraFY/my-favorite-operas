@@ -1,6 +1,8 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-search-1";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-6";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-4";
+import { operaInformation } from "./data/opera-information.js?v=info-1";
+import { renderOperaInformationPage } from "./opera-info-page.js?v=info-page-1";
 
 const app = document.querySelector("#app");
 
@@ -354,11 +356,11 @@ function operaDirectoryPage(query = "", sort = "title") {
     return titleKey(a.title).localeCompare(titleKey(b.title), undefined, { sensitivity: "base" });
   });
   const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
-  const images = { "il-barbiere-di-siviglia": "barber", "cosi-fan-tutte": "cosi", "tristan-und-isolde": "tristan", macbeth: "macbeth" };
+  
   const teasers = { "il-barbiere-di-siviglia": "A joyful comedy full of clever tricks, disguises and unforgettable music.", "cosi-fan-tutte": "A witty exploration of love, loyalty and human nature.", "tristan-und-isolde": "A passionate, tragic love story with extraordinary music.", macbeth: "A powerful drama of ambition, fate and conscience." };
   const cards = matches.map((opera, index) => {
     const year = opera.premiered.match(/\d{4}/)?.[0] || "";
-    return `<a class="directory-card" href="#/operas/${opera.slug}" style="--card-index:${index}"><div class="directory-card__image directory-card__image--${images[opera.slug]}" role="img" aria-label="Illustration inspired by ${opera.title}"></div><div class="directory-card__body"><h2>${opera.title}</h2><p class="directory-card__byline">${opera.composer}<span aria-hidden="true">·</span>${year}</p><p class="directory-card__summary">${teasers[opera.slug] || opera.summary}</p><span class="directory-card__button">View opera ${arrow}</span></div></a>`;
+    return `<a class="directory-card" href="#/operas/${opera.slug}" style="--card-index:${index}"><div class="directory-card__image directory-card__image--${opera.color}${opera.image ? " directory-card__image--standalone" : ""}" role="img" aria-label="Illustration inspired by ${opera.title}">${opera.image ? `<img src="${opera.image}" alt="" loading="lazy" />` : ""}</div><div class="directory-card__body"><h2>${opera.title}</h2><p class="directory-card__byline">${opera.composer}<span aria-hidden="true">·</span>${year}</p><p class="directory-card__summary">${teasers[opera.slug] || opera.summary}</p><span class="directory-card__button">View opera ${arrow}</span></div></a>`;
   }).join("");
   return `<section class="directory-scenic" aria-hidden="true"></section><section class="directory-intro section-wrap"><div class="directory-intro__panel"><h1>Operas</h1><p>A collection of the operas I’m exploring, with libretti and English translations.</p></div><div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search opera title, composer or librettist</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search title, composer or librettist..." value="${safeQuery}" autocomplete="off" /></form><label class="directory-sort"><span>Sort by</span><select id="directory-sort" aria-label="Sort operas"><option value="title" ${sort === "title" ? "selected" : ""}>Title (A–Z)</option><option value="composer" ${sort === "composer" ? "selected" : ""}>Composer</option><option value="year" ${sort === "year" ? "selected" : ""}>Year (newest)</option></select></label></div></section><section class="directory-grid section-wrap" aria-label="Opera directory">${cards || `<p class="empty-results">No operas match “${safeQuery}”. Try another title, composer or librettist.</p>`}</section>`;
 }
@@ -370,27 +372,15 @@ function aboutPage() {
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
   const libretto = getLibretto(opera.slug);
   if (libretto) {
-    const renderer = createLibrettoRenderer(libretto);
-    return selectedView === "synopsis" ? renderer.synopsis()
-      : selectedView === "outline" ? renderer.outline()
-      : renderer.scene(selectedScene, query, selectedItem, mobileContents);
+    const reader = createLibrettoRenderer(libretto);
+    if (selectedView === "outline") return reader.outline();
+    if (selectedView === "synopsis" || (!selectedView && !query && !window.location.hash.includes("act=") && !window.location.hash.includes("scene="))) {
+      return renderOperaInformationPage(opera, operaInformation[opera.slug], { navigation: reader.navigation(), hasLibretto: true });
+    }
+    return reader.scene(selectedScene, query, selectedItem, mobileContents);
   }
-  return `<div class="opera-detail">
-    <div class="detail-topline section-wrap"><a href="#/operas" class="back-link">← <span>All operas</span></a><span class="eyebrow">A closer look <span>·</span> ${opera.genre}</span></div>
-    <section class="detail-hero section-wrap">
-      <div class="detail-copy"><p class="eyebrow">${opera.composer}</p><h1>${opera.title}</h1><p class="detail-subtitle">${opera.displayTitle !== opera.title ? opera.displayTitle : opera.genre}</p><p class="detail-summary">${opera.summary}</p><a href="#libretto" class="text-link">About this opera ${arrow}</a></div>
-      ${artwork(opera, "artwork--detail")}
-      <span class="detail-index">${String(operas.indexOf(opera) + 1).padStart(2, "0")} <i>/</i> ${String(operas.length).padStart(2, "0")}</span>
-    </section>
-    <section class="detail-facts section-wrap"><div class="facts-heading"><p class="eyebrow">At a glance</p><h2>The essentials.</h2></div><dl>
-      <div><dt>Composer</dt><dd>${opera.composer}</dd></div><div><dt>Libretto</dt><dd>${opera.librettist}</dd></div><div><dt>First performed</dt><dd>${opera.premiered}</dd></div><div><dt>Premiere venue</dt><dd>${opera.premieredAt}</dd></div><div><dt>Language</dt><dd>${opera.language}</dd></div><div><dt>Structure</dt><dd>${opera.acts} acts</dd></div>
-    </dl></section>
-    <section class="detail-note section-wrap" id="libretto"><div class="detail-note__label"><span class="eyebrow">A personal note</span><span class="detail-note__ornament">✳</span></div><p>${opera.note}</p></section>
-    <section class="libretto-placeholder section-wrap"><div><p class="eyebrow">Coming in a later chapter</p><h2>The libretto, line by line.</h2><p>The libretto and side-by-side translation will live here. For now, this page is a place to meet the opera.</p></div><span class="placeholder-mark" aria-hidden="true">Aa<br /><i>↔</i><br />Aa</span></section>
-    <section class="more-operas section-wrap"><div class="section-heading"><div><p class="eyebrow">Keep wandering</p><h2>Another world awaits.</h2></div><a class="text-link text-link--large" href="#/operas">All operas ${arrow}</a></div><div class="opera-grid opera-grid--compact">${operas.filter((item) => item.slug !== opera.slug).slice(0, 3).map(operaCard).join("")}</div></section>
-  </div>`;
+  return renderOperaInformationPage(opera, operaInformation[opera.slug]);
 }
-
 
 let readerJumping = false;
 let readerScrollTick = false;

@@ -260,7 +260,7 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
   '</div>';
 }
 
-return { scene: renderScenePage, outline: renderOutlinePage, synopsis: renderSynopsisPage };
+return { scene: renderScenePage, outline: renderOutlinePage, synopsis: renderSynopsisPage, navigation: () => renderOperaBar(1, "synopsis") };
 }
 
 export { createLibrettoRenderer };
