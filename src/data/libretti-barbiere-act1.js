@@ -2,30 +2,41 @@
 // Italian text follows the 1816 libretto; English is a new translation.
 export const barbiereActOneScenes = [
   {
-    number: 1,
-    title: "Ecco ridente in cielo",
-    cast: "Il Conte, Fiorello, Coro",
-    summary: "At dawn, the Count serenades Rosina from the street, then dismisses the musicians when she does not appear.",
+    number: 1, title: "Ecco ridente in cielo", cast: "Il Conte, Fiorello, Coro",
+    summary: "At dawn the Count serenades Rosina, then dismisses the musicians and waits for her at the balcony.",
     sections: [
       { label: "Introduzione", turns: [
-        { speaker: "Fiorello", it: "Piano, pianissimo,\nsenza parlar,\ntutti con me venite qua.", en: "Softly, very softly,\nwithout a word,\ncome here with me, all of you." },
-        { speaker: "Chorus", it: "Piano, pianissimo,\neccoci qua.", en: "Softly, very softly,\nhere we are." },
-        { speaker: "Fiorello", it: "Tutto è silenzio; nessun qui sta\nche i nostri canti possa turbar.", en: "All is quiet; no one is here\nto disturb our song." },
-        { speaker: "The Count", it: "Fiorello... Olà...", en: "Fiorello... Hey there..." },
+        { speaker: "Stage direction", it: "Fiorello entra con una lanterna, seguito da alcuni suonatori; poi arriva il Conte avvolto in un mantello.", en: "Fiorello enters with a lantern, followed by several musicians; the Count then arrives wrapped in a cloak." },
+        { speaker: "Fiorello", it: "(avanzandosi con cautela) Piano pianissimo, senza parlar, tutti con me venite qua.", en: "(Advancing cautiously) Very softly, without speaking, all of you come here with me." },
+        { speaker: "Chorus", it: "Piano pianissimo, eccoci qua.", en: "Very softly; here we are." },
+        { speaker: "Fiorello", it: "Tutto è silenzio, nessun qui sta che i nostri canti possa turbar.", en: "All is quiet; no one is here who might disturb our songs." },
+        { speaker: "The Count", it: "(sottovoce) Fiorello... Olà...", en: "(Under his breath) Fiorello... Hey there..." },
         { speaker: "Fiorello", it: "Signor, son qua.", en: "My lord, I am here." },
         { speaker: "The Count", it: "Ebben... gli amici?", en: "Well... are the musicians ready?" },
         { speaker: "Fiorello", it: "Son pronti già.", en: "They are ready." },
-        { speaker: "The Count", it: "Bravi, bravissimi. Fate silenzio,\npiano, pianissimo, senza parlar.", en: "Good, excellent. Be quiet,\nsoftly, very softly, without a word." },
-        { speaker: "Chorus", it: "Piano, pianissimo, senza parlar.", en: "Softly, very softly, without a word." }
+        { speaker: "The Count", it: "Bravi, bravissimi, fate silenzio; piano pianissimo, senza parlar.", en: "Good, excellent. Keep quiet; very softly, without speaking." },
+        { speaker: "Chorus", it: "Piano pianissimo, senza parlar.", en: "Very softly, without speaking." }
       ] },
       { label: "Cavatina — Ecco ridente in cielo", turns: [
-        { speaker: "The Count", it: "Ecco ridente in cielo\nspunta la bella aurora,\ne tu non sorgi ancora,\ne puoi dormir così?\n\nSorgi, mia bella speme,\nvieni, bell'idol mio;\nrendi men crudo, o Dio,\nlo stral che mi ferì.\n\nOh sorte! già veggo\nquel caro sembiante;\nquest'anima amante\nottiene pietà.\nOh istante d'amore!\nFelice momento!\nOh dolce contento\nche eguale non ha.", en: "The lovely dawn is rising,\nsmiling in the sky,\nyet you have not awoken—\nhow can you still sleep?\n\nRise, my beautiful hope,\ncome, my beloved idol;\nsoften, O God, the arrow\nthat pierced my heart.\n\nO fortune! I can already see\nthat dear face;\nthis loving soul\nfinds compassion.\nO moment of love!\nO happy instant!\nO sweet delight\nwith none to equal it." }
+        { speaker: "Stage direction", it: "I suonatori accordano gli strumenti; il Conte canta accompagnato da essi.", en: "The musicians tune their instruments; the Count sings with their accompaniment." },
+        { speaker: "The Count", it: "Ecco ridente in cielo\nspunta la bella aurora,\ne tu non sorgi ancora\ne puoi dormir così?\n\nSorgi, mia bella speme,\nvieni, bell'idol mio;\nrendi men crudo, o Dio,\nlo stral che mi ferì.\n\nOh sorte! già veggo\nquel caro sembiante;\nquest'anima amante\nottiene pietà.\nOh istante d'amore!\nFelice momento!\nOh dolce contento\nche eguale non ha.", en: "The lovely dawn is rising,\nsmiling in the sky,\nyet you have not awoken;\nhow can you still sleep?\n\nRise, my beautiful hope,\ncome, my beloved idol;\nsoften, O God, the arrow\nthat pierced my heart.\n\nO fortune! I can already see\nthat dear face;\nthis loving soul\nfinds compassion.\nO moment of love!\nO happy instant!\nO sweet delight\nwith none to equal it." }
       ] },
       { label: "Recitativo", turns: [
-        { speaker: "The Count", it: "Ehi, Fiorello?... Di', la vedi? Ah, ch'è vana ogni speranza! Ah, che penso, che farò? Tutto è vano... Buona gente! Più di suoni, più di canti io bisogno ormai non ho.", en: "Fiorello?... Tell me, can you see her? Ah, every hope is vain! What shall I think, what shall I do? All is in vain... Good people! I have no need of music or song now." },
-        { speaker: "Chorus", it: "Mille grazie, mio signore,\ndel favore, dell'onore...\n(Oh, che incontro fortunato!\nÈ un signor di qualità.)", en: "A thousand thanks, my lord,\nfor your kindness and honour...\n(What a fortunate encounter!\nHe is a gentleman of distinction.)" },
-        { speaker: "Fiorello", it: "Zitti, zitti... che rumore!\nMaledetti, andate via!\nVe' che chiasso indiavolato!\nAh, che rabbia che mi fa!", en: "Quiet, quiet... what a racket!\nBlast you, go away!\nWhat a devilish din!\nHow it enrages me!" },
-        { speaker: "The Count", it: "Gente indiscreta! Alfin sono partiti... e non si vede! È inutile sperar. Eppur qui voglio aspettar di vederla.", en: "Impertinent people! At last they have gone... and still she does not appear! There is no use hoping. Yet I will wait here to see her." }
+        { speaker: "The Count", it: "Ehi, Fiorello?... Di', la vedi?", en: "Hey, Fiorello?... Tell me, can you see her?" },
+        { speaker: "Fiorello", it: "Mio signore. Signor no.", en: "My lord. No, sir." },
+        { speaker: "The Count", it: "Ah, ch'è vana ogni speranza! Ah, che penso, che farò? Tutto è vano... Buona gente!", en: "Ah, every hope is vain! What shall I think, what shall I do? All is in vain... Good people!" },
+        { speaker: "Chorus", it: "(sotto voce) Mio signore.", en: "(Softly) My lord." },
+        { speaker: "The Count", it: "Avanti, avanti. Più di suoni, più di canti io bisogno ormai non ho.", en: "Come forward, come forward. I have no need of music or song now." },
+        { speaker: "Fiorello", it: "Buona notte a tutti quanti; più di voi che far non ho.", en: "Good night, everyone; I have no more use for you." },
+        { speaker: "Stage direction", it: "Il Conte dà una borsa a Fiorello, che distribuisce denaro ai suonatori. Essi lo ringraziano rumorosamente; il Conte e Fiorello li cacciano via.", en: "The Count gives Fiorello a purse to distribute among the musicians. They thank him noisily; the Count and Fiorello drive them away." },
+        { speaker: "Chorus", it: "Mille grazie, mio signore, del favore, dell'onore... Ah, di tanta cortesia obbligati in verità. (Oh, che incontro fortunato! È un signor di qualità.)", en: "A thousand thanks, my lord, for your kindness and honour... We are truly obliged for such courtesy. (What a fortunate encounter! He is a gentleman of distinction.)" },
+        { speaker: "The Count", it: "Basta, basta, non parlate... ma non serve, non gridate... maledetti, andate via... ah, canaglia, via di qua. Tutto quanto il vicinato questo chiasso sveglierà.", en: "Enough, enough, don't speak... no, don't shout... curse you, go away... you rabble, get out of here! This racket will wake the whole neighbourhood." },
+        { speaker: "Fiorello", it: "Zitti, zitti... che rumore! Ma che onore? che favore? Maledetti, andate via, ah canaglia, via di qua. Ve' che chiasso indiavolato, ah che rabbia che mi fa!", en: "Quiet, quiet... what a racket! What honour? What favour? Curse you, go away, you rabble! What a devilish din; it makes me furious!" },
+        { speaker: "The Count", it: "Gente indiscreta! Ah, quasi con quel chiasso importuno tutto quanto il quartier han risvegliato. Alfin sono partiti!... E non si vede! È inutile sperar. Eppur qui voglio aspettar di vederla. Ogni mattina ella su quel balcone a prender fresco viene in sull'aurora. Proviamo. Olà, tu ancora ritirati, Fiorel.", en: "Impertinent people! With their unbearable racket they nearly woke the whole neighbourhood. At last they have gone!... And still she does not appear! There is no use hoping. Yet I will wait here to see her. Every morning at dawn she comes to that balcony for the fresh air. Let us see. Come, Fiorello, withdraw for now." },
+        { speaker: "Fiorello", it: "Vado. Là in fondo attenderò suoi ordini.", en: "I am going. I will wait at the far end for your orders." },
+        { speaker: "The Count", it: "Con lei, se parlar mi riesce, non voglio testimoni. Che a quest'ora io tutti i giorni qui vengo per lei deve essersi avveduta. Oh, vedi, amore, a un uomo del mio rango come l'ha fatta bella!... Oh, deve esser mia sposa!", en: "If I manage to speak with her, I want no witnesses. She must have noticed that I come here every day at this hour. Ah, love, how beautiful you have made her, even for a man of my rank!... She must be my wife!" },
+        { speaker: "Stage direction", it: "Si sente venire da lontano Figaro cantando. Il Conte si nasconde sotto il portico.", en: "Figaro is heard approaching in the distance, singing. The Count hides beneath the arcade." },
+        { speaker: "The Count", it: "Chi è mai quest'importuno?... Lasciamolo passar; sotto quegli archi, non veduto, vedrò quanto bisogna; già l'alba è appena, e amor non si vergogna.", en: "Who can this intruder be?... Let him pass; unseen beneath those arches, I will see what I need to see. Dawn has only just broken, and love has no need to hide." }
       ] }
     ]
   },
