@@ -221,7 +221,8 @@ function formatLibrettoText(value, breakVerseLines=true) {
   }
   return text.split(/\n+/).map(line => escapeHtml(line.trim())).filter(Boolean).join("<br>");
 }
-function splitInlineDirections(value) {
+function splitInlineDirections(value, literalText = false) {
+  if (literalText) return [{ type: "text", value: String(value || "") }];
   const text = String(value || "");
   const parts = [];
   const pattern = /\(([^()]*)\)/g;
@@ -240,8 +241,10 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   const rows = section.turns.flatMap(turn => {
     const speaker = turn.speaker;
     if (speaker === directionSpeaker) {
-      const original = turn.original ?? turn.it ?? "";
-      const translation = turn.translation ?? turn.en ?? "";
+      const originalText = turn.original ?? turn.it ?? "";
+      const translatedText = turn.translation ?? turn.en ?? "";
+      const original = libretto.bracketStageDirections ? "[" + originalText + "]" : originalText;
+      const translation = libretto.bracketStageDirections ? "[" + translatedText + "]" : translatedText;
       const stageDirectionLabel = libretto.stageDirectionLabel
         ? '<span class="libretto-speaker libretto-speaker--stage-direction">' + escapeHtml(libretto.stageDirectionLabel) + '</span>'
         : "";
@@ -249,8 +252,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
         stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>'];
     }
-    const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "");
-    const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "");
+    const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText);
+    const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText);
     const count = Math.max(originalParts.length, translatedParts.length);
     const speakerTranslation = turn.speakerTranslation || libretto.speakerTranslations?.[speaker] || speaker;
     const output = [];

@@ -8,7 +8,7 @@ import { barbiereActTwoScenes } from "./libretti-barbiere-act2.js?v=barbiere-act
 import { tristanActOneScenes } from "./libretti-tristan-act1.js?v=tristan-act1-5";
 import { tristanActTwoScenes } from "./libretti-tristan-act2.js?v=tristan-act2-8";
 import { tristanActThreeScenes } from "./libretti-tristan-act3.js?v=tristan-act3-5";
-import { macbethActOneScenes } from "./libretti-macbeth-act1.js?v=macbeth-act1-1";
+import { macbethActOneScenes } from "./libretti-macbeth-act1.js?v=macbeth-act1-2";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -167,10 +167,11 @@ const macbeth = {
   translationLanguage: "English",
   preserveLineBreaks: true,
   sceneOriginalPrefix: "Scena",
-  sceneOrdinals: ["PRIMA"],
+  sceneOrdinals: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX"],
   stageDirectionSpeaker: "Stage direction",
-  stageDirectionLabel: "Stage direction",
-  translatedForms: { Introduzione: "Introduction" },
+  stageDirectionLabel: "",
+  bracketStageDirections: true,
+  translatedForms: { Introduzione: "Introduction", "Cavatina di Lady Macbeth": "Lady Macbeth’s Cavatina", "Recitativo e Marcia": "Recitative and March", "Scena e Duetto": "Scene and Duet", "Finale Primo": "First Finale" },
   acts: [{
     number: 1,
     originalHeading: "Atto primo",
@@ -188,10 +189,13 @@ const macbeth = {
       ["Lady Macbeth", "Soprano", "Macbeth's ambitious wife."],
       ["Banco", "Bass", "A general whose descendants are foretold to rule."],
       ["Fleanzio", "Silent role", "Banco's son."],
-      ["Tre Streghe", "Witches", "Three prophetic figures."]
+      ["Tre Streghe", "Chorus", "Three groups of witches who deliver the prophecies."],
+      ["Duncano", "Silent role", "King of Scotland."],
+      ["Malcolm", "Tenor", "Duncano’s son."],
+      ["Macduff", "Tenor", "A Scottish nobleman."]
     ]
   },
-  characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Tre Streghe"],
+  characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Tre Streghe", "Duncano", "Malcolm", "Macduff"],
   source: "Giuseppe Verdi, Macbeth (1847), Italian libretto and source divisions: https://opera-guide.ch/operas/macbethverdi/libretto/it/"
 };
 
