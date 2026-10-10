@@ -268,11 +268,11 @@ function renderSceneSection(scene, section, sectionIndex, act) {
           formatLibrettoText(originalPart.value, false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
           formatLibrettoText(translatedPart.value, false) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
-        output.push('<div class="libretto-row"><div class="libretto-cell libretto-cell--german">' +
+        output.push('<div class="libretto-row' + (turn.editorialOmitted ? ' libretto-row--editorial-omission' : '') + '"><div class="libretto-cell libretto-cell--german">' +
           '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speaker) + '</span><p>' +
-          formatLibrettoText(originalPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+          (turn.editorialOmitted ? '<em>' : '') + formatLibrettoText(originalPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + (turn.editorialOmitted ? '</em>' : '') + '</p></div><div class="libretto-cell libretto-cell--english">' +
           '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span><p>' +
-          formatLibrettoText(translatedPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div></div>');
+          (turn.editorialOmitted ? '<em>' : '') + formatLibrettoText(translatedPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + (turn.editorialOmitted ? '</em>' : '') + '</p></div></div>');
       }
     }
     return output;
@@ -345,6 +345,7 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
         '<div class="desktop-outline-reopen"><button type="button" data-desktop-outline-expand aria-controls="act-outline" aria-expanded="false" aria-label="Expand outline" title="Expand outline"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16m4-11 3 3-3 3"></path></svg><span>Outline</span></button></div>' +
         '<section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + (libretto.sceneDivisions === false ? '' : '<nav aria-label="Scene navigation">' + previous + next + '</nav>') + '</div>' +
+        (libretto.editorialNote ? '<p class="libretto-editorial-note">' + escapeHtml(libretto.editorialNote) + '</p>' : '') +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Found a passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”.') + '</p>' : '') +
         (continuous ? scenes : [scene]).map(entry =>
           '<div class="scene-panel__top" id="libretto-scene-' + act + '-' + entry.number + '">' +
