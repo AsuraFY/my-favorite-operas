@@ -8,7 +8,7 @@ import { barbiereActTwoScenes } from "./libretti-barbiere-act2.js?v=barbiere-act
 import { tristanActOneScenes } from "./libretti-tristan-act1.js?v=tristan-act1-5";
 import { tristanActTwoScenes } from "./libretti-tristan-act2.js?v=tristan-act2-8";
 import { tristanActThreeScenes } from "./libretti-tristan-act3.js?v=tristan-act3-5";
-import { macbethActOneScenes } from "./libretti-macbeth-act1.js?v=macbeth-act1-2";
+import { macbethActOneScenes } from "./libretti-macbeth-act1.js?v=macbeth-act1-3";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],

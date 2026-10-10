@@ -6,17 +6,16 @@ export const macbethActOneScenes = [
     "number": 1,
     "title": "Bosco",
     "translatedTitle": "A wood",
-    "cast": "Witches, Witch 1, Witch 2, Witch 3",
+    "cast": "All three witches, Witch 1, Witch 2, Witch 3",
     "summary": "A wood.",
     "sections": [
       {
         "type": "Introduzione",
         "participants": [
-          "TRE STREGHE",
-          "I.",
-          "II.",
-          "III.",
-          "TUTTE"
+          "Tutte e tre le streghe",
+          "Strega 1",
+          "Strega 2",
+          "Strega 3"
         ],
         "turns": [
           {
@@ -25,49 +24,49 @@ export const macbethActOneScenes = [
             "en": "A wood\nThree groups of witches appear one after another amid lightning and thunder."
           },
           {
-            "speaker": "I.",
+            "speaker": "Strega 1",
             "it": "Che faceste? dite su!",
             "en": "What have you done? Tell us!",
             "speakerTranslation": "Witch 1",
             "literalText": true
           },
           {
-            "speaker": "II.",
+            "speaker": "Strega 2",
             "it": "Ho sgozzato un verro.",
             "en": "I slaughtered a boar.",
             "speakerTranslation": "Witch 2",
             "literalText": true
           },
           {
-            "speaker": "I.",
+            "speaker": "Strega 1",
             "it": "E tu?",
             "en": "And you?",
             "speakerTranslation": "Witch 1",
             "literalText": true
           },
           {
-            "speaker": "III.",
+            "speaker": "Strega 3",
             "it": "M'è frullata nel pensier\nLa mogliera di un nocchier:\nAl dimon la mi cacciò...\nMa lo sposo che salpò\nCol suo legno affogherò.",
             "en": "A sailor's wife\ncame into my mind:\nShe drove me away, calling me a demon...\nBut her husband has set sail;\nI'll drown him with his ship.",
             "speakerTranslation": "Witch 3",
             "literalText": true
           },
           {
-            "speaker": "I.",
+            "speaker": "Strega 1",
             "it": "Un rovaio ti darò...",
             "en": "I'll send you a squall...",
             "speakerTranslation": "Witch 1",
             "literalText": true
           },
           {
-            "speaker": "II.",
+            "speaker": "Strega 2",
             "it": "I marosi leverò...",
             "en": "I'll raise the waves...",
             "speakerTranslation": "Witch 2",
             "literalText": true
           },
           {
-            "speaker": "III.",
+            "speaker": "Strega 3",
             "it": "Per le secche lo trarrò.",
             "en": "I'll drive him onto the shoals.",
             "speakerTranslation": "Witch 3",
@@ -79,10 +78,10 @@ export const macbethActOneScenes = [
             "en": "A drum is heard."
           },
           {
-            "speaker": "TUTTE",
+            "speaker": "Tutte e tre le streghe",
             "it": "Un tamburo! Che sarà?\nVien Macbetto. Eccolo qua!",
             "en": "A drum! What can it be?\nMacbeth is coming. There he is!",
-            "speakerTranslation": "Witches",
+            "speakerTranslation": "All three witches",
             "literalText": true
           },
           {
@@ -91,10 +90,10 @@ export const macbethActOneScenes = [
             "en": "They mingle and weave a wild dance."
           },
           {
-            "speaker": "TUTTE",
+            "speaker": "Tutte e tre le streghe",
             "it": "Le sorelle vagabonde\nvan per l'aria, van sull'onde,\nSanno un circolo intrecciar\nChe comprende e terra e mar.",
             "en": "The wandering sisters\nfly through the air, fly over the waves.\nThey know how to weave a circle\nthat embraces both land and sea.",
-            "speakerTranslation": "Witches",
+            "speakerTranslation": "All three witches",
             "literalText": true
           }
         ],
@@ -106,7 +105,7 @@ export const macbethActOneScenes = [
     "number": 2,
     "title": "Le profezie",
     "translatedTitle": "The prophecies",
-    "cast": "Macbeth, Banco, Witches, Witch 1, Witch 2, Witch 3, Banco and Macbeth",
+    "cast": "Macbeth, Banco, All three witches, Witch 1, Witch 2, Witch 3, Banco and Macbeth",
     "summary": "The prophecies.",
     "sections": [
       {
@@ -115,11 +114,10 @@ export const macbethActOneScenes = [
           "MACBETH",
           "BANCO",
           "MACBETH:",
-          "STREGHE",
-          "I.",
-          "II.",
-          "III.",
-          "TUTTE",
+          "Tutte e tre le streghe",
+          "Strega 1",
+          "Strega 2",
+          "Strega 3",
           "BANCO e MACBETH"
         ],
         "turns": [
@@ -174,21 +172,21 @@ export const macbethActOneScenes = [
             "en": "Prophetically."
           },
           {
-            "speaker": "I.",
+            "speaker": "Strega 1",
             "it": "Salve, o Macbetto, di Glamis sire!",
             "en": "Hail, Macbeth, lord of Glamis!",
             "speakerTranslation": "Witch 1",
             "literalText": true
           },
           {
-            "speaker": "II.",
+            "speaker": "Strega 2",
             "it": "Salve, o Macbetto, di Caudor sire!",
             "en": "Hail, Macbeth, lord of Caudor!",
             "speakerTranslation": "Witch 2",
             "literalText": true
           },
           {
-            "speaker": "III.",
+            "speaker": "Strega 3",
             "it": "Salve, o Macbetto, di Scozia re!",
             "en": "Hail, Macbeth, king of Scotland!",
             "speakerTranslation": "Witch 3",
@@ -219,52 +217,52 @@ export const macbethActOneScenes = [
             "literalText": true
           },
           {
-            "speaker": "I.",
+            "speaker": "Strega 1",
             "it": "Salve!",
             "en": "Hail!",
             "speakerTranslation": "Witch 1",
             "literalText": true
           },
           {
-            "speaker": "II.",
+            "speaker": "Strega 2",
             "it": "Salve!",
             "en": "Hail!",
             "speakerTranslation": "Witch 2",
             "literalText": true
           },
           {
-            "speaker": "III.",
+            "speaker": "Strega 3",
             "it": "Salve!",
             "en": "Hail!",
             "speakerTranslation": "Witch 3",
             "literalText": true
           },
           {
-            "speaker": "I.",
+            "speaker": "Strega 1",
             "it": "Men sarai di Macbetto eppur maggiore!",
             "en": "You shall be less than Macbeth, yet greater!",
             "speakerTranslation": "Witch 1",
             "literalText": true
           },
           {
-            "speaker": "II.",
+            "speaker": "Strega 2",
             "it": "Non quanto lui, ma più di lui felice!",
             "en": "Not as great as he, but happier than he!",
             "speakerTranslation": "Witch 2",
             "literalText": true
           },
           {
-            "speaker": "III.",
+            "speaker": "Strega 3",
             "it": "Non re, ma di monarchi genitore!",
             "en": "Not a king, but the father of kings!",
             "speakerTranslation": "Witch 3",
             "literalText": true
           },
           {
-            "speaker": "TUTTE",
+            "speaker": "Tutte e tre le streghe",
             "it": "Macbetto e Banco vivano!\nBanco e Macbetto vivano!",
             "en": "Long live Macbeth and Banco!\nLong live Banco and Macbeth!",
-            "speakerTranslation": "Witches",
+            "speakerTranslation": "All three witches",
             "literalText": true
           },
           {
@@ -410,13 +408,13 @@ export const macbethActOneScenes = [
     "number": 4,
     "title": "Il ritorno delle streghe",
     "translatedTitle": "The witches return",
-    "cast": "Witches",
+    "cast": "All three witches",
     "summary": "The witches return.",
     "sections": [
       {
         "type": "Passage",
         "participants": [
-          "STREGHE"
+          "Tutte e tre le streghe"
         ],
         "turns": [
           {
@@ -425,10 +423,10 @@ export const macbethActOneScenes = [
             "en": "The witches return."
           },
           {
-            "speaker": "STREGHE",
+            "speaker": "Tutte e tre le streghe",
             "it": "S'allontanarono! - N'accozzeremo\nQuando di fulmini - lo scroscio udremo.\nS'allontanarono, - fuggiam!... s'attenda\nLe sorti a compiere - nella tregenda.\nMacbetto ridere - vedrem colà,\nE il nostro oracolo - gli parlerà.\nFuggiam, fuggiam!",
             "en": "They have gone! We'll gather again\nwhen we hear the crash of thunder.\nThey have gone; let us flee!... Let us wait\nto fulfil our fate in the witches' gathering.\nThere we shall see Macbeth laugh,\nand our oracle will speak to him.\nLet us flee, let us flee!",
-            "speakerTranslation": "Witches",
+            "speakerTranslation": "All three witches",
             "literalText": true
           },
           {

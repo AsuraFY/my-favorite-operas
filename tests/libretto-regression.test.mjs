@@ -251,7 +251,8 @@ test("Macbeth Act I preserves all 19 source scenes and paired translation", () =
   assert.ok(page.includes("Witch 1"));
   assert.ok(page.includes("Witch 2"));
   assert.ok(page.includes("Witch 3"));
-  assert.ok(page.includes("Witches"));
+  assert.ok(page.includes("All three witches"));
+  for (const n of [1, 2, 3]) assert.ok(page.includes("Strega " + n));
   assert.ok(page.includes('class="libretto-row libretto-row--stage-direction"'));
   assert.ok(page.includes("[A drum is heard.]"));
   assert.ok(page.includes("A drum is heard."));
