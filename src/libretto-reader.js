@@ -92,6 +92,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
         '<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(track.translation)+'</span></span></a>';
     }).join("");
     const selected=outlineScene.tracks.some(track=>(track.sourceScene||outlineScene.number)===selectedScene);
+    if (libretto.sceneDivisions === false) return '<div class="section-nav">' + links + '</div>';
     return '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
       '><summary class="scene-group__summary"><span>Scene '+romanNumeral(outlineScene.number)+'</span>'+
       '<span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
@@ -113,6 +114,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
         (isNamedPassage&&titles.translation?'<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(titles.translation)+'</span>':'')+'</span></a>';
     }).join("");
     const selected=item.number===selectedScene;
+    if (libretto.sceneDivisions === false) return '<div class="section-nav">' + links + '</div>';
     return '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
       '><summary class="scene-group__summary"><span>Scene '+romanNumeral(item.number)+
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
@@ -154,11 +156,11 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
   return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
     header + prelude + group.scenes.map(scene => {
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
-      return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
-        '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
+      return '<section class="opera-outline__scene" aria-labelledby="' + (libretto.sceneDivisions === false ? 'outline-act-' + act : sceneId) + '">' +
+        (libretto.sceneDivisions === false ? '' : '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
         ' <span>·</span> Scene ' + scene.number +
         (scene.title ? ' <span>·</span> ' + escapeHtml(scene.title) + (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') : '') +
-        '</h3><div class="opera-outline__sections">' +
+        '</h3>') + '<div class="opera-outline__sections">' +
         scene.sections.map((section, index) => {
           const presentation = sectionPresentation(scene, section, index);
           const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number + '&item=' + index;
@@ -342,14 +344,14 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
       '<div class="reading-main">' +
         '<div class="desktop-outline-reopen"><button type="button" data-desktop-outline-expand aria-controls="act-outline" aria-expanded="false" aria-label="Expand outline" title="Expand outline"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16m4-11 3 3-3 3"></path></svg><span>Outline</span></button></div>' +
         '<section class="scene-panel">' +
-        '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
+        '<div class="mobile-reader-toolbar">' + outlineButton + (libretto.sceneDivisions === false ? '' : '<nav aria-label="Scene navigation">' + previous + next + '</nav>') + '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Found a passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”.') + '</p>' : '') +
         (continuous ? scenes : [scene]).map(entry =>
           '<div class="scene-panel__top" id="libretto-scene-' + act + '-' + entry.number + '">' +
           '<h' + (continuous ? '2' : '1') + ' class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
-          ' · ' + actLabel.toUpperCase() + ' <span>/</span> ' +
+          ' · ' + actLabel.toUpperCase() + (libretto.sceneDivisions === false ? '' : ' <span>/</span> ' +
           escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " + (libretto.sceneOrdinals?.[entry.number - 1] || romanNumeral(entry.number))).toUpperCase() +
-          ' · SCENE ' + romanNumeral(entry.number) + '</h' + (continuous ? '2' : '1') + '>' +
+          ' · SCENE ' + romanNumeral(entry.number)) + '</h' + (continuous ? '2' : '1') + '>' +
           '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(entry)) + '</p></div>' +
           entry.sections.map((part, index) => renderSceneSection(entry, part, index, act)).join("")
         ).join("") +

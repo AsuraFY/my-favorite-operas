@@ -15,6 +15,7 @@ import { macbethActTwoScenes } from "./libretti-macbeth-act2.js?v=macbeth-act2-1
 import { macbethActThreeScenes } from "./libretti-macbeth-act3.js?v=macbeth-act3-1";
 
 import { macbethActFourScenes } from "./libretti-macbeth-act4.js?v=macbeth-act4-1";
+import { turandotActOneScenes } from "./libretti-turandot-act1.js?v=turandot-act1-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -218,7 +219,45 @@ const macbeth = {
   source: "Giuseppe Verdi, Macbeth (1847), Italian libretto and source divisions: https://opera-guide.ch/operas/macbethverdi/libretto/it/"
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth };
+const turandot = {
+  slug: "turandot",
+  opera: getOpera("turandot"),
+  composerShort: "G. PUCCINI",
+  mobileComposer: "Giacomo Puccini",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  preserveLineBreaks: true,
+  continuousAct: true,
+  sceneDivisions: false,
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "",
+  bracketStageDirections: true,
+  translatedForms: { Introduzione: "Introduction", Coro: "Chorus", "Marcia funebre": "Funeral March", Scena: "Scene", Aria: "Aria", Arioso: "Arioso", Concertato: "Concerted Ensemble" },
+  acts: [{ number: 1, originalHeading: "Atto I", scenes: turandotActOneScenes }],
+  synopsis: {
+    eyebrow: "Giacomo Puccini · Opera in three acts",
+    paragraphs: [
+      "In legendary Peking, Princess Turandot offers marriage to a prince who can answer three riddles; those who fail are executed. Calaf, the son of the exiled king Timur, sees her and resolves to attempt the trial, despite the pleas of his father and the devoted slave Liù.",
+      "Calaf answers the riddles, then offers Turandot a challenge of his own: discover his name before dawn. Her search places Timur and Liù in danger. Liù’s sacrifice and Calaf’s love confront the princess with feelings she has long rejected."
+    ],
+    characters: [
+      ["Turandot", "Soprano", "The princess who sets three riddles for her suitors."],
+      ["Calaf", "Tenor", "Timur’s son, the unknown prince."],
+      ["Liù", "Soprano", "A young slave devoted to Calaf and Timur."],
+      ["Timur", "Bass", "A deposed Tartar king, Calaf’s father."],
+      ["Ping", "Baritone", "The grand chancellor."],
+      ["Pang", "Tenor", "The grand purveyor."],
+      ["Pong", "Tenor", "The grand cook."],
+      ["Altoum", "Tenor", "The emperor, Turandot’s father."],
+      ["Il Mandarino", "Baritone", "The official who announces the law."],
+      ["Il Principe di Persia", "Silent role with an offstage cry", "A defeated suitor condemned to death."]
+    ]
+  },
+  characters: ["Turandot", "Calaf", "Liù", "Timur", "Ping", "Pang", "Pong", "Altoum", "Il Mandarino", "Il Principe di Persia"],
+  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Act I prepared; Acts II and III pending."
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
