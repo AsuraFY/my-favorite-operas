@@ -231,7 +231,7 @@ test("Macbeth Act I preserves all 19 source scenes and paired translation", () =
   assert.ok(macbeth);
   assert.equal(macbeth.originalLanguage, "Italiano");
   assert.equal(macbeth.translationLanguage, "English");
-  assert.equal(macbeth.acts.length, 1);
+  assert.equal(macbeth.acts.length, 2);
   assert.equal(macbeth.acts[0].prelude.title, "N. 1 - Preludio");
   assert.equal(macbeth.acts[0].scenes.length, 19);
   const scene = macbeth.acts[0].scenes[0];
@@ -300,4 +300,31 @@ test("Macbeth deep links keep the complete act and target the requested section"
     assert.ok(page.includes('data-initial-item="' + (number - 1) + '"'));
     for (let scene = 1; scene <= 19; scene++) assert.ok(page.includes('id="libretto-section-1-' + scene + '-0"'));
   }
+});
+
+
+test("Macbeth Act II retains all seven scenes on one aligned act page", () => {
+  const libretto = getLibretto("macbeth");
+  const act = libretto.acts.find(entry => entry.number === 2);
+  assert.equal(act.scenes.length, 7);
+  for (const scene of act.scenes) for (const section of scene.sections) for (const turn of section.turns) {
+    assert.ok(turn.it.trim()); assert.ok(turn.en.trim());
+    assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+  }
+  const reader = createLibrettoRenderer(libretto);
+  for (const number of [1, 3, 7]) {
+    window.location.hash = "#/operas/macbeth?act=2&scene=" + number + "&item=0";
+    const page = reader.scene(number);
+    assert.equal(count(page, /class="libretto-scene-section"/g), 7);
+    assert.ok(page.includes('data-initial-item="' + (number - 1) + '"'));
+    for (let scene = 1; scene <= 7; scene++) assert.ok(page.includes('id="libretto-section-2-' + scene + '-0"'));
+    assert.ok(page.includes("Assassins 1"));
+    assert.ok(page.includes("[The ghost reappears.<br>Terrified.]"));
+    assert.ok(page.includes("Chorus"));
+  }
+  const outline = reader.outline();
+  assert.ok(outline.includes("N. 8 1/2"));
+  assert.ok(outline.includes("#/operas/macbeth?act=2&scene=7&item=0"));
+  window.location.hash = "#/operas/macbeth?act=1";
+  assert.ok(reader.scene(1).includes("Continue to Act II"));
 });
