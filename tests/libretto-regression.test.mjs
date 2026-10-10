@@ -231,7 +231,7 @@ test("Macbeth Act I preserves all 19 source scenes and paired translation", () =
   assert.ok(macbeth);
   assert.equal(macbeth.originalLanguage, "Italiano");
   assert.equal(macbeth.translationLanguage, "English");
-  assert.equal(macbeth.acts.length, 3);
+  assert.equal(macbeth.acts.length, 4);
   assert.equal(macbeth.acts[0].prelude.title, "N. 1 - Preludio");
   assert.equal(macbeth.acts[0].scenes.length, 19);
   const scene = macbeth.acts[0].scenes[0];
@@ -347,4 +347,32 @@ test("Macbeth Act III retains source scenes, witch labels, and a continuous page
   assert.ok(page.includes("All three witches"));
   assert.ok(page.includes("Apparition 3"));
   assert.ok(page.includes('data-initial-item="3"'));
+});
+
+
+test("Macbeth Act IV includes all scenes, both opening numbers, and the final chorus", () => {
+  const libretto = getLibretto("macbeth");
+  const act = libretto.acts.find(entry => entry.number === 4);
+  assert.equal(act.scenes.length, 11);
+  assert.deepEqual(act.scenes[0].sections.map(section => section.number), [12, 13]);
+  for (const scene of act.scenes) for (const section of scene.sections) for (const turn of section.turns) {
+    assert.ok(turn.it.trim()); assert.ok(turn.en.trim());
+    assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+  }
+  const reader = createLibrettoRenderer(libretto);
+  for (const number of [1, 4, 11]) {
+    window.location.hash = "#/operas/macbeth?act=4&scene=" + number + "&item=0";
+    const page = reader.scene(number);
+    assert.equal(count(page, /class="libretto-scene-section"/g), 12);
+    const expectedIndex = act.scenes.slice(0, number - 1).reduce((n, scene) => n + scene.sections.length, 0);
+    assert.ok(page.includes('data-initial-item="' + expectedIndex + '"'));
+    for (let n = 1; n <= 11; n++) assert.ok(page.includes('id="libretto-section-4-' + n + '-0"'));
+    assert.ok(page.includes("Per noi di tal vittoria."));
+    assert.ok(page.includes("eternal for us."));
+    assert.ok(page.includes("Chorus of Women"));
+    assert.ok(page.includes("End of Act IV"));
+    assert.ok(!page.includes("Continue to Act V"));
+  }
+  window.location.hash = "#/operas/macbeth?act=3";
+  assert.ok(reader.scene(1).includes("Continue to Act IV"));
 });
