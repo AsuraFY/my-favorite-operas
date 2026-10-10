@@ -74,3 +74,34 @@ test("Turandot Act II retains six source numbers, both tableaux and aligned ridd
   assert.match(html, /N\. 12 · Scena degli Enigmi/);
   assert.match(html, /Ho una casa nell/);
 });
+
+test("Turandot Act III retains all seven numbers and the complete Alfano ending", () => {
+  const sections = libretto.acts[2].scenes[0].sections;
+  assert.deepEqual(sections.map(s => s.number), [14, 15, 16, 17, 18, 19, 20]);
+  assert.deepEqual(sections.filter(s => s.sourceDivision).map(s => s.sourceDivision.original), ["Quadro I", "Quadro II"]);
+  let lines = 0;
+  for (const section of sections) for (const turn of section.turns) {
+    assert.ok(turn.it && turn.en);
+    if (turn.speaker === "Stage direction") continue;
+    assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+    lines += turn.it.split("\n").length;
+  }
+  assert.equal(lines, 332);
+  assert.match(sections[5].sourceNote, /Franco Alfano/);
+  assert.match(sections[6].turns.at(-1).it, /Gloria a te!\.\.\. Gloria!/);
+  assert.ok(sections[5].turns.some(t => t.it.includes("Io sono Calaf, figlio di Timur!")));
+  window.location.hash = "#/operas/turandot?act=3&scene=1&item=6";
+  const reader = createLibrettoRenderer(libretto);
+  const html = reader.scene(1, "", 6);
+  assert.equal((html.match(/class="libretto-scene-section/g) || []).length, 7);
+  assert.match(html, /data-initial-item="6"/);
+  assert.match(html, /N\. 14 · Introduzione e Romanza/);
+  assert.match(html, /N\. 20 · Finale/);
+  assert.match(html, /His name is\.\.\. Love!/);
+  assert.match(html, /Franco Alfano/);
+  assert.match(reader.scene(1, "Nessun dorma"), /data-initial-item="0"/);
+  const outline = reader.outline();
+  assert.equal((outline.match(/class="opera-outline__section-title"/g) || []).length, 20);
+  assert.match(outline, /Quadro II/);
+  assert.ok(!outline.includes("Passage"));
+});

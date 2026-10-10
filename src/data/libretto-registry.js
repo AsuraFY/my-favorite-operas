@@ -17,6 +17,7 @@ import { macbethActThreeScenes } from "./libretti-macbeth-act3.js?v=macbeth-act3
 import { macbethActFourScenes } from "./libretti-macbeth-act4.js?v=macbeth-act4-1";
 import { turandotActOneScenes } from "./libretti-turandot-act1.js?v=turandot-act1-1";
 import { turandotActTwoScenes } from "./libretti-turandot-act2.js?v=turandot-act2-1";
+import { turandotActThreeScenes } from "./libretti-turandot-act3.js?v=turandot-act3-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -233,8 +234,8 @@ const turandot = {
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "",
   bracketStageDirections: true,
-  translatedForms: { Introduzione: "Introduction", Coro: "Chorus", "Marcia funebre": "Funeral March", Scena: "Scene", Aria: "Aria", Arioso: "Arioso", Concertato: "Concerted Ensemble", Terzetto: "Trio", "Interludio, Scena e Inno": "Interlude, Scene and Hymn", Recitativo: "Recitative", "Scena e Aria": "Scene and Aria", "Scena degli Enigmi": "Riddle Scene", "Scena e Inno": "Scene and Hymn" },
-  acts: [{ number: 1, originalHeading: "Atto I", scenes: turandotActOneScenes }, { number: 2, originalHeading: "Atto II", scenes: turandotActTwoScenes }],
+  translatedForms: { Introduzione: "Introduction", Coro: "Chorus", "Marcia funebre": "Funeral March", Scena: "Scene", Aria: "Aria", Arioso: "Arioso", Concertato: "Concerted Ensemble", Terzetto: "Trio", "Interludio, Scena e Inno": "Interlude, Scene and Hymn", Recitativo: "Recitative", "Scena e Aria": "Scene and Aria", "Scena degli Enigmi": "Riddle Scene", "Scena e Inno": "Scene and Hymn", "Introduzione e Romanza": "Introduction and Romance", "Transizione e Aria": "Transition and Aria", Duetto: "Duet", Finale: "Finale" },
+  acts: [{ number: 1, originalHeading: "Atto I", scenes: turandotActOneScenes }, { number: 2, originalHeading: "Atto II", scenes: turandotActTwoScenes }, { number: 3, originalHeading: "Atto III", scenes: turandotActThreeScenes }],
   synopsis: {
     eyebrow: "Giacomo Puccini · Opera in three acts",
     paragraphs: [
@@ -255,7 +256,7 @@ const turandot = {
     ]
   },
   characters: ["Turandot", "Calaf", "Liù", "Timur", "Ping", "Pang", "Pong", "Altoum", "Il Mandarino", "Il Principe di Persia"],
-  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Acts I and II prepared; Act III pending."
+  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), complete Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Act III includes the ending completed by Franco Alfano in Arturo Toscanini’s version, printed in grey in the PDF because it was not performed in that production."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot };
