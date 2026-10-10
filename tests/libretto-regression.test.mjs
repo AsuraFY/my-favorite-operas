@@ -235,6 +235,8 @@ test("Macbeth Act I Scene I pilot preserves the Italian source layout and paired
   assert.equal(macbeth.acts[0].prelude.title, "N. 1 - Preludio");
   const scene = macbeth.acts[0].scenes[0];
   assert.equal(scene.title, "Bosco");
+  assert.equal(scene.translatedTitle, "Forest");
+  assert.equal(macbeth.preserveLineBreaks, true);
   assert.equal(scene.sections[0].number, 2);
   for (const turn of scene.sections[0].turns) {
     assert.ok(turn.it.trim());
@@ -257,4 +259,7 @@ test("Macbeth Act I Scene I pilot preserves the Italian source layout and paired
   assert.ok(outline.includes("No. 1 - Prelude"));
   assert.ok(outline.includes("N. 2 · Introduzione"));
   assert.ok(outline.includes("Introduction"));
+  assert.ok(outline.includes("Bosco"));
+  assert.ok(outline.includes("Forest"));
+  assert.ok(!outline.includes("Introduzione · Introduzione"));
 });
