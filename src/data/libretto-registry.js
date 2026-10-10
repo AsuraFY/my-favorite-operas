@@ -12,6 +12,8 @@ import { macbethActOneScenes } from "./libretti-macbeth-act1.js?v=macbeth-act1-3
 
 import { macbethActTwoScenes } from "./libretti-macbeth-act2.js?v=macbeth-act2-1";
 
+import { macbethActThreeScenes } from "./libretti-macbeth-act3.js?v=macbeth-act3-1";
+
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
   ["Dorabella", "Mezzo-soprano", "Fiordiligi’s sister, engaged to Ferrando; her feelings shift during the disguised courtship."],
@@ -174,7 +176,7 @@ const macbeth = {
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "",
   bracketStageDirections: true,
-  translatedForms: { Introduzione: "Introduction", "Cavatina di Lady Macbeth": "Lady Macbeth’s Cavatina", "Recitativo e Marcia": "Recitative and March", "Scena e Duetto": "Scene and Duet", "Finale Primo": "First Finale", "Scena ed Aria Lady": "Lady Macbeth’s Scene and Aria", "Coro di Sicari": "Chorus of Assassins", "Scena Banco": "Banco’s Scene", "Convito, Visione e Finale Secondo": "Banquet, Vision and Second Finale" },
+  translatedForms: { Introduzione: "Introduction", "Cavatina di Lady Macbeth": "Lady Macbeth’s Cavatina", "Recitativo e Marcia": "Recitative and March", "Scena e Duetto": "Scene and Duet", "Finale Primo": "First Finale", "Scena ed Aria Lady": "Lady Macbeth’s Scene and Aria", "Coro di Sicari": "Chorus of Assassins", "Scena Banco": "Banco’s Scene", "Convito, Visione e Finale Secondo": "Banquet, Vision and Second Finale", "[Ballo e] Coro": "[Ballet and] Chorus", "Recitativo, Apparizoni, Ballabile e Duetto finale": "Recitative, Apparitions, Ballet and Final Duet" },
   acts: [{
     number: 1,
     originalHeading: "Atto primo",
@@ -184,6 +186,10 @@ const macbeth = {
     number: 2,
     originalHeading: "Atto secondo",
     scenes: macbethActTwoScenes
+  }, {
+    number: 3,
+    originalHeading: "Atto terzo",
+    scenes: macbethActThreeScenes
   }],
   synopsis: {
     eyebrow: "Giuseppe Verdi · Opera in four acts",

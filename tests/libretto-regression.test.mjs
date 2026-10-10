@@ -231,7 +231,7 @@ test("Macbeth Act I preserves all 19 source scenes and paired translation", () =
   assert.ok(macbeth);
   assert.equal(macbeth.originalLanguage, "Italiano");
   assert.equal(macbeth.translationLanguage, "English");
-  assert.equal(macbeth.acts.length, 2);
+  assert.equal(macbeth.acts.length, 3);
   assert.equal(macbeth.acts[0].prelude.title, "N. 1 - Preludio");
   assert.equal(macbeth.acts[0].scenes.length, 19);
   const scene = macbeth.acts[0].scenes[0];
@@ -327,4 +327,24 @@ test("Macbeth Act II retains all seven scenes on one aligned act page", () => {
   assert.ok(outline.includes("#/operas/macbeth?act=2&scene=7&item=0"));
   window.location.hash = "#/operas/macbeth?act=1";
   assert.ok(reader.scene(1).includes("Continue to Act II"));
+});
+
+
+test("Macbeth Act III retains source scenes, witch labels, and a continuous page", () => {
+  const libretto = getLibretto("macbeth");
+  const act = libretto.acts.find(entry => entry.number === 3);
+  assert.equal(act.scenes.length, 4);
+  for (const scene of act.scenes) for (const section of scene.sections) for (const turn of section.turns) {
+    assert.ok(turn.it.trim()); assert.ok(turn.en.trim());
+    assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+  }
+  window.location.hash = "#/operas/macbeth?act=3&scene=4&item=0";
+  const reader = createLibrettoRenderer(libretto);
+  const page = reader.scene(4);
+  assert.equal(count(page, /class="libretto-scene-section"/g), 4);
+  for (let n = 1; n <= 4; n++) assert.ok(page.includes('id="libretto-section-3-' + n + '-0"'));
+  for (let n = 1; n <= 3; n++) assert.ok(page.includes("Strega " + n));
+  assert.ok(page.includes("All three witches"));
+  assert.ok(page.includes("Apparition 3"));
+  assert.ok(page.includes('data-initial-item="3"'));
 });
