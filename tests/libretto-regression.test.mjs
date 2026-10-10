@@ -7,6 +7,31 @@ const cosi = getLibretto("cosi-fan-tutte");
 globalThis.window = { location: { hash: "" } };
 const count = (html, pattern) => (html.match(pattern) || []).length;
 
+// A source turn may render several rows: lyrics before/after an inline
+// direction stay separate from the direction itself.
+function assertSceneRows(page, scene) {
+  let lyrics = 0, directions = 0;
+  for (const section of scene.sections) for (const turn of section.turns) {
+    if (turn.speaker === "Stage direction") {
+      directions++;
+      continue;
+    }
+    const parts = value => turn.literalText
+      ? [{ direction: false, text: value }]
+      : String(value || "").split(/(\([^()]*\))/).filter(text => text.trim())
+        .map(text => ({ direction: text.startsWith("("), text }));
+    const original = parts(turn.original ?? turn.it);
+    const translated = parts(turn.translation ?? turn.en);
+    assert.deepEqual(original.map(part => part.direction), translated.map(part => part.direction),
+      `Matching lyric/direction order for ${turn.speaker}`);
+    for (const part of original) part.direction ? directions++ : lyrics++;
+  }
+  assert.equal(count(page, /<div class="libretto-row"/g), lyrics, "all lyric segments render");
+  assert.equal(count(page, /<div class="libretto-row libretto-row--stage-direction"/g),
+    directions, "all standalone and inline directions render separately");
+}
+
+
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
   assert.equal(librettoCatalog.length, 5);
@@ -102,16 +127,15 @@ test("Barber of Seville Act I scenes render bilingual sections and outline links
     window.location.hash = "#/operas/il-barbiere-di-siviglia?act=1&scene=" + scene.number;
     const page = reader.scene(scene.number);
     assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
-    assert.equal(count(page, /<div class="libretto-row/g),
-      scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    assertSceneRows(page, scene);
     assert.ok(page.includes("Italiano"));
     assert.ok(page.includes("English"));
     sectionCount += scene.sections.length;
     rowCount += scene.sections.reduce((n, section) => n + section.turns.length, 0);
   }
   const outline = reader.outline();
-  assert.equal(count(outline, /class="opera-outline__scene"/g), 16);
-  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), sectionCount);
+  assert.equal(count(outline, /class="opera-outline__scene"/g), 27);
+  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), sectionCount + 23);
   assert.equal(sectionCount, 29);
   assert.equal(rowCount, 399);
   assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=1&scene=16&item=0"));
@@ -127,8 +151,7 @@ test("Barber of Seville Act II scenes render bilingual sections and outline link
     window.location.hash = "#/operas/il-barbiere-di-siviglia?act=2&scene=" + scene.number;
     const page = reader.scene(scene.number);
     assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
-    assert.equal(count(page, /<div class="libretto-row/g),
-      scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    assertSceneRows(page, scene);
     assert.ok(page.includes("Italiano"));
     assert.ok(page.includes("English"));
     sectionCount += scene.sections.length;
@@ -136,7 +159,7 @@ test("Barber of Seville Act II scenes render bilingual sections and outline link
   }
   const outline = reader.outline();
   assert.equal(count(outline, /class="opera-outline__scene"/g), 27);
-  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), 25 + sectionCount);
+  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), 29 + sectionCount);
   assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=2&scene=11&item=0"));
   assert.equal(sectionCount, 23);
   assert.equal(rowCount, 280);
@@ -150,7 +173,7 @@ test("all Così scenes render their complete sections, dialogue and outline cont
     const page = reader.scene(scene.number);
     const passages = scene.sections.reduce((n, part) => n + part.turns.length, 0);
     assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
-    assert.equal(count(page, /<div class="libretto-row/g), passages);
+    assertSceneRows(page, scene);
     assert.ok(page.includes('data-desktop-outline-collapse'));
     assert.ok(page.includes('data-desktop-outline-expand'));
     assert.ok(page.includes('data-outline-open'));
