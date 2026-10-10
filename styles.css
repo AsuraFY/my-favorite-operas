@@ -1843,15 +1843,6 @@ button { font: inherit; }
 }
 
 /* Separate successive scenes when an act is read continuously. */
-.libretto-editorial-note {
-  margin: 16px 0 24px;
-  padding: 12px 16px;
-  border-left: 2px solid #9b8569;
-  color: #505153;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
 .opera-reading-page[data-continuous-act="true"] .libretto-scene-section + .scene-panel__top {
   margin-top: clamp(40px, 5vw, 64px);
 }

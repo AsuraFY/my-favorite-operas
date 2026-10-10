@@ -15,7 +15,7 @@ import { macbethActTwoScenes } from "./libretti-macbeth-act2.js?v=macbeth-act2-1
 import { macbethActThreeScenes } from "./libretti-macbeth-act3.js?v=macbeth-act3-1";
 
 import { macbethActFourScenes } from "./libretti-macbeth-act4.js?v=macbeth-act4-1";
-import { turandotActOneScenes } from "./libretti-turandot-act1.js?v=turandot-fenice-act1-1";
+import { turandotActOneScenes } from "./libretti-turandot-act1.js?v=turandot-act1-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -229,7 +229,6 @@ const turandot = {
   preserveLineBreaks: true,
   continuousAct: true,
   sceneDivisions: false,
-  editorialNote: "La Fenice edition: italic lyrics are text not set to music; square brackets within lyrics mark Puccini’s additions. Stage directions appear separately in brackets. Passage titles are navigation aids; this edition does not number scenes or musical sections.",
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "",
   bracketStageDirections: true,
@@ -255,7 +254,7 @@ const turandot = {
     ]
   },
   characters: ["Turandot", "Calaf", "Liù", "Timur", "Ping", "Pang", "Pong", "Altoum", "Il Mandarino", "Il Principe di Persia"],
-  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), Italian libretto in Teatro La Fenice’s 2019 programme, edition based on Michele Girardi’s 2007 text, printed pages 28–35: https://www.teatrolafenice.it/wp-content/uploads/2019/05/Turandot_per_web.pdf. Unsung text is retained in italics; Puccini’s additions retain square brackets. Superscript references to editorial notes on pages 52–53 are omitted from the reading text. English: original line-by-line translation. Act I prepared; Acts II and III pending."
+  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Act I prepared; Acts II and III pending."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot };
