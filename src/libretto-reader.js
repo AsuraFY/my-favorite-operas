@@ -39,6 +39,11 @@ function sectionNavigationLabel(section, scene, sectionIndex) {
   if (no == null) return form + (title ? " · " + title : "");
   return (libretto.numberLabel || "N.") + " " + no + " · " + form + (title ? " · " + title : "");
 }
+function sourceDivisionHeading(section, tag = "h3") {
+  const division = section.sourceDivision;
+  return division ? '<' + tag + ' class="libretto-source-division">' + escapeHtml(division.original) +
+    ' <span>·</span> ' + escapeHtml(division.translation) + '</' + tag + '>' : '';
+}
 function sectionPresentation(scene, section, sectionIndex) {
   const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
   const no = section.number ?? (match ? Number(match[1]) : null);
@@ -107,7 +112,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       const title=titles.original;
       const form=title?(isNamedPassage?"Passage":label.slice(0,-(" · "+title).length)):label;
       const href="#/operas/"+libretto.slug+"?act="+act+"&scene="+item.number+"&item="+index;
-      return '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
+      return sourceDivisionHeading(section, "p") + '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
         '><span class="section-nav-link__icon section-nav-link__icon--'+(isSong?'song':'recitative')+'" aria-hidden="true">'+(isSong?'♫':'▤')+
         '</span><span class="section-nav-link__label"><span class="section-nav-link__form">'+escapeHtml(form)+'</span>'+
         (title?'<span class="section-nav-link__title">'+escapeHtml(title)+'</span>':'')+
@@ -164,7 +169,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
         scene.sections.map((section, index) => {
           const presentation = sectionPresentation(scene, section, index);
           const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number + '&item=' + index;
-          return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
+          return sourceDivisionHeading(section) + '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
             '<span class="opera-outline__section-title">' + escapeHtml(presentation.heading) + '</span>' +
             (section.type === "Passage" && presentation.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' : "") +
             sectionParticipantCredits(section, act, scene.number) + '</a>';
@@ -286,6 +291,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>';
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
     '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '" data-source-scene="' + scene.number + '">' +
+    sourceDivisionHeading(section, "h2") + (section.sourceNote ? '<p class="libretto-source-note">' + escapeHtml(section.sourceNote) + '</p>' : '') +
     selectedHeading + '<div class="libretto-columns"><div class="libretto-column-heading">' + escapeHtml(libretto.originalLanguage) + '</div>' +
     '<div class="libretto-column-heading">' + escapeHtml(libretto.translationLanguage) + '</div><div class="libretto-text">' +
     '<section class="libretto-section">' + sectionLabel + rows + '</section></div></div></section>';

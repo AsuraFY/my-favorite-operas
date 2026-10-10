@@ -16,6 +16,7 @@ import { macbethActThreeScenes } from "./libretti-macbeth-act3.js?v=macbeth-act3
 
 import { macbethActFourScenes } from "./libretti-macbeth-act4.js?v=macbeth-act4-1";
 import { turandotActOneScenes } from "./libretti-turandot-act1.js?v=turandot-act1-1";
+import { turandotActTwoScenes } from "./libretti-turandot-act2.js?v=turandot-act2-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -232,8 +233,8 @@ const turandot = {
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "",
   bracketStageDirections: true,
-  translatedForms: { Introduzione: "Introduction", Coro: "Chorus", "Marcia funebre": "Funeral March", Scena: "Scene", Aria: "Aria", Arioso: "Arioso", Concertato: "Concerted Ensemble" },
-  acts: [{ number: 1, originalHeading: "Atto I", scenes: turandotActOneScenes }],
+  translatedForms: { Introduzione: "Introduction", Coro: "Chorus", "Marcia funebre": "Funeral March", Scena: "Scene", Aria: "Aria", Arioso: "Arioso", Concertato: "Concerted Ensemble", Terzetto: "Trio", "Interludio, Scena e Inno": "Interlude, Scene and Hymn", Recitativo: "Recitative", "Scena e Aria": "Scene and Aria", "Scena degli Enigmi": "Riddle Scene", "Scena e Inno": "Scene and Hymn" },
+  acts: [{ number: 1, originalHeading: "Atto I", scenes: turandotActOneScenes }, { number: 2, originalHeading: "Atto II", scenes: turandotActTwoScenes }],
   synopsis: {
     eyebrow: "Giacomo Puccini · Opera in three acts",
     paragraphs: [
@@ -254,7 +255,7 @@ const turandot = {
     ]
   },
   characters: ["Turandot", "Calaf", "Liù", "Timur", "Ping", "Pang", "Pong", "Altoum", "Il Mandarino", "Il Principe di Persia"],
-  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Act I prepared; Acts II and III pending."
+  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Acts I and II prepared; Act III pending."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot };

@@ -30,6 +30,7 @@ test("Turandot Act I retains all seven PDF numbers and 436 aligned sung lines", 
 });
 
 test("Turandot deep links retain the whole act and navigation uses source numbers", () => {
+  window.location.hash = "#/operas/turandot?act=1&scene=1&item=6";
   const reader = createLibrettoRenderer(libretto);
   const html = reader.scene(1, "", 6);
   assert.match(html, /data-continuous-act="true"/);
@@ -48,4 +49,28 @@ test("Turandot deep links retain the whole act and navigation uses source number
   assert.match(outline, /N\. 3 · Marcia funebre/);
   assert.match(outline, /scene=1&amp;item=6|scene=1&item=6/);
   assert.match(reader.scene(1, "Do not weep"), /data-initial-item="5"/);
+});
+
+test("Turandot Act II retains six source numbers, both tableaux and aligned riddles", () => {
+  const sections = libretto.acts[1].scenes[0].sections;
+  assert.deepEqual(sections.map(s => s.number), [8, 9, 10, 11, 12, 13]);
+  assert.deepEqual(sections.filter(s => s.sourceDivision).map(s => s.sourceDivision.original), ["Quadro I", "Quadro II"]);
+  let lines = 0;
+  for (const section of sections) for (const turn of section.turns) {
+    assert.ok(turn.it && turn.en);
+    if (turn.speaker === "Stage direction") continue;
+    assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+    lines += turn.it.split("\n").length;
+  }
+  assert.equal(lines, 346);
+  assert.ok(sections[4].turns.some(t => t.en.includes("Hope! Hope! Hope!")));
+  assert.ok(sections[4].turns.some(t => t.en.includes("Blood! Blood! Blood!")));
+  assert.match(sections[5].turns.at(-1).it, /Gloria a te!/);
+  window.location.hash = "#/operas/turandot?act=2&scene=1&item=4";
+  const html = createLibrettoRenderer(libretto).scene(1, "", 4);
+  assert.equal((html.match(/class="libretto-scene-section/g) || []).length, 6);
+  assert.match(html, /data-initial-item="4"/);
+  assert.match(html, /Quadro II/);
+  assert.match(html, /N\. 12 · Scena degli Enigmi/);
+  assert.match(html, /Ho una casa nell/);
 });
