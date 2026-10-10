@@ -11,8 +11,6 @@ export const macbethActOneScenes = [
       {
         number: 2,
         type: "Introduzione",
-        originalTitle: "Introduzione",
-        translatedTitle: "Introduction",
         participants: ["Tre Streghe"],
         turns: [
           {
