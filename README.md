@@ -109,4 +109,4 @@ Work on the existing `Update` branch. Preserve the Italian source’s sung wordi
 
 ### Continuous act reading
 
-All scenes of an act belong on one continuous page. Set `continuousAct: true` in new opera registry entries, as in Macbeth. Scene/section links and mobile Previous/Next jump within the act; scrolling updates the selected scene and URL without replacing the act. Deep links retain every scene and locate the selected section.
+Confirm page granularity with the user when registering each new libretto: one page per act, or one page per scene. Do not infer it from another opera. Macbeth is approved for one page per act; Così fan tutte uses one page per scene. Set `continuousAct: true` only for an approved act-based layout. Scene/section links and mobile Previous/Next jump within the act; scrolling updates the selected scene and URL without replacing the act. Deep links retain every scene and locate the selected section.

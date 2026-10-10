@@ -1841,3 +1841,8 @@ button { font: inherit; }
 .opera-reading-page .libretto-row--stage-direction .libretto-cell p {
   line-height: 1.55;
 }
+
+/* Separate successive scenes when an act is read continuously. */
+.opera-reading-page[data-continuous-act="true"] .libretto-scene-section + .scene-panel__top {
+  margin-top: clamp(40px, 5vw, 64px);
+}
