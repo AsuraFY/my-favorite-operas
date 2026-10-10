@@ -166,6 +166,7 @@ const macbeth = {
   originalLanguage: "Italiano",
   translationLanguage: "English",
   preserveLineBreaks: true,
+  continuousAct: true,
   sceneOriginalPrefix: "Scena",
   sceneOrdinals: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX"],
   stageDirectionSpeaker: "Stage direction",

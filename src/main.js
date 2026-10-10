@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-art-2";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-14";
-import { getLibretto } from "./data/libretto-registry.js?v=registry-18";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-15";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-19";
 import { operaInformation } from "./data/opera-information.js?v=info-1";
 import { renderOperaInformationPage } from "./opera-info-page.js?v=info-page-1";
 
@@ -392,16 +392,30 @@ function currentSceneReader() {
 function highlightReaderSection(index, syncUrl = false) {
   const root = currentSceneReader();
   if (!root) return;
-  const act = Number(root.dataset.act), scene = Number(root.dataset.scene);
+  const act = Number(root.dataset.act);
   const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
   if (!items.length) return;
   const current = Math.max(0, Math.min(index, items.length - 1));
+  const activeSection = items[current];
+  const scene = Number(activeSection.dataset.sourceScene || root.dataset.scene);
+  const sectionItem = Number(activeSection.dataset.librettoItem);
+  root.dataset.scene = String(scene);
+  if (root.dataset.continuousAct === "true") {
+    const sceneNumbers = [...new Set(items.map(el => Number(el.dataset.sourceScene)))];
+    const position = sceneNumbers.indexOf(scene);
+    const controls = root.querySelector(".mobile-reader-toolbar nav");
+    if (controls) controls.innerHTML = [-1, 1].map(delta => {
+      const target = sceneNumbers[position + delta];
+      const label = delta < 0 ? "‹ Prev. scene" : "Next scene ›";
+      return target ? '<a class="mobile-scene-step" href="#/operas/' + root.dataset.librettoSlug + '?act=' + act + '&scene=' + target + '&item=0">' + label + '</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">' + label + '</span>';
+    }).join("");
+  }
   const sidebar = root.querySelector("[data-act-outline]");
   sidebar?.querySelectorAll(".section-nav-link").forEach(link => {
     const url = link.getAttribute("href");
     const params = new URLSearchParams(url.split("?")[1] || "");
     const selected = Number(params.get("act")) === act &&
-      Number(params.get("scene")) === scene && Number(params.get("item")) === current;
+      Number(params.get("scene")) === scene && Number(params.get("item")) === sectionItem;
     link.classList.toggle("is-current", selected);
     if (selected) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
@@ -412,10 +426,10 @@ function highlightReaderSection(index, syncUrl = false) {
     const [path, query = ""] = hash.split("?");
     if (path !== "#/operas/" + root.dataset.librettoSlug) return;
     const params = new URLSearchParams(query);
-    if (params.get("item") !== String(current)) {
+    if (params.get("item") !== String(sectionItem) || params.get("scene") !== String(scene)) {
       params.set("act", String(act));
       params.set("scene", String(scene));
-      params.set("item", String(current));
+      params.set("item", String(sectionItem));
       window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search + path + "?" + params.toString());
     }
   }
@@ -464,8 +478,8 @@ function updateReaderSectionPosition() {
     return;
   }
   let active = 0;
-  for (const section of items) {
-    if (section.getBoundingClientRect().top <= threshold) active = Number(section.dataset.librettoItem);
+  for (const [index, section] of items.entries()) {
+    if (section.getBoundingClientRect().top <= threshold) active = index;
     else break;
   }
   highlightReaderSection(active, true);
@@ -481,17 +495,19 @@ function scheduleReaderSectionUpdate() {
 }
 
 function handleSceneSectionLink(event) {
-  const link = event.target.closest?.(".section-nav-link[href]");
+  const link = event.target.closest?.(".section-nav-link[href], .mobile-scene-step[href]");
   const root = currentSceneReader();
   if (!link || !root) return;
   const href = link.getAttribute("href") || "";
   if (!href.startsWith("#/operas/" + root.dataset.librettoSlug + "?")) return;
   const params = new URLSearchParams(href.split("?")[1] || "");
   if (Number(params.get("act")) !== Number(root.dataset.act) ||
-      Number(params.get("scene")) !== Number(root.dataset.scene)) return;
+      (root.dataset.continuousAct !== "true" && Number(params.get("scene")) !== Number(root.dataset.scene))) return;
   event.preventDefault();
   closeActOutline(false);
-  jumpToReaderSection(Number(params.get("item")) || 0, true);
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  const index = root.dataset.continuousAct === "true" ? items.findIndex(el => Number(el.dataset.sourceScene) === Number(params.get("scene")) && Number(el.dataset.librettoItem) === (Number(params.get("item")) || 0)) : Number(params.get("item")) || 0;
+  jumpToReaderSection(index, true);
 }
 
 function restoreSceneReadingPosition(item) {
@@ -546,7 +562,7 @@ function render() {
     return;
   }
   const reader = currentSceneReader();
-  const hasSectionDestination = Boolean(reader && (routeParams.has("item") || query));
+  const hasSectionDestination = Boolean(reader && (routeParams.has("item") || query || (reader.dataset.continuousAct === "true" && routeParams.has("scene"))));
   readerJumping = hasSectionDestination;
   window.scrollTo(0, 0);
   if (hasSectionDestination) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);

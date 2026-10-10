@@ -11,7 +11,7 @@ function speakerClass(speaker) {
 }
 
 function romanNumeral(value) {
-  const numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII"];
+  const numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX"];
   return numerals[value] || String(value);
 }
 
@@ -283,7 +283,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   const sectionLabel = isSpotifyScene ? "" : '<div class="libretto-section__label">' +
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>';
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
-    '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '">' +
+    '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '" data-source-scene="' + scene.number + '">' +
     selectedHeading + '<div class="libretto-columns"><div class="libretto-column-heading">' + escapeHtml(libretto.originalLanguage) + '</div>' +
     '<div class="libretto-column-heading">' + escapeHtml(libretto.translationLanguage) + '</div><div class="libretto-text">' +
     '<section class="libretto-section">' + sectionLabel + rows + '</section></div></div></section>';
@@ -312,6 +312,8 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
   }
   const scene = scenes.find((item) => item.number === (found?.scene || selectedNumber)) || scenes[0];
   const itemIndex = Math.max(0, Math.min(found?.item ?? selectedItem, scene.sections.length - 1));
+  const continuous = Boolean(libretto.continuousAct);
+  const initialIndex = continuous ? scenes.slice(0, scenes.indexOf(scene)).reduce((n, entry) => n + entry.sections.length, 0) + itemIndex : itemIndex;
   const safeQuery = escapeHtml(query);
   const sceneLabel = "Scene " + romanNumeral(scene.number);
   const actLabel = "Act " + romanNumeral(act);
@@ -326,7 +328,7 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
     '<p class="scene-bottom-nav__label">End of ' + sceneLabel + '</p>' +
     '<div class="scene-bottom-nav__controls">' + previous + bottomNext + '</div></nav>';
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
-  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
+  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + initialIndex + '" data-continuous-act="' + continuous + '">' +
     renderOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art"' +
       (libretto.mobileArtworkUrl ? ' style="--mobile-opera-art: url(&quot;' + escapeHtml(libretto.mobileArtworkUrl) + '&quot;)"' : '') +
@@ -341,17 +343,18 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
         '<div class="desktop-outline-reopen"><button type="button" data-desktop-outline-expand aria-controls="act-outline" aria-expanded="false" aria-label="Expand outline" title="Expand outline"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16m4-11 3 3-3 3"></path></svg><span>Outline</span></button></div>' +
         '<section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
-        '<div class="scene-panel__top">' +
-          '<h1 class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
+        (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Found a passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”.') + '</p>' : '') +
+        (continuous ? scenes : [scene]).map(entry =>
+          '<div class="scene-panel__top" id="libretto-scene-' + act + '-' + entry.number + '">' +
+          '<h' + (continuous ? '2' : '1') + ' class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
           ' · ' + actLabel.toUpperCase() + ' <span>/</span> ' +
-          escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " +
-            (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number))).toUpperCase() +
-          ' · ' + sceneLabel.toUpperCase() + '</h1>' +
-          '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(scene)) + '</p>' +
-        '</div>' +
-        (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
-        scene.sections.map((part, index) => renderSceneSection(scene, part, index, act)).join("") +
-        bottomSceneNavigation +
+          escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " + (libretto.sceneOrdinals?.[entry.number - 1] || romanNumeral(entry.number))).toUpperCase() +
+          ' · SCENE ' + romanNumeral(entry.number) + '</h' + (continuous ? '2' : '1') + '>' +
+          '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(entry)) + '</p></div>' +
+          entry.sections.map((part, index) => renderSceneSection(entry, part, index, act)).join("")
+        ).join("") +
+        (continuous ? '<nav class="scene-bottom-nav" aria-label="End of act"><p class="scene-bottom-nav__label">End of ' + actLabel + '</p>' +
+          (followingAct ? '<a href="' + base + '?act=' + followingAct.number + '">Continue to Act ' + romanNumeral(followingAct.number) + ' →</a>' : '') + '</nav>' : bottomSceneNavigation) +
       '</section></div>' +
     '</div>' +
     '<button class="libretto-back-to-top" type="button" data-reader-top hidden aria-label="Back to scene navigation" title="Back to scene navigation"><span aria-hidden="true">↑</span><span aria-hidden="true">Top</span></button>' +

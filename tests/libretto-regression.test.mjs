@@ -273,7 +273,10 @@ test("Macbeth sung asides remain lyrics and final scene links render", () => {
   for (const scene of libretto.acts[0].scenes) {
     window.location.hash = "#/operas/macbeth?act=1&scene=" + scene.number;
     const page = reader.scene(scene.number);
-    assert.equal(count(page, /<div class="libretto-row/g), scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    assert.equal(count(page, /<div class="libretto-row/g), libretto.acts[0].scenes.reduce((n, entry) => n + entry.sections.reduce((m, section) => m + section.turns.length, 0), 0));
+    assert.equal(count(page, /class="libretto-scene-section"/g), 19);
+    assert.ok(page.includes('id="libretto-scene-1-1"'));
+    assert.ok(page.includes('id="libretto-scene-1-19"'));
     for (const section of scene.sections) for (const turn of section.turns) {
       if (turn.speaker === "Stage direction") continue;
       assert.equal(turn.literalText, true);
@@ -285,4 +288,16 @@ test("Macbeth sung asides remain lyrics and final scene links render", () => {
   window.location.hash = "#/operas/macbeth?act=1&scene=19";
   assert.ok(reader.scene(19).includes("SCENA XIX"));
   assert.ok(reader.outline().includes("#/operas/macbeth?act=1&scene=19&item=0"));
+});
+
+
+test("Macbeth deep links keep the complete act and target the requested section", () => {
+  const reader = createLibrettoRenderer(getLibretto("macbeth"));
+  for (const number of [1, 2, 13, 19]) {
+    window.location.hash = "#/operas/macbeth?act=1&scene=" + number + "&item=0";
+    const page = reader.scene(number);
+    assert.ok(page.includes('data-continuous-act="true"'));
+    assert.ok(page.includes('data-initial-item="' + (number - 1) + '"'));
+    for (let scene = 1; scene <= 19; scene++) assert.ok(page.includes('id="libretto-section-1-' + scene + '-0"'));
+  }
 });

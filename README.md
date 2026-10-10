@@ -106,3 +106,7 @@ The GitHub Pages workflow publishes from main. All development must remain on Up
 ### Macbeth translation conventions
 
 Work on the existing `Update` branch. Preserve the Italian source’s sung wording, line breaks, scene order, and bracketed stage directions. Use `Strega 1`, `Strega 2`, `Strega 3` in the Italian column and `Witch 1`, `Witch 2`, `Witch 3` in English. When the witches sing together, use `Tutte e tre le streghe` / `All three witches`, including in future acts. Keep other character names in their original Italian form. Source Roman numerals I./II./III. and collective witch labels are expanded only for speaker identification; lyrics remain unchanged.
+
+### Continuous act reading
+
+All scenes of an act belong on one continuous page. Set `continuousAct: true` in new opera registry entries, as in Macbeth. Scene/section links and mobile Previous/Next jump within the act; scrolling updates the selected scene and URL without replacing the act. Deep links retain every scene and locate the selected section.
