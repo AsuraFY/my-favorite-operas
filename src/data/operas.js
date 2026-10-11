@@ -128,6 +128,26 @@ export const operas = [
     summary: "Love, faith and betrayal collide as Dalila draws Samson away from his people and discovers the secret of his extraordinary strength.",
     note: "Dalila’s Mon cœur s’ouvre à ta voix and the final Bacchanale are among Saint-Saëns’s best-known operatic music."
   },
+  {
+    slug: "la-fanciulla-del-west",
+    image: "./public/images/la-fanciulla-del-west-art.webp",
+    title: "La fanciulla del West",
+    displayTitle: "The Girl of the Golden West",
+    aliases: ["Girl of the Golden West", "The Girl of the West", "La Fille du Far-West"],
+    composer: "Giacomo Puccini",
+    librettist: "Guelfo Civinini and Carlo Zangarini",
+    premiered: "10 December 1910",
+    premieredAt: "Metropolitan Opera House, New York",
+    language: "Italian",
+    genre: "Opera",
+    acts: 3,
+    color: "fanciulla",
+    initials: "FW",
+    featured: false,
+    librettoPlanned: true,
+    summary: "In a California mining camp, Minnie falls for an outlaw and risks everything to win him a chance at a new life.",
+    note: "Based on David Belasco’s The Girl of the Golden West, Puccini’s frontier opera had its world premiere at the Met."
+  },
 ];
 
 export function getOpera(slug) {

@@ -7,9 +7,9 @@ import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/op
 import { getLibretto } from "../src/data/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 
-test("all seven opera information pages contain verified metadata and full introductory sections", () => {
-  assert.equal(operas.length, 7);
-  assert.equal(new Set(operas.map(opera => opera.slug)).size, 7);
+test("all eight opera information pages contain verified metadata and full introductory sections", () => {
+  assert.equal(operas.length, 8);
+  assert.equal(new Set(operas.map(opera => opera.slug)).size, 8);
   for (const opera of operas) {
     const information = operaInformation[opera.slug];
     assert.ok(information, "missing details for " + opera.slug);
@@ -29,8 +29,8 @@ test("all seven opera information pages contain verified metadata and full intro
   }
 });
 
-test("Turandot, Figaro and Samson use optimized WebP artwork files", () => {
-  for (const slug of ["turandot", "le-nozze-di-figaro", "samson-et-dalila"]) {
+test("Operas with standalone artwork use optimized WebP files", () => {
+  for (const slug of ["turandot", "le-nozze-di-figaro", "samson-et-dalila", "la-fanciulla-del-west"]) {
     const opera = operas.find(item => item.slug === slug);
     assert.ok(opera?.image);
     assert.match(opera.image, /-art\.webp$/);
@@ -40,18 +40,18 @@ test("Turandot, Figaro and Samson use optimized WebP artwork files", () => {
   }
 });
 
-test("Samson's description and planned libretto destinations retain usable navigation", () => {
-  const opera = operas.find(item => item.slug === "samson-et-dalila");
+for (const slug of ["samson-et-dalila", "la-fanciulla-del-west"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+  const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
   const synopsis = renderPlannedLibrettoPage(opera, details);
-  assert.ok(synopsis.includes('href="#/operas/samson-et-dalila?act=1">Read the libretto'));
-  assert.ok(synopsis.includes("Samson and Delilah"));
+  assert.ok(synopsis.includes(`href="#/operas/${slug}?act=1">Read the libretto`));
+  assert.ok(synopsis.includes(opera.displayTitle));
   for (const view of ["synopsis", "outline", "libretto"]) {
     for (const act of [1, 2, 3]) {
       const page = renderPlannedLibrettoPage(opera, details, view, act);
       for (const suffix of ["view=synopsis", "view=outline", "act=1", "act=2", "act=3"]) {
-        assert.ok(page.includes(`href="#/operas/samson-et-dalila?${suffix}"`));
+        assert.ok(page.includes(`href="#/operas/${slug}?${suffix}"`));
       }
       assert.equal((page.match(/aria-current="page"/g) || []).length, view === "synopsis" ? 2 : 1);
       if (view !== "synopsis") {
@@ -63,11 +63,11 @@ test("Samson's description and planned libretto destinations retain usable navig
   }
 });
 
-test("search-friendly aliases, seven routes and act counts remain intact", () => {
+test("search-friendly aliases, eight routes and act counts remain intact", () => {
   const acts = Object.fromEntries(operas.map(opera => [opera.slug, opera.acts]));
   assert.deepEqual(acts, {
     "il-barbiere-di-siviglia": 2, "tristan-und-isolde": 3,
-    "cosi-fan-tutte": 2, macbeth: 4, turandot: 3, "le-nozze-di-figaro": 4, "samson-et-dalila": 3
+    "cosi-fan-tutte": 2, macbeth: 4, turandot: 3, "le-nozze-di-figaro": 4, "samson-et-dalila": 3, "la-fanciulla-del-west": 3
   });
   assert.ok(operas.find(item => item.slug === "le-nozze-di-figaro").aliases.includes("Marriage of Figaro"));
   assert.deepEqual(getLibretto("turandot").acts.map(act => act.number), [1, 2, 3]);

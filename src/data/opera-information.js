@@ -269,5 +269,48 @@ export const operaInformation = {
     "https://v16live.metopera.org/learn/education/learning-library/educator-guide-pages/samson-et-dalila/plot-and-creation/",
     "https://v16live.metopera.org/learn/education/school-programs/hd-live-in-schools/curricular-resources/samson-et-dalila/"
   ]
+},
+  "la-fanciulla-del-west": {
+  "synopsis": [
+    "During the California Gold Rush, Minnie runs the Polka saloon and cares for the miners who gather there. Sheriff Jack Rance wants to marry her, but she falls in love with a visitor calling himself Dick Johnson. Unknown to her, he is the wanted bandit Ramerrez.",
+    "When Johnson’s identity is revealed, Minnie shelters him in her cabin. She wins his freedom from Rance by cheating at poker, but he is later captured and faces hanging. Minnie appeals to the miners’ gratitude and compassion, persuading them to spare him. The lovers leave together to begin again."
+  ],
+  "characters": [
+    [
+      "Minnie",
+      "Soprano",
+      "The Polka saloon’s owner, loved and respected by the miners."
+    ],
+    [
+      "Dick Johnson (Ramerrez)",
+      "Tenor",
+      "An outlaw who hopes to change his life."
+    ],
+    [
+      "Jack Rance",
+      "Baritone",
+      "The sheriff and Johnson’s jealous rival."
+    ],
+    [
+      "Nick",
+      "Tenor",
+      "The saloon’s bartender and Minnie’s ally."
+    ],
+    [
+      "Ashby",
+      "Bass",
+      "A Wells Fargo agent pursuing Ramerrez."
+    ],
+    [
+      "Sonora",
+      "Baritone",
+      "A miner who helps persuade the others to show mercy."
+    ]
+  ],
+  "sources": [
+    "https://v16live.metopera.org/discover/synopses/la-fanciulla-del-west/",
+    "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0361448",
+    "https://www.metopera.org/discover/education/educator-guides-archive/la-fanciulla-del-west/"
+  ]
 }
 };
