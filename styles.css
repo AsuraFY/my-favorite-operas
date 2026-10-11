@@ -14,6 +14,23 @@
   --page: min(1240px, calc(100% - 112px));
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+:root[data-font-choice="roboto"] {
+  --serif: "Roboto", Arial, sans-serif;
+  --sans: "Roboto", Arial, sans-serif;
+}
+
+:root[data-font-choice="system"] {
+  --serif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { min-height: 100vh; display: flex; flex-direction: column; margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
@@ -34,6 +51,23 @@ button { font: inherit; }
 .main-nav > a { height: 100%; display: inline-flex; align-items: center; position: relative; color: #5d574f; }
 .main-nav > a.is-active { color: var(--ink); }
 .main-nav > a.is-active::after { content: ""; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: var(--wine); }
+.font-picker { display: flex; align-items: center; height: 100%; gap: 7px; }
+.font-picker__label { color: rgba(250,248,242,.76); font: 500 11px/1 var(--sans); }
+.font-picker select {
+  max-width: 120px;
+  min-height: 34px;
+  padding: 5px 23px 5px 8px;
+  border: 1px solid rgba(235,239,241,.34);
+  border-radius: 5px;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.font-picker select option { color: #182b3b; background: #fff; }
+.font-picker select:focus-visible { outline: 2px solid #efd08d; outline-offset: 3px; }
 .nav-count { font-size: 9px; color: var(--wine); margin: -10px 0 0 5px; }
 .nav-note { color: #9b9387; font: italic 14px var(--serif); padding-left: 20px; border-left: 1px solid var(--line); }
 .menu-toggle { display: none; }
@@ -215,6 +249,8 @@ button { font: inherit; }
   .main-nav { display: none; height: auto; position: absolute; top: 71px; left: 0; right: 0; padding: 8px 21px 19px; background: var(--paper); border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; box-shadow: 0 12px 20px rgba(40, 35, 29, .07); }
   .main-nav.is-open { display: flex; }
   .main-nav > a { min-height: 47px; border-bottom: 1px solid #e6dfd5; }
+  .main-nav .font-picker { min-height: 47px; border-bottom: 1px solid #e6dfd5; }
+  .main-nav .font-picker select { width: 100%; max-width: none; }
   .main-nav > a.is-active::after { bottom: -1px; width: 32px; right: auto; }
   .nav-note { border: 0; padding: 14px 0 0; }
   .home-hero { width: 100%; padding: 38px 21px 71px; min-height: auto; display: flex; flex-direction: column; align-items: stretch; }

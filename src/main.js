@@ -6,6 +6,21 @@ import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-i
 
 const app = document.querySelector("#app");
 
+const FONT_PREFERENCE_KEY = "favorite-operas-font-choice";
+const FONT_CHOICES = new Set(["current", "roboto", "system"]);
+
+function readFontChoice() {
+  try {
+    const choice = localStorage.getItem(FONT_PREFERENCE_KEY);
+    return FONT_CHOICES.has(choice) ? choice : "current";
+  } catch {
+    return "current";
+  }
+}
+
+let activeFontChoice = readFontChoice();
+document.documentElement.dataset.fontChoice = activeFontChoice;
+
 const artwork = (opera, extra = "") => `
   <div class="artwork artwork--${opera.color} ${extra}" aria-hidden="true">
     <div class="artwork__frame"></div>
@@ -27,6 +42,15 @@ function header(active) {
       <a class="${active === "home" ? "is-active" : ""}" href="#/">Home</a>
       <a class="${active === "operas" || active === "opera" ? "is-active" : ""}" href="#/operas">Operas</a>
       <a class="${active === "about" ? "is-active" : ""}" href="#/about">About</a>
+      <label class="font-picker">
+        <span class="font-picker__label" aria-hidden="true">Font</span>
+        <span class="sr-only">Choose the website font</span>
+        <select data-font-picker aria-label="Website font">
+          <option value="current" ${activeFontChoice === "current" ? "selected" : ""}>Current</option>
+          <option value="roboto" ${activeFontChoice === "roboto" ? "selected" : ""}>Roboto</option>
+          <option value="system" ${activeFontChoice === "system" ? "selected" : ""}>System</option>
+        </select>
+      </label>
     </nav>
     ${active === "opera" ? `<form class="opera-header-search" data-libretto-search role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><label class="sr-only" for="opera-search">Search in this opera</label><input id="opera-search" type="search" placeholder="Search in this opera..." autocomplete="off" /></form>` : `<button class="search-trigger" aria-label="Search operas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>`}
   </header>`;
@@ -253,6 +277,18 @@ function shell(content, active) {
   });
   const toggle = app.querySelector(".menu-toggle");
   const nav = app.querySelector(".main-nav");
+  const fontPicker = app.querySelector("[data-font-picker]");
+  fontPicker?.addEventListener("change", () => {
+    const choice = fontPicker.value;
+    if (!FONT_CHOICES.has(choice)) return;
+    activeFontChoice = choice;
+    document.documentElement.dataset.fontChoice = choice;
+    try {
+      localStorage.setItem(FONT_PREFERENCE_KEY, choice);
+    } catch {
+      // The selection still applies for this page when storage is unavailable.
+    }
+  });
   toggle?.addEventListener("click", () => {
     const open = toggle.getAttribute("aria-expanded") === "true";
     toggle.setAttribute("aria-expanded", String(!open));
