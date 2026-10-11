@@ -1,25 +1,25 @@
 // Data registry for complete libretti; the reader UI consumes this shape for every opera.
 // Original Così dialogue stays in the existing act files, unchanged.
 import { getOpera } from "./operas.js?v=opera-art-2";
-import { cosiActOneScenes } from "./libretti.js?v=cosi-libretto-2";
-import { cosiActTwoScenes } from "./libretti-act2.js?v=act2-18";
-import { barbiereActOneScenes } from "./libretti-barbiere-act1.js?v=barbiere-act1-2";
-import { barbiereActTwoScenes } from "./libretti-barbiere-act2.js?v=barbiere-act2-2";
-import { tristanActOneScenes } from "./libretti-tristan-act1.js?v=tristan-act1-5";
-import { tristanActTwoScenes } from "./libretti-tristan-act2.js?v=tristan-act2-8";
-import { tristanActThreeScenes } from "./libretti-tristan-act3.js?v=tristan-act3-5";
-import { macbethActOneScenes } from "./libretti-macbeth-act1.js?v=macbeth-act1-3";
+import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-libretto-2";
+import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=act2-18";
+import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-2";
+import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.js?v=barbiere-act2-2";
+import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-act1-5";
+import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-act2-8";
+import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-act3-5";
+import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-act1-3";
 
-import { macbethActTwoScenes } from "./libretti-macbeth-act2.js?v=macbeth-act2-1";
+import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-act2-1";
 
-import { macbethActThreeScenes } from "./libretti-macbeth-act3.js?v=macbeth-act3-1";
+import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-act3-1";
 
-import { macbethActFourScenes } from "./libretti-macbeth-act4.js?v=macbeth-act4-1";
-import { turandotActOneScenes } from "./libretti-turandot-act1.js?v=turandot-act1-1";
-import { turandotActTwoScenes } from "./libretti-turandot-act2.js?v=turandot-act2-1";
-import { turandotActThreeScenes } from "./libretti-turandot-act3.js?v=turandot-act3-1";
+import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-act4-1";
+import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-act1-1";
+import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-act2-1";
+import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-act3-1";
 
-import { figaroActOneScenes } from "./libretti-figaro-act1.js?v=figaro-act1-1";
+import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-act1-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],

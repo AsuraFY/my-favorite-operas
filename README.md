@@ -34,8 +34,8 @@ Factual editorial references include the Metropolitan Opera synopses for Turando
 - src/data/opera-information.js — synopses and principal characters for all six works.
 - src/opera-info-page.js — reusable opera information layout.
 - src/data/libretto-registry.js — complete libretti registered by opera slug, plus synopsis, character, and presentation metadata.
-- src/data/libretti.js and src/data/libretti-act2.js — the original Così act data, retained without changing translations.
-- src/data/libretti-barbiere-act1.js and src/data/libretti-barbiere-act2.js — Italian/English scenes for Acts I and II of Il barbiere di Siviglia.
+- src/data/libretto-cosi-fan-tutte-act-1.js and src/data/libretto-cosi-fan-tutte-act-2.js — the original Così act data, retained without changing translations.
+- src/data/libretto-il-barbiere-di-siviglia-act-1.js and src/data/libretto-il-barbiere-di-siviglia-act-2.js — Italian/English scenes for Acts I and II of Il barbiere di Siviglia.
 - src/libretto-reader.js — shared reader factory, synopsis, full outline, act/scene navigation, credits and bilingual rows.
 - src/main.js — hash routing, metadata search, sticky navigation, desktop collapse, mobile drawer, deep-link and scroll controllers.
 - styles.css — responsive reader appearance.
@@ -110,3 +110,5 @@ Work on the existing `Update` branch. Preserve the Italian source’s sung wordi
 ### Continuous act reading
 
 Confirm page granularity with the user when registering each new libretto: one page per act, or one page per scene. Do not infer it from another opera. Macbeth is approved for one page per act; Così fan tutte uses one page per scene. Set `continuousAct: true` only for an approved act-based layout. Scene/section links and mobile Previous/Next jump within the act; scrolling updates the selected scene and URL without replacing the act. Deep links retain every scene and locate the selected section.
+
+Libretto data filenames use `libretto-<opera-slug>-act-<number>.js` for every opera. Use the complete route slug and an explicit act number (for example, `libretto-le-nozze-di-figaro-act-1.js`).
