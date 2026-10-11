@@ -85,6 +85,7 @@ const cosi = {
 
 const barbiere = {
   slug: "il-barbiere-di-siviglia",
+  continuousAct: true,
   opera: getOpera("il-barbiere-di-siviglia"),
   composerShort: "G. ROSSINI",
   mobileComposer: "G. Rossini",

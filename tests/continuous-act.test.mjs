@@ -6,7 +6,7 @@ import { createLibrettoRenderer } from "../src/libretto-reader.js";
 globalThis.window = { location: { hash: "" } };
 const count = (html, pattern) => (html.match(pattern) || []).length;
 
-for (const slug of ["cosi-fan-tutte", "tristan-und-isolde"]) {
+for (const slug of ["cosi-fan-tutte", "tristan-und-isolde", "il-barbiere-di-siviglia"]) {
   test(`${slug}: every deep link retains its full act and targets the right section`, () => {
     const libretto = getLibretto(slug);
     const reader = createLibrettoRenderer(libretto);

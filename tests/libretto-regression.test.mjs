@@ -129,12 +129,13 @@ test("Così retains all scenes and translated dialogue entries", () => {
 test("Barber of Seville Act I scenes render bilingual sections and outline links", () => {
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   const reader = createLibrettoRenderer(barbiere);
+  const act = barbiere.acts[0];
   let sectionCount = 0, rowCount = 0;
-  for (const scene of barbiere.acts[0].scenes) {
+  for (const scene of act.scenes) {
     window.location.hash = "#/operas/il-barbiere-di-siviglia?act=1&scene=" + scene.number;
     const page = reader.scene(scene.number);
-    assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
-    assertSceneRows(page, scene);
+    assert.equal(count(page, /class="libretto-scene-section"/g), act.scenes.reduce((n, sourceScene) => n + sourceScene.sections.length, 0));
+    assertSceneRows(page, { sections: act.scenes.flatMap(sourceScene => sourceScene.sections) });
     assert.ok(page.includes("Italiano"));
     assert.ok(page.includes("English"));
     sectionCount += scene.sections.length;
@@ -157,8 +158,8 @@ test("Barber of Seville Act II scenes render bilingual sections and outline link
   for (const scene of act.scenes) {
     window.location.hash = "#/operas/il-barbiere-di-siviglia?act=2&scene=" + scene.number;
     const page = reader.scene(scene.number);
-    assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
-    assertSceneRows(page, scene);
+    assert.equal(count(page, /class="libretto-scene-section"/g), act.scenes.reduce((n, sourceScene) => n + sourceScene.sections.length, 0));
+    assertSceneRows(page, { sections: act.scenes.flatMap(sourceScene => sourceScene.sections) });
     assert.ok(page.includes("Italiano"));
     assert.ok(page.includes("English"));
     sectionCount += scene.sections.length;
