@@ -50,6 +50,7 @@ let activeFontSize = readFontSize();
 let settingsOutsidePointerHandler = null;
 document.documentElement.dataset.theme = activeTheme;
 document.documentElement.dataset.fontSize = String(activeFontSize);
+document.documentElement.style.fontSize = `${activeFontSize}px`;
 document.documentElement.style.setProperty("--reading-scale", String(activeFontSize / 16));
 
 const artwork = (opera, extra = "") => `
@@ -75,9 +76,7 @@ function header(active) {
       <button class="settings-nav-trigger" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">Settings</button>
     </nav>
     <div class="header-actions">
-      ${active === "opera"
-        ? `<form class="opera-header-search" data-libretto-search role="search"><label class="sr-only" for="opera-search">Search in this opera</label><input id="opera-search" type="search" placeholder="Search in this opera..." autocomplete="off" /></form>`
-        : `<form class="site-header-search" data-site-search role="search"><label class="sr-only" for="header-search">Search operas</label><input id="header-search" type="search" placeholder="Search operas..." autocomplete="off" /></form>`}
+      <form class="site-header-search" data-site-search role="search"><label class="sr-only" for="header-search">Search operas</label><input id="header-search" type="search" placeholder="Search operas..." autocomplete="off" /></form>
       <button class="mobile-action-trigger mobile-search-trigger" type="button" data-mobile-search-toggle aria-label="Search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
       </button>
@@ -95,7 +94,7 @@ function header(active) {
           </div>
           <div class="settings-group">
             <label class="settings-label" for="font-family-picker">Font family</label>
-            <select id="font-family-picker" data-font-picker aria-label="Font family"><option value="current" ${activeFontChoice === "current" ? "selected" : ""}>Current</option><option value="roboto" ${activeFontChoice === "roboto" ? "selected" : ""}>Roboto</option><option value="system" ${activeFontChoice === "system" ? "selected" : ""}>System</option></select>
+            <select id="font-family-picker" data-font-picker aria-label="Font family"><option value="current" ${activeFontChoice === "current" ? "selected" : ""}>Editorial</option><option value="roboto" ${activeFontChoice === "roboto" ? "selected" : ""}>Roboto</option><option value="system" ${activeFontChoice === "system" ? "selected" : ""}>System</option></select>
           </div>
           <div class="settings-group settings-size">
             <p class="settings-label">Font size</p>
@@ -388,6 +387,7 @@ function shell(content, active) {
       const step = Number(button.dataset.fontSizeStep);
       activeFontSize = Math.min(MAX_FONT_SIZE, Math.max(MIN_FONT_SIZE, activeFontSize + step));
       document.documentElement.dataset.fontSize = String(activeFontSize);
+      document.documentElement.style.fontSize = `${activeFontSize}px`;
       document.documentElement.style.setProperty("--reading-scale", String(activeFontSize / 16));
       saveChoice(FONT_SIZE_PREFERENCE_KEY, String(activeFontSize));
       const output = app.querySelector("[data-font-size-value]");
@@ -426,13 +426,6 @@ function shell(content, active) {
       const query = form.querySelector("input")?.value.trim() || "";
       window.location.hash = query ? `#/operas?q=${encodeURIComponent(query)}` : "#/operas";
     });
-  });
-  app.querySelector("[data-libretto-search]")?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const query = event.currentTarget.querySelector("input")?.value.trim() || "";
-    const slug = app.querySelector("[data-libretto-slug]")?.dataset.librettoSlug;
-    if (!slug) return;
-    window.location.hash = query ? `#/operas/${slug}?q=${encodeURIComponent(query)}` : `#/operas/${slug}`;
   });
 }
 
@@ -716,8 +709,6 @@ function render() {
     const hasLibrettoDestination = routeParams.has("act") || routeParams.has("scene") || routeParams.has("item") || Boolean(query) || routeParams.has("contents");
     const selectedView = routeParams.get("view") || (opera && getLibretto(opera.slug) && !hasLibrettoDestination ? "synopsis" : "");
     shell(opera ? operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (getLibretto(opera.slug) ? "opera" : "operas") : "");
-    const operaSearch = app.querySelector("#opera-search");
-    if (operaSearch) operaSearch.value = query;
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
   } else {
     window.location.hash = "#/";
