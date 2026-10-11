@@ -8,6 +8,7 @@ import { barbiereActTwoScenes } from "./libretti-barbiere-act2.js?v=barbiere-act
 import { tristanActOneScenes } from "./libretti-tristan-act1.js?v=tristan-act1-5";
 import { tristanActTwoScenes } from "./libretti-tristan-act2.js?v=tristan-act2-8";
 import { tristanActThreeScenes } from "./libretti-tristan-act3.js?v=tristan-act3-5";
+import { macbethActOneScenes } from "./libretti-macbeth-act1.js?v=macbeth-act1-2";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -157,7 +158,48 @@ const tristan = {
   source: "Richard Wagner, Tristan und Isolde (1859), libretto text and stage direction layout: https://opera-guide.ch/en/operas/tristan+und+isolde/libretto/de/"
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan };
+const macbeth = {
+  slug: "macbeth",
+  opera: getOpera("macbeth"),
+  composerShort: "G. VERDI",
+  mobileComposer: "Giuseppe Verdi",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  preserveLineBreaks: true,
+  sceneOriginalPrefix: "Scena",
+  sceneOrdinals: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX"],
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "",
+  bracketStageDirections: true,
+  translatedForms: { Introduzione: "Introduction", "Cavatina di Lady Macbeth": "Lady Macbeth’s Cavatina", "Recitativo e Marcia": "Recitative and March", "Scena e Duetto": "Scene and Duet", "Finale Primo": "First Finale" },
+  acts: [{
+    number: 1,
+    originalHeading: "Atto primo",
+    prelude: { title: "N. 1 - Preludio", translation: "No. 1 - Prelude" },
+    scenes: macbethActOneScenes
+  }],
+  synopsis: {
+    eyebrow: "Giuseppe Verdi · Opera in four acts",
+    paragraphs: [
+      "Three witches foretell that the Scottish general Macbeth will become king. With Lady Macbeth's encouragement, he murders King Duncan and takes the throne, then turns to further violence to protect his power.",
+      "As guilt and fear close in, Lady Macbeth is consumed by her actions and forces gather against the tyrant. Verdi's opera adapts Shakespeare's tragedy of ambition, prophecy, and the cost of power."
+    ],
+    characters: [
+      ["Macbeth", "Baritone", "A Scottish general who becomes king."],
+      ["Lady Macbeth", "Soprano", "Macbeth's ambitious wife."],
+      ["Banco", "Bass", "A general whose descendants are foretold to rule."],
+      ["Fleanzio", "Silent role", "Banco's son."],
+      ["Tre Streghe", "Chorus", "Three groups of witches who deliver the prophecies."],
+      ["Duncano", "Silent role", "King of Scotland."],
+      ["Malcolm", "Tenor", "Duncano’s son."],
+      ["Macduff", "Tenor", "A Scottish nobleman."]
+    ]
+  },
+  characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Tre Streghe", "Duncano", "Malcolm", "Macduff"],
+  source: "Giuseppe Verdi, Macbeth (1847), Italian libretto and source divisions: https://opera-guide.ch/operas/macbethverdi/libretto/it/"
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }

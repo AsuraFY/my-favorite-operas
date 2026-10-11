@@ -9,7 +9,7 @@ const count = (html, pattern) => (html.match(pattern) || []).length;
 
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 3);
+  assert.equal(librettoCatalog.length, 4);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
@@ -21,7 +21,7 @@ test("registry identifies prepared and unfinished libretti", () => {
       assert.equal(typeof turn.en, "string");
     }
   }
-  assert.equal(getLibretto("macbeth"), null);
+  assert.ok(getLibretto("macbeth"));
   assert.equal(getLibretto("unknown"), null);
 });
 
@@ -223,4 +223,65 @@ test("unnumbered titled sections retain their original title", () => {
   assert.ok(output.scene(1).includes("Recitative · Die Nachricht"));
   assert.ok(output.outline().includes("Recitative · Die Nachricht"));
   assert.ok(output.scene(1).includes("Guten Abend"));
+});
+
+
+test("Macbeth Act I preserves all 19 source scenes and paired translation", () => {
+  const macbeth = getLibretto("macbeth");
+  assert.ok(macbeth);
+  assert.equal(macbeth.originalLanguage, "Italiano");
+  assert.equal(macbeth.translationLanguage, "English");
+  assert.equal(macbeth.acts.length, 1);
+  assert.equal(macbeth.acts[0].prelude.title, "N. 1 - Preludio");
+  assert.equal(macbeth.acts[0].scenes.length, 19);
+  const scene = macbeth.acts[0].scenes[0];
+  assert.equal(scene.title, "Bosco");
+  assert.equal(scene.translatedTitle, "A wood");
+  assert.equal(macbeth.preserveLineBreaks, true);
+  assert.equal(scene.sections[0].number, 2);
+  for (const sourceScene of macbeth.acts[0].scenes) for (const section of sourceScene.sections) for (const turn of section.turns) {
+    assert.ok(turn.it.trim());
+    assert.ok(turn.en.trim());
+    assert.equal(turn.it.split("\n").length, turn.en.split("\n").length,
+      "each Italian source line should have its own English counterpart");
+  }
+  window.location.hash = "#/operas/macbeth?act=1&scene=1";
+  const reader = createLibrettoRenderer(macbeth);
+  const page = reader.scene(1);
+  assert.ok(page.includes("Witch 1"));
+  assert.ok(page.includes("Witch 2"));
+  assert.ok(page.includes("Witch 3"));
+  assert.ok(page.includes("Witches"));
+  assert.ok(page.includes('class="libretto-row libretto-row--stage-direction"'));
+  assert.ok(page.includes("[A drum is heard.]"));
+  assert.ok(page.includes("A drum is heard."));
+  const outline = reader.outline();
+  assert.ok(outline.includes("N. 1 - Preludio"));
+  assert.ok(outline.includes("No. 1 - Prelude"));
+  assert.ok(outline.includes("N. 2 · Introduzione"));
+  assert.ok(outline.includes("Introduzione"));
+  assert.ok(outline.includes("Bosco"));
+  assert.ok(outline.includes("A wood"));
+  assert.ok(!outline.includes("Introduzione · Introduzione"));
+});
+
+
+test("Macbeth sung asides remain lyrics and final scene links render", () => {
+  const libretto = getLibretto("macbeth");
+  const reader = createLibrettoRenderer(libretto);
+  for (const scene of libretto.acts[0].scenes) {
+    window.location.hash = "#/operas/macbeth?act=1&scene=" + scene.number;
+    const page = reader.scene(scene.number);
+    assert.equal(count(page, /<div class="libretto-row/g), scene.sections.reduce((n, section) => n + section.turns.length, 0));
+    for (const section of scene.sections) for (const turn of section.turns) {
+      if (turn.speaker === "Stage direction") continue;
+      assert.equal(turn.literalText, true);
+    }
+  }
+  window.location.hash = "#/operas/macbeth?act=1&scene=3";
+  const page = reader.scene(3);
+  assert.match(page, /libretto-speaker--banco[^]*?<p>\(Ah, l&#39;inferno il ver parlò!\)<\/p>/);
+  window.location.hash = "#/operas/macbeth?act=1&scene=19";
+  assert.ok(reader.scene(19).includes("SCENA XIX"));
+  assert.ok(reader.outline().includes("#/operas/macbeth?act=1&scene=19&item=0"));
 });
