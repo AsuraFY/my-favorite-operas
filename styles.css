@@ -2297,3 +2297,75 @@ html[data-theme="night"] .directory-sort select { color: var(--night-text); back
   html[data-theme="night"] .reading-identity { background: var(--night-surface); }
   html[data-theme="night"] .opera-reading-page .libretto-cell--english { background: #252b32; }
 }
+
+/* Reader headings need light foregrounds where their base rules use navy. */
+html[data-theme="night"] .opera-reading-page .act-heading,
+html[data-theme="night"] .opera-reading-page .act-heading h2,
+html[data-theme="night"] .opera-reading-page .scene-group__summary,
+html[data-theme="night"] .opera-reading-page .section-nav-link,
+html[data-theme="night"] .opera-reading-page .section-nav-link__form,
+html[data-theme="night"] .opera-reading-page .scene-panel__top .scene-context,
+html[data-theme="night"] .opera-reading-page .scene-panel__top .scene-context__setting,
+html[data-theme="night"] .opera-reading-page .selected-section-heading h2,
+html[data-theme="night"] .opera-reading-page .selected-section-heading p,
+html[data-theme="night"] .opera-reading-page .opera-synopsis,
+html[data-theme="night"] .opera-reading-page .opera-synopsis h1,
+html[data-theme="night"] .opera-reading-page .opera-synopsis h2,
+html[data-theme="night"] .opera-reading-page .opera-subnav__title,
+html[data-theme="night"] .opera-reading-page .opera-subnav__link {
+  color: #e8edf2;
+}
+html[data-theme="night"] .opera-reading-page .scene-panel__top .scene-summary,
+html[data-theme="night"] .opera-reading-page .section-nav-link__title,
+html[data-theme="night"] .opera-reading-page .section-nav-link__translation {
+  color: #c4d1dc;
+}
+html[data-theme="night"] .opera-reading-page .section-nav-link__icon,
+html[data-theme="night"] .opera-reading-page .section-nav-link__icon--recitative {
+  color: #8fc1e5;
+}
+html[data-theme="night"] .opera-reading-page .libretto-row--stage-direction .libretto-cell p,
+html[data-theme="night"] .opera-reading-page .libretto-row--stage-direction .libretto-speaker {
+  color: #c8b996;
+}
+html[data-theme="night"] .opera-reading-page .libretto-speaker--stage-direction { color: #c8b996; }
+
+@media (max-width: 700px) {
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] {
+    color: #e8e4dc;
+    background: #22282f;
+    border-color: #424a51;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .act-outline__top {
+    color: #f0ece5;
+    background: #22282f;
+    border-color: #424a51;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] [data-outline-close] {
+    color: #e8edf2;
+    background: #303b45;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .act-heading {
+    color: #e8edf2;
+    background: #292f36;
+    border-color: #424a51;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .scene-group {
+    background: #22282f;
+    border-color: #424a51;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .scene-group__summary {
+    color: #e8edf2;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .section-nav-link {
+    color: #e0e7ed;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .section-nav-link__title,
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .section-nav-link__translation {
+    color: #b9c9d7;
+  }
+  html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] .section-nav-link.is-current {
+    color: #f5f7f9;
+    background: #344653;
+  }
+}
