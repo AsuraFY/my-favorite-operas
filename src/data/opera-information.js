@@ -312,5 +312,47 @@ export const operaInformation = {
     "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0361448",
     "https://www.metopera.org/discover/education/educator-guides-archive/la-fanciulla-del-west/"
   ]
+},
+  "manon": {
+  "synopsis": [
+    "On her way to a convent, Manon meets the Chevalier des Grieux in Amiens. They fall in love and flee to Paris. Their happiness is unsettled by her desire for luxury: she accepts the protection of the wealthy de Brétigny while des Grieux is taken away at his father’s command.",
+    "Manon later finds des Grieux at Saint-Sulpice and persuades him to return to her. At a gambling house, Guillot accuses him of cheating and has the couple arrested. Des Grieux is freed, but Manon is condemned to deportation. He meets her on the road to Le Havre, where she dies in his arms."
+  ],
+  "characters": [
+    [
+      "Manon Lescaut",
+      "Soprano",
+      "A young woman torn between love and the pleasures of wealth."
+    ],
+    [
+      "Chevalier des Grieux",
+      "Tenor",
+      "Manon’s devoted lover."
+    ],
+    [
+      "Lescaut",
+      "Baritone",
+      "Manon’s cousin."
+    ],
+    [
+      "Comte des Grieux",
+      "Bass-baritone",
+      "The chevalier’s father, who opposes the relationship."
+    ],
+    [
+      "Guillot de Morfontaine",
+      "Tenor",
+      "A wealthy suitor whose jealousy threatens the lovers."
+    ],
+    [
+      "de Brétigny",
+      "Baritone",
+      "A wealthy admirer who offers Manon a life of luxury."
+    ]
+  ],
+  "sources": [
+    "https://v16live.metopera.org/discover/synopses/manon2/",
+    "https://www.metopera.org/globalassets/discover/education/educator-guides/manon/manon.11-12.guide.pdf"
+  ]
 }
 };

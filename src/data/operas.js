@@ -148,6 +148,29 @@ export const operas = [
     summary: "In a California mining camp, Minnie falls for an outlaw and risks everything to win him a chance at a new life.",
     note: "Based on David Belasco’s The Girl of the Golden West, Puccini’s frontier opera had its world premiere at the Met."
   },
+  {
+    "slug": "manon",
+    "image": "./public/images/manon-art.webp",
+    "title": "Manon",
+    "displayTitle": "Manon",
+    "aliases": [
+      "Manon (Massenet)",
+      "Massenet’s Manon"
+    ],
+    "composer": "Jules Massenet",
+    "librettist": "Henri Meilhac and Philippe Gille",
+    "premiered": "19 January 1884",
+    "premieredAt": "Opéra-Comique, Paris",
+    "language": "French",
+    "genre": "Opera",
+    "acts": 5,
+    "color": "manon",
+    "initials": "M",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "Torn between devotion and luxury, Manon and the Chevalier des Grieux pursue a love that leads them from youthful escape to tragedy.",
+    "note": "Based on Abbé Prévost’s novel, Massenet’s opera follows Manon’s changing fortunes across five acts."
+  },
 ];
 
 export function getOpera(slug) {
