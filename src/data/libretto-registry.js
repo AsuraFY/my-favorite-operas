@@ -39,6 +39,7 @@ disguises["2:17"].Despina = "disguised as a notary";
 
 const cosi = {
   slug: "cosi-fan-tutte",
+  continuousAct: true,
   opera: getOpera("cosi-fan-tutte"),
   composerShort: "W. A. MOZART",
   mobileComposer: "W. A. Mozart",

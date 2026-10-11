@@ -168,17 +168,18 @@ test("Barber of Seville Act II scenes render bilingual sections and outline link
 test("all Così scenes render their complete sections, dialogue and outline controls", () => {
   const reader = createLibrettoRenderer(cosi);
   let scenes = 0, sections = 0, rows = 0;
-  for (const act of cosi.acts) for (const scene of act.scenes) {
-    window.location.hash = "#/operas/cosi-fan-tutte?act=" + act.number + "&scene=" + scene.number;
-    const page = reader.scene(scene.number);
-    const passages = scene.sections.reduce((n, part) => n + part.turns.length, 0);
-    assert.equal(count(page, /class="libretto-scene-section"/g), scene.sections.length);
-    assertSceneRows(page, scene);
+  for (const act of cosi.acts) {
+    window.location.hash = "#/operas/cosi-fan-tutte?act=" + act.number;
+    const page = reader.scene(1);
+    const actSections = act.scenes.flatMap(scene => scene.sections);
+    const passages = actSections.reduce((n, part) => n + part.turns.length, 0);
+    assert.equal(count(page, /class="libretto-scene-section"/g), actSections.length);
+    assertSceneRows(page, { sections: actSections });
     assert.ok(page.includes('data-desktop-outline-collapse'));
     assert.ok(page.includes('data-desktop-outline-expand'));
     assert.ok(page.includes('data-outline-open'));
     assert.ok(page.includes('class="scene-bottom-nav"'));
-    scenes++; sections += scene.sections.length; rows += passages;
+    scenes += act.scenes.length; sections += actSections.length; rows += passages;
   }
   assert.deepEqual([scenes, sections, rows], [34, 69, 871]);
 });
