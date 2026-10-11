@@ -72,15 +72,19 @@ function header(active) {
     <nav class="main-nav" aria-label="Main navigation">
       <a class="${active === "home" ? "is-active" : ""}" href="#/">Home</a>
       <a class="${active === "operas" || active === "opera" ? "is-active" : ""}" href="#/operas">Operas</a>
-      <a class="${active === "about" ? "is-active" : ""}" href="#/about">About</a>
+      <button class="settings-nav-trigger" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">Settings</button>
     </nav>
     <div class="header-actions">
-      ${active === "opera" ? `<form class="opera-header-search" data-libretto-search role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><label class="sr-only" for="opera-search">Search in this opera</label><input id="opera-search" type="search" placeholder="Search in this opera..." autocomplete="off" /></form>` : `<button class="search-trigger" aria-label="Search operas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>`}
+      ${active === "opera"
+        ? `<form class="opera-header-search" data-libretto-search role="search"><label class="sr-only" for="opera-search">Search in this opera</label><input id="opera-search" type="search" placeholder="Search in this opera..." autocomplete="off" /></form>`
+        : `<form class="site-header-search" data-site-search role="search"><label class="sr-only" for="header-search">Search operas</label><input id="header-search" type="search" placeholder="Search operas..." autocomplete="off" /></form>`}
+      <button class="mobile-action-trigger mobile-search-trigger" type="button" data-mobile-search-toggle aria-label="Search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+      <button class="mobile-action-trigger mobile-settings-trigger" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"/><path d="m19.2 13.7 1.2.9-1.6 2.8-1.4-.6a7.9 7.9 0 0 1-1.7 1l-.2 1.5h-3.2l-.2-1.5a7.9 7.9 0 0 1-1.7-1l-1.4.6-1.6-2.8 1.2-.9a7.4 7.4 0 0 1 0-2l-1.2-.9L9 8l1.4.6a7.9 7.9 0 0 1 1.7-1l.2-1.5h3.2l.2 1.5a7.9 7.9 0 0 1 1.7 1l1.4-.6 1.6 2.8-1.2.9a7.4 7.4 0 0 1 0 2Z" transform="translate(-2.2 -1.2)"/></svg>
+      </button>
       <div class="settings-wrap">
-        <button class="settings-trigger" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"/><path d="m19.2 13.7 1.2.9-1.6 2.8-1.4-.6a7.9 7.9 0 0 1-1.7 1l-.2 1.5h-3.2l-.2-1.5a7.9 7.9 0 0 1-1.7-1l-1.4.6-1.6-2.8 1.2-.9a7.4 7.4 0 0 1 0-2l-1.2-.9L9 8l1.4.6a7.9 7.9 0 0 1 1.7-1l.2-1.5h3.2l.2 1.5a7.9 7.9 0 0 1 1.7 1l1.4-.6 1.6 2.8-1.2.9a7.4 7.4 0 0 1 0 2Z" transform="translate(-2.2 -1.2)"/></svg>
-          <span>Settings</span>
-        </button>
         <section class="settings-panel" id="site-settings" data-settings-panel aria-label="Settings" hidden>
           <div class="settings-group">
             <p class="settings-label">Theme</p>
@@ -328,8 +332,10 @@ function shell(content, active) {
   });
   const toggle = app.querySelector(".menu-toggle");
   const nav = app.querySelector(".main-nav");
-  const settingsToggle = app.querySelector("[data-settings-toggle]");
+  const settingsToggles = [...app.querySelectorAll("[data-settings-toggle]")];
   const settingsPanel = app.querySelector("[data-settings-panel]");
+  const siteHeader = app.querySelector(".site-header");
+  const mobileSearchToggle = app.querySelector("[data-mobile-search-toggle]");
   const fontPicker = app.querySelector("[data-font-picker]");
   const saveChoice = (key, value) => {
     try { localStorage.setItem(key, value); } catch { /* The preference still applies for this page. */ }
@@ -337,15 +343,29 @@ function shell(content, active) {
   const closeSettings = () => {
     if (!settingsPanel || settingsPanel.hidden) return;
     settingsPanel.hidden = true;
-    settingsToggle?.setAttribute("aria-expanded", "false");
-    settingsToggle?.setAttribute("aria-label", "Open settings");
+    settingsToggles.forEach(button => {
+      button.setAttribute("aria-expanded", "false");
+      button.setAttribute("aria-label", "Open settings");
+    });
   };
-  settingsToggle?.addEventListener("click", () => {
-    const open = settingsToggle.getAttribute("aria-expanded") === "true";
-    settingsToggle.setAttribute("aria-expanded", String(!open));
-    settingsToggle.setAttribute("aria-label", open ? "Open settings" : "Close settings");
-    settingsPanel.hidden = open;
-    if (!open) settingsPanel.querySelector("select")?.focus();
+  settingsToggles.forEach(settingsToggle => settingsToggle.addEventListener("click", () => {
+    const open = settingsPanel.hidden;
+    settingsPanel.hidden = !open;
+    settingsToggles.forEach(button => {
+      button.setAttribute("aria-expanded", String(open));
+      button.setAttribute("aria-label", open ? "Close settings" : "Open settings");
+    });
+    if (open) settingsPanel.querySelector("select")?.focus();
+  }));
+  mobileSearchToggle?.addEventListener("click", () => {
+    siteHeader?.classList.add("search-is-open");
+    siteHeader?.querySelector(".site-header-search input, .opera-header-search input")?.focus();
+  });
+  siteHeader?.querySelector(".site-header-search input, .opera-header-search input")?.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      siteHeader.classList.remove("search-is-open");
+      mobileSearchToggle?.focus();
+    }
   });
   fontPicker?.addEventListener("change", () => {
     if (!FONT_CHOICES.has(fontPicker.value)) return;
@@ -376,21 +396,17 @@ function shell(content, active) {
         option.disabled = (activeFontSize === MIN_FONT_SIZE && option.dataset.fontSizeStep === "-1") ||
           (activeFontSize === MAX_FONT_SIZE && option.dataset.fontSizeStep === "1");
       });
-      app.querySelectorAll("[data-font-size-step]").forEach(option => {
-        option.disabled = (activeFontSize === MIN_FONT_SIZE && option.dataset.fontSizeStep === "-1") ||
-          (activeFontSize === MAX_FONT_SIZE && option.dataset.fontSizeStep === "1");
-      });
     });
   });
   settingsPanel?.addEventListener("keydown", event => {
     if (event.key === "Escape") {
       closeSettings();
-      settingsToggle?.focus();
+      settingsToggles.find(button => getComputedStyle(button).display !== "none")?.focus();
     }
   });
   if (settingsOutsidePointerHandler) document.removeEventListener("pointerdown", settingsOutsidePointerHandler);
   settingsOutsidePointerHandler = event => {
-    if (settingsPanel && !settingsPanel.hidden && !event.target.closest(".settings-wrap")) closeSettings();
+    if (settingsPanel && !settingsPanel.hidden && !event.target.closest("[data-settings-toggle], [data-settings-panel]")) closeSettings();
   };
   document.addEventListener("pointerdown", settingsOutsidePointerHandler);
   toggle?.addEventListener("click", () => {
@@ -399,10 +415,10 @@ function shell(content, active) {
     toggle.setAttribute("aria-label", open ? "Open navigation" : "Close navigation");
     nav.classList.toggle("is-open", !open);
   });
-  app.querySelector(".search-trigger")?.addEventListener("click", () => {
-    const field = app.querySelector("#hero-search, #directory-search");
-    if (field) field.focus();
-    else window.location.hash = "#/operas";
+  app.querySelector("[data-site-search]")?.addEventListener("submit", event => {
+    event.preventDefault();
+    const query = event.currentTarget.querySelector("input")?.value.trim() || "";
+    window.location.hash = query ? `#/operas?q=${encodeURIComponent(query)}` : "#/operas";
   });
   app.querySelectorAll("[data-search-form]").forEach((form) => {
     form.addEventListener("submit", (event) => {
