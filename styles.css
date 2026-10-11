@@ -2081,3 +2081,219 @@ html[data-theme="night"] .settings-group select { color: #ece7df; background-col
   .site-header:has(.opera-header-search) .header-actions { flex: 0 0 auto; min-width: 0; }
   .site-header:has(.opera-header-search) .menu-toggle { order: 2; }
 }
+
+/* Keep every page surface and reading control legible in night mode. */
+html[data-theme="night"] {
+  color-scheme: dark;
+  --paper: #171b20;
+  --paper-deep: #20262d;
+  --ink: #e8e4dc;
+  --muted: #b4b1a9;
+  --line: #42474c;
+  --wine: #df9a9d;
+  --wine-dark: #a65360;
+  --night-surface: #22282f;
+  --night-surface-raised: #292f36;
+  --night-text: #e8e4dc;
+  --night-muted: #b6b9bc;
+  --night-border: #424a51;
+  --night-selected: #303f4c;
+}
+
+html[data-theme="night"] body,
+html[data-theme="night"] #app,
+html[data-theme="night"] #app > main,
+html[data-theme="night"] .home-notes,
+html[data-theme="night"] .opera-information,
+html[data-theme="night"] .opera-reading-page,
+html[data-theme="night"] .opera-outline,
+html[data-theme="night"] .about-page {
+  color: var(--night-text);
+  background-color: var(--paper);
+}
+
+html[data-theme="night"] .site-header,
+html[data-theme="night"] .site-header:has(.opera-header-search),
+html[data-theme="night"] .site-header:has(+ #main .opera-reading-page),
+html[data-theme="night"] .site-footer {
+  color: var(--night-text);
+  background-color: #101820;
+  border-color: var(--night-border);
+}
+html[data-theme="night"] .main-nav > a,
+html[data-theme="night"] .main-nav > a.is-active,
+html[data-theme="night"] .settings-nav-trigger,
+html[data-theme="night"] .site-header:has(.opera-header-search) .main-nav > a,
+html[data-theme="night"] .site-header:has(+ #main .opera-reading-page) .main-nav > a { color: #ece7df; }
+html[data-theme="night"] .site-header .menu-toggle span { background: #ece7df; }
+html[data-theme="night"] .site-footer > span:last-child,
+html[data-theme="night"] .footer-brand { color: var(--night-text); }
+html[data-theme="night"] .brand__mark { border-color: #82786a; }
+html[data-theme="night"] .main-nav > a.is-active::after { background: var(--wine); }
+
+html[data-theme="night"] .hero-intro,
+html[data-theme="night"] .hero-footnote,
+html[data-theme="night"] .hero-art-label,
+html[data-theme="night"] .hero-side-note,
+html[data-theme="night"] .page-intro__row > p,
+html[data-theme="night"] .detail-subtitle,
+html[data-theme="night"] .detail-summary,
+html[data-theme="night"] .detail-note > p,
+html[data-theme="night"] .libretto-placeholder p:last-child,
+html[data-theme="night"] .directory-meta,
+html[data-theme="night"] .directory-note p,
+html[data-theme="night"] .opera-card__body .eyebrow,
+html[data-theme="night"] .opera-info__breadcrumbs,
+html[data-theme="night"] .opera-info__summary,
+html[data-theme="night"] .opera-info__characters p,
+html[data-theme="night"] .opera-outline__heading > p:last-child,
+html[data-theme="night"] .opera-outline__section-translation,
+html[data-theme="night"] .section-nav-link__translation,
+html[data-theme="night"] .libretto-participants,
+html[data-theme="night"] .scene-summary,
+html[data-theme="night"] .scene-cast,
+html[data-theme="night"] .scene-sidebar__note,
+html[data-theme="night"] .scene-bottom-nav__label,
+html[data-theme="night"] .libretto-source-division,
+html[data-theme="night"] .libretto-source-note,
+html[data-theme="night"] .scroll-cue { color: var(--night-muted); }
+
+html[data-theme="night"] .hero-title-card,
+html[data-theme="night"] .home-note,
+html[data-theme="night"] .directory-intro__panel,
+html[data-theme="night"] .directory-card,
+html[data-theme="night"] .directory-note,
+html[data-theme="night"] .closing-note,
+html[data-theme="night"] .detail-facts,
+html[data-theme="night"] .detail-note,
+html[data-theme="night"] .libretto-placeholder,
+html[data-theme="night"] .opera-info__characters,
+html[data-theme="night"] .opera-info__facts > div,
+html[data-theme="night"] .opera-outline__prelude,
+html[data-theme="night"] .opera-outline__act,
+html[data-theme="night"] .opera-outline__scene,
+html[data-theme="night"] .scene-panel,
+html[data-theme="night"] .scene-sidebar,
+html[data-theme="night"] .reading-layout,
+html[data-theme="night"] .reading-main {
+  color: var(--night-text);
+  background-color: var(--night-surface);
+  border-color: var(--night-border);
+}
+html[data-theme="night"] .home-note p,
+html[data-theme="night"] .directory-intro__panel h1,
+html[data-theme="night"] .directory-intro__panel p,
+html[data-theme="night"] .directory-card__body h2,
+html[data-theme="night"] .directory-card__byline,
+html[data-theme="night"] .directory-card__summary,
+html[data-theme="night"] .directory-card,
+html[data-theme="night"] .directory-card__button,
+html[data-theme="night"] .detail-facts dd,
+html[data-theme="night"] .libretto-placeholder h2,
+html[data-theme="night"] .about-page > p:not(.eyebrow),
+html[data-theme="night"] .opera-info__introduction h1,
+html[data-theme="night"] .opera-info__synopsis,
+html[data-theme="night"] .opera-info__character-top strong,
+html[data-theme="night"] .opera-info__characters p,
+html[data-theme="night"] .opera-reading-page .libretto-cell,
+html[data-theme="night"] .libretto-cell p,
+html[data-theme="night"] .opera-outline__act > h2,
+html[data-theme="night"] .opera-outline__act-toggle,
+html[data-theme="night"] .opera-outline__scene > h3,
+html[data-theme="night"] .opera-outline__section.section-nav-link { color: var(--night-text); }
+html[data-theme="night"] .home-note__icon,
+html[data-theme="night"] .directory-card__button,
+html[data-theme="night"] .opera-info__read-link { color: #f0d5d2; background: #49353a; }
+html[data-theme="night"] .directory-card__button:hover,
+html[data-theme="night"] .opera-info__read-link:hover { background: #5a3e43; }
+html[data-theme="night"] .closing-note .eyebrow,
+html[data-theme="night"] .opera-info__facts dt,
+html[data-theme="night"] .opera-info__character-top span,
+html[data-theme="night"] .detail-facts dt,
+html[data-theme="night"] .directory-card__byline span { color: #c5b28f; }
+
+html[data-theme="night"] .opera-subnav,
+html[data-theme="night"] .reading-identity,
+html[data-theme="night"] .scene-group,
+html[data-theme="night"] .scene-panel__top,
+html[data-theme="night"] .libretto-columns,
+html[data-theme="night"] .libretto-section__label,
+html[data-theme="night"] .opera-info__facts { color: var(--night-text); background-color: var(--night-surface); border-color: var(--night-border); }
+html[data-theme="night"] .scene-group__summary,
+html[data-theme="night"] .scene-link,
+html[data-theme="night"] .section-nav-link,
+html[data-theme="night"] .opera-tabs,
+html[data-theme="night"] .opera-tabs .is-active,
+html[data-theme="night"] .opera-subnav__link,
+html[data-theme="night"] .opera-subnav__title,
+html[data-theme="night"] .opera-subnav__composer,
+html[data-theme="night"] .opera-info__character-top strong { color: var(--night-text); }
+html[data-theme="night"] .scene-link:hover,
+html[data-theme="night"] .section-nav-link:hover,
+html[data-theme="night"] .opera-outline__section:hover,
+html[data-theme="night"] .opera-outline__section:focus-visible,
+html[data-theme="night"] .scene-step:hover { background-color: var(--night-surface-raised); }
+html[data-theme="night"] .scene-link.is-current,
+html[data-theme="night"] .section-nav-link.is-current,
+html[data-theme="night"] .scene-group.is-current[open] > .scene-group__summary { color: #f0f4f7; background-color: var(--night-selected); }
+html[data-theme="night"] .scene-link.is-current::before,
+html[data-theme="night"] .section-nav-link.is-current::before { background-color: #83b5dc; }
+html[data-theme="night"] .opera-tabs .is-active::after { background-color: #83b5dc; }
+html[data-theme="night"] .libretto-row,
+html[data-theme="night"] .libretto-cell--english,
+html[data-theme="night"] .scene-bottom-nav,
+html[data-theme="night"] .opera-info__characters li,
+html[data-theme="night"] .opera-outline__scene { border-color: var(--night-border); }
+html[data-theme="night"] .libretto-column-heading,
+html[data-theme="night"] .mobile-reader-toolbar,
+html[data-theme="night"] .desktop-outline-collapse-bar,
+html[data-theme="night"] .desktop-outline-reopen:not([hidden]) { color: var(--night-text); background-color: var(--night-surface-raised); }
+html[data-theme="night"] .mobile-scene-step,
+html[data-theme="night"] .scene-bottom-nav .mobile-scene-step,
+html[data-theme="night"] .desktop-outline-collapse,
+html[data-theme="night"] .desktop-outline-reopen button {
+  color: var(--night-text);
+  background-color: var(--night-surface-raised);
+  border-color: var(--night-border);
+}
+html[data-theme="night"] .libretto-search-result { color: #d7e5f0; background: #293847; border-color: #72a9d2; }
+html[data-theme="night"] .libretto-speaker,
+html[data-theme="night"] .libretto-speaker--guglielmo,
+html[data-theme="night"] .libretto-speaker--fiordiligi,
+html[data-theme="night"] .libretto-speaker--don-alfonso { color: #8fc1e5; }
+html[data-theme="night"] .libretto-speaker--stage-direction { color: #c2bcb2; }
+
+html[data-theme="night"] .opera-search input,
+html[data-theme="night"] .directory-sort select,
+html[data-theme="night"] .settings-panel,
+html[data-theme="night"] .settings-panel select,
+html[data-theme="night"] .theme-choices button,
+html[data-theme="night"] .font-size-controls button,
+html[data-theme="night"] .font-size-controls output {
+  color: var(--night-text);
+  background-color: #1a2026;
+  border-color: var(--night-border);
+}
+html[data-theme="night"] .opera-search input::placeholder { color: #aab3bc; }
+html[data-theme="night"] .opera-info__breadcrumbs a,
+html[data-theme="night"] .opera-info__back a { color: #9bc5e5; }
+html[data-theme="night"] .opera-info__alternate { color: #d2b784; }
+html[data-theme="night"] .opera-info__read-link { color: #f0d5d2; }
+html[data-theme="night"] .theme-choices button[aria-pressed="true"] { background: #4a3d2a; }
+html[data-theme="night"] .settings-label { color: var(--night-text); }
+html[data-theme="night"] .settings-group,
+html[data-theme="night"] .theme-choices,
+html[data-theme="night"] .font-size-controls { border-color: var(--night-border); }
+html[data-theme="night"] .site-header-search input,
+html[data-theme="night"] .opera-header-search input { color: #fff; }
+html[data-theme="night"] .directory-sort,
+html[data-theme="night"] .directory-intro .directory-sort { color: var(--night-text); }
+html[data-theme="night"] .directory-sort select { color: var(--night-text); background-color: var(--night-surface-raised); }
+
+@media (max-width: 700px) {
+  html[data-theme="night"] .main-nav { background: #101820; border-color: var(--night-border); }
+  html[data-theme="night"] .main-nav > a { border-color: var(--night-border); }
+  html[data-theme="night"] .mobile-action-trigger { color: #ece7df; background: #18232c; border-color: #46535e; }
+  html[data-theme="night"] .reading-identity { background: var(--night-surface); }
+  html[data-theme="night"] .opera-reading-page .libretto-cell--english { background: #252b32; }
+}
