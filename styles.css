@@ -16,9 +16,10 @@
 
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto"), local("Roboto-Regular");
+  src: url("./public/fonts/Roboto-Latin.woff") format("woff");
   font-style: normal;
   font-weight: 100 900;
+  font-display: swap;
 }
 
 :root[data-font-choice="roboto"] {
