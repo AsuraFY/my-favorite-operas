@@ -131,6 +131,7 @@ const barbiere = {
 
 const tristan = {
   slug: "tristan-und-isolde",
+  continuousAct: true,
   opera: getOpera("tristan-und-isolde"),
   composerShort: "R. WAGNER",
   mobileComposer: "Richard Wagner",

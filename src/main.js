@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-art-2";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-18";
-import { getLibretto } from "./data/libretto-registry.js?v=registry-27";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-28";
 import { operaInformation } from "./data/opera-information.js?v=info-1";
 import { renderOperaInformationPage } from "./opera-info-page.js?v=info-page-1";
 
@@ -415,7 +415,8 @@ function highlightReaderSection(index, syncUrl = false) {
     const url = link.getAttribute("href");
     const params = new URLSearchParams(url.split("?")[1] || "");
     const selected = Number(params.get("act")) === act &&
-      Number(params.get("scene")) === scene && Number(params.get("item")) === sectionItem;
+      Number(params.get("scene")) === scene &&
+      (link.classList.contains("is-song") || Number(params.get("item")) === sectionItem);
     link.classList.toggle("is-current", selected);
     if (selected) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");

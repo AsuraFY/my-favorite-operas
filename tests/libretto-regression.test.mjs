@@ -58,6 +58,13 @@ test("Tristan outline follows Spotify tracks and formats the bilingual libretto 
   assert.deepEqual(tristan.acts.map(act => act.scenes.length), [5, 3, 3]);
   assert.deepEqual(tristan.spotifyOutline.map(act => act.scenes.reduce((n, scene) => n + scene.tracks.length, 0) + 1), [10, 9, 10]);
   const reader = createLibrettoRenderer(tristan);
+  for (const act of tristan.acts) {
+    window.location.hash = "#/operas/tristan-und-isolde?act=" + act.number;
+    const page = reader.scene(1);
+    const sections = act.scenes.flatMap(scene => scene.sections);
+    assert.equal(count(page, /class="libretto-scene-section"/g), sections.length);
+    assertSceneRows(page, { sections });
+  }
   let scenes = 0, rows = 0;
   for (const act of tristan.acts) for (const scene of act.scenes) {
     assert.ok(scene.summary);
