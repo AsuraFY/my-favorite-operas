@@ -1,6 +1,6 @@
 # My Favorite Operas
 
-A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte, Le nozze di Figaro and Il barbiere di Siviglia have bilingual libretti in the reader. Figaro Acts III–IV currently use line-aligned English drafts that still need editorial review.
+A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte, Le nozze di Figaro, Il barbiere di Siviglia and Carmen have bilingual libretti in the reader. Carmen’s four acts use a complete French source and fresh line-aligned English draft. Figaro Acts III–IV also use English drafts that still need editorial review.
 
 ## Run locally
 
@@ -26,7 +26,7 @@ All six catalog entries have standalone information pages with artwork, verified
 
 The four original directory images use separate quadrants of an existing source image, now aligned to prevent adjacent panels from appearing in a card. Turandot and Le nozze di Figaro have independent original SVG illustrations in `public/images/`.
 
-Factual editorial references include the Metropolitan Opera synopses for Turandot, Le nozze di Figaro, Macbeth, Tristan und Isolde, and Il barbiere di Siviglia; the Teatro alla Scala and Opera di Roma archives for Turandot; Madison Opera for the 1786 Figaro premiere; and the existing Così fan tutte registry.
+Factual editorial references include the Metropolitan Opera synopses for Turandot, Le nozze di Figaro, Macbeth, Tristan und Isolde, and Il barbiere di Siviglia; Opera Guide for the French Carmen libretto; the Teatro alla Scala and Opera di Roma archives for Turandot; Madison Opera for the 1786 Figaro premiere; and the existing Così fan tutte registry.
 
 ## Architecture
 
@@ -37,6 +37,7 @@ Factual editorial references include the Metropolitan Opera synopses for Turando
 - src/data/libretto-cosi-fan-tutte-act-1.js and src/data/libretto-cosi-fan-tutte-act-2.js — the original Così act data, retained without changing translations.
 - src/data/libretto-il-barbiere-di-siviglia-act-1.js and src/data/libretto-il-barbiere-di-siviglia-act-2.js — Italian/English scenes for Acts I and II of Il barbiere di Siviglia.
 - src/data/libretto-le-nozze-di-figaro-act-1.js through src/data/libretto-le-nozze-di-figaro-act-4.js — Italian/English scenes for all four acts of Le nozze di Figaro.
+- src/data/libretto-carmen-act-1.js through src/data/libretto-carmen-act-4.js — French/English source lines for all four acts of Carmen.
 - src/libretto-reader.js — shared reader factory, synopsis, full outline, act/scene navigation, credits and bilingual rows.
 - src/main.js — hash routing, metadata search, sticky navigation, desktop collapse, mobile drawer, deep-link and scroll controllers.
 - styles.css — responsive reader appearance.
