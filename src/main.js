@@ -11,7 +11,8 @@ const FONT_CHOICES = new Set(["current", "roboto", "system"]);
 const THEME_PREFERENCE_KEY = "favorite-operas-theme-choice";
 const FONT_SIZE_PREFERENCE_KEY = "favorite-operas-font-size";
 const THEME_CHOICES = new Set(["day", "night"]);
-const FONT_SIZE_CHOICES = new Set(["small", "medium", "large"]);
+const MIN_FONT_SIZE = 12;
+const MAX_FONT_SIZE = 24;
 
 function readFontChoice() {
   try {
@@ -35,10 +36,21 @@ function readPreference(key, choices, fallback) {
 }
 
 let activeTheme = readPreference(THEME_PREFERENCE_KEY, THEME_CHOICES, "day");
-let activeFontSize = readPreference(FONT_SIZE_PREFERENCE_KEY, FONT_SIZE_CHOICES, "medium");
+function readFontSize() {
+  try {
+    const saved = localStorage.getItem(FONT_SIZE_PREFERENCE_KEY);
+    const legacySizes = { small: 14, medium: 16, large: 18 };
+    const size = Number(saved) || legacySizes[saved] || 16;
+    return Math.min(MAX_FONT_SIZE, Math.max(MIN_FONT_SIZE, size));
+  } catch {
+    return 16;
+  }
+}
+let activeFontSize = readFontSize();
 let settingsOutsidePointerHandler = null;
 document.documentElement.dataset.theme = activeTheme;
-document.documentElement.dataset.fontSize = activeFontSize;
+document.documentElement.dataset.fontSize = String(activeFontSize);
+document.documentElement.style.setProperty("--reading-scale", String(activeFontSize / 16));
 
 const artwork = (opera, extra = "") => `
   <div class="artwork artwork--${opera.color} ${extra}" aria-hidden="true">
@@ -67,12 +79,28 @@ function header(active) {
       <div class="settings-wrap">
         <button class="settings-trigger" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"/><path d="m19.2 13.7 1.2.9-1.6 2.8-1.4-.6a7.9 7.9 0 0 1-1.7 1l-.2 1.5h-3.2l-.2-1.5a7.9 7.9 0 0 1-1.7-1l-1.4.6-1.6-2.8 1.2-.9a7.4 7.4 0 0 1 0-2l-1.2-.9L9 8l1.4.6a7.9 7.9 0 0 1 1.7-1l.2-1.5h3.2l.2 1.5a7.9 7.9 0 0 1 1.7 1l1.4-.6 1.6 2.8-1.2.9a7.4 7.4 0 0 1 0 2Z" transform="translate(-2.2 -1.2)"/></svg>
+          <span>Settings</span>
         </button>
-        <section class="settings-panel" id="site-settings" data-settings-panel aria-label="Reading settings" hidden>
-          <div class="settings-panel__heading"><div><p class="settings-panel__eyebrow">Personalize</p><h2>Reading settings</h2></div><button type="button" data-settings-close class="settings-panel__close" aria-label="Close settings">×</button></div>
-          <label class="settings-row"><span><strong>Theme</strong><small>Choose day or night colors</small></span><select data-theme-picker aria-label="Theme"><option value="day" ${activeTheme === "day" ? "selected" : ""}>Day</option><option value="night" ${activeTheme === "night" ? "selected" : ""}>Night</option></select></label>
-          <label class="settings-row"><span><strong>Font family</strong><small>Choose how text appears</small></span><select data-font-picker aria-label="Font family"><option value="current" ${activeFontChoice === "current" ? "selected" : ""}>Current</option><option value="roboto" ${activeFontChoice === "roboto" ? "selected" : ""}>Roboto</option><option value="system" ${activeFontChoice === "system" ? "selected" : ""}>System</option></select></label>
-          <fieldset class="settings-size"><legend>Font size</legend><div role="group" aria-label="Font size">${["small", "medium", "large"].map(size => `<button type="button" data-font-size-choice="${size}" aria-pressed="${activeFontSize === size}">${size[0].toUpperCase()}${size.slice(1)}</button>`).join("")}</div></fieldset>
+        <section class="settings-panel" id="site-settings" data-settings-panel aria-label="Settings" hidden>
+          <div class="settings-group">
+            <p class="settings-label">Theme</p>
+            <div class="theme-choices" role="group" aria-label="Theme">
+              <button type="button" data-theme-choice="day" aria-pressed="${activeTheme === "day"}"><span aria-hidden="true">☀</span> Day</button>
+              <button type="button" data-theme-choice="night" aria-pressed="${activeTheme === "night"}"><span aria-hidden="true">☾</span> Night</button>
+            </div>
+          </div>
+          <div class="settings-group">
+            <label class="settings-label" for="font-family-picker">Font family</label>
+            <select id="font-family-picker" data-font-picker aria-label="Font family"><option value="current" ${activeFontChoice === "current" ? "selected" : ""}>Current</option><option value="roboto" ${activeFontChoice === "roboto" ? "selected" : ""}>Roboto</option><option value="system" ${activeFontChoice === "system" ? "selected" : ""}>System</option></select>
+          </div>
+          <div class="settings-group settings-size">
+            <p class="settings-label">Font size</p>
+            <div class="font-size-controls" role="group" aria-label="Font size">
+              <button type="button" data-font-size-step="-1" aria-label="Decrease font size" ${activeFontSize === MIN_FONT_SIZE ? "disabled" : ""}>A−</button>
+              <output data-font-size-value aria-live="polite">${activeFontSize}</output>
+              <button type="button" data-font-size-step="1" aria-label="Increase font size" ${activeFontSize === MAX_FONT_SIZE ? "disabled" : ""}>A+</button>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -303,7 +331,6 @@ function shell(content, active) {
   const settingsToggle = app.querySelector("[data-settings-toggle]");
   const settingsPanel = app.querySelector("[data-settings-panel]");
   const fontPicker = app.querySelector("[data-font-picker]");
-  const themePicker = app.querySelector("[data-theme-picker]");
   const saveChoice = (key, value) => {
     try { localStorage.setItem(key, value); } catch { /* The preference still applies for this page. */ }
   };
@@ -320,30 +347,39 @@ function shell(content, active) {
     settingsPanel.hidden = open;
     if (!open) settingsPanel.querySelector("select")?.focus();
   });
-  app.querySelector("[data-settings-close]")?.addEventListener("click", () => {
-    closeSettings();
-    settingsToggle?.focus();
-  });
   fontPicker?.addEventListener("change", () => {
     if (!FONT_CHOICES.has(fontPicker.value)) return;
     activeFontChoice = fontPicker.value;
     document.documentElement.dataset.fontChoice = activeFontChoice;
     saveChoice(FONT_PREFERENCE_KEY, activeFontChoice);
   });
-  themePicker?.addEventListener("change", () => {
-    if (!THEME_CHOICES.has(themePicker.value)) return;
-    activeTheme = themePicker.value;
-    document.documentElement.dataset.theme = activeTheme;
-    saveChoice(THEME_PREFERENCE_KEY, activeTheme);
-  });
-  app.querySelectorAll("[data-font-size-choice]").forEach(button => {
+  app.querySelectorAll("[data-theme-choice]").forEach(button => {
     button.addEventListener("click", () => {
-      const choice = button.dataset.fontSizeChoice;
-      if (!FONT_SIZE_CHOICES.has(choice)) return;
-      activeFontSize = choice;
-      document.documentElement.dataset.fontSize = choice;
-      saveChoice(FONT_SIZE_PREFERENCE_KEY, choice);
-      app.querySelectorAll("[data-font-size-choice]").forEach(option => option.setAttribute("aria-pressed", String(option === button)));
+      const choice = button.dataset.themeChoice;
+      if (!THEME_CHOICES.has(choice)) return;
+      activeTheme = choice;
+      document.documentElement.dataset.theme = activeTheme;
+      saveChoice(THEME_PREFERENCE_KEY, activeTheme);
+      app.querySelectorAll("[data-theme-choice]").forEach(option => option.setAttribute("aria-pressed", String(option === button)));
+    });
+  });
+  app.querySelectorAll("[data-font-size-step]").forEach(button => {
+    button.addEventListener("click", () => {
+      const step = Number(button.dataset.fontSizeStep);
+      activeFontSize = Math.min(MAX_FONT_SIZE, Math.max(MIN_FONT_SIZE, activeFontSize + step));
+      document.documentElement.dataset.fontSize = String(activeFontSize);
+      document.documentElement.style.setProperty("--reading-scale", String(activeFontSize / 16));
+      saveChoice(FONT_SIZE_PREFERENCE_KEY, String(activeFontSize));
+      const output = app.querySelector("[data-font-size-value]");
+      if (output) output.textContent = String(activeFontSize);
+      app.querySelectorAll("[data-font-size-step]").forEach(option => {
+        option.disabled = (activeFontSize === MIN_FONT_SIZE && option.dataset.fontSizeStep === "-1") ||
+          (activeFontSize === MAX_FONT_SIZE && option.dataset.fontSizeStep === "1");
+      });
+      app.querySelectorAll("[data-font-size-step]").forEach(option => {
+        option.disabled = (activeFontSize === MIN_FONT_SIZE && option.dataset.fontSizeStep === "-1") ||
+          (activeFontSize === MAX_FONT_SIZE && option.dataset.fontSizeStep === "1");
+      });
     });
   });
   settingsPanel?.addEventListener("keydown", event => {
