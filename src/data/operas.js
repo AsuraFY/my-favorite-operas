@@ -216,6 +216,28 @@ export const operas = [
     "summary": "A young wanderer learns compassion and restores hope to the wounded guardian of the Holy Grail.",
     "note": "Wagner’s final opera follows a journey from innocence through temptation to understanding and renewal."
   },
+  {
+    "slug": "carmen",
+    "image": "./public/images/carmen-art.webp",
+    "title": "Carmen",
+    "displayTitle": "Carmen",
+    "aliases": [
+      "Carmen (Bizet)"
+    ],
+    "composer": "Georges Bizet",
+    "librettist": "Henri Meilhac and Ludovic Halévy",
+    "premiered": "3 March 1875",
+    "premieredAt": "Opéra-Comique, Paris",
+    "language": "French",
+    "genre": "Opéra comique",
+    "acts": 4,
+    "color": "carmen",
+    "initials": "C",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "Carmen’s determination to live freely collides with Don José’s possessive love in Bizet’s tragedy set in Seville.",
+    "note": "The Habanera, Toreador Song and Flower Song give unforgettable musical voice to a drama of freedom and obsession."
+  },
 ];
 
 export function getOpera(slug) {

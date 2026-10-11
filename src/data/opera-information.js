@@ -444,5 +444,53 @@ export const operaInformation = {
     "https://www.metopera.org/season/2026-27-season/parsifal/",
     "https://archive.sfopera.com/sites/default/files/2025-10/SFO_PUB_01_SFO_2025_05_compressed_0.pdf"
   ]
+},
+  "carmen": {
+  "synopsis": [
+    "In Seville, Carmen meets the soldier Don José outside the cigarette factory where she works. After a fight, he is ordered to escort her to prison, but she persuades him to let her escape. Later, he abandons his military life and joins Carmen and her companions among the smugglers.",
+    "Their relationship deteriorates as José’s jealousy grows and Carmen falls in love with the bullfighter Escamillo. Micaëla brings José news of his dying mother and persuades him to leave. He later confronts Carmen outside the bullring, demanding that she return to him. When she refuses, he kills her."
+  ],
+  "characters": [
+    [
+      "Carmen",
+      "Mezzo-soprano",
+      "A Romani factory worker who insists on choosing her own life and lovers."
+    ],
+    [
+      "Don José",
+      "Tenor",
+      "A soldier whose love becomes possessive and violent."
+    ],
+    [
+      "Escamillo",
+      "Bass-baritone",
+      "A celebrated bullfighter and Carmen’s new lover."
+    ],
+    [
+      "Micaëla",
+      "Soprano",
+      "A young woman from José’s home village."
+    ],
+    [
+      "Frasquita",
+      "Soprano",
+      "Carmen’s friend and a member of the smugglers’ group."
+    ],
+    [
+      "Mercédès",
+      "Mezzo-soprano",
+      "Carmen’s friend and companion."
+    ],
+    [
+      "Zuniga",
+      "Bass",
+      "José’s commanding officer."
+    ]
+  ],
+  "sources": [
+    "https://v16live.metopera.org/discover/synopses/carmen/",
+    "https://www.metopera.org/season/in-cinemas/2026-27-season/carmen/",
+    "https://www.toledoopera.org/synopsis/synopsis/"
+  ]
 }
 };
