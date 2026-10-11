@@ -354,5 +354,52 @@ export const operaInformation = {
     "https://v16live.metopera.org/discover/synopses/manon2/",
     "https://www.metopera.org/globalassets/discover/education/educator-guides/manon/manon.11-12.guide.pdf"
   ]
+},
+  "otello": {
+  "synopsis": [
+    "On Cyprus, the Venetian commander Otello returns from victory at sea to his wife Desdemona. His officer Iago, resentful of Cassio’s promotion, engineers a drunken fight that costs Cassio his rank. He then uses Desdemona’s efforts to help Cassio to suggest that they are lovers.",
+    "Iago plants Desdemona’s handkerchief as false evidence and manipulates Otello into believing she has betrayed him. Consumed by jealousy, Otello kills her. Emilia exposes Iago’s deception, and Otello, realizing that Desdemona was innocent, takes his own life."
+  ],
+  "characters": [
+    [
+      "Otello",
+      "Tenor",
+      "The Venetian commander and Desdemona’s husband."
+    ],
+    [
+      "Desdemona",
+      "Soprano",
+      "Otello’s faithful wife."
+    ],
+    [
+      "Iago",
+      "Baritone",
+      "An officer who plots Otello’s downfall."
+    ],
+    [
+      "Cassio",
+      "Tenor",
+      "Otello’s captain, drawn into Iago’s scheme."
+    ],
+    [
+      "Emilia",
+      "Mezzo-soprano",
+      "Desdemona’s attendant and Iago’s wife."
+    ],
+    [
+      "Roderigo",
+      "Tenor",
+      "A suitor of Desdemona whom Iago manipulates."
+    ],
+    [
+      "Lodovico",
+      "Bass",
+      "An envoy from Venice."
+    ]
+  ],
+  "sources": [
+    "https://www.metopera.org/user-information/synopses-archive/otello/",
+    "https://www.metopera.org/learn/education/learning-library/educator-guides/otello/"
+  ]
 }
 };

@@ -1,7 +1,7 @@
-import { operas, getOpera } from "./data/operas.js?v=opera-art-5";
+import { operas, getOpera } from "./data/operas.js?v=opera-art-6";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-19";
-import { getLibretto } from "./data/libretto-registry.js?v=registry-34";
-import { operaInformation } from "./data/opera-information.js?v=info-4";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-35";
+import { operaInformation } from "./data/opera-information.js?v=info-5";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
 
 const app = document.querySelector("#app");

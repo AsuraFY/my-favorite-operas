@@ -171,6 +171,29 @@ export const operas = [
     "summary": "Torn between devotion and luxury, Manon and the Chevalier des Grieux pursue a love that leads them from youthful escape to tragedy.",
     "note": "Based on Abbé Prévost’s novel, Massenet’s opera follows Manon’s changing fortunes across five acts."
   },
+  {
+    "slug": "otello",
+    "image": "./public/images/otello-art.webp",
+    "title": "Otello",
+    "displayTitle": "Otello",
+    "aliases": [
+      "Othello",
+      "Otello (Verdi)"
+    ],
+    "composer": "Giuseppe Verdi",
+    "librettist": "Arrigo Boito",
+    "premiered": "5 February 1887",
+    "premieredAt": "Teatro alla Scala, Milan",
+    "language": "Italian",
+    "genre": "Opera",
+    "acts": 4,
+    "color": "otello",
+    "initials": "O",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "Iago’s calculated deception turns Otello’s love for Desdemona into a destructive jealousy in Verdi’s Shakespearean tragedy.",
+    "note": "Verdi and Boito compress Shakespeare’s Othello into four acts of intense musical drama."
+  },
 ];
 
 export function getOpera(slug) {
