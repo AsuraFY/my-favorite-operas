@@ -127,3 +127,41 @@ test("Figaro Act II renders every source line and keeps every deep link on the f
   const outline = reader.outline();
   for (const title of ["Porgi, amor", "Voi che sapete", "Venite, inginocchiatevi", "Esci omai"]) assert.ok(outline.includes(title));
 });
+
+test("Figaro Acts III–IV preserve source scenes, numbers and aligned text", async () => {
+  const { createHash } = await import("node:crypto");
+  assert.deepEqual(figaro.acts.map(item => item.number), [1, 2, 3]);
+  const expected = [
+    { scenes: 14, sections: 30, numbers: [17, 18, 19, 20, 21, 22, 23], lines: 460, directions: 74,
+      hash: "f08460db64b423367d2aa32c68990a9294daace8957aed10fd97488254cf375e" }
+  ];
+  for (const [index, counts] of expected.entries()) {
+    const current = figaro.acts[index + 2];
+    const sections = current.scenes.flatMap(scene => scene.sections);
+    const entries = sections.flatMap(section => section.turns);
+    assert.equal(current.scenes.length, counts.scenes);
+    assert.equal(sections.length, counts.sections);
+    assert.deepEqual(sections.filter(section => section.number).map(section => section.number), counts.numbers);
+    let lyrics = 0, directions = 0;
+    for (const scene of current.scenes) {
+      for (const section of scene.sections) {
+        for (const turn of section.turns) {
+          assert.ok(turn.it.trim() && turn.en.trim());
+          assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+          if (turn.speaker === "Stage direction") directions++;
+          else {
+            assert.equal(turn.literalText, true);
+            lyrics += turn.it.split("\n").length;
+          }
+        }
+      }
+    }
+    assert.equal(lyrics, counts.lines);
+    assert.equal(directions, counts.directions);
+    assert.equal(createHash("sha256").update(entries.flatMap(turn => turn.it.split("\n")).join("\n")).digest("hex"), counts.hash);
+    window.location.hash = `#/operas/le-nozze-di-figaro?act=${current.number}`;
+    const page = createLibrettoRenderer(figaro).scene(1);
+    assert.ok(page.includes("End of Act III"));
+    assert.ok(page.includes("libretto-row--stage-direction"));
+  }
+});

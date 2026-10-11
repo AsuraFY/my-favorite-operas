@@ -22,6 +22,7 @@ import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-
 import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-act1-1";
 
 import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-1";
+import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -283,8 +284,12 @@ const figaro = {
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "",
   bracketStageDirections: true,
-  translatedForms: { Recitativo: "Recitative", Duettino: "Little duet", Cavatina: "Cavatina", Aria: "Aria", Terzetto: "Trio", Coro: "Chorus", Arietta: "Little aria", Finale: "Finale" },
-  acts: [{ number: 1, originalHeading: "Atto primo", prelude: { title: "Ouverture", translation: "Overture" }, scenes: figaroActOneScenes }, { number: 2, originalHeading: "Atto secondo", scenes: figaroActTwoScenes }],
+  translatedForms: { Recitativo: "Recitative", "Recitativo ed Aria": "Recitative and aria", Duettino: "Little duet", Cavatina: "Cavatina", Arietta: "Short aria", Aria: "Aria", Terzetto: "Trio", Sestetto: "Sextet", Coro: "Chorus", Finale: "Finale" },
+  acts: [
+    { number: 1, originalHeading: "Atto primo", prelude: { title: "Ouverture", translation: "Overture" }, scenes: figaroActOneScenes },
+    { number: 2, originalHeading: "Atto secondo", scenes: figaroActTwoScenes },
+    { number: 3, originalHeading: "Atto terzo", scenes: figaroActThreeScenes }
+  ],
   characters: ["Figaro", "Susanna", "Il Conte", "La Contessa", "Cherubino", "Marcellina", "Bartolo", "Basilio", "Don Curzio", "Antonio", "Barbarina"],
   synopsis: {
     eyebrow: "Wolfgang Amadeus Mozart · Opera buffa in four acts",
@@ -309,7 +314,7 @@ const figaro = {
       ["Coro", "Chorus", "Peasant men and women."]
     ]
   },
-  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, Acts I–II from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Original English translation aligned with the source verse lines. Acts III–IV are not prepared yet."
+  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, Acts I–III from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Acts I–II have editorially reviewed line-aligned English translations. Act III has a line-aligned English draft that needs editorial review."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro };
