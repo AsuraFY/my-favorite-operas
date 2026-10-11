@@ -1,6 +1,6 @@
 # My Favorite Operas
 
-A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte, Le nozze di Figaro and Il barbiere di Siviglia have bilingual libretti in the reader. Figaro Act III currently uses a line-aligned English draft that still needs editorial review.
+A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte, Le nozze di Figaro and Il barbiere di Siviglia have bilingual libretti in the reader. Figaro Acts III–IV currently use line-aligned English drafts that still need editorial review.
 
 ## Run locally
 
@@ -36,7 +36,7 @@ Factual editorial references include the Metropolitan Opera synopses for Turando
 - src/data/libretto-registry.js — complete libretti registered by opera slug, plus synopsis, character, and presentation metadata.
 - src/data/libretto-cosi-fan-tutte-act-1.js and src/data/libretto-cosi-fan-tutte-act-2.js — the original Così act data, retained without changing translations.
 - src/data/libretto-il-barbiere-di-siviglia-act-1.js and src/data/libretto-il-barbiere-di-siviglia-act-2.js — Italian/English scenes for Acts I and II of Il barbiere di Siviglia.
-- src/data/libretto-le-nozze-di-figaro-act-1.js through src/data/libretto-le-nozze-di-figaro-act-3.js — Italian/English scenes for Acts I–III of Le nozze di Figaro.
+- src/data/libretto-le-nozze-di-figaro-act-1.js through src/data/libretto-le-nozze-di-figaro-act-4.js — Italian/English scenes for all four acts of Le nozze di Figaro.
 - src/libretto-reader.js — shared reader factory, synopsis, full outline, act/scene navigation, credits and bilingual rows.
 - src/main.js — hash routing, metadata search, sticky navigation, desktop collapse, mobile drawer, deep-link and scroll controllers.
 - styles.css — responsive reader appearance.

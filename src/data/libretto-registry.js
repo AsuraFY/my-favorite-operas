@@ -23,6 +23,7 @@ import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=fig
 
 import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-1";
 import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-1";
+import { figaroActFourScenes } from "./libretto-le-nozze-di-figaro-act-4.js?v=figaro-act4-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -288,7 +289,8 @@ const figaro = {
   acts: [
     { number: 1, originalHeading: "Atto primo", prelude: { title: "Ouverture", translation: "Overture" }, scenes: figaroActOneScenes },
     { number: 2, originalHeading: "Atto secondo", scenes: figaroActTwoScenes },
-    { number: 3, originalHeading: "Atto terzo", scenes: figaroActThreeScenes }
+    { number: 3, originalHeading: "Atto terzo", scenes: figaroActThreeScenes },
+    { number: 4, originalHeading: "Atto quarto", scenes: figaroActFourScenes }
   ],
   characters: ["Figaro", "Susanna", "Il Conte", "La Contessa", "Cherubino", "Marcellina", "Bartolo", "Basilio", "Don Curzio", "Antonio", "Barbarina"],
   synopsis: {
@@ -314,7 +316,7 @@ const figaro = {
       ["Coro", "Chorus", "Peasant men and women."]
     ]
   },
-  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, Acts I–III from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Acts I–II have editorially reviewed line-aligned English translations. Act III has a line-aligned English draft that needs editorial review."
+  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, all acts from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Acts I–II have editorially reviewed line-aligned English translations. Acts III–IV have line-aligned English drafts that need editorial review."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro };
