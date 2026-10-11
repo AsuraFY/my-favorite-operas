@@ -72,3 +72,58 @@ test("Figaro deep links and searches retain the full Act I", () => {
   assert.ok(result.includes("Cinque... dieci"));
   assert.ok(result.includes("military glory"));
 });
+
+test("Figaro Act II preserves all source scenes, numbers, stage directions and aligned verses", async () => {
+  const { createHash } = await import("node:crypto");
+  const second = figaro.acts[1];
+  assert.deepEqual(second.scenes.map(scene => scene.number), Array.from({ length: 11 }, (_, i) => i + 1));
+  const sections = second.scenes.flatMap(scene => scene.sections);
+  const entries = sections.flatMap(section => section.turns);
+  assert.equal(sections.length, 19);
+  assert.deepEqual(sections.filter(section => section.number).map(section => [section.number, section.type]),
+    [[11, "Cavatina"], [12, "Arietta"], [13, "Aria"], [14, "Terzetto"], [15, "Duettino"], [16, "Finale"]]);
+  assert.equal(entries.filter(turn => turn.speaker === "Stage direction").length, 110);
+  const lyrics = entries.filter(turn => turn.speaker !== "Stage direction");
+  assert.equal(lyrics.reduce((count, turn) => count + turn.it.split("\n").length, 0), 721);
+  for (const turn of entries) {
+    assert.ok(turn.it.trim() && turn.en.trim());
+    if (turn.speaker !== "Stage direction") {
+      assert.equal(turn.literalText, true);
+      assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+      assert.ok(turn.speakerTranslation);
+    }
+  }
+  // Fingerprint of every Italian verse/direction line extracted from Opera Guide, in source order.
+  assert.equal(createHash("sha256").update(entries.flatMap(turn => turn.it.split("\n")).join("\n")).digest("hex"),
+    "fcdac7fa3ca5ded6ef418d7236c8655730dc1b1c81c70cf922e54c69c7e62a2f");
+  assert.equal(lyrics.find(turn => turn.it.startsWith("Mentite.")).speaker, "La Contessa");
+  assert.ok(lyrics.some(turn => turn.it.includes("(Se mi salvo da questa tempesta")));
+});
+
+test("Figaro Act II renders every source line and keeps every deep link on the full act", () => {
+  const second = figaro.acts[1];
+  const entries = second.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
+  const reader = createLibrettoRenderer(figaro);
+  window.location.hash = "#/operas/le-nozze-di-figaro?act=2";
+  const page = reader.scene(1);
+  const pairs = [...page.matchAll(/<div class="libretto-row([^\"]*)"><div class="libretto-cell libretto-cell--german">.*?<p>(.*?)<\/p><\/div><div class="libretto-cell libretto-cell--english">.*?<p>(.*?)<\/p><\/div><\/div>/gs)]
+    .map(match => [decode(match[2]), decode(match[3]), match[1].includes("stage-direction")]);
+  const expected = entries.flatMap(turn => turn.speaker === "Stage direction"
+    ? [[`[${turn.it}]`, `[${turn.en}]`, true]]
+    : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
+  assert.deepEqual(pairs, expected);
+  assert.equal(pairs.length, 831);
+  assert.ok(page.includes("End of Act II"));
+  let offset = 0;
+  for (const scene of second.scenes) {
+    for (let item = 0; item < scene.sections.length; item++) {
+      window.location.hash = `#/operas/le-nozze-di-figaro?act=2&scene=${scene.number}&item=${item}`;
+      const linked = reader.scene(scene.number, "", item);
+      assert.ok(linked.includes(`data-initial-item="${offset + item}"`));
+      for (const sourceScene of second.scenes) assert.ok(linked.includes(`id="libretto-scene-2-${sourceScene.number}"`));
+    }
+    offset += scene.sections.length;
+  }
+  const outline = reader.outline();
+  for (const title of ["Porgi, amor", "Voi che sapete", "Venite, inginocchiatevi", "Esci omai"]) assert.ok(outline.includes(title));
+});
