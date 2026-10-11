@@ -245,7 +245,14 @@ function splitInlineDirections(value, literalText = false) {
 function renderSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
   const directionSpeaker = libretto.stageDirectionSpeaker || "Stage direction";
-  const rows = section.turns.flatMap(turn => {
+  const turns = libretto.alignVerseLines ? section.turns.flatMap(turn => {
+    if (turn.speaker === directionSpeaker) return [turn];
+    const original = (turn.original ?? turn.it ?? "").split(/\r?\n/);
+    const translation = (turn.translation ?? turn.en ?? "").split(/\r?\n/);
+    return original.map((line, index) => ({ ...turn, original: line,
+      translation: translation[index] || "", hideSpeaker: index > 0 }));
+  }) : section.turns;
+  const rows = turns.flatMap(turn => {
     const speaker = turn.speaker;
     if (speaker === directionSpeaker) {
       const originalText = turn.original ?? turn.it ?? "";
@@ -274,9 +281,9 @@ function renderSceneSection(scene, section, sectionIndex, act) {
           formatLibrettoText(translatedPart.value, false) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
         output.push('<div class="libretto-row"><div class="libretto-cell libretto-cell--german">' +
-          '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speaker) + '</span><p>' +
+          (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speaker) + '</span>') + '<p>' +
           formatLibrettoText(originalPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div><div class="libretto-cell libretto-cell--english">' +
-          '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span><p>' +
+          (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span>') + '<p>' +
           formatLibrettoText(translatedPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div></div>');
       }
     }

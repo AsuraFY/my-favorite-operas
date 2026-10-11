@@ -48,6 +48,6 @@ test("search-friendly aliases, six routes and act counts remain intact", () => {
   });
   assert.ok(operas.find(item => item.slug === "le-nozze-di-figaro").aliases.includes("Marriage of Figaro"));
   assert.deepEqual(getLibretto("turandot").acts.map(act => act.number), [1, 2, 3]);
-  assert.equal(getLibretto("le-nozze-di-figaro"), null);
+  assert.deepEqual(getLibretto("le-nozze-di-figaro").acts.map(act => act.number), [1]);
   assert.ok(getLibretto("cosi-fan-tutte"));
 });

@@ -34,7 +34,7 @@ function assertSceneRows(page, scene) {
 
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 5);
+  assert.equal(librettoCatalog.length, 6);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);

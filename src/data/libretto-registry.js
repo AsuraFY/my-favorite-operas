@@ -19,6 +19,8 @@ import { turandotActOneScenes } from "./libretti-turandot-act1.js?v=turandot-act
 import { turandotActTwoScenes } from "./libretti-turandot-act2.js?v=turandot-act2-1";
 import { turandotActThreeScenes } from "./libretti-turandot-act3.js?v=turandot-act3-1";
 
+import { figaroActOneScenes } from "./libretti-figaro-act1.js?v=figaro-act1-1";
+
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
   ["Dorabella", "Mezzo-soprano", "Fiordiligi’s sister, engaged to Ferrando; her feelings shift during the disguised courtship."],
@@ -262,7 +264,53 @@ const turandot = {
   source: "Giuseppe Adami and Renato Simoni, Turandot (1926), complete Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Act III includes the ending completed by Franco Alfano in Arturo Toscanini’s version, printed in grey in the PDF because it was not performed in that production."
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot };
+const figaro = {
+  slug: "le-nozze-di-figaro",
+  opera: getOpera("le-nozze-di-figaro"),
+  composerShort: "W. A. MOZART",
+  mobileComposer: "W. A. Mozart",
+  mobileArtworkUrl: "./public/images/figaro-art.webp",
+  mobileArtworkLabel: "Le nozze di Figaro",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  continuousAct: true,
+  preserveLineBreaks: true,
+  alignVerseLines: true,
+  recitativeLabel: "Recitativo",
+  sceneOriginalPrefix: "Scena",
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "",
+  bracketStageDirections: true,
+  translatedForms: { Recitativo: "Recitative", Duettino: "Little duet", Cavatina: "Cavatina", Aria: "Aria", Terzetto: "Trio", Coro: "Chorus" },
+  acts: [{ number: 1, originalHeading: "Atto primo", prelude: { title: "Ouverture", translation: "Overture" }, scenes: figaroActOneScenes }],
+  characters: ["Figaro", "Susanna", "Il Conte", "La Contessa", "Cherubino", "Marcellina", "Bartolo", "Basilio", "Don Curzio", "Antonio", "Barbarina"],
+  synopsis: {
+    eyebrow: "Wolfgang Amadeus Mozart · Opera buffa in four acts",
+    paragraphs: [
+      "On Figaro and Susanna’s wedding day, Susanna reveals that Count Almaviva is pursuing her. Figaro plans to outwit him, while Marcellina tries to enforce a promise that Figaro will marry her if he cannot repay a debt. Cherubino’s amorous adventures add to the confusion.",
+      "Susanna and the neglected Countess arrange disguises and appointments to expose the Count’s jealousy and infidelity. Marcellina’s claim unexpectedly reveals that she and Bartolo are Figaro’s parents, clearing the way for his marriage to Susanna.",
+      "That evening, mistaken identities in the garden test trust on every side. The Count finally discovers that the woman he has been courting is his own wife in disguise. He asks her forgiveness, which she grants, and the company celebrates reconciliation."
+    ],
+    characters: [
+      ["Figaro", "Bass-baritone", "The Count’s valet, engaged to Susanna."],
+      ["Susanna", "Soprano", "The Countess’s maid and Figaro’s bride."],
+      ["Il Conte d’Almaviva", "Baritone", "A Spanish nobleman pursuing Susanna."],
+      ["La Contessa d’Almaviva", "Soprano", "The Count’s neglected wife."],
+      ["Cherubino", "Mezzo-soprano", "The Count’s young page, played by a woman."],
+      ["Marcellina", "Mezzo-soprano", "A former housekeeper who claims Figaro as her husband."],
+      ["Bartolo", "Bass", "A doctor from Seville who helps Marcellina."],
+      ["Basilio", "Tenor", "The music teacher and the Count’s intermediary."],
+      ["Don Curzio", "Tenor", "A judge handling Marcellina’s claim."],
+      ["Antonio", "Bass", "The gardener, Susanna’s uncle."],
+      ["Barbarina", "Soprano", "Antonio’s daughter."],
+      ["Due Contadine", "Soprano and contralto", "Two peasant women."],
+      ["Coro", "Chorus", "Peasant men and women."]
+    ]
+  },
+  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, Act I from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Original English translation aligned with the source verse lines. Acts II–IV are not prepared yet."
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
