@@ -2,7 +2,7 @@
 const escape = (value = "") => String(value).replace(/[&<>"']/g, character =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 
-export function renderOperaInformationPage(opera, details, { navigation = "", hasLibretto = false } = {}) {
+export function renderOperaInformationPage(opera, details, { navigation = "", hasLibretto = false, hasLibrettoPage = false } = {}) {
   const characters = details?.characters || [];
   const synopsis = details?.synopsis || [opera.summary];
   const alias = opera.displayTitle && opera.displayTitle !== opera.title ? opera.displayTitle : opera.genre;
@@ -20,7 +20,7 @@ export function renderOperaInformationPage(opera, details, { navigation = "", ha
           '<h1 id="opera-info-title">' + escape(opera.title) + '</h1>' +
           '<p class="opera-info__alternate">' + escape(alias) + '</p>' +
           '<p class="opera-info__summary">' + escape(opera.summary) + '</p>' +
-          (hasLibretto ? '<a class="opera-info__read-link" href="#/operas/' + escape(opera.slug) + '?act=1">Read the libretto <span aria-hidden="true">→</span></a>' : '') +
+          (hasLibretto || hasLibrettoPage ? '<a class="opera-info__read-link" href="#/operas/' + escape(opera.slug) + '?act=1">Read the libretto <span aria-hidden="true">→</span></a>' : '') +
         '</div>' +
       '</div>' +
       '<dl class="opera-info__facts section-wrap" aria-label="Opera information">' +
@@ -39,4 +39,29 @@ export function renderOperaInformationPage(opera, details, { navigation = "", ha
     '</article>' +
     '<div class="opera-info__back section-wrap"><a href="#/operas">← Back to all operas</a></div>' +
   '</div>';
+}
+
+// A planned libretto has real destinations without pretending its text is ready.
+export function renderPlannedLibrettoPage(opera, details, view = "synopsis", selectedAct = 1) {
+  const base = "#/operas/" + escape(opera.slug);
+  const roman = ["", "I", "II", "III", "IV", "V"];
+  const act = Math.max(1, Math.min(Number(selectedAct) || 1, opera.acts));
+  const tabs = [
+    ["Synopsis", "?view=synopsis", view === "synopsis"],
+    ["Libretto Outline", "?view=outline", view === "outline"],
+    ...Array.from({ length: opera.acts }, (_, index) =>
+      ["Act " + (roman[index + 1] || index + 1), "?act=" + (index + 1), view === "libretto" && act === index + 1])
+  ];
+  const navigation = '<nav class="opera-subnav" aria-label="' + escape(opera.title) + ' sections">' +
+    '<div class="opera-subnav__identity"><span class="opera-subnav__title">' + escape(opera.title) + '</span>' +
+    '<span class="opera-subnav__composer">' + escape(opera.composer) + '</span></div><div class="opera-subnav__links">' +
+    tabs.map(([label, suffix, active]) => '<a class="opera-subnav__link' + (active ? ' is-active' : '') +
+      '" href="' + base + suffix + '"' + (active ? ' aria-current="page"' : '') + '>' + label + '</a>').join("") + '</div></nav>';
+  if (view === "synopsis") return renderOperaInformationPage(opera, details, { navigation, hasLibrettoPage: true });
+  const heading = view === "outline" ? "Libretto Outline" : "Act " + (roman[act] || act);
+  const message = view === "outline" ? "The act outline will be added later." : "The libretto and side-by-side English translation will be added later.";
+  return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
+    '<h1>' + escape(heading) + '</h1><p>' + message + '</p>' +
+    (view === "outline" ? '<a class="opera-info__read-link" href="' + base + '?act=1">Read the libretto <span aria-hidden="true">→</span></a>' : '') +
+    '</section></div>';
 }

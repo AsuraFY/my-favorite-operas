@@ -108,6 +108,26 @@ export const operas = [
     summary: "Figaro and Susanna outwit aristocratic intrigue in a comedy of love and social power.",
     note: "Mozart and Da Ponte transform Beaumarchais’s play into a humane comedy of forgiveness.",
   },
+  {
+    slug: "samson-et-dalila",
+    image: "./public/images/samson-et-dalila-art.webp",
+    title: "Samson et Dalila",
+    displayTitle: "Samson and Delilah",
+    aliases: ["Samson and Delilah", "Samson & Delilah", "Samson et Dalilah"],
+    composer: "Camille Saint-Saëns",
+    librettist: "Ferdinand Lemaire",
+    premiered: "2 December 1877",
+    premieredAt: "Grand Ducal Theater, Weimar",
+    language: "French",
+    genre: "Grand opera",
+    acts: 3,
+    color: "samson",
+    initials: "SD",
+    featured: false,
+    librettoPlanned: true,
+    summary: "Love, faith and betrayal collide as Dalila draws Samson away from his people and discovers the secret of his extraordinary strength.",
+    note: "Dalila’s Mon cœur s’ouvre à ta voix and the final Bacchanale are among Saint-Saëns’s best-known operatic music."
+  },
 ];
 
 export function getOpera(slug) {

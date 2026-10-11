@@ -1,8 +1,8 @@
-import { operas, getOpera } from "./data/operas.js?v=opera-art-2";
+import { operas, getOpera } from "./data/operas.js?v=opera-art-3";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-19";
-import { getLibretto } from "./data/libretto-registry.js?v=registry-31";
-import { operaInformation } from "./data/opera-information.js?v=info-1";
-import { renderOperaInformationPage } from "./opera-info-page.js?v=info-page-1";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-32";
+import { operaInformation } from "./data/opera-information.js?v=info-2";
+import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
 
 const app = document.querySelector("#app");
 
@@ -378,6 +378,11 @@ function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobil
       return renderOperaInformationPage(opera, operaInformation[opera.slug], { navigation: reader.navigation(), hasLibretto: true });
     }
     return reader.scene(selectedScene, query, selectedItem, mobileContents);
+  }
+  if (opera.librettoPlanned) {
+    const params = new URLSearchParams(window.location.hash.split("?")[1] || "");
+    const view = selectedView || (params.has("act") ? "libretto" : "synopsis");
+    return renderPlannedLibrettoPage(opera, operaInformation[opera.slug], view, params.get("act"));
   }
   return renderOperaInformationPage(opera, operaInformation[opera.slug]);
 }

@@ -232,5 +232,42 @@ export const operaInformation = {
         "A doctor with a grievance against Figaro."
       ]
     ]
-  }
+  },
+  "samson-et-dalila": {
+  "synopsis": [
+    "In Gaza, Samson inspires the enslaved Hebrews to resist their Philistine rulers. After killing Abimélech, he becomes a hero to his people. Dalila draws him back towards her, despite an old Hebrew’s warning to resist her charms.",
+    "Working with the High Priest of Dagon, Dalila persuades Samson to betray the secret of his strength. Captured and blinded, he is humiliated in Dagon’s temple. He prays for strength one final time and brings down the temple, dying with his enemies."
+  ],
+  "characters": [
+    [
+      "Samson",
+      "Tenor",
+      "The Hebrew leader, torn between faith and desire."
+    ],
+    [
+      "Dalila",
+      "Mezzo-soprano",
+      "A Philistine woman who plots Samson’s downfall."
+    ],
+    [
+      "High Priest of Dagon",
+      "Baritone",
+      "Dalila’s ally against Samson."
+    ],
+    [
+      "Abimélech",
+      "Bass-baritone",
+      "The Philistine governor of Gaza."
+    ],
+    [
+      "Old Hebrew",
+      "Bass",
+      "An elder who warns Samson against Dalila."
+    ]
+  ],
+  "sources": [
+    "https://v16live.metopera.org/learn/education/learning-library/educator-guide-pages/samson-et-dalila/plot-and-creation/",
+    "https://v16live.metopera.org/learn/education/school-programs/hd-live-in-schools/curricular-resources/samson-et-dalila/"
+  ]
+}
 };
