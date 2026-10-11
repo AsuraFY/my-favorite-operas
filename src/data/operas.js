@@ -194,6 +194,28 @@ export const operas = [
     "summary": "Iago’s calculated deception turns Otello’s love for Desdemona into a destructive jealousy in Verdi’s Shakespearean tragedy.",
     "note": "Verdi and Boito compress Shakespeare’s Othello into four acts of intense musical drama."
   },
+  {
+    "slug": "parsifal",
+    "image": "./public/images/parsifal-art.webp",
+    "title": "Parsifal",
+    "displayTitle": "Parsifal",
+    "aliases": [
+      "Parsifal (Wagner)"
+    ],
+    "composer": "Richard Wagner",
+    "librettist": "Richard Wagner",
+    "premiered": "26 July 1882",
+    "premieredAt": "Festspielhaus, Bayreuth",
+    "language": "German",
+    "genre": "Bühnenweihfestspiel",
+    "acts": 3,
+    "color": "parsifal",
+    "initials": "P",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "A young wanderer learns compassion and restores hope to the wounded guardian of the Holy Grail.",
+    "note": "Wagner’s final opera follows a journey from innocence through temptation to understanding and renewal."
+  },
 ];
 
 export function getOpera(slug) {

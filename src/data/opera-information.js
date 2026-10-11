@@ -401,5 +401,48 @@ export const operaInformation = {
     "https://www.metopera.org/user-information/synopses-archive/otello/",
     "https://www.metopera.org/learn/education/learning-library/educator-guides/otello/"
   ]
+},
+  "parsifal": {
+  "synopsis": [
+    "The knights of the Holy Grail suffer under their wounded king, Amfortas, whose injury can be healed only by the sacred spear stolen by Klingsor. Gurnemanz brings the young wanderer Parsifal to witness the Grail ceremony, but the youth cannot yet understand the suffering before him.",
+    "In Klingsor’s enchanted garden, Kundry tries to seduce Parsifal. Her kiss awakens his compassion for Amfortas, and he resists her, recovers the spear and breaks Klingsor’s power. After years of wandering, he returns to the Grail sanctuary, heals Amfortas and becomes the community’s new guardian."
+  ],
+  "characters": [
+    [
+      "Parsifal",
+      "Tenor",
+      "A young wanderer who gains understanding through compassion."
+    ],
+    [
+      "Kundry",
+      "Mezzo-soprano",
+      "A tormented woman who serves the Grail knights and falls under Klingsor’s power."
+    ],
+    [
+      "Amfortas",
+      "Baritone",
+      "The wounded king of the Grail knights."
+    ],
+    [
+      "Gurnemanz",
+      "Bass",
+      "An elder knight who guides Parsifal."
+    ],
+    [
+      "Klingsor",
+      "Bass-baritone",
+      "A magician who has stolen the sacred spear."
+    ],
+    [
+      "Titurel",
+      "Bass",
+      "Amfortas’s father and the former guardian of the Grail."
+    ]
+  ],
+  "sources": [
+    "https://v16live.metopera.org/discover/synopses/parsifal/",
+    "https://www.metopera.org/season/2026-27-season/parsifal/",
+    "https://archive.sfopera.com/sites/default/files/2025-10/SFO_PUB_01_SFO_2025_05_compressed_0.pdf"
+  ]
 }
 };
