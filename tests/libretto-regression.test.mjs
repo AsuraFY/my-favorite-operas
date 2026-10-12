@@ -34,7 +34,7 @@ function assertSceneRows(page, scene) {
 
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 8);
+  assert.equal(librettoCatalog.length, 9);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
@@ -67,6 +67,47 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.match(bohemeActFourTurns.at(-1).translation, /Mimì/);
   assert.ok(bohemeActFourTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
   assert.equal(getLibretto("unknown"), null);
+});
+
+test("Madama Butterfly Act I uses the Opera Guide text with paired English and a continuous act page", () => {
+  const libretto = getLibretto("madama-butterfly");
+  const scene = libretto.acts[0].scenes[0];
+  assert.equal(libretto.continuousAct, true);
+  assert.equal(libretto.sceneDivisions, false);
+  assert.equal(scene.sections.length, 15);
+  assert.deepEqual(scene.sections.map(section => section.originalTitle), [
+    "E soffitto... e pareti...", "Questa è la cameriera", "Dovunque al mondo",
+    "Quanto cielo!... Ancora un passo or via", "Gran ventura", "L'Imperial Commissario",
+    "Vieni, amor mio!", "Ieri son salita tutta sola", "Tutti zitti!", "Madama Butterfly!",
+    "Cio-Cio-san!", "Bimba, bimba, non piangere", "Viene la sera",
+    "Bimba dagli occhi pieni di malìa", "Vogliatemi bene"
+  ]);
+  for (const section of scene.sections) {
+    assert.ok(section.turns.length > 0);
+    assert.equal(section.number, undefined, "no unverified score numbers are shown");
+    for (const turn of section.turns) {
+      assert.equal(typeof turn.original, "string");
+      assert.equal(typeof turn.translation, "string");
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  const renderer = createLibrettoRenderer(libretto);
+  const page = renderer.scene(1);
+  assert.ok(page.includes("ATTO PRIMO"));
+  assert.ok(page.includes("Madama Butterfly!"));
+  assert.ok(page.includes("A foolish fear"));
+  assert.ok(page.includes("End of Act I"));
+  window.location.hash = "#/operas/madama-butterfly?view=outline";
+  const outline = renderer.outline();
+  assert.ok(outline.includes("Libretto Outline"));
+  assert.ok(outline.includes("The Imperial Commissioner"));
+  assert.ok(outline.includes("Pinkerton"));
+  assert.ok(outline.includes("Vogliatemi bene"));
+  assert.ok(outline.includes("Preludio"));
+  assert.ok(outline.includes("Prelude"));
 });
 
 test("La Bohème Act I renders as one continuous bilingual tableau", () => {

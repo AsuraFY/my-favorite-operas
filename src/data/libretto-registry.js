@@ -33,6 +33,8 @@ import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-
 import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=la-boheme-act3-3";
 import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme-act4-3";
 
+import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.js?v=madama-butterfly-act1-1";
+
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
   ["Dorabella", "Mezzo-soprano", "Fiordiligi’s sister, engaged to Ferrando; her feelings shift during the disguised courtship."],
@@ -453,7 +455,61 @@ const laBoheme = {
   source: "Giacomo Puccini, La bohème (1896), Italian libretto by Luigi Illica and Giuseppe Giacosa, text and divisions from Teatro alla Scala's libretto PDF: https://www.teatroallascala.org/static/upload/la-/la-boheme-libretto.pdf. English is a fresh line-by-line translation. Each completed tableau is presented continuously, one page per tableau."
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme };
+const madamaButterfly = {
+  slug: "madama-butterfly",
+  opera: getOpera("madama-butterfly"),
+  composerShort: "G. PUCCINI",
+  mobileComposer: "Giacomo Puccini",
+  mobileArtworkUrl: "./public/images/madama-butterfly-art.webp",
+  mobileArtworkLabel: "Madama Butterfly",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  continuousAct: true,
+  preserveLineBreaks: true,
+  alignVerseLines: true,
+  sceneDivisions: false,
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "Stage direction",
+  bracketStageDirections: true,
+  translatedForms: {
+    "Coro e scena": "Chorus and scene",
+    Duetto: "Duet",
+    Ensemble: "Ensemble",
+    Finale: "Finale",
+    Coro: "Chorus",
+    "Scena e aria": "Scene and aria"
+  },
+  acts: [
+    { number: 1, originalHeading: "Atto primo", prelude: { title: "Preludio", translation: "Prelude" }, scenes: madamaButterflyActOneScenes }
+  ],
+  characters: [
+    ["Madama Butterfly (Cio-Cio-San)", "Soprano", "A young woman from Nagasaki who enters a marriage with American naval officer Pinkerton and gives up her family’s religion."],
+    ["B. F. Pinkerton", "Tenor", "An American naval officer stationed in Nagasaki."],
+    ["Suzuki", "Mezzo-soprano", "Butterfly’s maid."],
+    ["Sharpless", "Baritone", "The American consul in Nagasaki."],
+    ["Goro", "Tenor", "A marriage broker."],
+    ["The Bonze", "Bass", "Butterfly’s uncle, a Buddhist priest."],
+    ["The Imperial Commissioner", "Bass", "An official who conducts the marriage ceremony."],
+    ["The Registrar", "Bass", "The civil official who records the marriage."]
+  ],
+  synopsis: {
+    eyebrow: "Giacomo Puccini · Opera in three acts",
+    paragraphs: [
+      "On a hillside above Nagasaki, the American naval officer Pinkerton prepares to marry Cio-Cio-San, known as Butterfly. The matchmaker Goro shows him the couple’s small Japanese house, whose sliding walls can be rearranged at will. Consul Sharpless warns Pinkerton that Butterfly takes their marriage seriously, while Pinkerton treats the arrangement as temporary.",
+      "Butterfly arrives with her friends and relatives. She tells Pinkerton that she has secretly converted to his religion. The Imperial Commissioner records their marriage, but Butterfly’s uncle, the Bonze, interrupts the celebration and condemns her for abandoning her family’s faith. Pinkerton sends the relatives away and comforts Butterfly. As night falls, the two are left alone together."
+    ],
+    characters: [
+      ["Cio-Cio-San (Madama Butterfly)", "Soprano", "A young woman from Nagasaki who is deeply devoted to Pinkerton."],
+      ["B. F. Pinkerton", "Tenor", "An American naval officer stationed in Nagasaki."],
+      ["Suzuki", "Mezzo-soprano", "Butterfly’s maid."],
+      ["Sharpless", "Baritone", "The American consul in Nagasaki."],
+      ["Goro", "Tenor", "A marriage broker."]
+    ]
+  },
+  source: "Italian libretto and stage directions: Opera Guide, Madama Butterfly, Atto primo: https://opera-guide.ch/operas/madama+butterfly/libretto/it/. The Spotify recording linked by the user guides musical section titles and singer credits. English is a fresh line-by-line draft checked against the independent side-by-side translation at https://www.librettoarchive.com/Madama_Butterfly_libretto_Italian_English; it remains for the user's careful review. The opera is presented in three acts. Only Act I is populated in this update."
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
