@@ -380,6 +380,7 @@ export const operas = [
   },
   {
     slug: "la-boheme",
+    image: "./public/images/la-boheme-art.webp",
     title: "La Bohème",
     displayTitle: "La Bohème",
     aliases: ["La Boheme"],
@@ -399,6 +400,7 @@ export const operas = [
   },
   {
     slug: "lucia-di-lammermoor",
+    image: "./public/images/lucia-di-lammermoor-art.webp",
     title: "Lucia di Lammermoor",
     displayTitle: "Lucia of Lammermoor",
     aliases: ["Lucia"],
@@ -418,6 +420,7 @@ export const operas = [
   },
   {
     slug: "eugene-onegin",
+    image: "./public/images/eugene-onegin-art.webp",
     title: "Eugene Onegin",
     displayTitle: "Eugene Onegin",
     aliases: ["Yevgeny Onegin", "Evgeny Onegin"],
@@ -437,6 +440,7 @@ export const operas = [
   },
   {
     slug: "les-contes-dhoffmann",
+    image: "./public/images/les-contes-dhoffmann-art.webp",
     title: "Les Contes d’Hoffmann",
     displayTitle: "The Tales of Hoffmann",
     aliases: ["The Tales of Hoffmann", "Les Contes d'Hoffmann"],
@@ -456,6 +460,7 @@ export const operas = [
   },
   {
     slug: "norma",
+    image: "./public/images/norma-art.webp",
     title: "Norma",
     displayTitle: "Norma",
     aliases: [],
@@ -475,6 +480,7 @@ export const operas = [
   },
   {
     slug: "il-trovatore",
+    image: "./public/images/il-trovatore-art.webp",
     title: "Il trovatore",
     displayTitle: "The Troubadour",
     aliases: ["Il Trovatore", "The Troubadour"],
@@ -494,6 +500,7 @@ export const operas = [
   },
   {
     slug: "das-rheingold",
+    image: "./public/images/das-rheingold-art.webp",
     title: "Das Rheingold",
     displayTitle: "The Rhinegold",
     aliases: ["The Rhinegold", "The Ring Cycle: Das Rheingold"],
@@ -513,6 +520,7 @@ export const operas = [
   },
   {
     slug: "die-walkure",
+    image: "./public/images/die-walkure-art.webp",
     title: "Die Walküre",
     displayTitle: "The Valkyrie",
     aliases: ["The Valkyrie", "The Ring Cycle: Die Walküre"],
@@ -532,6 +540,7 @@ export const operas = [
   },
   {
     slug: "siegfried",
+    image: "./public/images/siegfried-art.webp",
     title: "Siegfried",
     displayTitle: "Siegfried",
     aliases: ["The Ring Cycle: Siegfried"],
@@ -551,6 +560,7 @@ export const operas = [
   },
   {
     slug: "gotterdammerung",
+    image: "./public/images/gotterdammerung-art.webp",
     title: "Götterdämmerung",
     displayTitle: "Twilight of the Gods",
     aliases: ["Gotterdammerung", "The Twilight of the Gods", "The Ring Cycle: Götterdämmerung"],
@@ -570,6 +580,7 @@ export const operas = [
   },
   {
     slug: "lelisir-damore",
+    image: "./public/images/lelisir-damore-art.webp",
     title: "L’elisir d’amore",
     displayTitle: "The Elixir of Love",
     aliases: ["L'elisir d'amore", "The Elixir of Love", "L'Elisir d'Amore"],
@@ -589,6 +600,7 @@ export const operas = [
   },
   {
     slug: "die-fledermaus",
+    image: "./public/images/die-fledermaus-art.webp",
     title: "Die Fledermaus",
     displayTitle: "The Bat",
     aliases: ["The Bat", "The Revenge of the Bat"],
