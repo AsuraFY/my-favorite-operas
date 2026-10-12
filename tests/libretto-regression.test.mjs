@@ -49,7 +49,7 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(getLibretto("macbeth"));
   const laBoheme = getLibretto("la-boheme");
   assert.ok(laBoheme);
-  assert.deepEqual(laBoheme.acts.map(act => act.originalHeading), ["Quadro primo", "Quadro secondo"]);
+  assert.deepEqual(laBoheme.acts.map(act => act.originalHeading), ["Quadro primo", "Quadro secondo", "Quadro terzo"]);
   const bohemeTurns = laBoheme.acts[0].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
   assert.ok(bohemeTurns.length > 200);
   assert.equal(bohemeTurns.at(-1).original, "(cala il sipario)");
@@ -58,6 +58,10 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(bohemeActTwoTurns.length > 200);
   assert.match(bohemeActTwoTurns.at(-1).translation, /stunned/i);
   assert.ok(bohemeActTwoTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
+  const bohemeActThreeTurns = laBoheme.acts[2].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
+  assert.ok(bohemeActThreeTurns.length > 100);
+  assert.equal(bohemeActThreeTurns.at(-1).original, "(sipario calato)");
+  assert.ok(bohemeActThreeTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
   assert.equal(getLibretto("unknown"), null);
 });
 
@@ -81,6 +85,18 @@ test("La Bohème Act II renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("When I walk alone along the street"));
   assert.ok(page.includes("Stage direction"));
   assert.ok(page.includes("End of Act II"));
+});
+
+test("La Bohème Act III renders as one continuous bilingual tableau", () => {
+  const renderer = createLibrettoRenderer(getLibretto("la-boheme"));
+  window.location.hash = "#/operas/la-boheme?act=3";
+  const page = renderer.scene(1);
+  assert.ok(page.includes("QUADRO TERZO"));
+  assert.ok(page.includes("La barriera d’Enfer"));
+  assert.ok(page.includes("Donde lieta uscì"));
+  assert.ok(page.includes("From where I happily left"));
+  assert.ok(page.includes("Stage direction"));
+  assert.ok(page.includes("We’ll part when the flowers are in bloom!"));
 });
 
 test("Tristan outline follows Spotify tracks and formats the bilingual libretto clearly", () => {
