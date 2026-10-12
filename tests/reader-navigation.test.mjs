@@ -98,6 +98,13 @@ test("a reading landmark stays selected until the next named landmark", () => {
   positions.set(20, 90);
   context.highlightReaderSection(0);
   assert.deepEqual(links.map(link => link.classes.has("is-current")), [false, true]);
+  // A final passage cannot always scroll up to the sticky reading boundary.
+  positions.set(20, 400);
+  context.document = { documentElement: { scrollHeight: 2000 } };
+  context.window.scrollY = 1064;
+  context.window.innerHeight = 936;
+  context.highlightReaderSection(0);
+  assert.deepEqual(links.map(link => link.classes.has("is-current")), [false, true], "the final landmark is selected at the end of the page");
 });
 
 test("Skip to content focuses the current page without changing the route", () => {
