@@ -16,7 +16,7 @@ export const laBohemeActThreeScenes = [
       { title: "Rodolfo reveals his fear", translation: "Rodolfo confessa la sua paura", match: "Amo Mimì sovra ogni cosa al mondo" },
       { title: "Mimì’s farewell", translation: "L’addio di Mimì", match: "Donde lieta uscì" },
       { title: "They agree to wait until spring", translation: "Aspetteranno la primavera", match: "Soli d’inverno è cosa da morire!" },
-      { title: "Marcello and Musetta part", translation: "Marcello e Musetta si separano", match: "Fo all’amor con chi mi piace!" }
+      { title: "Marcello and Musetta part", translation: "Marcello e Musetta si separano", match: "Musetta se ne va!" }
     ],
     sections: [{
       number: null,
@@ -171,3 +171,4 @@ export const laBohemeActThreeScenes = [
     }]
   }
 ];
+

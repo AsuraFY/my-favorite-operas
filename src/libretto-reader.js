@@ -132,7 +132,7 @@ function renderSceneOutlineLinks(scene, act) {
   return (scene.outline || []).map(entry => {
     let targetSection = 0, targetTurn = -1;
     for (const [sectionIndex, section] of scene.sections.entries()) {
-      const turnIndex = section.turns.findIndex(turn => String(turn.original ?? turn.it ?? "").includes(entry.match));
+      const turnIndex = section.turns.findIndex(turn => (entry.speaker == null || turn.speaker === entry.speaker) && String(turn.original ?? turn.it ?? "").includes(entry.match));
       if (turnIndex >= 0) { targetSection = sectionIndex; targetTurn = turnIndex; break; }
     }
     const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number +
