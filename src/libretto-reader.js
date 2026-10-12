@@ -128,6 +128,15 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
 }
+function outlineTrackTitle(entry) {
+  const number = entry.number == null ? "" : (libretto.numberLabel || "N.") + " " + entry.number;
+  return [number, entry.type, entry.title].filter(Boolean).join(" · ");
+}
+function outlineTrackCredits(entry) {
+  const people = entry.performers || entry.characters;
+  if (people?.length) return '<span class="opera-outline__section-performers">' + escapeHtml(people.join(", ")) + '</span>';
+  return entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : "";
+}
 function renderSceneOutlineLinks(scene, act) {
   return (scene.outline || []).map(entry => {
     let targetSection = -1, targetTurn = -1;
@@ -135,8 +144,8 @@ function renderSceneOutlineLinks(scene, act) {
       const turnIndex = section.turns.findIndex((turn, index) => (entry.sourceTurn == null || index === entry.sourceTurn) && (entry.speaker == null || turn.speaker === entry.speaker) && String(turn.original ?? turn.it ?? "").includes(entry.match));
       if (turnIndex >= 0) { targetSection = sectionIndex; targetTurn = turnIndex; break; }
     }
-    const label = '<span class="opera-outline__section-title">' + escapeHtml(entry.title) + '</span>' +
-      (entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : '');
+    const label = '<span class="opera-outline__section-title">' + escapeHtml(outlineTrackTitle(entry)) + '</span>' +
+      outlineTrackCredits(entry);
     if (targetSection < 0 || targetTurn < 0) {
       return '<span class="section-nav-link opera-outline__section is-unavailable" aria-disabled="true">' + label + '</span>';
     }
@@ -270,6 +279,13 @@ function splitInlineDirections(value, literalText = false) {
 }
 function renderSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
+  const outlineLandmarks = (scene.outline || []).map(entry => ({
+    entry,
+    turnIndex: section.turns.findIndex((turn, index) =>
+      (entry.sourceTurn == null || index === entry.sourceTurn) &&
+      (entry.speaker == null || turn.speaker === entry.speaker) &&
+      String(turn.original ?? turn.it ?? "").includes(entry.match))
+  })).filter(landmark => landmark.turnIndex >= 0);
   const directionSpeaker = libretto.stageDirectionSpeaker || "Stage direction";
   const turns = libretto.alignVerseLines ? section.turns.flatMap((turn, sourceTurnIndex) => {
     if (turn.speaker === directionSpeaker) return [{ ...turn, sourceTurnIndex, startsSourceTurn: true }];
@@ -281,8 +297,16 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   }) : section.turns.map((turn, sourceTurnIndex) => ({ ...turn, sourceTurnIndex, startsSourceTurn: true }));
   const rows = turns.flatMap(turn => {
     const speaker = turn.speaker;
-    const anchorFirst = output => output.map((html, index) => index === 0 && turn.startsSourceTurn && scene.outline?.length ?
-      html.replace('<p>', '<span class="libretto-turn-anchor" id="libretto-turn-' + act + '-' + scene.number + '-' + sectionIndex + '-' + turn.sourceTurnIndex + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html);
+    const landmark = outlineLandmarks.find(item => item.turnIndex === turn.sourceTurnIndex)?.entry;
+    const anchorFirst = output => output.map((html, index) => {
+      if (index !== 0 || !turn.startsSourceTurn) return html;
+      const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionIndex + '-' + turn.sourceTurnIndex;
+      if (landmark) return '<h3 class="libretto-track-heading" id="' + id + '">' +
+        escapeHtml(outlineTrackTitle(landmark)) + '<span class="libretto-track-heading__performers">' +
+        escapeHtml((landmark.performers || landmark.characters || []).join(", ")) + '</span></h3>' + html;
+      return scene.outline?.length ?
+        html.replace('<p>', '<span class="libretto-turn-anchor" id="' + id + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html;
+    });
     if (speaker === directionSpeaker) {
       const originalText = turn.original ?? turn.it ?? "";
       const translatedText = turn.translation ?? turn.en ?? "";

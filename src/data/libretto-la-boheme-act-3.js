@@ -11,11 +11,11 @@ export const laBohemeActThreeScenes = [
     translatedTitle: "The Barrière d’Enfer",
     // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      {"title": "Ohè, là, le guardie… Aprite!", "translation": "Hey there, guards… Open up!", "match": "Ohè, là, le guardie!"},
-      {"title": "Mimì?!… Speravo di trovarvi qui", "translation": "Mimì?!… I hoped to find you here", "match": "Mimì?!", "speaker": "Marcello", "sourceTurn": 27},
-      {"title": "Marcello, finalmente", "translation": "Marcello, at last", "match": "Marcello, finalmente!"},
-      {"title": "Donde lieta uscì al tuo grido d’amore", "translation": "From where she happily came at your call of love", "match": "Donde lieta uscì"},
-      {"title": "Dunque è proprio finita?", "translation": "So it really is over?", "match": "Dunque è proprio finita!"}
+      {"title":"Ohè, là, le guardie… Aprite!","translation":"Hey there, guards… Open up!","match":"Ohè, là, le guardie!","number":14,"type":"Coro","performers":["Spazzini","Doganiere","Coro","Musetta","Mimì","Sergente","Marcello"]},
+      {"title":"Mimì?!… Speravo di trovarvi qui","translation":"Mimì?!… I hoped to find you here","match":"Mimì?!","speaker":"Marcello","sourceTurn":27,"number":15,"type":"Duetto","performers":["Marcello","Mimì"]},
+      {"title":"Marcello, finalmente","translation":"Marcello, at last","match":"Marcello, finalmente!","number":16,"type":"Duetto","performers":["Rodolfo","Marcello","Mimì"]},
+      {"title":"Donde lieta uscì al tuo grido d’amore","translation":"From where she happily came at your call of love","match":"Donde lieta uscì","number":17,"type":"Aria","performers":["Mimì","Rodolfo"]},
+      {"title":"Dunque è proprio finita?","translation":"So it really is over?","match":"Dunque è proprio finita!","number":18,"type":"Quartetto","performers":["Rodolfo","Mimì","Marcello","Musetta"]}
     ],
     sections: [{
       number: null,

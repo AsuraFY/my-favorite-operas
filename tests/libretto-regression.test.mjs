@@ -74,6 +74,7 @@ test("La Bohème Act I renders as one continuous bilingual tableau", () => {
   const page = renderer.scene(1);
   assert.ok(page.includes("QUADRO PRIMO"));
   assert.ok(page.includes("Che gelida manina"));
+  assert.ok(page.includes("N. 6 · Aria · Che gelida manina!"));
   assert.ok(page.includes("What a cold little hand"));
   assert.ok(page.includes("Stage direction"));
   assert.ok(page.includes("End of Act I"));
@@ -131,8 +132,12 @@ test("La Bohème outline follows the supplied 26-track recording with bilingual 
     const page = renderer.scene(1);
     assert.ok(page.includes("Act outline"));
     for (const scene of act.scenes) for (const entry of scene.outline) {
+      assert.ok(page.includes("N. " + entry.number + " · " + entry.type + " · " + entry.title));
+      assert.ok(page.includes(entry.performers.join(", ")));
+    }
+    for (const scene of act.scenes) for (const entry of scene.outline) {
       assert.ok(outline.includes(entry.title));
-      assert.ok(outline.includes(entry.translation));
+      assert.ok(outline.includes(entry.performers.join(", ")));
       const target = scene.sections.flatMap((section, sectionIndex) => section.turns.map((turn, turnIndex) => ({
         sectionIndex, turnIndex, original: turn.original ?? turn.it ?? ""
       }))).find(turn => (entry.sourceTurn == null || turn.turnIndex === entry.sourceTurn) &&
