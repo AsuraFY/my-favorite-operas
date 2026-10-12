@@ -75,7 +75,7 @@ test("Tristan outline follows Spotify tracks and formats the bilingual libretto 
     assert.ok(page.includes("English"));
     assert.ok(page.includes('class="libretto-row libretto-row--stage-direction"'));
     assert.ok(page.includes("<br>"), "verse lines should be separated");
-    assert.ok(!page.includes(">Stage direction</span>"), "stage directions should be distinguished by styling");
+    assert.ok(page.includes(">Stage direction</span>"), "stage directions should have a visible label");
     assert.ok(!page.includes(">Dialog</span>"));
     assert.ok(count(page, /class="libretto-row/g) >= scene.sections.reduce((n, section) => n + section.turns.length, 0));
     for (const section of scene.sections) for (const turn of section.turns) {

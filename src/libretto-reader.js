@@ -259,9 +259,10 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       const translatedText = turn.translation ?? turn.en ?? "";
       const original = libretto.bracketStageDirections ? "[" + originalText + "]" : originalText;
       const translation = libretto.bracketStageDirections ? "[" + translatedText + "]" : translatedText;
+      const stageDirectionLabel = '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
       return ['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
-        '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
-        '<p>' + formatLibrettoText(translation, false) + '</p></div></div>'];
+        stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+        stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>'];
     }
     const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText);
     const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText);
