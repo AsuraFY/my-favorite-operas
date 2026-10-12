@@ -115,6 +115,22 @@ test("La Bohème Act IV renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("Mimì!!!"));
 });
 
+test("La Bohème libretto outline lists source-grounded landmarks with deep links", () => {
+  const libretto = getLibretto("la-boheme");
+  const renderer = createLibrettoRenderer(libretto);
+  const outline = renderer.outline();
+  assert.equal(count(outline, /class="opera-outline__act"/g), 4);
+  const outlineEntries = libretto.acts.flatMap(act => act.scenes.flatMap(scene => scene.outline || []));
+  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), outlineEntries.length);
+  for (const act of libretto.acts) for (const scene of act.scenes) for (const item of scene.outline) {
+    assert.ok(outline.includes(item.title));
+    assert.ok(outline.includes("?act=" + act.number + "&scene=" + scene.number + "&item=0&turn="));
+  }
+  window.location.hash = "#/operas/la-boheme?act=4";
+  const page = renderer.scene(1);
+  assert.ok(page.includes('id="libretto-turn-4-1-'));
+});
+
 test("Tristan outline follows Spotify tracks and formats the bilingual libretto clearly", () => {
   const tristan = getLibretto("tristan-und-isolde");
   assert.ok(tristan);
