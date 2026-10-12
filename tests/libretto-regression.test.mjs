@@ -110,6 +110,55 @@ test("Madama Butterfly Act I uses the Opera Guide text with paired English and a
   assert.ok(outline.includes("Prelude"));
 });
 
+test("Madama Butterfly Act II follows the Opera Guide and keeps the Italian and English paired", () => {
+  const libretto = getLibretto("madama-butterfly");
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
+  const act = libretto.acts[1];
+  const scene = act.scenes[0];
+  assert.equal(act.originalHeading, "Atto secondo");
+  assert.equal(libretto.opera.acts, 3);
+  assert.equal(libretto.continuousAct, true);
+  assert.equal(libretto.sceneDivisions, false);
+  assert.equal(scene.sections.length, 9);
+  assert.deepEqual(scene.sections.map(section => section.originalTitle), [
+    "E Izagi ed Izanami", "Un bel dì, vedremo", "Madama Pinkerton",
+    "Yamadori, ancor le pene dell’amor", "La lettera di Pinkerton",
+    "Che tua madre dovrà", "Vespa! Rospa maledetto!", "Il cannone del porto",
+    "Tutti i fior, tutti, tutti"
+  ]);
+  const turns = scene.sections.flatMap(section => section.turns);
+  assert.ok(turns.length > 50);
+  assert.ok(turns.some(turn => turn.original.includes("Un bel dì, vedremo")));
+  assert.ok(turns.some(turn => turn.original.includes("Tutti i fior, tutti, tutti")));
+  assert.ok(turns.some(turn => turn.original.includes("tre forellini")));
+  for (const section of scene.sections) {
+    assert.ok(section.turns.length > 0);
+    assert.equal(section.number, undefined, "no unverified score numbers are shown");
+    for (const turn of section.turns) {
+      assert.equal(typeof turn.original, "string");
+      assert.equal(typeof turn.translation, "string");
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  const renderer = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/madama-butterfly?act=2";
+  const page = renderer.scene(1);
+  assert.ok(page.includes("ATTO SECONDO"));
+  assert.ok(page.includes("Un bel dì, vedremo"));
+  assert.ok(page.includes("One fine day"));
+  assert.ok(page.includes("End of Act II"));
+  window.location.hash = "#/operas/madama-butterfly?view=outline";
+  const outline = renderer.outline();
+  assert.ok(outline.includes("Madama Pinkerton"));
+  assert.ok(outline.includes("Yamadori, ancor le pene"));
+  assert.ok(outline.includes("La lettera di Pinkerton"));
+  assert.ok(outline.includes("Tutti i fior, tutti, tutti"));
+  assert.ok(outline.includes("Preludio"));
+});
+
 test("La Bohème Act I renders as one continuous bilingual tableau", () => {
   const renderer = createLibrettoRenderer(getLibretto("la-boheme"));
   const page = renderer.scene(1);
