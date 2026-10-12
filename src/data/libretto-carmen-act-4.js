@@ -266,7 +266,7 @@ export const carmenActFourScenes = [
           {
             "speaker": "ENFANTS et CHOEUR",
             "original": "Escamillo! Escamillo!\nEscamillo! Escamillo!\nC'est l'Espada, la fine lame,\nCelui qui vient terminer tout,\nQui paraît à la fin du drame\nEt qui frappe le dernier coup.\nVive Escamillo! Vive Escamillo!\nAh! Bravo!\nLes voici! Voici la quadrille,\nLa quadrille des toreros!\nSur les lances le soleil brille.\nEn l'air, en l'air, en l'air\ntoques et sombreros!\nVive Escamillo!\nBravo! Viva! Bravo! Bravo!",
-            "translation": "Escamillo! Escamillo!\nEscamillo! Escamillo!\nHe is the espada, the master blade,\nThe one who comes to finish it all,\nWho appears at the drama's end\nAnd strikes the final blow.\nLong live Escamillo! Long live Escamillo!\nAh! Bravo!\nHere they are! Here comes the procession,\nThe procession of the bullfighters!\nThe sun shines on their lances.\nIn the air, in the air, in the air,\nCaps and sombreros!\nLong live Escamillo!\nBravo! Viva! Bravo! Bravo!",
+            "translation": "Escamillo! Escamillo!\nEscamillo! Escamillo!\nHe is the matador, the master swordsman,\nThe one who comes to finish it all,\nWho appears at the drama's end\nAnd strikes the final blow.\nLong live Escamillo! Long live Escamillo!\nAh! Bravo!\nHere they are! Here comes the procession,\nThe procession of the bullfighters!\nThe sun shines on their lances.\nIn the air, in the air, in the air,\nCaps and sombreros!\nLong live Escamillo!\nBravo! Viva! Bravo! Bravo!",
             "literalText": true,
             "speakerTranslation": "Children and chorus"
           },
@@ -611,7 +611,7 @@ export const carmenActFourScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Ainsi, le salut de mon âme,\nJe l'aurai perdu pour que toi,\nPour que tu t'en ailles, infâme!\nEntre ses bras, rire de moi.\nNon, par le sang, tu n'iras pas,\nCarmen, c'est moi que tu suivras!",
-            "translation": "So now the salvation of my soul\nI have lost it so that you,\nSo that you, vile woman, may go\nInto his arms, laughing at me.\nNo, by my blood, you shall not go;\nCarmen, you will come with me!",
+            "translation": "So I will lose my soul's salvation\njust so that you, vile woman, may go\ninto his arms, laughing at me.\nNo, by my blood, you shall not go;\nCarmen, you will come with me!",
             "literalText": true,
             "speakerTranslation": "José"
           },
