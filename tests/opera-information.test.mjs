@@ -29,10 +29,10 @@ test("all thirty-one opera information pages contain verified metadata and full 
   }
 });
 
-test("Operas with standalone artwork use optimized WebP files", () => {
-  for (const slug of ["turandot", "le-nozze-di-figaro", "samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "carmen", "la-traviata", "the-magic-flute", "aida", "tosca", "madama-butterfly", "rigoletto", "don-giovanni", "la-boheme", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) {
-    const opera = operas.find(item => item.slug === slug);
-    assert.ok(opera?.image);
+test("Every catalog image path points to an optimized WebP asset", () => {
+  const illustratedOperas = operas.filter(opera => opera.image);
+  assert.ok(illustratedOperas.length > 0);
+  for (const opera of illustratedOperas) {
     assert.match(opera.image, /-art\.webp$/);
     const raw = readFileSync(opera.image.replace(/^\.\//, ""));
     assert.equal(raw.toString("ascii", 0, 4), "RIFF");

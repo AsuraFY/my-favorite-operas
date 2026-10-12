@@ -22,7 +22,7 @@ The tests check Così fan tutte’s 34 scenes, 69 sections and 871 bilingual ent
 
 ## Opera collection and information pages
 
-All six catalog entries have standalone information pages with artwork, verified composer and premiere details, act counts, a short synopsis, and principal characters. The information pages are defined by `src/opera-info-page.js` and `src/data/opera-information.js`, independent of whether a libretto has been prepared.
+All 31 catalog entries have standalone information pages with artwork or an illustrated card, composer and premiere details, act counts, a short synopsis, and principal characters. The information pages are defined by `src/opera-info-page.js` and `src/data/opera-information.js`, independent of whether a libretto has been prepared.
 
 The four original directory images use separate quadrants of an existing source image, now aligned to prevent adjacent panels from appearing in a card. Turandot and Le nozze di Figaro have independent original SVG illustrations in `public/images/`.
 
@@ -31,7 +31,7 @@ Factual editorial references include the Metropolitan Opera synopses for Turando
 ## Architecture
 
 - src/data/operas.js — directory records, titles, composers, librettists, premiere facts, art paths and search aliases.
-- src/data/opera-information.js — synopses and principal characters for all six works.
+- src/data/opera-information.js — synopses and principal characters for the full catalog.
 - src/opera-info-page.js — reusable opera information layout.
 - src/data/libretto-registry.js — complete libretti registered by opera slug, plus synopsis, character, and presentation metadata.
 - src/data/libretto-cosi-fan-tutte-act-1.js and src/data/libretto-cosi-fan-tutte-act-2.js — the original Così act data, retained without changing translations.
@@ -42,7 +42,7 @@ Factual editorial references include the Metropolitan Opera synopses for Turando
 - src/main.js — hash routing, metadata search, sticky navigation, desktop collapse, mobile drawer, deep-link and scroll controllers.
 - styles.css — responsive reader appearance.
 - tests/libretto-regression.test.mjs — automated libretto data and rendering checks.
-- tests/opera-information.test.mjs — automated six-opera information and artwork checks.
+- tests/opera-information.test.mjs — automated catalog information, planned destinations, and artwork checks.
 
 ## Adding an opera with a complete libretto
 

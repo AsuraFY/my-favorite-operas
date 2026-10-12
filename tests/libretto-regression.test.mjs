@@ -214,7 +214,7 @@ test("a separate three-act German libretto uses the identical reader", () => {
     originalLanguage: "Deutsch", translationLanguage: "English",
     sceneOriginalPrefix: "Szene", characters: ["Helena"],
     synopsis: { eyebrow: "Fictional opera", paragraphs: ["A fictional synopsis."],
-      characters: [["Helena", "Soprano", "An example."]] },
+      characters: [["Helena", "Soprano <voice>", "An example."]] },
     acts: [1, 2, 3].map(number => ({
       number,
       originalHeading: ["Erster Akt", "Zweiter Akt", "Dritter Akt"][number - 1],
@@ -235,6 +235,8 @@ test("a separate three-act German libretto uses the identical reader", () => {
   assert.ok(!page.includes("Così fan tutte"));
   assert.equal(count(reader.outline(), /class="opera-outline__scene"/g), 3);
   assert.ok(reader.synopsis().includes("A fictional synopsis."));
+  assert.ok(reader.synopsis().includes("Soprano &lt;voice&gt;"));
+  assert.ok(!reader.synopsis().includes("Soprano <voice>"));
 });
 
 test("unnumbered titled sections retain their original title", () => {

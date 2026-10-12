@@ -30,9 +30,12 @@ function sectionTitles(scene, section, sectionIndex) {
     .find(line => line && !/^\([^)]*\)$/.test(line)) || "";
   return { original: firstLine.replace(/[.,;:!?…]+$/, ""), translation: "" };
 }
-function sectionNavigationLabel(section, scene, sectionIndex) {
+function numberedSection(section) {
   const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  const no = section.number ?? (match ? Number(match[1]) : null);
+  return { match, number: section.number ?? (match ? Number(match[1]) : null) };
+}
+function sectionNavigationLabel(section, scene, sectionIndex) {
+  const { match, number: no } = numberedSection(section);
   const form = section.type || (match ? match[2] :
     ((section.label || "").toLocaleLowerCase() === "recitative" ? (libretto.recitativeLabel || "Recitative") : section.label));
   const title = scene ? sectionTitles(scene, section, sectionIndex).original : "";
@@ -45,8 +48,7 @@ function sourceDivisionHeading(section, tag = "h3") {
     ' <span>·</span> ' + escapeHtml(division.translation) + '</' + tag + '>' : '';
 }
 function sectionPresentation(scene, section, sectionIndex) {
-  const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  const no = section.number ?? (match ? Number(match[1]) : null);
+  const { match, number: no } = numberedSection(section);
   const form = section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
   const titles = sectionTitles(scene, section, sectionIndex);
   const number = no == null ? "" : (libretto.numberLabel || "N.") + " " + no + " · ";
@@ -195,7 +197,7 @@ function renderSynopsisPage() {
     synopsis.paragraphs.map(paragraph => '<p>' + escapeHtml(paragraph) + '</p>').join("") +
     '<h2>Principal characters</h2><div class="opera-synopsis__characters">' +
     characters.map(([name, role, description]) => '<div class="opera-synopsis__character"><h3>' + escapeHtml(name) +
-      '</h3><span>' + role + '</span><p>' + escapeHtml(description) + '</p></div>').join('') +
+      '</h3><span>' + escapeHtml(role) + '</span><p>' + escapeHtml(description) + '</p></div>').join('') +
     '</div></article></div>';
 }
 

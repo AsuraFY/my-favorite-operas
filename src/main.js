@@ -53,15 +53,6 @@ document.documentElement.dataset.fontSize = String(activeFontSize);
 document.documentElement.style.fontSize = `${activeFontSize}px`;
 document.documentElement.style.setProperty("--reading-scale", String(activeFontSize / 16));
 
-const artwork = (opera, extra = "") => `
-  <div class="artwork artwork--${opera.color} ${extra}" aria-hidden="true">
-    <div class="artwork__frame"></div>
-    <div class="artwork__light"></div>
-    <div class="artwork__figure"><span></span></div>
-    <div class="artwork__ornament">${opera.initials}</div>
-    <div class="artwork__caption">${opera.composer}</div>
-  </div>`;
-
 const arrow = `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5"/></svg>`;
 
 function header(active) {
@@ -430,18 +421,6 @@ function shell(content, active) {
   });
 }
 
-function operaCard(opera, index) {
-  return `<a class="opera-card" href="#/operas/${opera.slug}" style="--card-index:${index}">
-    ${artwork(opera)}
-    <div class="opera-card__body">
-      <div class="eyebrow">${opera.genre} <span>·</span> ${opera.acts} acts</div>
-      <h3>${opera.title}</h3>
-      <p class="opera-card__composer">${opera.composer}</p>
-      <span class="text-link">Explore opera ${arrow}</span>
-    </div>
-  </a>`;
-}
-
 function homePage() {
   return `<section class="home-banner" aria-label="Welcome">
       <div class="home-banner__shade">
@@ -483,18 +462,6 @@ function filterOperasByQuery(query = "") {
     opera.title, opera.displayTitle, opera.composer, opera.librettist,
     opera.genre, ...(opera.aliases || [])
   ].some(value => normalizeOperaSearch(value).includes(term)));
-}
-
-function directoryPage(query = "") {
-  const matches = filterOperasByQuery(query);
-  const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
-  return `<section class="page-intro section-wrap">
-    <p class="eyebrow"><span class="eyebrow-rule"></span> The collection</p>
-    <div class="page-intro__row"><h1>Operas to<br /><em>return to.</em></h1><p>Every opera is a world of its own. Explore the stories, meet the composers, and find a place to begin listening.</p></div>
-    <div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search opera title, composer or librettist</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search title, composer or librettist..." value="${safeQuery}" autocomplete="off" /></form><div class="directory-meta"><span>${String(matches.length).padStart(2, "0")} ${matches.length === 1 ? "work" : "works"}</span><span>Curated, not ranked</span></div></div>
-  </section>
-  <section class="directory-grid section-wrap" aria-label="Opera directory">${matches.map(operaCard).join("") || `<p class="empty-results">No operas match “${safeQuery}”. Try another title, composer or librettist.</p>`}</section>
-  <section class="directory-note section-wrap"><span class="directory-note__mark">✳</span><p>This collection is just beginning.<br /><b>There is always room for one more.</b></p></section>`;
 }
 
 function operaDirectoryPage(query = "", sort = "title") {
