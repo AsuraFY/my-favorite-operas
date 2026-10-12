@@ -29,6 +29,7 @@ import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-act2-1";
 import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-act3-1";
 import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-act4-1";
 import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-1";
+import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-act2-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -430,17 +431,18 @@ const laBoheme = {
   stageDirectionLabel: "Stage direction",
   bracketStageDirections: true,
   acts: [
-    { number: 1, originalHeading: "Quadro primo", scenes: laBohemeActOneScenes }
+    { number: 1, originalHeading: "Quadro primo", scenes: laBohemeActOneScenes },
+    { number: 2, originalHeading: "Quadro secondo", scenes: laBohemeActTwoScenes }
   ],
   characters: ["Mimì", "Rodolfo", "Marcello", "Schaunard", "Colline", "Benoît"],
   synopsis: {
     eyebrow: "Giacomo Puccini · Opera in four tableaux",
     paragraphs: [
-      "On Christmas Eve in a cold Paris garret, the poet Rodolfo and painter Marcello burn a manuscript to keep warm. Their friends Schaunard and Colline arrive with food and money, and the four set out for the Café Momus. Rodolfo stays behind to finish an article.",
-      "Their neighbor Mimì knocks because her candle has gone out. When both their lights fail, Rodolfo finds her hand in the darkness. They introduce themselves, share their hopes, and fall in love. Mimì joins Rodolfo on his way to meet his friends."
+      "On Christmas Eve in a cold Paris garret, the poet Rodolfo and painter Marcello burn a manuscript to keep warm. Their friends Schaunard and Colline arrive with food and money, and the four set out for the Café Momus. Rodolfo stays behind to finish an article. Their neighbor Mimì knocks because her candle has gone out. When both their lights fail, Rodolfo finds her hand in the darkness. They introduce themselves, share their hopes, and fall in love.",
+      "The next tableau takes place in the crowded Latin Quarter. Rodolfo and Mimì meet their friends for dinner at the Café Momus. Musetta arrives with Alcindoro and sings to win Marcello’s attention. She succeeds, escapes with the Bohemians as a military retreat passes, and leaves Alcindoro to pay the bill."
     ]
   },
-  source: "Giacomo Puccini, La bohème (1896), Italian libretto by Luigi Illica and Giuseppe Giacosa, text and divisions from Teatro alla Scala's libretto PDF: https://www.teatroallascala.org/static/upload/la-/la-boheme-libretto.pdf. English is a fresh line-by-line translation. Act I follows the source's Quadro primo continuously; remaining tableaux will be added and checked separately."
+  source: "Giacomo Puccini, La bohème (1896), Italian libretto by Luigi Illica and Giuseppe Giacosa, text and divisions from Teatro alla Scala's libretto PDF: https://www.teatroallascala.org/static/upload/la-/la-boheme-libretto.pdf. English is a fresh line-by-line translation. The first two tableaux are presented continuously, one page per tableau."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme };

@@ -49,11 +49,15 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(getLibretto("macbeth"));
   const laBoheme = getLibretto("la-boheme");
   assert.ok(laBoheme);
-  assert.deepEqual(laBoheme.acts.map(act => act.originalHeading), ["Quadro primo"]);
+  assert.deepEqual(laBoheme.acts.map(act => act.originalHeading), ["Quadro primo", "Quadro secondo"]);
   const bohemeTurns = laBoheme.acts[0].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
   assert.ok(bohemeTurns.length > 200);
   assert.equal(bohemeTurns.at(-1).original, "(cala il sipario)");
   assert.ok(bohemeTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
+  const bohemeActTwoTurns = laBoheme.acts[1].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
+  assert.ok(bohemeActTwoTurns.length > 200);
+  assert.match(bohemeActTwoTurns.at(-1).translation, /stunned/i);
+  assert.ok(bohemeActTwoTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
   assert.equal(getLibretto("unknown"), null);
 });
 
@@ -65,6 +69,18 @@ test("La Bohème Act I renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("What a cold little hand"));
   assert.ok(page.includes("Stage direction"));
   assert.ok(page.includes("End of Act I"));
+});
+
+test("La Bohème Act II renders as one continuous bilingual tableau", () => {
+  const renderer = createLibrettoRenderer(getLibretto("la-boheme"));
+  window.location.hash = "#/operas/la-boheme?act=2";
+  const page = renderer.scene(1);
+  assert.ok(page.includes("QUADRO SECONDO"));
+  assert.ok(page.includes("Al quartiere latino"));
+  assert.ok(page.includes("Quando me’n vo soletta per la via"));
+  assert.ok(page.includes("When I walk alone along the street"));
+  assert.ok(page.includes("Stage direction"));
+  assert.ok(page.includes("End of Act II"));
 });
 
 test("Tristan outline follows Spotify tracks and formats the bilingual libretto clearly", () => {
