@@ -9,6 +9,15 @@ export const laBohemeActThreeScenes = [
     summary: "At the Barrière d’Enfer in the last days of winter, Mimì asks Marcello for help with Rodolfo. Their farewell is interrupted by Marcello and Musetta’s quarrel; Mimì and Rodolfo decide to remain together until spring.",
     title: "La barriera d’Enfer",
     translatedTitle: "The Barrière d’Enfer",
+    outline: [
+      { title: "Dawn at the customs barrier", translation: "L’alba alla barriera", match: "Ohè, là, le guardie!" },
+      { title: "Mimì looks for Marcello", translation: "Mimì cerca Marcello", match: "Sa dirmi, scusi" },
+      { title: "Mimì tells Marcello about Rodolfo", translation: "Mimì parla a Marcello di Rodolfo", match: "Rodolfo, Rodolfo m’ama" },
+      { title: "Rodolfo reveals his fear", translation: "Rodolfo confessa la sua paura", match: "Amo Mimì sovra ogni cosa al mondo" },
+      { title: "Mimì’s farewell", translation: "L’addio di Mimì", match: "Donde lieta uscì" },
+      { title: "They agree to wait until spring", translation: "Aspetteranno la primavera", match: "Soli d’inverno è cosa da morire!" },
+      { title: "Marcello and Musetta part", translation: "Marcello e Musetta si separano", match: "Fo all’amor con chi mi piace!" }
+    ],
     sections: [{
       number: null,
       type: "La barriera d’Enfer",
