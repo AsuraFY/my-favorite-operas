@@ -49,7 +49,7 @@ test("Carmen reader shows a side-by-side continuous act with translated source l
   assert.match(html, /data-continuous-act="true"/);
   assert.match(html, /data-initial-item="6"/);
   assert.match(html, /class="libretto-row libretto-row--stage-direction"/);
-  assert.match(html, /Stage direction/);
+  assert.doesNotMatch(html, /Stage direction/);
   assert.match(html, /No\. 5 · Habanera/);
   assert.match(html, /Love is a rebellious bird/);
   assert.match(html, /L&#39;amour est un oiseau rebelle/);
