@@ -8,6 +8,18 @@ export const laBohemeActFourScenes = [{
   summary: "Back in the garret, Rodolfo and Marcello pretend to work while thinking of Mimì and Musetta. Schaunard and Colline join them, and their joking dance is interrupted by Musetta, who brings the gravely ill Mimì. Their friends try to comfort her, but Mimì dies as Rodolfo calls her name.",
   title: "In soffitta",
   translatedTitle: "In the garret",
+  outline: [
+    { title: "Rodolfo and Marcello pretend to work", translation: "Rodolfo e Marcello fingono di lavorare", match: "In un coupé?" },
+    { title: "They remember Mimì and Musetta", translation: "Ricordano Mimì e Musetta", match: "O Mimì, tu più non torni" },
+    { title: "The friends’ mock feast and dance", translation: "Il pranzo e il ballo degli amici", match: "È un piatto degno di Demostene" },
+    { title: "Musetta brings Mimì", translation: "Musetta porta Mimì", match: "C’è Mimì!" },
+    { title: "Colline’s farewell to his coat", translation: "L’addio di Colline alla zimarra", match: "Vecchia zimarra, senti" },
+    { title: "Mimì and Rodolfo recall their first meeting", translation: "Mimì e Rodolfo ricordano il primo incontro", match: "Sono andati?" },
+    { title: "Mimì remembers the candle and the key", translation: "Mimì ricorda il lume e la chiave", match: "Il lume s’era spento" },
+    { title: "The pink bonnet and the muff", translation: "La cuffietta rosa e il manicotto", match: "La mia cuffietta!" },
+    { title: "Mimì’s final moments", translation: "Gli ultimi momenti di Mimì", match: "Madonna benedetta" },
+    { title: "Rodolfo’s cry", translation: "Il grido di Rodolfo", match: "Mimì!!!… Mimì!!!…" }
+  ],
   sections: [{
     number: null,
     type: "In soffitta",
