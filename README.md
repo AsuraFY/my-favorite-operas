@@ -51,6 +51,17 @@ Factual editorial references include the Metropolitan Opera synopses for Turando
 3. Import those acts into src/data/libretto-registry.js and register a configuration under completeLibretti, using the SAME slug as the directory record.
 4. Run npm test and manually review the reader, outline, navigation, search, and mobile layout.
 
+### Libretto outline baseline for every opera
+
+Use the established Così fan tutte presentation for every future opera. Keep the same outline structure, styling, and character icon; do not invent a different format for an opera.
+
+- Label the two navigation levels distinctly: **Libretto Outline** for the full outline and **Act outline** for the in-reader navigation.
+- Show each musical form and its original-language title. Include a number only when it is printed in the original score; never assign a new sequence number from a recording or from the order of the entries. Format a numbered entry as `N. 4 · Duetto · Ah, guarda, sorella`; omit the number when it is not original.
+- Put the singers’ names on the next line with the established character icon. Show the characters singing instead of an English title translation in the outline credits.
+- Repeat each entry’s original-language title immediately before its corresponding side-by-side original and English libretto text, with the character credit and icon.
+- Make every full-outline and Act-outline entry link to its exact matching passage, including the specific turn when an entry begins partway through a section.
+- If the source outline differs from this structure, or its forms, numbering, performers, or divisions are uncertain, stop and ask the user how to map it before proceeding. Do not guess or create a new outline convention.
+
 An opera with no registered libretto continues to display its original introduction page. No copy of the reader or navigation code is needed.
 
 ### Data schema example (fictional, not a newly added opera)
