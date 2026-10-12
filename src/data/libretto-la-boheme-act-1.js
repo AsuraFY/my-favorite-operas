@@ -6,14 +6,16 @@ export const laBohemeActOneScenes = [
     summary: "On Christmas Eve in their freezing Paris garret, Rodolfo and Marcello burn the poet’s manuscript to keep warm.",
     title: "In soffitta",
     translatedTitle: "In the garret",
+    // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      { title: "Rodolfo and Marcello in the garret", translation: "Rodolfo e Marcello in soffitta", match: "Questo Mar Rosso" },
-      { title: "The landlord arrives", translation: "Arriva Benoît", match: "Si può?" },
-      { title: "The friends set out for Momus", translation: "Gli amici partono per Momus", match: "Marcello, Schaunard e Colline escono e scendono la scala" },
-      { title: "Mimì comes for a light", translation: "Mimì chiede da accendere", match: "Mimì bussa timidamente alla porta" },
-      { title: "Rodolfo’s introduction", translation: "Rodolfo si presenta", match: "Che gelida manina" },
-      { title: "Mimì’s introduction", translation: "Mimì si presenta", match: "Sì.\nMi chiamano Mimì" },
-      { title: "Their first kiss", translation: "Il loro primo bacio", match: "O soave fanciulla" }
+      {"title": "Questo mar rosso", "translation": "This Red Sea", "match": "Questo Mar Rosso"},
+      {"title": "Abbasso, abbasso l’autore!", "translation": "Down, down with the author!", "match": "Abbasso! Abbasso l’autor!"},
+      {"title": "Si può?… Chi è là?", "translation": "May I come in?… Who is there?", "match": "Si può?"},
+      {"title": "Al Quartiere Latin ci attende Momus", "translation": "Momus awaits us in the Latin Quarter", "match": "Al Quartiere Latin ci attende Momus."},
+      {"title": "Non sono in vena", "translation": "I’m not in the mood", "match": "Non sono in vena."},
+      {"title": "Che gelida manina!", "translation": "What a cold little hand!", "match": "Che gelida manina"},
+      {"title": "Sì, mi chiamano Mimì", "translation": "Yes, they call me Mimì", "match": "Sì.\nMi chiamano Mimì"},
+      {"title": "Ehi! Rodolfo!… O soave fanciulla, o dolce viso", "translation": "Hey! Rodolfo!… O lovely girl, O sweet face", "match": "Ehi! Rodolfo!"}
     ],
     sections: [
       {
@@ -501,4 +503,3 @@ export const laBohemeActOneScenes = [
     ]
   }
 ];
-

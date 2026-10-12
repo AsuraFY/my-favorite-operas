@@ -9,14 +9,13 @@ export const laBohemeActThreeScenes = [
     summary: "At the Barrière d’Enfer in the last days of winter, Mimì asks Marcello for help with Rodolfo. Their farewell is interrupted by Marcello and Musetta’s quarrel; Mimì and Rodolfo decide to remain together until spring.",
     title: "La barriera d’Enfer",
     translatedTitle: "The Barrière d’Enfer",
+    // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      { title: "Dawn at the customs barrier", translation: "L’alba alla barriera", match: "Ohè, là, le guardie!" },
-      { title: "Mimì looks for Marcello", translation: "Mimì cerca Marcello", match: "Sa dirmi, scusi" },
-      { title: "Mimì tells Marcello about Rodolfo", translation: "Mimì parla a Marcello di Rodolfo", match: "Rodolfo, Rodolfo m’ama" },
-      { title: "Rodolfo reveals his fear", translation: "Rodolfo confessa la sua paura", match: "Amo Mimì sovra ogni cosa al mondo" },
-      { title: "Mimì’s farewell", translation: "L’addio di Mimì", match: "Donde lieta uscì" },
-      { title: "They agree to wait until spring", translation: "Aspetteranno la primavera", match: "Soli d’inverno è cosa da morire!" },
-      { title: "Marcello and Musetta part", translation: "Marcello e Musetta si separano", match: "Musetta se ne va!" }
+      {"title": "Ohè, là, le guardie… Aprite!", "translation": "Hey there, guards… Open up!", "match": "Ohè, là, le guardie!"},
+      {"title": "Mimì?!… Speravo di trovarvi qui", "translation": "Mimì?!… I hoped to find you here", "match": "Mimì?!", "speaker": "Marcello", "sourceTurn": 27},
+      {"title": "Marcello, finalmente", "translation": "Marcello, at last", "match": "Marcello, finalmente!"},
+      {"title": "Donde lieta uscì al tuo grido d’amore", "translation": "From where she happily came at your call of love", "match": "Donde lieta uscì"},
+      {"title": "Dunque è proprio finita?", "translation": "So it really is over?", "match": "Dunque è proprio finita!"}
     ],
     sections: [{
       number: null,
@@ -171,4 +170,3 @@ export const laBohemeActThreeScenes = [
     }]
   }
 ];
-

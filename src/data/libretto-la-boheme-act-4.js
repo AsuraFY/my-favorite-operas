@@ -8,18 +8,16 @@ export const laBohemeActFourScenes = [{
   summary: "Back in the garret, Rodolfo and Marcello pretend to work while thinking of Mimì and Musetta. Schaunard and Colline join them, and their joking dance is interrupted by Musetta, who brings the gravely ill Mimì. Their friends try to comfort her, but Mimì dies as Rodolfo calls her name.",
   title: "In soffitta",
   translatedTitle: "In the garret",
+  // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
   outline: [
-    { title: "Rodolfo and Marcello pretend to work", translation: "Rodolfo e Marcello fingono di lavorare", match: "In un coupé?" },
-    { title: "They remember Mimì and Musetta", translation: "Ricordano Mimì e Musetta", match: "O Mimì, tu più non torni" },
-    { title: "The friends’ mock feast and dance", translation: "Il pranzo e il ballo degli amici", match: "È un piatto degno di Demostene" },
-    { title: "Musetta brings Mimì", translation: "Musetta porta Mimì", match: "C’è Mimì!" },
-    { title: "Colline’s farewell to his coat", translation: "L’addio di Colline alla zimarra", match: "Vecchia zimarra, senti" },
-    { title: "Mimì and Rodolfo recall their first meeting", translation: "Mimì e Rodolfo ricordano il primo incontro", match: "Sono andati?" },
-    { title: "The pink bonnet", translation: "La cuffietta rosa", match: "La mia cuffietta!" },
-    { title: "Mimì remembers the candle and the key", translation: "Mimì ricorda il lume e la chiave", match: "Il lume s’era spento" },
-    { title: "The friends return with medicine and a muff", translation: "Gli amici tornano con il medicinale e il manicotto", match: "Musetta e Marcello entrano cautamente" },
-    { title: "Mimì’s final moments", translation: "Gli ultimi momenti di Mimì", match: "Madonna benedetta" },
-    { title: "Rodolfo’s cry", translation: "Il grido di Rodolfo", match: "Mimì!!!… Mimì!!!…" }
+    {"title": "In un coupé?… Con pariglia e livree", "translation": "In a carriage?… With horses and liveried servants", "match": "In un coupé?"},
+    {"title": "O Mimì, tu più non torni", "translation": "O Mimì, you no longer return", "match": "O Mimì, tu più non torni"},
+    {"title": "Che ora sia?", "translation": "What time is it?", "match": "Che ora sia?"},
+    {"title": "C’è Mimì… C’è Mimì che mi segue", "translation": "Mimì is here… Mimì is following me", "match": "C’è Mimì!"},
+    {"title": "Vecchia zimarra, senti", "translation": "Old overcoat, listen", "match": "Vecchia zimarra, senti"},
+    {"title": "Schaunard, ognuno per diversa via", "translation": "Schaunard, each in our own way", "match": "Schaunard, ognuno per diversa via"},
+    {"title": "Sono andati?", "translation": "Have they gone?", "match": "Sono andati?"},
+    {"title": "Oh Dio! Mimì!", "translation": "Oh God! Mimì!", "match": "Oh Dio! Mimì!"}
   ],
   sections: [{
     number: null,
@@ -273,4 +271,3 @@ export const laBohemeActFourScenes = [{
     ]
   }]
 }];
-

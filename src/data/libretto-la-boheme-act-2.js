@@ -6,13 +6,13 @@ export const laBohemeActTwoScenes = [
     summary: "On Christmas Eve, Rodolfo and Mimì join their friends at the Café Momus. Musetta arrives with Alcindoro, rekindles Marcello’s love, and escapes with the Bohemians as a military parade passes, leaving Alcindoro with the bill.",
     title: "Al quartiere latino",
     translatedTitle: "In the Latin Quarter",
+    // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      { title: "The Christmas Eve crowd", translation: "La folla della Vigilia di Natale", match: "Aranci, datteri! Caldi i marroni!" },
-      { title: "The friends dine at Momus", translation: "Gli amici cenano da Momus", match: "A cena!" },
-      { title: "Parpignol and the children", translation: "Parpignol e i bambini", match: "Ecco i giocattoli di Parpignol!" },
-      { title: "Musetta’s waltz", translation: "Il valzer di Musetta", match: "Quando me’n vo soletta per la via" },
-      { title: "The bill and the military retreat", translation: "Il conto e la Ritirata", match: "Il conto?", speaker: "Rodolfo" },
-      { title: "The Bohemians escape", translation: "La fuga dei bohémiens", match: "Largo, largo, eccoli qua!" }
+      {"title": "Aranci, datteri!", "translation": "Oranges, dates!", "match": "Aranci, datteri! Caldi i marroni!"},
+      {"title": "Chi guardi?", "translation": "Who are you looking at?", "match": "Chi guardi?…"},
+      {"title": "Beviam… Ch’io beva del tossico!", "translation": "Let’s drink… Let me drink poison!", "match": "Beviam!", "speaker": "All five Bohemians"},
+      {"title": "Quando me’n vo soletta", "translation": "When I walk alone", "match": "Quando me’n vo soletta per la via"},
+      {"title": "Chi l’ha richiesto?… Vediam", "translation": "Who ordered it?… Let’s see", "match": "Chi l’ha richiesto?"}
     ],
     sections: [
       {
@@ -229,4 +229,3 @@ export const laBohemeActTwoScenes = [
     ]
   }
 ];
-

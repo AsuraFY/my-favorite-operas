@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-art-12";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-22";
-import { getLibretto } from "./data/libretto-registry.js?v=registry-44";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-23";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-45";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-tabs-1";
@@ -770,4 +770,3 @@ window.addEventListener("scroll", scheduleReaderSectionUpdate, { passive: true }
 window.addEventListener("scroll", updateReaderTopButton, { passive: true });
 window.addEventListener("hashchange", render);
 render();
-

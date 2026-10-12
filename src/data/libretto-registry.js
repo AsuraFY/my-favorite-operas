@@ -28,10 +28,10 @@ import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-act1-1";
 import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-act2-1";
 import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-act3-1";
 import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-act4-1";
-import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-3";
-import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-act2-2";
-import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=la-boheme-act3-2";
-import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme-act4-2";
+import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-4";
+import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-act2-3";
+import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=la-boheme-act3-3";
+import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme-act4-3";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -417,6 +417,8 @@ const carmen = {
 };
 
 const laBoheme = {
+  spotifyAlbumUrl: "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp",
+  outlineRecording: "Maria Callas · Giuseppe Di Stefano · Antonino Votto (1958)",
   slug: "la-boheme",
   opera: getOpera("la-boheme"),
   composerShort: "G. PUCCINI",
@@ -456,4 +458,3 @@ export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
 export const librettoCatalog = Object.values(completeLibretti);
-

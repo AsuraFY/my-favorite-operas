@@ -115,11 +115,14 @@ test("La Bohème Act IV renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("Mimì!!!"));
 });
 
-test("La Bohème libretto outline lists source-grounded landmarks with deep links", () => {
+test("La Bohème outline follows the supplied 26-track recording with deep links", () => {
   const libretto = getLibretto("la-boheme");
   const renderer = createLibrettoRenderer(libretto);
   const outline = renderer.outline();
   assert.equal(count(outline, /class="opera-outline__act"/g), 4);
+  assert.equal(libretto.spotifyAlbumUrl, "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp");
+  assert.deepEqual(libretto.acts.map(act => act.scenes[0].outline.length), [8, 5, 5, 8]);
+  assert.ok(outline.includes("Maria Callas"));
   const outlineEntries = libretto.acts.flatMap(act => act.scenes.flatMap(scene => scene.outline || []));
   assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), outlineEntries.length);
   for (const act of libretto.acts) for (const scene of act.scenes) for (const item of scene.outline) {
@@ -137,7 +140,7 @@ test("La Bohème landmarks identify unique source turns in reading order", () =>
     let previous = -1;
     for (const entry of scene.outline) {
       const matches = turns.flatMap((turn, index) =>
-        (entry.speaker == null || turn.speaker === entry.speaker) && turn.original.includes(entry.match) ? [index] : []);
+        (entry.sourceTurn == null || index === entry.sourceTurn) && (entry.speaker == null || turn.speaker === entry.speaker) && turn.original.includes(entry.match) ? [index] : []);
       assert.equal(matches.length, 1, `Act ${act.number}: ${entry.title} should have one source target`);
       assert.ok(matches[0] > previous, `Act ${act.number}: ${entry.title} should follow the previous landmark`);
       previous = matches[0];
@@ -505,4 +508,3 @@ test("Macbeth Act IV includes all scenes, both opening numbers, and the final ch
   window.location.hash = "#/operas/macbeth?act=3";
   assert.ok(reader.scene(1).includes("Continue to Act IV"));
 });
-
