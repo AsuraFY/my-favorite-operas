@@ -445,6 +445,112 @@ export const operaInformation = {
     "https://archive.sfopera.com/sites/default/files/2025-10/SFO_PUB_01_SFO_2025_05_compressed_0.pdf"
   ]
 },
+  "la-traviata": {
+    synopsis: [
+      "Violetta Valéry, a celebrated Parisian courtesan, meets Alfredo Germont and is moved by his sincere love. She leaves her former life to live with him in the country, but Alfredo’s father persuades her to end the relationship to protect his family’s reputation.",
+      "Believing Violetta has abandoned him, Alfredo publicly humiliates her. She becomes gravely ill, and Alfredo learns the truth too late. They are briefly reunited before Violetta dies in his arms."
+    ],
+    characters: [
+      ["Violetta Valéry", "Soprano", "A Parisian courtesan who falls in love with Alfredo."],
+      ["Alfredo Germont", "Tenor", "Violetta’s devoted young lover."],
+      ["Giorgio Germont", "Baritone", "Alfredo’s father, who asks Violetta to leave his son."],
+      ["Flora Bervoix", "Mezzo-soprano", "Violetta’s friend and hostess."],
+      ["Annina", "Soprano", "Violetta’s loyal maid."],
+      ["Gastone", "Tenor", "A friend who introduces Alfredo to Violetta."]
+    ],
+    sources: ["https://www.metopera.org/discover/synopses/la-traviata/"]
+  },
+  "the-magic-flute": {
+    synopsis: [
+      "Prince Tamino is sent by the Queen of the Night to rescue her daughter Pamina from Sarastro. With the bird-catcher Papageno, he receives a magic flute and silver bells to protect them. Tamino learns that Sarastro is guarding Pamina from her mother’s influence, and the two men must prove themselves through trials.",
+      "Guided by three spirits, Tamino and Papageno face tests of silence and resolve. Tamino and Pamina pass through trials of fire and water together, while Papageno finds his partner Papagena. The Queen’s attempt to overthrow Sarastro fails, and the community celebrates the triumph of wisdom and light."
+    ],
+    characters: [
+      ["Tamino", "Tenor", "A prince who undertakes trials to be with Pamina."],
+      ["Pamina", "Soprano", "The Queen of the Night’s daughter and Sarastro’s prisoner."],
+      ["Papageno", "Baritone", "A bird-catcher who joins Tamino on the quest."],
+      ["Queen of the Night", "Soprano", "Pamina’s mother, who seeks Sarastro’s defeat."],
+      ["Sarastro", "Bass", "The high priest who leads the temple community."],
+      ["Papagena", "Soprano", "Papageno’s beloved companion."]
+    ],
+    sources: ["https://www.metopera.org/discover/synopses/the-magic-flute/"]
+  },
+  "aida": {
+    synopsis: [
+      "Aida, an enslaved Ethiopian princess in Egypt, loves the Egyptian commander Radamès. He returns her love, while Princess Amneris also loves him and suspects the bond between them. When Radamès is chosen to lead the army against Ethiopia, Aida is torn between her love for him and loyalty to her homeland.",
+      "After the Egyptian victory, Radamès is promised to Amneris. Aida’s father, the Ethiopian king Amonasro, pressures her to learn the army’s route, and Radamès unwittingly reveals it. Tried for treason, he is condemned to be buried alive. Aida joins him in the tomb, choosing to die with the man she loves."
+    ],
+    characters: [
+      ["Aida", "Soprano", "An Ethiopian princess held captive in Egypt."],
+      ["Radamès", "Tenor", "An Egyptian commander who loves Aida."],
+      ["Amneris", "Mezzo-soprano", "The Egyptian princess who competes with Aida for Radamès."],
+      ["Amonasro", "Baritone", "Aida’s father and the king of Ethiopia."],
+      ["Ramfis", "Bass", "The high priest of Egypt."],
+      ["The King of Egypt", "Bass", "Amneris’s father and ruler of Egypt."]
+    ],
+    sources: ["https://www.metopera.org/discover/synopses/aida/"]
+  },
+  "tosca": {
+    synopsis: [
+      "In Rome, painter Mario Cavaradossi helps the escaped political prisoner Angelotti hide. His lover, singer Floria Tosca, becomes suspicious when she finds him with a portrait model. Police chief Scarpia exploits her jealousy to locate Angelotti, then arrests Cavaradossi and threatens to torture him unless Tosca reveals the fugitive’s hiding place.",
+      "Scarpia offers to spare Cavaradossi in exchange for Tosca, and she appears to accept while secretly arranging a false execution. She stabs Scarpia after he signs the safe-conduct. At dawn, Cavaradossi is executed for real; when Tosca discovers the deception, she leaps from the prison walls to escape Scarpia’s guards."
+    ],
+    characters: [
+      ["Floria Tosca", "Soprano", "A celebrated singer who loves Cavaradossi."],
+      ["Mario Cavaradossi", "Tenor", "A painter and political sympathizer."],
+      ["Baron Scarpia", "Baritone", "Rome’s ruthless chief of police."],
+      ["Cesare Angelotti", "Bass", "An escaped political prisoner helped by Cavaradossi."],
+      ["Spoletta", "Tenor", "A police agent working for Scarpia."],
+      ["The Sacristan", "Bass", "A church attendant at Sant’Andrea della Valle."]
+    ],
+    sources: ["https://www.metopera.org/discover/synopses/tosca/"]
+  },
+  "madama-butterfly": {
+    synopsis: [
+      "In Nagasaki, American naval officer Pinkerton marries Cio-Cio-San, known as Butterfly, though he treats the arrangement lightly. Butterfly embraces the marriage and leaves her family’s religion for him. After Pinkerton sails away, she waits faithfully with their young son, refusing to believe he will not return.",
+      "Three years later, Pinkerton comes back with his American wife, Kate, intending to take the child to America. Butterfly agrees to give him up and prepares to die. When Pinkerton arrives too late to stop her, Butterfly takes her own life."
+    ],
+    characters: [
+      ["Cio-Cio-San (Butterfly)", "Soprano", "A young Japanese woman who devotes herself to Pinkerton."],
+      ["B. F. Pinkerton", "Tenor", "An American naval officer who marries Butterfly."],
+      ["Suzuki", "Mezzo-soprano", "Butterfly’s faithful maid."],
+      ["Sharpless", "Baritone", "The American consul who warns Pinkerton."],
+      ["Goro", "Tenor", "The marriage broker who arranges the match."],
+      ["Kate Pinkerton", "Mezzo-soprano", "Pinkerton’s American wife."]
+    ],
+    sources: ["https://www.metopera.org/discover/synopses/madama-butterfly/", "https://www.metopera.org/discover/education/access-opera/curricular-resources/madama-butterfly/"]
+  },
+  "rigoletto": {
+    synopsis: [
+      "At the Duke of Mantua’s court, the jester Rigoletto mocks those the Duke has wronged. Count Monterone curses him after the Duke seduces his daughter. Rigoletto secretly protects his own daughter, Gilda, but the Duke discovers her and seduces her. The courtiers abduct Gilda, thinking she is Rigoletto’s mistress, and deliver her to the Duke.",
+      "Gilda tells her father what happened, yet still loves the Duke. Rigoletto hires the assassin Sparafucile to kill him. When Sparafucile’s sister Maddalena pleads for the Duke’s life, Gilda sacrifices herself in his place. Rigoletto finds his daughter dying in the sack meant to hold the Duke’s body and recognizes Monterone’s curse has come true."
+    ],
+    characters: [
+      ["Rigoletto", "Baritone", "The Duke’s jester and Gilda’s protective father."],
+      ["Gilda", "Soprano", "Rigoletto’s daughter, who falls in love with the Duke."],
+      ["The Duke of Mantua", "Tenor", "A ruler who seduces Gilda and pursues other women."],
+      ["Sparafucile", "Bass", "An assassin hired by Rigoletto."],
+      ["Maddalena", "Mezzo-soprano", "Sparafucile’s sister, who pleads for the Duke."],
+      ["Count Monterone", "Baritone", "A nobleman whose curse haunts Rigoletto."]
+    ],
+    sources: ["https://www.metopera.org/discover/synopses/rigoletto/"]
+  },
+  "don-giovanni": {
+    synopsis: [
+      "Don Giovanni kills the Commendatore while escaping Donna Anna’s home, then continues his pursuit of women. His servant Leporello exposes his many conquests to Donna Elvira, whom Giovanni has abandoned. Giovanni attempts to seduce the bride Zerlina, while Anna, her fiancé Don Ottavio and Zerlina’s fiancé Masetto seek justice for his crimes.",
+      "Giovanni refuses to repent and mocks the statue of the Commendatore, whom he has invited to dinner. The statue arrives and demands that he change his ways. Giovanni refuses, and the supernatural guest drags him down to damnation as the other characters arrive and resolve to begin new lives."
+    ],
+    characters: [
+      ["Don Giovanni", "Baritone", "A nobleman who pursues women and rejects all restraint."],
+      ["Leporello", "Bass-baritone", "Giovanni’s servant, who keeps a record of his conquests."],
+      ["Donna Anna", "Soprano", "The Commendatore’s daughter, who seeks justice."],
+      ["Don Ottavio", "Tenor", "Anna’s fiancé."],
+      ["Donna Elvira", "Soprano", "A woman Giovanni has seduced and abandoned."],
+      ["Zerlina", "Soprano", "A young bride whom Giovanni tries to seduce."],
+      ["Masetto", "Bass", "Zerlina’s fiancé."]
+    ],
+    sources: ["https://www.metopera.org/discover/synopses/don-giovanni/"]
+  },
   "carmen": {
   "synopsis": [
     "In Seville, Carmen meets the soldier Don José outside the cigarette factory where she works. After a fight, he is ordered to escort her to prison, but she persuades him to let her escape. Later, he abandons his military life and joins Carmen and her companions among the smugglers.",
