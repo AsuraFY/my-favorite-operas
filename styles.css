@@ -1881,6 +1881,21 @@ button { font: inherit; }
 }
 
 /* Separate successive scenes when an act is read continuously. */
+.libretto-track-heading {
+  margin: 24px 0 14px;
+  color: #505153;
+  font: 600 1.05rem/1.4 var(--serif);
+}
+.libretto-track-heading__performers {
+  display: block;
+  margin-top: 4px;
+  color: #516679;
+  font: italic 0.875rem/1.32 var(--serif);
+}
+@media (max-width: 700px) {
+  .libretto-track-heading { margin: 20px 0 12px; font-size: 0.98rem; }
+  .libretto-track-heading__performers { font-size: 0.8125rem; }
+}
 .libretto-source-division {
   margin: 24px 0 16px;
   color: #505153;
