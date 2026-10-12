@@ -1,5 +1,5 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-art-12";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-19";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-20";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-42";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
@@ -526,6 +526,11 @@ function highlightReaderSection(index, syncUrl = false) {
   const activeSection = items[current];
   const scene = Number(activeSection.dataset.sourceScene || root.dataset.scene);
   const sectionItem = Number(activeSection.dataset.librettoItem);
+  const turnAnchors = [...root.querySelectorAll("[data-libretto-turn]")];
+  const activeTurn = turnAnchors.filter(anchor => typeof anchor.getBoundingClientRect === "function" &&
+    anchor.getBoundingClientRect().top <= 180).at(-1) ||
+    turnAnchors.find(anchor => typeof anchor.getBoundingClientRect === "function");
+  const activeTurnIndex = activeTurn ? Number(activeTurn.dataset.librettoTurn) : null;
   root.dataset.scene = String(scene);
   if (root.dataset.continuousAct === "true") {
     const sceneNumbers = [...new Set(items.map(el => Number(el.dataset.sourceScene)))];
@@ -543,7 +548,8 @@ function highlightReaderSection(index, syncUrl = false) {
     const params = new URLSearchParams(url.split("?")[1] || "");
     const selected = Number(params.get("act")) === act &&
       Number(params.get("scene")) === scene &&
-      (link.classList.contains("is-song") || Number(params.get("item")) === sectionItem);
+      (params.has("turn") ? Number(params.get("turn")) === activeTurnIndex :
+        (link.classList.contains("is-song") || Number(params.get("item")) === sectionItem));
     link.classList.toggle("is-current", selected);
     if (selected) link.setAttribute("aria-current", "page");
     else link.removeAttribute("aria-current");
@@ -554,10 +560,12 @@ function highlightReaderSection(index, syncUrl = false) {
     const [path, query = ""] = hash.split("?");
     if (path !== "#/operas/" + root.dataset.librettoSlug) return;
     const params = new URLSearchParams(query);
-    if (params.get("item") !== String(sectionItem) || params.get("scene") !== String(scene)) {
+    if (params.get("item") !== String(sectionItem) || params.get("scene") !== String(scene) ||
+        (activeTurnIndex != null && params.has("turn") && params.get("turn") !== String(activeTurnIndex))) {
       params.set("act", String(act));
       params.set("scene", String(scene));
       params.set("item", String(sectionItem));
+      if (activeTurnIndex != null && params.has("turn")) params.set("turn", String(activeTurnIndex));
       window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search + path + "?" + params.toString());
     }
   }
@@ -629,6 +637,7 @@ function handleSceneSectionLink(event) {
   const href = link.getAttribute("href") || "";
   if (!href.startsWith("#/operas/" + root.dataset.librettoSlug + "?")) return;
   const params = new URLSearchParams(href.split("?")[1] || "");
+  if (params.has("turn")) return;
   if (Number(params.get("act")) !== Number(root.dataset.act) ||
       (root.dataset.continuousAct !== "true" && Number(params.get("scene")) !== Number(root.dataset.scene))) return;
   event.preventDefault();
@@ -700,11 +709,18 @@ function render() {
     return;
   }
   const reader = currentSceneReader();
-  const hasSectionDestination = Boolean(reader && (routeParams.has("item") || query || (reader.dataset.continuousAct === "true" && routeParams.has("scene"))));
+  const hasSectionDestination = Boolean(reader && (routeParams.has("item") || routeParams.has("turn") || query || (reader.dataset.continuousAct === "true" && routeParams.has("scene"))));
   readerJumping = hasSectionDestination;
   window.scrollTo(0, 0);
   if (hasSectionDestination) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);
   else if (reader) highlightReaderSection(0, false);
+  if (reader && routeParams.has("turn")) {
+    const target = reader.querySelector('[data-libretto-turn="' + Number(routeParams.get("turn")) + '"]');
+    window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+      if (!target) return;
+      window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - 120, behavior: "auto" });
+    }));
+  }
   updateReaderTopButton();
 }
 
