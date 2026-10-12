@@ -240,6 +240,7 @@ export const operas = [
   },
   {
     slug: "la-traviata",
+    image: "./public/images/la-traviata-art.webp",
     title: "La traviata",
     displayTitle: "La traviata",
     aliases: ["La Traviata", "The Fallen Woman"],
@@ -259,6 +260,7 @@ export const operas = [
   },
   {
     slug: "the-magic-flute",
+    image: "./public/images/the-magic-flute-art.webp",
     title: "Die Zauberflöte",
     displayTitle: "The Magic Flute",
     aliases: ["The Magic Flute", "Die Zauberflote"],
@@ -278,6 +280,7 @@ export const operas = [
   },
   {
     slug: "aida",
+    image: "./public/images/aida-art.webp",
     title: "Aida",
     displayTitle: "Aida",
     aliases: [],
@@ -297,6 +300,7 @@ export const operas = [
   },
   {
     slug: "tosca",
+    image: "./public/images/tosca-art.webp",
     title: "Tosca",
     displayTitle: "Tosca",
     aliases: [],
@@ -316,6 +320,7 @@ export const operas = [
   },
   {
     slug: "madama-butterfly",
+    image: "./public/images/madama-butterfly-art.webp",
     title: "Madama Butterfly",
     displayTitle: "Madama Butterfly",
     aliases: ["Madame Butterfly"],
@@ -335,6 +340,7 @@ export const operas = [
   },
   {
     slug: "rigoletto",
+    image: "./public/images/rigoletto-art.webp",
     title: "Rigoletto",
     displayTitle: "Rigoletto",
     aliases: [],
@@ -354,6 +360,7 @@ export const operas = [
   },
   {
     slug: "don-giovanni",
+    image: "./public/images/don-giovanni-art.webp",
     title: "Don Giovanni",
     displayTitle: "Don Giovanni",
     aliases: ["Il dissoluto punito, ossia il Don Giovanni"],
