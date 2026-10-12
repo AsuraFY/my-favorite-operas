@@ -2514,3 +2514,50 @@ html[data-theme="night"] .musicals-page__notes h2 { color: var(--ink); }
   .musical-about__hero img { margin-bottom: 22px; }
   .musical-facts { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
+
+
+/* Musicals directory: Opera-style scenic header with text-only clickable rows. */
+.musicals-directory-intro .directory-intro__panel { width: min(760px, 82%); }
+.musicals-directory-intro .directory-intro__panel h1 { color: var(--ink); }
+.musicals-directory-intro .directory-intro__panel p { color: var(--muted); }
+.musical-list { padding: 0 0 72px; }
+.musical-row {
+  display: block;
+  padding: 18px 20px 19px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color .18s ease, padding-left .18s ease;
+  animation: rise .4s both;
+  animation-delay: calc(var(--card-index, 0) * 45ms);
+}
+.musical-row:last-child { border-bottom: 1px solid var(--line); }
+.musical-row:hover, .musical-row:focus-visible {
+  padding-left: 26px;
+  background: color-mix(in srgb, var(--wine) 11%, transparent);
+}
+.musical-row:focus-visible { outline: 2px solid var(--wine); outline-offset: -2px; }
+.musical-row h2 { margin: 0 0 4px; color: var(--ink); font: 500 1.3rem/1.3 var(--serif); }
+.musical-row__byline { display: flex; align-items: center; gap: 9px; margin: 0 0 7px; color: var(--muted); font: .9rem/1.4 var(--serif); }
+.musical-row__byline span[aria-hidden] { color: var(--wine); }
+.musical-row__summary {
+  display: -webkit-box;
+  max-width: 82ch;
+  overflow: hidden;
+  margin: 0;
+  color: var(--muted);
+  font: .9rem/1.5 var(--serif);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+html[data-theme="night"] .musical-row { color: var(--night-text); border-color: var(--night-border); }
+html[data-theme="night"] .musical-row h2 { color: var(--night-text); }
+html[data-theme="night"] .musical-row__byline,
+html[data-theme="night"] .musical-row__summary { color: var(--night-muted); }
+@media (max-width: 580px) {
+  .musicals-directory-intro .directory-intro__panel { width: 100%; }
+  .musical-list { width: calc(100% - 34px); padding-bottom: 40px; }
+  .musical-row { padding: 16px 12px 17px; }
+  .musical-row:hover, .musical-row:focus-visible { padding-left: 17px; }
+  .musical-row h2 { font-size: 1.2rem; }
+}

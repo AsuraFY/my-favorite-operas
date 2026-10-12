@@ -417,7 +417,8 @@ function shell(content, active) {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const query = form.querySelector("input")?.value.trim() || "";
-      window.location.hash = query ? `#/operas?q=${encodeURIComponent(query)}` : "#/operas";
+      const target = form.dataset.searchRoute || "/operas";
+      window.location.hash = query ? `#${target}?q=${encodeURIComponent(query)}` : `#${target}`;
     });
   });
 }
@@ -487,8 +488,8 @@ function aboutPage() {
   return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> About</p><h1>A personal collection<br /><em>of opera.</em></h1><p>This is a place for the operas I love: their libretti, translations, characters, and the details that make each one worth returning to.</p><a class="text-link" href="#/operas">Explore the collection ${arrow}</a></section>`;
 }
 
-function musicalsPage() {
-  return renderMusicalsPage();
+function musicalsPage(query = "", sort = "title") {
+  return renderMusicalsPage(query, sort);
 }
 
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
@@ -684,7 +685,13 @@ function render() {
     shell(aboutPage(), "about");
     document.title = "About — My favorite Operas";
   } else if (path === "/musicals") {
-    shell(musicalsPage(), "musicals");
+    shell(musicalsPage(query, sort), "musicals");
+    app.querySelector("#musicals-directory-sort")?.addEventListener("change", (event) => {
+      const params = new URLSearchParams();
+      if (query) params.set("q", query);
+      params.set("sort", event.currentTarget.value);
+      window.location.hash = `#/musicals?${params.toString()}`;
+    });
     document.title = "Musicals — My favorite Operas";
   } else if (path.startsWith("/musicals/")) {
     const slug = path.split("/")[2];

@@ -50,26 +50,58 @@ const sections = [
 ]]
 ];
 
-export function renderMusicalsPage() {
-  return `
-<section class="musicals-directory section-wrap">
-  <header class="musicals-directory__intro">
-    <p class="eyebrow"><span class="eyebrow-rule"></span> A growing collection</p>
-    <h1>Musicals</h1>
-    <p>Explore musical works through their stories, background, and lyrics with translation.</p>
-  </header>
-  <div class="musicals-directory__grid" aria-label="Musical works">
-    <a class="directory-card musical-card" href="#/musicals/mahler-symphony-2-resurrection">
-      <div class="directory-card__image directory-card__image--standalone"><img src="./public/images/opera-house-hero.webp" alt="" loading="lazy" /></div>
-      <div class="directory-card__body">
-        <h2>Symphony No. 2: “Resurrection”</h2>
-        <p class="directory-card__byline">Gustav Mahler<span aria-hidden="true">·</span>Choral symphony</p>
-        <p class="directory-card__summary">A vast finale moves from grief and uncertainty toward renewal, carried by orchestra, soloists and chorus.</p>
-        <span class="directory-card__button">Explore musical <span aria-hidden="true">→</span></span>
-      </div>
-    </a>
+const musicalWorks = [
+  {
+    title: 'Symphony No. 2: “Resurrection”',
+    composer: 'Gustav Mahler',
+    year: 1895,
+    summary: 'A vast finale moves from grief and uncertainty toward renewal, carried by orchestra, soloists, and chorus.',
+    slug: 'mahler-symphony-2-resurrection'
+  }
+];
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, character => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[character]);
+}
+
+export function renderMusicalsPage(query = '', sort = 'title') {
+  const normalizedQuery = query.trim().toLocaleLowerCase();
+  const matches = musicalWorks.filter(work =>
+    [work.title, work.composer, work.year, work.summary]
+      .some(value => String(value).toLocaleLowerCase().includes(normalizedQuery))
+  );
+  matches.sort((a, b) => {
+    if (sort === 'composer') return a.composer.localeCompare(b.composer);
+    if (sort === 'year') return b.year - a.year;
+    return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
+  });
+  const safeQuery = escapeHtml(query);
+  const rows = matches.map((work, index) => `
+    <a class="musical-row" href="#/musicals/${work.slug}" style="--card-index:${index}">
+      <h2>${escapeHtml(work.title)}</h2>
+      <p class="musical-row__byline"><span>${escapeHtml(work.composer)}</span><span aria-hidden="true">·</span><span>${work.year}</span></p>
+      <p class="musical-row__summary">${escapeHtml(work.summary)}</p>
+    </a>`).join('');
+
+  return `<section class="directory-scenic" aria-hidden="true"></section>
+<section class="directory-intro section-wrap musicals-directory-intro">
+  <div class="directory-intro__panel"><h1>Musicals</h1><p>Explore musical works through their stories, background, and lyrics with translation.</p></div>
+  <div class="directory-tools">
+    <form class="opera-search opera-search--directory" data-search-form data-search-route="/musicals" role="search">
+      <label class="sr-only" for="musicals-directory-search">Search musical title or composer</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg>
+      <input id="musicals-directory-search" name="q" type="search" placeholder="Search title or composer..." value="${safeQuery}" autocomplete="off" />
+    </form>
+    <label class="directory-sort"><span>Sort by</span><select id="musicals-directory-sort" aria-label="Sort musicals">
+      <option value="title" ${sort === 'title' ? 'selected' : ''}>Title (A–Z)</option>
+      <option value="composer" ${sort === 'composer' ? 'selected' : ''}>Composer</option>
+      <option value="year" ${sort === 'year' ? 'selected' : ''}>Year (newest)</option>
+    </select></label>
   </div>
-</section>`;
+</section>
+<section class="musical-list section-wrap" aria-label="Musical works">${rows || `<p class="empty-results">No musicals match “${safeQuery}”. Try another title or composer.</p>`}</section>`;
 }
 
 function renderMusicalTabs(view) {

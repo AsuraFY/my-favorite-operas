@@ -3,11 +3,26 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { renderMusicalPage, renderMusicalsPage } from "../src/musicals-page.js";
 
-test("the musicals directory card opens the Mahler detail page", () => {
+test("the musicals directory uses the Opera banner and clickable text-only rows", () => {
   const page = renderMusicalsPage();
+  assert.ok(page.includes('class="directory-scenic"'));
+  assert.ok(page.includes("<h1>Musicals</h1>"));
   assert.ok(page.includes('href="#/musicals/mahler-symphony-2-resurrection"'));
   assert.ok(page.includes("Gustav Mahler"));
-  assert.ok(page.includes("Choral symphony"));
+  assert.ok(page.includes("1895"));
+  assert.ok(page.includes("A vast finale moves from grief and uncertainty toward renewal"));
+  assert.ok(page.includes('data-search-route="/musicals"'));
+  assert.ok(page.includes('id="musicals-directory-sort"'));
+  assert.ok(!page.includes("directory-card__image"));
+  assert.ok(!page.includes("→"));
+  const styles = readFileSync("styles.css", "utf8");
+  assert.ok(styles.includes(".musical-row:hover"));
+  assert.ok(styles.includes(".musical-row:focus-visible"));
+});
+
+test("the musicals directory searches its details and reports no matches", () => {
+  assert.ok(renderMusicalsPage("mahler").includes('href="#/musicals/mahler-symphony-2-resurrection"'));
+  assert.ok(renderMusicalsPage("no matching work").includes("No musicals match"));
 });
 
 test("the musical detail page has About and Lyrics tabs and factual work details", () => {
