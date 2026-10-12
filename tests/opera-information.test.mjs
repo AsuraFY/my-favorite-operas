@@ -3,13 +3,13 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { operas } from "../src/data/operas.js";
 import { operaInformation } from "../src/data/opera-information.js";
-import { renderOperaInformationPage } from "../src/opera-info-page.js";
+import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/opera-info-page.js";
 import { getLibretto } from "../src/data/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 
-test("all six opera information pages contain verified metadata and full introductory sections", () => {
-  assert.equal(operas.length, 6);
-  assert.equal(new Set(operas.map(opera => opera.slug)).size, 6);
+test("all thirty-one opera information pages contain verified metadata and full introductory sections", () => {
+  assert.equal(operas.length, 31);
+  assert.equal(new Set(operas.map(opera => opera.slug)).size, 31);
   for (const opera of operas) {
     const information = operaInformation[opera.slug];
     assert.ok(information, "missing details for " + opera.slug);
@@ -29,10 +29,10 @@ test("all six opera information pages contain verified metadata and full introdu
   }
 });
 
-test("Turandot and Figaro use optimized WebP artwork files", () => {
-  for (const slug of ["turandot", "le-nozze-di-figaro"]) {
-    const opera = operas.find(item => item.slug === slug);
-    assert.ok(opera?.image);
+test("Every catalog image path points to an optimized WebP asset", () => {
+  const illustratedOperas = operas.filter(opera => opera.image);
+  assert.ok(illustratedOperas.length > 0);
+  for (const opera of illustratedOperas) {
     assert.match(opera.image, /-art\.webp$/);
     const raw = readFileSync(opera.image.replace(/^\.\//, ""));
     assert.equal(raw.toString("ascii", 0, 4), "RIFF");
@@ -40,14 +40,51 @@ test("Turandot and Figaro use optimized WebP artwork files", () => {
   }
 });
 
-test("search-friendly aliases, six routes and act counts remain intact", () => {
+for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "tosca", "madama-butterfly", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+  const opera = operas.find(item => item.slug === slug);
+  const details = operaInformation[opera.slug];
+  assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
+  const synopsis = renderPlannedLibrettoPage(opera, details);
+  assert.ok(synopsis.includes(`href="#/operas/${slug}?act=1">Read the libretto`));
+  assert.ok(synopsis.includes(opera.displayTitle));
+  for (const view of ["synopsis", "outline", "libretto"]) {
+    for (const act of Array.from({ length: opera.acts }, (_, i) => i + 1)) {
+      const page = renderPlannedLibrettoPage(opera, details, view, act);
+      for (const suffix of ["view=synopsis", "view=outline", ...Array.from({ length: opera.acts }, (_, i) => `act=${i + 1}`)]) {
+        assert.ok(page.includes(`href="#/operas/${slug}?${suffix}"`));
+      }
+      assert.equal((page.match(/aria-current="page"/g) || []).length, view === "synopsis" ? 2 : 1);
+      if (view !== "synopsis") {
+        assert.ok(page.includes("will be added later"));
+        assert.ok(!page.includes("libretto-row"));
+        assert.ok(!page.includes("opera-outline__section-title"));
+      }
+    }
+  }
+});
+
+test("La Bohème Act I is available from its opera information page", () => {
+  const opera = operas.find(item => item.slug === "la-boheme");
+  const libretto = getLibretto("la-boheme");
+  assert.ok(libretto);
+  const navigation = createLibrettoRenderer(libretto).navigation();
+  const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
+  assert.ok(html.includes('href="#/operas/la-boheme?act=1">Read the libretto'));
+  assert.ok(html.includes("Libretto Outline"));
+});
+
+test("search-friendly aliases, thirty-one routes and act counts remain intact", () => {
   const acts = Object.fromEntries(operas.map(opera => [opera.slug, opera.acts]));
   assert.deepEqual(acts, {
     "il-barbiere-di-siviglia": 2, "tristan-und-isolde": 3,
-    "cosi-fan-tutte": 2, macbeth: 4, turandot: 3, "le-nozze-di-figaro": 4
+    "cosi-fan-tutte": 2, macbeth: 4, turandot: 3, "le-nozze-di-figaro": 4, "samson-et-dalila": 3, "la-fanciulla-del-west": 3, manon: 5, otello: 4, parsifal: 3, carmen: 4,
+    "la-traviata": 3, "the-magic-flute": 2, aida: 4, tosca: 3, "madama-butterfly": 3, rigoletto: 3, "don-giovanni": 2,
+    "la-boheme": 4, "lucia-di-lammermoor": 3, "eugene-onegin": 3, "les-contes-dhoffmann": 4, norma: 2,
+    "il-trovatore": 4, "das-rheingold": 1, "die-walkure": 3, siegfried: 3, gotterdammerung: 3,
+    "lelisir-damore": 2, "die-fledermaus": 3
   });
   assert.ok(operas.find(item => item.slug === "le-nozze-di-figaro").aliases.includes("Marriage of Figaro"));
-  assert.equal(getLibretto("turandot"), null);
-  assert.equal(getLibretto("le-nozze-di-figaro"), null);
+  assert.deepEqual(getLibretto("turandot").acts.map(act => act.number), [1, 2, 3]);
+  assert.deepEqual(getLibretto("le-nozze-di-figaro").acts.map(act => act.number), [1, 2, 3, 4]);
   assert.ok(getLibretto("cosi-fan-tutte"));
 });

@@ -11,7 +11,7 @@ function speakerClass(speaker) {
 }
 
 function romanNumeral(value) {
-  const numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII"];
+  const numerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX"];
   return numerals[value] || String(value);
 }
 
@@ -30,18 +30,25 @@ function sectionTitles(scene, section, sectionIndex) {
     .find(line => line && !/^\([^)]*\)$/.test(line)) || "";
   return { original: firstLine.replace(/[.,;:!?…]+$/, ""), translation: "" };
 }
-function sectionNavigationLabel(section, scene, sectionIndex) {
+function numberedSection(section) {
   const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  const no = section.number ?? (match ? Number(match[1]) : null);
+  return { match, number: section.number ?? (match ? Number(match[1]) : null) };
+}
+function sectionNavigationLabel(section, scene, sectionIndex) {
+  const { match, number: no } = numberedSection(section);
   const form = section.type || (match ? match[2] :
     ((section.label || "").toLocaleLowerCase() === "recitative" ? (libretto.recitativeLabel || "Recitative") : section.label));
   const title = scene ? sectionTitles(scene, section, sectionIndex).original : "";
   if (no == null) return form + (title ? " · " + title : "");
   return (libretto.numberLabel || "N.") + " " + no + " · " + form + (title ? " · " + title : "");
 }
+function sourceDivisionHeading(section, tag = "h3") {
+  const division = section.sourceDivision;
+  return division ? '<' + tag + ' class="libretto-source-division">' + escapeHtml(division.original) +
+    ' <span>·</span> ' + escapeHtml(division.translation) + '</' + tag + '>' : '';
+}
 function sectionPresentation(scene, section, sectionIndex) {
-  const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  const no = section.number ?? (match ? Number(match[1]) : null);
+  const { match, number: no } = numberedSection(section);
   const form = section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
   const titles = sectionTitles(scene, section, sectionIndex);
   const number = no == null ? "" : (libretto.numberLabel || "N.") + " " + no + " · ";
@@ -92,11 +99,13 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
         '<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(track.translation)+'</span></span></a>';
     }).join("");
     const selected=outlineScene.tracks.some(track=>(track.sourceScene||outlineScene.number)===selectedScene);
+    if (libretto.sceneDivisions === false) return '<div class="section-nav">' + links + '</div>';
     return '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
       '><summary class="scene-group__summary"><span>Scene '+romanNumeral(outlineScene.number)+'</span>'+
       '<span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
   return scenes.map(item=>{
+    if (item.outline?.length) return '<div class="section-nav">' + renderSceneOutlineLinks(item, act) + '</div>';
     const links=item.sections.map((section,index)=>{
       const active=item.number===selectedScene&&index===selectedItem;
       const label=sectionNavigationLabel(section,item,index);
@@ -106,18 +115,35 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       const title=titles.original;
       const form=title?(isNamedPassage?"Passage":label.slice(0,-(" · "+title).length)):label;
       const href="#/operas/"+libretto.slug+"?act="+act+"&scene="+item.number+"&item="+index;
-      return '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
+      return sourceDivisionHeading(section, "p") + '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
         '><span class="section-nav-link__icon section-nav-link__icon--'+(isSong?'song':'recitative')+'" aria-hidden="true">'+(isSong?'♫':'▤')+
         '</span><span class="section-nav-link__label"><span class="section-nav-link__form">'+escapeHtml(form)+'</span>'+
         (title?'<span class="section-nav-link__title">'+escapeHtml(title)+'</span>':'')+
         (isNamedPassage&&titles.translation?'<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(titles.translation)+'</span>':'')+'</span></a>';
     }).join("");
     const selected=item.number===selectedScene;
+    if (libretto.sceneDivisions === false) return '<div class="section-nav">' + links + '</div>';
     return '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
       '><summary class="scene-group__summary"><span>Scene '+romanNumeral(item.number)+
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
-}function renderCompleteOutlineAct(act) {
+}
+function renderSceneOutlineLinks(scene, act) {
+  return (scene.outline || []).map(entry => {
+    let targetSection = 0, targetTurn = -1;
+    for (const [sectionIndex, section] of scene.sections.entries()) {
+      const turnIndex = section.turns.findIndex(turn => String(turn.original ?? turn.it ?? "").includes(entry.match));
+      if (turnIndex >= 0) { targetSection = sectionIndex; targetTurn = turnIndex; break; }
+    }
+    const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number +
+      '&item=' + targetSection + (targetTurn >= 0 ? '&turn=' + targetTurn : '');
+    return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
+      '<span class="opera-outline__section-title">' + escapeHtml(entry.title) + '</span>' +
+      (entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : '') +
+      '</a>';
+  }).join('');
+}
+function renderCompleteOutlineAct(act) {
   const group = actCatalog().find(entry => entry.number === act);
   if (!group) return "";
   const spotifyAct = libretto.spotifyOutline?.find(entry => entry.act === act);
@@ -146,16 +172,27 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
     return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
       header + '<div class="opera-outline__sections opera-outline__sections--prelude">' + prelude + '</div>' + scenes + '</details>';
   }
+  const prelude = group.prelude
+    ? '<div class="opera-outline__sections opera-outline__sections--prelude"><div class="opera-outline__section opera-outline__prelude"><span class="opera-outline__section-title">' +
+      escapeHtml(group.prelude.title) + '</span><span class="opera-outline__section-translation">' +
+      escapeHtml(group.prelude.translation || '') + '</span></div></div>'
+    : '';
   return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
-    header + group.scenes.map(scene => {
+    header + prelude + group.scenes.map(scene => {
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
-      return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
-        '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
-        ' <span>·</span> Scene ' + scene.number + '</h3><div class="opera-outline__sections">' +
+      if (scene.outline?.length) return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
+        '<h3 id="' + sceneId + '">' + escapeHtml(scene.title || actName) +
+        (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') +
+        '</h3><div class="opera-outline__sections">' + renderSceneOutlineLinks(scene, act) + '</div></section>';
+      return '<section class="opera-outline__scene" aria-labelledby="' + (libretto.sceneDivisions === false ? 'outline-act-' + act : sceneId) + '">' +
+        (libretto.sceneDivisions === false ? '' : '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
+        ' <span>·</span> Scene ' + scene.number +
+        (scene.title ? ' <span>·</span> ' + escapeHtml(scene.title) + (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') : '') +
+        '</h3>') + '<div class="opera-outline__sections">' +
         scene.sections.map((section, index) => {
           const presentation = sectionPresentation(scene, section, index);
           const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number + '&item=' + index;
-          return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
+          return sourceDivisionHeading(section) + '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
             '<span class="opera-outline__section-title">' + escapeHtml(presentation.heading) + '</span>' +
             (section.type === "Passage" && presentation.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' : "") +
             sectionParticipantCredits(section, act, scene.number) + '</a>';
@@ -181,7 +218,7 @@ function renderSynopsisPage() {
     synopsis.paragraphs.map(paragraph => '<p>' + escapeHtml(paragraph) + '</p>').join("") +
     '<h2>Principal characters</h2><div class="opera-synopsis__characters">' +
     characters.map(([name, role, description]) => '<div class="opera-synopsis__character"><h3>' + escapeHtml(name) +
-      '</h3><span>' + role + '</span><p>' + escapeHtml(description) + '</p></div>').join('') +
+      '</h3><span>' + escapeHtml(role) + '</span><p>' + escapeHtml(description) + '</p></div>').join('') +
     '</div></article></div>';
 }
 
@@ -214,7 +251,8 @@ function formatLibrettoText(value, breakVerseLines=true) {
   }
   return text.split(/\n+/).map(line => escapeHtml(line.trim())).filter(Boolean).join("<br>");
 }
-function splitInlineDirections(value) {
+function splitInlineDirections(value, literalText = false) {
+  if (literalText) return [{ type: "text", value: String(value || "") }];
   const text = String(value || "");
   const parts = [];
   const pattern = /\(([^()]*)\)/g;
@@ -230,22 +268,32 @@ function splitInlineDirections(value) {
 function renderSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
   const directionSpeaker = libretto.stageDirectionSpeaker || "Stage direction";
-  const rows = section.turns.flatMap(turn => {
+  const turns = libretto.alignVerseLines ? section.turns.flatMap((turn, sourceTurnIndex) => {
+    if (turn.speaker === directionSpeaker) return [{ ...turn, sourceTurnIndex, startsSourceTurn: true }];
+    const original = (turn.original ?? turn.it ?? "").split(/\r?\n/);
+    const translation = (turn.translation ?? turn.en ?? "").split(/\r?\n/);
+    return original.map((line, index) => ({ ...turn, original: line,
+      translation: translation[index] || "", hideSpeaker: index > 0,
+      sourceTurnIndex, startsSourceTurn: index === 0 }));
+  }) : section.turns.map((turn, sourceTurnIndex) => ({ ...turn, sourceTurnIndex, startsSourceTurn: true }));
+  const rows = turns.flatMap(turn => {
     const speaker = turn.speaker;
+    const anchorFirst = output => output.map((html, index) => index === 0 && turn.startsSourceTurn ?
+      html.replace('<p>', '<span class="libretto-turn-anchor" id="libretto-turn-' + act + '-' + scene.number + '-' + turn.sourceTurnIndex + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html);
     if (speaker === directionSpeaker) {
-      const original = turn.original ?? turn.it ?? "";
-      const translation = turn.translation ?? turn.en ?? "";
-      const stageDirectionLabel = libretto.stageDirectionLabel
-        ? '<span class="libretto-speaker libretto-speaker--stage-direction">' + escapeHtml(libretto.stageDirectionLabel) + '</span>'
-        : "";
-      return ['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
+      const originalText = turn.original ?? turn.it ?? "";
+      const translatedText = turn.translation ?? turn.en ?? "";
+      const original = libretto.bracketStageDirections ? "[" + originalText + "]" : originalText;
+      const translation = libretto.bracketStageDirections ? "[" + translatedText + "]" : translatedText;
+      const stageDirectionLabel = '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
+      return anchorFirst(['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
-        stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>'];
+        stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>']);
     }
-    const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "");
-    const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "");
+    const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText);
+    const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText);
     const count = Math.max(originalParts.length, translatedParts.length);
-    const speakerTranslation = libretto.speakerTranslations?.[speaker] || speaker;
+    const speakerTranslation = turn.speakerTranslation || libretto.speakerTranslations?.[speaker] || speaker;
     const output = [];
     for (let index = 0; index < count; index++) {
       const originalPart = originalParts[index] || { type: "text", value: "" };
@@ -257,13 +305,13 @@ function renderSceneSection(scene, section, sectionIndex, act) {
           formatLibrettoText(translatedPart.value, false) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
         output.push('<div class="libretto-row"><div class="libretto-cell libretto-cell--german">' +
-          '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speaker) + '</span><p>' +
-          formatLibrettoText(originalPart.value) + '</p></div><div class="libretto-cell libretto-cell--english">' +
-          '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span><p>' +
-          formatLibrettoText(translatedPart.value) + '</p></div></div>');
+          (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speaker) + '</span>') + '<p>' +
+          formatLibrettoText(originalPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+          (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span>') + '<p>' +
+          formatLibrettoText(translatedPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div></div>');
       }
     }
-    return output;
+    return anchorFirst(output);
   }).join('');
   const isSpotifyScene = Boolean(libretto.spotifyOutline);
   const selectedHeading = isSpotifyScene ? "" :
@@ -273,7 +321,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   const sectionLabel = isSpotifyScene ? "" : '<div class="libretto-section__label">' +
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>';
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
-    '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '">' +
+    '-' + sectionIndex + '" data-libretto-item="' + sectionIndex + '" data-source-scene="' + scene.number + '">' +
+    sourceDivisionHeading(section, "h2") + (section.sourceNote ? '<p class="libretto-source-note">' + escapeHtml(section.sourceNote) + '</p>' : '') +
     selectedHeading + '<div class="libretto-columns"><div class="libretto-column-heading">' + escapeHtml(libretto.originalLanguage) + '</div>' +
     '<div class="libretto-column-heading">' + escapeHtml(libretto.translationLanguage) + '</div><div class="libretto-text">' +
     '<section class="libretto-section">' + sectionLabel + rows + '</section></div></div></section>';
@@ -302,6 +351,8 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
   }
   const scene = scenes.find((item) => item.number === (found?.scene || selectedNumber)) || scenes[0];
   const itemIndex = Math.max(0, Math.min(found?.item ?? selectedItem, scene.sections.length - 1));
+  const continuous = Boolean(libretto.continuousAct);
+  const initialIndex = continuous ? scenes.slice(0, scenes.indexOf(scene)).reduce((n, entry) => n + entry.sections.length, 0) + itemIndex : itemIndex;
   const safeQuery = escapeHtml(query);
   const sceneLabel = "Scene " + romanNumeral(scene.number);
   const actLabel = "Act " + romanNumeral(act);
@@ -316,7 +367,7 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
     '<p class="scene-bottom-nav__label">End of ' + sceneLabel + '</p>' +
     '<div class="scene-bottom-nav__controls">' + previous + bottomNext + '</div></nav>';
   const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
-  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + itemIndex + '">' +
+  return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + initialIndex + '" data-continuous-act="' + continuous + '">' +
     renderOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art"' +
       (libretto.mobileArtworkUrl ? ' style="--mobile-opera-art: url(&quot;' + escapeHtml(libretto.mobileArtworkUrl) + '&quot;)"' : '') +
@@ -330,18 +381,19 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
       '<div class="reading-main">' +
         '<div class="desktop-outline-reopen"><button type="button" data-desktop-outline-expand aria-controls="act-outline" aria-expanded="false" aria-label="Expand outline" title="Expand outline"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16m4-11 3 3-3 3"></path></svg><span>Outline</span></button></div>' +
         '<section class="scene-panel">' +
-        '<div class="mobile-reader-toolbar">' + outlineButton + '<nav aria-label="Scene navigation">' + previous + next + '</nav></div>' +
-        '<div class="scene-panel__top">' +
-          '<h1 class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
-          ' · ' + actLabel.toUpperCase() + ' <span>/</span> ' +
-          escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " +
-            (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number))).toUpperCase() +
-          ' · ' + sceneLabel.toUpperCase() + '</h1>' +
-          '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(scene)) + '</p>' +
-        '</div>' +
-        (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Showing the first passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”. Showing Scene ' + scene.number + '.') + '</p>' : '') +
-        scene.sections.map((part, index) => renderSceneSection(scene, part, index, act)).join("") +
-        bottomSceneNavigation +
+        '<div class="mobile-reader-toolbar">' + outlineButton + (libretto.sceneDivisions === false ? '' : '<nav aria-label="Scene navigation">' + previous + next + '</nav>') + '</div>' +
+        (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Found a passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”.') + '</p>' : '') +
+        (continuous ? scenes : [scene]).map(entry =>
+          '<div class="scene-panel__top" id="libretto-scene-' + act + '-' + entry.number + '">' +
+          '<h' + (continuous ? '2' : '1') + ' class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
+          ' · ' + actLabel.toUpperCase() + (libretto.sceneDivisions === false ? '' : ' <span>/</span> ' +
+          escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " + (libretto.sceneOrdinals?.[entry.number - 1] || romanNumeral(entry.number))).toUpperCase() +
+          ' · SCENE ' + romanNumeral(entry.number)) + '</h' + (continuous ? '2' : '1') + '>' +
+          '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(entry)) + '</p></div>' +
+          entry.sections.map((part, index) => renderSceneSection(entry, part, index, act)).join("")
+        ).join("") +
+        (continuous ? '<nav class="scene-bottom-nav" aria-label="End of act"><p class="scene-bottom-nav__label">End of ' + actLabel + '</p>' +
+          (followingAct ? '<a href="' + base + '?act=' + followingAct.number + '">Continue to Act ' + romanNumeral(followingAct.number) + ' →</a>' : '') + '</nav>' : bottomSceneNavigation) +
       '</section></div>' +
     '</div>' +
     '<button class="libretto-back-to-top" type="button" data-reader-top hidden aria-label="Back to scene navigation" title="Back to scene navigation"><span aria-hidden="true">↑</span><span aria-hidden="true">Top</span></button>' +

@@ -1,6 +1,6 @@
 # My Favorite Operas
 
-A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte has a completed Italian/English libretto. The complete Italian libretto and new English translation of both acts of Il barbiere di Siviglia are available in the bilingual reader; the other works have introductory pages.
+A dependency-free, responsive collection of operas with synopses, musical outlines, and side-by-side libretti. Così fan tutte, Le nozze di Figaro, Il barbiere di Siviglia and Carmen have bilingual libretti in the reader. Carmen’s four acts use a complete French source and fresh line-aligned English draft. Figaro Acts III–IV also use English drafts that still need editorial review.
 
 ## Run locally
 
@@ -22,25 +22,27 @@ The tests check Così fan tutte’s 34 scenes, 69 sections and 871 bilingual ent
 
 ## Opera collection and information pages
 
-All six catalog entries have standalone information pages with artwork, verified composer and premiere details, act counts, a short synopsis, and principal characters. The information pages are defined by `src/opera-info-page.js` and `src/data/opera-information.js`, independent of whether a libretto has been prepared.
+All 31 catalog entries have standalone information pages with artwork or an illustrated card, composer and premiere details, act counts, a short synopsis, and principal characters. The information pages are defined by `src/opera-info-page.js` and `src/data/opera-information.js`, independent of whether a libretto has been prepared.
 
 The four original directory images use separate quadrants of an existing source image, now aligned to prevent adjacent panels from appearing in a card. Turandot and Le nozze di Figaro have independent original SVG illustrations in `public/images/`.
 
-Factual editorial references include the Metropolitan Opera synopses for Turandot, Le nozze di Figaro, Macbeth, Tristan und Isolde, and Il barbiere di Siviglia; the Teatro alla Scala and Opera di Roma archives for Turandot; Madison Opera for the 1786 Figaro premiere; and the existing Così fan tutte registry.
+Factual editorial references include the Metropolitan Opera synopses for Turandot, Le nozze di Figaro, Macbeth, Tristan und Isolde, and Il barbiere di Siviglia; Opera Guide for the French Carmen libretto; the Teatro alla Scala and Opera di Roma archives for Turandot; Madison Opera for the 1786 Figaro premiere; and the existing Così fan tutte registry.
 
 ## Architecture
 
 - src/data/operas.js — directory records, titles, composers, librettists, premiere facts, art paths and search aliases.
-- src/data/opera-information.js — synopses and principal characters for all six works.
+- src/data/opera-information.js — synopses and principal characters for the full catalog.
 - src/opera-info-page.js — reusable opera information layout.
 - src/data/libretto-registry.js — complete libretti registered by opera slug, plus synopsis, character, and presentation metadata.
-- src/data/libretti.js and src/data/libretti-act2.js — the original Così act data, retained without changing translations.
-- src/data/libretti-barbiere-act1.js and src/data/libretti-barbiere-act2.js — Italian/English scenes for Acts I and II of Il barbiere di Siviglia.
+- src/data/libretto-cosi-fan-tutte-act-1.js and src/data/libretto-cosi-fan-tutte-act-2.js — the original Così act data, retained without changing translations.
+- src/data/libretto-il-barbiere-di-siviglia-act-1.js and src/data/libretto-il-barbiere-di-siviglia-act-2.js — Italian/English scenes for Acts I and II of Il barbiere di Siviglia.
+- src/data/libretto-le-nozze-di-figaro-act-1.js through src/data/libretto-le-nozze-di-figaro-act-4.js — Italian/English scenes for all four acts of Le nozze di Figaro.
+- src/data/libretto-carmen-act-1.js through src/data/libretto-carmen-act-4.js — French/English source lines for all four acts of Carmen.
 - src/libretto-reader.js — shared reader factory, synopsis, full outline, act/scene navigation, credits and bilingual rows.
 - src/main.js — hash routing, metadata search, sticky navigation, desktop collapse, mobile drawer, deep-link and scroll controllers.
 - styles.css — responsive reader appearance.
 - tests/libretto-regression.test.mjs — automated libretto data and rendering checks.
-- tests/opera-information.test.mjs — automated six-opera information and artwork checks.
+- tests/opera-information.test.mjs — automated catalog information, planned destinations, and artwork checks.
 
 ## Adding an opera with a complete libretto
 
@@ -91,6 +93,9 @@ Older Così data files still use section.label and turn.it/turn.en, which remain
 
 - #/ — Home
 - #/operas — Opera directory, including accent-insensitive search
+- #/musicals — Musical works directory
+- #/musicals/mahler-symphony-2-resurrection — About page for Mahler’s Symphony No. 2
+- #/musicals/mahler-symphony-2-resurrection?view=lyrics — Finale lyrics and English translation
 - #/about — About
 - #/operas/SLUG — Synopsis for a registered libretto, otherwise the introduction page
 - #/operas/SLUG?view=outline — Full Libretto Outline
@@ -102,3 +107,13 @@ The homepage and directory search title, alias, composer and librettist fields. 
 ## Deployment
 
 The GitHub Pages workflow publishes from main. All development must remain on Update until a merge/deployment is explicitly authorized.
+
+### Macbeth translation conventions
+
+Work on the existing `Update` branch. Preserve the Italian source’s sung wording, line breaks, scene order, and bracketed stage directions. Use `Strega 1`, `Strega 2`, `Strega 3` in the Italian column and `Witch 1`, `Witch 2`, `Witch 3` in English. When the witches sing together, use `Tutte e tre le streghe` / `All three witches`, including in future acts. Keep other character names in their original Italian form. Source Roman numerals I./II./III. and collective witch labels are expanded only for speaker identification; lyrics remain unchanged.
+
+### Continuous act reading
+
+Confirm page granularity with the user when registering each new libretto: one page per act, or one page per scene. Do not infer it from another opera. Macbeth is approved for one page per act; Così fan tutte uses one page per scene. Set `continuousAct: true` only for an approved act-based layout. Scene/section links and mobile Previous/Next jump within the act; scrolling updates the selected scene and URL without replacing the act. Deep links retain every scene and locate the selected section.
+
+Libretto data filenames use `libretto-<opera-slug>-act-<number>.js` for every opera. Use the complete route slug and an explicit act number (for example, `libretto-le-nozze-di-figaro-act-1.js`).
