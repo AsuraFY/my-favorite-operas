@@ -598,5 +598,101 @@ export const operaInformation = {
     "https://www.metopera.org/season/in-cinemas/2026-27-season/carmen/",
     "https://www.toledoopera.org/synopsis/synopsis/"
   ]
-}
+},
+  "la-boheme": {
+    synopsis: [
+      "On Christmas Eve in Paris, the poet Rodolfo and his artist friends struggle to stay warm and pay their rent. Rodolfo meets Mimì, a seamstress who has come to ask for a light, and the two quickly fall in love. At the Café Momus, Marcello’s former lover Musetta reappears and wins him back.",
+      "Rodolfo and Mimì separate because of poverty and her worsening illness, though they still love each other. Months later, Mimì returns to the garret gravely ill. Their friends try to comfort her, but she dies as Rodolfo finally understands what has happened."
+    ],
+    characters: [["Mimì", "Soprano", "A seamstress who falls in love with Rodolfo."], ["Rodolfo", "Tenor", "A poet sharing a garret with his friends."], ["Marcello", "Baritone", "A painter and Rodolfo’s close friend."], ["Musetta", "Soprano", "A singer and Marcello’s on-and-off lover."], ["Colline", "Bass", "A philosopher in the group."], ["Schaunard", "Baritone", "A musician who brings money to the group."]],
+    sources: ["https://www.metopera.org/discover/synopses/la-boheme/"]
+  },
+  "lucia-di-lammermoor": {
+    synopsis: [
+      "Lucia loves Edgardo, whose family is feuding with hers. Her brother Enrico wants her to marry Arturo for political advantage, and tricks her with a forged letter suggesting Edgardo has been unfaithful. Lucia reluctantly signs the marriage contract.",
+      "Edgardo arrives too late and curses Lucia. During the wedding celebration, Lucia appears in shock after killing Arturo. She dies soon afterward, and Edgardo takes his own life when he hears the news."
+    ],
+    characters: [["Lucia", "Soprano", "A young woman trapped between love and her family’s demands."], ["Edgardo", "Tenor", "Lucia’s lover and a member of her family’s rival house."], ["Enrico", "Baritone", "Lucia’s brother, who pressures her into marriage."], ["Raimondo", "Bass", "Lucia’s chaplain and confidant."], ["Arturo", "Tenor", "The man Lucia is forced to marry."]],
+    sources: ["https://www.metopera.org/discover/synopses/lucia-di-lammermoor/"]
+  },
+  "eugene-onegin": {
+    synopsis: [
+      "The young Tatiana falls in love with Eugene Onegin, a sophisticated visitor to her family’s country estate, and writes him an intimate letter. Onegin rejects her. At a later celebration, he flirts with Tatiana’s sister Olga and provokes her fiancé Lensky into a duel, where Lensky is killed.",
+      "Years later, Onegin meets Tatiana again in St. Petersburg. She is now married to Prince Gremin, and Onegin realizes he loves her. Tatiana still has feelings for him, but refuses to abandon her husband. Onegin is left alone with the consequences of his choices."
+    ],
+    characters: [["Eugene Onegin", "Baritone", "A worldly aristocrat who rejects Tatiana and later regrets it."], ["Tatiana", "Soprano", "A thoughtful young woman who grows into a princess."], ["Lensky", "Tenor", "A poet and Onegin’s friend, engaged to Olga."], ["Olga", "Mezzo-soprano", "Tatiana’s lively younger sister."], ["Prince Gremin", "Bass", "Tatiana’s husband."]],
+    sources: ["https://www.metopera.org/discover/synopses/eugene-onegin/"]
+  },
+  "les-contes-dhoffmann": {
+    synopsis: [
+      "At a tavern, the poet Hoffmann tells his companions about three women he has loved. He falls for Olympia, unaware she is a mechanical doll; loves the singer Antonia, whose illness makes singing dangerous; and pursues the courtesan Giulietta, who steals his reflection as part of a scheme.",
+      "Each romance is disrupted by an antagonist who takes a different form in every tale. Hoffmann loses the women and returns to the tavern, where he learns that art and suffering have shaped his life. His Muse urges him to turn heartbreak into poetry."
+    ],
+    characters: [["Hoffmann", "Tenor", "A poet recalling his troubled love affairs."], ["Nicklausse", "Mezzo-soprano", "Hoffmann’s companion, secretly his Muse."], ["Olympia / Antonia / Giulietta", "Soprano", "The three women at the center of Hoffmann’s stories."], ["Lindorf and the other villains", "Baritone", "A recurring antagonist appearing in different guises."], ["Luther", "Bass", "The tavern keeper."]],
+    sources: ["https://www.metopera.org/discover/synopses/les-contes-dhoffmann/"]
+  },
+  "norma": {
+    synopsis: [
+      "Norma, a Druid priestess, has secretly had children with Pollione, a Roman commander. He has fallen in love with the novice Adalgisa and plans to take her to Rome. When Adalgisa confesses her love, Norma reveals her own past and asks her to leave Pollione.",
+      "Norma’s people prepare to revolt against Rome, but she cannot bring herself to betray Pollione. After he is captured while trying to take Adalgisa away, Norma confesses her forbidden relationship. Pollione joins her as they face death together."
+    ],
+    characters: [["Norma", "Soprano", "A priestess torn between her people and Pollione."], ["Pollione", "Tenor", "A Roman commander and Norma’s former lover."], ["Adalgisa", "Soprano or mezzo-soprano", "A novice priestess who loves Pollione."], ["Oroveso", "Bass", "Norma’s father and leader of the Druids."], ["Clotilde", "Soprano", "Norma’s confidante."]],
+    sources: ["https://www.metopera.org/discover/synopses/norma/"]
+  },
+  "il-trovatore": {
+    synopsis: [
+      "Leonora loves Manrico, a troubadour and rebel leader, while Count di Luna wants her for himself. Manrico’s mother, Azucena, tells him how her own mother was executed and how she tried to avenge her by abducting the Count’s infant brother—a story whose full truth she has never revealed.",
+      "Manrico is captured after returning to rescue Azucena. Leonora offers herself to di Luna in exchange for Manrico’s release, but secretly takes poison. She dies beside Manrico in prison. The Count orders Manrico’s execution, then learns too late that Azucena was his brother’s mother."
+    ],
+    characters: [["Manrico", "Tenor", "A rebel leader loved by Leonora."], ["Leonora", "Soprano", "A noblewoman devoted to Manrico."], ["Azucena", "Mezzo-soprano", "Manrico’s mother, haunted by a secret revenge."], ["Count di Luna", "Baritone", "Manrico’s rival and commander of the royalist forces."], ["Ferrando", "Bass", "The Count’s captain."]],
+    sources: ["https://www.metopera.org/discover/synopses/il-trovatore/"]
+  },
+  "das-rheingold": {
+    synopsis: [
+      "The Rhine maidens guard gold that can be forged into a ring granting power to rule the world. Alberich steals the gold after renouncing love and makes the ring. Meanwhile, Wotan and Fricka face a debt to the giants who built their fortress Valhalla.",
+      "Wotan takes the ring and treasure from Alberich to pay the giants. Alberich curses whoever possesses the ring, and the curse quickly takes effect when Fafner kills Fasolt for the gold. The gods enter Valhalla as the Rhine maidens mourn their lost treasure."
+    ],
+    characters: [["Wotan", "Bass-baritone", "The ruler of the gods."], ["Alberich", "Bass-baritone", "A dwarf who steals the Rhinegold and forges the ring."], ["Fricka", "Mezzo-soprano", "Wotan’s wife and goddess of marriage."], ["Loge", "Tenor", "The clever god of fire."], ["Fasolt and Fafner", "Basses", "Giants who demand payment for building Valhalla."]],
+    sources: ["https://www.metopera.org/user-information/synopses-archive/das-rheingold/"]
+  },
+  "die-walkure": {
+    synopsis: [
+      "Siegmund, fleeing his enemies, finds shelter in the home of Hunding and his wife Sieglinde. They discover they are long-lost twins and fall in love. Siegmund pulls a sword from a tree, and the siblings flee together.",
+      "Wotan orders Brünnhilde to let Hunding kill Siegmund, but she chooses to protect the couple. Wotan intervenes and Siegmund dies. Brünnhilde saves Sieglinde, who carries Siegmund’s child. For disobeying him, Wotan puts Brünnhilde to sleep on a rock surrounded by fire."
+    ],
+    characters: [["Wotan", "Bass-baritone", "The god who struggles to control his family’s fate."], ["Brünnhilde", "Soprano", "A Valkyrie who defies Wotan to protect the twins."], ["Siegmund", "Tenor", "A hunted warrior and Sieglinde’s twin."], ["Sieglinde", "Soprano", "Hunding’s wife, who discovers her bond with Siegmund."], ["Hunding", "Bass", "Sieglinde’s husband and Siegmund’s enemy."]],
+    sources: ["https://www.metopera.org/user-information/synopses-archive/die-walkure/"]
+  },
+  "siegfried": {
+    synopsis: [
+      "Mime raises Siegfried, hoping the young hero will kill the dragon Fafner and win the ring. Siegfried reforges his father’s sword and slays Fafner, but learns that Mime intends to betray him. Siegfried kills Mime and takes the ring and Tarnhelm.",
+      "Following a forest bird, Siegfried crosses the flames surrounding Brünnhilde’s rock. He wakes her with a kiss, and the two discover love together."
+    ],
+    characters: [["Siegfried", "Tenor", "A fearless hero raised by Mime."], ["Brünnhilde", "Soprano", "The sleeping Valkyrie guarded by fire."], ["Mime", "Tenor", "A dwarf who raises Siegfried for his own purposes."], ["The Wanderer (Wotan)", "Bass-baritone", "Wotan traveling in disguise."], ["Fafner", "Bass", "A giant transformed into a dragon."]],
+    sources: ["https://www.metopera.org/user-information/synopses-archive/siegfried/"]
+  },
+  "gotterdammerung": {
+    synopsis: [
+      "Siegfried leaves Brünnhilde to seek adventure, giving her the ring as a pledge of love. At the Gibichung court, Hagen plots to seize it. A potion erases Siegfried’s memory, and he is drawn into a scheme that separates him from Brünnhilde and binds him to Gutrune.",
+      "Brünnhilde discovers the deception and joins Hagen’s plan to kill Siegfried. After his death, she takes the ring back to the Rhine. Her sacrifice brings the old order to an end as Valhalla burns and the river reclaims its gold."
+    ],
+    characters: [["Brünnhilde", "Soprano", "A former Valkyrie who seeks to restore the ring."], ["Siegfried", "Tenor", "The hero whose memory is altered by a potion."], ["Hagen", "Bass", "Alberich’s son, who schemes to recover the ring."], ["Gunther", "Baritone", "The Gibichung king drawn into Hagen’s plot."], ["Gutrune", "Soprano", "Gunther’s sister, who unknowingly marries Siegfried."]],
+    sources: ["https://www.metopera.org/user-information/synopses-archive/gotterdammerung/"]
+  },
+  "lelisir-damore": {
+    synopsis: [
+      "The shy Nemorino loves Adina, who teases him and reads the story of Tristan and Isolde. When the traveling doctor Dulcamara arrives, Nemorino buys what he believes is a love potion, though it is only wine. He drinks it and acts confident, making Adina jealous.",
+      "Adina agrees to marry the sergeant Belcore but delays the wedding after learning Nemorino enlisted to earn money for more wine. Nemorino’s uncle dies and leaves him an inheritance, making him suddenly popular. Adina realizes she loves him, and Dulcamara claims credit for the happy ending."
+    ],
+    characters: [["Nemorino", "Tenor", "A young man hoping a potion will win Adina."], ["Adina", "Soprano", "A wealthy landowner who loves to tease Nemorino."], ["Dulcamara", "Bass", "A traveling salesman with a fake elixir."], ["Belcore", "Baritone", "A sergeant seeking Adina’s hand."], ["Giannetta", "Soprano", "A villager who shares news of Nemorino’s inheritance."]],
+    sources: ["https://www.metopera.org/discover/synopses/lelisir-damore/"]
+  },
+  "die-fledermaus": {
+    synopsis: [
+      "Gabriel von Eisenstein is due to report to prison, but his friend Dr. Falke persuades him to attend a masked ball first. Years earlier, Eisenstein left Falke asleep in a park wearing a bat costume, and Falke plans a playful revenge. Eisenstein’s wife Rosalinde, their maid Adele and the prison governor Frank also attend the party in disguise.",
+      "At the ball, Eisenstein flirts with Rosalinde without recognizing her, while Adele pretends to be a grand lady. The next morning, the guests reassemble at the prison and the deceptions are revealed. Falke’s revenge ends in laughter and a toast to champagne."
+    ],
+    characters: [["Gabriel von Eisenstein", "Tenor or baritone", "A husband who delays his trip to prison for a masked ball."], ["Rosalinde", "Soprano", "Eisenstein’s wife, who attends the ball in disguise."], ["Adele", "Soprano", "The Eisensteins’ maid, who dreams of acting."], ["Dr. Falke", "Baritone", "Eisenstein’s friend, who arranges the revenge."], ["Frank", "Baritone", "The prison governor, also at the ball incognito."]],
+    sources: ["https://www.metopera.org/user-information/synopses-archive/die-fledermaus/"]
+  }
 };
