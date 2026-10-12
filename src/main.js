@@ -536,7 +536,10 @@ function highlightReaderSection(index, syncUrl = false) {
     const target = root.querySelector("#libretto-turn-" + act + "-" + scene + "-" + sectionItem + "-" + Number(params.get("turn")));
     return typeof target?.getBoundingClientRect === "function" ? [{ target, turn: Number(params.get("turn")) }] : [];
   });
-  const activeLandmark = landmarks.filter(entry => entry.target.getBoundingClientRect().top <= readingTop).at(-1) || landmarks[0];
+  const atEnd = typeof document !== "undefined" &&
+    window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+  const activeLandmark = atEnd ? landmarks.at(-1) :
+    landmarks.filter(entry => entry.target.getBoundingClientRect().top <= readingTop).at(-1) || landmarks[0];
   const activeTurnIndex = activeLandmark?.turn ?? null;
   root.dataset.scene = String(scene);
   if (root.dataset.continuousAct === "true") {
@@ -610,6 +613,10 @@ function updateReaderSectionPosition() {
   if (!root) return;
   const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
   if (!items.length) return;
+  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+    highlightReaderSection(items.length - 1, true);
+    return;
+  }
   const siteHeight = app.querySelector(".site-header")?.getBoundingClientRect().height || 0;
   const barHeight = root.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0;
   const toolbarHeight = root.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0;
