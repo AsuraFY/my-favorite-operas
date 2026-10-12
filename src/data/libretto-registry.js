@@ -28,7 +28,7 @@ import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-act1-1";
 import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-act2-1";
 import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-act3-1";
 import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-act4-1";
-import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-1";
+import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-2";
 import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-act2-1";
 import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=la-boheme-act3-1";
 import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme-act4-1";
@@ -456,3 +456,4 @@ export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
 export const librettoCatalog = Object.values(completeLibretti);
+

@@ -278,8 +278,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   }) : section.turns.map((turn, sourceTurnIndex) => ({ ...turn, sourceTurnIndex, startsSourceTurn: true }));
   const rows = turns.flatMap(turn => {
     const speaker = turn.speaker;
-    const anchorFirst = output => output.map((html, index) => index === 0 && turn.startsSourceTurn ?
-      html.replace('<p>', '<span class="libretto-turn-anchor" id="libretto-turn-' + act + '-' + scene.number + '-' + turn.sourceTurnIndex + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html);
+    const anchorFirst = output => output.map((html, index) => index === 0 && turn.startsSourceTurn && scene.outline?.length ?
+      html.replace('<p>', '<span class="libretto-turn-anchor" id="libretto-turn-' + act + '-' + scene.number + '-' + sectionIndex + '-' + turn.sourceTurnIndex + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html);
     if (speaker === directionSpeaker) {
       const originalText = turn.original ?? turn.it ?? "";
       const translatedText = turn.translation ?? turn.en ?? "";
@@ -383,12 +383,12 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
         '<section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + (libretto.sceneDivisions === false ? '' : '<nav aria-label="Scene navigation">' + previous + next + '</nav>') + '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Found a passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”.') + '</p>' : '') +
-        (continuous ? scenes : [scene]).map(entry =>
+        (continuous ? scenes : [scene]).map((entry, sceneIndex) =>
           '<div class="scene-panel__top" id="libretto-scene-' + act + '-' + entry.number + '">' +
-          '<h' + (continuous ? '2' : '1') + ' class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
+          '<h' + (continuous && sceneIndex > 0 ? '2' : '1') + ' class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
           ' · ' + actLabel.toUpperCase() + (libretto.sceneDivisions === false ? '' : ' <span>/</span> ' +
           escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " + (libretto.sceneOrdinals?.[entry.number - 1] || romanNumeral(entry.number))).toUpperCase() +
-          ' · SCENE ' + romanNumeral(entry.number)) + '</h' + (continuous ? '2' : '1') + '>' +
+          ' · SCENE ' + romanNumeral(entry.number)) + '</h' + (continuous && sceneIndex > 0 ? '2' : '1') + '>' +
           '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(entry)) + '</p></div>' +
           entry.sections.map((part, index) => renderSceneSection(entry, part, index, act)).join("")
         ).join("") +
@@ -404,3 +404,4 @@ return { scene: renderScenePage, outline: renderOutlinePage, synopsis: renderSyn
 }
 
 export { createLibrettoRenderer };
+

@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-art-12";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-20";
-import { getLibretto } from "./data/libretto-registry.js?v=registry-42";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-21";
+import { getLibretto } from "./data/libretto-registry.js?v=registry-43";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-tabs-1";
@@ -527,11 +527,17 @@ function highlightReaderSection(index, syncUrl = false) {
   const activeSection = items[current];
   const scene = Number(activeSection.dataset.sourceScene || root.dataset.scene);
   const sectionItem = Number(activeSection.dataset.librettoItem);
-  const turnAnchors = [...root.querySelectorAll("[data-libretto-turn]")];
-  const activeTurn = turnAnchors.filter(anchor => typeof anchor.getBoundingClientRect === "function" &&
-    anchor.getBoundingClientRect().top <= 180).at(-1) ||
-    turnAnchors.find(anchor => typeof anchor.getBoundingClientRect === "function");
-  const activeTurnIndex = activeTurn ? Number(activeTurn.dataset.librettoTurn) : null;
+  const sidebar = root.querySelector("[data-act-outline]");
+  const readingTop = (root.querySelector(".opera-subnav")?.getBoundingClientRect?.().bottom || 162) +
+    (root.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect?.().height || 0) + 18;
+  const landmarks = [...(sidebar?.querySelectorAll(".section-nav-link") || [])].flatMap(link => {
+    const params = new URLSearchParams((link.getAttribute("href") || "").split("?")[1] || "");
+    if (!params.has("turn") || Number(params.get("scene")) !== scene || Number(params.get("item")) !== sectionItem) return [];
+    const target = root.querySelector("#libretto-turn-" + act + "-" + scene + "-" + sectionItem + "-" + Number(params.get("turn")));
+    return typeof target?.getBoundingClientRect === "function" ? [{ target, turn: Number(params.get("turn")) }] : [];
+  });
+  const activeLandmark = landmarks.filter(entry => entry.target.getBoundingClientRect().top <= readingTop).at(-1) || landmarks[0];
+  const activeTurnIndex = activeLandmark?.turn ?? null;
   root.dataset.scene = String(scene);
   if (root.dataset.continuousAct === "true") {
     const sceneNumbers = [...new Set(items.map(el => Number(el.dataset.sourceScene)))];
@@ -543,7 +549,6 @@ function highlightReaderSection(index, syncUrl = false) {
       return target ? '<a class="mobile-scene-step" href="#/operas/' + root.dataset.librettoSlug + '?act=' + act + '&scene=' + target + '&item=0">' + label + '</a>' : '<span class="mobile-scene-step is-disabled" aria-disabled="true">' + label + '</span>';
     }).join("");
   }
-  const sidebar = root.querySelector("[data-act-outline]");
   sidebar?.querySelectorAll(".section-nav-link").forEach(link => {
     const url = link.getAttribute("href");
     const params = new URLSearchParams(url.split("?")[1] || "");
@@ -719,18 +724,33 @@ function render() {
   const hasSectionDestination = Boolean(reader && (routeParams.has("item") || routeParams.has("turn") || query || (reader.dataset.continuousAct === "true" && routeParams.has("scene"))));
   readerJumping = hasSectionDestination;
   window.scrollTo(0, 0);
-  if (hasSectionDestination) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);
+  if (hasSectionDestination && !routeParams.has("turn")) restoreSceneReadingPosition(Number(reader.dataset.initialItem) || 0);
   else if (reader) highlightReaderSection(0, false);
   if (reader && routeParams.has("turn")) {
-    const target = reader.querySelector('[data-libretto-turn="' + Number(routeParams.get("turn")) + '"]');
+    const target = reader.querySelector("#libretto-turn-" + Number(reader.dataset.act) + "-" +
+      (Number(routeParams.get("scene")) || 1) + "-" + (Number(routeParams.get("item")) || 0) + "-" + Number(routeParams.get("turn")));
     window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
       if (!target) return;
-      window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - 120, behavior: "auto" });
+      const readingTop = (reader.querySelector(".opera-subnav")?.getBoundingClientRect().bottom || 120) +
+        (reader.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0) + 18;
+      window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - readingTop, behavior: "auto" });
+      readerJumping = false;
+      scheduleReaderSectionUpdate();
     }));
   }
   updateReaderTopButton();
 }
 
+function handleSkipLink(event) {
+  const main = document.querySelector("#main");
+  if (!main) return;
+  event.preventDefault();
+  main.setAttribute("tabindex", "-1");
+  main.focus({ preventScroll: true });
+  main.scrollIntoView({ block: "start" });
+}
+
+document.querySelector(".skip-link")?.addEventListener("click", handleSkipLink);
 document.addEventListener("keydown", onOutlineKeydown);
 window.addEventListener("resize", () => {
   if (!window.matchMedia("(max-width: 700px)").matches) closeActOutline(false);
@@ -743,3 +763,4 @@ window.addEventListener("scroll", scheduleReaderSectionUpdate, { passive: true }
 window.addEventListener("scroll", updateReaderTopButton, { passive: true });
 window.addEventListener("hashchange", render);
 render();
+

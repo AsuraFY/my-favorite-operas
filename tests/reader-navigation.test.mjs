@@ -6,7 +6,7 @@ import vm from "node:vm";
 const main = readFileSync(new URL("../src/main.js", import.meta.url), "utf8");
 function functionSource(name) {
   const start = main.indexOf(`function ${name}(`);
-  const end = main.indexOf("\nfunction ", start + 1);
+  const end = main.indexOf("\n}", start) + 2;
   return main.slice(start, end);
 }
 
@@ -69,3 +69,46 @@ test("Tristan scene links stay selected beyond the scene's opening section", () 
   assert.deepEqual(links.map(entry => entry.classes.has("is-current")), [false, true, false, true]);
   assert.equal(links[1].attributes.get("aria-current"), "page");
 });
+
+test("a reading landmark stays selected until the next named landmark", () => {
+  const positions = new Map([[10, -100], [20, 500]]);
+  const links = [10, 20].map(turn => {
+    const classes = new Set();
+    return {
+      classes,
+      getAttribute: () => `#/operas/la-boheme?act=1&scene=1&item=0&turn=${turn}`,
+      setAttribute() {}, removeAttribute() {},
+      classList: { contains: name => classes.has(name), toggle: (name, active) => active ? classes.add(name) : classes.delete(name) }
+    };
+  });
+  const item = { dataset: { sourceScene: "1", librettoItem: "0" }, classList: { toggle() {} } };
+  const root = {
+    dataset: { act: "1", scene: "1", continuousAct: "true" },
+    querySelectorAll: () => [item],
+    querySelector: selector => {
+      if (selector === "[data-act-outline]") return { querySelectorAll: () => links };
+      const match = selector.match(/^#libretto-turn-1-1-0-(\d+)$/);
+      return match ? { getBoundingClientRect: () => ({ top: positions.get(Number(match[1])) }) } : null;
+    }
+  };
+  const context = vm.createContext({ URLSearchParams, currentSceneReader: () => root, window: { matchMedia: () => ({ matches: false }) } });
+  vm.runInContext(functionSource("highlightReaderSection"), context);
+  context.highlightReaderSection(0);
+  assert.deepEqual(links.map(link => link.classes.has("is-current")), [true, false]);
+  positions.set(20, 90);
+  context.highlightReaderSection(0);
+  assert.deepEqual(links.map(link => link.classes.has("is-current")), [false, true]);
+});
+
+test("Skip to content focuses the current page without changing the route", () => {
+  let prevented = false, focused = false, scrolled = false;
+  const main = {
+    setAttribute: (name, value) => assert.deepEqual([name, value], ["tabindex", "-1"]),
+    focus: () => { focused = true; }, scrollIntoView: () => { scrolled = true; }
+  };
+  const context = vm.createContext({ document: { querySelector: () => main } });
+  vm.runInContext(functionSource("handleSkipLink"), context);
+  context.handleSkipLink({ preventDefault: () => { prevented = true; } });
+  assert.ok(prevented && focused && scrolled);
+});
+
