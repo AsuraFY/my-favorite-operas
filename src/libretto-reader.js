@@ -130,17 +130,19 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
 }
 function renderSceneOutlineLinks(scene, act) {
   return (scene.outline || []).map(entry => {
-    let targetSection = 0, targetTurn = -1;
+    let targetSection = -1, targetTurn = -1;
     for (const [sectionIndex, section] of scene.sections.entries()) {
       const turnIndex = section.turns.findIndex((turn, index) => (entry.sourceTurn == null || index === entry.sourceTurn) && (entry.speaker == null || turn.speaker === entry.speaker) && String(turn.original ?? turn.it ?? "").includes(entry.match));
       if (turnIndex >= 0) { targetSection = sectionIndex; targetTurn = turnIndex; break; }
     }
+    const label = '<span class="opera-outline__section-title">' + escapeHtml(entry.title) + '</span>' +
+      (entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : '');
+    if (targetSection < 0 || targetTurn < 0) {
+      return '<span class="section-nav-link opera-outline__section is-unavailable" aria-disabled="true">' + label + '</span>';
+    }
     const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number +
-      '&item=' + targetSection + (targetTurn >= 0 ? '&turn=' + targetTurn : '');
-    return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
-      '<span class="opera-outline__section-title">' + escapeHtml(entry.title) + '</span>' +
-      (entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : '') +
-      '</a>';
+      '&item=' + targetSection + '&turn=' + targetTurn;
+    return '<a class="section-nav-link opera-outline__section" href="' + href + '">' + label + '</a>';
   }).join('');
 }
 function renderCompleteOutlineAct(act) {
@@ -367,7 +369,7 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
   const bottomSceneNavigation = '<nav class="scene-bottom-nav" aria-label="Scene navigation at end of scene">' +
     '<p class="scene-bottom-nav__label">End of ' + sceneLabel + '</p>' +
     '<div class="scene-bottom-nav__controls">' + previous + bottomNext + '</div></nav>';
-  const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Outline</span></button>';
+  const outlineButton = '<button type="button" class="back-to-scenes act-outline__trigger" data-outline-open aria-controls="act-outline" aria-haspopup="dialog" aria-expanded="false">☰ <span>Act outline</span></button>';
   return '<div class="opera-reading-page" data-libretto-slug="' + libretto.slug + '" data-act="' + act + '" data-scene="' + scene.number + '" data-initial-item="' + initialIndex + '" data-continuous-act="' + continuous + '">' +
     renderOperaBar(act) +
     '<section class="mobile-opera-intro"><div class="mobile-opera-intro__art"' +
@@ -376,11 +378,11 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
     '<div class="reading-layout">' +
       '<div class="act-outline__backdrop" data-outline-backdrop hidden aria-hidden="true"></div>' +
       '<aside class="scene-sidebar" id="act-outline" data-act-outline aria-label="' + actLabel + ' outline" tabindex="-1">' +
-        '<div class="act-outline__top"><span>' + actLabel + ' · Outline</span><button type="button" data-outline-close aria-label="Close outline">×</button></div>' +
-        '<div class="desktop-outline-collapse-bar"><button type="button" class="desktop-outline-collapse" data-desktop-outline-collapse aria-label="Collapse outline" title="Collapse outline" aria-controls="act-outline" aria-expanded="true"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16M16 9l-3 3 3 3"></path></svg></button></div>' +
+        '<div class="act-outline__top"><span>' + actLabel + ' · Act outline</span><button type="button" data-outline-close aria-label="Close act outline">×</button></div>' +
+        '<div class="desktop-outline-collapse-bar"><button type="button" class="desktop-outline-collapse" data-desktop-outline-collapse aria-label="Collapse act outline" title="Collapse act outline" aria-controls="act-outline" aria-expanded="true"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16M16 9l-3 3 3 3"></path></svg></button></div>' +
         '<details class="act-group" open><summary class="act-heading"><h2>' + actLabel + '</h2><span aria-hidden="true">⌄</span></summary><nav aria-label="Scenes in ' + actLabel + '">' + sceneLinks + '</nav></details></aside>' +
       '<div class="reading-main">' +
-        '<div class="desktop-outline-reopen"><button type="button" data-desktop-outline-expand aria-controls="act-outline" aria-expanded="false" aria-label="Expand outline" title="Expand outline"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16m4-11 3 3-3 3"></path></svg><span>Outline</span></button></div>' +
+        '<div class="desktop-outline-reopen"><button type="button" data-desktop-outline-expand aria-controls="act-outline" aria-expanded="false" aria-label="Expand act outline" title="Expand act outline"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16m4-11 3 3-3 3"></path></svg><span>Outline</span></button></div>' +
         '<section class="scene-panel">' +
         '<div class="mobile-reader-toolbar">' + outlineButton + (libretto.sceneDivisions === false ? '' : '<nav aria-label="Scene navigation">' + previous + next + '</nav>') + '</div>' +
         (searchTerm ? '<p class="libretto-search-result" role="status">' + (found ? 'Found a passage containing “' + safeQuery + '”.' : 'No passage in this act contains “' + safeQuery + '”.') + '</p>' : '') +

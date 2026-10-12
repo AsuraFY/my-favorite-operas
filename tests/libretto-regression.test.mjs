@@ -115,7 +115,7 @@ test("La Bohème Act IV renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("Mimì!!!"));
 });
 
-test("La Bohème outline follows the supplied 26-track recording with deep links", () => {
+test("La Bohème outline follows the supplied 26-track recording with bilingual deep links", () => {
   const libretto = getLibretto("la-boheme");
   const renderer = createLibrettoRenderer(libretto);
   const outline = renderer.outline();
@@ -123,17 +123,32 @@ test("La Bohème outline follows the supplied 26-track recording with deep links
   assert.equal(libretto.spotifyAlbumUrl, "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp");
   assert.deepEqual(libretto.acts.map(act => act.scenes[0].outline.length), [8, 5, 5, 8]);
   assert.ok(outline.includes("Maria Callas"));
+  assert.ok(outline.includes("Libretto Outline"));
   const outlineEntries = libretto.acts.flatMap(act => act.scenes.flatMap(scene => scene.outline || []));
   assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), outlineEntries.length);
-  for (const act of libretto.acts) for (const scene of act.scenes) for (const item of scene.outline) {
-    assert.ok(outline.includes(item.title));
-    assert.ok(outline.includes("?act=" + act.number + "&scene=" + scene.number + "&item=0&turn="));
+  for (const act of libretto.acts) {
+    window.location.hash = "#/operas/la-boheme?act=" + act.number;
+    const page = renderer.scene(1);
+    assert.ok(page.includes("Act outline"));
+    for (const scene of act.scenes) for (const entry of scene.outline) {
+      assert.ok(outline.includes(entry.title));
+      assert.ok(outline.includes(entry.translation));
+      const target = scene.sections.flatMap((section, sectionIndex) => section.turns.map((turn, turnIndex) => ({
+        sectionIndex, turnIndex, original: turn.original ?? turn.it ?? ""
+      }))).find(turn => (entry.sourceTurn == null || turn.turnIndex === entry.sourceTurn) &&
+        (entry.speaker == null || scene.sections[turn.sectionIndex].turns[turn.turnIndex].speaker === entry.speaker) &&
+        turn.original.includes(entry.match));
+      assert.ok(target, "every outline item must match a libretto turn");
+      const expectedHref = "#/operas/la-boheme?act=" + act.number + "&scene=" + scene.number +
+        "&item=" + target.sectionIndex + "&turn=" + target.turnIndex;
+      assert.ok(page.includes('href="' + expectedHref + '"'), entry.title + " must link to its exact turn");
+      assert.ok(outline.includes('href="' + expectedHref + '"'), entry.title + " must link to its exact turn from the libretto outline");
+    }
   }
   window.location.hash = "#/operas/la-boheme?act=4";
   const page = renderer.scene(1);
   assert.ok(page.includes('id="libretto-turn-4-1-'));
 });
-
 test("La Bohème landmarks identify unique source turns in reading order", () => {
   for (const act of getLibretto("la-boheme").acts) for (const scene of act.scenes) {
     const turns = scene.sections.flatMap(section => section.turns);
