@@ -111,7 +111,7 @@ function header(active) {
 }
 
 function footer() {
-  return `<footer class="site-footer"><span>@AsuraFY</span><span>My favorite Operas</span></footer>`;
+  return `<footer class="site-footer"><div class="site-footer__inner"><span class="site-footer__brand">My favorite Operas</span><span class="site-footer__credit">@AsuraFY</span></div></footer>`;
 }
 
 
