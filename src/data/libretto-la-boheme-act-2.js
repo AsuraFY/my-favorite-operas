@@ -8,7 +8,7 @@ export const laBohemeActTwoScenes = [
     translatedTitle: "In the Latin Quarter",
     // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      {"title":"Aranci, datteri!","translation":"Oranges, dates!","match":"Aranci, datteri! Caldi i marroni!","number":9,"type":"Coro","performers":["Venditori","Bambini","Parpignol"]},
+      {"title":"Aranci, datteri!","translation":"Oranges, dates!","match":"Aranci, datteri! Caldi i marroni!","number":9,"type":"Coro","performers":["Coro","Schaunard","Colline","Mimì","Rodolfo","Marcello","Parpignol"]},
       {"title":"Chi guardi?","translation":"Who are you looking at?","match":"Chi guardi?…","number":10,"type":"Recitativo","performers":["Rodolfo","Mimì"]},
       {"title":"Beviam… Ch’io beva del tossico!","translation":"Let’s drink… Let me drink poison!","match":"Beviam!","speaker":"All five Bohemians","number":11,"type":"Ensemble","performers":["Rodolfo","Mimì","Marcello","Musetta","Schaunard","Colline","Alcindoro","Coro"]},
       {"title":"Quando me’n vo soletta","translation":"When I walk alone","match":"Quando me’n vo soletta per la via","number":12,"type":"Aria","performers":["Musetta","Marcello","Alcindoro"]},

@@ -8,14 +8,14 @@ export const laBohemeActOneScenes = [
     translatedTitle: "In the garret",
     // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      {"title":"Questo mar rosso","translation":"This Red Sea","match":"Questo Mar Rosso","number":1,"type":"Scena","performers":["Marcello"]},
-      {"title":"Abbasso, abbasso l’autore!","translation":"Down, down with the author!","match":"Abbasso! Abbasso l’autor!","number":2,"type":"Ensemble","performers":["Marcello","Colline"]},
-      {"title":"Si può?… Chi è là?","translation":"May I come in?… Who is there?","match":"Si può?","number":3,"type":"Scena","performers":["Benoît","Marcello","Rodolfo","Schaunard","Colline"]},
+      {"title":"Questo mar rosso","translation":"This Red Sea","match":"Questo Mar Rosso","number":1,"type":"Scena","performers":["Marcello","Rodolfo","Colline"]},
+      {"title":"Abbasso, abbasso l’autore!","translation":"Down, down with the author!","match":"Abbasso! Abbasso l’autor!","number":2,"type":"Ensemble","performers":["Marcello","Rodolfo","Schaunard","Colline"]},
+      {"title":"Si può?… Chi è là?","translation":"May I come in?… Who is there?","match":"Si può?","number":3,"type":"Scena","performers":["Benoît","Rodolfo","Marcello","Schaunard","Colline"]},
       {"title":"Al Quartiere Latin ci attende Momus","translation":"Momus awaits us in the Latin Quarter","match":"Al Quartiere Latin ci attende Momus.","number":4,"type":"Recitativo","performers":["Schaunard"]},
       {"title":"Non sono in vena","translation":"I’m not in the mood","match":"Non sono in vena.","number":5,"type":"Recitativo","performers":["Rodolfo","Mimì"]},
       {"title":"Che gelida manina!","translation":"What a cold little hand!","match":"Che gelida manina","number":6,"type":"Aria","performers":["Rodolfo"]},
       {"title":"Sì, mi chiamano Mimì","translation":"Yes, they call me Mimì","match":"Sì.\nMi chiamano Mimì","number":7,"type":"Aria","performers":["Mimì"]},
-      {"title":"Ehi! Rodolfo!… O soave fanciulla, o dolce viso","translation":"Hey! Rodolfo!… O lovely girl, O sweet face","match":"Ehi! Rodolfo!","number":8,"type":"Duetto","performers":["Rodolfo","Mimì"]}
+      {"title":"Ehi! Rodolfo!… O soave fanciulla, o dolce viso","translation":"Hey! Rodolfo!… O lovely girl, O sweet face","match":"Ehi! Rodolfo!","number":8,"type":"Duetto","performers":["Schaunard","Colline","Marcello","Rodolfo","Mimì"]}
     ],
     sections: [
       {
