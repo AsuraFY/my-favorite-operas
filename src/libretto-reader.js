@@ -105,6 +105,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       '<span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
   return scenes.map(item=>{
+    if (item.outline?.length) return '<div class="section-nav">' + renderSceneOutlineLinks(item, act) + '</div>';
     const links=item.sections.map((section,index)=>{
       const active=item.number===selectedScene&&index===selectedItem;
       const label=sectionNavigationLabel(section,item,index);
@@ -126,7 +127,23 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       '><summary class="scene-group__summary"><span>Scene '+romanNumeral(item.number)+
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
-}function renderCompleteOutlineAct(act) {
+}
+function renderSceneOutlineLinks(scene, act) {
+  return (scene.outline || []).map(entry => {
+    let targetSection = 0, targetTurn = -1;
+    for (const [sectionIndex, section] of scene.sections.entries()) {
+      const turnIndex = section.turns.findIndex(turn => String(turn.original ?? turn.it ?? "").includes(entry.match));
+      if (turnIndex >= 0) { targetSection = sectionIndex; targetTurn = turnIndex; break; }
+    }
+    const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number +
+      '&item=' + targetSection + (targetTurn >= 0 ? '&turn=' + targetTurn : '');
+    return '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
+      '<span class="opera-outline__section-title">' + escapeHtml(entry.title) + '</span>' +
+      (entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : '') +
+      '</a>';
+  }).join('');
+}
+function renderCompleteOutlineAct(act) {
   const group = actCatalog().find(entry => entry.number === act);
   if (!group) return "";
   const spotifyAct = libretto.spotifyOutline?.find(entry => entry.act === act);
@@ -163,6 +180,10 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
   return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
     header + prelude + group.scenes.map(scene => {
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
+      if (scene.outline?.length) return '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
+        '<h3 id="' + sceneId + '">' + escapeHtml(scene.title || actName) +
+        (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') +
+        '</h3><div class="opera-outline__sections">' + renderSceneOutlineLinks(scene, act) + '</div></section>';
       return '<section class="opera-outline__scene" aria-labelledby="' + (libretto.sceneDivisions === false ? 'outline-act-' + act : sceneId) + '">' +
         (libretto.sceneDivisions === false ? '' : '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
         ' <span>·</span> Scene ' + scene.number +
@@ -247,24 +268,27 @@ function splitInlineDirections(value, literalText = false) {
 function renderSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
   const directionSpeaker = libretto.stageDirectionSpeaker || "Stage direction";
-  const turns = libretto.alignVerseLines ? section.turns.flatMap(turn => {
-    if (turn.speaker === directionSpeaker) return [turn];
+  const turns = libretto.alignVerseLines ? section.turns.flatMap((turn, sourceTurnIndex) => {
+    if (turn.speaker === directionSpeaker) return [{ ...turn, sourceTurnIndex, startsSourceTurn: true }];
     const original = (turn.original ?? turn.it ?? "").split(/\r?\n/);
     const translation = (turn.translation ?? turn.en ?? "").split(/\r?\n/);
     return original.map((line, index) => ({ ...turn, original: line,
-      translation: translation[index] || "", hideSpeaker: index > 0 }));
-  }) : section.turns;
+      translation: translation[index] || "", hideSpeaker: index > 0,
+      sourceTurnIndex, startsSourceTurn: index === 0 }));
+  }) : section.turns.map((turn, sourceTurnIndex) => ({ ...turn, sourceTurnIndex, startsSourceTurn: true }));
   const rows = turns.flatMap(turn => {
     const speaker = turn.speaker;
+    const anchorFirst = output => output.map((html, index) => index === 0 && turn.startsSourceTurn ?
+      html.replace('<p>', '<span class="libretto-turn-anchor" id="libretto-turn-' + act + '-' + scene.number + '-' + turn.sourceTurnIndex + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html);
     if (speaker === directionSpeaker) {
       const originalText = turn.original ?? turn.it ?? "";
       const translatedText = turn.translation ?? turn.en ?? "";
       const original = libretto.bracketStageDirections ? "[" + originalText + "]" : originalText;
       const translation = libretto.bracketStageDirections ? "[" + translatedText + "]" : translatedText;
       const stageDirectionLabel = '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
-      return ['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
+      return anchorFirst(['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
-        stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>'];
+        stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>']);
     }
     const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText);
     const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText);
@@ -287,7 +311,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
           formatLibrettoText(translatedPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div></div>');
       }
     }
-    return output;
+    return anchorFirst(output);
   }).join('');
   const isSpotifyScene = Boolean(libretto.spotifyOutline);
   const selectedHeading = isSpotifyScene ? "" :
