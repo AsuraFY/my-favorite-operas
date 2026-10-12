@@ -2442,3 +2442,37 @@ html[data-theme="night"] .site-footer {
   .site-footer__brand { font-size: 1rem; }
   .site-footer__credit { font-size: .5625rem; }
 }
+
+
+/* Bilingual vocal text in the Musicals collection. */
+.musicals-page { width: var(--page); max-width: 1000px; margin: 0 auto; padding: clamp(48px, 7vw, 88px) 0 96px; }
+.musicals-page__intro { max-width: 780px; margin: 0 0 54px; }
+.musicals-page__intro .eyebrow { color: var(--wine); }
+.musicals-page__intro h1 { margin: 22px 0 14px; font: 400 clamp(2.5rem, 5.5vw, 4.25rem)/1.12 var(--serif); letter-spacing: -.045em; }
+.musicals-page__intro h1 em { color: var(--wine); font-style: normal; }
+.musicals-page__subtitle { margin: 0 0 16px; color: var(--wine-dark); font: 500 1.25rem/1.5 var(--serif); }
+.musicals-page__context { max-width: 680px; margin: 0; color: var(--muted); font: 1rem/1.75 var(--serif); }
+.musical-lyrics { padding: 30px clamp(18px, 4vw, 46px) 36px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.musical-lyrics__columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 0 0 14px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.musical-verse { padding: 27px 0; border-bottom: 1px solid var(--line); }
+.musical-verse:last-child { border-bottom: 0; padding-bottom: 0; }
+.musical-verse__voice { margin: 0 0 13px; color: var(--wine); font: 600 .72rem/1.4 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
+.musical-verse__lines { display: grid; }
+.musical-line { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 7px 0; font: 1.05rem/1.65 var(--serif); }
+.musical-line p { margin: 0; }
+.musical-line p + p { color: #625d55; }
+.musicals-page__notes { max-width: 780px; margin: 38px auto 0; color: var(--muted); font: .9rem/1.75 var(--serif); }
+.musicals-page__notes h2 { margin: 0 0 9px; color: var(--ink); font: 500 1.3rem/1.4 var(--serif); }
+.musicals-page__notes p { margin: 0 0 12px; }
+.musicals-page__sources a { color: var(--wine); text-decoration: underline; text-underline-offset: 3px; }
+html[data-theme="night"] .musical-lyrics { background: #fff; color: #28251f; }
+html[data-theme="night"] .musicals-page__notes h2 { color: var(--ink); }
+@media (max-width: 680px) {
+  .musicals-page { padding: 42px 0 64px; }
+  .musicals-page__intro { margin-bottom: 34px; }
+  .musical-lyrics { padding: 22px 18px 26px; }
+  .musical-lyrics__columns { display: none; }
+  .musical-verse { padding: 22px 0; }
+  .musical-line { grid-template-columns: 1fr; gap: 2px; padding: 9px 0; }
+  .musical-line p + p { padding-left: 14px; border-left: 2px solid #e6dbca; font-size: .94rem; }
+}

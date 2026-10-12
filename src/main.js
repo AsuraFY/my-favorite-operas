@@ -3,6 +3,7 @@ import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-19";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-41";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
+import { renderMusicalsPage } from "./musicals-page.js";
 
 const app = document.querySelector("#app");
 
@@ -487,7 +488,7 @@ function aboutPage() {
 }
 
 function musicalsPage() {
-  return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> A new collection</p><h1>Musicals<br /><em>coming soon.</em></h1><p>The musical theatre collection is being prepared. This page will gather stories, songs, and libretti.</p><a class="text-link" href="#/operas">Explore the opera collection ${arrow}</a></section>`;
+  return renderMusicalsPage();
 }
 
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
