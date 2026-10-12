@@ -73,6 +73,7 @@ function header(active) {
     <nav class="main-nav" aria-label="Main navigation">
       <a class="${active === "home" ? "is-active" : ""}" href="#/">Home</a>
       <a class="${active === "operas" || active === "opera" ? "is-active" : ""}" href="#/operas">Operas</a>
+      <a class="${active === "musicals" ? "is-active" : ""}" href="#/musicals">Musicals</a>
       <button class="settings-nav-trigger" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">Settings</button>
     </nav>
     <div class="header-actions">
@@ -518,6 +519,10 @@ function aboutPage() {
   return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> About</p><h1>A personal collection<br /><em>of opera.</em></h1><p>This is a place for the operas I love: their libretti, translations, characters, and the details that make each one worth returning to.</p><a class="text-link" href="#/operas">Explore the collection ${arrow}</a></section>`;
 }
 
+function musicalsPage() {
+  return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> A new collection</p><h1>Musicals<br /><em>coming soon.</em></h1><p>The musical theatre collection is being prepared. This page will gather stories, songs, and libretti.</p><a class="text-link" href="#/operas">Explore the opera collection ${arrow}</a></section>`;
+}
+
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
   const libretto = getLibretto(opera.slug);
   if (libretto) {
@@ -701,6 +706,9 @@ function render() {
   } else if (path === "/about") {
     shell(aboutPage(), "about");
     document.title = "About — My favorite Operas";
+  } else if (path === "/musicals") {
+    shell(musicalsPage(), "musicals");
+    document.title = "Musicals — My favorite Operas";
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
     const scene = Number(routeParams.get("scene")) || 1;
