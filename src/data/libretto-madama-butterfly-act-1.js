@@ -1,7 +1,6 @@
 // Madama Butterfly, Act I. Italian follows Opera Guide; English is a fresh draft.
-// The section numbers are the score's numbers; score headings are cross-checked
-// against the published musical-number list. The linked recording is used for
-// its track incipits and singer credits, not as a numbering source.
+// Section titles follow the source libretto and the linked recording; no score
+// numbers are asserted because the website text does not supply any.
 export const madamaButterflyActOneScenes = [{
   number: 1,
   sections: [
