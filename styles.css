@@ -2346,6 +2346,18 @@ html[data-theme="night"] .opera-reading-page[data-act] .desktop-outline-reopen:n
   background: #292f36;
   border-color: #424a51;
 }
+@media (max-width: 700px) {
+  html[data-theme="night"] .opera-reading-page[data-act] .mobile-reader-toolbar {
+    color: #e8edf2;
+    background: #20262d;
+    border-color: #424a51;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .28);
+  }
+  html[data-theme="night"] .opera-reading-page[data-act] .mobile-reader-toolbar .act-outline__trigger,
+  html[data-theme="night"] .opera-reading-page[data-act] .mobile-reader-toolbar .back-to-scenes {
+    color: #e8edf2;
+  }
+}
 
 @media (max-width: 700px) {
   html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] {
