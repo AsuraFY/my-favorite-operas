@@ -630,6 +630,7 @@ button { font: inherit; }
 .libretto-section { display: contents; }
 .libretto-section__label { grid-column: 1 / -1; margin: 0; padding: 6px 25px; background: #fbfaf8; color: #938879; border-top: 1px solid #eeeae5; text-transform: uppercase; letter-spacing: .1em; font: 600 0.625rem var(--sans); }
 .libretto-row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
+.libretto-turn-anchor { display: block; height: 0; scroll-margin-top: 7rem; }
 .libretto-cell { min-width: 0; display: grid; grid-template-columns: minmax(102px, 25%) 1fr; gap: 10px; align-items: start; padding: 13px 25px 14px; font: 1.125rem/1.45 var(--serif); }
 .libretto-cell--english { border-left: 1px solid #eeeae5; }
 .libretto-cell p { margin: 0; white-space: pre-line; }
