@@ -611,7 +611,7 @@ export const carmenActFourScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Ainsi, le salut de mon âme,\nJe l'aurai perdu pour que toi,\nPour que tu t'en ailles, infâme!\nEntre ses bras, rire de moi.\nNon, par le sang, tu n'iras pas,\nCarmen, c'est moi que tu suivras!",
-            "translation": "So I will lose my soul's salvation\njust so that you, vile woman, may go\ninto his arms, laughing at me.\nNo, by my blood, you shall not go;\nCarmen, you will come with me!",
+            "translation": "Thus, my soul's salvation\nI will have lost, so that you,\nso that you may go, vile woman,\ninto his arms, laughing at me.\nNo, by my blood, you shall not go;\nCarmen, you will come with me!",
             "literalText": true,
             "speakerTranslation": "José"
           },
