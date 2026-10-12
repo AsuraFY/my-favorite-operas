@@ -28,6 +28,7 @@ import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-act1-1";
 import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-act2-1";
 import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-act3-1";
 import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-act4-1";
+import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -412,7 +413,37 @@ const carmen = {
   source: "Georges Bizet and Henri Meilhac & Ludovic Halévy, Carmen (1875), French libretto and act/number divisions from Opera Guide: https://opera-guide.ch/operas/carmen/libretto/fr/. Accessed 11 October 2026. English is a fresh line-by-line draft."
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen };
+const laBoheme = {
+  slug: "la-boheme",
+  opera: getOpera("la-boheme"),
+  composerShort: "G. PUCCINI",
+  mobileComposer: "Giacomo Puccini",
+  mobileArtworkUrl: "./public/images/la-boheme-art.webp",
+  mobileArtworkLabel: "La Bohème",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  continuousAct: true,
+  preserveLineBreaks: true,
+  alignVerseLines: true,
+  sceneDivisions: false,
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "Stage direction",
+  bracketStageDirections: true,
+  acts: [
+    { number: 1, originalHeading: "Quadro primo", scenes: laBohemeActOneScenes }
+  ],
+  characters: ["Mimì", "Rodolfo", "Marcello", "Schaunard", "Colline", "Benoît"],
+  synopsis: {
+    eyebrow: "Giacomo Puccini · Opera in four tableaux",
+    paragraphs: [
+      "On Christmas Eve in a cold Paris garret, the poet Rodolfo and painter Marcello burn a manuscript to keep warm. Their friends Schaunard and Colline arrive with food and money, and the four set out for the Café Momus. Rodolfo stays behind to finish an article.",
+      "Their neighbor Mimì knocks because her candle has gone out. When both their lights fail, Rodolfo finds her hand in the darkness. They introduce themselves, share their hopes, and fall in love. Mimì joins Rodolfo on his way to meet his friends."
+    ]
+  },
+  source: "Giacomo Puccini, La bohème (1896), Italian libretto by Luigi Illica and Giuseppe Giacosa, text and divisions from Teatro alla Scala's libretto PDF: https://www.teatroallascala.org/static/upload/la-/la-boheme-libretto.pdf. English is a fresh line-by-line translation. Act I follows the source's Quadro primo continuously; remaining tableaux will be added and checked separately."
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }

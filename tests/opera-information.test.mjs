@@ -40,7 +40,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "tosca", "madama-butterfly", "rigoletto", "don-giovanni", "la-boheme", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "tosca", "madama-butterfly", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
@@ -61,6 +61,16 @@ for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otell
       }
     }
   }
+});
+
+test("La Bohème Act I is available from its opera information page", () => {
+  const opera = operas.find(item => item.slug === "la-boheme");
+  const libretto = getLibretto("la-boheme");
+  assert.ok(libretto);
+  const navigation = createLibrettoRenderer(libretto).navigation();
+  const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
+  assert.ok(html.includes('href="#/operas/la-boheme?act=1">Read the libretto'));
+  assert.ok(html.includes("Libretto Outline"));
 });
 
 test("search-friendly aliases, thirty-one routes and act counts remain intact", () => {
