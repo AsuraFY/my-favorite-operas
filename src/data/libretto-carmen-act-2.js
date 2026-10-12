@@ -27,7 +27,7 @@ export const carmenActTwoScenes = [
           {
             "speaker": "CARMEN",
             "original": "Les tringles des sistres tintaient\nAvec un éclat métallique.\nEt sur cette étrange musique\nLes zingarellas se levaient.\nTambours de basque allaient leur train.\nEt les guitares forcenées\nGrincaient sous des mains obstinées,\nMême chanson, même refrain.\nTra la la la la la la, Tra la la la la.",
-            "translation": "The sistrums rang\nWith metallic brilliance.\nAnd to that strange music\nThe gypsy girls rose up.\nThe Basque drums kept up their beat,\nAnd the frantic guitars\nSquealed beneath stubborn hands,\nSame song, same refrain.\nTra la la la la la la, tra la la la la.",
+            "translation": "The bars of the sistrums rang\nWith metallic brilliance.\nAnd to that strange music\nThe gypsy girls rose up.\nThe Basque drums kept up their beat,\nAnd the frantic guitars\nSquealed beneath stubborn hands,\nSame song, same refrain.\nTra la la la la la la, tra la la la la.",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
