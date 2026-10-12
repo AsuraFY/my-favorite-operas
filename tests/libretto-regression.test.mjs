@@ -116,7 +116,7 @@ test("La Bohème Act IV renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("Mimì!!!"));
 });
 
-test("La Bohème outline follows the supplied 26-track recording with bilingual deep links", () => {
+test("La Bohème outline follows the supplied recording with Così-style form, singers, and exact deep links", () => {
   const libretto = getLibretto("la-boheme");
   const renderer = createLibrettoRenderer(libretto);
   const outline = renderer.outline();
@@ -127,6 +127,7 @@ test("La Bohème outline follows the supplied 26-track recording with bilingual 
   assert.ok(outline.includes("Libretto Outline"));
   const outlineEntries = libretto.acts.flatMap(act => act.scenes.flatMap(scene => scene.outline || []));
   assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), outlineEntries.length);
+  assert.equal(count(outline, /class="libretto-participants" aria-label="Singers in this section"/g), outlineEntries.length);
   for (const act of libretto.acts) {
     window.location.hash = "#/operas/la-boheme?act=" + act.number;
     const page = renderer.scene(1);
@@ -134,9 +135,10 @@ test("La Bohème outline follows the supplied 26-track recording with bilingual 
     for (const scene of act.scenes) for (const entry of scene.outline) {
       assert.ok(page.includes(entry.type + " · " + entry.title));
       assert.ok(page.includes(entry.performers.join(", ")));
+      assert.ok(!Object.hasOwn(entry, "number"), "only source-original track numbers belong in the outline");
     }
     for (const scene of act.scenes) for (const entry of scene.outline) {
-      assert.ok(outline.includes(entry.title));
+      assert.ok(outline.includes(entry.type + " · " + entry.title));
       assert.ok(outline.includes(entry.performers.join(", ")));
       const target = scene.sections.flatMap((section, sectionIndex) => section.turns.map((turn, turnIndex) => ({
         sectionIndex, turnIndex, original: turn.original ?? turn.it ?? ""

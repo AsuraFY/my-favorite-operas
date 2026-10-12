@@ -87,7 +87,8 @@ function renderOperaBar(act = 1, page = "libretto") {
 function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=false) {
   const scenes=actCatalog().find(group=>group.number===act)?.scenes||[];
   const spotifyAct=libretto.spotifyOutline?.find(group=>group.act===act);
-  if (spotifyAct) return spotifyAct.scenes.map(outlineScene=>{
+  const hasSourceOutline=scenes.some(scene=>scene.outline?.length);
+  if (spotifyAct && !hasSourceOutline) return spotifyAct.scenes.map(outlineScene=>{
     const links=outlineScene.tracks.map((track,index)=>{
       const targetScene=track.sourceScene||outlineScene.number;
       const active=targetScene===selectedScene;
@@ -131,10 +132,16 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
 function outlineTrackTitle(entry) {
   return [entry.type, entry.title].filter(Boolean).join(" · ");
 }
+function characterIcon() {
+  return '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">' +
+    '<circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2"/>' +
+    '<path d="M16.5 4.7a3 3 0 0 1 0 5.6M18 14a4 4 0 0 1 3 4v2"/></svg>';
+}
 function outlineTrackCredits(entry) {
   const people = entry.performers || entry.characters;
-  if (people?.length) return '<span class="opera-outline__section-performers">' + escapeHtml(people.join(", ")) + '</span>';
-  return entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : "";
+  if (!people?.length) return "";
+  return '<div class="libretto-participants" aria-label="Singers in this section">' +
+    characterIcon() + '<span>' + escapeHtml(people.join(", ")) + '</span></div>';
 }
 function renderSceneOutlineLinks(scene, act) {
   return (scene.outline || []).map(entry => {
@@ -161,7 +168,7 @@ function renderCompleteOutlineAct(act) {
   const header = '<summary class="opera-outline__act-toggle"><h2 id="outline-act-' + act +
     '">' + escapeHtml(actName) + ' <span>·</span> Act ' + romanNumeral(act) +
     '<span class="opera-outline__chevron" aria-hidden="true">⌄</span></h2></summary>';
-  if (spotifyAct) {
+  if (spotifyAct && !group.scenes.some(scene => scene.outline?.length)) {
     const prelude = spotifyAct.prelude ? '<div class="opera-outline__section opera-outline__prelude"><span class="opera-outline__section-title">' +
       escapeHtml(spotifyAct.prelude.title) + '</span><span class="opera-outline__section-translation">' +
       escapeHtml(spotifyAct.prelude.translation) + '</span></div>' : "";
@@ -247,11 +254,8 @@ function sectionParticipantCredits(section, act, sceneNumber) {
     if (speakers.includes(source) && !(source === "Chorus" && speakers.includes("Chorus of Servants & Musicians"))) names.push(label);
   }
   if (!names.length) return "";
-  const icon = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">' +
-    '<circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2"/>' +
-    '<path d="M16.5 4.7a3 3 0 0 1 0 5.6M18 14a4 4 0 0 1 3 4v2"/></svg>';
   return '<div class="libretto-participants" aria-label="Singers and speakers in this section">' +
-    icon + '<span>' + escapeHtml(names.join(", ")) + '</span></div>';
+    characterIcon() + '<span>' + escapeHtml(names.join(", ")) + '</span></div>';
 }
 function formatLibrettoText(value, breakVerseLines=true) {
   let text = String(value || "").replace(/\r/g, "").trim();
@@ -301,8 +305,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       if (index !== 0 || !turn.startsSourceTurn) return html;
       const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionIndex + '-' + turn.sourceTurnIndex;
       if (landmark) return '<h3 class="libretto-track-heading" id="' + id + '">' +
-        escapeHtml(outlineTrackTitle(landmark)) + '<span class="libretto-track-heading__performers">' +
-        escapeHtml((landmark.performers || landmark.characters || []).join(", ")) + '</span></h3>' + html;
+        escapeHtml(outlineTrackTitle(landmark)) + '<span class="libretto-participants libretto-track-heading__performers" aria-label="Singers in this section">' +
+        characterIcon() + '<span>' + escapeHtml((landmark.performers || landmark.characters || []).join(", ")) + '</span></span></h3>' + html;
       return scene.outline?.length ?
         html.replace('<p>', '<span class="libretto-turn-anchor" id="' + id + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html;
     });
