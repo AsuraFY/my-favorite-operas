@@ -129,8 +129,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
   }).join("");
 }
 function outlineTrackTitle(entry) {
-  const number = entry.number == null ? "" : (libretto.numberLabel || "N.") + " " + entry.number;
-  return [number, entry.type, entry.title].filter(Boolean).join(" · ");
+  return [entry.type, entry.title].filter(Boolean).join(" · ");
 }
 function outlineTrackCredits(entry) {
   const people = entry.performers || entry.characters;

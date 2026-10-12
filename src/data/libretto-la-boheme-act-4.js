@@ -10,14 +10,14 @@ export const laBohemeActFourScenes = [{
   translatedTitle: "In the garret",
   // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
   outline: [
-      {"title":"In un coupé?… Con pariglia e livree","translation":"In a carriage?… With horses and liveried servants","match":"In un coupé?","number":19,"type":"Duetto","performers":["Marcello","Rodolfo"]},
-      {"title":"O Mimì, tu più non torni","translation":"O Mimì, you no longer return","match":"O Mimì, tu più non torni","number":20,"type":"Aria","performers":["Rodolfo"]},
-      {"title":"Che ora sia?","translation":"What time is it?","match":"Che ora sia?","number":21,"type":"Ensemble","performers":["Rodolfo","Marcello","Schaunard","Colline"]},
-      {"title":"C’è Mimì… C’è Mimì che mi segue","translation":"Mimì is here… Mimì is following me","match":"C’è Mimì!","number":22,"type":"Scena","performers":["Musetta","Rodolfo","Schaunard","Mimì","Marcello","Colline"]},
-      {"title":"Vecchia zimarra, senti","translation":"Old overcoat, listen","match":"Vecchia zimarra, senti","number":23,"type":"Aria","performers":["Colline"]},
-      {"title":"Schaunard, ognuno per diversa via","translation":"Schaunard, each in our own way","match":"Schaunard, ognuno per diversa via","number":24,"type":"Duetto","performers":["Colline","Schaunard"]},
-      {"title":"Sono andati?","translation":"Have they gone?","match":"Sono andati?","number":25,"type":"Duetto","performers":["Mimì","Rodolfo"]},
-      {"title":"Oh Dio! Mimì!","translation":"Oh God! Mimì!","match":"Oh Dio! Mimì!","number":26,"type":"Finale","performers":["Rodolfo","Mimì","Schaunard","Musetta","Marcello","Colline"]}
+      {"title":"In un coupé?… Con pariglia e livree","translation":"In a carriage?… With horses and liveried servants","match":"In un coupé?","type":"Duetto","performers":["Marcello","Rodolfo"]},
+      {"title":"O Mimì, tu più non torni","translation":"O Mimì, you no longer return","match":"O Mimì, tu più non torni","type":"Aria","performers":["Rodolfo"]},
+      {"title":"Che ora sia?","translation":"What time is it?","match":"Che ora sia?","type":"Ensemble","performers":["Rodolfo","Marcello","Schaunard","Colline"]},
+      {"title":"C’è Mimì… C’è Mimì che mi segue","translation":"Mimì is here… Mimì is following me","match":"C’è Mimì!","type":"Scena","performers":["Musetta","Rodolfo","Schaunard","Mimì","Marcello","Colline"]},
+      {"title":"Vecchia zimarra, senti","translation":"Old overcoat, listen","match":"Vecchia zimarra, senti","type":"Aria","performers":["Colline"]},
+      {"title":"Schaunard, ognuno per diversa via","translation":"Schaunard, each in our own way","match":"Schaunard, ognuno per diversa via","type":"Duetto","performers":["Colline","Schaunard"]},
+      {"title":"Sono andati?","translation":"Have they gone?","match":"Sono andati?","type":"Duetto","performers":["Mimì","Rodolfo"]},
+      {"title":"Oh Dio! Mimì!","translation":"Oh God! Mimì!","match":"Oh Dio! Mimì!","type":"Finale","performers":["Rodolfo","Mimì","Schaunard","Musetta","Marcello","Colline"]}
   ],
   sections: [{
     number: null,
