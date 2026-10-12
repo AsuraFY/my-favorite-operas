@@ -6,6 +6,14 @@ export const laBohemeActTwoScenes = [
     summary: "On Christmas Eve, Rodolfo and Mimì join their friends at the Café Momus. Musetta arrives with Alcindoro, rekindles Marcello’s love, and escapes with the Bohemians as a military parade passes, leaving Alcindoro with the bill.",
     title: "Al quartiere latino",
     translatedTitle: "In the Latin Quarter",
+    outline: [
+      { title: "The Christmas Eve crowd", translation: "La folla della Vigilia di Natale", match: "Aranci, datteri" },
+      { title: "Parpignol and the children", translation: "Parpignol e i bambini", match: "Parpignol!" },
+      { title: "The friends dine at Momus", translation: "Gli amici cenano da Momus", match: "A cena!" },
+      { title: "Musetta’s waltz", translation: "Il valzer di Musetta", match: "Quando me’n vo soletta per la via" },
+      { title: "The bill and the military retreat", translation: "Il conto e la Ritirata", match: "Il conto?" },
+      { title: "The Bohemians escape", translation: "La fuga dei bohémiens", match: "Largo, largo, eccoli qua!" }
+    ],
     sections: [
       {
         number: null,
