@@ -9,10 +9,10 @@ export const laBohemeActOneScenes = [
     outline: [
       { title: "Rodolfo and Marcello in the garret", translation: "Rodolfo e Marcello in soffitta", match: "Questo Mar Rosso" },
       { title: "The landlord arrives", translation: "Arriva Benoît", match: "Si può?" },
-      { title: "The friends set out for Momus", translation: "Gli amici partono per Momus", match: "Momus, Momus, Momus" },
-      { title: "Mimì comes for a light", translation: "Mimì chiede da accendere", match: "Chi è là?" },
+      { title: "The friends set out for Momus", translation: "Gli amici partono per Momus", match: "Marcello, Schaunard e Colline escono e scendono la scala" },
+      { title: "Mimì comes for a light", translation: "Mimì chiede da accendere", match: "Mimì bussa timidamente alla porta" },
       { title: "Rodolfo’s introduction", translation: "Rodolfo si presenta", match: "Che gelida manina" },
-      { title: "Mimì’s introduction", translation: "Mimì si presenta", match: "Mi chiamano Mimì," },
+      { title: "Mimì’s introduction", translation: "Mimì si presenta", match: "Sì.\nMi chiamano Mimì" },
       { title: "Their first kiss", translation: "Il loro primo bacio", match: "O soave fanciulla" }
     ],
     sections: [
@@ -501,3 +501,4 @@ export const laBohemeActOneScenes = [
     ]
   }
 ];
+

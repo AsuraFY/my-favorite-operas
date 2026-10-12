@@ -15,8 +15,9 @@ export const laBohemeActFourScenes = [{
     { title: "Musetta brings Mimì", translation: "Musetta porta Mimì", match: "C’è Mimì!" },
     { title: "Colline’s farewell to his coat", translation: "L’addio di Colline alla zimarra", match: "Vecchia zimarra, senti" },
     { title: "Mimì and Rodolfo recall their first meeting", translation: "Mimì e Rodolfo ricordano il primo incontro", match: "Sono andati?" },
+    { title: "The pink bonnet", translation: "La cuffietta rosa", match: "La mia cuffietta!" },
     { title: "Mimì remembers the candle and the key", translation: "Mimì ricorda il lume e la chiave", match: "Il lume s’era spento" },
-    { title: "The pink bonnet and the muff", translation: "La cuffietta rosa e il manicotto", match: "La mia cuffietta!" },
+    { title: "The friends return with medicine and a muff", translation: "Gli amici tornano con il medicinale e il manicotto", match: "Musetta e Marcello entrano cautamente" },
     { title: "Mimì’s final moments", translation: "Gli ultimi momenti di Mimì", match: "Madonna benedetta" },
     { title: "Rodolfo’s cry", translation: "Il grido di Rodolfo", match: "Mimì!!!… Mimì!!!…" }
   ],
@@ -272,3 +273,4 @@ export const laBohemeActFourScenes = [{
     ]
   }]
 }];
+

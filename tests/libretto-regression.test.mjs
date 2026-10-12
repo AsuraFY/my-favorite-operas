@@ -131,6 +131,20 @@ test("La Bohème libretto outline lists source-grounded landmarks with deep link
   assert.ok(page.includes('id="libretto-turn-4-1-'));
 });
 
+test("La Bohème landmarks identify unique source turns in reading order", () => {
+  for (const act of getLibretto("la-boheme").acts) for (const scene of act.scenes) {
+    const turns = scene.sections.flatMap(section => section.turns);
+    let previous = -1;
+    for (const entry of scene.outline) {
+      const matches = turns.flatMap((turn, index) =>
+        (entry.speaker == null || turn.speaker === entry.speaker) && turn.original.includes(entry.match) ? [index] : []);
+      assert.equal(matches.length, 1, `Act ${act.number}: ${entry.title} should have one source target`);
+      assert.ok(matches[0] > previous, `Act ${act.number}: ${entry.title} should follow the previous landmark`);
+      previous = matches[0];
+    }
+  }
+});
+
 test("Tristan outline follows Spotify tracks and formats the bilingual libretto clearly", () => {
   const tristan = getLibretto("tristan-und-isolde");
   assert.ok(tristan);
@@ -491,3 +505,4 @@ test("Macbeth Act IV includes all scenes, both opening numbers, and the final ch
   window.location.hash = "#/operas/macbeth?act=3";
   assert.ok(reader.scene(1).includes("Continue to Act IV"));
 });
+
