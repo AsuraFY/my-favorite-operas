@@ -2337,6 +2337,15 @@ html[data-theme="night"] .opera-reading-page .act-outline__trigger:hover,
 html[data-theme="night"] .opera-reading-page .back-to-scenes:hover {
   color: #ffffff;
 }
+html[data-theme="night"] .opera-outline__heading h1 {
+  color: #e8edf2;
+}
+html[data-theme="night"] .opera-reading-page[data-act] .desktop-outline-collapse-bar,
+html[data-theme="night"] .opera-reading-page[data-act] .desktop-outline-reopen:not([hidden]) {
+  color: #e8edf2;
+  background: #292f36;
+  border-color: #424a51;
+}
 
 @media (max-width: 700px) {
   html[data-theme="night"] .opera-reading-page .reading-layout .scene-sidebar[data-act-outline] {
