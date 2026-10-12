@@ -3,7 +3,7 @@ import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-19";
 import { getLibretto } from "./data/libretto-registry.js?v=registry-41";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
-import { renderMusicalsPage } from "./musicals-page.js";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-tabs-1";
 
 const app = document.querySelector("#app");
 
@@ -65,7 +65,7 @@ function header(active) {
     <nav class="main-nav" aria-label="Main navigation">
       <a class="${active === "home" ? "is-active" : ""}" href="#/">Home</a>
       <a class="${active === "operas" || active === "opera" ? "is-active" : ""}" href="#/operas">Operas</a>
-      <a class="${active === "musicals" ? "is-active" : ""}" href="#/musicals">Musicals</a>
+      <a class="${active === "musicals" || active === "musical" ? "is-active" : ""}" href="#/musicals">Musicals</a>
       <button class="settings-nav-trigger" type="button" data-settings-toggle aria-label="Open settings" aria-expanded="false" aria-controls="site-settings">Settings</button>
     </nav>
     <div class="header-actions">
@@ -677,6 +677,15 @@ function render() {
   } else if (path === "/musicals") {
     shell(musicalsPage(), "musicals");
     document.title = "Musicals — My favorite Operas";
+  } else if (path.startsWith("/musicals/")) {
+    const slug = path.split("/")[2];
+    if (slug === "mahler-symphony-2-resurrection") {
+      shell(renderMusicalPage(routeParams.get("view") || "about"), "musical");
+      document.title = `${"Symphony No. 2: Resurrection"} — Musicals`;
+    } else {
+      shell(`<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This musical is not in the collection.</h1><a class="button button--dark" href="#/musicals">Return to musicals ${arrow}</a></section>`, "musicals");
+      document.title = "Musical not found — Musicals";
+    }
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
     const scene = Number(routeParams.get("scene")) || 1;

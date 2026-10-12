@@ -93,6 +93,9 @@ Older Così data files still use section.label and turn.it/turn.en, which remain
 
 - #/ — Home
 - #/operas — Opera directory, including accent-insensitive search
+- #/musicals — Musical works directory
+- #/musicals/mahler-symphony-2-resurrection — About page for Mahler’s Symphony No. 2
+- #/musicals/mahler-symphony-2-resurrection?view=lyrics — Finale lyrics and English translation
 - #/about — About
 - #/operas/SLUG — Synopsis for a registered libretto, otherwise the introduction page
 - #/operas/SLUG?view=outline — Full Libretto Outline
