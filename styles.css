@@ -1243,6 +1243,16 @@ button { font: inherit; }
   flex: 1 1 auto;
   overflow-wrap: anywhere;
 }
+.opera-reading-page .scene-sidebar .section-nav-link {
+  flex-wrap: wrap;
+}
+.opera-reading-page .scene-sidebar .section-nav-link__label {
+  flex: 1 1 calc(100% - 42px);
+}
+.opera-reading-page .scene-sidebar .section-nav-link > .libretto-participants {
+  flex: 0 0 calc(100% - 38px);
+  margin: 1px 0 0 38px;
+}
 .site-header:has(+ #main .opera-reading-page) {
   background: #102b40;
 }
