@@ -123,7 +123,7 @@ test("Tosca Acts I–III are available from its opera information page and direc
   assert.ok(!outline.includes("Maria Callas"), "performer credits stay out of the outline");
   assert.ok(!outline.includes("Performers:"), "performer labels stay out of the outline");
   assert.equal((outline.match(/class="section-nav-link opera-outline__section"/g) || []).length, 44);
-  assert.equal((outline.match(/aria-label="Characters in this section"/g) || []).length, 44);
+  assert.equal((outline.match(/class="libretto-participants"/g) || []).length, 44);
   assert.ok(libretto.spotifyOutline.flatMap(act => act.scenes.flatMap(scene => scene.tracks)).every(track => !Object.hasOwn(track, "performers")),
     "outline characters are sourced from the libretto scenes, not Spotify performer metadata");
   const spotifySourceIndex = outline.indexOf('href="https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo"');

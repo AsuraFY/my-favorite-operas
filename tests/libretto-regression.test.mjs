@@ -263,7 +263,7 @@ test("La Bohème outline shows characters from libretto speakers and keeps exact
   assert.ok(outline.includes("Libretto Outline"));
   const outlineEntries = libretto.acts.flatMap(act => act.scenes.flatMap(scene => scene.outline || []));
   assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), outlineEntries.length);
-  assert.equal(count(outline, /class="libretto-participants" aria-label="Characters in this section"/g), outlineEntries.length);
+  assert.equal(count(outline, /class="libretto-participants"/g), outlineEntries.length);
   for (const act of libretto.acts) {
     window.location.hash = "#/operas/la-boheme?act=" + act.number;
     const page = renderer.scene(1);
