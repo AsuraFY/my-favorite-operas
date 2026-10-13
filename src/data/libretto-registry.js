@@ -35,6 +35,7 @@ import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme
 
 import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.js?v=madama-butterfly-act1-1";
 import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.js?v=madama-butterfly-act2-1";
+import { madamaButterflyActThreeScenes } from "./libretto-madama-butterfly-act-3.js?v=madama-butterfly-act3-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -482,7 +483,8 @@ const madamaButterfly = {
   },
   acts: [
     { number: 1, originalHeading: "Atto primo", prelude: { title: "Preludio", translation: "Prelude" }, scenes: madamaButterflyActOneScenes },
-    { number: 2, originalHeading: "Atto secondo", scenes: madamaButterflyActTwoScenes }
+    { number: 2, originalHeading: "Atto secondo", scenes: madamaButterflyActTwoScenes },
+    { number: 3, originalHeading: "Atto terzo", scenes: madamaButterflyActThreeScenes }
   ],
   characters: [
     ["Madama Butterfly (Cio-Cio-San)", "Soprano", "A young woman from Nagasaki who enters a marriage with American naval officer Pinkerton and gives up her family’s religion."],
@@ -490,6 +492,9 @@ const madamaButterfly = {
     ["Suzuki", "Mezzo-soprano", "Butterfly’s maid."],
     ["Sharpless", "Baritone", "The American consul in Nagasaki."],
     ["Goro", "Tenor", "A marriage broker."],
+    ["Kate", "Mezzo-soprano", "Pinkerton’s American wife, who hopes to take Butterfly’s child into her care."],
+    ["The child", "Silent role", "Butterfly and Pinkerton’s young son."],
+    ["Sailors", "Chorus", "Voices heard from the harbor at dawn."],
     ["The Bonze", "Bass", "Butterfly’s uncle, a Buddhist priest."],
     ["The Imperial Commissioner", "Bass", "An official who conducts the marriage ceremony."],
     ["The Registrar", "Bass", "The civil official who records the marriage."]
@@ -508,7 +513,7 @@ const madamaButterfly = {
       ["Goro", "Tenor", "A marriage broker."]
     ]
   },
-  source: "Italian libretto and stage directions: Opera Guide, Madama Butterfly, Atti primo and secondo: https://opera-guide.ch/operas/madama+butterfly/libretto/it/. The Spotify recording linked by the user guides the section outline. English is a fresh line-by-line draft checked against Lyrical Opera Theater’s independent bilingual libretto: https://lyricaloperatheater.com/PDFs/MadamaButterfly_libretto_translation.pdf; it remains for the user’s careful review. The opera is presented in three acts. Acts I and II are populated in this update."
+  source: "Italian libretto and stage directions: Opera Guide, Madama Butterfly, Atti primo, secondo, and terzo: https://opera-guide.ch/operas/madama+butterfly/libretto/it/. The Spotify recording linked by the user guides the section outline. English is a fresh line-by-line draft checked against Lyrical Opera Theater’s independent bilingual libretto: https://lyricaloperatheater.com/PDFs/MadamaButterfly_libretto_translation.pdf; it remains for the user’s careful review. The opera is presented in three acts. Acts I, II, and III are populated in this update."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly };

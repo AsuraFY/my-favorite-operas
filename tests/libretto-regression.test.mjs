@@ -112,7 +112,7 @@ test("Madama Butterfly Act I uses the Opera Guide text with paired English and a
 
 test("Madama Butterfly Act II follows the Opera Guide and keeps the Italian and English paired", () => {
   const libretto = getLibretto("madama-butterfly");
-  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
   const act = libretto.acts[1];
   const scene = act.scenes[0];
   assert.equal(act.originalHeading, "Atto secondo");
@@ -157,6 +157,52 @@ test("Madama Butterfly Act II follows the Opera Guide and keeps the Italian and 
   assert.ok(outline.includes("La lettera di Pinkerton"));
   assert.ok(outline.includes("Tutti i fior, tutti, tutti"));
   assert.ok(outline.includes("Preludio"));
+});
+
+test("Madama Butterfly Act III follows the Opera Guide, preserves its three-act close, and aligns English", () => {
+  const libretto = getLibretto("madama-butterfly");
+  const act = libretto.acts[2];
+  const scene = act.scenes[0];
+  assert.deepEqual(libretto.acts.map(item => item.number), [1, 2, 3]);
+  assert.equal(act.originalHeading, "Atto terzo");
+  assert.equal(libretto.opera.acts, 3);
+  assert.equal(scene.sections.length, 10);
+  assert.deepEqual(scene.sections.map(section => section.originalTitle), [
+    "Verrà, verrà, vedrai", "Dormi, amor mio", "Non la destar",
+    "Anime sante degli avi", "Addio, fiorito asil", "Nella grande ora... sola",
+    "È qui, è qui... dov’è nascosto?", "Come una mosca prigioniera",
+    "Con onor muore", "Tu? tu?"
+  ]);
+  const turns = scene.sections.flatMap(section => section.turns);
+  assert.ok(turns.length > 60);
+  assert.ok(turns.some(turn => turn.original.includes("Addio, fiorito asil")));
+  assert.ok(turns.some(turn => turn.original.includes("Con onor muore")));
+  assert.ok(turns.some(turn => turn.original.includes("Tu? tu?")));
+  for (const section of scene.sections) {
+    assert.ok(section.turns.length > 0);
+    assert.equal(section.number, undefined, "no unverified score numbers are shown");
+    for (const turn of section.turns) {
+      assert.equal(typeof turn.original, "string");
+      assert.equal(typeof turn.translation, "string");
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  const renderer = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/madama-butterfly?act=3";
+  const page = renderer.scene(1);
+  assert.ok(page.includes("ATTO TERZO"));
+  assert.ok(page.includes("Addio, fiorito asil"));
+  assert.ok(page.includes("Farewell, flowery refuge"));
+  assert.ok(page.includes("With honor dies"));
+  assert.ok(page.includes("End of Act III"));
+  window.location.hash = "#/operas/madama-butterfly?view=outline";
+  const outline = renderer.outline();
+  assert.ok(outline.includes("Addio, fiorito asil"));
+  assert.ok(outline.includes("Come una mosca prigioniera"));
+  assert.ok(outline.includes("Tu? tu?"));
 });
 
 test("La Bohème Act I renders as one continuous bilingual tableau", () => {
