@@ -863,3 +863,32 @@ test("La Bohème collective participants are deduplicated across joint cues", ()
     }
   }
 });
+
+test("Così outlines retain all links and show title translations before participants", () => {
+  const reader = createLibrettoRenderer(cosi);
+  const escape = value => value.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const outline = reader.outline();
+  for (const act of cosi.acts) {
+    window.location.hash = `#/operas/cosi-fan-tutte?act=${act.number}`;
+    const page = reader.scene(1);
+    for (const scene of act.scenes) {
+      assert.ok(scene.translatedTitle);
+      for (const [index, section] of scene.sections.entries()) {
+        const href = `#/operas/cosi-fan-tutte?act=${act.number}&scene=${scene.number}&item=${index}`;
+        for (const html of [outline, page]) {
+          const start = html.indexOf('href="' + href + '"');
+          assert.ok(start >= 0);
+          const entry = html.slice(start, html.indexOf('</a>', start));
+          assert.ok(entry.includes('libretto-participants'));
+          if (section.number != null) {
+            assert.ok(section.originalTitle && section.translatedTitle);
+            assert.ok(entry.includes(escape(section.originalTitle)));
+            assert.ok(entry.includes(escape(section.translatedTitle)));
+            assert.ok(entry.indexOf('opera-outline__section-translation') < entry.indexOf('libretto-participants'));
+            assert.ok(!/Finale \((continued|opening|banquet|conclusion)/.test(entry));
+          } else assert.ok(!entry.includes('opera-outline__section-translation'));
+        }
+      }
+    }
+  }
+});

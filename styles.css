@@ -2597,3 +2597,6 @@ html[data-theme="night"] .musical-row__summary { color: var(--night-muted); }
   .musical-row:hover, .musical-row:focus-visible { padding-left: 17px; }
   .musical-row h2 { font-size: 1.2rem; }
 }
+
+/* Source-indexed three-line Così act outline. */
+.opera-reading-page[data-libretto-slug="cosi-fan-tutte"] .scene-sidebar .section-nav-link > .libretto-participants { margin-left: 0; flex-basis: 100%; }

@@ -1,3 +1,4 @@
+import { applyCosiOutlineMetadata } from "./cosi-outline-metadata.js";
 // Data registry for complete libretti; the reader UI consumes this shape for every opera.
 // Original Così dialogue stays in the existing act files, unchanged.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
@@ -103,6 +104,10 @@ const cosi = {
     Chorus: "Chorus"
   }
 };
+
+applyCosiOutlineMetadata(cosi.acts);
+cosi.threeLineOutline = true;
+cosi.source = "Outline review, 13 October 2026: https://www.librettidopera.it/cotutte/som.html (musical-number and incipit index), checked against https://www.teatroallascala.org/static/upload/lib/libretto-cosi-fan-tutte_2024-2025.pdf (PDF pp. 2–41). Existing sung text is unchanged; its original edition remains unrecorded. Existing scene labels are editorial navigation cues. Source discrepancies remain pending: N. 9 Quintetto versus Scala 8a Quintetto/9 Coro; N. 10 Terzetto/Terzettino; N. 30 Archi soli/Andante. Existing numbering and these forms are retained pending an edition decision. Musical titles are explicit indexed incipits; finale continuations retain N. 18 or N. 31. English heading translations are new drafts.";
 
 const barbiere = {
   slug: "il-barbiere-di-siviglia",
