@@ -34,7 +34,7 @@ function assertSceneRows(page, scene) {
 
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 9);
+  assert.equal(librettoCatalog.length, 10);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
@@ -666,3 +666,51 @@ test("Macbeth Act IV includes all scenes, both opening numbers, and the final ch
   window.location.hash = "#/operas/macbeth?act=3";
   assert.ok(reader.scene(1).includes("Continue to Act IV"));
 });
+
+
+test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one continuous page", () => {
+  const libretto = getLibretto("tosca");
+  assert.ok(libretto);
+  assert.equal(libretto.opera.acts, 3);
+  assert.equal(libretto.continuousAct, true);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  const act = libretto.acts[0];
+  assert.equal(act.originalHeading, "Atto primo");
+  assert.equal(act.scenes.length, 9);
+  assert.deepEqual(act.scenes.map(scene => scene.sections[0].originalTitle), [
+    "Scena prima", "Scena seconda", "Scena terza", "Scena quarta", "Scena quinta",
+    "Scena sesta", "Scena settima", "Scena ottava", "Scena nona"
+  ]);
+  let turns = 0;
+  for (const scene of act.scenes) for (const section of scene.sections) {
+    assert.equal(section.number, undefined, "no unsupported score number");
+    assert.ok(section.turns.length > 0);
+    for (const turn of section.turns) {
+      turns++;
+      assert.ok(turn.original.trim());
+      assert.ok(turn.translation.trim());
+      if (turn.speaker === "Stage direction") continue;
+      assert.equal(turn.original.split("\\n").length, turn.translation.split("\\n").length,
+        `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+    }
+  }
+  assert.ok(turns > 150, "Act I should include the complete dialogue and stage directions");
+  assert.equal(libretto.stageDirectionSpeaker, "Stage direction");
+  assert.equal(libretto.bracketStageDirections, true);
+  const reader = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/tosca?act=1&scene=9&item=0";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO PRIMO"));
+  assert.ok(page.includes("Recondita armonia"));
+  assert.ok(page.includes("A hidden harmony"));
+  assert.ok(page.includes("Te Deum laudamus"));
+  assert.ok(page.includes("We praise you, O God"));
+  assert.ok(page.includes("End of Act I"));
+  assert.ok(page.includes('id="libretto-section-1-9-0"'));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  for (const heading of ["Scena prima", "Scena quinta", "Scena nona"]) {
+    assert.ok(outline.includes(heading), `Act I outline includes ${heading}`);
+  }
+});
+

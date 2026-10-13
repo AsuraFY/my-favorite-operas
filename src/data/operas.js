@@ -314,7 +314,7 @@ export const operas = [
     color: "tosca",
     initials: "T",
     featured: false,
-    librettoPlanned: true,
+    librettoPlanned: false,
     summary: "Singer Floria Tosca fights to save her lover, painter Mario Cavaradossi, from the police chief Scarpia.",
     note: "Puccini’s Roman thriller compresses passion, political danger and betrayal into one fateful day."
   },
@@ -623,3 +623,4 @@ export const operas = [
 export function getOpera(slug) {
   return operas.find((opera) => opera.slug === slug);
 }
+

@@ -36,6 +36,7 @@ import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme
 import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.js?v=madama-butterfly-act1-1";
 import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.js?v=madama-butterfly-act2-1";
 import { madamaButterflyActThreeScenes } from "./libretto-madama-butterfly-act-3.js?v=madama-butterfly-act3-1";
+import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-act1-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -516,8 +517,31 @@ const madamaButterfly = {
   source: "Italian libretto and stage directions: Opera Guide, Madama Butterfly, Atti primo, secondo, and terzo: https://opera-guide.ch/operas/madama+butterfly/libretto/it/. The Spotify recording linked by the user guides the section outline. English is a fresh line-by-line draft checked against Lyrical Opera Theater’s independent bilingual libretto: https://lyricaloperatheater.com/PDFs/MadamaButterfly_libretto_translation.pdf; it remains for the user’s careful review. The opera is presented in three acts. Acts I, II, and III are populated in this update."
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly };
+const tosca = {
+  slug: "tosca",
+  continuousAct: true,
+  preserveLineBreaks: true,
+  alignVerseLines: true,
+  opera: getOpera("tosca"),
+  composerShort: "G. PUCCINI",
+  mobileComposer: "Giacomo Puccini",
+  mobileArtworkUrl: "./public/images/tosca-art.webp",
+  mobileArtworkLabel: "Tosca",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  sceneOriginalPrefix: "Scena",
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "Stage direction",
+  bracketStageDirections: true,
+  sceneOrdinals: ["PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA"],
+  acts: [{ number: 1, originalHeading: "Atto primo", scenes: toscaActOneScenes }],
+  characters: ["Floria Tosca", "Mario Cavaradossi", "Baron Scarpia", "Cesare Angelotti", "The Sacristan", "Spoletta", "Sciarrone", "Jailer", "A Shepherd", "Chorus"],
+  source: "Italian libretto and nine scene divisions for Act I: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. The English is a fresh line-by-line draft checked against Lyrical Opera Theater's Italian-English libretto, https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf; it remains for the user's careful review. Only Act I is populated in this update."
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
 export const librettoCatalog = Object.values(completeLibretti);
+

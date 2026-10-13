@@ -7,6 +7,8 @@ import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/op
 import { getLibretto } from "../src/data/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 
+globalThis.window = { location: { hash: "" } };
+
 test("all thirty-one opera information pages contain verified metadata and full introductory sections", () => {
   assert.equal(operas.length, 31);
   assert.equal(new Set(operas.map(opera => opera.slug)).size, 31);
@@ -40,7 +42,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "tosca", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
@@ -88,3 +90,27 @@ test("search-friendly aliases, thirty-one routes and act counts remain intact", 
   assert.deepEqual(getLibretto("le-nozze-di-figaro").acts.map(act => act.number), [1, 2, 3, 4]);
   assert.ok(getLibretto("cosi-fan-tutte"));
 });
+
+
+test("Tosca Act I is available from its opera information page and direct act route", () => {
+  const opera = operas.find(item => item.slug === "tosca");
+  const libretto = getLibretto("tosca");
+  assert.ok(libretto);
+  assert.equal(opera.acts, 3);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  const reader = createLibrettoRenderer(libretto);
+  const navigation = reader.navigation();
+  const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
+  assert.ok(html.includes('href="#/operas/tosca?act=1">Read the libretto'));
+  assert.ok(html.includes("Libretto Outline"));
+  window.location.hash = "#/operas/tosca?act=1";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO PRIMO"));
+  assert.ok(page.includes("SCENA NONA"));
+  assert.ok(page.includes("End of Act I"));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  assert.ok(outline.includes("Scena prima"));
+  assert.ok(outline.includes("Scena nona"));
+});
+
