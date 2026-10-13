@@ -519,7 +519,102 @@ const madamaButterfly = {
   source: "Italian libretto and stage directions: Opera Guide, Madama Butterfly, Atti primo, secondo, and terzo: https://opera-guide.ch/operas/madama+butterfly/libretto/it/. The Spotify recording linked by the user guides the section outline. English is a fresh line-by-line draft checked against Lyrical Opera Theater’s independent bilingual libretto: https://lyricaloperatheater.com/PDFs/MadamaButterfly_libretto_translation.pdf; it remains for the user’s careful review. The opera is presented in three acts. Acts I, II, and III are populated in this update."
 };
 
+const toscaSingers = {
+  Angelotti: 'Franco Calabrese',
+  Sacristan: 'Melchiorre Luise',
+  Cavaradossi: 'Giuseppe Di Stefano',
+  'Cavaradossi’s voice': 'Giuseppe Di Stefano',
+  Tosca: 'Maria Callas',
+  Scarpia: 'Tito Gobbi',
+  Spoletta: 'Angelo Mercuriali',
+  Sciarrone: 'Dario Caselli',
+  Jailer: 'Dario Caselli',
+  Shepherd: 'Alvaro Cordova',
+  Chorus: 'Coro del Teatro alla Scala di Milano'
+};
+const toscaTrack = (title, translation, sourceScene, roles = [], performerOverride) => ({
+  title, translation, sourceScene,
+  performers: performerOverride || roles.map(role => toscaSingers[role]).filter(Boolean)
+});
+const toscaSpotifyOutline = [
+  { act: 1, scenes: [
+    { number: 1, tracks: [toscaTrack('Ah! Finalmente! Nel terror mio stolto', 'Ah! At last! In my stupid fear', 1, ['Angelotti'])] },
+    { number: 2, tracks: [toscaTrack('E sempre lava!', 'Forever washing!', 2, ['Sacristan', 'Cavaradossi'])] },
+    { number: 3, tracks: [
+      toscaTrack('Sante ampolle! Il suo ritratto!', 'Holy vessels! His portrait!', 3, ['Sacristan', 'Cavaradossi']),
+      toscaTrack('Dammi i colori! … Recondita armonia', 'Give me my paints! … Hidden harmony', 3, ['Cavaradossi', 'Sacristan'], ['Giuseppe Di Stefano', 'Angelo Mercuriali'])
+    ] },
+    { number: 4, tracks: [toscaTrack('Gente là dentro!', 'Someone is in there!', 4, ['Cavaradossi', 'Angelotti', 'Tosca'])] },
+    { number: 5, tracks: [
+      toscaTrack('Mario! Mario! Mario! … Son qui!', 'Mario! Mario! Mario! … Here I am!', 5, ['Tosca', 'Cavaradossi']),
+      toscaTrack('Ora stammi a sentir', 'Now listen to me', 5, ['Tosca', 'Cavaradossi']),
+      toscaTrack('Or lasciami al lavoro', 'Now let me get back to work', 5, ['Cavaradossi', 'Tosca']),
+      toscaTrack('Ah, quegli occhi…', 'Ah, those eyes…', 5, ['Tosca', 'Cavaradossi']),
+      toscaTrack('Mia gelosa!', 'My jealous one!', 5, ['Tosca', 'Cavaradossi'])
+    ] },
+    { number: 6, tracks: [toscaTrack('È buona la mia Tosca', 'My Tosca is good', 6, ['Cavaradossi', 'Angelotti'])] },
+    { number: 7, tracks: [toscaTrack('Sommo giubilo, Eccellenza!', 'Great rejoicing, Your Excellency!', 7, ['Sacristan', 'Chorus'])] },
+    { number: 8, tracks: [toscaTrack('Un tal baccano in chiesa!', 'Such a commotion in the church!', 8, ['Scarpia', 'Sacristan', 'Spoletta'])] },
+    { number: 9, tracks: [
+      toscaTrack('Tosca? Che non mi veda', 'Tosca? She must not see me', 9, ['Scarpia', 'Tosca', 'Sacristan']),
+      toscaTrack('Ed io venivo a lui tutta dogliosa', 'And I came to him, full of sorrow', 9, ['Tosca', 'Scarpia']),
+      toscaTrack('Tre sbirri, una carrozza', 'Three police officers, a carriage', 9, ['Scarpia', 'Spoletta', 'Chorus'])
+    ] }
+  ] },
+  { act: 2, scenes: [
+    { number: 1, tracks: [
+      toscaTrack('Tosca è un buon falco!', 'Tosca is a fine hawk!', 1, ['Scarpia', 'Sciarrone']),
+      toscaTrack('Ha più forte sapore', 'It has a stronger flavor', 1, ['Scarpia', 'Sciarrone'])
+    ] },
+    { number: 2, tracks: [
+      toscaTrack('O galantuomo, come andò la caccia?', 'Oh, gallant man, how goes the hunt?', 2, ['Scarpia', 'Spoletta']),
+      toscaTrack('Meno male!', 'Thank goodness!', 2, ['Scarpia', 'Spoletta', 'Cavaradossi'])
+    ] },
+    { number: 3, tracks: [toscaTrack("Dov'è Angelotti?", 'Where is Angelotti?', 3, ['Scarpia', 'Cavaradossi', 'Spoletta', 'Tosca'])] },
+    { number: 4, tracks: [
+      toscaTrack('Ed or fra noi parliam da buoni amici', 'And now let us speak as good friends', 4, ['Scarpia', 'Tosca']),
+      toscaTrack('Sciarrone, che dice il Cavalier?', 'Sciarrone, what does the Cavalier say?', 4, ['Scarpia', 'Sciarrone', 'Tosca', 'Cavaradossi’s voice']),
+      toscaTrack('Orsù, Tosca, parlate', 'Come now, Tosca, speak', 4, ['Scarpia', 'Tosca', 'Cavaradossi’s voice', 'Spoletta', 'Sciarrone']),
+      toscaTrack('Floria! … Amore', 'Floria! … My love!', 4, ['Cavaradossi', 'Tosca', 'Scarpia', 'Sciarrone'])
+    ] },
+    { number: 5, tracks: [
+      toscaTrack('Salvatelo! … Io? Voi!', 'Save him! … Me? You!', 5, ['Tosca', 'Scarpia']),
+      toscaTrack('Se la giurata fede debbo tradir', 'If I must betray my sworn faith', 5, ['Scarpia', 'Tosca']),
+      toscaTrack('Come tu mi odi!', 'How you hate me!', 5, ['Scarpia', 'Tosca']),
+      toscaTrack("Vissi d'arte, vissi d'amore", 'I lived for art, I lived for love', 5, ['Tosca']),
+      toscaTrack('Vedi, le man giunte io stendo a te!', 'See, I stretch my folded hands to you!', 5, ['Tosca', 'Scarpia', 'Spoletta']),
+      toscaTrack('Io tenni la promessa', 'I kept my promise', 5, ['Scarpia', 'Tosca']),
+      toscaTrack('Tosca, finalmente mia!', 'Tosca, mine at last!', 5, ['Scarpia', 'Tosca']),
+      toscaTrack('Or gli perdono!', 'Now I forgive him!', 5, ['Tosca'])
+    ] }
+  ] },
+  { act: 3, scenes: [
+    { number: 1, tracks: [
+      toscaTrack("Introduction (Andante sostenuto) - Io de' sospiri", 'Introduction (Andante sostenuto) — I sigh…so much!', 1, ['Shepherd']),
+      toscaTrack('Le campane suonano mattutino (Lento)', 'The bells ring for matins (Lento)', 1)
+    ] },
+    { number: 2, tracks: [
+      toscaTrack('Mario Cavaradossi? A voi.', 'Mario Cavaradossi? For you.', 2, ['Jailer', 'Cavaradossi']),
+      toscaTrack('E lucevan le stelle', 'And the stars were shining', 2, ['Cavaradossi'])
+    ] },
+    { number: 3, tracks: [
+      toscaTrack('Moderato con moto - Ah! Franchigia a Floria Tosca', 'Moderately, with motion — Ah! Safe passage for Floria Tosca', 3, ['Cavaradossi', 'Tosca']),
+      toscaTrack('O dolci mani mansuete e pure', 'Oh, sweet, gentle, pure hands', 3, ['Cavaradossi']),
+      toscaTrack("Senti, l'ora è vicina", 'Listen, the hour is near', 3, ['Tosca', 'Cavaradossi'], ['Maria Callas']),
+      toscaTrack("Amaro sol per te m'era il morire", 'Only for you was death bitter to me', 3, ['Cavaradossi', 'Tosca']),
+      toscaTrack('E non giungono', 'They are not coming', 3, ['Tosca', 'Cavaradossi', 'Jailer'])
+    ] },
+    { number: 4, title: 'Scena ultima', translatedTitle: 'Last Scene', tracks: [
+      toscaTrack("Com'è lunga l'attesa!", 'How long the waiting is!', 4, ['Tosca']),
+      toscaTrack('Presto! Su, Mario!', 'Quick! Up, Mario!', 4, ['Tosca', 'Sciarrone', 'Spoletta', 'Chorus'])
+    ] }
+  ] }
+];
+
 const tosca = {
+  spotifyAlbumUrl: "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo",
+  outlineRecording: "Puccini: Tosca · Maria Callas, Giuseppe Di Stefano, Tito Gobbi · Victor de Sabata (1953)",
+  spotifyOutline: toscaSpotifyOutline,
   slug: "tosca",
   continuousAct: true,
   preserveLineBreaks: true,
@@ -542,7 +637,7 @@ const tosca = {
     { number: 3, originalHeading: "Atto terzo", scenes: toscaActThreeScenes }
   ],
   characters: ["Floria Tosca", "Mario Cavaradossi", "Baron Scarpia", "Cesare Angelotti", "The Sacristan", "Spoletta", "Sciarrone", "Jailer", "A Shepherd", "Chorus"],
-  source: "Italian libretto and scene divisions for Acts I–III: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. English is a fresh line-by-line draft checked against Lyrical Opera Theater's Italian-English libretto, https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf; it remains for the user's careful review. Acts I–III are populated."
+  source: "Italian libretto and scene divisions for Acts I–III: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. English is a fresh line-by-line draft checked against Lyrical Opera Theater's Italian-English libretto, https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf; it remains for the user's careful review. The outline follows the 44-track 1953 Callas, Di Stefano, Gobbi, de Sabata recording linked at the foot of the outline. Acts I–III are populated."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };
