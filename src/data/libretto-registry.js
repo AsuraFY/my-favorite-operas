@@ -1,6 +1,6 @@
 // Data registry for complete libretti; the reader UI consumes this shape for every opera.
 // Original Così dialogue stays in the existing act files, unchanged.
-import { getOpera } from "./operas.js?v=opera-art-12";
+import { getOpera } from "./operas.js?v=tosca-act1-2";
 import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=act2-18";
 import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-2";
@@ -544,4 +544,5 @@ export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
 export const librettoCatalog = Object.values(completeLibretti);
+
 
