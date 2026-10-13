@@ -613,7 +613,7 @@ const toscaSpotifyOutline = [
 
 const tosca = {
   spotifyAlbumUrl: "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo",
-  outlineRecording: "Puccini: Tosca · Maria Callas, Giuseppe Di Stefano, Tito Gobbi · Victor de Sabata (1953)",
+  outlineRecording: "Tosca · 1953 recording",
   spotifyOutline: toscaSpotifyOutline,
   slug: "tosca",
   continuousAct: true,
