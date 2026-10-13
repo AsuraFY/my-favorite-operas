@@ -42,8 +42,18 @@ test("La Bohème translated section titles appear in both outlines and the side-
       assert.ok(entry.translation, `English title translation exists for ${entry.title}`);
       assert.ok(outline.includes('<span class="opera-outline__section-title">' +
         entry.type + ' · ' + entry.title + '</span><span class="opera-outline__section-translation">' +
-        entry.translation + '</span><span class="libretto-participants">'),
+        entry.translation + '</span><div class="libretto-participants">'),
         `outline renders title, translation, and characters for ${entry.title}`);
+    }
+  }
+  for (const act of libretto.acts) {
+    window.location.hash = "#/operas/la-boheme?act=" + act.number;
+    const page = reader.scene(1);
+    for (const scene of act.scenes) for (const entry of scene.outline || []) {
+      assert.ok(page.includes(entry.translation + '</span><div class="libretto-participants">'),
+        `act outline includes English before participants for ${entry.title}`);
+      assert.ok(page.includes(entry.translation + '</span><span class="libretto-participants">'),
+        `reader heading includes English before participants for ${entry.title}`);
     }
   }
   window.location.hash = "#/operas/la-boheme?act=1";
