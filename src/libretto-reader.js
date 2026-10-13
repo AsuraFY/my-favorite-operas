@@ -169,8 +169,7 @@ function renderCharacterCredits(names, inline = false) {
   if (!names?.length) return "";
   const tag = inline ? "span" : "div";
   return '<' + tag + ' class="libretto-participants">' +
-    '<span class="libretto-participants__label">Characters:</span> ' + characterIcon() +
-    '<span>' + escapeHtml(names.join(", ")) + '</span></' + tag + '>';
+    characterIcon() + '<span>' + escapeHtml(names.join(", ")) + '</span></' + tag + '>';
 }
 function matchingOutlineTurn(entry, scene) {
   if (!entry.match) return null;
