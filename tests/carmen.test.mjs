@@ -57,7 +57,7 @@ test("Carmen reader shows a side-by-side continuous act with translated source l
   const outline = reader.outline();
   assert.match(outline, /No\. 27 · Duo et choeur final/);
   assert.match(outline, /class="libretto-participants"/);
-  assert.match(outline, /class="libretto-participants__label">Characters:/);
+  assert.doesNotMatch(outline, /Characters:/);
   assert.ok(outline.includes("Cigarette makers’ chorus"));
   assert.doesNotMatch(outline, /\bCHOEUR\b|\bLES CIGARIÈRES\b/);
   assert.ok(!outline.includes("Scene 1"));
