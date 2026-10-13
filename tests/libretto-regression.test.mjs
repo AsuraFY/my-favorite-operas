@@ -103,8 +103,8 @@ test("Madama Butterfly Act I uses the Opera Guide text with paired English and a
   window.location.hash = "#/operas/madama-butterfly?view=outline";
   const outline = renderer.outline();
   assert.ok(outline.includes("Libretto Outline"));
-  assert.ok(outline.includes('role="img" aria-label="Characters in this section"'));
-  assert.ok(!outline.includes('class="libretto-participants__label"'));
+  assert.ok(outline.includes('Characters:'));
+  assert.ok(outline.includes('class="libretto-participants__label"'));
   assert.ok(outline.includes("Vogliatemi bene"));
   assert.ok(outline.includes("Preludio"));
   assert.ok(outline.includes("Prelude"));
@@ -270,8 +270,8 @@ test("La Bohème outline shows characters from libretto speakers and keeps exact
     assert.ok(page.includes("Act outline"));
     for (const scene of act.scenes) for (const entry of scene.outline) {
       assert.ok(page.includes(entry.type + " · " + entry.title));
-      assert.ok(page.includes('role="img" aria-label="Characters in this section"'));
-      assert.ok(!page.includes('class="libretto-participants__label"'));
+      assert.ok(page.includes('Characters:'));
+      assert.ok(page.includes('class="libretto-participants__label"'));
       assert.ok(!Object.hasOwn(entry, "number"), "only source-original track numbers belong in the outline");
     }
     for (const scene of act.scenes) for (const entry of scene.outline) {
@@ -283,7 +283,7 @@ test("La Bohème outline shows characters from libretto speakers and keeps exact
         (entry.speaker == null || scene.sections[turn.sectionIndex].turns[turn.turnIndex].speaker === entry.speaker) &&
         turn.original.includes(entry.match));
       assert.ok(target, "every outline item must match a libretto turn");
-      assert.ok(outline.includes('role="img" aria-label="Characters in this section"'), entry.title + " has a character icon");
+      assert.ok(outline.includes('Characters:'), entry.title + " has a character icon");
       const expectedHref = "#/operas/la-boheme?act=" + act.number + "&scene=" + scene.number +
         "&item=" + target.sectionIndex + "&turn=" + target.turnIndex;
       assert.ok(page.includes('href="' + expectedHref + '"'), entry.title + " must link to its exact turn");
@@ -709,18 +709,18 @@ test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one 
   assert.ok(page.includes("We praise you, O God"));
   assert.ok(page.includes("End of Act I"));
   assert.ok(page.includes('id="libretto-section-1-9-0"'));
-  assert.ok(page.includes('role="img" aria-label="Characters in this section"'));
-  assert.ok(!page.includes('class="libretto-participants__label"'));
+  assert.ok(page.includes('Characters:'));
+  assert.ok(page.includes('class="libretto-participants__label"'));
   const actOutline = page.slice(page.indexOf('<aside class="scene-sidebar"'), page.indexOf('</aside>'));
-  assert.ok(actOutline.includes('role="img" aria-label="Characters in this section"'));
-  assert.match(page, /class="selected-section-heading">[\s\S]{0,500}role="img" aria-label="Characters in this section"/);
+  assert.ok(actOutline.includes('Characters:'));
+  assert.match(page, /class="selected-section-heading">[\s\S]{0,500}Characters:/);
   window.location.hash = "#/operas/tosca?view=outline";
   const outline = reader.outline();
   for (const heading of ["Scena prima", "Scena quinta", "Scena nona"]) {
     assert.ok(outline.includes(heading), `Act I outline includes ${heading}`);
   }
-  assert.ok(outline.includes('role="img" aria-label="Characters in this section"'));
-  assert.ok(!outline.includes('class="libretto-participants__label"'));
+  assert.ok(outline.includes('Characters:'));
+  assert.ok(outline.includes('class="libretto-participants__label"'));
 });
 
 test("Tosca Act II follows Opera Guide's five scenes with aligned English on one continuous page", () => {
