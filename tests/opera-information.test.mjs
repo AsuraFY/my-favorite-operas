@@ -118,7 +118,8 @@ test("Tosca Acts I–III are available from its opera information page and direc
   assert.ok(outline.includes('href="#/operas/tosca?act=2&scene=5&item=0"'));
   assert.ok(outline.includes('href="#/operas/tosca?act=3&scene=4&item=0"'));
   assert.ok(outline.includes("I lived for art, I lived for love"));
-  assert.ok(outline.includes("Performers: Maria Callas, Tito Gobbi"));
+  assert.ok(!outline.includes("Maria Callas"), "performer credits stay out of the outline");
+  assert.ok(!outline.includes("Singers in this section"), "performer rows stay out of the outline");
   assert.equal((outline.match(/class="section-nav-link opera-outline__section"/g) || []).length, 44);
   const spotifySourceIndex = outline.indexOf('href="https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo"');
   assert.ok(spotifySourceIndex > outline.lastIndexOf("</details>"), "Spotify source appears after the complete outline");

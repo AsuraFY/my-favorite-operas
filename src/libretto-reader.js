@@ -146,7 +146,7 @@ function characterIcon() {
     '<path d="M16.5 4.7a3 3 0 0 1 0 5.6M18 14a4 4 0 0 1 3 4v2"/></svg>';
 }
 function outlineTrackCredits(entry) {
-  const people = entry.performers || entry.characters;
+  const people = entry.characters;
   if (!people?.length) return "";
   return '<div class="libretto-participants" aria-label="Singers in this section">' +
     characterIcon() + '<span>' + escapeHtml(people.join(", ")) + '</span></div>';
