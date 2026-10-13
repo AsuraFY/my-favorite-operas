@@ -214,6 +214,7 @@ function renderSceneOutlineLinks(scene, act) {
       if (turnIndex >= 0) { targetSection = sectionIndex; targetTurn = turnIndex; break; }
     }
     const label = '<span class="opera-outline__section-title">' + escapeHtml(outlineTrackTitle(entry)) + '</span>' +
+      (entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : '') +
       outlineTrackCredits(entry, scene, act);
     if (targetSection < 0 || targetTurn < 0) {
       return '<span class="section-nav-link opera-outline__section is-unavailable" aria-disabled="true">' + label + '</span>';
@@ -360,7 +361,9 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       if (index !== 0 || !turn.startsSourceTurn) return html;
       const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionIndex + '-' + turn.sourceTurnIndex;
       if (landmark) return '<h3 class="libretto-track-heading" id="' + id + '">' +
-        escapeHtml(outlineTrackTitle(landmark)) + renderCharacterCredits(outlineEntryCharacters(landmark, scene, act), true) + '</h3>' + html;
+        escapeHtml(outlineTrackTitle(landmark)) +
+        (landmark.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(landmark.translation) + '</span>' : '') +
+        renderCharacterCredits(outlineEntryCharacters(landmark, scene, act), true) + '</h3>' + html;
       return scene.outline?.length ?
         html.replace('<p>', '<span class="libretto-turn-anchor" id="' + id + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html;
     });
