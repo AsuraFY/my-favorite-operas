@@ -701,6 +701,11 @@ button { font: inherit; }
 
 
 /* Cosi fan tutte reader: reusable scene tree and paired bilingual passages */
+/* La Bohème's three-line entries have no leading musical icon to offset. */
+.opera-reading-page[data-libretto-slug="la-boheme"] .scene-sidebar .section-nav-link > .libretto-participants {
+  margin-left: 0;
+  flex-basis: 100%;
+}
 .site-header:has(+ #main .opera-reading-page) {
   height: 76px;
   padding: 0 max(32px, calc((100% - 1480px) / 2));
