@@ -713,7 +713,7 @@ test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one 
   assert.ok(page.includes('class="libretto-participants"'));
   const actOutline = page.slice(page.indexOf('<aside class="scene-sidebar"'), page.indexOf('</aside>'));
   assert.ok(!actOutline.includes('Characters:'));
-  assert.match(page, /class="selected-section-heading">[\s\S]{0,500}Characters:/);
+  assert.match(page, /class="selected-section-heading">[\s\S]{0,500}class="libretto-participants"/);
   window.location.hash = "#/operas/tosca?view=outline";
   const outline = reader.outline();
   for (const heading of ["Scena prima", "Scena quinta", "Scena nona"]) {
