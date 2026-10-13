@@ -47,6 +47,13 @@ function sourceDivisionHeading(section, tag = "h3") {
   return division ? '<' + tag + ' class="libretto-source-division">' + escapeHtml(division.original) +
     ' <span>·</span> ' + escapeHtml(division.translation) + '</' + tag + '>' : '';
 }
+function sceneSourceHeading(scene) {
+  return scene.originalHeading || (libretto.sceneOriginalPrefix || "Scene") + " " +
+    (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase();
+}
+function sceneTranslatedHeading(scene) {
+  return scene.translatedHeading || "Scene " + romanNumeral(scene.number);
+}
 function sectionPresentation(scene, section, sectionIndex) {
   const { match, number: no } = numberedSection(section);
   const form = section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
@@ -124,8 +131,9 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
     }).join("");
     const selected=item.number===selectedScene;
     if (libretto.sceneDivisions === false) return '<div class="section-nav">' + links + '</div>';
+    const sceneLabel = item.originalHeading ? item.originalHeading + ' · ' + (item.translatedHeading || 'Scene ' + romanNumeral(item.number)) : 'Scene ' + romanNumeral(item.number);
     return '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
-      '><summary class="scene-group__summary"><span>Scene '+romanNumeral(item.number)+
+      '><summary class="scene-group__summary"><span>'+escapeHtml(sceneLabel)+
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
 }
@@ -202,8 +210,8 @@ function renderCompleteOutlineAct(act) {
         (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') +
         '</h3><div class="opera-outline__sections">' + renderSceneOutlineLinks(scene, act) + '</div></section>';
       return '<section class="opera-outline__scene" aria-labelledby="' + (libretto.sceneDivisions === false ? 'outline-act-' + act : sceneId) + '">' +
-        (libretto.sceneDivisions === false ? '' : '<h3 id="' + sceneId + '">' + escapeHtml((libretto.sceneOriginalPrefix || 'Scene') + ' ' + (libretto.sceneOrdinals?.[scene.number - 1] || romanNumeral(scene.number)).toLocaleLowerCase()) +
-        ' <span>·</span> Scene ' + scene.number +
+        (libretto.sceneDivisions === false ? '' : '<h3 id="' + sceneId + '">' + escapeHtml(sceneSourceHeading(scene)) +
+        ' <span>·</span> ' + escapeHtml(sceneTranslatedHeading(scene)) +
         (scene.title ? ' <span>·</span> ' + escapeHtml(scene.title) + (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') : '') +
         '</h3>') + '<div class="opera-outline__sections">' +
         scene.sections.map((section, index) => {
@@ -417,8 +425,7 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
           '<div class="scene-panel__top" id="libretto-scene-' + act + '-' + entry.number + '">' +
           '<h' + (continuous && sceneIndex > 0 ? '2' : '1') + ' class="scene-context">' + escapeHtml(group.originalHeading || actLabel).toUpperCase() +
           ' · ' + actLabel.toUpperCase() + (libretto.sceneDivisions === false ? '' : ' <span>/</span> ' +
-          escapeHtml((libretto.sceneOriginalPrefix || "Scene") + " " + (libretto.sceneOrdinals?.[entry.number - 1] || romanNumeral(entry.number))).toUpperCase() +
-          ' · SCENE ' + romanNumeral(entry.number)) + '</h' + (continuous && sceneIndex > 0 ? '2' : '1') + '>' +
+          escapeHtml(sceneSourceHeading(entry)).toUpperCase() + ' · ' + escapeHtml(sceneTranslatedHeading(entry)).toUpperCase()) + '</h' + (continuous && sceneIndex > 0 ? '2' : '1') + '>' +
           '<p class="scene-summary">' + escapeHtml(conciseSceneSummary(entry)) + '</p></div>' +
           entry.sections.map((part, index) => renderSceneSection(entry, part, index, act)).join("")
         ).join("") +
@@ -434,3 +441,4 @@ return { scene: renderScenePage, outline: renderOutlinePage, synopsis: renderSyn
 }
 
 export { createLibrettoRenderer };
+

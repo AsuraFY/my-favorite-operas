@@ -783,7 +783,8 @@ test("Tosca Act III follows Opera Guide's four scene divisions and aligns Englis
   assert.ok(page.includes("ATTO TERZO"));
   assert.ok(page.includes("E lucevan le stelle"));
   assert.ok(page.includes("And the stars were shining"));
-  assert.ok(page.includes("Scena ultima"));
+  assert.ok(page.includes("SCENA ULTIMA"));
+  assert.ok(page.includes("LAST SCENE"));
   assert.ok(page.includes("O Scarpia, before God!"));
   assert.ok(page.includes("End of Act III"));
   assert.ok(page.includes('id="libretto-section-3-4-0"'));
@@ -792,5 +793,6 @@ test("Tosca Act III follows Opera Guide's four scene divisions and aligns Englis
   for (const heading of ["Scena prima", "Scena seconda", "Scena terza", "Scena ultima"]) {
     assert.ok(outline.includes(heading), `Act III outline includes ${heading}`);
   }
+  assert.ok(outline.includes("Last Scene"));
 });
 

@@ -122,7 +122,8 @@ test("Tosca Acts I–III are available from its opera information page and direc
   assert.ok(thirdActPage.includes("ATTO TERZO"));
   assert.ok(thirdActPage.includes("E lucevan le stelle"));
   assert.ok(thirdActPage.includes("And the stars were shining"));
-  assert.ok(thirdActPage.includes("Scena ultima"));
+  assert.ok(thirdActPage.includes("SCENA ULTIMA"));
+  assert.ok(thirdActPage.includes("LAST SCENE"));
   assert.ok(thirdActPage.includes("O Scarpia, before God!"));
   assert.ok(thirdActPage.includes("End of Act III"));
   window.location.hash = "#/operas/tosca?view=outline";

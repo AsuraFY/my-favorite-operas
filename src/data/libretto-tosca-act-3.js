@@ -71,6 +71,8 @@ export const toscaActThreeScenes = [
   },
   {
     number: 4,
+    originalHeading: "Scena ultima",
+    translatedHeading: "Last Scene",
     sections: [{ type: "Scena", originalTitle: "Scena ultima", translatedTitle: "Last Scene", participants: ["Tosca", "Cavaradossi", "Jailer", "Officer", "Sergeant", "Spoletta", "Sciarrone", "Soldiers", "Voices offstage"], turns: [
       direction("Frattanto dalla scaletta è salito un drappello di soldati: lo comanda un Ufficiale, il quale schiera i soldati nel fondo: seguono Spoletta, il Sergente, il Carceriere. Spoletta dà le necessarie istruzioni. Il cielo si fa più luminoso; è l'alba: suonano le 4 del mattino. Il Carceriere si avvicina a Cavaradossi e togliendosi il berretto gli indica l'Ufficiale.", "Meanwhile, a squad of soldiers climbs the stairs, led by an Officer who lines them up at the back. Spoletta, the Sergeant, and the Jailer follow. Spoletta gives the necessary instructions. The sky grows brighter; dawn breaks, and the clock strikes four. The Jailer approaches Cavaradossi, removes his cap, and points out the Officer."),
       lyric("Jailer", "L'ora!", "The hour!"),
