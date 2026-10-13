@@ -314,7 +314,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       if (index !== 0 || !turn.startsSourceTurn) return html;
       const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionIndex + '-' + turn.sourceTurnIndex;
       if (landmark) return '<h3 class="libretto-track-heading" id="' + id + '">' +
-        escapeHtml(outlineTrackTitle(landmark)) + '</h3>' + html;
+        escapeHtml(outlineTrackTitle(landmark)) + '<span class="libretto-participants libretto-track-heading__performers" aria-label="Singers in this section">' +
+        characterIcon() + '<span>' + escapeHtml((landmark.performers || landmark.characters || []).join(", ")) + '</span></span></h3>' + html;
       return scene.outline?.length ?
         html.replace('<p>', '<span class="libretto-turn-anchor" id="' + id + '" data-libretto-turn="' + turn.sourceTurnIndex + '" aria-hidden="true"></span><p>') : html;
     });
