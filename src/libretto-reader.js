@@ -182,8 +182,19 @@ function matchingOutlineTurn(entry, scene) {
   }
   return null;
 }
+// Split joint cues only when every component is a known individual speaker.
+// Collective roles such as “Girls and boys” remain intact.
+const individualSpeakers = new Set((libretto.acts || []).flatMap(act =>
+  act.scenes.flatMap(scene => scene.sections.flatMap(section =>
+    section.turns.map(turn => turn.speaker)))));
+function uniqueOutlineCharacters(names) {
+  return [...new Set(names.flatMap(name => {
+    const parts = name.split(/,\s*(?:(?:and|e|poi)\s+)?|\s+(?:and|e|&)\s+/).filter(Boolean);
+    return parts.length > 1 && parts.every(part => individualSpeakers.has(part)) ? parts : [name];
+  }).map(displayCharacterName))];
+}
 function outlineEntryCharacters(entry, scene, act) {
-  if (entry.characters?.length) return [...new Set(entry.characters.map(displayCharacterName))];
+  if (entry.characters?.length) return uniqueOutlineCharacters(entry.characters);
   const position = matchingOutlineTurn(entry, scene);
   if (position) {
     const section = scene.sections[position.sectionIndex];
@@ -199,7 +210,7 @@ function outlineEntryCharacters(entry, scene, act) {
     const names = section.turns.slice(position.turnIndex, end)
       .filter(turn => turn.speaker !== (libretto.stageDirectionSpeaker || "Stage direction"))
       .map(turn => displayCharacterName(turn.speaker));
-    if (names.length) return [...new Set(names)];
+    if (names.length) return uniqueOutlineCharacters(names);
   }
   return [...new Set(scene.sections.flatMap(section => sectionCharacterNames(section, act, scene.number)))];
 }

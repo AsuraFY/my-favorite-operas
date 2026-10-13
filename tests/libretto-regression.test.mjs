@@ -835,3 +835,15 @@ test("Tosca Act III follows Opera Guide's four scene divisions and aligns Englis
 });
 
 
+
+ test("La Bohème joint speaker cues list each participant once", () => {
+  const reader = createLibrettoRenderer(getLibretto("la-boheme"));
+  const expected = 'Benoît, Marcello, Schaunard, Colline, Rodolfo';
+  const outline = reader.outline();
+  const entry = outline.match(/Scena · Si può\?… Chi è là\?[\s\S]*?<\/a>/)[0];
+  assert.ok(entry.includes('<span>' + expected + '</span>'));
+  window.location.hash = "#/operas/la-boheme?act=1";
+  const page = reader.scene(1);
+  assert.equal(count(page, new RegExp('<span>' + expected + '</span>', 'g')), 2);
+  assert.ok(!page.includes('Rodolfo, Rodolfo'));
+ });
