@@ -1,5 +1,5 @@
 // Keep an import or startup failure visible instead of leaving an empty page.
-import("./main.js?v=tosca-act1-2").catch(error => {
+import("./main.js?v=la-boheme-outline-1").catch(error => {
   console.error("The opera website could not start:", error);
   const app = document.querySelector("#app");
   if (!app) return;
