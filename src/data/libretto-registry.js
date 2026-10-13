@@ -38,7 +38,7 @@ import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.j
 import { madamaButterflyActThreeScenes } from "./libretto-madama-butterfly-act-3.js?v=madama-butterfly-act3-1";
 import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-act1-1";
 import { toscaActTwoScenes } from "./libretto-tosca-act-2.js?v=tosca-act2-1";
-import { toscaActThreeScenes } from "./libretto-tosca-act-3.js?v=tosca-act3-1";
+import { toscaActThreeScenes } from "./libretto-tosca-act-3.js?v=tosca-act3-2";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
