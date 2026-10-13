@@ -100,11 +100,13 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       const targetScene=track.sourceScene||outlineScene.number;
       const active=targetScene===selectedScene;
       const href="#/operas/"+libretto.slug+"?act="+act+"&scene="+targetScene+"&item=0";
+      const sourceScene=actCatalog().find(group=>group.number===act)?.scenes.find(scene=>scene.number===targetScene);
+      const sourceCharacters=[...new Set((sourceScene?.sections||[]).flatMap(section=>sectionCharacterNames(section,act,targetScene)))];
       return '<a class="section-nav-link is-song'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
         '><span class="section-nav-link__icon section-nav-link__icon--song" aria-hidden="true">♫</span>'+
         '<span class="section-nav-link__label">'+
         '<span class="section-nav-link__title">'+escapeHtml(track.title)+'</span>'+
-        '<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(track.translation)+'</span></span></a>';
+        '<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(track.translation)+'</span></span>'+renderCharacterCredits(sourceCharacters,true)+'</a>';
     }).join("");
     const selected=outlineScene.tracks.some(track=>(track.sourceScene||outlineScene.number)===selectedScene);
     if (libretto.sceneDivisions === false) return '<div class="section-nav">' + links + '</div>';
@@ -127,7 +129,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
         '><span class="section-nav-link__icon section-nav-link__icon--'+(isSong?'song':'recitative')+'" aria-hidden="true">'+(isSong?'♫':'▤')+
         '</span><span class="section-nav-link__label"><span class="section-nav-link__form">'+escapeHtml(form)+'</span>'+
         (title?'<span class="section-nav-link__title">'+escapeHtml(title)+'</span>':'')+
-        (isNamedPassage&&titles.translation?'<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(titles.translation)+'</span>':'')+'</span></a>';
+        (isNamedPassage&&titles.translation?'<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(titles.translation)+'</span>':'')+'</span>'+renderCharacterCredits(sectionCharacterNames(section,act,item.number),true)+'</a>';
     }).join("");
     const selected=item.number===selectedScene;
     if (libretto.sceneDivisions === false) return '<div class="section-nav">' + links + '</div>';
@@ -166,9 +168,8 @@ function sectionCharacterNames(section, act, sceneNumber) {
 function renderCharacterCredits(names, inline = false) {
   if (!names?.length) return "";
   const tag = inline ? "span" : "div";
-  return '<' + tag + ' class="libretto-participants">' +
-    '<span class="libretto-participants__label">Characters:</span> ' + characterIcon() +
-    '<span>' + escapeHtml(names.join(", ")) + '</span></' + tag + '>';
+  return '<' + tag + ' class="libretto-participants" role="img" aria-label="Characters in this section" title="Characters in this section">' +
+    characterIcon() + '</' + tag + '>';
 }
 function matchingOutlineTurn(entry, scene) {
   if (!entry.match) return null;
@@ -489,4 +490,5 @@ return { scene: renderScenePage, outline: renderOutlinePage, synopsis: renderSyn
 }
 
 export { createLibrettoRenderer };
+
 
