@@ -7,6 +7,8 @@ import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/op
 import { getLibretto } from "../src/data/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 
+globalThis.window = { location: { hash: "" } };
+
 test("all thirty-one opera information pages contain verified metadata and full introductory sections", () => {
   assert.equal(operas.length, 31);
   assert.equal(new Set(operas.map(opera => opera.slug)).size, 31);
@@ -40,7 +42,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "tosca", "madama-butterfly", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of ["samson-et-dalila", "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
@@ -88,3 +90,63 @@ test("search-friendly aliases, thirty-one routes and act counts remain intact", 
   assert.deepEqual(getLibretto("le-nozze-di-figaro").acts.map(act => act.number), [1, 2, 3, 4]);
   assert.ok(getLibretto("cosi-fan-tutte"));
 });
+
+
+test("Tosca Acts I–III are available from its opera information page and direct act routes", () => {
+  const opera = operas.find(item => item.slug === "tosca");
+  const libretto = getLibretto("tosca");
+  assert.ok(libretto);
+  assert.equal(opera.acts, 3);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
+  const reader = createLibrettoRenderer(libretto);
+  const navigation = reader.navigation();
+  const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
+  assert.ok(html.includes('href="#/operas/tosca?act=1">Read the libretto'));
+  assert.ok(html.includes("Libretto Outline"));
+  window.location.hash = "#/operas/tosca?act=1";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO PRIMO"));
+  assert.ok(page.includes("SCENA NONA"));
+  assert.ok(page.includes("End of Act I"));
+  assert.ok(!page.includes('Characters:'));
+  assert.ok(page.includes('class="libretto-participants"'));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  assert.ok(outline.includes("Scena prima"));
+  assert.ok(outline.includes("Scena nona"));
+  assert.deepEqual(libretto.spotifyOutline.map(act => act.scenes.reduce((n, scene) => n + scene.tracks.length, 0)), [16, 17, 11]);
+  assert.equal(libretto.spotifyOutline.flatMap(act => act.scenes.flatMap(scene => scene.tracks)).length, 44);
+  assert.ok(outline.includes('href="#/operas/tosca?act=1&scene=1&item=0"'));
+  assert.ok(outline.includes('href="#/operas/tosca?act=2&scene=5&item=0"'));
+  assert.ok(outline.includes('href="#/operas/tosca?act=3&scene=4&item=0"'));
+  assert.ok(outline.includes("I lived for art, I lived for love"));
+  assert.ok(!outline.includes("Maria Callas"), "performer credits stay out of the outline");
+  assert.ok(!outline.includes("Performers:"), "performer labels stay out of the outline");
+  assert.equal((outline.match(/class="section-nav-link opera-outline__section"/g) || []).length, 44);
+  assert.equal((outline.match(/class="libretto-participants"/g) || []).length, 44);
+  assert.ok(!outline.includes('Characters:'));
+  assert.ok(outline.includes('class="libretto-participants"'));
+  assert.ok(libretto.spotifyOutline.flatMap(act => act.scenes.flatMap(scene => scene.tracks)).every(track => !Object.hasOwn(track, "performers")),
+    "outline characters are sourced from the libretto scenes, not Spotify performer metadata");
+  const spotifySourceIndex = outline.indexOf('href="https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo"');
+  assert.ok(spotifySourceIndex > outline.lastIndexOf("</details>"), "Spotify source appears after the complete outline");
+  window.location.hash = "#/operas/tosca?act=2";
+  const secondActPage = reader.scene(1);
+  assert.ok(secondActPage.includes("ATTO SECONDO"));
+  assert.ok(secondActPage.includes("SCENA QUINTA"));
+  assert.ok(secondActPage.includes("End of Act II"));
+  window.location.hash = "#/operas/tosca?act=3";
+  const thirdActPage = reader.scene(1);
+  assert.ok(thirdActPage.includes("ATTO TERZO"));
+  assert.ok(thirdActPage.includes("E lucevan le stelle"));
+  assert.ok(thirdActPage.includes("And the stars were shining"));
+  assert.ok(thirdActPage.includes("SCENA ULTIMA"));
+  assert.ok(thirdActPage.includes("LAST SCENE"));
+  assert.ok(thirdActPage.includes("O Scarpia, before God!"));
+  assert.ok(thirdActPage.includes("End of Act III"));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const actThreeOutline = reader.outline();
+  assert.ok(actThreeOutline.includes("Scena ultima"));
+});
+
+

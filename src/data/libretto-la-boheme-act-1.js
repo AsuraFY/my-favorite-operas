@@ -8,14 +8,14 @@ export const laBohemeActOneScenes = [
     translatedTitle: "In the garret",
     // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      {"title": "Questo mar rosso", "translation": "This Red Sea", "match": "Questo Mar Rosso"},
-      {"title": "Abbasso, abbasso l’autore!", "translation": "Down, down with the author!", "match": "Abbasso! Abbasso l’autor!"},
-      {"title": "Si può?… Chi è là?", "translation": "May I come in?… Who is there?", "match": "Si può?"},
-      {"title": "Al Quartiere Latin ci attende Momus", "translation": "Momus awaits us in the Latin Quarter", "match": "Al Quartiere Latin ci attende Momus."},
-      {"title": "Non sono in vena", "translation": "I’m not in the mood", "match": "Non sono in vena."},
-      {"title": "Che gelida manina!", "translation": "What a cold little hand!", "match": "Che gelida manina"},
-      {"title": "Sì, mi chiamano Mimì", "translation": "Yes, they call me Mimì", "match": "Sì.\nMi chiamano Mimì"},
-      {"title": "Ehi! Rodolfo!… O soave fanciulla, o dolce viso", "translation": "Hey! Rodolfo!… O lovely girl, O sweet face", "match": "Ehi! Rodolfo!"}
+      {"title":"Questo mar rosso","translation":"This Red Sea","match":"Questo Mar Rosso","type":"Scena","performers":["Marcello","Rodolfo","Colline"]},
+      {"title":"Abbasso, abbasso l’autore!","translation":"Down, down with the author!","match":"Abbasso! Abbasso l’autor!","type":"Ensemble","performers":["Marcello","Rodolfo","Schaunard","Colline"]},
+      {"title":"Si può?… Chi è là?","translation":"May I come in?… Who is there?","match":"Si può?","type":"Scena","performers":["Benoît","Rodolfo","Marcello","Schaunard","Colline"]},
+      {"title":"Al Quartiere Latin ci attende Momus","translation":"Momus awaits us in the Latin Quarter","match":"Al Quartiere Latin ci attende Momus.","type":"Recitativo","performers":["Schaunard"]},
+      {"title":"Non sono in vena","translation":"I’m not in the mood","match":"Non sono in vena.","type":"Recitativo","performers":["Rodolfo","Mimì"]},
+      {"title":"Che gelida manina!","translation":"What a cold little hand!","match":"Che gelida manina","type":"Aria","performers":["Rodolfo"]},
+      {"title":"Sì, mi chiamano Mimì","translation":"Yes, they call me Mimì","match":"Sì.\nMi chiamano Mimì","type":"Aria","performers":["Mimì"]},
+      {"title":"Ehi! Rodolfo!… O soave fanciulla, o dolce viso","translation":"Hey! Rodolfo!… O lovely girl, O sweet face","match":"Ehi! Rodolfo!","type":"Duetto","performers":["Schaunard","Colline","Marcello","Rodolfo","Mimì"]}
     ],
     sections: [
       {

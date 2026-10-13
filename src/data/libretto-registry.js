@@ -1,6 +1,6 @@
 // Data registry for complete libretti; the reader UI consumes this shape for every opera.
 // Original Così dialogue stays in the existing act files, unchanged.
-import { getOpera } from "./operas.js?v=opera-art-12";
+import { getOpera } from "./operas.js?v=tosca-act1-2";
 import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=act2-18";
 import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-2";
@@ -32,6 +32,13 @@ import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-
 import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-act2-3";
 import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=la-boheme-act3-3";
 import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme-act4-3";
+
+import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.js?v=madama-butterfly-act1-1";
+import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.js?v=madama-butterfly-act2-1";
+import { madamaButterflyActThreeScenes } from "./libretto-madama-butterfly-act-3.js?v=madama-butterfly-act3-1";
+import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-act1-1";
+import { toscaActTwoScenes } from "./libretto-tosca-act-2.js?v=tosca-act2-1";
+import { toscaActThreeScenes } from "./libretto-tosca-act-3.js?v=tosca-act3-2";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -418,7 +425,7 @@ const carmen = {
 
 const laBoheme = {
   spotifyAlbumUrl: "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp",
-  outlineRecording: "Maria Callas · Giuseppe Di Stefano · Antonino Votto (1958)",
+  outlineRecording: "Spotify recording",
   slug: "la-boheme",
   opera: getOpera("la-boheme"),
   composerShort: "G. PUCCINI",
@@ -453,8 +460,175 @@ const laBoheme = {
   source: "Giacomo Puccini, La bohème (1896), Italian libretto by Luigi Illica and Giuseppe Giacosa, text and divisions from Teatro alla Scala's libretto PDF: https://www.teatroallascala.org/static/upload/la-/la-boheme-libretto.pdf. English is a fresh line-by-line translation. Each completed tableau is presented continuously, one page per tableau."
 };
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme };
+const madamaButterfly = {
+  slug: "madama-butterfly",
+  opera: getOpera("madama-butterfly"),
+  composerShort: "G. PUCCINI",
+  mobileComposer: "Giacomo Puccini",
+  mobileArtworkUrl: "./public/images/madama-butterfly-art.webp",
+  mobileArtworkLabel: "Madama Butterfly",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  continuousAct: true,
+  preserveLineBreaks: true,
+  alignVerseLines: true,
+  sceneDivisions: false,
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "Stage direction",
+  bracketStageDirections: true,
+  translatedForms: {
+    "Coro e scena": "Chorus and scene",
+    Duetto: "Duet",
+    Ensemble: "Ensemble",
+    Finale: "Finale",
+    Coro: "Chorus",
+    "Scena e aria": "Scene and aria"
+  },
+  acts: [
+    { number: 1, originalHeading: "Atto primo", prelude: { title: "Preludio", translation: "Prelude" }, scenes: madamaButterflyActOneScenes },
+    { number: 2, originalHeading: "Atto secondo", scenes: madamaButterflyActTwoScenes },
+    { number: 3, originalHeading: "Atto terzo", scenes: madamaButterflyActThreeScenes }
+  ],
+  characters: [
+    ["Madama Butterfly (Cio-Cio-San)", "Soprano", "A young woman from Nagasaki who enters a marriage with American naval officer Pinkerton and gives up her family’s religion."],
+    ["B. F. Pinkerton", "Tenor", "An American naval officer stationed in Nagasaki."],
+    ["Suzuki", "Mezzo-soprano", "Butterfly’s maid."],
+    ["Sharpless", "Baritone", "The American consul in Nagasaki."],
+    ["Goro", "Tenor", "A marriage broker."],
+    ["Kate", "Mezzo-soprano", "Pinkerton’s American wife, who hopes to take Butterfly’s child into her care."],
+    ["The child", "Silent role", "Butterfly and Pinkerton’s young son."],
+    ["Sailors", "Chorus", "Voices heard from the harbor at dawn."],
+    ["The Bonze", "Bass", "Butterfly’s uncle, a Buddhist priest."],
+    ["The Imperial Commissioner", "Bass", "An official who conducts the marriage ceremony."],
+    ["The Registrar", "Bass", "The civil official who records the marriage."]
+  ],
+  synopsis: {
+    eyebrow: "Giacomo Puccini · Opera in three acts",
+    paragraphs: [
+      "On a hillside above Nagasaki, the American naval officer Pinkerton prepares to marry Cio-Cio-San, known as Butterfly. The matchmaker Goro shows him the couple’s small Japanese house, whose sliding walls can be rearranged at will. Consul Sharpless warns Pinkerton that Butterfly takes their marriage seriously, while Pinkerton treats the arrangement as temporary.",
+      "Butterfly arrives with her friends and relatives. She tells Pinkerton that she has secretly converted to his religion. The Imperial Commissioner records their marriage, but Butterfly’s uncle, the Bonze, interrupts the celebration and condemns her for abandoning her family’s faith. Pinkerton sends the relatives away and comforts Butterfly. As night falls, the two are left alone together."
+    ],
+    characters: [
+      ["Cio-Cio-San (Madama Butterfly)", "Soprano", "A young woman from Nagasaki who is deeply devoted to Pinkerton."],
+      ["B. F. Pinkerton", "Tenor", "An American naval officer stationed in Nagasaki."],
+      ["Suzuki", "Mezzo-soprano", "Butterfly’s maid."],
+      ["Sharpless", "Baritone", "The American consul in Nagasaki."],
+      ["Goro", "Tenor", "A marriage broker."]
+    ]
+  },
+  source: "Italian libretto and stage directions: Opera Guide, Madama Butterfly, Atti primo, secondo, and terzo: https://opera-guide.ch/operas/madama+butterfly/libretto/it/. The Spotify recording linked by the user guides the section outline. English is a fresh line-by-line draft checked against Lyrical Opera Theater’s independent bilingual libretto: https://lyricaloperatheater.com/PDFs/MadamaButterfly_libretto_translation.pdf; it remains for the user’s careful review. The opera is presented in three acts. Acts I, II, and III are populated in this update."
+};
+
+const toscaTrack = (title, translation, sourceScene) => ({ title, translation, sourceScene });
+const toscaSpotifyOutline = [
+  { act: 1, scenes: [
+    { number: 1, tracks: [toscaTrack('Ah! Finalmente! Nel terror mio stolto', 'Ah! At last! In my stupid fear', 1)] },
+    { number: 2, tracks: [toscaTrack('E sempre lava!', 'Forever washing!', 2)] },
+    { number: 3, tracks: [
+      toscaTrack('Sante ampolle! Il suo ritratto!', 'Holy vessels! His portrait!', 3),
+      toscaTrack('Dammi i colori! … Recondita armonia', 'Give me my paints! … Hidden harmony', 3)
+    ] },
+    { number: 4, tracks: [toscaTrack('Gente là dentro!', 'Someone is in there!', 4)] },
+    { number: 5, tracks: [
+      toscaTrack('Mario! Mario! Mario! … Son qui!', 'Mario! Mario! Mario! … Here I am!', 5),
+      toscaTrack('Ora stammi a sentir', 'Now listen to me', 5),
+      toscaTrack('Or lasciami al lavoro', 'Now let me get back to work', 5),
+      toscaTrack('Ah, quegli occhi…', 'Ah, those eyes…', 5),
+      toscaTrack('Mia gelosa!', 'My jealous one!', 5)
+    ] },
+    { number: 6, tracks: [toscaTrack('È buona la mia Tosca', 'My Tosca is good', 6)] },
+    { number: 7, tracks: [toscaTrack('Sommo giubilo, Eccellenza!', 'Great rejoicing, Your Excellency!', 7)] },
+    { number: 8, tracks: [toscaTrack('Un tal baccano in chiesa!', 'Such a commotion in the church!', 8)] },
+    { number: 9, tracks: [
+      toscaTrack('Tosca? Che non mi veda', 'Tosca? She must not see me', 9),
+      toscaTrack('Ed io venivo a lui tutta dogliosa', 'And I came to him, full of sorrow', 9),
+      toscaTrack('Tre sbirri, una carrozza', 'Three police officers, a carriage', 9)
+    ] }
+  ] },
+  { act: 2, scenes: [
+    { number: 1, tracks: [
+      toscaTrack('Tosca è un buon falco!', 'Tosca is a fine hawk!', 1),
+      toscaTrack('Ha più forte sapore', 'It has a stronger flavor', 1)
+    ] },
+    { number: 2, tracks: [
+      toscaTrack('O galantuomo, come andò la caccia?', 'Oh, gallant man, how goes the hunt?', 2),
+      toscaTrack('Meno male!', 'Thank goodness!', 2)
+    ] },
+    { number: 3, tracks: [toscaTrack("Dov'è Angelotti?", 'Where is Angelotti?', 3)] },
+    { number: 4, tracks: [
+      toscaTrack('Ed or fra noi parliam da buoni amici', 'And now let us speak as good friends', 4),
+      toscaTrack('Sciarrone, che dice il Cavalier?', 'Sciarrone, what does the Cavalier say?', 4),
+      toscaTrack('Orsù, Tosca, parlate', 'Come now, Tosca, speak', 4),
+      toscaTrack('Floria! … Amore', 'Floria! … My love!', 4)
+    ] },
+    { number: 5, tracks: [
+      toscaTrack('Salvatelo! … Io? Voi!', 'Save him! … Me? You!', 5),
+      toscaTrack('Se la giurata fede debbo tradir', 'If I must betray my sworn faith', 5),
+      toscaTrack('Come tu mi odi!', 'How you hate me!', 5),
+      toscaTrack("Vissi d'arte, vissi d'amore", 'I lived for art, I lived for love', 5),
+      toscaTrack('Vedi, le man giunte io stendo a te!', 'See, I stretch my folded hands to you!', 5),
+      toscaTrack('Io tenni la promessa', 'I kept my promise', 5),
+      toscaTrack('Tosca, finalmente mia!', 'Tosca, mine at last!', 5),
+      toscaTrack('Or gli perdono!', 'Now I forgive him!', 5)
+    ] }
+  ] },
+  { act: 3, scenes: [
+    { number: 1, tracks: [
+      toscaTrack("Introduction (Andante sostenuto) - Io de' sospiri", 'Introduction (Andante sostenuto) — I sigh…so much!', 1),
+      toscaTrack('Le campane suonano mattutino (Lento)', 'The bells ring for matins (Lento)', 1)
+    ] },
+    { number: 2, tracks: [
+      toscaTrack('Mario Cavaradossi? A voi.', 'Mario Cavaradossi? For you.', 2),
+      toscaTrack('E lucevan le stelle', 'And the stars were shining', 2)
+    ] },
+    { number: 3, tracks: [
+      toscaTrack('Moderato con moto - Ah! Franchigia a Floria Tosca', 'Moderately, with motion — Ah! Safe passage for Floria Tosca', 3),
+      toscaTrack('O dolci mani mansuete e pure', 'Oh, sweet, gentle, pure hands', 3),
+      toscaTrack("Senti, l'ora è vicina", 'Listen, the hour is near', 3),
+      toscaTrack("Amaro sol per te m'era il morire", 'Only for you was death bitter to me', 3),
+      toscaTrack('E non giungono', 'They are not coming', 3)
+    ] },
+    { number: 4, title: 'Scena ultima', translatedTitle: 'Last Scene', tracks: [
+      toscaTrack("Com'è lunga l'attesa!", 'How long the waiting is!', 4),
+      toscaTrack('Presto! Su, Mario!', 'Quick! Up, Mario!', 4)
+    ] }
+  ] }
+];
+
+const tosca = {
+  spotifyAlbumUrl: "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo",
+  outlineRecording: "Tosca · 1953 recording",
+  spotifyOutline: toscaSpotifyOutline,
+  slug: "tosca",
+  continuousAct: true,
+  preserveLineBreaks: true,
+  alignVerseLines: true,
+  opera: getOpera("tosca"),
+  composerShort: "G. PUCCINI",
+  mobileComposer: "Giacomo Puccini",
+  mobileArtworkUrl: "./public/images/tosca-art.webp",
+  mobileArtworkLabel: "Tosca",
+  originalLanguage: "Italiano",
+  translationLanguage: "English",
+  sceneOriginalPrefix: "Scena",
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "Stage direction",
+  bracketStageDirections: true,
+  sceneOrdinals: ["PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA"],
+  acts: [
+    { number: 1, originalHeading: "Atto primo", scenes: toscaActOneScenes },
+    { number: 2, originalHeading: "Atto secondo", scenes: toscaActTwoScenes },
+    { number: 3, originalHeading: "Atto terzo", scenes: toscaActThreeScenes }
+  ],
+  characters: ["Floria Tosca", "Mario Cavaradossi", "Baron Scarpia", "Cesare Angelotti", "The Sacristan", "Spoletta", "Sciarrone", "Jailer", "A Shepherd", "Chorus"],
+  characterDisplayNames: { Tosca: "Floria Tosca", Cavaradossi: "Mario Cavaradossi", Scarpia: "Baron Scarpia", Angelotti: "Cesare Angelotti", "Tosca's voice": "Floria Tosca (offstage)", "A Shepherd (offstage)": "A Shepherd" },
+  source: "Italian libretto, character names, and scene divisions for Acts I–III: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. English is a fresh line-by-line draft checked against Lyrical Opera Theater's Italian-English libretto, https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf; it remains for the user's careful review. The Spotify recording linked at the foot of the outline guides only the track order and scene grouping. Acts I–III are populated."
+};
+
+const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
 export const librettoCatalog = Object.values(completeLibretti);
+
+

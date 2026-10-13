@@ -847,7 +847,7 @@ export const carmenActOneScenes = [
           {
             "speaker": "CARMEN",
             "original": "L'amour est un oiseau rebelle\nQue nul ne peut apprivoiser,\nEt c'est bien en vain qu'on l'appelle\nS'il lui convient de refuser.\nRien n'y fait; menace ou prière,\nL'un parle bien, l'autre se tait;\nEt c'est l'autre que je préfère,\nIl n'a rien dit, mais il me plaît.\nL'amour est enfant de Bohème,\nIl n'a jamais, jamais connu de loi;\nSi tu ne m'aimes pas, je t'aime;\nSi je t'aime,\nPrends garde à toi!\nL'oiseau que tu croyais surprendre\nBattit de l'aile et s'envola\nL'amour est loin, tu peux l'attendre\nTu ne l'attends plus ... il est là\nTout autour de toi, vite, vite,\nIl vient, s'en va, puis il revient\nTu crois le tenir, il t'évite,\nTu crois l'éviter, il te tient.\nL'amour est enfant de Bohème,\nIl n'a jamais connu de loi;\nSi tu ne m'aimes pas, je t'aime;\nSi je t'aime,\nPrends garde à toi!",
-            "translation": "Love is a rebellious bird\nThat no one can tame,\nAnd it is quite useless to call it\nIf it chooses to refuse.\nNothing helps: threats or prayers;\nOne man speaks well, another says nothing;\nAnd it is the silent one I prefer;\nHe said nothing, but he pleases me.\nLove is a gypsy child,\nIt has never, ever known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!\nThe bird you thought you had caught\nFlaps its wings and flies away.\nLove is far off; you may wait for it;\nYou wait no longer ... and there it is.\nAll around you, quick, quick,\nIt comes, it goes, then comes back again.\nYou think you hold it; it slips away;\nYou think you escape it; it holds you.\nLove is a gypsy child,\nIt has never known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!",
+            "translation": "Love is a rebellious bird\nThat no one can tame,\nAnd it is quite useless to call it\nIf it chooses to refuse.\nNothing helps: threats or prayers;\nOne speaks, the other is silent;\nAnd it is the silent one I prefer;\nHe said nothing, but he pleases me.\nLove is a gypsy child,\nIt has never, ever known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!\nThe bird you thought you had caught\nFlaps its wings and flies away.\nLove is far off; you may wait for it;\nYou wait no longer ... and there it is.\nAll around you, quick, quick,\nIt comes, it goes, then comes back again.\nYou think you hold it; it slips away;\nYou think you escape it; it holds you.\nLove is a gypsy child,\nIt has never known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!",
             "literalText": true,
             "speakerTranslation": "Carmen"
           }
@@ -2172,7 +2172,7 @@ export const carmenActOneScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Carmen, je suis comme un homme ivre,\nSi je cède, si je me livre,\nTa promesse, tu la tiendras .\nAh! Si je t'aime, Carmen,\nCarmen tu m'aimeras .",
-            "translation": "Carmen, I’m like a man in a dream;\nIf I give in, if I surrender,\nWill you keep your promise?\nAh! If I love you, Carmen,\nCarmen, will you love me?",
+            "translation": "Carmen, I’m like a drunk man;\nIf I give in, if I surrender,\nWill you keep your promise?\nAh! If I love you, Carmen,\nCarmen, will you love me?",
             "literalText": true,
             "speakerTranslation": "José"
           },

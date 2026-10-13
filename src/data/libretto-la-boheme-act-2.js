@@ -8,11 +8,11 @@ export const laBohemeActTwoScenes = [
     translatedTitle: "In the Latin Quarter",
     // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
     outline: [
-      {"title": "Aranci, datteri!", "translation": "Oranges, dates!", "match": "Aranci, datteri! Caldi i marroni!"},
-      {"title": "Chi guardi?", "translation": "Who are you looking at?", "match": "Chi guardi?…"},
-      {"title": "Beviam… Ch’io beva del tossico!", "translation": "Let’s drink… Let me drink poison!", "match": "Beviam!", "speaker": "All five Bohemians"},
-      {"title": "Quando me’n vo soletta", "translation": "When I walk alone", "match": "Quando me’n vo soletta per la via"},
-      {"title": "Chi l’ha richiesto?… Vediam", "translation": "Who ordered it?… Let’s see", "match": "Chi l’ha richiesto?"}
+      {"title":"Aranci, datteri!","translation":"Oranges, dates!","match":"Aranci, datteri! Caldi i marroni!","type":"Coro","performers":["Coro","Schaunard","Colline","Mimì","Rodolfo","Marcello","Parpignol"]},
+      {"title":"Chi guardi?","translation":"Who are you looking at?","match":"Chi guardi?…","type":"Recitativo","performers":["Rodolfo","Mimì"]},
+      {"title":"Beviam… Ch’io beva del tossico!","translation":"Let’s drink… Let me drink poison!","match":"Beviam!","speaker":"All five Bohemians","type":"Ensemble","performers":["Rodolfo","Mimì","Marcello","Musetta","Schaunard","Colline","Alcindoro","Coro"]},
+      {"title":"Quando me’n vo soletta","translation":"When I walk alone","match":"Quando me’n vo soletta per la via","type":"Aria","performers":["Musetta","Marcello","Alcindoro"]},
+      {"title":"Chi l’ha richiesto?… Vediam","translation":"Who ordered it?… Let’s see","match":"Chi l’ha richiesto?","type":"Finale","performers":["Rodolfo","Mimì","Marcello","Musetta","Schaunard","Colline","Alcindoro","Coro"]}
     ],
     sections: [
       {

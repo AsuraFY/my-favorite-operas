@@ -34,7 +34,7 @@ function assertSceneRows(page, scene) {
 
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 8);
+  assert.equal(librettoCatalog.length, 10);
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
@@ -69,11 +69,148 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.equal(getLibretto("unknown"), null);
 });
 
+test("Madama Butterfly Act I uses the Opera Guide text with paired English and a continuous act page", () => {
+  const libretto = getLibretto("madama-butterfly");
+  const scene = libretto.acts[0].scenes[0];
+  assert.equal(libretto.continuousAct, true);
+  assert.equal(libretto.sceneDivisions, false);
+  assert.equal(scene.sections.length, 15);
+  assert.deepEqual(scene.sections.map(section => section.originalTitle), [
+    "E soffitto... e pareti...", "Questa è la cameriera", "Dovunque al mondo",
+    "Quanto cielo!... Ancora un passo or via", "Gran ventura", "L'Imperial Commissario",
+    "Vieni, amor mio!", "Ieri son salita tutta sola", "Tutti zitti!", "Madama Butterfly!",
+    "Cio-Cio-san!", "Bimba, bimba, non piangere", "Viene la sera",
+    "Bimba dagli occhi pieni di malìa", "Vogliatemi bene"
+  ]);
+  for (const section of scene.sections) {
+    assert.ok(section.turns.length > 0);
+    assert.equal(section.number, undefined, "no unverified score numbers are shown");
+    for (const turn of section.turns) {
+      assert.equal(typeof turn.original, "string");
+      assert.equal(typeof turn.translation, "string");
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  const renderer = createLibrettoRenderer(libretto);
+  const page = renderer.scene(1);
+  assert.ok(page.includes("ATTO PRIMO"));
+  assert.ok(page.includes("Madama Butterfly!"));
+  assert.ok(page.includes("A foolish fear"));
+  assert.ok(page.includes("End of Act I"));
+  window.location.hash = "#/operas/madama-butterfly?view=outline";
+  const outline = renderer.outline();
+  assert.ok(outline.includes("Libretto Outline"));
+  assert.ok(!outline.includes('Characters:'));
+  assert.ok(outline.includes('class="libretto-participants"'));
+  assert.ok(outline.includes("Vogliatemi bene"));
+  assert.ok(outline.includes("Preludio"));
+  assert.ok(outline.includes("Prelude"));
+});
+
+test("Madama Butterfly Act II follows the Opera Guide and keeps the Italian and English paired", () => {
+  const libretto = getLibretto("madama-butterfly");
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
+  const act = libretto.acts[1];
+  const scene = act.scenes[0];
+  assert.equal(act.originalHeading, "Atto secondo");
+  assert.equal(libretto.opera.acts, 3);
+  assert.equal(libretto.continuousAct, true);
+  assert.equal(libretto.sceneDivisions, false);
+  assert.equal(scene.sections.length, 9);
+  assert.deepEqual(scene.sections.map(section => section.originalTitle), [
+    "E Izagi ed Izanami", "Un bel dì, vedremo", "Madama Pinkerton",
+    "Yamadori, ancor le pene dell’amor", "La lettera di Pinkerton",
+    "Che tua madre dovrà", "Vespa! Rospa maledetto!", "Il cannone del porto",
+    "Tutti i fior, tutti, tutti"
+  ]);
+  const turns = scene.sections.flatMap(section => section.turns);
+  assert.ok(turns.length > 50);
+  assert.ok(turns.some(turn => turn.original.includes("Un bel dì, vedremo")));
+  assert.ok(turns.some(turn => turn.original.includes("Tutti i fior, tutti, tutti")));
+  assert.ok(turns.some(turn => turn.original.includes("tre forellini")));
+  for (const section of scene.sections) {
+    assert.ok(section.turns.length > 0);
+    assert.equal(section.number, undefined, "no unverified score numbers are shown");
+    for (const turn of section.turns) {
+      assert.equal(typeof turn.original, "string");
+      assert.equal(typeof turn.translation, "string");
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  const renderer = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/madama-butterfly?act=2";
+  const page = renderer.scene(1);
+  assert.ok(page.includes("ATTO SECONDO"));
+  assert.ok(page.includes("Un bel dì, vedremo"));
+  assert.ok(page.includes("One fine day"));
+  assert.ok(page.includes("End of Act II"));
+  window.location.hash = "#/operas/madama-butterfly?view=outline";
+  const outline = renderer.outline();
+  assert.ok(outline.includes("Madama Pinkerton"));
+  assert.ok(outline.includes("Yamadori, ancor le pene"));
+  assert.ok(outline.includes("La lettera di Pinkerton"));
+  assert.ok(outline.includes("Tutti i fior, tutti, tutti"));
+  assert.ok(outline.includes("Preludio"));
+});
+
+test("Madama Butterfly Act III follows the Opera Guide, preserves its three-act close, and aligns English", () => {
+  const libretto = getLibretto("madama-butterfly");
+  const act = libretto.acts[2];
+  const scene = act.scenes[0];
+  assert.deepEqual(libretto.acts.map(item => item.number), [1, 2, 3]);
+  assert.equal(act.originalHeading, "Atto terzo");
+  assert.equal(libretto.opera.acts, 3);
+  assert.equal(scene.sections.length, 10);
+  assert.deepEqual(scene.sections.map(section => section.originalTitle), [
+    "Verrà, verrà, vedrai", "Dormi, amor mio", "Non la destar",
+    "Anime sante degli avi", "Addio, fiorito asil", "Nella grande ora... sola",
+    "È qui, è qui... dov’è nascosto?", "Come una mosca prigioniera",
+    "Con onor muore", "Tu? tu?"
+  ]);
+  const turns = scene.sections.flatMap(section => section.turns);
+  assert.ok(turns.length > 60);
+  assert.ok(turns.some(turn => turn.original.includes("Addio, fiorito asil")));
+  assert.ok(turns.some(turn => turn.original.includes("Con onor muore")));
+  assert.ok(turns.some(turn => turn.original.includes("Tu? tu?")));
+  for (const section of scene.sections) {
+    assert.ok(section.turns.length > 0);
+    assert.equal(section.number, undefined, "no unverified score numbers are shown");
+    for (const turn of section.turns) {
+      assert.equal(typeof turn.original, "string");
+      assert.equal(typeof turn.translation, "string");
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  const renderer = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/madama-butterfly?act=3";
+  const page = renderer.scene(1);
+  assert.ok(page.includes("ATTO TERZO"));
+  assert.ok(page.includes("Addio, fiorito asil"));
+  assert.ok(page.includes("Farewell, flowery refuge"));
+  assert.ok(page.includes("With honor dies"));
+  assert.ok(page.includes("End of Act III"));
+  window.location.hash = "#/operas/madama-butterfly?view=outline";
+  const outline = renderer.outline();
+  assert.ok(outline.includes("Addio, fiorito asil"));
+  assert.ok(outline.includes("Come una mosca prigioniera"));
+  assert.ok(outline.includes("Tu? tu?"));
+});
+
 test("La Bohème Act I renders as one continuous bilingual tableau", () => {
   const renderer = createLibrettoRenderer(getLibretto("la-boheme"));
   const page = renderer.scene(1);
   assert.ok(page.includes("QUADRO PRIMO"));
   assert.ok(page.includes("Che gelida manina"));
+  assert.ok(page.includes("Aria · Che gelida manina!"));
   assert.ok(page.includes("What a cold little hand"));
   assert.ok(page.includes("Stage direction"));
   assert.ok(page.includes("End of Act I"));
@@ -115,25 +252,48 @@ test("La Bohème Act IV renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("Mimì!!!"));
 });
 
-test("La Bohème outline follows the supplied 26-track recording with deep links", () => {
+test("La Bohème outline shows characters from libretto speakers and keeps exact deep links", () => {
   const libretto = getLibretto("la-boheme");
   const renderer = createLibrettoRenderer(libretto);
   const outline = renderer.outline();
   assert.equal(count(outline, /class="opera-outline__act"/g), 4);
   assert.equal(libretto.spotifyAlbumUrl, "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp");
   assert.deepEqual(libretto.acts.map(act => act.scenes[0].outline.length), [8, 5, 5, 8]);
-  assert.ok(outline.includes("Maria Callas"));
+  assert.ok(!outline.includes("Performers:"));
+  assert.ok(outline.includes("Libretto Outline"));
   const outlineEntries = libretto.acts.flatMap(act => act.scenes.flatMap(scene => scene.outline || []));
   assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), outlineEntries.length);
-  for (const act of libretto.acts) for (const scene of act.scenes) for (const item of scene.outline) {
-    assert.ok(outline.includes(item.title));
-    assert.ok(outline.includes("?act=" + act.number + "&scene=" + scene.number + "&item=0&turn="));
+  assert.equal(count(outline, /class="libretto-participants"/g), outlineEntries.length);
+  for (const act of libretto.acts) {
+    window.location.hash = "#/operas/la-boheme?act=" + act.number;
+    const page = renderer.scene(1);
+    assert.ok(page.includes("Act outline"));
+    for (const scene of act.scenes) for (const entry of scene.outline) {
+      assert.ok(page.includes(entry.type + " · " + entry.title));
+      assert.ok(!page.includes('Characters:'));
+      assert.ok(page.includes('class="libretto-participants"'));
+      assert.ok(!Object.hasOwn(entry, "number"), "only source-original track numbers belong in the outline");
+    }
+    for (const scene of act.scenes) for (const entry of scene.outline) {
+      assert.ok(outline.includes(entry.type + " · " + entry.title));
+
+      const target = scene.sections.flatMap((section, sectionIndex) => section.turns.map((turn, turnIndex) => ({
+        sectionIndex, turnIndex, original: turn.original ?? turn.it ?? "", speaker: turn.speaker
+      }))).find(turn => (entry.sourceTurn == null || turn.turnIndex === entry.sourceTurn) &&
+        (entry.speaker == null || scene.sections[turn.sectionIndex].turns[turn.turnIndex].speaker === entry.speaker) &&
+        turn.original.includes(entry.match));
+      assert.ok(target, "every outline item must match a libretto turn");
+      assert.ok(!outline.includes('Characters:'), entry.title + " omits the redundant character label");
+      const expectedHref = "#/operas/la-boheme?act=" + act.number + "&scene=" + scene.number +
+        "&item=" + target.sectionIndex + "&turn=" + target.turnIndex;
+      assert.ok(page.includes('href="' + expectedHref + '"'), entry.title + " must link to its exact turn");
+      assert.ok(outline.includes('href="' + expectedHref + '"'), entry.title + " must link to its exact turn from the libretto outline");
+    }
   }
   window.location.hash = "#/operas/la-boheme?act=4";
   const page = renderer.scene(1);
   assert.ok(page.includes('id="libretto-turn-4-1-'));
 });
-
 test("La Bohème landmarks identify unique source turns in reading order", () => {
   for (const act of getLibretto("la-boheme").acts) for (const scene of act.scenes) {
     const turns = scene.sections.flatMap(section => section.turns);
@@ -508,3 +668,141 @@ test("Macbeth Act IV includes all scenes, both opening numbers, and the final ch
   window.location.hash = "#/operas/macbeth?act=3";
   assert.ok(reader.scene(1).includes("Continue to Act IV"));
 });
+
+
+test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one continuous page", () => {
+  const libretto = getLibretto("tosca");
+  assert.ok(libretto);
+  assert.equal(libretto.opera.acts, 3);
+  assert.equal(libretto.continuousAct, true);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
+  const act = libretto.acts.find(entry => entry.number === 1);
+  assert.equal(act.originalHeading, "Atto primo");
+  assert.equal(act.scenes.length, 9);
+  assert.deepEqual(act.scenes.map(scene => scene.sections[0].originalTitle), [
+    "Scena prima", "Scena seconda", "Scena terza", "Scena quarta", "Scena quinta",
+    "Scena sesta", "Scena settima", "Scena ottava", "Scena nona"
+  ]);
+  let turns = 0;
+  for (const scene of act.scenes) for (const section of scene.sections) {
+    assert.equal(section.number, undefined, "no unsupported score number");
+    assert.ok(section.turns.length > 0);
+    for (const turn of section.turns) {
+      turns++;
+      assert.ok(turn.original.trim());
+      assert.ok(turn.translation.trim());
+      if (turn.speaker === "Stage direction") continue;
+      assert.equal(turn.original.split("\\n").length, turn.translation.split("\\n").length,
+        `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+    }
+  }
+  assert.ok(turns > 150, "Act I should include the complete dialogue and stage directions");
+  assert.equal(libretto.stageDirectionSpeaker, "Stage direction");
+  assert.equal(libretto.bracketStageDirections, true);
+  const reader = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/tosca?act=1&scene=9&item=0";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO PRIMO"));
+  assert.ok(page.includes("Recondita armonia"));
+  assert.ok(page.includes("A hidden harmony"));
+  assert.ok(page.includes("Te Deum laudamus"));
+  assert.ok(page.includes("We praise you, O God"));
+  assert.ok(page.includes("End of Act I"));
+  assert.ok(page.includes('id="libretto-section-1-9-0"'));
+  assert.ok(!page.includes('Characters:'));
+  assert.ok(page.includes('class="libretto-participants"'));
+  const actOutline = page.slice(page.indexOf('<aside class="scene-sidebar"'), page.indexOf('</aside>'));
+  assert.ok(!actOutline.includes('Characters:'));
+  assert.match(page, /class="selected-section-heading">[\s\S]{0,500}Characters:/);
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  for (const heading of ["Scena prima", "Scena quinta", "Scena nona"]) {
+    assert.ok(outline.includes(heading), `Act I outline includes ${heading}`);
+  }
+  assert.ok(!outline.includes('Characters:'));
+  assert.ok(outline.includes('class="libretto-participants"'));
+});
+
+test("Tosca Act II follows Opera Guide's five scenes with aligned English on one continuous page", () => {
+  const libretto = getLibretto("tosca");
+  const act = libretto.acts.find(entry => entry.number === 2);
+  assert.ok(act);
+  assert.equal(act.originalHeading, "Atto secondo");
+  assert.equal(act.scenes.length, 5);
+  assert.deepEqual(act.scenes.map(scene => scene.sections[0].originalTitle), [
+    "Scena prima", "Scena seconda", "Scena terza", "Scena quarta", "Scena quinta"
+  ]);
+  let turns = 0;
+  for (const scene of act.scenes) for (const section of scene.sections) {
+    assert.equal(section.number, undefined, "no unsupported score number");
+    assert.ok(section.turns.length > 0);
+    for (const turn of section.turns) {
+      turns++;
+      assert.ok(turn.original.trim());
+      assert.ok(turn.translation.trim());
+      if (turn.speaker === "Stage direction") continue;
+      assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+        `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+    }
+  }
+  assert.ok(turns > 250, "Act II should include the full dialogue, singing, and stage directions");
+  const reader = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/tosca?act=2&scene=5&item=0";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO SECONDO"));
+  assert.ok(page.includes("Vissi d"));
+  assert.ok(page.includes("I lived for art, I lived for love"));
+  assert.ok(page.includes("End of Act II"));
+  assert.ok(page.includes('id="libretto-section-2-5-0"'));
+  assert.ok(page.includes('data-continuous-act="true"'));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  for (const heading of ["Scena prima", "Scena quinta"]) {
+    assert.ok(outline.includes(heading), `Act II outline includes ${heading}`);
+  }
+});
+
+test("Tosca Act III follows Opera Guide's four scene divisions and aligns English", () => {
+  const libretto = getLibretto("tosca");
+  const act = libretto.acts.find(entry => entry.number === 3);
+  assert.ok(act);
+  assert.equal(act.originalHeading, "Atto terzo");
+  assert.equal(act.scenes.length, 4);
+  assert.deepEqual(act.scenes.map(scene => scene.sections[0].originalTitle), [
+    "Scena prima", "Scena seconda", "Scena terza", "Scena ultima"
+  ]);
+  let turns = 0;
+  for (const scene of act.scenes) for (const section of scene.sections) {
+    assert.equal(section.number, undefined, "no unsupported score number");
+    assert.ok(section.turns.length > 0);
+    for (const turn of section.turns) {
+      turns++;
+      assert.ok(turn.original.trim());
+      assert.ok(turn.translation.trim());
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  assert.ok(turns > 60, "Act III should include the full libretto and stage directions");
+  const reader = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/tosca?act=3&scene=4&item=0";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO TERZO"));
+  assert.ok(page.includes("E lucevan le stelle"));
+  assert.ok(page.includes("And the stars were shining"));
+  assert.ok(page.includes("SCENA ULTIMA"));
+  assert.ok(page.includes("LAST SCENE"));
+  assert.ok(page.includes("O Scarpia, before God!"));
+  assert.ok(page.includes("End of Act III"));
+  assert.ok(page.includes('id="libretto-section-3-4-0"'));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  for (const heading of ["Scena prima", "Scena seconda", "Scena terza", "Scena ultima"]) {
+    assert.ok(outline.includes(heading), `Act III outline includes ${heading}`);
+  }
+  assert.ok(outline.includes("Last Scene"));
+});
+
+
