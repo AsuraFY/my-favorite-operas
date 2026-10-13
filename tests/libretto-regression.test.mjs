@@ -847,3 +847,19 @@ test("Tosca Act III follows Opera Guide's four scene divisions and aligns Englis
   assert.equal(count(page, new RegExp('<span>' + expected + '</span>', 'g')), 2);
   assert.ok(!page.includes('Rodolfo, Rodolfo'));
  });
+
+test("La Bohème collective participants are deduplicated across joint cues", () => {
+  const reader = createLibrettoRenderer(getLibretto("la-boheme"));
+  window.location.hash = "#/operas/la-boheme?act=2";
+  for (const page of [reader.outline(), reader.scene(1)]) {
+    const lists = [...page.matchAll(/<span>([^<>]*Seamstresses[^<>]*)<\/span>/g)].map(match => match[1]);
+    assert.ok(lists.length > 0);
+    for (const list of lists) {
+      const names = list.toLowerCase().split(', ');
+      assert.equal(names.filter(name => name === 'seamstresses').length, 1);
+      assert.equal(names.filter(name => name === 'students').length, 1);
+      assert.equal(new Set(names).size, names.length);
+      assert.ok(!list.includes('Seamstresses and'));
+    }
+  }
+});

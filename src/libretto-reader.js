@@ -182,16 +182,24 @@ function matchingOutlineTurn(entry, scene) {
   }
   return null;
 }
-// Split joint cues only when every component is a known individual speaker.
-// Collective roles such as “Girls and boys” remain intact.
-const individualSpeakers = new Set((libretto.acts || []).flatMap(act =>
+// Recognize both individuals and collective roles, independent of capitalization.
+// Preserve compound labels unless all their components are known speaker names.
+const knownSpeakers = new Map((libretto.acts || []).flatMap(act =>
   act.scenes.flatMap(scene => scene.sections.flatMap(section =>
-    section.turns.map(turn => turn.speaker)))));
+    section.turns.map(turn => [turn.speaker.toLocaleLowerCase(), turn.speaker])))));
 function uniqueOutlineCharacters(names) {
-  return [...new Set(names.flatMap(name => {
-    const parts = name.split(/,\s*(?:(?:and|e|poi)\s+)?|\s+(?:and|e|&)\s+/).filter(Boolean);
-    return parts.length > 1 && parts.every(part => individualSpeakers.has(part)) ? parts : [name];
-  }).map(displayCharacterName))];
+  const unique = new Map();
+  for (const name of names) {
+    const parts = name.split(/,\s*(?:(?:and|e|poi)\s+)?|\s+(?:and|e|&)\s+/i).filter(Boolean);
+    const members = parts.length > 1 && parts.every(part => knownSpeakers.has(part.toLocaleLowerCase()))
+      ? parts.map(part => knownSpeakers.get(part.toLocaleLowerCase())) : [name];
+    for (const member of members) {
+      const label = displayCharacterName(member);
+      const key = label.toLocaleLowerCase();
+      if (!unique.has(key)) unique.set(key, label);
+    }
+  }
+  return [...unique.values()];
 }
 function outlineEntryCharacters(entry, scene, act) {
   if (entry.characters?.length) return uniqueOutlineCharacters(entry.characters);
