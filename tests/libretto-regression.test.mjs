@@ -32,6 +32,25 @@ function assertSceneRows(page, scene) {
 }
 
 
+test("La Bohème translated section titles appear in both outlines and the side-by-side reader", () => {
+  const libretto = getLibretto("la-boheme");
+  const reader = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/la-boheme?view=outline";
+  const outline = reader.outline();
+  for (const act of libretto.acts) for (const scene of act.scenes) {
+    for (const entry of scene.outline || []) {
+      assert.ok(entry.translation, `English title translation exists for ${entry.title}`);
+      assert.ok(outline.includes('<span class="opera-outline__section-title">' +
+        entry.type + ' · ' + entry.title + '</span><span class="opera-outline__section-translation">' +
+        entry.translation + '</span><span class="libretto-participants">'),
+        `outline renders title, translation, and characters for ${entry.title}`);
+    }
+  }
+  window.location.hash = "#/operas/la-boheme?act=1";
+  const actPage = reader.scene(1);
+  assert.match(actPage, /<h3 class="libretto-track-heading"[^>]*>Aria · Che gelida manina!<span class="opera-outline__section-translation">What a cold little hand!<\/span><span class="libretto-participants">/);
+});
+
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
   assert.equal(librettoCatalog.length, 10);
