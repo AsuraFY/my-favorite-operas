@@ -673,8 +673,8 @@ test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one 
   assert.ok(libretto);
   assert.equal(libretto.opera.acts, 3);
   assert.equal(libretto.continuousAct, true);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
-  const act = libretto.acts[0];
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
+  const act = libretto.acts.find(entry => entry.number === 1);
   assert.equal(act.originalHeading, "Atto primo");
   assert.equal(act.scenes.length, 9);
   assert.deepEqual(act.scenes.map(scene => scene.sections[0].originalTitle), [
@@ -711,6 +711,45 @@ test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one 
   const outline = reader.outline();
   for (const heading of ["Scena prima", "Scena quinta", "Scena nona"]) {
     assert.ok(outline.includes(heading), `Act I outline includes ${heading}`);
+  }
+});
+
+test("Tosca Act II follows Opera Guide's five scenes with aligned English on one continuous page", () => {
+  const libretto = getLibretto("tosca");
+  const act = libretto.acts.find(entry => entry.number === 2);
+  assert.ok(act);
+  assert.equal(act.originalHeading, "Atto secondo");
+  assert.equal(act.scenes.length, 5);
+  assert.deepEqual(act.scenes.map(scene => scene.sections[0].originalTitle), [
+    "Scena prima", "Scena seconda", "Scena terza", "Scena quarta", "Scena quinta"
+  ]);
+  let turns = 0;
+  for (const scene of act.scenes) for (const section of scene.sections) {
+    assert.equal(section.number, undefined, "no unsupported score number");
+    assert.ok(section.turns.length > 0);
+    for (const turn of section.turns) {
+      turns++;
+      assert.ok(turn.original.trim());
+      assert.ok(turn.translation.trim());
+      if (turn.speaker === "Stage direction") continue;
+      assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+        `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+    }
+  }
+  assert.ok(turns > 250, "Act II should include the full dialogue, singing, and stage directions");
+  const reader = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/tosca?act=2&scene=5&item=0";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO SECONDO"));
+  assert.ok(page.includes("Vissi d"));
+  assert.ok(page.includes("I lived for art, I lived for love"));
+  assert.ok(page.includes("End of Act II"));
+  assert.ok(page.includes('id="libretto-section-2-5-0"'));
+  assert.ok(page.includes('data-continuous-act="true"'));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  for (const heading of ["Scena prima", "Scena quinta"]) {
+    assert.ok(outline.includes(heading), `Act II outline includes ${heading}`);
   }
 });
 

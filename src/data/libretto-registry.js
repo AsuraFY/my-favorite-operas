@@ -37,6 +37,7 @@ import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.j
 import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.js?v=madama-butterfly-act2-1";
 import { madamaButterflyActThreeScenes } from "./libretto-madama-butterfly-act-3.js?v=madama-butterfly-act3-1";
 import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-act1-1";
+import { toscaActTwoScenes } from "./libretto-tosca-act-2.js?v=tosca-act2-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -534,9 +535,12 @@ const tosca = {
   stageDirectionLabel: "Stage direction",
   bracketStageDirections: true,
   sceneOrdinals: ["PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA"],
-  acts: [{ number: 1, originalHeading: "Atto primo", scenes: toscaActOneScenes }],
+  acts: [
+    { number: 1, originalHeading: "Atto primo", scenes: toscaActOneScenes },
+    { number: 2, originalHeading: "Atto secondo", scenes: toscaActTwoScenes }
+  ],
   characters: ["Floria Tosca", "Mario Cavaradossi", "Baron Scarpia", "Cesare Angelotti", "The Sacristan", "Spoletta", "Sciarrone", "Jailer", "A Shepherd", "Chorus"],
-  source: "Italian libretto and nine scene divisions for Act I: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. The English is a fresh line-by-line draft checked against Lyrical Opera Theater's Italian-English libretto, https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf; it remains for the user's careful review. Only Act I is populated in this update."
+  source: "Italian libretto and scene divisions for Acts I and II: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. English is a fresh line-by-line draft checked against Lyrical Opera Theater's Italian-English libretto, https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf; it remains for the user's careful review. Acts I and II are populated in this update."
 };
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };

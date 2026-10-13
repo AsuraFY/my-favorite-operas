@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-23";
-import { getLibretto } from "./data/libretto-registry.js?v=tosca-act1-2";
+import { getLibretto } from "./data/libretto-registry.js?v=tosca-act2-1";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-tabs-1";
@@ -475,7 +475,7 @@ function operaDirectoryPage(query = "", sort = "title") {
     return titleKey(a.title).localeCompare(titleKey(b.title), undefined, { sensitivity: "base" });
   });
   const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
-  
+
   const teasers = { "il-barbiere-di-siviglia": "A joyful comedy full of clever tricks, disguises and unforgettable music.", "cosi-fan-tutte": "A witty exploration of love, loyalty and human nature.", "tristan-und-isolde": "A passionate, tragic love story with extraordinary music.", macbeth: "A powerful drama of ambition, fate and conscience." };
   const cards = matches.map((opera, index) => {
     const year = opera.premiered.match(/\d{4}/)?.[0] || "";

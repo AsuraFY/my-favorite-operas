@@ -92,12 +92,12 @@ test("search-friendly aliases, thirty-one routes and act counts remain intact", 
 });
 
 
-test("Tosca Act I is available from its opera information page and direct act route", () => {
+test("Tosca Acts I and II are available from its opera information page and direct act routes", () => {
   const opera = operas.find(item => item.slug === "tosca");
   const libretto = getLibretto("tosca");
   assert.ok(libretto);
   assert.equal(opera.acts, 3);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
   const reader = createLibrettoRenderer(libretto);
   const navigation = reader.navigation();
   const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
@@ -112,5 +112,10 @@ test("Tosca Act I is available from its opera information page and direct act ro
   const outline = reader.outline();
   assert.ok(outline.includes("Scena prima"));
   assert.ok(outline.includes("Scena nona"));
+  window.location.hash = "#/operas/tosca?act=2";
+  const secondActPage = reader.scene(1);
+  assert.ok(secondActPage.includes("ATTO SECONDO"));
+  assert.ok(secondActPage.includes("SCENA QUINTA"));
+  assert.ok(secondActPage.includes("End of Act II"));
 });
 
