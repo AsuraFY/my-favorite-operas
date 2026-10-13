@@ -673,7 +673,7 @@ test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one 
   assert.ok(libretto);
   assert.equal(libretto.opera.acts, 3);
   assert.equal(libretto.continuousAct, true);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
   const act = libretto.acts.find(entry => entry.number === 1);
   assert.equal(act.originalHeading, "Atto primo");
   assert.equal(act.scenes.length, 9);
@@ -750,6 +750,47 @@ test("Tosca Act II follows Opera Guide's five scenes with aligned English on one
   const outline = reader.outline();
   for (const heading of ["Scena prima", "Scena quinta"]) {
     assert.ok(outline.includes(heading), `Act II outline includes ${heading}`);
+  }
+});
+
+test("Tosca Act III follows Opera Guide's four scene divisions and aligns English", () => {
+  const libretto = getLibretto("tosca");
+  const act = libretto.acts.find(entry => entry.number === 3);
+  assert.ok(act);
+  assert.equal(act.originalHeading, "Atto terzo");
+  assert.equal(act.scenes.length, 4);
+  assert.deepEqual(act.scenes.map(scene => scene.sections[0].originalTitle), [
+    "Scena prima", "Scena seconda", "Scena terza", "Scena ultima"
+  ]);
+  let turns = 0;
+  for (const scene of act.scenes) for (const section of scene.sections) {
+    assert.equal(section.number, undefined, "no unsupported score number");
+    assert.ok(section.turns.length > 0);
+    for (const turn of section.turns) {
+      turns++;
+      assert.ok(turn.original.trim());
+      assert.ok(turn.translation.trim());
+      if (turn.speaker !== "Stage direction") {
+        assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
+          `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
+      }
+    }
+  }
+  assert.ok(turns > 60, "Act III should include the full libretto and stage directions");
+  const reader = createLibrettoRenderer(libretto);
+  window.location.hash = "#/operas/tosca?act=3&scene=4&item=0";
+  const page = reader.scene(1);
+  assert.ok(page.includes("ATTO TERZO"));
+  assert.ok(page.includes("E lucevan le stelle"));
+  assert.ok(page.includes("And the stars were shining"));
+  assert.ok(page.includes("Scena ultima"));
+  assert.ok(page.includes("O Scarpia, before God!"));
+  assert.ok(page.includes("End of Act III"));
+  assert.ok(page.includes('id="libretto-section-3-4-0"'));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const outline = reader.outline();
+  for (const heading of ["Scena prima", "Scena seconda", "Scena terza", "Scena ultima"]) {
+    assert.ok(outline.includes(heading), `Act III outline includes ${heading}`);
   }
 });
 

@@ -92,12 +92,12 @@ test("search-friendly aliases, thirty-one routes and act counts remain intact", 
 });
 
 
-test("Tosca Acts I and II are available from its opera information page and direct act routes", () => {
+test("Tosca Acts I–III are available from its opera information page and direct act routes", () => {
   const opera = operas.find(item => item.slug === "tosca");
   const libretto = getLibretto("tosca");
   assert.ok(libretto);
   assert.equal(opera.acts, 3);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
   const reader = createLibrettoRenderer(libretto);
   const navigation = reader.navigation();
   const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
@@ -117,5 +117,16 @@ test("Tosca Acts I and II are available from its opera information page and dire
   assert.ok(secondActPage.includes("ATTO SECONDO"));
   assert.ok(secondActPage.includes("SCENA QUINTA"));
   assert.ok(secondActPage.includes("End of Act II"));
+  window.location.hash = "#/operas/tosca?act=3";
+  const thirdActPage = reader.scene(1);
+  assert.ok(thirdActPage.includes("ATTO TERZO"));
+  assert.ok(thirdActPage.includes("E lucevan le stelle"));
+  assert.ok(thirdActPage.includes("And the stars were shining"));
+  assert.ok(thirdActPage.includes("Scena ultima"));
+  assert.ok(thirdActPage.includes("O Scarpia, before God!"));
+  assert.ok(thirdActPage.includes("End of Act III"));
+  window.location.hash = "#/operas/tosca?view=outline";
+  const actThreeOutline = reader.outline();
+  assert.ok(actThreeOutline.includes("Scena ultima"));
 });
 
