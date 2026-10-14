@@ -925,6 +925,6 @@ test("Barbiere Act I outlines distinguish unnumbered music from recitative", () 
     const start = page.indexOf('href="' + href + '"');
     assert.ok(start >= 0);
     const entry = page.slice(start, page.indexOf('</a>', start));
-    assert.ok(entry.includes(section.label === 'Recitativo' ? '💬' : '🎶'), section.label);
+    assert.ok(entry.includes(section.label === 'Recitativo' ? '▤' : '🎶'), section.label);
   }
 });
