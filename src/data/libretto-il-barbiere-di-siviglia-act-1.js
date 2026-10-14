@@ -4,7 +4,7 @@ export const barbiereActOneScenes = [
   {
     "number": 1,
     "title": "Ecco ridente in cielo",
-    "cast": "Il Conte, Fiorello, Coro",
+    "cast": "The Count, Fiorello, Chorus",
     "summary": "At dawn the Count serenades Rosina, then dismisses the musicians and waits for her at the balcony.",
     "sections": [
       {

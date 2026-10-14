@@ -4,7 +4,7 @@ import { applyCosiOutlineMetadata } from "./cosi-outline-metadata.js";
 import { getOpera } from "./operas.js?v=tosca-act1-2";
 import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=act2-18";
-import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-2";
+import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-3";
 import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.js?v=barbiere-act2-2";
 import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-act1-5";
 import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-act2-8";
@@ -121,6 +121,24 @@ const barbiere = {
   recitativeLabel: "Recitativo",
   sceneOriginalPrefix: "Scena",
   stageDirectionSpeaker: "Stage direction",
+  originalSpeakerNames: {
+    "All": "Tutti",
+    "All three": "Tutti e tre",
+    "Bartolo and Basilio": "Bartolo e Basilio",
+    "Bartolo and Rosina": "Bartolo e Rosina",
+    "Basilio and Berta": "Basilio e Berta",
+    "Berta, Bartolo and Basilio": "Berta, Bartolo e Basilio",
+    "Chorus": "Coro",
+    "Figaro and Basilio": "Figaro e Basilio",
+    "Officer": "Ufficiale",
+    "Rosina and Berta": "Rosina e Berta",
+    "Rosina and The Count": "Rosina e Il Conte",
+    "Rosina, The Count and Figaro": "Rosina, Il Conte e Figaro",
+    "The Count": "Il Conte",
+    "The Count and Bartolo": "Il Conte e Bartolo",
+    "The Count and Figaro": "Il Conte e Figaro",
+    "The Count and Rosina": "Il Conte e Rosina"
+},
   translatedForms: { Cavatina: "Cavatina", Canzone: "Song", Duetto: "Duet", Aria: "Aria" },
   acts: [
     { number: 1, originalHeading: "Atto primo", scenes: barbiereActOneScenes },
@@ -152,7 +170,7 @@ const barbiere = {
     "1:15": { "The Count": "disguised as a cavalry soldier" },
     "1:16": { "The Count": "disguised as a cavalry soldier" }
   },
-  ensembleLabels: { "The Count and Figaro": "The Count & Figaro", "All": "Ensemble", Chorus: "Chorus" },
+  ensembleLabels: { "All": "Ensemble", Chorus: "Chorus" },
   source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Act I; public-domain Italian text, Acts I–II: https://www.librettidopera.it/barb_siv/a_01.html and https://www.librettidopera.it/barb_siv/a_02.html"
 };
 

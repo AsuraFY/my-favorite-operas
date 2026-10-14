@@ -405,6 +405,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText);
     const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText);
     const count = Math.max(originalParts.length, translatedParts.length);
+    const originalSpeaker = libretto.originalSpeakerNames?.[speaker] || speaker;
     const speakerTranslation = turn.speakerTranslation || libretto.speakerTranslations?.[speaker] || speaker;
     const output = [];
     for (let index = 0; index < count; index++) {
@@ -417,7 +418,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
           formatLibrettoText(translatedPart.value, false) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
         output.push('<div class="libretto-row"><div class="libretto-cell libretto-cell--german">' +
-          (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speaker) + '</span>') + '<p>' +
+          (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(originalSpeaker) + '</span>') + '<p>' +
           formatLibrettoText(originalPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div><div class="libretto-cell libretto-cell--english">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span>') + '<p>' +
           formatLibrettoText(translatedPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div></div>');

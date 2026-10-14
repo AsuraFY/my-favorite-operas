@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-33";
-import { getLibretto } from "./data/libretto-registry.js?cosi-outline-1&v=tosca-character-label-2";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-34";
+import { getLibretto } from "./data/libretto-registry.js?v=barbiere-labels-1";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-tabs-1";

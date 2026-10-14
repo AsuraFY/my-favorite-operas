@@ -892,3 +892,26 @@ test("Così outlines retain all links and show title translations before partici
     }
   }
 });
+
+test("Barbiere uses English outline credits and Italian/English sung speaker labels", () => {
+  const libretto = getLibretto("il-barbiere-di-siviglia");
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  assert.ok(outline.includes("The Count"));
+  assert.ok(outline.includes("Officer"));
+  assert.ok(!outline.includes("The Count &amp; Figaro"));
+  for (const act of libretto.acts) {
+    window.location.hash = `#/operas/il-barbiere-di-siviglia?act=${act.number}&scene=1`;
+    const page = reader.scene(1);
+    const rows = [...page.matchAll(/<div class="libretto-row"><div class="libretto-cell libretto-cell--german">([\s\S]*?)<\/div><div class="libretto-cell libretto-cell--english">([\s\S]*?)<\/div><\/div>/g)];
+    assert.ok(rows.length);
+    for (const [, original, english] of rows) {
+      const originalLabel = original.match(/<span class="libretto-speaker[^>]*>(.*?)<\/span>/)?.[1];
+      const englishLabel = english.match(/<span class="libretto-speaker[^>]*>(.*?)<\/span>/)?.[1];
+      if (englishLabel) assert.equal(originalLabel, libretto.originalSpeakerNames[englishLabel] || englishLabel);
+    }
+    for (const [, credits] of page.matchAll(/class="libretto-participants">([\s\S]*?)<\/span><\/(?:span|div)>/g)) {
+      assert.ok(!/Il Conte|Ufficiale|Coro/.test(credits));
+    }
+  }
+});
