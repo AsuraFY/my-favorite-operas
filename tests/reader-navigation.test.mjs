@@ -1,7 +1,17 @@
-import test from "node:test";
+import test, { beforeEach } from "node:test";
 import assert from "node:assert/strict";
+import { getLibretto } from "../src/data/libretto-registry.js";
+import { createLibrettoRenderer } from "../src/libretto-reader.js";
+import { count, assertActTargets, resetReaderLocation } from "./helpers/libretto-helpers.mjs";
+
 import { readFileSync } from "node:fs";
 import vm from "node:vm";
+
+beforeEach(resetReaderLocation);
+
+const turandot = getLibretto("turandot");
+const figaro = getLibretto("le-nozze-di-figaro");
+const act = figaro.acts[0];
 
 const main = readFileSync(new URL("../src/main.js", import.meta.url), "utf8");
 function functionSource(name) {
@@ -119,3 +129,70 @@ test("Skip to content focuses the current page without changing the route", () =
   assert.ok(prevented && focused && scrolled);
 });
 
+
+// Complete-act routes across the shared reader.
+for (const slug of ["cosi-fan-tutte", "tristan-und-isolde", "il-barbiere-di-siviglia"]) {
+  test(`${slug}: every deep link retains its full act and targets the right section`, () => {
+    const libretto = getLibretto(slug);
+    const reader = createLibrettoRenderer(libretto);
+    assert.equal(libretto.continuousAct, true);
+    for (const act of libretto.acts) assertActTargets(reader, libretto, act);
+  });
+}
+
+
+test("La Bohème landmarks identify unique source turns in reading order", () => {
+  for (const act of getLibretto("la-boheme").acts) for (const scene of act.scenes) {
+    const turns = scene.sections.flatMap(section => section.turns);
+    let previous = -1;
+    for (const entry of scene.outline) {
+      const matches = turns.flatMap((turn, index) =>
+        (entry.sourceTurn == null || index === entry.sourceTurn) && (entry.speaker == null || turn.speaker === entry.speaker) && turn.original.includes(entry.match) ? [index] : []);
+      assert.equal(matches.length, 1, `Act ${act.number}: ${entry.title} should have one source target`);
+      assert.ok(matches[0] > previous, `Act ${act.number}: ${entry.title} should follow the previous landmark`);
+      previous = matches[0];
+    }
+  }
+});
+
+test("Macbeth deep links keep the complete act and target the requested section", () => {
+  const reader = createLibrettoRenderer(getLibretto("macbeth"));
+  for (const number of [1, 2, 13, 19]) {
+    window.location.hash = "#/operas/macbeth?act=1&scene=" + number + "&item=0";
+    const page = reader.scene(number);
+    assert.ok(page.includes('data-continuous-act="true"'));
+    assert.ok(page.includes('data-initial-item="' + (number - 1) + '"'));
+    for (let scene = 1; scene <= 19; scene++) assert.ok(page.includes('id="libretto-section-1-' + scene + '-0"'));
+  }
+});
+
+test("Turandot deep links retain the whole act and navigation uses source numbers", () => {
+  window.location.hash = "#/operas/turandot?act=1&scene=1&item=6";
+  const reader = createLibrettoRenderer(turandot);
+  const html = reader.scene(1, "", 6);
+  assert.match(html, /data-continuous-act="true"/);
+  assert.match(html, /data-initial-item="6"/);
+  assert.equal((html.match(/class="libretto-scene-section/g) || []).length, 7);
+  assert.match(html, /Popolo di Pekino/);
+  assert.match(html, /Non piangere, Liù/);
+  assert.match(html, /When the gong groans, death gloats/);
+  assert.match(html, /Crowd/);
+  assert.match(html, /\[Prince Calaf strikes the gong three times\.\]/);
+  assert.ok(!html.includes("SCENE I"));
+  assert.ok(!html.includes("Scene I"));
+  assert.ok(!html.includes("Prev. scene"));
+  const outline = reader.outline();
+  assert.ok(!outline.includes("Scene 1"));
+  assert.match(outline, /N\. 3 · Marcia funebre/);
+  assert.match(outline, /scene=1&amp;item=6|scene=1&item=6/);
+  assert.match(reader.scene(1, "Do not weep"), /data-initial-item="5"/);
+});
+
+test("Figaro deep links and searches retain the full Act I", () => {
+  const reader = createLibrettoRenderer(figaro);
+  assertActTargets(reader, figaro, act);
+  const result = reader.scene(1, "Non più andrai");
+  assert.ok(result.includes('data-initial-item="20"'));
+  assert.ok(result.includes("Cinque... dieci"));
+  assert.ok(result.includes("military glory"));
+});
