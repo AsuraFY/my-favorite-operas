@@ -2600,3 +2600,6 @@ html[data-theme="night"] .musical-row__summary { color: var(--night-muted); }
 
 /* Source-indexed three-line Così act outline. */
 .opera-reading-page[data-libretto-slug="cosi-fan-tutte"] .scene-sidebar .section-nav-link > .libretto-participants { margin-left: 0; flex-basis: 100%; }
+
+/* Inline category icons preserve the three-line act-outline layout. */
+.scene-sidebar .section-nav-link__icon--inline { display: inline-block; width: auto; margin: 0 0.45em 0 0; vertical-align: baseline; }
