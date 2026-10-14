@@ -915,3 +915,16 @@ test("Barbiere uses English outline credits and Italian/English sung speaker lab
     }
   }
 });
+
+test("Barbiere Act I outlines distinguish unnumbered music from recitative", () => {
+  const libretto = getLibretto("il-barbiere-di-siviglia");
+  window.location.hash = "#/operas/il-barbiere-di-siviglia?act=1";
+  const page = createLibrettoRenderer(libretto).scene(1);
+  for (const scene of libretto.acts[0].scenes) for (const [index, section] of scene.sections.entries()) {
+    const href = `#/operas/il-barbiere-di-siviglia?act=1&scene=${scene.number}&item=${index}`;
+    const start = page.indexOf('href="' + href + '"');
+    assert.ok(start >= 0);
+    const entry = page.slice(start, page.indexOf('</a>', start));
+    assert.ok(entry.includes(section.label === 'Recitativo' ? '💬' : '🎶'), section.label);
+  }
+});

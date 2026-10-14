@@ -126,13 +126,15 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
 
       const label=sectionNavigationLabel(section,item,index);
       const isSong=section.number != null || /^No\./i.test(section.label || "");
+      const barbiereActOne = libretto.slug === "il-barbiere-di-siviglia" && Number(act) === 1;
+      const songIcon = isSong || (barbiereActOne && /^(Introduzione|Cavatina|Canzone|Duetto|Aria|Finale|Quadro di stupore|Stretta)(?:\b|$)/.test(section.type || section.label || ""));
       const isNamedPassage=section.type==="Passage";
       const titles=(isSong||isNamedPassage)?sectionTitles(item,section,index):{original:"",translation:""};
       const title=titles.original;
       const form=title?(isNamedPassage?"Passage":label.slice(0,-(" · "+title).length)):label;
       const href="#/operas/"+libretto.slug+"?act="+act+"&scene="+item.number+"&item="+index;
       return sourceDivisionHeading(section, "p") + '<a class="section-nav-link'+(active?' is-current':'')+'" href="'+href+'"'+(active?' aria-current="page"':'')+
-        '><span class="section-nav-link__icon section-nav-link__icon--'+(isSong?'song':'recitative')+'" aria-hidden="true">'+(isSong?'♫':'▤')+
+        '><span class="section-nav-link__icon section-nav-link__icon--'+(songIcon?'song':'recitative')+'" aria-hidden="true">'+(barbiereActOne?(songIcon?'🎶':'💬'):(songIcon?'♫':'▤'))+
         '</span><span class="section-nav-link__label"><span class="section-nav-link__form">'+escapeHtml(form)+'</span>'+
         (title?'<span class="section-nav-link__title">'+escapeHtml(title)+'</span>':'')+
         (isNamedPassage&&titles.translation?'<span class="section-nav-link__title section-nav-link__translation">'+escapeHtml(titles.translation)+'</span>':'')+'</span>'+renderCharacterCredits(sectionCharacterNames(section,act,item.number),true)+'</a>';
