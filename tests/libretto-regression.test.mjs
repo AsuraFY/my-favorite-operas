@@ -69,7 +69,7 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);
   assert.deepEqual(barbiere.acts.map(act => act.originalHeading), ["Atto primo", "Atto secondo"]);
   for (const scene of barbiere.acts[0].scenes) for (const section of scene.sections) {
-    assert.ok(section.turns.length > 0);
+    assert.ok(section.instrumental || section.turns.length > 0);
     for (const turn of section.turns) {
       assert.equal(typeof turn.it, "string");
       assert.equal(typeof turn.en, "string");
@@ -430,8 +430,8 @@ test("Barber of Seville Act I scenes render bilingual sections and outline links
   }
   const outline = reader.outline();
   assert.equal(count(outline, /class="opera-outline__scene"/g), 27);
-  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), sectionCount + 23);
-  assert.equal(sectionCount, 29);
+  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), sectionCount + 25);
+  assert.equal(sectionCount, 30);
   assert.equal(rowCount, 399);
   assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=1&scene=16&item=0"));
 });
@@ -454,10 +454,10 @@ test("Barber of Seville Act II scenes render bilingual sections and outline link
   }
   const outline = reader.outline();
   assert.equal(count(outline, /class="opera-outline__scene"/g), 27);
-  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), 29 + sectionCount);
+  assert.equal(count(outline, /class="section-nav-link opera-outline__section"/g), 30 + sectionCount);
   assert.ok(outline.includes("#/operas/il-barbiere-di-siviglia?act=2&scene=11&item=0"));
-  assert.equal(sectionCount, 23);
-  assert.equal(rowCount, 280);
+  assert.equal(sectionCount, 25);
+  assert.equal(rowCount, 284);
 });
 
 test("all Così scenes render their complete sections, dialogue and outline controls", () => {
@@ -874,7 +874,7 @@ test("Così outlines retain all links and show title translations before partici
     for (const scene of act.scenes) {
       assert.ok(scene.translatedTitle);
       for (const [index, section] of scene.sections.entries()) {
-        const href = `#/operas/cosi-fan-tutte?act=${act.number}&scene=${scene.number}&item=${index}`;
+        const href = `#/operas/cosi-fan-tutte?act=${act.number}&scene=${scene.number}&item=${section.routeItem ?? index}`;
         for (const html of [outline, page]) {
           const start = html.indexOf('href="' + href + '"');
           assert.ok(start >= 0);
@@ -922,11 +922,75 @@ test("Barbiere outlines distinguish music from recitative in both acts", () => {
     window.location.hash = `#/operas/il-barbiere-di-siviglia?act=${act.number}`;
     const page = createLibrettoRenderer(libretto).scene(1);
     for (const scene of act.scenes) for (const [index, section] of scene.sections.entries()) {
-      const href = `#/operas/il-barbiere-di-siviglia?act=${act.number}&scene=${scene.number}&item=${index}`;
+      const href = `#/operas/il-barbiere-di-siviglia?act=${act.number}&scene=${scene.number}&item=${section.routeItem ?? index}`;
       const start = page.indexOf('href="' + href + '"');
       assert.ok(start >= 0);
       const entry = page.slice(start, page.indexOf('</a>', start));
       assert.ok(entry.includes(section.label.startsWith('Recitativo') ? '▤' : '♬'), section.label);
     }
   }
+});
+
+test("Barbiere reviewed outlines use source headings, translated titles and unique participants", () => {
+  const libretto = getLibretto("il-barbiere-di-siviglia");
+  const reader = createLibrettoRenderer(libretto);
+  const full = reader.outline();
+  const escape = text => text.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  for (const act of libretto.acts) {
+    window.location.hash = `#/operas/${libretto.slug}?act=${act.number}`;
+    const page = reader.scene(1);
+    const sidebar = page.slice(page.indexOf('<aside'), page.indexOf('</aside>'));
+    for (const scene of act.scenes) {
+      assert.equal(scene.title, undefined, 'no invented scene title');
+      assert.equal(new Set(scene.sections.map(s => s.routeItem)).size, scene.sections.length);
+      for (const section of scene.sections) {
+        const href = `#/operas/${libretto.slug}?act=${act.number}&scene=${scene.number}&item=${section.routeItem}`;
+        for (const html of [full, sidebar]) {
+          const start = html.indexOf(`href="${href}"`);
+          assert.ok(start >= 0, href);
+          const link = html.slice(start, html.indexOf('</a>', start));
+          assert.equal(section.number, undefined, 'no invented score numbering');
+          assert.ok(link.includes(escape(section.type)));
+          if (section.originalTitle) {
+            assert.ok(section.translatedTitle);
+            assert.ok(link.includes(escape(section.originalTitle)));
+            assert.ok(link.includes('class="opera-outline__section-translation">' + escape(section.translatedTitle)));
+            assert.ok(link.indexOf('opera-outline__section-translation') < link.indexOf('libretto-participants'));
+          } else assert.ok(!link.includes('opera-outline__section-translation'));
+          assert.equal(new Set(section.participants).size, section.participants.length);
+          assert.ok(!section.participants.some(name => ['All', 'All three', 'Ensemble'].includes(name)));
+          if (section.instrumental) assert.ok(!link.includes('libretto-participants'));
+          else assert.ok(link.includes(escape(section.participants.map(name => name + (libretto.disguises?.[`${act.number}:${scene.number}`]?.[name] ? ' (' + libretto.disguises[`${act.number}:${scene.number}`][name] + ')' : '')).join(', '))));
+        }
+        assert.ok(page.includes(`id="libretto-section-${act.number}-${scene.number}-${section.routeItem}"`));
+      }
+    }
+  }
+  assert.ok(full.indexOf('>Sinfonia</span>') < full.indexOf('id="outline-scene-1-1"'));
+  assert.ok(full.indexOf('>Temporale</span>') < full.indexOf('id="outline-scene-2-9"'));
+});
+
+test("Barbiere source corrections restore the aria and preserve established deep links", () => {
+  const libretto = getLibretto("il-barbiere-di-siviglia");
+  const first = libretto.acts[0].scenes[0];
+  assert.ok(first.sections.find(s => s.routeItem === 2).turns[0].it.startsWith('Gente indiscreta'));
+  assert.ok(first.sections.find(s => s.routeItem === 1).turns.some(t => t.it.startsWith('Mille grazie')));
+  assert.equal(libretto.acts[0].scenes[15].sections[0].type, 'Finale I');
+  assert.equal(libretto.acts[1].scenes[3].sections[1].type, 'Quintetto');
+  const finale = libretto.acts[1].scenes[10];
+  const aria = finale.sections.find(s => s.originalTitle === 'Cessa di più resistere');
+  assert.equal(aria.type, 'Aria');
+  assert.deepEqual(aria.participants, ['The Count', 'Chorus']);
+  assert.match(aria.turns[0].it, /^Cessa di più resistere,/);
+  assert.match(aria.turns[2].it, /gioisci in libertà\.$/);
+  for (const turn of [aria.turns[0], aria.turns[2]]) assert.equal(turn.it.split('\n').length, turn.en.split('\n').length);
+  assert.ok(!finale.sections.find(s => s.routeItem === 1).turns.some(t => t.it.includes('Cari amici')));
+  assert.equal(finale.sections.find(s => s.routeItem === 2).type, 'Recitativo');
+  assert.equal(finale.sections.find(s => s.routeItem === 3).type, 'Finaletto II');
+  assert.ok(finale.sections[0].participants.includes('Magistrate'));
+  window.location.hash = `#/operas/${libretto.slug}?act=2`;
+  const reader = createLibrettoRenderer(libretto);
+  const page = reader.scene(11, 'Cessa di più resistere');
+  const offset = libretto.acts[1].scenes.slice(0, 10).reduce((n, s) => n + s.sections.length, 0);
+  assert.ok(page.includes(`data-initial-item="${offset + 2}"`), 'search targets inserted aria');
 });

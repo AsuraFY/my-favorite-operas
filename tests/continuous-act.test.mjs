@@ -16,8 +16,9 @@ for (const slug of ["cosi-fan-tutte", "tristan-und-isolde", "il-barbiere-di-sivi
       let offset = 0;
       for (const scene of act.scenes) {
         for (let item = 0; item < scene.sections.length; item++) {
-          window.location.hash = `#/operas/${slug}?act=${act.number}&scene=${scene.number}&item=${item}`;
-          const page = reader.scene(scene.number, "", item);
+          const routeItem = scene.sections[item].routeItem ?? item;
+          window.location.hash = `#/operas/${slug}?act=${act.number}&scene=${scene.number}&item=${routeItem}`;
+          const page = reader.scene(scene.number, "", routeItem);
           assert.ok(page.includes('data-continuous-act="true"'));
           assert.ok(page.includes(`data-initial-item="${offset + item}"`));
           assert.equal(count(page, /class="libretto-scene-section"/g), sections.length);

@@ -4,8 +4,8 @@ import { applyCosiOutlineMetadata } from "./cosi-outline-metadata.js";
 import { getOpera } from "./operas.js?v=tosca-act1-2";
 import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-libretto-2";
 import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=act2-18";
-import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-3";
-import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.js?v=barbiere-act2-2";
+import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-4";
+import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.js?v=barbiere-act2-3";
 import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-act1-5";
 import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-act2-8";
 import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-act3-5";
@@ -111,6 +111,7 @@ cosi.source = "Outline review, 13 October 2026: https://www.librettidopera.it/co
 
 const barbiere = {
   slug: "il-barbiere-di-siviglia",
+  threeLineOutline: true,
   continuousAct: true,
   opera: getOpera("il-barbiere-di-siviglia"),
   composerShort: "G. ROSSINI",
@@ -131,6 +132,7 @@ const barbiere = {
     "Chorus": "Coro",
     "Figaro and Basilio": "Figaro e Basilio",
     "Officer": "Ufficiale",
+    "Magistrate": "Alcalde",
     "Rosina and Berta": "Rosina e Berta",
     "Rosina and The Count": "Rosina e Il Conte",
     "Rosina, The Count and Figaro": "Rosina, Il Conte e Figaro",
@@ -170,8 +172,8 @@ const barbiere = {
     "1:15": { "The Count": "disguised as a cavalry soldier" },
     "1:16": { "The Count": "disguised as a cavalry soldier" }
   },
-  ensembleLabels: { "All": "Ensemble", Chorus: "Chorus" },
-  source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Act I; public-domain Italian text, Acts I–II: https://www.librettidopera.it/barb_siv/a_01.html and https://www.librettidopera.it/barb_siv/a_02.html"
+  ensembleLabels: {},
+  source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Librettidopera.it. Outline types, incipits and divisions checked 14 October 2026 against the act texts and https://www.librettidopera.it/barb_siv/som.html. No numeric labels supplied by this edition. English remains a draft. Acts I–II: https://www.librettidopera.it/barb_siv/a_01.html and https://www.librettidopera.it/barb_siv/a_02.html"
 };
 
 const tristan = {

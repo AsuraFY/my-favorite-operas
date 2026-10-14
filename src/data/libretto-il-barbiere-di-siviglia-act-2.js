@@ -3,7 +3,6 @@
 export const barbiereActTwoScenes = [
   {
     "number": 1,
-    "title": "Ma vedi il mio destino!",
     "cast": "Bartolo",
     "summary": "Bartolo suspects that the cavalryman was sent by Almaviva to test Rosina's feelings.",
     "sections": [
@@ -20,13 +19,18 @@ export const barbiereActTwoScenes = [
             "it": "Nemmeno in casa propria sicuri si può star!... Ma io... Chi batte? Ehi, chi è di là? In casa io son; non v'è timore, aprite.",
             "en": "One cannot even feel safe in one's own home!... But I... Who is knocking? Hey, who is there? I am at home; there is nothing to fear. Open up."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 2,
-    "title": "Pace e gioia il ciel vi dia",
     "cast": "The Count, Bartolo",
     "summary": "Almaviva returns as Don Alonso, a music teacher and Basilio's supposed substitute. He persuades Bartolo to let him teach Rosina and hands him her intercepted note.",
     "sections": [
@@ -78,7 +82,16 @@ export const barbiereActTwoScenes = [
             "it": "(Il vecchion non mi conosce: oh, mia sorte fortunata! Ah, mio ben, fra pochi istanti parlerem con libertà.)",
             "en": "(The old man doesn't recognize me—how fortunate! In a few moments, my love, we will speak freely.)"
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Duetto",
+        "originalTitle": "Pace e gioia il ciel vi dia",
+        "translatedTitle": "May heaven grant you peace and joy",
+        "participants": [
+          "The Count",
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Recitativo",
@@ -203,13 +216,19 @@ export const barbiereActTwoScenes = [
             "it": "(Non dubitare. L'affare del biglietto dalla bocca m'è uscito non volendo. Ma come far? Senza d'un tal ripiego mi toccava andar via come un baggiano. Il mio disegno a lei ora paleserò; s'ella acconsente io son felice appieno. Eccola. Ah, il cor sento balzarmi in seno.)",
             "en": "(Don't worry. I let the matter of the note slip out by accident. But what could I do? Without this pretext I would have had to leave like a fool. Now I will reveal my plan to her; if she agrees, I shall be completely happy. Here she comes. My heart is leaping in my breast.)"
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 3,
-    "title": "Contro un cor che accende amore",
     "cast": "Rosina, The Count, Bartolo, Figaro",
     "summary": "Rosina sings a lesson while Almaviva promises to help her. Figaro arrives to shave Bartolo and quietly steals the balcony key.",
     "sections": [
@@ -281,10 +300,18 @@ export const barbiereActTwoScenes = [
             "it": "Da brava; incominciamo.",
             "en": "Good; let us begin."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "Rosina",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
-        "label": "Aria — Contro un cor che accende amore",
+        "label": "Aria",
         "turns": [
           {
             "speaker": "Rosina",
@@ -301,7 +328,16 @@ export const barbiereActTwoScenes = [
             "it": "Cara immagine ridente,\ndolce idea d'un lieto amore,\ntu m'accendi in petto il core,\ntu mi porti a delirar.",
             "en": "Dear smiling image,\nsweet vision of happy love,\nyou set my heart aflame\nand make me dream."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Aria",
+        "originalTitle": "Contro un cor che accende amore",
+        "translatedTitle": "Against a heart set alight by love",
+        "participants": [
+          "Rosina",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Recitativo",
@@ -321,17 +357,33 @@ export const barbiereActTwoScenes = [
             "it": "Certo, bella voce. Ma quest'aria, cospetto, è assai noiosa. La musica a' miei tempi era altra cosa. Ah, quando per esempio cantava Cafariello quell'aria portentosa... La, ra, là. Sentite, don Alonso, eccola qua.",
             "en": "A lovely voice, certainly. But this aria, heavens, is very tiresome. Music was different in my day. When Cafariello sang that wonderful tune... La, ra, la. Listen, Don Alonso; here it is."
           }
-        ]
+        ],
+        "routeItem": 2,
+        "type": "Recitativo",
+        "participants": [
+          "The Count",
+          "Rosina",
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
-        "label": "Arietta — Quando mi sei vicina",
+        "label": "Arietta",
         "turns": [
           {
             "speaker": "Bartolo",
             "it": "Quando mi sei vicina, amabile Rosina... L'aria dicea Giannina, ma io dico Rosina. Quando mi sei vicina, amabile Rosina, il cor mi balla in petto, mi balla il minuetto...",
             "en": "When you are near me, charming Rosina... The song said Giannina, but I say Rosina. When you are near me, charming Rosina, my heart dances in my chest; it dances a minuet..."
           }
-        ]
+        ],
+        "routeItem": 3,
+        "type": "Arietta",
+        "originalTitle": "Quando mi sei vicina",
+        "translatedTitle": "When you are near me",
+        "participants": [
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Recitativo",
@@ -491,13 +543,21 @@ export const barbiereActTwoScenes = [
             "it": "A noi.",
             "en": "Come, then."
           }
-        ]
+        ],
+        "routeItem": 4,
+        "type": "Recitativo",
+        "participants": [
+          "Figaro",
+          "Bartolo",
+          "Rosina",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 4,
-    "title": "Don Basilio!",
     "cast": "Rosina, The Count, Figaro, Bartolo, Basilio",
     "summary": "Basilio arrives unexpectedly. Almaviva and Figaro convince him he has scarlet fever and pay him to leave.",
     "sections": [
@@ -684,10 +744,22 @@ export const barbiereActTwoScenes = [
             "it": "Buona sera... ben di core... obbligato... in verità. (Ah, che in sacco va il tutore.) Non gridate, intesi già.",
             "en": "Good night... from my heart... I am truly obliged. (Ah, the guardian will be caught.) Do not shout; I understand."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Quintetto",
+        "originalTitle": "Don Basilio!... / Cosa veggo!",
+        "translatedTitle": "Don Basilio!... / What do I see!",
+        "participants": [
+          "Rosina",
+          "The Count",
+          "Figaro",
+          "Bartolo",
+          "Basilio"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
-        "label": "Recitativo",
+        "label": "Quintetto",
         "turns": [
           {
             "speaker": "Figaro",
@@ -779,13 +851,23 @@ export const barbiereActTwoScenes = [
             "it": "L'amico delira, la testa gli gira; dottore, tacete, vi fate burlar. Tacete, partiamo, non serve gridar. (Intesi ci siamo, non v'è a replicar.)",
             "en": "Our friend is raving; his head is spinning. Doctor, be quiet; you are being made a fool of. Be quiet, let us go; there is no need to shout. (We understand; there is no reply.)"
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Quintetto",
+        "originalTitle": "Orsù, signor don Bartolo",
+        "translatedTitle": "Come now, Don Bartolo",
+        "participants": [
+          "Figaro",
+          "Bartolo",
+          "The Count",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 5,
-    "title": "Ah disgraziato!",
     "cast": "Bartolo, Berta, Ambrogio",
     "summary": "Bartolo realizes he has been deceived and orders Ambrogio to summon Basilio.",
     "sections": [
@@ -817,13 +899,18 @@ export const barbiereActTwoScenes = [
             "it": "(A Berta) Di guardia tu piàntati alla porta, e poi... no, no. (Non me ne fido.) Io stesso ci starò. (Parte.)",
             "en": "(To Berta) You stand guard at the door, and then... no, no. (I cannot trust her.) I will stand guard myself. (He leaves.)"
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 6,
-    "title": "Il vecchiotto cerca moglie",
     "cast": "Berta",
     "summary": "Left alone, Berta complains about the chaos in the house and reflects on love, age, and being overlooked.",
     "sections": [
@@ -835,23 +922,36 @@ export const barbiereActTwoScenes = [
             "it": "Che vecchio sospettoso! Vada pure e ci stia finché crepa. Sempre gridi e tumulti in questa casa. Si litiga, si piange, si minaccia; non v'è un'ora di pace con questo vecchio avaro e brontolone. Oh, che casa in confusione!",
             "en": "What a suspicious old man! Let him go and stand guard until he drops. There is always shouting and uproar in this house. Quarrelling, weeping, threats; not one peaceful hour with this stingy, grumbling old man. What a house of confusion!"
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Berta"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
-        "label": "Aria — Il vecchiotto cerca moglie",
+        "label": "Aria",
         "turns": [
           {
             "speaker": "Berta",
             "it": "Il vecchiotto cerca moglie,\nvuol marito la ragazza;\nquello freme, questa è pazza,\ntutti e due son da legar.\n\nMa che cosa è questo amore\nche fa tutti delirar?\nEgli è un male universale,\nuna smania, un certo ardore\nche nel core dà un tormento...\nPoverina, anch'io lo sento,\nné so come finirà.\n\nAh, vecchiaia maledetta,\nche disdetta singolar!\nNiun mi bada, niun mi vuole,\nson da tutti disprezzata;\ne vecchietta disperata\nmi convien così crepar.",
             "en": "The old man seeks a wife,\nthe girl is to be married;\none rages, the other is mad,\nboth of them should be locked away.\n\nBut what is this love\nthat makes everyone delirious?\nIt is a universal illness,\na fever, a certain ardour\nthat torments the heart...\nPoor me, I feel it too,\nand do not know how it will end.\n\nAh, cursed old age,\nwhat a singular misfortune!\nNo one notices me or wants me;\neveryone looks down on me,\nand so, a desperate old woman,\nI suppose I must die."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Aria",
+        "originalTitle": "Il vecchiotto cerca moglie",
+        "translatedTitle": "The old man seeks a wife",
+        "participants": [
+          "Berta"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 7,
-    "title": "Il contratto di nozze",
     "cast": "Bartolo, Basilio",
     "summary": "Bartolo learns that the notary is with Figaro and grows suspicious when Basilio mentions a niece.",
     "sections": [
@@ -908,13 +1008,19 @@ export const barbiereActTwoScenes = [
             "it": "Non temete: in due salti io torno qua.",
             "en": "Do not worry; I shall be back in a flash."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "Basilio"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 8,
-    "title": "Per forza o per amore",
     "cast": "Bartolo, Rosina",
     "summary": "Bartolo uses the intercepted letter to make Rosina believe Lindoro has betrayed her. She agrees to marry Bartolo and reveals the midnight escape plan.",
     "sections": [
@@ -986,13 +1092,34 @@ export const barbiereActTwoScenes = [
             "it": "Scoppia un temporale. Lampi e tuoni; Figaro e il Conte entrano dalla finestra avvolti nei mantelli e bagnati dalla pioggia. Figaro ha una lanterna.",
             "en": "A storm breaks, with lightning and thunder. Figaro and the Count climb through the window, cloaked and soaked by rain. Figaro carries a lantern."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
+      },
+      {
+        "label": "Temporale",
+        "type": "Temporale",
+        "routeItem": 1,
+        "instrumental": true,
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "Segue Istromentale esprimente un temporale. Dalla finestra di prospetto si vedono frequenti lampi, e si ascolta il romore del tuono. Sulla fine dell'istromentale si vede dal di fuori aprire la gelosia, ed entrare un dopo l'altro Figaro, ed il Conte avvolti in mantello, e bagnati dalla pioggia. Figaro avrà in mano una lanterna.",
+            "en": "Instrumental music depicts a storm. Frequent flashes of lightning are seen through the window at the back, and thunder is heard. Towards the end of the instrumental passage, the shutters are opened from outside; Figaro and the Count enter one after the other, wrapped in cloaks and soaked by the rain. Figaro carries a lantern."
+          }
+        ],
+        "participants": [],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 9,
-    "title": "Ah qual colpo inaspettato!",
     "cast": "Rosina, The Count, Figaro",
     "summary": "Rosina confronts Lindoro, then learns he is Almaviva. The three prepare to escape but discover the ladder is gone.",
     "sections": [
@@ -1079,7 +1206,15 @@ export const barbiereActTwoScenes = [
             "it": "Ah, non è tempo di più celarsi. Anima mia, ravvisa colui che sì gran tempo seguì tue tracce, che per te sospira, che sua ti vuol, che fin da questo istante, a farti di tua sorte appien sicura, amore eterno, eterna fé ti giura. Mirami, o mio tesoro: Almaviva son io, non son Lindoro.",
             "en": "Ah, there is no time for more concealment. My love, look upon the man who has followed you so long, who sighs for you and wants you as his own, and who from this moment swears eternal love and faith to secure your happiness. Look at me, my treasure: I am Almaviva, not Lindoro."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Figaro",
+          "The Count",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Terzetto",
@@ -1134,7 +1269,17 @@ export const barbiereActTwoScenes = [
             "it": "Zitti zitti, piano piano, non facciamo confusione; per la scala dal balcone presto andiamo via di qua.",
             "en": "Quietly, quietly, softly, softly; let us make no noise. Down the ladder from the balcony, quickly let us get away."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Terzetto",
+        "originalTitle": "Ah qual colpo inaspettato!",
+        "translatedTitle": "Ah, what an unexpected blow!",
+        "participants": [
+          "Rosina",
+          "The Count",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Recitativo",
@@ -1199,13 +1344,20 @@ export const barbiereActTwoScenes = [
             "it": "Eccoli qua. (Si ritirano.)",
             "en": "Here they are. (They withdraw.)"
           }
-        ]
+        ],
+        "routeItem": 2,
+        "type": "Recitativo",
+        "participants": [
+          "Figaro",
+          "The Count",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 10,
-    "title": "Il notaro",
     "cast": "Basilio, The Count, Rosina, Figaro, Notary",
     "summary": "Figaro persuades the notary to marry Almaviva and Rosina. Basilio accepts a ring rather than risk the Count's anger.",
     "sections": [
@@ -1302,13 +1454,21 @@ export const barbiereActTwoScenes = [
             "it": "O sospirata mia felicità!",
             "en": "O long-awaited happiness!"
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Basilio",
+          "Figaro",
+          "The Count",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   },
   {
     "number": 11,
-    "title": "Cessa di più resistere",
     "cast": "The Count, Rosina, Figaro, Bartolo, Basilio, Officer, Chorus",
     "summary": "Bartolo arrives with the authorities, but Almaviva reveals who he is and the marriage contract is accepted. The household makes peace.",
     "sections": [
@@ -1336,7 +1496,7 @@ export const barbiereActTwoScenes = [
             "en": "Sir, they are thieves; arrest them!"
           },
           {
-            "speaker": "Officer",
+            "speaker": "Magistrate",
             "it": "Mio signore, il suo nome.",
             "en": "Sir, your name."
           },
@@ -1371,7 +1531,7 @@ export const barbiereActTwoScenes = [
             "en": "He is a rascal, a scoundrel."
           },
           {
-            "speaker": "Officer",
+            "speaker": "Magistrate",
             "it": "Signore...",
             "en": "Sir..."
           },
@@ -1381,7 +1541,7 @@ export const barbiereActTwoScenes = [
             "en": "Stand back."
           },
           {
-            "speaker": "Officer",
+            "speaker": "Magistrate",
             "it": "Il nome.",
             "en": "Your name."
           },
@@ -1391,7 +1551,7 @@ export const barbiereActTwoScenes = [
             "en": "Stand back, I say."
           },
           {
-            "speaker": "Officer",
+            "speaker": "Magistrate",
             "it": "Ehi, mio signor, basso quel tono. Chi è lei?",
             "en": "Sir, lower your voice. Who are you?"
           },
@@ -1400,7 +1560,17 @@ export const barbiereActTwoScenes = [
             "it": "(Scoprendosi) Il Conte d'Almaviva io sono.",
             "en": "(Uncovering himself) I am Count Almaviva."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "Figaro",
+          "Magistrate",
+          "The Count",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Recitativo accompagnato",
@@ -1444,6 +1614,41 @@ export const barbiereActTwoScenes = [
             "speaker": "The Count",
             "it": "Non più, t'accheta.",
             "en": "No more; be quiet."
+          }
+        ],
+        "routeItem": 1,
+        "type": "Recitativo accompagnato",
+        "originalTitle": "Il Conte!... che mai sento!...",
+        "translatedTitle": "The Count!... What am I hearing!...",
+        "participants": [
+          "Bartolo",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
+      },
+      {
+        "label": "Aria",
+        "type": "Aria",
+        "routeItem": 4,
+        "originalTitle": "Cessa di più resistere",
+        "translatedTitle": "Cease resisting any longer",
+        "turns": [
+          {
+            "speaker": "The Count",
+            "it": "Cessa di più resistere,\nnon cimentar mio sdegno:\nspezzato è il giogo indegno\ndi tanta crudeltà.\nDella beltà dolente\nd'un innocente amore\nl'avaro tuo furore\npiù non trionferà.",
+            "en": "Cease resisting any longer,\ndo not provoke my anger:\nthe shameful yoke\nof such cruelty is broken.\nOver suffering beauty\nand an innocent love\nyour greedy fury\nshall triumph no more.",
+            "preserveLineBreaks": true
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "(a Rosina)",
+            "en": "(to Rosina)"
+          },
+          {
+            "speaker": "The Count",
+            "it": "E tu, infelice vittima,\nd'un reo poter tiranno\nsottratta al giogo barbaro\ncangia in piacer l'affanno,\ne al fianco a un fido sposo\ngioisci in libertà.",
+            "en": "And you, unhappy victim\nof a wicked, tyrannical power,\nfreed from that barbarous yoke,\nturn your sorrow into joy,\nand beside a faithful husband\nrejoice in freedom.",
+            "preserveLineBreaks": true
           },
           {
             "speaker": "The Count",
@@ -1480,7 +1685,12 @@ export const barbiereActTwoScenes = [
             "it": "Annodar due cori amanti è piacer che egual non ha.",
             "en": "To join two loving hearts is a joy with no equal."
           }
-        ]
+        ],
+        "participants": [
+          "The Count",
+          "Chorus"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Recitativo",
@@ -1565,7 +1775,17 @@ export const barbiereActTwoScenes = [
             "it": "Oh, fortunato amore.",
             "en": "Oh, fortunate love."
           }
-        ]
+        ],
+        "routeItem": 2,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "Figaro",
+          "Basilio",
+          "The Count",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       },
       {
         "label": "Finaletto II",
@@ -1600,7 +1820,18 @@ export const barbiereActTwoScenes = [
             "it": "Amore e fede eterna si vegga in voi regnar.",
             "en": "May eternal love and faith be seen to reign in you."
           }
-        ]
+        ],
+        "routeItem": 3,
+        "type": "Finaletto II",
+        "originalTitle": "Di sì felice innesto",
+        "translatedTitle": "Of so happy a union",
+        "participants": [
+          "Figaro",
+          "Chorus",
+          "Rosina",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_02.html"
       }
     ]
   }
