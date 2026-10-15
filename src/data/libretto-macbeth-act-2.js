@@ -353,7 +353,7 @@ export const macbethActTwoScenes = [
           {
             "speaker": "Lady Macbeth",
             "it": "Si colmi il calice\nDi vino eletto;\nNasca il diletto,\nMuoia il dolor.\nDa noi s'involino\nGli odi e gli sdegni,\nFolleggi e regni\nQui solo amor.\nGiustiamo il balsamo\nD'ogni ferita,\nChe nova vita\nRidona al cor.\nCacciam le torbide\nCure dal petto;\nNasca il diletto,\nMuoia il dolor.",
-            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet hatreds and resentments\nfly away from us;\nlet love alone revel\nand reign here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us drive troubled\ncares from our breasts;\nlet joy be born,\nlet sorrow die.",
+            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet them fly away from us,\nhatreds and resentments;\nlet it revel and reign,\nlove alone here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us drive troubled\ncares from our breasts;\nlet joy be born,\nlet sorrow die.",
             "speakerTranslation": "Lady Macbeth",
             "literalText": true
           },
@@ -634,7 +634,7 @@ export const macbethActTwoScenes = [
           {
             "speaker": "Lady Macbeth",
             "it": "Si colmi il calice\nDi vino eletto;\nNasca il diletto,\nMuoia il dolor.\nDa noi s'involino\nGli odi e gli sdegni,\nFolleggi e regni\nQui solo amor.\nGiustiamo il balsamo\nD'ogni ferita,\nChe nova vita\nRidona al cor.\nVuotiam per l'inclito\nBanco i bicchieri!\nFior de' guerrieri,\nDi Scozia onor.",
-            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet hatreds and resentments\nfly away from us;\nlet love alone revel\nand reign here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us empty our glasses\nfor illustrious Banco!\nFlower of warriors,\nhonour of Scotland.",
+            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet them fly away from us,\nhatreds and resentments;\nlet it revel and reign,\nlove alone here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us empty our glasses\nfor illustrious Banco!\nFlower of warriors,\nhonour of Scotland.",
             "speakerTranslation": "Lady Macbeth",
             "literalText": true
           },

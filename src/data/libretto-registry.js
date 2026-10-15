@@ -11,7 +11,7 @@ import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tr
 import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-outline-1";
 import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-lines-1";
 
-import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-outline-1";
+import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-lines-2";
 
 import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-outline-1";
 
@@ -244,6 +244,7 @@ const macbeth = {
   }, {
     number: 2,
     originalHeading: "Atto secondo",
+    alignVerseLines: true,
     scenes: macbethActTwoScenes
   }, {
     number: 3,

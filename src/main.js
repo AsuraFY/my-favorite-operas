@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-43";
-import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-1";
+import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-2";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-three-col-1";

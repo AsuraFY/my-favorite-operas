@@ -15,3 +15,7 @@ No album reference added. English translation wording remains outside this outli
 ## Act I line alignment — 15 October 2026
 
 Act I now renders each of its 228 sung source lines beside the corresponding English line in an individual row. Stage directions remain paired blocks with visible labels; speakers appear at the start of each speech. Acts II–IV retain their previous rendering pending user review. Italian text, outlines and section addresses are unchanged. English corrections restore the order of the sailor’s-wife lines and the negative meaning of Macbeth’s ocean image. This is a layout/alignment pass, not certification of the entire translation. All rendered pairs are checked against the data; visual review remains pending.
+
+## Act II line alignment — 15 October 2026
+
+Act II now uses individual paired rows for all 182 sung lines across seven scenes. Both occurrences of the drinking-song lines about hatred, resentment and love have their English phrasing reordered to follow the Italian line order. Original text, stage directions, outlines and addresses are preserved. The existing rendered-pair test now covers Acts I–II and confirms Acts III–IV keep their previous layout. All 95 tests pass; visual QA remains pending.
