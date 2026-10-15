@@ -16,9 +16,9 @@ import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-outli
 import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-outline-1";
 
 import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-outline-1";
-import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-act1-1";
-import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-act2-1";
-import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-act3-1";
+import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-outline-1";
+import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-outline-1";
+import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-outline-1";
 
 import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-act1-1";
 
@@ -221,6 +221,7 @@ const tristan = {
 
 const macbeth = {
   slug: "macbeth",
+  sourceTitlesOnly: true,
   threeLineOutline: true,
   opera: getOpera("macbeth"),
   composerShort: "G. VERDI",
@@ -275,6 +276,8 @@ const macbeth = {
 
 const turandot = {
   slug: "turandot",
+  threeLineOutline: true,
+  sourceTitlesOnly: true,
   opera: getOpera("turandot"),
   composerShort: "G. PUCCINI",
   mobileComposer: "Giacomo Puccini",

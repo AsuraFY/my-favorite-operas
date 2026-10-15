@@ -12,14 +12,13 @@ export const turandotActOneScenes = [
         "number": 1,
         "type": "Introduzione",
         "participants": [
-          "Il Mandarino",
-          "La Folla",
-          "Le Guardie",
+          "Mandarin",
+          "Crowd",
+          "Guards",
           "Liù",
           "Calaf",
           "Timur",
-          "I Servi del Boia",
-          "I Servi del Boia e la Folla"
+          "Executioner’s Servants"
         ],
         "turns": [
           {
@@ -552,8 +551,8 @@ export const turandotActOneScenes = [
         "number": 2,
         "type": "Coro",
         "participants": [
-          "La Folla",
-          "I Ragazzi"
+          "Crowd",
+          "Children"
         ],
         "turns": [
           {
@@ -586,9 +585,9 @@ export const turandotActOneScenes = [
         "number": 3,
         "type": "Marcia funebre",
         "participants": [
-          "La Folla",
+          "Crowd",
           "Calaf",
-          "I Sacerdoti Bianchi del Corteo"
+          "White-robed Priests of the Procession"
         ],
         "turns": [
           {
@@ -688,15 +687,13 @@ export const turandotActOneScenes = [
           "Timur",
           "Calaf",
           "Liù",
-          "Il Principe di Persia",
-          "La Folla",
-          "Ping, Pang, Pong",
+          "Prince of Persia",
+          "Crowd",
           "Ping",
-          "Pong, Pang",
-          "Pong",
           "Pang",
-          "Le Ancelle di Turandot",
-          "Le Ombre dei Morti"
+          "Pong",
+          "Turandot’s Attendants",
+          "Ghosts of the Dead"
         ],
         "turns": [
           {
@@ -1560,11 +1557,11 @@ export const turandotActOneScenes = [
         "participants": [
           "Timur",
           "Liù",
-          "Ping, Pang, Pong",
-          "Calaf",
           "Ping",
-          "La Folla",
-          "Liù, Timur, Ping, Pang, Pong"
+          "Pang",
+          "Pong",
+          "Calaf",
+          "Crowd"
         ],
         "turns": [
           {

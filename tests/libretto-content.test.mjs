@@ -647,6 +647,32 @@ test("Turandot Act III retains all seven numbers and the complete Alfano ending"
   assert.equal((outline.match(/class="opera-outline__section-title"/g) || []).length, 20);
   assert.match(outline, /Quadro II/);
   assert.ok(!outline.includes("Passage"));
+  let checked = 0;
+  for (const act of turandot.acts) {
+    window.location.hash = "#/operas/turandot?act=" + act.number;
+    const page = reader.scene(1);
+    for (const [item, section] of act.scenes[0].sections.entries()) {
+      const href = '#/operas/turandot?act=' + act.number + '&scene=1&item=' + item;
+      const title = 'N. ' + section.number + ' · ' + section.type;
+      for (const html of [outline, page]) {
+        assert.ok(html.includes('href="' + href + '"'), href);
+        const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
+        assert.ok(entry.includes(title + '</span>'), "only source heading, without an inferred incipit");
+        assert.ok(!entry.includes('opera-outline__section-translation'), "no title translation for a form-only heading");
+        assert.ok(entry.includes('libretto-participants'));
+        if (section.sourceDivision) assert.ok(html.includes(section.sourceDivision.original));
+      }
+      assert.equal(page.split('id="libretto-section-' + act.number + '-1-' + item + '"').length - 1, 1);
+      window.location.hash = href;
+      assert.ok(reader.scene(1, "", item).includes('data-initial-item="' + item + '"'));
+      assert.equal(new Set(section.participants).size, section.participants.length);
+      assert.ok(!section.participants.some(name => /,|La Folla|I Ragazzi|Le Guardie/.test(name)));
+      checked++;
+    }
+  }
+  assert.equal(checked, 20);
+  assert.deepEqual(turandot.acts[1].scenes[0].sections[0].participants, ["Ping", "Pong", "Pang", "Crowd"]);
+  assert.ok(turandot.acts[0].scenes[0].sections[0].participants.includes("Executioner’s Servants"));
 });
 
 // Shared reader and registry

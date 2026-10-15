@@ -24,6 +24,7 @@ function sectionTitles(scene, section, sectionIndex) {
     original: section.originalTitle || section.title || title?.original || "",
     translation: section.translatedTitle || title?.translation || ""
   };
+  if (libretto.sourceTitlesOnly) return { original: "", translation: "" };
   const sung = section.turns.find(turn => turn.speaker !== (libretto.stageDirectionSpeaker || "Stage direction") &&
     (turn.original ?? turn.it)?.trim());
   const firstLine = (sung?.original ?? sung?.it ?? "").split(/\r?\n/).map(line => line.trim())
@@ -135,7 +136,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       if (libretto.threeLineOutline) {
         const heading = sectionPresentation(item, section, index);
         const href = "#/operas/" + libretto.slug + "?act=" + act + "&scene=" + item.number + "&item=" + sectionRouteItem(section, index);
-        return '<a class="section-nav-link opera-outline__section' + (active ? ' is-current' : '') + '" href="' + href + '"' + (active ? ' aria-current="page"' : '') + '><span class="opera-outline__section-title">' + actOutlineIcon(section, true) + escapeHtml(heading.heading) + '</span>' + (heading.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(heading.subtitle) + '</span>' : '') + renderCharacterCredits(sectionCharacterNames(section, act, item.number), true) + '</a>';
+        return sourceDivisionHeading(section) + '<a class="section-nav-link opera-outline__section' + (active ? ' is-current' : '') + '" href="' + href + '"' + (active ? ' aria-current="page"' : '') + '><span class="opera-outline__section-title">' + actOutlineIcon(section, true) + escapeHtml(heading.heading) + '</span>' + (heading.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(heading.subtitle) + '</span>' : '') + renderCharacterCredits(sectionCharacterNames(section, act, item.number), true) + '</a>';
       }
 
       const label=sectionNavigationLabel(section,item,index);

@@ -11,10 +11,10 @@ export const turandotActThreeScenes = [
         "number": 14,
         "type": "Introduzione e Romanza",
         "participants": [
-          "Gli Araldi",
-          "La Folla",
+          "Heralds",
+          "Crowd",
           "Calaf",
-          "Le Donne"
+          "Women"
         ],
         "turns": [
           {
@@ -143,16 +143,10 @@ export const turandotActThreeScenes = [
           "Ping",
           "Pong",
           "Pang",
-          "Pong, Pang",
-          "Ping, Pang, Pong",
           "Calaf",
-          "Ping, Pong",
-          "Le Donne",
-          "La Folla",
-          "Pong, Pang, La Folla",
-          "Ping, La Folla",
-          "Ping, Pang, Pong, La Folla",
-          "Gli Sgherri"
+          "Women",
+          "Crowd",
+          "Guards"
         ],
         "turns": [
           {
@@ -644,7 +638,7 @@ export const turandotActThreeScenes = [
           "Turandot",
           "Calaf",
           "Liù",
-          "La Folla"
+          "Crowd"
         ],
         "turns": [
           {
@@ -741,7 +735,7 @@ export const turandotActThreeScenes = [
         "number": 17,
         "type": "Scena e Aria",
         "participants": [
-          "La Folla",
+          "Crowd",
           "Calaf",
           "Turandot",
           "Liù",
@@ -1018,7 +1012,7 @@ export const turandotActThreeScenes = [
         "type": "Transizione e Aria",
         "participants": [
           "Ping",
-          "La Folla",
+          "Crowd",
           "Liù",
           "Calaf",
           "Timur",
@@ -1252,10 +1246,9 @@ export const turandotActThreeScenes = [
         "participants": [
           "Calaf",
           "Turandot",
-          "Voci Femminili",
-          "I Ragazzi",
-          "Voci Interne",
-          "I Ragazzi E Voci Interne"
+          "Female Voices",
+          "Children",
+          "Offstage Voices"
         ],
         "turns": [
           {
@@ -1626,7 +1619,7 @@ export const turandotActThreeScenes = [
         "number": 20,
         "type": "Finale",
         "participants": [
-          "La Folla",
+          "Crowd",
           "Turandot"
         ],
         "turns": [

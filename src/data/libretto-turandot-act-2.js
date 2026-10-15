@@ -14,10 +14,7 @@ export const turandotActTwoScenes = [
           "Ping",
           "Pong",
           "Pang",
-          "Pong, Pang",
-          "Ping, Pang, Pong",
-          "Ping, Pang",
-          "La Folla"
+          "Crowd"
         ],
         "turns": [
           {
@@ -798,7 +795,7 @@ export const turandotActTwoScenes = [
         "number": 9,
         "type": "Interludio, Scena e Inno",
         "participants": [
-          "La Folla"
+          "Crowd"
         ],
         "turns": [
           {
@@ -864,9 +861,9 @@ export const turandotActTwoScenes = [
         "number": 10,
         "type": "Recitativo",
         "participants": [
-          "L’Imperatore",
+          "Emperor",
           "Calaf",
-          "La Folla"
+          "Crowd"
         ],
         "turns": [
           {
@@ -971,10 +968,10 @@ export const turandotActTwoScenes = [
         "number": 11,
         "type": "Scena e Aria",
         "participants": [
-          "Il Mandarino",
-          "I Ragazzi",
+          "Mandarin",
+          "Children",
           "Turandot",
-          "La Folla",
+          "Crowd",
           "Calaf"
         ],
         "turns": [
@@ -1117,11 +1114,11 @@ export const turandotActTwoScenes = [
         "participants": [
           "Turandot",
           "Calaf",
-          "I Sapienti",
-          "L’Imperatore",
-          "La Folla",
+          "Wise Men",
+          "Emperor",
+          "Crowd",
           "Liù",
-          "I Ragazzi E La Folla"
+          "Children"
         ],
         "turns": [
           {
@@ -1447,8 +1444,8 @@ export const turandotActTwoScenes = [
         "type": "Scena e Inno",
         "participants": [
           "Calaf",
-          "L’Imperatore",
-          "La Folla"
+          "Emperor",
+          "Crowd"
         ],
         "turns": [
           {
