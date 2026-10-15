@@ -391,7 +391,7 @@ test("Macbeth sung asides remain lyrics and final scene links render", () => {
   for (const scene of libretto.acts[0].scenes) {
     window.location.hash = "#/operas/macbeth?act=1&scene=" + scene.number;
     const page = reader.scene(scene.number);
-    assert.equal(count(page, /<div class="libretto-row/g), libretto.acts[0].scenes.reduce((n, entry) => n + entry.sections.reduce((m, section) => m + section.turns.length, 0), 0));
+    assert.equal(count(page, /<div class="libretto-row/g), libretto.acts[0].scenes.reduce((n, entry) => n + entry.sections.reduce((m, section) => m + section.turns.reduce((total, turn) => total + (turn.speaker === "Stage direction" ? 1 : turn.it.split("\n").length), 0), 0), 0));
     assert.equal(count(page, /class="libretto-scene-section"/g), 20);
     assert.ok(page.includes('id="libretto-scene-1-1"'));
     assert.ok(page.includes('id="libretto-scene-1-19"'));
@@ -600,4 +600,21 @@ test("Macbeth source divisions and unique English credits agree in both outlines
   }
   assert.equal(destinations, 43);
   assert.deepEqual(libretto.acts[2].scenes[2].sections[0].participants, ["Witch 1", "Witch 2", "Witch 3"]);
+});
+
+test("Macbeth Act I aligns every sung line while the remaining acts keep their current layout", () => {
+  const libretto = getLibretto("macbeth");
+  const reader = createLibrettoRenderer(libretto);
+  for (const act of libretto.acts) {
+    window.location.hash = '#/operas/macbeth?act=' + act.number;
+    const page = reader.scene(1);
+    const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
+    const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
+      ? [[`[${turn.it.replaceAll('\n', '<br>')}]`, `[${turn.en.replaceAll('\n', '<br>')}]`, true]]
+      : act.number === 1
+        ? turn.it.split('\n').map((line, index) => [line, turn.en.split('\n')[index], false])
+        : [[turn.it.replaceAll('\n', '<br>'), turn.en.replaceAll('\n', '<br>'), false]]);
+    assert.deepEqual(renderedVersePairs(page), expected, 'all text pairs retained in Act ' + act.number);
+    if (act.number === 1) assert.ok(renderedVersePairs(page).filter(pair => !pair[2]).every(pair => !pair[0].includes('<br>') && !pair[1].includes('<br>')));
+  }
 });

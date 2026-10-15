@@ -54,7 +54,7 @@ export const macbethActOneScenes = [
           {
             "speaker": "Strega 3",
             "it": "M'è frullata nel pensier\nLa mogliera di un nocchier:\nAl dimon la mi cacciò...\nMa lo sposo che salpò\nCol suo legno affogherò.",
-            "en": "A sailor's wife\ncame into my mind:\nShe drove me away, calling me a demon...\nBut her husband has set sail;\nI'll drown him with his ship.",
+            "en": "There came into my mind\na sailor's wife:\nShe drove me away, calling me a demon...\nBut her husband has set sail;\nI'll drown him with his ship.",
             "speakerTranslation": "Witch 3",
             "literalText": true
           },
@@ -1095,7 +1095,7 @@ export const macbethActOneScenes = [
           {
             "speaker": "MACBETH",
             "it": "Oh! questa mano!\nNon potrebbe l'Oceano\nQueste mani a me lavar!",
-            "en": "Oh, this hand!\nCould the ocean\nwash these hands of mine?",
+            "en": "Oh, this hand!\nNot even the ocean could\nwash these hands of mine!",
             "speakerTranslation": "Macbeth",
             "literalText": true
           }

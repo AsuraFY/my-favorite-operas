@@ -9,7 +9,7 @@ import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.j
 import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-outline-1";
 import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-outline-1";
 import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-outline-1";
-import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-outline-1";
+import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-lines-1";
 
 import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-outline-1";
 
@@ -239,6 +239,7 @@ const macbeth = {
   acts: [{
     number: 1,
     originalHeading: "Atto primo",
+    alignVerseLines: true,
     scenes: macbethActOneScenes
   }, {
     number: 2,

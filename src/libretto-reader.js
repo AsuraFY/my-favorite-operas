@@ -393,7 +393,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       String(turn.original ?? turn.it ?? "").includes(entry.match))
   })).filter(landmark => landmark.turnIndex >= 0);
   const directionSpeaker = libretto.stageDirectionSpeaker || "Stage direction";
-  const turns = libretto.alignVerseLines ? section.turns.flatMap((turn, sourceTurnIndex) => {
+  const alignVerseLines = libretto.alignVerseLines || actCatalog().find(group => group.number === act)?.alignVerseLines;
+  const turns = alignVerseLines ? section.turns.flatMap((turn, sourceTurnIndex) => {
     if (turn.speaker === directionSpeaker) return [{ ...turn, sourceTurnIndex, startsSourceTurn: true }];
     const original = (turn.original ?? turn.it ?? "").split(/\r?\n/);
     const translation = (turn.translation ?? turn.en ?? "").split(/\r?\n/);
