@@ -358,3 +358,43 @@ export const mahlerFinaleEvents = [
     "description": "The singing ends; the full orchestral ending continues."
   }
 ];
+
+// English is a working translation, separate from the score-aligned German.
+export const mahlerFinaleTranslations = {
+  "Aufersteh’n, ja aufersteh’n wirst du,": "Rise again, yes, you shall rise again,",
+  "Mein Staub, nach kurzer Ruh!": "My dust, after a brief rest!",
+  "Unsterblich Leben!": "Immortal life!",
+  "Unsterblich Leben": "Immortal life",
+  "wird, der dich rief, dich rief, dir geben!": "will be given to you by the one who called you, called you!",
+  "Wieder aufzublüh’n wirst du gesät!": "You are sown to bloom again!",
+  "Der Herr der Ernte geht,": "The Lord of the harvest goes forth,",
+  "und sammelt Garben": "and gathers sheaves",
+  "uns ein, die starben!": "of us who have died!",
+  "O glaube, mein Herz, o glaube:": "Oh believe, my heart, oh believe:",
+  "Es geht dir nichts verloren!": "Nothing is lost to you!",
+  "Dein ist, dein, ja dein, was du gesehnt!": "Yours, yours, yes yours, is what you longed for!",
+  "Dein, was du geliebt, was du gestritten!": "Yours is what you loved, what you fought for!",
+  "O glaube:": "Oh believe:",
+  "Du wardst nicht umsonst geboren!": "You were not born in vain!",
+  "Hast nicht umsonst gelebt, gelitten!": "You have not lived and suffered in vain!",
+  "Was entstanden ist, das muss vergehen!": "What has come into being must pass away!",
+  "Was vergangen, auferstehen!": "What has passed away shall rise again!",
+  "Hör auf zu beben!": "Cease your trembling!",
+  "Bereite dich zu leben!": "Prepare yourself to live!",
+  "O Schmerz! Du Alldurchdringer!": "Oh pain, you who pervade all things!",
+  "Dir bin ich entrungen!": "I have broken free of you!",
+  "O Tod! Du Allbezwinger!": "Oh death, you conqueror of all!",
+  "Nun bist du bezwungen!": "Now you have been conquered!",
+  "Mit Flügeln, die ich mir errungen,": "With wings I have won for myself,",
+  "in heißem Liebesstreben": "in ardent striving born of love",
+  "werd’ ich entschweben": "I shall soar away",
+  "zum Licht, zu dem kein Aug’ gedrungen!": "to the light no eye has ever reached!",
+  "werde ich entschweben!": "I shall soar away!",
+  "werde ich, ja werde ich entschweben!": "I shall, yes I shall, soar away!",
+  "Sterben werd’ ich, um zu leben!": "I shall die so that I may live!",
+  "mein Herz, in einem Nu!": "my heart, in an instant!",
+  "Was du geschlagen,": "What you have beaten for,",
+  "was du geschlagen,": "what you have beaten for,",
+  "zu Gott,": "to God,",
+  "zu Gott wird es dich tragen!": "will carry you to God!"
+};

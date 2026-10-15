@@ -3,7 +3,7 @@ import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-40";
 import { getLibretto } from "./data/libretto-registry.js?v=barbiere-outline-2";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-tabs-1";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-three-col-1";
 
 const app = document.querySelector("#app");
 
@@ -306,9 +306,24 @@ function setupStickyNavigation() {
   }
 }
 
+function setupMusicalTranslationToggle() {
+  const reader = app.querySelector("[data-musical-score-reader]");
+  const button = app.querySelector("[data-musical-translation-toggle]");
+  if (!reader || !button) return;
+  button.addEventListener("click", () => {
+    const hidden = reader.classList.toggle("is-translation-hidden");
+    reader.querySelectorAll("[data-musical-translation]").forEach(cell => {
+      cell.hidden = hidden;
+    });
+    button.setAttribute("aria-expanded", String(!hidden));
+    button.textContent = hidden ? "Show translation" : "Hide translation";
+  });
+}
+
 function shell(content, active) {
   closeActOutline(false);
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
+  setupMusicalTranslationToggle();
   setupStickyNavigation();
   setupActOutline();
   setupDesktopOutline();

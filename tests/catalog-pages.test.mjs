@@ -185,15 +185,33 @@ test("the musical detail page has About and Lyrics tabs and factual work details
   assert.ok(page.includes("?view=lyrics"));
 });
 
-test("Mahler's vocal guide renders original German voices, repeats and overlaps", () => {
-  const page = renderMusicalPage("lyrics");
-  for (const term of ['lang="de"', "Score-aligned vocal text", "Contralto solo", "Soprano solo",
-    "Choir — tenors and basses", "Orchestral introduction", "Orchestral conclusion",
-    "Overlapping / staggered voices", "O Schmerz! Du Alldurchdringer!", "O Tod! Du Allbezwinger!"]) {
-    assert.ok(page.includes(term), "missing " + term);
-  }
-  assert.ok(!page.includes('data-timestamp'), "timestamps aren't part of the score standard");
-  assert.ok(page.includes("English translation is deferred"));
+test("Mahler lyrics use three vocal/lyrics/translation columns and compact overlap cues", () => {
+  const html = renderMusicalPage("lyrics");
+  for (const label of ["Vocal part", "German · Original", "English · Translation", "(OV.)",
+    "GUSTAV MAHLER · SYMPHONY NO. 2", "Choir (SATB)", "Contralto solo",
+    "data-musical-translation-toggle", "data-musical-translation", "lang=\"de\"", "lang=\"en\"",
+    "Orchestra", "Oh pain, you who pervade all things!"])
+    assert.ok(html.includes(label), "missing " + label);
+  assert.ok(html.indexOf("Vocal part") < html.indexOf("German · Original"));
+  assert.ok(html.indexOf("German · Original") < html.indexOf("English · Translation"));
+  assert.ok(!html.includes("Overlapping / staggered voices — follow each lane independently"));
+  assert.ok(!html.includes("Rehearsal reference"));
+  assert.ok(!html.includes("data-timestamp"));
+  const css = readFileSync("styles.css", "utf8");
+  assert.ok(css.includes(".musical-score-reader.is-translation-hidden"));
+  assert.ok(css.includes(".musical-score-english[hidden]"));
+  const main = readFileSync("src/main.js", "utf8");
+  assert.ok(main.includes("setupMusicalTranslationToggle();"));
+  assert.ok(main.includes("cell.hidden = hidden;"));
+});
+
+test("every score-aligned German line has its paired English translation", async () => {
+  const { mahlerFinaleEvents, mahlerFinaleTranslations } = await import("../src/data/musical-mahler-symphony-2.js");
+  for (const event of mahlerFinaleEvents.filter(x => x.kind === "vocal"))
+    for (const lane of event.lanes)
+      for (const line of lane.lines)
+        assert.ok(typeof mahlerFinaleTranslations[line] === "string" && mahlerFinaleTranslations[line].trim(),
+          "untranslated sung line: " + line);
 });
 
 test("Mahler data preserves end repetitions and independent vocal lines", async () => {

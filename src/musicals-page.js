@@ -1,4 +1,4 @@
-import { mahlerFinaleEvents, mahlerFinaleSources } from "./data/musical-mahler-symphony-2.js";
+import { mahlerFinaleEvents, mahlerFinaleSources, mahlerFinaleTranslations } from "./data/musical-mahler-symphony-2.js";
 
 const musicalWorks = [
   {
@@ -93,37 +93,48 @@ function renderMusicalAbout() {
 
 
 function renderScoreEvent(event) {
-  const id = escapeHtml(event.id);
-  if (event.kind === "instrumental") return `<section class="musical-score-event musical-score-event--instrumental" id="${id}" aria-label="${escapeHtml(event.title)}">
-    <h2>♪ ${escapeHtml(event.title)}</h2><p>${escapeHtml(event.description)}</p></section>`;
-  const lanes = event.lanes.map(lane => `<div class="musical-vocal-lane" data-singer="${escapeHtml(lane.voice)}">
-      <h3>${escapeHtml(lane.voice)}</h3>
-      ${lane.entrance ? `<p class="musical-lane-entrance">${escapeHtml(lane.entrance)}</p>` : ""}
-      <div class="musical-vocal-words" lang="de">${lane.lines.map(line => `<p>${escapeHtml(line)}</p>`).join("")}</div>
+  if (event.kind === "instrumental") return `<div class="musical-score-instrumental" aria-label="${escapeHtml(event.title)}"><span aria-hidden="true">♪</span> Orchestra</div>`;
+  const overlap = event.relation === "overlap";
+  const rows = event.lanes.map(lane => `
+    <div class="musical-score-row musical-score-row--entry">
+      <div class="musical-score-part">
+        <span class="musical-score-part__name">${escapeHtml(lane.voice)}</span>
+        ${overlap ? '<span class="musical-score-part__ov" title="Overlapping voices">(OV.)</span>' : ""}
+      </div>
+      <div class="musical-score-original" lang="de">${lane.lines.map(line => `<p>${escapeHtml(line)}</p>`).join("")}</div>
+      <div class="musical-score-english" lang="en" data-musical-translation>${lane.lines.map(line => `<p>${escapeHtml(mahlerFinaleTranslations[line])}</p>`).join("")}</div>
     </div>`).join("");
-  return `<section class="musical-score-event musical-score-event--${escapeHtml(event.relation)}" id="${id}" aria-labelledby="heading-${id}">
-    <header><span class="musical-score-cue">♬ Rehearsal reference ${escapeHtml(event.cue)}</span>
-      <h2 id="heading-${id}">${escapeHtml(event.title)}</h2>
-      ${event.relation === "overlap" ? '<p class="musical-score-overlap">Overlapping / staggered voices — follow each lane independently</p>' : ""}
-    </header>
-    <div class="musical-score-lanes">${lanes}</div>
-    ${event.note ? `<p class="musical-score-note">${escapeHtml(event.note)}</p>` : ""}
-  </section>`;
+  return `<section class="musical-score-passage" id="${escapeHtml(event.id)}" aria-label="${escapeHtml(event.title)}">${rows}</section>`;
 }
 
 function renderMusicalLyrics() {
   return `<article class="musicals-page musical-lyrics-page section-wrap">
-    <header class="musicals-page__intro">
-      <p class="eyebrow"><span class="eyebrow-rule"></span> Gustav Mahler · Movement V · Im Tempo des Scherzos</p>
-      <h1>Score-aligned vocal text</h1>
-      <p class="musicals-page__subtitle">“Aufersteh’n” — original German singing</p>
-      <p class="musicals-page__context">Follow the original text in musical order: solo and choir entrances, sung repetitions and intertwined vocal parts. No audio timestamps.</p>
-      <p class="musical-score-status">Editorial status: German transcription review draft. Some choir-part overlaps need a final notation check. English translation is deferred until the original is approved.</p>
-    </header>
-    <div class="musical-score" aria-label="Resurrection finale German vocal text">${mahlerFinaleEvents.map(renderScoreEvent).join("")}</div>
-    <aside class="musicals-page__notes"><h2>Reading this vocal guide</h2>
-      <p>Separate lanes show different voices that overlap; they do not promise syllable-level synchronization. Repeated words are displayed rather than collapsed. Instrumental interludes are marked without times.</p>
-      <p>Source: <a href="${escapeHtml(mahlerFinaleSources.score)}" target="_blank" rel="noopener noreferrer">IMSLP — historic vocal, choral and orchestral scores</a> (${escapeHtml(mahlerFinaleSources.scoreDescription)}). Original text checked against the <a href="${escapeHtml(mahlerFinaleSources.text)}" target="_blank" rel="noopener noreferrer">Mahler Catalogue</a>. This page does not reproduce a modern engraved score.</p>
+    <div class="musical-score-reader" data-musical-score-reader>
+      <header class="musical-score-hero">
+        <p class="musical-score-hero__eyebrow">GUSTAV MAHLER · SYMPHONY NO. 2</p>
+        <h1>Resurrection</h1>
+        <p class="musical-score-hero__subtitle">Movement V · Im Tempo des Scherzos</p>
+      </header>
+      <div class="musical-score-body">
+        <div class="musical-score-toolbar">
+          <p class="musical-score-toolbar__legend"><span>(OV.) = overlapping</span><span>SATB = Soprano · Alto · Tenor · Bass</span></p>
+          <button class="musical-score-translation-toggle" type="button" data-musical-translation-toggle aria-controls="mahler-score-lyrics" aria-expanded="true">Hide translation</button>
+        </div>
+        <div class="musical-score-scroll" tabindex="0" aria-label="Vocal text columns; scroll horizontally on a narrow screen">
+          <div class="musical-score-grid" id="mahler-score-lyrics">
+            <div class="musical-score-row musical-score-row--head">
+              <div class="musical-score-part">Vocal part</div>
+              <div class="musical-score-original">German · Original</div>
+              <div class="musical-score-english" data-musical-translation>English · Translation</div>
+            </div>
+            ${mahlerFinaleEvents.map(renderScoreEvent).join("")}
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="musicals-page__notes musical-score-footer">
+      <p>German vocal allocation is still under score review; the English translation is a draft.</p>
+      <p>Scores: <a href="${escapeHtml(mahlerFinaleSources.score)}" target="_blank" rel="noopener noreferrer">IMSLP historical scores</a> · <a href="${escapeHtml(mahlerFinaleSources.text)}" target="_blank" rel="noopener noreferrer">Mahler Catalogue</a>.</p>
     </aside>
   </article>`;
 }
