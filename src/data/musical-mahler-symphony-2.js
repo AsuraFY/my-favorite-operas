@@ -203,12 +203,13 @@ export const mahlerFinaleEvents = [
       {
         "voice": "Choir (SATB) + contralto solo",
         "lines": [
-          "Bereite dich zu leben!"
+          "Bereite dich!",
+          "Bereite dich, zu leben!"
         ],
         "entrance": ""
       }
     ],
-    "note": ""
+    "note": "Mahler's published German text repeats the imperative: ‘Bereite dich! Bereite dich, zu leben!’ The shorter standalone command must not be omitted."
   },
   {
     "id": "schmerz-tod",
@@ -321,12 +322,13 @@ export const mahlerFinaleEvents = [
       {
         "voice": "Choir (SATB)",
         "lines": [
+          "Sterben werd’ ich, um zu leben!",
           "Sterben werd’ ich, um zu leben!"
         ],
         "entrance": ""
       }
     ],
-    "note": "The score shows one sustained proclamation here. Do not add extra full-phrase repeats solely from an audio subtitle."
+    "note": "Two consecutive complete choir statements are notated at rehearsal 47, beginning around bars 696 and 704 in the vocal score (Carus 23.802/04, pp. 24–25)."
   },
   {
     "id": "finale",
@@ -357,7 +359,7 @@ export const mahlerFinaleEvents = [
     "title": "Orchestral conclusion",
     "description": "The singing ends; the full orchestral ending continues."
   }
-];
+]
 
 // English is a working translation, separate from the score-aligned German.
 export const mahlerFinaleTranslations = {
@@ -380,7 +382,8 @@ export const mahlerFinaleTranslations = {
   "Was entstanden ist, das muss vergehen!": "What has come into being must pass away!",
   "Was vergangen, auferstehen!": "What has passed away shall rise again!",
   "Hör auf zu beben!": "Cease your trembling!",
-  "Bereite dich zu leben!": "Prepare yourself to live!",
+  "Bereite dich!": "Prepare yourself!",
+  "Bereite dich, zu leben!": "Prepare yourself to live!",
   "O Schmerz! Du Alldurchdringer!": "Oh pain, you who pervade all things!",
   "Dir bin ich entrungen!": "I have broken free of you!",
   "O Tod! Du Allbezwinger!": "Oh death, you conqueror of all!",

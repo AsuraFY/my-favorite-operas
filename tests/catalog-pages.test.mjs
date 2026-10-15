@@ -214,6 +214,24 @@ test("every score-aligned German line has its paired English translation", async
           "untranslated sung line: " + line);
 });
 
+test("Mahler's score-aligned German preserves the complete repeated choral line and the two Bereite calls", async () => {
+  const { mahlerFinaleEvents, mahlerFinaleTranslations } = await import("../src/data/musical-mahler-symphony-2.js");
+  const sterben = mahlerFinaleEvents.find(event => event.id === "sterben");
+  assert.deepEqual(sterben.lanes[0].lines, [
+    "Sterben werd’ ich, um zu leben!",
+    "Sterben werd’ ich, um zu leben!"
+  ], "rehearsal 47 sings the full sentence twice; a sustained note is not a substitute for the repeated phrase");
+  const bereite = mahlerFinaleEvents.find(event => event.id === "bereite");
+  assert.deepEqual(bereite.lanes[0].lines, [
+    "Bereite dich!",
+    "Bereite dich, zu leben!"
+  ], "rehearsal 43 includes the short call before the complete command");
+  for (const german of [...sterben.lanes[0].lines, ...bereite.lanes[0].lines])
+    assert.ok(mahlerFinaleTranslations[german], "English line missing for " + german);
+  assert.equal(mahlerFinaleEvents.find(event => event.id === "finale").lanes[0].lines
+    .filter(line => line.toLowerCase() === "was du geschlagen,").length, 2);
+});
+
 test("Mahler data preserves end repetitions and independent vocal lines", async () => {
   const { mahlerFinaleEvents } = await import("../src/data/musical-mahler-symphony-2.js");
   const ids = mahlerFinaleEvents.map(event => event.id);
