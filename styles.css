@@ -2600,6 +2600,7 @@ html[data-theme="night"] .musical-row__summary { color: var(--night-muted); }
 
 /* Reviewed three-line act outlines align all three lines. */
 .opera-reading-page[data-libretto-slug="il-barbiere-di-siviglia"] .scene-sidebar .section-nav-link > .libretto-participants,
+.opera-reading-page[data-libretto-slug="tristan-und-isolde"] .scene-sidebar .section-nav-link > .libretto-participants,
 .opera-reading-page[data-libretto-slug="cosi-fan-tutte"] .scene-sidebar .section-nav-link > .libretto-participants { margin-left: 0; flex-basis: 100%; }
 
 /* Inline category icons preserve the three-line act-outline layout. */

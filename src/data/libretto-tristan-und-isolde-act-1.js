@@ -3,12 +3,22 @@
 export const tristanActOneScenes = [
   {
     "number": 1,
-    "title": "Die Überfahrt",
+    "title": "",
     "cast": "Isolde, Brangäne, Stimme eines jungen Seemanns",
     "summary": "On the crossing from Ireland to Cornwall, Isolde hears a sailor's taunt and breaks her silence about the fate awaiting her.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Vorspiel",
+        "type": "Vorspiel",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 1,
+        "beforeScene": true,
+        "instrumental": true,
+        "turns": []
+      },
+      {
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -76,20 +86,42 @@ export const tristanActOneScenes = [
             "en": "Brangäne quickly draws the curtains apart at the center."
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Isoldes Aufbegehren",
-        "translatedTitle": "Isolde’s Defiance"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Young Sailor",
+          "Isolde",
+          "Brangäne"
+        ]
+      }
+    ],
+    "originalHeading": "Erste Szene",
+    "translatedHeading": "Scene I",
+    "outline": [
+      {
+        "title": "Westwärts schweift der Blick",
+        "translation": "My gaze drifts westward",
+        "match": "(Aus der Höhe, wie vom Mast her, vernehmbar) Westwärts schweift der Blick; ostwärts streicht das Schiff. Frisch weht der Wind der Heimat zu: mein irisch Kind, wo weilest du? Sind's deiner Seufzer Wehen, die mir die Segel blähen? Wehe, wehe, du Wind! Weh, ach wehe, mein Kind! Irische Maid, du wilde, minnige Maid!",
+        "sourceTurn": 1,
+        "speaker": "Stimme eines jungen Seemanns",
+        "characters": [
+          "Young Sailor",
+          "Isolde",
+          "Brangäne"
+        ]
       }
     ]
   },
   {
     "number": 2,
-    "title": "Botschaft von Isolde",
+    "title": "",
     "cast": "Isolde, Brangäne, Tristan, Kurwenal, Stimme eines jungen Seemanns, Schiffsvolk",
     "summary": "Isolde summons Tristan, but he refuses to leave the ship's helm; Kurwenal answers for him and recalls Tristan's victory over Morold.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -217,20 +249,58 @@ export const tristanActOneScenes = [
             "en": "His head hangs in Ireland, tribute paid by England: Hail, our hero Tristan, who knows how to pay the price!"
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Tristans Bericht",
-        "translatedTitle": "Tristan’s Account"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Young Sailor",
+          "Isolde",
+          "Brangäne",
+          "Kurwenal",
+          "Tristan",
+          "Ship’s Crew"
+        ]
+      }
+    ],
+    "originalHeading": "Zweite Szene",
+    "translatedHeading": "Scene II",
+    "outline": [
+      {
+        "title": "Frisch weht der Wind",
+        "translation": "Freshly the wind blows",
+        "match": "(Vom Mast her) Frisch weht der Wind der Heimat zu: mein irisch Kind, wo weilest du? Sind's deiner Seufzer Wehen, die mir die Segel blähen? Wehe, wehe, du Wind! Weh, ach wehe, mein Kind!",
+        "sourceTurn": 1,
+        "speaker": "Stimme eines jungen Seemanns",
+        "characters": [
+          "Young Sailor",
+          "Isolde",
+          "Brangäne"
+        ]
+      },
+      {
+        "title": "Hab acht, Tristan!",
+        "translation": "Take heed, Tristan!",
+        "match": "(Sieht Brangäne kommen und zupft Tristan am Gewande) Hab acht, Tristan! Botschaft von Isolde.",
+        "sourceTurn": 10,
+        "speaker": "Kurwenal",
+        "characters": [
+          "Kurwenal",
+          "Tristan",
+          "Brangäne",
+          "Ship’s Crew"
+        ]
       }
     ]
   },
   {
     "number": 3,
-    "title": "Tantris",
+    "title": "",
     "cast": "Isolde, Brangäne, Schiffsvolk",
     "summary": "Isolde recounts how she nursed the wounded Tristan, spared him when she discovered his identity, and now sees his marriage mission as a betrayal.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -284,8 +354,13 @@ export const tristanActOneScenes = [
           },
           {
             "speaker": "Isolde",
-            "it": "Den hab ich wohl vernommen, kein Wort, das mir entging. Erfuhrest du meine Schmach, nun höre, was sie mir schuf. Wie lachend sie mir Lieder singen, wohl könnt auch ich erwidern! Von einem Kahn, der klein und arm an Irlands Küste schwamm, darinnen krank ein siecher Mann elend im Sterben lag. Isoldes Kunst ward ihm bekannt; mit Heilsalben und Balsamsaft der Wunde, die ihn plagte, getreulich pflag sie da. Der «Tantris» mit sorgender List sich nannte; als Tristan Isold' ihn bald erkannte, da in des Müss'gen Schwerte eine Scharte sie gewahrte, darin genau sich fügt' ein Splitter, den einst im Haupt des Iren-Ritter, zum Hohn ihr heimgesandt, mit kund'ger Hand sie fand. Da schrie's mir auf aus tiefstem Grund! Mit dem hellen Schwert ich vor ihm stund, an ihm, dem Überfrechen, Herrn Morolds Tod zu rächen. Von seinem Lager blickt' er her, nicht auf das Schwert, nicht auf die Hand: er sah mir in die Augen. Seines Elendes jammerte mich; das Schwert, ich liess es fallen! Die Morold schlug, die Wunde, sie heilt' ich, dass er gesunde und heim nach Hause kehre, mit dem Blick mich nicht mehr beschwere!",
-            "en": "I heard him; not a word escaped me. You have learned of my disgrace; now hear what brought it about. They sing their songs of triumph over me, and I could answer them in kind. A small, poor boat drifted to Ireland's shore, carrying a sick man, wasting away and near death. He had heard of Isolde's skill; with healing salves and balm, she faithfully tended the wound that tormented him. He called himself “Tantris” in a careful disguise. Soon Isolde recognized him as Tristan, when she saw a notch in his sword, exactly matching a splinter she had skilfully found in the head of the Irish knight, sent home to her as an insult. Then something cried out from the depths of my heart! I stood before him with my bright sword, ready to avenge Lord Morold's death on that insolent man. From his bed he looked up—not at the sword, not at my hand—he looked into my eyes. I pitied his misery; I let the sword fall! I healed the wound that felled Morold, so Tristan could recover and return home, so his gaze would no longer trouble me!"
+            "it": "Den hab ich wohl vernommen, kein Wort, das mir entging. Erfuhrest du meine Schmach, nun höre, was sie mir schuf.",
+            "en": "I heard him; not a word escaped me. You have learned of my disgrace; now hear what brought it about."
+          },
+          {
+            "speaker": "Isolde",
+            "it": "Wie lachend sie mir Lieder singen, wohl könnt auch ich erwidern! Von einem Kahn, der klein und arm an Irlands Küste schwamm, darinnen krank ein siecher Mann elend im Sterben lag. Isoldes Kunst ward ihm bekannt; mit Heilsalben und Balsamsaft der Wunde, die ihn plagte, getreulich pflag sie da. Der «Tantris» mit sorgender List sich nannte; als Tristan Isold' ihn bald erkannte, da in des Müss'gen Schwerte eine Scharte sie gewahrte, darin genau sich fügt' ein Splitter, den einst im Haupt des Iren-Ritter, zum Hohn ihr heimgesandt, mit kund'ger Hand sie fand. Da schrie's mir auf aus tiefstem Grund! Mit dem hellen Schwert ich vor ihm stund, an ihm, dem Überfrechen, Herrn Morolds Tod zu rächen. Von seinem Lager blickt' er her, nicht auf das Schwert, nicht auf die Hand: er sah mir in die Augen. Seines Elendes jammerte mich; das Schwert, ich liess es fallen! Die Morold schlug, die Wunde, sie heilt' ich, dass er gesunde und heim nach Hause kehre, mit dem Blick mich nicht mehr beschwere!",
+            "en": "They sing their songs of triumph over me, and I could answer them in kind. A small, poor boat drifted to Ireland's shore, carrying a sick man, wasting away and near death. He had heard of Isolde's skill; with healing salves and balm, she faithfully tended the wound that tormented him. He called himself “Tantris” in a careful disguise. Soon Isolde recognized him as Tristan, when she saw a notch in his sword, exactly matching a splinter she had skilfully found in the head of the Irish knight, sent home to her as an insult. Then something cried out from the depths of my heart! I stood before him with my bright sword, ready to avenge Lord Morold's death on that insolent man. From his bed he looked up—not at the sword, not at my hand—he looked into my eyes. I pitied his misery; I let the sword fall! I healed the wound that felled Morold, so Tristan could recover and return home, so his gaze would no longer trouble me!"
           },
           {
             "speaker": "Brangäne",
@@ -358,20 +433,53 @@ export const tristanActOneScenes = [
             "en": "That means we are sailing fast. Woe is me! Land is near!"
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Isoldes Erinnerung an Tantris",
-        "translatedTitle": "Isolde Remembers Tantris"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Brangäne",
+          "Isolde",
+          "Ship’s Crew"
+        ]
+      }
+    ],
+    "originalHeading": "Dritte Szene",
+    "translatedHeading": "Scene III",
+    "outline": [
+      {
+        "title": "Weh, ach wehe! Dies zu dulden",
+        "translation": "Woe, alas! To endure this",
+        "match": "Weh, ach wehe! Dies zu dulden!",
+        "sourceTurn": 1,
+        "speaker": "Brangäne",
+        "characters": [
+          "Brangäne",
+          "Isolde"
+        ]
+      },
+      {
+        "title": "Wie lachend sie mir Lieder singen",
+        "translation": "How they sing songs to me with laughter",
+        "match": "Wie lachend sie mir Lieder singen, wohl könnt auch ich erwidern! Von einem Kahn, der klein und arm an Irlands Küste schwamm, darinnen krank ein siecher Mann elend im Sterben lag. Isoldes Kunst ward ihm bekannt; mit Heilsalben und Balsamsaft der Wunde, die ihn plagte, getreulich pflag sie da. Der «Tantris» mit sorgender List sich nannte; als Tristan Isold' ihn bald erkannte, da in des Müss'gen Schwerte eine Scharte sie gewahrte, darin genau sich fügt' ein Splitter, den einst im Haupt des Iren-Ritter, zum Hohn ihr heimgesandt, mit kund'ger Hand sie fand. Da schrie's mir auf aus tiefstem Grund! Mit dem hellen Schwert ich vor ihm stund, an ihm, dem Überfrechen, Herrn Morolds Tod zu rächen. Von seinem Lager blickt' er her, nicht auf das Schwert, nicht auf die Hand: er sah mir in die Augen. Seines Elendes jammerte mich; das Schwert, ich liess es fallen! Die Morold schlug, die Wunde, sie heilt' ich, dass er gesunde und heim nach Hause kehre, mit dem Blick mich nicht mehr beschwere!",
+        "sourceTurn": 11,
+        "speaker": "Isolde",
+        "characters": [
+          "Isolde",
+          "Brangäne",
+          "Ship’s Crew"
+        ]
       }
     ]
   },
   {
     "number": 4,
-    "title": "Der Sühnetrank",
+    "title": "",
     "cast": "Isolde, Brangäne, Kurwenal",
     "summary": "Isolde demands atonement before she will face King Marke, then commands Brangäne to prepare the death potion for Tristan.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -504,20 +612,53 @@ export const tristanActOneScenes = [
             "en": "(To Kurwenal) Let Lord Tristan come near!"
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Isoldes Sühneforderung",
-        "translatedTitle": "Isolde’s Demand for Atonement"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Kurwenal",
+          "Isolde",
+          "Brangäne"
+        ]
+      }
+    ],
+    "originalHeading": "Vierte Szene",
+    "translatedHeading": "Scene IV",
+    "outline": [
+      {
+        "title": "Auf! Auf! Ihr Frauen!",
+        "translation": "Up! Up! You women!",
+        "match": "Auf! Auf! Ihr Frauen! Frisch und froh! Rasch gerüstet! Fertig nun, hurtig und flink! (Gemessener) Und Frau Isolden sollt ich sagen von Held Tristan, meinem Herrn: Vom Mast der Freude Flagge, sie wehe lustig ins Land; in Markes Königsschlosse mach sie ihr Nah'n bekannt. Drum Frau Isolde bät er eilen, fürs Land sich zu bereiten, dass er sie könnt geleiten.",
+        "sourceTurn": 1,
+        "speaker": "Kurwenal",
+        "characters": [
+          "Kurwenal",
+          "Isolde",
+          "Brangäne"
+        ]
+      },
+      {
+        "title": "Herr Tristan trete nah! ... Begehrt, Herrin, was Ihr wünscht",
+        "translation": "Lord Tristan, come near! ... Ask what you wish, my lady",
+        "match": "(Zu Kurwenal) Herr Tristan trete nah!",
+        "sourceTurn": 25,
+        "speaker": "Isolde",
+        "characters": [
+          "Isolde",
+          "Tristan"
+        ]
       }
     ]
   },
   {
     "number": 5,
-    "title": "Der Liebestrank",
+    "title": "",
     "cast": "Tristan, Isolde, Brangäne, Kurwenal, Schiffsvolk, Ritter und Knappen",
     "summary": "Tristan and Isolde drink what they believe is a death potion, but Brangäne has substituted the love potion. They declare their passion as King Marke arrives.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -870,9 +1011,48 @@ export const tristanActOneScenes = [
             "en": "(A burst of general cheering) Hail Cornwall! (Trumpets sound from the shore. Some people climb overboard; others lay a gangplank. The expected arrival is imminent as the curtain falls.)"
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Der Liebestrank",
-        "translatedTitle": "The Love Potion"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Tristan",
+          "Isolde",
+          "Ship’s Crew",
+          "Men’s Chorus",
+          "Brangäne",
+          "Kurwenal"
+        ]
+      }
+    ],
+    "originalHeading": "Fünfte Szene",
+    "translatedHeading": "Scene V",
+    "outline": [
+      {
+        "title": "War Morold dir so wert",
+        "translation": "Was Morold so dear to you?",
+        "match": "(Bleich und düster) War Morold dir so wert, nun wieder nimm das Schwert und führ es sicher und fest, dass du nicht dir's entfallen lässt! (Er reicht ihr sein Schwert dar.)",
+        "sourceTurn": 21,
+        "speaker": "Tristan",
+        "characters": [
+          "Tristan",
+          "Isolde",
+          "Ship’s Crew"
+        ]
+      },
+      {
+        "title": "Tristan! ... Isolde! ... Treuloser Holder!",
+        "translation": "Tristan! ... Isolde! ... Faithless beloved!",
+        "match": "(Mit bebender Stimme) Tristan!",
+        "sourceTurn": 35,
+        "speaker": "Isolde",
+        "characters": [
+          "Isolde",
+          "Tristan",
+          "Men’s Chorus",
+          "Brangäne",
+          "Kurwenal"
+        ]
       }
     ]
   }

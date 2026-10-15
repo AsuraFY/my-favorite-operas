@@ -3,12 +3,22 @@
 export const tristanActTwoScenes = [
   {
     "number": 1,
-    "title": "Die Nacht vor dem Gemach",
+    "title": "",
     "cast": "Isolde, Brangäne",
     "summary": "As the hunters ride away, Isolde longs to meet Tristan. Brangäne warns her that Melot has arranged the hunt to expose them, but Isolde asks her to extinguish the warning torch.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Vorspiel",
+        "type": "Vorspiel",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 1,
+        "beforeScene": true,
+        "instrumental": true,
+        "turns": []
+      },
+      {
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -86,20 +96,40 @@ export const tristanActTwoScenes = [
             "en": "Alarmed, Brangäne turns away and climbs an outer stair toward the battlements, slowly disappearing. Isolde listens and peers timidly down a tree-lined path. As her longing grows, she steps closer and looks more boldly. She waves a cloth, at first rarely, then more often, and at last with passionate impatience, faster and faster. A sudden gesture of delight shows she has spotted her beloved in the distance. She stretches higher to see him, then hurries back to the stairs and waves to him from the top step."
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Die Fackel und die Warnung",
-        "translatedTitle": "The Torch and the Warning"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Isolde",
+          "Brangäne"
+        ]
+      }
+    ],
+    "originalHeading": "Erste Szene",
+    "translatedHeading": "Scene I",
+    "outline": [
+      {
+        "title": "Hörst du sie noch?",
+        "translation": "Do you still hear them?",
+        "match": "Hörst du sie noch? Mir schwand schon fern der Klang.",
+        "sourceTurn": 1,
+        "speaker": "Isolde",
+        "characters": [
+          "Isolde",
+          "Brangäne"
+        ]
       }
     ]
   },
   {
     "number": 2,
-    "title": "Die Liebesnacht",
+    "title": "",
     "cast": "Tristan, Isolde, Stimme Brangänes",
     "summary": "Tristan and Isolde meet in secret and turn away from the daylight world, longing to dissolve into the night. Brangäne’s warnings go unheard until the hunt returns at dawn.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -248,8 +278,13 @@ export const tristanActTwoScenes = [
           },
           {
             "speaker": "Tristan",
-            "it": "Was stürbe dem Tod, als was uns stört, was Tristan wehrt, Isolde immer zu lieben, ewig ihr nur zu leben? So starben wir, um ungetrennt, ewig einig ohne End’, ohn’ Erwachen, ohn’ Erbangen, namenlos in Lieb’ umfangen, ganz uns selbst gegeben, der Liebe nur zu leben!",
-            "en": "What would die in death except what troubles us, what keeps Tristan from loving Isolde always and living for her alone? So let us die, to remain undivided, forever united without end, without waking, without fear, namelessly embraced in love, wholly given to ourselves, living only for love!"
+            "it": "Was stürbe dem Tod, als was uns stört, was Tristan wehrt, Isolde immer zu lieben, ewig ihr nur zu leben?",
+            "en": "What would die in death except what troubles us, what keeps Tristan from loving Isolde always and living for her alone?"
+          },
+          {
+            "speaker": "Tristan",
+            "it": "So stürben wir, um ungetrennt, ewig einig ohne End’, ohn’ Erwachen, ohn’ Erbangen, namenlos in Lieb’ umfangen, ganz uns selbst gegeben, der Liebe nur zu leben!",
+            "en": "So let us die, to remain undivided, forever united without end, without waking, without fear, namelessly embraced in love, wholly given to ourselves, living only for love!"
           },
           {
             "speaker": "Isolde",
@@ -302,20 +337,76 @@ export const tristanActTwoScenes = [
             "en": "Without names, without separation, newly recognized, newly aflame; endless, eternal, one in consciousness: from hearts glowing hot, the highest rapture of love! (They remain in an ecstatic embrace.)"
           }
         ],
-        "type": "Passage",
-        "originalTitle": "O sink hernieder, Nacht der Liebe",
-        "translatedTitle": "Descend, O Night of Love"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Tristan",
+          "Isolde",
+          "Brangäne"
+        ]
+      }
+    ],
+    "originalHeading": "Zweite Szene",
+    "translatedHeading": "Scene II",
+    "outline": [
+      {
+        "title": "Isolde! Geliebte! ... Tristan! Geliebter! – Getäuscht von ihm",
+        "translation": "Isolde! Beloved! ... Tristan! Beloved! — Deceived by him",
+        "match": "Isolde! Geliebte!",
+        "sourceTurn": 1,
+        "speaker": "Tristan",
+        "characters": [
+          "Tristan",
+          "Isolde"
+        ]
+      },
+      {
+        "title": "O sink hernieder, Nacht der Liebe",
+        "translation": "Descend, O night of love",
+        "match": "O sink hernieder, Nacht der Liebe, gib Vergessen, dass ich lebe; nimm mich auf in deinen Schoss, löse von der Welt mich los!",
+        "sourceTurn": 23,
+        "speaker": "Beide",
+        "characters": [
+          "Tristan",
+          "Isolde",
+          "Brangäne"
+        ]
+      },
+      {
+        "title": "Lausch, Geliebter!",
+        "translation": "Listen, beloved!",
+        "match": "(leise) Lausch, Geliebter! (allmählich sich ein wenig erhebend) Neid’sche Wache! Doch der Tag muss Tristan wecken? Tag und Tod, mit gleichen Streichen, sollten unsre Lieb’ erreichen? Lass mich sterben! (schwärmerisch zu Tristan aufblickend) Nie erwachen! Lass den Tag dem Tode weichen! Des Tages Dräuen nun trotzten wir so? Seinem Trug ewig zu fliehn! Ewig währ uns die Nacht!",
+        "sourceTurn": 26,
+        "speaker": "Isolde",
+        "characters": [
+          "Isolde",
+          "Tristan"
+        ]
+      },
+      {
+        "title": "So stürben wir",
+        "translation": "Thus we would die",
+        "match": "So stürben wir, um ungetrennt, ewig einig ohne End’, ohn’ Erwachen, ohn’ Erbangen, namenlos in Lieb’ umfangen, ganz uns selbst gegeben, der Liebe nur zu leben!",
+        "sourceTurn": 30,
+        "speaker": "Tristan",
+        "characters": [
+          "Tristan",
+          "Isolde",
+          "Brangäne"
+        ]
       }
     ]
   },
   {
     "number": 3,
-    "title": "Der Tag bricht an",
+    "title": "",
     "cast": "Tristan, Isolde, König Marke, Melot, Kurwenal, Brangäne, Hofleute",
     "summary": "Marke and his court surprise the lovers at dawn. Marke grieves over Tristan’s betrayal; Tristan asks Isolde to follow him into the night, then falls wounded when Melot attacks.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -393,9 +484,56 @@ export const tristanActTwoScenes = [
             "en": "As Melot thrusts his sword toward him, Tristan drops his own and sinks wounded into Kurwenal’s arms. Isolde throws herself against his breast. Marke holds Melot back. The curtain falls swiftly."
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Markes Klage",
-        "translatedTitle": "Marke’s Lament"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Kurwenal",
+          "Tristan",
+          "Melot",
+          "King Marke",
+          "Isolde"
+        ]
+      }
+    ],
+    "originalHeading": "Dritte Szene",
+    "translatedHeading": "Scene III",
+    "outline": [
+      {
+        "title": "Rette dich, Tristan!",
+        "translation": "Save yourself, Tristan!",
+        "match": "Rette dich, Tristan!",
+        "sourceTurn": 1,
+        "speaker": "Kurwenal",
+        "characters": [
+          "Kurwenal",
+          "Tristan",
+          "Melot"
+        ]
+      },
+      {
+        "title": "Tatest du’s wirklich?",
+        "translation": "Did you really do it?",
+        "match": "(nach tiefer Erschütterung, mit bebender Stimme) Tatest du’s wirklich? Wähnst du das? Sieh ihn dort, den treuesten aller Treuen; blick auf ihn, den freundlichsten der Freunde: seiner Treue freister Tat traf mein Herz mit feindlichstem Verrat! Trog mich Tristan, sollt’ ich hoffen, was sein Trügen mir getroffen, sei durch Melots Rat redlich mir bewahrt?",
+        "sourceTurn": 4,
+        "speaker": "Marke",
+        "characters": [
+          "King Marke",
+          "Tristan"
+        ]
+      },
+      {
+        "title": "O König, das kann ich dir nicht sagen",
+        "translation": "O King, I cannot tell you that",
+        "match": "(mitleidig das Auge zu Marke erhebend) O König, das kann ich dir nicht sagen; und was du frägst, das kannst du nie erfahren. (Er wendet sich zu Isolde) Wohin nun Tristan scheidet, willst du, Isold’, ihm folgen? Dem Land, das Tristan meint, der Sonne Licht nicht scheint: es ist das dunkel nächt’ge Land, daraus die Mutter mich entsandt, als, den im Tode sie empfangen, im Tod sie liess an das Licht gelangen. Was, da sie mich gebar, ihr Liebesberge war, das Wunderreich der Nacht, aus der ich einst erwacht; das bietet dir Tristan, dahin geht er voran: ob sie ihm folge treu und hold, das sag’ ihm nun Isold’!",
+        "sourceTurn": 9,
+        "speaker": "Tristan",
+        "characters": [
+          "Tristan",
+          "Isolde",
+          "Melot"
+        ]
       }
     ]
   }

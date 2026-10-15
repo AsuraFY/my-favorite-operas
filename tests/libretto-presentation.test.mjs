@@ -409,7 +409,7 @@ test("Macbeth sung asides remain lyrics and final scene links render", () => {
 });
 
 // Tristan und Isolde
-test("Tristan outline follows Spotify tracks and formats the bilingual libretto clearly", () => {
+test("Tristan outlines link source passages with bilingual headings and unique participants", () => {
   const tristan = getLibretto("tristan-und-isolde");
   assert.ok(tristan);
   assert.equal(tristan.originalLanguage, "Deutsch");
@@ -470,6 +470,31 @@ test("Tristan outline follows Spotify tracks and formats the bilingual libretto 
   assert.ok(firstScene.includes("Voice of a Young Sailor"));
   assert.ok(firstScene.includes("Heard from above, as if from the mast"));
   assert.ok(reader.synopsis().includes("King Marke"));
+  assert.ok(outline.includes("Young Sailor"));
+  assert.ok(outline.includes("King Marke"));
+  assert.ok(!outline.includes("Love Duet, Part"));
+  assert.ok(!outline.includes("is-unavailable"));
+  assert.equal(tristan.outlineRecording, undefined);
+  for (const act of tristan.acts) {
+    window.location.hash = "#/operas/tristan-und-isolde?act=" + act.number;
+    const page = reader.scene(1);
+    assert.ok(page.includes("&item=1"), "prelude must be linked from the act outline");
+    assert.ok(page.includes('id="libretto-section-' + act.number + '-1-1"'));
+    for (const scene of act.scenes) {
+      assert.ok(outline.includes(scene.originalHeading));
+      for (const entry of scene.outline) {
+        const section = scene.sections.find(section => section.routeItem === 0);
+        assert.ok(section.turns[entry.sourceTurn].it.includes(entry.match));
+        assert.equal(new Set(entry.characters).size, entry.characters.length);
+        assert.ok(!entry.characters.includes("Beide"));
+        const target = act.number + '-' + scene.number + '-0-' + entry.sourceTurn;
+        assert.ok(page.includes('id="libretto-turn-' + target + '"'), target);
+        const href = '&scene=' + scene.number + '&item=0&turn=' + entry.sourceTurn;
+        assert.ok(outline.includes(href));
+        assert.ok(page.includes(href));
+      }
+    }
+  }
   assert.equal(scenes, 11);
   assert.ok(rows > 100);
 });
