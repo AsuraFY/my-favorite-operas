@@ -196,3 +196,56 @@ test("Figaro deep links and searches retain the full Act I", () => {
   assert.ok(result.includes("Cinque... dieci"));
   assert.ok(result.includes("military glory"));
 });
+
+test("all Tristan outline destinations resolve and repeat passage clicks jump again", () => {
+  const libretto = getLibretto("tristan-und-isolde");
+  const renderer = createLibrettoRenderer(libretto);
+  const outline = renderer.outline();
+  const links = [...outline.matchAll(/href="([^\"]+&item=\d+(?:&turn=\d+)?)"/g)].map(match => match[1]);
+  assert.equal(links.length, 29);
+  let passageCount = 0;
+  for (const href of links) {
+    const params = new URLSearchParams(href.split("?")[1]);
+    window.location.hash = href;
+    const html = renderer.scene(Number(params.get("scene")), "", Number(params.get("item")));
+    const suffix = [params.get("act"), params.get("scene"), params.get("item")].join("-");
+    const id = params.has("turn") ? "libretto-turn-" + suffix + "-" + params.get("turn") : "libretto-section-" + suffix;
+    assert.equal(html.split('id="' + id + '"').length - 1, 1, href);
+    if (!params.has("turn")) continue;
+    passageCount++;
+    let jumps = 0, prevented = 0;
+    const target = {};
+    const root = {
+      dataset: { librettoSlug: libretto.slug, act: params.get("act"), continuousAct: "true" },
+      querySelector: selector => selector === "#" + id ? target : null
+    };
+    const context = vm.createContext({ URLSearchParams, currentSceneReader: () => root,
+      closeActOutline: () => {}, window: { location: { hash: href } },
+      jumpToReaderPassage: (reader, destination) => { assert.equal(reader, root); assert.equal(destination, target); jumps++; }
+    });
+    vm.runInContext(functionSource("handleSceneSectionLink"), context);
+    const event = { target: { closest: () => ({ getAttribute: () => href }) }, preventDefault: () => prevented++ };
+    context.handleSceneSectionLink(event);
+    context.handleSceneSectionLink(event);
+    assert.equal(jumps, 2, href);
+    assert.equal(prevented, 2);
+  }
+  assert.equal(passageCount, 26);
+});
+
+test("passage jumps clear sticky headers and release tracking when a target is missing", () => {
+  let position;
+  const context = vm.createContext({ readerJumping: false,
+    app: { querySelector: () => ({ getBoundingClientRect: () => ({ height: 60 }) }) },
+    window: { scrollY: 100, requestAnimationFrame: callback => callback(), scrollTo: options => { position = options.top; } },
+    scheduleReaderSectionUpdate: () => {}
+  });
+  vm.runInContext(functionSource("jumpToReaderPassage"), context);
+  const reader = { querySelector: selector => ({ getBoundingClientRect: () => ({ height: selector === ".opera-subnav" ? 50 : 40 }) }) };
+  context.jumpToReaderPassage(reader, { getBoundingClientRect: () => ({ top: 1000 }) });
+  assert.equal(position, 932);
+  assert.equal(context.readerJumping, false);
+  context.readerJumping = true;
+  context.jumpToReaderPassage(reader, null);
+  assert.equal(context.readerJumping, false);
+});

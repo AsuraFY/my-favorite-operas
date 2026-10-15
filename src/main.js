@@ -658,6 +658,22 @@ function scheduleReaderSectionUpdate() {
   });
 }
 
+function jumpToReaderPassage(reader, target) {
+  if (!target) {
+    readerJumping = false;
+    return;
+  }
+  readerJumping = true;
+  window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+    const readingTop = (app.querySelector(".site-header")?.getBoundingClientRect().height || 0) +
+      (reader.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0) +
+      (reader.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0) + 18;
+    window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - readingTop, behavior: "instant" });
+    readerJumping = false;
+    scheduleReaderSectionUpdate();
+  }));
+}
+
 function handleSceneSectionLink(event) {
   const link = event.target.closest?.(".section-nav-link[href], .mobile-scene-step[href]");
   const root = currentSceneReader();
@@ -665,9 +681,18 @@ function handleSceneSectionLink(event) {
   const href = link.getAttribute("href") || "";
   if (!href.startsWith("#/operas/" + root.dataset.librettoSlug + "?")) return;
   const params = new URLSearchParams(href.split("?")[1] || "");
-  if (params.has("turn")) return;
   if (Number(params.get("act")) !== Number(root.dataset.act) ||
       (root.dataset.continuousAct !== "true" && Number(params.get("scene")) !== Number(root.dataset.scene))) return;
+  if (params.has("turn")) {
+    const target = root.querySelector("#libretto-turn-" + Number(root.dataset.act) + "-" +
+      Number(params.get("scene")) + "-" + (Number(params.get("item")) || 0) + "-" + Number(params.get("turn")));
+    if (!target) return;
+    event.preventDefault();
+    closeActOutline(false);
+    if (window.location.hash !== href) window.history.pushState(window.history.state, "", href);
+    jumpToReaderPassage(root, target);
+    return;
+  }
   event.preventDefault();
   closeActOutline(false);
   const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
@@ -751,14 +776,7 @@ function render() {
   if (reader && routeParams.has("turn")) {
     const target = reader.querySelector("#libretto-turn-" + Number(reader.dataset.act) + "-" +
       (Number(routeParams.get("scene")) || 1) + "-" + (Number(routeParams.get("item")) || 0) + "-" + Number(routeParams.get("turn")));
-    window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
-      if (!target) return;
-      const readingTop = (reader.querySelector(".opera-subnav")?.getBoundingClientRect().bottom || 120) +
-        (reader.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0) + 18;
-      window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - readingTop, behavior: "auto" });
-      readerJumping = false;
-      scheduleReaderSectionUpdate();
-    }));
+    jumpToReaderPassage(reader, target);
   }
   updateReaderTopButton();
 }
