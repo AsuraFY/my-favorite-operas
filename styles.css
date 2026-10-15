@@ -2604,3 +2604,31 @@ html[data-theme="night"] .musical-row__summary { color: var(--night-muted); }
 
 /* Inline category icons preserve the three-line act-outline layout. */
 .scene-sidebar .section-nav-link__icon--inline { display: inline-block; width: auto; margin: 0 0.45em 0 0; vertical-align: baseline; }
+
+/* Score-aligned German vocal text (Mahler, 2026-10-15). */
+.musical-score { display: grid; gap: 22px; }
+.musical-score-status { margin: 18px 0 0; padding: 12px 16px; border-left: 3px solid var(--wine); background: var(--paper); color: var(--muted); font: .86rem/1.65 var(--sans); }
+.musical-score-event { scroll-margin-top: calc(var(--sticky-site-height, 76px) + 90px); padding: 26px clamp(18px, 3vw, 34px); border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
+.musical-score-event h2 { margin: 9px 0 18px; color: var(--ink); font: 500 clamp(1.25rem, 2vw, 1.7rem)/1.35 var(--serif); }
+.musical-score-cue { color: var(--wine); font: 700 .7rem/1.5 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+.musical-score-overlap { margin: -5px 0 20px; color: var(--muted); font: .86rem/1.6 var(--sans); }
+.musical-score-lanes { display: grid; gap: 12px; grid-template-columns: 1fr; }
+.musical-score-event--overlap .musical-score-lanes { grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr)); align-items: start; }
+.musical-vocal-lane { min-width: 0; padding: 16px 17px 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+.musical-vocal-lane h3 { margin: 0 0 10px; color: var(--wine); font: 700 .74rem/1.4 var(--sans); letter-spacing: .04em; }
+.musical-lane-entrance { margin: -3px 0 13px; color: var(--muted); font: italic .82rem/1.5 var(--serif); }
+.musical-vocal-words { font: 1.09rem/1.72 var(--serif); overflow-wrap: anywhere; }
+.musical-vocal-words p { margin: 0 0 .35em; }
+.musical-vocal-words p:last-child { margin-bottom: 0; }
+.musical-score-note { margin: 14px 0 0; color: var(--muted); font: .84rem/1.65 var(--sans); }
+.musical-score-event--instrumental { border-style: dashed; background: transparent; text-align: center; }
+.musical-score-event--instrumental h2 { margin: 0 0 8px; color: var(--wine); font: 500 1.2rem/1.4 var(--serif); }
+.musical-score-event--instrumental p { margin: 0 auto; max-width: 600px; color: var(--muted); font: .87rem/1.65 var(--sans); }
+html[data-theme="night"] .musical-score-event, html[data-theme="night"] .musical-vocal-lane { background: #20262d; }
+@media (max-width: 680px) {
+  .musical-score { gap: 14px; }
+  .musical-score-event { padding: 20px 14px; }
+  .musical-score-event--overlap .musical-score-lanes { display: grid; grid-template-columns: minmax(0,1fr); }
+  .musical-vocal-words { font-size: 1.05rem; }
+  .musical-score-event--overlap .musical-vocal-lane { border-left: 3px solid var(--wine); }
+}

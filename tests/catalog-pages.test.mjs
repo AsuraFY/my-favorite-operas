@@ -185,14 +185,33 @@ test("the musical detail page has About and Lyrics tabs and factual work details
   assert.ok(page.includes("?view=lyrics"));
 });
 
-test("the lyrics view contains aligned German and English text", () => {
+test("Mahler's vocal guide renders original German voices, repeats and overlaps", () => {
   const page = renderMusicalPage("lyrics");
-  assert.ok(page.includes('aria-current="page"'));
-  assert.ok(page.includes('lang="de"'));
-  assert.ok(page.includes('lang="en"'));
-  assert.ok(page.includes("Aufersteh’n, ja aufersteh’n wirst du"));
-  assert.ok(page.includes("All that you have struggled for"));
+  for (const term of ['lang="de"', "Score-aligned vocal text", "Contralto solo", "Soprano solo",
+    "Choir — tenors and basses", "Orchestral introduction", "Orchestral conclusion",
+    "Overlapping / staggered voices", "O Schmerz! Du Alldurchdringer!", "O Tod! Du Allbezwinger!"]) {
+    assert.ok(page.includes(term), "missing " + term);
+  }
+  assert.ok(!page.includes('data-timestamp'), "timestamps aren't part of the score standard");
+  assert.ok(page.includes("English translation is deferred"));
 });
+
+test("Mahler data preserves end repetitions and independent vocal lines", async () => {
+  const { mahlerFinaleEvents } = await import("../src/data/musical-mahler-symphony-2.js");
+  const ids = mahlerFinaleEvents.map(event => event.id);
+  assert.equal(new Set(ids).size, ids.length);
+  const final = mahlerFinaleEvents.find(event => event.id === "finale");
+  const words = final.lanes[0].lines.map(x => x.toLowerCase());
+  assert.equal(words.filter(x => x === "was du geschlagen,").length, 2);
+  assert.equal(words.filter(x => x.startsWith("zu gott")).length, 3);
+  const duet = mahlerFinaleEvents.find(event => event.id === "schmerz-tod");
+  assert.equal(duet.relation, "overlap");
+  assert.deepEqual(duet.lanes.map(x => x.voice), ["Contralto solo", "Soprano solo"]);
+  assert.equal(mahlerFinaleEvents.find(event => event.id === "wings-choir").lanes.length, 4);
+  assert.ok(mahlerFinaleEvents.every(event => event.kind === "instrumental" ||
+    (event.cue && event.lanes.every(lane => lane.voice && lane.lines.length))));
+});
+
 
 test("the musical artwork is a WebP image", () => {
   const raw = readFileSync("public/images/opera-house-hero.webp");
