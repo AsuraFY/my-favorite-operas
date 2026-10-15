@@ -2,8 +2,7 @@
 export const macbethActFourScenes = [
   {
     "number": 1,
-    "title": "Patria oppressa",
-    "translatedTitle": "Oppressed homeland",
+    "title": "",
     "cast": "Coro, Macduff",
     "summary": "Oppressed homeland.",
     "sections": [
@@ -11,7 +10,7 @@ export const macbethActFourScenes = [
         "number": 12,
         "type": "Coro",
         "participants": [
-          "Coro"
+          "Chorus"
         ],
         "turns": [
           {
@@ -26,7 +25,8 @@ export const macbethActFourScenes = [
             "speakerTranslation": "Chorus",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0
       },
       {
         "number": 13,
@@ -42,26 +42,25 @@ export const macbethActFourScenes = [
             "speakerTranslation": "Macduff",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 1
       }
-    ]
+    ],
+    "originalHeading": "Scena I",
+    "translatedHeading": "Scene I"
   },
   {
     "number": 2,
-    "title": "Malcolm",
-    "translatedTitle": "Malcolm",
+    "title": "",
     "cast": "Malcolm, Coro, Macduff, Tutti",
     "summary": "Malcolm.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "Malcolm",
-        "translatedTitle": "Malcolm",
+        "type": "Scena ed Aria Macduff",
         "participants": [
           "Malcolm",
-          "Coro",
-          "Macduff",
-          "Tutti"
+          "Chorus",
+          "Macduff"
         ],
         "turns": [
           {
@@ -125,17 +124,20 @@ export const macbethActFourScenes = [
             "speaker": "Tutti",
             "it": "La patria tradita\nPiangendo ne invita!\nFratelli! gli oppressi\nCorriamo a salvar.\nGià l'ira divina\nSull'empio ruina;\nGli orribili eccessi\nL'Eterno stancar.",
             "en": "Our betrayed homeland\ncalls to us in tears!\nBrothers! Let us rush\nto save the oppressed.\nAlready divine wrath\nfalls upon the wicked one;\nhis dreadful crimes\nhave wearied the Eternal.",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 13
       }
-    ]
+    ],
+    "originalHeading": "Scena II",
+    "translatedHeading": "Scene II"
   },
   {
     "number": 3,
-    "title": "Il Medico e la Dama",
-    "translatedTitle": "The doctor and attendant",
+    "title": "",
     "cast": "Medico, Dama",
     "summary": "The doctor and attendant.",
     "sections": [
@@ -143,8 +145,8 @@ export const macbethActFourScenes = [
         "number": 14,
         "type": "Sonnambulismo di Lady Macbeth",
         "participants": [
-          "Medico",
-          "Dama"
+          "Doctor",
+          "Lady-in-waiting"
         ],
         "turns": [
           {
@@ -163,7 +165,7 @@ export const macbethActFourScenes = [
             "speaker": "Dama",
             "it": "In questa apparirà.",
             "en": "She will appear tonight.",
-            "speakerTranslation": "Attendant",
+            "speakerTranslation": "Lady-in-waiting",
             "literalText": true
           },
           {
@@ -177,29 +179,28 @@ export const macbethActFourScenes = [
             "speaker": "Dama",
             "it": "Ridirlo non debbo a uom che viva... Eccola!",
             "en": "I must not repeat it to any living man... Here she is!",
-            "speakerTranslation": "Attendant",
+            "speakerTranslation": "Lady-in-waiting",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena III",
+    "translatedHeading": "Scene III"
   },
   {
     "number": 4,
-    "title": "Sonnambulismo",
-    "translatedTitle": "Sleepwalking",
+    "title": "",
     "cast": "Medico, Dama, Lady Macbeth, Dama e Medico",
     "summary": "Sleepwalking.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "Sonnambulismo",
-        "translatedTitle": "Sleepwalking",
+        "type": "Sonnambulismo di Lady Macbeth",
         "participants": [
-          "Medico",
-          "Dama",
-          "Lady Macbeth",
-          "Dama e Medico"
+          "Doctor",
+          "Lady-in-waiting",
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -218,7 +219,7 @@ export const macbethActFourScenes = [
             "speaker": "Dama",
             "it": "La lampada che sempre\nsi tiene accanto al letto.",
             "en": "The lamp that is always\nkept beside her bed.",
-            "speakerTranslation": "Attendant",
+            "speakerTranslation": "Lady-in-waiting",
             "literalText": true
           },
           {
@@ -232,7 +233,7 @@ export const macbethActFourScenes = [
             "speaker": "Dama",
             "it": "E pur non vede.",
             "en": "And yet she sees nothing.",
-            "speakerTranslation": "Attendant",
+            "speakerTranslation": "Lady-in-waiting",
             "literalText": true
           },
           {
@@ -251,7 +252,7 @@ export const macbethActFourScenes = [
             "speaker": "Dama",
             "it": "Lavarsi crede!",
             "en": "She thinks she is washing them!",
-            "speakerTranslation": "Attendant",
+            "speakerTranslation": "Lady-in-waiting",
             "literalText": true
           },
           {
@@ -291,7 +292,7 @@ export const macbethActFourScenes = [
             "speaker": "Dama e Medico",
             "it": "Oh terror!...",
             "en": "Oh, terror!...",
-            "speakerTranslation": "Attendant and Doctor",
+            "speakerTranslation": "Lady-in-waiting and Doctor",
             "literalText": true
           },
           {
@@ -333,17 +334,20 @@ export const macbethActFourScenes = [
             "speaker": "Dama e Medico",
             "it": "Ah, di lei pietà, Signor!",
             "en": "Ah, have mercy on her, Lord!",
-            "speakerTranslation": "Attendant and Doctor",
+            "speakerTranslation": "Lady-in-waiting and Doctor",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 14
       }
-    ]
+    ],
+    "originalHeading": "Scena IV",
+    "translatedHeading": "Scene IV"
   },
   {
     "number": 5,
-    "title": "Macbeth",
-    "translatedTitle": "Macbeth",
+    "title": "",
     "cast": "Macbeth",
     "summary": "Macbeth.",
     "sections": [
@@ -378,23 +382,23 @@ export const macbethActFourScenes = [
             "speakerTranslation": "Macbeth",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena V",
+    "translatedHeading": "Scene V"
   },
   {
     "number": 6,
-    "title": "La morte della Regina",
-    "translatedTitle": "The Queen’s death",
+    "title": "",
     "cast": "Dama, Macbeth",
     "summary": "The Queen’s death.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "La morte della Regina",
-        "translatedTitle": "The Queen’s death",
+        "type": "Scena, Battaglia, Morte di Macbeth",
         "participants": [
-          "Dama",
+          "Lady-in-waiting",
           "Macbeth"
         ],
         "turns": [
@@ -407,7 +411,7 @@ export const macbethActFourScenes = [
             "speaker": "Dama",
             "it": "E' morta la Regina!",
             "en": "The Queen is dead!",
-            "speakerTranslation": "Attendant",
+            "speakerTranslation": "Lady-in-waiting",
             "literalText": true
           },
           {
@@ -427,23 +431,24 @@ export const macbethActFourScenes = [
             "it": "la Dama parte",
             "en": "The attendant leaves."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 15
       }
-    ]
+    ],
+    "originalHeading": "Scena VI",
+    "translatedHeading": "Scene VI"
   },
   {
     "number": 7,
-    "title": "La foresta si muove",
-    "translatedTitle": "The forest moves",
+    "title": "",
     "cast": "Coro, Macbeth",
     "summary": "The forest moves.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "La foresta si muove",
-        "translatedTitle": "The forest moves",
+        "type": "Scena, Battaglia, Morte di Macbeth",
         "participants": [
-          "Coro",
+          "Chorus",
           "Macbeth"
         ],
         "turns": [
@@ -497,21 +502,22 @@ export const macbethActFourScenes = [
             "it": "Suono interno di trombe.\nIntanto la scena si muta, e presenta una vasta pianura circondata da alture e boscaglie.\nIl fondo è occupato da soldati inglesi, i quali lentamente si avanzano, portando ciascheduno una fronda innanzi a sé.",
             "en": "Trumpets are heard from within.\nMeanwhile the scene changes to a vast plain surrounded by hills and woods.\nEnglish soldiers occupy the background, slowly advancing, each carrying a branch before him."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 15
       }
-    ]
+    ],
+    "originalHeading": "Scena VII",
+    "translatedHeading": "Scene VII"
   },
   {
     "number": 8,
-    "title": "La battaglia",
-    "translatedTitle": "The battle",
+    "title": "",
     "cast": "Malcolm",
     "summary": "The battle.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "La battaglia",
-        "translatedTitle": "The battle",
+        "type": "Scena, Battaglia, Morte di Macbeth",
         "participants": [
           "Malcolm"
         ],
@@ -545,21 +551,22 @@ export const macbethActFourScenes = [
             "it": "Di dentro odesi il fragore della battaglia.",
             "en": "The roar of battle is heard offstage."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 15
       }
-    ]
+    ],
+    "originalHeading": "Scena VIII",
+    "translatedHeading": "Scene VIII"
   },
   {
     "number": 9,
-    "title": "Macbeth e Macduff",
-    "translatedTitle": "Macbeth and Macduff",
+    "title": "",
     "cast": "Macduff, Macbeth",
     "summary": "Macbeth and Macduff.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "Macbeth e Macduff",
-        "translatedTitle": "Macbeth and Macduff",
+        "type": "Scena, Battaglia, Morte di Macbeth",
         "participants": [
           "Macduff",
           "Macbeth"
@@ -603,25 +610,26 @@ export const macbethActFourScenes = [
             "it": "Brandiscono le spade e, disperatamente battendosi, escono di scena.",
             "en": "They brandish their swords and, fighting desperately, leave the stage."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 15
       }
-    ]
+    ],
+    "originalHeading": "Scena IX",
+    "translatedHeading": "Scene IX"
   },
   {
     "number": 10,
-    "title": "La vittoria",
-    "translatedTitle": "Victory",
+    "title": "",
     "cast": "Coro, Voci interne, Donne",
     "summary": "Victory.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "La vittoria",
-        "translatedTitle": "Victory",
+        "type": "Scena, Battaglia, Morte di Macbeth",
         "participants": [
-          "Coro",
-          "Voci interne",
-          "Donne"
+          "Chorus",
+          "Voices within",
+          "Women"
         ],
         "turns": [
           {
@@ -640,7 +648,7 @@ export const macbethActFourScenes = [
             "speaker": "Voci interne",
             "it": "Vittoria!...",
             "en": "Victory!...",
-            "speakerTranslation": "Offstage voices",
+            "speakerTranslation": "Voices within",
             "literalText": true
           },
           {
@@ -655,26 +663,27 @@ export const macbethActFourScenes = [
             "speakerTranslation": "Women",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 15
       }
-    ]
+    ],
+    "originalHeading": "Scena X",
+    "translatedHeading": "Scene X"
   },
   {
     "number": 11,
-    "title": "Scena ultima",
-    "translatedTitle": "Final scene",
+    "title": "",
     "cast": "Malcolm, Macduff, Coro, Coro di donne",
     "summary": "Final scene.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "Scena ultima",
-        "translatedTitle": "Final scene",
+        "type": "Scena, Battaglia, Morte di Macbeth",
         "participants": [
           "Malcolm",
           "Macduff",
-          "Coro",
-          "Coro di donne"
+          "Chorus",
+          "Women’s Chorus"
         ],
         "turns": [
           {
@@ -731,7 +740,7 @@ export const macbethActFourScenes = [
             "speaker": "Coro di donne",
             "it": "Salgan mie grazie a te,\nGran Dio vendicator;\nA chi ne liberò\nInni cantiam di gloria.",
             "en": "Let my thanks ascend to you,\ngreat avenging God;\nto him who freed us,\nlet us sing hymns of glory.",
-            "speakerTranslation": "Chorus of Women",
+            "speakerTranslation": "Women’s Chorus",
             "literalText": true
           },
           {
@@ -748,8 +757,12 @@ export const macbethActFourScenes = [
             "speakerTranslation": "Malcolm",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 15
       }
-    ]
+    ],
+    "originalHeading": "Scena ultima",
+    "translatedHeading": "Final scene"
   }
 ];

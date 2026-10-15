@@ -392,7 +392,7 @@ test("Macbeth sung asides remain lyrics and final scene links render", () => {
     window.location.hash = "#/operas/macbeth?act=1&scene=" + scene.number;
     const page = reader.scene(scene.number);
     assert.equal(count(page, /<div class="libretto-row/g), libretto.acts[0].scenes.reduce((n, entry) => n + entry.sections.reduce((m, section) => m + section.turns.length, 0), 0));
-    assert.equal(count(page, /class="libretto-scene-section"/g), 19);
+    assert.equal(count(page, /class="libretto-scene-section"/g), 20);
     assert.ok(page.includes('id="libretto-scene-1-1"'));
     assert.ok(page.includes('id="libretto-scene-1-19"'));
     for (const section of scene.sections) for (const turn of section.turns) {
@@ -569,4 +569,35 @@ test("unnumbered titled sections retain their original title", () => {
   assert.ok(output.scene(1).includes("Recitative · Die Nachricht"));
   assert.ok(output.outline().includes("Recitative · Die Nachricht"));
   assert.ok(output.scene(1).includes("Guten Abend"));
+});
+
+test("Macbeth source divisions and unique English credits agree in both outlines", () => {
+  const libretto = getLibretto("macbeth");
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  assert.ok(!outline.includes("Le profezie"));
+  assert.ok(!outline.includes("La vendetta"));
+  assert.ok(outline.includes("Scena ultima"));
+  let destinations = 0;
+  for (const act of libretto.acts) {
+    window.location.hash = "#/operas/macbeth?act=" + act.number;
+    const page = reader.scene(1);
+    for (const scene of act.scenes) for (const [index, section] of scene.sections.entries()) {
+      const item = section.routeItem ?? index;
+      const href = '#/operas/macbeth?act=' + act.number + '&scene=' + scene.number + '&item=' + item;
+      for (const html of [outline, page]) {
+        assert.ok(html.includes('href="' + href + '"'), href);
+        const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
+        assert.ok(!entry.includes('opera-outline__section-translation'), "source supplies forms, not separate titles");
+      }
+      assert.equal(page.split('id="libretto-section-' + act.number + '-' + scene.number + '-' + item + '"').length - 1, 1);
+      const names = section.participants || [];
+      assert.equal(new Set(names.map(name => name.toLowerCase())).size, names.length);
+      assert.ok(!names.includes("Tutte e tre le streghe"));
+      assert.ok(!names.includes("Macbeth e Lady Macbeth"));
+      destinations++;
+    }
+  }
+  assert.equal(destinations, 43);
+  assert.deepEqual(libretto.acts[2].scenes[2].sections[0].participants, ["Witch 1", "Witch 2", "Witch 3"]);
 });

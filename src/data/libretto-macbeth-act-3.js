@@ -2,8 +2,7 @@
 export const macbethActThreeScenes = [
   {
     "number": 1,
-    "title": "La caverna",
-    "translatedTitle": "The cavern",
+    "title": "",
     "cast": "Tutte e tre le streghe, Strega 1, Strega 2, Strega 3",
     "summary": "The cavern.",
     "sections": [
@@ -11,10 +10,9 @@ export const macbethActThreeScenes = [
         "number": 10,
         "type": "[Ballo e] Coro",
         "participants": [
-          "Tutte e tre le streghe",
-          "Strega 1",
-          "Strega 2",
-          "Strega 3"
+          "Witch 1",
+          "Witch 2",
+          "Witch 3"
         ],
         "turns": [
           {
@@ -88,14 +86,16 @@ export const macbethActThreeScenes = [
             "speakerTranslation": "All three witches",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena I",
+    "translatedHeading": "Scene I"
   },
   {
     "number": 2,
-    "title": "Le apparizioni",
-    "translatedTitle": "The apparitions",
+    "title": "",
     "cast": "Macbeth, Tutte e tre le streghe, Apparizione, Strega 1, Strega 2, Strega 3",
     "summary": "The apparitions.",
     "sections": [
@@ -104,11 +104,12 @@ export const macbethActThreeScenes = [
         "type": "Recitativo, Apparizoni, Ballabile e Duetto finale",
         "participants": [
           "Macbeth",
-          "Tutte e tre le streghe",
-          "Apparizione",
-          "Strega 1",
-          "Strega 2",
-          "Strega 3"
+          "Witch 1",
+          "Witch 2",
+          "Witch 3",
+          "Apparition 1",
+          "Apparition 2",
+          "Apparition 3"
         ],
         "turns": [
           {
@@ -465,23 +466,25 @@ export const macbethActThreeScenes = [
             "speakerTranslation": "All three witches",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena II",
+    "translatedHeading": "Scene II"
   },
   {
     "number": 3,
-    "title": "Spiriti aerei",
-    "translatedTitle": "Spirits of the air",
+    "title": "",
     "cast": "Coro",
     "summary": "Spirits of the air.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "Spiriti aerei",
-        "translatedTitle": "Spirits of the air",
+        "type": "Recitativo, Apparizoni, Ballabile e Duetto finale",
         "participants": [
-          "Coro"
+          "Witch 1",
+          "Witch 2",
+          "Witch 3"
         ],
         "turns": [
           {
@@ -501,26 +504,26 @@ export const macbethActThreeScenes = [
             "it": "Spirti e Streghe spariscono",
             "en": "The spirits and witches disappear."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 11
       }
-    ]
+    ],
+    "originalHeading": "Scena III",
+    "translatedHeading": "Scene III"
   },
   {
     "number": 4,
-    "title": "La vendetta",
-    "translatedTitle": "Vengeance",
+    "title": "",
     "cast": "Macbeth, Araldo, Lady Macbeth, Macbeth e Lady Macbeth",
     "summary": "Vengeance.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "La vendetta",
-        "translatedTitle": "Vengeance",
+        "type": "Recitativo, Apparizoni, Ballabile e Duetto finale",
         "participants": [
           "Macbeth",
-          "Araldo",
-          "Lady Macbeth",
-          "Macbeth e Lady Macbeth"
+          "Herald",
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -666,8 +669,12 @@ export const macbethActThreeScenes = [
             "speakerTranslation": "Macbeth and Lady Macbeth",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 11
       }
-    ]
+    ],
+    "originalHeading": "Scena IV",
+    "translatedHeading": "Scene IV"
   }
 ];

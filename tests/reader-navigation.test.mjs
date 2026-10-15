@@ -161,7 +161,7 @@ test("Macbeth deep links keep the complete act and target the requested section"
     window.location.hash = "#/operas/macbeth?act=1&scene=" + number + "&item=0";
     const page = reader.scene(number);
     assert.ok(page.includes('data-continuous-act="true"'));
-    assert.ok(page.includes('data-initial-item="' + (number - 1) + '"'));
+    assert.ok(page.includes('data-initial-item="' + number + '"'));
     for (let scene = 1; scene <= 19; scene++) assert.ok(page.includes('id="libretto-section-1-' + scene + '-0"'));
   }
 });

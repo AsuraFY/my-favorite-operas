@@ -191,13 +191,13 @@ test("Macbeth Act I preserves all 19 source scenes and paired translation", () =
   assert.equal(macbeth.originalLanguage, "Italiano");
   assert.equal(macbeth.translationLanguage, "English");
   assert.equal(macbeth.acts.length, 4);
-  assert.equal(macbeth.acts[0].prelude.title, "N. 1 - Preludio");
+  assert.equal(macbeth.acts[0].scenes[0].sections[0].type, "Preludio");
   assert.equal(macbeth.acts[0].scenes.length, 19);
   const scene = macbeth.acts[0].scenes[0];
   assert.equal(scene.title, "Bosco");
   assert.equal(scene.translatedTitle, "A wood");
   assert.equal(macbeth.preserveLineBreaks, true);
-  assert.equal(scene.sections[0].number, 2);
+  assert.equal(scene.sections[1].number, 2);
   for (const sourceScene of macbeth.acts[0].scenes) for (const section of sourceScene.sections) for (const turn of section.turns) {
     assert.ok(turn.it.trim());
     assert.ok(turn.en.trim());
@@ -216,8 +216,8 @@ test("Macbeth Act I preserves all 19 source scenes and paired translation", () =
   assert.ok(page.includes("[A drum is heard.]"));
   assert.ok(page.includes("A drum is heard."));
   const outline = reader.outline();
-  assert.ok(outline.includes("N. 1 - Preludio"));
-  assert.ok(outline.includes("No. 1 - Prelude"));
+  assert.ok(outline.includes("N. 1 · Preludio"));
+  assert.ok(outline.includes("act=1&scene=1&item=1"));
   assert.ok(outline.includes("N. 2 · Introduzione"));
   assert.ok(outline.includes("Introduzione"));
   assert.ok(outline.includes("Bosco"));
@@ -240,7 +240,7 @@ test("Macbeth Act II retains all seven scenes on one aligned act page", () => {
     assert.equal(count(page, /class="libretto-scene-section"/g), 7);
     assert.ok(page.includes('data-initial-item="' + (number - 1) + '"'));
     for (let scene = 1; scene <= 7; scene++) assert.ok(page.includes('id="libretto-section-2-' + scene + '-0"'));
-    assert.ok(page.includes("Assassins 1"));
+    assert.ok(page.includes("Assassins, group 1"));
     assert.ok(page.includes("[The ghost reappears.<br>Terrified.]"));
     assert.ok(page.includes("Chorus"));
   }
@@ -289,7 +289,7 @@ test("Macbeth Act IV includes all scenes, both opening numbers, and the final ch
     for (let n = 1; n <= 11; n++) assert.ok(page.includes('id="libretto-section-4-' + n + '-0"'));
     assert.ok(page.includes("Per noi di tal vittoria."));
     assert.ok(page.includes("eternal for us."));
-    assert.ok(page.includes("Chorus of Women"));
+    assert.ok(page.includes("Women’s Chorus"));
     assert.ok(page.includes("End of Act IV"));
     assert.ok(!page.includes("Continue to Act V"));
   }

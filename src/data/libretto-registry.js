@@ -9,13 +9,13 @@ import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.j
 import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-outline-1";
 import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-outline-1";
 import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-outline-1";
-import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-act1-3";
+import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-outline-1";
 
-import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-act2-1";
+import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-outline-1";
 
-import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-act3-1";
+import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-outline-1";
 
-import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-act4-1";
+import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-outline-1";
 import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-act1-1";
 import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-act2-1";
 import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-act3-1";
@@ -221,6 +221,7 @@ const tristan = {
 
 const macbeth = {
   slug: "macbeth",
+  threeLineOutline: true,
   opera: getOpera("macbeth"),
   composerShort: "G. VERDI",
   mobileComposer: "Giuseppe Verdi",
@@ -237,7 +238,6 @@ const macbeth = {
   acts: [{
     number: 1,
     originalHeading: "Atto primo",
-    prelude: { title: "N. 1 - Preludio", translation: "No. 1 - Prelude" },
     scenes: macbethActOneScenes
   }, {
     number: 2,
@@ -270,7 +270,7 @@ const macbeth = {
     ]
   },
   characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Tre Streghe", "Duncano", "Malcolm", "Macduff"],
-  source: "Giuseppe Verdi, Macbeth (1847), Italian libretto and source divisions: https://opera-guide.ch/operas/macbethverdi/libretto/it/"
+  source: "Giuseppe Verdi, Macbeth, Italian text and numbered divisions as presented by Opera Guide (accessed 2026-10-15; includes revised passages): https://opera-guide.ch/operas/macbethverdi/libretto/it/"
 };
 
 const turandot = {
