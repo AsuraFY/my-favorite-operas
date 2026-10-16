@@ -2751,7 +2751,8 @@ html[data-theme="night"] .opera-breadcrumb [aria-current="page"] { color: #f0ede
 /* No leading gutter before Home in either breadcrumb, including nested page layouts. */
 #main > .opera-breadcrumb,
 #main > .musical-editorial > .musical-breadcrumb {
-  padding-inline-start: 0;
+  /* Match the measured left edge of the My Favorite Operas wordmark. */
+  padding-inline-start: var(--breadcrumb-logo-left, 0px);
   margin-inline-start: 0;
   justify-content: flex-start;
   text-indent: 0;

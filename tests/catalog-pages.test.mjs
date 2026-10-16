@@ -305,7 +305,7 @@ test("opera breadcrumbs remain unindented, sticky, and on one horizontally scrol
   assert.ok(main.includes("stickyBarObserver.observe(breadcrumb)"));
 });
 
-test("Home has no leading inset in either opera or musical breadcrumbs", () => {
+test("Home aligns with the My Favorite Operas wordmark in both breadcrumb styles", () => {
   const musical = renderMusicalPage();
   assert.ok(musical.startsWith('<div class="musical-detail-page musical-editorial"><nav class="musical-breadcrumb"'));
   assert.ok(musical.includes('</nav><div class="musical-editorial-wrap"><header class="musical-editorial-hero">'));
@@ -313,5 +313,9 @@ test("Home has no leading inset in either opera or musical breadcrumbs", () => {
   assert.ok(css.includes("width:calc(100% + 32px);margin:0 -16px 18px;padding:9px 0"));
   assert.ok(css.includes("#main > .opera-breadcrumb > a:first-child"));
   assert.ok(css.includes("#main > .musical-editorial > .musical-breadcrumb > a:first-child"));
-  assert.ok(css.includes("padding-inline-start: 0;"));
+  assert.ok(css.includes("padding-inline-start: var(--breadcrumb-logo-left, 0px);"));
+  const main = readFileSync("src/main.js", "utf8");
+  assert.ok(main.includes('app.querySelector(".site-header .brand__name")'));
+  assert.ok(main.includes('style.setProperty("--breadcrumb-logo-left"'));
+  assert.ok(main.includes('window.addEventListener("resize", measureStickyNavigation)'));
 });

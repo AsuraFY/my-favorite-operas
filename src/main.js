@@ -285,6 +285,11 @@ let stickyBarObserver = null;
 
 function measureStickyNavigation() {
   const header = app.querySelector(".site-header");
+  const brandName = app.querySelector(".site-header .brand__name");
+  // Align both breadcrumb labels precisely with the visible header wordmark,
+  // including desktop, mobile, and opera-reader header variations.
+  document.documentElement.style.setProperty("--breadcrumb-logo-left",
+    (brandName?.getBoundingClientRect().left ?? 0) + "px");
   const breadcrumb = app.querySelector(".opera-breadcrumb");
   const operaBar = app.querySelector(".opera-subnav");
   const mobileToolbar = app.querySelector(".mobile-reader-toolbar");
@@ -293,6 +298,9 @@ function measureStickyNavigation() {
   document.documentElement.style.setProperty("--sticky-opera-height", (operaBar?.getBoundingClientRect().height || 0) + "px");
   document.documentElement.style.setProperty("--sticky-reader-height", (mobileToolbar?.getBoundingClientRect().height || 0) + "px");
 }
+
+// The header's left padding may change at CSS breakpoints without a height change.
+window.addEventListener("resize", measureStickyNavigation);
 
 function setupStickyNavigation() {
   stickyBarObserver?.disconnect();
