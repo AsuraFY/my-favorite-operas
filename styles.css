@@ -2668,7 +2668,8 @@ html[data-theme="night"] .musical-score-instrumental { background: #293645; colo
 /* Mahler combined editorial detail page — approved concept, restrained gold/navy. */
 .musical-editorial {padding:24px 16px 80px;background:#f5f2eb;color:#203249}
 .musical-editorial-wrap {max-width:1100px;margin:auto}
-.musical-breadcrumb {display:flex;align-items:center;gap:11px;margin:4px 0 18px;font:.81rem/1.4 var(--sans);color:#68717c}
+.musical-breadcrumb {display:flex;align-items:center;flex-wrap:nowrap;gap:11px;position:sticky;top:var(--sticky-site-height);z-index:75;width:calc(100% + 32px);margin:0 -16px 18px;padding:9px 0;min-height:44px;overflow-x:auto;white-space:nowrap;scrollbar-width:thin;background:#f5f2eb;border-bottom:1px solid #ded6c9;font:.81rem/1.4 var(--sans);color:#68717c}
+.musical-breadcrumb > * {flex:0 0 auto}
 .musical-breadcrumb a {color:inherit;text-decoration:none}
 .musical-breadcrumb a:hover {text-decoration:underline}
 .musical-editorial-hero {position:relative;isolation:isolate;overflow:hidden;min-height:310px;display:flex;align-items:end;border-radius:12px;color:#fff;background:linear-gradient(90deg,rgba(10,25,42,.97) 0%,rgba(12,29,47,.82) 50%,rgba(12,30,48,.25) 100%),url('./public/images/opera-house-hero.webp') center/cover}
@@ -2746,3 +2747,21 @@ html[data-theme="night"] .musical-editorial-about,html[data-theme="night"] .musi
 html[data-theme="night"] .opera-breadcrumb { color: #c5c9cc; background: #20262d; border-color: #45525e; }
 html[data-theme="night"] .opera-breadcrumb [aria-current="page"] { color: #f0ede6; }
 @media (max-width: 700px) { .opera-breadcrumb { width: 100%; gap: 7px; margin: 0; padding: 9px 0; font-size: .76rem; } }
+
+/* No leading gutter before Home in either breadcrumb, including nested page layouts. */
+#main > .opera-breadcrumb,
+#main > .musical-editorial > .musical-breadcrumb {
+  padding-inline-start: 0;
+  margin-inline-start: 0;
+  justify-content: flex-start;
+  text-indent: 0;
+}
+#main > .musical-editorial > .musical-breadcrumb {
+  margin-inline-start: -16px;
+}
+#main > .opera-breadcrumb > a:first-child,
+#main > .musical-editorial > .musical-breadcrumb > a:first-child {
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+}
+html[data-theme="night"] .musical-breadcrumb {background:#161f29;border-color:#45525e}

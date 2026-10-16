@@ -4,7 +4,7 @@ import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-complet
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=opera-breadcrumb-2";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-3";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-4";
 
 const app = document.querySelector("#app");
 

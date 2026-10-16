@@ -304,3 +304,14 @@ test("opera breadcrumbs remain unindented, sticky, and on one horizontally scrol
   assert.ok(main.includes('style.setProperty("--sticky-breadcrumb-height"'));
   assert.ok(main.includes("stickyBarObserver.observe(breadcrumb)"));
 });
+
+test("Home has no leading inset in either opera or musical breadcrumbs", () => {
+  const musical = renderMusicalPage();
+  assert.ok(musical.startsWith('<div class="musical-detail-page musical-editorial"><nav class="musical-breadcrumb"'));
+  assert.ok(musical.includes('</nav><div class="musical-editorial-wrap"><header class="musical-editorial-hero">'));
+  const css = readFileSync("styles.css", "utf8");
+  assert.ok(css.includes("width:calc(100% + 32px);margin:0 -16px 18px;padding:9px 0"));
+  assert.ok(css.includes("#main > .opera-breadcrumb > a:first-child"));
+  assert.ok(css.includes("#main > .musical-editorial > .musical-breadcrumb > a:first-child"));
+  assert.ok(css.includes("padding-inline-start: 0;"));
+});
