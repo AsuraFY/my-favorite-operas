@@ -602,7 +602,7 @@ test("Macbeth source divisions and unique English credits agree in both outlines
   assert.deepEqual(libretto.acts[2].scenes[2].sections[0].participants, ["Witch 1", "Witch 2", "Witch 3"]);
 });
 
-test("Macbeth Acts I–II align every sung line while Acts III–IV keep their current layout", () => {
+test("Macbeth aligns every sung line across all four acts", () => {
   const libretto = getLibretto("macbeth");
   const reader = createLibrettoRenderer(libretto);
   for (const act of libretto.acts) {
@@ -611,10 +611,8 @@ test("Macbeth Acts I–II align every sung line while Acts III–IV keep their c
     const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
     const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
       ? [[`[${turn.it.replaceAll('\n', '<br>')}]`, `[${turn.en.replaceAll('\n', '<br>')}]`, true]]
-      : act.number <= 2
-        ? turn.it.split('\n').map((line, index) => [line, turn.en.split('\n')[index], false])
-        : [[turn.it.replaceAll('\n', '<br>'), turn.en.replaceAll('\n', '<br>'), false]]);
+      : turn.it.split('\n').map((line, index) => [line, turn.en.split('\n')[index], false]));
     assert.deepEqual(renderedVersePairs(page), expected, 'all text pairs retained in Act ' + act.number);
-    if (act.number <= 2) assert.ok(renderedVersePairs(page).filter(pair => !pair[2]).every(pair => !pair[0].includes('<br>') && !pair[1].includes('<br>')));
+    assert.ok(renderedVersePairs(page).filter(pair => !pair[2]).every(pair => !pair[0].includes('<br>') && !pair[1].includes('<br>')));
   }
 });

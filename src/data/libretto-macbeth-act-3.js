@@ -310,7 +310,7 @@ export const macbethActThreeScenes = [
           {
             "speaker": "Macbeth",
             "it": "Or mi dite: salire al mio soglio\nLa progenie di Banco dovrà?",
-            "en": "Now tell me: must the descendants of Banco\nascend my throne?",
+            "en": "Now tell me: must my throne be ascended\nby the descendants of Banco?",
             "speakerTranslation": "Macbeth",
             "literalText": true
           },
@@ -495,7 +495,7 @@ export const macbethActThreeScenes = [
           {
             "speaker": "Tutte e tre le streghe",
             "it": "Ondine e Silfidi\nDall'ali candide,\nSu quella pallida\nFronte spirate.\nTessete il vortice\nCarole armoniche,\nE sensi ed anima\nGli confortate.",
-            "en": "Undines and sylphs\nwith white wings,\nbreathe upon that pale\nbrow.\nWeave harmonious dances\nin swirling circles,\nand comfort his senses\nand his soul.",
+            "en": "Undines and sylphs\nwith white wings,\nbreathe upon that pale\nbrow.\nWeave in swirling circles\nharmonious dances,\nand comfort his senses\nand his soul.",
             "speakerTranslation": "All three witches",
             "literalText": true
           },

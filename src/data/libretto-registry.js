@@ -13,9 +13,9 @@ import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-lines
 
 import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-lines-2";
 
-import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-outline-1";
+import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-lines-complete";
 
-import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-outline-1";
+import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-lines-complete";
 import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-outline-1";
 import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-outline-1";
 import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-outline-1";
@@ -249,10 +249,12 @@ const macbeth = {
   }, {
     number: 3,
     originalHeading: "Atto terzo",
+    alignVerseLines: true,
     scenes: macbethActThreeScenes
   }, {
     number: 4,
     originalHeading: "Atto quarto",
+    alignVerseLines: true,
     scenes: macbethActFourScenes
   }],
   synopsis: {

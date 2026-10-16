@@ -366,7 +366,7 @@ export const macbethActFourScenes = [
           {
             "speaker": "Macbeth",
             "it": "Perfidi! All'anglo contro me v'unite!\nLe potenze presaghe han profetato:\n\"Esser puoi sanguinario, feroce;\nNessuno nato da donna ti nuoce\".\nNo, non temo di voi, né del fanciullo\nChe vi conduce! Raffermar sul trono\nQuesto assalto mi debbe,\nO sbalzarmi per sempre... Eppur la vita\nSento nelle mie fibre inaridita!\nPietà, rispetto, amore,\nConforto ai dì cadenti,\nNon spargeran d'un fiore\nLa tua canuta età.\nNé sul tuo regio sasso\nSperar soavi accenti:\nSol la bestemmia, ahi lasso!\nLa nenia tua sarà!",
-            "en": "Traitors! You join the English against me!\nThe prophetic powers foretold:\n“You may be bloodthirsty and fierce;\nno one born of woman can harm you.”\nNo, I fear neither you nor the boy\nwho leads you! This assault must\nsecure me on the throne,\nor cast me down forever... Yet I feel\nlife withered within my very fibres!\nPity, respect, love,\ncomfort for declining days,\nwill not scatter a flower\nover your old age.\nNor hope for gentle words\nover your royal tomb;\nonly curses, alas,\nwill be your funeral song!",
+            "en": "Traitors! You join the English against me!\nThe prophetic powers foretold:\n“You may be bloodthirsty and fierce;\nno one born of woman can harm you.”\nNo, I fear neither you nor the boy\nwho leads you! This assault must\nsecure me on the throne,\nor cast me down forever... Yet I feel\nlife withered within my very fibres!\nPity, respect, love,\ncomfort for declining days,\nwill not scatter a flower\nover your old age.\nNor, over your royal tomb,\nhope for gentle words;\nonly curses, alas,\nwill be your funeral song!",
             "speakerTranslation": "Macbeth",
             "literalText": true
           },
@@ -694,7 +694,7 @@ export const macbethActFourScenes = [
           {
             "speaker": "Malcolm",
             "it": "Ove s'è fitto\nl'usurpator?",
-            "en": "Where has the usurper\nhidden himself?",
+            "en": "Where has he hidden himself,\nthe usurper?",
             "speakerTranslation": "Malcolm",
             "literalText": true
           },

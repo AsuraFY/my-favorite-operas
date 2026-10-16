@@ -19,3 +19,7 @@ Act I now renders each of its 228 sung source lines beside the corresponding Eng
 ## Act II line alignment — 15 October 2026
 
 Act II now uses individual paired rows for all 182 sung lines across seven scenes. Both occurrences of the drinking-song lines about hatred, resentment and love have their English phrasing reordered to follow the Italian line order. Original text, stage directions, outlines and addresses are preserved. The existing rendered-pair test now covers Acts I–II and confirms Acts III–IV keep their previous layout. All 95 tests pass; visual QA remains pending.
+
+## Acts III–IV line alignment — 16 October 2026
+
+All four acts now render sung text as individual Italian–English pairs. Act III contains 141 sung lines and Act IV contains 157. Four English passages were reordered to follow their Italian lines: Banco’s descendants ascending the throne, the spirits’ swirling dances, the royal tomb, and the question about the usurper’s hiding place. Italian source text, stage directions, outlines and link addresses remain unchanged. The existing rendered-pair test now checks all four acts. All 95 tests pass; desktop/mobile visual QA remains pending. This alignment review does not certify the entire translation as final.
