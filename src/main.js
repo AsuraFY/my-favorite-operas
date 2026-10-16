@@ -1,5 +1,5 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-43";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-44";
 import { getLibretto } from "./data/libretto-registry.js?v=cosi-lines-1";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";

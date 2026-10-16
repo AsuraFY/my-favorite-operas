@@ -437,8 +437,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       const isDirection = originalPart.type === "direction" || translatedPart.type === "direction";
       if (isDirection) {
         output.push('<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german"><p>' +
-          formatLibrettoText(originalPart.value, false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
-          formatLibrettoText(translatedPart.value, false) + '</p></div></div>');
+          formatLibrettoText(originalPart.value.trim() ? "[" + originalPart.value.trim() + "]" : "", false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
+          formatLibrettoText(translatedPart.value.trim() ? "[" + translatedPart.value.trim() + "]" : "", false) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
         output.push('<div class="libretto-row"><div class="libretto-cell libretto-cell--german">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(originalSpeaker) + '</span>') + '<p>' +
