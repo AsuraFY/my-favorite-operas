@@ -4,7 +4,7 @@ const escapeHtml = (value = "") => String(value).replace(/[&<>"']/g, char =>
 
 export function renderOperaBreadcrumb(opera) {
   const composer = String(opera.composer || "");
-  return '<nav class="opera-breadcrumb" aria-label="Breadcrumb">' +
+  return '<nav class="site-breadcrumb opera-breadcrumb" aria-label="Breadcrumb">' +
     '<a href="#/">Home</a><span aria-hidden="true">›</span>' +
     '<a href="#/operas">Operas</a><span aria-hidden="true">›</span>' +
     '<a href="#/operas?composer=' + encodeURIComponent(composer) + '">' + escapeHtml(composer) + '</a>' +

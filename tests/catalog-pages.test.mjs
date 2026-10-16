@@ -287,35 +287,41 @@ test("all opera views route through the breadcrumb; composer searches and sortin
   assert.ok(!readFileSync("src/opera-info-page.js", "utf8").includes('class="opera-info__breadcrumbs"'));
 });
 
-test("opera breadcrumbs remain unindented, sticky, and on one horizontally scrollable line", () => {
-  const crumb = renderOperaBreadcrumb(operas[0]);
-  assert.ok(crumb.includes('class="opera-breadcrumb"'));
-  assert.ok(!crumb.includes('class="opera-breadcrumb section-wrap"'));
-  const styles = readFileSync("styles.css", "utf8");
-  const rule = styles.slice(styles.lastIndexOf(".opera-breadcrumb {"), styles.lastIndexOf(".opera-breadcrumb > *"));
-  assert.ok(rule.includes("position: sticky"));
-  assert.ok(rule.includes("top: var(--sticky-site-height)"));
-  assert.ok(rule.includes("flex-wrap: nowrap"));
-  assert.ok(rule.includes("overflow-x: auto"));
-  assert.ok(rule.includes("padding: 10px 0"));
-  assert.ok(styles.includes("top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height));"));
-  assert.ok(styles.includes("scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height)"));
-  const main = readFileSync("src/main.js", "utf8");
-  assert.ok(main.includes('style.setProperty("--sticky-breadcrumb-height"'));
-  assert.ok(main.includes("stickyBarObserver.observe(breadcrumb)"));
+test("Opera and Musical detail pages share the same full-width breadcrumb markup", () => {
+  const opera = renderOperaBreadcrumb(operas[0]);
+  const musical = renderMusicalPage();
+  assert.ok(opera.startsWith('<nav class="site-breadcrumb opera-breadcrumb" aria-label="Breadcrumb">'));
+  assert.ok(musical.startsWith('<nav class="site-breadcrumb musical-breadcrumb" aria-label="Breadcrumb">'));
+  assert.ok(musical.includes('</nav><div class="musical-detail-page musical-editorial"><div class="musical-editorial-wrap">'));
+  for (const nav of [opera, musical]) {
+    assert.ok(nav.includes('<a href="#/">Home</a>'));
+    assert.ok(nav.includes('aria-current="page"'));
+  }
+  assert.ok(musical.includes('href="#/musicals?composer=Gustav%20Mahler"'));
+  assert.ok(opera.includes('href="#/operas?composer=' + encodeURIComponent(operas[0].composer) + '"'));
 });
 
-test("Home aligns with the My Favorite Operas wordmark in both breadcrumb styles", () => {
-  const musical = renderMusicalPage();
-  assert.ok(musical.startsWith('<div class="musical-detail-page musical-editorial"><nav class="musical-breadcrumb"'));
-  assert.ok(musical.includes('</nav><div class="musical-editorial-wrap"><header class="musical-editorial-hero">'));
+test("A single CSS rule controls breadcrumb height, layout, and logo alignment", () => {
   const css = readFileSync("styles.css", "utf8");
-  assert.ok(css.includes("width:calc(100% + 32px);margin:0 -16px 18px;padding:9px 0"));
-  assert.ok(css.includes("#main > .opera-breadcrumb > a:first-child"));
-  assert.ok(css.includes("#main > .musical-editorial > .musical-breadcrumb > a:first-child"));
-  assert.ok(css.includes("padding-inline-start: var(--breadcrumb-logo-left, 0px);"));
+  const begin = css.lastIndexOf("\n.site-breadcrumb {");
+  const end = css.lastIndexOf("\n.site-breadcrumb::-webkit-scrollbar");
+  const rule = css.slice(begin, end);
+  for (const property of [
+    "position: sticky", "top: var(--sticky-site-height)", "height: 48px",
+    "min-height: 48px", "max-height: 48px", "flex-wrap: nowrap",
+    "overflow-x: auto", "padding: 0 18px 0 var(--breadcrumb-logo-left, 30px)",
+    "font: 500 .82rem/1.4 var(--sans)"
+  ]) assert.ok(rule.includes(property), "missing shared style " + property);
+  assert.equal((css.match(/\n.site-breadcrumb \{/g) || []).length, 1);
+  assert.ok(!css.includes("width:calc(100% + 32px);margin:0 -16px"));
   const main = readFileSync("src/main.js", "utf8");
   assert.ok(main.includes('app.querySelector(".site-header .brand__name")'));
-  assert.ok(main.includes('style.setProperty("--breadcrumb-logo-left"'));
+  assert.ok(main.includes('app.querySelector(".site-breadcrumb")'));
+  assert.ok(main.includes('brandName.getBoundingClientRect().left - breadcrumb.getBoundingClientRect().left'));
+  assert.ok(main.includes('breadcrumb.style.setProperty("--breadcrumb-logo-left", leftInset + "px")'));
   assert.ok(main.includes('window.addEventListener("resize", measureStickyNavigation)'));
+  assert.ok(main.includes('style.setProperty("--sticky-breadcrumb-height"'));
+  assert.ok(main.includes('stickyBarObserver.observe(breadcrumb)'));
+  assert.ok(css.includes("top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height));"));
+  assert.ok(css.includes("scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height)"));
 });

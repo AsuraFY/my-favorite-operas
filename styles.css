@@ -2668,10 +2668,6 @@ html[data-theme="night"] .musical-score-instrumental { background: #293645; colo
 /* Mahler combined editorial detail page — approved concept, restrained gold/navy. */
 .musical-editorial {padding:24px 16px 80px;background:#f5f2eb;color:#203249}
 .musical-editorial-wrap {max-width:1100px;margin:auto}
-.musical-breadcrumb {display:flex;align-items:center;flex-wrap:nowrap;gap:11px;position:sticky;top:var(--sticky-site-height);z-index:75;width:calc(100% + 32px);margin:0 -16px 18px;padding:9px 0;min-height:44px;overflow-x:auto;white-space:nowrap;scrollbar-width:thin;background:#f5f2eb;border-bottom:1px solid #ded6c9;font:.81rem/1.4 var(--sans);color:#68717c}
-.musical-breadcrumb > * {flex:0 0 auto}
-.musical-breadcrumb a {color:inherit;text-decoration:none}
-.musical-breadcrumb a:hover {text-decoration:underline}
 .musical-editorial-hero {position:relative;isolation:isolate;overflow:hidden;min-height:310px;display:flex;align-items:end;border-radius:12px;color:#fff;background:linear-gradient(90deg,rgba(10,25,42,.97) 0%,rgba(12,29,47,.82) 50%,rgba(12,30,48,.25) 100%),url('./public/images/opera-house-hero.webp') center/cover}
 .musical-editorial-hero__inner {position:relative;z-index:1;padding:38px clamp(24px,5vw,65px)}
 .musical-editorial-overline {color:#d8c296;letter-spacing:.15em;font:700 .72rem/1.4 var(--sans)}
@@ -2713,56 +2709,48 @@ html[data-theme="night"] .musical-editorial-about,html[data-theme="night"] .musi
 .musicals-composer-filter strong { font-weight: 700; }
 .musicals-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }
 
-/* Shared opera breadcrumb: Home › Operas › Composer › Work. */
-.opera-breadcrumb {
+/* Composer-directory caption. */
+.opera-composer-filter { margin: 13px 0 0; font: .94rem/1.5 var(--sans); }
+.opera-composer-filter strong { font-weight: 700; }
+.opera-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* One shared breadcrumb for all Opera and Musical detail pages.
+   The bar spans the viewport; its first link aligns to the measured wordmark. */
+.site-breadcrumb {
   position: sticky;
   top: var(--sticky-site-height);
   z-index: 75;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  flex: 0 0 48px;
   gap: 11px;
   width: 100%;
-  min-height: 44px;
+  height: 48px;
+  min-height: 48px;
+  max-height: 48px;
   margin: 0;
-  padding: 10px 0;
+  padding: 0 18px 0 var(--breadcrumb-logo-left, 30px);
+  box-sizing: border-box;
   overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior-x: contain;
   white-space: nowrap;
-  scrollbar-width: thin;
+  scrollbar-width: none;
   background: #fbf8f0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #ded6c9;
   color: #68717c;
-  font: 500 .82rem/1.5 var(--sans);
+  font: 500 .82rem/1.4 var(--sans);
 }
-.opera-breadcrumb > * { flex: 0 0 auto; }
-.opera-breadcrumb a { color: inherit; text-decoration: none; }
-.opera-breadcrumb a:hover { text-decoration: underline; }
-.opera-breadcrumb a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
-.opera-breadcrumb [aria-current="page"] { color: var(--ink); font-weight: 700; }
-.opera-breadcrumb span[aria-hidden="true"] { color: #9a948a; }
-.opera-composer-filter { margin: 13px 0 0; font: .94rem/1.5 var(--sans); }
-.opera-composer-filter strong { font-weight: 700; }
-.opera-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }
-html[data-theme="night"] .opera-breadcrumb { color: #c5c9cc; background: #20262d; border-color: #45525e; }
-html[data-theme="night"] .opera-breadcrumb [aria-current="page"] { color: #f0ede6; }
-@media (max-width: 700px) { .opera-breadcrumb { width: 100%; gap: 7px; margin: 0; padding: 9px 0; font-size: .76rem; } }
-
-/* No leading gutter before Home in either breadcrumb, including nested page layouts. */
-#main > .opera-breadcrumb,
-#main > .musical-editorial > .musical-breadcrumb {
-  /* Match the measured left edge of the My Favorite Operas wordmark. */
-  padding-inline-start: var(--breadcrumb-logo-left, 0px);
-  margin-inline-start: 0;
-  justify-content: flex-start;
-  text-indent: 0;
-}
-#main > .musical-editorial > .musical-breadcrumb {
-  margin-inline-start: -16px;
-}
-#main > .opera-breadcrumb > a:first-child,
-#main > .musical-editorial > .musical-breadcrumb > a:first-child {
-  margin-inline-start: 0;
-  padding-inline-start: 0;
-}
-html[data-theme="night"] .musical-breadcrumb {background:#161f29;border-color:#45525e}
+.site-breadcrumb::-webkit-scrollbar { display: none; }
+.site-breadcrumb > * { flex: 0 0 auto; }
+.site-breadcrumb a { color: inherit; text-decoration: none; }
+.site-breadcrumb a:hover { text-decoration: underline; }
+.site-breadcrumb a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.site-breadcrumb [aria-current="page"] { color: var(--ink); font-weight: 700; }
+.site-breadcrumb span[aria-hidden="true"] { color: #9a948a; }
+.site-breadcrumb.musical-breadcrumb { background: #f5f2eb; }
+html[data-theme="night"] .site-breadcrumb { color: #c5c9cc; background: #20262d; border-color: #45525e; }
+html[data-theme="night"] .site-breadcrumb.musical-breadcrumb { background: #161f29; }
+html[data-theme="night"] .site-breadcrumb [aria-current="page"] { color: #f0ede6; }
+@media (max-width: 700px) { .site-breadcrumb { gap: 7px; } }

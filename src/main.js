@@ -3,8 +3,8 @@ import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-43";
 import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-complete";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
-import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=opera-breadcrumb-2";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-4";
+import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=breadcrumb-shared-1";
 
 const app = document.querySelector("#app");
 
@@ -286,11 +286,14 @@ let stickyBarObserver = null;
 function measureStickyNavigation() {
   const header = app.querySelector(".site-header");
   const brandName = app.querySelector(".site-header .brand__name");
-  // Align both breadcrumb labels precisely with the visible header wordmark,
-  // including desktop, mobile, and opera-reader header variations.
-  document.documentElement.style.setProperty("--breadcrumb-logo-left",
-    (brandName?.getBoundingClientRect().left ?? 0) + "px");
-  const breadcrumb = app.querySelector(".opera-breadcrumb");
+  const breadcrumb = app.querySelector(".site-breadcrumb");
+  // Use the logo's actual position relative to the full-width breadcrumb.
+  // This avoids relying on page gutters or responsive header guesses.
+  if (brandName && breadcrumb) {
+    const leftInset = Math.max(0,
+      brandName.getBoundingClientRect().left - breadcrumb.getBoundingClientRect().left);
+    breadcrumb.style.setProperty("--breadcrumb-logo-left", leftInset + "px");
+  }
   const operaBar = app.querySelector(".opera-subnav");
   const mobileToolbar = app.querySelector(".mobile-reader-toolbar");
   document.documentElement.style.setProperty("--sticky-site-height", (header?.getBoundingClientRect().height || 0) + "px");
@@ -309,7 +312,7 @@ function setupStickyNavigation() {
   if (typeof ResizeObserver === "function") {
     stickyBarObserver = new ResizeObserver(measureStickyNavigation);
     const header = app.querySelector(".site-header");
-    const breadcrumb = app.querySelector(".opera-breadcrumb");
+    const breadcrumb = app.querySelector(".site-breadcrumb");
     const operaBar = app.querySelector(".opera-subnav");
     const toolbar = app.querySelector(".mobile-reader-toolbar");
     if (header) stickyBarObserver.observe(header);
