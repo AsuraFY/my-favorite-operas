@@ -226,7 +226,7 @@ test("Mahler data preserves end repetitions and independent vocal lines", async 
   assert.equal(words.filter(x => x === "was du geschlagen,").length, 2);
   assert.equal(words.filter(x => x.startsWith("zu gott")).length, 3);
   const duet = mahlerFinaleEvents.find(event => event.id === "schmerz-tod");
-  assert.equal(duet.relation, "overlap");
+  assert.deepEqual(duet.lanes.map(x => x.relationship), ["solo", "relay", "parallel"]);
   assert.deepEqual(duet.lanes.map(x => x.voice), ["Contralto solo", "Soprano solo", "Contralto solo"]);
   assert.equal(mahlerFinaleEvents.find(event => event.id === "wings-choir").lanes.length, 4);
   assert.ok(mahlerFinaleEvents.every(event => event.kind === "instrumental" ||
