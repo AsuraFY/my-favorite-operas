@@ -3,7 +3,7 @@ import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-43";
 import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-complete";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-three-col-1";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-2";
 
 const app = document.querySelector("#app");
 
@@ -748,7 +748,7 @@ function render() {
   } else if (path.startsWith("/musicals/")) {
     const slug = path.split("/")[2];
     if (slug === "mahler-symphony-2-resurrection") {
-      shell(renderMusicalPage(routeParams.get("view") || "about"), "musical");
+      shell(renderMusicalPage(), "musical");
       document.title = `${"Symphony No. 2: Resurrection"} — Musicals`;
     } else {
       shell(`<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This musical is not in the collection.</h1><a class="button button--dark" href="#/musicals">Return to musicals ${arrow}</a></section>`, "musicals");

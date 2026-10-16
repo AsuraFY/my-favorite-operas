@@ -2663,3 +2663,46 @@ html[data-theme="night"] .musical-score-instrumental { background: #293645; colo
   .musical-score-body { padding: 17px 13px 22px; }
   .musical-score-original,.musical-score-english { font-size: 1rem; }
 }
+
+
+/* Mahler combined editorial detail page — approved concept, restrained gold/navy. */
+.musical-editorial {padding:24px 16px 80px;background:#f5f2eb;color:#203249}
+.musical-editorial-wrap {max-width:1100px;margin:auto}
+.musical-breadcrumb {display:flex;align-items:center;gap:11px;margin:4px 0 18px;font:.81rem/1.4 var(--sans);color:#68717c}
+.musical-breadcrumb a {color:inherit;text-decoration:none}
+.musical-breadcrumb a:hover {text-decoration:underline}
+.musical-editorial-hero {position:relative;isolation:isolate;overflow:hidden;min-height:310px;display:flex;align-items:end;border-radius:12px;color:#fff;background:linear-gradient(90deg,rgba(10,25,42,.97) 0%,rgba(12,29,47,.82) 50%,rgba(12,30,48,.25) 100%),url('./public/images/opera-house-hero.webp') center/cover}
+.musical-editorial-hero__inner {position:relative;z-index:1;padding:38px clamp(24px,5vw,65px)}
+.musical-editorial-overline {color:#d8c296;letter-spacing:.15em;font:700 .72rem/1.4 var(--sans)}
+.musical-editorial-hero h1 {font:400 clamp(2.6rem,6vw,4.7rem)/1.08 var(--serif);margin:12px 0;color:#fff}
+.musical-editorial-hero h1 em {font-weight:400;color:#eee1c0}
+.musical-editorial-quote {font:italic clamp(1.1rem,2vw,1.4rem)/1.5 var(--serif);color:#f2deb3;margin:12px 0}
+.musical-editorial-hero__sub {font:.85rem/1.5 var(--sans);color:#e5e8ed;margin:16px 0 0}
+.musical-editorial-section {margin-top:19px;background:#fffdf9;border:1px solid #e2dccc;border-radius:10px;overflow:hidden}
+.musical-editorial-section>summary {display:flex;align-items:center;justify-content:space-between;cursor:pointer;list-style:none;padding:22px clamp(18px,3vw,32px);font:500 1.55rem/1.35 var(--serif);color:#24364a}
+.musical-editorial-section>summary::-webkit-details-marker {display:none}
+.musical-editorial-section>summary small {font:400 .92rem/1.4 var(--serif);color:#777a7b}
+.musical-editorial-section>summary:focus-visible {outline:3px solid #b89d69;outline-offset:-3px}
+.musical-editorial-chevron {color:#b69b6a;transition:transform .18s}
+.musical-editorial-section[open] .musical-editorial-chevron {transform:rotate(180deg)}
+.musical-editorial-about {display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.9fr);gap:36px;padding:6px clamp(18px,3vw,32px) 32px;border-top:1px solid #eee7dc}
+.musical-editorial-prose {font:1.06rem/1.8 var(--serif);color:#3c444d}
+.musical-editorial-prose a {color:#85622f;text-underline-offset:3px}
+.musical-editorial-facts {margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:18px 16px;align-content:start}
+.musical-editorial-facts dt {font:700 .7rem/1.3 var(--sans);letter-spacing:.1em;color:#8d805f}
+.musical-editorial-facts dd {margin:5px 0 0;font:.97rem/1.5 var(--serif);color:#293c4e}
+.musical-editorial .musical-score-reader {border:0;background:transparent;border-radius:0}
+.musical-editorial .musical-score-toolbar {padding:14px 22px;border-top:1px solid #eee7dc}
+.musical-editorial .musical-score-grid {padding:0 22px 18px}
+.musical-editorial .musical-score-row--entry {padding:14px 8px}
+.musical-score-passage__title {margin:0;padding:13px 8px 6px;color:#9c804c;font:600 .81rem/1.4 var(--sans);letter-spacing:.035em}
+.musical-relation {color:#8e7042;font-weight:800}
+.musical-editorial .musical-score-footer {margin:8px 22px 22px;padding-top:14px;border-top:1px solid #e6e0d8;color:#65666b;font:.83rem/1.5 var(--sans)}
+.musical-editorial .musical-score-footer a {color:#86652e}
+html[data-theme="night"] .musical-editorial {background:#161f29;color:#ecedef}
+html[data-theme="night"] .musical-editorial-section {background:#222c35;border-color:#43505c}
+html[data-theme="night"] .musical-editorial-section>summary,html[data-theme="night"] .musical-editorial-facts dd {color:#eee7dc}
+html[data-theme="night"] .musical-editorial-prose,html[data-theme="night"] .musical-editorial-facts dt {color:#d4d0c9}
+html[data-theme="night"] .musical-breadcrumb {color:#ced0d2}
+html[data-theme="night"] .musical-editorial-about,html[data-theme="night"] .musical-editorial .musical-score-toolbar {border-color:#43505c}
+@media(max-width:740px){.musical-editorial-about {grid-template-columns:1fr;gap:8px}.musical-editorial-hero {min-height:260px}.musical-editorial-hero__inner {padding:27px 22px}.musical-editorial-section>summary {font-size:1.25rem}.musical-editorial-section>summary small {display:block;margin-top:3px}.musical-editorial .musical-score-grid {padding:0 12px 12px}}

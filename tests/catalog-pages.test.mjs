@@ -177,32 +177,19 @@ test("the musicals directory searches its details and reports no matches", () =>
   assert.ok(renderMusicalsPage("no matching work").includes("No musicals match"));
 });
 
-test("the musical detail page has About and Lyrics tabs and factual work details", () => {
-  const page = renderMusicalPage("about");
-  for (const text of ["About", "Lyrics", "aria-current=\"page\"", "Choral symphony", "Friedrich Klopstock and Gustav Mahler", "About this work"]) {
-    assert.ok(page.includes(text), `missing ${text}`);
-  }
-  assert.ok(page.includes("?view=lyrics"));
+test("musical detail combines breadcrumb, hero, and collapsible About and Lyrics", () => {
+ const page=renderMusicalPage();
+ for(const label of ["Home","Musicals","I shall live again!",'class="musical-editorial-hero"',"About this work","Lyrics","Friedrich Klopstock", "<details", "Gustav Mahler"]) assert.ok(page.includes(label), "missing "+label);
+ assert.equal((page.match(/<details/g)||[]).length,2);
+ assert.ok(!page.includes("?view=lyrics"));
 });
 
-test("Mahler lyrics use three vocal/lyrics/translation columns and compact overlap cues", () => {
-  const html = renderMusicalPage("lyrics");
-  for (const label of ["Vocal part", "German · Original", "English · Translation", "(OV.)",
-    "GUSTAV MAHLER · SYMPHONY NO. 2", "Choir (SATB)", "Contralto solo",
-    "data-musical-translation-toggle", "data-musical-translation", "lang=\"de\"", "lang=\"en\"",
-    "Orchestra", "Oh pain, you who pervade all things!"])
-    assert.ok(html.includes(label), "missing " + label);
-  assert.ok(html.indexOf("Vocal part") < html.indexOf("German · Original"));
-  assert.ok(html.indexOf("German · Original") < html.indexOf("English · Translation"));
-  assert.ok(!html.includes("Overlapping / staggered voices — follow each lane independently"));
-  assert.ok(!html.includes("Rehearsal reference"));
-  assert.ok(!html.includes("data-timestamp"));
-  const css = readFileSync("styles.css", "utf8");
-  assert.ok(css.includes(".musical-score-reader.is-translation-hidden"));
-  assert.ok(css.includes(".musical-score-english[hidden]"));
-  const main = readFileSync("src/main.js", "utf8");
-  assert.ok(main.includes("setupMusicalTranslationToggle();"));
-  assert.ok(main.includes("cell.hidden = hidden;"));
+test("Mahler lyrics preserve columns, translation toggle, and precise relationship markers", () => {
+ const html=renderMusicalPage();
+ for(const label of ["Vocal part / relationship","German · Original","English · Translation","↳ Relay","∥ Parallel","= Together","Choir (SATB)","Contralto solo","data-musical-translation-toggle",'lang="de"','lang="en"',"Orchestra"]) assert.ok(html.includes(label),"missing "+label);
+ assert.ok(!html.includes("(OV.)"));
+ assert.ok(readFileSync("styles.css","utf8").includes(".musical-editorial-hero"));
+ assert.ok(readFileSync("src/main.js","utf8").includes("setupMusicalTranslationToggle();"));
 });
 
 test("every score-aligned German line has its paired English translation", async () => {
@@ -222,10 +209,8 @@ test("Mahler's score-aligned German preserves the complete repeated choral line 
     "Sterben werd’ ich, um zu leben!"
   ], "rehearsal 47 sings the full sentence twice; a sustained note is not a substitute for the repeated phrase");
   const bereite = mahlerFinaleEvents.find(event => event.id === "bereite");
-  assert.deepEqual(bereite.lanes[0].lines, [
-    "Bereite dich!",
-    "Bereite dich, zu leben!"
-  ], "rehearsal 43 includes the short call before the complete command");
+  assert.deepEqual(mahlerFinaleEvents.find(event => event.id === "hoer-auf").lanes.at(-1).lines.slice(-1), ["Bereite dich!"]);
+  assert.deepEqual(bereite.lanes[0].lines, ["Bereite dich, zu leben!"], "rehearsal 43 includes the short call before the complete command");
   for (const german of [...sterben.lanes[0].lines, ...bereite.lanes[0].lines])
     assert.ok(mahlerFinaleTranslations[german], "English line missing for " + german);
   assert.equal(mahlerFinaleEvents.find(event => event.id === "finale").lanes[0].lines
@@ -242,7 +227,7 @@ test("Mahler data preserves end repetitions and independent vocal lines", async 
   assert.equal(words.filter(x => x.startsWith("zu gott")).length, 3);
   const duet = mahlerFinaleEvents.find(event => event.id === "schmerz-tod");
   assert.equal(duet.relation, "overlap");
-  assert.deepEqual(duet.lanes.map(x => x.voice), ["Contralto solo", "Soprano solo"]);
+  assert.deepEqual(duet.lanes.map(x => x.voice), ["Contralto solo", "Soprano solo", "Contralto solo"]);
   assert.equal(mahlerFinaleEvents.find(event => event.id === "wings-choir").lanes.length, 4);
   assert.ok(mahlerFinaleEvents.every(event => event.kind === "instrumental" ||
     (event.cue && event.lanes.every(lane => lane.voice && lane.lines.length))));

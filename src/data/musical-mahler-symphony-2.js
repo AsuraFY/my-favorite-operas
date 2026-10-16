@@ -1,7 +1,7 @@
 // Score-aligned German vocal events for Mahler, Symphony No. 2, movement V.
 // Original text before translation. No audio timestamps.
 // Provisional part allocation is explicitly marked for further verification.
-// Editorial standard: Opera/guidelines/musical_score_guidelines_v20261015.
+// Editorial standard: Opera/guidelines/Musical_Website_Guidelines.md.
 export const mahlerFinaleSources = {
   "score": "https://imslp.org/wiki/Symphony_No.2_(Mahler,_Gustav)",
   "scoreDescription": "Universal Edition (1914), historic vocal score #733772; choral score and full score listed on IMSLP",
@@ -13,332 +13,358 @@ export const mahlerFinaleEvents = [
   {
     "id": "orchestral-opening",
     "kind": "instrumental",
-    "title": "Orchestral introduction",
-    "description": "The fifth movement opens instrumentally. The choir enters only after an extended orchestral passage."
+    "title": "Orchestral introduction"
   },
   {
     "id": "first-resurrection",
     "kind": "vocal",
-    "title": "Aufersteh’n — a quiet choral beginning",
-    "cue": "31–33",
-    "relation": "together",
+    "title": "Aufersteh’n — quiet choral entrance",
+    "cue": "31–34",
+    "verificationStatus": "draft",
     "lanes": [
       {
-        "voice": "Choir (SATB) + soprano solo",
+        "voice": "Soprano solo + Choir (SATB)",
+        "relationship": "together",
         "lines": [
           "Aufersteh’n, ja aufersteh’n wirst du,",
           "Mein Staub, nach kurzer Ruh!",
           "Unsterblich Leben!",
-          "Unsterblich Leben",
-          "wird, der dich rief, dich rief, dir geben!"
-        ],
-        "entrance": ""
+          "Unsterblich Leben"
+        ]
+      },
+      {
+        "voice": "Soprano solo + upper choir",
+        "relationship": "parallel",
+        "lines": [
+          "Wird, der dich rief, dich rief, dir geben!"
+        ]
+      },
+      {
+        "voice": "Lower choir parts",
+        "relationship": "parallel",
+        "lines": [
+          "Wird, der dich rief, dir geben!"
+        ]
       }
-    ],
-    "note": "The repeated words ‘Unsterblich Leben’ and ‘dich rief’ remain visible; specific part-by-part details are still being checked."
+    ]
   },
   {
     "id": "orchestral-transition-one",
     "kind": "instrumental",
-    "title": "Instrumental transition",
-    "description": "The orchestra continues before the next choral entrance."
+    "title": "Orchestral transition"
   },
   {
     "id": "wieder",
     "kind": "vocal",
-    "title": "Wieder aufzublüh’n — staggered voices",
-    "cue": "35",
-    "relation": "overlap",
+    "title": "Wieder aufzublüh’n — layered choir",
+    "cue": "35–38",
+    "verificationStatus": "draft",
     "lanes": [
       {
-        "voice": "Choir — tenors and basses",
+        "voice": "Choir — lower voices",
+        "relationship": "solo",
         "lines": [
           "Wieder aufzublüh’n wirst du gesät!"
-        ],
-        "entrance": "First entrance"
+        ]
       },
       {
-        "voice": "Choir — sopranos and altos + soprano solo",
+        "voice": "Choir — upper voices",
+        "relationship": "relay",
         "lines": [
           "Wieder aufzublüh’n wirst du gesät!"
-        ],
-        "entrance": "Answering entrance while lower voices are singing"
+        ]
+      },
+      {
+        "voice": "Continuing choir parts",
+        "relationship": "parallel",
+        "lines": [
+          "Wieder aufzublüh’n wirst du gesät!"
+        ]
       }
-    ],
-    "note": "These are independently timed choral entries, not two consecutive full-choir verses."
+    ]
   },
   {
     "id": "harvest",
     "kind": "vocal",
-    "title": "Der Herr der Ernte — voices entering in layers",
-    "cue": "36–37",
-    "relation": "overlap",
+    "title": "Der Herr der Ernte",
+    "cue": "36–38",
+    "verificationStatus": "draft",
     "lanes": [
       {
-        "voice": "Choir — lower voices",
+        "voice": "Soprano solo + choir sopranos",
+        "relationship": "solo",
         "lines": [
-          "Der Herr der Ernte geht,"
-        ],
-        "entrance": "Begin the phrase"
+          "Der Herr der Ernte geht,",
+          "und sammelt Garben"
+        ]
       },
       {
-        "voice": "Choir — upper voices",
+        "voice": "Other choir parts",
+        "relationship": "parallel",
         "lines": [
-          "Der Herr der Ernte geht,"
-        ],
-        "entrance": "Enter against the lower parts"
-      },
-      {
-        "voice": "Choir (SATB)",
-        "lines": [
-          "und sammelt Garben",
+          "Der Herr der Ernte geht,",
           "uns ein, die starben!"
-        ],
-        "entrance": "Parts converge in the closing words"
+        ]
       }
-    ],
-    "note": "The precise exchange of syllables between individual choir parts remains under review."
+    ]
   },
   {
     "id": "orchestral-transition-two",
     "kind": "instrumental",
-    "title": "Instrumental interlude",
-    "description": "A passage for orchestra separates the choral harvest text from the contralto’s solo."
+    "title": "Orchestral interlude"
   },
   {
     "id": "glaube-contralto",
     "kind": "vocal",
-    "title": "O glaube, mein Herz",
+    "title": "O glaube — contralto",
     "cue": "39–40",
-    "relation": "solo",
+    "verificationStatus": "draft",
     "lanes": [
       {
         "voice": "Contralto solo",
+        "relationship": "solo",
         "lines": [
           "O glaube, mein Herz, o glaube:",
           "Es geht dir nichts verloren!",
           "Dein ist, dein, ja dein, was du gesehnt!",
           "Dein, was du geliebt, was du gestritten!"
-        ],
-        "entrance": ""
+        ]
       }
-    ],
-    "note": ""
+    ]
   },
   {
     "id": "glaube-soprano",
     "kind": "vocal",
-    "title": "O glaube — the soprano responds",
+    "title": "O glaube — soprano",
     "cue": "41",
-    "relation": "solo",
+    "verificationStatus": "draft",
     "lanes": [
       {
         "voice": "Soprano solo",
+        "relationship": "solo",
         "lines": [
           "O glaube:",
           "Du wardst nicht umsonst geboren!",
           "Hast nicht umsonst gelebt, gelitten!"
-        ],
-        "entrance": ""
+        ]
       }
-    ],
-    "note": "The choir begins its next thought as this passage comes to an end; the soprano’s words are not repeated in the next section."
+    ]
   },
   {
     "id": "vergehen",
     "kind": "vocal",
-    "title": "Was entstanden ist — staggered choral entrances",
+    "title": "Was entstanden ist",
     "cue": "42",
-    "relation": "overlap",
+    "verificationStatus": "draft",
     "lanes": [
       {
-        "voice": "Choir — tenors and basses",
+        "voice": "Choir — lower voices",
+        "relationship": "solo",
         "lines": [
-          "Was entstanden ist, das muss vergehen!",
-          "Was vergangen, auferstehen!"
-        ],
-        "entrance": "Initial lower-voice statement"
+          "Was entstanden ist, das muss vergehen!"
+        ]
       },
       {
-        "voice": "Choir — sopranos and altos",
+        "voice": "Choir — upper voices",
+        "relationship": "relay",
         "lines": [
           "Was vergangen, auferstehen!"
-        ],
-        "entrance": "Answering and reinforcing entrance"
+        ]
+      },
+      {
+        "voice": "Continuing choir parts",
+        "relationship": "parallel",
+        "lines": [
+          "Was vergangen, auferstehen!"
+        ]
       }
-    ],
-    "note": "The entrance relationship is shown; exact SATB boundaries should be checked against each part."
+    ]
   },
   {
     "id": "hoer-auf",
     "kind": "vocal",
-    "title": "Hör auf zu beben! — echoing parts",
+    "title": "Hör auf zu beben",
     "cue": "43",
-    "relation": "overlap",
+    "verificationStatus": "draft",
     "lanes": [
       {
-        "voice": "Choir — tenors and basses",
+        "voice": "Choir — first entrance",
+        "relationship": "solo",
         "lines": [
           "Hör auf zu beben!"
-        ],
-        "entrance": "First statement"
+        ]
       },
       {
-        "voice": "Choir — sopranos and altos + contralto solo",
+        "voice": "Choir — answering voices",
+        "relationship": "relay",
         "lines": [
           "Hör auf zu beben!"
-        ],
-        "entrance": "Second, overlapping entrance"
+        ]
+      },
+      {
+        "voice": "Choir — basses",
+        "relationship": "parallel",
+        "lines": [
+          "Hör auf zu beben!",
+          "Bereite dich!"
+        ]
       }
-    ],
-    "note": "Both occurrences are retained because different vocal parts enter separately."
+    ]
   },
   {
     "id": "bereite",
     "kind": "vocal",
-    "title": "Bereite dich zu leben!",
+    "title": "Bereite dich, zu leben!",
     "cue": "43",
-    "relation": "together",
+    "verificationStatus": "draft",
     "lanes": [
       {
-        "voice": "Choir (SATB) + contralto solo",
+        "voice": "Choir + Contralto solo",
+        "relationship": "together",
         "lines": [
-          "Bereite dich!",
           "Bereite dich, zu leben!"
-        ],
-        "entrance": ""
+        ]
       }
-    ],
-    "note": "Mahler's published German text repeats the imperative: ‘Bereite dich! Bereite dich, zu leben!’ The shorter standalone command must not be omitted."
+    ]
   },
   {
     "id": "schmerz-tod",
     "kind": "vocal",
-    "title": "O Schmerz / O Tod — interwoven solos",
+    "title": "O Schmerz! — O Tod!",
     "cue": "44",
-    "relation": "overlap",
+    "verificationStatus": "draft",
     "lanes": [
       {
         "voice": "Contralto solo",
+        "relationship": "solo",
         "lines": [
           "O Schmerz! Du Alldurchdringer!",
-          "Dir bin ich entrungen!",
-          "O Tod! Du Allbezwinger!",
-          "Nun bist du bezwungen!"
-        ],
-        "entrance": "Begins first"
+          "Dir bin ich entrungen!"
+        ]
       },
       {
         "voice": "Soprano solo",
+        "relationship": "relay",
+        "lines": [
+          "O Tod! Du Allbezwinger!",
+          "Nun bist du bezwungen, bezwungen!"
+        ]
+      },
+      {
+        "voice": "Contralto solo",
+        "relationship": "parallel",
         "lines": [
           "O Tod! Du Allbezwinger!",
           "Nun bist du bezwungen!"
-        ],
-        "entrance": "Enters while the contralto’s line continues"
+        ]
       }
-    ],
-    "note": "These lanes overlap. They are not to be read as one voice finishing before the other begins; fine-grained alignment remains under review."
+    ]
   },
   {
     "id": "wings-soloists",
     "kind": "vocal",
-    "title": "Mit Flügeln — overlapping solo lines",
+    "title": "Mit Flügeln — soloists",
     "cue": "45–46",
-    "relation": "overlap",
+    "verificationStatus": "draft",
     "lanes": [
       {
         "voice": "Soprano solo",
+        "relationship": "relay",
         "lines": [
           "Mit Flügeln, die ich mir errungen,",
           "in heißem Liebesstreben",
-          "werd’ ich entschweben",
-          "zum Licht, zu dem kein Aug’ gedrungen!"
-        ],
-        "entrance": "Begins this musical thought"
+          "werd’ ich entschweben"
+        ]
       },
       {
         "voice": "Contralto solo",
+        "relationship": "parallel",
         "lines": [
           "Mit Flügeln, die ich mir errungen,",
-          "in heißem Liebesstreben",
-          "werd’ ich entschweben",
+          "In Liebesstreben",
+          "werd’ ich entschweben"
+        ]
+      },
+      {
+        "voice": "Soprano solo + Contralto solo",
+        "relationship": "together",
+        "lines": [
           "zum Licht, zu dem kein Aug’ gedrungen!"
-        ],
-        "entrance": "Follows independently; phrases overlap"
+        ]
       }
-    ],
-    "note": "Shared words do not mean simultaneous syllables. The hand-off between singers needs note-by-note confirmation."
+    ]
   },
   {
     "id": "wings-choir",
     "kind": "vocal",
-    "title": "Mit Flügeln — choir lines build independently",
-    "cue": "46–47",
-    "relation": "overlap",
+    "title": "Mit Flügeln — the choir builds",
+    "cue": "46",
+    "verificationStatus": "draft",
     "lanes": [
       {
         "voice": "Choir — basses",
+        "relationship": "solo",
         "lines": [
           "Mit Flügeln, die ich mir errungen,",
           "werde ich entschweben!"
-        ],
-        "entrance": "Lower-voice entrance"
+        ]
       },
       {
         "voice": "Choir — altos",
-        "lines": [
-          "Mit Flügeln, die ich mir errungen,",
-          "werde ich, ja werde ich entschweben!"
-        ],
-        "entrance": "Enters against the basses"
-      },
-      {
-        "voice": "Choir — tenors",
-        "lines": [
-          "Mit Flügeln, die ich mir errungen,",
-          "werde ich entschweben!"
-        ],
-        "entrance": "Separate melodic entrance"
-      },
-      {
-        "voice": "Choir — sopranos",
+        "relationship": "relay",
         "lines": [
           "Mit Flügeln, die ich mir errungen,",
           "werde ich entschweben!",
-          "werde ich entschweben!"
-        ],
-        "entrance": "Upper-voice entrance and continuation"
+          "Mit Flügeln, die ich mir errungen,",
+          "werde ich, ja werde ich entschweben!"
+        ]
+      },
+      {
+        "voice": "Choir — tenors",
+        "relationship": "relay",
+        "lines": [
+          "Mit Flügeln, die ich mir errungen,",
+          "werde ich entschweben!",
+          "Werd’ ich entschweben!"
+        ]
+      },
+      {
+        "voice": "Choir — sopranos",
+        "relationship": "relay",
+        "lines": [
+          "Mit Flügeln, die ich mir errungen,",
+          "werde ich entschweben, entschweben!"
+        ]
       }
-    ],
-    "note": "Part-specific repetition counts and exact overlaps are an editorial review item; these lanes are a reading aid, not a note-by-note performance transcription."
+    ]
   },
   {
     "id": "sterben",
     "kind": "vocal",
     "title": "Sterben werd’ ich, um zu leben!",
     "cue": "47",
-    "relation": "together",
+    "verificationStatus": "score-reviewed",
     "lanes": [
       {
         "voice": "Choir (SATB)",
+        "relationship": "together",
         "lines": [
           "Sterben werd’ ich, um zu leben!",
           "Sterben werd’ ich, um zu leben!"
-        ],
-        "entrance": ""
+        ]
       }
-    ],
-    "note": "Two consecutive complete choir statements are notated at rehearsal 47, beginning around bars 696 and 704 in the vocal score (Carus 23.802/04, pp. 24–25)."
+    ]
   },
   {
     "id": "finale",
     "kind": "vocal",
-    "title": "Aufersteh’n — final choir and soloists",
+    "title": "Aufersteh’n — final chorus",
     "cue": "48–49",
-    "relation": "together",
+    "verificationStatus": "draft",
     "lanes": [
       {
-        "voice": "Choir (SATB) + soprano solo + contralto solo",
+        "voice": "Choir (SATB)",
+        "relationship": "together",
         "lines": [
           "Aufersteh’n, ja aufersteh’n wirst du,",
           "mein Herz, in einem Nu!",
@@ -347,22 +373,25 @@ export const mahlerFinaleEvents = [
           "zu Gott,",
           "zu Gott,",
           "zu Gott wird es dich tragen!"
-        ],
-        "entrance": ""
+        ]
       }
-    ],
-    "note": "The final ‘Was du geschlagen’ is sung twice and ‘zu Gott’ three times; every occurrence is shown."
+    ]
   },
   {
     "id": "orchestral-end",
     "kind": "instrumental",
-    "title": "Orchestral conclusion",
-    "description": "The singing ends; the full orchestral ending continues."
+    "title": "Orchestral conclusion"
   }
-]
+];
 
 // English is a working translation, separate from the score-aligned German.
 export const mahlerFinaleTranslations = {
+  "Wird, der dich rief, dich rief, dir geben!": "Will give it to you, the one who called you, called you!",
+  "Wird, der dich rief, dir geben!": "Will give it to you, the one who called you!",
+  "Nun bist du bezwungen, bezwungen!": "Now you have been conquered, conquered!",
+  "In Liebesstreben": "In striving born of love",
+  "Werd’ ich entschweben!": "I shall soar away!",
+  "werde ich entschweben, entschweben!": "I shall soar away, soar away!",
   "Aufersteh’n, ja aufersteh’n wirst du,": "Rise again, yes, you shall rise again,",
   "Mein Staub, nach kurzer Ruh!": "My dust, after a brief rest!",
   "Unsterblich Leben!": "Immortal life!",
