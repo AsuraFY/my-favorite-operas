@@ -3,7 +3,7 @@ import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-43";
 import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-complete";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-2";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-3";
 
 const app = document.querySelector("#app");
 
@@ -433,7 +433,11 @@ function shell(content, active) {
       event.preventDefault();
       const query = form.querySelector("input")?.value.trim() || "";
       const target = form.dataset.searchRoute || "/operas";
-      window.location.hash = query ? `#${target}?q=${encodeURIComponent(query)}` : `#${target}`;
+      const composer = target === "/musicals" ? form.dataset.composer || "" : "";
+      const params = new URLSearchParams();
+      if (composer) params.set("composer", composer);
+      if (query) params.set("q", query);
+      window.location.hash = `#${target}${params.size ? "?" + params.toString() : ""}`;
     });
   });
 }
@@ -503,8 +507,8 @@ function aboutPage() {
   return `<section class="about-page section-wrap"><p class="eyebrow"><span class="eyebrow-rule"></span> About</p><h1>A personal collection<br /><em>of opera.</em></h1><p>This is a place for the operas I love: their libretti, translations, characters, and the details that make each one worth returning to.</p><a class="text-link" href="#/operas">Explore the collection ${arrow}</a></section>`;
 }
 
-function musicalsPage(query = "", sort = "title") {
-  return renderMusicalsPage(query, sort);
+function musicalsPage(query = "", sort = "title", composer = "") {
+  return renderMusicalsPage(query, sort, composer);
 }
 
 function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
@@ -721,6 +725,7 @@ function render() {
   const routeParams = new URLSearchParams(queryString);
   const query = routeParams.get("q") || "";
   const sort = routeParams.get("sort") || "title";
+  const composer = routeParams.get("composer") || "";
   if (path === "/" || path === "") {
     shell(homePage(), "home");
     document.title = "My favorite Operas";
@@ -737,14 +742,15 @@ function render() {
     shell(aboutPage(), "about");
     document.title = "About — My favorite Operas";
   } else if (path === "/musicals") {
-    shell(musicalsPage(query, sort), "musicals");
+    shell(musicalsPage(query, sort, composer), "musicals");
     app.querySelector("#musicals-directory-sort")?.addEventListener("change", (event) => {
       const params = new URLSearchParams();
+      if (composer) params.set("composer", composer);
       if (query) params.set("q", query);
       params.set("sort", event.currentTarget.value);
       window.location.hash = `#/musicals?${params.toString()}`;
     });
-    document.title = "Musicals — My favorite Operas";
+    document.title = (composer ? composer + " — " : "") + "Musicals — My favorite Operas";
   } else if (path.startsWith("/musicals/")) {
     const slug = path.split("/")[2];
     if (slug === "mahler-symphony-2-resurrection") {

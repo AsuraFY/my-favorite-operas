@@ -16,9 +16,11 @@ function escapeHtml(value) {
   })[character]);
 }
 
-export function renderMusicalsPage(query = '', sort = 'title') {
+export function renderMusicalsPage(query = '', sort = 'title', composer = '') {
   const normalizedQuery = query.trim().toLocaleLowerCase();
+  const normalizedComposer = composer.trim().toLocaleLowerCase();
   const matches = musicalWorks.filter(work =>
+    (!normalizedComposer || work.composer.toLocaleLowerCase() === normalizedComposer) &&
     [work.title, work.composer, work.year, work.summary]
       .some(value => String(value).toLocaleLowerCase().includes(normalizedQuery))
   );
@@ -28,6 +30,8 @@ export function renderMusicalsPage(query = '', sort = 'title') {
     return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
   });
   const safeQuery = escapeHtml(query);
+  const safeComposer = escapeHtml(composer);
+  const composerNotice = composer ? '<p class="musicals-composer-filter">Works by <strong>' + safeComposer + '</strong> · <a href="#/musicals">View all musicals</a></p>' : '';
   const rows = matches.map((work, index) => `
     <a class="musical-row" href="#/musicals/${work.slug}" style="--card-index:${index}">
       <h2>${escapeHtml(work.title)}</h2>
@@ -37,9 +41,9 @@ export function renderMusicalsPage(query = '', sort = 'title') {
 
   return `<section class="directory-scenic" aria-hidden="true"></section>
 <section class="directory-intro section-wrap musicals-directory-intro">
-  <div class="directory-intro__panel"><h1>Musicals</h1><p>Explore musical works through their stories, background, and lyrics with translation.</p></div>
+  <div class="directory-intro__panel"><h1>Musicals</h1><p>Explore musical works through their stories, background, and lyrics with translation.</p>${composerNotice}</div>
   <div class="directory-tools">
-    <form class="opera-search opera-search--directory" data-search-form data-search-route="/musicals" role="search">
+    <form class="opera-search opera-search--directory" data-search-form data-search-route="/musicals" data-composer="${safeComposer}" role="search">
       <label class="sr-only" for="musicals-directory-search">Search musical title or composer</label>
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg>
       <input id="musicals-directory-search" name="q" type="search" placeholder="Search title or composer..." value="${safeQuery}" autocomplete="off" />
@@ -73,5 +77,5 @@ function renderMusicalLyrics() {
   return '<div class="musical-score-reader" data-musical-score-reader><div class="musical-score-toolbar"><p class="musical-score-toolbar__legend"><span>↳ Relay</span><span>∥ Parallel</span><span>= Together</span><span>SATB = Soprano · Alto · Tenor · Bass</span></p><button class="musical-score-translation-toggle" type="button" data-musical-translation-toggle aria-controls="mahler-score-lyrics" aria-expanded="true">Hide translation</button></div><div class="musical-score-scroll" tabindex="0" aria-label="Vocal text columns; scroll horizontally on a narrow screen"><div class="musical-score-grid" id="mahler-score-lyrics"><div class="musical-score-row musical-score-row--head"><div class="musical-score-part">Vocal part / relationship</div><div class="musical-score-original">German · Original</div><div class="musical-score-english" data-musical-translation>English · Translation</div></div>'+mahlerFinaleEvents.map(renderScoreEvent).join("")+'</div></div><div class="musical-score-footer"><p><strong>Listening transcription · under review.</strong> The choral entrances and repetitions in “Wieder aufzublüh’n,” “Hör auf zu beben,” and particularly “Mit Flügeln” need further part-by-part score checking. English is a working translation.</p><p>Sources: <a href="'+escapeHtml(mahlerFinaleSources.score)+'" target="_blank" rel="noopener noreferrer">Historical scores</a> · <a href="'+escapeHtml(mahlerFinaleSources.text)+'" target="_blank" rel="noopener noreferrer">Text reference</a>.</p></div></div>';
 }
 export function renderMusicalPage() {
-  return '<div class="musical-detail-page musical-editorial"><div class="musical-editorial-wrap"><nav class="musical-breadcrumb" aria-label="Breadcrumb"><a href="#/">Home</a><span>›</span><a href="#/musicals">Musicals</a><span>›</span><span aria-current="page">Symphony No. 2</span></nav><header class="musical-editorial-hero"><div class="musical-editorial-hero__inner"><p class="musical-editorial-overline">GUSTAV MAHLER · 1895 · CHORAL SYMPHONY</p><h1>Symphony No. 2<br><em>Resurrection</em></h1><p class="musical-editorial-quote">“I shall live again!”</p><p class="musical-editorial-hero__sub">Movement V · Im Tempo des Scherzos</p></div></header><details class="musical-editorial-section" open><summary><span>About this work</span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>'+renderMusicalAbout()+'</details><details class="musical-editorial-section" open><summary><span>Lyrics <small>· Movement V — Aufersteh’n</small></span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>'+renderMusicalLyrics()+'</details></div></div>';
+  return '<div class="musical-detail-page musical-editorial"><div class="musical-editorial-wrap"><nav class="musical-breadcrumb" aria-label="Breadcrumb"><a href="#/">Home</a><span>›</span><a href="#/musicals">Musicals</a><span>›</span><a href="#/musicals?composer=Gustav%20Mahler">Gustav Mahler</a><span>›</span><span aria-current="page">Symphony No. 2</span></nav><header class="musical-editorial-hero"><div class="musical-editorial-hero__inner"><p class="musical-editorial-overline">GUSTAV MAHLER · 1895 · CHORAL SYMPHONY</p><h1>Symphony No. 2<br><em>Resurrection</em></h1><p class="musical-editorial-quote">“I shall live again!”</p><p class="musical-editorial-hero__sub">Movement V · Im Tempo des Scherzos</p></div></header><details class="musical-editorial-section" open><summary><span>About this work</span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>'+renderMusicalAbout()+'</details><details class="musical-editorial-section" open><summary><span>Lyrics <small>· Movement V — Aufersteh’n</small></span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>'+renderMusicalLyrics()+'</details></div></div>';
 }

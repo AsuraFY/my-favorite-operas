@@ -2706,3 +2706,8 @@ html[data-theme="night"] .musical-editorial-prose,html[data-theme="night"] .musi
 html[data-theme="night"] .musical-breadcrumb {color:#ced0d2}
 html[data-theme="night"] .musical-editorial-about,html[data-theme="night"] .musical-editorial .musical-score-toolbar {border-color:#43505c}
 @media(max-width:740px){.musical-editorial-about {grid-template-columns:1fr;gap:8px}.musical-editorial-hero {min-height:260px}.musical-editorial-hero__inner {padding:27px 22px}.musical-editorial-section>summary {font-size:1.25rem}.musical-editorial-section>summary small {display:block;margin-top:3px}.musical-editorial .musical-score-grid {padding:0 12px 12px}}
+
+/* Composer-specific musical directory, linked from musical breadcrumbs. */
+.musicals-composer-filter { margin: 12px 0 0; font: .93rem/1.5 var(--sans); }
+.musicals-composer-filter strong { font-weight: 700; }
+.musicals-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }

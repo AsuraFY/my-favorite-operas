@@ -172,9 +172,16 @@ test("the musicals directory uses the Opera banner and clickable text-only rows"
   assert.ok(styles.includes(".musical-row:focus-visible"));
 });
 
-test("the musicals directory searches its details and reports no matches", () => {
+test("the musicals directory searches and filters strictly by composer", () => {
   assert.ok(renderMusicalsPage("mahler").includes('href="#/musicals/mahler-symphony-2-resurrection"'));
   assert.ok(renderMusicalsPage("no matching work").includes("No musicals match"));
+  const composerPage = renderMusicalsPage("", "title", "Gustav Mahler");
+  assert.ok(composerPage.includes("Works by <strong>Gustav Mahler</strong>"));
+  assert.ok(composerPage.includes('data-composer="Gustav Mahler"'));
+  assert.ok(composerPage.includes('href="#/musicals/mahler-symphony-2-resurrection"'));
+  assert.ok(composerPage.includes('href="#/musicals">View all musicals</a>'));
+  assert.ok(renderMusicalsPage("", "title", "Another Composer").includes("No musicals match"));
+  assert.ok(renderMusicalsPage("unrelated", "title", "Gustav Mahler").includes("No musicals match"));
 });
 
 test("musical detail combines breadcrumb, hero, and collapsible About and Lyrics", () => {
@@ -182,6 +189,10 @@ test("musical detail combines breadcrumb, hero, and collapsible About and Lyrics
  for(const label of ["Home","Musicals","I shall live again!",'class="musical-editorial-hero"',"About this work","Lyrics","Friedrich Klopstock", "<details", "Gustav Mahler"]) assert.ok(page.includes(label), "missing "+label);
  assert.equal((page.match(/<details/g)||[]).length,2);
  assert.ok(!page.includes("?view=lyrics"));
+ assert.ok(page.includes('<a href="#/musicals?composer=Gustav%20Mahler">Gustav Mahler</a>'));
+ assert.ok(page.includes('<span aria-current="page">Symphony No. 2</span>'));
+ assert.ok(page.indexOf('href="#/"') < page.indexOf('href="#/musicals"'));
+ assert.ok(page.indexOf('href="#/musicals"') < page.indexOf('href="#/musicals?composer=Gustav%20Mahler"'));
 });
 
 test("Mahler lyrics preserve columns, translation toggle, and precise relationship markers", () => {
