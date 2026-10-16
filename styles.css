@@ -1575,7 +1575,7 @@ button { font: inherit; }
 }
 
 /* Layered, persistent site and opera navigation; keep each bar in document flow. */
-:root { --sticky-site-height: 76px; --sticky-opera-height: 76px; }
+:root { --sticky-site-height: 76px; --sticky-breadcrumb-height: 0px; --sticky-opera-height: 76px; }
 .site-header {
   position: sticky;
   top: 0;
@@ -1584,7 +1584,7 @@ button { font: inherit; }
 }
 .opera-reading-page > .opera-subnav {
   position: sticky;
-  top: var(--sticky-site-height);
+  top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height));
   z-index: 70;
   box-shadow: 0 2px 7px rgba(21, 43, 62, .05);
 }
@@ -1600,7 +1600,7 @@ button { font: inherit; }
 .opera-reading-page[data-act] .scene-panel { overflow: visible; }
 @media (min-width: 701px) {
   .opera-reading-page[data-act] .reading-layout > .scene-sidebar[data-act-outline] {
-    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height));
     height: calc(100dvh - var(--sticky-site-height) - var(--sticky-opera-height));
     max-height: 100vh;
   }
@@ -1608,7 +1608,7 @@ button { font: inherit; }
 @media (max-width: 700px) {
   .opera-reading-page[data-act] .mobile-reader-toolbar {
     position: sticky;
-    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height));
     z-index: 65;
     min-height: 46px;
     margin-bottom: 15px;
@@ -1619,10 +1619,10 @@ button { font: inherit; }
   .opera-reading-page[data-act] .mobile-reader-toolbar nav { gap: 7px; }
 }
 .opera-reading-page[data-act] .libretto-scene-section {
-  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
+  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
 }
 .opera-reading-page[data-act] .scene-panel__top {
-  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
+  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
 }
 
 /* Full libretto index: every act, scene and musical section visible in one column. */
@@ -1806,7 +1806,7 @@ button { font: inherit; }
   .opera-reading-page[data-act] .desktop-outline-reopen:not([hidden]) {
     display: flex;
     position: sticky;
-    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height));
     z-index: 64;
     justify-content: flex-start;
     min-height: 41px;
@@ -2713,7 +2713,28 @@ html[data-theme="night"] .musical-editorial-about,html[data-theme="night"] .musi
 .musicals-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }
 
 /* Shared opera breadcrumb: Home › Operas › Composer › Work. */
-.opera-breadcrumb { display: flex; align-items: center; flex-wrap: wrap; gap: 11px; margin: 0 auto; padding-block: 18px; color: #68717c; font: 500 .82rem/1.5 var(--sans); }
+.opera-breadcrumb {
+  position: sticky;
+  top: var(--sticky-site-height);
+  z-index: 75;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 11px;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  padding: 10px 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  background: #fbf8f0;
+  border-bottom: 1px solid var(--line);
+  color: #68717c;
+  font: 500 .82rem/1.5 var(--sans);
+}
+.opera-breadcrumb > * { flex: 0 0 auto; }
 .opera-breadcrumb a { color: inherit; text-decoration: none; }
 .opera-breadcrumb a:hover { text-decoration: underline; }
 .opera-breadcrumb a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
@@ -2722,6 +2743,6 @@ html[data-theme="night"] .musical-editorial-about,html[data-theme="night"] .musi
 .opera-composer-filter { margin: 13px 0 0; font: .94rem/1.5 var(--sans); }
 .opera-composer-filter strong { font-weight: 700; }
 .opera-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }
-html[data-theme="night"] .opera-breadcrumb { color: #c5c9cc; }
+html[data-theme="night"] .opera-breadcrumb { color: #c5c9cc; background: #20262d; border-color: #45525e; }
 html[data-theme="night"] .opera-breadcrumb [aria-current="page"] { color: #f0ede6; }
-@media (max-width: 700px) { .opera-breadcrumb { width: calc(100% - 32px); gap: 7px; padding-block: 12px; font-size: .76rem; } }
+@media (max-width: 700px) { .opera-breadcrumb { width: 100%; gap: 7px; margin: 0; padding: 9px 0; font-size: .76rem; } }

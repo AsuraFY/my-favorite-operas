@@ -3,7 +3,7 @@ import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-43";
 import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-complete";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
-import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=opera-breadcrumb-1";
+import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=opera-breadcrumb-2";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-3";
 
 const app = document.querySelector("#app");
@@ -285,9 +285,11 @@ let stickyBarObserver = null;
 
 function measureStickyNavigation() {
   const header = app.querySelector(".site-header");
+  const breadcrumb = app.querySelector(".opera-breadcrumb");
   const operaBar = app.querySelector(".opera-subnav");
   const mobileToolbar = app.querySelector(".mobile-reader-toolbar");
   document.documentElement.style.setProperty("--sticky-site-height", (header?.getBoundingClientRect().height || 0) + "px");
+  document.documentElement.style.setProperty("--sticky-breadcrumb-height", (breadcrumb?.getBoundingClientRect().height || 0) + "px");
   document.documentElement.style.setProperty("--sticky-opera-height", (operaBar?.getBoundingClientRect().height || 0) + "px");
   document.documentElement.style.setProperty("--sticky-reader-height", (mobileToolbar?.getBoundingClientRect().height || 0) + "px");
 }
@@ -299,9 +301,11 @@ function setupStickyNavigation() {
   if (typeof ResizeObserver === "function") {
     stickyBarObserver = new ResizeObserver(measureStickyNavigation);
     const header = app.querySelector(".site-header");
+    const breadcrumb = app.querySelector(".opera-breadcrumb");
     const operaBar = app.querySelector(".opera-subnav");
     const toolbar = app.querySelector(".mobile-reader-toolbar");
     if (header) stickyBarObserver.observe(header);
+    if (breadcrumb) stickyBarObserver.observe(breadcrumb);
     if (operaBar) stickyBarObserver.observe(operaBar);
     if (toolbar) stickyBarObserver.observe(toolbar);
   }

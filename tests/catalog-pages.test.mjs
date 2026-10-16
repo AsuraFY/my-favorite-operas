@@ -286,3 +286,21 @@ test("all opera views route through the breadcrumb; composer searches and sortin
   assert.ok(main.includes('(target === "/musicals" || target === "/operas")'));
   assert.ok(!readFileSync("src/opera-info-page.js", "utf8").includes('class="opera-info__breadcrumbs"'));
 });
+
+test("opera breadcrumbs remain unindented, sticky, and on one horizontally scrollable line", () => {
+  const crumb = renderOperaBreadcrumb(operas[0]);
+  assert.ok(crumb.includes('class="opera-breadcrumb"'));
+  assert.ok(!crumb.includes('class="opera-breadcrumb section-wrap"'));
+  const styles = readFileSync("styles.css", "utf8");
+  const rule = styles.slice(styles.lastIndexOf(".opera-breadcrumb {"), styles.lastIndexOf(".opera-breadcrumb > *"));
+  assert.ok(rule.includes("position: sticky"));
+  assert.ok(rule.includes("top: var(--sticky-site-height)"));
+  assert.ok(rule.includes("flex-wrap: nowrap"));
+  assert.ok(rule.includes("overflow-x: auto"));
+  assert.ok(rule.includes("padding: 10px 0"));
+  assert.ok(styles.includes("top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height));"));
+  assert.ok(styles.includes("scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height)"));
+  const main = readFileSync("src/main.js", "utf8");
+  assert.ok(main.includes('style.setProperty("--sticky-breadcrumb-height"'));
+  assert.ok(main.includes("stickyBarObserver.observe(breadcrumb)"));
+});
