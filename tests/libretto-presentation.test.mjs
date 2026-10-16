@@ -541,7 +541,14 @@ test("all Così scenes render their complete sections, dialogue and outline cont
     const actSections = act.scenes.flatMap(scene => scene.sections);
     const passages = actSections.reduce((n, part) => n + part.turns.length, 0);
     assert.equal(count(page, /class="libretto-scene-section"/g), actSections.length);
-    assertSceneRows(page, { sections: actSections });
+    assertSceneRows(page, { sections: actSections }, true);
+    for (const section of actSections) for (const turn of section.turns) {
+      if (turn.speaker === "Stage direction") continue;
+      assert.equal(turn.it.split("\n").length, turn.en.split("\n").length);
+    }
+    const sung = renderedVersePairs(page).filter(pair => !pair[2]);
+    assert.ok(sung.every(pair => pair[0].trim() && pair[1].trim() && !pair[0].includes("<br>") && !pair[1].includes("<br>")));
+    assertActTargets(reader, cosi, act);
     assert.ok(page.includes('data-desktop-outline-collapse'));
     assert.ok(page.includes('data-desktop-outline-expand'));
     assert.ok(page.includes('data-outline-open'));

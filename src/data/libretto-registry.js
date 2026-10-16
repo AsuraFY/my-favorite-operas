@@ -2,8 +2,8 @@ import { applyCosiOutlineMetadata } from "./cosi-outline-metadata.js";
 // Data registry for complete libretti; the reader UI consumes this shape for every opera.
 // Original Così dialogue stays in the existing act files, unchanged.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-libretto-2";
-import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=act2-18";
+import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-lines-1";
+import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=cosi-lines-1";
 import { barbiereActOneScenes } from "./libretto-il-barbiere-di-siviglia-act-1.js?v=barbiere-act1-4";
 import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.js?v=barbiere-act2-3";
 import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-outline-1";
@@ -61,6 +61,8 @@ disguises["2:17"].Despina = "disguised as a notary";
 
 const cosi = {
   slug: "cosi-fan-tutte",
+  alignVerseLines: true,
+  preserveLineBreaks: true,
   continuousAct: true,
   opera: getOpera("cosi-fan-tutte"),
   composerShort: "W. A. MOZART",

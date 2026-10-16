@@ -4,9 +4,16 @@ export const count = (html, pattern) => (html.match(pattern) || []).length;
 
 // A source turn may render several rows: lyrics before/after an inline
 // direction stay separate from the direction itself.
-export function assertSceneRows(page, scene) {
+export function assertSceneRows(page, scene, alignLines = false) {
   let lyrics = 0, directions = 0;
-  for (const section of scene.sections) for (const turn of section.turns) {
+  const rows = turn => {
+    if (!alignLines || turn.speaker === "Stage direction") return [turn];
+    const translations = (turn.translation ?? turn.en).split("\n");
+    return (turn.original ?? turn.it).split("\n").map((line, index) => ({
+      ...turn, original: line, translation: translations[index]
+    }));
+  };
+  for (const section of scene.sections) for (const turn of section.turns.flatMap(rows)) {
     if (turn.speaker === "Stage direction") {
       directions++;
       continue;
@@ -14,7 +21,7 @@ export function assertSceneRows(page, scene) {
     const parts = value => turn.literalText
       ? [{ direction: false, text: value }]
       : String(value || "").split(/(\([^()]*\))/).filter(text => text.trim())
-        .map(text => ({ direction: text.startsWith("("), text }));
+        .map(text => ({ direction: /^\([^()]*\)$/.test(text), text }));
     const original = parts(turn.original ?? turn.it);
     const translated = parts(turn.translation ?? turn.en);
     assert.deepEqual(original.map(part => part.direction), translated.map(part => part.direction),
