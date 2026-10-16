@@ -11,7 +11,6 @@ export function renderOperaInformationPage(opera, details, { navigation = "", ha
     : '<div class="opera-info__art--sprite directory-card__image--' + escape(opera.color) + '" role="img" aria-label="Illustration inspired by ' + escape(opera.title) + '"></div>';
   return '<div class="opera-information">' +
     navigation +
-    '<div class="opera-info__breadcrumbs section-wrap"><a href="#/operas">All operas</a><span aria-hidden="true">›</span><span aria-current="page">' + escape(opera.title) + '</span></div>' +
     '<article aria-labelledby="opera-info-title">' +
       '<div class="opera-info__hero section-wrap">' +
         '<div class="opera-info__cover">' + image + '</div>' +

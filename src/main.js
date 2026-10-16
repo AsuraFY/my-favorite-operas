@@ -2,7 +2,8 @@ import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-43";
 import { getLibretto } from "./data/libretto-registry.js?v=macbeth-lines-complete";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
-import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-2";
+import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
+import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=opera-breadcrumb-1";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-editorial-3";
 
 const app = document.querySelector("#app");
@@ -433,7 +434,7 @@ function shell(content, active) {
       event.preventDefault();
       const query = form.querySelector("input")?.value.trim() || "";
       const target = form.dataset.searchRoute || "/operas";
-      const composer = target === "/musicals" ? form.dataset.composer || "" : "";
+      const composer = (target === "/musicals" || target === "/operas") ? form.dataset.composer || "" : "";
       const params = new URLSearchParams();
       if (composer) params.set("composer", composer);
       if (query) params.set("q", query);
@@ -485,8 +486,8 @@ function filterOperasByQuery(query = "") {
   ].some(value => normalizeOperaSearch(value).includes(term)));
 }
 
-function operaDirectoryPage(query = "", sort = "title") {
-  const matches = filterOperasByQuery(query);
+function operaDirectoryPage(query = "", sort = "title", composer = "") {
+  const matches = filterOperasByComposer(filterOperasByQuery(query), composer);
   matches.sort((a, b) => {
     if (sort === "composer") return a.composer.localeCompare(b.composer);
     if (sort === "year") return Number(b.premiered.match(/\d{4}/)?.[0]) - Number(a.premiered.match(/\d{4}/)?.[0]);
@@ -494,13 +495,15 @@ function operaDirectoryPage(query = "", sort = "title") {
     return titleKey(a.title).localeCompare(titleKey(b.title), undefined, { sensitivity: "base" });
   });
   const safeQuery = query.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+  const safeComposer = composer.replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+  const composerNotice = composer ? `<p class="opera-composer-filter">Works by <strong>${safeComposer}</strong> · <a href="#/operas">View all operas</a></p>` : "";
 
   const teasers = { "il-barbiere-di-siviglia": "A joyful comedy full of clever tricks, disguises and unforgettable music.", "cosi-fan-tutte": "A witty exploration of love, loyalty and human nature.", "tristan-und-isolde": "A passionate, tragic love story with extraordinary music.", macbeth: "A powerful drama of ambition, fate and conscience." };
   const cards = matches.map((opera, index) => {
     const year = opera.premiered.match(/\d{4}/)?.[0] || "";
     return `<a class="directory-card" href="#/operas/${opera.slug}" style="--card-index:${index}"><div class="directory-card__image directory-card__image--${opera.color}${opera.image ? " directory-card__image--standalone" : ""}" role="img" aria-label="Illustration inspired by ${opera.title}">${opera.image ? `<img src="${opera.image}" alt="" loading="lazy" />` : ""}</div><div class="directory-card__body"><h2>${opera.title}</h2><p class="directory-card__byline">${opera.composer}<span aria-hidden="true">·</span>${year}</p><p class="directory-card__summary">${teasers[opera.slug] || opera.summary}</p><span class="directory-card__button">View opera ${arrow}</span></div></a>`;
   }).join("");
-  return `<section class="directory-scenic" aria-hidden="true"></section><section class="directory-intro section-wrap"><div class="directory-intro__panel"><h1>Operas</h1><p>A collection of the operas I’m exploring, with libretti and English translations.</p></div><div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form role="search"><label class="sr-only" for="directory-search">Search opera title, composer or librettist</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search title, composer or librettist..." value="${safeQuery}" autocomplete="off" /></form><label class="directory-sort"><span>Sort by</span><select id="directory-sort" aria-label="Sort operas"><option value="title" ${sort === "title" ? "selected" : ""}>Title (A–Z)</option><option value="composer" ${sort === "composer" ? "selected" : ""}>Composer</option><option value="year" ${sort === "year" ? "selected" : ""}>Year (newest)</option></select></label></div></section><section class="directory-grid section-wrap" aria-label="Opera directory">${cards || `<p class="empty-results">No operas match “${safeQuery}”. Try another title, composer or librettist.</p>`}</section>`;
+  return `<section class="directory-scenic" aria-hidden="true"></section><section class="directory-intro section-wrap"><div class="directory-intro__panel"><h1>Operas</h1><p>A collection of the operas I’m exploring, with libretti and English translations.</p>${composerNotice}</div><div class="directory-tools"><form class="opera-search opera-search--directory" data-search-form data-search-route="/operas" data-composer="${safeComposer}" role="search"><label class="sr-only" for="directory-search">Search opera title, composer or librettist</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg><input id="directory-search" name="q" type="search" placeholder="Search title, composer or librettist..." value="${safeQuery}" autocomplete="off" /></form><label class="directory-sort"><span>Sort by</span><select id="directory-sort" aria-label="Sort operas"><option value="title" ${sort === "title" ? "selected" : ""}>Title (A–Z)</option><option value="composer" ${sort === "composer" ? "selected" : ""}>Composer</option><option value="year" ${sort === "year" ? "selected" : ""}>Year (newest)</option></select></label></div></section><section class="directory-grid section-wrap" aria-label="Opera directory">${cards || `<p class="empty-results">No operas match “${safeQuery}”. Try another title, composer or librettist.</p>`}</section>`;
 }
 
 function aboutPage() {
@@ -730,14 +733,15 @@ function render() {
     shell(homePage(), "home");
     document.title = "My favorite Operas";
   } else if (path === "/operas") {
-    shell(operaDirectoryPage(query, sort), "operas");
+    shell(operaDirectoryPage(query, sort, composer), "operas");
     app.querySelector("#directory-sort")?.addEventListener("change", (event) => {
       const params = new URLSearchParams();
+      if (composer) params.set("composer", composer);
       if (query) params.set("q", query);
       params.set("sort", event.currentTarget.value);
       window.location.hash = `#/operas?${params.toString()}`;
     });
-    document.title = "The collection — My favorite Operas";
+    document.title = (composer ? composer + " — " : "") + "The collection — My favorite Operas";
   } else if (path === "/about") {
     shell(aboutPage(), "about");
     document.title = "About — My favorite Operas";
@@ -767,7 +771,7 @@ function render() {
     const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
     const hasLibrettoDestination = routeParams.has("act") || routeParams.has("scene") || routeParams.has("item") || Boolean(query) || routeParams.has("contents");
     const selectedView = routeParams.get("view") || (opera && getLibretto(opera.slug) && !hasLibrettoDestination ? "synopsis" : "");
-    shell(opera ? operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (getLibretto(opera.slug) ? "opera" : "operas") : "");
+    shell(opera ? renderOperaBreadcrumb(opera) + operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (getLibretto(opera.slug) ? "opera" : "operas") : "");
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
   } else {
     window.location.hash = "#/";

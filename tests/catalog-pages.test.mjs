@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { operas } from "../src/data/operas.js";
 import { operaInformation } from "../src/data/opera-information.js";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/opera-info-page.js";
+import { renderOperaBreadcrumb, filterOperasByComposer } from "../src/opera-breadcrumb.js";
 import { getLibretto } from "../src/data/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { renderMusicalPage, renderMusicalsPage } from "../src/musicals-page.js";
@@ -249,4 +250,39 @@ test("the musical artwork is a WebP image", () => {
   const raw = readFileSync("public/images/opera-house-hero.webp");
   assert.equal(raw.toString("ascii", 0, 4), "RIFF");
   assert.equal(raw.toString("ascii", 8, 12), "WEBP");
+});
+
+test("all operas use Home / Operas / Composer / Work breadcrumb", () => {
+  for (const opera of operas) {
+    const crumb = renderOperaBreadcrumb(opera);
+    assert.ok(crumb.includes('aria-label="Breadcrumb"'), opera.slug);
+    assert.ok(crumb.includes('href="#/"'), opera.slug);
+    assert.ok(crumb.includes('href="#/operas"'), opera.slug);
+    assert.ok(crumb.includes('href="#/operas?composer=' + encodeURIComponent(opera.composer) + '"'), opera.slug);
+    assert.ok(crumb.includes('aria-current="page"'), opera.slug);
+    assert.ok(crumb.indexOf('href="#/"') < crumb.indexOf('href="#/operas"'));
+    assert.ok(crumb.indexOf('href="#/operas"') < crumb.indexOf('href="#/operas?composer='));
+  }
+});
+
+test("opera composer filtering returns only matching works", () => {
+  const rossini = filterOperasByComposer(operas, "Gioachino Rossini");
+  assert.ok(rossini.some(opera => opera.slug === "il-barbiere-di-siviglia"));
+  assert.ok(rossini.every(opera => opera.composer === "Gioachino Rossini"));
+  const puccini = filterOperasByComposer(operas, "Giacomo Puccini");
+  assert.ok(puccini.length > 1);
+  assert.ok(puccini.some(opera => opera.slug === "tosca"));
+  assert.ok(puccini.every(opera => opera.composer === "Giacomo Puccini"));
+  assert.equal(filterOperasByComposer(operas, "no composer").length, 0);
+  assert.equal(filterOperasByComposer(operas).length, operas.length);
+});
+
+test("all opera views route through the breadcrumb; composer searches and sorting retain filter", () => {
+  const main = readFileSync("src/main.js", "utf8");
+  assert.ok(main.includes("renderOperaBreadcrumb(opera) + operaPage(opera"));
+  assert.ok(main.includes('operaDirectoryPage(query, sort, composer)'));
+  assert.ok(main.includes('data-composer="${safeComposer}"'));
+  assert.ok(main.includes('if (composer) params.set("composer", composer);'));
+  assert.ok(main.includes('(target === "/musicals" || target === "/operas")'));
+  assert.ok(!readFileSync("src/opera-info-page.js", "utf8").includes('class="opera-info__breadcrumbs"'));
 });
