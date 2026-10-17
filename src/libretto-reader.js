@@ -419,8 +419,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     if (speaker === directionSpeaker) {
       const originalText = turn.original ?? turn.it ?? "";
       const translatedText = turn.translation ?? turn.en ?? "";
-      const original = libretto.bracketStageDirections ? "[" + originalText + "]" : originalText;
-      const translation = libretto.bracketStageDirections ? "[" + translatedText + "]" : translatedText;
+      const original = (turn.bracketStageDirection ?? libretto.bracketStageDirections) ? "[" + originalText + "]" : originalText;
+      const translation = (turn.bracketStageDirection ?? libretto.bracketStageDirections) ? "[" + translatedText + "]" : translatedText;
       const stageDirectionLabel = turn.shortCue ? '' : '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
       return anchorFirst(['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +

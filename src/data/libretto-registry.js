@@ -20,7 +20,7 @@ import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-ou
 import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-outline-1";
 import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-outline-1";
 
-import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-act1-review-2";
+import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-stage-paragraph-1";
 
 import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-1";
 import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-1";

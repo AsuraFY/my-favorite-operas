@@ -24,18 +24,9 @@ export const figaroActOneScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "Camera non affatto ammobiliata, una sedia d'appoggio in mezzo",
-            "en": "A room not yet fully furnished, with an armchair in the middle."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Figaro con una misura in mano",
-            "en": "Figaro with a measuring rule in his hand"
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "e Susanna allo specchio che si sta mettendo un capellino ornato di fiori",
-            "en": "and Susanna at the mirror, putting on a little hat adorned with flowers."
+            "it": "Camera non affatto ammobiliata, una sedia d'appoggio in mezzo\nFigaro con una misura in mano\ne Susanna allo specchio che si sta mettendo un capellino ornato di fiori",
+            "en": "A room not yet fully furnished, with an armchair in the middle.\nFigaro with a measuring rule in his hand\nand Susanna at the mirror, putting on a little hat adorned with flowers.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",

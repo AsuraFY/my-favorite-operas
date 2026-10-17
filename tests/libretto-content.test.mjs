@@ -109,7 +109,7 @@ test("Figaro Act I retains eight scenes, ten source numbers and complete paired 
     }
   }
   assert.equal(lines, 516);
-  assert.equal(directions, 67);
+  assert.equal(directions, 65);
   assert.ok(turns.find(turn => turn.speaker === "Il Conte").speakerTranslation === "The Count");
   assert.ok(turns.find(turn => turn.speaker === "Coro").speakerTranslation === "Chorus");
   assert.ok(turns.find(turn => turn.speaker === "Tutti").speakerTranslation === "All");

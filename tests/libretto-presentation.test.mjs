@@ -209,7 +209,7 @@ test("Figaro Act II renders every source line and keeps every deep link on the f
   const page = reader.scene(1);
   const pairs = renderedVersePairs(page);
   const expected = entries.flatMap(turn => turn.speaker === "Stage direction"
-    ? [[`[${turn.it}]`, `[${turn.en}]`, true]]
+    ? [[turn.bracketStageDirection === false ? turn.it.replaceAll("\n", "<br>") : `[${turn.it}]`, turn.bracketStageDirection === false ? turn.en.replaceAll("\n", "<br>") : `[${turn.en}]`, true]]
     : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
   assert.deepEqual(pairs, expected);
   assert.equal(pairs.length, 831);
@@ -224,10 +224,10 @@ test("Figaro renders each source line beside its own English line in source orde
   const page = createLibrettoRenderer(figaro).scene(1);
   const pairs = renderedVersePairs(page);
   const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
-    ? [[`[${turn.it}]`, `[${turn.en}]`, true]]
+    ? [[turn.bracketStageDirection === false ? turn.it.replaceAll("\n", "<br>") : `[${turn.it}]`, turn.bracketStageDirection === false ? turn.en.replaceAll("\n", "<br>") : `[${turn.en}]`, true]]
     : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
   assert.deepEqual(pairs, expected, "no source line omitted, duplicated or shifted to a different translation row");
-  assert.equal(pairs.length, 583);
+  assert.equal(pairs.length, 581);
   assert.equal((page.match(/class="libretto-scene-section"/g) || []).length, 22);
   assert.ok(page.includes("End of Act I"));
   const outline = createLibrettoRenderer(figaro).outline();
