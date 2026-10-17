@@ -597,7 +597,7 @@ test("Macbeth source divisions and unique English credits agree in both outlines
       for (const html of [outline, page]) {
         assert.ok(html.includes('href="' + href + '"'), href);
         const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
-        if (section.translatedTitle) assert.ok(entry.includes("Alternative ending — 1847"));
+        if (section.translatedTitle) assert.ok(entry.includes("Alternative scene — 1847"));
         else assert.ok(!entry.includes('opera-outline__section-translation'), "source supplies forms, not separate titles");
       }
       assert.equal(page.split('id="libretto-section-' + act.number + '-' + scene.number + '-' + item + '"').length - 1, 1);
@@ -626,8 +626,12 @@ test("Macbeth aligns every sung line across all four acts", () => {
     assert.deepEqual(renderedVersePairs(page), expected, 'all text pairs retained in Act ' + act.number);
     assert.ok(renderedVersePairs(page).filter(pair => !pair[2]).every(pair => !pair[0].includes('<br>') && !pair[1].includes('<br>')));
   }
-  const ending = libretto.acts[3].scenes[10].sections[1];
-  assert.equal(ending.translatedTitle, "Alternative ending — 1847");
+  const ending = libretto.acts[3].scenes[8].sections[1];
+  assert.equal(ending.translatedTitle, "Alternative scene — 1847");
+  window.location.hash = "#/operas/macbeth?act=4&scene=9&item=1";
+  const page = reader.scene(9, "", 1);
+  assert.ok(page.indexOf('id="libretto-section-4-9-1"') < page.indexOf('id="libretto-section-4-10-0"'));
+  assert.equal(libretto.acts[3].scenes[10].sections.length, 1);
   assert.equal(ending.turns.find(turn => turn.speaker === "Macbeth").it.split("\n").length, 8);
 });
 
