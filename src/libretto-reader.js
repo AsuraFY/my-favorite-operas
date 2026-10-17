@@ -158,6 +158,8 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
     const sceneLabel = libretto.threeLineOutline ? sceneSourceHeading(item) + ' · ' + sceneTranslatedHeading(item) : item.originalHeading ? item.originalHeading + ' · ' + (item.translatedHeading || 'Scene ' + romanNumeral(item.number)) : 'Scene ' + romanNumeral(item.number);
     return (beforeScene ? '<div class="section-nav">' + beforeScene + '</div>' : '') + '<details class="scene-group'+(selected?' is-current':'')+'"'+((expandAll||selected)?' open':'')+
       '><summary class="scene-group__summary"><span>'+escapeHtml(sceneLabel)+
+      (libretto.threeLineOutline && item.title ? ' · ' + escapeHtml(item.title) +
+        (item.translatedTitle ? '<span class="opera-outline__section-translation">' + escapeHtml(item.translatedTitle) + '</span>' : '') : '') +
       '</span><span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
 }
@@ -269,7 +271,7 @@ function renderCompleteSectionLink(scene, section, index, act) {
   const presentation = sectionPresentation(scene, section, index);
   const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number + '&item=' + sectionRouteItem(section, index);
   return sourceDivisionHeading(section) + '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
-    '<span class="opera-outline__section-title">' + escapeHtml(presentation.heading) + '</span>' +
+    '<span class="opera-outline__section-title">' + actOutlineIcon(section, true) + escapeHtml(presentation.heading) + '</span>' +
     ((libretto.threeLineOutline || section.type === "Passage") && presentation.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' : "") +
     sectionParticipantCredits(section, act, scene.number) + '</a>';
 
@@ -322,13 +324,13 @@ function renderCompleteOutlineAct(act) {
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
       if (scene.outline?.length) return renderOutlinePreludes(scene, act) + '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
         '<h3 id="' + sceneId + '">' + escapeHtml(libretto.sourceSceneOutline ? sceneSourceHeading(scene) + ' · ' + sceneTranslatedHeading(scene) : scene.title || actName) +
-        (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') +
+        (scene.translatedTitle ? '<span class="opera-outline__section-translation">' + escapeHtml(scene.translatedTitle) + '</span>' : '') +
         '</h3><div class="opera-outline__sections">' + renderSceneOutlineLinks(scene, act) + '</div></section>';
       const beforeScene = scene.sections.map((section, index) => section.beforeScene ? renderCompleteSectionLink(scene, section, index, act) : '').join('');
       return (beforeScene ? '<div class="opera-outline__sections opera-outline__sections--prelude">' + beforeScene + '</div>' : '') + '<section class="opera-outline__scene" aria-labelledby="' + (libretto.sceneDivisions === false ? 'outline-act-' + act : sceneId) + '">' +
         (libretto.sceneDivisions === false ? '' : '<h3 id="' + sceneId + '">' + escapeHtml(sceneSourceHeading(scene)) +
         ' <span>·</span> ' + escapeHtml(sceneTranslatedHeading(scene)) +
-        (scene.title ? ' <span>·</span> ' + escapeHtml(scene.title) + (scene.translatedTitle ? ' <span class="opera-outline__section-translation">(' + escapeHtml(scene.translatedTitle) + ')</span>' : '') : '') +
+        (scene.title ? ' <span>·</span> ' + escapeHtml(scene.title) + (scene.translatedTitle ? '<span class="opera-outline__section-translation">' + escapeHtml(scene.translatedTitle) + '</span>' : '') : '') +
         '</h3>') + '<div class="opera-outline__sections">' +
         scene.sections.map((section, index) => section.beforeScene ? '' : renderCompleteSectionLink(scene, section, index, act)).join("") + '</div></section>';
     }).join("") + '</details>';

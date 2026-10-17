@@ -33,3 +33,7 @@ Source: https://www.librettidopera.it/macbeth/a_04.html, “Finale originale del
 ## Alternative placement — 17 October 2026
 
 At the user’s request, moved the complete 1847 alternative to the second section of Scene IX, immediately before Scene X, with the editorial label “Scena alternativa — 1847 / Alternative scene — 1847.” Both outlines now target act=4&scene=9&item=1. Italian and English text are unchanged; the revised final scene remains in Scene XI. This is a presentation placement requested by the user, not a claim that the source labels the original final scene “Scene IX.”
+
+## Outline consistency check — 17 October 2026
+
+Checked all 44 destinations, original number/type labels, optional title translations, English participant names, deduplication, and musical icons in both outlines. The full outline also omitted the musical symbols used by the act outline; both now use the same icon renderer. Confirmed heading mismatch: the act sidebar omitted Scene I’s source setting Bosco / A wood while the full outline displayed it. Both now display the original setting with the scene heading and its translation on a separate line without parentheses. Source numbered headings have no separate aria titles; absent title-translation rows are intentional under the no-invented-titles rule. Numbered multi-part forms remain intact rather than being arbitrarily classified as recitatives. The 1847 alternative remains in Scene IX as requested. No sung text or translation changed. Automated checks pass; visual QA remains unverified.

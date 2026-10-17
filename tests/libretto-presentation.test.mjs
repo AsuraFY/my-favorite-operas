@@ -587,6 +587,14 @@ test("Macbeth source divisions and unique English credits agree in both outlines
   assert.ok(!outline.includes("Le profezie"));
   assert.ok(!outline.includes("La vendetta"));
   assert.ok(outline.includes("Scena ultima"));
+  window.location.hash = "#/operas/macbeth?act=1";
+  const sidebar = reader.scene(1).split('<aside class="scene-sidebar"')[1].split('</aside>')[0];
+  for (const html of [outline, sidebar]) {
+    assert.ok(html.includes('Bosco<span class="opera-outline__section-translation">A wood</span>'));
+    assert.ok(html.includes('section-nav-link__icon--song'));
+    assert.ok(!html.includes('Characters:'));
+  }
+
   let destinations = 0;
   for (const act of libretto.acts) {
     window.location.hash = "#/operas/macbeth?act=" + act.number;
