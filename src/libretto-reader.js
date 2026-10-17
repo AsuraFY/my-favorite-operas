@@ -369,13 +369,14 @@ function formatLibrettoText(value, breakVerseLines=true) {
   }
   return text.split(/\n+/).map(line => escapeHtml(line.trim())).filter(Boolean).join("<br>");
 }
-function splitInlineDirections(value, literalText = false) {
+function splitInlineDirections(value, literalText = false, inlineDirections) {
   if (literalText) return [{ type: "text", value: String(value || "") }];
   const text = String(value || "");
   const parts = [];
   const pattern = /\(([^()]*)\)/g;
   let last = 0, match;
   while ((match = pattern.exec(text))) {
+    if (inlineDirections && !inlineDirections.includes(match[1])) continue;
     if (match.index > last) parts.push({ type: "text", value: text.slice(last, match.index) });
     parts.push({ type: "direction", value: match[1] });
     last = pattern.lastIndex;
@@ -425,8 +426,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
         stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>']);
     }
-    const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText);
-    const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText);
+    const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText, turn.inlineDirections);
+    const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText, turn.inlineDirections);
     const count = Math.max(originalParts.length, translatedParts.length);
     const originalSpeaker = libretto.originalSpeakerNames?.[speaker] || speaker;
     const speakerTranslation = turn.speakerTranslation || libretto.speakerTranslations?.[speaker] || speaker;

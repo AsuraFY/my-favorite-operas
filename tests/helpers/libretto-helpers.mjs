@@ -18,9 +18,12 @@ export function assertSceneRows(page, scene, alignLines = false) {
       directions++;
       continue;
     }
-    const parts = value => turn.literalText
+    const directionPattern = turn.inlineDirections
+      ? new RegExp("(\\((?:" + turn.inlineDirections.map(cue => cue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")\\))")
+      : /(\([^()]*\))/;
+    const parts = value => turn.literalText || turn.inlineDirections?.length === 0
       ? [{ direction: false, text: value }]
-      : String(value || "").split(/(\([^()]*\))/).filter(text => text.trim())
+      : String(value || "").split(directionPattern).filter(text => text.trim())
         .map(text => ({ direction: /^\([^()]*\)$/.test(text), text }));
     const original = parts(turn.original ?? turn.it);
     const translated = parts(turn.translation ?? turn.en);

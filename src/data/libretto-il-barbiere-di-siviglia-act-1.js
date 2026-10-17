@@ -27,7 +27,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Fiorello",
             "it": "(avanzandosi con cautela) Piano pianissimo, senza parlar, tutti con me venite qua.",
-            "en": "(Advancing cautiously) Very softly, without speaking, all of you come here with me."
+            "en": "(Advancing cautiously) Very softly, without speaking, all of you come here with me.",
+            "inlineDirections": ["avanzandosi con cautela","Advancing cautiously"]
           },
           {
             "speaker": "Chorus",
@@ -42,7 +43,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(sottovoce) Fiorello... Olà...",
-            "en": "(Under his breath) Fiorello... Hey there..."
+            "en": "(Under his breath) Fiorello... Hey there...",
+            "inlineDirections": ["sottovoce","Under his breath"]
           },
           {
             "speaker": "Fiorello",
@@ -112,7 +114,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Chorus",
             "it": "(sotto voce) Mio signore.",
-            "en": "(Softly) My lord."
+            "en": "(Softly) My lord.",
+            "inlineDirections": ["sotto voce","Softly"]
           },
           {
             "speaker": "The Count",
@@ -132,7 +135,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Chorus",
             "it": "Mille grazie, mio signore, del favore, dell'onore... Ah, di tanta cortesia obbligati in verità. (Oh, che incontro fortunato! È un signor di qualità.)",
-            "en": "A thousand thanks, my lord, for your kindness and honour... We are truly obliged for such courtesy. (What a fortunate encounter! He is a gentleman of distinction.)"
+            "en": "A thousand thanks, my lord, for your kindness and honour... We are truly obliged for such courtesy. (What a fortunate encounter! He is a gentleman of distinction.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -229,17 +233,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(È desso, o pur m'inganno?)",
-            "en": "(Is that him, or am I mistaken?)"
+            "en": "(Is that him, or am I mistaken?)",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
             "it": "(Chi sarà mai costui?)",
-            "en": "(Who can that man be?)"
+            "en": "(Who can that man be?)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
             "it": "(Oh, è lui senz'altro.) Figaro!...",
-            "en": "(Oh, it is certainly him.) Figaro!..."
+            "en": "(Oh, it is certainly him.) Figaro!...",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
@@ -363,7 +370,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(da dentro) Ebben, ragazza... Il tempo è buono?... Cos'è quella carta?",
-            "en": "(From within) Well, young lady... Is the weather fine?... What is that paper?"
+            "en": "(From within) Well, young lady... Is the weather fine?... What is that paper?",
+            "inlineDirections": ["da dentro","From within"]
           },
           {
             "speaker": "Rosina",
@@ -373,12 +381,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(a Figaro) Ma brava! Dell'Inutil precauzione!",
-            "en": "(To Figaro) How clever! The Useless Precaution!"
+            "en": "(To Figaro) How clever! The Useless Precaution!",
+            "inlineDirections": ["a Figaro","To Figaro"]
           },
           {
             "speaker": "Figaro",
             "it": "(al Conte) Che furba!",
-            "en": "(To the Count) How sly!"
+            "en": "(To the Count) How sly!",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "Bartolo",
@@ -413,7 +423,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(da fuori) Ho inteso. (raccoglie la carta)",
-            "en": "(From outside) I understand. (He picks up the paper.)"
+            "en": "(From outside) I understand. (He picks up the paper.)",
+            "inlineDirections": ["da fuori","From outside","raccoglie la carta","He picks up the paper."]
           },
           {
             "speaker": "Rosina",
@@ -423,12 +434,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(sottovoce) Non temete.",
-            "en": "(Softly) Do not worry."
+            "en": "(Softly) Do not worry.",
+            "inlineDirections": ["sottovoce","Softly"]
           },
           {
             "speaker": "Bartolo",
             "it": "(fuori, cercando) Son qua: dov'è?",
-            "en": "(Outside, searching) I'm here; where is it?"
+            "en": "(Outside, searching) I'm here; where is it?",
+            "inlineDirections": ["fuori, cercando","Outside, searching"]
           },
           {
             "speaker": "Rosina",
@@ -499,7 +512,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "(legge) Le vostre assidue premure hanno eccitata la mia curiosità. Il mio tutore è per uscire di casa; appena si sarà allontanato procurate con qualche mezzo ingegnoso d'indicarmi il vostro nome, il vostro stato e le vostre intenzioni. Io non posso giammai comparire al balcone senza l'indivisibile compagnia del mio tiranno. Siate però certo che tutto è disposta a fare per rompere le sue catene la sventurata Rosina.",
-            "en": "(Reading) Your constant attentions have stirred my curiosity. My guardian is about to leave the house; as soon as he is gone, find some clever way to tell me your name, your station, and your intentions. I can never appear at the balcony without my tyrant's inseparable company. But be sure that poor Rosina is ready to do anything to break her chains."
+            "en": "(Reading) Your constant attentions have stirred my curiosity. My guardian is about to leave the house; as soon as he is gone, find some clever way to tell me your name, your station, and your intentions. I can never appear at the balcony without my tyrant's inseparable company. But be sure that poor Rosina is ready to do anything to break her chains.",
+            "inlineDirections": ["legge","Reading"]
           },
           {
             "speaker": "The Count",
@@ -524,7 +538,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(verso le quinte) Fra momenti io torno; non aprite a nessun. Se don Basilio venisse a cercarmi, che m'aspetti. Le mie nozze con lei meglio è affrettare; sì, dentr'oggi finir vo' quest'affare.",
-            "en": "(Calling inside) I'll be back shortly; don't open the door to anyone. If Don Basilio comes looking for me, tell him to wait. I must hasten my marriage to her; yes, I mean to settle this today."
+            "en": "(Calling inside) I'll be back shortly; don't open the door to anyone. If Don Basilio comes looking for me, tell him to wait. I must hasten my marriage to her; yes, I mean to settle this today.",
+            "inlineDirections": ["verso le quinte","Calling inside"]
           },
           {
             "speaker": "The Count",
@@ -577,7 +592,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(da dentro) L'amorosa sincera Rosina il suo core a Lindo...",
-            "en": "(From within) Loving, faithful Rosina gives her heart to Lindo..."
+            "en": "(From within) Loving, faithful Rosina gives her heart to Lindo...",
+            "inlineDirections": ["da dentro","From within"]
           },
           {
             "speaker": "Stage direction",
@@ -885,7 +901,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "In sepoltura?... Oibò! (chiamandola a parte) Sentite, io voglio...",
-            "en": "Buried alive?... Good gracious! (Drawing her aside) Listen, I want to..."
+            "en": "Buried alive?... Good gracious! (Drawing her aside) Listen, I want to...",
+            "inlineDirections": ["chiamandola a parte","Drawing her aside"]
           },
           {
             "speaker": "Rosina",
@@ -915,7 +932,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "Bravissima, vado. (Si nasconde nella prima porta a sinistra, poi si fa vedere di tanto in tanto.)",
-            "en": "Excellent. I am off. (He hides behind the first door on the left, peeking out now and then.)"
+            "en": "Excellent. I am off. (He hides behind the first door on the left, peeking out now and then.)",
+            "inlineDirections": ["Si nasconde nella prima porta a sinistra, poi si fa vedere di tanto in tanto.","He hides behind the first door on the left, peeking out now and then."]
           },
           {
             "speaker": "Rosina",
@@ -949,7 +967,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Ecco qua! Sempre grida.)",
-            "en": "(There he goes again! Always shouting.)"
+            "en": "(There he goes again! Always shouting.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -979,7 +998,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "Ebben, ve lo dirò. Sì, l'ho veduto, gli ho parlato, mi piace, m'è simpatico il suo discorso, il suo gioviale aspetto. (Crepa di rabbia, vecchio maledetto.)",
-            "en": "Well, I will tell you. Yes, I saw him and spoke with him. I like him; his lively manner and cheerful face appeal to me. (Burst with rage, you wicked old man.)"
+            "en": "Well, I will tell you. Yes, I saw him and spoke with him. I like him; his lively manner and cheerful face appeal to me. (Burst with rage, you wicked old man.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -989,17 +1009,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Berta",
             "it": "(Stranutando) Eccì!",
-            "en": "(Sneezing) Ah-choo!"
+            "en": "(Sneezing) Ah-choo!",
+            "inlineDirections": ["Stranutando","Sneezing"]
           },
           {
             "speaker": "Ambrogio",
             "it": "(Sbadigliando) Aah! Che comanda?",
-            "en": "(Yawning) Ahh! What is it?"
+            "en": "(Yawning) Ahh! What is it?",
+            "inlineDirections": ["Sbadigliando","Yawning"]
           },
           {
             "speaker": "Bartolo",
             "it": "(A Berta) Dimmi...",
-            "en": "(To Berta) Tell me..."
+            "en": "(To Berta) Tell me...",
+            "inlineDirections": ["A Berta","To Berta"]
           },
           {
             "speaker": "Berta",
@@ -1019,7 +1042,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(Ad Ambrogio) Rispondi almen tu, babbuino.",
-            "en": "(To Ambrogio) At least you answer, you idiot."
+            "en": "(To Ambrogio) At least you answer, you idiot.",
+            "inlineDirections": ["Ad Ambrogio","To Ambrogio"]
           },
           {
             "speaker": "Ambrogio",
@@ -1089,7 +1113,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "Eh, il diavol che vi porti! (Li caccia dentro la scena.)",
-            "en": "May the devil take you! (He drives them off.)"
+            "en": "May the devil take you! (He drives them off.)",
+            "inlineDirections": ["Li caccia dentro la scena.","He drives them off."]
           }
         ],
         "routeItem": 0,
@@ -1195,7 +1220,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Basilio",
             "it": "(Vengan denari; al resto son qua io.)",
-            "en": "(Let the money come; I'll take care of the rest.)"
+            "en": "(Let the money come; I'll take care of the rest.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Stage direction",
@@ -1329,12 +1355,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Io scommetto... scommetto ch'ei sa tutto. Or mi chiarisco.)",
-            "en": "(I'll wager he knows everything. I'll find out now.)"
+            "en": "(I'll wager he knows everything. I'll find out now.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
             "it": "(Ora casca.)",
-            "en": "(Now she'll fall for it.)"
+            "en": "(Now she'll fall for it.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
@@ -1381,12 +1409,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "Dunque io son... tu non m'inganni?\nDunque io son la fortunata!\n(Già me l'ero immaginata:\nlo sapevo pria di te.)",
-            "en": "So it is me... you are not deceiving me?\nI am the fortunate one!\n(I had already guessed it;\nI knew before you told me.)"
+            "en": "So it is me... you are not deceiving me?\nI am the fortunate one!\n(I had already guessed it;\nI knew before you told me.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
             "it": "Di Lindoro il vago oggetto,\nsì, voi siete, o mia Rosina.\n(È una volpe sopraffina,\nla sa lunga, per mia fé!)",
-            "en": "Yes, you are the lovely object\nof Lindoro's love, my Rosina.\n(She's a crafty little fox;\nshe knows a thing or two!)"
+            "en": "Yes, you are the lovely object\nof Lindoro's love, my Rosina.\n(She's a crafty little fox;\nshe knows a thing or two!)",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
@@ -1532,7 +1562,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(Diavolo!) E questi fogli? Or son cinque, eran sei.",
-            "en": "(Damn!) And these sheets? There are five now; there were six."
+            "en": "(Damn!) And these sheets? There are five now; there were six.",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
@@ -1547,7 +1578,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Maledetto.) La penna?... Per disegnare un fiore sul tamburo.",
-            "en": "(Damn him.) The pen?... To draw a flower on the tambourine."
+            "en": "(Damn him.) The pen?... To draw a flower on the tambourine.",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -1634,7 +1666,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "Brontola quanto vuoi, chiudi porte e finestre. Io me ne rido. Già di noi altre femmine, anche alla più marmotta, per aguzzar l'ingegno e farla spiritosa tutto a un tratto basta chiuderla a chiave, e il colpo è fatto. (Entra nella seconda camera a destra.)",
-            "en": "Grumble all you like; lock the doors and windows. I laugh at it. For us women, even the dullest girl need only be locked in a room to sharpen her wits and turn clever all at once; then the trick is done. (She goes into the second room on the right.)"
+            "en": "Grumble all you like; lock the doors and windows. I laugh at it. For us women, even the dullest girl need only be locked in a room to sharpen her wits and turn clever all at once; then the trick is done. (She goes into the second room on the right.)",
+            "inlineDirections": ["Entra nella seconda camera a destra.","She goes into the second room on the right."]
           }
         ],
         "routeItem": 0,
@@ -1672,7 +1705,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(Di dentro) Aprite.",
-            "en": "(From outside) Open up."
+            "en": "(From outside) Open up.",
+            "inlineDirections": ["Di dentro","From outside"]
           },
           {
             "speaker": "Berta",
@@ -1726,12 +1760,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(vedendolo) Ah... sì, sì... bene obbligato.",
-            "en": "(Seeing him) Ah... yes, yes... much obliged."
+            "en": "(Seeing him) Ah... yes, yes... much obliged.",
+            "inlineDirections": ["vedendolo","Seeing him"]
           },
           {
             "speaker": "Bartolo",
             "it": "(Qui costui che mai vorrà?)",
-            "en": "(What can this fellow want?)"
+            "en": "(What can this fellow want?)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -1746,7 +1782,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(leggendo) Ah ah, Bertoldo.",
-            "en": "(Reading) Ah, Bertoldo."
+            "en": "(Reading) Ah, Bertoldo.",
+            "inlineDirections": ["leggendo","Reading"]
           },
           {
             "speaker": "Bartolo",
@@ -1756,12 +1793,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "Ah, bravissimo, dottor Barbaro; benissimo... già c'è poca differenza. (Non si vede! Che impazienza! Quanto tarda!... dove sta?)",
-            "en": "Ah, excellent, Doctor Barbarous; very good... there isn't much difference. (I can't see her! What impatience! Why is she taking so long?... Where is she?)"
+            "en": "Ah, excellent, Doctor Barbarous; very good... there isn't much difference. (I can't see her! What impatience! Why is she taking so long?... Where is she?)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
             "it": "(Io già perdo la pazienza; qua prudenza ci vorrà.)",
-            "en": "(I am losing patience; I must be careful.)"
+            "en": "(I am losing patience; I must be careful.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -1801,12 +1840,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(Dalla rabbia, dal dispetto io già crepo in verità. Ah, che fo, se mi ci metto, qualche gran bestialità!)",
-            "en": "(I am bursting with anger and spite. If I give in, I may do something dreadful!)"
+            "en": "(I am bursting with anger and spite. If I give in, I may do something dreadful!)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
             "it": "(Ah, venisse il caro oggetto della mia felicità! Vieni, vieni; il tuo diletto pien d'amor t'attende qua.)",
-            "en": "(Ah, if only the dear object of my happiness would come! Come, come; your loving admirer waits here for you.)"
+            "en": "(Ah, if only the dear object of my happiness would come! Come, come; your loving admirer waits here for you.)",
+            "inlineDirections": []
           }
         ],
         "routeItem": 0,
@@ -1837,22 +1878,26 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(È Rosina: or son contento.)",
-            "en": "(It's Rosina; now I am happy.)"
+            "en": "(It's Rosina; now I am happy.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
             "it": "(Ei mi guarda, e s'avvicina.)",
-            "en": "(He is looking at me and coming closer.)"
+            "en": "(He is looking at me and coming closer.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
             "it": "(piano) Son Lindoro.",
-            "en": "(Softly) It is Lindoro."
+            "en": "(Softly) It is Lindoro.",
+            "inlineDirections": ["piano","Softly"]
           },
           {
             "speaker": "Rosina",
             "it": "(Oh ciel! Che sento! Ah, giudizio per pietà.)",
-            "en": "(Heavens! What do I hear? Please, be careful.)"
+            "en": "(Heavens! What do I hear? Please, be careful.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -1907,17 +1952,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "Via, prendete... (guardando Bartolo) Maledetto! (mostrandole un biglietto) Fate presto, per pietà.",
-            "en": "Come, take this... (Looking at Bartolo) Damn him! (Showing Rosina a note) Quickly, I beg you."
+            "en": "Come, take this... (Looking at Bartolo) Damn him! (Showing Rosina a note) Quickly, I beg you.",
+            "inlineDirections": ["guardando Bartolo","Looking at Bartolo","mostrandole un biglietto","Showing Rosina a note"]
           },
           {
             "speaker": "Rosina",
             "it": "Ah, ci guarda! (guardando Bartolo) Maledetto! Ah, giudizio, per pietà.",
-            "en": "Ah, he's watching us! (Looking at Bartolo) Damn him! Please, be careful."
+            "en": "Ah, he's watching us! (Looking at Bartolo) Damn him! Please, be careful.",
+            "inlineDirections": ["guardando Bartolo","Looking at Bartolo"]
           },
           {
             "speaker": "Bartolo",
             "it": "(Ubriaco maledetto! Ah, costui crepar mi fa.)",
-            "en": "(Damn drunk! This fellow will be the death of me.)"
+            "en": "(Damn drunk! This fellow will be the death of me.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -1962,17 +2010,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count and Rosina",
             "it": "(Cento smanie io sento addosso; ah, più reggere non so.)",
-            "en": "(A hundred anxieties are upon me; I can bear it no longer.)"
+            "en": "(A hundred anxieties are upon me; I can bear it no longer.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
             "it": "(cercando nello scrittoio) Ah, trovarlo ancor non posso, ma sì, sì, lo troverò. Ecco qui: «Con la presente il dottor Bartolo, etcetera, esentiamo...»",
-            "en": "(Searching in the desk) I can't find it yet, but I will. Here it is: “By this document, Doctor Bartolo is exempt...”"
+            "en": "(Searching in the desk) I can't find it yet, but I will. Here it is: “By this document, Doctor Bartolo is exempt...”",
+            "inlineDirections": ["cercando nello scrittoio","Searching in the desk"]
           },
           {
             "speaker": "The Count",
             "it": "(manda in aria la pergamena) Eh, andate al diavolo, non mi state più a seccar.",
-            "en": "(Knocking the paper away) Go to the devil! Stop bothering me."
+            "en": "(Knocking the paper away) Go to the devil! Stop bothering me.",
+            "inlineDirections": ["manda in aria la pergamena","Knocking the paper away"]
           },
           {
             "speaker": "Bartolo",
@@ -2002,7 +2053,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "Dunque lei... lei vuol battaglia? Ben!... battaglia le vo' dar. Bella cosa una battaglia! Ve la voglio or or mostrar. Osservate: questo è il fosso, l'inimico voi sarete... Attenzion... (a Rosina) Giù il fazzoletto... e gli amici stan di qua. Attenzione!",
-            "en": "So you want a battle? Very well!... I'll give you battle. A battle is a fine thing! I'll show you at once. Look: this is the trench; you are the enemy... Attention... (To Rosina) Drop the handkerchief... and our friends are over there. Attention!"
+            "en": "So you want a battle? Very well!... I'll give you battle. A battle is a fine thing! I'll show you at once. Look: this is the trench; you are the enemy... Attention... (To Rosina) Drop the handkerchief... and our friends are over there. Attention!",
+            "inlineDirections": ["a Rosina","To Rosina"]
           },
           {
             "speaker": "Stage direction",
@@ -2017,7 +2069,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(raccoglie il biglietto) Che cos'è? Ah!",
-            "en": "(Picking up the note) What is this? Ah!"
+            "en": "(Picking up the note) What is this? Ah!",
+            "inlineDirections": ["raccoglie il biglietto","Picking up the note"]
           },
           {
             "speaker": "Bartolo",
@@ -2052,7 +2105,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Ah, cambiar potessi il foglio!...) ",
-            "en": "(If only I can switch the paper!...) "
+            "en": "(If only I can switch the paper!...) ",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -2092,7 +2146,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "Ah, fraschetta! (strappa il foglio) Ah, che vedo! Ho preso abbaglio!... È la lista, son di stucco! Ah, son proprio un mammalucco, ah, che gran bestialità!",
-            "en": "You little minx! (Tearing the paper) What do I see? I was mistaken!... It's the list; I'm astonished! I really am a fool—what stupidity!"
+            "en": "You little minx! (Tearing the paper) What do I see? I was mistaken!... It's the list; I'm astonished! I really am a fool—what stupidity!",
+            "inlineDirections": ["strappa il foglio","Tearing the paper"]
           },
           {
             "speaker": "Rosina and The Count",
@@ -2107,17 +2162,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(piangendo) Ecco qua... sempre un'istoria, sempre oppressa e maltrattata; ah, che vita disperata, non la so più sopportar.",
-            "en": "(Weeping) There it is... always another scene, always oppressed and mistreated. What a wretched life; I can bear it no longer."
+            "en": "(Weeping) There it is... always another scene, always oppressed and mistreated. What a wretched life; I can bear it no longer.",
+            "inlineDirections": ["piangendo","Weeping"]
           },
           {
             "speaker": "Bartolo",
             "it": "(avvicinandosi) Ah, Rosina... poverina...",
-            "en": "(Coming closer) Ah, Rosina... poor girl..."
+            "en": "(Coming closer) Ah, Rosina... poor girl...",
+            "inlineDirections": ["avvicinandosi","Coming closer"]
           },
           {
             "speaker": "The Count",
             "it": "(afferrandolo) Vien qua tu, cosa le hai fatto?",
-            "en": "(Grabbing him) Come here! What have you done to her?"
+            "en": "(Grabbing him) Come here! What have you done to her?",
+            "inlineDirections": ["afferrandolo","Grabbing him"]
           },
           {
             "speaker": "Bartolo",
@@ -2127,12 +2185,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(cavando la sciabola) Ah, canaglia, traditore!",
-            "en": "(Drawing his sabre) You villain, you traitor!"
+            "en": "(Drawing his sabre) You villain, you traitor!",
+            "inlineDirections": ["cavando la sciabola","Drawing his sabre"]
           },
           {
             "speaker": "All",
             "it": "(trattenendolo) Via, fermatevi, signore! Gente, aiuto, per pietà!",
-            "en": "(Holding him back) Stop, sir! Help, someone, for mercy's sake!"
+            "en": "(Holding him back) Stop, sir! Help, someone, for mercy's sake!",
+            "inlineDirections": ["trattenendolo","Holding him back"]
           },
           {
             "speaker": "The Count",
@@ -2186,12 +2246,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "Alto là! Che cosa accadde, signori miei? Che chiasso è questo, eterni dèi! Già sulla piazza a questo strepito s'è radunata mezza città. (al Conte) Signor, prudenza, per carità.",
-            "en": "Hold there! What has happened, my friends? What is all this noise, heavens above? Half the town has gathered in the square at this racket. (To the Count) Be careful, sir, I beg you."
+            "en": "Hold there! What has happened, my friends? What is all this noise, heavens above? Half the town has gathered in the square at this racket. (To the Count) Be careful, sir, I beg you.",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "Bartolo",
             "it": "(al Conte) Questi è un birbante...",
-            "en": "(Pointing to the Count) This man is a rogue..."
+            "en": "(Pointing to the Count) This man is a rogue...",
+            "inlineDirections": ["al Conte","Pointing to the Count"]
           },
           {
             "speaker": "The Count",
@@ -2206,17 +2268,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(minacciandolo con la sciabola) Ah, maledetto!...",
-            "en": "(Threatening him with his sabre) You villain!..."
+            "en": "(Threatening him with his sabre) You villain!...",
+            "inlineDirections": ["minacciandolo con la sciabola","Threatening him with his sabre"]
           },
           {
             "speaker": "Figaro",
             "it": "(alzando il bacile) Signor soldato, porti rispetto, o questo fusto, corpo del diavolo, or le creanze le insegnerà.",
-            "en": "(Raising his shaving basin) Show some respect, soldier, or this devil of a fellow will teach you your manners."
+            "en": "(Raising his shaving basin) Show some respect, soldier, or this devil of a fellow will teach you your manners.",
+            "inlineDirections": ["alzando il bacile","Raising his shaving basin"]
           },
           {
             "speaker": "The Count",
             "it": "(a Bartolo) Brutto scimmiotto...",
-            "en": "(To Bartolo) You ugly ape..."
+            "en": "(To Bartolo) You ugly ape...",
+            "inlineDirections": ["a Bartolo","To Bartolo"]
           },
           {
             "speaker": "Bartolo",
@@ -2226,7 +2291,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "(a Bartolo) Zitto, dottore...",
-            "en": "(To Bartolo) Quiet, Doctor..."
+            "en": "(To Bartolo) Quiet, Doctor...",
+            "inlineDirections": ["a Bartolo","To Bartolo"]
           },
           {
             "speaker": "Bartolo",
@@ -2236,7 +2302,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "(al Conte) Fermo, signore...",
-            "en": "(To the Count) Hold still, sir..."
+            "en": "(To the Count) Hold still, sir...",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "The Count",
@@ -2246,7 +2313,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "Fate silenzio, per carità! (Si ode bussare con violenza alla porta.) Zitti, che battono... che mai sarà?",
-            "en": "Be quiet, for mercy's sake! (Violent knocking is heard at the door.) Hush, someone is knocking... what can it be?"
+            "en": "Be quiet, for mercy's sake! (Violent knocking is heard at the door.) Hush, someone is knocking... what can it be?",
+            "inlineDirections": ["Si ode bussare con violenza alla porta.","Violent knocking is heard at the door."]
           },
           {
             "speaker": "Bartolo",
@@ -2256,7 +2324,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Chorus",
             "it": "(da dentro) La forza! Aprite qua.",
-            "en": "(From outside) The police! Open up!"
+            "en": "(From outside) The police! Open up!",
+            "inlineDirections": ["da dentro","From outside"]
           },
           {
             "speaker": "All",
@@ -2271,7 +2340,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "(Quest'avventura ah, come diavolo mai finirà?)",
-            "en": "(How on earth will this adventure end?)"
+            "en": "(How on earth will this adventure end?)",
+            "inlineDirections": []
           }
         ],
         "routeItem": 0,
@@ -2367,7 +2437,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Officer",
             "it": "Fate silenzio, che intesi già. (al Conte) Siete in arresto, fuori di qua.",
-            "en": "Silence; I have heard enough. (To the Count) You are under arrest; come with me."
+            "en": "Silence; I have heard enough. (To the Count) You are under arrest; come with me.",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "The Count",
@@ -2416,7 +2487,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "(ridendo) Guarda don Bartolo! Sembra una statua? Ah ah, dal ridere sto per crepar.",
-            "en": "(Laughing) Look at Doctor Bartolo! Doesn't he look like a statue? I could die laughing."
+            "en": "(Laughing) Look at Doctor Bartolo! Doesn't he look like a statue? I could die laughing.",
+            "inlineDirections": ["ridendo","Laughing"]
           }
         ],
         "routeItem": 1,
@@ -2439,7 +2511,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(all'Uffiziale) Ma, signor...",
-            "en": "(To the Officer) But, sir..."
+            "en": "(To the Officer) But, sir...",
+            "inlineDirections": ["all'Uffiziale","To the Officer"]
           },
           {
             "speaker": "Chorus",
