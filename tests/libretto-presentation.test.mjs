@@ -625,3 +625,43 @@ test("Macbeth aligns every sung line across all four acts", () => {
     assert.ok(renderedVersePairs(page).filter(pair => !pair[2]).every(pair => !pair[0].includes('<br>') && !pair[1].includes('<br>')));
   }
 });
+
+// Act III–IV review: speaker headings are metadata, not sung verses. Introductory
+// directions share their musical section without invalidating the old URLs.
+test("Figaro Acts III–IV preserve paired text and both current and legacy passage targets", () => {
+  const reader = createLibrettoRenderer(figaro);
+  for (const act of figaro.acts.slice(2)) {
+    window.location.hash = `#/operas/${figaro.slug}?act=${act.number}`;
+    const page = reader.scene(1);
+    const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
+    const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
+      ? [[turn.bracketStageDirection === false ? turn.it.replaceAll("\n", "<br>") : `[${turn.it}]`,
+          turn.bracketStageDirection === false ? turn.en.replaceAll("\n", "<br>") : `[${turn.en}]`, true]]
+      : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
+    assert.deepEqual(renderedVersePairs(page), expected);
+    assert.ok(!page.includes("KernKonzepte") && !page.includes("Impressum"));
+    for (const turn of turns.filter(turn => turn.speaker !== "Stage direction")) {
+      assert.ok(!/^(?:[A-Z ,]+(?:e|ed) [A-Z ,]+)$/m.test(turn.it), "no embedded speaker cues in lyrics");
+      assert.ok(turn.speakerTranslation);
+    }
+    assertActTargets(reader, figaro, act);
+    let offset = 0;
+    for (const scene of act.scenes) {
+      for (const [index, section] of scene.sections.entries()) {
+        assert.equal(new Set(section.participants).size, section.participants.length);
+        for (const alias of section.routeAliases || []) {
+          window.location.hash = `#/operas/${figaro.slug}?act=${act.number}&scene=${scene.number}&item=${alias}`;
+          const oldLinkPage = reader.scene(scene.number, "", alias);
+          assert.ok(oldLinkPage.includes(`data-initial-item="${offset + index}"`));
+          assert.equal(count(oldLinkPage, new RegExp(`id="libretto-section-${act.number}-${scene.number}-${alias}"`, "g")), 1);
+        }
+      }
+      offset += scene.sections.length;
+    }
+  }
+  const lastScene = figaro.acts[3].scenes.at(-1);
+  const ensemblePardon = lastScene.sections[0].turns.find(turn =>
+    turn.it === "Perdono! Perdono!" && turn.speaker.includes("Bartolo"));
+  assert.ok(ensemblePardon, "the ensemble's pardon is not attributed to the Count");
+  assert.equal(ensemblePardon.speaker, "Bartolo, Cherubino, Marcellina, Basilio, Antonio, Susanna e Figaro");
+});

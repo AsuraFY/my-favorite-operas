@@ -1,4 +1,5 @@
-// Le nozze di Figaro Act 3: Italian source from Opera Guide; English draft translated locally.
+// Le nozze di Figaro Act 3: Opera Guide Italian; English editorially reviewed 17 October 2026.
+// Embedded source speaker headings restored as cues; scraped footer/separators excluded.
 export const figaroActThreeScenes = [
   {
     "number": 1,
@@ -6,33 +7,29 @@ export const figaroActThreeScenes = [
     "sections": [
       {
         "type": "Recitativo",
-        "participants": [],
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "it": "Sala ricca con due troni e preparata a festa nuziale",
-            "en": "Rich room with two thrones and prepared for wedding party"
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Il Conte solo",
-            "en": "The Count alone"
-          }
-        ]
-      },
-      {
-        "type": "Recitativo",
         "participants": [
-          "Il Conte"
+          "The Count"
         ],
         "turns": [
           {
+            "speaker": "Stage direction",
+            "it": "Sala ricca con due troni e preparata a festa nuziale\nIl Conte solo",
+            "en": "A richly furnished hall with two thrones, prepared for a wedding celebration.\nThe Count alone.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
             "speaker": "Il Conte",
-            "it": "Che imbarazzo è mai questo!\nUn foglio anonimo...\nLa cameriera in gabinetto chiusa...\nLa padrona confusa... un uom che salta\ndal balcone in giardino...un altro appresso\nche dice esser quel desso...\nnon so cosa pensar. Potrebbe forse\nqualcun de' miei vassalli...a simil razza\nè comune l'ardir, ma la Contessa...\nAh, che un dubbio l'offende.\nElla rispetta troppo sé stessa:\ne l'onor mio... l'onore...\ndove diamin l'ha posto umano errore!",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "What an embarrassment is this!\nAn anonymous sheet...\nThe waitress in the closed toilet...\nThe confused mistress... a jumping oom\nfrom the balcony in the garden... another\nWho says it's that bone...\nI don't know what to think.\nSome of my vassals...\nIt is common to ardor, but the Countess...\nAh, that doubt offends you.\nShe respects herself too much:\nand my honor... the honor...\nWhere diamin put it human error!"
+            "it": "Che imbarazzo è mai questo!\nUn foglio anonimo...\nLa cameriera in gabinetto chiusa...\nLa padrona confusa... un uom che salta\ndal balcone in giardino...un altro appresso\nche dice esser quel desso...\nnon so cosa pensar. Potrebbe forse\nqualcun de' miei vassalli...a simil razza\nè comune l'ardir, ma la Contessa...\nAh, che un dubbio l'offende.\nElla rispetta troppo sé stessa:\ne l'onor mio... l'onore...\ndove diamin l'ha posto umano errore!",
+            "en": "What a perplexing business this is!\nAn anonymous note...\nThe maid locked in the dressing room...\nThe mistress flustered... a man jumping\nfrom the balcony into the garden... another following\nwho claims to be that very man...\nI do not know what to think. Perhaps\none of my servants... such people\nare often bold, but the Countess...\nAh, even doubting her is an insult.\nShe has too much respect for herself:\nand for my honour... honour...\nwhere the devil has human folly placed it!",
+            "literalText": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       }
     ]
@@ -44,348 +41,366 @@ export const figaroActThreeScenes = [
       {
         "type": "Recitativo",
         "participants": [
-          "La Contessa",
-          "Il Conte",
+          "The Countess",
+          "The Count",
           "Susanna"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "Il suddetto, la Contessa e Susanna; s'arrestano in fondo alla scena, non vedute dal Conte",
-            "en": "The aforementioned, the Countess and Susanna; they stand at the bottom of the scene, not seen by the Count"
+            "en": "The Count, the Countess and Susanna; the women stop at the back of the stage, unseen by the Count.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "a Susanna",
-            "en": "to Susanna"
+            "en": "To Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Via, fatti core: digli\nche ti attenda in giardino.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Go, chore facts: tell him\nthat waits for you in the garden."
+            "it": "Via, fatti core: digli\nche ti attenda in giardino.",
+            "en": "Come, take courage: tell him\nto wait for you in the garden.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Saprò se Cherubino\nera giunto a Siviglia. A tale oggetto\nho mandato Basilio...",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "I'll know if Cherubino\nhad come to Seville.\nI sent Basilio..."
+            "it": "Saprò se Cherubino\nera giunto a Siviglia. A tale oggetto\nho mandato Basilio...",
+            "en": "I shall find out whether Cherubino\nhas arrived in Seville. For that purpose\nI have sent Basilio...",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "alla Contessa",
-            "en": "to the Countess"
+            "en": "To the Countess.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
-            "it": "Oh cielo! E Figaro?",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "What about Figaro?"
+            "it": "Oh cielo! E Figaro?",
+            "en": "Heavens! And Figaro?",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "A lui non dei dir nulla: in vece tua\nvoglio andarci io medesma.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "To him not say anything: in your vein\nI want to go, medesma."
+            "it": "A lui non dei dir nulla: in vece tua\nvoglio andarci io medesma.",
+            "en": "You must tell him nothing: in your place\nI mean to go myself.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Avanti sera\ndovrebbe ritornar...",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Come on.\nshould return..."
+            "it": "Avanti sera\ndovrebbe ritornar...",
+            "en": "Before evening\nhe should return...",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Oh Dio... non oso!",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Oh, God, I don't dare!"
+            "it": "Oh Dio... non oso!",
+            "en": "Oh God... I dare not!",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Pensa, ch'è in tua mano il mio riposo.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Think, that my rest is in your hand."
+            "it": "Pensa, ch'è in tua mano il mio riposo.",
+            "en": "Remember, my peace of mind is in your hands.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "si nasconde",
-            "en": "hide"
+            "en": "She hides.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "E Susanna? Chi sa ch'ella tradito\nabbia il segreto mio... oh, se ha parlato,\ngli fo sposar la vecchia.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "And Susanna?\nhave my secret... oh, if you spoke,\nI'll marry the old man."
+            "en": "And Susanna? Who knows whether she has betrayed\nmy secret... oh, if she has spoken,\nI shall make him marry the old woman.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "(Marcellina!) Signor...",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Mr..."
+            "en": "(Marcellina!) My lord...",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Cosa bramate?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "What do you want?"
+            "en": "What do you want?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Mi par che siete in collera!",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "I think you're angry."
+            "en": "You seem angry!",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Volete qualche cosa?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "You want something?"
+            "en": "Do you need something?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Signor... la vostra sposa\nha i soliti vapori,\ne vi chiede il fiaschetto degli odori.",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Sir, your bride\nhas the usual vapours,\nand asks for the smell fiaschetto."
+            "en": "My lord... your wife\nhas her usual faintness,\nand asks for your bottle of smelling salts.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Prendete.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Take it."
+            "en": "Take it.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Or vel riporto.",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "I'll take it back."
+            "en": "I shall bring it straight back.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Ah no, potete\nRitenerlo per voi.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "No, you can.\nConsider it for you."
+            "en": "Ah no, you may\nkeep it for yourself.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Per me?\nQuesti non son mali\nda donne triviali.",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "For me?\nThese are not evil\nby trivial women."
+            "en": "For me?\nThese are not ailments\nfor women of humble station.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Un'amante, che perde il caro sposo\nsul punto d'ottenerlo.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "A lover, who loses the dear groom\nto the point of getting it."
+            "en": "A woman in love, losing her dear bridegroom\njust as she is about to have him.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Pagando Marcellina\ncolla dote che voi mi prometteste...",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Paying Marcellina\nAnd you promised me..."
+            "en": "By paying Marcellina\nwith the dowry you promised me...",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Ch'io vi promisi, quando?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "When did I promise you?"
+            "en": "I promised you? When?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Credea d'averlo inteso.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "She believes she understood that."
+            "it": "Credea d'averlo inteso.",
+            "en": "I thought I had understood you.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Sì, se voluto aveste\nintendermi voi stessa.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Yes, if you wanted\nYou mean me yourself."
+            "it": "Sì, se voluto aveste\nintendermi voi stessa.",
+            "en": "Yes, if you had been willing\nto understand me yourself.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "È mio dovere,\ne quel di Sua Eccellenza il mio volere.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "It is my duty,\nand that of His Excellency my will."
+            "it": "È mio dovere,\ne quel di Sua Eccellenza il mio volere.",
+            "en": "It is my duty,\nand His Excellency’s wish is mine.",
+            "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "sourceTitlesOnly": true
       },
       {
         "number": 17,
         "type": "Duettino",
         "participants": [
-          "Il Conte",
+          "The Count",
           "Susanna"
         ],
         "turns": [
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Crudel! Perché finora\nfarmi languir così?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Crudel! Why so far\nWhat?"
+            "en": "Cruel girl! Why until now\nhave you made me languish so?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Signor, la donna ognora\ntempo ha dir di sì.",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Sir, the ognore woman\ntime has said yes."
+            "en": "My lord, a woman always\nhas time to say yes.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Dunque, in giardin verrai?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "So, you're coming to garden?"
+            "en": "Then you will come to the garden?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Se piace a voi, verrò.",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "If you like it, I'll come."
+            "en": "If it pleases you, I shall.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "E non mi mancherai?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "And I'm not gonna miss you?"
+            "en": "And you will not fail me?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "No, non vi mancherò.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "No, I won't miss you."
+            "it": "No, non vi mancherò.",
+            "en": "No, I shall not fail you.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Mi sento dal contento\npieno di gioia il cor.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "I feel like I'm happy\nfull of joy the heart."
+            "it": "Mi sento dal contento\npieno di gioia il cor.",
+            "en": "Such happiness makes me feel\nmy heart brim with joy.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Scusatemi se mento,\nvoi che intendete amor.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Excuse me if I lie,\nyou mean love."
+            "it": "Scusatemi se mento,\nvoi che intendete amor.",
+            "en": "Forgive me if I lie,\nyou who understand love.",
+            "literalText": true
           }
-        ]
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true
       },
       {
         "type": "Recitativo",
         "participants": [
-          "Il Conte",
+          "The Count",
           "Susanna"
         ],
         "turns": [
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "E perché fosti meco\nstamattina sì austera?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "And why were you meco\nIs it austere this morning?"
+            "en": "And why were you\nso stern with me this morning?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Col paggio ch'ivi c'era...",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "With what you had..."
+            "en": "With the page there...",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Ed a Basilio\nche per me ti parlò?",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "And to Basilio\nwho spoke to me?"
+            "en": "And to Basilio,\nwho spoke to you on my behalf?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Ma qual bisogno\nabbiam noi, che un Basilio...",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "But what need\nhave us, that a Basilio..."
+            "it": "Ma qual bisogno\nabbiam noi, che un Basilio...",
+            "en": "But what need\nhave we for a Basilio...",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "È vero, è vero,\ne mi prometti poi...\nse tu manchi, oh cor mio... Ma la Contessa\nattenderà il fiaschetto.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "That's true.\nand promise me then...\nIf you miss, oh my heart... but the Countess\nwill wait for the fiaschetto."
+            "it": "È vero, è vero,\ne mi prometti poi...\nse tu manchi, oh cor mio... Ma la Contessa\nattenderà il fiaschetto.",
+            "en": "True, true,\nand you promise me, then...\nif you fail me, my dear... But the Countess\nwill be waiting for the bottle.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Eh, fu un pretesto.\nParlato io non avrei senza di questo.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "That was a pretext.\nI wouldn't have without it."
+            "it": "Eh, fu un pretesto.\nParlato io non avrei senza di questo.",
+            "en": "Oh, that was a pretext.\nWithout it, I would not have spoken to you.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "le prende la mano",
-            "en": "She takes her hand"
+            "en": "He takes her hand.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Carissima!",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Dearest!"
+            "it": "Carissima!",
+            "en": "My dearest!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "si ritira",
-            "en": "Retreat"
+            "en": "She draws back.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
-            "it": "Vien gente.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "People."
+            "it": "Vien gente.",
+            "en": "Someone is coming.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "(È mia senz'altro.)",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "(It's definitely mine.)"
+            "it": "(È mia senz'altro.)",
+            "en": "(She is certainly mine.)",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "(Forbitevi la bocca, oh signor scaltro.)",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "(Maybe your mouth, oh mr."
+            "it": "(Forbitevi la bocca, oh signor scaltro.)",
+            "en": "(Wipe your mouth—you will get nothing, my cunning lord.)",
+            "literalText": true
           }
-        ]
+        ],
+        "routeItem": 2,
+        "sourceTitlesOnly": true
       }
     ]
   },
@@ -403,40 +418,48 @@ export const figaroActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Figaro, Susanna ed il Conte",
-            "en": "Figaro, Susanna and the Count"
+            "en": "Figaro, Susanna and the Count.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Figaro",
-            "it": "Ehi, Susanna, ove vai?",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Hey, Susanna, where are you going?"
+            "it": "Ehi, Susanna, ove vai?",
+            "en": "Hey, Susanna, where are you going?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Taci, senza avvocato\nhai già vinta la causa.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Shut up, no lawyer\nYou've already won the cause."
+            "it": "Taci, senza avvocato\nhai già vinta la causa.",
+            "en": "Hush! Without a lawyer\nyou have already won your case.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "parte",
-            "en": "leaves"
+            "en": "She exits.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
-            "it": "Cos'è nato?",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "What was he born?"
+            "it": "Cos'è nato?",
+            "en": "What has happened?",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "la segue",
-            "en": "The following"
+            "en": "He follows her.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "sourceTitlesOnly": true
       }
     ]
   },
@@ -445,30 +468,31 @@ export const figaroActThreeScenes = [
     "sourceScene": "IV",
     "sections": [
       {
-        "type": "Recitativo",
-        "participants": [],
+        "number": 18,
+        "type": "Recitativo ed Aria",
+        "participants": [
+          "The Count"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "Il Conte solo",
-            "en": "The Count alone"
-          }
-        ]
-      },
-      {
-        "number": 18,
-        "type": "Recitativo ed Aria",
-        "participants": [
-          "Il Conte"
-        ],
-        "turns": [
+            "en": "The Count alone.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
           {
             "speaker": "Il Conte",
-            "it": "Hai già vinta la causa! Cosa sento!\nIn qual laccio io cadea? Perfidi! Io voglio...\nDi tal modo punirvi... A piacer mio\nla sentenza sarà... Ma s'ei pagasse\nla vecchia pretendente?\nPagarla! In qual maniera! E poi v'è Antonio,\nche a un incognito Figaro ricusa\ndi dare una nipote in matrimonio.\nColtivando l'orgoglio\ndi questo mentecatto...\nTutto giova a un raggiro... il colpo è fatto.\nVedrò mentre io sospiro,\nfelice un servo mio!\nE un ben ch'invan desio,\nei posseder dovrà?\nVedrò per man d'amore\nunita a un vile oggetto\nchi in me destò un affetto\nche per me poi non ha?\nAh no, lasciarti in pace,\nnon vo' questo contento,\ntu non nascesti, audace,\nper dare a me tormento,\ne forse ancor per ridere\ndi mia infelicità.\nGià la speranza sola\ndelle vendette mie\nquest'anima consola,\ne giubilar mi fa.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "You've already won the cause!\nI want to...\nThat way punish you...\nthe sentence will be... but he would pay\nthe old suitor?\nAnd then there's Antonio,\nthat to an unknown Figaro refuses\nto give a grandson in marriage.\nGrowing pride\nof this little mind...\nIt's all good for a ray. The shot is done.\nI'll see while I sigh,\nhappy my servant!\nAnd a well that invan desio,\nwill he have?\nI will see for love\ncombined with a vile object\nwho in me aroused affection\nthat he doesn't have for me?\nOh, no, leave you alone.\nI don't want that happy,\nyou were not born, bold,\nto give me torment,\nand perhaps even to laugh\nof my unhappiness.\nAlready hope alone\nof the sale\nthis soul comforts,\nand jubilar does me."
+            "it": "Hai già vinta la causa! Cosa sento!\nIn qual laccio io cadea? Perfidi! Io voglio...\nDi tal modo punirvi... A piacer mio\nla sentenza sarà... Ma s'ei pagasse\nla vecchia pretendente?\nPagarla! In qual maniera! E poi v'è Antonio,\nche a un incognito Figaro ricusa\ndi dare una nipote in matrimonio.\nColtivando l'orgoglio\ndi questo mentecatto...\nTutto giova a un raggiro... il colpo è fatto.\nVedrò mentre io sospiro,\nfelice un servo mio!\nE un ben ch'invan desio,\nei posseder dovrà?\nVedrò per man d'amore\nunita a un vile oggetto\nchi in me destò un affetto\nche per me poi non ha?\nAh no, lasciarti in pace,\nnon vo' questo contento,\ntu non nascesti, audace,\nper dare a me tormento,\ne forse ancor per ridere\ndi mia infelicità.\nGià la speranza sola\ndelle vendette mie\nquest'anima consola,\ne giubilar mi fa.",
+            "en": "You have already won your case! What do I hear!\nWhat trap was I falling into? Traitors! I shall...\npunish you in such a way... To suit myself\nthe verdict shall be... But if he paid\nthe old woman who claims him?\nPay her! How? And then there is Antonio,\nwho refuses to give Figaro, a man of unknown birth,\nhis niece in marriage.\nBy encouraging the pride\nof that halfwit...\nEverything helps a scheme... the deed is done.\nShall I see, while I sigh,\na servant of mine happy!\nAnd the treasure I desire in vain,\nshall he possess it?\nShall I see, by love’s hand,\nunited to a lowly creature,\nthe woman who stirred in me a feeling\nshe does not return?\nAh no, I will not leave you in peace,\nI will not grant you that happiness;\nyou were not born, insolent fellow,\nto torment me,\nand perhaps even laugh\nat my unhappiness.\nThe mere hope\nof my revenge\nalready consoles my soul\nand makes me rejoice.",
+            "literalText": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       }
     ]
@@ -479,270 +503,285 @@ export const figaroActThreeScenes = [
     "sections": [
       {
         "type": "Recitativo",
-        "participants": [],
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "it": "Il Conte, Marcellina, Don Curzio, Figaro e Bartolo; poi Susanna",
-            "en": "The Count, Marcellina, Don Curzio, Figaro and Bartolo; then Susanna"
-          }
-        ]
-      },
-      {
-        "type": "Recitativo",
         "participants": [
           "Don Curzio",
           "Marcellina",
           "Figaro",
-          "Il Conte",
+          "The Count",
           "Bartolo"
         ],
         "turns": [
           {
+            "speaker": "Stage direction",
+            "it": "Il Conte, Marcellina, Don Curzio, Figaro e Bartolo; poi Susanna",
+            "en": "The Count, Marcellina, Don Curzio, Figaro and Bartolo; then Susanna.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
             "speaker": "Don Curzio",
+            "speakerTranslation": "Don Curzio",
             "it": "È decisa la lite.\nO pagarla, o sposarla, ora ammutite.",
-            "speakerTranslation": "Don Curzio",
-            "literalText": true,
-            "en": "The fight is decided.\nOr pay her, or marry her, now ammuted."
+            "en": "The case is decided.\nEither pay her or marry her. Now be silent.",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
+            "speakerTranslation": "Marcellina",
             "it": "Io respiro.",
-            "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "I breathe."
+            "en": "I can breathe again.",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "Ed io moro.",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "And I die."
+            "en": "And I am dying.",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
+            "speakerTranslation": "Marcellina",
             "it": "(Alfin sposa io sarò d'un uom ch'adoro.)",
-            "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "I will be of a lover."
+            "en": "(At last I shall marry the man I adore.)",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "Eccellenza m'appello...",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Your Excellency..."
+            "en": "Your Excellency, I appeal...",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "È giusta la sentenza.\nO pagar, o sposar, bravo Don Curzio.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "The judgment is right.\nOr pay, or marry, good Don Curzio."
+            "en": "The judgement is just.\nEither pay or marry. Well done, Don Curzio.",
+            "literalText": true
           },
           {
             "speaker": "Don Curzio",
+            "speakerTranslation": "Don Curzio",
             "it": "Bontà di sua Eccellenza.",
-            "speakerTranslation": "Don Curzio",
-            "literalText": true,
-            "en": "Your Excellency."
+            "en": "Your Excellency is too kind.",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
+            "speakerTranslation": "Bartolo",
             "it": "Che superba sentenza!",
-            "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "What a superb judgment!"
+            "en": "What a splendid verdict!",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "In che superba?",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "What superb?"
+            "en": "What is splendid about it?",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
+            "speakerTranslation": "Bartolo",
             "it": "Siam tutti vendicati...",
-            "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "Siam all revenge..."
+            "en": "We are all avenged...",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "Io non la sposerò.",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "I won't marry her."
+            "en": "I will not marry her.",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
+            "speakerTranslation": "Bartolo",
             "it": "La sposerai.",
-            "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "You'll marry her."
+            "en": "You will marry her.",
+            "literalText": true
           },
           {
             "speaker": "Don Curzio",
+            "speakerTranslation": "Don Curzio",
             "it": "O pagarla, o sposarla. Lei t'ha prestati\ndue mille pezzi duri.",
-            "speakerTranslation": "Don Curzio",
-            "literalText": true,
-            "en": "Or pay her or marry her.\nTwo thousand hard pieces."
+            "en": "Either pay her or marry her. She lent you\ntwo thousand silver pieces.",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Son gentiluomo, e senza\nl'assenso de' miei nobili parenti...",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "I am a gentleman, and without\nthe assent of my noble relatives..."
+            "it": "Son gentiluomo, e senza\nl'assenso de' miei nobili parenti...",
+            "en": "I am a gentleman, and without\nthe consent of my noble parents...",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Dove sono? Chi sono?",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Where are they?"
+            "it": "Dove sono? Chi sono?",
+            "en": "Where are they? Who are they?",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Lasciate ancor cercarli!\nDopo dieci anni io spero di trovarli.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Let them look again!\nAfter ten years I hope to find them."
+            "it": "Lasciate ancor cercarli!\nDopo dieci anni io spero di trovarli.",
+            "en": "Let me keep looking for them!\nAfter ten years I hope to find them.",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
-            "it": "Qualche bambin trovato?",
             "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "Any bamboos found?"
+            "it": "Qualche bambin trovato?",
+            "en": "Some foundling child?",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "No, perduto, dottor, anzi rubato.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "No, lost, Doctor, indeed stolen."
+            "it": "No, perduto, dottor, anzi rubato.",
+            "en": "No, lost, Doctor—or rather, stolen.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Come?",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "What?"
+            "it": "Come?",
+            "en": "How?",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
-            "it": "Cosa?",
             "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "What?"
+            "it": "Cosa?",
+            "en": "What?",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
-            "it": "La prova?",
             "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "The evidence?"
+            "it": "La prova?",
+            "en": "The proof?",
+            "literalText": true
           },
           {
             "speaker": "Don Curzio",
-            "it": "Il testimonio?",
             "speakerTranslation": "Don Curzio",
-            "literalText": true,
-            "en": "The witness?"
+            "it": "Il testimonio?",
+            "en": "The witness?",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "L'oro, le gemme, e i ricamati panni,\nche ne' più teneri anni\nmi ritrovaro addosso i masnadieri,\nsono gl'indizi veri\ndi mia nascita illustre, e sopra tutto\nquesto al mio braccio impresso geroglifico...",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Gold, gems, and embroidered cloths,\nthat no more tender years\nI'm gonna find my janitors on me.\nare the real clues\nof my illustrious birth, and above all\nthis to my arm etched from the hieroglyphic..."
+            "en": "The gold, the jewels and the embroidered clothes\nwhich, in my earliest childhood,\nthe bandits found upon me\nare clear evidence\nof my noble birth, and above all\nthis mark imprinted on my arm...",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
+            "speakerTranslation": "Marcellina",
             "it": "Una spatola impressa al braccio destro...",
-            "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "A spatula on the right arm..."
+            "en": "A spatula-shaped mark on your right arm...",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "E a voi chi'l disse?",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Who told you?"
+            "en": "And who told you that?",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
+            "speakerTranslation": "Marcellina",
             "it": "Oh Dio, è egli...",
-            "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "Oh, God, he's..."
+            "en": "Oh God, it is he...",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "È ver son io.\nDON CURZIO, IL CONTE e BARTOLO\nChi?",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "It's me.\nDON CURZIO, THE CONTE and BARTOLO\nWho?"
+            "it": "È ver son io.",
+            "en": "Yes, it is I.",
+            "literalText": true
+          },
+          {
+            "speaker": "Don Curzio, Il Conte e Bartolo",
+            "speakerTranslation": "Don Curzio, The Count and Bartolo",
+            "it": "Chi?",
+            "en": "Who?",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
+            "speakerTranslation": "Marcellina",
             "it": "Raffaello.",
-            "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "Raffaello."
+            "en": "Raffaello.",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
+            "speakerTranslation": "Bartolo",
             "it": "E i ladri ti rapir...",
-            "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "And thieves kidnap you..."
+            "en": "And the thieves abducted you...",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "Presso un castello.",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "At a castle."
+            "en": "Near a castle.",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
+            "speakerTranslation": "Bartolo",
             "it": "Ecco tua madre.",
-            "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "Here's your mother."
+            "en": "Here is your mother.",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Balia...",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Balia..."
+            "it": "Balia...",
+            "en": "My nurse...",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
-            "it": "No, tua madre.\nIL CONTE e DON CURZIO\nSua madre!",
             "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "No, your mother.\n\nHis mother!"
+            "it": "No, tua madre.",
+            "en": "No, your mother.",
+            "literalText": true
+          },
+          {
+            "speaker": "Il Conte e Don Curzio",
+            "speakerTranslation": "The Count and Don Curzio",
+            "it": "Sua madre!",
+            "en": "His mother!",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Cosa sento!",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "What do I hear?"
+            "it": "Cosa sento!",
+            "en": "What do I hear!",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
-            "it": "Ecco tuo padre.",
             "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "Here's your father."
+            "it": "Ecco tuo padre.",
+            "en": "Here is your father.",
+            "literalText": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       },
       {
@@ -753,240 +792,314 @@ export const figaroActThreeScenes = [
           "Figaro",
           "Bartolo",
           "Don Curzio",
-          "Il Conte",
+          "The Count",
           "Susanna"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "abbracciando Figaro",
-            "en": "embracing Figaro"
+            "en": "Embracing Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Marcellina",
-            "it": "Riconosci in questo amplesso\nuna madre, amato figlio!",
             "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "Recognize this ample\na mother, beloved son!"
+            "it": "Riconosci in questo amplesso\nuna madre, amato figlio!",
+            "en": "Recognize in this embrace\nyour mother, beloved son!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "a Bartolo",
-            "en": "to Bartolo"
+            "en": "To Bartolo.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
-            "it": "Padre mio, fate lo stesso,\nnon mi fate più arrossir.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "My Father, do the same,\nYou don't make me blush anymore."
+            "it": "Padre mio, fate lo stesso,\nnon mi fate più arrossir.",
+            "en": "My father, do the same;\ndo not make me blush any longer.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "abbracciando Figaro",
-            "en": "embracing Figaro"
+            "en": "Embracing Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Bartolo",
-            "it": "Resistenza la coscienza\nfar non lascia al tuo desir.",
             "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "Strengthens consciousness\nLet it not leave to your desir."
+            "it": "Resistenza la coscienza\nfar non lascia al tuo desir.",
+            "en": "My conscience will not let me\nresist your wish.",
+            "literalText": true
           },
           {
             "speaker": "Don Curzio",
-            "it": "Ei suo padre, ella sua madre,\nl'imeneo non può seguir.",
             "speakerTranslation": "Don Curzio",
-            "literalText": true,
-            "en": "And her father, her mother,\nthe same cannot follow."
+            "it": "Ei suo padre, ella sua madre,\nl'imeneo non può seguir.",
+            "en": "He is his father, she his mother;\nthe marriage cannot proceed.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Son smarrito, son stordito,\nmeglio è assai di qua partir.\nMARCELLINA e BARTOLO\nFiglio amato!",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "I'm lost, I'm stunned,\nis much better than here.\nMARCELLINA and BARTOLO\nBeloved son!"
+            "it": "Son smarrito, son stordito,\nmeglio è assai di qua partir.",
+            "en": "I am lost, I am bewildered;\nfar better to leave this place.",
+            "literalText": true
+          },
+          {
+            "speaker": "Marcellina e Bartolo",
+            "speakerTranslation": "Marcellina and Bartolo",
+            "it": "Figlio amato!",
+            "en": "Beloved son!",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Parenti amati!",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Loved walls!"
+            "it": "Parenti amati!",
+            "en": "Beloved parents!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Il Conte vuol partire. Susanna entra con una borsa in mano.",
-            "en": "Susanna comes in with a bag in her hand."
+            "en": "The Count makes to leave. Susanna enters with a purse in her hand.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
-            "it": "Alto,alto, signor Conte,\nmille doppie son qui pronte,\na pagar vengo per Figaro,\ned a porlo in libertà.\nIL CONTE e DON CURZIO\nNon sappiam com'è la cosa,\nosservate un poco là!",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "High, high, Mr. Count,\na thousand doubles are ready,\nI come for Figaro,\nand freedom.\n\nWe don't know what it is,\nLook a little there!"
+            "it": "Alto,alto, signor Conte,\nmille doppie son qui pronte,\na pagar vengo per Figaro,\ned a porlo in libertà.",
+            "en": "Stop, stop, my lord Count;\na thousand gold pieces are ready here.\nI have come to pay for Figaro\nand set him free.",
+            "literalText": true
+          },
+          {
+            "speaker": "Il Conte e Don Curzio",
+            "speakerTranslation": "The Count and Don Curzio",
+            "it": "Non sappiam com'è la cosa,\nosservate un poco là!",
+            "en": "We do not know how matters stand;\njust look over there!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "si volge vedendo Figaro che abbraccia Marcellina",
-            "en": "you want to see Figaro hugs Marcellina"
+            "en": "She turns and sees Figaro embracing Marcellina.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
-            "it": "Già d'accordo ei colla sposa;\ngiusti Dei, che infedeltà!",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "I already agree with him;\nGods, what infidelity!"
+            "it": "Già d'accordo ei colla sposa;\ngiusti Dei, che infedeltà!",
+            "en": "He is already reconciled with his bride;\njust gods, what infidelity!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "vuol partire",
-            "en": "you want to go"
+            "en": "She makes to leave.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
-            "it": "Lascia iniquo!",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Leave it unfair!"
+            "it": "Lascia iniquo!",
+            "en": "Let go, you villain!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "trattenendo Susanna",
-            "en": "holding Susanna"
+            "en": "Holding Susanna back.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
-            "it": "No, t'arresta!\nSenti, oh cara!",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "No, you're not!\nLook, oh dear!"
+            "it": "No, t'arresta!\nSenti, oh cara!",
+            "en": "No, stay!\nListen, my dear!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "dà uno schiaffo a Figaro",
-            "en": "gives a slap in Figaro"
+            "en": "She slaps Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
-            "it": "Senti questa!\nMARCELLINA, BARTOLO e FIGARO\nÈ un effetto di buon core,\ntutto amore è quel che fa.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Listen to this!\nMARCELLINA, BARTOLO and FIGARO\nIt is a good core effect,\nAll love is what it does."
+            "it": "Senti questa!",
+            "en": "Listen to this!",
+            "literalText": true
+          },
+          {
+            "speaker": "Marcellina, Bartolo e Figaro",
+            "speakerTranslation": "Marcellina, Bartolo and Figaro",
+            "it": "È un effetto di buon core,\ntutto amore è quel che fa.",
+            "en": "It is the effect of a loving heart;\neverything she does is love.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Fremo, smanio dal furore,\nil destino a me la fa.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "I'll do it, I'll get out of the fury.\nfate makes it to me."
+            "it": "Fremo, smanio dal furore,\nil destino a me la fa.",
+            "en": "I tremble, I rage with fury;\nfate is playing a trick on me.",
+            "literalText": true
           },
           {
             "speaker": "Don Curzio",
-            "it": "Freme e smania dal furore,\nil destino gliela fa.",
             "speakerTranslation": "Don Curzio",
-            "literalText": true,
-            "en": "Fear and smurf from the fury,\nfate does."
+            "it": "Freme e smania dal furore,\nil destino gliela fa.",
+            "en": "He trembles and rages with fury;\nfate is playing a trick on him.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Fremo, smanio dal furore,\nuna vecchia a me la fa.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "I'll do it, I'll get out of the fury.\nan old woman makes it to me."
+            "it": "Fremo, smanio dal furore,\nuna vecchia a me la fa.",
+            "en": "I tremble, I rage with fury;\nan old woman is playing a trick on me.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "corre ad abbracciar Susanna",
-            "en": "run to embrace Susanna"
+            "en": "She runs to embrace Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Marcellina",
-            "it": "Lo sdegno calmate,\nmia cara figliuola,\nsua madre abbracciate\nche or vostra sarà.",
             "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "I'll calm him down.\nmy dear daughter,\nher mother embraced\nthat yours will be."
+            "it": "Lo sdegno calmate,\nmia cara figliuola,\nsua madre abbracciate\nche or vostra sarà.",
+            "en": "Calm your anger,\nmy dear daughter;\nembrace his mother,\nwho will now be yours.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Sua madre?\nBARTOLO, IL CONTE, DON CURZIO e MARCELLINA\nSua madre!",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "His mother?\n\nHis mother!"
+            "it": "Sua madre?",
+            "en": "His mother?",
+            "literalText": true
+          },
+          {
+            "speaker": "Bartolo, Il Conte, Don Curzio e Marcellina",
+            "speakerTranslation": "Bartolo, The Count, Don Curzio and Marcellina",
+            "it": "Sua madre!",
+            "en": "His mother!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "in Figaro"
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Tua madre?",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Your mother?"
+            "en": "Your mother?",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "a Susanna",
-            "en": "to Susanna"
+            "en": "To Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
-            "it": "E quello è mio padre\nche a te lo dirà.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "And that's my father.\nwho will tell you."
+            "it": "E quello è mio padre\nche a te lo dirà.",
+            "en": "And that is my father,\nwho will tell you so.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Suo padre?\nBARTOLO, IL CONTE, DON CURZIO e MARCELLINA\nSuo padre!",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Your father?\n\nHis father!"
+            "it": "Suo padre?",
+            "en": "His father?",
+            "literalText": true
+          },
+          {
+            "speaker": "Bartolo, Il Conte, Don Curzio e Marcellina",
+            "speakerTranslation": "Bartolo, The Count, Don Curzio and Marcellina",
+            "it": "Suo padre!",
+            "en": "His father!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "in Figaro"
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
-            "it": "Tuo padre?",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Your father?"
+            "it": "Tuo padre?",
+            "en": "Your father?",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "a Susanna",
-            "en": "to Susanna"
+            "en": "To Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
-            "it": "E quella è mia madre\nche a te lo dirà.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "And that's my mother.\nwho will tell you."
+            "it": "E quella è mia madre\nche a te lo dirà.",
+            "en": "And that is my mother,\nwho will tell you so.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Corrono tutti quattro ad abbracciarsi",
-            "en": "They run all four to embrace"
+            "en": "All four rush to embrace one another.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
-            "speaker": "Figaro",
-            "it": "SUSANNA, MARCELLINA, BARTOLO e FIGARO\nAl dolce contento\ndi questo momento,\nquest'anima appena\nresister or sa.\nDON CURZIO ed IL CONTE\nAl fiero tormento\ndi questo momento,\nquell'/quest'anima appena\nresister or sa.",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "SUSANNA, MARCELLINA, BARTOLO and FIGARO\nTo the sweet happy\nof this moment,\nthis soul just\nresister or sa.\nCURRENCY AND CONTACT\nTo the fierce torment\nof this moment,\nthat soul just\nresister or sa."
+            "speaker": "Susanna, Marcellina, Bartolo e Figaro",
+            "speakerTranslation": "Susanna, Marcellina, Bartolo and Figaro",
+            "it": "Al dolce contento\ndi questo momento,\nquest'anima appena\nresister or sa.",
+            "en": "The sweet happiness\nof this moment\nis almost more than my heart\ncan bear.",
+            "literalText": true
+          },
+          {
+            "speaker": "Don Curzio ed Il Conte",
+            "speakerTranslation": "Don Curzio and The Count",
+            "it": "Al fiero tormento\ndi questo momento,\nquell'/quest'anima appena\nresister or sa.",
+            "en": "The bitter torment\nof this moment\nis almost more than that/this heart\ncan bear.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Il Conte e Don Curzio partono.",
-            "en": "Count and Don Curzio leave."
+            "en": "The Count and Don Curzio leave.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 2,
+        "sourceTitlesOnly": true
       }
     ]
   },
@@ -994,17 +1107,6 @@ export const figaroActThreeScenes = [
     "number": 6,
     "sourceScene": "VI",
     "sections": [
-      {
-        "type": "Recitativo",
-        "participants": [],
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "it": "Susanna, Marcellina, Figaro e Bartolo",
-            "en": "Susanna, Marcellina, Figaro and Bartolo"
-          }
-        ]
-      },
       {
         "type": "Recitativo",
         "participants": [
@@ -1016,85 +1118,121 @@ export const figaroActThreeScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
+            "it": "Susanna, Marcellina, Figaro e Bartolo",
+            "en": "Susanna, Marcellina, Figaro and Bartolo.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
             "it": "a Bartolo",
-            "en": "to Bartolo"
+            "en": "To Bartolo.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Marcellina",
-            "it": "Eccovi, oh caro amico, il dolce frutto\ndell'antico amor nostro...",
             "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "There you are, oh dear friend, the sweet fruit\nof our ancient love..."
+            "it": "Eccovi, oh caro amico, il dolce frutto\ndell'antico amor nostro...",
+            "en": "Here, dear friend, is the sweet fruit\nof our former love...",
+            "literalText": true
           },
           {
             "speaker": "Bartolo",
-            "it": "Or non parliamo\ndi fatti sì rimoti, egli è mio figlio,\nmia consorte voi siete;\ne le nozze farem quando volete.",
             "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "We don't talk.\nAnd he is my son,\nmy wife you are;\nand the wedding dom whenever you want."
+            "it": "Or non parliamo\ndi fatti sì rimoti, egli è mio figlio,\nmia consorte voi siete;\ne le nozze farem quando volete.",
+            "en": "Let us not speak now\nof events so long ago. He is my son,\nyou shall be my wife,\nand we shall marry whenever you wish.",
+            "literalText": true
           },
           {
             "speaker": "Marcellina",
-            "it": "Oggi, e doppie saranno.",
             "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "Today, and double will be."
+            "it": "Oggi, e doppie saranno.",
+            "en": "Today—and it shall be a double wedding.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "dà il biglietto a Figaro",
-            "en": "gives the ticket to Figaro"
+            "en": "She gives the document to Figaro.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Marcellina",
-            "it": "Prendi, questo è il biglietto\ndel danar che a me devi, ed è tua dote.",
             "speakerTranslation": "Marcellina",
-            "literalText": true,
-            "en": "Here, this is the ticket.\nof the danar you owe me, and it is your dowry."
+            "it": "Prendi, questo è il biglietto\ndel danar che a me devi, ed è tua dote.",
+            "en": "Take this: it is the bond\nfor the money you owe me, and it is your wedding gift.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "getta per terra una borsa di danari",
-            "en": "toss a cash bag on the ground"
+            "en": "She tosses a purse of money on the ground.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
-            "it": "Prendi ancor questa borsa.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Take this bag again."
+            "it": "Prendi ancor questa borsa.",
+            "en": "Take this purse as well.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "fa lo stesso",
-            "en": "does the same"
+            "en": "He does the same.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Bartolo",
-            "it": "E questa ancora.",
             "speakerTranslation": "Bartolo",
-            "literalText": true,
-            "en": "And this one again."
+            "it": "E questa ancora.",
+            "en": "And this one too.",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Bravi, gittate pur ch'io piglio ognora.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Brave, swipe as I mourn."
+            "it": "Bravi, gittate pur ch'io piglio ognora.",
+            "en": "Well done! Keep throwing; I shall keep picking up.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Voliamo ad informar d'ogni avventura\nmadama e nostro zio.\nChi al par di me contenta!\nFIGARO, BARTOLO e MARCELLINA\nIo!\nSUSANNA, MARCELLINA, BARTOLO e FIGARO\nE schiatti il signor Conte al gusto mio.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "We fly to inform you of every adventure\nMa'am and our uncle.\nWho's happy with me!\nFIGARO, BARTOLO and MARCELLINA\nMe!\nSUSANNA, MARCELLINA, BARTOLO and FIGARO\nAnd cut Mr. Conte to my taste."
+            "it": "Voliamo ad informar d'ogni avventura\nmadama e nostro zio.\nChi al par di me contenta!",
+            "en": "Let us fly to tell everything that has happened\nto my lady and our uncle.\nWho is as happy as I am!",
+            "literalText": true
+          },
+          {
+            "speaker": "Figaro, Bartolo e Marcellina",
+            "speakerTranslation": "Figaro, Bartolo and Marcellina",
+            "it": "Io!",
+            "en": "I am!",
+            "literalText": true
+          },
+          {
+            "speaker": "Susanna, Marcellina, Bartolo e Figaro",
+            "speakerTranslation": "Susanna, Marcellina, Bartolo and Figaro",
+            "it": "E schiatti il signor Conte al gusto mio.",
+            "en": "And let the Count burst with rage, to my delight.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "partendo abbracciati",
-            "en": "leaving embraced"
+            "en": "They leave arm in arm.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       }
     ]
@@ -1105,48 +1243,51 @@ export const figaroActThreeScenes = [
     "sections": [
       {
         "type": "Recitativo",
-        "participants": [],
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "it": "Barbarina e Cherubino",
-            "en": "Barbarina and Cherubino"
-          }
-        ]
-      },
-      {
-        "type": "Recitativo",
         "participants": [
           "Barbarina",
           "Cherubino"
         ],
         "turns": [
           {
+            "speaker": "Stage direction",
+            "it": "Barbarina e Cherubino",
+            "en": "Barbarina and Cherubino.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
             "speaker": "Barbarina",
-            "it": "Andiam, andiam, bel paggio, in casa mia\ntutte ritroverai\nle più belle ragazze del castello,\ndi tutte sarai tu certo il più bello.",
             "speakerTranslation": "Barbarina",
-            "literalText": true,
-            "en": "Andiam, goiam, nice toll, in my house\nYou'll be all right\nthe most beautiful girls of the castle,\nof all you will be the most beautiful."
+            "it": "Andiam, andiam, bel paggio, in casa mia\ntutte ritroverai\nle più belle ragazze del castello,\ndi tutte sarai tu certo il più bello.",
+            "en": "Come, come, handsome page: at my house\nyou will find all\nthe prettiest girls in the castle;\nyou will surely be the prettiest of them all.",
+            "literalText": true
           },
           {
             "speaker": "Cherubino",
-            "it": "Ah, se il Conte mi trova,\nmisero me, tu sai\nche partito ei mi crede per Siviglia.",
             "speakerTranslation": "Cherubino",
-            "literalText": true,
-            "en": "Ah, if the Count finds me,\nyou know\nwho departed and believed me for Seville."
+            "it": "Ah, se il Conte mi trova,\nmisero me, tu sai\nche partito ei mi crede per Siviglia.",
+            "en": "Ah, if the Count finds me,\npoor me! You know\nhe thinks I have left for Seville.",
+            "literalText": true
           },
           {
             "speaker": "Barbarina",
-            "it": "Oh ve' che maraviglia, e se ti trova\nnon sarà cosa nuova...\nOdi... vogliamo vestirti come noi:\ntutte insiem andrem poi\na presentar de' fiori a madamina;\nfidati, oh Cherubin, di Barbarina.",
             "speakerTranslation": "Barbarina",
-            "literalText": true,
-            "en": "Oh, it's marvelous, and if he finds you\nIt won't be new...\nOdi... we want to dress like us:\nall set and then\nto present flowers in madamine;\nTrust me, oh Cherubin, Barbarina."
+            "it": "Oh ve' che maraviglia, e se ti trova\nnon sarà cosa nuova...\nOdi... vogliamo vestirti come noi:\ntutte insiem andrem poi\na presentar de' fiori a madamina;\nfidati, oh Cherubin, di Barbarina.",
+            "en": "Oh, what a surprise! And if he finds you,\nit will be nothing new...\nListen... we want to dress you like us;\nthen we shall all go together\nto present flowers to my lady.\nTrust Barbarina, dear Cherubino.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "partono",
-            "en": "they leave"
+            "en": "They leave.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       }
     ]
@@ -1156,35 +1297,38 @@ export const figaroActThreeScenes = [
     "sourceScene": "VIII",
     "sections": [
       {
-        "type": "Recitativo",
-        "participants": [],
+        "number": 20,
+        "type": "Recitativo ed Aria",
+        "participants": [
+          "The Countess"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "La Contessa sola",
-            "en": "The Countess alone"
-          }
-        ]
-      },
-      {
-        "number": 20,
-        "type": "Recitativo ed Aria",
-        "participants": [
-          "La Contessa"
-        ],
-        "turns": [
+            "en": "The Countess alone.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
           {
             "speaker": "La Contessa",
-            "it": "E Susanna non vien! Sono ansiosa\ndi saper come il Conte\naccolse la proposta. Alquanto ardito\nil progetto mi par, e ad uno sposo\nsì vivace, e geloso!\nMa che mal c'è? Cangiando i miei vestiti\ncon quelli di Susanna, e i suoi co' miei...\nal favor della notte... oh cielo, a quale\numil stato fatale io son ridotta\nda un consorte crudel, che dopo avermi\ncon un misto inaudito\nd'infedeltà, di gelosia, di sdegni,\nprima amata, indi offesa, e alfin tradita,\nfammi or cercar da una mia serva aita!\nDove sono i bei momenti\ndi dolcezza e di piacer,\ndove andaro i giuramenti\ndi quel labbro menzogner?\nPerché mai se in pianti e in pene\nper me tutto si cangiò,\nla memoria di quel bene\ndal mio sen non trapassò?\nAh! Se almen la mia costanza\nnel languire amando ognor,\nmi portasse una speranza\ndi cangiar l'ingrato cor.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "And Susanna doesn't.\nto know how the Count\nHe accepted the proposal.\nthe project par to me, and to a groom\nYes lively, and jealous!\nWhat's wrong?\nwith Susanna's, and her friends...\nto the favor of the night... oh heaven, to which\nI'm reduced\nby a cruel wife, who after me\nwith an unhearded mixture\nof infidelity, of jealousy, of deceit,\nFirst beloved, indi offense, and alfin betrayal,\nLet me or look for a servant of mine!\nWhere are the good times\nof sweetness and pleasure,\nwhere the oaths go\nof that menzogner lip?\nWhy never if in tears and in penis\nfor me everything was singing,\nthe memory of that good\nfrom my sen did not pass?\nIf you lift my constancy\nin languishing loving ognor,\nHe brought me hope\nto sing the ingrained cor."
+            "it": "E Susanna non vien! Sono ansiosa\ndi saper come il Conte\naccolse la proposta. Alquanto ardito\nil progetto mi par, e ad uno sposo\nsì vivace, e geloso!\nMa che mal c'è? Cangiando i miei vestiti\ncon quelli di Susanna, e i suoi co' miei...\nal favor della notte... oh cielo, a quale\numil stato fatale io son ridotta\nda un consorte crudel, che dopo avermi\ncon un misto inaudito\nd'infedeltà, di gelosia, di sdegni,\nprima amata, indi offesa, e alfin tradita,\nfammi or cercar da una mia serva aita!\nDove sono i bei momenti\ndi dolcezza e di piacer,\ndove andaro i giuramenti\ndi quel labbro menzogner?\nPerché mai se in pianti e in pene\nper me tutto si cangiò,\nla memoria di quel bene\ndal mio sen non trapassò?\nAh! Se almen la mia costanza\nnel languire amando ognor,\nmi portasse una speranza\ndi cangiar l'ingrato cor.",
+            "en": "And Susanna has not come! I am anxious\nto learn how the Count\nreceived the proposal. Rather daring\nthe plan seems to me, with a husband\nso hot-tempered and jealous!\nBut what harm is there? Exchanging my clothes\nfor Susanna’s, and hers for mine...\nunder cover of night... O heaven, to what\nwretched humiliation I am reduced\nby a cruel husband who, after\nan unheard-of mixture\nof infidelity, jealousy and anger,\nfirst loved me, then hurt me, and finally betrayed me,\nnow makes me seek help from my own servant!\nWhere are those beautiful moments\nof sweetness and pleasure?\nWhere have the vows gone\nfrom those lying lips?\nWhy, if into tears and pain\neverything has changed for me,\nhas the memory of that happiness\nnot left my heart?\nAh, if only my constancy\nin languishing, yet always loving,\ncould bring me some hope\nof changing his ungrateful heart.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "parte",
-            "en": "leaves"
+            "en": "She exits.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       }
     ]
@@ -1195,62 +1339,65 @@ export const figaroActThreeScenes = [
     "sections": [
       {
         "type": "Recitativo",
-        "participants": [],
+        "participants": [
+          "Antonio",
+          "The Count"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "Il Conte ed Antonio con cappello in mano",
-            "en": "The Count and Antonio with a hat in hand"
-          }
-        ]
-      },
-      {
-        "type": "Recitativo",
-        "participants": [
-          "Antonio",
-          "Il Conte"
-        ],
-        "turns": [
+            "en": "The Count and Antonio, who carries a hat.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
           {
             "speaker": "Antonio",
+            "speakerTranslation": "Antonio",
             "it": "Io vi dico, signor, che Cherubino\nè ancora nel castello,\ne vedete per prova il suo cappello.",
-            "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "I tell you, Mr. Cherubino.\nis still in the castle,\nand see for proof his hat."
+            "en": "I tell you, my lord, that Cherubino\nis still in the castle,\nand here is his hat as proof.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Ma come, se a quest'ora\nesser giunto a Siviglia egli dovria.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "But how, if at this hour\nto have come to Seville he must."
+            "en": "But how, when by this time\nhe ought to have reached Seville?",
+            "literalText": true
           },
           {
             "speaker": "Antonio",
-            "it": "Scusate, oggi Siviglia è a casa mia,\nlà vestissi da donna, e là lasciati\nha gl'altri abiti suoi.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "I'm sorry, Seville's at my house today.\nthere dressed as a woman, and there left\nHe has other clothes."
+            "it": "Scusate, oggi Siviglia è a casa mia,\nlà vestissi da donna, e là lasciati\nha gl'altri abiti suoi.",
+            "en": "Excuse me, but today Seville is at my house;\nthere he dressed as a woman, and there\nhe left his other clothes.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Perfidi!",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Perfidi!"
+            "it": "Perfidi!",
+            "en": "Traitors!",
+            "literalText": true
           },
           {
             "speaker": "Antonio",
-            "it": "Andiam, e li vedrete voi.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "Andiam, and you will see them."
+            "it": "Andiam, e li vedrete voi.",
+            "en": "Come, and you will see them yourself.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Partono.",
-            "en": "They're leaving."
+            "en": "They leave.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       }
     ]
@@ -1261,83 +1408,86 @@ export const figaroActThreeScenes = [
     "sections": [
       {
         "type": "Recitativo",
-        "participants": [],
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "it": "La Contessa e Susanna",
-            "en": "La Contessa e Susanna"
-          }
-        ]
-      },
-      {
-        "type": "Recitativo",
         "participants": [
-          "La Contessa",
+          "The Countess",
           "Susanna"
         ],
         "turns": [
           {
+            "speaker": "Stage direction",
+            "it": "La Contessa e Susanna",
+            "en": "The Countess and Susanna.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
             "speaker": "La Contessa",
+            "speakerTranslation": "The Countess",
             "it": "Cosa mi narri, e che ne disse il Conte?",
-            "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "What's the matter with the Count?"
+            "en": "What are you telling me? And what did the Count say?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "Gli si leggeva in fronte\nil dispetto e la rabbia.",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "He read in front\ndistrust and anger."
+            "en": "You could read on his face\nhis vexation and anger.",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
+            "speakerTranslation": "The Countess",
             "it": "Piano, che meglio or lo porremo in gabbia.\nDov'è l'appuntamento\nche tu gli proponesti?",
-            "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Slowly, we'd better put him in a cage.\nWhere's the appointment?\nWhat did you propose to him?"
+            "en": "Quietly—we shall trap him all the better now.\nWhere is the meeting\nyou proposed to him?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "In giardino.",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "In the garden."
+            "en": "In the garden.",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Fissiamgli un loco. Scrivi.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Put him on a spot."
+            "it": "Fissiamgli un loco. Scrivi.",
+            "en": "Let us name a spot for him. Write.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Ch'io scriva... ma, signora...",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "I write, but, ma'am..."
+            "it": "Ch'io scriva... ma, signora...",
+            "en": "I should write... but, my lady...",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Eh, scrivi dico; e tutto",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "I say, and all"
+            "it": "Eh, scrivi dico; e tutto",
+            "en": "Yes, write, I say; and everything",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Susanna siede e scrive",
-            "en": "Susanna sits and writes"
+            "en": "Susanna sits and writes.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
-            "it": "io prendo su me stessa.\n\"Canzonetta sull'aria...\"",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "I take on myself.\n\"Song on the air...\""
+            "it": "io prendo su me stessa.\n\"Canzonetta sull'aria...\"",
+            "en": "I take upon myself.\n“A little song on the breeze...”",
+            "literalText": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       },
       {
@@ -1345,144 +1495,156 @@ export const figaroActThreeScenes = [
         "type": "Duettino",
         "participants": [
           "Susanna",
-          "La Contessa"
+          "The Countess"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "scrivendo",
-            "en": "writing"
+            "en": "Writing.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "\"Sull'aria...\"",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "\"On the air...\""
+            "en": "“On the breeze...”",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
+            "speakerTranslation": "The Countess",
             "it": "\"Che soave zeffiretto...\"",
-            "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "\"It's soothing...\""
+            "en": "“What a gentle little breeze...”",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "\"Zeffiretto...\"",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "\"Zeffiretto...\""
+            "en": "“Little breeze...”",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "\"Questa sera spirerà...\"",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "\"This evening he'll be out...\""
+            "it": "\"Questa sera spirerà...\"",
+            "en": "“Will blow this evening...”",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "\"Questa sera spirerà...\"",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "\"This evening he'll be out...\""
+            "it": "\"Questa sera spirerà...\"",
+            "en": "“Will blow this evening...”",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
+            "speakerTranslation": "The Countess",
             "it": "\"Sotto i pini del boschetto.\"",
-            "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "\"Under the pines of the grove.\""
+            "en": "“Beneath the pines in the grove.”",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
+            "speakerTranslation": "Susanna",
             "it": "\"Sotto i pini...\"",
-            "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "\"Under the pines...\""
+            "en": "“Beneath the pines...”",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
+            "speakerTranslation": "The Countess",
             "it": "\"Sotto i pini del boschetto.\"",
-            "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "\"Under the pines of the grove.\""
+            "en": "“Beneath the pines in the grove.”",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "\"Sotto i pini...del boschetto...\"",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "\"Under the pines of the grove...\""
+            "it": "\"Sotto i pini...del boschetto...\"",
+            "en": "“Beneath the pines... in the grove...”",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Ei già il resto capirà.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "And the rest will understand."
+            "it": "Ei già il resto capirà.",
+            "en": "He will understand the rest.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Certo, certo il capirà.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Of course, he will."
+            "it": "Certo, certo il capirà.",
+            "en": "Certainly, certainly he will.",
+            "literalText": true
           }
-        ]
+        ],
+        "routeItem": 2,
+        "sourceTitlesOnly": true
       },
       {
         "type": "Recitativo",
         "participants": [
           "Susanna",
-          "La Contessa"
+          "The Countess"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "piega la lettera",
-            "en": "fold the letter"
+            "en": "She folds the letter.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
-            "it": "Piegato è il foglio... or come si sigilla?",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Folded is the sheet... or how does it seal?"
+            "it": "Piegato è il foglio... or come si sigilla?",
+            "en": "The letter is folded... now how shall we seal it?",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "si cava una spilla e gliela dà",
-            "en": "He's getting a pin and giving it to him."
+            "en": "She takes out a pin and gives it to her.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
-            "it": "Ecco... prendi una spilla:\nServirà di sigillo. Attendi...scrivi\nsul riverso del foglio,\n\"Rimandate il sigillo\".",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Here, take a pin.\nIt will serve as a seal.\non the sheet,\n\"Return the seal.\""
+            "it": "Ecco... prendi una spilla:\nServirà di sigillo. Attendi...scrivi\nsul riverso del foglio,\n\"Rimandate il sigillo\".",
+            "en": "Here... take a pin:\nit will serve as a seal. Wait... write\non the back of the letter,\n“Return the seal.”",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "È più bizzarro\ndi quel della patente.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "It's weirder.\nof the driver's license."
+            "it": "È più bizzarro\ndi quel della patente.",
+            "en": "It is more unusual\nthan the one on the commission.",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Presto nascondi, io sento venir gente.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Soon hide, I hear people coming."
+            "it": "Presto nascondi, io sento venir gente.",
+            "en": "Quickly, hide it; I hear people coming.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Susanna si pone il biglietto nel seno.",
-            "en": "Susanna puts her ticket in her breasts."
+            "en": "Susanna tucks the note into her bodice.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 3,
+        "sourceTitlesOnly": true
       }
     ]
   },
@@ -1491,102 +1653,107 @@ export const figaroActThreeScenes = [
     "sourceScene": "XI",
     "sections": [
       {
-        "type": "Recitativo",
-        "participants": [],
+        "number": 22,
+        "type": "Coro",
+        "participants": [
+          "Peasant Girls"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "Cherubino vestito da contadinella, Barbarina e alcune altre contadinelle vestite nel medesimo modo con mazzetti di fiori e i suddetti",
-            "en": "Cherubin dressed as a small peasant, Barbarina and some other dressers dressed in the same way with bunches of flowers and the aforementioned"
-          }
-        ]
-      },
-      {
-        "number": 22,
-        "type": "Coro",
-        "participants": [
-          "Contadinelle"
-        ],
-        "turns": [
+            "en": "Cherubino dressed as a peasant girl, Barbarina and several other peasant girls dressed alike, carrying small bunches of flowers; the Countess and Susanna remain.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
           {
             "speaker": "Contadinelle",
+            "speakerTranslation": "Peasant Girls",
             "it": "Ricevete, oh padroncina,\nqueste rose e questi fior,\nche abbiam colti stamattina\nper mostrarvi il nostro amor.\nSiamo tante contadine,\ne siam tutte poverine,\nma quel poco che rechiamo\nve lo diamo di buon cor.",
-            "speakerTranslation": "Peasant girls",
-            "literalText": true,
-            "en": "Receipt, oh padroncina,\nthese roses and these flowers,\nthat we caught this morning\nto show you our love.\nWe are so many farmers,\nand be all poor,\nbut the little we go\nWe give it to you."
+            "en": "Accept, dear mistress,\nthese roses and these flowers,\nwhich we picked this morning\nto show you our love.\nWe are peasant girls,\nand all of us are poor,\nbut the little we bring\nwe give you from the heart.",
+            "literalText": true
           }
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true,
+        "routeAliases": [
+          0
         ]
       },
       {
         "type": "Recitativo",
         "participants": [
           "Barbarina",
-          "La Contessa",
+          "The Countess",
           "Susanna"
         ],
         "turns": [
           {
             "speaker": "Barbarina",
-            "it": "Queste sono, madama,\nle ragazze del loco\nche il poco ch'han vi vengono ad offrire,\ne vi chiedon perdon del loro ardire.",
             "speakerTranslation": "Barbarina",
-            "literalText": true,
-            "en": "These are, madam,\nthe local girls\nthat the little who have come to offer you,\nand ask you for their boldness."
+            "it": "Queste sono, madama,\nle ragazze del loco\nche il poco ch'han vi vengono ad offrire,\ne vi chiedon perdon del loro ardire.",
+            "en": "These, my lady, are\nthe local girls,\nwho come to offer you the little they have,\nand ask your pardon for their boldness.",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Oh brave, vi ringrazio.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Oh, good, thank you."
+            "it": "Oh brave, vi ringrazio.",
+            "en": "Well done, and thank you.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Come sono vezzose.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Like they're vezzose."
+            "it": "Come sono vezzose.",
+            "en": "How charming they are.",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "E chi è, narratemi,\nquell'amabil fanciulla\nch'ha l'aria sì modesta?",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "And who is it, tell me,\nthat beloved maid\nthat has the air so modest?"
+            "it": "E chi è, narratemi,\nquell'amabil fanciulla\nch'ha l'aria sì modesta?",
+            "en": "And who, tell me, is\nthat lovely young girl\nwith such a modest air?",
+            "literalText": true
           },
           {
             "speaker": "Barbarina",
-            "it": "Ell'è mia cugina, e per le nozze\nè venuta ier sera.",
             "speakerTranslation": "Barbarina",
-            "literalText": true,
-            "en": "She's my cousin, and for the wedding\nShe came in the evening."
+            "it": "Ell'è mia cugina, e per le nozze\nè venuta ier sera.",
+            "en": "She is my cousin, and for the wedding\nshe arrived last night.",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Onoriamo la bella forestiera,\nvenite qui... datemi i vostri fiori.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "We honor the beautiful stranger,\nCome here, give me your flowers."
+            "it": "Onoriamo la bella forestiera,\nvenite qui... datemi i vostri fiori.",
+            "en": "Let us honour our beautiful visitor;\ncome here... give me your flowers.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "prende i fiori di Cherubino e lo bacia in fronte",
-            "en": "takes the flowers of Cherubino and kisses him in front"
+            "en": "She takes Cherubino’s flowers and kisses him on the forehead.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
-            "it": "Come arrossì... Susanna, e non ti pare...\nche somigli ad alcuno?",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Susanna.\nWhat do you look like?"
+            "it": "Come arrossì... Susanna, e non ti pare...\nche somigli ad alcuno?",
+            "en": "How she blushed... Susanna, do you not think...\nshe resembles someone?",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Al naturale.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Natural."
+            "it": "Al naturale.",
+            "en": "A perfect likeness.",
+            "literalText": true
           }
-        ]
+        ],
+        "routeItem": 2,
+        "sourceTitlesOnly": true
       }
     ]
   },
@@ -1598,146 +1765,149 @@ export const figaroActThreeScenes = [
         "type": "Recitativo",
         "participants": [
           "Antonio",
-          "La Contessa",
+          "The Countess",
           "Susanna",
-          "Il Conte",
+          "The Count",
           "Cherubino",
           "Barbarina"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "I suddetti, il Conte ed Antonio",
-            "en": "The above mentioned, Count and Antonio"
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Antonio ha il cappello di Cherubino: entra in scena pian piano, gli cava la cuffia di donna e gli mette in testa il cappello stesso.",
-            "en": "Antonio has Cherubino's hat: he enters the scene slowly, takes his woman's head and puts his hat in his head."
+            "it": "I suddetti, il Conte ed Antonio\nAntonio ha il cappello di Cherubino: entra in scena pian piano, gli cava la cuffia di donna e gli mette in testa il cappello stesso.",
+            "en": "The same characters, the Count and Antonio.\nAntonio carries Cherubino’s hat. He enters quietly, removes the girl’s cap from Cherubino’s head, and puts the hat on him.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Antonio",
-            "it": "Ehi! Cospettaccio! È questi l'uffiziale.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "This is the office."
+            "it": "Ehi! Cospettaccio! È questi l'uffiziale.",
+            "en": "Hey! Good heavens! Here is the officer.",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Oh stelle!",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Oh stars!"
+            "it": "Oh stelle!",
+            "en": "Oh, heavens!",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "(Malandrino!)",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "(Malandrino!)"
+            "it": "(Malandrino!)",
+            "en": "(Rogue!)",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Ebben, madama!",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Ebben, madam!"
+            "en": "Well, my lady!",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Io sono, oh signor mio,\nirritata e sorpresa al par di voi.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "I am, oh my lord,\nirritated and surprised to you."
+            "it": "Io sono, oh signor mio,\nirritata e sorpresa al par di voi.",
+            "en": "My lord, I am\nas angry and surprised as you.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Ma stamane...",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "But this morning..."
+            "it": "Ma stamane...",
+            "en": "But this morning...",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Stamane...\nPer l'odierna festa\nvolevam travestirlo al modo stesso,\nche l'han vestito adesso.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "This morning...\nFor today's feast\nWe wanted to disguise it the same way,\nwho dressed her now."
+            "it": "Stamane...\nPer l'odierna festa\nvolevam travestirlo al modo stesso,\nche l'han vestito adesso.",
+            "en": "This morning...\nFor today’s celebration\nwe meant to disguise him in just the way\nthey have dressed him now.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "a Cherubino",
-            "en": "to Cherubino"
+            "en": "To Cherubino.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
-            "it": "E perché non partiste?",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Why didn't you leave?"
+            "it": "E perché non partiste?",
+            "en": "And why did you not leave?",
+            "literalText": true
           },
           {
             "speaker": "Cherubino",
-            "it": "Signor!",
             "speakerTranslation": "Cherubino",
-            "literalText": true,
-            "en": "Mr!"
+            "it": "Signor!",
+            "en": "My lord!",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Saprò punire\nla sua ubbidienza.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "I will punish\nhis obedience."
+            "en": "I shall know how to punish\nsuch obedience.",
+            "literalText": true
           },
           {
             "speaker": "Barbarina",
-            "it": "Eccellenza, Eccellenza,\nvoi mi dite sì spesso\nqual volta m'abbracciate, e mi baciate:\nBarbarina, se m'ami,\nti darò quel che brami...",
             "speakerTranslation": "Barbarina",
-            "literalText": true,
-            "en": "Excellence, Excellence,\nyou say yes often\nWhen you embrace me, and kiss me:\nBarbarina, if you love me,\nI'll give you what you love."
+            "it": "Eccellenza, Eccellenza,\nvoi mi dite sì spesso\nqual volta m'abbracciate, e mi baciate:\nBarbarina, se m'ami,\nti darò quel che brami...",
+            "en": "Your Excellency, Your Excellency,\nyou so often say to me,\nwhenever you embrace and kiss me:\n“Barbarina, if you love me,\nI shall give you whatever you wish...”",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Io dissi questo?",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "I said that?"
+            "it": "Io dissi questo?",
+            "en": "I said that?",
+            "literalText": true
           },
           {
             "speaker": "Barbarina",
-            "it": "Voi.\nOr datemi , padrone,\nin sposo Cherubino,\ne v'amerò, com'amo il mio gattino.",
             "speakerTranslation": "Barbarina",
-            "literalText": true,
-            "en": "You.\nOr give me, master,\nin the groom Cherubino,\nAnd I will love you, as I love my kitten."
+            "it": "Voi.\nOr datemi , padrone,\nin sposo Cherubino,\ne v'amerò, com'amo il mio gattino.",
+            "en": "You did.\nNow give me, my lord,\nCherubino as my husband,\nand I shall love you as I love my kitten.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "to the Count"
+            "en": "To the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Ebbene: or tocca a voi.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "Well, it's up to you."
+            "it": "Ebbene: or tocca a voi.",
+            "en": "Well, now it is your turn.",
+            "literalText": true
           },
           {
             "speaker": "Antonio",
-            "it": "Brava figliuola,\nhai buon maestro, che ti fa scuola.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "Good daughter,\nYou have a good teacher, who makes you school."
+            "it": "Brava figliuola,\nhai buon maestro, che ti fa scuola.",
+            "en": "Well done, my girl;\nyou have a fine teacher to instruct you.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "(Non so qual uom, qual demone, qual Dio\nrivolga tutto quanto a torto mio.)",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "(I don't know what oom, what demon, what God\ndo everything wrong with me.)"
+            "it": "(Non so qual uom, qual demone, qual Dio\nrivolga tutto quanto a torto mio.)",
+            "en": "(I do not know what man, what demon, what god\nturns everything against me.)",
+            "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "sourceTitlesOnly": true
       }
     ]
   },
@@ -1749,8 +1919,8 @@ export const figaroActThreeScenes = [
         "type": "Recitativo",
         "participants": [
           "Figaro",
-          "Il Conte",
-          "La Contessa",
+          "The Count",
+          "The Countess",
           "Susanna",
           "Antonio"
         ],
@@ -1758,189 +1928,209 @@ export const figaroActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "I suddetti e Figaro",
-            "en": "The above and Figaro"
+            "en": "The same characters and Figaro.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Figaro",
-            "it": "Signor... se trattenete\ntutte queste ragazze,\naddio feste... addio danza...",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Mr.... if you hold\nAll these girls,\nfarewell parties... farewell dance..."
+            "it": "Signor... se trattenete\ntutte queste ragazze,\naddio feste... addio danza...",
+            "en": "My lord... if you detain\nall these girls,\ngoodbye to the festivities... goodbye to the dancing...",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "E che, vorresti\nballar col pié stravolto?",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "And that you would\ndance with the windshield?"
+            "it": "E che, vorresti\nballar col pié stravolto?",
+            "en": "What, you would\ndance with your twisted foot?",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "finge di drizzarsi la gamba e poi si prova a ballare",
-            "en": "pretends to straighten his leg and then tries to dance"
+            "en": "He pretends to straighten his leg, then tries to dance.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Figaro",
-            "it": "Eh, non mi duol più molto.\nAndiam, belle fanciulle.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Eh, I don't do much anymore.\nAndiam, beautiful girls."
+            "it": "Eh, non mi duol più molto.\nAndiam, belle fanciulle.",
+            "en": "Oh, it hardly hurts any more.\nCome, pretty girls.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "vuol partire, il Conte lo richiama",
-            "en": "he wants to leave, the Count calls him"
+            "en": "He makes to leave; the Count calls him back.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "a Susanna",
-            "en": "to Susanna"
+            "en": "To Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Come si caverà dall'imbarazzo?",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "How's it going to be embarrassed?"
+            "it": "Come si caverà dall'imbarazzo?",
+            "en": "How will he get out of this difficulty?",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "alla Contessa",
-            "en": "to the Countess"
+            "en": "To the Countess.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
-            "it": "Lasciate fare a lui.",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "Let him do it."
+            "it": "Lasciate fare a lui.",
+            "en": "Leave it to him.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Per buona sorte\ni vasi eran di creta.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "For good luck\nthe eran vessels of clay."
+            "it": "Per buona sorte\ni vasi eran di creta.",
+            "en": "Luckily\nthe pots were made of clay.",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Senza fallo.\nAndiamo dunque, andiamo.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "No foul.\nLet's go, let's go."
+            "it": "Senza fallo.\nAndiamo dunque, andiamo.",
+            "en": "Without a doubt.\nCome along, then, come along.",
+            "literalText": true
           },
           {
             "speaker": "Antonio",
-            "it": "E intanto a cavallo\ndi galoppo a Siviglia andava il paggio.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "And on horseback\nof gallop in Seville went the toll."
+            "it": "E intanto a cavallo\ndi galoppo a Siviglia andava il paggio.",
+            "en": "And meanwhile, on horseback,\nthe page was galloping to Seville.",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Di galoppo, o di passo... buon viaggio.\nVenite, oh belle giovani.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Of gallop, or step... good trip.\nCome, oh beautiful young people."
+            "it": "Di galoppo, o di passo... buon viaggio.\nVenite, oh belle giovani.",
+            "en": "Galloping or walking... a pleasant journey to him.\nCome, pretty girls.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "E a te la sua patente\nera in tasca rimasta...",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "And to you his license\nShe was in her pocket..."
+            "it": "E a te la sua patente\nera in tasca rimasta...",
+            "en": "And his commission\nhad stayed in your pocket...",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Certamente,\nche razza di domande!",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Of course,\nWhat kind of questions!"
+            "it": "Certamente,\nche razza di domande!",
+            "en": "Certainly;\nwhat questions you ask!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "a Susanna che fa de' motti a Figaro",
-            "en": "to Susanna motti in Figaro"
+            "en": "To Susanna, who is signalling to Figaro.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Antonio",
-            "it": "Via, non gli far più motti, ei non t'intende.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "Go, don't touch him anymore, and you don't mean it."
+            "it": "Via, non gli far più motti, ei non t'intende.",
+            "en": "Come, stop signalling to him; he does not understand you.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "prende per mano Cherubino e lo presenta a Figaro",
-            "en": "takes Cherubino and presents it in Figaro"
+            "en": "He takes Cherubino by the hand and presents him to Figaro.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Antonio",
-            "it": "Ed ecco chi pretende\nche sia un bugiardo il mio signor nipote.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "And here are those who demand\nI'm a liar, my nephew."
+            "it": "Ed ecco chi pretende\nche sia un bugiardo il mio signor nipote.",
+            "en": "And here is someone who claims\nthat my dear nephew is a liar.",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Cherubino?",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Cherub?"
+            "it": "Cherubino?",
+            "en": "Cherubino?",
+            "literalText": true
           },
           {
             "speaker": "Antonio",
-            "it": "Or ci sei.",
             "speakerTranslation": "Antonio",
-            "literalText": true,
-            "en": "You're there."
+            "it": "Or ci sei.",
+            "en": "Now you have it.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "to the Count"
+            "en": "To the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
+            "speakerTranslation": "Figaro",
             "it": "Che diamin canta?",
-            "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "What diamin sings?"
+            "en": "What the devil is he singing about?",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Non canta, no, ma dice\nch'egli saltò stamane sui garofani...",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "He doesn't sing, no, but he says\nThat he jumped this morning on the carnations..."
+            "en": "He is not singing, no; he says\nhe jumped onto the carnations this morning...",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Ei lo dice! Sarà... se ho saltato io,\nsi può dare ch'anch'esso\nabbia fatto lo stesso.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "It'll be... if I jumped,\nyou can give that too\ndid the same."
+            "it": "Ei lo dice! Sarà... se ho saltato io,\nsi può dare ch'anch'esso\nabbia fatto lo stesso.",
+            "en": "He says so! Perhaps... if I jumped,\nit is possible that he too\ndid the same.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Anch'esso?",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "You too?"
+            "it": "Anch'esso?",
+            "en": "He too?",
+            "literalText": true
           },
           {
             "speaker": "Figaro",
-            "it": "Perché no?\nIo non impugno mai quel che non so.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Why not?\nI never commit what I don't know."
+            "it": "Perché no?\nIo non impugno mai quel che non so.",
+            "en": "Why not?\nI never dispute what I do not know.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "S'ode la marcia da lontano",
-            "en": "The march from afar"
+            "en": "The march is heard in the distance.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "sourceTitlesOnly": true
       },
       {
         "number": 23,
@@ -1948,70 +2138,76 @@ export const figaroActThreeScenes = [
         "participants": [
           "Figaro",
           "Susanna",
-          "Il Conte",
-          "La Contessa"
+          "The Count",
+          "The Countess"
         ],
         "turns": [
           {
             "speaker": "Figaro",
-            "it": "Ecco la marcia, andiamo;\nai vostri posti, oh belle, ai vostri posti.\nSusanna, dammi il braccio.",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "Here's the march, let's go;\nto your places, oh beautiful, to your places.\nSusanna, give me your arm."
+            "it": "Ecco la marcia, andiamo;\nai vostri posti, oh belle, ai vostri posti.\nSusanna, dammi il braccio.",
+            "en": "Here is the march; let us go.\nTo your places, pretty girls, to your places.\nSusanna, give me your arm.",
+            "literalText": true
           },
           {
             "speaker": "Susanna",
-            "it": "Eccolo!",
             "speakerTranslation": "Susanna",
-            "literalText": true,
-            "en": "There he is!"
+            "it": "Eccolo!",
+            "en": "Here it is!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Partono tutti eccettuati il Conte e la Contessa",
-            "en": "The Count and the Countess leave all"
+            "en": "Everyone leaves except the Count and Countess.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
+            "speakerTranslation": "The Count",
             "it": "Temerari.",
-            "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Temerari."
+            "en": "Insolent creatures!",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
+            "speakerTranslation": "The Countess",
             "it": "Io son di ghiaccio!",
-            "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "I'm ice!"
+            "en": "I am frozen with shock!",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Contessa...",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Contessa..."
+            "it": "Contessa...",
+            "en": "Countess...",
+            "literalText": true
           },
           {
             "speaker": "La Contessa",
-            "it": "Or non parliamo.\nEcco qui le due nozze,\nriceverle dobbiam, alfin si tratta\nd'una vostra protetta.\nSeggiamo.",
             "speakerTranslation": "The Countess",
-            "literalText": true,
-            "en": "We don't talk.\nHere are the two weddings,\nreceive them dobbiam, alfin it is\nof your own protection.\nLet's sit."
+            "it": "Or non parliamo.\nEcco qui le due nozze,\nriceverle dobbiam, alfin si tratta\nd'una vostra protetta.\nSeggiamo.",
+            "en": "Let us not speak now.\nHere come the two wedding parties;\nwe must receive them. After all, one bride\nis under your protection.\nLet us sit.",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Seggiamo (e meditiam vendetta).",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Seggiamo (and meditiam vengeance)."
+            "it": "Seggiamo (e meditiam vendetta).",
+            "en": "Let us sit (and plan revenge).",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Siedono; la marcia s'avvicina.",
-            "en": "They sit; the march is approaching."
+            "en": "They sit; the march draws nearer.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 1,
+        "sourceTitlesOnly": true
       }
     ]
   },
@@ -2020,127 +2216,102 @@ export const figaroActThreeScenes = [
     "sourceScene": "XIV",
     "sections": [
       {
-        "type": "Recitativo",
+        "type": "Finale",
         "participants": [
-          "Due Donne",
-          "Tutti",
-          "Il Conte",
+          "Two Women",
+          "All",
+          "The Count",
           "Figaro",
-          "Coro"
+          "Chorus"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "I suddetti, Figaro, Susanna, Marcellina, Bartolo, Antonio, Barbarina, cacciatori, contadini e contadine.",
-            "en": "The aforementioned, Figaro, Susanna, Marcellina, Bartolo, Antonio, Barbarina, hunters, peasants and peasants."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Due giovinette che portano il cappello verginale con piume bianche, due altre un bianco velo, due altre i guanti e il mazzetto di fiori.",
-            "en": "Two young ladies wearing the greenish hat with white feathers, two others a white veil, two other gloves and the bouquet of flowers."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Figaro con Marcellina. Due altre giovinette che portano un simile cappello per Susanna ecc.",
-            "en": "Figaro with Marcellina. Two other johns wearing a similar hat for Susanna etc."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Bartolo con Susanna. Due giovinette incominciano il coro che termina in ripieno.",
-            "en": "Bartolo with Susanna. Two young men begin the choir that ends in filling."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Bartolo conduce la Susanna al Conte e s'inginocchia per ricever da lui il cappello ecc.",
-            "en": "Bartolo leads Susanna to the Count and kneels to receive his hat etc."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Figaro conduce Marcellina alla Contessa e fa la stessa funzione.",
-            "en": "Figaro leads Marcellina to Contessa and does the same function."
+            "it": "I suddetti, Figaro, Susanna, Marcellina, Bartolo, Antonio, Barbarina, cacciatori, contadini e contadine.\nDue giovinette che portano il cappello verginale con piume bianche, due altre un bianco velo, due altre i guanti e il mazzetto di fiori.\nFigaro con Marcellina. Due altre giovinette che portano un simile cappello per Susanna ecc.\nBartolo con Susanna. Due giovinette incominciano il coro che termina in ripieno.\nBartolo conduce la Susanna al Conte e s'inginocchia per ricever da lui il cappello ecc.\nFigaro conduce Marcellina alla Contessa e fa la stessa funzione.",
+            "en": "The Count and Countess, Figaro, Susanna, Marcellina, Bartolo, Antonio, Barbarina, hunters, peasant men and women.\nTwo young girls carry the bridal hat with white feathers, two others a white veil, and two others the gloves and bouquet.\nFigaro enters with Marcellina. Two more young girls carry a similar hat for Susanna, and so on.\nBartolo enters with Susanna. Two young girls begin the chorus, which the full ensemble joins.\nBartolo leads Susanna to the Count; she kneels to receive the hat and the other gifts from him.\nFigaro leads Marcellina to the Countess, and the same ceremony takes place.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Due Donne",
+            "speakerTranslation": "Two Women",
             "it": "Amanti costanti,\nseguaci d'onor,\ncantate, lodate\nsì saggio signor.\nA un dritto cedendo,\nche oltraggia, che offende,\nei caste vi rende\nai vostri amator.",
-            "speakerTranslation": "Two women",
-            "literalText": true,
-            "en": "Constant lovers,\nfollowers of honor,\nsing, praise\nYes wise sir.\nTo a straight,\nthat offends, that offends,\nand the caste makes you\nto your amateurs."
+            "en": "Faithful lovers,\nfollowers of honour,\nsing, praise\nso wise a lord.\nBy renouncing a right\nthat insults and offends,\nhe leaves you chaste\nfor those you love.",
+            "literalText": true
           },
           {
             "speaker": "Tutti",
-            "it": "Cantiamo, lodiamo\nsì saggio signor!",
             "speakerTranslation": "All",
-            "literalText": true,
-            "en": "We sing, we praise\nYes wise sir!"
+            "it": "Cantiamo, lodiamo\nsì saggio signor!",
+            "en": "Let us sing, let us praise\nso wise a lord!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
-            "it": "I figuranti ballano. Susanna essendo in ginocchio durante il duo, tira il Conte per l'abito, gli mostra il bigliettino, dopo passa la mano dal lato degli spettatori alla testa, dove pare che il Conte le aggiusti il cappello, e gli dà il biglietto. Il Conte se lo mette furtivamente in seno, Susanna s'alza, e gli fa una riverenza. Figaro viene a riceverla, e si balla il fandango. Marecellina s'alza un po' più tardi. Bartolo viene a riceverla dalle mani della Contessa.",
-            "en": "Susanna being on her knees during the duo, pulls the Count for the dress, shows him the card, then passes her hand on the side of the spectators to the head, where it seems that the Count adds her hat, and gives him the ticket."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "cava il biglietto e nel aprirlo si punge il dito",
-            "en": "the ticket and in the open it stings the finger"
+            "it": "I figuranti ballano. Susanna essendo in ginocchio durante il duo, tira il Conte per l'abito, gli mostra il bigliettino, dopo passa la mano dal lato degli spettatori alla testa, dove pare che il Conte le aggiusti il cappello, e gli dà il biglietto. Il Conte se lo mette furtivamente in seno, Susanna s'alza, e gli fa una riverenza. Figaro viene a riceverla, e si balla il fandango. Marecellina s'alza un po' più tardi. Bartolo viene a riceverla dalle mani della Contessa.\ncava il biglietto e nel aprirlo si punge il dito",
+            "en": "The attendants dance. Susanna, kneeling during the duet, tugs at the Count’s coat and shows him the note. She then raises her hand to her head on the side facing the audience, where the Count appears to adjust her hat, and hands him the note. The Count secretly slips it into his breast. Susanna rises and curtsies to him. Figaro comes to receive her, and the fandango is danced. Marcellina rises a little later; Bartolo comes to receive her from the Countess.\nHe takes out the note and pricks his finger while opening it.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
-            "it": "Eh già, la solita usanza,\nle donne ficcan gli aghi in ogni loco.\nAh, ah, capisco il gioco.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Yeah, the usual custom.\nwomen put needles on every spot.\nAh, ah, I understand the game."
+            "it": "Eh già, la solita usanza,\nle donne ficcan gli aghi in ogni loco.\nAh, ah, capisco il gioco.",
+            "en": "Ah yes, the usual custom:\nwomen stick pins everywhere.\nAh, ah, I understand the game.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "vede tutto e dice a Susanna",
-            "en": "He sees everything and tells Susanna"
+            "en": "He sees everything and speaks to Susanna.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Figaro",
-            "it": "Un biglietto amoroso\nche gli diè nel passar qualche galante,\ned era sigillato d'una spilla,\nond'ei si punse il dito",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "A Lovely Ticket\nthat gives him in passing some galants,\nand was sealed with a pin,\nondd'ei stinged his finger"
+            "it": "Un biglietto amoroso\nche gli diè nel passar qualche galante,\ned era sigillato d'una spilla,\nond'ei si punse il dito",
+            "en": "A love note\nsome admirer gave him in passing,\nand it was sealed with a pin,\nwhich pricked his finger.",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Il Conte legge, bacia il biglietto, cerca la spilla, la trova e se la mette alla manica del saio.",
-            "en": "The Count reads, kisses the note, looks for the pin, finds it and puts it on the sleeve of the sao."
+            "en": "The Count reads and kisses the note, searches for the pin, finds it, and puts it in the sleeve of his coat.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Figaro",
-            "it": "Il Narciso or la cerca; oh, che stordito!",
             "speakerTranslation": "Figaro",
-            "literalText": true,
-            "en": "The Narciso is looking for her; oh, what a fool!"
+            "it": "Il Narciso or la cerca; oh, che stordito!",
+            "en": "Now Narcissus is looking for it; oh, what a fool!",
+            "literalText": true
           },
           {
             "speaker": "Il Conte",
-            "it": "Andate, amici! E sia per questa sera\ndisposto l'apparato nuziale\ncolla più ricca pompa; io vo' che sia\nmagnifica la feste, e canti e fuochi,\ne gran cena, e gran ballo, e ognuno impari\ncom'io tratto color, che a me son cari.",
             "speakerTranslation": "The Count",
-            "literalText": true,
-            "en": "Go, friends, and be for tonight\nplaced the wedding apparatus\nricher glue pump; I want it to be\nmagnificent parties, and singing and fires,\nand great dinner, and great dance, and everyone learns\nas I draw color, which to me are dear."
+            "it": "Andate, amici! E sia per questa sera\ndisposto l'apparato nuziale\ncolla più ricca pompa; io vo' che sia\nmagnifica la feste, e canti e fuochi,\ne gran cena, e gran ballo, e ognuno impari\ncom'io tratto color, che a me son cari.",
+            "en": "Go, friends! And for this evening\nlet the wedding festivities be prepared\nwith the greatest splendour; I want\na magnificent celebration, with songs and fireworks,\na grand supper and a grand ball, so everyone may learn\nhow I treat those who are dear to me.",
+            "literalText": true
           },
           {
             "speaker": "Coro",
-            "it": "Amanti costanti,\nseguaci d'onor,\ncantate, lodate\nsì saggio signor.\nA un dritto cedendo,\nche oltraggia, che offende,\nei caste vi rende\nai vostri amator.\nCantiamo, lodiamo\nsì saggio signor!",
             "speakerTranslation": "Chorus",
-            "literalText": true,
-            "en": "Constant lovers,\nfollowers of honor,\nsing, praise\nYes wise sir.\nTo a straight,\nthat offends, that offends,\nand the caste makes you\nto your amateurs.\nWe sing, we praise\nYes wise sir!"
+            "it": "Amanti costanti,\nseguaci d'onor,\ncantate, lodate\nsì saggio signor.\nA un dritto cedendo,\nche oltraggia, che offende,\nei caste vi rende\nai vostri amator.\nCantiamo, lodiamo\nsì saggio signor!",
+            "en": "Faithful lovers,\nfollowers of honour,\nsing, praise\nso wise a lord.\nBy renouncing a right\nthat insults and offends,\nhe leaves you chaste\nfor those you love.\nLet us sing, let us praise\nso wise a lord!",
+            "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "Tutti partono.",
-            "en": "Everyone's leaving."
-          },
-          {
-            "speaker": "Coro",
-            "it": "---",
-            "speakerTranslation": "Chorus",
-            "literalText": true,
-            "en": "--"
+            "en": "Everyone leaves.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 0,
+        "sourceTitlesOnly": true
       }
     ]
   }

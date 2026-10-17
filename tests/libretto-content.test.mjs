@@ -148,10 +148,10 @@ test("Figaro Acts III–IV preserve source scenes, numbers and aligned text", as
   const { createHash } = await import("node:crypto");
   assert.deepEqual(figaro.acts.map(item => item.number), [1, 2, 3, 4]);
   const expected = [
-    { scenes: 14, sections: 30, numbers: [17, 18, 19, 20, 21, 22, 23], lines: 460, directions: 74,
-      hash: "f08460db64b423367d2aa32c68990a9294daace8957aed10fd97488254cf375e" },
-    { scenes: 15, sections: 26, numbers: [24, 25, 26, 27, 28, 29], lines: 488, directions: 58,
-      hash: "636341b7f9adc6a96e3f822da0208bef64fe6b4326df180bf1bf2b4a08d0dc9a" }
+    { scenes: 14, sections: 21, numbers: [17, 18, 19, 20, 21, 22, 23], lines: 448, directions: 66,
+      hash: "801de5d4ac162d6f43a7c82a43e591a72c51f8090c289e6834aadf0c96cba982" },
+    { scenes: 15, sections: 19, numbers: [24, 25, 26, 27, 28, 29], lines: 452, directions: 55,
+      hash: "38a2f6a232cf689136e107f412013708eff8f8819d52e43dd34adaf0e32fca73" }
   ];
   for (const [index, counts] of expected.entries()) {
     const current = figaro.acts[index + 2];

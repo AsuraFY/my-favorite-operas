@@ -23,8 +23,8 @@ import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-
 import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-stage-paragraph-1";
 
 import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-review-1";
-import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-1";
-import { figaroActFourScenes } from "./libretto-le-nozze-di-figaro-act-4.js?v=figaro-act4-1";
+import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-review-1";
+import { figaroActFourScenes } from "./libretto-le-nozze-di-figaro-act-4.js?v=figaro-act4-review-1";
 import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-act1-1";
 import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-act2-1";
 import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-act3-1";
@@ -368,7 +368,7 @@ const figaro = {
       ["Coro", "Chorus", "Peasant men and women."]
     ]
   },
-  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, all acts from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Acts I–II have editorially reviewed line-aligned English translations. Acts III–IV have line-aligned English drafts that need editorial review."
+  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, all acts from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Acts I–II have editorially reviewed line-aligned English translations. Acts III–IV were editorially reviewed against the Italian on 17 October 2026; embedded speaker cues and scraped footer artifacts were corrected. Desktop/mobile visual review remains pending."
 };
 
 const carmen = {

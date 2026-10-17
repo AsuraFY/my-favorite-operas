@@ -462,6 +462,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>';
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
     '-' + sectionRouteItem(section, sectionIndex) + '" data-libretto-item="' + sectionRouteItem(section, sectionIndex) + '" data-source-scene="' + scene.number + '">' +
+    (section.routeAliases || []).map(item => '<span id="libretto-section-' + act + '-' + scene.number + '-' + item + '" aria-hidden="true"></span>').join('') +
     sourceDivisionHeading(section, "h2") + (section.sourceNote ? '<p class="libretto-source-note">' + escapeHtml(section.sourceNote) + '</p>' : '') +
     selectedHeading + (section.instrumental ? '<p class="libretto-source-note">Instrumental music</p>' : '') + (section.turns.length ? '<div class="libretto-columns"><div class="libretto-column-heading">' + escapeHtml(libretto.originalLanguage) + '</div>' +
     '<div class="libretto-column-heading">' + escapeHtml(libretto.translationLanguage) + '</div><div class="libretto-text">' +
@@ -490,7 +491,7 @@ function renderScenePage(selectedNumber = 1, query = "", selectedItem = 0, mobil
     }));
   }
   const scene = scenes.find((item) => item.number === (found?.scene || selectedNumber)) || scenes[0];
-  const routeIndex = scene.sections.findIndex((section, index) => sectionRouteItem(section, index) === selectedItem);
+  const routeIndex = scene.sections.findIndex((section, index) => (sectionRouteItem(section, index) === selectedItem || section.routeAliases?.includes(selectedItem)));
   const itemIndex = found?.item ?? (routeIndex >= 0 ? routeIndex : 0);
   const continuous = Boolean(libretto.continuousAct);
   const initialIndex = continuous ? scenes.slice(0, scenes.indexOf(scene)).reduce((n, entry) => n + entry.sections.length, 0) + itemIndex : itemIndex;
