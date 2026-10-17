@@ -6,11 +6,20 @@ export const figaroActOneScenes = [
     "summary": "Figaro measures their new room while Susanna explains the Count’s intentions towards her.",
     "sections": [
       {
+        "type": "Ouverture",
+        "originalTitle": "Ouverture",
+        "translatedTitle": "Overture",
+        "instrumental": true,
+        "beforeScene": true,
+        "routeItem": 4,
+        "participants": [],
+        "turns": []
+      },
+      {
         "type": "Duettino",
         "participants": [
           "Figaro",
-          "Susanna",
-          "Susanna e Figaro"
+          "Susanna"
         ],
         "turns": [
           {
@@ -31,7 +40,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "misurando",
-            "en": "Measuring."
+            "en": "Measuring.",
+            "shortCue": true
           },
           {
             "speaker": "Figaro",
@@ -43,7 +53,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "specchiandosi",
-            "en": "Looking in the mirror."
+            "en": "Looking in the mirror.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -67,7 +78,9 @@ export const figaroActOneScenes = [
             "literalText": true
           }
         ],
-        "number": 1
+        "number": 1,
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       },
       {
         "type": "Recitativo",
@@ -121,7 +134,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "toccandosi la fronte",
-            "en": "Touching her forehead."
+            "en": "Touching her forehead.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -133,7 +147,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "facendo lo stesso",
-            "en": "Doing the same."
+            "en": "Doing the same.",
+            "shortCue": true
           },
           {
             "speaker": "Figaro",
@@ -170,7 +185,9 @@ export const figaroActOneScenes = [
             "en": "Thank you; spare me such praise! Just see\nwhether we could be better placed elsewhere.",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 1
       },
       {
         "type": "Duettino",
@@ -229,7 +246,9 @@ export const figaroActOneScenes = [
             "literalText": true
           }
         ],
-        "number": 2
+        "number": 2,
+        "sourceTitlesOnly": true,
+        "routeItem": 2
       },
       {
         "type": "Recitativo",
@@ -400,9 +419,12 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "parte",
-            "en": "She exits."
+            "en": "She exits.",
+            "shortCue": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 3
       }
     ],
     "cast": "Figaro, Susanna, Susanna e Figaro"
@@ -429,7 +451,9 @@ export const figaroActOneScenes = [
             "en": "Bravo, master! Now I begin\nto understand the mystery... and see clearly\nyour whole scheme: to London, is that it?\nYou the minister, I the courier, and Susanna...\nthe secret ambassadress.\nIt shall not be, it shall not be. Figaro says so.",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       },
       {
         "type": "Cavatina",
@@ -447,10 +471,13 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "parte",
-            "en": "He exits."
+            "en": "He exits.",
+            "shortCue": true
           }
         ],
-        "number": 3
+        "number": 3,
+        "sourceTitlesOnly": true,
+        "routeItem": 1
       }
     ],
     "cast": "Figaro"
@@ -494,10 +521,12 @@ export const figaroActOneScenes = [
             "speaker": "Bartolo",
             "speakerTranslation": "Bartolo",
             "it": "Bene, io tutto farò: senza riserve\ntutto a me palesate.\n(Avrei pur gusto\ndi dar per moglie la mia serva antica\na chi mi fece un dì rapir l'amica.)",
-            "en": "Good, I shall do everything: without reserve,\nreveal everything to me.\n(I should indeed enjoy\ngiving my former servant as a wife\nto the man who once made my beloved be stolen from me.)",
+            "en": "Good, I shall do everything: without reserve,\nreveal everything to me.\n(I should indeed enjoy\ngiving my former servant as a wife\nto the man who once helped steal my sweetheart.)",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       },
       {
         "type": "Aria",
@@ -515,10 +544,13 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "parte",
-            "en": "He exits."
+            "en": "He exits.",
+            "shortCue": true
           }
         ],
-        "number": 4
+        "number": 4,
+        "sourceTitlesOnly": true,
+        "routeItem": 1
       }
     ],
     "cast": "Bartolo, Marcellina"
@@ -549,7 +581,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "resta indietro",
-            "en": "Remaining behind."
+            "en": "Remaining behind.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -598,20 +631,22 @@ export const figaroActOneScenes = [
             "it": "Vanno tutte due per partire e s'incontrano alla porta.",
             "en": "Both move to leave and meet at the door."
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       },
       {
         "type": "Duettino",
         "participants": [
           "Marcellina",
-          "Susanna",
-          "Susanna e Marcellina"
+          "Susanna"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "facendo una riverenza",
-            "en": "Making a curtsey."
+            "en": "Making a curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Marcellina",
@@ -623,7 +658,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "facendo una riverenza",
-            "en": "Making a curtsey."
+            "en": "Making a curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -635,7 +671,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "riverenza",
-            "en": "A curtsey."
+            "en": "A curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Marcellina",
@@ -647,7 +684,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "riverenza",
-            "en": "A curtsey."
+            "en": "A curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -659,7 +697,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "riverenze",
-            "en": "Curtseys."
+            "en": "Curtseys.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna e Marcellina",
@@ -671,7 +710,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "riverenza",
-            "en": "A curtsey."
+            "en": "A curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Marcellina",
@@ -683,7 +723,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "riverenza",
-            "en": "A curtsey."
+            "en": "A curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -695,7 +736,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "riverenza",
-            "en": "A curtsey."
+            "en": "A curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Marcellina",
@@ -707,7 +749,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "riverenza",
-            "en": "A curtsey."
+            "en": "A curtsey.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -764,7 +807,9 @@ export const figaroActOneScenes = [
             "en": "Marcellina exits."
           }
         ],
-        "number": 5
+        "number": 5,
+        "sourceTitlesOnly": true,
+        "routeItem": 1
       }
     ],
     "cast": "Marcellina, Susanna, Susanna e Marcellina"
@@ -795,7 +840,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "esce in fretta",
-            "en": "Entering hurriedly."
+            "en": "Entering hurriedly.",
+            "shortCue": true
           },
           {
             "speaker": "Cherubino",
@@ -929,7 +975,9 @@ export const figaroActOneScenes = [
             "en": "Poor Cherubino, are you mad!",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       },
       {
         "type": "Aria",
@@ -941,11 +989,13 @@ export const figaroActOneScenes = [
             "speaker": "Cherubino",
             "speakerTranslation": "Cherubino",
             "it": "Non so più cosa son, cosa faccio,\nor di foco, ora sono di ghiaccio,\nogni donna cangiar di colore,\nogni donna mi fa palpitar.\nSolo ai nomi d'amor, di diletto,\nmi si turba, mi s'altera il petto\ne a parlare mi sforza d'amore\nun desio ch'io non posso spiegar.\nParlo d'amor vegliando,\nparlo d'amor sognando,\nall'acque, all'ombre, ai monti,\nai fiori, all'erbe, ai fonti,\nall'eco, all'aria, ai venti,\nche il suon de' vani accenti\nportano via con sé.\nE se non ho chi mi oda,\nparlo d'amor con me.",
-            "en": "I no longer know what I am, what I do,\nnow I am fire, now I am ice,\nevery woman makes me change colour,\nevery woman makes my heart beat.\nAt the mere names of love, of delight,\nmy breast grows troubled, agitated,\nand I am compelled to speak of love\nby a longing I cannot explain.\nI speak of love while waking,\nI speak of love while dreaming,\nto the waters, the shadows, the mountains,\nto the flowers, the grass, the springs,\nto the echo, the air, the winds,\nwhich the sound of my vain words\ncarry away with them.\nAnd if no one hears me,\nI speak of love to myself.",
+            "en": "I no longer know what I am, what I do,\nnow I am fire, now I am ice,\nevery woman makes me change colour,\nevery woman makes my heart beat.\nAt the mere names of love, of delight,\nmy breast grows troubled, agitated,\nand I am compelled to speak of love\nby a longing I cannot explain.\nI speak of love while waking,\nI speak of love while dreaming,\nto the waters, the shadows, the mountains,\nto the flowers, the grass, the springs,\nto the echo, the air, the winds,\nwhich take my futile words\nand carry them away.\nAnd if no one hears me,\nI speak of love to myself.",
             "literalText": true
           }
         ],
-        "number": 6
+        "number": 6,
+        "sourceTitlesOnly": true,
+        "routeItem": 1
       }
     ],
     "cast": "Susanna, Cherubino"
@@ -959,7 +1009,7 @@ export const figaroActOneScenes = [
         "participants": [
           "Cherubino",
           "Susanna",
-          "Il Conte",
+          "The Count",
           "Basilio"
         ],
         "turns": [
@@ -1042,7 +1092,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "sorge",
-            "en": "Rising."
+            "en": "Rising.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1068,7 +1119,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "dentro la scena",
-            "en": "Offstage."
+            "en": "Offstage.",
+            "shortCue": true
           },
           {
             "speaker": "Basilio",
@@ -1108,7 +1160,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "dentro",
-            "en": "Offstage."
+            "en": "Offstage.",
+            "shortCue": true
           },
           {
             "speaker": "Basilio",
@@ -1120,7 +1173,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "addita la sedia",
-            "en": "Pointing to the chair."
+            "en": "Pointing to the chair.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1155,7 +1209,9 @@ export const figaroActOneScenes = [
             "it": "Il Conte vuol nascondersi dietro il sedile: Susanna si frappone tra il paggio e lui: il Conte la spinge dolcemente. Ella rincula, intanto il paggio passa al davanti del sedile, si mette dentro in piedi, Susanna il ricopre colla vestaglia.",
             "en": "The Count tries to hide behind the chair: Susanna places herself between him and the page; the Count gently pushes her. She steps back, while the page moves to the front of the chair, stands on its seat, and Susanna covers him with the dressing gown."
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       }
     ],
     "cast": "Cherubino, Susanna, Il Conte, Basilio"
@@ -1169,7 +1225,7 @@ export const figaroActOneScenes = [
         "participants": [
           "Basilio",
           "Susanna",
-          "Il Conte"
+          "The Count"
         ],
         "turns": [
           {
@@ -1292,7 +1348,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "sortendo",
-            "en": "Coming out of hiding."
+            "en": "Coming out of hiding.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1315,22 +1372,23 @@ export const figaroActOneScenes = [
             "en": "Oh, heaven!",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       },
       {
         "type": "Terzetto",
         "participants": [
-          "Il Conte",
+          "The Count",
           "Basilio",
-          "Susanna",
-          "Basilio ed Il Conte",
-          "Susanna e Basilio"
+          "Susanna"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "a Basilio",
-            "en": "To Basilio."
+            "en": "To Basilio.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1356,7 +1414,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "quasi svenuta",
-            "en": "Almost fainting."
+            "en": "Almost fainting.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -1368,7 +1427,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "sostenendola",
-            "en": "Supporting her."
+            "en": "Supporting her.",
+            "shortCue": true
           },
           {
             "speaker": "Basilio ed Il Conte",
@@ -1399,7 +1459,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "rinviene",
-            "en": "Recovering."
+            "en": "Recovering.",
+            "shortCue": true
           },
           {
             "speaker": "Susanna",
@@ -1437,7 +1498,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "To the Count."
+            "en": "To the Count.",
+            "shortCue": true
           },
           {
             "speaker": "Basilio",
@@ -1536,12 +1598,14 @@ export const figaroActOneScenes = [
             "literalText": true
           }
         ],
-        "number": 7
+        "number": 7,
+        "sourceTitlesOnly": true,
+        "routeItem": 1
       },
       {
         "type": "Recitativo",
         "participants": [
-          "Il Conte",
+          "The Count",
           "Susanna",
           "Cherubino",
           "Basilio"
@@ -1551,7 +1615,7 @@ export const figaroActOneScenes = [
             "speaker": "Il Conte",
             "speakerTranslation": "The Count",
             "it": "Basilio, in traccia tosto\ndi Figaro volate:",
-            "en": "Basilio, in search at once\nof Figaro, fly:",
+            "en": "Basilio, go at once\nand find Figaro:",
             "literalText": true
           },
           {
@@ -1632,7 +1696,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Susanna",
-            "en": "To Susanna."
+            "en": "To Susanna.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1674,7 +1739,9 @@ export const figaroActOneScenes = [
             "en": "And you stay here, little serpent!",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 2
       }
     ],
     "cast": "Basilio, Susanna, Il Conte, Basilio ed Il Conte, Susanna e Basilio, Cherubino"
@@ -1686,7 +1753,7 @@ export const figaroActOneScenes = [
       {
         "type": "Coro",
         "participants": [
-          "Coro"
+          "Chorus"
         ],
         "turns": [
           {
@@ -1707,21 +1774,24 @@ export const figaroActOneScenes = [
             "literalText": true
           }
         ],
-        "number": 8
+        "number": 8,
+        "sourceTitlesOnly": true,
+        "routeItem": 0
       },
       {
         "type": "Recitativo",
         "participants": [
-          "Il Conte",
+          "The Count",
           "Figaro",
           "Susanna",
-          "Tutti"
+          "All"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1733,7 +1803,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Susanna",
-            "en": "Softly to Susanna."
+            "en": "Softly to Susanna.",
+            "shortCue": true
           },
           {
             "speaker": "Figaro",
@@ -1801,7 +1872,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro e Susanna",
-            "en": "To Figaro and Susanna."
+            "en": "To Figaro and Susanna.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1810,12 +1882,14 @@ export const figaroActOneScenes = [
             "en": "To you I promise\nto complete the ceremony:\nI ask only a short delay; I wish before\nmy most faithful people, and with richer splendour,\nto make you fully happy.\n(Let Marcellina be found.) Go, friends.",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 1
       },
       {
         "type": "Coro",
         "participants": [
-          "Coro"
+          "Chorus"
         ],
         "turns": [
           {
@@ -1828,20 +1902,22 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "partono",
-            "en": "They exit."
+            "en": "They exit.",
+            "shortCue": true
           }
         ],
-        "number": 9
+        "number": 9,
+        "sourceTitlesOnly": true,
+        "routeItem": 2
       },
       {
         "type": "Recitativo",
         "participants": [
-          "Figaro, Susanna e Basilio",
           "Figaro",
           "Susanna",
+          "Basilio",
           "Cherubino",
-          "Il Conte",
-          "Susanna e Figaro"
+          "The Count"
         ],
         "turns": [
           {
@@ -1854,7 +1930,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Cherubino",
-            "en": "To Cherubino."
+            "en": "To Cherubino.",
+            "shortCue": true
           },
           {
             "speaker": "Figaro",
@@ -1894,7 +1971,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "s'inginocchia",
-            "en": "Kneeling."
+            "en": "Kneeling.",
+            "shortCue": true
           },
           {
             "speaker": "Cherubino",
@@ -1934,7 +2012,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "lo alza",
-            "en": "Raising him."
+            "en": "Raising him.",
+            "shortCue": true
           },
           {
             "speaker": "Il Conte",
@@ -1986,7 +2065,8 @@ export const figaroActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Cherubino",
-            "en": "Softly to Cherubino."
+            "en": "Softly to Cherubino.",
+            "shortCue": true
           },
           {
             "speaker": "Figaro",
@@ -1995,7 +2075,9 @@ export const figaroActOneScenes = [
             "en": "I want to speak to you\nbefore you leave. Goodbye,\nlittle Cherubino;\nhow your destiny changes in an instant.",
             "literalText": true
           }
-        ]
+        ],
+        "sourceTitlesOnly": true,
+        "routeItem": 3
       },
       {
         "type": "Aria",
@@ -2016,7 +2098,9 @@ export const figaroActOneScenes = [
             "en": "All exit in military fashion."
           }
         ],
-        "number": 10
+        "number": 10,
+        "sourceTitlesOnly": true,
+        "routeItem": 4
       }
     ],
     "cast": "Coro, Il Conte, Figaro, Susanna, Tutti, Figaro, Susanna e Basilio, Cherubino, Susanna e Figaro"

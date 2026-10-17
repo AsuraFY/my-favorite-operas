@@ -93,7 +93,7 @@ test("Così retains all scenes and translated dialogue entries", () => {
 test("Figaro Act I retains eight scenes, ten source numbers and complete paired verses", () => {
   assert.deepEqual(act.scenes.map(scene => scene.number), [1, 2, 3, 4, 5, 6, 7, 8]);
   const sections = act.scenes.flatMap(scene => scene.sections);
-  assert.equal(sections.length, 21);
+  assert.equal(sections.length, 22);
   assert.deepEqual(sections.filter(section => section.number).map(section => section.number),
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   assert.deepEqual(sections.filter(section => section.number).map(section => section.type),

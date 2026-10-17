@@ -24,7 +24,7 @@ function sectionTitles(scene, section, sectionIndex) {
     original: section.originalTitle || section.title || title?.original || "",
     translation: section.translatedTitle || title?.translation || ""
   };
-  if (libretto.sourceTitlesOnly) return { original: "", translation: "" };
+  if (libretto.sourceTitlesOnly || section.sourceTitlesOnly) return { original: "", translation: "" };
   const sung = section.turns.find(turn => turn.speaker !== (libretto.stageDirectionSpeaker || "Stage direction") &&
     (turn.original ?? turn.it)?.trim());
   const firstLine = (sung?.original ?? sung?.it ?? "").split(/\r?\n/).map(line => line.trim())
@@ -100,7 +100,7 @@ function actOutlineIcon(entry, inline = false) {
   const type = String(entry.type || entry.label || "").toLocaleLowerCase();
   const dialogue = /^(recitativ[eo](?: accompagnato)?|dialogue parlé)$/.test(type);
   const musical = !dialogue && (entry.number != null || /^no\./i.test(type) ||
-    /\bair\b|sinfonia|temporale|aria|arietta|arioso|cavatina|canzone|chanson|duett|duo|terzett|trio|quartett|quintett|sestett|sextuor|coro|choeur|chœur|ensemble|concertato|final|introduzione|prélude|prelude|vorspiel|entracte|interludio|marcia|marche|habanera|séguedille|couplets|rondò|andante|stretta|quadro di stupore|romanza|inno|ballo|ballabile|battaglia|sonnambulismo/.test(type));
+    /\bair\b|ouverture|sinfonia|temporale|aria|arietta|arioso|cavatina|canzone|chanson|duett|duo|terzett|trio|quartett|quintett|sestett|sextuor|coro|choeur|chœur|ensemble|concertato|final|introduzione|prélude|prelude|vorspiel|entracte|interludio|marcia|marche|habanera|séguedille|couplets|rondò|andante|stretta|quadro di stupore|romanza|inno|ballo|ballabile|battaglia|sonnambulismo/.test(type));
   if (!dialogue && !musical) return "";
   return '<span class="section-nav-link__icon section-nav-link__icon--' + (dialogue ? 'recitative' : 'song') +
     (inline ? ' section-nav-link__icon--inline' : '') + '" aria-hidden="true">' + (dialogue ? '▤' : '♬') + '</span>';
@@ -421,7 +421,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       const translatedText = turn.translation ?? turn.en ?? "";
       const original = libretto.bracketStageDirections ? "[" + originalText + "]" : originalText;
       const translation = libretto.bracketStageDirections ? "[" + translatedText + "]" : translatedText;
-      const stageDirectionLabel = '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
+      const stageDirectionLabel = turn.shortCue ? '' : '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
       return anchorFirst(['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>']);

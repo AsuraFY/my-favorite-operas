@@ -228,11 +228,13 @@ test("Figaro renders each source line beside its own English line in source orde
     : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
   assert.deepEqual(pairs, expected, "no source line omitted, duplicated or shifted to a different translation row");
   assert.equal(pairs.length, 583);
-  assert.equal((page.match(/class="libretto-scene-section"/g) || []).length, 21);
+  assert.equal((page.match(/class="libretto-scene-section"/g) || []).length, 22);
   assert.ok(page.includes("End of Act I"));
   const outline = createLibrettoRenderer(figaro).outline();
   assert.ok(outline.includes("Ouverture"));
-  assert.ok(outline.includes("Non più andrai"));
+  assert.ok(!outline.includes("Non più andrai"), "do not invent titles from sung lines");
+  assertActTargets(createLibrettoRenderer(figaro), figaro, act);
+  assert.ok(!page.includes("Susanna e Figaro</span></div>"));
   assert.ok(!outline.includes("Passage"));
 });
 

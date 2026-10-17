@@ -192,7 +192,7 @@ test("Figaro deep links and searches retain the full Act I", () => {
   const reader = createLibrettoRenderer(figaro);
   assertActTargets(reader, figaro, act);
   const result = reader.scene(1, "Non più andrai");
-  assert.ok(result.includes('data-initial-item="20"'));
+  assert.ok(result.includes('data-initial-item="21"'));
   assert.ok(result.includes("Cinque... dieci"));
   assert.ok(result.includes("military glory"));
 });

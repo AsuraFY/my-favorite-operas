@@ -20,7 +20,7 @@ import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-ou
 import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-outline-1";
 import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-outline-1";
 
-import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-act1-1";
+import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-act1-review-2";
 
 import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-1";
 import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-1";
@@ -339,7 +339,7 @@ const figaro = {
   bracketStageDirections: true,
   translatedForms: { Recitativo: "Recitative", "Recitativo ed Aria": "Recitative and aria", Duettino: "Little duet", Cavatina: "Cavatina", Arietta: "Short aria", Aria: "Aria", Terzetto: "Trio", Sestetto: "Sextet", Coro: "Chorus", Finale: "Finale" },
   acts: [
-    { number: 1, originalHeading: "Atto primo", prelude: { title: "Ouverture", translation: "Overture" }, scenes: figaroActOneScenes },
+    { number: 1, originalHeading: "Atto primo", scenes: figaroActOneScenes },
     { number: 2, originalHeading: "Atto secondo", scenes: figaroActTwoScenes },
     { number: 3, originalHeading: "Atto terzo", scenes: figaroActThreeScenes },
     { number: 4, originalHeading: "Atto quarto", scenes: figaroActFourScenes }
