@@ -126,7 +126,7 @@ test("Figaro Act II preserves all source scenes, numbers, stage directions and a
   assert.equal(sections.length, 19);
   assert.deepEqual(sections.filter(section => section.number).map(section => [section.number, section.type]),
     [[11, "Cavatina"], [12, "Arietta"], [13, "Aria"], [14, "Terzetto"], [15, "Duettino"], [16, "Finale"]]);
-  assert.equal(entries.filter(turn => turn.speaker === "Stage direction").length, 110);
+  assert.equal(entries.filter(turn => turn.speaker === "Stage direction").length, 102);
   const lyrics = entries.filter(turn => turn.speaker !== "Stage direction");
   assert.equal(lyrics.reduce((count, turn) => count + turn.it.split("\n").length, 0), 721);
   for (const turn of entries) {

@@ -22,7 +22,7 @@ import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-
 
 import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-stage-paragraph-1";
 
-import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-1";
+import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-review-1";
 import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-1";
 import { figaroActFourScenes } from "./libretto-le-nozze-di-figaro-act-4.js?v=figaro-act4-1";
 import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-act1-1";
