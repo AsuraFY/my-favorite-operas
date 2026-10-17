@@ -23,3 +23,9 @@ Act II now uses individual paired rows for all 182 sung lines across seven scene
 ## Acts III–IV line alignment — 16 October 2026
 
 All four acts now render sung text as individual Italian–English pairs. Act III contains 141 sung lines and Act IV contains 157. Four English passages were reordered to follow their Italian lines: Banco’s descendants ascending the throne, the spirits’ swirling dances, the royal tomb, and the question about the usurper’s hiding place. Italian source text, stage directions, outlines and link addresses remain unchanged. The existing rendered-pair test now checks all four acts. All 95 tests pass; desktop/mobile visual QA remains pending. This alignment review does not certify the entire translation as final.
+
+## Alternative ending — 17 October 2026
+
+Added the complete final scene of the 1847 ending after the retained revised ending in Act IV, No. 15. Editorial bilingual label “Finale alternativo — 1847 / Alternative ending — 1847” distinguishes the versions; this is not an inferred aria title. Includes Malcolm and Macduff’s introduction, all eight lines of “Mal per me che m’affidai,” death direction, and closing responses, with a fresh line-aligned English translation.
+
+Source: https://www.librettidopera.it/macbeth/a_04.html, “Finale originale del 1847, scena ultima,” explicitly marked replaced in 1865 (accessed 17 October 2026). This addition does not reconcile all other differences between editions. The existing Opera Guide text remains intact. New destination act=4&scene=11&item=1 appears in both outlines; all existing destinations remain unchanged. Long opening direction is one unbracketed bilingual paragraph; short cues are bracketed without labels. Automated checks cover every rendered pair and outline destination; visual QA remains pending.

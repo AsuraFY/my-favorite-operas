@@ -597,7 +597,8 @@ test("Macbeth source divisions and unique English credits agree in both outlines
       for (const html of [outline, page]) {
         assert.ok(html.includes('href="' + href + '"'), href);
         const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
-        assert.ok(!entry.includes('opera-outline__section-translation'), "source supplies forms, not separate titles");
+        if (section.translatedTitle) assert.ok(entry.includes("Alternative ending — 1847"));
+        else assert.ok(!entry.includes('opera-outline__section-translation'), "source supplies forms, not separate titles");
       }
       assert.equal(page.split('id="libretto-section-' + act.number + '-' + scene.number + '-' + item + '"').length - 1, 1);
       const names = section.participants || [];
@@ -607,7 +608,7 @@ test("Macbeth source divisions and unique English credits agree in both outlines
       destinations++;
     }
   }
-  assert.equal(destinations, 43);
+  assert.equal(destinations, 44);
   assert.deepEqual(libretto.acts[2].scenes[2].sections[0].participants, ["Witch 1", "Witch 2", "Witch 3"]);
 });
 
@@ -617,13 +618,17 @@ test("Macbeth aligns every sung line across all four acts", () => {
   for (const act of libretto.acts) {
     window.location.hash = '#/operas/macbeth?act=' + act.number;
     const page = reader.scene(1);
+    assertActTargets(reader, libretto, act);
     const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
     const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
-      ? [[`[${turn.it.replaceAll('\n', '<br>')}]`, `[${turn.en.replaceAll('\n', '<br>')}]`, true]]
+      ? [[turn.bracketStageDirection === false ? turn.it : `[${turn.it.replaceAll('\n', '<br>')}]`, turn.bracketStageDirection === false ? turn.en : `[${turn.en.replaceAll('\n', '<br>')}]`, true]]
       : turn.it.split('\n').map((line, index) => [line, turn.en.split('\n')[index], false]));
     assert.deepEqual(renderedVersePairs(page), expected, 'all text pairs retained in Act ' + act.number);
     assert.ok(renderedVersePairs(page).filter(pair => !pair[2]).every(pair => !pair[0].includes('<br>') && !pair[1].includes('<br>')));
   }
+  const ending = libretto.acts[3].scenes[10].sections[1];
+  assert.equal(ending.translatedTitle, "Alternative ending — 1847");
+  assert.equal(ending.turns.find(turn => turn.speaker === "Macbeth").it.split("\n").length, 8);
 });
 
 // Act III–IV review: speaker headings are metadata, not sung verses. Introductory

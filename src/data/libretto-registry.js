@@ -15,7 +15,7 @@ import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-lines
 
 import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-lines-complete";
 
-import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-lines-complete";
+import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-1847-ending-1";
 import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-outline-1";
 import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-outline-1";
 import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-outline-1";
@@ -277,7 +277,7 @@ const macbeth = {
     ]
   },
   characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Tre Streghe", "Duncano", "Malcolm", "Macduff"],
-  source: "Giuseppe Verdi, Macbeth, Italian text and numbered divisions as presented by Opera Guide (accessed 2026-10-15; includes revised passages): https://opera-guide.ch/operas/macbethverdi/libretto/it/"
+  source: "Giuseppe Verdi, Macbeth, Italian text and numbered divisions as presented by Opera Guide (accessed 2026-10-15; includes revised passages): https://opera-guide.ch/operas/macbethverdi/libretto/it/; separately labeled 1847 alternative ending: https://www.librettidopera.it/macbeth/a_04.html (accessed 2026-10-17)."
 };
 
 const turandot = {

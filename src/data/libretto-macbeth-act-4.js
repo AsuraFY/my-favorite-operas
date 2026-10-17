@@ -760,6 +760,84 @@ export const macbethActFourScenes = [
         ],
         "routeItem": 0,
         "number": 15
+      },
+      {
+        "type": "Scena, Battaglia, Morte di Macbeth",
+        "number": 15,
+        "routeItem": 1,
+        "originalTitle": "Finale alternativo — 1847",
+        "translatedTitle": "Alternative ending — 1847",
+        "participants": [
+          "Malcolm",
+          "Macduff",
+          "Macbeth",
+          "Chorus"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "it": "I precedenti. Malcolm seguito da Soldati inglesi, i quali si trascinano dietro Prigionieri quelli di Macbeth.",
+            "en": "The same characters. Malcolm enters, followed by English soldiers, who drag Macbeth’s soldiers behind them as prisoners.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Malcolm",
+            "it": "Vittoria!... ove s’è fitto\nl'usurpator?",
+            "en": "Victory! Where has\nthe usurper hidden himself?",
+            "speakerTranslation": "Malcolm",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "accennando Macbeth",
+            "en": "Pointing to Macbeth.",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Macduff",
+            "it": "Trafitto!",
+            "en": "Struck down!",
+            "speakerTranslation": "Macduff",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "alzandosi a stento da terra",
+            "en": "Rising from the ground with difficulty.",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Macbeth",
+            "it": "Mal per me che m'affidai\nne' presagi dell'inferno!...\nTutto il sangue ch'io versai\ngrida in faccia dell'eterno!...\nSulla fronte... maledetta\nsfolgorò... la sua vendetta!...\nMuoio... al cielo... al mondo in ira,\nvil corona!... e sol per te!",
+            "en": "Woe to me for trusting\nin the prophecies of hell!\nAll the blood I shed\ncries out before the Eternal One!\nUpon my accursed brow\nhis vengeance flashed!\nI die, hated by heaven and the world,\nvile crown! And all for you!",
+            "speakerTranslation": "Macbeth",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "it": "muore",
+            "en": "He dies.",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Macduff",
+            "it": "Scozia afflitta, ormai respira!",
+            "en": "Afflicted Scotland, breathe freely now!",
+            "speakerTranslation": "Macduff",
+            "literalText": true
+          },
+          {
+            "speaker": "Tutti",
+            "it": "Or Malcolmo è il nostro re!",
+            "en": "Now Malcolm is our king!",
+            "speakerTranslation": "All",
+            "literalText": true
+          }
+        ]
       }
     ],
     "originalHeading": "Scena ultima",

@@ -283,7 +283,7 @@ test("Macbeth Act IV includes all scenes, both opening numbers, and the final ch
   for (const number of [1, 4, 11]) {
     window.location.hash = "#/operas/macbeth?act=4&scene=" + number + "&item=0";
     const page = reader.scene(number);
-    assert.equal(count(page, /class="libretto-scene-section"/g), 12);
+    assert.equal(count(page, /class="libretto-scene-section"/g), 13);
     const expectedIndex = act.scenes.slice(0, number - 1).reduce((n, scene) => n + scene.sections.length, 0);
     assert.ok(page.includes('data-initial-item="' + expectedIndex + '"'));
     for (let n = 1; n <= 11; n++) assert.ok(page.includes('id="libretto-section-4-' + n + '-0"'));
