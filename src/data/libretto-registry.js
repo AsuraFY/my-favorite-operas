@@ -222,6 +222,7 @@ const tristan = {
 };
 
 const macbeth = {
+  translateSectionHeadings: true,
   slug: "macbeth",
   sourceTitlesOnly: true,
   threeLineOutline: true,
@@ -237,7 +238,7 @@ const macbeth = {
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "",
   bracketStageDirections: true,
-  translatedForms: { Introduzione: "Introduction", "Cavatina di Lady Macbeth": "Lady Macbeth’s Cavatina", "Recitativo e Marcia": "Recitative and March", "Scena e Duetto": "Scene and Duet", "Finale Primo": "First Finale", "Scena ed Aria Lady": "Lady Macbeth’s Scene and Aria", "Coro di Sicari": "Chorus of Assassins", "Scena Banco": "Banco’s Scene", "Convito, Visione e Finale Secondo": "Banquet, Vision and Second Finale", "[Ballo e] Coro": "[Ballet and] Chorus", "Recitativo, Apparizoni, Ballabile e Duetto finale": "Recitative, Apparitions, Ballet and Final Duet", Coro: "Chorus", "Scena ed Aria Macduff": "Macduff’s Scene and Aria", "Sonnambulismo di Lady Macbeth": "Lady Macbeth’s Sleepwalking", "Scena, Battaglia, Morte di Macbeth": "Scene, Battle and Death of Macbeth" },
+  translatedForms: { Preludio: "Prelude", Introduzione: "Introduction", "Cavatina di Lady Macbeth": "Lady Macbeth’s Cavatina", "Recitativo e Marcia": "Recitative and March", "Scena e Duetto": "Scene and Duet", "Finale Primo": "First Finale", "Scena ed Aria Lady": "Lady Macbeth’s Scene and Aria", "Coro di Sicari": "Chorus of Assassins", "Scena Banco": "Banco’s Scene", "Convito, Visione e Finale Secondo": "Banquet, Vision and Second Finale", "[Ballo e] Coro": "[Ballet and] Chorus", "Recitativo, Apparizoni, Ballabile e Duetto finale": "Recitative, Apparitions, Ballet and Final Duet", Coro: "Chorus", "Scena ed Aria Macduff": "Macduff’s Scene and Aria", "Sonnambulismo di Lady Macbeth": "Lady Macbeth’s Sleepwalking", "Scena, Battaglia, Morte di Macbeth": "Scene, Battle and Death of Macbeth" },
   acts: [{
     number: 1,
     originalHeading: "Atto primo",

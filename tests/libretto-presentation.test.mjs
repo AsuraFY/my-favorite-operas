@@ -591,10 +591,12 @@ test("Macbeth source divisions and unique English credits agree in both outlines
   const sidebar = reader.scene(1).split('<aside class="scene-sidebar"')[1].split('</aside>')[0];
   for (const html of [outline, sidebar]) {
     assert.ok(html.includes('Bosco<span class="opera-outline__section-translation">A wood</span>'));
-    assert.ok(html.includes('section-nav-link__icon--song'));
+
     assert.ok(!html.includes('Characters:'));
   }
 
+  assert.ok(sidebar.includes('section-nav-link__icon--song'));
+  assert.ok(!outline.includes('section-nav-link__icon'));
   let destinations = 0;
   for (const act of libretto.acts) {
     window.location.hash = "#/operas/macbeth?act=" + act.number;
@@ -605,8 +607,12 @@ test("Macbeth source divisions and unique English credits agree in both outlines
       for (const html of [outline, page]) {
         assert.ok(html.includes('href="' + href + '"'), href);
         const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
-        if (section.translatedTitle) assert.ok(entry.includes("Alternative scene — 1847"));
-        else assert.ok(!entry.includes('opera-outline__section-translation'), "source supplies forms, not separate titles");
+        const translatedHeading = [libretto.translatedForms[section.type], section.translatedTitle].filter(Boolean).join(" · ");
+        assert.ok(translatedHeading, section.type);
+        const escapedHeading = translatedHeading.replaceAll("'", "&#39;");
+        assert.ok(entry.includes('<span class="opera-outline__section-translation">' + escapedHeading + '</span>'), section.type);
+        assert.ok(entry.indexOf('opera-outline__section-title') < entry.indexOf('opera-outline__section-translation'));
+        if (section.participants?.length) assert.ok(entry.indexOf('opera-outline__section-translation') < entry.indexOf('libretto-participants'));
       }
       assert.equal(page.split('id="libretto-section-' + act.number + '-' + scene.number + '-' + item + '"').length - 1, 1);
       const names = section.participants || [];
