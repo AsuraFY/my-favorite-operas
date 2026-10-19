@@ -210,7 +210,8 @@ test("Macbeth Act I preserves all 19 source scenes and paired translation", () =
   assert.ok(page.includes("Witch 1"));
   assert.ok(page.includes("Witch 2"));
   assert.ok(page.includes("Witch 3"));
-  assert.ok(page.includes("All three witches"));
+  assert.ok(page.includes(">Witches</span>"));
+  assert.ok(!page.includes("All three witches"));
   for (const n of [1, 2, 3]) assert.ok(page.includes("Strega " + n));
   assert.ok(page.includes('class="libretto-row libretto-row--stage-direction"'));
   assert.ok(page.includes("[A drum is heard.]"));
@@ -265,7 +266,8 @@ test("Macbeth Act III retains source scenes, witch labels, and a continuous page
   assert.equal(count(page, /class="libretto-scene-section"/g), 4);
   for (let n = 1; n <= 4; n++) assert.ok(page.includes('id="libretto-section-3-' + n + '-0"'));
   for (let n = 1; n <= 3; n++) assert.ok(page.includes("Strega " + n));
-  assert.ok(page.includes("All three witches"));
+  assert.ok(page.includes(">Witches</span>"));
+  assert.ok(!page.includes("All three witches"));
   assert.ok(page.includes("Apparition 3"));
   assert.ok(page.includes('data-initial-item="3"'));
 });

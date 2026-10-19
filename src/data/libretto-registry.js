@@ -9,11 +9,11 @@ import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.j
 import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-outline-1";
 import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-outline-1";
 import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-outline-1";
-import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-lines-1";
+import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-witches-1";
 
 import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-lines-2";
 
-import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-lines-complete";
+import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-witches-1";
 
 import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-1847-scene9-1";
 import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-outline-1";
@@ -263,7 +263,7 @@ const macbeth = {
   synopsis: {
     eyebrow: "Giuseppe Verdi · Opera in four acts",
     paragraphs: [
-      "Three witches foretell that the Scottish general Macbeth will become king. With Lady Macbeth's encouragement, he murders King Duncan and takes the throne, then turns to further violence to protect his power.",
+      "Witches foretell that the Scottish general Macbeth will become king. With Lady Macbeth's encouragement, he murders King Duncan and takes the throne, then turns to further violence to protect his power.",
       "As guilt and fear close in, Lady Macbeth is consumed by her actions and forces gather against the tyrant. Verdi's opera adapts Shakespeare's tragedy of ambition, prophecy, and the cost of power."
     ],
     characters: [
@@ -271,13 +271,13 @@ const macbeth = {
       ["Lady Macbeth", "Soprano", "Macbeth's ambitious wife."],
       ["Banco", "Bass", "A general whose descendants are foretold to rule."],
       ["Fleanzio", "Silent role", "Banco's son."],
-      ["Tre Streghe", "Chorus", "Three groups of witches who deliver the prophecies."],
+      ["Witches", "Chorus", "A chorus of witches, divided into three groups, who deliver the prophecies."],
       ["Duncano", "Silent role", "King of Scotland."],
       ["Malcolm", "Tenor", "Duncano’s son."],
       ["Macduff", "Tenor", "A Scottish nobleman."]
     ]
   },
-  characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Tre Streghe", "Duncano", "Malcolm", "Macduff"],
+  characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Streghe", "Duncano", "Malcolm", "Macduff"],
   source: "Giuseppe Verdi, Macbeth, Italian text and numbered divisions as presented by Opera Guide (accessed 2026-10-15; includes revised passages): https://opera-guide.ch/operas/macbethverdi/libretto/it/; separately labeled 1847 alternative ending: https://www.librettidopera.it/macbeth/a_04.html (accessed 2026-10-17)."
 };
 

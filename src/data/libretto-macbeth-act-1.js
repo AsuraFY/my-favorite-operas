@@ -6,7 +6,7 @@ export const macbethActOneScenes = [
     "number": 1,
     "title": "Bosco",
     "translatedTitle": "A wood",
-    "cast": "All three witches, Witch 1, Witch 2, Witch 3",
+    "cast": "Witches",
     "summary": "A wood.",
     "sections": [
       {
@@ -20,9 +20,7 @@ export const macbethActOneScenes = [
       {
         "type": "Introduzione",
         "participants": [
-          "Witch 1",
-          "Witch 2",
-          "Witch 3"
+          "Witches"
         ],
         "turns": [
           {
@@ -85,10 +83,10 @@ export const macbethActOneScenes = [
             "en": "A drum is heard."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Un tamburo! Che sarà?\nVien Macbetto. Eccolo qua!",
             "en": "A drum! What can it be?\nMacbeth is coming. There he is!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -97,10 +95,10 @@ export const macbethActOneScenes = [
             "en": "They mingle and weave a wild dance."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Le sorelle vagabonde\nvan per l'aria, van sull'onde,\nSanno un circolo intrecciar\nChe comprende e terra e mar.",
             "en": "The wandering sisters\nfly through the air, fly over the waves.\nThey know how to weave a circle\nthat embraces both land and sea.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           }
         ],
@@ -114,7 +112,7 @@ export const macbethActOneScenes = [
   {
     "number": 2,
     "title": "",
-    "cast": "Macbeth, Banco, All three witches, Witch 1, Witch 2, Witch 3, Banco and Macbeth",
+    "cast": "Macbeth, Banco, Witches, Banco and Macbeth",
     "summary": "The prophecies.",
     "sections": [
       {
@@ -122,9 +120,7 @@ export const macbethActOneScenes = [
         "participants": [
           "Macbeth",
           "Banco",
-          "Witch 1",
-          "Witch 2",
-          "Witch 3"
+          "Witches"
         ],
         "turns": [
           {
@@ -265,10 +261,10 @@ export const macbethActOneScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Macbetto e Banco vivano!\nBanco e Macbetto vivano!",
             "en": "Long live Macbeth and Banco!\nLong live Banco and Macbeth!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -416,15 +412,13 @@ export const macbethActOneScenes = [
   {
     "number": 4,
     "title": "",
-    "cast": "All three witches",
+    "cast": "Witches",
     "summary": "The witches return.",
     "sections": [
       {
         "type": "Introduzione",
         "participants": [
-          "Witch 1",
-          "Witch 2",
-          "Witch 3"
+          "Witches"
         ],
         "turns": [
           {
@@ -433,10 +427,10 @@ export const macbethActOneScenes = [
             "en": "The witches return."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "S'allontanarono! - N'accozzeremo\nQuando di fulmini - lo scroscio udremo.\nS'allontanarono, - fuggiam!... s'attenda\nLe sorti a compiere - nella tregenda.\nMacbetto ridere - vedrem colà,\nE il nostro oracolo - gli parlerà.\nFuggiam, fuggiam!",
             "en": "They have gone! We'll gather again\nwhen we hear the crash of thunder.\nThey have gone; let us flee!... Let us wait\nto fulfil our fate in the witches' gathering.\nThere we shall see Macbeth laugh,\nand our oracle will speak to him.\nLet us flee, let us flee!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {

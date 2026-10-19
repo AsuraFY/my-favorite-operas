@@ -623,7 +623,7 @@ test("Macbeth source divisions and unique English credits agree in both outlines
     }
   }
   assert.equal(destinations, 44);
-  assert.deepEqual(libretto.acts[2].scenes[2].sections[0].participants, ["Witch 1", "Witch 2", "Witch 3"]);
+  assert.deepEqual(libretto.acts[2].scenes[2].sections[0].participants, ["Witches"]);
 });
 
 test("Macbeth aligns every sung line across all four acts", () => {
