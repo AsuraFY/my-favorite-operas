@@ -19,3 +19,9 @@ Read every Italian–English entry across all three acts for meaning and line co
 Enabled separate paired rows for all 1,114 sung lines (436 / 346 / 332). All Italian words, sung line breaks and speaker turns remain intact. Consolidated six adjacent narrative-direction pairs; full paragraphs have one label per language and no brackets. Marked 130 compact performance cues for brackets without labels. Preserved all twenty section addresses, source divisions, participant lists and the Alfano ending.
 
 Verification covers exact rendered bilingual pairs, stage-direction labels, English outline headings, unique targets and passage selection. Browser visual verification remains pending.
+
+## Named outline entries — 19 October 2026
+
+The user's subsequent clarification supersedes the form-only heading rule above: both outlines now show number, musical type, and an explicitly reviewed title or sung incipit. Line two translates the title; line three retains the participants. All twenty entries have titles drawn from their own text, including familiar arias within larger numbered sections. No additional sections or links are introduced.
+
+No. 14 displays “N. 14 · Aria · Nessun dorma!” as requested. Its source classification “Introduzione e Romanza” remains stored separately; the introduction and its participants remain part of that section. Other entries retain their source musical types. Musical symbols remain confined to act outlines. The shared reading-page headings also use the same titles for orientation after following an outline link.

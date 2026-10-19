@@ -640,7 +640,7 @@ test("Turandot Act III retains all seven numbers and the complete Alfano ending"
   const html = reader.scene(1, "", 6);
   assert.equal((html.match(/class="libretto-scene-section/g) || []).length, 7);
   assert.match(html, /data-initial-item="6"/);
-  assert.match(html, /N\. 14 · Introduzione e Romanza/);
+  assert.match(html, /N\. 14 · Aria · Nessun dorma!/);
   assert.match(html, /N\. 20 · Finale/);
   assert.match(html, /His name is\.\.\. Love!/);
   assert.match(html, /Franco Alfano/);
@@ -655,13 +655,13 @@ test("Turandot Act III retains all seven numbers and the complete Alfano ending"
     const page = reader.scene(1);
     for (const [item, section] of act.scenes[0].sections.entries()) {
       const href = '#/operas/turandot?act=' + act.number + '&scene=1&item=' + item;
-      const title = 'N. ' + section.number + ' · ' + section.type;
+      const title = 'N. ' + section.number + ' · ' + (section.displayType || section.type) + ' · ' + section.originalTitle;
       for (const html of [outline, page]) {
         assert.ok(html.includes('href="' + href + '"'), href);
         const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
-        assert.ok(entry.includes(title + '</span>'), "only source heading, without an inferred incipit");
+        assert.ok(entry.includes(title + '</span>'), "number, musical type and reviewed title");
         assert.ok(entry.includes('opera-outline__section-translation'), "English heading occupies line two");
-        assert.ok(entry.includes(turandot.translatedForms[section.type]));
+        assert.ok(entry.includes(section.translatedTitle));
         assert.ok(entry.includes('libretto-participants'));
         if (section.sourceDivision) assert.ok(html.includes(section.sourceDivision.original));
       }

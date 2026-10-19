@@ -145,7 +145,10 @@ export const turandotActThreeScenes = [
         "sourceDivision": {
           "original": "Quadro I",
           "translation": "Tableau I"
-        }
+        },
+        "originalTitle": "Nessun dorma!",
+        "translatedTitle": "Let no one sleep!",
+        "displayType": "Aria"
       },
       {
         "number": 15,
@@ -666,7 +669,9 @@ export const turandotActThreeScenes = [
             "en": "Turandot appears. All prostrate themselves. Only Ping advances and speaks with extreme humility:",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Tu che guardi le stelle",
+        "translatedTitle": "You who watch the stars"
       },
       {
         "number": 16,
@@ -776,7 +781,9 @@ export const turandotActThreeScenes = [
             "en": "I know his name...\nIt is my supreme delight\nto keep it secret\nand possess it alone!",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Principessa divina!",
+        "translatedTitle": "Divine Princess!"
       },
       {
         "number": 17,
@@ -1081,7 +1088,9 @@ export const turandotActThreeScenes = [
             "en": "The executioner!...",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Tanto amore segreto",
+        "translatedTitle": "So much secret love"
       },
       {
         "number": 18,
@@ -1340,7 +1349,9 @@ export const turandotActThreeScenes = [
             "en": "Everyone has now left. Only the prince and Turandot remain, facing each other. The princess, rigid and statuesque beneath her broad veil, makes no gesture, no movement.",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Tu che di gel sei cinta",
+        "translatedTitle": "You who are girdled with ice"
       },
       {
         "number": 19,
@@ -1737,7 +1748,9 @@ export const turandotActThreeScenes = [
             "literalText": true
           }
         ],
-        "sourceNote": "The PDF prints the ending completed by Franco Alfano, in Arturo Toscanini’s version, in grey because it was not performed in this production. The complete ending is included here."
+        "sourceNote": "The PDF prints the ending completed by Franco Alfano, in Arturo Toscanini’s version, in grey because it was not performed in this production. The complete ending is included here.",
+        "originalTitle": "Principessa di morte!",
+        "translatedTitle": "Princess of death!"
       },
       {
         "number": 20,
@@ -1784,7 +1797,9 @@ export const turandotActThreeScenes = [
         "sourceDivision": {
           "original": "Quadro II",
           "translation": "Tableau II"
-        }
+        },
+        "originalTitle": "Diecimila anni al nostro Imperatore!",
+        "translatedTitle": "Ten thousand years to our Emperor!"
       }
     ]
   }

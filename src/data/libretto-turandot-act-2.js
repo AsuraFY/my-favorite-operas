@@ -831,7 +831,9 @@ export const turandotActTwoScenes = [
         "sourceDivision": {
           "original": "Quadro I",
           "translation": "Tableau I"
-        }
+        },
+        "originalTitle": "Olà, Pang! Olà, Pong!",
+        "translatedTitle": "Hey, Pang! Hey, Pong!"
       },
       {
         "number": 9,
@@ -896,7 +898,9 @@ export const turandotActTwoScenes = [
         "sourceDivision": {
           "original": "Quadro II",
           "translation": "Tableau II"
-        }
+        },
+        "originalTitle": "Gravi, enormi ed imponenti",
+        "translatedTitle": "Grave, enormous and imposing"
       },
       {
         "number": 10,
@@ -1017,7 +1021,9 @@ export const turandotActTwoScenes = [
             "en": "The Mandarin appears with the edict. Amid general silence he advances and says:",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Un giuramento atroce",
+        "translatedTitle": "A dreadful oath"
       },
       {
         "number": 11,
@@ -1175,7 +1181,9 @@ export const turandotActTwoScenes = [
             "en": "Trumpets sound. Silence. Turandot proclaims her riddle.",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "In questa reggia",
+        "translatedTitle": "In this palace"
       },
       {
         "number": 12,
@@ -1537,7 +1545,9 @@ export const turandotActTwoScenes = [
             "en": "Courageous! Daring! O strong one!",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Straniero, ascolta!",
+        "translatedTitle": "Stranger, listen!"
       },
       {
         "number": 13,
@@ -1588,7 +1598,9 @@ export const turandotActTwoScenes = [
             "en": "We prostrate ourselves at your feet,\nlight, king of all the world!\nFor your wisdom,\nfor your goodness,\nwe give ourselves to you,\nhappy in humility!\nMay our love rise to you!\nTen thousand years to our Emperor!\nTo you, heir of Hien-Wang,\nwe cry:\nTen thousand years to our Emperor!\nHigh, high the banners!\nGlory to you!...",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Tre enigmi m’hai proposto",
+        "translatedTitle": "You set me three riddles"
       }
     ]
   }

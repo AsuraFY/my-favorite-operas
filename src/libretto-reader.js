@@ -41,7 +41,7 @@ function numberedSection(section) {
 }
 function sectionNavigationLabel(section, scene, sectionIndex) {
   const { match, number: no } = numberedSection(section);
-  const form = section.type || (match ? match[2] :
+  const form = section.displayType || section.type || (match ? match[2] :
     ((section.label || "").toLocaleLowerCase() === "recitative" ? (libretto.recitativeLabel || "Recitative") : section.label));
   const title = scene ? sectionTitles(scene, section, sectionIndex).original : "";
   if (no == null) return form + (title ? " · " + title : "");
@@ -61,7 +61,7 @@ function sceneTranslatedHeading(scene) {
 }
 function sectionPresentation(scene, section, sectionIndex) {
   const { match, number: no } = numberedSection(section);
-  const form = section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
+  const form = section.displayType || section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
   const titles = sectionTitles(scene, section, sectionIndex);
   const number = no == null ? "" : (libretto.numberLabel || "N.") + " " + no + " · ";
   const heading = section.type === "Passage" && titles.original ? titles.original :

@@ -559,7 +559,9 @@ export const turandotActOneScenes = [
             "en": "As the servants move away to take the sharpened sword to the executioner, the crowd scans the sky, which has gradually darkened.",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Popolo di Pekino!",
+        "translatedTitle": "People of Peking!"
       },
       {
         "number": 2,
@@ -596,7 +598,9 @@ export const turandotActOneScenes = [
             "en": "The gold of the background has turned to silver. The procession appears, leading the young Prince of Persia to the scaffold. At the sight of the victim, who walks pale and dreamlike, the ferocity of the crowd turns to pity.",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Perché tarda la luna?",
+        "translatedTitle": "Why is the moon late?"
       },
       {
         "number": 3,
@@ -701,7 +705,9 @@ export const turandotActOneScenes = [
             "en": "The procession has gone out along the ramparts. Now only Prince Calaf, Timur and Liù remain in the half-light of the deserted square. The father anxiously approaches his son, calls to him and shakes him.",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "O giovinetto!",
+        "translatedTitle": "O young man!"
       },
       {
         "number": 4,
@@ -1532,7 +1538,9 @@ export const turandotActOneScenes = [
             "en": "O son, do you wish me, alone,\nto drag around the world\nmy tormented old age?\nHelp! Is there no human voice\nthat can move your savage heart?",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Figlio, che fai?",
+        "translatedTitle": "Son, what are you doing?"
       },
       {
         "number": 5,
@@ -1561,7 +1569,9 @@ export const turandotActOneScenes = [
             "en": "She sinks to the ground, exhausted and sobbing.",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Signore, ascolta!",
+        "translatedTitle": "My lord, listen!"
       },
       {
         "number": 6,
@@ -1607,7 +1617,9 @@ export const turandotActOneScenes = [
             "en": "Make the paths of exile gentler for him!\nThis... this, O my poor Liù,\nof your little heart that never falters,\nis what the man who smiles no more asks!...",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Non piangere, Liù!",
+        "translatedTitle": "Do not weep, Liù!"
       },
       {
         "number": 7,
@@ -1925,7 +1937,9 @@ export const turandotActOneScenes = [
             "en": "Prince Calaf remains entranced at the foot of the gong. Timur and Liù cling to each other in despair.",
             "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Ah, per l’ultima volta!",
+        "translatedTitle": "Ah, for the last time!"
       }
     ]
   }
