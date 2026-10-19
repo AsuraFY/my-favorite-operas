@@ -41,8 +41,8 @@ test("Barbiere source corrections restore the aria and preserve established deep
 
 // Carmen
 test("Carmen preserves every French turn and aligns each sung or spoken line", () => {
-  const expectedTurns = [324, 378, 242, 98];
-  const expectedSections = [18, 13, 11, 5];
+  const expectedTurns = [331, 378, 242, 98];
+  const expectedSections = [20, 13, 11, 5];
   for (const [index, act] of carmen.acts.entries()) {
     const scene = act.scenes[0];
     assert.equal(scene.sections.length, expectedSections[index]);
@@ -70,7 +70,7 @@ test("Carmen registers all four continuous acts with source musical numbers", ()
     "PREMIER ACTE", "DEUXIÈME ACTE", "TROISIÈME ACTE", "QUATRIÈME ACTE"
   ]);
   assert.deepEqual(carmen.acts.map(act => act.scenes[0].sections.map(section => section.number)), [
-    ["1", "2", "3", null, null, "4", "5", "6", null, "7", null, "8", null, "9", null, "10", "11", null],
+    ["1", "2", "2a", "3", null, null, "4", "5", "6", null, null, "7", null, "8", null, "9", null, "10", "11", null],
     [null, "12", null, "13", null, "14", null, "15", null, "16", null, "17", "18"],
     [null, "19", null, "20", null, "21", null, "22", null, "23", "24"],
     [null, "25", null, "26", "27"]

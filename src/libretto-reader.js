@@ -67,7 +67,7 @@ function sectionPresentation(scene, section, sectionIndex) {
   const heading = section.type === "Passage" && titles.original ? titles.original :
     number + form + (titles.original ? " · " + titles.original : "");
   const translatedForm = section.type === "Passage" ? "" : (libretto.translatedForms?.[form] || "");
-  const subtitle = libretto.threeLineOutline && !libretto.translateSectionHeadings ? titles.translation : [translatedForm, titles.translation].filter(Boolean).join(" · ");
+  const subtitle = section.threeLineOutline ? (titles.translation || translatedForm) : libretto.threeLineOutline && !libretto.translateSectionHeadings ? titles.translation : [translatedForm, titles.translation].filter(Boolean).join(" · ");
   return { heading, subtitle, form, number: no };
 }
 function actCatalog() {
@@ -133,7 +133,7 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
     if (item.outline?.length) return renderOutlinePreludes(item, act) + (libretto.sourceSceneOutline ? '<h3>' + escapeHtml(sceneSourceHeading(item)) + ' · ' + escapeHtml(sceneTranslatedHeading(item)) + '</h3>' : '') + '<div class="section-nav">' + renderSceneOutlineLinks(item, act, true) + '</div>';
     const sectionLinks=item.sections.map((section,index)=>{
       const active=item.number===selectedScene&&index===selectedItem;
-      if (libretto.threeLineOutline) {
+      if (libretto.threeLineOutline || section.threeLineOutline) {
         const heading = sectionPresentation(item, section, index);
         const href = "#/operas/" + libretto.slug + "?act=" + act + "&scene=" + item.number + "&item=" + sectionRouteItem(section, index);
         return sourceDivisionHeading(section) + '<a class="section-nav-link opera-outline__section' + (active ? ' is-current' : '') + '" href="' + href + '"' + (active ? ' aria-current="page"' : '') + '><span class="opera-outline__section-title">' + actOutlineIcon(section, true) + escapeHtml(heading.heading) + '</span>' + (heading.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(heading.subtitle) + '</span>' : '') + renderCharacterCredits(sectionCharacterNames(section, act, item.number), true) + '</a>';
@@ -272,7 +272,7 @@ function renderCompleteSectionLink(scene, section, index, act) {
   const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number + '&item=' + sectionRouteItem(section, index);
   return sourceDivisionHeading(section) + '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
     '<span class="opera-outline__section-title">' + escapeHtml(presentation.heading) + '</span>' +
-    ((libretto.threeLineOutline || section.type === "Passage") && presentation.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' : "") +
+    ((libretto.threeLineOutline || section.threeLineOutline || section.type === "Passage") && presentation.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' : "") +
     sectionParticipantCredits(section, act, scene.number) + '</a>';
 
 }
@@ -458,7 +458,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     : heading.heading;
   const selectedHeading =
     '<div class="selected-section-heading"><h2>' + escapeHtml(selectedTitle) + '</h2>' +
-    ((libretto.threeLineOutline || section.type === "Passage") && heading.subtitle ? '<p class="selected-section-heading__translation">' + escapeHtml(heading.subtitle) + '</p>' : "") +
+    ((libretto.threeLineOutline || section.threeLineOutline || section.type === "Passage") && heading.subtitle ? '<p class="selected-section-heading__translation">' + escapeHtml(heading.subtitle) + '</p>' : "") +
     sectionParticipantCredits(section, act, scene.number) + '</div>';
   const sectionLabel = isSpotifyScene ? "" : '<div class="libretto-section__label">' +
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>';

@@ -153,12 +153,38 @@ test("Barbiere uses English outline credits and Italian/English sung speaker lab
 });
 
 // Carmen
+test("Carmen Act I preserves bilingual rows, named outlines and all legacy addresses", () => {
+  const act = carmen.acts[0];
+  const reader = createLibrettoRenderer(carmen);
+  window.location.hash = '#/operas/carmen?act=1';
+  const page = reader.scene(1);
+  const sections = act.scenes[0].sections;
+  const turns = sections.flatMap(s => s.turns);
+  const expected = turns.flatMap(t => t.speaker === 'Stage direction'
+    ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+    : t.original.split('\n').map((line,i) => [line,t.translation.split('\n')[i],false]));
+  assert.deepEqual(renderedVersePairs(page), expected);
+  assertActTargets(reader,carmen,act);
+  assert.deepEqual(sections.map(s=>s.routeItem).sort((a,b)=>a-b),Array.from({length:20},(_,i)=>i));
+  const outline = reader.outline();
+  for (const section of sections) {
+    const href = `#/operas/carmen?act=1&scene=1&item=${section.routeItem}`;
+    for (const html of [outline,page]) {
+      const entry=html.slice(html.indexOf(`href="${href}"`)).split('</a>')[0];
+      assert.ok(entry.includes('opera-outline__section-translation'),href);
+    }
+  }
+  assert.ok(!turns.some(t=>t.speaker!=='Stage direction' && /No 2 a|^Monologue$|^«$/.test(t.original)));
+  assert.equal(sections.find(s=>s.routeItem===3).turns.find(t=>t.original.startsWith('«Présentez')).speaker,'ZUNIGA');
+  assert.deepEqual(sections.find(s=>s.number==='2a').participants,['Morales','Chorus']);
+});
+
 test("Carmen reader shows a side-by-side continuous act with translated source labels", () => {
   globalThis.window = { location: { hash: "#/operas/carmen?act=1&scene=1&item=6" } };
   const reader = createLibrettoRenderer(carmen);
   const html = reader.scene(1, "", 6);
   assert.match(html, /data-continuous-act="true"/);
-  assert.match(html, /data-initial-item="6"/);
+  assert.match(html, /data-initial-item="7"/);
   assert.match(html, /class="libretto-row libretto-row--stage-direction"/);
   assert.match(html, /Stage direction/);
   assert.match(html, /No\. 5 · Habanera/);
