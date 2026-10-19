@@ -16,9 +16,9 @@ import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-lines
 import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-witches-1";
 
 import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-1847-scene9-1";
-import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-outline-1";
-import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-outline-1";
-import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-outline-1";
+import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-review-2";
+import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-review-2";
+import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-review-2";
 
 import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-stage-paragraph-1";
 
@@ -282,6 +282,8 @@ const macbeth = {
 };
 
 const turandot = {
+  alignVerseLines: true,
+  translateSectionHeadings: true,
   slug: "turandot",
   threeLineOutline: true,
   sourceTitlesOnly: true,

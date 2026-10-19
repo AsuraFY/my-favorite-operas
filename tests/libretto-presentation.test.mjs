@@ -6,6 +6,25 @@ import { count, assertSceneRows, renderedVersePairs, assertActTargets, resetRead
 
 beforeEach(resetReaderLocation);
 
+test("Turandot renders every verse pair, distinguishes cues from paragraphs, and preserves section navigation", () => {
+  const libretto = getLibretto("turandot");
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  assert.ok(!outline.includes('♬') && !outline.includes('▤'));
+  for (const act of libretto.acts) {
+    window.location.hash = `#/operas/turandot?act=${act.number}`;
+    const page = reader.scene(1);
+    const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
+    const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
+      ? [[turn.shortCue ? `[${turn.it}]` : turn.it, turn.shortCue ? `[${turn.en}]` : turn.en, true]]
+      : turn.it.split('\n').map((line, index) => [line, turn.en.split('\n')[index], false]));
+    assert.deepEqual(renderedVersePairs(page), expected);
+    assert.equal(count(page, /class="libretto-speaker libretto-speaker--stage-direction"/g),
+      2 * turns.filter(turn => turn.speaker === "Stage direction" && !turn.shortCue).length);
+    assertActTargets(reader, libretto, act);
+  }
+});
+
 const cosi = getLibretto("cosi-fan-tutte");
 const carmen = getLibretto("carmen");
 const figaro = getLibretto("le-nozze-di-figaro");

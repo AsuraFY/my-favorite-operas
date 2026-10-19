@@ -660,7 +660,8 @@ test("Turandot Act III retains all seven numbers and the complete Alfano ending"
         assert.ok(html.includes('href="' + href + '"'), href);
         const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
         assert.ok(entry.includes(title + '</span>'), "only source heading, without an inferred incipit");
-        assert.ok(!entry.includes('opera-outline__section-translation'), "no title translation for a form-only heading");
+        assert.ok(entry.includes('opera-outline__section-translation'), "English heading occupies line two");
+        assert.ok(entry.includes(turandot.translatedForms[section.type]));
         assert.ok(entry.includes('libretto-participants'));
         if (section.sourceDivision) assert.ok(html.includes(section.sourceDivision.original));
       }

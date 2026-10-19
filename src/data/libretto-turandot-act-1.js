@@ -23,13 +23,9 @@ export const turandotActOneScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "Le mura della grande Città violetta: la Città imperiale. Gli spalti massicci chiudono quasi tutta la scena in semicerchio. Soltanto a destra il giro è rotto da un gran loggiato tutto scolpito e intagliato a mostri, a liocorni, a fenici, coi pilastri sorretti dal dorso di massicce tartarughe. Ai piedi del loggiato, sostenuto da due archi, è un gong di sonorissimo bronzo. Sugli spalti sono piantati i pali che reggono i teschi dei giustiziati. A sinistra e nel fondo, s’aprono nelle mura tre gigantesche porte.",
-            "en": "The walls of the great Violet City: the Imperial City. Massive ramparts enclose almost the entire stage in a semicircle. Only on the right is the circle broken by a great loggia, carved and sculpted all over with monsters, unicorns and phoenixes, its pillars supported on the backs of massive tortoises. At the foot of the loggia, supported by two arches, stands a gong of highly resonant bronze. On the ramparts are poles bearing the skulls of those executed. On the left and at the back, three gigantic gates open in the walls."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Quando si apre il velario siamo nell’ora più sfolgorante del tramonto. Pekino, che va digradando nelle lontananze, scintilla dorata. Il piazzale è pieno di una pittoresca folla cinese, immobile, che ascolta le parole di un mandarino. Dalla sommità dello spalto, dove gli fanno ala le guardie tartare rosse e nere, egli legge un tragico decreto.",
-            "en": "When the curtain rises, it is the most brilliant hour of sunset. Peking, receding into the distance, glitters golden. The square is filled with a picturesque Chinese crowd, motionless, listening to the words of a Mandarin. From the top of the rampart, flanked by red and black Tartar guards, he reads a tragic decree."
+            "it": "Le mura della grande Città violetta: la Città imperiale. Gli spalti massicci chiudono quasi tutta la scena in semicerchio. Soltanto a destra il giro è rotto da un gran loggiato tutto scolpito e intagliato a mostri, a liocorni, a fenici, coi pilastri sorretti dal dorso di massicce tartarughe. Ai piedi del loggiato, sostenuto da due archi, è un gong di sonorissimo bronzo. Sugli spalti sono piantati i pali che reggono i teschi dei giustiziati. A sinistra e nel fondo, s’aprono nelle mura tre gigantesche porte. Quando si apre il velario siamo nell’ora più sfolgorante del tramonto. Pekino, che va digradando nelle lontananze, scintilla dorata. Il piazzale è pieno di una pittoresca folla cinese, immobile, che ascolta le parole di un mandarino. Dalla sommità dello spalto, dove gli fanno ala le guardie tartare rosse e nere, egli legge un tragico decreto.",
+            "en": "The walls of the great Violet City: the Imperial City. Massive ramparts enclose almost the entire stage in a semicircle. Only on the right is the circle broken by a great loggia, carved and sculpted all over with monsters, unicorns and phoenixes, its pillars supported on the backs of massive tortoises. At the foot of the loggia, supported by two arches, stands a gong of highly resonant bronze. On the ramparts are poles bearing the skulls of those executed. On the left and at the back, three gigantic gates open in the walls. When the curtain rises, it is the most brilliant hour of sunset. Peking, receding into the distance, glitters golden. The square is filled with a picturesque Chinese crowd, motionless, listening to the words of a Mandarin. From the top of the rampart, flanked by red and black Tartar guards, he reads a tragic decree.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Mandarino",
@@ -55,7 +51,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il Mandarino si ritira e la folla rompe la sua immobilità con crescente tumulto.",
-            "en": "The Mandarin withdraws, and the crowd breaks its stillness with growing tumult."
+            "en": "The Mandarin withdraws, and the crowd breaks its stillness with growing tumult.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -66,13 +63,9 @@ export const turandotActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "it": "Si slanciano verso la reggia.",
-            "en": "They rush towards the palace."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "respingono la folla; nell’urto molti cadono",
-            "en": "Repelling the crowd; many fall in the collision."
+            "it": "Si slanciano verso la reggia. respingono la folla; nell’urto molti cadono",
+            "en": "They rush towards the palace. The guards drive the crowd back; many fall in the crush.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Le Guardie",
@@ -84,7 +77,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Confuso vociare di gente impaurita. Urla. Proteste. Invocazioni.",
-            "en": "Confused shouting from frightened people. Cries. Protests. Appeals."
+            "en": "Confused shouting from frightened people. Cries. Protests. Appeals.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -117,7 +111,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "disperatamente",
-            "en": "Desperately."
+            "en": "Desperately.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -143,7 +139,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "girando intorno lo sguardo e supplicando",
-            "en": "Looking around and pleading."
+            "en": "Looking around and pleading.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -212,13 +210,14 @@ export const turandotActOneScenes = [
             "speaker": "Calaf",
             "speakerTranslation": "Calaf",
             "it": "Padre! Ascoltami! Padre! Son io!\nE benedetto sia il dolor\nper questa gioia che ci dona un Dio\npietoso!",
-            "en": "Father! Listen to me! Father! It is I!\nAnd blessed be the suffering\nfor this joy that a God grants us,\nin his mercy!",
+            "en": "Father! Listen to me! Father! It is I!\nAnd blessed be our suffering\nfor this joy bestowed on us by a God\nso merciful!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "La folla si agita mormorando a bassa voce. Le guardie reprimono e spingono indietro e in disparte il popolo.",
-            "en": "The crowd stirs, murmuring quietly. The guards restrain the people and push them back and aside."
+            "en": "The crowd stirs, murmuring quietly. The guards restrain the people and push them back and aside.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Timur",
@@ -230,7 +229,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "con terrore",
-            "en": "With terror."
+            "en": "With terror.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -257,7 +258,7 @@ export const turandotActOneScenes = [
             "speaker": "Timur",
             "speakerTranslation": "Timur",
             "it": "O figlio ritrovato!",
-            "en": "O son found again!",
+            "en": "O my son, found again!",
             "literalText": true
           },
           {
@@ -270,7 +271,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Dodici servi del boia escono a due a due.",
-            "en": "Twelve of the executioner's servants emerge two by two."
+            "en": "Twelve of the executioner's servants emerge two by two.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Timur",
@@ -303,7 +305,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "umilmente",
-            "en": "Humbly."
+            "en": "Humbly.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -315,7 +319,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "interno",
-            "en": "Offstage."
+            "en": "Offstage.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -334,7 +340,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "un gruppo, entrando",
-            "en": "A group, entering."
+            "en": "A group, entering.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -346,7 +354,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Entra un gruppo dei servi del boia preceduto dai portatori della cote per arrotare la grande scimitarra del boia.",
-            "en": "A group of the executioner's servants enters, preceded by the bearers of the whetstone for sharpening the executioner's great scimitar."
+            "en": "A group of the executioner's servants enters, preceded by the bearers of the whetstone for sharpening the executioner's great scimitar.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Liù",
@@ -358,7 +367,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "un gruppo, entrando",
-            "en": "A group, entering."
+            "en": "A group, entering.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -384,7 +395,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "selvaggi",
-            "en": "Fiercely."
+            "en": "Fiercely.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "I Servi del Boia",
@@ -543,7 +556,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Mentre i servi si allontanano per recare al carnefice la spada affilata, la folla scruta il cielo che a poco a poco si è oscurato.",
-            "en": "As the servants move away to take the sharpened sword to the executioner, the crowd scans the sky, which has gradually darkened."
+            "en": "As the servants move away to take the sharpened sword to the executioner, the crowd scans the sky, which has gradually darkened.",
+            "bracketStageDirection": false
           }
         ]
       },
@@ -559,13 +573,15 @@ export const turandotActOneScenes = [
             "speaker": "La Folla",
             "speakerTranslation": "Crowd",
             "it": "Perché tarda la luna? Faccia pallida!\nMostrati in cielo! Presto! Vieni! Spunta!\nO testa mozza! O squallida!\nVieni! Spunta! Mostrati in cielo!\nO testa mozza! O esangue!\nO esangue, o squallida! O taciturna!\nO amante smunta\ndei morti! O taciturna,\nmostrati in cielo!\nCome aspettano...\nO taciturna!\n... il tuo funereo\nlume i cimiteri!\nO esangue, squallida! O testa mozza!\nEcco laggiù un barlume!\nVieni, presto, spunta!\nO testa mozza,\nspunta!\nVieni!\nO testa mozza, vieni!\nMostrati, o faccia pallida!\nO esangue, pallida!\nVieni, o amante smunta\ndei morti!\nO amante\nsmunta dei morti!\nVieni, vieni, spunta!\nEcco laggiù un barlume,\ndilaga in cielo la sua luce smorta!\nPu-Tin-Pao!\nLa luna è sorta!\nPu-Tin-Pao!",
-            "en": "Why is the moon late? Pale face!\nShow yourself in the sky! Quickly! Come! Rise!\nO severed head! O wan one!\nCome! Rise! Show yourself in the sky!\nO severed head! O bloodless one!\nO bloodless, wan one! O silent one!\nO wasted lover\nof the dead! O silent one,\nshow yourself in the sky!\nHow they await...\nO silent one!\n... your funeral\nlight, the graveyards!\nO bloodless, wan one! O severed head!\nThere is a gleam down there!\nCome, quickly, rise!\nO severed head,\nrise!\nCome!\nO severed head, come!\nShow yourself, O pale face!\nO bloodless, pale one!\nCome, O wasted lover\nof the dead!\nO lover\nwasted for the dead!\nCome, come, rise!\nThere is a gleam down there,\nits dim light spreads across the sky!\nPu-Tin-Pao!\nThe moon has risen!\nPu-Tin-Pao!",
+            "en": "Why is the moon late? Pale face!\nShow yourself in the sky! Quickly! Come! Rise!\nO severed head! O wan one!\nCome! Rise! Show yourself in the sky!\nO severed head! O bloodless one!\nO bloodless, wan one! O silent one!\nO wasted lover\nof the dead! O silent one,\nshow yourself in the sky!\nHow they await...\nO silent one!\n... your funeral\nlight, the graveyards!\nO bloodless, wan one! O severed head!\nThere is a gleam down there!\nCome, quickly, rise!\nO severed head,\nrise!\nCome!\nO severed head, come!\nShow yourself, O pale face!\nO bloodless, pale one!\nCome, O wasted lover\nof the dead!\nO lover\nof the dead, so wan!\nCome, come, rise!\nThere is a gleam down there,\nits dim light spreads across the sky!\nPu-Tin-Pao!\nThe moon has risen!\nPu-Tin-Pao!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "interni; avvicinandosi",
-            "en": "Offstage, approaching."
+            "en": "Offstage, approaching.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "I Ragazzi",
@@ -577,7 +593,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "L’oro degli sfondi s’è mutato in argento. Appare il corteo che conduce al patibolo il giovine principe di Persia. Alla vista della vittima che procede pallido e trasognato, la ferocia della folla si tramuta in pietà.",
-            "en": "The gold of the background has turned to silver. The procession appears, leading the young Prince of Persia to the scaffold. At the sight of the victim, who walks pale and dreamlike, the ferocity of the crowd turns to pity."
+            "en": "The gold of the background has turned to silver. The procession appears, leading the young Prince of Persia to the scaffold. At the sight of the victim, who walks pale and dreamlike, the ferocity of the crowd turns to pity.",
+            "bracketStageDirection": false
           }
         ]
       },
@@ -628,7 +645,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il popolo, rivolto al loggiato dove apparirà Turandot:",
-            "en": "The people turn towards the loggia where Turandot will appear."
+            "en": "The people turn towards the loggia where Turandot will appear.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -640,7 +658,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Appare Turandot, come una visione. Un raggio di luna la investe. La folla si prostra. In piedi sono soltanto il principe di Persia, il principe Calaf e il boia gigantesco.",
-            "en": "Turandot appears like a vision. A moonbeam falls on her. The crowd prostrates itself. Only the Prince of Persia, Prince Calaf and the gigantic executioner remain standing."
+            "en": "Turandot appears like a vision. A moonbeam falls on her. The crowd prostrates itself. Only the Prince of Persia, Prince Calaf and the gigantic executioner remain standing.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -652,12 +671,15 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Turandot ha un gesto imperioso e definitivo. È la condanna. Il corteo si muove.",
-            "en": "Turandot makes an imperious, irrevocable gesture. It is the death sentence. The procession moves."
+            "en": "Turandot makes an imperious, irrevocable gesture. It is the death sentence. The procession moves.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "abbacinato dalla visione di Turandot",
-            "en": "Dazzled by the vision of Turandot."
+            "en": "Dazzled by the vision of Turandot.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -676,7 +698,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il corteo è uscito, lungo gli spalti. Ora nella penombra del piazzale deserto restano soli il principe Calaf, Timur e Liù. Il padre angosciosamente si avvicina al figlio, lo richiama, lo scuote.",
-            "en": "The procession has gone out along the ramparts. Now only Prince Calaf, Timur and Liù remain in the half-light of the deserted square. The father anxiously approaches his son, calls to him and shakes him."
+            "en": "The procession has gone out along the ramparts. Now only Prince Calaf, Timur and Liù remain in the half-light of the deserted square. The father anxiously approaches his son, calls to him and shakes him.",
+            "bracketStageDirection": false
           }
         ]
       },
@@ -728,7 +751,7 @@ export const turandotActOneScenes = [
             "speaker": "Timur",
             "speakerTranslation": "Timur",
             "it": "No, no! Stringiti a me.\nLiù, parlagli tu! Qui salvezza non c’è!\nPrendi nella tua mano la sua mano!",
-            "en": "No, no! Hold me close.\nLiù, you speak to him! There is no safety here!\nTake his hand in yours!",
+            "en": "No, no! Cling to me.\nLiù, you speak to him! There is no safety here!\nTake his hand in yours!",
             "literalText": true
           },
           {
@@ -783,7 +806,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "interno",
-            "en": "Offstage."
+            "en": "Offstage.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Il Principe di Persia",
@@ -816,7 +841,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "trattenendolo",
-            "en": "Holding him back."
+            "en": "Holding him back.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Timur",
@@ -835,12 +862,15 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Si slancia verso il gong; le tre maschere gli sbarrano la strada.",
-            "en": "He rushes towards the gong; the three masked ministers bar his way."
+            "en": "He rushes towards the gong; the three masked ministers bar his way.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "circondando e trattenendo il principe Calaf",
-            "en": "Surrounding and restraining Prince Calaf."
+            "en": "Surrounding and restraining Prince Calaf.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -964,7 +994,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "cercando di aprirsi il varco",
-            "en": "Trying to force his way through."
+            "en": "Trying to force his way through.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1068,20 +1100,22 @@ export const turandotActOneScenes = [
             "speaker": "Ping",
             "speakerTranslation": "Ping",
             "it": "... è roba...",
-            "en": "... she is stuff...",
+            "en": "... she is meat...",
             "literalText": true
           },
           {
             "speaker": "Ping, Pang, Pong",
             "speakerTranslation": "Ping, Pang, Pong",
             "it": "... che non si mangia!",
-            "en": "... that cannot be eaten!",
+            "en": "... you cannot eat!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "con impeto",
-            "en": "Impetuously."
+            "en": "Impetuously.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1093,7 +1127,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "ridendo",
-            "en": "Laughing."
+            "en": "Laughing.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -1106,13 +1142,15 @@ export const turandotActOneScenes = [
             "speaker": "Calaf",
             "speakerTranslation": "Calaf",
             "it": "... lasciatemi!",
-            "en": "... let me!",
+            "en": "... let me through!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "con calma e dignità comica",
-            "en": "With calm and comic dignity."
+            "en": "With calm and comic dignity.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping",
@@ -1145,7 +1183,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "sghignazzando; trattenendo sempre il principe Calaf",
-            "en": "Laughing mockingly, still restraining Prince Calaf."
+            "en": "Laughing mockingly, still restraining Prince Calaf.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -1157,7 +1197,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "con violenza",
-            "en": "Violently."
+            "en": "Violently.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1176,7 +1218,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Un gruppo di fanciulle si affaccia alla balaustra della loggia imperiale: protendono le mani per far cessare lo schiamazzo.",
-            "en": "A group of girls appears at the balustrade of the imperial loggia; they stretch out their hands to stop the din."
+            "en": "A group of girls appears at the balustrade of the imperial loggia; they stretch out their hands to stop the din.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Le Ancelle di Turandot",
@@ -1188,7 +1231,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "con irritazione verso le ancelle",
-            "en": "Irritably, to the attendants."
+            "en": "Irritably, to the attendants.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping",
@@ -1228,7 +1273,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Le ancelle si ritirano.",
-            "en": "The attendants withdraw."
+            "en": "The attendants withdraw.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -1303,7 +1349,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Le maschere si aggruppano intorno al principe Calaf in pose grottesche.",
-            "en": "The masked ministers gather around Prince Calaf in grotesque poses."
+            "en": "The masked ministers gather around Prince Calaf in grotesque poses.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Pang",
@@ -1371,12 +1418,15 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Sugli spalti appariscono e scompaiono le ombre dei morti per Turandot.",
-            "en": "On the ramparts appear and disappear the ghosts of those who died for Turandot."
+            "en": "On the ramparts appear and disappear the ghosts of those who died for Turandot.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "misteriose, come da lontano",
-            "en": "Mysteriously, as if from afar."
+            "en": "Mysteriously, as if from afar.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Le Ombre dei Morti",
@@ -1388,7 +1438,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "con viva reazione",
-            "en": "Reacting strongly."
+            "en": "Reacting strongly.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1463,7 +1515,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Fa per slanciarsi verso il gong, ma il boia appare in alto sul bastione colla testa mozza del principe di Persia.",
-            "en": "He makes to rush towards the gong, but the executioner appears high on the bastion with the severed head of the Prince of Persia."
+            "en": "He makes to rush towards the gong, but the executioner appears high on the bastion with the severed head of the Prince of Persia.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -1491,7 +1544,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "avvicinandosi al principe Calaf, supplichevole, piangente",
-            "en": "Approaching Prince Calaf, pleading and weeping."
+            "en": "Approaching Prince Calaf, pleading and weeping.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -1503,7 +1558,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Si piega a terra sfinita singhiozzando.",
-            "en": "She sinks to the ground, exhausted and sobbing."
+            "en": "She sinks to the ground, exhausted and sobbing.",
+            "bracketStageDirection": false
           }
         ]
       },
@@ -1519,7 +1575,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "avvicinandosi a Liù con commozione",
-            "en": "Approaching Liù with emotion."
+            "en": "Approaching Liù with emotion.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1546,7 +1604,7 @@ export const turandotActOneScenes = [
             "speaker": "Calaf",
             "speakerTranslation": "Calaf",
             "it": "Dell’esilio addolcisci a lui le strade!\nQuesto... questo, o mia povera Liù,\nal tuo piccolo cuore che non cade,\nchiede colui che non sorride più!...",
-            "en": "Make the paths of exile gentler for him!\nThis... this, O my poor Liù,\nof your little heart that does not falter,\nis asked by the man who smiles no more!...",
+            "en": "Make the paths of exile gentler for him!\nThis... this, O my poor Liù,\nof your little heart that never falters,\nis what the man who smiles no more asks!...",
             "literalText": true
           }
         ]
@@ -1567,7 +1625,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "disperatamente",
-            "en": "Desperately."
+            "en": "Desperately.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Timur",
@@ -1586,7 +1646,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Le maschere, ch’erano appartate, si riavvicinano.",
-            "en": "The masked ministers, who had stood aside, approach again."
+            "en": "The masked ministers, who had stood aside, approach again.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -1675,19 +1736,23 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Liù",
-            "en": "To Liù."
+            "en": "To Liù.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
             "speakerTranslation": "Calaf",
             "it": "Il tuo perdono\nchiede colui che non sorride più!",
-            "en": "Your forgiveness\nis asked by the man who smiles no more!",
+            "en": "Your forgiveness\nis what the man who smiles no more asks!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "disperatamente al principe Calaf",
-            "en": "Desperately, to Prince Calaf."
+            "en": "Desperately, to Prince Calaf.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Timur",
@@ -1699,7 +1764,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "tentano con ogni sforzo di trascinarlo via",
-            "en": "They try with all their strength to drag him away."
+            "en": "They try with all their strength to drag him away.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -1739,7 +1806,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il gong si illumina.",
-            "en": "The gong lights up."
+            "en": "The gong lights up.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Calaf",
@@ -1751,13 +1819,15 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "con ebbra violenza, svincolandosi",
-            "en": "With intoxicated violence, breaking free."
+            "en": "With intoxicated violence, breaking free.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
             "speakerTranslation": "Calaf",
             "it": "Son tutto una febbre,\nson tutto un delirio!\nOgni senso è un martirio\nferoce!\nOgni fibra dell’anima ha una voce\nche grida.",
-            "en": "I am all fever,\nI am all delirium!\nEvery sense is a torment,\ncruel!\nEvery fibre of my soul has a voice\nthat cries out.",
+            "en": "I am all fever,\nI am all delirium!\nEvery sense is a torment\nso cruel!\nEvery fibre of my soul has a voice\nthat cries out.",
             "literalText": true
           },
           {
@@ -1798,7 +1868,9 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "disperatamente",
-            "en": "Desperately."
+            "en": "Desperately.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù, Timur, Ping, Pang, Pong",
@@ -1817,7 +1889,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il principe Calaf batte tre colpi al gong.",
-            "en": "Prince Calaf strikes the gong three times."
+            "en": "Prince Calaf strikes the gong three times.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -1836,7 +1909,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Fuggono sghignazzando.",
-            "en": "They flee, laughing mockingly."
+            "en": "They flee, laughing mockingly.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping, Pang, Pong",
@@ -1848,7 +1922,8 @@ export const turandotActOneScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il principe Calaf è rimasto estatico ai piedi del gong. Timur e Liù si stringono insieme, disperati.",
-            "en": "Prince Calaf remains entranced at the foot of the gong. Timur and Liù cling to each other in despair."
+            "en": "Prince Calaf remains entranced at the foot of the gong. Timur and Liù cling to each other in despair.",
+            "bracketStageDirection": false
           }
         ]
       }
