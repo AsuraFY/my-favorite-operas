@@ -4,7 +4,7 @@ import { getLibretto } from "./data/libretto-registry.js?v=tosca-review-20261020
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=beethoven-grouped-20261020";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=beethoven-credit-20261020";
 
 const app = document.querySelector("#app");
 
