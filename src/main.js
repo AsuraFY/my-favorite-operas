@@ -4,7 +4,7 @@ import { getLibretto } from "./data/libretto-registry.js?v=tosca-review-20261020
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-tabs-20261020";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-mobile-20261020";
 
 const app = document.querySelector("#app");
 
@@ -340,6 +340,16 @@ function shell(content, active) {
   closeActOutline(false);
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
   setupMusicalTranslationToggle();
+  const description = app.querySelector(".musical-description");
+  const descriptionToggle = description?.querySelector(".musical-description-toggle");
+  if (descriptionToggle) {
+    description.classList.add("is-collapsible");
+    descriptionToggle.addEventListener("click", () => {
+      const expanded = description.classList.toggle("is-expanded");
+      descriptionToggle.setAttribute("aria-expanded", String(expanded));
+      descriptionToggle.textContent = expanded ? "Read less" : "Read more";
+    });
+  }
   setupStickyNavigation();
   setupActOutline();
   setupDesktopOutline();

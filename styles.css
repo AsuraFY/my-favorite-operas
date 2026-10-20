@@ -2765,3 +2765,30 @@ html[data-theme="night"] .site-breadcrumb { color: #c5c9cc; background: #20262d;
 html[data-theme="night"] .site-breadcrumb.musical-breadcrumb { background: #161f29; }
 html[data-theme="night"] .site-breadcrumb [aria-current="page"] { color: #f0ede6; }
 @media (max-width: 700px) { .site-breadcrumb { gap: 7px; } }
+
+/* Mobile work information; desktop retains its full description and facts grid. */
+.musical-description-toggle {display:none}
+@media (max-width:740px) {
+  .musical-editorial {padding:16px 16px 48px}
+  .musical-editorial-hero {min-height:220px}
+  .musical-editorial-hero__inner {padding:24px 20px}
+  .musical-editorial-hero h1 {font-size:2.3rem}
+  .musical-editorial-overline {font-size:.65rem;letter-spacing:.08em}
+  .musical-editorial-quote {display:none}
+  .musical-work-tabs {gap:0;margin:0}
+  .musical-work-tabs a {flex:1;text-align:center;padding:18px 10px 14px}
+  .musical-editorial-section {padding:24px 4px}
+  .musical-editorial-prose {font-size:1rem;line-height:1.65}
+  .musical-description.is-collapsible:not(.is-expanded) .musical-editorial-prose p:first-child {display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;margin-bottom:0}
+  .musical-description.is-collapsible:not(.is-expanded) .musical-editorial-prose p ~ p {display:none}
+  .musical-description.is-collapsible .musical-description-toggle {display:inline-block;min-height:44px;padding:10px 0;border:0;background:transparent;color:inherit;font:600 .9rem/1.5 var(--sans);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+  .musical-description-toggle:focus-visible {outline:2px solid currentColor;outline-offset:3px}
+  .musical-facts-section {margin-top:28px}
+  .musical-editorial-facts {grid-template-columns:1fr}
+  .musical-editorial-facts>div,
+  .musical-editorial-facts>div:nth-child(even) {padding:16px 0;border-left:0;border-bottom:1px solid #d4d8dc}
+  .musical-editorial-facts dt {color:#626c77}
+  .musical-editorial-facts dd {margin-top:6px}
+  html[data-theme="night"] .musical-editorial-facts dt {color:#b5bdc6}
+  html[data-theme="night"] .musical-editorial-facts>div {border-color:#43505c}
+}

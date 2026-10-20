@@ -187,7 +187,7 @@ test("the musicals directory searches and filters strictly by composer", () => {
 
 test("musical detail combines breadcrumb, hero, and About and Lyrics navigation", () => {
  const page=renderMusicalPage();
- for(const label of ["Home","Musicals","I shall live again!",'class="musical-editorial-hero"',"About this work","Lyrics","Friedrich Klopstock", "At a glance", "Gustav Mahler"]) assert.ok(page.includes(label), "missing "+label);
+ for(const label of ["Home","Musicals","I shall live again!",'class="musical-editorial-hero"',"About this work","Lyrics","Friedrich Klopstock", "Work details", "Gustav Mahler"]) assert.ok(page.includes(label), "missing "+label);
  assert.equal((page.match(/<details/g)||[]).length,0);
  for (const slug of ['mahler-symphony-2-resurrection', 'beethoven-ode-to-joy']) {
    for (const view of ['about', 'lyrics']) {
