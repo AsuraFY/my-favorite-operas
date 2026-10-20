@@ -185,11 +185,19 @@ test("the musicals directory searches and filters strictly by composer", () => {
   assert.ok(renderMusicalsPage("unrelated", "title", "Gustav Mahler").includes("No musicals match"));
 });
 
-test("musical detail combines breadcrumb, hero, and collapsible About and Lyrics", () => {
+test("musical detail combines breadcrumb, hero, and About and Lyrics navigation", () => {
  const page=renderMusicalPage();
- for(const label of ["Home","Musicals","I shall live again!",'class="musical-editorial-hero"',"About this work","Lyrics","Friedrich Klopstock", "<details", "Gustav Mahler"]) assert.ok(page.includes(label), "missing "+label);
- assert.equal((page.match(/<details/g)||[]).length,2);
- assert.ok(!page.includes("?view=lyrics"));
+ for(const label of ["Home","Musicals","I shall live again!",'class="musical-editorial-hero"',"About this work","Lyrics","Friedrich Klopstock", "At a glance", "Gustav Mahler"]) assert.ok(page.includes(label), "missing "+label);
+ assert.equal((page.match(/<details/g)||[]).length,0);
+ for (const slug of ['mahler-symphony-2-resurrection', 'beethoven-ode-to-joy']) {
+   for (const view of ['about', 'lyrics']) {
+     const html = renderMusicalPage(slug, view);
+     assert.ok(html.includes(`href="#/musicals/${slug}?view=${view}" aria-current="page"`));
+     const other = view === 'about' ? 'lyrics' : 'about';
+     assert.ok(html.includes(`aria-labelledby="musical-${other}-heading" hidden`));
+     assert.ok(!html.includes(`aria-labelledby="musical-${view}-heading" hidden`));
+   }
+ }
  assert.ok(page.includes('<a href="#/musicals?composer=Gustav%20Mahler">Gustav Mahler</a>'));
  assert.ok(page.includes('<span aria-current="page">Symphony No. 2</span>'));
  assert.ok(page.indexOf('href="#/"') < page.indexOf('href="#/musicals"'));

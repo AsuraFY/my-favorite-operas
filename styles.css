@@ -2675,19 +2675,24 @@ html[data-theme="night"] .musical-score-instrumental { background: #293645; colo
 .musical-editorial-hero h1 em {font-weight:400;color:#eee1c0}
 .musical-editorial-quote {font:italic clamp(1.1rem,2vw,1.4rem)/1.5 var(--serif);color:#f2deb3;margin:12px 0}
 .musical-editorial-hero__sub {font:.85rem/1.5 var(--sans);color:#e5e8ed;margin:16px 0 0}
-.musical-editorial-section {margin-top:19px;background:#fffdf9;border:1px solid #e2dccc;border-radius:10px;overflow:hidden}
-.musical-editorial-section>summary {display:flex;align-items:center;justify-content:space-between;cursor:pointer;list-style:none;padding:22px clamp(18px,3vw,32px);font:500 1.55rem/1.35 var(--serif);color:#24364a}
-.musical-editorial-section>summary::-webkit-details-marker {display:none}
-.musical-editorial-section>summary small {font:400 .92rem/1.4 var(--serif);color:#777a7b}
-.musical-editorial-section>summary:focus-visible {outline:3px solid #b89d69;outline-offset:-3px}
-.musical-editorial-chevron {color:#b69b6a;transition:transform .18s}
-.musical-editorial-section[open] .musical-editorial-chevron {transform:rotate(180deg)}
-.musical-editorial-about {display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.9fr);gap:36px;padding:6px clamp(18px,3vw,32px) 32px;border-top:1px solid #eee7dc}
-.musical-editorial-prose {font:1.06rem/1.8 var(--serif);color:#3c444d}
-.musical-editorial-prose a {color:#85622f;text-underline-offset:3px}
-.musical-editorial-facts {margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:18px 16px;align-content:start}
-.musical-editorial-facts dt {font:700 .7rem/1.3 var(--sans);letter-spacing:.1em;color:#8d805f}
-.musical-editorial-facts dd {margin:5px 0 0;font:.97rem/1.5 var(--serif);color:#293c4e}
+.musical-work-tabs {display:flex;gap:28px;border-bottom:1px solid #c7bfae;margin:0 clamp(8px,3vw,32px)}
+.musical-work-tabs a {padding:22px 10px 18px;border-bottom:3px solid transparent;text-decoration:none;color:inherit;font:1.1rem/1.4 var(--sans)}
+.musical-work-tabs a[aria-current="page"] {color:#85622f;border-bottom-color:#b18a47}
+.musical-work-tabs a:focus-visible {outline:2px solid #b18a47;outline-offset:3px}
+.musical-editorial-section {padding:30px clamp(8px,3vw,32px);background:transparent;border:0}
+.musical-editorial-section[hidden] {display:none}
+.musical-editorial-section h2 {margin:0 0 18px;font:400 clamp(1.7rem,3vw,2.3rem)/1.3 var(--serif);color:inherit}
+.musical-editorial-section h2 small {display:block;margin-top:8px;font:400 .95rem/1.5 var(--sans)}
+.musical-editorial-about {display:block}
+.musical-editorial-prose {max-width:850px;font:1.06rem/1.8 var(--sans);color:#3c444d}
+.musical-editorial-prose p:first-child {margin-top:0}
+.musical-editorial-prose a {color:#85622f;text-underline-offset:5px}
+.musical-facts-section {margin-top:36px}
+.musical-editorial-facts {margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0;align-content:start}
+.musical-editorial-facts>div {padding:20px 24px 20px 0;border-bottom:1px solid #d6cfbf;min-width:0}
+.musical-editorial-facts>div:nth-child(even) {padding-left:24px;border-left:1px solid #d6cfbf}
+.musical-editorial-facts dt {font:500 .75rem/1.4 var(--sans);letter-spacing:.12em;color:#85622f}
+.musical-editorial-facts dd {margin:7px 0 0;font:1rem/1.6 var(--sans);color:#293c4e;overflow-wrap:anywhere}
 .musical-editorial .musical-score-reader {border:0;background:transparent;border-radius:0}
 .musical-editorial .musical-score-toolbar {padding:14px 22px;border-top:1px solid #eee7dc}
 .musical-editorial .musical-score-grid {padding:0 22px 18px}
@@ -2697,12 +2702,18 @@ html[data-theme="night"] .musical-score-instrumental { background: #293645; colo
 .musical-editorial .musical-score-footer {margin:8px 22px 22px;padding-top:14px;border-top:1px solid #e6e0d8;color:#65666b;font:.83rem/1.5 var(--sans)}
 .musical-editorial .musical-score-footer a {color:#86652e}
 html[data-theme="night"] .musical-editorial {background:#161f29;color:#ecedef}
-html[data-theme="night"] .musical-editorial-section {background:#222c35;border-color:#43505c}
-html[data-theme="night"] .musical-editorial-section>summary,html[data-theme="night"] .musical-editorial-facts dd {color:#eee7dc}
-html[data-theme="night"] .musical-editorial-prose,html[data-theme="night"] .musical-editorial-facts dt {color:#d4d0c9}
+html[data-theme="night"] .musical-editorial-facts dd {color:#eee7dc}
+html[data-theme="night"] .musical-editorial-prose {color:#d4d0c9}
+html[data-theme="night"] .musical-editorial-facts dt,
+html[data-theme="night"] .musical-editorial-prose a,
+html[data-theme="night"] .musical-work-tabs a[aria-current="page"] {color:#e7c888}
 html[data-theme="night"] .musical-breadcrumb {color:#ced0d2}
-html[data-theme="night"] .musical-editorial-about,html[data-theme="night"] .musical-editorial .musical-score-toolbar {border-color:#43505c}
-@media(max-width:740px){.musical-editorial-about {grid-template-columns:1fr;gap:8px}.musical-editorial-hero {min-height:260px}.musical-editorial-hero__inner {padding:27px 22px}.musical-editorial-section>summary {font-size:1.25rem}.musical-editorial-section>summary small {display:block;margin-top:3px}.musical-editorial .musical-score-grid {padding:0 12px 12px}}
+html[data-theme="night"] .musical-work-tabs,
+html[data-theme="night"] .musical-editorial-facts>div,
+html[data-theme="night"] .musical-editorial .musical-score-toolbar {border-color:#43505c}
+html[data-theme="night"] .musical-work-tabs a[aria-current="page"] {border-bottom-color:#e7c888}
+@media(max-width:740px){.musical-editorial-hero {min-height:240px}.musical-editorial-hero__inner {padding:27px 22px}.musical-editorial .musical-score-grid {padding:0 12px 12px}.musical-editorial-section {padding-top:25px}.musical-editorial-facts>div {padding-right:14px}.musical-editorial-facts>div:nth-child(even) {padding-left:14px}}
+@media(max-width:360px){.musical-editorial-facts {grid-template-columns:1fr}.musical-editorial-facts>div:nth-child(even) {padding-left:0;border-left:0}}
 
 /* Composer-specific musical directory, linked from musical breadcrumbs. */
 .musicals-composer-filter { margin: 12px 0 0; font: .93rem/1.5 var(--sans); }
