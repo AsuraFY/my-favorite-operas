@@ -2801,6 +2801,8 @@ body.musicals-theme {
   --music-surface:#f3eee8; --music-text:#172333; --music-muted:#606775; --music-line:#d5cccb;
 }
 html[data-theme="night"] body.musicals-theme {
+  --paper:#172333; --paper-deep:#26374a; --ink:#f3eee8; --muted:#c3c6ce; --line:#435164;
+  --night-surface:#1e2c3e; --night-surface-raised:#26374a; --night-selected:#354356;
   --wine:#c99379; --gold:#c99379; --music-accent:#c99379; --music-rose:#bc929e;
   --music-surface:#172333; --music-text:#f3eee8; --music-muted:#c3c6ce; --music-line:#435164;
   --night-bg:#172333; --night-text:#f3eee8; --night-muted:#c3c6ce; --night-border:#435164;
@@ -2836,3 +2838,21 @@ body.musicals-theme .main-nav a.is-active {color:var(--music-accent);border-colo
   body.musicals-theme .musicals-directory-intro {padding-top:18px}
   body.musicals-theme .musical-editorial-hero {background-position:65% center}
 }
+
+/* Shared reader controls follow the music palette in both themes. */
+body.musicals-theme .musical-score-passage__title,
+body.musicals-theme .musical-relation,
+body.musicals-theme .musical-score-part__ov,
+body.musicals-theme .musical-score-instrumental span {color:var(--music-accent)}
+body.musicals-theme .musical-score-translation-toggle {color:var(--music-accent);border-color:var(--music-accent)}
+body.musicals-theme .musical-score-translation-toggle:focus-visible,
+body.musicals-theme .musical-score-scroll:focus-visible {outline-color:var(--music-accent)}
+body.musicals-theme .musical-score-row--head {border-color:var(--music-accent)}
+body.musicals-theme .musical-editorial .musical-score-footer {color:var(--music-muted);border-color:var(--music-line)}
+html[data-theme="night"] body.musicals-theme .musical-breadcrumb,
+html[data-theme="night"] body.musicals-theme .opera-search input,
+html[data-theme="night"] body.musicals-theme .settings-panel,
+html[data-theme="night"] body.musicals-theme .settings-panel select {background-color:var(--night-surface);color:var(--night-text)}
+html[data-theme="night"] body.musicals-theme .musical-score-instrumental,
+html[data-theme="night"] body.musicals-theme .musical-score-translation-toggle:hover {background-color:var(--night-surface-raised)}
+html[data-theme="night"] body.musicals-theme .theme-choices button[aria-pressed="true"] {background:#493b3a}
