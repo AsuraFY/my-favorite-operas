@@ -46,7 +46,7 @@ export function renderMusicalsPage(query = '', sort = 'title', composer = '') {
       <p class="musical-row__summary">${escapeHtml(work.summary)}</p>
     </a>`).join('');
 
-  return `<section class="directory-scenic" aria-hidden="true"></section>
+  return `<section class="directory-scenic musicals-scenic" aria-hidden="true"></section>
 <section class="directory-intro section-wrap musicals-directory-intro">
   <div class="directory-intro__panel"><h1>Musicals</h1><p>Explore musical works through their stories, background, and lyrics with translation.</p>${composerNotice}</div>
   <div class="directory-tools">

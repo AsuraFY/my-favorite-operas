@@ -156,9 +156,9 @@ test("Tosca Acts I–III are available from its opera information page and direc
 
 
 // Musical directory and detail pages.
-test("the musicals directory uses the Opera banner and clickable text-only rows", () => {
+test("the musicals directory uses its own concert banner and clickable text-only rows", () => {
   const page = renderMusicalsPage();
-  assert.ok(page.includes('class="directory-scenic"'));
+  assert.ok(page.includes('class="directory-scenic musicals-scenic"'));
   assert.ok(page.includes("<h1>Musicals</h1>"));
   assert.ok(page.includes('href="#/musicals/mahler-symphony-2-resurrection"'));
   assert.ok(page.includes("Gustav Mahler"));

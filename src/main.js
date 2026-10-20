@@ -4,7 +4,7 @@ import { getLibretto } from "./data/libretto-registry.js?v=tosca-review-20261020
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-mobile-20261020";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=musical-palette-20261020";
 
 const app = document.querySelector("#app");
 
@@ -338,6 +338,7 @@ function setupMusicalTranslationToggle() {
 
 function shell(content, active) {
   closeActOutline(false);
+  document.body.classList.toggle("musicals-theme", active === "musicals" || active === "musical");
   app.innerHTML = `${header(active)}<main id="main">${content}</main>${footer()}`;
   setupMusicalTranslationToggle();
   const description = app.querySelector(".musical-description");

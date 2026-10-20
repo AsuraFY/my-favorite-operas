@@ -2792,3 +2792,47 @@ html[data-theme="night"] .site-breadcrumb [aria-current="page"] { color: #f0ede6
   html[data-theme="night"] .musical-editorial-facts dt {color:#b5bdc6}
   html[data-theme="night"] .musical-editorial-facts>div {border-color:#43505c}
 }
+
+/* The music collection has its own copper/rose accents; opera styling is untouched. */
+body.musicals-theme {
+  --wine:#95604b; --wine-dark:#724535; --gold:#95604b;
+  --paper:#f3eee8; --paper-deep:#e9e1df; --ink:#172333; --muted:#606775; --line:#d5cccb;
+  --music-accent:#95604b; --music-rose:#855967;
+  --music-surface:#f3eee8; --music-text:#172333; --music-muted:#606775; --music-line:#d5cccb;
+}
+html[data-theme="night"] body.musicals-theme {
+  --wine:#c99379; --gold:#c99379; --music-accent:#c99379; --music-rose:#bc929e;
+  --music-surface:#172333; --music-text:#f3eee8; --music-muted:#c3c6ce; --music-line:#435164;
+  --night-bg:#172333; --night-text:#f3eee8; --night-muted:#c3c6ce; --night-border:#435164;
+}
+body.musicals-theme .musicals-scenic {
+  height:280px;background:#172333 url('./public/images/musicals-concert-banner.webp') center 52%/cover no-repeat;
+}
+body.musicals-theme .musicals-directory-intro {margin-top:0;padding-top:24px}
+body.musicals-theme .directory-intro__panel {padding-left:0;background:transparent}
+body.musicals-theme .directory-intro__panel h1 {color:var(--music-text)}
+body.musicals-theme .directory-intro__panel p {color:var(--music-muted)}
+body.musicals-theme .musical-row h2 {color:var(--music-text)}
+body.musicals-theme .musical-row__byline {color:var(--music-rose)}
+body.musicals-theme .musical-row__summary {color:var(--music-muted)}
+body.musicals-theme .musical-row:hover {background:color-mix(in srgb,var(--music-rose) 9%,transparent)}
+body.musicals-theme .musical-editorial {background:var(--music-surface);color:var(--music-text)}
+body.musicals-theme .musical-editorial-hero {background-image:linear-gradient(90deg,rgba(23,35,51,.96),rgba(23,35,51,.62),rgba(23,35,51,.15)),url('./public/images/musicals-concert-banner.webp')}
+body.musicals-theme .musical-editorial-overline,
+body.musicals-theme .musical-editorial-quote {color:#c99379}
+body.musicals-theme .musical-editorial-hero h1 em {color:#f3eee8}
+body.musicals-theme .musical-work-tabs a[aria-current="page"] {color:var(--music-accent);border-color:var(--music-accent)}
+body.musicals-theme .musical-work-tabs a:focus-visible {outline-color:var(--music-accent)}
+body.musicals-theme .musical-editorial-prose {color:var(--music-muted)}
+body.musicals-theme .musical-editorial-prose a,
+body.musicals-theme .musical-score-footer a {color:var(--music-accent)}
+body.musicals-theme .musical-editorial-facts dt {color:var(--music-muted)}
+body.musicals-theme .musical-editorial-facts dd {color:var(--music-text)}
+body.musicals-theme .musical-editorial-facts>div,
+body.musicals-theme .musical-work-tabs {border-color:var(--music-line)}
+body.musicals-theme .main-nav a.is-active {color:var(--music-accent);border-color:var(--music-accent)}
+@media(max-width:740px) {
+  body.musicals-theme .musicals-scenic {height:200px;background-position:72% center}
+  body.musicals-theme .musicals-directory-intro {padding-top:18px}
+  body.musicals-theme .musical-editorial-hero {background-position:65% center}
+}
