@@ -794,3 +794,47 @@ test("La Bohème review retains all bilingual lines, sung asides and stable pass
   assert.equal(libretto.acts[3].scenes[0].outline[1].type,'Duetto');
   assert.equal(libretto.acts[0].scenes[0].sections[0].turns[403].speaker,'Marcello');
 });
+
+test('Butterfly review preserves all bilingual rows, dialogue order, stage cues and 34 passage targets', () => {
+  const libretto = getLibretto('madama-butterfly');
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  assert.ok(!outline.includes('♬') && !outline.includes('▤'));
+  const lines = [];
+  for (const act of libretto.acts) {
+    window.location.hash = `#/operas/madama-butterfly?act=${act.number}`;
+    const page = reader.scene(1);
+    const turns = act.scenes[0].sections.flatMap(s => s.turns);
+    const expected = turns.flatMap(t => t.speaker === 'Stage direction'
+      ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+      : t.original.split('\n').map((line,i) => [line,t.translation.split('\n')[i],false]));
+    assert.deepEqual(renderedVersePairs(page), expected);
+    assert.equal(count(page,/libretto-speaker--stage-direction/g),2*turns.filter(t=>t.speaker==='Stage direction'&&!t.shortCue).length);
+    assertActTargets(reader,libretto,act);
+    lines.push(turns.filter(t=>t.speaker!=='Stage direction').flatMap(t=>t.original.split('\n').map(original=>[t.speaker,original])));
+    for (const section of act.scenes[0].sections) {
+      assert.ok(section.translatedTitle);
+      assert.equal(new Set(section.participants).size,section.participants.length);
+    }
+  }
+  function sequence(act, first, expected) {
+    const index=lines[act-1].findIndex(([speaker,text])=>text===first);
+    assert.ok(index>=0,first);
+    assert.deepEqual(lines[act-1].slice(index,index+expected.length),expected);
+  }
+  sequence(1,'Dieci.',[
+    ['Sharpless','Dieci.'],['Butterfly','Crescete.'],['Sharpless','Venti.'],
+    ['Butterfly','Calate. Quindici netti, netti;'],['Butterfly','sono vecchia diggià.']
+  ]);
+  sequence(2,'Dice proprio così?',[
+    ['Butterfly','Dice proprio così?'],['Sharpless','Sì, così dice, ma se ad ogni momento...'],
+    ['Butterfly','Taccio, taccio, più nulla.']
+  ]);
+  sequence(3,'Glielo dirai?',[
+    ['Kate','Glielo dirai?'],['Suzuki','Prometto.'],['Kate',"E le darai consiglio d'affidarmi?"],
+    ['Suzuki','Prometto.'],['Kate','Lo terrò come un figlio.']
+  ]);
+  assert.ok(lines[1].some(([s,t])=>s==='Goro and Yamadori'&&t==='Maritata ancor si crede.'));
+  assert.ok(!lines.flat().some(([,text])=>/^(con malizia ossequente|porge l'atto per la firma|con strazio)$/.test(text)));
+  assert.equal(libretto.acts.flatMap(a=>a.scenes.flatMap(s=>s.sections)).length,34);
+});

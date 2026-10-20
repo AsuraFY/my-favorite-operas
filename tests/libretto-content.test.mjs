@@ -309,7 +309,7 @@ test("Madama Butterfly Act I uses the Opera Guide text with paired English and a
   assert.deepEqual(scene.sections.map(section => section.originalTitle), [
     "E soffitto... e pareti...", "Questa è la cameriera", "Dovunque al mondo",
     "Quanto cielo!... Ancora un passo or via", "Gran ventura", "L'Imperial Commissario",
-    "Vieni, amor mio!", "Ieri son salita tutta sola", "Tutti zitti!", "Madama Butterfly!",
+    "Vieni, amor mio!", "Ieri son salita tutta sola", "Tutti zitti!", "Hip! hip! Beviamo ai novissimi legami",
     "Cio-Cio-san!", "Bimba, bimba, non piangere", "Viene la sera",
     "Bimba dagli occhi pieni di malìa", "Vogliatemi bene"
   ]);
