@@ -2871,3 +2871,6 @@ body.musicals-theme .musical-editorial .musical-score-translation-toggle:hover {
 }
 body.musicals-theme .musical-editorial .musical-description-toggle {color:var(--music-accent)}
 body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--music-rose)}
+
+/* Dusty-pink wordmark on the musical collection and work pages. */
+body.musicals-theme .site-header .brand__name {color:#bc929e}
