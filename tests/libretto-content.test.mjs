@@ -699,7 +699,7 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.deepEqual(laBoheme.acts.map(act => act.originalHeading), ["Quadro primo", "Quadro secondo", "Quadro terzo", "Quadro quarto"]);
   const bohemeTurns = laBoheme.acts[0].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
   assert.ok(bohemeTurns.length > 200);
-  assert.equal(bohemeTurns.at(-1).original, "(cala il sipario)");
+  assert.equal(bohemeTurns.at(-1).original, "cala il sipario");
   assert.ok(bohemeTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
   const bohemeActTwoTurns = laBoheme.acts[1].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
   assert.ok(bohemeActTwoTurns.length > 200);
@@ -707,7 +707,7 @@ test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(bohemeActTwoTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
   const bohemeActThreeTurns = laBoheme.acts[2].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
   assert.ok(bohemeActThreeTurns.length > 100);
-  assert.equal(bohemeActThreeTurns.at(-1).original, "(sipario calato)");
+  assert.equal(bohemeActThreeTurns.at(-1).original, "sipario calato");
   assert.ok(bohemeActThreeTurns.every(turn => typeof turn.original === "string" && typeof turn.translation === "string"));
   const bohemeActFourTurns = laBoheme.acts[3].scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
   assert.ok(bohemeActFourTurns.length > 150);

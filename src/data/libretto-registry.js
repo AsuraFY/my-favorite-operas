@@ -29,10 +29,10 @@ import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-review-1
 import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-review-complete-1";
 import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-review-complete-1";
 import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-review-complete-1";
-import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-4";
-import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-act2-3";
-import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=la-boheme-act3-3";
-import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=la-boheme-act4-3";
+import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=boheme-review-1";
+import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=boheme-review-1";
+import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=boheme-review-1";
+import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=boheme-review-1";
 
 import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.js?v=madama-butterfly-act1-1";
 import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.js?v=madama-butterfly-act2-1";
@@ -464,9 +464,8 @@ const carmen = {
 };
 
 const laBoheme = {
-  spotifyAlbumUrl: "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp",
-  outlineRecording: "Spotify recording",
   slug: "la-boheme",
+  threeLineOutline: true,
   opera: getOpera("la-boheme"),
   composerShort: "G. PUCCINI",
   mobileComposer: "Giacomo Puccini",
@@ -487,7 +486,7 @@ const laBoheme = {
     { number: 3, originalHeading: "Quadro terzo", scenes: laBohemeActThreeScenes },
     { number: 4, originalHeading: "Quadro quarto", scenes: laBohemeActFourScenes }
   ],
-  characters: ["Mimì", "Rodolfo", "Marcello", "Schaunard", "Colline", "Benoît"],
+  characters: ["Mimì", "Musetta", "Rodolfo", "Marcello", "Schaunard", "Colline", "Benoît", "Alcindoro", "Parpignol", "Sergeant", "Customs officer"],
   synopsis: {
     eyebrow: "Giacomo Puccini · Opera in four tableaux",
     paragraphs: [

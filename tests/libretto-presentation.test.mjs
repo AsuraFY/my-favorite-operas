@@ -314,7 +314,7 @@ test("La Bohème Act III renders as one continuous bilingual tableau", () => {
   assert.ok(page.includes("QUADRO TERZO"));
   assert.ok(page.includes("La barriera d’Enfer"));
   assert.ok(page.includes("Donde lieta uscì"));
-  assert.ok(page.includes("From where I happily left"));
+  assert.ok(page.includes("From where she left so happily"));
   assert.ok(page.includes("Stage direction"));
   assert.ok(page.includes("We’ll part when the flowers are in bloom!"));
 });
@@ -364,7 +364,8 @@ test("La Bohème outline shows characters from libretto speakers and keeps exact
   const renderer = createLibrettoRenderer(libretto);
   const outline = renderer.outline();
   assert.equal(count(outline, /class="opera-outline__act"/g), 4);
-  assert.equal(libretto.spotifyAlbumUrl, "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp");
+  assert.equal(libretto.spotifyAlbumUrl, undefined);
+  assert.ok(!outline.includes("open.spotify.com"));
   assert.deepEqual(libretto.acts.map(act => act.scenes[0].outline.length), [8, 5, 5, 8]);
   assert.ok(!outline.includes("Performers:"));
   assert.ok(outline.includes("Libretto Outline"));
@@ -758,4 +759,38 @@ test("Carmen Acts II–IV preserve every bilingual pair and passage address", ()
     }
     assert.ok(!turns.some(t=>t.speaker!=='Stage direction' && /Entr'acte/.test(t.original)));
   }
+});
+
+test("La Bohème review retains all bilingual lines, sung asides and stable passage targets", () => {
+  const libretto = getLibretto('la-boheme');
+  const reader = createLibrettoRenderer(libretto);
+  const oldTargets = [[1,80,137,255,292,388,394,399],[1,39,84,135,167],[2,27,55,93,94],[2,27,34,132,182,184,188,208]];
+  assert.ok(!reader.outline().includes('♬'));
+  for (const act of libretto.acts) {
+    window.location.hash = `#/operas/la-boheme?act=${act.number}`;
+    const page = reader.scene(1);
+    const scene = act.scenes[0];
+    const turns = scene.sections[0].turns;
+    const expected = turns.flatMap(t => t.speaker === 'Stage direction'
+      ? [[t.shortCue ? `[${t.original}]` : t.original,t.shortCue ? `[${t.translation}]` : t.translation,true]]
+      : t.original.split('\n').map((line,i) => {
+        const translation=t.translation.split('\n')[i];
+        assert.notEqual(translation,undefined,`Act ${act.number}: ${line}`);
+        const cue=t.inlineDirections?.includes(line.replace(/^\((.*)\)$/,'$1'));
+        return cue ? [`[${line.slice(1,-1)}]`,`[${translation.slice(1,-1)}]`,true] : [line.trim(),translation.trim(),false];
+      }));
+    const actual=renderedVersePairs(page);
+    assert.equal(actual.length,expected.length);
+    expected.forEach((pair,i)=>assert.deepEqual(actual[i],pair,`Act ${act.number}, row ${i}`));
+    assert.equal(count(page,/libretto-speaker--stage-direction/g),2*turns.filter(t=>t.speaker==='Stage direction'&&!t.shortCue).length);
+    assertActTargets(reader,libretto,act);
+    scene.outline.forEach((entry,i)=>{
+      const target=oldTargets[act.number-1][i];
+      assert.ok(turns[target].original.includes(entry.match));
+      assert.ok(page.includes(`id="libretto-turn-${act.number}-1-0-${target}"`));
+      assert.equal(new Set(entry.characters.map(x=>x.toLowerCase())).size,entry.characters.length);
+    });
+  }
+  assert.equal(libretto.acts[3].scenes[0].outline[1].type,'Duetto');
+  assert.equal(libretto.acts[0].scenes[0].sections[0].turns[403].speaker,'Marcello');
 });
