@@ -2,6 +2,13 @@ import { mahlerFinaleEvents, mahlerFinaleSources, mahlerFinaleTranslations } fro
 
 const musicalWorks = [
   {
+    title: 'Ode to Joy · Symphony No. 9',
+    composer: 'Ludwig van Beethoven',
+    year: 1824,
+    summary: 'The choral finale of Beethoven’s Ninth Symphony brings Schiller’s vision of joy and human fellowship to soloists, chorus, and orchestra.',
+    slug: 'beethoven-ode-to-joy'
+  },
+  {
     title: 'Symphony No. 2: “Resurrection”',
     composer: 'Gustav Mahler',
     year: 1895,
@@ -59,6 +66,40 @@ export function renderMusicalsPage(query = '', sort = 'title', composer = '') {
 }
 
 
+function renderBeethovenPage() {
+  return `<nav class="site-breadcrumb musical-breadcrumb" aria-label="Breadcrumb"><a href="#/">Home</a><span>›</span><a href="#/musicals">Musicals</a><span>›</span><a href="#/musicals?composer=Ludwig%20van%20Beethoven">Ludwig van Beethoven</a><span>›</span><span aria-current="page">Ode to Joy</span></nav>
+<div class="musical-detail-page musical-editorial"><div class="musical-editorial-wrap">
+  <header class="musical-editorial-hero"><div class="musical-editorial-hero__inner">
+    <p class="musical-editorial-overline">LUDWIG VAN BEETHOVEN · 1824 · CHORAL SYMPHONY</p>
+    <h1>Ode to Joy<br><em>Symphony No. 9</em></h1>
+    <p class="musical-editorial-quote">Joy, friendship, and a shared humanity.</p>
+    <p class="musical-editorial-hero__sub">Symphony No. 9 in D minor, Op. 125 · Movement IV</p>
+  </div></header>
+  <details class="musical-editorial-section" open><summary><span>About this work</span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>
+    <div class="musical-editorial-about">
+      <div class="musical-editorial-prose">
+        <p>“Ode to Joy” is the familiar name associated with the choral finale of Ludwig van Beethoven’s Ninth Symphony. Its German text draws on Friedrich Schiller’s poem <em lang="de">An die Freude</em>, celebrating joy and fellowship.</p>
+        <p>The finale belongs to a four-movement symphony. Orchestra, four vocal soloists, and mixed chorus give its vision of shared humanity a powerful musical voice. Beethoven completed the symphony in February 1824; its first performance took place in Vienna on 7 May that year.</p>
+        <p><a href="https://www.beethoven.de/en/work/view/5556714292117504/" target="_blank" rel="noopener noreferrer">Explore the work at Beethoven-Haus Bonn ↗</a></p>
+      </div>
+      <dl class="musical-editorial-facts">
+        <div><dt>COMPOSER</dt><dd>Ludwig van Beethoven</dd></div>
+        <div><dt>GENRE</dt><dd>Choral symphony · finale</dd></div>
+        <div><dt>WORK</dt><dd>Symphony No. 9 in D minor, Op. 125</dd></div>
+        <div><dt>PREMIERE</dt><dd>7 May 1824 · Vienna</dd></div>
+        <div><dt>STRUCTURE</dt><dd>Four movements · vocals in Movement IV</dd></div>
+        <div><dt>VOICES</dt><dd>Soprano, alto, tenor & bass soloists; mixed chorus</dd></div>
+        <div><dt>LANGUAGE</dt><dd>German</dd></div>
+        <div><dt>TEXT</dt><dd>Friedrich Schiller, with introductory words by Beethoven</dd></div>
+      </dl>
+    </div>
+  </details>
+  <details class="musical-editorial-section" open><summary><span>Lyrics <small>· Movement IV — Ode to Joy</small></span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>
+    <div class="musical-editorial-prose"><p><strong>Lyrics and English translation coming soon.</strong></p><p>This section will follow the sung text of the finale, including its repetitions and individual vocal parts.</p></div>
+  </details>
+</div></div>`;
+}
+
 function renderScoreEvent(event) {
   if (event.kind === "instrumental") return '<div class="musical-score-instrumental"><span aria-hidden="true">♪</span> Orchestra · '+escapeHtml(event.title)+'</div>';
   const indicator = {solo:"",relay:"↳",parallel:"∥",together:"="};
@@ -76,6 +117,7 @@ function renderMusicalAbout() {
 function renderMusicalLyrics() {
   return '<div class="musical-score-reader" data-musical-score-reader><div class="musical-score-toolbar"><p class="musical-score-toolbar__legend"><span>↳ Relay</span><span>∥ Parallel</span><span>= Together</span><span>SATB = Soprano · Alto · Tenor · Bass</span></p><button class="musical-score-translation-toggle" type="button" data-musical-translation-toggle aria-controls="mahler-score-lyrics" aria-expanded="true">Hide translation</button></div><div class="musical-score-scroll" tabindex="0" aria-label="Vocal text columns; scroll horizontally on a narrow screen"><div class="musical-score-grid" id="mahler-score-lyrics"><div class="musical-score-row musical-score-row--head"><div class="musical-score-part">Vocal part / relationship</div><div class="musical-score-original">German · Original</div><div class="musical-score-english" data-musical-translation>English · Translation</div></div>'+mahlerFinaleEvents.map(renderScoreEvent).join("")+'</div></div><div class="musical-score-footer"><p><strong>Listening transcription · under review.</strong> The choral entrances and repetitions in “Wieder aufzublüh’n,” “Hör auf zu beben,” and particularly “Mit Flügeln” need further part-by-part score checking. English is a working translation.</p><p>Sources: <a href="'+escapeHtml(mahlerFinaleSources.score)+'" target="_blank" rel="noopener noreferrer">Historical scores</a> · <a href="'+escapeHtml(mahlerFinaleSources.text)+'" target="_blank" rel="noopener noreferrer">Text reference</a>.</p></div></div>';
 }
-export function renderMusicalPage() {
+export function renderMusicalPage(slug = 'mahler-symphony-2-resurrection') {
+  if (slug === 'beethoven-ode-to-joy') return renderBeethovenPage();
   return '<nav class="site-breadcrumb musical-breadcrumb" aria-label="Breadcrumb"><a href="#/">Home</a><span>›</span><a href="#/musicals">Musicals</a><span>›</span><a href="#/musicals?composer=Gustav%20Mahler">Gustav Mahler</a><span>›</span><span aria-current="page">Symphony No. 2</span></nav><div class="musical-detail-page musical-editorial"><div class="musical-editorial-wrap"><header class="musical-editorial-hero"><div class="musical-editorial-hero__inner"><p class="musical-editorial-overline">GUSTAV MAHLER · 1895 · CHORAL SYMPHONY</p><h1>Symphony No. 2<br><em>Resurrection</em></h1><p class="musical-editorial-quote">“I shall live again!”</p><p class="musical-editorial-hero__sub">Movement V · Im Tempo des Scherzos</p></div></header><details class="musical-editorial-section" open><summary><span>About this work</span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>'+renderMusicalAbout()+'</details><details class="musical-editorial-section" open><summary><span>Lyrics <small>· Movement V — Aufersteh’n</small></span><span class="musical-editorial-chevron" aria-hidden="true">⌄</span></summary>'+renderMusicalLyrics()+'</details></div></div>';
 }

@@ -4,7 +4,7 @@ import { getLibretto } from "./data/libretto-registry.js?v=tosca-review-20261020
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
-import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=breadcrumb-shared-1";
+import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=beethoven-20261020";
 
 const app = document.querySelector("#app");
 
@@ -772,9 +772,9 @@ function render() {
     document.title = (composer ? composer + " — " : "") + "Musicals — My favorite Operas";
   } else if (path.startsWith("/musicals/")) {
     const slug = path.split("/")[2];
-    if (slug === "mahler-symphony-2-resurrection") {
-      shell(renderMusicalPage(), "musical");
-      document.title = `${"Symphony No. 2: Resurrection"} — Musicals`;
+    if (slug === "mahler-symphony-2-resurrection" || slug === "beethoven-ode-to-joy") {
+      shell(renderMusicalPage(slug), "musical");
+      document.title = `${slug === "beethoven-ode-to-joy" ? "Ode to Joy · Beethoven" : "Symphony No. 2: Resurrection"} — Musicals`;
     } else {
       shell(`<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This musical is not in the collection.</h1><a class="button button--dark" href="#/musicals">Return to musicals ${arrow}</a></section>`, "musicals");
       document.title = "Musical not found — Musicals";
