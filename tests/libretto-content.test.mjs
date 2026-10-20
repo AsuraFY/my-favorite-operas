@@ -459,13 +459,13 @@ test("Tosca Act I follows Opera Guide's nine scenes with aligned English on one 
       assert.ok(turn.original.trim());
       assert.ok(turn.translation.trim());
       if (turn.speaker === "Stage direction") continue;
-      assert.equal(turn.original.split("\\n").length, turn.translation.split("\\n").length,
+      assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length,
         `one English line for each Italian line in ${section.originalTitle}: ${turn.speaker}`);
     }
   }
   assert.ok(turns > 150, "Act I should include the complete dialogue and stage directions");
   assert.equal(libretto.stageDirectionSpeaker, "Stage direction");
-  assert.equal(libretto.bracketStageDirections, true);
+  assert.equal(libretto.bracketStageDirections, false);
   const reader = createLibrettoRenderer(libretto);
   window.location.hash = "#/operas/tosca?act=1&scene=9&item=0";
   const page = reader.scene(1);

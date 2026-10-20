@@ -37,9 +37,9 @@ import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=boheme-re
 import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.js?v=madama-butterfly-review-20261020-1";
 import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.js?v=madama-butterfly-review-20261020-2";
 import { madamaButterflyActThreeScenes } from "./libretto-madama-butterfly-act-3.js?v=madama-butterfly-review-20261020-3";
-import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-act1-1";
-import { toscaActTwoScenes } from "./libretto-tosca-act-2.js?v=tosca-act2-1";
-import { toscaActThreeScenes } from "./libretto-tosca-act-3.js?v=tosca-act3-2";
+import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-review-20261020";
+import { toscaActTwoScenes } from "./libretto-tosca-act-2.js?v=tosca-review-20261020";
+import { toscaActThreeScenes } from "./libretto-tosca-act-3.js?v=tosca-review-20261020";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],
@@ -652,6 +652,7 @@ const tosca = {
   spotifyOutline: toscaSpotifyOutline,
   slug: "tosca",
   continuousAct: true,
+  sourceSceneOutline: true,
   preserveLineBreaks: true,
   alignVerseLines: true,
   opera: getOpera("tosca"),
@@ -664,7 +665,8 @@ const tosca = {
   sceneOriginalPrefix: "Scena",
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "Stage direction",
-  bracketStageDirections: true,
+  bracketStageDirections: false,
+  originalSpeakerNames: { "The Sacristan": "Il Sagrestano", "Baron Scarpia": "Il Barone Scarpia", "Jailer": "Carceriere", "A Shepherd (offstage)": "Un pastorello (interno)", "Tosca's voice": "Voce di Tosca", "Cavaradossi (offstage)": "Cavaradossi (interno)", "Tosca and the Chorus": "Tosca e coro", "Tosca and Cavaradossi": "Tosca e Cavaradossi", "Spoletta and Sciarrone": "Spoletta e Sciarrone", "Voices offstage": "Voci interne", "The Chapter": "Il Capitolo", "The Crowd": "La Folla", "All": "Tutti", "Choirboys": "Chierici" },
   sceneOrdinals: ["PRIMA", "SECONDA", "TERZA", "QUARTA", "QUINTA", "SESTA", "SETTIMA", "OTTAVA", "NONA"],
   acts: [
     { number: 1, originalHeading: "Atto primo", scenes: toscaActOneScenes },
@@ -672,9 +674,32 @@ const tosca = {
     { number: 3, originalHeading: "Atto terzo", scenes: toscaActThreeScenes }
   ],
   characters: ["Floria Tosca", "Mario Cavaradossi", "Baron Scarpia", "Cesare Angelotti", "The Sacristan", "Spoletta", "Sciarrone", "Jailer", "A Shepherd", "Chorus"],
-  characterDisplayNames: { Tosca: "Floria Tosca", Cavaradossi: "Mario Cavaradossi", Scarpia: "Baron Scarpia", Angelotti: "Cesare Angelotti", "Tosca's voice": "Floria Tosca (offstage)", "A Shepherd (offstage)": "A Shepherd" },
-  source: "Italian libretto, character names, and scene divisions for Acts I–III: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. English is a fresh line-by-line draft checked against Lyrical Opera Theater's Italian-English libretto, https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf; it remains for the user's careful review. The Spotify recording linked at the foot of the outline guides only the track order and scene grouping. Acts I–III are populated."
+  characterDisplayNames: { Tosca: "Floria Tosca", Cavaradossi: "Mario Cavaradossi", Scarpia: "Baron Scarpia", Angelotti: "Cesare Angelotti", "Tosca's voice": "Floria Tosca", "Cavaradossi (offstage)": "Mario Cavaradossi", "Crowd": "Crowd", "The Crowd": "Crowd", "A Shepherd (offstage)": "A Shepherd" },
+  source: "Italian libretto, character names, and scene divisions for Acts I–III: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. Italian–English wording and line pairing reviewed on 20 October 2026. Restored missing replies and dialogue order; separated sung asides from short cues and long directions. The earlier English draft consulted https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf. Musical types are editorial listening labels; no score numbers are inferred. Browser visual verification remains pending. The Spotify recording linked at the foot of the outline guides only the track order and scene grouping. Acts I–III are populated."
 };
+
+// Use the actual sung participants for each Tosca passage, including joint cues.
+function toscaParticipants(turns, act, scene) {
+  const names = turns.filter(turn => turn.speaker !== "Stage direction").flatMap(turn => {
+    if (turn.speaker === "Tosca and the Chorus") return ["Tosca", "Chorus"];
+    if (turn.speaker === "Tosca and Cavaradossi") return ["Tosca", "Cavaradossi"];
+    if (turn.speaker === "Spoletta and Sciarrone") return ["Spoletta", "Sciarrone"];
+    if (turn.speaker === "All") return act === 1 && scene === 7 ? ["Choirboys"] : ["Scarpia", "Chorus"];
+    return [turn.speaker];
+  }).map(name => tosca.characterDisplayNames?.[name] || name);
+  return [...new Set(names)];
+}
+for (const act of tosca.acts) for (const scene of act.scenes) {
+  for (const section of scene.sections) section.participants = toscaParticipants(section.turns, act.number, scene.number);
+  const turns = scene.sections.flatMap(section => section.turns);
+  for (const [index, entry] of scene.outline.entries()) {
+    const start = turns.findIndex(turn => turn.original.includes(entry.match));
+    const next = scene.outline[index + 1];
+    const end = next ? turns.findIndex((turn, position) => position > start && turn.original.includes(next.match)) : turns.length;
+    entry.characters = toscaParticipants(turns.slice(start, end), act.number, scene.number);
+    if (!entry.characters.length && act.number === 3 && scene.number === 1) entry.characters = ["Jailer", "Sentinel", "Sergeant", "Soldiers", "Mario Cavaradossi"];
+  }
+}
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };
 export function getLibretto(slug) {

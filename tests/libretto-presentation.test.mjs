@@ -838,3 +838,59 @@ test('Butterfly review preserves all bilingual rows, dialogue order, stage cues 
   assert.ok(!lines.flat().some(([,text])=>/^(con malizia ossequente|porge l'atto per la firma|con strazio)$/.test(text)));
   assert.equal(libretto.acts.flatMap(a=>a.scenes.flatMap(s=>s.sections)).length,34);
 });
+
+test('Tosca review preserves bilingual rows, sung asides, dialogue order and all 44 outline targets', () => {
+  const libretto = getLibretto('tosca');
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  assert.ok(!outline.includes('♬') && !outline.includes('▤'));
+  assert.ok(!outline.includes('is-unavailable'));
+  let targets = 0;
+  const lines = [];
+  for (const act of libretto.acts) {
+    window.location.hash = `#/operas/tosca?act=${act.number}`;
+    const page = reader.scene(1);
+    const turns = act.scenes.flatMap(s => s.sections.flatMap(s => s.turns));
+    const expected = turns.flatMap(t => t.speaker === 'Stage direction'
+      ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+      : t.original.split('\n').map((line, i) => [line, t.translation.split('\n')[i], false]));
+    assert.deepEqual(renderedVersePairs(page), expected);
+    assert.equal(count(page, /libretto-speaker--stage-direction/g), 2 * turns.filter(t => t.speaker === 'Stage direction' && !t.shortCue).length);
+    assertActTargets(reader, libretto, act);
+    lines.push(turns.filter(t => t.speaker !== 'Stage direction').flatMap(t => t.original.split('\n').map(original => [t.speaker, original])));
+    for (const scene of act.scenes) for (const entry of scene.outline) {
+      const turn = scene.sections[0].turns.findIndex(t => t.original.includes(entry.match));
+      assert.ok(turn >= 0, entry.title);
+      const href = `#/operas/tosca?act=${act.number}&scene=${scene.number}&item=0&turn=${turn}`;
+      for (const html of [outline, page]) {
+        assert.ok(html.includes(`href="${href}"`), entry.title);
+        const link = html.slice(html.indexOf(`href="${href}"`)).split('</a>')[0];
+        assert.ok(link.includes('opera-outline__section-translation'));
+        assert.ok(link.includes('libretto-participants'));
+      }
+      assert.ok(page.includes(`id="libretto-turn-${act.number}-${scene.number}-0-${turn}"`));
+      assert.equal(new Set(entry.characters).size, entry.characters.length);
+      targets++;
+    }
+  }
+  assert.equal(targets, 44);
+  function sequence(act, first, expected) {
+    const index = lines[act - 1].findIndex(([, text]) => text === first);
+    assert.ok(index >= 0, first);
+    assert.deepEqual(lines[act - 1].slice(index, index + expected.length), expected);
+  }
+  sequence(2, "Un'uccisione...", [
+    ['Spoletta', "Un'uccisione..."], ['Baron Scarpia', '... simulata!... Come'],
+    ['Baron Scarpia', 'avvenne del Palmieri!'], ['Baron Scarpia', 'Hai ben compreso?'],
+    ['Spoletta', 'Ho ben compreso.'], ['Baron Scarpia', 'Va.'],
+    ['Tosca', 'Voglio avvertirlo io stessa.'], ['Baron Scarpia', 'E sia.']
+  ]);
+  sequence(3, 'Tieni a mente... al primo colpo... giù...', [
+    ['Tosca', 'Tieni a mente... al primo colpo... giù...'], ['Cavaradossi', 'Giù.'],
+    ['Tosca', 'Non rialzarti innanzi'], ['Tosca', "ch'io ti chiami."],
+    ['Cavaradossi', 'No, amore!'], ['Tosca', 'E cadi bene.'], ['Cavaradossi', 'Come la Tosca in teatro.']
+  ]);
+  assert.ok(lines[1].some(([speaker, line]) => speaker === 'Tosca' && line === 'Chi mi assicura?'));
+  assert.ok(lines[2].some(([speaker, line]) => speaker === 'Sciarrone' && line === 'vi dico pugnalato!'));
+  assert.ok(!lines.flat().some(([, line]) => /^(con forza crescente|Se la svigna\.|fissando come in una visione)$/i.test(line)));
+});
