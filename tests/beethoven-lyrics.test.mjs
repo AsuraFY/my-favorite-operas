@@ -23,7 +23,7 @@ test('Beethoven preserves every source-part word and repetition in order',()=>{
  assert.ok(blocks.at(-1).lines.at(-1)[0].includes('Götterfunken!'));
  assert.ok(!blocks.some(b=>b.lines.some(l=>l[0].includes('zum Held Siegen'))));
 });
-test('Beethoven renders paired German-English rows and its own translation target',()=>{
+test('Beethoven groups continuous lyrics in one bilingual row per vocal block and its own translation target',()=>{
  const html=renderMusicalPage('beethoven-ode-to-joy','lyrics');
  assert.ok(!html.includes('coming soon'));
  assert.ok(html.includes('aria-controls="beethoven-score-lyrics"'));
@@ -31,7 +31,13 @@ test('Beethoven renders paired German-English rows and its own translation targe
  assert.ok(html.includes('editorial review in progress'));
  assert.equal(new Set(blocks.map(b=>b.id)).size,blocks.length);
  const lines=blocks.flatMap(b=>b.lines);
- assert.equal((html.match(/lang="de"><p>/g)||[]).length,lines.length);
- assert.equal((html.match(/lang="en" data-musical-translation><p>/g)||[]).length,lines.length);
+ assert.equal((html.match(/lang="de"><p>/g)||[]).length,blocks.length);
+ assert.equal((html.match(/lang="en" data-musical-translation><p>/g)||[]).length,blocks.length);
+ for (const block of blocks) {
+  const passage = html.split('id="'+block.id+'"')[1].split('</section>')[0];
+  assert.equal((passage.match(/musical-score-row--entry/g)||[]).length,1);
+  assert.equal((passage.match(/musical-score-part__name/g)||[]).length,1);
+  assert.equal((passage.match(/<p>/g)||[]).length,block.lines.length*2);
+ }
  for(const [de,en] of lines){assert.ok(de&&en);assert.ok(!en.includes('under review]'));}
 });

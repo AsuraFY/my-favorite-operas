@@ -26,6 +26,10 @@ The reference PDF credits Hansen Wu (violin-altair), OpenScore, and Benjamin Aur
 
 ## Verification and limits
 
-Eight independent source-part word-stream fingerprints test all words, repeats and their order after shared blocks are expanded by participant. Rendering tests confirm 250 German/English row pairs, unique passage IDs, removal of the placeholder, and the Beethoven-specific translation-toggle target. Nine existing musical checks also pass.
+Eight independent source-part word-stream fingerprints test all words, repeats and their order after shared blocks are expanded by participant. Rendering tests confirm 250 German/English line pairs grouped in 191 vocal rows, unique passage IDs, removal of the placeholder, and the Beethoven-specific translation-toggle target. Nine existing musical checks also pass.
 
 Independent score-edition comparison, full listener review, and browser visual verification remain pending. These are stated in the reader; the page must not be described as a fully certified transcription. Mahler content is unchanged.
+
+## Grouped-row correction
+
+Continuous lines for one unchanged singer/group render inside one row, with the singer label once. German and English retain paragraph line breaks within their respective cells. Regression checks assert one row and one label per vocal block and preserve every line in both languages.
