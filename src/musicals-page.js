@@ -1,3 +1,4 @@
+import { beethovenSources, beethovenVocalBlocks } from "./data/musical-beethoven-ode-to-joy.js";
 import { mahlerFinaleEvents, mahlerFinaleSources, mahlerFinaleTranslations } from "./data/musical-mahler-symphony-2.js";
 
 const musicalWorks = [
@@ -100,9 +101,28 @@ function renderBeethovenPage(view) {
     </div>
   </section>
   <section class="musical-editorial-section" aria-labelledby="musical-lyrics-heading" ${view !== 'lyrics' ? 'hidden' : ''}><h2 id="musical-lyrics-heading">Lyrics <small>· Movement IV — Ode to Joy</small></h2>
-    <div class="musical-editorial-prose"><p><strong>Lyrics and English translation coming soon.</strong></p><p>This section will follow the sung text of the finale, including its repetitions and individual vocal parts.</p></div>
+    ${renderBeethovenLyrics()}
   </section>
 </div></div>`;
+}
+
+function renderBeethovenLyrics() {
+  const sectionStarts = [[217, 'O Freunde, nicht diese Töne!'], [238, 'Freude, schöner Götterfunken'], [270, 'Wem der große Wurf gelungen'], [297, 'Freude trinken alle Wesen'], [376, 'Froh, wie seine Sonnen fliegen'], [544, 'Freude — return of the chorus'], [597, 'Seid umschlungen, Millionen!'], [633, 'Ihr stürzt nieder, Millionen?'], [656, 'Freude / Seid umschlungen — interwoven choruses'], [737, 'Ahnest du den Schöpfer, Welt?'], [770, 'Freude, Tochter aus Elysium'], [858, 'Seid umschlungen — final chorus']];
+  let currentSection = -1;
+  const body = beethovenVocalBlocks.map(block => {
+    let section = 0;
+    sectionStarts.forEach(([start], i) => { if (block.start[0] >= start) section = i; });
+    let heading = '';
+    if (section !== currentSection) {
+      currentSection = section;
+      if (section === 4 || section === 5) heading += '<div class="musical-score-instrumental">♪ Orchestra · '+(section === 4 ? 'March introduction' : 'Instrumental fugue')+'</div>';
+      heading += '<h3 class="musical-score-passage__title">'+escapeHtml(sectionStarts[section][1])+'</h3>';
+    }
+    const relation = block.relationship === 'together' ? '= Together · ' : block.relationship === 'parallel' ? '∥ Parallel · ' : '';
+    const label = relation + block.voice;
+    return heading + '<section class="musical-score-passage" id="'+block.id+'" aria-label="'+escapeHtml(label)+'">'+block.lines.map(([original, english], i) => '<div class="musical-score-row musical-score-row--entry"><div class="musical-score-part">'+(i === 0 ? '<strong class="musical-score-part__name">'+escapeHtml(label)+'</strong>' : '')+'</div><div class="musical-score-original" lang="de"><p>'+escapeHtml(original)+'</p></div><div class="musical-score-english" lang="en" data-musical-translation><p>'+escapeHtml(english)+'</p></div></div>').join('')+'</section>';
+  }).join('');
+  return '<div class="musical-score-reader" data-musical-score-reader><div class="musical-score-toolbar"><p class="musical-score-toolbar__legend"><span>∥ Parallel voices</span><span>= Together</span><span>SATB = Soprano · Alto · Tenor · Bass</span></p><button class="musical-score-translation-toggle" type="button" data-musical-translation-toggle aria-controls="beethoven-score-lyrics" aria-expanded="true">Hide translation</button></div><p class="musical-score-toolbar__legend">Follow each named part through overlapping passages. Headings are listening guides; rows do not imply note-by-note synchronization.</p><div class="musical-score-scroll" tabindex="0" aria-label="Vocal text columns; scroll horizontally on a narrow screen"><div class="musical-score-grid" id="beethoven-score-lyrics"><div class="musical-score-row musical-score-row--head"><div class="musical-score-part">Vocal part / relationship</div><div class="musical-score-original">German · Original</div><div class="musical-score-english" data-musical-translation>English · Translation</div></div><div class="musical-score-instrumental">♪ Orchestra · Introduction and variations</div>'+body+'<div class="musical-score-instrumental">♪ Orchestra · Closing coda</div></div></div><div class="musical-score-footer"><p><strong>Score-derived transcription · editorial review in progress.</strong> Vocal words and repetitions follow the OpenScore Orchestra MusicXML transcription. Independent verification of every stave and listener review remain pending. English is an original working translation.</p><p>Sources: <a href="'+escapeHtml(beethovenSources.score)+'" target="_blank" rel="noopener noreferrer">OpenScore Orchestra · finale score (CC0)</a> · <a href="'+escapeHtml(beethovenSources.reference)+'" target="_blank" rel="noopener noreferrer">OpenScore reference edition</a>. Text: Friedrich Schiller, with Beethoven’s opening words.</p></div></div>';
 }
 
 function renderScoreEvent(event) {
