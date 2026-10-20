@@ -26,9 +26,9 @@ import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=fig
 import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-review-1";
 import { figaroActFourScenes } from "./libretto-le-nozze-di-figaro-act-4.js?v=figaro-act4-review-1";
 import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-review-1";
-import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-act2-1";
-import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-act3-1";
-import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-act4-1";
+import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-review-complete-1";
+import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-review-complete-1";
+import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-review-complete-1";
 import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=la-boheme-act1-4";
 import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=la-boheme-act2-3";
 import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=la-boheme-act3-3";
@@ -424,7 +424,7 @@ const carmen = {
     "LE DANCAÏRE, LE REMENDADO et LES HOMMES": "Le Dancaïre, Le Remendado, and the men"
   },
   translatedForms: {
-    "Monologue": "Monologue", "Prélude": "Prelude", "Scène et choeur": "Scene and chorus", "Choeur des gamins": "Boys’ chorus",
+    "Décor": "Setting", "Monologue": "Monologue", "Prélude": "Prelude", "Scène et choeur": "Scene and chorus", "Choeur des gamins": "Boys’ chorus",
     "Mélodrame": "Melodrama", "Dialogue parlé": "Spoken dialogue", "Choeur des cigarières": "Cigarette makers’ chorus",
     "Habanera": "Habanera", "Scène": "Scene", "Duo": "Duet", "Choeur": "Chorus",
     "Chanson et mélodrame": "Song and melodrama", "Séguedille et duo": "Seguidilla and duet",

@@ -1,4 +1,4 @@
-// Carmen: French libretto from Opera Guide; line-aligned English draft.
+// Carmen Act 4: French source and English reviewed 20 October 2026.
 export const carmenActFourScenes = [
   {
     "number": 1,
@@ -6,15 +6,22 @@ export const carmenActFourScenes = [
     "sections": [
       {
         "number": null,
-        "type": "Dialogue parlé",
+        "type": "Décor",
         "participants": [],
         "turns": [
           {
             "speaker": "Stage direction",
-            "original": "Une place à Séville. Au fond du théâtre les murailles de vieilles arènes. L'entrée du cirque est fermée par on long velum.\nC'est le jour d'un combat de taureaux. Grand mouvement sur la place. Marchands d'eau, d'oranges, d'éventails etc.",
-            "translation": "A square in Seville. At the rear, the walls of the old bullring. The entrance to the arena is closed by a long awning.\nIt is the day of a bullfight. The square is bustling. Water sellers, orange sellers, fan sellers, and others."
+            "original": "Une place à Séville. Au fond du théâtre les murailles de vieilles arènes. L'entrée du cirque est fermée par on long velum. C'est le jour d'un combat de taureaux. Grand mouvement sur la place. Marchands d'eau, d'oranges, d'éventails etc.",
+            "translation": "A square in Seville. At the rear, the walls of the old bullring. The entrance to the arena is closed by a long awning. It is the day of a bullfight. The square is bustling. Water sellers, orange sellers, fan sellers, and others.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 0,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Une place à Séville",
+        "translatedTitle": "A square in Seville"
       },
       {
         "number": "25",
@@ -38,7 +45,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "Pendant ce premier choeur sont entrés les deux officiers du deuxième acte, ayant au bras les deux bohémiennes Mercédès et Frasquita.",
-            "translation": "During this first chorus, the two officers from Act II enter, each accompanied by one of the gypsy women, Mercédès and Frasquita."
+            "translation": "During this first chorus, the two officers from Act II enter, each accompanied by one of the gypsy women, Mercédès and Frasquita.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ZUNIGA",
@@ -50,7 +59,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "se précipitant",
-            "translation": "Hurrying forward."
+            "translation": "Hurrying forward.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "PLUSIEURS MARCHANDS",
@@ -62,7 +73,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "à l'officier qui paie",
-            "translation": "To the officer who pays."
+            "translation": "To the officer who pays.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "UN MARCHAND",
@@ -88,7 +101,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "se précipitant",
-            "translation": "Hurrying forward."
+            "translation": "Hurrying forward.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "UN BOHÉMIEN",
@@ -104,7 +119,12 @@ export const carmenActFourScenes = [
             "literalText": true,
             "speakerTranslation": "Chorus"
           }
-        ]
+        ],
+        "routeItem": 1,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "À deux cuartos!",
+        "translatedTitle": "Two cuartos!"
       },
       {
         "number": null,
@@ -180,10 +200,17 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "On entend de grands cris au dehors. . des fanfares, etc.\nC'est l'arrivée de la Cuadrilla.",
-            "translation": "Great shouts are heard outside, with fanfares and so on.\nThe cuadrilla is arriving."
+            "original": "On entend de grands cris au dehors. . des fanfares, etc. C'est l'arrivée de la Cuadrilla.",
+            "translation": "Great shouts are heard outside, with fanfares and so on. The cuadrilla is arriving.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 2,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Qu’avez-vous fait de la Carmencita?",
+        "translatedTitle": "What has become of Carmencita?"
       },
       {
         "number": "26",
@@ -191,13 +218,10 @@ export const carmenActFourScenes = [
         "participants": [
           "Children",
           "Chorus",
-          "Children and chorus",
           "Escamillo",
           "Carmen",
-          "Carmen and Escamillo",
           "Four alguazils",
           "Frasquita",
-          "Mercédès",
           "Mercédès"
         ],
         "turns": [
@@ -217,8 +241,10 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Défilé de la Cuadrilla.\nPendant ce défilé, le choeur chante le morceau suivant.",
-            "translation": "The cuadrilla files past.\nDuring the procession, the chorus sings the following piece."
+            "original": "Défilé de la Cuadrilla. Pendant ce défilé, le choeur chante le morceau suivant.",
+            "translation": "The cuadrilla files past. During the procession, the chorus sings the following piece.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ENFANTS et CHOEUR",
@@ -230,7 +256,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "entrée des chulos et des banderilleros",
-            "translation": "The chulos and banderilleros enter."
+            "translation": "The chulos and banderilleros enter.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CHOEUR",
@@ -242,12 +270,14 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "Entrée des picadors.",
-            "translation": "The picadors enter."
+            "translation": "The picadors enter.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CHOEUR",
             "original": "Une autre quadrille s'avance,\nVoyez les picadors! Comme ils sont beaux!\nComme ils vont du fer de leur lance\nHarceler le flanc des taureaux.\nL'Espada! L'Espada!",
-            "translation": "Another procession advances,\nLook at the picadors! How handsome they are!\nHow they harry the bulls' flanks\nWith the steel of their lances.\nThe espada! The espada!",
+            "translation": "Another procession advances,\nLook at the picadors! How handsome they are!\nHow, with the steel of their lances,\nThey will harry the bulls’ flanks.\nThe espada! The espada!",
             "literalText": true,
             "speakerTranslation": "Chorus"
           },
@@ -260,8 +290,10 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Paraît enfin Escamillo, ayant près de lui Carmen radieuse et dans un costume\néclatant.",
-            "translation": "At last Escamillo appears, with radiant Carmen beside him, dressed in a dazzling costume."
+            "original": "Paraît enfin Escamillo, ayant près de lui Carmen radieuse et dans un costume éclatant.",
+            "translation": "At last Escamillo appears, with radiant Carmen beside him, dressed in a dazzling costume.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ENFANTS et CHOEUR",
@@ -273,7 +305,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Carmen",
-            "translation": "To Carmen."
+            "translation": "To Carmen.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
@@ -305,8 +339,10 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Petite marche à l'orchestre.\nSur cette marche défile très lentement au fond l'alcade précédé et suivi des alguazils. Pendant ce temps Frasquita et Mercédès s'approchent de Carmen.",
-            "translation": "A brief orchestral march.\nAs it plays, the Alcade slowly files past at the rear, preceded and followed by the alguazils. Meanwhile, Frasquita and Mercédès approach Carmen."
+            "original": "Petite marche à l'orchestre. Sur cette marche défile très lentement au fond l'alcade précédé et suivi des alguazils. Pendant ce temps Frasquita et Mercédès s'approchent de Carmen.",
+            "translation": "A brief orchestral march. As it plays, the Alcade slowly files past at the rear, preceded and followed by the alguazils. Meanwhile, Frasquita and Mercédès approach Carmen.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "FRASQUITA",
@@ -387,10 +423,17 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "L'alcade est entré dans le cirque. Derrière l'alcade, le cortège de la quadrille reprend sa marche et entre dans le cirque. Le populaire skit. La foule en se retirant a dégagé Don José ... Carmen reste seule au premier plan. Tous\ndeux se regardent pendant que la foule se dissipe et que le motif de la marche va diminuant et se mourant l'orchestre. Sur les dernières notes, Carmen et Don José restent seuls, en présence l'un de l'autre.",
-            "translation": "The Alcade has entered the arena. Behind him, the cuadrilla resumes its procession and enters the ring. The crowd breaks up. As it disperses, it leaves Don José in the open... Carmen remains alone in the foreground. They look at each other while the crowd fades away and the march dwindles in the orchestra. On the final notes, Carmen and Don José are left alone, face to face."
+            "original": "L'alcade est entré dans le cirque. Derrière l'alcade, le cortège de la quadrille reprend sa marche et entre dans le cirque. Le populaire skit. La foule en se retirant a dégagé Don José ... Carmen reste seule au premier plan. Tous deux se regardent pendant que la foule se dissipe et que le motif de la marche va diminuant et se mourant l'orchestre. Sur les dernières notes, Carmen et Don José restent seuls, en présence l'un de l'autre.",
+            "translation": "The Alcade has entered the arena. Behind him, the cuadrilla resumes its procession and enters the ring. The crowd breaks up. As it disperses, it leaves Don José in the open... Carmen remains alone in the foreground. They look at each other while the crowd fades away and the march dwindles in the orchestra. On the final notes, Carmen and Don José are left alone, face to face.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 3,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Les voici!",
+        "translatedTitle": "Here they are!"
       },
       {
         "number": "27",
@@ -474,7 +517,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "Silence de Carmen et Don José répète",
-            "translation": "Carmen is silent; Don José repeats himself."
+            "translation": "Carmen is silent; Don José repeats himself.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -521,7 +566,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "dans le cirque",
-            "translation": "Inside the arena."
+            "translation": "Inside the arena.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CHOEUR",
@@ -532,8 +579,17 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Pendant ce choeur, silence de Carmen et de Don José..\nTous deux écoutent … En entendant les cris de «Victoire, victoire», Carmen a laissé échapper un «Ah!» d'orgueil et de joie ... Don José ne perd pas Carmen de vue ... Le choeur terminé, Carmen fait un pas du côté du cirque.\nse plaçant devant elle",
-            "translation": "During this chorus, Carmen and Don José are silent.\nThey both listen... At the cries of ‘Victory, victory!’ Carmen lets out an exclamation of pride and joy... Don José keeps his eyes on Carmen... When the chorus ends, Carmen takes a step toward the arena.\nStanding in front of her."
+            "original": "Pendant ce choeur, silence de Carmen et de Don José.. Tous deux écoutent … En entendant les cris de «Victoire, victoire», Carmen a laissé échapper un «Ah!» d'orgueil et de joie ... Don José ne perd pas Carmen de vue ... Le choeur terminé, Carmen fait un pas du côté du cirque.",
+            "translation": "During this chorus, Carmen and Don José are silent. They both listen... At the cries of ‘Victory, victory!’ Carmen lets out an exclamation of pride and joy... Don José keeps his eyes on Carmen... When the chorus ends, Carmen takes a step toward the arena.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "se plaçant devant elle",
+            "translation": "Standing in front of her.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -559,7 +615,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "voulant passer",
-            "translation": "Trying to pass."
+            "translation": "Trying to pass.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -599,7 +657,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "dans le cirque",
-            "translation": "Inside the arena."
+            "translation": "Inside the arena.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CHOEUR",
@@ -639,7 +699,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "dans le cirque",
-            "translation": "Inside the arena."
+            "translation": "Inside the arena.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CHOEUR",
@@ -658,14 +720,23 @@ export const carmenActFourScenes = [
           {
             "speaker": "CARMEN",
             "original": "Non! Non!\nCette bague autrefois\nTu me l'avais donnée, tiens.",
-            "translation": "No! No!\nHere is the ring you once\nGave me. Take it.",
+            "translation": "No! No!\nThis ring, long ago,\nYou gave to me. Here!",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
           {
             "speaker": "Stage direction",
-            "original": "Elle la jette à la volée.\nle poignard à la main, s'avancant sur Carmen.",
-            "translation": "She throws it away.\nWith a dagger in his hand, he advances on Carmen."
+            "original": "Elle la jette à la volée.",
+            "translation": "She throws it away.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "le poignard à la main, s'avancant sur Carmen.",
+            "translation": "With a dagger in his hand, he advances on Carmen.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -676,8 +747,17 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Carmen recule... José la poursuit... Pendant ce temps fanfares et choeur dans le cirque.\ndans le cirque",
-            "translation": "Carmen retreats... José follows her... Meanwhile, fanfares and chorus sound in the arena.\nInside the arena."
+            "original": "Carmen recule... José la poursuit... Pendant ce temps fanfares et choeur dans le cirque.",
+            "translation": "Carmen retreats... José follows her... Meanwhile, fanfares and chorus sound in the arena.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dans le cirque",
+            "translation": "Inside the arena.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CHOEUR",
@@ -696,7 +776,9 @@ export const carmenActFourScenes = [
           {
             "speaker": "Stage direction",
             "original": "Escamillo paraît sur les marches du cirque... José se jette sur le corps de Carmen.",
-            "translation": "Escamillo appears on the arena steps... José throws himself onto Carmen's body."
+            "translation": "Escamillo appears on the arena steps... José throws himself onto Carmen's body.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -705,7 +787,12 @@ export const carmenActFourScenes = [
             "literalText": true,
             "speakerTranslation": "José"
           }
-        ]
+        ],
+        "routeItem": 4,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "C’est toi? C’est moi.",
+        "translatedTitle": "It’s you? It’s me."
       }
     ]
   }

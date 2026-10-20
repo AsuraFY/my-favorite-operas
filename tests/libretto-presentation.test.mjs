@@ -218,7 +218,7 @@ test("Così outlines retain all links and show title translations before partici
           const entry = html.slice(start, html.indexOf('</a>', start));
           assert.ok(entry.includes('libretto-participants'));
           if (section.number != null) {
-            assert.ok(section.originalTitle && section.translatedTitle);
+            assert.ok(section.instrumental || (section.originalTitle && section.translatedTitle));
             assert.ok(entry.includes(escape(section.originalTitle)));
             assert.ok(entry.includes(escape(section.translatedTitle)));
             assert.ok(entry.indexOf('opera-outline__section-translation') < entry.indexOf('libretto-participants'));
@@ -732,4 +732,30 @@ test("Figaro Acts III–IV preserve paired text and both current and legacy pass
     turn.it === "Perdono! Perdono!" && turn.speaker.includes("Bartolo"));
   assert.ok(ensemblePardon, "the ensemble's pardon is not attributed to the Count");
   assert.equal(ensemblePardon.speaker, "Bartolo, Cherubino, Marcellina, Basilio, Antonio, Susanna e Figaro");
+});
+
+test("Carmen Acts II–IV preserve every bilingual pair and passage address", () => {
+  const reader = createLibrettoRenderer(carmen);
+  for (const act of carmen.acts.slice(1)) {
+    window.location.hash = `#/operas/carmen?act=${act.number}`;
+    const page = reader.scene(1);
+    const sections = act.scenes.flatMap(s => s.sections);
+    const turns = sections.flatMap(s => s.turns);
+    const expected = turns.flatMap(t => t.speaker === 'Stage direction'
+      ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+      : t.original.split('\n').map((line,i) => [line.trim(),t.translation.split('\n')[i].trim(),false]));
+    assert.deepEqual(renderedVersePairs(page), expected);
+    assertActTargets(reader,carmen,act);
+    assert.deepEqual(sections.map(s=>s.routeItem),Array.from({length:sections.length},(_,i)=>i));
+    for (const section of sections) {
+      assert.equal(new Set(section.participants.map(s=>s.toLowerCase())).size,section.participants.length);
+      assert.ok(section.instrumental || (section.originalTitle && section.translatedTitle));
+      const href = `#/operas/carmen?act=${act.number}&scene=1&item=${section.routeItem}`;
+      for (const html of [reader.outline(),page]) {
+        const entry=html.slice(html.indexOf(`href="${href}"`)).split('</a>')[0];
+        assert.ok(section.instrumental || entry.includes('opera-outline__section-translation'),href);
+      }
+    }
+    assert.ok(!turns.some(t=>t.speaker!=='Stage direction' && /Entr'acte/.test(t.original)));
+  }
 });
