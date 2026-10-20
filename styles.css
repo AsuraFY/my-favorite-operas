@@ -2856,3 +2856,18 @@ html[data-theme="night"] body.musicals-theme .settings-panel select {background-
 html[data-theme="night"] body.musicals-theme .musical-score-instrumental,
 html[data-theme="night"] body.musicals-theme .musical-score-translation-toggle:hover {background-color:var(--night-surface-raised)}
 html[data-theme="night"] body.musicals-theme .theme-choices button[aria-pressed="true"] {background:#493b3a}
+
+/* Dusty-pink identity for the musical information and lyrics pages. */
+body.musicals-theme .musical-editorial {--music-accent:#855967}
+html[data-theme="night"] body.musicals-theme .musical-editorial {--music-accent:#bc929e}
+body.musicals-theme .musical-editorial-overline,
+body.musicals-theme .musical-editorial-quote {color:#d3acb7}
+body.musicals-theme .musical-editorial .musical-score-instrumental {
+  background:color-mix(in srgb,var(--music-accent) 10%,var(--music-surface));
+  color:var(--music-muted);
+}
+body.musicals-theme .musical-editorial .musical-score-translation-toggle:hover {
+  background:color-mix(in srgb,var(--music-accent) 15%,var(--music-surface));
+}
+body.musicals-theme .musical-editorial .musical-description-toggle {color:var(--music-accent)}
+body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--music-rose)}
