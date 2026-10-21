@@ -13,7 +13,7 @@ const turns = sections.flatMap(section => section.turns);
 beforeEach(resetReaderLocation);
 
 test('Samson Act I preserves the checked French source, six scenes and 322 translated sung lines', () => {
-  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
   assert.equal(act.scenes.length, 6);
   assert.equal(sections.length, 15);
   assert.equal(createHash('sha256').update(turns.map(t => t.original).join('\n')).digest('hex'),
@@ -45,7 +45,7 @@ test('Samson renders each complete vocal turn once with paired line breaks and s
   assert.match(page,/LE VIEILLARD HÉBREU/);
   assert.match(page,/Old Hebrew/);
   assert.match(page,/Scène première · Scene I/);
-  assert.ok(!page.includes('Continue to Act II'));
+  assert.ok(page.includes('Continue to Act II'));
 });
 
 test('Every Samson outline link reaches its section on the continuous Act I page', () => {
@@ -59,7 +59,7 @@ test('Every Samson outline link reaches its section on the continuous Act I page
   }
 });
 
-test('Unprepared Samson acts keep their placeholders rather than showing Act I under another act URL', () => {
+test('Unprepared Samson Act III keeps its placeholder while Acts I–II render', () => {
   const main=readFileSync('src/main.js','utf8');
   const fn=main.slice(main.indexOf('function operaPage('),main.indexOf('\nlet readerJumping'));
   const context={getLibretto:()=>libretto,createLibrettoRenderer:()=>({scene:()=> 'ACT ONE',navigation:()=>''}),
@@ -68,6 +68,6 @@ test('Unprepared Samson acts keep their placeholders rather than showing Act I u
   vm.createContext(context);vm.runInContext(fn,context);
   for (const n of [1,2,3]) {
     context.window.location.hash=`#/operas/samson-et-dalila?act=${n}`;
-    assert.equal(context.operaPage(libretto.opera),n===1?'ACT ONE':`PENDING ${n}`);
+    assert.equal(context.operaPage(libretto.opera),n<=2?'ACT ONE':`PENDING ${n}`);
   }
 });
