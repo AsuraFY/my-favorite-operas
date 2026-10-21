@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=reader-52";
-import { getLibretto } from "./data/libretto-registry.js?v=tosca-review-20261020";
+import { getLibretto } from "./data/libretto-registry.js?v=samson-act1-20261021";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
@@ -547,6 +547,10 @@ function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobil
     if (selectedView === "outline") return reader.outline();
     if (selectedView === "synopsis" || (!selectedView && !query && !window.location.hash.includes("act=") && !window.location.hash.includes("scene="))) {
       return renderOperaInformationPage(opera, operaInformation[opera.slug], { navigation: reader.navigation(), hasLibretto: true });
+    }
+    const requestedAct = Number(new URLSearchParams(window.location.hash.split("?")[1] || "").get("act")) || 1;
+    if (!libretto.acts.some(act => act.number === requestedAct && act.scenes?.length)) {
+      return renderPlannedLibrettoPage(opera, operaInformation[opera.slug], "libretto", requestedAct);
     }
     return reader.scene(selectedScene, query, selectedItem, mobileContents);
   }

@@ -1,3 +1,5 @@
+import { samsonActOneScenes } from "./libretto-samson-et-dalila-act-1.js?v=samson-act1-20261021";
+import { operaInformation } from "./opera-information.js?v=info-9";
 import { applyCosiOutlineMetadata } from "./cosi-outline-metadata.js";
 // Data registry for complete libretti; the reader UI consumes this shape for every opera.
 // Original Così dialogue stays in the existing act files, unchanged.
@@ -701,7 +703,34 @@ for (const act of tosca.acts) for (const scene of act.scenes) {
   }
 }
 
-const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };
+const samson = {
+  slug: "samson-et-dalila",
+  opera: getOpera("samson-et-dalila"),
+  composerShort: "C. SAINT-SAËNS",
+  mobileComposer: "Camille Saint-Saëns",
+  mobileArtworkLabel: "Samson et Dalila",
+  mobileArtworkUrl: "./public/images/samson-et-dalila-art.webp",
+  originalLanguage: "Français",
+  translationLanguage: "English",
+  continuousAct: true,
+  preserveLineBreaks: true,
+  threeLineOutline: true,
+  sourceSceneOutline: true,
+  sceneOriginalPrefix: "Scène",
+  stageDirectionSpeaker: "Stage direction",
+  stageDirectionLabel: "Stage direction",
+  translatedForms: { "Chœur": "Chorus", Air: "Aria", "Scène": "Scene", Trio: "Trio", Ballet: "Ballet" },
+  acts: [{ number: 1, originalHeading: "Acte premier", scenes: samsonActOneScenes }],
+  characters: ["Samson", "Dalila", "Abimélech", "High Priest of Dagon", "Old Hebrew", "Philistine Messenger", "First Philistine", "Second Philistine"],
+  synopsis: {
+    eyebrow: "Camille Saint-Saëns · Grand opera in three acts",
+    paragraphs: operaInformation["samson-et-dalila"].synopsis,
+    characters: operaInformation["samson-et-dalila"].characters
+  },
+  source: "Ferdinand Lemaire, Samson et Dalila, Act I. French: ABAO programme, pp. 213–224, https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf (accessed 21 October 2026). Fresh English draft, checked against the French; independent review pending. Acts II–III not yet added. See docs/reviews/samson-et-dalila-act-1.md."
+};
+
+const completeLibretti = { [samson.slug]: samson, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
