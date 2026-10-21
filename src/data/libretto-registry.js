@@ -1,3 +1,4 @@
+import { samsonActThreeScenes } from "./libretto-samson-et-dalila-act-3.js?v=samson-act3-20261021";
 import { samsonActTwoScenes } from "./libretto-samson-et-dalila-act-2.js?v=samson-act2-20261021";
 import { samsonActOneScenes } from "./libretto-samson-et-dalila-act-1.js?v=samson-act1-20261021";
 import { operaInformation } from "./opera-information.js?v=info-9";
@@ -723,7 +724,8 @@ const samson = {
   translatedForms: { "Chœur": "Chorus", Air: "Aria", "Scène": "Scene", Trio: "Trio", Ballet: "Ballet", Duo: "Duet", "Récitatif": "Recitative" },
   acts: [
     { number: 1, originalHeading: "Acte premier", scenes: samsonActOneScenes },
-    { number: 2, originalHeading: "Deuxième acte", scenes: samsonActTwoScenes }
+    { number: 2, originalHeading: "Deuxième acte", scenes: samsonActTwoScenes },
+    { number: 3, originalHeading: "Troisième acte", scenes: samsonActThreeScenes }
   ],
   characters: ["Samson", "Dalila", "Abimélech", "High Priest of Dagon", "Old Hebrew", "Philistine Messenger", "First Philistine", "Second Philistine"],
   synopsis: {
@@ -731,7 +733,7 @@ const samson = {
     paragraphs: operaInformation["samson-et-dalila"].synopsis,
     characters: operaInformation["samson-et-dalila"].characters
   },
-  source: "Ferdinand Lemaire, Samson et Dalila, Acts I–II. French: ABAO programme, pp. 213–236, https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf (accessed 21 October 2026). Fresh English draft, checked against the French; independent review pending. Act III not yet added. See docs/reviews/samson-et-dalila-act-1.md and docs/reviews/samson-et-dalila-act-2.md."
+  source: "Ferdinand Lemaire, Samson et Dalila, Acts I–III. French: ABAO programme, pp. 213–245, https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf (accessed 21 October 2026). Fresh English draft, checked against the French; independent review pending. All three acts added. See docs/reviews/samson-et-dalila-act-1.md, docs/reviews/samson-et-dalila-act-2.md and docs/reviews/samson-et-dalila-act-3.md."
 };
 
 const completeLibretti = { [samson.slug]: samson, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca };

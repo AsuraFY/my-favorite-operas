@@ -39,7 +39,7 @@ test('Samson II renders whole vocal turns, including the replies within Mon cœu
  assert.deepEqual(aria.turns.filter(t=>t.speaker!=='Stage direction').map(t=>t.speaker),['DALILA','SAMSON','DALILA','SAMSON']);
  assert.ok(page.includes('Trahison !') && page.includes('Betrayal!'));
  assert.ok(page.includes('End of Act II'));
- assert.ok(!page.includes('Continue to Act III'));
+ assert.ok(page.includes('Continue to Act III'));
  assert.ok(page.includes('section-nav-link__icon--recitative'));
 });
 

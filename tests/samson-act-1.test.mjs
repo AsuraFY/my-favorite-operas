@@ -13,7 +13,7 @@ const turns = sections.flatMap(section => section.turns);
 beforeEach(resetReaderLocation);
 
 test('Samson Act I preserves the checked French source, six scenes and 322 translated sung lines', () => {
-  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
   assert.equal(act.scenes.length, 6);
   assert.equal(sections.length, 15);
   assert.equal(createHash('sha256').update(turns.map(t => t.original).join('\n')).digest('hex'),
@@ -59,15 +59,15 @@ test('Every Samson outline link reaches its section on the continuous Act I page
   }
 });
 
-test('Unprepared Samson Act III keeps its placeholder while Acts I–II render', () => {
+test('All three Samson act routes render their prepared libretto', () => {
   const main=readFileSync('src/main.js','utf8');
   const fn=main.slice(main.indexOf('function operaPage('),main.indexOf('\nlet readerJumping'));
-  const context={getLibretto:()=>libretto,createLibrettoRenderer:()=>({scene:()=> 'ACT ONE',navigation:()=>''}),
+  const context={getLibretto:()=>libretto,createLibrettoRenderer:()=>({scene:()=> 'PREPARED ACT',navigation:()=>''}),
     renderPlannedLibrettoPage:(_o,_d,_v,n)=>`PENDING ${n}`,operaInformation:{},URLSearchParams,
     window:{location:{hash:''}}};
   vm.createContext(context);vm.runInContext(fn,context);
   for (const n of [1,2,3]) {
     context.window.location.hash=`#/operas/samson-et-dalila?act=${n}`;
-    assert.equal(context.operaPage(libretto.opera),n<=2?'ACT ONE':`PENDING ${n}`);
+    assert.equal(context.operaPage(libretto.opera),'PREPARED ACT');
   }
 });
