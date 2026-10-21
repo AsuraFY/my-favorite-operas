@@ -1255,8 +1255,8 @@ button { font: inherit; }
   flex: 1 1 calc(100% - 42px);
 }
 .opera-reading-page .scene-sidebar .section-nav-link > .libretto-participants {
-  flex: 0 0 calc(100% - 38px);
-  margin: 1px 0 0 38px;
+  flex: 0 0 100%;
+  margin: 1px 0 0;
 }
 .site-header:has(+ #main .opera-reading-page) {
   background: #102b40;
@@ -2598,13 +2598,6 @@ html[data-theme="night"] .musical-row__summary { color: var(--night-muted); }
   .musical-row h2 { font-size: 1.2rem; }
 }
 
-/* Reviewed three-line act outlines align all three lines. */
-.opera-reading-page[data-libretto-slug="il-barbiere-di-siviglia"] .scene-sidebar .section-nav-link > .libretto-participants,
-.opera-reading-page[data-libretto-slug="turandot"] .scene-sidebar .section-nav-link > .libretto-participants,
-.opera-reading-page[data-libretto-slug="macbeth"] .scene-sidebar .section-nav-link > .libretto-participants,
-.opera-reading-page[data-libretto-slug="tristan-und-isolde"] .scene-sidebar .section-nav-link > .libretto-participants,
-.opera-reading-page[data-libretto-slug="cosi-fan-tutte"] .scene-sidebar .section-nav-link > .libretto-participants { margin-left: 0; flex-basis: 100%; }
-
 /* Inline category icons preserve the three-line act-outline layout. */
 .scene-sidebar .section-nav-link__icon--inline { display: inline-block; width: auto; margin: 0 0.45em 0 0; vertical-align: baseline; }
 
@@ -2871,6 +2864,3 @@ body.musicals-theme .musical-editorial .musical-score-translation-toggle:hover {
 }
 body.musicals-theme .musical-editorial .musical-description-toggle {color:var(--music-accent)}
 body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--music-rose)}
-
-/* Dusty-pink wordmark on the musical collection and work pages. */
-body.musicals-theme .site-header .brand__name {color:#bc929e}
