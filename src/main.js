@@ -732,10 +732,20 @@ function handleSceneSectionLink(event) {
     jumpToReaderPassage(root, target);
     return;
   }
+  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
+  const scene = Number(params.get("scene"));
+  const item = Number(params.get("item")) || 0;
+  let index = items.findIndex(el => Number(el.dataset.sourceScene) === scene && Number(el.dataset.librettoItem) === item);
+  // Historic IDs may be alias anchors inside a section, rather than its current item ID.
+  if (index < 0) {
+    const anchor = root.querySelector?.("#libretto-section-" + Number(root.dataset.act) + "-" + scene + "-" + item);
+    index = items.indexOf(anchor?.closest?.(".libretto-scene-section"));
+  }
+  // Scene navigation uses item=0, including scenes whose first preserved ID is 1.
+  if (index < 0 && item === 0) index = items.findIndex(el => Number(el.dataset.sourceScene) === scene);
+  if (index < 0) return;
   event.preventDefault();
   closeActOutline(false);
-  const items = [...root.querySelectorAll(".libretto-scene-section[data-libretto-item]")];
-  const index = root.dataset.continuousAct === "true" ? items.findIndex(el => Number(el.dataset.sourceScene) === Number(params.get("scene")) && Number(el.dataset.librettoItem) === (Number(params.get("item")) || 0)) : Number(params.get("item")) || 0;
   jumpToReaderSection(index, true);
 }
 

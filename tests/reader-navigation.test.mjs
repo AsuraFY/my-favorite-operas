@@ -272,3 +272,38 @@ test("section tracking keeps the clicked section active below the full sticky st
     assert.deepEqual(selected, [1, true], `clicked section stays active with toolbar height ${toolbarHeight}`);
   }
 });
+
+test("every Figaro section, alias and scene-start link resolves within the current act", () => {
+  for (const act of figaro.acts) {
+    const items = act.scenes.flatMap(scene => scene.sections.map((section, i) => ({
+      dataset: { sourceScene: String(scene.number), librettoItem: String(section.routeItem ?? i) }, section
+    })));
+    const anchors = new Map();
+    for (const el of items) for (const alias of el.section.routeAliases || []) {
+      anchors.set(`#libretto-section-${act.number}-${el.dataset.sourceScene}-${alias}`, { closest: () => el });
+    }
+    const root = { dataset: { librettoSlug: figaro.slug, act: String(act.number), scene: '1', continuousAct: 'true' },
+      querySelectorAll: () => items, querySelector: selector => anchors.get(selector) };
+    let destination, prevented;
+    const context = vm.createContext({ URLSearchParams, currentSceneReader: () => root,
+      closeActOutline: () => {}, jumpToReaderSection: index => { destination = index; } });
+    vm.runInContext(functionSource('handleSceneSectionLink'), context);
+    function click(scene, item, expected) {
+      destination = undefined; prevented = false;
+      const href = `#/operas/${figaro.slug}?act=${act.number}&scene=${scene}&item=${item}`;
+      context.handleSceneSectionLink({ target: { closest: () => ({ getAttribute: () => href }) }, preventDefault: () => { prevented = true; } });
+      assert.equal(destination, expected, href);
+      assert.equal(prevented, expected !== undefined, href);
+    }
+    for (const [index, el] of items.entries()) {
+      click(el.dataset.sourceScene, el.dataset.librettoItem, index);
+      for (const alias of el.section.routeAliases || []) click(el.dataset.sourceScene, alias, index);
+    }
+    for (const scene of act.scenes) {
+      const canonical = items.findIndex(el => Number(el.dataset.sourceScene) === scene.number && Number(el.dataset.librettoItem) === 0);
+      const alias = anchors.get(`#libretto-section-${act.number}-${scene.number}-0`);
+      click(scene.number, 0, canonical >= 0 ? canonical : alias ? items.indexOf(alias.closest()) : items.findIndex(el => Number(el.dataset.sourceScene) === scene.number));
+    }
+    click(999, 999, undefined);
+  }
+});

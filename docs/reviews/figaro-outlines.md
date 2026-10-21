@@ -22,3 +22,7 @@ Desktop/mobile browser visual QA remains pending. No new unresolved editorial ch
 ## Follow-up: outline scrolling
 
 The section jump’s CSS includes the sticky breadcrumb height, but `updateReaderSectionPosition` omitted it. Once the jump lock expired, a correctly landed section could sit 48px below the tracking threshold, causing the previous section to be selected and written into the URL. Added the breadcrumb height to tracking and to explicit passage-jump offsets. Regression tests reproduce the landing coordinates with desktop and mobile toolbar heights; 16 outline/navigation tests pass. Browser inspection did not complete, so live visual verification remains pending.
+
+## Follow-up: preserved route IDs
+
+The in-page click handler treated item IDs as array positions outside continuous acts and only matched canonical IDs inside them. It now resolves canonical IDs and historic alias anchors, and resolves scene-start item=0 to the first section when the scene has no such ID. Unresolved links retain normal route handling instead of being swallowed. Regression coverage clicks all 81 Figaro sections, their aliases, and every scene start across all four acts. All 17 outline/navigation tests pass; live visual verification remains pending.
