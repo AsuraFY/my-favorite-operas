@@ -261,7 +261,7 @@ test("Figaro Act II renders every source line and keeps every deep link on the f
   assert.ok(page.includes("End of Act II"));
   assertActTargets(reader, figaro, second);
   const outline = reader.outline();
-  for (const title of ["Porgi, amor", "Voi che sapete", "Venite, inginocchiatevi", "Esci omai"]) assert.ok(!outline.includes(title));
+  for (const title of ["Porgi, amor", "Voi che sapete", "Venite, inginocchiatevi", "Esci omai"]) assert.ok(outline.includes(title));
 });
 
 test("Figaro renders each source line beside its own English line in source order", () => {
@@ -277,7 +277,7 @@ test("Figaro renders each source line beside its own English line in source orde
   assert.ok(page.includes("End of Act I"));
   const outline = createLibrettoRenderer(figaro).outline();
   assert.ok(outline.includes("Ouverture"));
-  assert.ok(!outline.includes("Non più andrai"), "do not invent titles from sung lines");
+  assert.ok(outline.includes("Non più andrai"), "approved recognizable incipits appear in the outline");
   assertActTargets(createLibrettoRenderer(figaro), figaro, act);
   assert.ok(!page.includes("Susanna e Figaro</span></div>"));
   assert.ok(!outline.includes("Passage"));

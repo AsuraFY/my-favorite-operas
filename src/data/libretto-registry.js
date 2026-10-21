@@ -1,3 +1,4 @@
+import { applyFigaroOutlineMetadata } from "./figaro-outline-metadata.js?v=figaro-outlines-20261021";
 import { samsonActThreeScenes } from "./libretto-samson-et-dalila-act-3.js?v=samson-act3-20261021";
 import { samsonActTwoScenes } from "./libretto-samson-et-dalila-act-2.js?v=samson-act2-20261021";
 import { samsonActOneScenes } from "./libretto-samson-et-dalila-act-1.js?v=samson-act1-20261021";
@@ -328,6 +329,7 @@ const turandot = {
 };
 
 const figaro = {
+  threeLineOutline: true,
   slug: "le-nozze-di-figaro",
   opera: getOpera("le-nozze-di-figaro"),
   composerShort: "W. A. MOZART",
@@ -344,7 +346,7 @@ const figaro = {
   stageDirectionSpeaker: "Stage direction",
   stageDirectionLabel: "",
   bracketStageDirections: true,
-  translatedForms: { Recitativo: "Recitative", "Recitativo ed Aria": "Recitative and aria", Duettino: "Little duet", Cavatina: "Cavatina", Arietta: "Short aria", Aria: "Aria", Terzetto: "Trio", Sestetto: "Sextet", Coro: "Chorus", Finale: "Finale" },
+  translatedForms: { Ouverture: "Overture", Recitativo: "Recitative", "Recitativo ed Aria": "Recitative and aria", Duettino: "Little duet", Cavatina: "Cavatina", Arietta: "Short aria", Aria: "Aria", Terzetto: "Trio", Sestetto: "Sextet", Coro: "Chorus", Finale: "Finale" },
   acts: [
     { number: 1, originalHeading: "Atto primo", scenes: figaroActOneScenes },
     { number: 2, originalHeading: "Atto secondo", scenes: figaroActTwoScenes },
@@ -377,6 +379,8 @@ const figaro = {
   },
   source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, all acts from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Acts I–II have editorially reviewed line-aligned English translations. Acts III–IV were editorially reviewed against the Italian on 17 October 2026; embedded speaker cues and scraped footer artifacts were corrected. Desktop/mobile visual review remains pending."
 };
+
+applyFigaroOutlineMetadata(figaro.acts);
 
 const carmen = {
   slug: "carmen",

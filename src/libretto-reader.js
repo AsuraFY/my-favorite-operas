@@ -37,7 +37,7 @@ function sectionRouteItem(section, index) {
 }
 function numberedSection(section) {
   const match = (section.label || "").match(/^No\.\s*(\d+)\s*[—–-]\s*(.+)$/i);
-  return { match, number: section.number ?? (match ? Number(match[1]) : null) };
+  return { match, number: section.outlineNumber ?? section.number ?? (match ? Number(match[1]) : null) };
 }
 function sectionNavigationLabel(section, scene, sectionIndex) {
   const { match, number: no } = numberedSection(section);
