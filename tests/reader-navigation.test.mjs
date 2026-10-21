@@ -236,16 +236,39 @@ test("all Tristan outline destinations resolve and repeat passage clicks jump ag
 test("passage jumps clear sticky headers and release tracking when a target is missing", () => {
   let position;
   const context = vm.createContext({ readerJumping: false,
-    app: { querySelector: () => ({ getBoundingClientRect: () => ({ height: 60 }) }) },
+    app: { querySelector: selector => ({ getBoundingClientRect: () => ({ height: selector === ".site-breadcrumb" ? 48 : 60 }) }) },
     window: { scrollY: 100, requestAnimationFrame: callback => callback(), scrollTo: options => { position = options.top; } },
     scheduleReaderSectionUpdate: () => {}
   });
   vm.runInContext(functionSource("jumpToReaderPassage"), context);
   const reader = { querySelector: selector => ({ getBoundingClientRect: () => ({ height: selector === ".opera-subnav" ? 50 : 40 }) }) };
   context.jumpToReaderPassage(reader, { getBoundingClientRect: () => ({ top: 1000 }) });
-  assert.equal(position, 932);
+  assert.equal(position, 884);
   assert.equal(context.readerJumping, false);
   context.readerJumping = true;
   context.jumpToReaderPassage(reader, null);
   assert.equal(context.readerJumping, false);
+});
+
+test("section tracking keeps the clicked section active below the full sticky stack", () => {
+  for (const toolbarHeight of [0, 46]) {
+    let selected;
+    const headerHeight = 76, breadcrumbHeight = 48, barHeight = 76;
+    const landingTop = headerHeight + breadcrumbHeight + barHeight + toolbarHeight + 16;
+    const items = [-500, landingTop, landingTop + 800].map(top => ({ getBoundingClientRect: () => ({ top }) }));
+    const root = {
+      querySelectorAll: () => items,
+      querySelector: selector => ({ getBoundingClientRect: () => ({ height: selector === '.opera-subnav' ? barHeight : toolbarHeight }) })
+    };
+    const context = vm.createContext({ readerJumping: false,
+      currentSceneReader: () => root,
+      app: { querySelector: selector => ({ getBoundingClientRect: () => ({ height: selector === '.site-header' ? headerHeight : breadcrumbHeight }) }) },
+      window: { scrollY: 1000, innerHeight: 800 },
+      document: { documentElement: { scrollHeight: 10000 } },
+      highlightReaderSection: (index, sync) => { selected = [index, sync]; }
+    });
+    vm.runInContext(functionSource('updateReaderSectionPosition'), context);
+    context.updateReaderSectionPosition();
+    assert.deepEqual(selected, [1, true], `clicked section stays active with toolbar height ${toolbarHeight}`);
+  }
 });

@@ -672,7 +672,8 @@ function updateReaderSectionPosition() {
   const siteHeight = app.querySelector(".site-header")?.getBoundingClientRect().height || 0;
   const barHeight = root.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0;
   const toolbarHeight = root.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0;
-  const threshold = siteHeight + barHeight + toolbarHeight + 18;
+  const breadcrumbHeight = app.querySelector(".site-breadcrumb")?.getBoundingClientRect().height || 0;
+  const threshold = siteHeight + breadcrumbHeight + barHeight + toolbarHeight + 18;
   // Preserve the scene heading as the landing point until the first musical section is reached.
   if (items[0].getBoundingClientRect().top > threshold) {
     highlightReaderSection(0, false);
@@ -703,6 +704,7 @@ function jumpToReaderPassage(reader, target) {
   readerJumping = true;
   window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
     const readingTop = (app.querySelector(".site-header")?.getBoundingClientRect().height || 0) +
+      (app.querySelector(".site-breadcrumb")?.getBoundingClientRect().height || 0) +
       (reader.querySelector(".opera-subnav")?.getBoundingClientRect().height || 0) +
       (reader.querySelector(".mobile-reader-toolbar")?.getBoundingClientRect().height || 0) + 18;
     window.scrollTo({ top: window.scrollY + target.getBoundingClientRect().top - readingTop, behavior: "instant" });

@@ -18,3 +18,7 @@ Compared all four acts against the Opera Website Guidelines, especially §§1.2�
 68 relevant tests pass: the new all-entry outline tests and existing libretto-content, presentation and navigation suites. Each title phrase is checked against its own section’s Italian text, all 81 translations appear in both views, participant names remain unique, finale numbers are retained, and all existing destinations still resolve. Original act data files, sung text, English lyrics, scene order, and deep-link IDs were not changed. JavaScript syntax and `git diff --check` pass.
 
 Desktop/mobile browser visual QA remains pending. No new unresolved editorial choice was required.
+
+## Follow-up: outline scrolling
+
+The section jump’s CSS includes the sticky breadcrumb height, but `updateReaderSectionPosition` omitted it. Once the jump lock expired, a correctly landed section could sit 48px below the tracking threshold, causing the previous section to be selected and written into the URL. Added the breadcrumb height to tracking and to explicit passage-jump offsets. Regression tests reproduce the landing coordinates with desktop and mobile toolbar heights; 16 outline/navigation tests pass. Browser inspection did not complete, so live visual verification remains pending.
