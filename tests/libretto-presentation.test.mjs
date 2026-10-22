@@ -304,6 +304,25 @@ test("Figaro renders each source line beside its own English line in source orde
 });
 
 // La Bohème
+test("La Bohème tableau location headings show their existing English translations in the reader", () => {
+  const libretto = getLibretto("la-boheme");
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  assert.deepEqual(libretto.acts.map(act => act.scenes[0].translatedTitle), [
+    "In the garret", "In the Latin Quarter", "The Barrière d’Enfer", "In the garret"
+  ]);
+  for (const act of libretto.acts) {
+    const location = act.scenes[0];
+    assert.equal(location.sections[0].type, location.title);
+    assert.ok(outline.includes(location.translatedTitle), "full outline retains the scene translation");
+    window.location.hash = "#/operas/la-boheme?act=" + act.number;
+    const page = reader.scene(1);
+    const expected = '<div class="selected-section-heading"><h2>' + location.title +
+      '</h2><p class="selected-section-heading__translation">' + location.translatedTitle + '</p>';
+    assert.ok(page.includes(expected), "Act " + act.number + " location needs the English second line");
+  }
+});
+
 test("La Bohème Act I renders as one continuous bilingual tableau", () => {
   const renderer = createLibrettoRenderer(getLibretto("la-boheme"));
   const page = renderer.scene(1);

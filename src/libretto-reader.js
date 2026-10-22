@@ -73,7 +73,9 @@ function sectionPresentation(scene, section, sectionIndex) {
     return { heading: section.inlineHeadingTranslation ? heading + " — " + section.headingTranslation : heading,
       subtitle: section.inlineHeadingTranslation ? "" : section.headingTranslation, form, number: no };
   }
-  return { heading, subtitle, form, number: no };
+  // A section named for its scene can reuse the scene’s existing English title.
+  const sceneTranslation = sectionIndex === 0 && form === scene.title ? (scene.translatedTitle || "") : "";
+  return { heading, subtitle: subtitle || sceneTranslation, form, number: no };
 }
 function actCatalog() {
   return (libretto.acts || []).filter(group => group.scenes?.length);
