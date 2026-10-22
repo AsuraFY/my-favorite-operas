@@ -384,6 +384,7 @@ applyFigaroOutlineMetadata(figaro.acts);
 
 const carmen = {
   slug: "carmen",
+  bilingualActOutlineHeading: true,
   opera: getOpera("carmen"),
   composerShort: "G. BIZET",
   mobileComposer: "Georges Bizet",

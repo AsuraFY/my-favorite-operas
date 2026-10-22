@@ -156,6 +156,23 @@ test("Barbiere uses English outline credits and Italian/English sung speaker lab
 });
 
 // Carmen
+test("Carmen act outline headings show French and English in all four acts", () => {
+  const reader = createLibrettoRenderer(carmen);
+  const headings = [
+    "PREMIER ACTE · Act I",
+    "DEUXIÈME ACTE · Act II",
+    "TROISIÈME ACTE · Act III",
+    "QUATRIÈME ACTE · Act IV",
+  ];
+  assert.equal(carmen.bilingualActOutlineHeading, true);
+  for (const [index, heading] of headings.entries()) {
+    window.location.hash = "#/operas/carmen?act=" + (index + 1);
+    const page = reader.scene(1);
+    assert.ok(page.includes('<summary class="act-heading"><h2>' + heading + '</h2>'), heading);
+    assert.ok(page.includes('aria-label="Act ' + ["I", "II", "III", "IV"][index] + ' outline"'));
+  }
+});
+
 test("Carmen Act I preserves bilingual rows, named outlines and all legacy addresses", () => {
   const act = carmen.acts[0];
   const reader = createLibrettoRenderer(carmen);
