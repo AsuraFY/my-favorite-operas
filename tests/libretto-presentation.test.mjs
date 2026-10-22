@@ -912,6 +912,34 @@ test('Butterfly review preserves all bilingual rows, dialogue order, stage cues 
   assert.equal(libretto.acts.flatMap(a=>a.scenes.flatMap(s=>s.sections)).length,34);
 });
 
+test("Tosca act sidebar headings are bilingual and its selected album is linked in the full outline", () => {
+  const libretto = getLibretto("tosca");
+  const reader = createLibrettoRenderer(libretto);
+  const spotifyUrl = "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo";
+  assert.equal(libretto.bilingualActOutlineHeading, true);
+  assert.deepEqual(libretto.albums, [{ name: "Puccini : Tosca", url: spotifyUrl }]);
+  const outline = reader.outline();
+  assert.ok(outline.includes(
+    '<strong>Albums:</strong> <a href="' + spotifyUrl +
+    '" target="_blank" rel="noopener noreferrer">Puccini : Tosca</a>'
+  ));
+  assert.equal(outline.split('<strong>Albums:</strong>').length - 1, 1);
+  assert.ok(!outline.includes("<strong>Outline source:</strong>"));
+  const acts = [
+    ["Atto primo", "Act I"],
+    ["Atto secondo", "Act II"],
+    ["Atto terzo", "Act III"]
+  ];
+  for (const [index, [italian, english]] of acts.entries()) {
+    window.location.hash = "#/operas/tosca?act=" + (index + 1);
+    const page = reader.scene(1);
+    assert.ok(page.includes('<summary class="act-heading"><h2>' +
+      italian + " · " + english + "</h2>"), "Act " + (index + 1));
+    assert.ok(!page.includes("<strong>Albums:</strong>"), "Album footer belongs only on full outline");
+  }
+  assert.ok(!reader.synopsis().includes("<strong>Albums:</strong>"));
+});
+
 test('Tosca review preserves bilingual rows, sung asides, dialogue order and all 44 outline targets', () => {
   const libretto = getLibretto('tosca');
   const reader = createLibrettoRenderer(libretto);

@@ -658,9 +658,10 @@ const toscaSpotifyOutline = [
 
 const tosca = {
   spotifyAlbumUrl: "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo",
-  outlineRecording: "Tosca · 1953 recording",
+  albums: [{ name: "Puccini : Tosca", url: "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo" }],
   spotifyOutline: toscaSpotifyOutline,
   slug: "tosca",
+  bilingualActOutlineHeading: true,
   continuousAct: true,
   sourceSceneOutline: true,
   preserveLineBreaks: true,
