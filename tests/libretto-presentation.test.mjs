@@ -868,6 +868,38 @@ test("La Bohème review retains all bilingual lines, sung asides and stable pass
   assert.equal(libretto.acts[0].scenes[0].sections[0].turns[403].speaker,'Marcello');
 });
 
+test("Madama Butterfly displays all 34 bilingual titles and each bilingual act-sidebar heading", () => {
+  const libretto = getLibretto("madama-butterfly");
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  const headings = ["Atto primo · Act I", "Atto secondo · Act II", "Atto terzo · Act III"];
+  const escape = text => text.replace(/[&<>"']/g, char => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  })[char]);
+  assert.equal(libretto.threeLineOutline, true);
+  assert.equal(libretto.acts.reduce((sum, act) =>
+    sum + act.scenes.flatMap(scene => scene.sections).length, 0), 34);
+  for (const [index, act] of libretto.acts.entries()) {
+    window.location.hash = "#/operas/madama-butterfly?act=" + act.number;
+    const page = reader.scene(1);
+    assert.ok(page.includes('<summary class="act-heading"><h2>' + headings[index] + '</h2>'));
+    for (const scene of act.scenes) for (const section of scene.sections) {
+      assert.ok(section.originalTitle && section.translatedTitle,
+        "Every named passage needs an English title: Act " + act.number);
+      const href = "#/operas/madama-butterfly?act=" + act.number +
+        "&scene=" + scene.number + "&item=" + section.routeItem;
+      const translation = '<span class="opera-outline__section-translation">' +
+        escape(section.translatedTitle) + '</span>';
+      for (const html of [outline, page]) {
+        const start = html.indexOf('href="' + href + '"');
+        assert.ok(start >= 0, "Missing section " + href);
+        assert.ok(html.slice(start, html.indexOf("</a>", start)).includes(translation),
+          "Missing second heading line " + href);
+      }
+    }
+  }
+});
+
 test('Butterfly review preserves all bilingual rows, dialogue order, stage cues and 34 passage targets', () => {
   const libretto = getLibretto('madama-butterfly');
   const reader = createLibrettoRenderer(libretto);

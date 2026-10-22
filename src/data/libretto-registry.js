@@ -511,6 +511,7 @@ const laBoheme = {
 
 const madamaButterfly = {
   slug: "madama-butterfly",
+  threeLineOutline: true,
   opera: getOpera("madama-butterfly"),
   composerShort: "G. PUCCINI",
   mobileComposer: "Giacomo Puccini",
