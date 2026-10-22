@@ -1159,7 +1159,6 @@ export const barbiereActTwoScenes = [
         "label": "Temporale",
         "type": "Temporale",
         "headingTranslation": "Storm (instrumental passage depicting a storm)",
-        "inlineHeadingTranslation": true,
         "routeItem": 1,
         "instrumental": true,
         "turns": [

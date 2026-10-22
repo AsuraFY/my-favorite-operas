@@ -943,7 +943,7 @@ test("Barbiere instrumental headings agree in both outlines and reader without c
   const reader = createLibrettoRenderer(libretto);
   for (const [act, scene, item, title, english] of [
     [1, 1, 3, "Sinfonia", "Overture"],
-    [2, 8, 1, "Temporale — Storm (instrumental passage depicting a storm)", null]
+    [2, 8, 1, "Temporale", "Storm (instrumental passage depicting a storm)"]
   ]) {
     window.location.hash = `#/operas/${libretto.slug}?act=${act}&scene=${scene}&item=${item}`;
     const page = reader.scene(scene, "", item);
