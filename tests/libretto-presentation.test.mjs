@@ -304,6 +304,24 @@ test("Figaro renders each source line beside its own English line in source orde
 });
 
 // La Bohème
+test("La Bohème full outline links its user-selected Spotify album under Albums", () => {
+  const libretto = getLibretto("la-boheme");
+  const reader = createLibrettoRenderer(libretto);
+  const selectedName = "La Bohème - Puccini";
+  const selectedUrl = "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp";
+  assert.deepEqual(libretto.albums, [{ name: selectedName, url: selectedUrl }]);
+  const outline = reader.outline();
+  assert.ok(outline.includes(
+    '<strong>Albums:</strong> <a href="' + selectedUrl +
+    '" target="_blank" rel="noopener noreferrer">' + selectedName + '</a>'
+  ));
+  assert.equal(outline.split('<strong>Albums:</strong>').length - 1, 1);
+  window.location.hash = "#/operas/la-boheme?act=1";
+  assert.ok(!reader.scene(1).includes('<strong>Albums:</strong>'));
+  assert.ok(!reader.synopsis().includes('<strong>Albums:</strong>'));
+  assert.ok(!createLibrettoRenderer(getLibretto("tristan-und-isolde")).outline().includes('<strong>Albums:</strong>'));
+});
+
 test("La Bohème tableau location headings show their existing English translations in the reader", () => {
   const libretto = getLibretto("la-boheme");
   const reader = createLibrettoRenderer(libretto);

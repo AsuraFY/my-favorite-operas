@@ -475,6 +475,7 @@ const carmen = {
 const laBoheme = {
   slug: "la-boheme",
   threeLineOutline: true,
+  albums: [{ name: "La Bohème - Puccini", url: "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp" }],
   opera: getOpera("la-boheme"),
   composerShort: "G. PUCCINI",
   mobileComposer: "Giacomo Puccini",
