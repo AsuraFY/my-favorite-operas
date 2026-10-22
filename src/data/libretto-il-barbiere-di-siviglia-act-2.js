@@ -515,6 +515,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "A crash of broken crockery is heard from within.",
             "en": "A crash of crockery is heard from within."
           },
@@ -878,6 +879,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Bartolo rises and approaches the lovers.",
             "en": "Bartolo rises and approaches the lovers."
           },
@@ -938,6 +940,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Ambrogio parte.",
             "en": "Ambrogio leaves."
           },
@@ -1155,6 +1158,8 @@ export const barbiereActTwoScenes = [
       {
         "label": "Temporale",
         "type": "Temporale",
+        "headingTranslation": "Storm (instrumental passage depicting a storm)",
+        "inlineHeadingTranslation": true,
         "routeItem": 1,
         "instrumental": true,
         "turns": [
@@ -1199,6 +1204,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Figaro accende i lumi.",
             "en": "Figaro lights the lamps."
           },
@@ -1455,6 +1461,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il notaro cava una scrittura.",
             "en": "The notary takes out a document."
           },
@@ -1650,6 +1657,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il Conte toglie la scrittura di nozze dalle mani del notaro e la consegna all'Alcalde.",
             "en": "The Count takes the marriage contract from the notary and gives it to the magistrate."
           },
@@ -1704,6 +1712,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "[a Rosina]",
             "en": "[to Rosina]"
           },
@@ -1736,6 +1745,7 @@ export const barbiereActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il notaro presenta a Bartolo il contratto; egli lo legge con dispetto.",
             "en": "The notary presents the contract to Bartolo; he reads it with displeasure."
           },

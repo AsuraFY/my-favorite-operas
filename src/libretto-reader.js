@@ -68,6 +68,11 @@ function sectionPresentation(scene, section, sectionIndex) {
     number + form + (titles.original ? " · " + titles.original : "");
   const translatedForm = section.type === "Passage" ? "" : (libretto.translatedForms?.[form] || "");
   const subtitle = section.threeLineOutline ? (titles.translation || translatedForm) : libretto.threeLineOutline && !libretto.translateSectionHeadings ? titles.translation : [translatedForm, titles.translation].filter(Boolean).join(" · ");
+  // Explicit heading translations also cover instrumental sections without aria titles.
+  if (section.headingTranslation) {
+    return { heading: section.inlineHeadingTranslation ? heading + " — " + section.headingTranslation : heading,
+      subtitle: section.inlineHeadingTranslation ? "" : section.headingTranslation, form, number: no };
+  }
   return { heading, subtitle, form, number: no };
 }
 function actCatalog() {

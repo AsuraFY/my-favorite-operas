@@ -9,6 +9,7 @@ export const barbiereActOneScenes = [
       {
         "label": "Sinfonia",
         "type": "Sinfonia",
+        "headingTranslation": "Overture",
         "routeItem": 3,
         "beforeScene": true,
         "instrumental": true,
@@ -325,6 +326,7 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il Conte e Figaro si ritirano sotto il portico.",
             "en": "The Count and Figaro withdraw beneath the arcade."
           }
@@ -597,6 +599,7 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si sente da dentro chiudere le finestre.",
             "en": "The windows are heard closing from within."
           }
@@ -1225,6 +1228,7 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Entrano nella prima camera a destra.",
             "en": "They enter the first room on the right."
           }
@@ -1480,6 +1484,7 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Figaro parte.",
             "en": "Figaro leaves."
           }
@@ -1699,6 +1704,7 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Battono di nuovo.",
             "en": "There is another knock."
           },
@@ -1829,6 +1835,7 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il Conte abbraccia Bartolo per forza.",
             "en": "The Count embraces Bartolo by force."
           },

@@ -115,6 +115,9 @@ test("Barbiere reviewed outlines use source headings, translated titles and uniq
             assert.ok(link.includes(escape(section.originalTitle)));
             assert.ok(link.includes('class="opera-outline__section-translation">' + escape(section.translatedTitle)));
             assert.ok(link.indexOf('opera-outline__section-translation') < link.indexOf('libretto-participants'));
+          } else if (section.headingTranslation && !section.inlineHeadingTranslation) {
+            assert.ok(link.includes('opera-outline__section-translation'));
+            assert.ok(link.includes(escape(section.headingTranslation)));
           } else assert.ok(!link.includes('opera-outline__section-translation'));
           assert.equal(new Set(section.participants).size, section.participants.length);
           assert.ok(!section.participants.some(name => ['All', 'All three', 'Ensemble'].includes(name)));
@@ -933,4 +936,35 @@ test("all eleven completed operas bracket every rendered direction", () => {
       }
     }
   }
+});
+
+test("Barbiere instrumental headings agree in both outlines and reader without changing routes", () => {
+  const libretto = getLibretto("il-barbiere-di-siviglia");
+  const reader = createLibrettoRenderer(libretto);
+  for (const [act, scene, item, title, english] of [
+    [1, 1, 3, "Sinfonia", "Overture"],
+    [2, 8, 1, "Temporale — Storm (instrumental passage depicting a storm)", null]
+  ]) {
+    window.location.hash = `#/operas/${libretto.slug}?act=${act}&scene=${scene}&item=${item}`;
+    const page = reader.scene(scene, "", item);
+    const href = `#/operas/${libretto.slug}?act=${act}&scene=${scene}&item=${item}`;
+    for (const html of [reader.outline(), page]) {
+      const start = html.indexOf(`href="${href}"`);
+      assert.ok(start >= 0);
+      const entry = html.slice(start, html.indexOf('</a>', start));
+      assert.ok(entry.includes(title));
+      assert.equal(entry.includes('opera-outline__section-translation'), Boolean(english));
+      if (english) assert.ok(entry.includes(`>${english}</span>`));
+    }
+    assert.ok(page.includes(`<h2>${title}</h2>`));
+    if (english) assert.ok(page.includes(`class="selected-section-heading__translation">${english}</p>`));
+    const data = libretto.acts[act-1].scenes.find(s=>s.number===scene).sections.find(s=>s.routeItem===item);
+    assert.ok(data.instrumental);
+    assert.ok(data.turns.every(t=>t.speaker==='Stage direction'));
+  }
+  window.location.hash = '#/operas/il-barbiere-di-siviglia?act=2';
+  const page = reader.scene(1);
+  assert.ok(page.includes('<p>[a Rosina]</p>'));
+  assert.ok(!page.includes('Stage direction</span><p>[a Rosina]</p>'));
+  assert.ok(page.includes('Stage direction</span><p>[Segue Istromentale'));
 });
