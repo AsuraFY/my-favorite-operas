@@ -38,7 +38,7 @@ test('Samson renders each complete vocal turn once with paired line breaks and s
   const page=createLibrettoRenderer(libretto).scene(1);
   const expected=turns.map(t => {
     const direction=t.speaker==='Stage direction';
-    const wrap=s => t.shortCue ? `[${s}]` : s;
+    const wrap=s => t.speaker === "Stage direction" ? `[${s}]` : s;
     return [wrap(t.original).split('\n').join('<br>'),wrap(t.translation).split('\n').join('<br>'),direction];
   });
   assert.deepEqual(renderedVersePairs(page),expected);

@@ -34,7 +34,7 @@ test('Samson III renders whole vocal turns, sung parenthetical variants, the Bac
  window.location.hash='#/operas/samson-et-dalila?act=3';
  const page=createLibrettoRenderer(work).scene(1);
  assert.deepEqual(renderedVersePairs(page),turns.map(t=>{
-  const f=v=>(t.shortCue?`[${v}]`:v).split('\n').join('<br>');
+  const f=v=>(t.speaker === "Stage direction"?`[${v}]`:v).split('\n').join('<br>');
   return [f(t.original),f(t.translation),t.speaker==='Stage direction'];
  }));
  const duo=sections.find(s=>s.originalTitle==='Gloire à Dagon vainqueur !');

@@ -177,7 +177,7 @@ test("Turandot deep links retain the whole act and navigation uses source number
   assert.match(html, /Non piangere, Liù/);
   assert.match(html, /When the gong groans, death gloats/);
   assert.match(html, /Crowd/);
-  assert.match(html, /<p>Prince Calaf strikes the gong three times\.<\/p>/);
+  assert.match(html, /<p>\[Prince Calaf strikes the gong three times\.\]<\/p>/);
   assert.ok(!html.includes("SCENE I"));
   assert.ok(!html.includes("Scene I"));
   assert.ok(!html.includes("Prev. scene"));

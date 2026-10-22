@@ -32,7 +32,7 @@ test('Samson II renders whole vocal turns, including the replies within Mon cœu
  window.location.hash='#/operas/samson-et-dalila?act=2';
  const page=createLibrettoRenderer(work).scene(1);
  assert.deepEqual(renderedVersePairs(page),turns.map(t=>{
-  const f=v=>(t.shortCue?`[${v}]`:v).split('\n').join('<br>');
+  const f=v=>(t.speaker === "Stage direction"?`[${v}]`:v).split('\n').join('<br>');
   return [f(t.original),f(t.translation),t.speaker==='Stage direction'];
  }));
  const aria=sections.find(s=>s.originalTitle==='Mon cœur s’ouvre à ta voix');

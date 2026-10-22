@@ -371,6 +371,21 @@ function formatLibrettoText(value, breakVerseLines=true) {
   }
   return text.split(/\n+/).map(line => escapeHtml(line.trim())).filter(Boolean).join("<br>");
 }
+// Bracketing is presentation-only; shortCue explicitly controls the label.
+function bracketStageDirection(value) {
+  let text = String(value ?? "").trim();
+  while (text.startsWith("[") && text.endsWith("]")) {
+    let depth = 0;
+    const enclosesWholeText = [...text].every((character, index) => {
+      if (character === "[") depth++;
+      if (character === "]") depth--;
+      return depth > 0 || index === text.length - 1;
+    });
+    if (!enclosesWholeText) break;
+    text = text.slice(1, -1).trim();
+  }
+  return text ? "[" + text + "]" : "";
+}
 function splitInlineDirections(value, literalText = false, inlineDirections) {
   if (literalText) return [{ type: "text", value: String(value || "") }];
   const text = String(value || "");
@@ -421,8 +436,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     if (speaker === directionSpeaker) {
       const originalText = turn.original ?? turn.it ?? "";
       const translatedText = turn.translation ?? turn.en ?? "";
-      const original = (turn.bracketStageDirection ?? libretto.bracketStageDirections) ? "[" + originalText + "]" : originalText;
-      const translation = (turn.bracketStageDirection ?? libretto.bracketStageDirections) ? "[" + translatedText + "]" : translatedText;
+      const original = bracketStageDirection(originalText);
+      const translation = bracketStageDirection(translatedText);
       const stageDirectionLabel = turn.shortCue ? '' : '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
       return anchorFirst(['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
         stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
@@ -440,8 +455,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       const isDirection = originalPart.type === "direction" || translatedPart.type === "direction";
       if (isDirection) {
         output.push('<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german"><p>' +
-          formatLibrettoText(originalPart.value.trim() ? "[" + originalPart.value.trim() + "]" : "", false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
-          formatLibrettoText(translatedPart.value.trim() ? "[" + translatedPart.value.trim() + "]" : "", false) + '</p></div></div>');
+          formatLibrettoText(bracketStageDirection(originalPart.value), false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
+          formatLibrettoText(bracketStageDirection(translatedPart.value), false) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
         output.push('<div class="libretto-row"><div class="libretto-cell libretto-cell--german">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(originalSpeaker) + '</span>') + '<p>' +

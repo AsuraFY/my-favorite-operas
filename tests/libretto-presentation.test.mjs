@@ -16,7 +16,7 @@ test("Turandot renders every verse pair, distinguishes cues from paragraphs, and
     const page = reader.scene(1);
     const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
     const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
-      ? [[turn.shortCue ? `[${turn.it}]` : turn.it, turn.shortCue ? `[${turn.en}]` : turn.en, true]]
+      ? [[`[${turn.it}]`, `[${turn.en}]`, true]]
       : turn.it.split('\n').map((line, index) => [line, turn.en.split('\n')[index], false]));
     assert.deepEqual(renderedVersePairs(page), expected);
     assert.equal(count(page, /class="libretto-speaker libretto-speaker--stage-direction"/g),
@@ -161,7 +161,7 @@ test("Carmen Act I preserves bilingual rows, named outlines and all legacy addre
   const sections = act.scenes[0].sections;
   const turns = sections.flatMap(s => s.turns);
   const expected = turns.flatMap(t => t.speaker === 'Stage direction'
-    ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+    ? [[`[${t.original}]`, `[${t.translation}]`, true]]
     : t.original.split('\n').map((line,i) => [line,t.translation.split('\n')[i],false]));
   assert.deepEqual(renderedVersePairs(page), expected);
   assertActTargets(reader,carmen,act);
@@ -254,7 +254,7 @@ test("Figaro Act II renders every source line and keeps every deep link on the f
   const page = reader.scene(1);
   const pairs = renderedVersePairs(page);
   const expected = entries.flatMap(turn => turn.speaker === "Stage direction"
-    ? [[turn.bracketStageDirection === false ? turn.it.replaceAll("\n", "<br>") : `[${turn.it}]`, turn.bracketStageDirection === false ? turn.en.replaceAll("\n", "<br>") : `[${turn.en}]`, true]]
+    ? [[`[${turn.it.replaceAll("\n", "<br>")}]`, `[${turn.en.replaceAll("\n", "<br>")}]`, true]]
     : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
   assert.deepEqual(pairs, expected);
   assert.equal(pairs.length, 823);
@@ -269,7 +269,7 @@ test("Figaro renders each source line beside its own English line in source orde
   const page = createLibrettoRenderer(figaro).scene(1);
   const pairs = renderedVersePairs(page);
   const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
-    ? [[turn.bracketStageDirection === false ? turn.it.replaceAll("\n", "<br>") : `[${turn.it}]`, turn.bracketStageDirection === false ? turn.en.replaceAll("\n", "<br>") : `[${turn.en}]`, true]]
+    ? [[`[${turn.it.replaceAll("\n", "<br>")}]`, `[${turn.en.replaceAll("\n", "<br>")}]`, true]]
     : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
   assert.deepEqual(pairs, expected, "no source line omitted, duplicated or shifted to a different translation row");
   assert.equal(pairs.length, 581);
@@ -681,7 +681,7 @@ test("Macbeth aligns every sung line across all four acts", () => {
     assertActTargets(reader, libretto, act);
     const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
     const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
-      ? [[turn.bracketStageDirection === false ? turn.it : `[${turn.it.replaceAll('\n', '<br>')}]`, turn.bracketStageDirection === false ? turn.en : `[${turn.en.replaceAll('\n', '<br>')}]`, true]]
+      ? [[`[${turn.it.replaceAll("\n", "<br>")}]`, `[${turn.en.replaceAll("\n", "<br>")}]`, true]]
       : turn.it.split('\n').map((line, index) => [line, turn.en.split('\n')[index], false]));
     assert.deepEqual(renderedVersePairs(page), expected, 'all text pairs retained in Act ' + act.number);
     assert.ok(renderedVersePairs(page).filter(pair => !pair[2]).every(pair => !pair[0].includes('<br>') && !pair[1].includes('<br>')));
@@ -704,8 +704,8 @@ test("Figaro Acts III–IV preserve paired text and both current and legacy pass
     const page = reader.scene(1);
     const turns = act.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));
     const expected = turns.flatMap(turn => turn.speaker === "Stage direction"
-      ? [[turn.bracketStageDirection === false ? turn.it.replaceAll("\n", "<br>") : `[${turn.it}]`,
-          turn.bracketStageDirection === false ? turn.en.replaceAll("\n", "<br>") : `[${turn.en}]`, true]]
+      ? [[`[${turn.it.replaceAll("\n", "<br>")}]`,
+          `[${turn.en.replaceAll("\n", "<br>")}]`, true]]
       : turn.it.split("\n").map((line, index) => [line, turn.en.split("\n")[index], false]));
     assert.deepEqual(renderedVersePairs(page), expected);
     assert.ok(!page.includes("KernKonzepte") && !page.includes("Impressum"));
@@ -743,7 +743,7 @@ test("Carmen Acts II–IV preserve every bilingual pair and passage address", ()
     const sections = act.scenes.flatMap(s => s.sections);
     const turns = sections.flatMap(s => s.turns);
     const expected = turns.flatMap(t => t.speaker === 'Stage direction'
-      ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+      ? [[`[${t.original}]`, `[${t.translation}]`, true]]
       : t.original.split('\n').map((line,i) => [line.trim(),t.translation.split('\n')[i].trim(),false]));
     assert.deepEqual(renderedVersePairs(page), expected);
     assertActTargets(reader,carmen,act);
@@ -772,7 +772,7 @@ test("La Bohème review retains all bilingual lines, sung asides and stable pass
     const scene = act.scenes[0];
     const turns = scene.sections[0].turns;
     const expected = turns.flatMap(t => t.speaker === 'Stage direction'
-      ? [[t.shortCue ? `[${t.original}]` : t.original,t.shortCue ? `[${t.translation}]` : t.translation,true]]
+      ? [[`[${t.original}]`,`[${t.translation}]`,true]]
       : t.original.split('\n').map((line,i) => {
         const translation=t.translation.split('\n')[i];
         assert.notEqual(translation,undefined,`Act ${act.number}: ${line}`);
@@ -806,7 +806,7 @@ test('Butterfly review preserves all bilingual rows, dialogue order, stage cues 
     const page = reader.scene(1);
     const turns = act.scenes[0].sections.flatMap(s => s.turns);
     const expected = turns.flatMap(t => t.speaker === 'Stage direction'
-      ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+      ? [[`[${t.original}]`, `[${t.translation}]`, true]]
       : t.original.split('\n').map((line,i) => [line,t.translation.split('\n')[i],false]));
     assert.deepEqual(renderedVersePairs(page), expected);
     assert.equal(count(page,/libretto-speaker--stage-direction/g),2*turns.filter(t=>t.speaker==='Stage direction'&&!t.shortCue).length);
@@ -852,7 +852,7 @@ test('Tosca review preserves bilingual rows, sung asides, dialogue order and all
     const page = reader.scene(1);
     const turns = act.scenes.flatMap(s => s.sections.flatMap(s => s.turns));
     const expected = turns.flatMap(t => t.speaker === 'Stage direction'
-      ? [[t.shortCue ? `[${t.original}]` : t.original, t.shortCue ? `[${t.translation}]` : t.translation, true]]
+      ? [[`[${t.original}]`, `[${t.translation}]`, true]]
       : t.original.split('\n').map((line, i) => [line, t.translation.split('\n')[i], false]));
     assert.deepEqual(renderedVersePairs(page), expected);
     assert.equal(count(page, /libretto-speaker--stage-direction/g), 2 * turns.filter(t => t.speaker === 'Stage direction' && !t.shortCue).length);
@@ -893,4 +893,44 @@ test('Tosca review preserves bilingual rows, sung asides, dialogue order and all
   assert.ok(lines[1].some(([speaker, line]) => speaker === 'Tosca' && line === 'Chi mi assicura?'));
   assert.ok(lines[2].some(([speaker, line]) => speaker === 'Sciarrone' && line === 'vi dico pugnalato!'));
   assert.ok(!lines.flat().some(([, line]) => /^(con forza crescente|Se la svigna\.|fissando come in una visione)$/i.test(line)));
+});
+
+test("shared directions normalize brackets, preserve breaks and keep sung asides as lyrics", () => {
+  const fixture = structuredClone(getLibretto("il-barbiere-di-siviglia"));
+  fixture.acts = [fixture.acts[0]];
+  fixture.acts[0].scenes = [fixture.acts[0].scenes[0]];
+  fixture.acts[0].scenes[0].sections = [fixture.acts[0].scenes[0].sections[0]];
+  fixture.acts[0].scenes[0].sections[0].turns = [
+    { speaker: "Stage direction", it: "[[a Rosina]]", en: "[to Rosina]", shortCue: true },
+    { speaker: "Stage direction", it: "La porta si apre.\nEntrano tutti.", en: "The door opens.\nEveryone enters.", bracketStageDirection: false },
+    { speaker: "Figaro", it: "(Ah!)", en: "(Ah!)", literalText: true },
+    { speaker: "Figaro", it: "( [a Rosina] )", en: "( [to Rosina] )" }
+  ];
+  window.location.hash = "#/operas/il-barbiere-di-siviglia?act=1";
+  const page = createLibrettoRenderer(fixture).scene(1);
+  assert.deepEqual(renderedVersePairs(page), [
+    ["[a Rosina]", "[to Rosina]", true],
+    ["[La porta si apre.<br>Entrano tutti.]", "[The door opens.<br>Everyone enters.]", true],
+    ["(Ah!)", "(Ah!)", false],
+    ["[a Rosina]", "[to Rosina]", true]
+  ]);
+  assert.equal(count(page, /libretto-speaker--stage-direction/g), 2);
+});
+
+test("all eleven completed operas bracket every rendered direction", () => {
+  const slugs = ["cosi-fan-tutte", "il-barbiere-di-siviglia", "tristan-und-isolde", "macbeth", "turandot", "le-nozze-di-figaro", "carmen", "la-boheme", "madama-butterfly", "tosca", "samson-et-dalila"];
+  for (const slug of slugs) {
+    const libretto = getLibretto(slug);
+    for (const act of libretto.acts) {
+      window.location.hash = `#/operas/${slug}?act=${act.number}`;
+      const page = createLibrettoRenderer(libretto).scene(act.scenes[0].number);
+      const directions = renderedVersePairs(page).filter(row => row[2]);
+      assert.ok(directions.length, `${slug} act ${act.number}`);
+      for (const pair of directions) for (const text of pair.slice(0, 2)) {
+        if (!text) continue;
+        assert.ok(text.startsWith("[") && text.endsWith("]"), `${slug}: ${text}`);
+        assert.ok(!text.startsWith("[[") && !text.endsWith("]]"), `${slug}: ${text}`);
+      }
+    }
+  }
 });
