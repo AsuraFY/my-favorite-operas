@@ -526,6 +526,22 @@ test("Tristan outlines link source passages with bilingual headings and unique p
   assert.ok(!outline.includes("Love Duet, Part"));
   assert.ok(!outline.includes("is-unavailable"));
   assert.equal(tristan.outlineRecording, undefined);
+  // Both source preludes must display their English headings in every reader view.
+  for (const act of tristan.acts.slice(0, 2)) {
+    const prelude = act.scenes[0].sections[0];
+    assert.equal(prelude.type, "Vorspiel");
+    assert.equal(prelude.headingTranslation, "Prelude");
+    const href = '#/operas/tristan-und-isolde?act=' + act.number + '&scene=1&item=1';
+    const fullLink = outline.slice(outline.indexOf('href="' + href + '"')).split('</a>')[0];
+    assert.ok(fullLink.includes('<span class="opera-outline__section-title">Vorspiel</span>'));
+    assert.ok(fullLink.includes('<span class="opera-outline__section-translation">Prelude</span>'));
+    window.location.hash = href;
+    const page = reader.scene(1, "", 1);
+    const actLink = page.slice(page.indexOf('href="' + href + '"')).split('</a>')[0];
+    assert.ok(actLink.includes('<span class="opera-outline__section-translation">Prelude</span>'));
+    assert.match(page, /<h2>Vorspiel<\/h2><p class="selected-section-heading__translation">Prelude<\/p>/);
+  }
+  assert.equal(tristan.acts[2].scenes[0].sections[0].translatedTitle, "Shepherds’ dance");
   for (const act of tristan.acts) {
     window.location.hash = "#/operas/tristan-und-isolde?act=" + act.number;
     const page = reader.scene(1);

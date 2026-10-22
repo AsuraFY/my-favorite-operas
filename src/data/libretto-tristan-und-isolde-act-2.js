@@ -12,6 +12,7 @@ export const tristanActTwoScenes = [
         "type": "Vorspiel",
         "originalTitle": "",
         "translatedTitle": "",
+        "headingTranslation": "Prelude",
         "routeItem": 1,
         "beforeScene": true,
         "instrumental": true,
