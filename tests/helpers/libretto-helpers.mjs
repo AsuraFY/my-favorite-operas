@@ -31,7 +31,8 @@ export function assertSceneRows(page, scene, alignLines = false) {
       `Matching lyric/direction order for ${turn.speaker}`);
     for (const part of original) part.direction ? directions++ : lyrics++;
   }
-  assert.equal(count(page, /<div class="libretto-row"/g), lyrics, "all lyric segments render");
+  assert.equal(count(page, /<div class="libretto-row(?: libretto-row--verse-[^"]+)?"/g),
+    lyrics, "all lyric segments render");
   assert.equal(count(page, /<div class="libretto-row libretto-row--stage-direction"/g),
     directions, "all standalone and inline directions render separately");
 }

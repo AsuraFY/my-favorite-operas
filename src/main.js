@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
-import { LINE_SPACING_CHOICES, applyReadingSpacing } from "./reading-spacing.js?v=reader-spacing-20261023";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=boheme-albums-20261022";
+import { MIN_LINE_SPACING, MAX_LINE_SPACING, DEFAULT_LINE_SPACING, normalizeLineSpacing, stepLineSpacing, applyReadingSpacing } from "./reading-spacing.js?v=numeric-spacing-20261023";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=numeric-spacing-20261023";
 import { getLibretto } from "./data/libretto-registry.js?v=tristan-albums-20261023";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
@@ -51,7 +51,11 @@ function readFontSize() {
   }
 }
 let activeFontSize = readFontSize();
-let activeLineSpacing = readPreference(LINE_SPACING_PREFERENCE_KEY, new Set(Object.keys(LINE_SPACING_CHOICES)), "comfortable");
+function readLineSpacing() {
+  try { return normalizeLineSpacing(localStorage.getItem(LINE_SPACING_PREFERENCE_KEY)); }
+  catch { return DEFAULT_LINE_SPACING; }
+}
+let activeLineSpacing = readLineSpacing();
 let settingsOutsidePointerHandler = null;
 document.documentElement.dataset.theme = activeTheme;
 document.documentElement.dataset.fontSize = String(activeFontSize);
@@ -102,9 +106,13 @@ function header(active) {
               <button type="button" data-font-size-step="1" aria-label="Increase font size" ${activeFontSize === MAX_FONT_SIZE ? "disabled" : ""}>A+</button>
             </div>
           </div>
-          <div class="settings-group">
-            <label class="settings-label" for="line-spacing-picker">Libretto line spacing</label>
-            <select id="line-spacing-picker" data-line-spacing-picker aria-label="Libretto line spacing"><option value="compact" ${activeLineSpacing === "compact" ? "selected" : ""}>Compact (1.40)</option><option value="comfortable" ${activeLineSpacing === "comfortable" ? "selected" : ""}>Comfortable (1.55)</option><option value="spacious" ${activeLineSpacing === "spacious" ? "selected" : ""}>Spacious (1.75)</option></select>
+          <div class="settings-group settings-size">
+            <p class="settings-label" id="line-spacing-label">Libretto line height</p>
+            <div class="line-spacing-controls" role="group" aria-labelledby="line-spacing-label">
+              <button type="button" data-line-spacing-step="-1" aria-label="Decrease libretto line height" ${activeLineSpacing <= MIN_LINE_SPACING ? "disabled" : ""}>−</button>
+              <output data-line-spacing-value aria-live="polite">${activeLineSpacing.toFixed(2)}</output>
+              <button type="button" data-line-spacing-step="1" aria-label="Increase libretto line height" ${activeLineSpacing >= MAX_LINE_SPACING ? "disabled" : ""}>+</button>
+            </div>
           </div>
         </section>
       </div>
@@ -379,7 +387,7 @@ function shell(content, active) {
   const siteHeader = app.querySelector(".site-header");
   const mobileSearchToggle = app.querySelector("[data-mobile-search-toggle]");
   const fontPicker = app.querySelector("[data-font-picker]");
-  const lineSpacingPicker = app.querySelector("[data-line-spacing-picker]");
+
   const saveChoice = (key, value) => {
     try { localStorage.setItem(key, value); } catch { /* The preference still applies for this page. */ }
   };
@@ -416,10 +424,20 @@ function shell(content, active) {
     document.documentElement.dataset.fontChoice = activeFontChoice;
     saveChoice(FONT_PREFERENCE_KEY, activeFontChoice);
   });
-  lineSpacingPicker?.addEventListener("change", () => {
-    if (!Object.hasOwn(LINE_SPACING_CHOICES, lineSpacingPicker.value)) return;
-    activeLineSpacing = applyReadingSpacing(document.documentElement, lineSpacingPicker.value);
-    saveChoice(LINE_SPACING_PREFERENCE_KEY, activeLineSpacing);
+  app.querySelectorAll("[data-line-spacing-step]").forEach(button => {
+    button.addEventListener("click", () => {
+      activeLineSpacing = applyReadingSpacing(
+        document.documentElement,
+        stepLineSpacing(activeLineSpacing, Number(button.dataset.lineSpacingStep))
+      );
+      saveChoice(LINE_SPACING_PREFERENCE_KEY, activeLineSpacing.toFixed(2));
+      const output = app.querySelector("[data-line-spacing-value]");
+      if (output) output.textContent = activeLineSpacing.toFixed(2);
+      app.querySelectorAll("[data-line-spacing-step]").forEach(option => {
+        option.disabled = (activeLineSpacing <= MIN_LINE_SPACING && option.dataset.lineSpacingStep === "-1") ||
+          (activeLineSpacing >= MAX_LINE_SPACING && option.dataset.lineSpacingStep === "1");
+      });
+    });
   });
   app.querySelectorAll("[data-theme-choice]").forEach(button => {
     button.addEventListener("click", () => {

@@ -429,6 +429,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     const translation = (turn.translation ?? turn.en ?? "").split(/\r?\n/);
     return original.map((line, index) => ({ ...turn, original: line,
       translation: translation[index] || "", hideSpeaker: index > 0,
+      verseLineIndex: index, verseLineCount: original.length,
       sourceTurnIndex, startsSourceTurn: index === 0 }));
   }) : section.turns.map((turn, sourceTurnIndex) => ({ ...turn, sourceTurnIndex, startsSourceTurn: true }));
   const rows = turns.flatMap(turn => {
@@ -460,6 +461,11 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     const originalSpeaker = libretto.originalSpeakerNames?.[speaker] || speaker;
     const speakerTranslation = turn.speakerTranslation || libretto.speakerTranslations?.[speaker] || speaker;
     const output = [];
+    const splitVerse = alignVerseLines && turn.verseLineCount > 1;
+    const verseRowClass = !splitVerse ? "" :
+      " libretto-row--verse-split" +
+      (turn.verseLineIndex === 0 ? " libretto-row--verse-start" : "") +
+      (turn.verseLineIndex === turn.verseLineCount - 1 ? " libretto-row--verse-end" : "");
     for (let index = 0; index < count; index++) {
       const originalPart = originalParts[index] || { type: "text", value: "" };
       const translatedPart = translatedParts[index] || { type: "text", value: "" };
@@ -469,7 +475,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
           formatLibrettoText(bracketStageDirection(originalPart.value), false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
           formatLibrettoText(bracketStageDirection(translatedPart.value), false) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
-        output.push('<div class="libretto-row"><div class="libretto-cell libretto-cell--german">' +
+        output.push('<div class="libretto-row' + verseRowClass + '"><div class="libretto-cell libretto-cell--german">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(originalSpeaker) + '</span>') + '<p>' +
           formatLibrettoText(originalPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div><div class="libretto-cell libretto-cell--english">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span>') + '<p>' +

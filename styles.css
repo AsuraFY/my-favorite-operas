@@ -1967,13 +1967,14 @@ button { font: inherit; }
   width: 100%; min-height: 27px; padding: 3px 8px; border: 1px solid #ddd5c9; border-radius: 4px;
   color: #28251f; background-color: #fffdfa; font: 0.75rem var(--serif); cursor: pointer;
 }
-.font-size-controls { display: grid; grid-template-columns: 1fr 1fr 1fr; min-height: 27px; border: 1px solid #e6ded1; border-radius: 5px; overflow: hidden; }
-.font-size-controls button, .font-size-controls output {
+.font-size-controls, .line-spacing-controls { display: grid; grid-template-columns: 1fr 1fr 1fr; min-height: 27px; border: 1px solid #e6ded1; border-radius: 5px; overflow: hidden; }
+.font-size-controls button, .font-size-controls output, .line-spacing-controls button, .line-spacing-controls output {
   display: grid; place-items: center; min-width: 0; border: 0; color: #28251f; background: #fffdfa; font: 0.75rem/1 var(--serif);
 }
-.font-size-controls button { cursor: pointer; }
-.font-size-controls button + output, .font-size-controls output + button { border-left: 1px solid #e6ded1; }
-.font-size-controls button:disabled { opacity: .45; cursor: default; }
+.font-size-controls button, .line-spacing-controls button { cursor: pointer; }
+.font-size-controls button + output, .font-size-controls output + button,
+.line-spacing-controls button + output, .line-spacing-controls output + button { border-left: 1px solid #e6ded1; }
+.font-size-controls button:disabled, .line-spacing-controls button:disabled { opacity: .45; cursor: default; }
 :root { --reading-scale: 1; }
 body { font-size: calc(16px * var(--reading-scale)); }
 .opera-reading-page[data-act] .libretto-cell,
@@ -2871,4 +2872,23 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
 .opera-reading-page .libretto-row .libretto-cell,
 .opera-reading-page .libretto-row .libretto-cell p {
   line-height: var(--libretto-line-height, 1.55);
+}
+
+
+/* Older line-by-line operas split one singing turn into separate HTML rows.
+   Suppress repeated row padding within those turns. The only verse-line gap
+   is the shared numeric --libretto-line-height, just like multi-line paragraphs. */
+.opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-start) .libretto-cell {
+  padding-top: 0;
+}
+.opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-end) .libretto-cell {
+  padding-bottom: 0;
+}
+@media (max-width: 700px) {
+  .opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-start) {
+    padding-top: 0;
+  }
+  .opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-end) {
+    padding-bottom: 0;
+  }
 }
