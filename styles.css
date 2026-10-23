@@ -1262,8 +1262,10 @@ button { font: inherit; }
   background: #102b40;
 }
 .opera-reading-page .libretto-row--stage-direction {
-  border-left: 2px solid var(--gold);
-  padding-left: 8px;
+  /* A painted edge does not change column widths or move the center divider. */
+  border-left: 0;
+  padding-left: 0;
+  box-shadow: inset 2px 0 var(--gold);
   background: rgba(189, 155, 94, .08);
 }
 .opera-reading-page .libretto-row--stage-direction .libretto-speaker {
@@ -1304,9 +1306,6 @@ button { font: inherit; }
   }
   .opera-reading-page .section-nav-link__label {
     line-height: 1.25;
-  }
-  .opera-reading-page .libretto-row--stage-direction {
-    padding-left: 9px;
   }
 }
 
@@ -2886,6 +2885,8 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
   margin-top: var(--libretto-row-gap, 8px);
 }
 .opera-reading-page .libretto-row--stage-direction {
+  /* Small fixed breathing room, unaffected by the lyric-row gap control. */
+  margin-block: 4px;
   padding-block: 2px;
 }
 .opera-reading-page .libretto-row--stage-direction .libretto-cell {

@@ -47,6 +47,26 @@ test("settings persist row-gap values and stage direction styling is independent
   assert.ok(reader.includes("original.length !== translation.length"));
 });
 
+test("stage-direction highlight shares the lyric column edges and has fixed compact margins", () => {
+  const css = readFileSync(new URL("styles.css", root), "utf8");
+  // A painted edge must not change the grid width or move the bilingual divider.
+  const stageSelector = ".opera-reading-page .libretto-row--stage-direction {";
+  const rules = css.split(stageSelector).slice(1).map(item => item.split("}")[0]);
+  assert.ok(rules.length >= 2, "stage highlight and compact spacing rules are present");
+  const highlight = rules.find(rule => rule.includes("box-shadow:"));
+  assert.ok(highlight, "painted left edge exists");
+  assert.ok(highlight.includes("border-left: 0;"));
+  assert.ok(highlight.includes("padding-left: 0;"));
+  assert.ok(highlight.includes("box-shadow: inset 2px 0 var(--gold);"));
+  assert.ok(!css.includes(stageSelector + "\\n    padding-left: 9px;"),
+    "no mobile indentation on the highlighted row");
+  const compact = rules.find(rule => rule.includes("margin-block: 4px;"));
+  assert.ok(compact, "fixed small margins before and after stage directions");
+  assert.ok(!compact.includes("--libretto-row-gap"));
+  assert.ok(css.includes("margin-top: var(--libretto-row-gap, 8px);"),
+    "adjustable space remains limited to lyric rows");
+});
+
 test("Così and Barbiere both render paired source/translation verses as separate rows", () => {
   resetReaderLocation();
   for (const [slug, act] of [["cosi-fan-tutte", 2], ["il-barbiere-di-siviglia", 1]]) {
