@@ -10,3 +10,7 @@ Reviewed all stored French and English entries. Checked structural ambiguities a
 - Separated trailing short cues from narrative directions. Short cues use square brackets without a label; full directions are unbracketed, with one label per language. All source sung/dialogue words remain; structural headings are metadata and narrative whitespace is normalized.
 
 Verification: exact rendered French–English pairs; all twenty section destinations, including eighteen legacy addresses; translated headings; source heading/speaker corrections; relevant content, presentation and navigation suites. Live visual verification remains pending.
+
+## Four-act structural follow-up — 23 October 2026
+
+Checked 331 / 387 / 244 / 101 bilingual passages (523 / 567 / 411 / 231 sung or spoken source lines), their paired English divisions, the 51 section routes, and the short/full stage-direction distinction. All content pairs remain complete. Removed one escaped tab after “née…” in Carmen’s French Act I dialogue, without changing the spoken words. Added automated coverage for structure and route stability. This is a formatting/integrity review, not an independent critical-edition translation comparison.

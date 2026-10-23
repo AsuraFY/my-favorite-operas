@@ -1,6 +1,6 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-review-1";
+import { carmenActOneScenes } from "./libretto-carmen-act-1.js?v=carmen-whitespace-20261023";
 import { carmenActTwoScenes } from "./libretto-carmen-act-2.js?v=carmen-review-complete-1";
 import { carmenActThreeScenes } from "./libretto-carmen-act-3.js?v=carmen-review-complete-1";
 import { carmenActFourScenes } from "./libretto-carmen-act-4.js?v=carmen-review-complete-1";

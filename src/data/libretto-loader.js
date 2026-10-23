@@ -6,7 +6,7 @@ const loaders = Object.freeze({
   "macbeth": () => import("./libretto-macbeth-bundle.js?v=on-demand-20261023").then(module => module.macbeth),
   "turandot": () => import("./libretto-turandot-bundle.js?v=on-demand-20261023").then(module => module.turandot),
   "le-nozze-di-figaro": () => import("./libretto-le-nozze-di-figaro-bundle.js?v=on-demand-20261023").then(module => module.figaro),
-  "carmen": () => import("./libretto-carmen-bundle.js?v=on-demand-20261023").then(module => module.carmen),
+  "carmen": () => import("./libretto-carmen-bundle.js?v=carmen-whitespace-20261023").then(module => module.carmen),
   "la-boheme": () => import("./libretto-la-boheme-bundle.js?v=on-demand-20261023").then(module => module.laBoheme),
   "madama-butterfly": () => import("./libretto-madama-butterfly-bundle.js?v=on-demand-20261023").then(module => module.madamaButterfly),
   "tosca": () => import("./libretto-tosca-bundle.js?v=on-demand-20261023").then(module => module.tosca),
