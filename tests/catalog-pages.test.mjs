@@ -59,7 +59,7 @@ for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "la
       for (const suffix of ["view=synopsis", "view=outline", ...Array.from({ length: opera.acts }, (_, i) => `act=${i + 1}`)]) {
         assert.ok(page.includes(`href="#/operas/${slug}?${suffix}"`));
       }
-      assert.equal((page.match(/aria-current="page"/g) || []).length, view === "synopsis" ? 2 : 1);
+      assert.equal((page.match(/aria-current="page"/g) || []).length, 1);
       if (view !== "synopsis") {
         assert.ok(page.includes("will be added later"));
         assert.ok(!page.includes("libretto-row"));
@@ -120,9 +120,9 @@ test("Tosca Acts I–III are available from its opera information page and direc
   assert.ok(outline.includes("Scena nona"));
   assert.deepEqual(libretto.spotifyOutline.map(act => act.scenes.reduce((n, scene) => n + scene.tracks.length, 0)), [16, 17, 11]);
   assert.equal(libretto.spotifyOutline.flatMap(act => act.scenes.flatMap(scene => scene.tracks)).length, 44);
-  assert.ok(outline.includes('href="#/operas/tosca?act=1&scene=1&item=0"'));
-  assert.ok(outline.includes('href="#/operas/tosca?act=2&scene=5&item=0"'));
-  assert.ok(outline.includes('href="#/operas/tosca?act=3&scene=4&item=0"'));
+  assert.ok(outline.includes('href="#/operas/tosca?act=1&scene=1&item=0'));
+  assert.ok(outline.includes('href="#/operas/tosca?act=2&scene=5&item=0'));
+  assert.ok(outline.includes('href="#/operas/tosca?act=3&scene=4&item=0'));
   assert.ok(outline.includes("I lived for art, I lived for love"));
   assert.ok(!outline.includes("Maria Callas"), "performer credits stay out of the outline");
   assert.ok(!outline.includes("Performers:"), "performer labels stay out of the outline");

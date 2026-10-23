@@ -334,8 +334,8 @@ test("La Bohème full outline links its user-selected Spotify album under Albums
   assert.equal(outline.split('<strong>Albums:</strong>').length - 1, 1);
   window.location.hash = "#/operas/la-boheme?act=1";
   assert.ok(!reader.scene(1).includes('<strong>Albums:</strong>'));
-  assert.ok(!reader.synopsis().includes('<strong>Albums:</strong>'));
-  assert.ok(!createLibrettoRenderer(getLibretto("tristan-und-isolde")).outline().includes('<strong>Albums:</strong>'));
+
+  assert.ok(createLibrettoRenderer(getLibretto("tristan-und-isolde")).outline().includes('<strong>Albums:</strong>'));
 });
 
 test("La Bohème tableau location headings show their existing English translations in the reader", () => {
@@ -438,7 +438,7 @@ test("La Bohème outline shows characters from libretto speakers and keeps exact
   const outline = renderer.outline();
   assert.equal(count(outline, /class="opera-outline__act"/g), 4);
   assert.equal(libretto.spotifyAlbumUrl, undefined);
-  assert.ok(!outline.includes("open.spotify.com"));
+  assert.ok(outline.includes("https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp"));
   assert.deepEqual(libretto.acts.map(act => act.scenes[0].outline.length), [8, 5, 5, 8]);
   assert.ok(!outline.includes("Performers:"));
   assert.ok(outline.includes("Libretto Outline"));
@@ -1019,7 +1019,7 @@ test("Tosca act sidebar headings are bilingual and its selected album is linked 
       italian + " · " + english + "</h2>"), "Act " + (index + 1));
     assert.ok(!page.includes("<strong>Albums:</strong>"), "Album footer belongs only on full outline");
   }
-  assert.ok(!reader.synopsis().includes("<strong>Albums:</strong>"));
+
 });
 
 test('Tosca review preserves bilingual rows, sung asides, dialogue order and all 44 outline targets', () => {

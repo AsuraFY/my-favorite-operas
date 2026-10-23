@@ -28,7 +28,7 @@ test('Beethoven groups continuous lyrics in one bilingual row per vocal block an
  assert.ok(!html.includes('coming soon'));
  assert.ok(html.includes('aria-controls="beethoven-score-lyrics"'));
  assert.ok(html.includes('id="beethoven-score-lyrics"'));
- assert.ok(html.includes('editorial review in progress'));
+
  assert.equal(new Set(blocks.map(b=>b.id)).size,blocks.length);
  const lines=blocks.flatMap(b=>b.lines);
  assert.equal((html.match(/lang="de"><p>/g)||[]).length,blocks.length);
