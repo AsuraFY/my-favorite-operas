@@ -29,6 +29,7 @@ export function assertSceneRows(page, scene, alignLines = true) {
         .map(text => ({ direction: /^\([^()]*\)$/.test(text), text }));
     const original = parts(turn.original ?? turn.it);
     const translated = parts(turn.translation ?? turn.en);
+    if (!original.some(part => part.text.trim()) && !translated.some(part => part.text.trim())) continue;
     assert.deepEqual(original.map(part => part.direction), translated.map(part => part.direction),
       `Matching lyric/direction order for ${turn.speaker}`);
     for (const part of original) part.direction ? directions++ : lyrics++;
