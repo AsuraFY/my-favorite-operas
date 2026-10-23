@@ -28,8 +28,8 @@ export const tristanActOneScenes = [
           },
           {
             "speaker": "Stimme eines jungen Seemanns",
-            "it": "(Aus der Höhe, wie vom Mast her, vernehmbar) Westwärts schweift der Blick; ostwärts streicht das Schiff. Frisch weht der Wind der Heimat zu: mein irisch Kind, wo weilest du? Sind's deiner Seufzer Wehen, die mir die Segel blähen? Wehe, wehe, du Wind! Weh, ach wehe, mein Kind! Irische Maid, du wilde, minnige Maid!",
-            "en": "(Heard from above, as if from the mast) Westward wanders the gaze; eastward the ship glides. The wind blows fresh toward home: my Irish child, where do you linger? Are your sighs the breath that fills my sails? Blow, blow, you wind! Alas, my child, alas! Irish maiden, you wild, enchanting maid!"
+            "it": "(Aus der Höhe, wie vom Mast her, vernehmbar) Westwärts\nschweift der Blick;\nostwärts\nstreicht das Schiff.\nFrisch weht der Wind\nder Heimat zu:\nmein irisch Kind,\nwo weilest du?\nSind's deiner Seufzer Wehen,\ndie mir die Segel blähen?\nWehe, wehe, du Wind!\nWeh, ach wehe, mein Kind!\nIrische Maid,\ndu wilde, minnige Maid!",
+            "en": "(Heard from above, as if from the mast) Westward\nwanders the gaze;\neastward\nthe ship glides.\nThe wind blows fresh\ntoward home:\nmy Irish child,\nwhere do you linger?\nAre your sighs the breath\nthat fills my sails?\nBlow, blow, you wind!\nAlas, my child, alas!\nIrish maiden,\nyou wild, enchanting maid!"
           },
           {
             "speaker": "Isolde",

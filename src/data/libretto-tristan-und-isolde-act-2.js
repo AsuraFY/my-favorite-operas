@@ -249,8 +249,8 @@ export const tristanActTwoScenes = [
           },
           {
             "speaker": "Beide",
-            "it": "O sink hernieder, Nacht der Liebe, gib Vergessen, dass ich lebe; nimm mich auf in deinen Schoss, löse von der Welt mich los!",
-            "en": "Descend, O night of love; let me forget that I live. Take me into your embrace; release me from the world!"
+            "it": "O sink hernieder,\nNacht der Liebe,\ngib Vergessen,\ndass ich lebe;\nnimm mich auf\nin deinen Schoss,\nlöse von\nder Welt mich los!",
+            "en": "Descend,\nO night of love;\nlet me forget\nthat I live.\nTake me\ninto your embrace;\nrelease me\nfrom the world!"
           },
           {
             "speaker": "Tristan, Isolde, Beide",

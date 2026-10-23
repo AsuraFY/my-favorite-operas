@@ -1,8 +1,8 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-outline-1";
-import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-outline-1";
-import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-outline-1";
+import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-verified-verses-20261023";
+import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-verified-verses-20261023";
+import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-verified-verses-20261023";
 
 export const tristan = {
   slug: "tristan-und-isolde",

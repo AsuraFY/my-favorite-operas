@@ -27,8 +27,8 @@ export const tristanActThreeScenes = [
           },
           {
             "speaker": "Der Hirt",
-            "it": "(leise) Kurwenal! He! Sag, Kurwenal! Hör doch, Freund! Wacht er noch nicht?",
-            "en": "(Softly) Kurwenal! Hey! Tell me, Kurwenal! Listen, friend! Is he still not awake?"
+            "it": "(leise) Kurwenal! He!\nSag, Kurwenal!\nHör doch, Freund!\nWacht er noch nicht?",
+            "en": "(Softly) Kurwenal! Hey!\nTell me, Kurwenal!\nListen, friend!\nIs he still not awake?"
           },
           {
             "speaker": "Kurwenal",
