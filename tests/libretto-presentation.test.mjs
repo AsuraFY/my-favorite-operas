@@ -551,6 +551,19 @@ test("Macbeth sung asides remain lyrics and final scene links render", () => {
 });
 
 // Tristan und Isolde
+test("Tristan full libretto outline links the selected recording under Albums", () => {
+  const libretto = getLibretto("tristan-und-isolde");
+  const url = "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E";
+  assert.deepEqual(libretto.albums, [{ name: "Wagner: Tristan und Isolde", url }]);
+  const reader = createLibrettoRenderer(libretto);
+  const outline = reader.outline();
+  assert.ok(outline.includes('<strong>Albums:</strong> <a href="' + url +
+    '" target="_blank" rel="noopener noreferrer">Wagner: Tristan und Isolde</a>'));
+  assert.ok(!outline.includes("<strong>Outline source:</strong>"));
+  window.location.hash = "#/operas/tristan-und-isolde?act=1";
+  assert.ok(!reader.scene(1).includes("<strong>Albums:</strong>"));
+});
+
 test("Tristan outlines link source passages with bilingual headings and unique participants", () => {
   const tristan = getLibretto("tristan-und-isolde");
   assert.ok(tristan);

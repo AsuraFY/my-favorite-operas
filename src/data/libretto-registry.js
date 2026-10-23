@@ -185,6 +185,7 @@ const barbiere = {
 
 const tristan = {
   slug: "tristan-und-isolde",
+  albums: [{ name: "Wagner: Tristan und Isolde", url: "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E" }],
   threeLineOutline: true,
   sourceSceneOutline: true,
   characterDisplayNames: {"Stimme eines jungen Seemanns": "Young Sailor", "Der Hirt": "Shepherd", "Der Steuermann": "Helmsman", "Stimme Brangänes": "Brangäne", "Marke": "King Marke", "Schiffsvolk": "Ship’s Crew", "Männer": "Men’s Chorus", "Hofleute": "Courtiers", "Frauen": "Women"},

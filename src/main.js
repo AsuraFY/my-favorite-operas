@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=boheme-albums-20261022";
-import { getLibretto } from "./data/libretto-registry.js?v=figaro-stage-cues-20261023";
+import { getLibretto } from "./data/libretto-registry.js?v=tristan-albums-20261023";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
