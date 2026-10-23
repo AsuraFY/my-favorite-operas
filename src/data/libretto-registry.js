@@ -25,7 +25,7 @@ import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-ti
 import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-titles-1";
 import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-titles-1";
 
-import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-stage-paragraph-1";
+import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-stage-cues-20261023";
 
 import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-review-1";
 import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-review-1";

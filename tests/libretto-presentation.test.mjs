@@ -266,6 +266,22 @@ test("Così synopsis, bilingual headings, full outline and deep links", () => {
 });
 
 // Le nozze di Figaro
+test("Figaro Act I short cues use brackets while full directions keep their labels", () => {
+  const libretto = getLibretto("le-nozze-di-figaro");
+  const reader = createLibrettoRenderer(libretto);
+  const directions = libretto.acts[0].scenes.flatMap(scene => scene.sections.flatMap(section =>
+    section.turns.filter(turn => turn.speaker === "Stage direction")));
+  assert.equal(directions.length, 65);
+  assert.equal(directions.filter(turn => turn.shortCue).length, 50);
+  window.location.hash = "#/operas/le-nozze-di-figaro?act=1";
+  const page = reader.scene(1);
+  assert.equal(count(page, /class="libretto-speaker libretto-speaker--stage-direction"/g),
+    2 * (directions.length - 50));
+  assert.ok(page.includes("<p>[vuol riprenderglielo]</p>"));
+  assert.ok(page.includes("<p>[Trying to take it back.]</p>"));
+  assert.ok(page.includes("Stage direction</span><p>[Camera non affatto ammobiliata"));
+});
+
 test("Figaro Act II renders every source line and keeps every deep link on the full act", () => {
   const second = figaro.acts[1];
   const entries = second.scenes.flatMap(scene => scene.sections.flatMap(section => section.turns));

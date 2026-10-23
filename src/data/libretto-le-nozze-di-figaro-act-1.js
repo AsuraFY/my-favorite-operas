@@ -505,6 +505,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "prende il contratto dalle mani di Marcellina",
             "en": "Taking the contract from Marcellina's hands."
           },
@@ -619,6 +620,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Vanno tutte due per partire e s'incontrano alla porta.",
             "en": "Both move to leave and meet at the door."
           }
@@ -794,6 +796,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Marcellina parte",
             "en": "Marcellina exits."
           }
@@ -892,6 +895,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "toglie il nastro di mano a Susanna",
             "en": "Taking the ribbon from Susanna's hand."
           },
@@ -904,6 +908,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "vuol riprenderglielo",
             "en": "Trying to take it back."
           },
@@ -916,6 +921,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "si mette a girare intorno la sedia",
             "en": "Beginning to circle the chair."
           },
@@ -928,6 +934,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "seguita a corrergli dietro, ma poi s'arresta come fosse stanca",
             "en": "She continues to chase him, then stops as though tired."
           },
@@ -1023,6 +1030,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "cerca di mascherar Cherubino",
             "en": "Trying to conceal Cherubino."
           },
@@ -1430,6 +1438,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "approssimandosi al sedile in atto di farla sedere",
             "en": "Approaching the chair to seat her."
           },
@@ -1462,6 +1471,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "staccandosi da tutti due",
             "en": "Pulling away from both of them."
           },
@@ -1543,6 +1553,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "imita il gesto colla vestaglia e scopre il paggio",
             "en": "He repeats the gesture with the dressing gown and uncovers the page."
           },
@@ -1611,6 +1622,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "addita Cherubino che non si muove di loco",
             "en": "Pointing to Cherubino, who remains where he is."
           },
@@ -1720,6 +1732,7 @@ export const figaroActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "tira Cherubino giù dalla sedia",
             "en": "Pulling Cherubino down from the chair."
           },
