@@ -1,4 +1,5 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
+import { LINE_SPACING_CHOICES, applyReadingSpacing } from "./reading-spacing.js?v=reader-spacing-20261023";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=boheme-albums-20261022";
 import { getLibretto } from "./data/libretto-registry.js?v=tristan-albums-20261023";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
@@ -12,6 +13,7 @@ const FONT_PREFERENCE_KEY = "favorite-operas-font-choice";
 const FONT_CHOICES = new Set(["current", "roboto", "system"]);
 const THEME_PREFERENCE_KEY = "favorite-operas-theme-choice";
 const FONT_SIZE_PREFERENCE_KEY = "favorite-operas-font-size";
+const LINE_SPACING_PREFERENCE_KEY = "favorite-operas-line-spacing";
 const THEME_CHOICES = new Set(["day", "night"]);
 const MIN_FONT_SIZE = 12;
 const MAX_FONT_SIZE = 24;
@@ -49,11 +51,13 @@ function readFontSize() {
   }
 }
 let activeFontSize = readFontSize();
+let activeLineSpacing = readPreference(LINE_SPACING_PREFERENCE_KEY, new Set(Object.keys(LINE_SPACING_CHOICES)), "comfortable");
 let settingsOutsidePointerHandler = null;
 document.documentElement.dataset.theme = activeTheme;
 document.documentElement.dataset.fontSize = String(activeFontSize);
 document.documentElement.style.fontSize = `${activeFontSize}px`;
 document.documentElement.style.setProperty("--reading-scale", String(activeFontSize / 16));
+applyReadingSpacing(document.documentElement, activeLineSpacing);
 
 const arrow = `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5"/></svg>`;
 
@@ -97,6 +101,10 @@ function header(active) {
               <output data-font-size-value aria-live="polite">${activeFontSize}</output>
               <button type="button" data-font-size-step="1" aria-label="Increase font size" ${activeFontSize === MAX_FONT_SIZE ? "disabled" : ""}>A+</button>
             </div>
+          </div>
+          <div class="settings-group">
+            <label class="settings-label" for="line-spacing-picker">Libretto line spacing</label>
+            <select id="line-spacing-picker" data-line-spacing-picker aria-label="Libretto line spacing"><option value="compact" ${activeLineSpacing === "compact" ? "selected" : ""}>Compact (1.40)</option><option value="comfortable" ${activeLineSpacing === "comfortable" ? "selected" : ""}>Comfortable (1.55)</option><option value="spacious" ${activeLineSpacing === "spacious" ? "selected" : ""}>Spacious (1.75)</option></select>
           </div>
         </section>
       </div>
@@ -371,6 +379,7 @@ function shell(content, active) {
   const siteHeader = app.querySelector(".site-header");
   const mobileSearchToggle = app.querySelector("[data-mobile-search-toggle]");
   const fontPicker = app.querySelector("[data-font-picker]");
+  const lineSpacingPicker = app.querySelector("[data-line-spacing-picker]");
   const saveChoice = (key, value) => {
     try { localStorage.setItem(key, value); } catch { /* The preference still applies for this page. */ }
   };
@@ -406,6 +415,11 @@ function shell(content, active) {
     activeFontChoice = fontPicker.value;
     document.documentElement.dataset.fontChoice = activeFontChoice;
     saveChoice(FONT_PREFERENCE_KEY, activeFontChoice);
+  });
+  lineSpacingPicker?.addEventListener("change", () => {
+    if (!Object.hasOwn(LINE_SPACING_CHOICES, lineSpacingPicker.value)) return;
+    activeLineSpacing = applyReadingSpacing(document.documentElement, lineSpacingPicker.value);
+    saveChoice(LINE_SPACING_PREFERENCE_KEY, activeLineSpacing);
   });
   app.querySelectorAll("[data-theme-choice]").forEach(button => {
     button.addEventListener("click", () => {

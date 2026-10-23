@@ -2864,3 +2864,11 @@ body.musicals-theme .musical-editorial .musical-score-translation-toggle:hover {
 }
 body.musicals-theme .musical-editorial .musical-description-toggle {color:var(--music-accent)}
 body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--music-rose)}
+
+
+/* Reader-only line spacing: Italian and English share one vertical rhythm.
+   Keep the selector after mobile and stage-direction styles so it covers both. */
+.opera-reading-page .libretto-row .libretto-cell,
+.opera-reading-page .libretto-row .libretto-cell p {
+  line-height: var(--libretto-line-height, 1.55);
+}
