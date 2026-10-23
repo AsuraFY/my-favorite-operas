@@ -366,7 +366,7 @@ export const tristanActTwoScenes = [
       {
         "title": "O sink hernieder, Nacht der Liebe",
         "translation": "Descend, O night of love",
-        "match": "O sink hernieder, Nacht der Liebe, gib Vergessen, dass ich lebe; nimm mich auf in deinen Schoss, löse von der Welt mich los!",
+        "match": "O sink hernieder,",
         "sourceTurn": 23,
         "speaker": "Beide",
         "characters": [

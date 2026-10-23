@@ -104,7 +104,7 @@ export const tristanActOneScenes = [
       {
         "title": "Westwärts schweift der Blick",
         "translation": "My gaze drifts westward",
-        "match": "(Aus der Höhe, wie vom Mast her, vernehmbar) Westwärts schweift der Blick; ostwärts streicht das Schiff. Frisch weht der Wind der Heimat zu: mein irisch Kind, wo weilest du? Sind's deiner Seufzer Wehen, die mir die Segel blähen? Wehe, wehe, du Wind! Weh, ach wehe, mein Kind! Irische Maid, du wilde, minnige Maid!",
+        "match": "(Aus der Höhe, wie vom Mast her, vernehmbar) Westwärts",
         "sourceTurn": 1,
         "speaker": "Stimme eines jungen Seemanns",
         "characters": [

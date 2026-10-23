@@ -37,7 +37,7 @@ test("all Tristan acts retain complete, paired German and English passages", () 
         assert.ok(scene.sections.some(section => section.turns.some((turn, index) =>
           (entry.sourceTurn == null || entry.sourceTurn === index) &&
           (entry.speaker == null || entry.speaker === turn.speaker) &&
-          turn.it.replace(/\n/g, " ").includes(entry.match))),
+          turn.it.includes(entry.match))),
           `Act ${act.number}, Scene ${scene.number}: unmatched outline ${entry.title}`);
       }
     }
@@ -63,5 +63,7 @@ test("one source-verified verse passage per act retains its bilingual line pairi
       `Act ${act}: expected source verse divisions in reader`);
     assert.ok(page.includes(`id="libretto-scene-${act}-${scene.number}"`),
       "Existing scene deep links must be preserved");
+    assert.ok(page.includes('class="libretto-track-heading"'),
+      "Outline target must still render as a titled, linked passage");
   }
 });

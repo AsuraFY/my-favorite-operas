@@ -343,7 +343,7 @@ export const tristanActThreeScenes = [
       {
         "title": "Kurwenal! He! Sag, Kurwenal! – Die alte Weise; was weckt sie mich?",
         "translation": "Kurwenal! Hey! Tell me, Kurwenal! — The old tune; what wakes me?",
-        "match": "(leise) Kurwenal! He! Sag, Kurwenal! Hör doch, Freund! Wacht er noch nicht?",
+        "match": "(leise) Kurwenal! He!",
         "sourceTurn": 1,
         "speaker": "Der Hirt",
         "characters": [
