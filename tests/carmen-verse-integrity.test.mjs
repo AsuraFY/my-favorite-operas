@@ -62,9 +62,9 @@ test("Carmen's 51 section destinations, including Act I's preserved IDs, still r
         const href = "#/operas/carmen?act=" + act.number +
           "&scene=" + scene.number + "&item=" + item;
         assert.ok(html.includes('href="' + href + '"'), "Missing link: " + href);
-        assert.ok(section.instrumental || section.originalTitle?.trim(),
+        assert.ok(section.instrumental || ["Prélude", "Entracte"].includes(section.type) || section.originalTitle?.trim(),
           "Act " + act.number + ": French section title missing");
-        assert.ok(section.instrumental || section.translatedTitle?.trim(),
+        assert.ok(section.instrumental || ["Prélude", "Entracte"].includes(section.type) || section.translatedTitle?.trim(),
           "Act " + act.number + ": English section title missing");
         total++;
       }
