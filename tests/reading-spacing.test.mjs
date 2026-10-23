@@ -32,7 +32,7 @@ test("numeric stepper controls the space between rows, not line height", () => {
   assert.deepEqual(writes, [["--libretto-row-gap", "14px"]]);
 });
 
-test("settings persist row-gap values and stage direction styling is independent", () => {
+test("settings persist row-gap values while stage direction text stays compact", () => {
   const main = readFileSync(new URL("src/main.js", root), "utf8");
   const css = readFileSync(new URL("styles.css", root), "utf8");
   const reader = readFileSync(new URL("src/libretto-reader.js", root), "utf8");
@@ -47,7 +47,7 @@ test("settings persist row-gap values and stage direction styling is independent
   assert.ok(reader.includes("original.length !== translation.length"));
 });
 
-test("stage-direction highlight shares the lyric column edges and has fixed compact margins", () => {
+test("character names and stage-direction margins share the adjustable 10px minimum", () => {
   const css = readFileSync(new URL("styles.css", root), "utf8");
   // A painted edge must not change the grid width or move the bilingual divider.
   const stageSelector = ".opera-reading-page .libretto-row--stage-direction {";
@@ -60,11 +60,19 @@ test("stage-direction highlight shares the lyric column edges and has fixed comp
   assert.ok(highlight.includes("box-shadow: inset 2px 0 var(--gold);"));
   assert.ok(!css.includes(stageSelector + "\\n    padding-left: 9px;"),
     "no mobile indentation on the highlighted row");
-  const compact = rules.find(rule => rule.includes("margin-block: 10px;"));
-  assert.ok(compact, "fixed small margins before and after stage directions");
-  assert.ok(!compact.includes("--libretto-row-gap"));
+  const surrounding = rules.find(rule => rule.includes("margin-block: var(--libretto-paragraph-gap);"));
+  assert.ok(surrounding, "stage directions have matching adjustable margins above and below");
+  assert.ok(surrounding.includes("padding-block: 2px;"), "stage directions retain compact internal padding");
+  assert.ok(css.includes("--libretto-paragraph-gap: calc(10px + var(--libretto-row-gap, 8px));"),
+    "at zero row gap, stage directions and character names still have a 10px minimum");
+  assert.ok(css.includes("margin-top: var(--libretto-paragraph-gap);"),
+    "character-start rows share the same paragraph-gap token");
+  assert.ok(css.includes(":has(> .libretto-cell--german > .libretto-speaker)"),
+    "spacing is added before rows with a visible original-language character name");
+  assert.ok(css.includes(":not(:has(> .libretto-cell--german > .libretto-speaker))"),
+    "ordinary paired lyric rows still use the selected gap alone");
   assert.ok(css.includes("margin-top: var(--libretto-row-gap, 8px);"),
-    "adjustable space remains limited to lyric rows");
+    "ordinary lyric spacing still follows the row-gap control");
 });
 
 test("Così and Barbiere both render paired source/translation verses as separate rows", () => {

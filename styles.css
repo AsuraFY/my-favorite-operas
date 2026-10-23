@@ -2867,9 +2867,14 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
 
 
 
-/* A single paired-verse layout for all operas. The setting only alters space
-   between consecutive lyric rows. Source/English line height stays readable,
-   and full / inline stage directions remain compact at all values. */
+/* All opera readers share one adjustable rhythm:
+   - lyric-to-lyric: the selected gap
+   - before a visible character label: 10px minimum + selected gap
+   - before and after a stage direction: 10px minimum + selected gap
+   Stage-direction text remains compact, independent of this preference. */
+.opera-reading-page {
+  --libretto-paragraph-gap: calc(10px + var(--libretto-row-gap, 8px));
+}
 .opera-reading-page .libretto-row:not(.libretto-row--stage-direction) {
   padding-block: 0;
 }
@@ -2881,12 +2886,16 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
   line-height: 1.4;
 }
 .opera-reading-page .libretto-row:not(.libretto-row--stage-direction)
-  + .libretto-row:not(.libretto-row--stage-direction) {
+  + .libretto-row:not(.libretto-row--stage-direction):not(:has(> .libretto-cell--german > .libretto-speaker)) {
   margin-top: var(--libretto-row-gap, 8px);
 }
+/* Every visible character name begins a new paragraph, including at 0px. */
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction):has(> .libretto-cell--german > .libretto-speaker) {
+  margin-top: var(--libretto-paragraph-gap);
+}
 .opera-reading-page .libretto-row--stage-direction {
-  /* Clear separation above and below, independent of lyric-row gap settings. */
-  margin-block: 10px;
+  /* Fixed 10px minimum on both sides, scaling with the lyric spacing control. */
+  margin-block: var(--libretto-paragraph-gap);
   padding-block: 2px;
 }
 .opera-reading-page .libretto-row--stage-direction .libretto-cell {
