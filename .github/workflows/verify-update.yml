@@ -5,6 +5,11 @@ on:
     branches: [Update]
   workflow_dispatch:
 
+# Prevent older runs from publishing after newer commits arrive.
+concurrency:
+  group: pages-update
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -19,3 +24,28 @@ jobs:
           node-version: '22'
       - name: Run complete regression tests
         run: npm test
+
+  deploy:
+    name: Publish verified Update preview
+    # A failed or cancelled test job skips this deployment entirely.
+    needs: test
+    if: github.ref == 'refs/heads/Update'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload tested static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4
