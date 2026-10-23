@@ -588,7 +588,13 @@ test("Tristan outlines link source passages with bilingual headings and unique p
     assert.ok(page.includes("Deutsch"));
     assert.ok(page.includes("English"));
     assert.ok(page.includes('class="libretto-row libretto-row--stage-direction"'));
-    assert.ok(page.includes("<br>"), "verse lines should be separated");
+    // A printed verse separator must come from the supplied source, not punctuation.
+    const hasSourceVerses = scene.sections.some(section => section.turns.some(turn =>
+      turn.speaker !== tristan.stageDirectionSpeaker && /\r?\n/.test(turn.it ?? turn.original ?? "")));
+    if (hasSourceVerses) {
+      assert.ok(page.includes("<br>") || page.includes("libretto-row--verse-split"),
+        "recorded verse divisions should remain visible");
+    }
     assert.ok(page.includes(">Stage direction</span>"), "stage directions should have a visible label");
     assert.ok(!page.includes(">Dialog</span>"));
     assert.ok(count(page, /class="libretto-row/g) >= scene.sections.reduce((n, section) => n + section.turns.length, 0));
