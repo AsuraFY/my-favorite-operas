@@ -1,7 +1,7 @@
 // Each complete opera has its own import graph; home and directory stay lean.
 const loaders = Object.freeze({
   "cosi-fan-tutte": () => import("./libretto-cosi-fan-tutte-bundle.js?v=on-demand-20261023").then(module => module.cosi),
-  "il-barbiere-di-siviglia": () => import("./libretto-il-barbiere-di-siviglia-bundle.js?v=on-demand-20261023").then(module => module.barbiere),
+  "il-barbiere-di-siviglia": () => import("./libretto-il-barbiere-di-siviglia-bundle.js?v=barbiere-verse-review-20261023").then(module => module.barbiere),
   "tristan-und-isolde": () => import("./libretto-tristan-und-isolde-bundle.js?v=on-demand-20261023").then(module => module.tristan),
   "macbeth": () => import("./libretto-macbeth-bundle.js?v=on-demand-20261023").then(module => module.macbeth),
   "turandot": () => import("./libretto-turandot-bundle.js?v=on-demand-20261023").then(module => module.turandot),

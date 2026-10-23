@@ -1,7 +1,7 @@
 // Compatibility registry for offline checks and Node regression tests.
 // The browser instead imports individual operas through libretto-loader.js.
 import { cosi } from "./libretto-cosi-fan-tutte-bundle.js?v=on-demand-20261023";
-import { barbiere } from "./libretto-il-barbiere-di-siviglia-bundle.js?v=on-demand-20261023";
+import { barbiere } from "./libretto-il-barbiere-di-siviglia-bundle.js?v=barbiere-verse-review-20261023";
 import { tristan } from "./libretto-tristan-und-isolde-bundle.js?v=on-demand-20261023";
 import { macbeth } from "./libretto-macbeth-bundle.js?v=on-demand-20261023";
 import { turandot } from "./libretto-turandot-bundle.js?v=on-demand-20261023";
