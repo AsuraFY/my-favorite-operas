@@ -64,6 +64,6 @@ test('All three Samson act routes render their prepared libretto', () => {
   vm.createContext(context);vm.runInContext(fn,context);
   for (const n of [1,2,3]) {
     context.window.location.hash=`#/operas/samson-et-dalila?act=${n}`;
-    assert.equal(context.operaPage(libretto.opera),'PREPARED ACT');
+    assert.equal(context.operaPage(libretto.opera, libretto),'PREPARED ACT');
   }
 });
