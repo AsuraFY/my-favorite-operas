@@ -80,3 +80,17 @@ export function assertActTargets(reader, libretto, act) {
     offset += scene.sections.length;
   }
 }
+
+export function expectedPairedRows(turns) {
+  return turns.flatMap(turn => {
+    const direction = turn.speaker === "Stage direction";
+    const original = String(turn.original ?? turn.it ?? "");
+    const english = String(turn.translation ?? turn.en ?? "");
+    if (direction) return [[`[${original}]`.split("\n").join("<br>"), `[${english}]`.split("\n").join("<br>"), true]];
+    const originalLines = original.split("\n"), englishLines = english.split("\n");
+    if (originalLines.length > 1 && originalLines.length === englishLines.length) {
+      return originalLines.map((line, i) => [line, englishLines[i], false]);
+    }
+    return [[original.split("\n").join("<br>"), english.split("\n").join("<br>"), false]];
+  });
+}

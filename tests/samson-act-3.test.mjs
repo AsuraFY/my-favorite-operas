@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {getLibretto} from '../src/data/libretto-registry.js';
 import {createLibrettoRenderer} from '../src/libretto-reader.js';
-import {assertActTargets, renderedVersePairs, resetReaderLocation} from './helpers/libretto-helpers.mjs';
+import {assertActTargets, renderedVersePairs, expectedPairedRows, resetReaderLocation} from './helpers/libretto-helpers.mjs';
 const work=getLibretto('samson-et-dalila');
 const act=work.acts[2];
 const sections=act.scenes.flatMap(s=>s.sections);
@@ -33,10 +33,7 @@ test('Samson III preserves the complete French text, two tableaux and 211 transl
 test('Samson III renders whole vocal turns, sung parenthetical variants, the Bacchanale and the ending',()=>{
  window.location.hash='#/operas/samson-et-dalila?act=3';
  const page=createLibrettoRenderer(work).scene(1);
- assert.deepEqual(renderedVersePairs(page),turns.map(t=>{
-  const f=v=>(t.speaker === "Stage direction"?`[${v}]`:v).split('\n').join('<br>');
-  return [f(t.original),f(t.translation),t.speaker==='Stage direction'];
- }));
+ assert.deepEqual(renderedVersePairs(page),expectedPairedRows(turns));
  const duo=sections.find(s=>s.originalTitle==='Gloire à Dagon vainqueur !');
  assert.deepEqual(duo.participants,['Dalila','High Priest of Dagon','Philistines','Samson']);
  assert.ok(page.includes('Il aidait ma (ta) faiblesse'));

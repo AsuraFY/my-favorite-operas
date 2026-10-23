@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {getLibretto} from '../src/data/libretto-registry.js';
 import {createLibrettoRenderer} from '../src/libretto-reader.js';
-import {assertActTargets, renderedVersePairs, resetReaderLocation} from './helpers/libretto-helpers.mjs';
+import {assertActTargets, renderedVersePairs, expectedPairedRows, resetReaderLocation} from './helpers/libretto-helpers.mjs';
 const work=getLibretto('samson-et-dalila');
 const act=work.acts[1];
 const sections=act.scenes.flatMap(s=>s.sections);
@@ -31,10 +31,7 @@ test('Samson II preserves all three source scenes, 303 sung lines and translated
 test('Samson II renders whole vocal turns, including the replies within Mon cœur and the final betrayal',()=>{
  window.location.hash='#/operas/samson-et-dalila?act=2';
  const page=createLibrettoRenderer(work).scene(1);
- assert.deepEqual(renderedVersePairs(page),turns.map(t=>{
-  const f=v=>(t.speaker === "Stage direction"?`[${v}]`:v).split('\n').join('<br>');
-  return [f(t.original),f(t.translation),t.speaker==='Stage direction'];
- }));
+ assert.deepEqual(renderedVersePairs(page),expectedPairedRows(turns));
  const aria=sections.find(s=>s.originalTitle==='Mon cœur s’ouvre à ta voix');
  assert.deepEqual(aria.turns.filter(t=>t.speaker!=='Stage direction').map(t=>t.speaker),['DALILA','SAMSON','DALILA','SAMSON']);
  assert.ok(page.includes('Trahison !') && page.includes('Betrayal!'));

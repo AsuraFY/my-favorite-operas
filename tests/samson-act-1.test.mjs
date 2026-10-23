@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import { getLibretto } from '../src/data/libretto-registry.js';
 import { createLibrettoRenderer } from '../src/libretto-reader.js';
-import { assertActTargets, renderedVersePairs, resetReaderLocation } from './helpers/libretto-helpers.mjs';
+import { assertActTargets, renderedVersePairs, expectedPairedRows, resetReaderLocation } from './helpers/libretto-helpers.mjs';
 const libretto = getLibretto('samson-et-dalila');
 const act = libretto.acts[0];
 const sections = act.scenes.flatMap(scene => scene.sections);
@@ -36,11 +36,7 @@ test('Samson Act I preserves the checked French source, six scenes and 322 trans
 test('Samson renders each complete vocal turn once with paired line breaks and separate stage directions', () => {
   window.location.hash='#/operas/samson-et-dalila?act=1';
   const page=createLibrettoRenderer(libretto).scene(1);
-  const expected=turns.map(t => {
-    const direction=t.speaker==='Stage direction';
-    const wrap=s => t.speaker === "Stage direction" ? `[${s}]` : s;
-    return [wrap(t.original).split('\n').join('<br>'),wrap(t.translation).split('\n').join('<br>'),direction];
-  });
+  const expected = expectedPairedRows(turns);
   assert.deepEqual(renderedVersePairs(page),expected);
   assert.match(page,/LE VIEILLARD HÉBREU/);
   assert.match(page,/Old Hebrew/);
