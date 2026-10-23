@@ -24,6 +24,17 @@ jobs:
           node-version: '22'
       - name: Run complete regression tests
         run: npm test
+      - name: Install headless browser driver
+        run: npm install --no-save --no-package-lock playwright-core@1.56.1
+      - name: Check real desktop and mobile reader layout
+        run: node tests/browser-visual-smoke.mjs
+      - name: Attach visual screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: opera-browser-review
+          path: test-output/visual/
+          if-no-files-found: warn
 
   deploy:
     name: Publish verified Update preview
