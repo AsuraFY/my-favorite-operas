@@ -50,9 +50,10 @@ test("settings persist row-gap values while stage direction text stays compact",
 
 test("night mode styles the spacing stepper and font-size controls identically", () => {
   const css = readFileSync(new URL("styles.css", root), "utf8");
-  const nightControlColors = css.match(
-    /html\[data-theme="night"\] \.font-size-controls button,\s*html\[data-theme="night"\] \.font-size-controls output,\s*html\[data-theme="night"\] \.line-spacing-controls button,\s*html\[data-theme="night"\] \.line-spacing-controls output \{([^}]*)\}/
-  );
+  const colorRules = [...css.matchAll(
+    /html\[data-theme="night"\] \.font-size-controls button,\s*html\[data-theme="night"\] \.font-size-controls output,\s*html\[data-theme="night"\] \.line-spacing-controls button,\s*html\[data-theme="night"\] \.line-spacing-controls output \{([^}]*)\}/g
+  )];
+  const nightControlColors = colorRules.at(-1);
   assert.ok(nightControlColors, "both steppers share final night-theme foreground and background");
   assert.match(nightControlColors[1], /color: var\(--night-text\);/);
   assert.match(nightControlColors[1], /background-color: #1a2026;/);
