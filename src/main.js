@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { MIN_ROW_GAP, MAX_ROW_GAP, DEFAULT_ROW_GAP, normalizeRowGap, migrateLineSpacing, stepRowGap, applyReadingSpacing } from "./reading-spacing.js?v=lyric-row-gap-20261023";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=lyric-row-gap-20261023";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=verified-lyric-lines-20261023";
 import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=on-demand-20261023";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";

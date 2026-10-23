@@ -373,14 +373,11 @@ function renderSynopsisPage() {
 function sectionParticipantCredits(section, act, sceneNumber) {
   return renderCharacterCredits(sectionCharacterNames(section, act, sceneNumber));
 }
-function formatLibrettoText(value, breakVerseLines=true) {
-  let text = String(value || "").replace(/\r/g, "").trim();
-  if (breakVerseLines) {
-    text = text.replace(/([,;:!?])\s+/g, "$1\n")
-      .replace(/([.])\s+(?=[A-ZÄÖÜ„“«])/g, "$1\n")
-      .replace(/\s+—\s+/g, "\n— ");
-  }
-  return text.split(/\n+/).map(line => escapeHtml(line.trim())).filter(Boolean).join("<br>");
+// Only verified line divisions in the source may produce verse breaks.
+// Punctuation is never evidence of an editorial line boundary.
+function formatLibrettoText(value) {
+  const text = String(value ?? "").replace(/\r\n?/g, "\n").trim();
+  return text.split("\n").map(line => escapeHtml(line.trim())).join("<br>");
 }
 // Bracketing is presentation-only; shortCue explicitly controls the label.
 function bracketStageDirection(value) {
@@ -457,8 +454,8 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       const translation = bracketStageDirection(translatedText);
       const stageDirectionLabel = turn.shortCue ? '' : '<span class="libretto-speaker libretto-speaker--stage-direction">Stage direction</span>';
       return anchorFirst(['<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german">' +
-        stageDirectionLabel + '<p>' + formatLibrettoText(original, false) + '</p></div><div class="libretto-cell libretto-cell--english">' +
-        stageDirectionLabel + '<p>' + formatLibrettoText(translation, false) + '</p></div></div>']);
+        stageDirectionLabel + '<p>' + formatLibrettoText(original) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+        stageDirectionLabel + '<p>' + formatLibrettoText(translation) + '</p></div></div>']);
     }
     const originalParts = splitInlineDirections(turn.original ?? turn.it ?? "", turn.literalText, turn.inlineDirections);
     const translatedParts = splitInlineDirections(turn.translation ?? turn.en ?? "", turn.literalText, turn.inlineDirections);
@@ -477,14 +474,14 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       const isDirection = originalPart.type === "direction" || translatedPart.type === "direction";
       if (isDirection) {
         output.push('<div class="libretto-row libretto-row--stage-direction"><div class="libretto-cell libretto-cell--german"><p>' +
-          formatLibrettoText(bracketStageDirection(originalPart.value), false) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
-          formatLibrettoText(bracketStageDirection(translatedPart.value), false) + '</p></div></div>');
+          formatLibrettoText(bracketStageDirection(originalPart.value)) + '</p></div><div class="libretto-cell libretto-cell--english"><p>' +
+          formatLibrettoText(bracketStageDirection(translatedPart.value)) + '</p></div></div>');
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
         output.push('<div class="libretto-row' + verseRowClass + '"><div class="libretto-cell libretto-cell--german">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(originalSpeaker) + '</span>') + '<p>' +
-          formatLibrettoText(originalPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+          formatLibrettoText(originalPart.value) + '</p></div><div class="libretto-cell libretto-cell--english">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span>') + '<p>' +
-          formatLibrettoText(translatedPart.value, !(turn.preserveLineBreaks || libretto.preserveLineBreaks)) + '</p></div></div>');
+          formatLibrettoText(translatedPart.value) + '</p></div></div>');
       }
     }
     return anchorFirst(output);
