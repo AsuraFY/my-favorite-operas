@@ -1,5 +1,8 @@
 # Samson et Dalila — Act I, 21 October 2026
 
+> **Current status (23 October 2026):** All three acts are now completed and available. The statement below that Acts II–III remain unprepared describes the original Act I review stage, not the current website. A three-act structural audit verified 205 bilingual passages, 836 sung-line pairs and 31 outline routes; new automated integrity coverage is recorded in `tests/samson-verse-integrity.test.mjs`. The original text and translations were not altered by this audit.
+
+
 ## Profile and scope
 
 - Route: `#/operas/samson-et-dalila?act=1`; French with a fresh English translation.
