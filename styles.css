@@ -2885,8 +2885,8 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
   margin-top: var(--libretto-row-gap, 8px);
 }
 .opera-reading-page .libretto-row--stage-direction {
-  /* Small fixed breathing room, unaffected by the lyric-row gap control. */
-  margin-block: 4px;
+  /* Clear separation above and below, independent of lyric-row gap settings. */
+  margin-block: 10px;
   padding-block: 2px;
 }
 .opera-reading-page .libretto-row--stage-direction .libretto-cell {

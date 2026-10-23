@@ -60,7 +60,7 @@ test("stage-direction highlight shares the lyric column edges and has fixed comp
   assert.ok(highlight.includes("box-shadow: inset 2px 0 var(--gold);"));
   assert.ok(!css.includes(stageSelector + "\\n    padding-left: 9px;"),
     "no mobile indentation on the highlighted row");
-  const compact = rules.find(rule => rule.includes("margin-block: 4px;"));
+  const compact = rules.find(rule => rule.includes("margin-block: 10px;"));
   assert.ok(compact, "fixed small margins before and after stage directions");
   assert.ok(!compact.includes("--libretto-row-gap"));
   assert.ok(css.includes("margin-top: var(--libretto-row-gap, 8px);"),
