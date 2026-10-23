@@ -47,6 +47,28 @@ test("settings persist row-gap values while stage direction text stays compact",
   assert.ok(reader.includes("original.length !== translation.length"));
 });
 
+
+test("night mode styles the spacing stepper and font-size controls identically", () => {
+  const css = readFileSync(new URL("styles.css", root), "utf8");
+  const nightControlColors = css.match(
+    /html\[data-theme="night"\] \.font-size-controls button,\s*html\[data-theme="night"\] \.font-size-controls output,\s*html\[data-theme="night"\] \.line-spacing-controls button,\s*html\[data-theme="night"\] \.line-spacing-controls output \{([^}]*)\}/
+  );
+  assert.ok(nightControlColors, "both steppers share final night-theme foreground and background");
+  assert.match(nightControlColors[1], /color: var\(--night-text\);/);
+  assert.match(nightControlColors[1], /background-color: #1a2026;/);
+  assert.match(nightControlColors[1], /border-color: var\(--night-border\);/);
+  const finalNightBorder = css.match(
+    /html\[data-theme="night"\] \.settings-group,\s*html\[data-theme="night"\] \.theme-choices,\s*html\[data-theme="night"\] \.font-size-controls,([^{]*)\{ border-color: var\(--night-border\); \}/
+  );
+  assert.ok(finalNightBorder, "night mode overrides shared stepper outlines and separators");
+  for (const selector of [
+    ".line-spacing-controls", ".line-spacing-controls button + output",
+    ".line-spacing-controls output + button"
+  ]) assert.ok(finalNightBorder[1].includes(selector), selector);
+  assert.ok(css.includes(".font-size-controls, .line-spacing-controls { display: grid;"),
+    "existing day-theme control layout remains shared");
+});
+
 test("character names and stage-direction margins share the adjustable 10px minimum", () => {
   const css = readFileSync(new URL("styles.css", root), "utf8");
   // A painted edge must not change the grid width or move the bilingual divider.

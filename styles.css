@@ -2001,10 +2001,13 @@ html[data-theme="night"] .section-nav-link, html[data-theme="night"] .scene-pane
 html[data-theme="night"] .libretto-row, html[data-theme="night"] .libretto-section__label { border-color: var(--line); }
 html[data-theme="night"] .settings-panel { background: #242a2f; border-color: #45494b; color: #ece7df; }
 html[data-theme="night"] .settings-label, html[data-theme="night"] .theme-choices button,
-html[data-theme="night"] .font-size-controls button, html[data-theme="night"] .font-size-controls output { color: #ece7df; background: #1a1f23; }
+html[data-theme="night"] .font-size-controls button, html[data-theme="night"] .font-size-controls output,
+html[data-theme="night"] .line-spacing-controls button, html[data-theme="night"] .line-spacing-controls output { color: #ece7df; background: #1a1f23; }
 html[data-theme="night"] .theme-choices, html[data-theme="night"] .theme-choices button + button,
 html[data-theme="night"] .settings-group, html[data-theme="night"] .font-size-controls,
-html[data-theme="night"] .font-size-controls button + output, html[data-theme="night"] .font-size-controls output + button { border-color: #55595b; }
+html[data-theme="night"] .line-spacing-controls,
+html[data-theme="night"] .font-size-controls button + output, html[data-theme="night"] .font-size-controls output + button,
+html[data-theme="night"] .line-spacing-controls button + output, html[data-theme="night"] .line-spacing-controls output + button { border-color: #55595b; }
 html[data-theme="night"] .theme-choices button[aria-pressed="true"] { background: #4a3d2a; }
 html[data-theme="night"] .settings-group select { color: #ece7df; background-color: #1a1f23; border-color: #55595b; }
 @media (max-width: 700px) {
@@ -2306,7 +2309,9 @@ html[data-theme="night"] .settings-panel,
 html[data-theme="night"] .settings-panel select,
 html[data-theme="night"] .theme-choices button,
 html[data-theme="night"] .font-size-controls button,
-html[data-theme="night"] .font-size-controls output {
+html[data-theme="night"] .font-size-controls output,
+html[data-theme="night"] .line-spacing-controls button,
+html[data-theme="night"] .line-spacing-controls output {
   color: var(--night-text);
   background-color: #1a2026;
   border-color: var(--night-border);
@@ -2320,7 +2325,12 @@ html[data-theme="night"] .theme-choices button[aria-pressed="true"] { background
 html[data-theme="night"] .settings-label { color: var(--night-text); }
 html[data-theme="night"] .settings-group,
 html[data-theme="night"] .theme-choices,
-html[data-theme="night"] .font-size-controls { border-color: var(--night-border); }
+html[data-theme="night"] .font-size-controls,
+html[data-theme="night"] .line-spacing-controls,
+html[data-theme="night"] .font-size-controls button + output,
+html[data-theme="night"] .font-size-controls output + button,
+html[data-theme="night"] .line-spacing-controls button + output,
+html[data-theme="night"] .line-spacing-controls output + button { border-color: var(--night-border); }
 html[data-theme="night"] .site-header-search input,
 html[data-theme="night"] .opera-header-search input { color: #fff; }
 html[data-theme="night"] .directory-sort,
