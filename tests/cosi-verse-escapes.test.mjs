@@ -14,10 +14,10 @@ test("Così Act I Fiordiligi's eight-line passage uses real bilingual verse boun
   }
   assert.ok(found, "Fiordiligi passage is present");
   assert.equal(found.turn.speaker, "Fiordiligi");
-  assert.equal(found.turn.it.split("\\n").length, 8);
-  assert.equal(found.turn.en.split("\\n").length, 8);
-  assert.ok(!found.turn.it.includes(String.raw`\\n`));
-  assert.ok(!found.turn.en.includes(String.raw`\\n`));
+  assert.equal(found.turn.it.split("\n").length, 8);
+  assert.equal(found.turn.en.split("\n").length, 8);
+  assert.ok(!found.turn.it.includes(String.raw`\n`));
+  assert.ok(!found.turn.en.includes(String.raw`\n`));
   globalThis.window = { location: { hash: "#/operas/cosi-fan-tutte?act=1" } };
   const page = createLibrettoRenderer(opera).scene(found.scene.number);
   assert.ok(page.includes("Fuori di questo loco"));
