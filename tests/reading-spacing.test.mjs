@@ -131,17 +131,16 @@ test("Così and Barbiere both render paired source/translation verses as separat
 });
 
 test("unequal original and translated line counts never discard translation text", () => {
-  const libretto = getLibretto("il-barbiere-di-siviglia");
-  const mismatched = libretto.acts.flatMap(a => a.scenes.flatMap(s => s.sections.flatMap(
-    section => section.turns.filter(turn => turn.speaker !== "Stage direction" &&
-      String(turn.it ?? turn.original ?? "").split("\n").length !==
-      String(turn.en ?? turn.translation ?? "").split("\n").length)
-  )));
-  assert.ok(mismatched.length > 0);
+  // Create a controlled mismatch without relying on an actual libretto defect.
+  const libretto = structuredClone(getLibretto("il-barbiere-di-siviglia"));
+  const turn = libretto.acts[0].scenes[0].sections.find(section =>
+    section.turns.some(item => item.speaker !== "Stage direction")).turns.find(item =>
+      item.speaker !== "Stage direction");
+  const finalLine = "English translation preserved after unmatched break";
+  turn.en = "First translated verse\n" + finalLine;
+  turn.it = "Una battuta italiana.";
   window.location.hash = "#/operas/il-barbiere-di-siviglia?act=1";
   const page = createLibrettoRenderer(libretto).scene(1);
-  const chorus = mismatched[0];
-  const finalLine = String(chorus.en ?? chorus.translation).split("\n").at(-1).trim();
-  assert.ok(page.includes(finalLine.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;"))
-    || page.includes(finalLine.split(" ")[0]), "complete source turn remains in the reader");
+  assert.ok(page.includes("First translated verse<br>" + finalLine),
+    "both translation lines must survive even without matching Italian line divisions");
 });
