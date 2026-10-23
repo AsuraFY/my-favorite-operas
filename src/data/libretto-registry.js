@@ -14,13 +14,13 @@ import { barbiereActTwoScenes } from "./libretto-il-barbiere-di-siviglia-act-2.j
 import { tristanActOneScenes } from "./libretto-tristan-und-isolde-act-1.js?v=tristan-outline-1";
 import { tristanActTwoScenes } from "./libretto-tristan-und-isolde-act-2.js?v=tristan-outline-1";
 import { tristanActThreeScenes } from "./libretto-tristan-und-isolde-act-3.js?v=tristan-outline-1";
-import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-witches-1";
+import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-stage-cues-20261023";
 
-import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-lines-2";
+import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-stage-cues-20261023";
 
-import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-witches-1";
+import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-stage-cues-20261023";
 
-import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-1847-scene9-1";
+import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-stage-cues-20261023";
 import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-titles-1";
 import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-titles-1";
 import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-titles-1";

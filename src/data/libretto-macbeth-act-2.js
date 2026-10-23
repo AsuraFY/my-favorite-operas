@@ -91,6 +91,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Parte precipitoso",
             "en": "He leaves hurriedly."
           }
@@ -128,6 +129,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con trasporto",
             "en": "With rapture."
           },
@@ -222,6 +224,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Partono",
             "en": "They leave."
           }
@@ -359,6 +362,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Ripetono",
             "en": "They repeat."
           },
@@ -453,6 +457,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Macbeth fa cenno al Sicario, che parte",
             "en": "Macbeth signals to the assassin, who leaves."
           }
@@ -533,6 +538,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "allo spettro",
             "en": "To the ghost."
           },
@@ -545,6 +551,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "sorgono",
             "en": "They rise."
           },
@@ -564,6 +571,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "piano a Macbeth",
             "en": "Quietly to Macbeth."
           },
@@ -583,6 +591,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "allo spettro",
             "en": "To the ghost."
           },
@@ -595,6 +604,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "L'Ombra sparisce\npiano a Macbeth",
             "en": "The ghost disappears.\nQuietly to Macbeth."
           },
@@ -614,6 +624,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "forte",
             "en": "Aloud."
           },
@@ -647,6 +658,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Riappare lo spettro\nspaventato",
             "en": "The ghost reappears.\nTerrified."
           },
@@ -673,6 +685,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "L'Ombra sparisce",
             "en": "The ghost disappears."
           },
@@ -685,6 +698,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "piano a Macbeth",
             "en": "Quietly to Macbeth."
           },
@@ -704,6 +718,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "a Macbeth",
             "en": "To Macbeth."
           },

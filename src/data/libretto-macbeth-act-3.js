@@ -48,6 +48,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "gettando nella caldaia",
             "en": "Throwing ingredients into the cauldron."
           },
@@ -74,6 +75,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "danzando intorno",
             "en": "Dancing around the cauldron."
           },
@@ -122,6 +124,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si avanza verso le Streghe",
             "en": "He advances toward the witches."
           },
@@ -134,6 +137,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con solennità",
             "en": "Solemnly."
           },
@@ -207,6 +211,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "L'apparizione sparisce",
             "en": "The apparition disappears."
           },
@@ -238,6 +243,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Sparisce",
             "en": "It disappears."
           },
@@ -250,6 +256,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "feroce",
             "en": "Fiercely."
           },
@@ -288,6 +295,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Sparisce",
             "en": "It disappears."
           },
@@ -300,6 +308,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "alle Streghe",
             "en": "To the witches."
           },
@@ -326,6 +335,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "La caldaia cala sotterra",
             "en": "The cauldron sinks into the ground."
           },
@@ -338,6 +348,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "suono sotterraneo di cornamusa",
             "en": "The sound of bagpipes is heard underground."
           },
@@ -390,6 +401,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "al secondo",
             "en": "To the second."
           },
@@ -402,6 +414,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "agli altri",
             "en": "To the others."
           },
@@ -414,6 +427,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Trae la spada, s'avventa sugli spettri, poi s'arresta",
             "en": "He draws his sword, rushes at the ghosts, then stops."
           },
@@ -426,6 +440,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "alle Streghe",
             "en": "To the witches."
           },
@@ -452,6 +467,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Perde i sensi",
             "en": "He faints."
           },
@@ -495,6 +511,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Spirti e Streghe spariscono",
             "en": "The spirits and witches disappear."
           }
@@ -548,6 +565,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "entrando",
             "en": "Entering."
           },

@@ -79,6 +79,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Odesi un tamburo",
             "en": "A drum is heard."
           },
@@ -91,6 +92,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "si confondono insieme e intrecciano una ridda",
             "en": "They mingle and weave a wild dance."
           },
@@ -144,6 +146,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "S'avvede delle streghe",
             "en": "He notices the witches."
           },
@@ -170,6 +173,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "in tono profetico",
             "en": "Prophetically."
           },
@@ -196,6 +200,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Macbeth trema\na Macbeth sottovoce",
             "en": "Macbeth trembles.\nQuietly to Macbeth."
           },
@@ -208,6 +213,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "alle streghe",
             "en": "To the witches."
           },
@@ -269,6 +275,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "spariscono",
             "en": "They disappear."
           },
@@ -281,6 +288,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "pensieroso",
             "en": "Thoughtfully."
           },
@@ -355,6 +363,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con racapriccio",
             "en": "Shuddering."
           },
@@ -367,6 +376,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "fra sé, sottovoce, quasi con ispavento",
             "en": "Aside, quietly, almost in fear."
           },
@@ -379,6 +389,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "fra sé",
             "en": "Aside."
           },
@@ -398,6 +409,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "tutti partono",
             "en": "All depart."
           }
@@ -435,6 +447,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Partono",
             "en": "They depart."
           }
@@ -526,6 +539,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il servo parte.",
             "en": "The servant leaves."
           }
@@ -673,6 +687,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Odonsi lieti suoni che a poco a poco si accostano",
             "en": "Joyful sounds are heard, drawing nearer."
           },
@@ -685,6 +700,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Partono",
             "en": "They leave."
           }
@@ -745,6 +761,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il servo parte.",
             "en": "The servant leaves."
           }
@@ -782,6 +799,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Odesi un tocco di squillo",
             "en": "A bell is heard."
           },
@@ -794,6 +812,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Entra nelle stanze del Re",
             "en": "He enters the King’s rooms."
           }
@@ -832,6 +851,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "di dentro",
             "en": "From within."
           },
@@ -884,6 +904,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si avvicina a Lady e le dice sottovoce:",
             "en": "He approaches Lady Macbeth and speaks quietly."
           },
@@ -945,6 +966,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "guardandosi le mani",
             "en": "Looking at his hands."
           },
@@ -1020,6 +1042,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "a Macbeth",
             "en": "To Macbeth."
           },
@@ -1083,6 +1106,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si guarda le mani",
             "en": "He looks at his hands."
           },
@@ -1128,6 +1152,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Battono di nuovo.",
             "en": "The knocking sounds again."
           },
@@ -1154,6 +1179,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Parte trascinato da Lady",
             "en": "Lady Macbeth drags him away."
           }
@@ -1191,6 +1217,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Entra nella stanza del Re",
             "en": "He enters the King's room."
           }
@@ -1268,6 +1295,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "affannoso",
             "en": "Breathlessly."
           },
@@ -1280,6 +1308,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Banco entra precipitoso nella stanza del Re",
             "en": "Banco rushes into the King's room."
           },
@@ -1330,6 +1359,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Esce spaventato",
             "en": "Emerging in terror."
           },
@@ -1349,6 +1379,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con orrore",
             "en": "In horror."
           },
@@ -1361,6 +1392,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Stupore universale.",
             "en": "All are struck with astonishment."
           },

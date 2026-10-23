@@ -91,6 +91,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "a Macduff",
             "en": "To Macduff."
           },
@@ -117,6 +118,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Malcolm e Macduff impugnano le spade",
             "en": "Malcolm and Macduff draw their swords."
           },
@@ -278,6 +280,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si guarda le mani",
             "en": "She looks at her hands."
           },
@@ -372,6 +375,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "grida interne: \"Ella è morta!\"",
             "en": "Cries from within: “She is dead!”"
           },
@@ -416,6 +420,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con indifferenza e sprezzo",
             "en": "With indifference and contempt."
           },
@@ -428,6 +433,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "la Dama parte",
             "en": "The attendant leaves."
           }
@@ -480,6 +486,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "attonito",
             "en": "Astonished."
           },
@@ -536,6 +543,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Malcolm, Macduff e Soldati partono",
             "en": "Malcolm, Macduff, and the soldiers leave."
           },
@@ -548,6 +556,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Di dentro odesi il fragore della battaglia.",
             "en": "The roar of battle is heard offstage."
           }
@@ -712,6 +721,7 @@ export const macbethActFourScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "entrando in scena",
             "en": "Entering the stage."
           },
@@ -731,6 +741,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con gioia",
             "en": "With joy."
           },
@@ -785,6 +796,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "piegando un ginocchio a terra",
             "en": "Kneeling on one knee."
           },
@@ -804,6 +816,7 @@ export const macbethActFourScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "a Macduff",
             "en": "To Macduff."
           },

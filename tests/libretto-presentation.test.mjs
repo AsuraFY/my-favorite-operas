@@ -490,6 +490,27 @@ test("La Bohème translated section titles appear in both outlines and the side-
 });
 
 // Macbeth
+test("Macbeth short cues and full directions retain approved labels", () => {
+  const libretto = getLibretto("macbeth");
+  const reader = createLibrettoRenderer(libretto);
+  const totals = [52, 25, 26, 30], shorts = [32, 15, 18, 16];
+  for (const [index, act] of libretto.acts.entries()) {
+    const directions = act.scenes.flatMap(scene => scene.sections.flatMap(section =>
+      section.turns.filter(turn => turn.speaker === "Stage direction")));
+    assert.equal(directions.length, totals[index]);
+    assert.equal(directions.filter(turn => turn.shortCue).length, shorts[index]);
+    window.location.hash = "#/operas/macbeth?act=" + act.number;
+    const page = reader.scene(1);
+    assert.equal(count(page, /class="libretto-speaker libretto-speaker--stage-direction"/g),
+      2 * (totals[index] - shorts[index]));
+  }
+  window.location.hash = "#/operas/macbeth?act=1";
+  const page = reader.scene(1);
+  assert.ok(page.includes("<p>[fra sé]</p>"));
+  assert.ok(page.includes("<p>[Aside.]</p>"));
+  assert.ok(page.includes("Stage direction</span><p>[Bosco"));
+});
+
 test("Macbeth sung asides remain lyrics and final scene links render", () => {
   const libretto = getLibretto("macbeth");
   const reader = createLibrettoRenderer(libretto);
