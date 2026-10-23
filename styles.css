@@ -2867,28 +2867,36 @@ body.musicals-theme .musical-editorial .musical-description-toggle {color:var(--
 body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--music-rose)}
 
 
-/* Reader-only line spacing: Italian and English share one vertical rhythm.
-   Keep the selector after mobile and stage-direction styles so it covers both. */
-.opera-reading-page .libretto-row .libretto-cell,
-.opera-reading-page .libretto-row .libretto-cell p {
-  line-height: var(--libretto-line-height, 1.55);
-}
 
-
-/* Older line-by-line operas split one singing turn into separate HTML rows.
-   Suppress repeated row padding within those turns. The only verse-line gap
-   is the shared numeric --libretto-line-height, just like multi-line paragraphs. */
-.opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-start) .libretto-cell {
-  padding-top: 0;
+/* A single paired-verse layout for all operas. The setting only alters space
+   between consecutive lyric rows. Source/English line height stays readable,
+   and full / inline stage directions remain compact at all values. */
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction) {
+  padding-block: 0;
 }
-.opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-end) .libretto-cell {
-  padding-bottom: 0;
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction) .libretto-cell {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction) .libretto-cell p {
+  line-height: 1.4;
+}
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction)
+  + .libretto-row:not(.libretto-row--stage-direction) {
+  margin-top: var(--libretto-row-gap, 8px);
+}
+.opera-reading-page .libretto-row--stage-direction {
+  padding-block: 2px;
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-cell {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-cell p {
+  line-height: 1.3;
 }
 @media (max-width: 700px) {
-  .opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-start) {
-    padding-top: 0;
-  }
-  .opera-reading-page .libretto-row--verse-split:not(.libretto-row--verse-end) {
-    padding-bottom: 0;
+  .opera-reading-page .libretto-row--stage-direction .libretto-cell--english p {
+    margin-top: 2px;
   }
 }

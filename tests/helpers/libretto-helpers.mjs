@@ -4,12 +4,14 @@ export const count = (html, pattern) => (html.match(pattern) || []).length;
 
 // A source turn may render several rows: lyrics before/after an inline
 // direction stay separate from the direction itself.
-export function assertSceneRows(page, scene, alignLines = false) {
+export function assertSceneRows(page, scene, alignLines = true) {
   let lyrics = 0, directions = 0;
   const rows = turn => {
     if (!alignLines || turn.speaker === "Stage direction") return [turn];
-    const translations = (turn.translation ?? turn.en).split("\n");
-    return (turn.original ?? turn.it).split("\n").map((line, index) => ({
+    const originals = String(turn.original ?? turn.it ?? "").split(/\r?\n/);
+    const translations = String(turn.translation ?? turn.en ?? "").split(/\r?\n/);
+    if (originals.length === 1 || originals.length !== translations.length) return [turn];
+    return originals.map((line, index) => ({
       ...turn, original: line, translation: translations[index]
     }));
   };

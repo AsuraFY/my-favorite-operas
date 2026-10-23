@@ -422,16 +422,21 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       String(turn.original ?? turn.it ?? "").includes(entry.match))
   })).filter(landmark => landmark.turnIndex >= 0);
   const directionSpeaker = libretto.stageDirectionSpeaker || "Stage direction";
-  const alignVerseLines = libretto.alignVerseLines || actCatalog().find(group => group.number === act)?.alignVerseLines;
-  const turns = alignVerseLines ? section.turns.flatMap((turn, sourceTurnIndex) => {
+  // All operas use paired verse rows when the source and translation have matching
+  // explicit line divisions. Otherwise keep the complete turn together; never
+  // discard translation lines or invent a correspondence.
+  const turns = section.turns.flatMap((turn, sourceTurnIndex) => {
     if (turn.speaker === directionSpeaker) return [{ ...turn, sourceTurnIndex, startsSourceTurn: true }];
-    const original = (turn.original ?? turn.it ?? "").split(/\r?\n/);
-    const translation = (turn.translation ?? turn.en ?? "").split(/\r?\n/);
+    const original = String(turn.original ?? turn.it ?? "").split(/\r?\n/);
+    const translation = String(turn.translation ?? turn.en ?? "").split(/\r?\n/);
+    if (original.length === 1 || original.length !== translation.length) {
+      return [{ ...turn, sourceTurnIndex, startsSourceTurn: true }];
+    }
     return original.map((line, index) => ({ ...turn, original: line,
-      translation: translation[index] || "", hideSpeaker: index > 0,
+      translation: translation[index], hideSpeaker: index > 0,
       verseLineIndex: index, verseLineCount: original.length,
       sourceTurnIndex, startsSourceTurn: index === 0 }));
-  }) : section.turns.map((turn, sourceTurnIndex) => ({ ...turn, sourceTurnIndex, startsSourceTurn: true }));
+  });
   const rows = turns.flatMap(turn => {
     const speaker = turn.speaker;
     const landmark = outlineLandmarks.find(item => item.turnIndex === turn.sourceTurnIndex)?.entry;
@@ -461,7 +466,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     const originalSpeaker = libretto.originalSpeakerNames?.[speaker] || speaker;
     const speakerTranslation = turn.speakerTranslation || libretto.speakerTranslations?.[speaker] || speaker;
     const output = [];
-    const splitVerse = alignVerseLines && turn.verseLineCount > 1;
+    const splitVerse = turn.verseLineCount > 1;
     const verseRowClass = !splitVerse ? "" :
       " libretto-row--verse-split" +
       (turn.verseLineIndex === 0 ? " libretto-row--verse-start" : "") +

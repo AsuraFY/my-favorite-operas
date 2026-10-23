@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
-import { MIN_LINE_SPACING, MAX_LINE_SPACING, DEFAULT_LINE_SPACING, normalizeLineSpacing, stepLineSpacing, applyReadingSpacing } from "./reading-spacing.js?v=numeric-spacing-20261023";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=numeric-spacing-20261023";
+import { MIN_ROW_GAP, MAX_ROW_GAP, DEFAULT_ROW_GAP, normalizeRowGap, migrateLineSpacing, stepRowGap, applyReadingSpacing } from "./reading-spacing.js?v=lyric-row-gap-20261023";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=lyric-row-gap-20261023";
 import { getLibretto } from "./data/libretto-registry.js?v=tristan-albums-20261023";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
@@ -13,7 +13,8 @@ const FONT_PREFERENCE_KEY = "favorite-operas-font-choice";
 const FONT_CHOICES = new Set(["current", "roboto", "system"]);
 const THEME_PREFERENCE_KEY = "favorite-operas-theme-choice";
 const FONT_SIZE_PREFERENCE_KEY = "favorite-operas-font-size";
-const LINE_SPACING_PREFERENCE_KEY = "favorite-operas-line-spacing";
+const ROW_GAP_PREFERENCE_KEY = "favorite-operas-row-gap";
+const LEGACY_SPACING_PREFERENCE_KEY = "favorite-operas-line-spacing";
 const THEME_CHOICES = new Set(["day", "night"]);
 const MIN_FONT_SIZE = 12;
 const MAX_FONT_SIZE = 24;
@@ -51,17 +52,20 @@ function readFontSize() {
   }
 }
 let activeFontSize = readFontSize();
-function readLineSpacing() {
-  try { return normalizeLineSpacing(localStorage.getItem(LINE_SPACING_PREFERENCE_KEY)); }
-  catch { return DEFAULT_LINE_SPACING; }
+function readRowGap() {
+  try {
+    const saved = localStorage.getItem(ROW_GAP_PREFERENCE_KEY);
+    if (saved !== null) return normalizeRowGap(saved);
+    return migrateLineSpacing(localStorage.getItem(LEGACY_SPACING_PREFERENCE_KEY));
+  } catch { return DEFAULT_ROW_GAP; }
 }
-let activeLineSpacing = readLineSpacing();
+let activeRowGap = readRowGap();
 let settingsOutsidePointerHandler = null;
 document.documentElement.dataset.theme = activeTheme;
 document.documentElement.dataset.fontSize = String(activeFontSize);
 document.documentElement.style.fontSize = `${activeFontSize}px`;
 document.documentElement.style.setProperty("--reading-scale", String(activeFontSize / 16));
-applyReadingSpacing(document.documentElement, activeLineSpacing);
+applyReadingSpacing(document.documentElement, activeRowGap);
 
 const arrow = `<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5"/></svg>`;
 
@@ -107,11 +111,11 @@ function header(active) {
             </div>
           </div>
           <div class="settings-group settings-size">
-            <p class="settings-label" id="line-spacing-label">Libretto line height</p>
+            <p class="settings-label" id="line-spacing-label">Space between lyric rows</p>
             <div class="line-spacing-controls" role="group" aria-labelledby="line-spacing-label">
-              <button type="button" data-line-spacing-step="-1" aria-label="Decrease libretto line height" ${activeLineSpacing <= MIN_LINE_SPACING ? "disabled" : ""}>−</button>
-              <output data-line-spacing-value aria-live="polite">${activeLineSpacing.toFixed(2)}</output>
-              <button type="button" data-line-spacing-step="1" aria-label="Increase libretto line height" ${activeLineSpacing >= MAX_LINE_SPACING ? "disabled" : ""}>+</button>
+              <button type="button" data-line-spacing-step="-1" aria-label="Decrease space between lyric rows" ${activeRowGap <= MIN_ROW_GAP ? "disabled" : ""}>−</button>
+              <output data-line-spacing-value aria-live="polite">${activeRowGap} px</output>
+              <button type="button" data-line-spacing-step="1" aria-label="Increase space between lyric rows" ${activeRowGap >= MAX_ROW_GAP ? "disabled" : ""}>+</button>
             </div>
           </div>
         </section>
@@ -426,16 +430,16 @@ function shell(content, active) {
   });
   app.querySelectorAll("[data-line-spacing-step]").forEach(button => {
     button.addEventListener("click", () => {
-      activeLineSpacing = applyReadingSpacing(
+      activeRowGap = applyReadingSpacing(
         document.documentElement,
-        stepLineSpacing(activeLineSpacing, Number(button.dataset.lineSpacingStep))
+        stepRowGap(activeRowGap, Number(button.dataset.lineSpacingStep))
       );
-      saveChoice(LINE_SPACING_PREFERENCE_KEY, activeLineSpacing.toFixed(2));
+      saveChoice(ROW_GAP_PREFERENCE_KEY, String(activeRowGap));
       const output = app.querySelector("[data-line-spacing-value]");
-      if (output) output.textContent = activeLineSpacing.toFixed(2);
+      if (output) output.textContent = activeRowGap + " px";
       app.querySelectorAll("[data-line-spacing-step]").forEach(option => {
-        option.disabled = (activeLineSpacing <= MIN_LINE_SPACING && option.dataset.lineSpacingStep === "-1") ||
-          (activeLineSpacing >= MAX_LINE_SPACING && option.dataset.lineSpacingStep === "1");
+        option.disabled = (activeRowGap <= MIN_ROW_GAP && option.dataset.lineSpacingStep === "-1") ||
+          (activeRowGap >= MAX_ROW_GAP && option.dataset.lineSpacingStep === "1");
       });
     });
   });

@@ -1,33 +1,32 @@
-// A single numeric line-height applies to every bilingual libretto reader.
-// Preserve choices saved by the earlier three-preset version.
-export const MIN_LINE_SPACING = 1.2;
-export const MAX_LINE_SPACING = 2.6;
-export const LINE_SPACING_STEP = 0.05;
-export const DEFAULT_LINE_SPACING = 1.55;
-const LEGACY_CHOICES = Object.freeze({
-  compact: 1.4,
-  comfortable: 1.55,
-  spacious: 1.75
-});
+// Reader preference adjusts the gap between paired lyric rows, not line height.
+// Old line-height preferences are migrated when no row-gap preference exists.
+export const MIN_ROW_GAP = 0;
+export const MAX_ROW_GAP = 28;
+export const ROW_GAP_STEP = 2;
+export const DEFAULT_ROW_GAP = 8;
 
-export function normalizeLineSpacing(value) {
-  const original = Object.hasOwn(LEGACY_CHOICES, value) ? LEGACY_CHOICES[value] : value;
-  if (original == null || original === "") return DEFAULT_LINE_SPACING;
-  const numeric = Number(original);
-  if (!Number.isFinite(numeric)) return DEFAULT_LINE_SPACING;
-  const bounded = Math.min(MAX_LINE_SPACING, Math.max(MIN_LINE_SPACING, numeric));
-  return Number((Math.round(bounded / LINE_SPACING_STEP) * LINE_SPACING_STEP).toFixed(2));
+export function normalizeRowGap(value) {
+  if (value === null || value === undefined || value === "") return DEFAULT_ROW_GAP;
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return DEFAULT_ROW_GAP;
+  const bounded = Math.min(MAX_ROW_GAP, Math.max(MIN_ROW_GAP, numeric));
+  return Math.round(bounded / ROW_GAP_STEP) * ROW_GAP_STEP;
 }
 
-export function stepLineSpacing(current, direction) {
-  const value = normalizeLineSpacing(current);
-  const next = value + Math.sign(direction) * LINE_SPACING_STEP;
-  return normalizeLineSpacing(Math.round(next * 100) / 100);
+export function migrateLineSpacing(value) {
+  const old = {compact: 1.4, comfortable: 1.55, spacious: 1.75};
+  const legacy = Object.hasOwn(old, value) ? old[value] : Number(value);
+  if (!Number.isFinite(legacy) || legacy <= 0) return DEFAULT_ROW_GAP;
+  return normalizeRowGap((legacy - 1.2) * 20);
+}
+
+export function stepRowGap(current, direction) {
+  return normalizeRowGap(normalizeRowGap(current) + Math.sign(Number(direction) || 0) * ROW_GAP_STEP);
 }
 
 export function applyReadingSpacing(root, value) {
-  const selected = normalizeLineSpacing(value);
-  root.dataset.lineSpacing = selected.toFixed(2);
-  root.style.setProperty("--libretto-line-height", selected.toFixed(2));
+  const selected = normalizeRowGap(value);
+  root.dataset.rowGap = String(selected);
+  root.style.setProperty("--libretto-row-gap", selected + "px");
   return selected;
 }
