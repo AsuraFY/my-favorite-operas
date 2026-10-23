@@ -583,7 +583,7 @@ button { font: inherit; }
 .opera-header-search svg { flex: 0 0 22px; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; }
 .opera-header-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: #fff; font: 0.875rem var(--serif); }
 .opera-header-search input::placeholder { color: rgba(255,255,255,.78); }
-.opera-reading-page { color: #182b3b; }
+
 .reading-identity { min-height: 148px; display: grid; grid-template-columns: minmax(250px, 25.5%) 1fr; background: #f7f4ef; border-bottom: 1px solid #e3ded7; }
 .reading-identity__image { min-height: 148px; background: #9ab9ca url("./public/images/lake-como-banner.webp") center 53% / cover no-repeat; }
 .reading-identity__content { min-width: 0; padding: 16px 34px 0; display: flex; align-items: end; justify-content: space-between; gap: 26px; }
@@ -596,8 +596,8 @@ button { font: inherit; }
 .opera-tabs .is-active { color: #142d43; font-weight: 600; }
 .opera-tabs .is-active::after { position: absolute; content: ""; bottom: 0; left: 0; right: 0; height: 3px; background: #142d43; }
 .opera-tabs [aria-disabled="true"] { color: #777; }
-.reading-layout { display: grid; grid-template-columns: minmax(260px, 25.5%) minmax(0, 1fr); align-items: stretch; min-height: calc(100vh - 210px); background: #f7f4ef; }
-.scene-sidebar { padding: 17px 20px 30px; border-right: 1px solid #e3ded7; }
+.reading-layout { display: grid;  align-items: stretch;   }
+
 .act-heading { min-height: 36px; display: flex; justify-content: space-between; align-items: center; padding: 0 12px 5px 18px; }
 .act-heading h2 { margin: 0; font: 600 1.125rem var(--serif); }
 .act-heading > span { font: 1.125rem var(--sans); }
@@ -610,33 +610,33 @@ button { font: inherit; }
 .scene-link__text > span { color: #5d5c5a; font: 0.8125rem/1.35 var(--serif); }
 .scene-sidebar__note { margin: 7px 12px 18px 60px; color: #827d75; font: italic 0.75rem/1.45 var(--serif); }
 .act-heading--later { border-top: 1px solid #e5dfd7; padding-top: 16px; }
-.reading-main { min-width: 0; padding: 0 0 32px; }
-.scene-panel { min-height: 100%; padding: 24px 20px 0; overflow: hidden; border: 1px solid #e5e0d9; border-radius: 16px 16px 0 0; background: #fff; }
-.scene-panel__top { min-height: 185px; padding: 0 0 18px 17px; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+
+.scene-panel {   overflow: hidden;    }
+.scene-panel__top {    align-items: flex-start; justify-content: space-between; gap: 24px; }
 .scene-kicker { margin: 0 0 13px; font: 600 1.6875rem var(--serif); }
 .scene-number { margin: 0 0 4px; font: 600 1.3125rem var(--serif); }
 .scene-panel__top h2 { margin: 0 0 6px; font: 600 1.875rem/1.15 var(--serif); letter-spacing: -.025em; }
 .scene-cast { margin: 0 0 6px; color: #66615e; font: italic 1rem var(--serif); }
-.scene-summary { max-width: 840px; margin: 0; color: #505153; font: 1rem/1.45 var(--serif); }
+
 .scene-pager { flex: 0 0 auto; display: flex; gap: 12px; padding: 25px 14px 0 0; }
 .scene-step { min-width: 81px; height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 0 12px; border: 1px solid #c9cdd0; border-radius: 9px; font: 0.875rem var(--serif); }
 .scene-step:hover { background: #f5f3ef; }
 .scene-step.is-disabled { color: #c7c6c4; border-color: #e5e2de; }
 .libretto-search-result { margin: 0 17px 12px; padding: 9px 12px; border-left: 3px solid #286ead; background: #edf3f9; color: #354d62; font: 0.8125rem var(--serif); }
-.libretto-columns { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #ece8e2; border-radius: 9px 9px 0 0; overflow: hidden; }
-.libretto-column-heading { min-height: 42px; padding: 10px 25px; background: #f2f0ec; color: #243648; text-transform: uppercase; letter-spacing: .08em; font: 600 0.9375rem var(--serif); }
-.libretto-column-heading + .libretto-column-heading { border-left: 1px solid #e7e2dc; }
-.libretto-text { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
-.libretto-section { display: contents; }
+
+
+
+.libretto-text {   grid-template-columns: 1fr 1fr; }
+
 .libretto-section__label { grid-column: 1 / -1; margin: 0; padding: 6px 25px; background: #fbfaf8; color: #938879; border-top: 1px solid #eeeae5; text-transform: uppercase; letter-spacing: .1em; font: 600 0.625rem var(--sans); }
-.libretto-row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
+.libretto-row { grid-column: 1 / -1;   }
 .libretto-turn-anchor { display: block; height: 0; scroll-margin-top: 7rem; }
-.libretto-cell { min-width: 0; display: grid; grid-template-columns: minmax(102px, 25%) 1fr; gap: 10px; align-items: start; padding: 13px 25px 14px; font: 1.125rem/1.45 var(--serif); }
-.libretto-cell--english { border-left: 1px solid #eeeae5; }
-.libretto-cell p { margin: 0; white-space: pre-line; }
-.libretto-speaker { padding-top: 2px; text-transform: uppercase; font: 600 0.75rem/1.5 var(--serif); color: #286fb1; }
-.libretto-speaker--guglielmo, .libretto-speaker--fiordiligi { color: #4e754e; }
-.libretto-speaker--don-alfonso { color: #984c4e; }
+.libretto-cell {   grid-template-columns: minmax(102px, 25%) 1fr; gap: 10px; align-items: start;   }
+
+
+.libretto-speaker { padding-top: 2px;    }
+
+
 .libretto-speaker--stage-direction { color: #837b71; font-style: italic; }
 .scroll-cue { padding: 11px 0 5px; text-align: center; color: #77736c; font: 0.75rem var(--serif); }
 .scroll-cue span { margin-right: 8px; color: #2168a8; font: 1.25rem var(--sans); vertical-align: -2px; }
@@ -672,15 +672,15 @@ button { font: inherit; }
   .reading-identity__title h1 { font-size: 2rem; }
   .reading-identity__title p { font-size: 0.8125rem; }
   .opera-tabs { gap: 18px; overflow-x: auto; height: 42px; margin: 0 -18px; padding: 0 18px; }
-  .reading-layout { display: flex; flex-direction: column; min-height: 0; }
-  .scene-sidebar { padding: 8px 13px 12px; border-right: 0; border-bottom: 1px solid #e3ded7; }
+  
+  .scene-sidebar {  border-right: 0; border-bottom: 1px solid #e3ded7; }
   .scene-sidebar > .act-heading:first-child { min-height: 32px; padding-left: 6px; }
-  .scene-sidebar nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+  .scene-sidebar nav {   overflow-x: auto; padding-bottom: 2px; }
   .scene-link { flex: 0 0 185px; min-height: 58px; padding: 7px 8px; }
   .scene-sidebar__note, .act-heading--later, .act-heading--later + .scene-sidebar__note { display: none; }
-  .reading-main { padding: 0; }
-  .scene-panel { padding: 17px 12px 0; border-radius: 0; border-left: 0; border-right: 0; }
-  .scene-panel__top { min-height: 0; padding: 0 2px 16px; display: block; }
+  
+  .scene-panel {  border-radius: 0; border-left: 0; border-right: 0; }
+  .scene-panel__top { min-height: 0;  display: block; }
   .scene-kicker { margin-bottom: 9px; font-size: 1.4375rem; }
   .scene-number { font-size: 1.0625rem; }
   .scene-panel__top h2 { font-size: 1.5rem; }
@@ -694,8 +694,8 @@ button { font: inherit; }
   .libretto-text { grid-template-columns: 1fr; }
   .libretto-section__label { padding: 6px 13px; }
   .libretto-row { grid-template-columns: 1fr; }
-  .libretto-cell { grid-template-columns: minmax(80px, 25%) 1fr; gap: 9px; padding: 11px 13px; font-size: 1rem; }
-  .libretto-cell--english { border-left: 0; border-top: 1px dashed #e7e2dc; background: #fdfcfb; }
+  .libretto-cell { grid-template-columns: minmax(80px, 25%) 1fr; gap: 9px;   }
+  .libretto-cell--english { border-left: 0; border-top: 1px dashed #e7e2dc;  }
   .libretto-speaker { font-size: 0.625rem; }
 }
 
@@ -710,7 +710,7 @@ button { font: inherit; }
   height: 76px;
   padding: 0 max(32px, calc((100% - 1480px) / 2));
   border-bottom: 0;
-  background: #173852;
+  
   color: #f8f4ec;
 }
 .site-header:has(+ #main .opera-reading-page) .brand__name {
@@ -947,21 +947,21 @@ button { font: inherit; }
   .site-header:has(+ #main .opera-reading-page) {
     height: 62px;
     padding: 0 16px;
-    background: #fbf8f0;
-    color: #162b45;
+    
+    
     border-bottom: 1px solid #ded9cf;
   }
   .site-header:has(+ #main .opera-reading-page) .brand { gap: 9px; }
     .site-header:has(+ #main .opera-reading-page) .brand__name {
-    color: #172b48;
+    
     font-size: 1.25rem;
   }
   .site-header:has(+ #main .opera-reading-page) .opera-header-search { display: none; }
-  .site-header:has(+ #main .opera-reading-page) .menu-toggle span { background: #172b48; }
+  
   .site-header:has(+ #main .opera-reading-page) .main-nav {
     top: 61px;
     padding: 12px 18px;
-    background: #fbf8f0;
+    
     box-shadow: 0 8px 14px rgba(25,39,56,.12);
   }
   .mobile-opera-intro {
@@ -1244,8 +1244,8 @@ button { font: inherit; }
   background: var(--paper-deep);
 }
 .opera-reading-page .section-nav-link__label {
-  min-width: 0;
-  flex: 1 1 auto;
+  
+  
   overflow-wrap: anywhere;
 }
 .opera-reading-page .scene-sidebar .section-nav-link {
@@ -1534,8 +1534,8 @@ button { font: inherit; }
 /* A sticky, independently scrollable act sidebar on desktop. */
 @media (min-width: 701px) {
   .opera-reading-page[data-act] .reading-layout > .scene-sidebar[data-act-outline] {
-    position: sticky; top: 0;
-    height: 100vh; min-height: 0; align-self: start;
+    position: sticky; 
+     min-height: 0; align-self: start;
     overflow-y: auto; overscroll-behavior-y: contain;
     scrollbar-width: thin;
   }
@@ -1896,9 +1896,7 @@ button { font: inherit; }
 .opera-outline__prelude {
   background: #f1eadf;
 }
-.opera-reading-page .libretto-row--stage-direction .libretto-cell p {
-  line-height: 1.55;
-}
+
 
 /* Separate successive scenes when an act is read continuously. */
 .libretto-track-heading {
@@ -1978,17 +1976,14 @@ button { font: inherit; }
 body { font-size: calc(16px * var(--reading-scale)); }
 .opera-reading-page[data-act] .libretto-cell,
 .opera-reading-page[data-act] .libretto-cell--english { font-size: calc(16px * var(--reading-scale)); }
-html[data-theme="night"] {
-  color-scheme: dark; --paper: #171b20; --paper-deep: #20262d; --ink: #e8e4dc; --muted: #b4b1a9;
-  --line: #42474c; --wine: #df9a9d; --wine-dark: #a65360;
-}
+
 html[data-theme="night"] body, html[data-theme="night"] #app, html[data-theme="night"] #main,
 html[data-theme="night"] .home-notes, html[data-theme="night"] .opera-information,
 html[data-theme="night"] .opera-reading-page, html[data-theme="night"] .opera-outline,
 html[data-theme="night"] .about-page { color: var(--ink); background: var(--paper); }
 html[data-theme="night"] .site-header { color: #ece7df; background: #101d27; border-color: #42474c; }
 html[data-theme="night"] .main-nav > a, html[data-theme="night"] .main-nav > a.is-active { color: #ece7df; }
-html[data-theme="night"] .site-footer { color: #ddd8ce; background: #101d27; }
+html[data-theme="night"] .site-footer { color: #ddd8ce;  }
 html[data-theme="night"] .home-note, html[data-theme="night"] .opera-card, html[data-theme="night"] .directory-card,
 html[data-theme="night"] .directory-note, html[data-theme="night"] .detail-facts, html[data-theme="night"] .detail-note,
 html[data-theme="night"] .closing-note, html[data-theme="night"] .opera-outline__act {
@@ -2008,13 +2003,13 @@ html[data-theme="night"] .settings-group, html[data-theme="night"] .font-size-co
 html[data-theme="night"] .line-spacing-controls,
 html[data-theme="night"] .font-size-controls button + output, html[data-theme="night"] .font-size-controls output + button,
 html[data-theme="night"] .line-spacing-controls button + output, html[data-theme="night"] .line-spacing-controls output + button { border-color: #55595b; }
-html[data-theme="night"] .theme-choices button[aria-pressed="true"] { background: #4a3d2a; }
+
 html[data-theme="night"] .settings-group select { color: #ece7df; background-color: #1a1f23; border-color: #55595b; }
 @media (max-width: 700px) {
   .header-actions { grid-column: auto; gap: 7px; }
   .settings-trigger { gap: 4px; font-size: 0.625rem; }
   .header-actions .search-trigger { width: 30px; }
-  .settings-panel { position: fixed; top: 49px; right: 10px; width: 218px; }
+  
   .site-header:has(.opera-header-search) .header-actions { flex: 1; min-width: 0; }
   .site-header:has(.opera-header-search) .opera-header-search { flex: 1; max-width: none; }
   .site-header:has(.opera-header-search) .settings-trigger { flex: 0 0 auto; }
