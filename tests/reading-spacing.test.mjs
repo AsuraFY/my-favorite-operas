@@ -83,19 +83,39 @@ test("character names and stage-direction margins share the adjustable 10px mini
   assert.ok(highlight.includes("box-shadow: inset 2px 0 var(--gold);"));
   assert.ok(!css.includes(stageSelector + "\\n    padding-left: 9px;"),
     "no mobile indentation on the highlighted row");
-  const surrounding = rules.find(rule => rule.includes("margin-block: var(--libretto-paragraph-gap);"));
-  assert.ok(surrounding, "stage directions have matching adjustable margins above and below");
-  assert.ok(surrounding.includes("padding-block: 2px;"), "stage directions retain compact internal padding");
+  const compact = rules.find(rule => rule.includes("padding-block: 2px;"));
+  assert.ok(compact, "stage-direction rows remain compact internally");
   assert.ok(css.includes("--libretto-paragraph-gap: calc(10px + var(--libretto-row-gap, 8px));"),
-    "at zero row gap, stage directions and character names still have a 10px minimum");
-  assert.ok(css.includes("margin-top: var(--libretto-paragraph-gap);"),
-    "character-start rows share the same paragraph-gap token");
-  assert.ok(css.includes(":has(> .libretto-cell--german > .libretto-speaker)"),
-    "spacing is added before rows with a visible original-language character name");
-  assert.ok(css.includes(":not(:has(> .libretto-cell--german > .libretto-speaker))"),
-    "ordinary paired lyric rows still use the selected gap alone");
-  assert.ok(css.includes("margin-top: var(--libretto-row-gap, 8px);"),
-    "ordinary lyric spacing still follows the row-gap control");
+    "the 10px minimum remains even at zero row gap");
+  const rhythm = css.slice(css.indexOf("/* One adjustable gap at each boundary"));
+  assert.match(rhythm, /\.opera-reading-page \.libretto-row \{\s*margin-block: 0;/,
+    "each row starts without an inherited top or bottom margin");
+  assert.match(rhythm, /\.opera-reading-page \.libretto-row \+ \.libretto-row \{\s*margin-top: var\(--libretto-row-gap, 8px\);/,
+    "ordinary consecutive verses still use the configured gap");
+  assert.match(rhythm, /\.opera-reading-page \.libretto-row--stage-direction,\s*\.opera-reading-page \.libretto-row:has\(> \.libretto-cell--german > \.libretto-speaker\),\s*\.opera-reading-page \.libretto-row--stage-direction \+ \.libretto-row \{\s*margin-top: var\(--libretto-paragraph-gap\);/,
+    "a single paragraph gap applies before the character/stage or after the stage");
+  assert.match(rhythm, /\.opera-reading-page \.libretto-row--stage-direction:last-child \{\s*margin-bottom: var\(--libretto-paragraph-gap\);/,
+    "a final stage direction keeps the trailing separation");
+  assert.ok(!rhythm.includes("margin-block: var(--libretto-paragraph-gap)"),
+    "adjacent stage and character margins must never compound");
+});
+
+test("all stage-direction transitions use exactly one paragraph gap", () => {
+  // All four boundaries should resolve to exactly the same single gap.
+  const values = [0, DEFAULT_ROW_GAP, MAX_ROW_GAP];
+  for (const configuredGap of values) {
+    const paragraphGap = 10 + configuredGap;
+    const boundaries = [
+      ["lyric", "stage"], ["stage", "lyric"],
+      ["stage", "speaker"], ["stage", "stage"]
+    ];
+    for (const [previous, next] of boundaries) {
+      const gapAboveNext = next === "stage" || next === "speaker" || previous === "stage"
+        ? paragraphGap : configuredGap;
+      assert.equal(gapAboveNext, paragraphGap, `${previous} -> ${next} with row gap ${configuredGap}`);
+    }
+    assert.equal(10 + configuredGap, paragraphGap);
+  }
 });
 
 test("Così and Barbiere both render paired source/translation verses as separate rows", () => {
