@@ -9,7 +9,7 @@ import { figaro } from "./libretto-le-nozze-di-figaro-bundle.js?v=on-demand-2026
 import { carmen } from "./libretto-carmen-bundle.js?v=carmen-whitespace-20261023";
 import { laBoheme } from "./libretto-la-boheme-bundle.js?v=on-demand-20261023";
 import { madamaButterfly } from "./libretto-madama-butterfly-bundle.js?v=on-demand-20261023";
-import { tosca } from "./libretto-tosca-bundle.js?v=on-demand-20261023";
+import { tosca } from "./libretto-tosca-bundle.js?v=tosca-anchor-audit-20261023";
 import { samson } from "./libretto-samson-et-dalila-bundle.js?v=on-demand-20261023";
 
 const completeLibretti = { [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca, [samson.slug]: samson };

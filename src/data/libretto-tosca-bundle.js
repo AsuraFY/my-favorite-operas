@@ -1,6 +1,6 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-review-20261020";
+import { toscaActOneScenes } from "./libretto-tosca-act-1.js?v=tosca-anchor-audit-20261023";
 import { toscaActTwoScenes } from "./libretto-tosca-act-2.js?v=tosca-review-20261020";
 import { toscaActThreeScenes } from "./libretto-tosca-act-3.js?v=tosca-review-20261020";
 

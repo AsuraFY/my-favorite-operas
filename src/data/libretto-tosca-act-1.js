@@ -517,7 +517,9 @@ toscaActOneScenes[4].outline = [
     "type": "Duetto",
     "title": "Mia gelosa!",
     "translation": "My jealous one!",
-    "match": "Mia gelosa!"
+    "match": "Mia gelosa!",
+    "speaker": "Cavaradossi",
+    "sourceTurn": 86
   }
 ];
 toscaActOneScenes[5].outline = [
