@@ -1,7 +1,7 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { MIN_ROW_GAP, MAX_ROW_GAP, DEFAULT_ROW_GAP, normalizeRowGap, migrateLineSpacing, stepRowGap, applyReadingSpacing } from "./reading-spacing.js?v=lyric-row-gap-20261023";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=lyric-row-gap-20261023";
-import { getLibretto } from "./data/libretto-registry.js?v=tristan-albums-20261023";
+import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=on-demand-20261023";
 import { operaInformation } from "./data/opera-information.js?v=info-9";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
@@ -576,8 +576,7 @@ function musicalsPage(query = "", sort = "title", composer = "") {
   return renderMusicalsPage(query, sort, composer);
 }
 
-function operaPage(opera, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
-  const libretto = getLibretto(opera.slug);
+function operaPage(opera, libretto, selectedScene = 1, query = "", selectedItem = 0, mobileContents = false, selectedView = "") {
   if (libretto) {
     const reader = createLibrettoRenderer(libretto);
     if (selectedView === "outline") return reader.outline();
@@ -800,7 +799,9 @@ function updateReaderTopButton() {
   button.hidden = window.scrollY < panelStart + 280;
 }
 
-function render() {
+let activeRenderId = 0;
+async function render() {
+  const renderId = ++activeRenderId;
   const route = window.location.hash.replace(/^#/, "") || "/";
   const [path, queryString = ""] = route.split("?");
   const routeParams = new URLSearchParams(queryString);
@@ -844,12 +845,28 @@ function render() {
     }
   } else if (path.startsWith("/operas/")) {
     const opera = getOpera(path.split("/")[2]);
+    let libretto = null;
+    if (opera && hasCompleteLibretto(opera.slug)) {
+      shell('<section class="not-found section-wrap" role="status" aria-live="polite"><h1>Opening the libretto…</h1><p>Loading the original text and translation.</p></section>', "opera");
+      try {
+        libretto = await loadLibretto(opera.slug);
+      } catch (error) {
+        if (renderId !== activeRenderId) return;
+        console.error("Unable to load opera libretto:", error);
+        shell('<section class="not-found section-wrap"><h1>The libretto could not load.</h1><p>Please check your connection and try again.</p><button class="button button--dark" type="button" data-retry-libretto>Try again</button></section>', "opera");
+        app.querySelector("[data-retry-libretto]")?.addEventListener("click", render);
+        document.title = opera.title + " — My favorite Operas";
+        return;
+      }
+      // A later navigation must not be replaced by an older import resolving.
+      if (renderId !== activeRenderId) return;
+    }
     const scene = Number(routeParams.get("scene")) || 1;
     const item = Number(routeParams.get("item")) || 0;
     const mobileContents = routeParams.get("contents") === "1" || (!routeParams.has("scene") && !routeParams.has("item") && !query);
     const hasLibrettoDestination = routeParams.has("act") || routeParams.has("scene") || routeParams.has("item") || Boolean(query) || routeParams.has("contents");
-    const selectedView = routeParams.get("view") || (opera && getLibretto(opera.slug) && !hasLibrettoDestination ? "synopsis" : "");
-    shell(opera ? renderOperaBreadcrumb(opera) + operaPage(opera, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (getLibretto(opera.slug) ? "opera" : "operas") : "");
+    const selectedView = routeParams.get("view") || (libretto && !hasLibrettoDestination ? "synopsis" : "");
+    shell(opera ? renderOperaBreadcrumb(opera) + operaPage(opera, libretto, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (libretto ? "opera" : "operas") : "");
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
   } else {
     window.location.hash = "#/";

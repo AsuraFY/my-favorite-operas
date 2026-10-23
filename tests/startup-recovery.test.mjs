@@ -9,15 +9,15 @@ const bootstrap = readFileSync(new URL("src/boot.js", root), "utf8");
 
 test("the website enters through its recovery bootstrap exactly once", () => {
   const scripts = [...html.matchAll(/<script\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]);
-  assert.deepEqual(scripts, ["./src/boot.js?v=startup-recovery-20261023"]);
+  assert.deepEqual(scripts, ["./src/boot.js?v=on-demand-20261023"]);
   assert.ok(!html.includes('src="./src/main.js'), "do not load main directly alongside boot");
-  assert.match(bootstrap, /import\("\.\/main\.js\?v=startup-recovery-20261023"\)\.catch\(/);
+  assert.match(bootstrap, /import\("\.\/main\.js\?v=on-demand-20261023"\)\.catch\(/);
 });
 
 function simulateStartup(loadMain) {
   // Replace only the dynamic import call to simulate a browser import result.
   // The rest is the actual shipped bootstrap, including its recovery handler.
-  const importCall = /import\("\.\/main\.js\?v=startup-recovery-20261023"\)/;
+  const importCall = /import\("\.\/main\.js\?v=on-demand-20261023"\)/;
   assert.match(bootstrap, importCall);
   const source = bootstrap.replace(importCall, "loadMain()");
   const listeners = new Map();
