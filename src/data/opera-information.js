@@ -112,7 +112,7 @@ export const operaInformation = {
         "Tenor",
         "A courtier who betrays the lovers."
       ]
-    ]
+    ],
     "favoritePerformances": [{
       "title": "Wagner: Tristan und Isolde",
       "spotifyUrl": "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E",
