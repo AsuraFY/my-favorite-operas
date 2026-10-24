@@ -12,6 +12,7 @@ function renderFavorites(items = []) {
       '<span class="favorite-performance__artist"><strong>' + escape(person.name) +
       '</strong><small>' + escape(person.role) + '</small></span>').join("");
     const credits = [p.conductor, p.orchestra].filter(Boolean).join(" · ");
+    const venue = [p.chorus, p.venue].filter(Boolean).join(" · ");
     const edition = [p.recordingYear, p.recordingType].filter(Boolean).join(" · ");
     return '<article class="favorite-performance">' +
       '<div class="favorite-performance__row">' +
@@ -19,16 +20,19 @@ function renderFavorites(items = []) {
       '"><span aria-label="Album cover unavailable">♫</span></div>' +
       '<div class="favorite-performance__main">' +
       '<div class="favorite-performance__heading"><h3>' + escape(p.title) + '</h3>' +
-      (p.librettoReference ? '<span class="favorite-performance__reference">Libretto reference</span>' : '') + '</div>' +
+      (p.youtubeUrl ? '<span class="favorite-performance__reference">Video performance</span>' : (p.librettoReference ? '<span class="favorite-performance__reference">Libretto reference</span>' : '')) + '</div>' +
       (edition ? '<p class="favorite-performance__edition">' + escape(edition) + '</p>' : '') +
       '<p class="favorite-performance__production">' + escape(credits || "Conductor and orchestra not yet verified") + '</p>' +
+      (venue ? '<p class="favorite-performance__edition">' + escape(venue) + '</p>' : '') +
       '<div class="favorite-performance__artists">' + (artists ||
       '<p class="favorite-performance__unverified">Featured artists pending verification for this recording</p>') + '</div>' +
-      '<div class="favorite-performance__links"><a href="' + escape(p.spotifyUrl) +
-      '" target="_blank" rel="noopener noreferrer">♫ Spotify <span aria-hidden="true">↗</span></a></div>' +
+      '<div class="favorite-performance__links">' +
+      (p.youtubeUrl ? '<a href="' + escape(p.youtubeUrl) + '" target="_blank" rel="noopener noreferrer">▶ YouTube · verified performance <span aria-hidden="true">↗</span></a>' : '') +
+      '<a href="' + escape(p.spotifyUrl) +
+      '" target="_blank" rel="noopener noreferrer">♫ Spotify · ' + (p.spotifyEditionVerified ? 'same recording' : 'edition unconfirmed') + ' <span aria-hidden="true">↗</span></a></div>' +
       '</div></div><details class="favorite-performance__details"><summary>Full cast &amp; recording details</summary>' +
       '<div class="favorite-performance__details-body">' + (cast
-        ? '<ul>' + cast + '</ul>'
+        ? '<p class="favorite-performance__unverified">1981 Munich performance credits · conductor: ' + escape(p.conductor || "Not verified") + '; orchestra: ' + escape(p.orchestra || "Not verified") + (p.chorus ? '; chorus: ' + escape(p.chorus) : '') + '</p><ul>' + cast + '</ul>'
         : '<p class="favorite-performance__unverified">The cast and recording credits for this exact edition have not yet been verified.</p>') +
       '</div></details></article>';
   }).join("");
