@@ -37,7 +37,7 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.ok(!page.includes("favorite-performance__artist\""));
   assert.ok(page.includes("1981 · Live, semi-staged concert"));
   assert.ok(page.includes("Conductor: Leonard Bernstein · Orchestra: Bavarian Radio Symphony Orchestra"));
-  assert.ok(page.includes("Chorus: Bavarian Radio Chorus · Location: Herkulessaal, Munich")));
+  assert.ok(page.includes("Chorus: Bavarian Radio Chorus · Location: Herkulessaal, Munich"));
   assert.ok(page.includes('href="' + url + '" target="_blank" rel="noopener noreferrer"'));
   assert.ok(page.includes('href="https://www.youtube.com/watch?v=Wleg_0SWHW0"'));
   assert.ok(page.includes("Spotify</span></a>"));
