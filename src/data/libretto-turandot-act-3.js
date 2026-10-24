@@ -11,26 +11,24 @@ export const turandotActThreeScenes = [
         "number": 14,
         "type": "Introduzione e Romanza",
         "participants": [
-          "Gli Araldi",
-          "La Folla",
+          "Heralds",
+          "Crowd",
           "Calaf",
-          "Le Donne"
+          "Women"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "Il giardino della reggia, vastissimo, tutto rialzi ondulati, cespugli e profili scuri di divinità in bronzo, lievemente illuminate dal basso in alto dal riflesso degli incensieri. A destra sorge un padiglione a cui si accede per cinque gradini, e limitato da una tenda riccamente ricamata. Il padiglione è l’avancorpo d’uno dei palazzi della reggia, dal lato delle stanze di Turandot.",
-            "en": "The vast palace garden, all undulating rises, shrubs, and dark outlines of bronze divinities, faintly lit from below by reflections from incense burners. On the right stands a pavilion reached by five steps and enclosed by a richly embroidered curtain. The pavilion projects from one of the palace buildings, on the side of Turandot's rooms."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "È notte. Dalle estreme lontananze giungono voci di araldi che girano l’immensa città intimando il regale comando. Altre voci, vicine e lontane, fanno eco. Adagiato sui gradini del padiglione è il principe. Nel grande silenzio notturno egli ascolta i richiami degli araldi, come se quasi più non vivesse nella realtà.",
-            "en": "It is night. From the farthest distance come the voices of heralds travelling through the immense city and proclaiming the royal command. Other voices, near and far, echo them. The prince reclines on the pavilion steps. In the great silence of the night he listens to the heralds' calls, as if he scarcely lived in reality any longer."
+            "it": "Il giardino della reggia, vastissimo, tutto rialzi ondulati, cespugli e profili scuri di divinità in bronzo, lievemente illuminate dal basso in alto dal riflesso degli incensieri. A destra sorge un padiglione a cui si accede per cinque gradini, e limitato da una tenda riccamente ricamata. Il padiglione è l’avancorpo d’uno dei palazzi della reggia, dal lato delle stanze di Turandot. È notte. Dalle estreme lontananze giungono voci di araldi che girano l’immensa città intimando il regale comando. Altre voci, vicine e lontane, fanno eco. Adagiato sui gradini del padiglione è il principe. Nel grande silenzio notturno egli ascolta i richiami degli araldi, come se quasi più non vivesse nella realtà.",
+            "en": "The vast palace garden, all undulating rises, shrubs, and dark outlines of bronze divinities, faintly lit from below by reflections from incense burners. On the right stands a pavilion reached by five steps and enclosed by a richly embroidered curtain. The pavilion projects from one of the palace buildings, on the side of Turandot's rooms. It is night. From the farthest distance come the voices of heralds travelling through the immense city and proclaiming the royal command. Other voices, near and far, echo them. The prince reclines on the pavilion steps. In the great silence of the night he listens to the heralds' calls, as if he scarcely lived in reality any longer.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "lontano, a voce spiegata",
-            "en": "Far away, with a full voice."
+            "en": "Far away, with a full voice.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Gli Araldi",
@@ -42,7 +40,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "lontano, come un lamento",
-            "en": "Far away, like a lament."
+            "en": "Far away, like a lament.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -54,7 +54,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "più lontano",
-            "en": "Farther away."
+            "en": "Farther away.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Gli Araldi",
@@ -73,7 +75,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "ancora più lontano",
-            "en": "Still farther away."
+            "en": "Still farther away.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Gli Araldi",
@@ -85,7 +89,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "più lontano",
-            "en": "Farther away."
+            "en": "Farther away.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -104,7 +110,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "interno, un po’ lontano",
-            "en": "Offstage, somewhat distant."
+            "en": "Offstage, somewhat distant.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Le Donne",
@@ -116,7 +124,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con anima",
-            "en": "With feeling."
+            "en": "With feeling.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -128,13 +138,17 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Strisciando fra i cespugli, le tre maschere sono alla testa di una piccola folla di figure confuse nel buio della notte, che poi cresceranno sempre più numerose.",
-            "en": "Creeping among the shrubs, the three masked ministers lead a small crowd of figures indistinct in the night, which will grow ever more numerous."
+            "en": "Creeping among the shrubs, the three masked ministers lead a small crowd of figures indistinct in the night, which will grow ever more numerous.",
+            "bracketStageDirection": false
           }
         ],
         "sourceDivision": {
           "original": "Quadro I",
           "translation": "Tableau I"
-        }
+        },
+        "originalTitle": "Nessun dorma!",
+        "translatedTitle": "Let no one sleep!",
+        "displayType": "Aria"
       },
       {
         "number": 15,
@@ -143,22 +157,18 @@ export const turandotActThreeScenes = [
           "Ping",
           "Pong",
           "Pang",
-          "Pong, Pang",
-          "Ping, Pang, Pong",
           "Calaf",
-          "Ping, Pong",
-          "Le Donne",
-          "La Folla",
-          "Pong, Pang, La Folla",
-          "Ping, La Folla",
-          "Ping, Pang, Pong, La Folla",
-          "Gli Sgherri"
+          "Women",
+          "Crowd",
+          "Guards"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "s’accosta al principe",
-            "en": "Approaching the prince."
+            "en": "Approaching the prince.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping",
@@ -213,7 +223,7 @@ export const turandotActThreeScenes = [
             "speaker": "Ping, Pang, Pong",
             "speakerTranslation": "Ping, Pang, Pong",
             "it": "O sangue!",
-            "en": "O blood!",
+            "en": "Or blood!",
             "literalText": true
           },
           {
@@ -254,7 +264,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il principe non risponde",
-            "en": "The prince does not answer."
+            "en": "The prince does not answer.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping",
@@ -266,7 +277,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Sospinge a’ piedi del principe un gruppo di fanciulle bellissime, seminude, procaci.",
-            "en": "He pushes towards the prince's feet a group of beautiful, half-naked, seductive girls."
+            "en": "He pushes towards the prince's feet a group of beautiful, half-naked, seductive girls.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping",
@@ -292,7 +304,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "circondando il principe",
-            "en": "Surrounding the prince."
+            "en": "Surrounding the prince.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Le Donne",
@@ -325,7 +339,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Ad un cenno di Ping vengono portati canestri, cofani, sacchi, ricolmi d’oro e di gioielli.",
-            "en": "At a sign from Ping, baskets, chests and sacks filled with gold and jewels are brought in."
+            "en": "At a sign from Ping, baskets, chests and sacks filled with gold and jewels are brought in.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping",
@@ -428,7 +443,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "tendendo le braccia come ad invocazione",
-            "en": "Stretching out his arms as if in invocation."
+            "en": "Stretching out his arms as if in invocation.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -440,7 +457,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con crescente minacciosa disperazione",
-            "en": "With growing, threatening desperation."
+            "en": "With growing, threatening desperation.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -508,7 +527,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con suprema fermezza",
-            "en": "With supreme firmness."
+            "en": "With supreme firmness.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -520,7 +541,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con ferocia minacciando il principe con pugnali",
-            "en": "Fiercely threatening the prince with daggers."
+            "en": "Fiercely threatening the prince with daggers.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -532,7 +555,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "interno, gridando",
-            "en": "Offstage, shouting."
+            "en": "Offstage, shouting.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Gli Sgherri",
@@ -544,7 +569,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Un gruppo di sgherri trascina il vecchio Timur e Liù, logori, pesti, affranti, sanguinanti.",
-            "en": "A group of guards drags in old Timur and Liù, worn, battered, exhausted and bleeding."
+            "en": "A group of guards drags in old Timur and Liù, worn, battered, exhausted and bleeding.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -556,7 +582,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "più vicini",
-            "en": "Nearer."
+            "en": "Nearer.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Gli Sgherri",
@@ -568,7 +596,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "si precipita gridando",
-            "en": "Rushing forward, shouting."
+            "en": "Rushing forward, shouting.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -601,7 +631,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "agli sgherri",
-            "en": "To the guards."
+            "en": "To the guards.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping",
@@ -613,7 +645,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "correndo, volgendosi verso il padiglione",
-            "en": "Running and turning towards the pavilion."
+            "en": "Running and turning towards the pavilion.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Gli Sgherri",
@@ -632,9 +666,12 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Turandot appare. Tutti si prosternano a terra. Solo Ping, avanzando con estrema umiltà, dice:",
-            "en": "Turandot appears. All prostrate themselves. Only Ping advances and speaks with extreme humility:"
+            "en": "Turandot appears. All prostrate themselves. Only Ping advances and speaks with extreme humility:",
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Tu che guardi le stelle",
+        "translatedTitle": "You who watch the stars"
       },
       {
         "number": 16,
@@ -644,7 +681,7 @@ export const turandotActThreeScenes = [
           "Turandot",
           "Calaf",
           "Liù",
-          "La Folla"
+          "Crowd"
         ],
         "turns": [
           {
@@ -657,7 +694,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "piena d’imperio e d’ironia",
-            "en": "Full of authority and irony."
+            "en": "Full of authority and irony.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -669,7 +708,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "alteramente",
-            "en": "Proudly."
+            "en": "Proudly.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -681,7 +722,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "come una sfida",
-            "en": "As a challenge."
+            "en": "As a challenge.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -693,7 +736,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Timur è riafferrato",
-            "en": "Timur is seized again."
+            "en": "Timur is seized again.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Turandot",
@@ -705,7 +749,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "avanzando rapida verso Turandot",
-            "en": "Advancing rapidly towards Turandot."
+            "en": "Advancing rapidly towards Turandot.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -718,7 +764,7 @@ export const turandotActThreeScenes = [
             "speaker": "La Folla",
             "speakerTranslation": "Crowd",
             "it": "La vita è salva, l’incubo svanì!",
-            "en": "Our life is saved, the nightmare has vanished!",
+            "en": "Our lives are saved, the nightmare has vanished!",
             "literalText": true
           },
           {
@@ -735,13 +781,15 @@ export const turandotActThreeScenes = [
             "en": "I know his name...\nIt is my supreme delight\nto keep it secret\nand possess it alone!",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Principessa divina!",
+        "translatedTitle": "Divine Princess!"
       },
       {
         "number": 17,
         "type": "Scena e Aria",
         "participants": [
-          "La Folla",
+          "Crowd",
           "Calaf",
           "Turandot",
           "Liù",
@@ -759,7 +807,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "ponendosi avanti a Liù per proteggerla, minaccioso",
-            "en": "Standing in front of Liù to protect her, threateningly."
+            "en": "Standing in front of Liù to protect her, threateningly.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -771,7 +821,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "violenta, alle guardie",
-            "en": "Violently, to the guards."
+            "en": "Violently, to the guards.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -783,7 +835,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Riprende la sua attitudine ieratica. Il principe viene legato ai piedi con una cordicella da uno sgherro, che rimane a terra tenendo i capi della corda, e due altri sgherri lo tengono fermo per le braccia.",
-            "en": "She resumes her hieratic bearing. A guard binds the prince's feet with a cord, remaining on the ground holding its ends, while two other guards hold him firmly by the arms."
+            "en": "She resumes her hieratic bearing. A guard binds the prince's feet with a cord, remaining on the ground holding its ends, while two other guards hold him firmly by the arms.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Liù",
@@ -795,7 +848,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Liù è tenuta inginocchiata a terra.",
-            "en": "Liù is held kneeling on the ground."
+            "en": "Liù is held kneeling on the ground.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Ping",
@@ -821,7 +875,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "dolcemente",
-            "en": "Gently."
+            "en": "Gently.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -833,7 +889,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Uno sgherro le stringe i polsi.",
-            "en": "A guard squeezes her wrists."
+            "en": "A guard squeezes her wrists.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Liù",
@@ -866,7 +923,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "agli sgherri",
-            "en": "To the guards."
+            "en": "To the guards.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -878,7 +937,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "sfibrata",
-            "en": "Exhausted."
+            "en": "Exhausted.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -890,7 +951,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con voce soffocata",
-            "en": "With a muffled voice."
+            "en": "With a muffled voice.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -902,7 +965,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "agli sgherri",
-            "en": "To the guards."
+            "en": "To the guards.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -914,7 +979,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Liù",
-            "en": "To Liù."
+            "en": "To Liù.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -940,7 +1007,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "dolcissimo",
-            "en": "Very tenderly."
+            "en": "Very tenderly.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -959,19 +1028,23 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "sollevando gli occhi pieni di tenerezza",
-            "en": "Raising her eyes, full of tenderness."
+            "en": "Raising her eyes, full of tenderness.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
             "speakerTranslation": "Liù",
             "it": "Tanto amore segreto e inconfessato,\ngrande così che questi strazi son\ndolcezze per me, perché ne faccio dono\nal mio Signore...\nPerché, tacendo, io gli do,\ngli do il tuo amore...\nTe gli do, principessa, e perdo tutto!\nPersino l’impossibile speranza!...\nLegatemi! Straziatemi!\nTormenti e spasimi date a me,\nAh!... Come offerta\nsuprema del mio amore!",
-            "en": "So much secret, unconfessed love,\nso great that these torments are\nsweetness to me, for I offer them\nto my lord...\nFor by keeping silent, I give him,\nI give him your love...\nI give you to him, Princess, and lose everything!\nEven the impossible hope!...\nBind me! Torture me!\nGive me torments and agonies,\nAh!... As the offering,\nthe supreme offering of my love!",
+            "en": "So much secret, unconfessed love,\nso great that these torments are\nsweetness to me, for I offer them\nto my lord...\nFor by keeping silent, I give him,\nI give him your love...\nI give you to him, Princess, and lose everything!\nEven that impossible hope!...\nBind me! Torture me!\nGive me torments and agonies,\nAh!... As an offering,\nthe highest expression of my love!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "it": "violenta",
-            "en": "Violently."
+            "en": "Violently.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -983,7 +1056,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con forza",
-            "en": "Forcefully."
+            "en": "Forcefully.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping",
@@ -1002,7 +1077,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "come un urlo",
-            "en": "Like a scream."
+            "en": "Like a scream.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -1011,14 +1088,16 @@ export const turandotActThreeScenes = [
             "en": "The executioner!...",
             "literalText": true
           }
-        ]
+        ],
+        "originalTitle": "Tanto amore segreto",
+        "translatedTitle": "So much secret love"
       },
       {
         "number": 18,
         "type": "Transizione e Aria",
         "participants": [
           "Ping",
-          "La Folla",
+          "Crowd",
           "Liù",
           "Calaf",
           "Timur",
@@ -1036,7 +1115,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "selvaggiamente",
-            "en": "Savagely."
+            "en": "Savagely.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -1048,12 +1129,15 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Appare il boia.",
-            "en": "The executioner appears."
+            "en": "The executioner appears.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "disperatamente",
-            "en": "Desperately."
+            "en": "Desperately.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -1065,7 +1149,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "cercando d’aprirsi un varco tra la folla che la serra",
-            "en": "Trying to force a way through the crowd hemming her in."
+            "en": "Trying to force a way through the crowd hemming her in.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Liù",
@@ -1091,7 +1177,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Prende di sorpresa un pugnale a un soldato e si trafigge a morte. Barcolla in mezzo al terrore di tutti e va a cadere ai piedi del principe.",
-            "en": "She suddenly takes a dagger from a soldier and stabs herself fatally. She staggers amid everyone's terror and falls at the prince's feet."
+            "en": "She suddenly takes a dagger from a soldier and stabs herself fatally. She staggers amid everyone's terror and falls at the prince's feet.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -1110,12 +1197,15 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Grande silenzio pieno di terrore.",
-            "en": "A great silence filled with terror."
+            "en": "A great silence filled with terror.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "s’accosta barcollando; s’inginocchia",
-            "en": "He approaches, staggering, and kneels."
+            "en": "He approaches, staggering, and kneels.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Timur",
@@ -1127,7 +1217,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "va verso il vecchio Timur",
-            "en": "Approaching old Timur."
+            "en": "Approaching old Timur.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping",
@@ -1139,7 +1231,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "come un urlo",
-            "en": "Like a scream."
+            "en": "Like a scream.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Timur",
@@ -1151,7 +1245,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Con religiosa pietà il piccolo corpo viene sollevato tra il rispetto profondo della folla.",
-            "en": "With religious compassion the little body is lifted, amid the crowd's deep respect."
+            "en": "With religious compassion the little body is lifted, amid the crowd's deep respect.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -1170,7 +1265,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Prende la piccola mano della morta.",
-            "en": "He takes the dead girl's little hand."
+            "en": "He takes the dead girl's little hand.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Timur",
@@ -1182,12 +1278,15 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Ping, Pang, Pong sul davanti della scena.",
-            "en": "Ping, Pang and Pong at the front of the stage."
+            "en": "Ping, Pang and Pong at the front of the stage.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "con angosciosa pietà",
-            "en": "With anguished compassion."
+            "en": "With anguished compassion.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Ping",
@@ -1213,12 +1312,15 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Il mesto corteo si avvia.",
-            "en": "The mournful procession moves away."
+            "en": "The mournful procession moves away.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "fuori di scena",
-            "en": "Offstage."
+            "en": "Offstage.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -1230,7 +1332,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "lontana",
-            "en": "Far away."
+            "en": "Far away.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "La Folla",
@@ -1242,9 +1346,12 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Tutti oramai sono usciti. Rimangono soli, l’uno di fronte all’altro, il principe e Turandot. La principessa rigida, statuaria, sotto l’ampio velo, non ha un gesto, non un movimento.",
-            "en": "Everyone has now left. Only the prince and Turandot remain, facing each other. The princess, rigid and statuesque beneath her broad veil, makes no gesture, no movement."
+            "en": "Everyone has now left. Only the prince and Turandot remain, facing each other. The princess, rigid and statuesque beneath her broad veil, makes no gesture, no movement.",
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "originalTitle": "Tu che di gel sei cinta",
+        "translatedTitle": "You who are girdled with ice"
       },
       {
         "number": 19,
@@ -1252,16 +1359,17 @@ export const turandotActThreeScenes = [
         "participants": [
           "Calaf",
           "Turandot",
-          "Voci Femminili",
-          "I Ragazzi",
-          "Voci Interne",
-          "I Ragazzi E Voci Interne"
+          "Female Voices",
+          "Children",
+          "Offstage Voices"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "it": "con impeto cupo e soffocato",
-            "en": "With dark, stifled passion."
+            "en": "With dark, stifled passion.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1273,12 +1381,15 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "Si precipita su di lei, strappandole il velo.",
-            "en": "He rushes towards her, tearing away her veil."
+            "en": "He rushes towards her, tearing away her veil.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "con fermezza ieratica",
-            "en": "With hieratic firmness."
+            "en": "With hieratic firmness.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -1297,12 +1408,15 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "E si precipita verso Turandot tendendo le braccia.",
-            "en": "He rushes towards Turandot with outstretched arms."
+            "en": "He rushes towards Turandot with outstretched arms.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "arretrando sconvolta, spaurita, disperatamente minacciosa",
-            "en": "Retreating, shaken and frightened, desperately threatening."
+            "en": "Retreating, shaken and frightened, desperately threatening.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -1398,7 +1512,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "la bacia con ardore",
-            "en": "He kisses her passionately."
+            "en": "He kisses her passionately.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1410,7 +1526,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "interne",
-            "en": "Offstage."
+            "en": "Offstage.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Voci Femminili",
@@ -1430,7 +1548,7 @@ export const turandotActThreeScenes = [
             "speaker": "Turandot",
             "speakerTranslation": "Turandot",
             "it": "Come vincesti?",
-            "en": "How did you conquer?",
+            "en": "How did you conquer me?",
             "literalText": true
           },
           {
@@ -1450,7 +1568,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "interni",
-            "en": "Offstage."
+            "en": "Offstage.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "I Ragazzi",
@@ -1476,7 +1596,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "c. s.",
-            "en": "As above."
+            "en": "As above.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "I Ragazzi E Voci Interne",
@@ -1495,7 +1617,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con impetuoso trasporto",
-            "en": "With passionate abandon."
+            "en": "With passionate abandon.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Calaf",
@@ -1521,7 +1645,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "esaltata, travolta",
-            "en": "Exalted, overwhelmed."
+            "en": "Exalted, overwhelmed.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -1533,7 +1659,9 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "con voce velata",
-            "en": "With a veiled voice."
+            "en": "With a veiled voice.",
+            "bracketStageDirection": true,
+            "shortCue": true
           },
           {
             "speaker": "Turandot",
@@ -1560,7 +1688,7 @@ export const turandotActThreeScenes = [
             "speaker": "Calaf",
             "speakerTranslation": "Calaf",
             "it": "Il mio mistero? Non ne ho più! Sei mia!\nTu che tremi se ti sfioro!\nTu che sbianchi se ti bacio,\npuoi perdermi se vuoi!\nIl mio nome e la vita insiem ti dono!\nIo sono Calaf, figlio di Timur!",
-            "en": "My mystery? I have none left! You are mine!\nYou who tremble if I brush against you!\nYou who grow pale if I kiss you,\nyou can lose me if you wish!\nI give you my name and my life together!\nI am Calaf, son of Timur!",
+            "en": "My mystery? I have none left! You are mine!\nYou who tremble at my touch!\nYou who grow pale when I kiss you,\nyou can destroy me if you wish!\nI give you my name and my life together!\nI am Calaf, son of Timur!",
             "literalText": true
           },
           {
@@ -1620,25 +1748,23 @@ export const turandotActThreeScenes = [
             "literalText": true
           }
         ],
-        "sourceNote": "The PDF prints the ending completed by Franco Alfano, in Arturo Toscanini’s version, in grey because it was not performed in this production. The complete ending is included here."
+        "sourceNote": "The PDF prints the ending completed by Franco Alfano, in Arturo Toscanini’s version, in grey because it was not performed in this production. The complete ending is included here.",
+        "originalTitle": "Principessa di morte!",
+        "translatedTitle": "Princess of death!"
       },
       {
         "number": 20,
         "type": "Finale",
         "participants": [
-          "La Folla",
+          "Crowd",
           "Turandot"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "L’esterno del palazzo imperiale, tutto bianco di marmi traforati, sui quali i riflessi rosei dell’aurora s’accendono come fiori. Sopra un’alta scala, al centro della scena. L’imperatore circondato dalla corte, dai dignitari, dai sapienti, dai soldati.",
-            "en": "The exterior of the imperial palace, all white pierced marble, on which the rosy reflections of dawn bloom like flowers. Above a high staircase, at the centre of the stage, the Emperor is surrounded by the court, dignitaries, wise men and soldiers."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Ai due lati del piazzale, in vasto semicerchio, l’enorme folla che acclama:",
-            "en": "On both sides of the square, in a broad semicircle, the enormous crowd cheers:"
+            "it": "L’esterno del palazzo imperiale, tutto bianco di marmi traforati, sui quali i riflessi rosei dell’aurora s’accendono come fiori. Sopra un’alta scala, al centro della scena. L’imperatore circondato dalla corte, dai dignitari, dai sapienti, dai soldati. Ai due lati del piazzale, in vasto semicerchio, l’enorme folla che acclama:",
+            "en": "The exterior of the imperial palace, all white pierced marble, on which the rosy reflections of dawn bloom like flowers. Above a high staircase, at the centre of the stage, the Emperor is surrounded by the court, dignitaries, wise men and soldiers. On both sides of the square, in a broad semicircle, the enormous crowd cheers:",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -1657,7 +1783,8 @@ export const turandotActThreeScenes = [
           {
             "speaker": "Stage direction",
             "it": "I due amanti si trovano avvinti perdutamente, mentre la folla getta fiori e acclama gioiosa.",
-            "en": "The two lovers are clasped together in utter abandon, while the crowd throws flowers and joyfully cheers."
+            "en": "The two lovers are clasped together in utter abandon, while the crowd throws flowers and joyfully cheers.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Folla",
@@ -1670,7 +1797,9 @@ export const turandotActThreeScenes = [
         "sourceDivision": {
           "original": "Quadro II",
           "translation": "Tableau II"
-        }
+        },
+        "originalTitle": "Diecimila anni al nostro Imperatore!",
+        "translatedTitle": "Ten thousand years to our Emperor!"
       }
     ]
   }

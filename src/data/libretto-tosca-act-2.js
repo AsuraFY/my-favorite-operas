@@ -1,26 +1,27 @@
 // Italian text and five scene divisions follow Opera Guide's Italian libretto.
-// English is a fresh line-by-line draft checked against Lyrical Opera Theater's bilingual edition.
-const lyric = (speaker, original, translation) => ({ speaker, original, translation });
+// English and dialogue reviewed against the Italian source on 20 October 2026.
+const lyric = (speaker, original, translation) => ({ speaker, original, translation, literalText: true });
 const direction = (original, translation) => lyric("Stage direction", original, translation);
+const cue = (original, translation) => ({ ...direction(original, translation), shortCue: true, bracketStageDirection: true });
 
 export const toscaActTwoScenes = [
   {
     number: 1,
     sections: [{ type: "Scena", originalTitle: "Scena prima", translatedTitle: "Scene One", participants: ["Baron Scarpia", "Sciarrone"], turns: [
-      direction("Scarpia è seduto alla tavola e vi cena. Interrompe a tratti la cena per riflettere. Guarda l'orologio: è smanioso e pensieroso.", "Scarpia sits at the table eating supper, pausing now and then to think. He looks at his watch, restless and preoccupied."),
-      lyric("Baron Scarpia", "Tosca è un buon falco!...\nCerto a quest'ora\ni miei segugi le due prede azzannano!\nDoman sul palco\nvedrà l'aurora\nAngelotti e il bel Mario al laccio\npendere.", "Tosca is a fine falcon!...\nSurely by now\nmy hounds have seized their two victims!\nTomorrow on the scaffold\nAngelotti and handsome Mario\nwill see the dawn\nhanging from a noose."),
-      direction("Suona. Entra Sciarrone.", "He rings. Sciarrone enters."),
+      direction("La camera di Scarpia al piano superiore del Palazzo Farnese. Tavola imbandita. Un’ampia finestra verso il cortile del Palazzo. È notte. Scarpia è seduto alla tavola e vi cena. Interrompe a tratti la cena per riflettere. Guarda l'orologio: è smanioso e pensieroso.", "Scarpia’s room on the upper floor of Palazzo Farnese. A table is laid for supper; a large window overlooks the palace courtyard. It is night. Scarpia sits at the table eating supper, pausing now and then to think. He looks at his watch, restless and preoccupied."),
+      lyric("Baron Scarpia", "Tosca è un buon falco!...\nCerto a quest'ora\ni miei segugi le due prede azzannano!\nDoman sul palco\nvedrà l'aurora\nAngelotti e il bel Mario al laccio\npendere.", "Tosca is a fine falcon!...\nSurely by now\nmy hounds have seized their two victims!\nTomorrow on the scaffold\nthe dawn will see\nAngelotti and handsome Mario from a noose\nhanging."),
+      cue("Suona. Entra Sciarrone.", "He rings. Sciarrone enters."),
       lyric("Baron Scarpia", "Tosca è a palazzo?...", "Is Tosca at the palace?..."),
       lyric("Sciarrone", "Un ciambellan ne uscia\npur ora in traccia...", "A chamberlain has just gone out\nto look for her..."),
-      direction("Scarpia accenna alla finestra.", "Scarpia gestures toward the window."),
+      cue("Scarpia accenna alla finestra.", "Scarpia gestures toward the window."),
       lyric("Baron Scarpia", "Apri. - Tarda è la notte...", "Open it. It is late at night..."),
       direction("Dal piano inferiore, dove la Regina di Napoli, Maria Carolina, dà una grande festa in onore di Melas, si ode il suonare di un'orchestra.", "From the floor below, where Maria Carolina, Queen of Naples, is holding a grand celebration in honor of Melas, an orchestra can be heard."),
       lyric("Baron Scarpia", "Alla cantata ancor manca la Diva,\ne strimpellan gavotte.", "The Diva has yet to appear for the cantata,\nwhile they strum gavottes."),
       direction("Scarpia si rivolge a Sciarrone. Sciarrone fa per andarsene; Scarpia si alza e scrive in fretta un biglietto.", "Scarpia turns to Sciarrone. As Sciarrone starts to leave, Scarpia rises and quickly writes a note."),
       lyric("Baron Scarpia", "Tu attenderai la Tosca in sull'entrata;\nle dirai ch'io l'aspetto\nfinita la cantata...\nO meglio...\nLe darai questo biglietto.", "Wait for Tosca at the entrance;\ntell her I shall expect her\nwhen the cantata is over...\nOr better...\ngive her this note."),
       direction("Sciarrone esce. Scarpia torna alla tavola e si versa da bere.", "Sciarrone leaves. Scarpia returns to the table and pours himself a drink."),
-      lyric("Baron Scarpia", "Ella verrà... per amor del suo Mario!\nPer amor del suo Mario... al piacer mio\ns'arrenderà. Tal dei profondi amori,\nè la profonda miseria. Ha più forte\nsapore la conquista violenta\nche il mellifluo consenso. Io di sospiri\ne di lattiginose albe lunari\npoco mi appago. Non so trarre accordi\ndi chitarra, né oroscopo di fior\nné far l'occhio di pesce,\no tubar come tortora!\nBramo. - La cosa bramata\nperseguo, me ne sazio e via la getto...\nvolto a nuova esca. Dio creò diverse\nbeltà e vini diversi... Io vo' gustar\nquanto più posso dell'opra divina!", "She will come... for love of her Mario!\nFor love of her Mario... she will yield\nto my desire. Such is the deep misery\nof deep love. Violent conquest\nhas a stronger flavor\nthan smooth consent. I care little\nfor sighs and pale moonlit dawns.\nI cannot coax a tune from a guitar,\nor read a flower's horoscope,\nor make a fish's eyes,\nor coo like a dove!\nI desire. I pursue\nwhat I desire, savor it, then cast it aside...\nand turn to new prey. God made many\nbeauties and many wines... I mean to taste\nas much of His creation as I can!"),
-      direction("Scarpia beve. Sciarrone entra.", "Scarpia drinks. Sciarrone enters."),
+      lyric("Baron Scarpia", "Ella verrà... per amor del suo Mario!\nPer amor del suo Mario... al piacer mio\ns'arrenderà. Tal dei profondi amori,\nè la profonda miseria. Ha più forte\nsapore la conquista violenta\nche il mellifluo consenso. Io di sospiri\ne di lattiginose albe lunari\npoco mi appago. Non so trarre accordi\ndi chitarra, né oroscopo di fior\nné far l'occhio di pesce,\no tubar come tortora!\nBramo. - La cosa bramata\nperseguo, me ne sazio e via la getto...\nvolto a nuova esca. Dio creò diverse\nbeltà e vini diversi... Io vo' gustar\nquanto più posso dell'opra divina!", "She will come... for love of her Mario!\nFor love of her Mario... to my pleasure\nshe will yield. Such, of profound loves,\nis the profound misery. More intense\nis the savor of violent conquest\nthan honeyed consent. With sighs\nand milky moonlit dawns\nI am little pleased. I cannot coax chords\nfrom a guitar, nor tell fortunes with flowers,\nnor make sheep's eyes,\nnor coo like a turtledove!\nI desire. The thing I desire\nI pursue, sate myself with it, and cast it aside...\nturning to fresh prey. God created varied\nbeauties and varied wines... I mean to taste\nas much as I can of His divine creation!"),
+      cue("Scarpia beve. Sciarrone entra.", "Scarpia drinks. Sciarrone enters."),
       lyric("Sciarrone", "Spoletta è giunto.", "Spoletta has arrived."),
       lyric("Baron Scarpia", "Entri. In buon punto!", "Send him in. Just in time!"),
       direction("Sciarrone esce per chiamare Spoletta, che accompagna nella sala, rimanendo poi presso la porta del fondo.", "Sciarrone goes to fetch Spoletta and brings him into the room, then remains by the door at the back.")
@@ -31,28 +32,28 @@ export const toscaActTwoScenes = [
     sections: [{ type: "Scena", originalTitle: "Scena seconda", translatedTitle: "Scene Two", participants: ["Baron Scarpia", "Spoletta", "Sciarrone", "Tosca and the Chorus (offstage)"], turns: [
       direction("Scarpia si siede e, tutto occupato a cenare, interroga intanto Spoletta senza guardarlo.", "Scarpia sits and keeps eating as he questions Spoletta without looking at him."),
       lyric("Baron Scarpia", "O galantuomo, come andò la caccia?...", "Well, good fellow, how did the hunt go?..."),
-      direction("Spoletta si avanza un poco, impaurito.", "Spoletta comes a little closer, frightened."),
+      cue("Spoletta si avanza un poco, impaurito.", "Spoletta comes a little closer, frightened."),
       lyric("Spoletta", "(Sant'Ignazio m'aiuta!)\nDella signora seguimmo la traccia.\nGiunti a un'erma villetta\ntra le fratte perduta...\nella v'entrò. N'escì sola ben presto.\nAllor scavalco lesto\nil muro del giardin coi miei cagnotti\ne piombo in casa...", "(Saint Ignatius help me!)\nWe followed the lady's trail.\nWe reached a lonely little villa,\nlost among the thickets...\nshe went in and soon came out alone.\nThen I quickly climbed\nthe garden wall with my men\nand burst into the house..."),
       lyric("Baron Scarpia", "Quel bravo Spoletta!", "Well done, Spoletta!"),
-      direction("Spoletta esita.", "Spoletta hesitates."),
+      cue("Spoletta esita.", "Spoletta hesitates."),
       lyric("Spoletta", "Fiuto!... razzolo!... frugo!...", "I sniffed!... I rooted around!... I searched!..."),
       direction("Scarpia si accorge dell'indecisione di Spoletta e si alza, pallido d'ira.", "Scarpia notices Spoletta's hesitation and rises, pale with anger."),
-      lyric("Baron Scarpia", "Ah! L'Angelotti?... ", "Ah! What of Angelotti?..."),
+      lyric("Baron Scarpia", "Ah! L'Angelotti?...", "Ah! What of Angelotti?..."),
       lyric("Spoletta", "Non s'è trovato.", "He was nowhere to be found."),
-      direction("Scarpia, furente, grida.", "Scarpia flies into a fury and shouts."),
+      cue("Scarpia, furente, grida.", "Scarpia flies into a fury and shouts."),
       lyric("Baron Scarpia", "Ah cane! Ah traditore!\nCeffo di basilisco,\nalle forche!", "You dog! You traitor!\nYou viper-faced wretch,\nto the gallows!"),
       direction("Spoletta trema e cerca di scongiurare la collera di Scarpia.", "Spoletta trembles, trying to ward off Scarpia's anger."),
       lyric("Spoletta", "Gesù!\nC'era il pittor...", "Jesus!\nThe painter was there..."),
       lyric("Baron Scarpia", "Cavaradossi?", "Cavaradossi?"),
-      direction("Spoletta accenna di sì e aggiunge pronto.", "Spoletta nods and quickly adds:"),
+      cue("Spoletta accenna di sì e aggiunge pronto.", "Spoletta nods and quickly adds:"),
       lyric("Spoletta", "Ei sa dove l'altro s'asconde...\nOgni suo gesto,\nogni accento tradìa\ntal beffarda ironia,\nch'io lo trassi in arresto!", "He knows where the other man is hiding...\nEvery gesture,\nevery word betrayed\nsuch mocking irony\nthat I had him arrested!"),
       lyric("Baron Scarpia", "Meno male!", "At least that's something!"),
-      direction("Spoletta accenna all'anticamera.", "Spoletta points toward the antechamber."),
+      cue("Spoletta accenna all'anticamera.", "Spoletta points toward the antechamber."),
       lyric("Spoletta", "Egli è là.", "He is there."),
       direction("Scarpia passeggia meditando. Dalla finestra aperta si ode la cantata eseguita dai cori nella sala della Regina.", "Scarpia paces, thinking. Through the open window comes the cantata, sung by the chorus in the Queen's hall."),
-      lyric("Tosca and the Chorus", "Sale, ascende l'uman cantico,\nVarca spazi, varca cieli,\nPer ignoti soli empirei,\nProfetati dai Vangeli,\nA te giunge o re dei re,\nQuesto canto voli a te.\nA te quest'inno voli\nSommo Iddio della vittoria.\nDio che fosti innanzi ai secoli\nAlle cantiche degli angeli\nQuest'inno di gloria\nOr voli a te!\nSale, ascende l'uman cantico,\nVarca spazi, varca cieli,\nA te giunge o re dei re.", "The human song rises, soars,\npasses through space, crosses the heavens,\ntoward unknown celestial suns\nforetold in the Gospels.\nTo you, King of kings, it comes;\nmay this song fly up to you.\nMay this hymn fly to you,\nMost High God of victory.\nGod who existed before the ages,\nthis hymn of glory\nthat angels sing\nnow flies to you!\nThe human song rises, soars,\npasses through space, crosses the heavens,\nand reaches you, King of kings."),
+      lyric("Tosca and the Chorus", "Sale, ascende l'uman cantico,\nVarca spazi, varca cieli,\nPer ignoti soli empirei,\nProfetati dai Vangeli,\nA te giunge o re dei re,\nQuesto canto voli a te.\nA te quest'inno voli\nSommo Iddio della vittoria.\nDio che fosti innanzi ai secoli\nAlle cantiche degli angeli\nQuest'inno di gloria\nOr voli a te!\nSale, ascende l'uman cantico,\nVarca spazi, varca cieli,\nA te giunge o re dei re.", "The human song rises, soars,\npasses through space, crosses the heavens,\nthrough unknown celestial suns\nforetold in the Gospels.\nTo you it comes, O King of kings;\nmay this song fly to you.\nMay this hymn fly to you,\nMost High God of victory.\nGod who existed before the ages,\ntogether with the angels' songs,\nmay this hymn of glory\nnow fly to you!\nThe human song rises, soars,\npasses through space, crosses the heavens,\nand reaches you, O King of kings."),
       direction("Scarpia capisce che Tosca è tornata e si trova al piano di sotto. Gli balena un'idea e parla a Spoletta.", "Scarpia realizes Tosca has returned and is below. An idea strikes him, and he speaks to Spoletta."),
-      lyric("Baron Scarpia", "Introducete il Cavaliere.\nA me\nRoberti e il Giudice del Fisco.", "Bring in the Cavaliere.\nFetch Roberti\nand the Fiscal Judge for me."),
+      lyric("Baron Scarpia", "Introducete il Cavaliere.\nA me\nRoberti e il Giudice del Fisco.", "Bring in the Cavaliere.\nSend me\nRoberti and the Fiscal Judge."),
       direction("Spoletta esce. Scarpia parla a Sciarrone, che esce. Scarpia siede di nuovo a tavola.", "Spoletta leaves. Scarpia speaks to Sciarrone, who exits. Scarpia sits at the table again.")
     ]}]
   },
@@ -65,13 +66,13 @@ export const toscaActTwoScenes = [
       lyric("Cavaradossi", "Vo' saper...", "I want to know..."),
       direction("Scarpia accenna una sedia al lato opposto della tavola. Cavaradossi rifiuta.", "Scarpia gestures to a chair on the other side of the table. Cavaradossi refuses."),
       lyric("Baron Scarpia", "Sedete...", "Sit down..."),
-      lyric("Cavaradossi", "Aspetto.", "I'll stand."),
+      lyric("Cavaradossi", "Aspetto.", "I am waiting."),
       lyric("Baron Scarpia", "E sia!\nV'è noto che un prigione...", "As you wish!\nDo you know that a prisoner..."),
       direction("Si ode la voce di Tosca che prende parte alla cantata.", "Tosca's voice is heard joining the cantata."),
       lyric("Cavaradossi", "La sua voce!...", "Her voice!..."),
       lyric("Baron Scarpia", "... v'è noto che un prigione oggi è fuggito da Castel Sant'Angelo?", "...do you know that a prisoner escaped from Castel Sant'Angelo today?"),
       lyric("Cavaradossi", "Ignoro.", "I know nothing of it."),
-      lyric("Baron Scarpia", "Eppur, si pretende che voi\nl'abbiate accolto in Sant'Andrea,\nprovvisto\ndi cibo e di vesti...", "And yet it is alleged that you\nreceived him at Sant'Andrea,\nprovided\nwith food and clothing..."),
+      lyric("Baron Scarpia", "Eppur, si pretende che voi\nl'abbiate accolto in Sant'Andrea,\nprovvisto\ndi cibo e di vesti...", "Yet it is alleged that you\nreceived him at Sant'Andrea,\nprovided him\nwith food and clothing..."),
       lyric("Cavaradossi", "Menzogna!", "A lie!"),
       lyric("Baron Scarpia", "... e guidato\nad un vostro podere suburbano...", "...and led him\nto your country estate..."),
       lyric("Cavaradossi", "Nego. - Le prove?", "I deny it. What proof?"),
@@ -82,7 +83,8 @@ export const toscaActTwoScenes = [
       lyric("Spoletta", "Alle nostre ricerche egli rideva...", "He laughed at our search..."),
       lyric("Cavaradossi", "E rido ancor!", "And I still laugh!"),
       direction("Scarpia si alza minaccioso. Irritato dalle voci della cantata, chiude la finestra e si rivolge imperiosamente a Cavaradossi.", "Scarpia rises threateningly. Irritated by the cantata, he shuts the window and imperiously turns to Cavaradossi."),
-      lyric("Baron Scarpia", "Questo è luogo di lacrime!\nBadate!\nOr basta! Rispondete!\nDov'è Angelotti?", "This is a place of tears!\nBe careful!\nEnough! Answer me!\nWhere is Angelotti?"),
+      lyric("Baron Scarpia", "Questo è luogo di lacrime!\nBadate!\nOr basta! Rispondete!", "This is a place of tears!\nBe careful!\nEnough! Answer me!"),
+      lyric("Baron Scarpia", "Dov'è Angelotti?", "Where is Angelotti?"),
       lyric("Cavaradossi", "Non lo so.", "I don't know."),
       lyric("Baron Scarpia", "Negate avergli dato cibo?", "Do you deny giving him food?"),
       lyric("Cavaradossi", "Nego!", "I do!"),
@@ -100,30 +102,32 @@ export const toscaActTwoScenes = [
   {
     number: 4,
     sections: [{ type: "Scena", originalTitle: "Scena quarta", translatedTitle: "Scene Four", participants: ["Tosca", "Cavaradossi", "Baron Scarpia", "Spoletta", "Sciarrone", "Roberti", "The Fiscal Judge", "A Clerk"], turns: [
-      direction("Tosca entra affannosa.", "Tosca rushes in, breathless."),
+      cue("Tosca entra affannosa.", "Tosca rushes in, breathless."),
       lyric("Baron Scarpia", "(Eccola!)", "(There she is!)"),
-      direction("Tosca vede Cavaradossi e corre ad abbracciarlo.", "Tosca sees Cavaradossi and runs to embrace him."),
+      cue("Tosca vede Cavaradossi e corre ad abbracciarlo.", "Tosca sees Cavaradossi and runs to embrace him."),
       lyric("Tosca", "Mario?! tu qui?", "Mario?! You're here?"),
       lyric("Cavaradossi", "(Di quanto là vedesti, taci, o m'uccidi!)", "(Keep silent about what you saw there, or you kill me!)"),
       direction("Tosca accenna che ha capito. Scarpia parla con solennità e ordina a Roberti di procedere. Fa cenno a Sciarrone di aprire la porta della camera della tortura. Il Giudice entra con gli altri; Tosca e Scarpia restano nella sala, Spoletta presso la porta sul fondo.", "Tosca signals that she understands. Scarpia speaks solemnly and tells Roberti to proceed. He gestures for Sciarrone to open the door to the torture room. The Judge and the others go inside, leaving Tosca and Scarpia in the room, with Spoletta by the rear door."),
       lyric("Baron Scarpia", "Mario Cavaradossi,\nqual testimone il Giudice vi aspetta.\nPria le forme ordinarie... Indi... ai miei cenni...", "Mario Cavaradossi,\nthe Judge is waiting for you as a witness.\nFirst the usual formalities... Then, at my signal..."),
       direction("Sciarrone chiude la porta. Tosca si mostra sorpresa; Scarpia, con studiata gentilezza, la rassicura e le accenna di sedere. Tosca siede con calma studiata.", "Sciarrone closes the door. Tosca starts in surprise; Scarpia reassures her with calculated politeness and gestures for her to sit. She sits with studied calm."),
-      lyric("Baron Scarpia", "Ed or fra noi da buoni amici.\nVia quell'aria sgomentata...\nLa storia del ventaglio?", "Now let us talk as good friends.\nCome, lose that frightened look...\nWhat about the fan?"),
-      direction("Scarpia passa dietro al canapè su cui siede Tosca e vi si appoggia, parlando con galanteria.", "Scarpia moves behind the sofa where Tosca is sitting and leans against it, speaking gallantly."),
-      lyric("Tosca", "Sgomento alcun non ho...\nFu sciocca gelosia...", "I'm not frightened...\nIt was foolish jealousy..."),
+      lyric("Baron Scarpia", "Ed or fra noi da buoni amici.\nVia quell'aria sgomentata...", "And now, between ourselves, as good friends.\nAway with that frightened look..."),
+      lyric("Tosca", "Sgomento alcun non ho...", "I have no fear..."),
+      lyric("Baron Scarpia", "La storia del ventaglio?", "The matter of the fan?"),
+      lyric("Tosca", "Fu sciocca gelosia...", "It was foolish jealousy..."),
       lyric("Baron Scarpia", "L'Attavanti non era dunque alla villa?", "So Attavanti was not at the villa?"),
-      lyric("Tosca", "No: egli era solo.", "No. He was alone."),
+      lyric("Tosca", "No: egli era solo.", "No: he was alone."),
       lyric("Baron Scarpia", "Solo?\nNe siete ben sicura?", "Alone?\nAre you quite sure?"),
-      lyric("Tosca", "Nulla sfugge ai gelosi. Solo! solo!", "Nothing escapes a jealous woman. Alone! Alone!"),
+      lyric("Tosca", "Nulla sfugge ai gelosi. Solo! solo!", "Nothing escapes the jealous. Alone! Alone!"),
       direction("Scarpia prende una sedia, la porta di fronte a Tosca, vi si siede e la guarda fissamente.", "Scarpia takes a chair, sets it in front of Tosca, sits, and stares at her."),
       lyric("Baron Scarpia", "Davver?!", "Really?!"),
       lyric("Tosca", "Solo, sì!", "Alone, yes!"),
-      lyric("Baron Scarpia", "Quanto fuoco!\nPar che abbiate paura di tradirvi.\nSciarrone, che dice il Cavalier?", "Such fire!\nYou seem afraid of giving yourself away.\nSciarrone, what does the Cavaliere say?"),
+      lyric("Baron Scarpia", "Quanto fuoco!\nPar che abbiate paura di tradirvi.", "Such fire!\nYou seem afraid of giving yourself away."),
+      lyric("Baron Scarpia", "Sciarrone, che dice il Cavalier?", "Sciarrone, what does the Cavaliere say?"),
       lyric("Sciarrone", "Nega.", "He denies it."),
       lyric("Baron Scarpia", "Insistiamo.", "We shall continue."),
       direction("Sciarrone rientra nella camera della tortura e chiude la porta.", "Sciarrone goes back into the torture room and closes the door."),
       lyric("Tosca", "Oh, è inutil!", "Oh, it's no use!"),
-      direction("Scarpia si alza e passeggia, serissimo.", "Scarpia rises and paces, utterly serious."),
+      cue("Scarpia si alza e passeggia, serissimo.", "Scarpia rises and paces, utterly serious."),
       lyric("Baron Scarpia", "Lo vedremo, signora.", "We shall see, madam."),
       lyric("Tosca", "Dunque, per compiacervi, si dovrebbe\nmentir?", "So to please you, one should\nlie?"),
       lyric("Baron Scarpia", "No, ma il vero potrebbe abbreviargli\nun'ora assai penosa...", "No, but the truth could spare him\na very painful hour..."),
@@ -133,17 +137,18 @@ export const toscaActTwoScenes = [
       lyric("Baron Scarpia", "Legato mani e piè\nil vostro amante ha un cerchio uncinato\nalle tempia,\nche ad ogni niego ne sprizza sangue\nsenza mercè!", "Bound hand and foot,\nyour lover has a spiked band around\nhis temples,\nthat spurts blood at every denial\nwithout mercy!"),
       direction("Tosca balza in piedi e ascolta, con ansia, aggrappata allo schienale del canapè.", "Tosca leaps to her feet and listens in anguish, gripping the back of the sofa."),
       lyric("Tosca", "Non è ver, non è ver!\nSogghigno di demone...", "It's not true, it's not true!\nA demon's cruel joke..."),
-      direction("Si ode un gemito prolungato di Cavaradossi.", "Cavaradossi lets out a long groan."),
+      cue("Si ode un gemito prolungato di Cavaradossi.", "Cavaradossi lets out a long groan."),
+      lyric("Cavaradossi (offstage)", "Ahimè!", "Ah!"),
       lyric("Tosca", "Un gemito? Pietà, pietà!", "A groan? Have mercy, have mercy!"),
       lyric("Baron Scarpia", "Sta in voi di salvarlo.", "It is in your power to save him."),
       lyric("Tosca", "Ebben... ma cessate!", "Then... make them stop!"),
-      direction("Scarpia va presso la porta.", "Scarpia goes to the door."),
+      cue("Scarpia va presso la porta.", "Scarpia goes to the door."),
       lyric("Baron Scarpia", "Sciarrone,\nsciogliete!", "Sciarrone,\nrelease him!"),
       lyric("Sciarrone", "Tutto?", "Everything?"),
       lyric("Baron Scarpia", "Tutto.\nEd or la verità...", "Everything.\nAnd now, the truth..."),
       lyric("Tosca", "Ch'io lo veda!", "Let me see him!"),
       lyric("Baron Scarpia", "No!", "No!"),
-      direction("Tosca riesce ad avvicinarsi alla porta.", "Tosca manages to get close to the door."),
+      cue("Tosca riesce ad avvicinarsi alla porta.", "Tosca manages to get close to the door."),
       lyric("Tosca", "Mario!", "Mario!"),
       lyric("Cavaradossi (offstage)", "Tosca!", "Tosca!"),
       lyric("Tosca", "Ti fanno male\nancor?", "Are they still\nhurting you?"),
@@ -196,11 +201,11 @@ export const toscaActTwoScenes = [
       lyric("Tosca", "No, amor...", "No, my love..."),
       lyric("Cavaradossi", "Davvero?...", "Truly?..."),
       direction("Scarpia ordina a Spoletta di recarsi al pozzo del giardino. Spoletta esce. Cavaradossi ha udito e si alza minaccioso verso Tosca, poi, sfinito, ricade sul canapè.", "Scarpia orders Spoletta to go to the garden well. Spoletta leaves. Cavaradossi has heard and rises threateningly toward Tosca, then, exhausted, sinks back onto the sofa."),
-      lyric("Baron Scarpia", "Nel pozzo\ndel giardino. - Va, Spoletta!", "At the garden\nwell. Go, Spoletta!"),
+      lyric("Baron Scarpia", "Nel pozzo\ndel giardino. - Va, Spoletta!", "In the well\nin the garden. Go, Spoletta!"),
       lyric("Cavaradossi", "M'hai tradito!", "You betrayed me!"),
       lyric("Tosca", "Mario!", "Mario!"),
       lyric("Cavaradossi", "Maledetta!", "Damn you!"),
-      direction("Sciarrone irrompe, trafelato.", "Sciarrone rushes in, out of breath."),
+      cue("Sciarrone irrompe, trafelato.", "Sciarrone rushes in, out of breath."),
       lyric("Sciarrone", "Eccellenza! quali nuove!...", "Your Excellency! What news!..."),
       lyric("Baron Scarpia", "Che vuol dir quell'aria afflitta?", "Why that gloomy face?"),
       lyric("Sciarrone", "Un messaggio di sconfitta...", "News of a defeat..."),
@@ -229,17 +234,19 @@ export const toscaActTwoScenes = [
       lyric("Tosca", "Quanto?", "How much?"),
       lyric("Baron Scarpia", "Quanto?", "How much?"),
       lyric("Tosca", "Il prezzo!...", "The price!..."),
-      direction("Scarpia ride e si versa da bere.", "Scarpia laughs and pours himself a drink."),
-      lyric("Baron Scarpia", "Già - Mi dicon venal, ma a donna bella\nnon mi vendo a prezzo di moneta.\nSe la giurata fede\ndevo tradir... ne voglio altra mercede.\nQuest'ora io l'attendeva!\nGià mi struggea\nl'amor della diva!\nMa poc'anzi ti mirai\nqual non ti vidi mai!\nQuel tuo pianto era lava\nai sensi miei e il tuo sguardo\nche odio in me dardeggiava,\nmie brame inferociva!...\nAgil qual leopardo\nti avvinghiasti all'amante;\nAh! In quell'istante\nt'ho giurata mia!...\nMia!", "They call me venal, but for a beautiful woman\nI do not sell myself for money.\nIf I am to break my sworn faith...\nI demand another reward.\nI have waited for this hour!\nAlready I burned\nwith love for the diva!\nBut just now I saw you\nas I have never seen you before!\nYour tears were lava\nto my senses, and your gaze,\nflashing hatred at me,\nstoked my desire to fury!...\nSwift as a leopard,\nyou clung to your lover;\nAh! At that instant\nI claimed you as mine!...\nMine!"),
+      cue("Scarpia ride e si versa da bere.", "Scarpia laughs and pours himself a drink."),
+      lyric("Baron Scarpia", "Già - Mi dicon venal, ma a donna bella\nnon mi vendo a prezzo di moneta.", "They call me venal, but for a beautiful woman\nI do not sell myself for money."),
+      lyric("Baron Scarpia", "Se la giurata fede\ndevo tradir... ne voglio altra mercede.\nQuest'ora io l'attendeva!\nGià mi struggea\nl'amor della diva!\nMa poc'anzi ti mirai\nqual non ti vidi mai!\nQuel tuo pianto era lava\nai sensi miei e il tuo sguardo\nche odio in me dardeggiava,\nmie brame inferociva!...\nAgil qual leopardo\nti avvinghiasti all'amante;\nAh! In quell'istante\nt'ho giurata mia!...\nMia!", "If I am to break my sworn faith...\nI demand another reward.\nI have waited for this hour!\nAlready I burned\nwith love for the diva!\nBut just now I saw you\nas I have never seen you before!\nYour tears were lava\nto my senses, and your gaze,\nflashing hatred at me,\nstoked my desire to fury!...\nSwift as a leopard,\nyou clung to your lover;\nAh! At that instant\nI claimed you as mine!...\nMine!"),
       direction("Scarpia si alza e tende le braccia verso Tosca. Lei, impietrita dalle sue parole, si alza di scatto e si rifugia dietro il canapè.", "Scarpia rises and reaches for Tosca. Frozen by his words, she jumps up and takes refuge behind the sofa."),
       lyric("Tosca", "Ah!", "Ah!"),
       lyric("Baron Scarpia", "Sì, t'avrò!...", "Yes, I shall have you!..."),
-      direction("Tosca corre alla finestra.", "Tosca runs to the window."),
+      cue("Tosca corre alla finestra.", "Tosca runs to the window."),
       lyric("Tosca", "Piuttosto giù mi avvento!", "I'd sooner throw myself down!"),
-      lyric("Baron Scarpia", "In pegno\nil Mario tuo mi resta!...", "Your Mario\nremains as my pledge!..."),
+      lyric("Baron Scarpia", "In pegno\nil Mario tuo mi resta!...", "As a pledge,\nyour Mario remains in my hands!..."),
       lyric("Tosca", "Ah! miserabile...\nl'orribile mercato!", "Ah, you wretch...\nthis horrible bargain!"),
       direction("Tosca corre verso la porta pensando di rivolgersi alla Regina. Scarpia indovina il suo pensiero, si tira in disparte e la lascia andare. Tosca fa per uscire; Scarpia la ferma con un gesto.", "Tosca rushes toward the door, thinking to appeal to the Queen. Scarpia guesses her intention, steps aside, and lets her go. As she starts out, he stops her with a gesture."),
-      lyric("Baron Scarpia", "Violenza non ti farò. Sei libera.\nVa pure.\nMa è fallace speranza... la Regina\nfarebbe grazia ad un cadavere!\nCome tu m'odii!", "I will not use force. You are free.\nGo, then.\nBut hope is in vain... the Queen\nwould be granting mercy to a corpse!\nHow you hate me!"),
+      lyric("Baron Scarpia", "Violenza non ti farò. Sei libera.\nVa pure.\nMa è fallace speranza... la Regina\nfarebbe grazia ad un cadavere!", "I will not use force. You are free.\nGo, then.\nBut hope is in vain... the Queen\nwould be granting mercy to a corpse!"),
+      lyric("Baron Scarpia", "Come tu m'odii!", "How you hate me!"),
       lyric("Tosca", "Ah! Dio!...", "Oh God!..."),
       lyric("Baron Scarpia", "Così ti voglio!", "That's how I want you!"),
       lyric("Tosca", "Non toccarmi, demonio!\nT'odio, t'odio, abbietto, vile!", "Don't touch me, demon!\nI hate you, I hate you, vile coward!"),
@@ -252,15 +259,16 @@ export const toscaActTwoScenes = [
       direction("Un lontano rullo di tamburi si avvicina a poco a poco, poi si dilegua. Scarpia si ferma; Tosca, dopo aver ascoltato con ansia, si allontana dalla finestra e si appoggia al canapè, estenuata.", "A distant roll of drums slowly approaches, then fades away. Scarpia stops. Tosca listens anxiously, then leaves the window and leans, exhausted, against the sofa."),
       lyric("Baron Scarpia", "Odi?\nÈ il tamburo. S'avvia. Guida la scorta\nultima ai condannati. Il tempo passa!\nSai... quale oscura opra laggiù si\ncompia?\nLà... si drizza un patibolo!...\nAl tuo Mario,\nper tuo voler, non resta che un'ora di vita.", "Do you hear?\nIt's the drum. The last escort\nis setting out for the condemned. Time is passing!\nDo you know... what grim deed\nis being done down there?\nThere... a scaffold is being raised!...\nYour Mario has only one hour\nto live, and that is by your choice."),
       direction("Tosca, sopraffatta dal dolore, cade sul canapè. Scarpia si appoggia alla tavola, si versa del caffè e lo beve guardandola.", "Overcome with grief, Tosca sinks onto the sofa. Scarpia leans against the table, pours coffee, and drinks while watching her."),
-      lyric("Tosca", "Vissi d'arte, vissi d'amore,\nnon feci mai male ad anima viva!...\nCon man furtiva\nquante miserie conobbi, aiutai...\nSempre con fe' sincera,\nla mia preghiera\nai santi tabernacoli salì.\nSempre con fe' sincera\ndiedi fiori agli altar.\nNell'ora del dolore\nperché, perché Signore,\nperché me ne rimuneri così?\nDiedi gioielli\ndella Madonna al manto,\ne diedi il canto\nagli astri, al ciel, che ne ridean più belli.\nNell'ora del dolore,\nperché, perché Signore,\nperché me ne rimuneri così?", "I lived for art, I lived for love;\nI never harmed a living soul!...\nWith a hidden hand,\nhow many miseries I knew and helped...\nAlways with sincere faith,\nmy prayer rose\nto the saints' holy shrines.\nAlways with sincere faith,\nI gave flowers to the altars.\nIn this hour of sorrow,\nwhy, why, Lord,\nwhy do you repay me so?\nI gave jewels\nfor the Madonna's mantle,\nand gave my song\nto the stars, to heaven, which shone more brightly with it.\nIn this hour of sorrow,\nwhy, why, Lord,\nwhy do you repay me so?"),
+      lyric("Tosca", "Vissi d'arte, vissi d'amore,\nnon feci mai male ad anima viva!...\nCon man furtiva\nquante miserie conobbi, aiutai...\nSempre con fe' sincera,\nla mia preghiera\nai santi tabernacoli salì.\nSempre con fe' sincera\ndiedi fiori agli altar.\nNell'ora del dolore\nperché, perché Signore,\nperché me ne rimuneri così?\nDiedi gioielli\ndella Madonna al manto,\ne diedi il canto\nagli astri, al ciel, che ne ridean più belli.\nNell'ora del dolore,\nperché, perché Signore,\nperché me ne rimuneri così?", "I lived for art, I lived for love;\nI never harmed a living soul!...\nWith a discreet hand,\nI helped all whose distress I knew...\nAlways with sincere faith,\nmy prayer\nrose to the holy shrines.\nAlways with sincere faith\nI gave flowers to the altars.\nIn this hour of sorrow\nwhy, why, Lord,\nwhy do you repay me so?\nI gave jewels\nfor the Madonna's mantle,\nand offered my song\nto the stars, to heaven, which smiled more beautifully.\nIn this hour of sorrow,\nwhy, why, Lord,\nwhy do you repay me so?"),
       lyric("Baron Scarpia", "Risolvi!", "Decide!"),
-      lyric("Tosca", "Mi vuoi supplice ai tuoi piedi!\nVedi,\nle man giunte io stendo a te!\nEcco... vedi...\ne mercè d'un tuo detto,\nvinta, aspetto...", "You want me begging at your feet!\nLook,\nI stretch my clasped hands to you!\nThere... look...\nI wait, defeated,\nfor one word of mercy from you..."),
+      lyric("Tosca", "Mi vuoi supplice ai tuoi piedi!", "You want me begging at your feet!"),
+      lyric("Tosca", "Vedi,\nle man giunte io stendo a te!\nEcco... vedi...\ne mercè d'un tuo detto,\nvinta, aspetto...", "Look,\nI stretch my clasped hands to you!\nThere... look...\nand mercy from a word of yours,\ndefeated, I await..."),
       direction("Tosca si inginocchia davanti a Scarpia, singhiozza, alza le mani giunte, poi resta avvilita.", "Tosca kneels before Scarpia, sobs, raises her clasped hands, then waits in humiliation."),
-      lyric("Baron Scarpia", "Sei troppo bella, Tosca, e troppo\namante.\nCedo. - A misero prezzo\ntu, a me una vita, io, a te chieggo un istante!", "You are too beautiful, Tosca, and too\ndevoted.\nI yield. For a miserable price,\nyou give me a life, and I ask one moment from you!"),
+      lyric("Baron Scarpia", "Sei troppo bella, Tosca, e troppo\namante.\nCedo. - A misero prezzo\ntu, a me una vita, io, a te chieggo un istante!", "You are too beautiful, Tosca, and too\nfull of love.\nI yield. At a paltry price:\nyou ask me for a life; I ask you for a moment!"),
       lyric("Tosca", "Va! - Va! - Mi fai ribrezzo!", "Go! Go! You disgust me!"),
-      direction("Bussano alla porta.", "There is a knock at the door."),
+      cue("Bussano alla porta.", "There is a knock at the door."),
       lyric("Baron Scarpia", "Chi è là?", "Who is there?"),
-      direction("Spoletta entra, frettoloso e trafelato.", "Spoletta hurries in, breathless."),
+      cue("Spoletta entra, frettoloso e trafelato.", "Spoletta hurries in, breathless."),
       lyric("Spoletta", "Eccellenza, l'Angelotti al nostro\ngiungere si uccise.", "Your Excellency, when we arrived,\nAngelotti killed himself."),
       lyric("Baron Scarpia", "Ebbene, lo si appenda\nmorto alle forche! E l'altro prigionier?", "Then hang his corpse\non the gallows! And the other prisoner?"),
       lyric("Spoletta", "Il Cavalier Cavaradossi?\nÈ tutto pronto, Eccellenza!", "The Cavaliere Cavaradossi?\nEverything is ready, Your Excellency!"),
@@ -268,11 +276,21 @@ export const toscaActTwoScenes = [
       direction("Scarpia dice a Spoletta di aspettare, poi parla sottovoce a Tosca. Lei accenna di sì col capo e piange per la vergogna. Scarpia si rivolge di nuovo a Spoletta; Tosca lo interrompe.", "Scarpia tells Spoletta to wait, then quietly speaks to Tosca. She nods and weeps with shame. Scarpia turns back to Spoletta, but Tosca interrupts him."),
       lyric("Baron Scarpia", "Aspetta.\nEbbene?\nOdi...", "Wait.\nWell?\nListen..."),
       lyric("Tosca", "Ma libero all'istante lo voglio!", "But I want him freed at once!"),
-      lyric("Baron Scarpia", "Occorre simular. Non posso\nfar grazia aperta. Bisogna che tutti\nabian per morto il cavalier.\nQuest'uomo fido provvederà.\nL'ordin ch'io gli darò voi qui presente.\nSpoletta: chiudi.\nHo mutato d'avviso...\nIl prigionier sia fucilato.\nAttendi...\nCome facemmo col Conte Palmieri...", "It must be made to look real. I cannot\ngrant an open pardon. Everyone must\nbelieve the Cavaliere is dead.\nThis trusted man will see to it.\nYou will witness the order I give him.\nSpoletta, shut the door.\nI have changed my mind...\nThe prisoner is to be shot.\nWait...\nAs we did with Count Palmieri..."),
-      direction("Tosca scatta atterrita. Scarpia fissa Spoletta, che annuisce per mostrare d'aver capito.", "Tosca recoils in terror. Scarpia stares at Spoletta, who nods to show he understands."),
-      lyric("Spoletta", "Un'uccisione...\nHo ben compreso.\nSì. Come Palmieri...", "A killing...\nI understand perfectly.\nYes. As with Palmieri..."),
-      lyric("Baron Scarpia", "... simulata!... Come\navvenne del Palmieri!\nHai ben compreso?\nVa.\nLe darai passo. Bada:\nall'ora quarta...", "...a sham!... Just as\nwith Palmieri!\nDo you understand?\nGo.\nLet her through. Remember:\nat the fourth hour..."),
+      lyric("Baron Scarpia", "Occorre simular. Non posso\nfar grazia aperta. Bisogna che tutti\nabbian per morto il cavalier.\nQuest'uomo fido provvederà.", "We must pretend. I cannot\ngrant an open pardon. Everyone must\nbelieve the Cavaliere dead.\nThis trusted man will see to it."),
+      lyric("Tosca", "Chi mi assicura?", "What guarantee have I?"),
+      lyric("Baron Scarpia", "L'ordin ch'io gli darò voi qui presente.\nSpoletta: chiudi.", "The order I shall give him in your presence.\nSpoletta: close the door."),
+      cue("Spoletta frettolosamente chiude la porta, poi ritorna presso Scarpia.", "Spoletta hurriedly closes the door, then returns to Scarpia."),
+      lyric("Baron Scarpia", "Ho mutato d’avviso...\nIl prigionier sia fucilato.", "I have changed my mind...\nThe prisoner is to be shot."),
+      cue("Tosca scatta atterrita.", "Tosca recoils in terror."),
+      lyric("Baron Scarpia", "Attendi...", "Wait..."),
+      direction("Scarpia fissa con intenzione Spoletta, che accenna replicatamente col capo.", "Scarpia stares meaningfully at Spoletta, who nods repeatedly."),
+      lyric("Baron Scarpia", "Come facemmo col Conte Palmieri...", "As we did with Count Palmieri..."),
+      lyric("Spoletta", "Un'uccisione...", "A killing..."),
+      lyric("Baron Scarpia", "... simulata!... Come\navvenne del Palmieri!\nHai ben compreso?", "...a sham!... Just as\nwith Palmieri!\nDo you understand?"),
+      lyric("Spoletta", "Ho ben compreso.", "I understand perfectly."),
+      lyric("Baron Scarpia", "Va.", "Go."),
       lyric("Tosca", "Voglio avvertirlo io stessa.", "I want to tell him myself."),
+      lyric("Baron Scarpia", "E sia.\nLe darai passo. Bada:\nall'ora quarta...", "So be it.\nLet her through. Remember:\nat four o'clock..."),
       lyric("Spoletta", "Sì. Come Palmieri...", "Yes. As with Palmieri..."),
       direction("Spoletta esce. Scarpia ascolta i suoi passi allontanarsi, poi si avvicina con passione a Tosca.", "Spoletta leaves. Scarpia listens as his footsteps recede, then approaches Tosca ardently."),
       lyric("Baron Scarpia", "Io tenni la promessa...", "I kept my promise..."),
@@ -288,13 +306,131 @@ export const toscaActTwoScenes = [
       direction("Scarpia apre le braccia per avvincerla. Tosca lo colpisce al petto col coltello.", "Scarpia opens his arms to embrace her. Tosca stabs him in the chest with the knife."),
       lyric("Baron Scarpia", "Maledetta!", "Accursed woman!"),
       lyric("Tosca", "Questo è il bacio di Tosca!", "This is Tosca's kiss!"),
-      lyric("Baron Scarpia", "Aiuto! muoio!\nSoccorso! Muoio!", "Help! I'm dying!\nHelp! I'm dying!"),
-      direction("Scarpia barcolla tendendo il braccio a Tosca. Lei lo sfugge e lo respinge inorridita quando lui cerca di toccarla. Scarpia cade e cerca di rialzarsi aggrappandosi al canapè.", "Scarpia staggers, reaching toward Tosca. She evades him and recoils, pushing him away when he tries to touch her. He falls and tries to rise, clutching the sofa."),
-      lyric("Tosca", "Ti soffoca il sangue?\nE ucciso da una donna!\nM'hai assai torturata!...\nOdi tu ancora? Parla!... Guardami!...\nSon Tosca!... O Scarpia!", "Is your blood choking you?\nKilled by a woman!\nYou tortured me enough!...\nCan you still hear? Speak!... Look at me!...\nI am Tosca!... Scarpia!"),
-      lyric("Baron Scarpia", "Soccorso, aiuto!\nMuoio!", "Help, help!\nI'm dying!"),
-      direction("Scarpia fa un ultimo sforzo e cade riverso.", "Scarpia makes one last effort and falls back, motionless."),
-      lyric("Tosca", "Muori dannato! Muori, Muori!\nÈ morto! Or gli perdono!\nE avanti a lui tremava tutta Roma!", "Die, you damned man! Die, die!\nHe's dead! Now I forgive him!\nAnd all Rome trembled before him!"),
+      lyric("Baron Scarpia", "Aiuto! muoio!", "Help! I am dying!"),
+      cue("Scarpia barcolla tendendo il braccio a Tosca.", "Scarpia staggers, reaching toward Tosca."),
+      lyric("Baron Scarpia", "Soccorso! Muoio!", "Help! I am dying!"),
+      lyric("Tosca", "Ti soffoca il sangue?", "Is your blood choking you?"),
+      direction("Scarpia si dibatte inutilmente e cerca di rialzarsi, aggrappandosi al canapè.", "Scarpia struggles in vain and tries to rise, clutching the sofa."),
+      lyric("Tosca", "E ucciso da una donna!\nM'hai assai torturata!...\nOdi tu ancora? Parla!... Guardami!...\nSon Tosca!... O Scarpia!", "And killed by a woman!\nYou have tortured me enough!...\nCan you still hear? Speak!... Look at me!...\nI am Tosca!... O Scarpia!"),
+      lyric("Baron Scarpia", "Soccorso, aiuto!\nMuoio!", "Help, help!\nI am dying!"),
+      cue("Scarpia fa un ultimo sforzo e cade riverso.", "Scarpia makes one last effort and falls back, motionless."),
+      lyric("Tosca", "Muori dannato! Muori, Muori!", "Die, you damned man! Die, die!"),
+      lyric("Tosca", "È morto! Or gli perdono!\nE avanti a lui tremava tutta Roma!", "He's dead! Now I forgive him!\nAnd all Rome trembled before him!"),
       direction("Tosca si china sul viso di Scarpia. Poi si lava le dita, si ravvia i capelli guardandosi allo specchio e cerca il salvacondotto sullo scrittoio. Infine lo vede nella mano di Scarpia; gli solleva il braccio, prende il foglio e se lo nasconde sul petto. Si avvia per uscire, ma torna a prendere due candele e le accende. Ne mette una ai lati della testa di Scarpia. Stacca un crocefisso dalla parete, s'inginocchia e lo posa sul petto di Scarpia. Si alza ed esce con cautela, richiudendo la porta.", "Tosca bends over Scarpia's face. She washes her fingers, arranges her hair before a mirror, and searches the desk for the safe-conduct. At last she sees it in Scarpia's hand; she lifts his arm, takes the paper, and hides it against her breast. She starts to leave, then returns for two candles and lights them. She places one on each side of Scarpia's head. She removes a crucifix from the wall, kneels, and lays it on his chest. She rises and leaves cautiously, closing the door behind her.")
     ]}]
+  }
+];
+
+// Listening labels follow the selected recording; no score numbers are invented.
+toscaActTwoScenes[0].outline = [
+  {
+    "type": "Scena",
+    "title": "Tosca è un buon falco!",
+    "translation": "Tosca is a fine hawk!",
+    "match": "Tosca è un buon falco"
+  },
+  {
+    "type": "Monologo",
+    "title": "Ella verrà… Ha più forte sapore",
+    "translation": "She will come… It has a stronger flavor",
+    "match": "Ella verrà"
+  }
+];
+toscaActTwoScenes[1].outline = [
+  {
+    "type": "Scena",
+    "title": "O galantuomo, come andò la caccia?",
+    "translation": "Well, good fellow, how did the hunt go?",
+    "match": "O galantuomo"
+  },
+  {
+    "type": "Scena e coro",
+    "title": "Meno male!",
+    "translation": "At least that is something!",
+    "match": "Meno male!"
+  }
+];
+toscaActTwoScenes[2].outline = [
+  {
+    "type": "Scena",
+    "title": "Dov'è Angelotti?",
+    "translation": "Where is Angelotti?",
+    "match": "Dov'è Angelotti"
+  }
+];
+toscaActTwoScenes[3].outline = [
+  {
+    "type": "Scena",
+    "title": "Ed or fra noi parliam da buoni amici",
+    "translation": "And now let us speak as good friends",
+    "match": "Ed or fra noi"
+  },
+  {
+    "type": "Scena",
+    "title": "Sciarrone, che dice il Cavalier?",
+    "translation": "Sciarrone, what does the Cavalier say?",
+    "match": "Sciarrone, che dice"
+  },
+  {
+    "type": "Scena",
+    "title": "Orsù, Tosca, parlate",
+    "translation": "Come now, Tosca, speak",
+    "match": "Orsù, Tosca"
+  },
+  {
+    "type": "Scena",
+    "title": "Floria! … Amore",
+    "translation": "Floria! … My love!",
+    "match": "Floria!"
+  }
+];
+toscaActTwoScenes[4].outline = [
+  {
+    "type": "Scena",
+    "title": "Salvatelo! … Io? Voi!",
+    "translation": "Save him! … Me? You!",
+    "match": "Salvatelo!"
+  },
+  {
+    "type": "Scena",
+    "title": "Se la giurata fede debbo tradir",
+    "translation": "If I must betray my sworn faith",
+    "match": "Se la giurata fede"
+  },
+  {
+    "type": "Scena",
+    "title": "Come tu mi odi!",
+    "translation": "How you hate me!",
+    "match": "Come tu m'odii!"
+  },
+  {
+    "type": "Aria",
+    "title": "Vissi d'arte, vissi d'amore",
+    "translation": "I lived for art, I lived for love",
+    "match": "Vissi d'arte"
+  },
+  {
+    "type": "Scena",
+    "title": "Vedi, le man giunte io stendo a te!",
+    "translation": "See, I stretch my folded hands to you!",
+    "match": "Vedi,"
+  },
+  {
+    "type": "Scena",
+    "title": "Io tenni la promessa",
+    "translation": "I kept my promise",
+    "match": "Io tenni la promessa"
+  },
+  {
+    "type": "Scena",
+    "title": "Tosca, finalmente mia!",
+    "translation": "Tosca, mine at last!",
+    "match": "Tosca, finalmente mia!"
+  },
+  {
+    "type": "Finale",
+    "title": "Or gli perdono!",
+    "translation": "Now I forgive him!",
+    "match": "È morto! Or gli perdono!"
   }
 ];

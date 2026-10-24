@@ -1,4 +1,4 @@
-// Carmen: French libretto from Opera Guide; line-aligned English draft.
+// Carmen Act 3: French source and English reviewed 20 October 2026.
 export const carmenActThreeScenes = [
   {
     "number": 1,
@@ -6,22 +6,34 @@ export const carmenActThreeScenes = [
     "sections": [
       {
         "number": null,
-        "type": "Dialogue parlé",
+        "type": "Décor",
         "participants": [],
         "turns": [
           {
             "speaker": "Stage direction",
-            "original": "Le rideau se lève sur des rochers ... site pittoresque et\nsauvage ... Solitude complète et nuit noire. Prélude musical.\nAu bout de quelques instants, un contrebandier paraît au haut des rochers, puis un autre, puis deux autres, puis vingt autres çà et là, descendant et escaladant des rochers. Des hommes portent de gros ballots sur les épaules.",
-            "translation": "The curtain rises on rocks... A picturesque, wild landscape... Complete solitude and pitch darkness. Musical prelude.\nAfter a few moments, one smuggler appears at the top of the rocks, then another, then two more, then twenty more here and there, climbing down and scrambling over the rocks. Some carry large bundles on their shoulders."
+            "original": "Le rideau se lève sur des rochers ... site pittoresque et sauvage ... Solitude complète et nuit noire. Prélude musical. Au bout de quelques instants, un contrebandier paraît au haut des rochers, puis un autre, puis deux autres, puis vingt autres çà et là, descendant et escaladant des rochers. Des hommes portent de gros ballots sur les épaules.",
+            "translation": "The curtain rises on rocks... A picturesque, wild landscape... Complete solitude and pitch darkness. Musical prelude. After a few moments, one smuggler appears at the top of the rocks, then another, then two more, then twenty more here and there, climbing down and scrambling over the rocks. Some carry large bundles on their shoulders.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 0,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Un site sauvage dans les rochers",
+        "translatedTitle": "A wild rocky landscape"
       },
       {
         "number": "19",
         "type": "Sextuor et choeur",
         "participants": [
           "Chorus",
-          "Frasquita, Mercédès, Carmen, José, Le Remendado, and Le Dancaïre"
+          "Frasquita",
+          "Mercédès",
+          "Carmen",
+          "José",
+          "Le Remendado",
+          "Le Dancaïre"
         ],
         "turns": [
           {
@@ -38,7 +50,12 @@ export const carmenActThreeScenes = [
             "literalText": true,
             "speakerTranslation": "Frasquita, Mercédès, Carmen, José, Le Remendado, and Le Dancaïre"
           }
-        ]
+        ],
+        "routeItem": 1,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Écoute, compagnon",
+        "translatedTitle": "Listen, comrade"
       },
       {
         "number": null,
@@ -60,7 +77,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "s'étendant avec volupté",
-            "translation": "Stretching out contentedly."
+            "translation": "Stretching out contentedly.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE REMENDADO",
@@ -93,7 +112,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "appelant",
-            "translation": "Calling."
+            "translation": "Calling.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -105,7 +126,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "se réveillant",
-            "translation": "Waking up."
+            "translation": "Waking up.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE REMENDADO",
@@ -138,7 +161,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "se levant",
-            "translation": "Getting up."
+            "translation": "Getting up.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE REMENDADO",
@@ -163,8 +188,10 @@ export const carmenActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Il sort suivi du Dancaïre.\nPendant la scène entre Carmen et José, quelques\nbohémiens allument un feu près duquel Mercédès et Frasquita viennent s'asseoir, les autres se roulent dans leurs manteaux, se couchent et s'endorment.",
-            "translation": "He goes out, followed by the Dancaïre. During the scene between Carmen and José, some gypsies light a fire, beside which Mercédès and Frasquita sit down; the others wrap themselves in their cloaks, lie down, and fall asleep."
+            "original": "Il sort suivi du Dancaïre. Pendant la scène entre Carmen et José, quelques bohémiens allument un feu près duquel Mercédès et Frasquita viennent s'asseoir, les autres se roulent dans leurs manteaux, se couchent et s'endorment.",
+            "translation": "He goes out, followed by the Dancaïre. During the scene between Carmen and José, some gypsies light a fire, beside which Mercédès and Frasquita sit down; the others wrap themselves in their cloaks, lie down, and fall asleep.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -267,7 +294,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "José ne répond pas.",
-            "translation": "José does not answer."
+            "translation": "José does not answer.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -279,7 +308,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Faisant claquer ses castagnettes.",
-            "translation": "She snaps her castanets."
+            "translation": "She snaps her castanets.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -304,10 +335,17 @@ export const carmenActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Elle tourne le dos à José et va s'asseoir près de Mercédès et de Frasquita. - Après un instant d'indécision, José s'éloigne à son tour et va s'étendre sur les rochers. - Pendant les dernières répliques de\nla scène, Mercédès et Frasquita ont étalé des cartes\ndevant elles.",
-            "translation": "She turns her back on José and goes to sit beside Mercédès and Frasquita. After a moment's hesitation, José moves away and lies down on the rocks. During the final lines of the scene, Mercédès and Frasquita have laid out cards in front of them."
+            "original": "Elle tourne le dos à José et va s'asseoir près de Mercédès et de Frasquita. - Après un instant d'indécision, José s'éloigne à son tour et va s'étendre sur les rochers. - Pendant les dernières répliques de la scène, Mercédès et Frasquita ont étalé des cartes devant elles.",
+            "translation": "She turns her back on José and goes to sit beside Mercédès and Frasquita. After a moment's hesitation, José moves away and lies down on the rocks. During the final lines of the scene, Mercédès and Frasquita have laid out cards in front of them.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 2,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Halte! Nous allons nous arrêter ici",
+        "translatedTitle": "Halt! We will stop here"
       },
       {
         "number": "20",
@@ -315,10 +353,7 @@ export const carmenActThreeScenes = [
         "participants": [
           "Mercédès",
           "Frasquita",
-          "Mercédès and Frasquita",
-          "Frasquita and Mercédès",
-          "Carmen",
-          "All three women"
+          "Carmen"
         ],
         "turns": [
           {
@@ -478,7 +513,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Elles recommencent à consulter les cartes.",
-            "translation": "They begin consulting the cards again."
+            "translation": "They begin consulting the cards again.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MERCÉDÈS",
@@ -497,7 +534,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Carmen depuis le commencement de la scène suivant du regard le jeu de Mercédès et de Frasquita.",
-            "translation": "From the beginning of the scene, Carmen has been watching Mercédès and Frasquita play."
+            "translation": "From the beginning of the scene, Carmen has been watching Mercédès and Frasquita play.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -509,7 +548,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Elle se met à tourner les cartes.",
-            "translation": "She begins to turn over the cards."
+            "translation": "She begins to turn over the cards.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -521,7 +562,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Montrant Don José endormi.",
-            "translation": "Pointing to Don José, who is asleep."
+            "translation": "Pointing to Don José, who is asleep.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -533,7 +576,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "À voix basse, tout en continuant à mêler les cartes.",
-            "translation": "Softly, while continuing to shuffle the cards."
+            "translation": "Softly, while continuing to shuffle the cards.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -587,9 +632,16 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Rentrent le Dancaïre et le Remendado.",
-            "translation": "The Dancaïre and Remendado return."
+            "translation": "The Dancaïre and Remendado return.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 3,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Mêlons! Coupons!",
+        "translatedTitle": "Shuffle! Cut!"
       },
       {
         "number": null,
@@ -655,19 +707,23 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "en riant",
-            "translation": "Laughing."
+            "translation": "Laughing.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
             "original": "N'ayez pas peur, Dancaïre, nous vous en répondons de vos trois douaniers …",
-            "translation": "Don't worry, Dancaïre; we guarantee your three customs officers...",
+            "translation": "Don't worry, Dancaïre; we will take care of your three customs officers...",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
           {
             "speaker": "Stage direction",
             "original": "furieux",
-            "translation": "Furiously."
+            "translation": "Furiously.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -686,7 +742,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "On commence à prendre les ballots.",
-            "translation": "They begin picking up the bundles."
+            "translation": "They begin picking up the bundles.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -698,7 +756,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "s'adressant à José",
-            "translation": "Addressing José."
+            "translation": "Addressing José.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -724,7 +784,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "aux femmes",
-            "translation": "To the women."
+            "translation": "To the women.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -740,18 +802,20 @@ export const carmenActThreeScenes = [
             "literalText": true,
             "speakerTranslation": "Carmen"
           }
-        ]
+        ],
+        "routeItem": 4,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Eh bien?",
+        "translatedTitle": "Well?"
       },
       {
         "number": "21",
         "type": "Morceau d'ensemble",
         "participants": [
-          "Frasquita, Mercédès, and Carmen",
-          "Carmen, Mercédès, Frasquita, and the women",
-          "All",
+          "Frasquita",
           "Mercédès",
           "Carmen",
-          "Frasquita",
           "Chorus"
         ],
         "turns": [
@@ -849,9 +913,16 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Tout le monde sort. - José ferme la marche et sort en examinant l'amorce de sa carabine; un peu avant qu'il soit sorti, on voit un homme passer sa tête au-dessus du rocher. C'est un guide.",
-            "translation": "Everyone leaves. José brings up the rear, examining the priming of his rifle; just before he exits, a man is seen peering over the rock. It is a guide."
+            "translation": "Everyone leaves. José brings up the rear, examining the priming of his rifle; just before he exits, a man is seen peering over the rock. It is a guide.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 5,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Quant au douanier, c’est notre affaire",
+        "translatedTitle": "We will take care of the customs officer"
       },
       {
         "number": null,
@@ -864,7 +935,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "il s'avance avec précaution, puis fait un signe à Micaëla que l'on ne voit pas encore.",
-            "translation": "He advances cautiously, then signals to Micaëla, who is not yet visible."
+            "translation": "He advances cautiously, then signals to Micaëla, who is not yet visible.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "LE GUIDE",
@@ -876,7 +949,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "entrant",
-            "translation": "Entering."
+            "translation": "Entering.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -958,7 +1033,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "naïvement",
-            "translation": "Naïvely."
+            "translation": "Naïvely.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE GUIDE",
@@ -995,7 +1072,12 @@ export const carmenActThreeScenes = [
             "literalText": true,
             "speakerTranslation": "The Guide"
           }
-        ]
+        ],
+        "routeItem": 6,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Nous y sommes",
+        "translatedTitle": "We’re here"
       },
       {
         "number": "22",
@@ -1011,7 +1093,12 @@ export const carmenActThreeScenes = [
             "literalText": true,
             "speakerTranslation": "Micaëla"
           }
-        ]
+        ],
+        "routeItem": 7,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Je dis que rien ne m’épouvante",
+        "translatedTitle": "I say that nothing frightens me"
       },
       {
         "number": null,
@@ -1032,7 +1119,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "appelant",
-            "translation": "Calling."
+            "translation": "Calling.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -1044,19 +1133,23 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Avec terreur.",
-            "translation": "In terror."
+            "translation": "In terror.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
             "original": "Mais que fait-il? ... Il ne regarde pas de mon côté ... il arme sa carabine, il ajuste ... il fait feu …",
-            "translation": "But what is he doing?... He isn't looking this way... He's loading his rifle, taking aim... he's firing...",
+            "translation": "But what is he doing?... He isn't looking this way... He's cocking his rifle, taking aim... he's firing...",
             "literalText": true,
             "speakerTranslation": "Micaëla"
           },
           {
             "speaker": "Stage direction",
             "original": "On entend un coup de feu.",
-            "translation": "A gunshot is heard."
+            "translation": "A gunshot is heard.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MICAËLA",
@@ -1067,20 +1160,31 @@ export const carmenActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Elle disparaît derrière les rochers. Au même moment entre Escamzllo tenant son chapeau à la main.\nregardant son chapeau",
-            "translation": "She disappears behind the rocks. At the same moment Escamillo enters, holding his hat in his hand.\nLooking at his hat."
+            "original": "Elle disparaît derrière les rochers. Au même moment entre Escamzllo tenant son chapeau à la main.",
+            "translation": "She disappears behind the rocks. At the same moment Escamillo enters, holding his hat in his hand.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "regardant son chapeau",
+            "translation": "Looking at his hat.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
             "original": "Quelques lignes plus bas ... et ce n'est pas moi qui, à la course prochaine, aurais eu le plaisir de combattre les taureaux que je suis en train de conduire.",
-            "translation": "A few lines lower... and at the next race I wouldn't be the one enjoying the pleasure of fighting the bulls I'm driving now.",
+            "translation": "A fraction lower... and I would not be fighting these bulls at the next bullfight.",
             "literalText": true,
             "speakerTranslation": "Escamillo"
           },
           {
             "speaker": "Stage direction",
             "original": "son couteau à la main",
-            "translation": "With his knife in his hand."
+            "translation": "With his knife in his hand.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1092,7 +1196,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "très calme",
-            "translation": "Very calmly."
+            "translation": "Very calmly.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
@@ -1101,15 +1207,19 @@ export const carmenActThreeScenes = [
             "literalText": true,
             "speakerTranslation": "Escamillo"
           }
-        ]
+        ],
+        "routeItem": 8,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Mais… je ne me trompe pas",
+        "translatedTitle": "But… I am not mistaken"
       },
       {
         "number": "23",
         "type": "Duo",
         "participants": [
           "Escamillo",
-          "José",
-          "José and Escamillo"
+          "José"
         ],
         "turns": [
           {
@@ -1136,19 +1246,21 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "remettant son couteau à sa ceinture.",
-            "translation": "Putting his knife back in its sheath."
+            "translation": "Putting his knife back in its sheath.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
             "original": "Je connais votre nom,\nSoyez le bienvenu; mais vraiment, camarade,\nVous pouviez y rester.",
-            "translation": "I know your name.\nWelcome, my friend; but really,\nYou might have stayed where you were.",
+            "translation": "I know your name.\nWelcome, my friend; but really,\nYou could have been killed.",
             "literalText": true,
             "speakerTranslation": "José"
           },
           {
             "speaker": "ESCAMILLO",
             "original": "Je ne vous dis pas non,\nMais je suis amoureux, mon cher, à la folie,\nEt celui-là serait un pauvre compagnon\nQui, pour voir ses amours,\nNe risquerait sa vie.",
-            "translation": "I won't deny it,\nBut I am madly in love, my friend,\nAnd he would be a poor companion\nWho wouldn't risk his life\nTo see the woman he loves.",
+            "translation": "I won’t deny it,\nBut I am madly in love, my friend,\nAnd he would be a poor fellow\nWho, to see his sweetheart,\nWould not risk his life.",
             "literalText": true,
             "speakerTranslation": "Escamillo"
           },
@@ -1225,7 +1337,7 @@ export const carmenActThreeScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Mais pour nous enlever nos filles de Bohème,\nSavez-vous bien qu'il faut payer?",
-            "translation": "But to win our gypsy girls,\nYou know you have to pay?",
+            "translation": "But to take our gypsy girls away from us,\nYou know you have to pay?",
             "literalText": true,
             "speakerTranslation": "José"
           },
@@ -1239,19 +1351,21 @@ export const carmenActThreeScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Et que le prix se paie à coups de navaja.",
-            "translation": "And the price is paid with navaja knives.",
+            "translation": "And the price is paid in knife thrusts.",
             "literalText": true,
             "speakerTranslation": "José"
           },
           {
             "speaker": "Stage direction",
             "original": "surpris",
-            "translation": "Surprised."
+            "translation": "Surprised.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
             "original": "A coups de navaja?",
-            "translation": "With navaja knives?",
+            "translation": "In knife thrusts?",
             "literalText": true,
             "speakerTranslation": "Escamillo"
           },
@@ -1279,14 +1393,16 @@ export const carmenActThreeScenes = [
           {
             "speaker": "ESCAMILLO",
             "original": "J'en suis ravi, mon cher, et le tour est complet.",
-            "translation": "I'm delighted, my friend; the circle is complete.",
+            "translation": "I’m delighted, my friend; that completes the joke.",
             "literalText": true,
             "speakerTranslation": "Escamillo"
           },
           {
             "speaker": "Stage direction",
             "original": "Tous les deux, la navaja la main, se drapent dans leurs manteaux.",
-            "translation": "Both men draw their navaja knives and wrap themselves in their cloaks."
+            "translation": "Both men draw their navaja knives and wrap themselves in their cloaks.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -1312,7 +1428,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Ils se mettent en garde à une certaine distance.",
-            "translation": "They take their guards at some distance from each other."
+            "translation": "They take their guards at some distance from each other.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ESCAMILLO",
@@ -1324,7 +1442,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Sans répondre, Don José marche sur Escamillo.",
-            "translation": "Without answering, Don José advances on Escamillo."
+            "translation": "Without answering, Don José advances on Escamillo.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ESCAMILLO",
@@ -1336,7 +1456,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Combat; Escamillo très calme cherche seulement à se défendre.",
-            "translation": "They fight; Escamillo calmly tries only to defend himself."
+            "translation": "They fight; Escamillo calmly tries only to defend himself.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -1362,7 +1484,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Rapide et très vif engagement corps à corps. José se trouve à la merci d'Escamillo qui ne le frappe pas.",
-            "translation": "A swift, furious hand-to-hand struggle. José is at Escamillo's mercy, but Escamillo does not strike him."
+            "translation": "A swift, furious hand-to-hand struggle. José is at Escamillo's mercy, but Escamillo does not strike him.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ESCAMILLO",
@@ -1381,7 +1505,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "se dégageant",
-            "translation": "Breaking free."
+            "translation": "Breaking free.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
@@ -1407,9 +1533,16 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Après le dernier ensemble, reprise du combat. Escamillo glisse et tombe. - Entrent Carmen et le Dancaïre; Carmen arrête le bras de Don José. - Le Remendado, Mercédès, Frasquita et les contrebandiers rentrent pendant ce temps.",
-            "translation": "After the final ensemble, the fight resumes. Escamillo slips and falls. Carmen and the Dancaïre enter; Carmen stops Don José's arm. Meanwhile, the Remendado, Mercédès, Frasquita, and the smugglers return."
+            "translation": "After the final ensemble, the fight resumes. Escamillo slips and falls. Carmen and the Dancaïre enter; Carmen stops Don José's arm. Meanwhile, the Remendado, Mercédès, Frasquita, and the smugglers return.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 9,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Je suis Escamillo",
+        "translatedTitle": "I am Escamillo"
       },
       {
         "number": "24",
@@ -1419,9 +1552,11 @@ export const carmenActThreeScenes = [
           "Escamillo",
           "Le Dancaïre",
           "José",
-          "All",
           "Le Remendado",
-          "Micaëla"
+          "Micaëla",
+          "Frasquita",
+          "Mercédès",
+          "Chorus"
         ],
         "turns": [
           {
@@ -1434,7 +1569,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "se relevant",
-            "translation": "Getting up."
+            "translation": "Getting up.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
@@ -1453,7 +1590,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Escamillo",
-            "translation": "To Escamillo."
+            "translation": "To Escamillo.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -1472,7 +1611,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "regardant Carmen",
-            "translation": "Looking at Carmen."
+            "translation": "Looking at Carmen.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
@@ -1484,7 +1625,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Don José qui fait un geste de menace.",
-            "translation": "To Don José, who makes a threatening gesture."
+            "translation": "To Don José, who makes a threatening gesture.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
@@ -1495,8 +1638,17 @@ export const carmenActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Jeu de scène. Don José veut s'élancer sur le torero. Le Dancaïre et le Remendado le retiennent. Escamillo sort très lentement.\nà Carmen",
-            "translation": "Stage business. Don José tries to rush at the bullfighter. The Dancaïre and the Remendado hold him back. Escamillo exits very slowly."
+            "original": "Jeu de scène. Don José veut s'élancer sur le torero. Le Dancaïre et le Remendado le retiennent. Escamillo sort très lentement.",
+            "translation": "Stage business. Don José tries to rush at the bullfighter. The Dancaïre and the Remendado hold him back. Escamillo exits very slowly.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "à Carmen",
+            "translation": "To Carmen.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1508,7 +1660,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Carmen lui répond par un léger haussement d'épaules et s'éloigne de lui.",
-            "translation": "Carmen answers with a slight shrug and moves away from him."
+            "translation": "Carmen answers with a slight shrug and moves away from him.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -1534,7 +1688,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "Il amène Micaëla.",
-            "translation": "He brings Micaëla forward."
+            "translation": "He brings Micaëla forward.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -1553,7 +1709,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "reconnaissant Micaëla",
-            "translation": "Recognizing Micaëla."
+            "translation": "Recognizing Micaëla.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1579,7 +1737,7 @@ export const carmenActThreeScenes = [
           {
             "speaker": "MICAËLA",
             "original": "Moi, je viens te chercher.\nLà-bas est la chaumière\nOù, sans cesse priant,\nUne mère, ta mère,\nPleure hélas sur son enfant …\nElle pleure et t'appelle,\nElle pleure et te tend les bras;\nTu prendras pitié d'elle, José,\nAh! José, tu me suivras, tu me suivras.",
-            "translation": "I've come to find you.\nOver there is the cottage\nWhere a mother, your mother,\nPrays without ceasing,\nAnd weeps, alas, for her child...\nShe weeps and calls for you;\nShe weeps and reaches out her arms.\nYou will take pity on her, José.\nAh! José, you will come with me, you will come with me.",
+            "translation": "I have come to fetch you.\nOver there is the cottage\nWhere, praying without cease,\nA mother, your mother,\nWeeps, alas, for her child...\nShe weeps and calls for you;\nShe weeps and holds out her arms;\nYou will take pity on her, José,\nAh! José, you will come with me, you will come with me.",
             "literalText": true,
             "speakerTranslation": "Micaëla"
           },
@@ -1593,7 +1751,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Carmen",
-            "translation": "To Carmen."
+            "translation": "To Carmen.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1689,7 +1849,9 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Carmen",
-            "translation": "To Carmen."
+            "translation": "To Carmen.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1700,8 +1862,17 @@ export const carmenActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Il entraîne Micaëla.\nau loin",
-            "translation": "He leads Micaëla away.\nIn the distance."
+            "original": "Il entraîne Micaëla.",
+            "translation": "He leads Micaëla away.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "au loin",
+            "translation": "In the distance.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ESCAMILLO",
@@ -1713,16 +1884,26 @@ export const carmenActThreeScenes = [
           {
             "speaker": "Stage direction",
             "original": "José s'arrête au fond dans les rochers ... Il hésite, Carmen écoute et se penche sur les rochers.",
-            "translation": "José stops among the rocks in the background... He hesitates; Carmen listens and leans toward the rocks."
-          },
-          {
-            "speaker": "ESCAMILLO",
-            "original": "Entr'acte",
-            "translation": "Entr’acte.",
-            "literalText": true,
-            "speakerTranslation": "Escamillo"
+            "translation": "José stops among the rocks in the background... He hesitates; Carmen listens and leans toward the rocks.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 10,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Holà! Holà! José!",
+        "translatedTitle": "Hey! Hey! José!"
+      },
+      {
+        "number": null,
+        "type": "Entracte",
+        "routeItem": 11,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "instrumental": true,
+        "participants": [],
+        "turns": []
       }
     ]
   }

@@ -3,8 +3,7 @@
 export const macbethActTwoScenes = [
   {
     "number": 1,
-    "title": "Stanza nel castello",
-    "translatedTitle": "A room in the castle",
+    "title": "",
     "cast": "Lady Macbeth, Macbeth",
     "summary": "A room in the castle.",
     "sections": [
@@ -92,23 +91,26 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Parte precipitoso",
             "en": "He leaves hurriedly."
           }
         ],
-        "number": 7
+        "number": 7,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena I",
+    "translatedHeading": "Scene I"
   },
   {
     "number": 2,
-    "title": "La luce langue",
-    "translatedTitle": "The light fades",
+    "title": "",
     "cast": "Lady Macbeth",
     "summary": "The light fades.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Scena ed Aria Lady",
         "participants": [
           "Lady Macbeth"
         ],
@@ -127,6 +129,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con trasporto",
             "en": "With rapture."
           },
@@ -138,25 +141,24 @@ export const macbethActTwoScenes = [
             "literalText": true
           }
         ],
-        "originalTitle": "La luce langue",
-        "translatedTitle": "The light fades"
+        "routeItem": 0,
+        "number": 7
       }
-    ]
+    ],
+    "originalHeading": "Scena II",
+    "translatedHeading": "Scene II"
   },
   {
     "number": 3,
-    "title": "Coro di Sicari",
-    "translatedTitle": "Chorus of Assassins",
+    "title": "",
     "cast": "Coro di Sicari, Sicari 1, Sicari 2, Tutti",
     "summary": "Chorus of Assassins.",
     "sections": [
       {
         "type": "Coro di Sicari",
         "participants": [
-          "Coro di Sicari",
-          "Sicari 1",
-          "Sicari 2",
-          "Tutti"
+          "Assassins, group 1",
+          "Assassins, group 2"
         ],
         "turns": [
           {
@@ -168,72 +170,75 @@ export const macbethActTwoScenes = [
             "speaker": "Sicari 1",
             "it": "Chi v'impose unirvi a noi?",
             "en": "Who ordered you to join us?",
-            "speakerTranslation": "Assassins 1",
+            "speakerTranslation": "Assassins, group 1",
             "literalText": true
           },
           {
             "speaker": "Sicari 2",
             "it": "Fu Macbetto.",
             "en": "It was Macbeth.",
-            "speakerTranslation": "Assassins 2",
+            "speakerTranslation": "Assassins, group 2",
             "literalText": true
           },
           {
             "speaker": "Sicari 1",
             "it": "Ed a che far?",
             "en": "And to do what?",
-            "speakerTranslation": "Assassins 1",
+            "speakerTranslation": "Assassins, group 1",
             "literalText": true
           },
           {
             "speaker": "Sicari 2",
             "it": "Deggiam Banco trucidar.",
             "en": "We must murder Banco.",
-            "speakerTranslation": "Assassins 2",
+            "speakerTranslation": "Assassins, group 2",
             "literalText": true
           },
           {
             "speaker": "Sicari 1",
             "it": "Quando?... Dove?...",
             "en": "When?... Where?...",
-            "speakerTranslation": "Assassins 1",
+            "speakerTranslation": "Assassins, group 1",
             "literalText": true
           },
           {
             "speaker": "Sicari 2",
             "it": "Insiem con voi.\nCon suo figlio ei qui verrà.",
             "en": "Together with you.\nHe will come here with his son.",
-            "speakerTranslation": "Assassins 2",
+            "speakerTranslation": "Assassins, group 2",
             "literalText": true
           },
           {
             "speaker": "Sicari 1",
             "it": "Rimanete, or bene sta.",
             "en": "Stay here; all is well.",
-            "speakerTranslation": "Assassins 1",
+            "speakerTranslation": "Assassins, group 1",
             "literalText": true
           },
           {
             "speaker": "Tutti",
             "it": "Sparve il sol... la notte or regni\nScellerata, - insanguinata.\nCieca notte, affretta e spegni\nOgni lume in terra e in ciel.\nL'ora è presso!... or n'occultiamo,\nNel silenzio lo aspettiamo.\nTrema, o Banco! - nel tuo fianco\nSta la punta del coltel!",
             "en": "The sun has vanished... Now let night reign,\nwicked and bloodstained.\nBlind night, hurry and extinguish\nevery light on earth and in heaven.\nThe hour is near!... Now let us hide;\nin silence we await him.\nTremble, Banco! Against your side\nis the point of the knife!",
-            "speakerTranslation": "All assassins",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Partono",
             "en": "They leave."
           }
         ],
-        "number": 8
+        "number": 8,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena III",
+    "translatedHeading": "Scene III"
   },
   {
     "number": 4,
-    "title": "Scena Banco",
-    "translatedTitle": "Banco’s Scene",
+    "title": "",
     "cast": "Banco",
     "summary": "Banco’s Scene.",
     "sections": [
@@ -273,24 +278,25 @@ export const macbethActTwoScenes = [
             "en": "Fleanzio crosses the stage, pursued by an assassin."
           }
         ],
-        "number": "8 1/2"
+        "number": "8 1/2",
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena IV",
+    "translatedHeading": "Scene IV"
   },
   {
     "number": 5,
-    "title": "Convito",
-    "translatedTitle": "The banquet",
+    "title": "",
     "cast": "Coro, Macbeth, Lady Macbeth, Tutti",
     "summary": "The banquet.",
     "sections": [
       {
         "type": "Convito, Visione e Finale Secondo",
         "participants": [
-          "Coro",
+          "Chorus",
           "Macbeth",
-          "Lady Macbeth",
-          "Tutti"
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -350,12 +356,13 @@ export const macbethActTwoScenes = [
           {
             "speaker": "Lady Macbeth",
             "it": "Si colmi il calice\nDi vino eletto;\nNasca il diletto,\nMuoia il dolor.\nDa noi s'involino\nGli odi e gli sdegni,\nFolleggi e regni\nQui solo amor.\nGiustiamo il balsamo\nD'ogni ferita,\nChe nova vita\nRidona al cor.\nCacciam le torbide\nCure dal petto;\nNasca il diletto,\nMuoia il dolor.",
-            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet hatreds and resentments\nfly away from us;\nlet love alone revel\nand reign here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us drive troubled\ncares from our breasts;\nlet joy be born,\nlet sorrow die.",
+            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet them fly away from us,\nhatreds and resentments;\nlet it revel and reign,\nlove alone here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us drive troubled\ncares from our breasts;\nlet joy be born,\nlet sorrow die.",
             "speakerTranslation": "Lady Macbeth",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Ripetono",
             "en": "They repeat."
           },
@@ -363,26 +370,28 @@ export const macbethActTwoScenes = [
             "speaker": "Tutti",
             "it": "Cacciam le torbide\nCure dal petto;\nNasca il diletto,\nMuoia il dolor.",
             "en": "Let us drive troubled\ncares from our breasts;\nlet joy be born,\nlet sorrow die.",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           }
         ],
-        "number": 9
+        "number": 9,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena V",
+    "translatedHeading": "Scene V"
   },
   {
     "number": 6,
-    "title": "Il Sicario",
-    "translatedTitle": "The assassin",
+    "title": "",
     "cast": "Macbeth, Sicario",
     "summary": "The assassin.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Convito, Visione e Finale Secondo",
         "participants": [
           "Macbeth",
-          "Sicario"
+          "Assassin"
         ],
         "turns": [
           {
@@ -448,29 +457,31 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Macbeth fa cenno al Sicario, che parte",
             "en": "Macbeth signals to the assassin, who leaves."
           }
         ],
-        "originalTitle": "Il Sicario",
-        "translatedTitle": "The assassin"
+        "routeItem": 0,
+        "number": 9
       }
-    ]
+    ],
+    "originalHeading": "Scena VI",
+    "translatedHeading": "Scene VI"
   },
   {
     "number": 7,
-    "title": "Visione e Finale Secondo",
-    "translatedTitle": "Vision and Second Finale",
+    "title": "",
     "cast": "Lady Macbeth, Macbeth, Tutti, Macduff",
     "summary": "Vision and Second Finale.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Convito, Visione e Finale Secondo",
         "participants": [
           "Lady Macbeth",
           "Macbeth",
-          "Tutti",
-          "Macduff"
+          "Macduff",
+          "Chorus"
         ],
         "turns": [
           {
@@ -522,11 +533,12 @@ export const macbethActTwoScenes = [
             "speaker": "Tutti",
             "it": "Che parli?",
             "en": "What are you saying?",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "allo spettro",
             "en": "To the ghost."
           },
@@ -539,6 +551,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "sorgono",
             "en": "They rise."
           },
@@ -546,7 +559,7 @@ export const macbethActTwoScenes = [
             "speaker": "Tutti",
             "it": "Macbetto è soffrente! Partiamo...",
             "en": "Macbeth is unwell! Let us leave...",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           },
           {
@@ -558,6 +571,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "piano a Macbeth",
             "en": "Quietly to Macbeth."
           },
@@ -577,6 +591,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "allo spettro",
             "en": "To the ghost."
           },
@@ -589,6 +604,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "L'Ombra sparisce\npiano a Macbeth",
             "en": "The ghost disappears.\nQuietly to Macbeth."
           },
@@ -608,6 +624,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "forte",
             "en": "Aloud."
           },
@@ -628,7 +645,7 @@ export const macbethActTwoScenes = [
           {
             "speaker": "Lady Macbeth",
             "it": "Si colmi il calice\nDi vino eletto;\nNasca il diletto,\nMuoia il dolor.\nDa noi s'involino\nGli odi e gli sdegni,\nFolleggi e regni\nQui solo amor.\nGiustiamo il balsamo\nD'ogni ferita,\nChe nova vita\nRidona al cor.\nVuotiam per l'inclito\nBanco i bicchieri!\nFior de' guerrieri,\nDi Scozia onor.",
-            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet hatreds and resentments\nfly away from us;\nlet love alone revel\nand reign here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us empty our glasses\nfor illustrious Banco!\nFlower of warriors,\nhonour of Scotland.",
+            "en": "Let the goblet be filled\nwith choice wine;\nlet joy be born,\nlet sorrow die.\nLet them fly away from us,\nhatreds and resentments;\nlet it revel and reign,\nlove alone here.\nLet us taste the balm\nfor every wound,\nwhich gives new life\nback to the heart.\nLet us empty our glasses\nfor illustrious Banco!\nFlower of warriors,\nhonour of Scotland.",
             "speakerTranslation": "Lady Macbeth",
             "literalText": true
           },
@@ -636,11 +653,12 @@ export const macbethActTwoScenes = [
             "speaker": "Tutti",
             "it": "Vuotiam per l'inclito\nBanco i bicchieri!\nFior de' guerrieri,\nDi Scozia onor.",
             "en": "Let us empty our glasses\nfor illustrious Banco!\nFlower of warriors,\nhonour of Scotland.",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Riappare lo spettro\nspaventato",
             "en": "The ghost reappears.\nTerrified."
           },
@@ -655,7 +673,7 @@ export const macbethActTwoScenes = [
             "speaker": "Tutti",
             "it": "Sventura! terrore!",
             "en": "Misfortune! Terror!",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           },
           {
@@ -667,6 +685,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "L'Ombra sparisce",
             "en": "The ghost disappears."
           },
@@ -679,6 +698,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "piano a Macbeth",
             "en": "Quietly to Macbeth."
           },
@@ -698,6 +718,7 @@ export const macbethActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "a Macbeth",
             "en": "To Macbeth."
           },
@@ -719,13 +740,15 @@ export const macbethActTwoScenes = [
             "speaker": "Tutti",
             "it": "Biechi arcani! sgomentato\nDa fantasmi egli ha parlato!\nUno speco di ladroni\nQuesta terra diventò.",
             "en": "Dark mysteries! Terrified\nby phantoms, he has spoken!\nA den of thieves\nthis land has become.",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           }
         ],
-        "originalTitle": "Visione e Finale Secondo",
-        "translatedTitle": "Vision and Second Finale"
+        "routeItem": 0,
+        "number": 9
       }
-    ]
+    ],
+    "originalHeading": "Scena VII",
+    "translatedHeading": "Scene VII"
   }
 ];

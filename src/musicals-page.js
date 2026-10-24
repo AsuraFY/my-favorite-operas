@@ -1,56 +1,14 @@
-const sections = [
-["Soprano and chorus",[
-["Aufersteh’n, ja aufersteh’n wirst du,","Rise again—yes, you shall rise again,"],
-["Mein Staub, nach kurzer Ruh!","my dust, after a brief rest!"],
-["Unsterblich Leben! Unsterblich Leben","Eternal life! Eternal life"],
-["Wird, der dich rief, dir geben!","will be given to you by the One who called you!"],
-["Wieder aufzublüh’n wirst du gesät!","You are sown to bloom again!"],
-["Der Herr der Ernte geht","The Lord of the harvest goes forth"],
-["Und sammelt Garben","and gathers into His sheaves"],
-["Uns ein, die starben!","us who have died!"]
-]],
-["Contralto / mezzo-soprano solo",[
-["O glaube, mein Herz, o glaube:","Oh believe, my heart, oh believe:"],
-["Es geht dir nichts verloren!","Nothing is lost to you!"],
-["Dein ist, ja dein, was du gesehnt,","Yours—yes, yours—is all you longed for,"],
-["Dein, was du geliebt, was du gestritten!","yours is what you loved and struggled for!"]
-]],
-["Soprano solo",[
-["O glaube: Du wardst nicht umsonst geboren!","Oh believe: you were not born in vain!"],
-["Hast nicht umsonst gelebt, gelitten!","You have not lived and suffered in vain!"]
-]],
-["Chorus",[
-["Was entstanden ist, das muss vergehen!","Whatever has come into being must pass away!"],
-["Was vergangen ist, auferstehen!","Whatever has passed away must rise again!"]
-]],
-["Contralto / mezzo-soprano and chorus",[
-["Hör auf zu beben!","Cease trembling!"],
-["Bereite dich zu leben!","Prepare yourself to live!"]
-]],
-["Soprano and contralto / mezzo-soprano",[
-["O Schmerz! Du Alldurchdringer!","O pain! You who pierce all things!"],
-["Dir bin ich entrungen!","I have wrested myself from you!"],
-["O Tod! Du Allbezwinger!","O death! You who conquer all!"],
-["Nun bist du bezwungen!","Now you are conquered!"],
-["Mit Flügeln, die ich mir errungen,","With wings that I have won for myself,"],
-["in heißem Liebesstreben","in ardent striving for love,"],
-["werd’ ich entschweben","I shall soar away"],
-["zum Licht, zu dem kein Aug’ gedrungen!","to the light no eye has ever reached!"]
-]],
-["Chorus",[
-["Mit Flügeln, die ich mir errungen,","With wings that I have won for myself,"],
-["werd’ ich entschweben!","I shall soar away!"],
-["Sterben werd’ ich, um zu leben!","I shall die in order to live!"]
-]],
-["Soprano, contralto / mezzo-soprano and chorus",[
-["Aufersteh’n, ja aufersteh’n wirst du,","Rise again—yes, you shall rise again,"],
-["mein Herz, in einem Nu!","my heart, in a single instant!"],
-["Was du geschlagen,","All that you have struggled for"],
-["zu Gott wird es dich tragen!","will carry you to God!"]
-]]
-];
+import { beethovenSources, beethovenVocalBlocks } from "./data/musical-beethoven-ode-to-joy.js";
+import { mahlerFinaleEvents, mahlerFinaleSources, mahlerFinaleTranslations } from "./data/musical-mahler-symphony-2.js";
 
 const musicalWorks = [
+  {
+    title: 'Ode to Joy · Symphony No. 9',
+    composer: 'Ludwig van Beethoven',
+    year: 1824,
+    summary: 'The choral finale of Beethoven’s Ninth Symphony brings Schiller’s vision of joy and human fellowship to soloists, chorus, and orchestra.',
+    slug: 'beethoven-ode-to-joy'
+  },
   {
     title: 'Symphony No. 2: “Resurrection”',
     composer: 'Gustav Mahler',
@@ -66,9 +24,11 @@ function escapeHtml(value) {
   })[character]);
 }
 
-export function renderMusicalsPage(query = '', sort = 'title') {
+export function renderMusicalsPage(query = '', sort = 'title', composer = '') {
   const normalizedQuery = query.trim().toLocaleLowerCase();
+  const normalizedComposer = composer.trim().toLocaleLowerCase();
   const matches = musicalWorks.filter(work =>
+    (!normalizedComposer || work.composer.toLocaleLowerCase() === normalizedComposer) &&
     [work.title, work.composer, work.year, work.summary]
       .some(value => String(value).toLocaleLowerCase().includes(normalizedQuery))
   );
@@ -78,6 +38,8 @@ export function renderMusicalsPage(query = '', sort = 'title') {
     return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
   });
   const safeQuery = escapeHtml(query);
+  const safeComposer = escapeHtml(composer);
+  const composerNotice = composer ? '<p class="musicals-composer-filter">Works by <strong>' + safeComposer + '</strong> · <a href="#/musicals">View all musicals</a></p>' : '';
   const rows = matches.map((work, index) => `
     <a class="musical-row" href="#/musicals/${work.slug}" style="--card-index:${index}">
       <h2>${escapeHtml(work.title)}</h2>
@@ -85,11 +47,11 @@ export function renderMusicalsPage(query = '', sort = 'title') {
       <p class="musical-row__summary">${escapeHtml(work.summary)}</p>
     </a>`).join('');
 
-  return `<section class="directory-scenic" aria-hidden="true"></section>
+  return `<section class="directory-scenic musicals-scenic" aria-hidden="true"></section>
 <section class="directory-intro section-wrap musicals-directory-intro">
-  <div class="directory-intro__panel"><h1>Musicals</h1><p>Explore musical works through their stories, background, and lyrics with translation.</p></div>
+  <div class="directory-intro__panel"><h1>Musicals</h1><p>Explore musical works through their stories, background, and lyrics with translation.</p>${composerNotice}</div>
   <div class="directory-tools">
-    <form class="opera-search opera-search--directory" data-search-form data-search-route="/musicals" role="search">
+    <form class="opera-search opera-search--directory" data-search-form data-search-route="/musicals" data-composer="${safeComposer}" role="search">
       <label class="sr-only" for="musicals-directory-search">Search musical title or composer</label>
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5-5 5"></path></svg>
       <input id="musicals-directory-search" name="q" type="search" placeholder="Search title or composer..." value="${safeQuery}" autocomplete="off" />
@@ -104,68 +66,86 @@ export function renderMusicalsPage(query = '', sort = 'title') {
 <section class="musical-list section-wrap" aria-label="Musical works">${rows || `<p class="empty-results">No musicals match “${safeQuery}”. Try another title or composer.</p>`}</section>`;
 }
 
-function renderMusicalTabs(view) {
-  const base = "#/musicals/mahler-symphony-2-resurrection";
-  return `<nav class="musical-tabs" aria-label="Symphony No. 2: Resurrection sections">
-    <div class="musical-tabs__identity"><span>Symphony No. 2: Resurrection</span><small>Gustav Mahler</small></div>
-    <div class="musical-tabs__links">
-      <a href="${base}?view=about" class="${view === "about" ? "is-active" : ""}" ${view === "about" ? 'aria-current="page"' : ""}>About</a>
-      <a href="${base}?view=lyrics" class="${view === "lyrics" ? "is-active" : ""}" ${view === "lyrics" ? 'aria-current="page"' : ""}>Lyrics</a>
-    </div>
-  </nav>`;
+
+function renderMusicalTabs(slug, view) {
+  return `<nav class="musical-work-tabs" aria-label="Work sections">${['about', 'lyrics'].map(tab => `<a href="#/musicals/${slug}?view=${tab}" ${view === tab ? 'aria-current="page"' : ''}>${tab === 'about' ? 'About' : 'Lyrics'}</a>`).join('')}</nav>`;
 }
 
+function renderBeethovenPage(view) {
+  return `<nav class="site-breadcrumb musical-breadcrumb" aria-label="Breadcrumb"><a href="#/">Home</a><span>›</span><a href="#/musicals">Musicals</a><span>›</span><a href="#/musicals?composer=Ludwig%20van%20Beethoven">Ludwig van Beethoven</a><span>›</span><span aria-current="page">Ode to Joy</span></nav>
+<div class="musical-detail-page musical-editorial"><div class="musical-editorial-wrap">
+  <header class="musical-editorial-hero"><div class="musical-editorial-hero__inner">
+    <p class="musical-editorial-overline">LUDWIG VAN BEETHOVEN · 1824 · CHORAL SYMPHONY</p>
+    <h1>Ode to Joy<br><em>Symphony No. 9</em></h1>
+    <p class="musical-editorial-quote">Joy, friendship, and a shared humanity.</p>
+    <p class="musical-editorial-hero__sub">Symphony No. 9 in D minor, Op. 125 · Movement IV</p>
+  </div></header>
+  ${renderMusicalTabs('beethoven-ode-to-joy', view)}
+  <section class="musical-editorial-section" aria-labelledby="musical-about-heading" ${view !== 'about' ? 'hidden' : ''}><h2 id="musical-about-heading">About this work</h2>
+    <div class="musical-editorial-about">
+      <div class="musical-description"><div class="musical-editorial-prose" id="musical-description">
+        <p>“Ode to Joy” is the familiar name associated with the choral finale of Ludwig van Beethoven’s Ninth Symphony. Its German text draws on Friedrich Schiller’s poem <em lang="de">An die Freude</em>, celebrating joy and fellowship.</p>
+        <p>The finale belongs to a four-movement symphony. Orchestra, four vocal soloists, and mixed chorus give its vision of shared humanity a powerful musical voice. Beethoven completed the symphony in February 1824; its first performance took place in Vienna on 7 May that year.</p>
+        <p><a href="https://www.beethoven.de/en/work/view/5556714292117504/" target="_blank" rel="noopener noreferrer">Explore the work at Beethoven-Haus Bonn ↗</a></p>
+      </div><button type="button" class="musical-description-toggle" aria-controls="musical-description" aria-expanded="false">Read more</button></div>
+      <section class="musical-facts-section" aria-labelledby="musical-facts-heading"><h2 id="musical-facts-heading">Work details</h2><dl class="musical-editorial-facts">
+        <div><dt>COMPOSER</dt><dd>Ludwig van Beethoven</dd></div>
+        <div><dt>GENRE</dt><dd>Choral symphony · finale</dd></div>
+        <div><dt>WORK</dt><dd>Symphony No. 9 in D minor, Op. 125</dd></div>
+        <div><dt>PREMIERE</dt><dd>7 May 1824 · Vienna</dd></div>
+        <div><dt>STRUCTURE</dt><dd>Four movements · vocals in Movement IV</dd></div>
+        <div><dt>VOICES</dt><dd>Soprano, alto, tenor & bass soloists; mixed chorus</dd></div>
+        <div><dt>LANGUAGE</dt><dd>German</dd></div>
+        <div><dt>TEXT</dt><dd>Friedrich Schiller, with introductory words by Beethoven</dd></div>
+      </dl></section>
+    </div>
+  </section>
+  <section class="musical-editorial-section" aria-labelledby="musical-lyrics-heading" ${view !== 'lyrics' ? 'hidden' : ''}><h2 id="musical-lyrics-heading">Lyrics <small>· Movement IV — Ode to Joy</small></h2>
+    ${renderBeethovenLyrics()}
+  </section>
+</div></div>`;
+}
+
+function renderBeethovenLyrics() {
+  const sectionStarts = [[217, 'O Freunde, nicht diese Töne!'], [238, 'Freude, schöner Götterfunken'], [270, 'Wem der große Wurf gelungen'], [297, 'Freude trinken alle Wesen'], [376, 'Froh, wie seine Sonnen fliegen'], [544, 'Freude — return of the chorus'], [597, 'Seid umschlungen, Millionen!'], [633, 'Ihr stürzt nieder, Millionen?'], [656, 'Freude / Seid umschlungen — interwoven choruses'], [737, 'Ahnest du den Schöpfer, Welt?'], [770, 'Freude, Tochter aus Elysium'], [858, 'Seid umschlungen — final chorus']];
+  let currentSection = -1;
+  const body = beethovenVocalBlocks.map(block => {
+    let section = 0;
+    sectionStarts.forEach(([start], i) => { if (block.start[0] >= start) section = i; });
+    let heading = '';
+    if (section !== currentSection) {
+      currentSection = section;
+      if (section === 4 || section === 5) heading += '<div class="musical-score-instrumental">♪ Orchestra · '+(section === 4 ? 'March introduction' : 'Instrumental fugue')+'</div>';
+      heading += '<h3 class="musical-score-passage__title">'+escapeHtml(sectionStarts[section][1])+'</h3>';
+    }
+    const relation = block.relationship === 'together' ? '= Together · ' : block.relationship === 'parallel' ? '∥ Parallel · ' : '';
+    const label = relation + block.voice;
+    const original = block.lines.map(([text]) => '<p>'+escapeHtml(text)+'</p>').join('');
+    const english = block.lines.map(([, text]) => '<p>'+escapeHtml(text)+'</p>').join('');
+    return heading + '<section class="musical-score-passage" id="'+block.id+'" aria-label="'+escapeHtml(label)+'"><div class="musical-score-row musical-score-row--entry"><div class="musical-score-part"><strong class="musical-score-part__name">'+escapeHtml(label)+'</strong></div><div class="musical-score-original" lang="de">'+original+'</div><div class="musical-score-english" lang="en" data-musical-translation>'+english+'</div></div></section>';
+  }).join('');
+  return '<div class="musical-score-reader" data-musical-score-reader><div class="musical-score-toolbar"><p class="musical-score-toolbar__legend"><span>∥ Parallel voices</span><span>= Together</span><span>SATB = Soprano · Alto · Tenor · Bass</span></p><button class="musical-score-translation-toggle" type="button" data-musical-translation-toggle aria-controls="beethoven-score-lyrics" aria-expanded="true">Hide translation</button></div><p class="musical-score-toolbar__legend">Follow each named part through overlapping passages. Headings are listening guides; rows do not imply note-by-note synchronization.</p><div class="musical-score-scroll" tabindex="0" aria-label="Vocal text columns; scroll horizontally on a narrow screen"><div class="musical-score-grid" id="beethoven-score-lyrics"><div class="musical-score-row musical-score-row--head"><div class="musical-score-part">Vocal part / relationship</div><div class="musical-score-original">German · Original</div><div class="musical-score-english" data-musical-translation>English · Translation</div></div><div class="musical-score-instrumental">♪ Orchestra · Introduction and variations</div>'+body+'<div class="musical-score-instrumental">♪ Orchestra · Closing coda</div></div></div><div class="musical-score-footer"><p>Text: Friedrich Schiller, with additions by Beethoven · <a href="'+escapeHtml(beethovenSources.score)+'" target="_blank" rel="noopener noreferrer">Score: OpenScore Orchestra</a>.</p></div></div>';
+}
+
+function renderScoreEvent(event) {
+  if (event.kind === "instrumental") return '<div class="musical-score-instrumental"><span aria-hidden="true">♪</span> Orchestra · '+escapeHtml(event.title)+'</div>';
+  const indicator = {solo:"",relay:"↳",parallel:"∥",together:"="};
+  const rows = event.lanes.map(lane => {
+    const prefix = indicator[lane.relationship] || "";
+    const german = lane.lines.map(line => '<p>'+escapeHtml(line)+'</p>').join("");
+    const english = lane.lines.map(line => '<p>'+escapeHtml(mahlerFinaleTranslations[line] || "[Translation under review]")+'</p>').join("");
+    return '<div class="musical-score-row musical-score-row--entry"><div class="musical-score-part"><strong class="musical-score-part__name">'+(prefix ? '<span class="musical-relation">'+prefix+'</span> ' : '')+escapeHtml(lane.voice)+'</strong></div><div class="musical-score-original" lang="de">'+german+'</div><div class="musical-score-english" lang="en" data-musical-translation>'+english+'</div></div>';
+  }).join("");
+  return '<section class="musical-score-passage" id="'+escapeHtml(event.id)+'" aria-label="'+escapeHtml(event.title)+'"><h3 class="musical-score-passage__title">'+escapeHtml(event.title)+'</h3>'+rows+'</section>';
+}
 function renderMusicalAbout() {
-  return `<article class="musicals-page musical-about section-wrap">
-    <div class="musical-about__hero">
-      <img src="./public/images/opera-house-hero.webp" alt="Artwork inspired by Mahler’s Symphony No. 2, “Resurrection”" />
-      <div>
-        <p class="eyebrow"><span class="eyebrow-rule"></span> Choral symphony · German</p>
-        <h1>Gustav Mahler<br /><em>Symphony No. 2, “Resurrection”</em></h1>
-        <p class="musicals-page__subtitle">Finale: “Aufersteh’n” (“Rise Again”)</p>
-        <p class="musicals-page__context">A symphonic finale for soprano, contralto or mezzo-soprano, chorus, and orchestra. Its sung text begins after a long orchestral prelude.</p>
-        <a class="opera-info__read-link" href="#/musicals/mahler-symphony-2-resurrection?view=lyrics">Read the lyrics <span aria-hidden="true">→</span></a>
-      </div>
-    </div>
-    <dl class="musical-facts">
-      <div><dt>Composer</dt><dd>Gustav Mahler</dd></div><div><dt>Genre</dt><dd>Choral symphony</dd></div>
-      <div><dt>Structure</dt><dd>Five movements</dd></div><div><dt>Featured movement</dt><dd>Finale · “Aufersteh’n”</dd></div>
-      <div><dt>Text</dt><dd>Friedrich Klopstock and Gustav Mahler</dd></div><div><dt>Premiere</dt><dd>13 December 1895, Berlin</dd></div>
-    </dl>
-    <section class="musicals-page__notes">
-      <h2>About this work</h2>
-      <p>Mahler’s Fifth Movement brings back the symphony’s questions about death and suffering in a storm of orchestral sound. After a long build, the chorus enters quietly with words of resurrection; the movement grows toward a radiant ending for chorus, soloists and orchestra.</p>
-      <p>The opening stanzas are by Friedrich Klopstock; Mahler added the later verses. This page presents the finale’s sung text, not the symphony’s fourth-movement song “Urlicht.”</p>
-      <p class="musicals-page__sources">Sources: <a href="https://www.laphil.com/works/symphony-no-2-in-c-minor-resurrection" target="_blank" rel="noopener noreferrer">Los Angeles Philharmonic notes</a> · <a href="https://www.berliner-philharmoniker.de/en/programme-notes/gustav-mahler-symphony-no-2-in-c-minor-resurrection/" target="_blank" rel="noopener noreferrer">Berlin Philharmonic programme note</a>.</p>
-    </section>
-  </article>`;
+  return '<div class="musical-editorial-about"><div class="musical-description"><div class="musical-editorial-prose" id="musical-description"><p>Gustav Mahler’s <em>Resurrection</em> Symphony takes us from grief, uncertainty, and the question of death to a vision of renewal. Its final movement unfolds through a vast orchestral journey before human voices rise quietly and gradually gather into a radiant choral climax.</p><p>The opening choral stanzas draw on Friedrich Klopstock’s resurrection poem; Mahler wrote additional verses. The finale is sung in German by soprano and contralto soloists and chorus, accompanied by orchestra.</p><p><a href="https://www.laphil.com/works/symphony-no-2-in-c-minor-resurrection" target="_blank" rel="noopener noreferrer">Read orchestral programme notes ↗</a></p></div><button type="button" class="musical-description-toggle" aria-controls="musical-description" aria-expanded="false">Read more</button></div><section class="musical-facts-section" aria-labelledby="musical-facts-heading"><h2 id="musical-facts-heading">Work details</h2><dl class="musical-editorial-facts"><div><dt>COMPOSER</dt><dd>Gustav Mahler</dd></div><div><dt>GENRE</dt><dd>Choral symphony</dd></div><div><dt>COMPOSED</dt><dd>1888–1894</dd></div><div><dt>PREMIERE</dt><dd>13 December 1895 · Berlin</dd></div><div><dt>STRUCTURE</dt><dd>Five movements</dd></div><div><dt>VOICES</dt><dd>Soprano, contralto & choir</dd></div><div><dt>TEXT</dt><dd>Friedrich Klopstock & Gustav Mahler</dd></div></dl></section></div>';
 }
-
 function renderMusicalLyrics() {
-  const lyrics = sections.map(([voice, lines], index) => `
-    <section class="musical-verse" aria-labelledby="musical-voice-${index + 1}">
-      <h2 id="musical-voice-${index + 1}" class="musical-verse__voice">${voice}</h2>
-      <div class="musical-verse__lines">${lines.map(([original, translation]) => `
-        <div class="musical-line"><p lang="de">${original}</p><p lang="en">${translation}</p></div>`).join("")}</div>
-    </section>`).join("");
-  return `<article class="musicals-page musical-lyrics-page section-wrap">
-    <header class="musicals-page__intro">
-      <p class="eyebrow"><span class="eyebrow-rule"></span> Gustav Mahler · Finale</p>
-      <h1>Lyrics &amp; translation</h1>
-      <p class="musicals-page__subtitle">“Aufersteh’n” (“Rise Again”)</p>
-      <p class="musicals-page__context">German original and a fresh English translation, aligned line by line.</p>
-    </header>
-    <section class="musical-lyrics" aria-label="Finale lyrics in German and English">
-      <div class="musical-lyrics__columns" aria-hidden="true"><span>German</span><span>English translation</span></div>${lyrics}
-    </section>
-    <aside class="musicals-page__notes"><h2>About the text</h2>
-      <p>The opening stanzas are by Friedrich Klopstock; Mahler added the later verses. This English version is a fresh, line-by-line translation prepared for this collection. “Was du geschlagen” is rendered here as “All that you have struggled for”; the German phrase can carry more than one nuance.</p>
-      <p class="musicals-page__sources">Text and voice cues: <a href="https://www.mahlerfoundation.org/mahler/compositions/symphony-no-2/symphony-no-2-movement-5-lied-2-auferstehung-im-tempo-des-scherzos/" target="_blank" rel="noopener noreferrer">Mahler Foundation</a> and the <a href="https://downloads.bbci.co.uk/radio3/orchestras/bbcsso/2026_March_1_Mahler_Symphony_No2_Resurrection.pdf" target="_blank" rel="noopener noreferrer">BBC Scottish Symphony Orchestra programme</a>.</p>
-    </aside>
-  </article>`;
+  return '<div class="musical-score-reader" data-musical-score-reader><div class="musical-score-toolbar"><p class="musical-score-toolbar__legend"><span>↳ Relay</span><span>∥ Parallel</span><span>= Together</span><span>SATB = Soprano · Alto · Tenor · Bass</span></p><button class="musical-score-translation-toggle" type="button" data-musical-translation-toggle aria-controls="mahler-score-lyrics" aria-expanded="true">Hide translation</button></div><div class="musical-score-scroll" tabindex="0" aria-label="Vocal text columns; scroll horizontally on a narrow screen"><div class="musical-score-grid" id="mahler-score-lyrics"><div class="musical-score-row musical-score-row--head"><div class="musical-score-part">Vocal part / relationship</div><div class="musical-score-original">German · Original</div><div class="musical-score-english" data-musical-translation>English · Translation</div></div>'+mahlerFinaleEvents.map(renderScoreEvent).join("")+'</div></div><div class="musical-score-footer"><p><strong>Listening transcription · under review.</strong> The choral entrances and repetitions in “Wieder aufzublüh’n,” “Hör auf zu beben,” and particularly “Mit Flügeln” need further part-by-part score checking. English is a working translation.</p><p>Sources: <a href="'+escapeHtml(mahlerFinaleSources.score)+'" target="_blank" rel="noopener noreferrer">Historical scores</a> · <a href="'+escapeHtml(mahlerFinaleSources.text)+'" target="_blank" rel="noopener noreferrer">Text reference</a>.</p></div></div>';
 }
-
-export function renderMusicalPage(view = "about") {
-  const selected = view === "lyrics" ? "lyrics" : "about";
-  return `<div class="musical-detail-page">${renderMusicalTabs(selected)}${selected === "lyrics" ? renderMusicalLyrics() : renderMusicalAbout()}</div>`;
+export function renderMusicalPage(slug = 'mahler-symphony-2-resurrection', selectedView = 'about') {
+  const view = selectedView === 'lyrics' ? 'lyrics' : 'about';
+  if (slug === 'beethoven-ode-to-joy') return renderBeethovenPage(view);
+  return '<nav class="site-breadcrumb musical-breadcrumb" aria-label="Breadcrumb"><a href="#/">Home</a><span>›</span><a href="#/musicals">Musicals</a><span>›</span><a href="#/musicals?composer=Gustav%20Mahler">Gustav Mahler</a><span>›</span><span aria-current="page">Symphony No. 2</span></nav><div class="musical-detail-page musical-editorial"><div class="musical-editorial-wrap"><header class="musical-editorial-hero"><div class="musical-editorial-hero__inner"><p class="musical-editorial-overline">GUSTAV MAHLER · 1895 · CHORAL SYMPHONY</p><h1>Symphony No. 2<br><em>Resurrection</em></h1><p class="musical-editorial-quote">“I shall live again!”</p><p class="musical-editorial-hero__sub">Movement V · Im Tempo des Scherzos</p></div></header>'+renderMusicalTabs(slug, view)+'<section class="musical-editorial-section" aria-labelledby="musical-about-heading" '+(view !== 'about' ? 'hidden' : '')+'><h2 id="musical-about-heading">About this work</h2>'+renderMusicalAbout()+'</section><section class="musical-editorial-section" aria-labelledby="musical-lyrics-heading" '+(view !== 'lyrics' ? 'hidden' : '')+'><h2 id="musical-lyrics-heading">Lyrics <small>· Movement V — Aufersteh’n</small></h2>'+renderMusicalLyrics()+'</section></div></div>';
 }

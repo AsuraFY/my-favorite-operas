@@ -158,7 +158,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Despina",
             "it": "Una donna a quindici anni\nDèe saper ogni gran moda,\nDove il diavolo ha la coda,\nCosa è bene e mal cos'è.\nDèe saper le maliziette\nChe innamorano gli amanti,\nFinger riso, finger pianti,\nInventar i bei perché.\nDèe in un momento\nDar retta a cento;\nColle pupille\nParlar con mille;\nDar speme a tutti,\nSien belli o brutti;\nSaper nascondersi\nSenza confondersi;\nSenza arrossire\nSaper mentire;\nE, qual regina\nDall'alto soglio,\nCol «posso e voglio»\nFarsi ubbidir.\n(fra sé)\nPar ch'abbian gusto\nDi tal dottrina.\nViva Despina\nChe sa servir!",
-            "en": "By fifteen, a woman\nshould know all the latest fashions,\nwhere the devil hides his tail,\nand what is good and bad.\nShe should know the little wiles\nthat make lovers fall in love:\npretend to laugh or cry,\ninvent convincing excuses.\nIn an instant she must\nattend to a hundred;\nwith her eyes\nspeak to a thousand;\ngive hope to everyone,\nhandsome or ugly;\nknow how to hide things\nwithout getting confused;\nlie without\nblushing;\nand like a queen\nupon her lofty throne,\nmake others obey her\nwith 'I can, and I will.'\n(Aside)\nThey seem to enjoy\nthis teaching.\nLong live Despina,\nwho knows how to serve!"
+            "en": "By fifteen, a woman\nshould know all the latest fashions,\nwhere the devil hides his tail,\nand what is good and bad.\nShe should know the little wiles\nthat make lovers fall in love:\npretend to laugh or cry,\ninvent convincing excuses.\nIn an instant she must\nattend to a hundred;\nwith her eyes\nspeak to a thousand;\ngive hope to everyone,\nhandsome or ugly;\nknow how to conceal her intentions\nwithout losing her composure;\nwithout blushing,\nknow how to lie;\nand like a queen\nupon her lofty throne,\nwith 'I can, and I will,'\nmake others obey her.\n(Aside)\nThey seem to enjoy\nthis teaching.\nLong live Despina,\nwho knows how to serve!"
           },
           {
             "speaker": "Stage direction",
@@ -193,47 +193,47 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Dorabella",
             "it": "Io son stordita\nDallo spirto infernal di tal ragazza.",
-            "en": "I'm astonished by that girl's devilish spirit."
+            "en": "I am astonished\nBy that girl's devilish spirit."
           },
           {
             "speaker": "Fiordiligi",
             "it": "Ma credimi, è una pazza.\nTi par che siamo in caso\nDi seguir suoi consigli?",
-            "en": "Believe me, she's mad.\nCan you imagine us following her advice?"
+            "en": "But believe me, she's mad.\nDo you think we are in a position\nTo follow her advice?"
           },
           {
             "speaker": "Dorabella",
             "it": "Oh, certo, se tu pigli\nPel rovescio il negozio.",
-            "en": "Only if you take the wrong view of the matter."
+            "en": "Oh, certainly, if you take\nThe wrong view of the matter."
           },
           {
             "speaker": "Fiordiligi",
             "it": "Anzi, io lo piglio\nPer il suo verso dritto:\nNon credi tu delitto,\nPer due giovani omai promesse spose,\nIl far di queste cose?",
-            "en": "On the contrary, I see it clearly.\nDon't you think it wrong for two young engaged women to do such things?"
+            "en": "On the contrary, I take it\nThe right way:\nDon't you think it wrong,\nFor two young women already engaged,\nTo do such things?"
           },
           {
             "speaker": "Dorabella",
             "it": "Ella non dice\nChe facciamo alcun mal.",
-            "en": "She isn't asking us to do anything wicked."
+            "en": "She isn't telling us\nTo do anything wicked."
           },
           {
             "speaker": "Fiordiligi",
             "it": "È mal che basta\nIl far parlar di noi.",
-            "en": "It's wrong enough if people gossip about us."
+            "en": "It's wrong enough\nTo make people talk about us."
           },
           {
             "speaker": "Dorabella",
             "it": "Quando si dice\nChe vengon per Despina!",
-            "en": "But we can say they're visiting Despina!"
+            "en": "When we can say\nThey're coming for Despina!"
           },
           {
             "speaker": "Fiordiligi",
             "it": "Oh, tu sei troppo\nLarga di coscienza! E che diran\nGli sposi nostri?",
-            "en": "Your conscience is too easy! What will our fiancés say?"
+            "en": "Oh, you are far too\nEasy in your conscience! And what will\nOur fiancés say?"
           },
           {
             "speaker": "Dorabella",
             "it": "Nulla:\nO non sapran l'affare,\nEd è tutto finito;\nO sapran qualche cosa, e allor diremo\nChe vennero per lei.",
-            "en": "Nothing. Either they won't hear about it, or we'll say the men came for her."
+            "en": "Nothing:\nEither they won't hear about it,\nAnd that's the end of it;\nOr they'll hear something, and then we'll say\nThe men came for her."
           },
           {
             "speaker": "Fiordiligi",
@@ -243,7 +243,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Dorabella",
             "it": "Restano quel che sono:\nPer divertirsi un poco, e non morire\nDalla malinconia\nNon si manca di fè, sorella mia.",
-            "en": "They'll remain unchanged. A little amusement to keep melancholy away is no breach of faith, dear sister."
+            "en": "They remain what they are:\nTo have a little fun, and not die\nOf melancholy,\nIs no breach of faith, dear sister."
           },
           {
             "speaker": "Fiordiligi",
@@ -258,12 +258,12 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Fiordiligi",
             "it": "Dunque,\nFa un po' tu: ma non voglio\nAver la colpa se poi nasce un imbroglio.",
-            "en": "Then decide yourself. I don't want the blame if anything goes wrong."
+            "en": "Then,\nYou decide: but I don't want\nThe blame if trouble follows."
           },
           {
             "speaker": "Dorabella",
             "it": "Che imbroglio nascer deve\nCon tanta precauzion? Per altro ascolta:\nPer intenderci bene,\nQual vuoi sceglier per te de' due Narcisi?",
-            "en": "What trouble could arise with such precautions? Tell me, which of the two handsome fellows do you choose?"
+            "en": "What trouble could arise\nWith so much care? Anyway, listen:\nSo we understand each other,\nWhich of the two handsome fellows will you choose?"
           },
           {
             "speaker": "Fiordiligi",
@@ -283,22 +283,22 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Dorabella",
             "it": "Prenderò quel brunettino,\nChe più lepido mi par.",
-            "en": "I'll take the dark-haired one; he seems more charming."
+            "en": "I'll take the dark-haired one,\nWho seems more charming to me."
           },
           {
             "speaker": "Fiordiligi",
             "it": "Ed intanto io col biondino\nVo' un po' ridere e burlar.",
-            "en": "Meanwhile I'll laugh and jest a little with the fair-haired one."
+            "en": "And meanwhile with the fair-haired one\nI'll laugh and jest a little."
           },
           {
             "speaker": "Dorabella",
             "it": "Scherzosetta ai dolci detti\nIo di quel risponderò.",
-            "en": "I'll answer his sweet words with playful teasing."
+            "en": "Playfully, to his sweet words\nI shall reply."
           },
           {
             "speaker": "Fiordiligi",
             "it": "Sospirando i sospiretti\nIo dell'altro imiterò.",
-            "en": "I'll imitate the other one's sighs with little sighs of my own."
+            "en": "Sighing little sighs,\nI shall imitate the other one."
           },
           {
             "speaker": "Dorabella",
@@ -313,7 +313,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Fiordiligi & Dorabella",
             "it": "Ed intanto che diletto,\nChe spassetto io proverò!",
-            "en": "What delight and amusement I shall have!"
+            "en": "And meanwhile what delight,\nWhat amusement I shall enjoy!"
           },
           {
             "speaker": "Stage direction",
@@ -453,7 +453,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Guglielmo",
             "it": "Anzi, madame...",
-            "en": "Indeed, madam..."
+            "en": "Rather, ladies..."
           },
           {
             "speaker": "Ferrando",
@@ -663,7 +663,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Gli altri due entrano in atto di passeggiare.",
-            "en": "The other two reappear, strolling."
+            "en": "The other two go inside as they stroll."
           },
           {
             "speaker": "Guglielmo",
@@ -893,7 +893,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Ferrando",
             "it": "Ah, crudel, ti capisco!\nL'aspide, l'idra, il basilisco, e quanto\nI libici deserti han di più fiero,\nIn me solo tu vedi.",
-            "en": "Ah, cruel one, I understand!\nThe viper, the hydra, the basilisk,\nand every fiercest creature of the Libyan desert,\nyou see all of them in me."
+            "en": "Ah, cruel one, I understand!\nThe viper, the hydra, the basilisk, and all\nthe fiercest beasts of the Libyan deserts—\nyou see them all in me."
           },
           {
             "speaker": "Fiordiligi",
@@ -973,7 +973,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Fiordiligi",
             "it": "Per pietà, ben mio, perdona\nAll'error di un'alma amante;\nFra quest'ombre e queste piante\nSempre ascoso, oh Dio, sarà!\nSvenerà quest'empia voglia\nL'ardir mio, la mia costanza;\nPerderà la rimembranza\nChe vergogna e orror mi fa.\nA chi mai mancò di fede\nQuesto vano ingrato cor!\nSi dovea miglior mercede,\nCaro bene, al tuo candor.",
-            "en": "Have pity, my love, forgive\nthe error of a loving soul;\nhere among these shadows and trees\nit shall remain forever hidden, oh God!\nMy courage and constancy\nshall destroy this guilty desire;\nits memory, which fills me\nwith shame and horror, shall fade.\nTo whom did this vain, ungrateful heart\nfail in faithfulness?\nYour honesty, my dearest,\ndeserved a better reward."
+            "en": "For pity's sake, my love, forgive\nthe fault of a loving soul;\namong these shadows and these trees\nit shall remain forever hidden, oh God!\nThis guilty desire shall be slain\nby my courage, my constancy;\nits memory shall fade,\nwhich fills me with shame and horror.\nTo whom has faith been broken\nby this vain, ungrateful heart!\nA better reward was owed,\nmy love, to your trusting innocence."
           },
           {
             "speaker": "Stage direction",
@@ -1028,7 +1028,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Ferrando",
             "it": "Pel giardinetto,\nCome eravam d'accordo,\nA passeggiar mi metto;\nLe dò il braccio, si parla\nDi mille cose differenti; alfine\nViensi all'amor.",
-            "en": "As we agreed,\nI begin to walk with her\nthrough the little garden;\nI give her my arm, we talk\nof a thousand different things; at last\nwe come to love."
+            "en": "Through the little garden,\njust as we agreed,\nI begin to stroll;\nI give her my arm, we talk\nof a thousand different things; at last\nwe come to love."
           },
           {
             "speaker": "Guglielmo",
@@ -1088,7 +1088,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Guglielmo",
             "it": "Eppur un dubbio,\nParlandoti a quattr'occhi,\nNon saria mal, se tu l'avessi.",
-            "en": "Still, between ourselves,\na little doubt\nwouldn't hurt."
+            "en": "Still, a little doubt,\nspeaking between ourselves,\nwouldn't do you any harm."
           },
           {
             "speaker": "Ferrando",
@@ -1163,7 +1163,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Ferrando",
             "it": "Numi! Tante promesse,\nE lagrime, e sospiri, e giuramenti,\nIn sì pochi momenti\nCome l'empia obliò?",
-            "en": "Heavens! So many promises,\ntears, sighs and oaths—\nhow could that cruel woman forget them\nin so few moments?"
+            "en": "Heavens! So many promises,\ntears, sighs and oaths—\nin so few moments,\nhow could that wicked woman forget them?"
           },
           {
             "speaker": "Guglielmo",
@@ -1263,7 +1263,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Don Alfonso",
             "it": "Via, se sarete buono\nVi tornerò l'antica calma. Udite:\n(mostrando Guglielmo)\nFiordiligi a Guglielmo\nSi conserva fedel, e Dorabella\nInfedel a voi fu.",
-            "en": "Come now, be good\nand your former peace will return. Listen:\n(Indicating Guglielmo)\nFiordiligi remains\nfaithful to Guglielmo, but Dorabella\nhas been unfaithful to you."
+            "en": "Come now, be good\nand I'll restore your former peace. Listen:\n(Indicating Guglielmo)\nFiordiligi remains\nfaithful to Guglielmo, but Dorabella\nhas been unfaithful to you."
           },
           {
             "speaker": "Ferrando",
@@ -1283,7 +1283,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Guglielmo",
             "it": "Intanto mi darete\nCinquanta zecchinetti.",
-            "en": "Meanwhile, you'll give me\nfifty sequins."
+            "en": "Meanwhile, you'll give me\nfifty gold pieces."
           },
           {
             "speaker": "Don Alfonso",
@@ -1538,7 +1538,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Despina",
             "it": "(fra sé)\nComanda in abrégé donna Arroganza!",
-            "en": "(Aside)\nLady Arrogance gives her orders in short!"
+            "en": "(Aside)\nLady Arrogance keeps her orders short!"
           },
           {
             "speaker": "Stage direction",
@@ -1648,7 +1648,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Fiordiligi",
             "it": "Taci, ahimè! Son abbastanza\nTormentata ed infelice!",
-            "en": "Be silent, alas! I am already\nsufficiently tormented and unhappy!"
+            "en": "Be silent, alas! I am already\ntormented and unhappy enough!"
           },
           {
             "speaker": "Fiordiligi & Ferrando",
@@ -1713,7 +1713,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Ferrando & Fiordiligi",
             "it": "Abbracciamci, o caro bene,\nE un conforto a tante pene\nSia languir di dolce affetto,\nDi diletto sospirar!",
-            "en": "Let us embrace, my dearest,\nand let sweet affection comfort\nall this suffering;\nlet us sigh with delight!"
+            "en": "Let us embrace, my dearest,\nand let the comfort for so much suffering\nbe to languish in sweet affection,\nto sigh with delight!"
           },
           {
             "speaker": "Stage direction",
@@ -1753,7 +1753,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Guglielmo",
             "it": "Mi pelerei la barba,\nMi graffierei la pelle,\nE darei colle corna entro le stelle!\nFu quella Fiordiligi! la Penelope,\nL'Artemisia del secolo! Briccona!\nAssassina... furfante... ladra... cagna...",
-            "en": "I'd tear out my beard,\nscratch my own skin,\nand toss my horns up among the stars!\nThat was Fiordiligi! The Penelope,\nthe Artemisia of our age! Rogue!\nMurderess... scoundrel... thief... wretch!"
+            "en": "I'd tear out my beard,\nscratch my own skin,\nand toss my horns up among the stars!\nThat was Fiordiligi! The Penelope,\nthe Artemisia of our age! Rogue!\nMurderess... scoundrel... thief... bitch!"
           },
           {
             "speaker": "Don Alfonso",
@@ -1778,7 +1778,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Guglielmo",
             "it": "La mia Fior... fior di diavolo, che strozzi\nLei prima e dopo me!",
-            "en": "My Fior... devil's flower! May it strangle\nher first and me afterward!"
+            "en": "My Fior... devil's flower! May the devil strangle\nher first and then me!"
           },
           {
             "speaker": "Ferrando",
@@ -1838,7 +1838,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Don Alfonso",
             "it": "Ebben pigliatele\nCom'elle son. Natura non potea\nFare l'eccezione, il privilegio\nDi creare due donne d'altra pasta\nPer i vostri bei musi; in ogni cosa\nCi vuol filosofia. Venite meco;\nDi combinar la cosa\nStudierem la maniera.\nVo' che ancor questa sera\nDoppie nozze si facciano. Frattanto\nUn'ottava ascoltate:\nFelicissimi voi, se la imparate.",
-            "en": "Then accept them\nas they are. Nature could not\nmake an exception, the special favor\nof creating two women of different stuff\njust for your pretty faces. In everything,\none needs philosophy. Come with me;\nwe'll devise a way\nto settle the matter.\nI want two weddings to take place\nthis very evening. Meanwhile,\nlisten to a verse:\nyou'll be happiest if you learn it."
+            "en": "Then accept them\nas they are. Nature could not\nmake an exception, the special favor\nof creating two women of different stuff\njust for your pretty faces. In everything,\none needs philosophy. Come with me;\nwe'll devise a way\nto settle the matter.\nI want two weddings to take place\nthis very evening. Meanwhile,\nlisten to an eight-line stanza:\nyou'll be happiest if you learn it."
           }
         ]
       },
@@ -1993,7 +1993,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Fiordiligi & Dorabella",
             "it": "Pel mio sangue l'allegria\nCresce, cresce e si diffonde.",
-            "en": "Joy grows and spreads\nthroughout my being."
+            "en": "Through my blood, joy\ngrows and grows and spreads."
           },
           {
             "speaker": "Ferrando & Guglielmo",
@@ -2033,7 +2033,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Fiordiligi, Dorabella & Ferrando",
             "it": "E nel tuo, nel mio bicchiero\nSi sommerga ogni pensiero.\nE non resti più memoria\nDel passato ai nostri cor.",
-            "en": "May every thought\nbe drowned in your glass and mine;\nmay no memory of the past\nremain in our hearts."
+            "en": "In your glass and in mine,\nmay every thought be drowned;\nmay no memory remain\nin our hearts of the past."
           },
           {
             "speaker": "Stage direction",
@@ -2043,7 +2043,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Guglielmo",
             "it": "(fra sé)\nAh, bevessero del tossico,\nQueste volpi senza onor!",
-            "en": "(Aside)\nIf only these shameless foxes\nwere drinking poison!"
+            "en": "(Aside)\nAh, if only they were drinking poison,\nthese shameless foxes!"
           }
         ]
       }
@@ -2083,7 +2083,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Despina",
             "it": "(entrando, con voce nasale)\nAugurandovi ogni bene\nIl notaio Beccavivi\nColl'usata a voi sen viene\nNotarile dignità.\nE il contratto stipulato\nColle regole ordinarie\nNelle forme giudiziarie,\nPria tossendo, poi sedendo,\nClara voce leggerà.",
-            "en": "(Entering, speaking through her nose)\nWishing you every happiness,\nnotary Beccavivi\ncomes before you\nwith the customary notarial dignity.\nThe contract, drawn up\naccording to ordinary rules\nand legal forms,\nhe will read in a clear voice,\nafter first coughing and sitting down."
+            "en": "(Entering, with a nasal voice)\nWishing you every happiness,\nnotary Beccavivi\ncomes before you with his customary\nnotarial dignity.\nAnd the contract, drawn up\naccording to the usual rules\nand legal forms,\nfirst coughing, then sitting down,\nhe will read in a clear voice."
           },
           {
             "speaker": "Fiordiligi, Dorabella, Ferrando & Guglielmo",
@@ -2093,7 +2093,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Despina",
             "it": "Per contratto da me fatto,\nSi congiunge in matrimonio\nFiordiligi con Sempronio,\nE con Tizio Dorabella\nSua legittima sorella,\nQuelle, dame ferraresi,\nQuesti, nobili albanesi.\nE, per dote e contradote...",
-            "en": "By the contract I have prepared,\nFiordiligi is joined in marriage\nto Sempronio,\nand her lawful sister Dorabella\nto Tizio;\nthe ladies are from Ferrara,\nthe gentlemen Albanian nobles.\nAs for dowries and marriage settlements..."
+            "en": "By the contract I have prepared,\nthe following are joined in marriage:\nFiordiligi to Sempronio,\nand to Tizio, Dorabella,\nher lawful sister;\nthe ladies are from Ferrara,\nthe gentlemen Albanian nobles.\nAs for dowries and marriage settlements..."
           },
           {
             "speaker": "Fiordiligi, Dorabella, Ferrando & Guglielmo",
@@ -2248,7 +2248,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Ferrando & Guglielmo",
             "it": "Sani e salvi, agli amplessi amorosi\nDelle nostre fidissime amanti\nRitorniamo, di gioia esultanti,\nPer dar premio alla lor fedeltà.",
-            "en": "Safe and sound, we return\nwith hearts rejoicing\nto the loving embraces of our faithful sweethearts,\nto reward their constancy."
+            "en": "Safe and sound, to the loving embraces\nof our utterly faithful sweethearts\nwe return, rejoicing,\nto reward their fidelity."
           },
           {
             "speaker": "Don Alfonso",
@@ -2388,12 +2388,12 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Ferrando",
             "it": "(a Fiordiligi)\nA voi s'inchina,\nBella damina,\nIl cavaliere\nDell'Albania!",
-            "en": "(To Fiordiligi)\nThe gentleman\nfrom Albania\nbows before you,\nmy lovely lady!"
+            "en": "(To Fiordiligi)\nBefore you bows,\nmy lovely lady,\nthe gentleman\nfrom Albania!"
           },
           {
             "speaker": "Guglielmo",
             "it": "(a Dorabella)\nIl ritrattino\nPel coricino\nEcco io le rendo,\nSignora mia.",
-            "en": "(To Dorabella)\nHere, my lady,\nI return your little portrait\nin exchange for\nthe little heart."
+            "en": "(To Dorabella)\nYour little portrait,\nin exchange for the little heart,\nhere I return to you,\nmy lady."
           },
           {
             "speaker": "Ferrando & Guglielmo",
@@ -2448,7 +2448,7 @@ export const cosiActTwoScenes = [
           {
             "speaker": "Despina",
             "it": "Io non so se veglio o sogno,\nMi confondo, mi vergogno.\nManco mal, se a me l'han fatta,\nChe a molt'altri anch'io la fo.",
-            "en": "I don't know whether I'm awake or dreaming;\nI'm confused and ashamed.\nIt's just as well they played this trick on me,\nfor I've played tricks on many others."
+            "en": "I don't know whether I'm awake or dreaming;\nI'm bewildered and ashamed.\nNever mind if they've fooled me:\nI fool plenty of others myself."
           },
           {
             "speaker": "All",

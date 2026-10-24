@@ -3,10 +3,20 @@
 export const barbiereActOneScenes = [
   {
     "number": 1,
-    "title": "Ecco ridente in cielo",
-    "cast": "Il Conte, Fiorello, Coro",
+    "cast": "The Count, Fiorello, Chorus",
     "summary": "At dawn the Count serenades Rosina, then dismisses the musicians and waits for her at the balcony.",
     "sections": [
+      {
+        "label": "Sinfonia",
+        "type": "Sinfonia",
+        "headingTranslation": "Overture",
+        "routeItem": 3,
+        "beforeScene": true,
+        "instrumental": true,
+        "turns": [],
+        "participants": [],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
+      },
       {
         "label": "Introduzione",
         "turns": [
@@ -18,7 +28,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Fiorello",
             "it": "(avanzandosi con cautela) Piano pianissimo, senza parlar, tutti con me venite qua.",
-            "en": "(Advancing cautiously) Very softly, without speaking, all of you come here with me."
+            "en": "(Advancing cautiously) Very softly, without speaking, all of you come here with me.",
+            "inlineDirections": ["avanzandosi con cautela","Advancing cautiously"]
           },
           {
             "speaker": "Chorus",
@@ -33,7 +44,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(sottovoce) Fiorello... Olà...",
-            "en": "(Under his breath) Fiorello... Hey there..."
+            "en": "(Under his breath) Fiorello... Hey there...",
+            "inlineDirections": ["sottovoce","Under his breath"]
           },
           {
             "speaker": "Fiorello",
@@ -60,10 +72,20 @@ export const barbiereActOneScenes = [
             "it": "Piano pianissimo, senza parlar.",
             "en": "Very softly, without speaking."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Introduzione",
+        "originalTitle": "Piano pianissimo",
+        "translatedTitle": "Very softly",
+        "participants": [
+          "Fiorello",
+          "Chorus",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
-        "label": "Cavatina — Ecco ridente in cielo",
+        "label": "Cavatina",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -74,12 +96,7 @@ export const barbiereActOneScenes = [
             "speaker": "The Count",
             "it": "Ecco ridente in cielo\nspunta la bella aurora,\ne tu non sorgi ancora\ne puoi dormir così?\n\nSorgi, mia bella speme,\nvieni, bell'idol mio;\nrendi men crudo, o Dio,\nlo stral che mi ferì.\n\nOh sorte! già veggo\nquel caro sembiante;\nquest'anima amante\nottiene pietà.\nOh istante d'amore!\nFelice momento!\nOh dolce contento\nche eguale non ha.",
             "en": "The lovely dawn is rising,\nsmiling in the sky,\nyet you have not awoken;\nhow can you still sleep?\n\nRise, my beautiful hope,\ncome, my beloved idol;\nsoften, O God, the arrow\nthat pierced my heart.\n\nO fortune! I can already see\nthat dear face;\nthis loving soul\nfinds compassion.\nO moment of love!\nO happy instant!\nO sweet delight\nwith none to equal it."
-          }
-        ]
-      },
-      {
-        "label": "Recitativo",
-        "turns": [
+          },
           {
             "speaker": "The Count",
             "it": "Ehi, Fiorello?... Di', la vedi?",
@@ -98,7 +115,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Chorus",
             "it": "(sotto voce) Mio signore.",
-            "en": "(Softly) My lord."
+            "en": "(Softly) My lord.",
+            "inlineDirections": ["sotto voce","Softly"]
           },
           {
             "speaker": "The Count",
@@ -118,7 +136,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Chorus",
             "it": "Mille grazie, mio signore, del favore, dell'onore... Ah, di tanta cortesia obbligati in verità. (Oh, che incontro fortunato! È un signor di qualità.)",
-            "en": "A thousand thanks, my lord, for your kindness and honour... We are truly obliged for such courtesy. (What a fortunate encounter! He is a gentleman of distinction.)"
+            "en": "A thousand thanks, my lord, for your kindness and honour... We are truly obliged for such courtesy. (What a fortunate encounter! He is a gentleman of distinction.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -129,7 +148,22 @@ export const barbiereActOneScenes = [
             "speaker": "Fiorello",
             "it": "Zitti, zitti... che rumore! Ma che onore? che favore? Maledetti, andate via, ah canaglia, via di qua. Ve' che chiasso indiavolato, ah che rabbia che mi fa!",
             "en": "Quiet, quiet... what a racket! What honour? What favour? Curse you, go away, you rabble! What a devilish din; it makes me furious!"
-          },
+          }
+        ],
+        "routeItem": 1,
+        "type": "Cavatina",
+        "originalTitle": "Ecco ridente in cielo",
+        "translatedTitle": "See, smiling in the sky",
+        "participants": [
+          "The Count",
+          "Fiorello",
+          "Chorus"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
+      },
+      {
+        "label": "Recitativo",
+        "turns": [
           {
             "speaker": "The Count",
             "it": "Gente indiscreta! Ah, quasi con quel chiasso importuno tutto quanto il quartier han risvegliato. Alfin sono partiti!... E non si vede! È inutile sperar. Eppur qui voglio aspettar di vederla. Ogni mattina ella su quel balcone a prender fresco viene in sull'aurora. Proviamo. Olà, tu ancora ritirati, Fiorel.",
@@ -155,25 +189,39 @@ export const barbiereActOneScenes = [
             "it": "Chi è mai quest'importuno?... Lasciamolo passar; sotto quegli archi, non veduto, vedrò quanto bisogna; già l'alba è appena, e amor non si vergogna.",
             "en": "Who can this intruder be?... Let him pass; unseen beneath those arches, I will see what I need to see. Dawn has only just broken, and love has no need to hide."
           }
-        ]
+        ],
+        "routeItem": 2,
+        "type": "Recitativo",
+        "participants": [
+          "The Count",
+          "Fiorello"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 2,
-    "title": "Largo al factotum",
     "cast": "Figaro, The Count",
     "summary": "Figaro arrives in the square, celebrates his busy life, and explains to Almaviva how he can help him reach Rosina.",
     "sections": [
       {
-        "label": "Cavatina — Largo al factotum",
+        "label": "Cavatina",
         "turns": [
           {
             "speaker": "Figaro",
             "it": "La ran la lera, la ran la là!\nLargo al factotum della città.\nPresto a bottega, che l'alba è già.\nLa ran la lera, la ran la là!\n\nA che bel vivere, che bel piacere\nper un barbiere di qualità!\nAh, bravo Figaro, bravo, bravissimo,\nfortunatissimo per verità!\n\nPronto a far tutto, la notte e il giorno\nsempre d'intorno in giro sta.\nMiglior cuccagna per un barbiere,\nvita più nobile no, non si dà.\n\nRasori e pettini, lancette e forbici,\nal mio comando tutto qui sta.\nSe poi mi capita il buon momento,\nnel mio mestiere vaglio per cento.\n\nTutti mi chiedono, tutti mi voglion: \ndonne, ragazzi, vecchi, fanciulle.\nQua la parrucca... presto la barba...\nqua la sanguigna... Figaro! Figaro!\nSon qua, son qua...\n\nOhimè che furia, ohimè che folla,\nuno alla volta, per carità!\nFigaro... eccomi qua.\nPronto, prontissimo, son come un fulmine,\nsono il factotum della città.\nAh, bravo Figaro, bravo, bravissimo,\nfortunatissimo per verità!\nLa ran la lera, la ran la là!",
             "en": "La ran la lera, la ran la la!\nMake way for the city's factotum.\nQuick to the shop—the dawn is here.\nLa ran la lera, la ran la la!\n\nAh, what a fine life, what a delight\nfor a barber of distinction!\nBravo, Figaro, bravo, bravissimo,\ntruly the luckiest man alive!\n\nReady for anything, by night and day,\nalways rushing here and there.\nNo better fortune for a barber,\nno nobler life could one desire.\n\nRazors and combs, lancets and scissors—\neverything is here at my command.\nIf a good opportunity comes along,\nin my trade I can do a hundred jobs.\n\nEveryone asks for me, everyone wants me: \nwomen, boys, old men, young girls.\nA wig here... a shave, quickly...\na bloodletting there... Figaro! Figaro!\nI'm here, I'm here...\n\nOh, what a rush, oh, what a crowd!\nOne at a time, for goodness' sake!\nFigaro... here I am.\nReady, lightning-fast,\nI'm the city's factotum.\nBravo, Figaro, bravo, bravissimo,\ntruly the luckiest man alive!\nLa ran la lera, la ran la la!"
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Cavatina",
+        "originalTitle": "Largo al factotum",
+        "translatedTitle": "Make way for the factotum",
+        "participants": [
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
         "label": "Recitativo",
@@ -186,17 +234,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(È desso, o pur m'inganno?)",
-            "en": "(Is that him, or am I mistaken?)"
+            "en": "(Is that him, or am I mistaken?)",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
             "it": "(Chi sarà mai costui?)",
-            "en": "(Who can that man be?)"
+            "en": "(Who can that man be?)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
             "it": "(Oh, è lui senz'altro.) Figaro!...",
-            "en": "(Oh, it is certainly him.) Figaro!..."
+            "en": "(Oh, it is certainly him.) Figaro!...",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
@@ -275,16 +326,23 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il Conte e Figaro si ritirano sotto il portico.",
             "en": "The Count and Figaro withdraw beneath the arcade."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Recitativo",
+        "participants": [
+          "Figaro",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 3,
-    "title": "La lettera dal balcone",
     "cast": "Rosina, Bartolo, The Count, Figaro",
     "summary": "Rosina tries to pass a note to Lindoro, but Bartolo interrupts. She drops the paper and the Count retrieves it.",
     "sections": [
@@ -314,7 +372,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(da dentro) Ebben, ragazza... Il tempo è buono?... Cos'è quella carta?",
-            "en": "(From within) Well, young lady... Is the weather fine?... What is that paper?"
+            "en": "(From within) Well, young lady... Is the weather fine?... What is that paper?",
+            "inlineDirections": ["da dentro","From within"]
           },
           {
             "speaker": "Rosina",
@@ -324,12 +383,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(a Figaro) Ma brava! Dell'Inutil precauzione!",
-            "en": "(To Figaro) How clever! The Useless Precaution!"
+            "en": "(To Figaro) How clever! The Useless Precaution!",
+            "inlineDirections": ["a Figaro","To Figaro"]
           },
           {
             "speaker": "Figaro",
             "it": "(al Conte) Che furba!",
-            "en": "(To the Count) How sly!"
+            "en": "(To the Count) How sly!",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "Bartolo",
@@ -364,7 +425,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(da fuori) Ho inteso. (raccoglie la carta)",
-            "en": "(From outside) I understand. (He picks up the paper.)"
+            "en": "(From outside) I understand. (He picks up the paper.)",
+            "inlineDirections": ["da fuori","From outside","raccoglie la carta","He picks up the paper."]
           },
           {
             "speaker": "Rosina",
@@ -374,12 +436,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(sottovoce) Non temete.",
-            "en": "(Softly) Do not worry."
+            "en": "(Softly) Do not worry.",
+            "inlineDirections": ["sottovoce","Softly"]
           },
           {
             "speaker": "Bartolo",
             "it": "(fuori, cercando) Son qua: dov'è?",
-            "en": "(Outside, searching) I'm here; where is it?"
+            "en": "(Outside, searching) I'm here; where is it?",
+            "inlineDirections": ["fuori, cercando","Outside, searching"]
           },
           {
             "speaker": "Rosina",
@@ -411,13 +475,21 @@ export const barbiereActOneScenes = [
             "it": "Rosina rientra; anche Bartolo rientra in casa.",
             "en": "Rosina goes inside; Bartolo also returns to the house."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Rosina",
+          "The Count",
+          "Bartolo",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 4,
-    "title": "Se il mio nome saper voi bramate",
     "cast": "The Count, Figaro, Rosina, Bartolo",
     "summary": "Rosina's note asks Lindoro to reveal himself. Almaviva serenades her as Lindoro, then Figaro devises a soldier's disguise and a lodging billet.",
     "sections": [
@@ -442,7 +514,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "(legge) Le vostre assidue premure hanno eccitata la mia curiosità. Il mio tutore è per uscire di casa; appena si sarà allontanato procurate con qualche mezzo ingegnoso d'indicarmi il vostro nome, il vostro stato e le vostre intenzioni. Io non posso giammai comparire al balcone senza l'indivisibile compagnia del mio tiranno. Siate però certo che tutto è disposta a fare per rompere le sue catene la sventurata Rosina.",
-            "en": "(Reading) Your constant attentions have stirred my curiosity. My guardian is about to leave the house; as soon as he is gone, find some clever way to tell me your name, your station, and your intentions. I can never appear at the balcony without my tyrant's inseparable company. But be sure that poor Rosina is ready to do anything to break her chains."
+            "en": "(Reading) Your constant attentions have stirred my curiosity. My guardian is about to leave the house; as soon as he is gone, find some clever way to tell me your name, your station, and your intentions. I can never appear at the balcony without my tyrant's inseparable company. But be sure that poor Rosina is ready to do anything to break her chains.",
+            "inlineDirections": ["legge","Reading"]
           },
           {
             "speaker": "The Count",
@@ -467,7 +540,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(verso le quinte) Fra momenti io torno; non aprite a nessun. Se don Basilio venisse a cercarmi, che m'aspetti. Le mie nozze con lei meglio è affrettare; sì, dentr'oggi finir vo' quest'affare.",
-            "en": "(Calling inside) I'll be back shortly; don't open the door to anyone. If Don Basilio comes looking for me, tell him to wait. I must hasten my marriage to her; yes, I mean to settle this today."
+            "en": "(Calling inside) I'll be back shortly; don't open the door to anyone. If Don Basilio comes looking for me, tell him to wait. I must hasten my marriage to her; yes, I mean to settle this today.",
+            "inlineDirections": ["verso le quinte","Calling inside"]
           },
           {
             "speaker": "The Count",
@@ -499,10 +573,18 @@ export const barbiereActOneScenes = [
             "it": "Zitti... zitti! Dietro la gelosia sta la ragazza. Presto, presto, all'assalto: niun ci vede. In una canzonetta, così alla buona, il tutto spiegatele, signor. Ecco la chitarra.",
             "en": "Quiet... the girl is behind the grille. Quickly, take your chance; no one sees us. Explain it all in a little song, simply and plainly, sir. Here is the guitar."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "The Count",
+          "Figaro",
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
-        "label": "Canzone — Se il mio nome saper voi bramate",
+        "label": "Canzone",
         "turns": [
           {
             "speaker": "The Count",
@@ -512,14 +594,25 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(da dentro) L'amorosa sincera Rosina il suo core a Lindo...",
-            "en": "(From within) Loving, faithful Rosina gives her heart to Lindo..."
+            "en": "(From within) Loving, faithful Rosina gives her heart to Lindo...",
+            "inlineDirections": ["da dentro","From within"]
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si sente da dentro chiudere le finestre.",
             "en": "The windows are heard closing from within."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Canzone",
+        "originalTitle": "Se il mio nome saper voi bramate",
+        "translatedTitle": "If you wish to know my name",
+        "participants": [
+          "The Count",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
         "label": "Recitativo",
@@ -578,17 +671,24 @@ export const barbiereActOneScenes = [
             "speaker": "The Count",
             "it": "Oro a bizzeffe. Animo, via.",
             "en": "Gold in abundance. Come on, then."
-          }
-        ]
-      },
-      {
-        "label": "Duetto — All'idea di quel metallo",
-        "turns": [
+          },
           {
             "speaker": "Figaro",
             "it": "Son pronto; ah, non sapete i simpatici effetti prodigiosi che ad appagare il mio signor Lindoro produce in me la dolce idea dell'oro.\n\nAll'idea di quel metallo\nportentoso, onnipossente,\nun vulcano la mia mente\ngià comincia a diventar.",
             "en": "I'm ready; you cannot imagine the delightful, wondrous effects that the sweet thought of gold has on me when serving my lord Lindoro.\n\nAt the thought of that metal,\nso wondrous, all-powerful,\nmy mind is already beginning\nto turn into a volcano."
-          },
+          }
+        ],
+        "routeItem": 2,
+        "type": "Recitativo",
+        "participants": [
+          "The Count",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
+      },
+      {
+        "label": "Duetto",
+        "turns": [
           {
             "speaker": "The Count",
             "it": "Su, vediam di quel metallo qualche effetto sorprendente, del vulcan della tua mente qualche mostro singolar.",
@@ -709,25 +809,41 @@ export const barbiereActOneScenes = [
             "it": "Figaro entra in casa di Bartolo; il Conte parte.",
             "en": "Figaro enters Bartolo's house; the Count leaves."
           }
-        ]
+        ],
+        "routeItem": 3,
+        "type": "Duetto",
+        "originalTitle": "All'idea di quel metallo",
+        "translatedTitle": "At the thought of that metal",
+        "participants": [
+          "The Count",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 5,
-    "title": "Una voce poco fa",
     "cast": "Rosina",
     "summary": "Rosina resolves to win Lindoro and explains that beneath her gentle manner she can be formidable when crossed.",
     "sections": [
       {
-        "label": "Cavatina — Una voce poco fa",
+        "label": "Cavatina",
         "turns": [
           {
             "speaker": "Rosina",
             "it": "Una voce poco fa\nqui nel cor mi risuonò;\nil mio cor ferito è già,\ne Lindor fu che il piagò.\n\nSì, Lindoro mio sarà,\nlo giurai, la vincerò.\nIl tutor ricuserà,\nio l'ingegno aguzzerò;\nalla fin s'accheterà,\ne contenta io resterò.\n\nIo sono docile, son rispettosa,\nsono ubbidiente, dolce, amorosa;\nmi lascio reggere, mi fo guidar.\nMa se mi toccano qua nel mio debole,\nsarò una vipera, e cento trappole\nprima di cedere farò giocar.",
             "en": "A voice just now\nresounded in my heart;\nmy heart is already wounded,\nand Lindoro dealt the blow.\n\nYes, Lindoro shall be mine;\nI swore it, and I shall win.\nMy guardian will refuse,\nso I shall sharpen my wit;\nin the end he will give in,\nand I shall be content.\n\nI am gentle, respectful,\nobedient, sweet, affectionate;\nI let myself be guided and led.\nBut if anyone touches my weak spot,\nI'll turn into a viper and set a hundred traps\nbefore I yield."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Cavatina",
+        "originalTitle": "Una voce poco fa",
+        "translatedTitle": "A voice a little while ago",
+        "participants": [
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
         "label": "Recitativo",
@@ -737,13 +853,18 @@ export const barbiereActOneScenes = [
             "it": "Sì, sì, la vincerò. Potessi almeno mandargli questa lettera. Ma come? Di nessun qui mi fido: il tutore ha cent'occhi... Basta, basta: sigilliamola intanto. Con Figaro il barbiere dalla finestra discorrer l'ho veduto più d'un'ora: Figaro è un galantuomo, un giovin di buon cuore... chi sa ch'ei non protegga il nostro amore.",
             "en": "Yes, yes, I shall win. If only I could send him this letter! But how? I can trust no one here; my guardian has a hundred eyes... Enough, I will seal it for now. I have watched the barber Figaro talking through the window for more than an hour. Figaro is an honest man, a good-hearted young fellow... perhaps he will help our love."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Recitativo",
+        "participants": [
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 6,
-    "title": "Figaro e Rosina",
     "cast": "Figaro, Rosina",
     "summary": "Figaro and Rosina begin to confide in each other, but Bartolo's approach interrupts them.",
     "sections": [
@@ -783,7 +904,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "In sepoltura?... Oibò! (chiamandola a parte) Sentite, io voglio...",
-            "en": "Buried alive?... Good gracious! (Drawing her aside) Listen, I want to..."
+            "en": "Buried alive?... Good gracious! (Drawing her aside) Listen, I want to...",
+            "inlineDirections": ["chiamandola a parte","Drawing her aside"]
           },
           {
             "speaker": "Rosina",
@@ -813,20 +935,27 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "Bravissima, vado. (Si nasconde nella prima porta a sinistra, poi si fa vedere di tanto in tanto.)",
-            "en": "Excellent. I am off. (He hides behind the first door on the left, peeking out now and then.)"
+            "en": "Excellent. I am off. (He hides behind the first door on the left, peeking out now and then.)",
+            "inlineDirections": ["Si nasconde nella prima porta a sinistra, poi si fa vedere di tanto in tanto.","He hides behind the first door on the left, peeking out now and then."]
           },
           {
             "speaker": "Rosina",
             "it": "Quanto è garbato.",
             "en": "How charming he is."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Figaro",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 7,
-    "title": "Il sospetto di Bartolo",
     "cast": "Bartolo, Rosina, Berta, Ambrogio",
     "summary": "Bartolo suspects Figaro has been speaking with Rosina and interrogates the household.",
     "sections": [
@@ -841,7 +970,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Ecco qua! Sempre grida.)",
-            "en": "(There he goes again! Always shouting.)"
+            "en": "(There he goes again! Always shouting.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -871,7 +1001,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "Ebben, ve lo dirò. Sì, l'ho veduto, gli ho parlato, mi piace, m'è simpatico il suo discorso, il suo gioviale aspetto. (Crepa di rabbia, vecchio maledetto.)",
-            "en": "Well, I will tell you. Yes, I saw him and spoke with him. I like him; his lively manner and cheerful face appeal to me. (Burst with rage, you wicked old man.)"
+            "en": "Well, I will tell you. Yes, I saw him and spoke with him. I like him; his lively manner and cheerful face appeal to me. (Burst with rage, you wicked old man.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -881,17 +1012,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Berta",
             "it": "(Stranutando) Eccì!",
-            "en": "(Sneezing) Ah-choo!"
+            "en": "(Sneezing) Ah-choo!",
+            "inlineDirections": ["Stranutando","Sneezing"]
           },
           {
             "speaker": "Ambrogio",
             "it": "(Sbadigliando) Aah! Che comanda?",
-            "en": "(Yawning) Ahh! What is it?"
+            "en": "(Yawning) Ahh! What is it?",
+            "inlineDirections": ["Sbadigliando","Yawning"]
           },
           {
             "speaker": "Bartolo",
             "it": "(A Berta) Dimmi...",
-            "en": "(To Berta) Tell me..."
+            "en": "(To Berta) Tell me...",
+            "inlineDirections": ["A Berta","To Berta"]
           },
           {
             "speaker": "Berta",
@@ -911,7 +1045,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(Ad Ambrogio) Rispondi almen tu, babbuino.",
-            "en": "(To Ambrogio) At least you answer, you idiot."
+            "en": "(To Ambrogio) At least you answer, you idiot.",
+            "inlineDirections": ["Ad Ambrogio","To Ambrogio"]
           },
           {
             "speaker": "Ambrogio",
@@ -981,15 +1116,24 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "Eh, il diavol che vi porti! (Li caccia dentro la scena.)",
-            "en": "May the devil take you! (He drives them off.)"
+            "en": "May the devil take you! (He drives them off.)",
+            "inlineDirections": ["Li caccia dentro la scena.","He drives them off."]
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "Rosina",
+          "Berta",
+          "Ambrogio"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 8,
-    "title": "La calunnia è un venticello",
     "cast": "Bartolo, Basilio",
     "summary": "Basilio explains how slander grows into a public storm. Bartolo rejects the tactic and hurries to arrange his marriage to Rosina.",
     "sections": [
@@ -1036,17 +1180,32 @@ export const barbiereActOneScenes = [
             "it": "Ah, dunque la calunnia cos'è voi non sapete? No? Uditemi e tacete.",
             "en": "Ah, so you don't know what slander is? No? Listen, and be quiet."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Bartolo",
+          "Basilio"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
-        "label": "Aria — La calunnia è un venticello",
+        "label": "Aria",
         "turns": [
           {
             "speaker": "Basilio",
             "it": "La calunnia è un venticello,\nun'auretta assai gentile,\nche insensibile, sottile,\nleggermente, dolcemente\nincomincia a sussurrar.\n\nPiano piano, terra terra,\nsotto voce, sibilando,\nva scorrendo, va ronzando;\nnelle orecchie della gente\ns'introduce destramente,\ne le teste ed i cervelli\nfa stordire e fa gonfiar.\n\nDalla bocca fuori uscendo\nlo schiamazzo va crescendo;\nprende forza a poco a poco,\nscorre già di loco in loco,\nsembra il tuono, la tempesta\nche nel sen della foresta\nva fischiando, brontolando,\ne ti fa d'orror gelar.\n\nAlla fin trabocca e scoppia,\nsi propaga, si raddoppia,\ne produce un'esplosione\ncome un colpo di cannone,\nun tremuoto, un temporale,\nun tumulto generale\nche fa l'aria rimbombar.\nE il meschino calunniato,\navvilito, calpestato\nsotto il pubblico flagello,\nper gran sorte va a crepar.",
-            "en": "Slander is a little breeze,\na gentle puff of air,\nso delicate and subtle,\nthat softly, sweetly\nit begins to whisper.\n\nQuietly, close to the ground,\nunder its breath, hissing,\nit travels on, it buzzes;\nit slips deftly into people's ears\nand makes their heads and minds\ndizzy and swollen.\n\nOnce it escapes the mouth,\nthe clamour grows and grows;\nit gathers strength little by little,\nspreading from place to place.\nIt is like thunder, like a storm\nthat through the forest's heart\nwhistles and rumbles,\nfreezing you with dread.\n\nAt last it overflows and bursts,\nspreading and doubling,\nuntil it explodes\nlike a cannon blast,\nan earthquake, a tempest,\na general uproar\nthat makes the air resound.\nAnd the wretched victim of slander,\nhumiliated and trampled\nunder the public lash,\nmay count himself lucky to die."
+            "en": "Slander is a little breeze,\na gentle puff of air,\nso delicate and subtle,\nthat softly, sweetly\nit begins to whisper.\n\nQuietly, close to the ground,\nunder its breath, hissing,\nit travels on, it buzzes;\ninto people's ears\nit slips deftly,\nand makes their heads and minds\ndizzy and swollen.\n\nOnce it escapes the mouth,\nthe clamour grows and grows;\nit gathers strength little by little,\nspreading from place to place.\nIt is like thunder, like a storm\nthat through the forest's heart\nwhistles and rumbles,\nfreezing you with dread.\n\nAt last it overflows and bursts,\nspreading and doubling,\nuntil it explodes\nlike a cannon blast,\nan earthquake, a tempest,\na general uproar\nthat makes the air resound.\nAnd the wretched victim of slander,\nhumiliated and trampled\nunder the public lash,\nmay count himself lucky to die."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Aria",
+        "originalTitle": "La calunnia è un venticello",
+        "translatedTitle": "Slander is a little breeze",
+        "participants": [
+          "Basilio"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
         "label": "Recitativo",
@@ -1064,20 +1223,28 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Basilio",
             "it": "(Vengan denari; al resto son qua io.)",
-            "en": "(Let the money come; I'll take care of the rest.)"
+            "en": "(Let the money come; I'll take care of the rest.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Entrano nella prima camera a destra.",
             "en": "They enter the first room on the right."
           }
-        ]
+        ],
+        "routeItem": 2,
+        "type": "Recitativo",
+        "participants": [
+          "Basilio",
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 9,
-    "title": "Dunque io son... tu non m'inganni?",
     "cast": "Figaro, Rosina",
     "summary": "Figaro tells Rosina that Lindoro loves her. She understands and writes him a note.",
     "sections": [
@@ -1192,12 +1359,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Io scommetto... scommetto ch'ei sa tutto. Or mi chiarisco.)",
-            "en": "(I'll wager he knows everything. I'll find out now.)"
+            "en": "(I'll wager he knows everything. I'll find out now.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
             "it": "(Ora casca.)",
-            "en": "(Now she'll fall for it.)"
+            "en": "(Now she'll fall for it.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
@@ -1229,20 +1398,29 @@ export const barbiereActOneScenes = [
             "it": "Ah, il nome ancora? Il nome... ah, che bel nome... si chiama... r... o... ro... Rosina.",
             "en": "You want her name too? Her name... what a lovely name... she is called... R... o... Ro... Rosina."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Figaro",
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
-        "label": "Duetto — Dunque io son... tu non m'inganni?",
+        "label": "Duetto",
         "turns": [
           {
             "speaker": "Rosina",
             "it": "Dunque io son... tu non m'inganni?\nDunque io son la fortunata!\n(Già me l'ero immaginata:\nlo sapevo pria di te.)",
-            "en": "So it is me... you are not deceiving me?\nI am the fortunate one!\n(I had already guessed it;\nI knew before you told me.)"
+            "en": "So it is me... you are not deceiving me?\nI am the fortunate one!\n(I had already guessed it;\nI knew before you told me.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Figaro",
             "it": "Di Lindoro il vago oggetto,\nsì, voi siete, o mia Rosina.\n(È una volpe sopraffina,\nla sa lunga, per mia fé!)",
-            "en": "Yes, you are the lovely object\nof Lindoro's love, my Rosina.\n(She's a crafty little fox;\nshe knows a thing or two!)"
+            "en": "Yes, you are the lovely object\nof Lindoro's love, my Rosina.\n(She's a crafty little fox;\nshe knows a thing or two!)",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
@@ -1306,16 +1484,25 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Figaro parte.",
             "en": "Figaro leaves."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Duetto",
+        "originalTitle": "Dunque io son... tu non m'inganni?",
+        "translatedTitle": "So it is me... you are not deceiving me?",
+        "participants": [
+          "Rosina",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 10,
-    "title": "A un dottor della mia sorte",
     "cast": "Rosina, Bartolo",
     "summary": "Bartolo questions Rosina about Figaro and sings of his authority as her guardian.",
     "sections": [
@@ -1380,7 +1567,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(Diavolo!) E questi fogli? Or son cinque, eran sei.",
-            "en": "(Damn!) And these sheets? There are five now; there were six."
+            "en": "(Damn!) And these sheets? There are five now; there were six.",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
@@ -1395,7 +1583,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Maledetto.) La penna?... Per disegnare un fiore sul tamburo.",
-            "en": "(Damn him.) The pen?... To draw a flower on the tambourine."
+            "en": "(Damn him.) The pen?... To draw a flower on the tambourine.",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -1442,23 +1631,37 @@ export const barbiereActOneScenes = [
             "it": "Non più, tacete.",
             "en": "No more; be quiet."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Rosina",
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
-        "label": "Aria — A un dottor della mia sorte",
+        "label": "Aria",
         "turns": [
           {
             "speaker": "Bartolo",
             "it": "A un dottor della mia sorte\nqueste scuse, signorina?\nVi consiglio, mia carina,\nun po' meglio a imposturar.\n\nI confetti alla ragazza?\nIl ricamo sul tamburo?\nVi scottaste?... Eh via!... eh via!...\nCi vuol altro, figlia mia,\nper potermi corbellar.\n\nPerché manca là quel foglio?\nVo' saper cotesto imbroglio;\nsono inutili le smorfie...\nFerma là; non mi toccate;\nfiglia mia, non lo sperate,\nnon mi lascio infinocchiar.\n\nVia, carina, confessate,\nson disposto a perdonar.\nNon parlate? Vi ostinate?\nSo ben io quel che ho da far.\n\nSignorina, un'altra volta\nquando Bartolo andrà fuori,\nla consegna ai servitori\na suo modo dar saprà.\n\nE non servono le smorfie;\nfaccia pur la gatta morta;\ncospetton, per quella porta\nnemmen l'aria entrar potrà.\n\nE Rosina innocentina,\nsconsolata e disperata,\nin sua camera serrata\nfin ch'io voglio star dovrà.",
             "en": "These excuses, miss,\nto a doctor of my standing?\nMy dear, I advise you\nto invent a better story.\n\nThe sweets for the girl?\nThe embroidery on the drum?\nYou burned yourself?... Come now!\nYou'll need something better, my girl,\nto make a fool of me.\n\nWhy is that sheet missing?\nI want to know what this trick is.\nYour little gestures are useless...\nStay there; don't touch me.\nDon't hope to fool me, my girl;\nI won't be taken in.\n\nCome, my dear, confess;\nI am ready to forgive.\nYou say nothing? You persist?\nI know exactly what to do.\n\nMiss, next time Bartolo\nhas to leave the house,\nhe will make sure the servants\nknow their orders well.\n\nYour little gestures won't help;\nplay the innocent if you like.\nBy heaven, through that door\nnot even air will get in.\n\nAnd innocent Rosina,\nfrustrated and despairing,\nwill stay locked in her room\nas long as I wish."
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Aria",
+        "originalTitle": "A un dottor della mia sorte",
+        "translatedTitle": "To a doctor of my standing",
+        "participants": [
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 11,
-    "title": "Brontola quanto vuoi",
     "cast": "Rosina",
     "summary": "Rosina laughs off Bartolo's threats and trusts that confinement will only sharpen her ingenuity.",
     "sections": [
@@ -1468,15 +1671,21 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "Brontola quanto vuoi, chiudi porte e finestre. Io me ne rido. Già di noi altre femmine, anche alla più marmotta, per aguzzar l'ingegno e farla spiritosa tutto a un tratto basta chiuderla a chiave, e il colpo è fatto. (Entra nella seconda camera a destra.)",
-            "en": "Grumble all you like; lock the doors and windows. I laugh at it. For us women, even the dullest girl need only be locked in a room to sharpen her wits and turn clever all at once; then the trick is done. (She goes into the second room on the right.)"
+            "en": "Grumble all you like; lock the doors and windows. I laugh at it. For us women, even the dullest girl need only be locked in a room to sharpen her wits and turn clever all at once; then the trick is done. (She goes into the second room on the right.)",
+            "inlineDirections": ["Entra nella seconda camera a destra.","She goes into the second room on the right."]
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Rosina"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 12,
-    "title": "La visita del soldato",
     "cast": "Berta, The Count",
     "summary": "Berta complains about the household's confusion as the Count knocks at the door in disguise.",
     "sections": [
@@ -1495,26 +1704,34 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Battono di nuovo.",
             "en": "There is another knock."
           },
           {
             "speaker": "The Count",
             "it": "(Di dentro) Aprite.",
-            "en": "(From outside) Open up."
+            "en": "(From outside) Open up.",
+            "inlineDirections": ["Di dentro","From outside"]
           },
           {
             "speaker": "Berta",
             "it": "Vengo. Eccì! Ancora dura. Quel tabacco mi ha posto in sepoltura.",
             "en": "I'm coming. Ah-choo! It still has not worn off. That snuff has buried me alive."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Recitativo",
+        "participants": [
+          "Berta",
+          "The Count"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 13,
-    "title": "Ehi di casa... buona gente",
     "cast": "The Count, Bartolo",
     "summary": "Almaviva arrives disguised as a cavalryman and tricks Bartolo into accepting his lodging billet.",
     "sections": [
@@ -1549,12 +1766,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(vedendolo) Ah... sì, sì... bene obbligato.",
-            "en": "(Seeing him) Ah... yes, yes... much obliged."
+            "en": "(Seeing him) Ah... yes, yes... much obliged.",
+            "inlineDirections": ["vedendolo","Seeing him"]
           },
           {
             "speaker": "Bartolo",
             "it": "(Qui costui che mai vorrà?)",
-            "en": "(What can this fellow want?)"
+            "en": "(What can this fellow want?)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -1569,7 +1788,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(leggendo) Ah ah, Bertoldo.",
-            "en": "(Reading) Ah, Bertoldo."
+            "en": "(Reading) Ah, Bertoldo.",
+            "inlineDirections": ["leggendo","Reading"]
           },
           {
             "speaker": "Bartolo",
@@ -1579,12 +1799,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "Ah, bravissimo, dottor Barbaro; benissimo... già c'è poca differenza. (Non si vede! Che impazienza! Quanto tarda!... dove sta?)",
-            "en": "Ah, excellent, Doctor Barbarous; very good... there isn't much difference. (I can't see her! What impatience! Why is she taking so long?... Where is she?)"
+            "en": "Ah, excellent, Doctor Barbarous; very good... there isn't much difference. (I can't see her! What impatience! Why is she taking so long?... Where is she?)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
             "it": "(Io già perdo la pazienza; qua prudenza ci vorrà.)",
-            "en": "(I am losing patience; I must be careful.)"
+            "en": "(I am losing patience; I must be careful.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -1613,6 +1835,7 @@ export const barbiereActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il Conte abbraccia Bartolo per forza.",
             "en": "The Count embraces Bartolo by force."
           },
@@ -1624,20 +1847,30 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(Dalla rabbia, dal dispetto io già crepo in verità. Ah, che fo, se mi ci metto, qualche gran bestialità!)",
-            "en": "(I am bursting with anger and spite. If I give in, I may do something dreadful!)"
+            "en": "(I am bursting with anger and spite. If I give in, I may do something dreadful!)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
             "it": "(Ah, venisse il caro oggetto della mia felicità! Vieni, vieni; il tuo diletto pien d'amor t'attende qua.)",
-            "en": "(Ah, if only the dear object of my happiness would come! Come, come; your loving admirer waits here for you.)"
+            "en": "(Ah, if only the dear object of my happiness would come! Come, come; your loving admirer waits here for you.)",
+            "inlineDirections": []
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Finale I",
+        "originalTitle": "Ehi di casa... buona gente...",
+        "translatedTitle": "Hello in there... good people...",
+        "participants": [
+          "The Count",
+          "Bartolo"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 14,
-    "title": "L'alloggio del soldato",
     "cast": "Rosina, The Count, Bartolo, Basilio, Berta",
     "summary": "The Count tells Rosina who he is and slips her a note. Bartolo searches for his exemption papers; Rosina swaps the letter for a laundry list.",
     "sections": [
@@ -1652,22 +1885,26 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(È Rosina: or son contento.)",
-            "en": "(It's Rosina; now I am happy.)"
+            "en": "(It's Rosina; now I am happy.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Rosina",
             "it": "(Ei mi guarda, e s'avvicina.)",
-            "en": "(He is looking at me and coming closer.)"
+            "en": "(He is looking at me and coming closer.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
             "it": "(piano) Son Lindoro.",
-            "en": "(Softly) It is Lindoro."
+            "en": "(Softly) It is Lindoro.",
+            "inlineDirections": ["piano","Softly"]
           },
           {
             "speaker": "Rosina",
             "it": "(Oh ciel! Che sento! Ah, giudizio per pietà.)",
-            "en": "(Heavens! What do I hear? Please, be careful.)"
+            "en": "(Heavens! What do I hear? Please, be careful.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -1722,17 +1959,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "Via, prendete... (guardando Bartolo) Maledetto! (mostrandole un biglietto) Fate presto, per pietà.",
-            "en": "Come, take this... (Looking at Bartolo) Damn him! (Showing Rosina a note) Quickly, I beg you."
+            "en": "Come, take this... (Looking at Bartolo) Damn him! (Showing Rosina a note) Quickly, I beg you.",
+            "inlineDirections": ["guardando Bartolo","Looking at Bartolo","mostrandole un biglietto","Showing Rosina a note"]
           },
           {
             "speaker": "Rosina",
             "it": "Ah, ci guarda! (guardando Bartolo) Maledetto! Ah, giudizio, per pietà.",
-            "en": "Ah, he's watching us! (Looking at Bartolo) Damn him! Please, be careful."
+            "en": "Ah, he's watching us! (Looking at Bartolo) Damn him! Please, be careful.",
+            "inlineDirections": ["guardando Bartolo","Looking at Bartolo"]
           },
           {
             "speaker": "Bartolo",
             "it": "(Ubriaco maledetto! Ah, costui crepar mi fa.)",
-            "en": "(Damn drunk! This fellow will be the death of me.)"
+            "en": "(Damn drunk! This fellow will be the death of me.)",
+            "inlineDirections": []
           },
           {
             "speaker": "The Count",
@@ -1777,17 +2017,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count and Rosina",
             "it": "(Cento smanie io sento addosso; ah, più reggere non so.)",
-            "en": "(A hundred anxieties are upon me; I can bear it no longer.)"
+            "en": "(A hundred anxieties are upon me; I can bear it no longer.)",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
             "it": "(cercando nello scrittoio) Ah, trovarlo ancor non posso, ma sì, sì, lo troverò. Ecco qui: «Con la presente il dottor Bartolo, etcetera, esentiamo...»",
-            "en": "(Searching in the desk) I can't find it yet, but I will. Here it is: “By this document, Doctor Bartolo is exempt...”"
+            "en": "(Searching in the desk) I can't find it yet, but I will. Here it is: “By this document, Doctor Bartolo is exempt...”",
+            "inlineDirections": ["cercando nello scrittoio","Searching in the desk"]
           },
           {
             "speaker": "The Count",
             "it": "(manda in aria la pergamena) Eh, andate al diavolo, non mi state più a seccar.",
-            "en": "(Knocking the paper away) Go to the devil! Stop bothering me."
+            "en": "(Knocking the paper away) Go to the devil! Stop bothering me.",
+            "inlineDirections": ["manda in aria la pergamena","Knocking the paper away"]
           },
           {
             "speaker": "Bartolo",
@@ -1817,7 +2060,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "Dunque lei... lei vuol battaglia? Ben!... battaglia le vo' dar. Bella cosa una battaglia! Ve la voglio or or mostrar. Osservate: questo è il fosso, l'inimico voi sarete... Attenzion... (a Rosina) Giù il fazzoletto... e gli amici stan di qua. Attenzione!",
-            "en": "So you want a battle? Very well!... I'll give you battle. A battle is a fine thing! I'll show you at once. Look: this is the trench; you are the enemy... Attention... (To Rosina) Drop the handkerchief... and our friends are over there. Attention!"
+            "en": "So you want a battle? Very well!... I'll give you battle. A battle is a fine thing! I'll show you at once. Look: this is the trench; you are the enemy... Attention... (To Rosina) Drop the handkerchief... and our friends are over there. Attention!",
+            "inlineDirections": ["a Rosina","To Rosina"]
           },
           {
             "speaker": "Stage direction",
@@ -1832,7 +2076,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(raccoglie il biglietto) Che cos'è? Ah!",
-            "en": "(Picking up the note) What is this? Ah!"
+            "en": "(Picking up the note) What is this? Ah!",
+            "inlineDirections": ["raccoglie il biglietto","Picking up the note"]
           },
           {
             "speaker": "Bartolo",
@@ -1867,7 +2112,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(Ah, cambiar potessi il foglio!...) ",
-            "en": "(If only I can switch the paper!...) "
+            "en": "(If only I can switch the paper!...) ",
+            "inlineDirections": []
           },
           {
             "speaker": "Bartolo",
@@ -1907,7 +2153,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "Ah, fraschetta! (strappa il foglio) Ah, che vedo! Ho preso abbaglio!... È la lista, son di stucco! Ah, son proprio un mammalucco, ah, che gran bestialità!",
-            "en": "You little minx! (Tearing the paper) What do I see? I was mistaken!... It's the list; I'm astonished! I really am a fool—what stupidity!"
+            "en": "You little minx! (Tearing the paper) What do I see? I was mistaken!... It's the list; I'm astonished! I really am a fool—what stupidity!",
+            "inlineDirections": ["strappa il foglio","Tearing the paper"]
           },
           {
             "speaker": "Rosina and The Count",
@@ -1922,17 +2169,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Rosina",
             "it": "(piangendo) Ecco qua... sempre un'istoria, sempre oppressa e maltrattata; ah, che vita disperata, non la so più sopportar.",
-            "en": "(Weeping) There it is... always another scene, always oppressed and mistreated. What a wretched life; I can bear it no longer."
+            "en": "(Weeping) There it is... always another scene, always oppressed and mistreated. What a wretched life; I can bear it no longer.",
+            "inlineDirections": ["piangendo","Weeping"]
           },
           {
             "speaker": "Bartolo",
             "it": "(avvicinandosi) Ah, Rosina... poverina...",
-            "en": "(Coming closer) Ah, Rosina... poor girl..."
+            "en": "(Coming closer) Ah, Rosina... poor girl...",
+            "inlineDirections": ["avvicinandosi","Coming closer"]
           },
           {
             "speaker": "The Count",
             "it": "(afferrandolo) Vien qua tu, cosa le hai fatto?",
-            "en": "(Grabbing him) Come here! What have you done to her?"
+            "en": "(Grabbing him) Come here! What have you done to her?",
+            "inlineDirections": ["afferrandolo","Grabbing him"]
           },
           {
             "speaker": "Bartolo",
@@ -1942,12 +2192,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(cavando la sciabola) Ah, canaglia, traditore!",
-            "en": "(Drawing his sabre) You villain, you traitor!"
+            "en": "(Drawing his sabre) You villain, you traitor!",
+            "inlineDirections": ["cavando la sciabola","Drawing his sabre"]
           },
           {
             "speaker": "All",
             "it": "(trattenendolo) Via, fermatevi, signore! Gente, aiuto, per pietà!",
-            "en": "(Holding him back) Stop, sir! Help, someone, for mercy's sake!"
+            "en": "(Holding him back) Stop, sir! Help, someone, for mercy's sake!",
+            "inlineDirections": ["trattenendolo","Holding him back"]
           },
           {
             "speaker": "The Count",
@@ -1974,13 +2226,24 @@ export const barbiereActOneScenes = [
             "it": "Gente, aiuto, per pietà!",
             "en": "Help, someone, for mercy's sake!"
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Finale I",
+        "originalTitle": "D'ascoltar qua m'è sembrato",
+        "translatedTitle": "I thought I heard something here",
+        "participants": [
+          "Rosina",
+          "The Count",
+          "Bartolo",
+          "Basilio",
+          "Berta"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 15,
-    "title": "Alto là",
     "cast": "Figaro, The Count, Rosina, Bartolo, Basilio, Berta",
     "summary": "Figaro enters as the household quarrels. The crowd hears a disturbance and calls for the authorities.",
     "sections": [
@@ -1990,12 +2253,14 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "Alto là! Che cosa accadde, signori miei? Che chiasso è questo, eterni dèi! Già sulla piazza a questo strepito s'è radunata mezza città. (al Conte) Signor, prudenza, per carità.",
-            "en": "Hold there! What has happened, my friends? What is all this noise, heavens above? Half the town has gathered in the square at this racket. (To the Count) Be careful, sir, I beg you."
+            "en": "Hold there! What has happened, my friends? What is all this noise, heavens above? Half the town has gathered in the square at this racket. (To the Count) Be careful, sir, I beg you.",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "Bartolo",
             "it": "(al Conte) Questi è un birbante...",
-            "en": "(Pointing to the Count) This man is a rogue..."
+            "en": "(Pointing to the Count) This man is a rogue...",
+            "inlineDirections": ["al Conte","Pointing to the Count"]
           },
           {
             "speaker": "The Count",
@@ -2010,17 +2275,20 @@ export const barbiereActOneScenes = [
           {
             "speaker": "The Count",
             "it": "(minacciandolo con la sciabola) Ah, maledetto!...",
-            "en": "(Threatening him with his sabre) You villain!..."
+            "en": "(Threatening him with his sabre) You villain!...",
+            "inlineDirections": ["minacciandolo con la sciabola","Threatening him with his sabre"]
           },
           {
             "speaker": "Figaro",
             "it": "(alzando il bacile) Signor soldato, porti rispetto, o questo fusto, corpo del diavolo, or le creanze le insegnerà.",
-            "en": "(Raising his shaving basin) Show some respect, soldier, or this devil of a fellow will teach you your manners."
+            "en": "(Raising his shaving basin) Show some respect, soldier, or this devil of a fellow will teach you your manners.",
+            "inlineDirections": ["alzando il bacile","Raising his shaving basin"]
           },
           {
             "speaker": "The Count",
             "it": "(a Bartolo) Brutto scimmiotto...",
-            "en": "(To Bartolo) You ugly ape..."
+            "en": "(To Bartolo) You ugly ape...",
+            "inlineDirections": ["a Bartolo","To Bartolo"]
           },
           {
             "speaker": "Bartolo",
@@ -2030,7 +2298,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "(a Bartolo) Zitto, dottore...",
-            "en": "(To Bartolo) Quiet, Doctor..."
+            "en": "(To Bartolo) Quiet, Doctor...",
+            "inlineDirections": ["a Bartolo","To Bartolo"]
           },
           {
             "speaker": "Bartolo",
@@ -2040,7 +2309,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "(al Conte) Fermo, signore...",
-            "en": "(To the Count) Hold still, sir..."
+            "en": "(To the Count) Hold still, sir...",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "The Count",
@@ -2050,7 +2320,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "Fate silenzio, per carità! (Si ode bussare con violenza alla porta.) Zitti, che battono... che mai sarà?",
-            "en": "Be quiet, for mercy's sake! (Violent knocking is heard at the door.) Hush, someone is knocking... what can it be?"
+            "en": "Be quiet, for mercy's sake! (Violent knocking is heard at the door.) Hush, someone is knocking... what can it be?",
+            "inlineDirections": ["Si ode bussare con violenza alla porta.","Violent knocking is heard at the door."]
           },
           {
             "speaker": "Bartolo",
@@ -2060,7 +2331,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Chorus",
             "it": "(da dentro) La forza! Aprite qua.",
-            "en": "(From outside) The police! Open up!"
+            "en": "(From outside) The police! Open up!",
+            "inlineDirections": ["da dentro","From outside"]
           },
           {
             "speaker": "All",
@@ -2075,20 +2347,34 @@ export const barbiereActOneScenes = [
           {
             "speaker": "All",
             "it": "(Quest'avventura ah, come diavolo mai finirà?)",
-            "en": "(How on earth will this adventure end?)"
+            "en": "(How on earth will this adventure end?)",
+            "inlineDirections": []
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Finale I",
+        "originalTitle": "Alto là. Che cosa accadde",
+        "translatedTitle": "Stop there. What happened?",
+        "participants": [
+          "Figaro",
+          "Bartolo",
+          "The Count",
+          "Rosina",
+          "Basilio",
+          "Berta",
+          "Chorus"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   },
   {
     "number": 16,
-    "title": "Mi par d'esser con la testa",
     "cast": "The Count, Bartolo, Rosina, Basilio, Berta, Figaro, Officer, Soldiers",
     "summary": "The officer recognizes Almaviva and withdraws the soldiers. The household is stunned, and the act ends in a rapid ensemble.",
     "sections": [
       {
-        "label": "Recitativo",
+        "label": "Finale I",
         "turns": [
           {
             "speaker": "Officer",
@@ -2158,7 +2444,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Officer",
             "it": "Fate silenzio, che intesi già. (al Conte) Siete in arresto, fuori di qua.",
-            "en": "Silence; I have heard enough. (To the Count) You are under arrest; come with me."
+            "en": "Silence; I have heard enough. (To the Count) You are under arrest; come with me.",
+            "inlineDirections": ["al Conte","To the Count"]
           },
           {
             "speaker": "The Count",
@@ -2170,10 +2457,24 @@ export const barbiereActOneScenes = [
             "it": "Con gesto autorevole il Conte ferma i soldati, mostra un foglio all'Uffiziale e gli impedisce di inchinarsi; l'Uffiziale fa ritirare i soldati. Tutti restano stupiti.",
             "en": "With an authoritative gesture, the Count stops the soldiers and shows a document to the Officer. The Officer is surprised and starts to bow, but the Count stops him; the Officer signals the soldiers to stand back. Everyone is astonished."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "type": "Finale I",
+        "originalTitle": "Fermi tutti, niun si muova",
+        "translatedTitle": "Everyone stay still, no one move",
+        "participants": [
+          "Officer",
+          "The Count",
+          "Bartolo",
+          "Rosina",
+          "Berta",
+          "Basilio",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
-        "label": "Quadro di stupore",
+        "label": "Finale I",
         "turns": [
           {
             "speaker": "Rosina and Berta",
@@ -2193,9 +2494,23 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Figaro",
             "it": "(ridendo) Guarda don Bartolo! Sembra una statua? Ah ah, dal ridere sto per crepar.",
-            "en": "(Laughing) Look at Doctor Bartolo! Doesn't he look like a statue? I could die laughing."
+            "en": "(Laughing) Look at Doctor Bartolo! Doesn't he look like a statue? I could die laughing.",
+            "inlineDirections": ["ridendo","Laughing"]
           }
-        ]
+        ],
+        "routeItem": 1,
+        "type": "Finale I",
+        "originalTitle": "Fredda ed immobile come una statua",
+        "translatedTitle": "Cold and motionless as a statue",
+        "participants": [
+          "Rosina",
+          "Berta",
+          "The Count",
+          "Bartolo",
+          "Basilio",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       },
       {
         "label": "Stretta del Finale I",
@@ -2203,7 +2518,8 @@ export const barbiereActOneScenes = [
           {
             "speaker": "Bartolo",
             "it": "(all'Uffiziale) Ma, signor...",
-            "en": "(To the Officer) But, sir..."
+            "en": "(To the Officer) But, sir...",
+            "inlineDirections": ["all'Uffiziale","To the Officer"]
           },
           {
             "speaker": "Chorus",
@@ -2265,7 +2581,21 @@ export const barbiereActOneScenes = [
             "it": "Mi par d'esser con la testa\nin un'orrida fucina,\ndove cresce e mai non resta\ndelle incudini sonore\nl'importuno strepitar.\n\nAlternando questo e quello\npesantissimo martello\nfa con barbara armonia\nmuri e volte rimbombar.\n\nE il cervello poverello,\ngià stordito, sbalordito,\nnon ragiona, si confonde,\nsi riduce ad impazzar.",
             "en": "It seems my head is in\na dreadful forge,\nwhere the clanging of the anvils\nkeeps rising without end\nand will not cease.\n\nOne heavy hammer after another\nstrikes with savage harmony,\nmaking the walls and vaults\nresound.\n\nMy poor brain, already dazed\nand utterly bewildered,\ncan no longer think; it loses its way\nand is close to madness."
           }
-        ]
+        ],
+        "routeItem": 2,
+        "type": "Stretta del Finale I",
+        "originalTitle": "Ma signor... / Zitto tu!",
+        "translatedTitle": "But sir... / Be quiet!",
+        "participants": [
+          "Bartolo",
+          "Chorus",
+          "Berta",
+          "Basilio",
+          "Rosina",
+          "The Count",
+          "Figaro"
+        ],
+        "sourceUrl": "https://www.librettidopera.it/barb_siv/a_01.html"
       }
     ]
   }

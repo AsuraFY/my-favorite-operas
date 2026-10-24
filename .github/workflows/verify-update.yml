@@ -1,0 +1,62 @@
+name: Verify Update
+
+on:
+  push:
+    branches: [Update]
+  workflow_dispatch:
+
+# Prevent older runs from publishing after newer commits arrive.
+concurrency:
+  group: pages-update
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Node regression suite
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run complete regression tests
+        run: npm test
+      - name: Install headless browser driver
+        run: npm install --no-save --no-package-lock playwright-core@1.56.1
+      - name: Check real desktop and mobile reader layout
+        run: node tests/browser-visual-smoke.mjs
+      - name: Attach visual screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: opera-browser-review
+          path: test-output/visual/
+          if-no-files-found: warn
+
+  deploy:
+    name: Publish verified Update preview
+    # A failed or cancelled test job skips this deployment entirely.
+    needs: test
+    if: github.ref == 'refs/heads/Update'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload tested static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

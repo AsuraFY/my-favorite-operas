@@ -583,7 +583,7 @@ button { font: inherit; }
 .opera-header-search svg { flex: 0 0 22px; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; }
 .opera-header-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: #fff; font: 0.875rem var(--serif); }
 .opera-header-search input::placeholder { color: rgba(255,255,255,.78); }
-.opera-reading-page { color: #182b3b; }
+
 .reading-identity { min-height: 148px; display: grid; grid-template-columns: minmax(250px, 25.5%) 1fr; background: #f7f4ef; border-bottom: 1px solid #e3ded7; }
 .reading-identity__image { min-height: 148px; background: #9ab9ca url("./public/images/lake-como-banner.webp") center 53% / cover no-repeat; }
 .reading-identity__content { min-width: 0; padding: 16px 34px 0; display: flex; align-items: end; justify-content: space-between; gap: 26px; }
@@ -596,8 +596,8 @@ button { font: inherit; }
 .opera-tabs .is-active { color: #142d43; font-weight: 600; }
 .opera-tabs .is-active::after { position: absolute; content: ""; bottom: 0; left: 0; right: 0; height: 3px; background: #142d43; }
 .opera-tabs [aria-disabled="true"] { color: #777; }
-.reading-layout { display: grid; grid-template-columns: minmax(260px, 25.5%) minmax(0, 1fr); align-items: stretch; min-height: calc(100vh - 210px); background: #f7f4ef; }
-.scene-sidebar { padding: 17px 20px 30px; border-right: 1px solid #e3ded7; }
+.reading-layout { display: grid;  align-items: stretch;   }
+
 .act-heading { min-height: 36px; display: flex; justify-content: space-between; align-items: center; padding: 0 12px 5px 18px; }
 .act-heading h2 { margin: 0; font: 600 1.125rem var(--serif); }
 .act-heading > span { font: 1.125rem var(--sans); }
@@ -610,33 +610,33 @@ button { font: inherit; }
 .scene-link__text > span { color: #5d5c5a; font: 0.8125rem/1.35 var(--serif); }
 .scene-sidebar__note { margin: 7px 12px 18px 60px; color: #827d75; font: italic 0.75rem/1.45 var(--serif); }
 .act-heading--later { border-top: 1px solid #e5dfd7; padding-top: 16px; }
-.reading-main { min-width: 0; padding: 0 0 32px; }
-.scene-panel { min-height: 100%; padding: 24px 20px 0; overflow: hidden; border: 1px solid #e5e0d9; border-radius: 16px 16px 0 0; background: #fff; }
-.scene-panel__top { min-height: 185px; padding: 0 0 18px 17px; display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+
+.scene-panel {   overflow: hidden;    }
+.scene-panel__top {    align-items: flex-start; justify-content: space-between; gap: 24px; }
 .scene-kicker { margin: 0 0 13px; font: 600 1.6875rem var(--serif); }
 .scene-number { margin: 0 0 4px; font: 600 1.3125rem var(--serif); }
 .scene-panel__top h2 { margin: 0 0 6px; font: 600 1.875rem/1.15 var(--serif); letter-spacing: -.025em; }
 .scene-cast { margin: 0 0 6px; color: #66615e; font: italic 1rem var(--serif); }
-.scene-summary { max-width: 840px; margin: 0; color: #505153; font: 1rem/1.45 var(--serif); }
+
 .scene-pager { flex: 0 0 auto; display: flex; gap: 12px; padding: 25px 14px 0 0; }
 .scene-step { min-width: 81px; height: 40px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 0 12px; border: 1px solid #c9cdd0; border-radius: 9px; font: 0.875rem var(--serif); }
 .scene-step:hover { background: #f5f3ef; }
 .scene-step.is-disabled { color: #c7c6c4; border-color: #e5e2de; }
 .libretto-search-result { margin: 0 17px 12px; padding: 9px 12px; border-left: 3px solid #286ead; background: #edf3f9; color: #354d62; font: 0.8125rem var(--serif); }
-.libretto-columns { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #ece8e2; border-radius: 9px 9px 0 0; overflow: hidden; }
-.libretto-column-heading { min-height: 42px; padding: 10px 25px; background: #f2f0ec; color: #243648; text-transform: uppercase; letter-spacing: .08em; font: 600 0.9375rem var(--serif); }
-.libretto-column-heading + .libretto-column-heading { border-left: 1px solid #e7e2dc; }
-.libretto-text { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
-.libretto-section { display: contents; }
+
+
+
+.libretto-text {   grid-template-columns: 1fr 1fr; }
+
 .libretto-section__label { grid-column: 1 / -1; margin: 0; padding: 6px 25px; background: #fbfaf8; color: #938879; border-top: 1px solid #eeeae5; text-transform: uppercase; letter-spacing: .1em; font: 600 0.625rem var(--sans); }
-.libretto-row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; }
+.libretto-row { grid-column: 1 / -1;   }
 .libretto-turn-anchor { display: block; height: 0; scroll-margin-top: 7rem; }
-.libretto-cell { min-width: 0; display: grid; grid-template-columns: minmax(102px, 25%) 1fr; gap: 10px; align-items: start; padding: 13px 25px 14px; font: 1.125rem/1.45 var(--serif); }
-.libretto-cell--english { border-left: 1px solid #eeeae5; }
-.libretto-cell p { margin: 0; white-space: pre-line; }
-.libretto-speaker { padding-top: 2px; text-transform: uppercase; font: 600 0.75rem/1.5 var(--serif); color: #286fb1; }
-.libretto-speaker--guglielmo, .libretto-speaker--fiordiligi { color: #4e754e; }
-.libretto-speaker--don-alfonso { color: #984c4e; }
+.libretto-cell {   grid-template-columns: minmax(102px, 25%) 1fr; gap: 10px; align-items: start;   }
+
+
+.libretto-speaker { padding-top: 2px;    }
+
+
 .libretto-speaker--stage-direction { color: #837b71; font-style: italic; }
 .scroll-cue { padding: 11px 0 5px; text-align: center; color: #77736c; font: 0.75rem var(--serif); }
 .scroll-cue span { margin-right: 8px; color: #2168a8; font: 1.25rem var(--sans); vertical-align: -2px; }
@@ -672,15 +672,15 @@ button { font: inherit; }
   .reading-identity__title h1 { font-size: 2rem; }
   .reading-identity__title p { font-size: 0.8125rem; }
   .opera-tabs { gap: 18px; overflow-x: auto; height: 42px; margin: 0 -18px; padding: 0 18px; }
-  .reading-layout { display: flex; flex-direction: column; min-height: 0; }
-  .scene-sidebar { padding: 8px 13px 12px; border-right: 0; border-bottom: 1px solid #e3ded7; }
+  
+  .scene-sidebar {  border-right: 0; border-bottom: 1px solid #e3ded7; }
   .scene-sidebar > .act-heading:first-child { min-height: 32px; padding-left: 6px; }
-  .scene-sidebar nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+  .scene-sidebar nav {   overflow-x: auto; padding-bottom: 2px; }
   .scene-link { flex: 0 0 185px; min-height: 58px; padding: 7px 8px; }
   .scene-sidebar__note, .act-heading--later, .act-heading--later + .scene-sidebar__note { display: none; }
-  .reading-main { padding: 0; }
-  .scene-panel { padding: 17px 12px 0; border-radius: 0; border-left: 0; border-right: 0; }
-  .scene-panel__top { min-height: 0; padding: 0 2px 16px; display: block; }
+  
+  .scene-panel {  border-radius: 0; border-left: 0; border-right: 0; }
+  .scene-panel__top { min-height: 0;  display: block; }
   .scene-kicker { margin-bottom: 9px; font-size: 1.4375rem; }
   .scene-number { font-size: 1.0625rem; }
   .scene-panel__top h2 { font-size: 1.5rem; }
@@ -694,18 +694,23 @@ button { font: inherit; }
   .libretto-text { grid-template-columns: 1fr; }
   .libretto-section__label { padding: 6px 13px; }
   .libretto-row { grid-template-columns: 1fr; }
-  .libretto-cell { grid-template-columns: minmax(80px, 25%) 1fr; gap: 9px; padding: 11px 13px; font-size: 1rem; }
-  .libretto-cell--english { border-left: 0; border-top: 1px dashed #e7e2dc; background: #fdfcfb; }
+  .libretto-cell { grid-template-columns: minmax(80px, 25%) 1fr; gap: 9px;   }
+  .libretto-cell--english { border-left: 0; border-top: 1px dashed #e7e2dc;  }
   .libretto-speaker { font-size: 0.625rem; }
 }
 
 
 /* Cosi fan tutte reader: reusable scene tree and paired bilingual passages */
+/* La Bohème's three-line entries have no leading musical icon to offset. */
+.opera-reading-page[data-libretto-slug="la-boheme"] .scene-sidebar .section-nav-link > .libretto-participants {
+  margin-left: 0;
+  flex-basis: 100%;
+}
 .site-header:has(+ #main .opera-reading-page) {
   height: 76px;
   padding: 0 max(32px, calc((100% - 1480px) / 2));
   border-bottom: 0;
-  background: #173852;
+  
   color: #f8f4ec;
 }
 .site-header:has(+ #main .opera-reading-page) .brand__name {
@@ -942,21 +947,21 @@ button { font: inherit; }
   .site-header:has(+ #main .opera-reading-page) {
     height: 62px;
     padding: 0 16px;
-    background: #fbf8f0;
-    color: #162b45;
+    
+    
     border-bottom: 1px solid #ded9cf;
   }
   .site-header:has(+ #main .opera-reading-page) .brand { gap: 9px; }
     .site-header:has(+ #main .opera-reading-page) .brand__name {
-    color: #172b48;
+    
     font-size: 1.25rem;
   }
   .site-header:has(+ #main .opera-reading-page) .opera-header-search { display: none; }
-  .site-header:has(+ #main .opera-reading-page) .menu-toggle span { background: #172b48; }
+  
   .site-header:has(+ #main .opera-reading-page) .main-nav {
     top: 61px;
     padding: 12px 18px;
-    background: #fbf8f0;
+    
     box-shadow: 0 8px 14px rgba(25,39,56,.12);
   }
   .mobile-opera-intro {
@@ -1239,8 +1244,8 @@ button { font: inherit; }
   background: var(--paper-deep);
 }
 .opera-reading-page .section-nav-link__label {
-  min-width: 0;
-  flex: 1 1 auto;
+  
+  
   overflow-wrap: anywhere;
 }
 .opera-reading-page .scene-sidebar .section-nav-link {
@@ -1250,15 +1255,17 @@ button { font: inherit; }
   flex: 1 1 calc(100% - 42px);
 }
 .opera-reading-page .scene-sidebar .section-nav-link > .libretto-participants {
-  flex: 0 0 calc(100% - 38px);
-  margin: 1px 0 0 38px;
+  flex: 0 0 100%;
+  margin: 1px 0 0;
 }
 .site-header:has(+ #main .opera-reading-page) {
   background: #102b40;
 }
 .opera-reading-page .libretto-row--stage-direction {
-  border-left: 2px solid var(--gold);
-  padding-left: 8px;
+  /* A painted edge does not change column widths or move the center divider. */
+  border-left: 0;
+  padding-left: 0;
+  box-shadow: inset 2px 0 var(--gold);
   background: rgba(189, 155, 94, .08);
 }
 .opera-reading-page .libretto-row--stage-direction .libretto-speaker {
@@ -1299,9 +1306,6 @@ button { font: inherit; }
   }
   .opera-reading-page .section-nav-link__label {
     line-height: 1.25;
-  }
-  .opera-reading-page .libretto-row--stage-direction {
-    padding-left: 9px;
   }
 }
 
@@ -1530,8 +1534,8 @@ button { font: inherit; }
 /* A sticky, independently scrollable act sidebar on desktop. */
 @media (min-width: 701px) {
   .opera-reading-page[data-act] .reading-layout > .scene-sidebar[data-act-outline] {
-    position: sticky; top: 0;
-    height: 100vh; min-height: 0; align-self: start;
+    position: sticky; 
+     min-height: 0; align-self: start;
     overflow-y: auto; overscroll-behavior-y: contain;
     scrollbar-width: thin;
   }
@@ -1570,7 +1574,7 @@ button { font: inherit; }
 }
 
 /* Layered, persistent site and opera navigation; keep each bar in document flow. */
-:root { --sticky-site-height: 76px; --sticky-opera-height: 76px; }
+:root { --sticky-site-height: 76px; --sticky-breadcrumb-height: 0px; --sticky-opera-height: 76px; }
 .site-header {
   position: sticky;
   top: 0;
@@ -1579,7 +1583,7 @@ button { font: inherit; }
 }
 .opera-reading-page > .opera-subnav {
   position: sticky;
-  top: var(--sticky-site-height);
+  top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height));
   z-index: 70;
   box-shadow: 0 2px 7px rgba(21, 43, 62, .05);
 }
@@ -1595,7 +1599,7 @@ button { font: inherit; }
 .opera-reading-page[data-act] .scene-panel { overflow: visible; }
 @media (min-width: 701px) {
   .opera-reading-page[data-act] .reading-layout > .scene-sidebar[data-act-outline] {
-    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height));
     height: calc(100dvh - var(--sticky-site-height) - var(--sticky-opera-height));
     max-height: 100vh;
   }
@@ -1603,7 +1607,7 @@ button { font: inherit; }
 @media (max-width: 700px) {
   .opera-reading-page[data-act] .mobile-reader-toolbar {
     position: sticky;
-    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height));
     z-index: 65;
     min-height: 46px;
     margin-bottom: 15px;
@@ -1614,10 +1618,10 @@ button { font: inherit; }
   .opera-reading-page[data-act] .mobile-reader-toolbar nav { gap: 7px; }
 }
 .opera-reading-page[data-act] .libretto-scene-section {
-  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
+  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
 }
 .opera-reading-page[data-act] .scene-panel__top {
-  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
+  scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height) + var(--sticky-reader-height) + 16px);
 }
 
 /* Full libretto index: every act, scene and musical section visible in one column. */
@@ -1801,7 +1805,7 @@ button { font: inherit; }
   .opera-reading-page[data-act] .desktop-outline-reopen:not([hidden]) {
     display: flex;
     position: sticky;
-    top: calc(var(--sticky-site-height) + var(--sticky-opera-height));
+    top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height));
     z-index: 64;
     justify-content: flex-start;
     min-height: 41px;
@@ -1892,9 +1896,7 @@ button { font: inherit; }
 .opera-outline__prelude {
   background: #f1eadf;
 }
-.opera-reading-page .libretto-row--stage-direction .libretto-cell p {
-  line-height: 1.55;
-}
+
 
 /* Separate successive scenes when an act is read continuously. */
 .libretto-track-heading {
@@ -1962,28 +1964,26 @@ button { font: inherit; }
   width: 100%; min-height: 27px; padding: 3px 8px; border: 1px solid #ddd5c9; border-radius: 4px;
   color: #28251f; background-color: #fffdfa; font: 0.75rem var(--serif); cursor: pointer;
 }
-.font-size-controls { display: grid; grid-template-columns: 1fr 1fr 1fr; min-height: 27px; border: 1px solid #e6ded1; border-radius: 5px; overflow: hidden; }
-.font-size-controls button, .font-size-controls output {
+.font-size-controls, .line-spacing-controls { display: grid; grid-template-columns: 1fr 1fr 1fr; min-height: 27px; border: 1px solid #e6ded1; border-radius: 5px; overflow: hidden; }
+.font-size-controls button, .font-size-controls output, .line-spacing-controls button, .line-spacing-controls output {
   display: grid; place-items: center; min-width: 0; border: 0; color: #28251f; background: #fffdfa; font: 0.75rem/1 var(--serif);
 }
-.font-size-controls button { cursor: pointer; }
-.font-size-controls button + output, .font-size-controls output + button { border-left: 1px solid #e6ded1; }
-.font-size-controls button:disabled { opacity: .45; cursor: default; }
+.font-size-controls button, .line-spacing-controls button { cursor: pointer; }
+.font-size-controls button + output, .font-size-controls output + button,
+.line-spacing-controls button + output, .line-spacing-controls output + button { border-left: 1px solid #e6ded1; }
+.font-size-controls button:disabled, .line-spacing-controls button:disabled { opacity: .45; cursor: default; }
 :root { --reading-scale: 1; }
 body { font-size: calc(16px * var(--reading-scale)); }
 .opera-reading-page[data-act] .libretto-cell,
 .opera-reading-page[data-act] .libretto-cell--english { font-size: calc(16px * var(--reading-scale)); }
-html[data-theme="night"] {
-  color-scheme: dark; --paper: #171b20; --paper-deep: #20262d; --ink: #e8e4dc; --muted: #b4b1a9;
-  --line: #42474c; --wine: #df9a9d; --wine-dark: #a65360;
-}
+
 html[data-theme="night"] body, html[data-theme="night"] #app, html[data-theme="night"] #main,
 html[data-theme="night"] .home-notes, html[data-theme="night"] .opera-information,
 html[data-theme="night"] .opera-reading-page, html[data-theme="night"] .opera-outline,
 html[data-theme="night"] .about-page { color: var(--ink); background: var(--paper); }
 html[data-theme="night"] .site-header { color: #ece7df; background: #101d27; border-color: #42474c; }
 html[data-theme="night"] .main-nav > a, html[data-theme="night"] .main-nav > a.is-active { color: #ece7df; }
-html[data-theme="night"] .site-footer { color: #ddd8ce; background: #101d27; }
+html[data-theme="night"] .site-footer { color: #ddd8ce;  }
 html[data-theme="night"] .home-note, html[data-theme="night"] .opera-card, html[data-theme="night"] .directory-card,
 html[data-theme="night"] .directory-note, html[data-theme="night"] .detail-facts, html[data-theme="night"] .detail-note,
 html[data-theme="night"] .closing-note, html[data-theme="night"] .opera-outline__act {
@@ -1996,17 +1996,20 @@ html[data-theme="night"] .section-nav-link, html[data-theme="night"] .scene-pane
 html[data-theme="night"] .libretto-row, html[data-theme="night"] .libretto-section__label { border-color: var(--line); }
 html[data-theme="night"] .settings-panel { background: #242a2f; border-color: #45494b; color: #ece7df; }
 html[data-theme="night"] .settings-label, html[data-theme="night"] .theme-choices button,
-html[data-theme="night"] .font-size-controls button, html[data-theme="night"] .font-size-controls output { color: #ece7df; background: #1a1f23; }
+html[data-theme="night"] .font-size-controls button, html[data-theme="night"] .font-size-controls output,
+html[data-theme="night"] .line-spacing-controls button, html[data-theme="night"] .line-spacing-controls output { color: #ece7df; background: #1a1f23; }
 html[data-theme="night"] .theme-choices, html[data-theme="night"] .theme-choices button + button,
 html[data-theme="night"] .settings-group, html[data-theme="night"] .font-size-controls,
-html[data-theme="night"] .font-size-controls button + output, html[data-theme="night"] .font-size-controls output + button { border-color: #55595b; }
-html[data-theme="night"] .theme-choices button[aria-pressed="true"] { background: #4a3d2a; }
+html[data-theme="night"] .line-spacing-controls,
+html[data-theme="night"] .font-size-controls button + output, html[data-theme="night"] .font-size-controls output + button,
+html[data-theme="night"] .line-spacing-controls button + output, html[data-theme="night"] .line-spacing-controls output + button { border-color: #55595b; }
+
 html[data-theme="night"] .settings-group select { color: #ece7df; background-color: #1a1f23; border-color: #55595b; }
 @media (max-width: 700px) {
   .header-actions { grid-column: auto; gap: 7px; }
   .settings-trigger { gap: 4px; font-size: 0.625rem; }
   .header-actions .search-trigger { width: 30px; }
-  .settings-panel { position: fixed; top: 49px; right: 10px; width: 218px; }
+  
   .site-header:has(.opera-header-search) .header-actions { flex: 1; min-width: 0; }
   .site-header:has(.opera-header-search) .opera-header-search { flex: 1; max-width: none; }
   .site-header:has(.opera-header-search) .settings-trigger { flex: 0 0 auto; }
@@ -2301,7 +2304,9 @@ html[data-theme="night"] .settings-panel,
 html[data-theme="night"] .settings-panel select,
 html[data-theme="night"] .theme-choices button,
 html[data-theme="night"] .font-size-controls button,
-html[data-theme="night"] .font-size-controls output {
+html[data-theme="night"] .font-size-controls output,
+html[data-theme="night"] .line-spacing-controls button,
+html[data-theme="night"] .line-spacing-controls output {
   color: var(--night-text);
   background-color: #1a2026;
   border-color: var(--night-border);
@@ -2315,7 +2320,12 @@ html[data-theme="night"] .theme-choices button[aria-pressed="true"] { background
 html[data-theme="night"] .settings-label { color: var(--night-text); }
 html[data-theme="night"] .settings-group,
 html[data-theme="night"] .theme-choices,
-html[data-theme="night"] .font-size-controls { border-color: var(--night-border); }
+html[data-theme="night"] .font-size-controls,
+html[data-theme="night"] .line-spacing-controls,
+html[data-theme="night"] .font-size-controls button + output,
+html[data-theme="night"] .font-size-controls output + button,
+html[data-theme="night"] .line-spacing-controls button + output,
+html[data-theme="night"] .line-spacing-controls output + button { border-color: var(--night-border); }
 html[data-theme="night"] .site-header-search input,
 html[data-theme="night"] .opera-header-search input { color: #fff; }
 html[data-theme="night"] .directory-sort,
@@ -2591,4 +2601,322 @@ html[data-theme="night"] .musical-row__summary { color: var(--night-muted); }
   .musical-row { padding: 16px 12px 17px; }
   .musical-row:hover, .musical-row:focus-visible { padding-left: 17px; }
   .musical-row h2 { font-size: 1.2rem; }
+}
+
+/* Inline category icons preserve the three-line act-outline layout. */
+.scene-sidebar .section-nav-link__icon--inline { display: inline-block; width: auto; margin: 0 0.45em 0 0; vertical-align: baseline; }
+
+/* Score-aligned lyrics: three genuinely parallel columns, optional English. */
+.musical-lyrics-page { max-width: 1100px; }
+.musical-score-reader { --musical-cols: minmax(145px,.85fr) minmax(0,2fr) minmax(0,2fr); border: 1px solid #dddcd4; border-radius: 11px; overflow: hidden; background: #f9f8f5; color: #23344a; }
+.musical-score-hero { background: #192a3b; color: #fff; padding: clamp(26px,4vw,45px); }
+.musical-score-hero__eyebrow { margin: 0; color: #d7bd86; font: 700 .74rem/1.5 var(--sans); letter-spacing: .12em; }
+.musical-score-hero h1 { margin: 12px 0 7px; color: #fff; font: 400 clamp(2.1rem,5vw,3.6rem)/1.1 var(--serif); }
+.musical-score-hero__subtitle { margin: 0; color: #d7dfe8; font: 1rem/1.6 var(--serif); }
+.musical-score-body { padding: 22px clamp(14px,3vw,34px) 32px; }
+.musical-score-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin: 0 0 16px; }
+.musical-score-toolbar__legend { display: flex; flex-wrap: wrap; gap: 5px 22px; margin: 0; color: #6a7179; font: .78rem/1.5 var(--sans); }
+.musical-score-translation-toggle { appearance: none; flex: none; background: transparent; border: 1px solid #a3814b; border-radius: 6px; color: #735935; padding: 9px 15px; cursor: pointer; font: 600 .84rem/1.3 var(--sans); }
+.musical-score-translation-toggle:hover { background: #efe8db; }
+.musical-score-translation-toggle:focus-visible,.musical-score-scroll:focus-visible { outline: 3px solid #a3814b; outline-offset: 3px; }
+.musical-score-scroll { width: 100%; overflow-x: auto; }
+.musical-score-grid { min-width: 735px; }
+.musical-score-row { display: grid; grid-template-columns: var(--musical-cols); align-items: start; gap: clamp(12px,2vw,24px); }
+.musical-score-row--head { padding: 10px 8px 13px; border-bottom: 2px solid #273e57; color: #64707a; text-transform: uppercase; letter-spacing: .09em; font: 700 .72rem/1.4 var(--sans); }
+.musical-score-passage { border-bottom: 1px solid #dddcd4; }
+.musical-score-passage .musical-score-row + .musical-score-row { border-top: 1px solid #dddcd4; }
+.musical-score-row--entry { padding: 20px 8px; }
+.musical-score-part { min-width: 0; overflow-wrap: break-word; font: .86rem/1.5 var(--sans); }
+.musical-score-part__name { color: #273b51; font-weight: 700; }
+.musical-score-part__ov { display: inline-block; white-space: nowrap; color: #926f38; margin-left: 6px; font: 700 .78rem/1.4 var(--sans); }
+.musical-score-original,.musical-score-english { min-width: 0; overflow-wrap: break-word; font: 1.07rem/1.65 var(--serif); }
+.musical-score-original p,.musical-score-english p { margin: 0 0 7px; }
+.musical-score-original p:last-child,.musical-score-english p:last-child { margin-bottom: 0; }
+.musical-score-english { color: #6b7077; }
+.musical-score-english p { font-style: italic; }
+.musical-score-english[hidden] { display: none !important; }
+.musical-score-instrumental { padding: 13px 8px; color: #737980; background: #efeee9; text-align: center; font: .86rem/1.5 var(--sans); border-bottom: 1px solid #dddcd4; }
+.musical-score-instrumental span { color: #926f38; margin-right: 8px; }
+.musical-score-reader.is-translation-hidden { --musical-cols: minmax(145px,.6fr) minmax(0,4fr); }
+.musical-score-reader.is-translation-hidden .musical-score-grid { min-width: 0; }
+.musical-score-footer { margin-top: 24px; }
+.musical-score-footer a { color: #926f38; }
+.musical-detail-page .musical-tabs__links a.is-active::after { background: #a3814b; }
+html[data-theme="night"] .musical-score-reader { background: #20262d; color: #ecebea; border-color: #45525e; }
+html[data-theme="night"] .musical-score-row--head { color: #c5c9cf; border-color: #b89d69; }
+html[data-theme="night"] .musical-score-passage,html[data-theme="night"] .musical-score-passage .musical-score-row + .musical-score-row,html[data-theme="night"] .musical-score-instrumental { border-color: #45525e; }
+html[data-theme="night"] .musical-score-part__name { color: #f1f1ef; }
+html[data-theme="night"] .musical-score-part__ov,html[data-theme="night"] .musical-score-instrumental span { color: #d7bd86; }
+html[data-theme="night"] .musical-score-english,html[data-theme="night"] .musical-score-toolbar__legend { color: #c5c9cc; }
+html[data-theme="night"] .musical-score-translation-toggle { color: #ead9b7; border-color: #b89d69; }
+html[data-theme="night"] .musical-score-translation-toggle:hover { background: #344456; }
+html[data-theme="night"] .musical-score-instrumental { background: #293645; color: #d0d4d8; }
+@media (max-width: 700px) {
+  .musical-score-reader { --musical-cols: minmax(120px,.8fr) minmax(230px,1.7fr) minmax(230px,1.7fr); }
+  .musical-score-grid { min-width: 660px; }
+  .musical-score-reader.is-translation-hidden { --musical-cols: minmax(96px,.8fr) minmax(0,3fr); }
+  .musical-score-row { gap: 12px; }
+  .musical-score-row--entry { padding: 17px 8px; }
+  .musical-score-hero { padding: 27px 19px; }
+  .musical-score-body { padding: 17px 13px 22px; }
+  .musical-score-original,.musical-score-english { font-size: 1rem; }
+}
+
+
+/* Mahler combined editorial detail page — approved concept, restrained gold/navy. */
+.musical-editorial {padding:24px 16px 80px;background:#f5f2eb;color:#203249}
+.musical-editorial-wrap {max-width:1100px;margin:auto}
+.musical-editorial-hero {position:relative;isolation:isolate;overflow:hidden;min-height:310px;display:flex;align-items:end;border-radius:12px;color:#fff;background:linear-gradient(90deg,rgba(10,25,42,.97) 0%,rgba(12,29,47,.82) 50%,rgba(12,30,48,.25) 100%),url('./public/images/opera-house-hero.webp') center/cover}
+.musical-editorial-hero__inner {position:relative;z-index:1;padding:38px clamp(24px,5vw,65px)}
+.musical-editorial-overline {color:#d8c296;letter-spacing:.15em;font:700 .72rem/1.4 var(--sans)}
+.musical-editorial-hero h1 {font:400 clamp(2.6rem,6vw,4.7rem)/1.08 var(--serif);margin:12px 0;color:#fff}
+.musical-editorial-hero h1 em {font-weight:400;color:#eee1c0}
+.musical-editorial-quote {font:italic clamp(1.1rem,2vw,1.4rem)/1.5 var(--serif);color:#f2deb3;margin:12px 0}
+.musical-editorial-hero__sub {font:.85rem/1.5 var(--sans);color:#e5e8ed;margin:16px 0 0}
+.musical-work-tabs {display:flex;gap:28px;border-bottom:1px solid #c7bfae;margin:0 clamp(8px,3vw,32px)}
+.musical-work-tabs a {padding:22px 10px 18px;border-bottom:3px solid transparent;text-decoration:none;color:inherit;font:1.1rem/1.4 var(--sans)}
+.musical-work-tabs a[aria-current="page"] {color:#85622f;border-bottom-color:#b18a47}
+.musical-work-tabs a:focus-visible {outline:2px solid #b18a47;outline-offset:3px}
+.musical-editorial-section {padding:30px clamp(8px,3vw,32px);background:transparent;border:0}
+.musical-editorial-section[hidden] {display:none}
+.musical-editorial-section h2 {margin:0 0 18px;font:400 clamp(1.7rem,3vw,2.3rem)/1.3 var(--serif);color:inherit}
+.musical-editorial-section h2 small {display:block;margin-top:8px;font:400 .95rem/1.5 var(--sans)}
+.musical-editorial-about {display:block}
+.musical-editorial-prose {max-width:850px;font:1.06rem/1.8 var(--sans);color:#3c444d}
+.musical-editorial-prose p:first-child {margin-top:0}
+.musical-editorial-prose a {color:#85622f;text-underline-offset:5px}
+.musical-facts-section {margin-top:36px}
+.musical-editorial-facts {margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0;align-content:start}
+.musical-editorial-facts>div {padding:20px 24px 20px 0;border-bottom:1px solid #d6cfbf;min-width:0}
+.musical-editorial-facts>div:nth-child(even) {padding-left:24px;border-left:1px solid #d6cfbf}
+.musical-editorial-facts dt {font:500 .75rem/1.4 var(--sans);letter-spacing:.12em;color:#85622f}
+.musical-editorial-facts dd {margin:7px 0 0;font:1rem/1.6 var(--sans);color:#293c4e;overflow-wrap:anywhere}
+.musical-editorial .musical-score-reader {border:0;background:transparent;border-radius:0}
+.musical-editorial .musical-score-toolbar {padding:14px 22px;border-top:1px solid #eee7dc}
+.musical-editorial .musical-score-grid {padding:0 22px 18px}
+.musical-editorial .musical-score-row--entry {padding:14px 8px}
+.musical-score-passage__title {margin:0;padding:13px 8px 6px;color:#9c804c;font:600 .81rem/1.4 var(--sans);letter-spacing:.035em}
+.musical-relation {color:#8e7042;font-weight:800}
+.musical-editorial .musical-score-footer {margin:8px 22px 22px;padding-top:14px;border-top:1px solid #e6e0d8;color:#65666b;font:.83rem/1.5 var(--sans)}
+.musical-editorial .musical-score-footer a {color:#86652e}
+html[data-theme="night"] .musical-editorial {background:#161f29;color:#ecedef}
+html[data-theme="night"] .musical-editorial-facts dd {color:#eee7dc}
+html[data-theme="night"] .musical-editorial-prose {color:#d4d0c9}
+html[data-theme="night"] .musical-editorial-facts dt,
+html[data-theme="night"] .musical-editorial-prose a,
+html[data-theme="night"] .musical-work-tabs a[aria-current="page"] {color:#e7c888}
+html[data-theme="night"] .musical-breadcrumb {color:#ced0d2}
+html[data-theme="night"] .musical-work-tabs,
+html[data-theme="night"] .musical-editorial-facts>div,
+html[data-theme="night"] .musical-editorial .musical-score-toolbar {border-color:#43505c}
+html[data-theme="night"] .musical-work-tabs a[aria-current="page"] {border-bottom-color:#e7c888}
+@media(max-width:740px){.musical-editorial-hero {min-height:240px}.musical-editorial-hero__inner {padding:27px 22px}.musical-editorial .musical-score-grid {padding:0 12px 12px}.musical-editorial-section {padding-top:25px}.musical-editorial-facts>div {padding-right:14px}.musical-editorial-facts>div:nth-child(even) {padding-left:14px}}
+@media(max-width:360px){.musical-editorial-facts {grid-template-columns:1fr}.musical-editorial-facts>div:nth-child(even) {padding-left:0;border-left:0}}
+
+/* Composer-specific musical directory, linked from musical breadcrumbs. */
+.musicals-composer-filter { margin: 12px 0 0; font: .93rem/1.5 var(--sans); }
+.musicals-composer-filter strong { font-weight: 700; }
+.musicals-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Composer-directory caption. */
+.opera-composer-filter { margin: 13px 0 0; font: .94rem/1.5 var(--sans); }
+.opera-composer-filter strong { font-weight: 700; }
+.opera-composer-filter a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* One shared breadcrumb for all Opera and Musical detail pages.
+   The bar spans the viewport; its first link aligns to the measured wordmark. */
+.site-breadcrumb {
+  position: sticky;
+  top: var(--sticky-site-height);
+  z-index: 75;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex: 0 0 48px;
+  gap: 11px;
+  width: 100%;
+  height: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  margin: 0;
+  padding: 0 18px 0 var(--breadcrumb-logo-left, 30px);
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  white-space: nowrap;
+  scrollbar-width: none;
+  background: #fbf8f0;
+  border-bottom: 1px solid #ded6c9;
+  color: #68717c;
+  font: 500 .82rem/1.4 var(--sans);
+}
+.site-breadcrumb::-webkit-scrollbar { display: none; }
+.site-breadcrumb > * { flex: 0 0 auto; }
+.site-breadcrumb a { color: inherit; text-decoration: none; }
+.site-breadcrumb a:hover { text-decoration: underline; }
+.site-breadcrumb a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.site-breadcrumb [aria-current="page"] { color: var(--ink); font-weight: 700; }
+.site-breadcrumb span[aria-hidden="true"] { color: #9a948a; }
+.site-breadcrumb.musical-breadcrumb { background: #f5f2eb; }
+html[data-theme="night"] .site-breadcrumb { color: #c5c9cc; background: #20262d; border-color: #45525e; }
+html[data-theme="night"] .site-breadcrumb.musical-breadcrumb { background: #161f29; }
+html[data-theme="night"] .site-breadcrumb [aria-current="page"] { color: #f0ede6; }
+@media (max-width: 700px) { .site-breadcrumb { gap: 7px; } }
+
+/* Mobile work information; desktop retains its full description and facts grid. */
+.musical-description-toggle {display:none}
+@media (max-width:740px) {
+  .musical-editorial {padding:16px 16px 48px}
+  .musical-editorial-hero {min-height:220px}
+  .musical-editorial-hero__inner {padding:24px 20px}
+  .musical-editorial-hero h1 {font-size:2.3rem}
+  .musical-editorial-overline {font-size:.65rem;letter-spacing:.08em}
+  .musical-editorial-quote {display:none}
+  .musical-work-tabs {gap:0;margin:0}
+  .musical-work-tabs a {flex:1;text-align:center;padding:18px 10px 14px}
+  .musical-editorial-section {padding:24px 4px}
+  .musical-editorial-prose {font-size:1rem;line-height:1.65}
+  .musical-description.is-collapsible:not(.is-expanded) .musical-editorial-prose p:first-child {display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;margin-bottom:0}
+  .musical-description.is-collapsible:not(.is-expanded) .musical-editorial-prose p ~ p {display:none}
+  .musical-description.is-collapsible .musical-description-toggle {display:inline-block;min-height:44px;padding:10px 0;border:0;background:transparent;color:inherit;font:600 .9rem/1.5 var(--sans);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+  .musical-description-toggle:focus-visible {outline:2px solid currentColor;outline-offset:3px}
+  .musical-facts-section {margin-top:28px}
+  .musical-editorial-facts {grid-template-columns:1fr}
+  .musical-editorial-facts>div,
+  .musical-editorial-facts>div:nth-child(even) {padding:16px 0;border-left:0;border-bottom:1px solid #d4d8dc}
+  .musical-editorial-facts dt {color:#626c77}
+  .musical-editorial-facts dd {margin-top:6px}
+  html[data-theme="night"] .musical-editorial-facts dt {color:#b5bdc6}
+  html[data-theme="night"] .musical-editorial-facts>div {border-color:#43505c}
+}
+
+/* The music collection has its own copper/rose accents; opera styling is untouched. */
+body.musicals-theme {
+  --wine:#95604b; --wine-dark:#724535; --gold:#95604b;
+  --paper:#f3eee8; --paper-deep:#e9e1df; --ink:#172333; --muted:#606775; --line:#d5cccb;
+  --music-accent:#95604b; --music-rose:#855967;
+  --music-surface:#f3eee8; --music-text:#172333; --music-muted:#606775; --music-line:#d5cccb;
+}
+html[data-theme="night"] body.musicals-theme {
+  --paper:#172333; --paper-deep:#26374a; --ink:#f3eee8; --muted:#c3c6ce; --line:#435164;
+  --night-surface:#1e2c3e; --night-surface-raised:#26374a; --night-selected:#354356;
+  --wine:#c99379; --gold:#c99379; --music-accent:#c99379; --music-rose:#bc929e;
+  --music-surface:#172333; --music-text:#f3eee8; --music-muted:#c3c6ce; --music-line:#435164;
+  --night-bg:#172333; --night-text:#f3eee8; --night-muted:#c3c6ce; --night-border:#435164;
+}
+body.musicals-theme .musicals-scenic {
+  height:280px;background:#172333 url('./public/images/musicals-concert-banner.webp') center 52%/cover no-repeat;
+}
+body.musicals-theme .musicals-directory-intro {margin-top:0;padding-top:24px}
+body.musicals-theme .directory-intro__panel {padding-left:0;background:transparent}
+body.musicals-theme .directory-intro__panel h1 {color:var(--music-text)}
+body.musicals-theme .directory-intro__panel p {color:var(--music-muted)}
+body.musicals-theme .musical-row h2 {color:var(--music-text)}
+body.musicals-theme .musical-row__byline {color:var(--music-rose)}
+body.musicals-theme .musical-row__summary {color:var(--music-muted)}
+body.musicals-theme .musical-row:hover {background:color-mix(in srgb,var(--music-rose) 9%,transparent)}
+body.musicals-theme .musical-editorial {background:var(--music-surface);color:var(--music-text)}
+body.musicals-theme .musical-editorial-hero {background-image:linear-gradient(90deg,rgba(23,35,51,.96),rgba(23,35,51,.62),rgba(23,35,51,.15)),url('./public/images/musicals-concert-banner.webp')}
+body.musicals-theme .musical-editorial-overline,
+body.musicals-theme .musical-editorial-quote {color:#c99379}
+body.musicals-theme .musical-editorial-hero h1 em {color:#f3eee8}
+body.musicals-theme .musical-work-tabs a[aria-current="page"] {color:var(--music-accent);border-color:var(--music-accent)}
+body.musicals-theme .musical-work-tabs a:focus-visible {outline-color:var(--music-accent)}
+body.musicals-theme .musical-editorial-prose {color:var(--music-muted)}
+body.musicals-theme .musical-editorial-prose a,
+body.musicals-theme .musical-score-footer a {color:var(--music-accent)}
+body.musicals-theme .musical-editorial-facts dt {color:var(--music-muted)}
+body.musicals-theme .musical-editorial-facts dd {color:var(--music-text)}
+body.musicals-theme .musical-editorial-facts>div,
+body.musicals-theme .musical-work-tabs {border-color:var(--music-line)}
+body.musicals-theme .main-nav a.is-active {color:var(--music-accent);border-color:var(--music-accent)}
+@media(max-width:740px) {
+  body.musicals-theme .musicals-scenic {height:200px;background-position:72% center}
+  body.musicals-theme .musicals-directory-intro {padding-top:18px}
+  body.musicals-theme .musical-editorial-hero {background-position:65% center}
+}
+
+/* Shared reader controls follow the music palette in both themes. */
+body.musicals-theme .musical-score-passage__title,
+body.musicals-theme .musical-relation,
+body.musicals-theme .musical-score-part__ov,
+body.musicals-theme .musical-score-instrumental span {color:var(--music-accent)}
+body.musicals-theme .musical-score-translation-toggle {color:var(--music-accent);border-color:var(--music-accent)}
+body.musicals-theme .musical-score-translation-toggle:focus-visible,
+body.musicals-theme .musical-score-scroll:focus-visible {outline-color:var(--music-accent)}
+body.musicals-theme .musical-score-row--head {border-color:var(--music-accent)}
+body.musicals-theme .musical-editorial .musical-score-footer {color:var(--music-muted);border-color:var(--music-line)}
+html[data-theme="night"] body.musicals-theme .musical-breadcrumb,
+html[data-theme="night"] body.musicals-theme .opera-search input,
+html[data-theme="night"] body.musicals-theme .settings-panel,
+html[data-theme="night"] body.musicals-theme .settings-panel select {background-color:var(--night-surface);color:var(--night-text)}
+html[data-theme="night"] body.musicals-theme .musical-score-instrumental,
+html[data-theme="night"] body.musicals-theme .musical-score-translation-toggle:hover {background-color:var(--night-surface-raised)}
+html[data-theme="night"] body.musicals-theme .theme-choices button[aria-pressed="true"] {background:#493b3a}
+
+/* Dusty-pink identity for the musical information and lyrics pages. */
+body.musicals-theme .musical-editorial {--music-accent:#855967}
+html[data-theme="night"] body.musicals-theme .musical-editorial {--music-accent:#bc929e}
+body.musicals-theme .musical-editorial-overline,
+body.musicals-theme .musical-editorial-quote {color:#d3acb7}
+body.musicals-theme .musical-editorial .musical-score-instrumental {
+  background:color-mix(in srgb,var(--music-accent) 10%,var(--music-surface));
+  color:var(--music-muted);
+}
+body.musicals-theme .musical-editorial .musical-score-translation-toggle:hover {
+  background:color-mix(in srgb,var(--music-accent) 15%,var(--music-surface));
+}
+body.musicals-theme .musical-editorial .musical-description-toggle {color:var(--music-accent)}
+body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--music-rose)}
+
+
+
+/* One adjustable gap at each boundary, not one margin on each neighbor:
+   lyric -> lyric: selected gap;
+   lyric -> character/stage, stage -> lyric/character/stage: 10px + selected gap.
+   The first character/stage and a final stage keep the same minimum space.
+   Stage-direction text stays compact, and bilingual rows remain paired. */
+.opera-reading-page {
+  --libretto-paragraph-gap: calc(10px + var(--libretto-row-gap, 8px));
+}
+.opera-reading-page .libretto-row {
+  margin-block: 0;
+}
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction) {
+  padding-block: 0;
+}
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction) .libretto-cell {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.opera-reading-page .libretto-row:not(.libretto-row--stage-direction) .libretto-cell p {
+  line-height: 1.4;
+}
+.opera-reading-page .libretto-row + .libretto-row {
+  margin-top: var(--libretto-row-gap, 8px);
+}
+/* Either side of a stage cue or the start of a sung turn gets one paragraph gap. */
+.opera-reading-page .libretto-row--stage-direction,
+.opera-reading-page .libretto-row:has(> .libretto-cell--german > .libretto-speaker),
+.opera-reading-page .libretto-row--stage-direction + .libretto-row {
+  margin-top: var(--libretto-paragraph-gap);
+}
+.opera-reading-page .libretto-row--stage-direction:last-child {
+  margin-bottom: var(--libretto-paragraph-gap);
+}
+.opera-reading-page .libretto-row--stage-direction {
+  padding-block: 2px;
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-cell {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.opera-reading-page .libretto-row--stage-direction .libretto-cell p {
+  line-height: 1.3;
+}
+@media (max-width: 700px) {
+  .opera-reading-page .libretto-row--stage-direction .libretto-cell--english p {
+    margin-top: 2px;
+  }
 }

@@ -6,16 +6,21 @@ export const macbethActOneScenes = [
     "number": 1,
     "title": "Bosco",
     "translatedTitle": "A wood",
-    "cast": "All three witches, Witch 1, Witch 2, Witch 3",
+    "cast": "Witches",
     "summary": "A wood.",
     "sections": [
       {
+        "number": 1,
+        "type": "Preludio",
+        "routeItem": 1,
+        "beforeScene": true,
+        "instrumental": true,
+        "turns": []
+      },
+      {
         "type": "Introduzione",
         "participants": [
-          "Tutte e tre le streghe",
-          "Strega 1",
-          "Strega 2",
-          "Strega 3"
+          "Witches"
         ],
         "turns": [
           {
@@ -47,7 +52,7 @@ export const macbethActOneScenes = [
           {
             "speaker": "Strega 3",
             "it": "M'è frullata nel pensier\nLa mogliera di un nocchier:\nAl dimon la mi cacciò...\nMa lo sposo che salpò\nCol suo legno affogherò.",
-            "en": "A sailor's wife\ncame into my mind:\nShe drove me away, calling me a demon...\nBut her husband has set sail;\nI'll drown him with his ship.",
+            "en": "There came into my mind\na sailor's wife:\nShe drove me away, calling me a demon...\nBut her husband has set sail;\nI'll drown him with his ship.",
             "speakerTranslation": "Witch 3",
             "literalText": true
           },
@@ -74,51 +79,50 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Odesi un tamburo",
             "en": "A drum is heard."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Un tamburo! Che sarà?\nVien Macbetto. Eccolo qua!",
             "en": "A drum! What can it be?\nMacbeth is coming. There he is!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "si confondono insieme e intrecciano una ridda",
             "en": "They mingle and weave a wild dance."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Le sorelle vagabonde\nvan per l'aria, van sull'onde,\nSanno un circolo intrecciar\nChe comprende e terra e mar.",
             "en": "The wandering sisters\nfly through the air, fly over the waves.\nThey know how to weave a circle\nthat embraces both land and sea.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           }
         ],
-        "number": 2
+        "number": 2,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena I",
+    "translatedHeading": "Scene I"
   },
   {
     "number": 2,
-    "title": "Le profezie",
-    "translatedTitle": "The prophecies",
-    "cast": "Macbeth, Banco, All three witches, Witch 1, Witch 2, Witch 3, Banco and Macbeth",
+    "title": "",
+    "cast": "Macbeth, Banco, Witches, Banco and Macbeth",
     "summary": "The prophecies.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Introduzione",
         "participants": [
-          "MACBETH",
-          "BANCO",
-          "MACBETH:",
-          "Tutte e tre le streghe",
-          "Strega 1",
-          "Strega 2",
-          "Strega 3",
-          "BANCO e MACBETH"
+          "Macbeth",
+          "Banco",
+          "Witches"
         ],
         "turns": [
           {
@@ -142,6 +146,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "S'avvede delle streghe",
             "en": "He notices the witches."
           },
@@ -168,6 +173,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "in tono profetico",
             "en": "Prophetically."
           },
@@ -194,6 +200,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Macbeth trema\na Macbeth sottovoce",
             "en": "Macbeth trembles.\nQuietly to Macbeth."
           },
@@ -206,6 +213,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "alle streghe",
             "en": "To the witches."
           },
@@ -259,14 +267,15 @@ export const macbethActOneScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Macbetto e Banco vivano!\nBanco e Macbetto vivano!",
             "en": "Long live Macbeth and Banco!\nLong live Banco and Macbeth!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "spariscono",
             "en": "They disappear."
           },
@@ -279,6 +288,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "pensieroso",
             "en": "Thoughtfully."
           },
@@ -304,24 +314,25 @@ export const macbethActOneScenes = [
             "literalText": true
           }
         ],
-        "originalTitle": "Le profezie",
-        "translatedTitle": "The prophecies"
+        "routeItem": 0,
+        "number": 2
       }
-    ]
+    ],
+    "originalHeading": "Scena II",
+    "translatedHeading": "Scene II"
   },
   {
     "number": 3,
-    "title": "I messaggeri del Re",
-    "translatedTitle": "The King’s messengers",
+    "title": "",
     "cast": "Messengers, Macbeth, Banco",
     "summary": "The King’s messengers.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Introduzione",
         "participants": [
-          "MESSAGERI",
-          "MACBETH",
-          "BANCO"
+          "King’s Messengers",
+          "Macbeth",
+          "Banco"
         ],
         "turns": [
           {
@@ -333,7 +344,7 @@ export const macbethActOneScenes = [
             "speaker": "MESSAGERI",
             "it": "Pro Macbetto! il tuo signore\nSir t'elesse di Caudore.",
             "en": "Hail, Macbeth! Your sovereign\nhas made you lord of Caudor.",
-            "speakerTranslation": "Messengers",
+            "speakerTranslation": "King’s Messengers",
             "literalText": true
           },
           {
@@ -347,11 +358,12 @@ export const macbethActOneScenes = [
             "speaker": "MESSAGERI",
             "it": "No! percosso dalla legge\nSotto il ceppo egli spirò.",
             "en": "No! Struck down by the law,\nhe died beneath the executioner's axe.",
-            "speakerTranslation": "Messengers",
+            "speakerTranslation": "King’s Messengers",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con racapriccio",
             "en": "Shuddering."
           },
@@ -364,6 +376,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "fra sé, sottovoce, quasi con ispavento",
             "en": "Aside, quietly, almost in fear."
           },
@@ -376,6 +389,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "fra sé",
             "en": "Aside."
           },
@@ -390,31 +404,33 @@ export const macbethActOneScenes = [
             "speaker": "MESSAGERI",
             "it": "(Perché si freddo n'udì Macbetto?\nperché l'aspetto non serenò?)",
             "en": "(Why did Macbeth hear us so coldly?\nWhy did his face not brighten?)",
-            "speakerTranslation": "Messengers",
+            "speakerTranslation": "King’s Messengers",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "tutti partono",
             "en": "All depart."
           }
         ],
-        "originalTitle": "I messaggeri del Re",
-        "translatedTitle": "The King’s messengers"
+        "routeItem": 0,
+        "number": 2
       }
-    ]
+    ],
+    "originalHeading": "Scena III",
+    "translatedHeading": "Scene III"
   },
   {
     "number": 4,
-    "title": "Il ritorno delle streghe",
-    "translatedTitle": "The witches return",
-    "cast": "All three witches",
+    "title": "",
+    "cast": "Witches",
     "summary": "The witches return.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Introduzione",
         "participants": [
-          "Tutte e tre le streghe"
+          "Witches"
         ],
         "turns": [
           {
@@ -423,34 +439,36 @@ export const macbethActOneScenes = [
             "en": "The witches return."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "S'allontanarono! - N'accozzeremo\nQuando di fulmini - lo scroscio udremo.\nS'allontanarono, - fuggiam!... s'attenda\nLe sorti a compiere - nella tregenda.\nMacbetto ridere - vedrem colà,\nE il nostro oracolo - gli parlerà.\nFuggiam, fuggiam!",
             "en": "They have gone! We'll gather again\nwhen we hear the crash of thunder.\nThey have gone; let us flee!... Let us wait\nto fulfil our fate in the witches' gathering.\nThere we shall see Macbeth laugh,\nand our oracle will speak to him.\nLet us flee, let us flee!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Partono",
             "en": "They depart."
           }
         ],
-        "originalTitle": "Il ritorno delle streghe",
-        "translatedTitle": "The witches return"
+        "routeItem": 0,
+        "number": 2
       }
-    ]
+    ],
+    "originalHeading": "Scena IV",
+    "translatedHeading": "Scene IV"
   },
   {
     "number": 5,
-    "title": "La lettera",
-    "translatedTitle": "The letter",
+    "title": "",
     "cast": "Lady Macbeth",
     "summary": "The letter.",
     "sections": [
       {
         "type": "Cavatina di Lady Macbeth",
         "participants": [
-          "LADY MACBETH"
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -466,22 +484,24 @@ export const macbethActOneScenes = [
             "literalText": true
           }
         ],
-        "number": 3
+        "number": 3,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena V",
+    "translatedHeading": "Scene V"
   },
   {
     "number": 6,
-    "title": "L’arrivo annunciato",
-    "translatedTitle": "The arrival announced",
+    "title": "",
     "cast": "Servant, Lady Macbeth",
     "summary": "The arrival announced.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Cavatina di Lady Macbeth",
         "participants": [
-          "SERVO",
-          "LADY"
+          "Servant",
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -519,26 +539,28 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il servo parte.",
             "en": "The servant leaves."
           }
         ],
-        "originalTitle": "L’arrivo annunciato",
-        "translatedTitle": "The arrival announced"
+        "routeItem": 0,
+        "number": 3
       }
-    ]
+    ],
+    "originalHeading": "Scena VI",
+    "translatedHeading": "Scene VI"
   },
   {
     "number": 7,
-    "title": "L’invocazione",
-    "translatedTitle": "The invocation",
+    "title": "",
     "cast": "Lady Macbeth",
     "summary": "The invocation.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Cavatina di Lady Macbeth",
         "participants": [
-          "LADY"
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -554,23 +576,24 @@ export const macbethActOneScenes = [
             "literalText": true
           }
         ],
-        "originalTitle": "L’invocazione",
-        "translatedTitle": "The invocation"
+        "routeItem": 0,
+        "number": 3
       }
-    ]
+    ],
+    "originalHeading": "Scena VII",
+    "translatedHeading": "Scene VII"
   },
   {
     "number": 8,
-    "title": "Il disegno",
-    "translatedTitle": "The plan",
+    "title": "",
     "cast": "Macbeth, Lady Macbeth",
     "summary": "The plan.",
     "sections": [
       {
         "type": "Recitativo e Marcia",
         "participants": [
-          "MACBETH",
-          "LADY"
+          "Macbeth",
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -664,6 +687,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Odonsi lieti suoni che a poco a poco si accostano",
             "en": "Joyful sounds are heard, drawing nearer."
           },
@@ -676,23 +700,26 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Partono",
             "en": "They leave."
           }
         ],
-        "number": 4
+        "number": 4,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena VIII",
+    "translatedHeading": "Scene VIII"
   },
   {
     "number": 9,
-    "title": "L’arrivo del Re",
-    "translatedTitle": "The King’s arrival",
+    "title": "",
     "cast": "Duncano, Banco, Macduff, Malcolm, Macbeth, Lady Macbeth",
     "summary": "The King’s arrival.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo e Marcia",
         "participants": [],
         "turns": [
           {
@@ -701,22 +728,23 @@ export const macbethActOneScenes = [
             "en": "Pastoral music gradually approaches, announcing the King's arrival. He passes by,\naccompanied by Banco, Macduff, Malcolm, Macbeth, Lady Macbeth, and their retinue."
           }
         ],
-        "originalTitle": "L’arrivo del Re",
-        "translatedTitle": "The King’s arrival"
+        "routeItem": 0,
+        "number": 4
       }
-    ]
+    ],
+    "originalHeading": "Scena IX",
+    "translatedHeading": "Scene IX"
   },
   {
     "number": 10,
-    "title": "Il segnale",
-    "translatedTitle": "The signal",
+    "title": "",
     "cast": "Macbeth",
     "summary": "The signal.",
     "sections": [
       {
         "type": "Scena e Duetto",
         "participants": [
-          "MACBETH"
+          "Macbeth"
         ],
         "turns": [
           {
@@ -733,25 +761,28 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Il servo parte.",
             "en": "The servant leaves."
           }
         ],
-        "number": 5
+        "number": 5,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena X",
+    "translatedHeading": "Scene X"
   },
   {
     "number": 11,
-    "title": "Il pugnale",
-    "translatedTitle": "The dagger",
+    "title": "",
     "cast": "Macbeth",
     "summary": "The dagger.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Scena e Duetto",
         "participants": [
-          "MACBETH"
+          "Macbeth"
         ],
         "turns": [
           {
@@ -768,6 +799,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Odesi un tocco di squillo",
             "en": "A bell is heard."
           },
@@ -780,27 +812,29 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Entra nelle stanze del Re",
             "en": "He enters the King’s rooms."
           }
         ],
-        "originalTitle": "Il pugnale",
-        "translatedTitle": "The dagger"
+        "routeItem": 0,
+        "number": 5
       }
-    ]
+    ],
+    "originalHeading": "Scena XI",
+    "translatedHeading": "Scene XI"
   },
   {
     "number": 12,
-    "title": "Il grido",
-    "translatedTitle": "The cry",
+    "title": "",
     "cast": "Lady Macbeth, Macbeth",
     "summary": "The cry.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Scena e Duetto",
         "participants": [
-          "LADY",
-          "MACBETH"
+          "Lady Macbeth",
+          "Macbeth"
         ],
         "turns": [
           {
@@ -817,6 +851,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "di dentro",
             "en": "From within."
           },
@@ -835,23 +870,24 @@ export const macbethActOneScenes = [
             "literalText": true
           }
         ],
-        "originalTitle": "Il grido",
-        "translatedTitle": "The cry"
+        "routeItem": 0,
+        "number": 5
       }
-    ]
+    ],
+    "originalHeading": "Scena XII",
+    "translatedHeading": "Scene XII"
   },
   {
     "number": 13,
-    "title": "Il delitto compiuto",
-    "translatedTitle": "The deed is done",
+    "title": "",
     "cast": "Macbeth, Lady Macbeth",
     "summary": "The deed is done.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Scena e Duetto",
         "participants": [
-          "MACBETH",
-          "LADY"
+          "Macbeth",
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -868,6 +904,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si avvicina a Lady e le dice sottovoce:",
             "en": "He approaches Lady Macbeth and speaks quietly."
           },
@@ -929,6 +966,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "guardandosi le mani",
             "en": "Looking at his hands."
           },
@@ -1004,6 +1042,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "a Macbeth",
             "en": "To Macbeth."
           },
@@ -1034,22 +1073,23 @@ export const macbethActOneScenes = [
             "en": "She snatches the dagger from Macbeth's hands and enters the King's rooms."
           }
         ],
-        "originalTitle": "Il delitto compiuto",
-        "translatedTitle": "The deed is done"
+        "routeItem": 0,
+        "number": 5
       }
-    ]
+    ],
+    "originalHeading": "Scena XIII",
+    "translatedHeading": "Scene XIII"
   },
   {
     "number": 14,
-    "title": "Le mani insanguinate",
-    "translatedTitle": "Bloodstained hands",
+    "title": "",
     "cast": "Macbeth",
     "summary": "Bloodstained hands.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Scena e Duetto",
         "participants": [
-          "MACBETH"
+          "Macbeth"
         ],
         "turns": [
           {
@@ -1066,34 +1106,36 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si guarda le mani",
             "en": "He looks at his hands."
           },
           {
             "speaker": "MACBETH",
             "it": "Oh! questa mano!\nNon potrebbe l'Oceano\nQueste mani a me lavar!",
-            "en": "Oh, this hand!\nCould the ocean\nwash these hands of mine?",
+            "en": "Oh, this hand!\nNot even the ocean could\nwash these hands of mine!",
             "speakerTranslation": "Macbeth",
             "literalText": true
           }
         ],
-        "originalTitle": "Le mani insanguinate",
-        "translatedTitle": "Bloodstained hands"
+        "routeItem": 0,
+        "number": 5
       }
-    ]
+    ],
+    "originalHeading": "Scena XIV",
+    "translatedHeading": "Scene XIV"
   },
   {
     "number": 15,
-    "title": "Il ritorno di Lady Macbeth",
-    "translatedTitle": "Lady Macbeth returns",
+    "title": "",
     "cast": "Lady Macbeth, Macbeth",
     "summary": "Lady Macbeth returns.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Scena e Duetto",
         "participants": [
-          "LADY",
-          "MACBETH"
+          "Lady Macbeth",
+          "Macbeth"
         ],
         "turns": [
           {
@@ -1110,6 +1152,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Battono di nuovo.",
             "en": "The knocking sounds again."
           },
@@ -1136,26 +1179,28 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Parte trascinato da Lady",
             "en": "Lady Macbeth drags him away."
           }
         ],
-        "originalTitle": "Il ritorno di Lady Macbeth",
-        "translatedTitle": "Lady Macbeth returns"
+        "routeItem": 0,
+        "number": 5
       }
-    ]
+    ],
+    "originalHeading": "Scena XV",
+    "translatedHeading": "Scene XV"
   },
   {
     "number": 16,
-    "title": "Il risveglio del Re",
-    "translatedTitle": "Waking the King",
+    "title": "",
     "cast": "Macduff",
     "summary": "Waking the King.",
     "sections": [
       {
         "type": "Finale Primo",
         "participants": [
-          "MACDUFF"
+          "Macduff"
         ],
         "turns": [
           {
@@ -1172,25 +1217,28 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Entra nella stanza del Re",
             "en": "He enters the King's room."
           }
         ],
-        "number": 6
+        "number": 6,
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena XVI",
+    "translatedHeading": "Scene XVI"
   },
   {
     "number": 17,
-    "title": "La notte",
-    "translatedTitle": "The night",
+    "title": "",
     "cast": "Banco",
     "summary": "The night.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Finale Primo",
         "participants": [
-          "BANCO"
+          "Banco"
         ],
         "turns": [
           {
@@ -1206,23 +1254,24 @@ export const macbethActOneScenes = [
             "literalText": true
           }
         ],
-        "originalTitle": "La notte",
-        "translatedTitle": "The night"
+        "routeItem": 0,
+        "number": 6
       }
-    ]
+    ],
+    "originalHeading": "Scena XVII",
+    "translatedHeading": "Scene XVII"
   },
   {
     "number": 18,
-    "title": "La scoperta",
-    "translatedTitle": "The discovery",
+    "title": "",
     "cast": "Macduff, Banco",
     "summary": "The discovery.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Finale Primo",
         "participants": [
-          "MACDUFF",
-          "BANCO"
+          "Macduff",
+          "Banco"
         ],
         "turns": [
           {
@@ -1246,6 +1295,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "affannoso",
             "en": "Breathlessly."
           },
@@ -1258,6 +1308,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Banco entra precipitoso nella stanza del Re",
             "en": "Banco rushes into the King's room."
           },
@@ -1269,24 +1320,29 @@ export const macbethActOneScenes = [
             "literalText": true
           }
         ],
-        "originalTitle": "La scoperta",
-        "translatedTitle": "The discovery"
+        "routeItem": 0,
+        "number": 6
       }
-    ]
+    ],
+    "originalHeading": "Scena XVIII",
+    "translatedHeading": "Scene XVIII"
   },
   {
     "number": 19,
-    "title": "Il primo finale",
-    "translatedTitle": "First finale",
+    "title": "",
     "cast": "Lady Macbeth, Banco, All",
     "summary": "First finale.",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Finale Primo",
         "participants": [
-          "LADY",
-          "BANCO",
-          "TUTTI"
+          "Lady Macbeth",
+          "Banco",
+          "Macbeth",
+          "Malcolm",
+          "Macduff",
+          "Lady-in-waiting",
+          "Servants"
         ],
         "turns": [
           {
@@ -1303,6 +1359,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Esce spaventato",
             "en": "Emerging in terror."
           },
@@ -1317,11 +1374,12 @@ export const macbethActOneScenes = [
             "speaker": "TUTTI",
             "it": "Che fu? parlate! che seguì di strano?",
             "en": "What is it? Speak! What strange thing has happened?",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con orrore",
             "en": "In horror."
           },
@@ -1334,6 +1392,7 @@ export const macbethActOneScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Stupore universale.",
             "en": "All are struck with astonishment."
           },
@@ -1341,13 +1400,15 @@ export const macbethActOneScenes = [
             "speaker": "TUTTI",
             "it": "Schiudi, inferno, la bocca ed inghiotti\nNel tuo grembo l'intero creato;\nSull'ignoto assassino esecrato\nLe tue fiamme discendano, o Ciel.\nO gran Dio, che ne' cuori penetri,\nTu ne assisti, in te solo fidiamo;\nDa te lume, consiglio cerchiamo\nA squarciar delle tenebre il vel!\nL'ira tua formidabile e pronta\nColga l'empio, o fatal punitor;\nE vi stampi sul volto l'impronta\nChe stampasti sul primo uccisor.",
             "en": "Open your mouth, hell, and swallow\nall creation into your depths;\nupon the accursed, unknown murderer,\nmay your flames descend, O heaven.\nO great God, who sees into our hearts,\nprotect us; in you alone we trust.\nFrom you we seek light and counsel\nto tear away the veil of darkness!\nMay your terrible and swift wrath\nseize the wicked one, O avenging power;\nmay it mark his face with the same imprint\nyou stamped upon the first murderer.",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Ensemble",
             "literalText": true
           }
         ],
-        "originalTitle": "Il primo finale",
-        "translatedTitle": "First finale"
+        "routeItem": 0,
+        "number": 6
       }
-    ]
+    ],
+    "originalHeading": "Scena XIX",
+    "translatedHeading": "Scene XIX"
   }
 ];

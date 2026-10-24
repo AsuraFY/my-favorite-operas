@@ -1,5 +1,6 @@
-// Keep an import or startup failure visible instead of leaving an empty page.
-import("./main.js?v=tosca-act1-2").catch(error => {
+// This is the only HTML entry point. A failed module import or startup now shows
+// a visible recovery message instead of leaving #app empty.
+import("./main.js?v=verified-lyric-lines-20261023").catch(error => {
   console.error("The opera website could not start:", error);
   const app = document.querySelector("#app");
   if (!app) return;

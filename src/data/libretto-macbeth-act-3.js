@@ -2,19 +2,15 @@
 export const macbethActThreeScenes = [
   {
     "number": 1,
-    "title": "La caverna",
-    "translatedTitle": "The cavern",
-    "cast": "Tutte e tre le streghe, Strega 1, Strega 2, Strega 3",
+    "title": "",
+    "cast": "Witches",
     "summary": "The cavern.",
     "sections": [
       {
         "number": 10,
         "type": "[Ballo e] Coro",
         "participants": [
-          "Tutte e tre le streghe",
-          "Strega 1",
-          "Strega 2",
-          "Strega 3"
+          "Witches"
         ],
         "turns": [
           {
@@ -44,14 +40,15 @@ export const macbethActThreeScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Questo è il momento.\nSu via! sollecite giriam la pentola,\nMesciamvi in circolo possenti intingoli:\nSirocchie, all'opera! l'acqua già fuma,\nCrepita e spuma.",
             "en": "This is the moment.\nCome, quickly! Let us stir the pot,\nmix potent brews into it in a circle.\nSisters, to work! The water already steams,\ncrackles and foams.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "gettando nella caldaia",
             "en": "Throwing ingredients into the cauldron."
           },
@@ -78,25 +75,28 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "danzando intorno",
             "en": "Dancing around the cauldron."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "E voi, Spirti\nNegri e candidi,\nRossi e ceruli,\nRimescete!\nVoi che mescere\nBen sapete,\nRimescete! Rimescete!",
             "en": "And you, spirits,\nblack and white,\nred and blue,\nstir!\nYou who know\nhow to mix well,\nstir! Stir!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena I",
+    "translatedHeading": "Scene I"
   },
   {
     "number": 2,
-    "title": "Le apparizioni",
-    "translatedTitle": "The apparitions",
-    "cast": "Macbeth, Tutte e tre le streghe, Apparizione, Strega 1, Strega 2, Strega 3",
+    "title": "",
+    "cast": "Macbeth, Witches, Apparizione",
     "summary": "The apparitions.",
     "sections": [
       {
@@ -104,11 +104,10 @@ export const macbethActThreeScenes = [
         "type": "Recitativo, Apparizoni, Ballabile e Duetto finale",
         "participants": [
           "Macbeth",
-          "Tutte e tre le streghe",
-          "Apparizione",
-          "Strega 1",
-          "Strega 2",
-          "Strega 3"
+          "Witches",
+          "Apparition 1",
+          "Apparition 2",
+          "Apparition 3"
         ],
         "turns": [
           {
@@ -125,6 +124,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Si avanza verso le Streghe",
             "en": "He advances toward the witches."
           },
@@ -137,14 +137,15 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "con solennità",
             "en": "Solemnly."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Un'opra senza nome.",
             "en": "A deed without a name.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -155,10 +156,10 @@ export const macbethActThreeScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Dalle incognite posse udire lo vuoi,\nCui ministre obbediam, ovver da noi?",
             "en": "Do you wish to hear it from the unknown powers\nwe serve and obey, or from us?",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -169,10 +170,10 @@ export const macbethActThreeScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Dalle basse e dall'alte regioni,\nSpirti erranti, salite, scendete!",
             "en": "From the lower and upper realms,\nwandering spirits, rise, descend!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -188,10 +189,10 @@ export const macbethActThreeScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "T'ha letto nel cuore;\nTaci, e n'odi le voci segrete.",
             "en": "It has read your heart;\nbe silent and hear its secret words.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -210,14 +211,15 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "L'apparizione sparisce",
             "en": "The apparition disappears."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Richieste non vuole.\nEcco un altro di lui più possente.",
             "en": "It will answer no questions.\nHere is another, more powerful than it.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -226,10 +228,10 @@ export const macbethActThreeScenes = [
             "en": "Thunder: a bloodstained child appears."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Taci, e n'odi le occulte parole.",
             "en": "Be silent and hear its hidden words.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -241,6 +243,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Sparisce",
             "en": "It disappears."
           },
@@ -253,6 +256,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "feroce",
             "en": "Fiercely."
           },
@@ -276,10 +280,10 @@ export const macbethActThreeScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Taci, ed odi.",
             "en": "Be silent and listen.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -291,6 +295,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Sparisce",
             "en": "It disappears."
           },
@@ -303,21 +308,22 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "alle Streghe",
             "en": "To the witches."
           },
           {
             "speaker": "Macbeth",
             "it": "Or mi dite: salire al mio soglio\nLa progenie di Banco dovrà?",
-            "en": "Now tell me: must the descendants of Banco\nascend my throne?",
+            "en": "Now tell me: must my throne be ascended\nby the descendants of Banco?",
             "speakerTranslation": "Macbeth",
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Non cercarlo!",
             "en": "Do not ask!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -329,6 +335,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "La caldaia cala sotterra",
             "en": "The cauldron sinks into the ground."
           },
@@ -341,6 +348,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "suono sotterraneo di cornamusa",
             "en": "The sound of bagpipes is heard underground."
           },
@@ -373,10 +381,10 @@ export const macbethActThreeScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Poi qual nebbia di nuovo sparite.",
             "en": "Then vanish again like mist.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -393,6 +401,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "al secondo",
             "en": "To the second."
           },
@@ -405,6 +414,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "agli altri",
             "en": "To the others."
           },
@@ -417,6 +427,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Trae la spada, s'avventa sugli spettri, poi s'arresta",
             "en": "He draws his sword, rushes at the ghosts, then stops."
           },
@@ -429,6 +440,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "alle Streghe",
             "en": "To the witches."
           },
@@ -440,10 +452,10 @@ export const macbethActThreeScenes = [
             "literalText": true
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Vivranno.",
             "en": "They will live.",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
@@ -455,33 +467,34 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Perde i sensi",
             "en": "He faints."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Ei svenne!... Aerei spirti,\nRidonate la mente al Re svenuto!",
             "en": "He has fainted!... Spirits of the air,\nrestore the fainting King to consciousness!",
-            "speakerTranslation": "All three witches",
+            "speakerTranslation": "Witches",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0
       }
-    ]
+    ],
+    "originalHeading": "Scena II",
+    "translatedHeading": "Scene II"
   },
   {
     "number": 3,
-    "title": "Spiriti aerei",
-    "translatedTitle": "Spirits of the air",
+    "title": "",
     "cast": "Coro",
     "summary": "Spirits of the air.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "Spiriti aerei",
-        "translatedTitle": "Spirits of the air",
+        "type": "Recitativo, Apparizoni, Ballabile e Duetto finale",
         "participants": [
-          "Coro"
+          "Witches"
         ],
         "turns": [
           {
@@ -490,37 +503,38 @@ export const macbethActThreeScenes = [
             "en": "The spirits descend, and while they dance around Macbeth, the witches sing the following chorus."
           },
           {
-            "speaker": "Tutte e tre le streghe",
+            "speaker": "Streghe",
             "it": "Ondine e Silfidi\nDall'ali candide,\nSu quella pallida\nFronte spirate.\nTessete il vortice\nCarole armoniche,\nE sensi ed anima\nGli confortate.",
-            "en": "Undines and sylphs\nwith white wings,\nbreathe upon that pale\nbrow.\nWeave harmonious dances\nin swirling circles,\nand comfort his senses\nand his soul.",
-            "speakerTranslation": "All three witches",
+            "en": "Undines and sylphs\nwith white wings,\nbreathe upon that pale\nbrow.\nWeave in swirling circles\nharmonious dances,\nand comfort his senses\nand his soul.",
+            "speakerTranslation": "Witches",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "Spirti e Streghe spariscono",
             "en": "The spirits and witches disappear."
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 11
       }
-    ]
+    ],
+    "originalHeading": "Scena III",
+    "translatedHeading": "Scene III"
   },
   {
     "number": 4,
-    "title": "La vendetta",
-    "translatedTitle": "Vengeance",
+    "title": "",
     "cast": "Macbeth, Araldo, Lady Macbeth, Macbeth e Lady Macbeth",
     "summary": "Vengeance.",
     "sections": [
       {
-        "type": "Passage",
-        "originalTitle": "La vendetta",
-        "translatedTitle": "Vengeance",
+        "type": "Recitativo, Apparizoni, Ballabile e Duetto finale",
         "participants": [
           "Macbeth",
-          "Araldo",
-          "Lady Macbeth",
-          "Macbeth e Lady Macbeth"
+          "Herald",
+          "Lady Macbeth"
         ],
         "turns": [
           {
@@ -551,6 +565,7 @@ export const macbethActThreeScenes = [
           },
           {
             "speaker": "Stage direction",
+            "shortCue": true,
             "it": "entrando",
             "en": "Entering."
           },
@@ -666,8 +681,12 @@ export const macbethActThreeScenes = [
             "speakerTranslation": "Macbeth and Lady Macbeth",
             "literalText": true
           }
-        ]
+        ],
+        "routeItem": 0,
+        "number": 11
       }
-    ]
+    ],
+    "originalHeading": "Scena IV",
+    "translatedHeading": "Scene IV"
   }
 ];

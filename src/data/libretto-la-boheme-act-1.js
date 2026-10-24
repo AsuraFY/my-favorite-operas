@@ -1,503 +1,3378 @@
-// Text follows Teatro alla Scala's Italian libretto PDF (Quadro primo).
-// English is a fresh line-aligned translation; stage directions remain separate turns.
+// La Bohème tableau 1: source-based editorial review, 20 October 2026.
 export const laBohemeActOneScenes = [
   {
-    number: 1,
-    summary: "On Christmas Eve in their freezing Paris garret, Rodolfo and Marcello burn the poet’s manuscript to keep warm.",
-    title: "In soffitta",
-    translatedTitle: "In the garret",
-    // Track divisions from the Callas / Di Stefano / Votto recording linked in the registry.
-    outline: [
-      {"title":"Questo mar rosso","translation":"This Red Sea","match":"Questo Mar Rosso","type":"Scena","performers":["Marcello","Rodolfo","Colline"]},
-      {"title":"Abbasso, abbasso l’autore!","translation":"Down, down with the author!","match":"Abbasso! Abbasso l’autor!","type":"Ensemble","performers":["Marcello","Rodolfo","Schaunard","Colline"]},
-      {"title":"Si può?… Chi è là?","translation":"May I come in?… Who is there?","match":"Si può?","type":"Scena","performers":["Benoît","Rodolfo","Marcello","Schaunard","Colline"]},
-      {"title":"Al Quartiere Latin ci attende Momus","translation":"Momus awaits us in the Latin Quarter","match":"Al Quartiere Latin ci attende Momus.","type":"Recitativo","performers":["Schaunard"]},
-      {"title":"Non sono in vena","translation":"I’m not in the mood","match":"Non sono in vena.","type":"Recitativo","performers":["Rodolfo","Mimì"]},
-      {"title":"Che gelida manina!","translation":"What a cold little hand!","match":"Che gelida manina","type":"Aria","performers":["Rodolfo"]},
-      {"title":"Sì, mi chiamano Mimì","translation":"Yes, they call me Mimì","match":"Sì.\nMi chiamano Mimì","type":"Aria","performers":["Mimì"]},
-      {"title":"Ehi! Rodolfo!… O soave fanciulla, o dolce viso","translation":"Hey! Rodolfo!… O lovely girl, O sweet face","match":"Ehi! Rodolfo!","type":"Duetto","performers":["Schaunard","Colline","Marcello","Rodolfo","Mimì"]}
-    ],
-    sections: [
+    "number": 1,
+    "summary": "On Christmas Eve in their freezing Paris garret, Rodolfo and Marcello burn the poet’s manuscript to keep warm.",
+    "title": "In soffitta",
+    "translatedTitle": "In the garret",
+    "outline": [
       {
-        number: null,
-        type: "In soffitta",
-        participants: ["Marcello", "Rodolfo", "Colline", "Schaunard", "Benoît", "Mimì"],
-        turns: [
+        "title": "Questo mar rosso",
+        "translation": "This Red Sea",
+        "match": "Questo Mar Rosso",
+        "type": "Scena e duetto",
+        "characters": [
+          "Marcello",
+          "Rodolfo",
+          "Colline"
+        ]
+      },
+      {
+        "title": "Abbasso, abbasso l’autore!",
+        "translation": "Down, down with the author!",
+        "match": "Abbasso! Abbasso l’autor!",
+        "type": "Quartetto",
+        "characters": [
+          "Marcello",
+          "Colline",
+          "Rodolfo",
+          "Schaunard"
+        ]
+      },
+      {
+        "title": "Si può?… Chi è là?",
+        "translation": "May I come in?… Who is there?",
+        "match": "Si può?",
+        "type": "Scena",
+        "characters": [
+          "Benoît",
+          "Marcello",
+          "Schaunard",
+          "Colline",
+          "Rodolfo"
+        ]
+      },
+      {
+        "title": "Al Quartiere Latin ci attende Momus",
+        "translation": "Momus awaits us in the Latin Quarter",
+        "match": "Al Quartiere Latin ci attende Momus.",
+        "type": "Scena e quartetto",
+        "characters": [
+          "Schaunard",
+          "Marcello",
+          "Rodolfo",
+          "Colline"
+        ]
+      },
+      {
+        "title": "Non sono in vena",
+        "translation": "I’m not in the mood",
+        "match": "Non sono in vena.",
+        "type": "Scena e duetto",
+        "characters": [
+          "Rodolfo",
+          "Mimì"
+        ]
+      },
+      {
+        "title": "Che gelida manina!",
+        "translation": "What a cold little hand!",
+        "match": "Che gelida manina",
+        "type": "Aria",
+        "characters": [
+          "Rodolfo"
+        ]
+      },
+      {
+        "title": "Sì, mi chiamano Mimì",
+        "translation": "Yes, they call me Mimì",
+        "match": "Sì.\nMi chiamano Mimì",
+        "type": "Aria",
+        "characters": [
+          "Mimì",
+          "Rodolfo"
+        ]
+      },
+      {
+        "title": "Ehi! Rodolfo!… O soave fanciulla, o dolce viso",
+        "translation": "Hey! Rodolfo!… O lovely girl, O sweet face",
+        "match": "Ehi! Rodolfo!",
+        "type": "Scena e duetto",
+        "characters": [
+          "Schaunard",
+          "Colline",
+          "Marcello",
+          "Rodolfo",
+          "Mimì"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "number": null,
+        "type": "In soffitta",
+        "participants": [
+          "Marcello",
+          "Rodolfo",
+          "Colline",
+          "Schaunard",
+          "Benoît",
+          "Mimì"
+        ],
+        "turns": [
           {
-            speaker: "Stage direction",
-            original: "Ampia finestra dalla quale si scorge una distesa di tetti coperti di neve. A sinistra un camino. Una tavola, un armadietto, una piccola libreria, quattro sedie, un cavalletto da pittore, un letto: libri sparsi, molti fasci di carte, due candelieri. Uscio nel mezzo, altro a sinistra.\nS’alza subito la tela. Rodolfo guarda meditabondo fuori della finestra. Marcello lavora al suo quadro: Il passaggio del Mar Rosso, colle mani intirizzite dal freddo e che riscalda alitandovi su di quando in quando, mutando, pel gran gelo, spesso posizione.",
-            translation: "A broad window looks out over a stretch of snow-covered roofs. On the left, a fireplace. A table, a cupboard, a small bookcase, four chairs, a painter’s easel, a bed; scattered books, many bundles of papers, two candlesticks. A door in the middle, another on the left.\nThe curtain rises at once. Rodolfo gazes pensively out of the window. Marcello works on his painting, The Crossing of the Red Sea, his hands stiff with cold; from time to time he breathes on them to warm them and often changes position because of the bitter chill."
+            "speaker": "Stage direction",
+            "original": "Ampia finestra dalla quale si scorge una distesa di tetti coperti di neve. A sinistra un camino. Una tavola, un armadietto, una piccola libreria, quattro sedie, un cavalletto da pittore, un letto: libri sparsi, molti fasci di carte, due candelieri. Uscio nel mezzo, altro a sinistra. S’alza subito la tela. Rodolfo guarda meditabondo fuori della finestra. Marcello lavora al suo quadro: Il passaggio del Mar Rosso, colle mani intirizzite dal freddo e che riscalda alitandovi su di quando in quando, mutando, pel gran gelo, spesso posizione.",
+            "translation": "A broad window looks out over a stretch of snow-covered roofs. On the left, a fireplace. A table, a cupboard, a small bookcase, four chairs, a painter’s easel, a bed; scattered books, many bundles of papers, two candlesticks. A door in the middle, another on the left. The curtain rises at once. Rodolfo gazes pensively out of the window. Marcello works on his painting, The Crossing of the Red Sea, his hands stiff with cold; from time to time he breathes on them to warm them and often changes position because of the bitter chill.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
-            speaker: "Marcello",
-            original: "Questo Mar Rosso mi ammollisce e assidera\ncome se addosso mi piovesse in stille.\nPer vendicarmi, affogo un Faraon!",
-            translation: "This Red Sea soaks me and freezes me,\nas though its drops were raining down on me.\nTo get even, I’ll drown a Pharaoh!",
-            literalText: true,
-            speakerTranslation: "Marcello"
+            "speaker": "Marcello",
+            "original": "Questo Mar Rosso mi ammollisce e assidera\ncome se addosso mi piovesse in stille.\nPer vendicarmi, affogo un Faraon!",
+            "translation": "This Red Sea soaks me and freezes me,\nas though its drops were raining down on me.\nTo get even, I’ll drown a Pharaoh!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
           },
-          { speaker: "Stage direction", original: "(a Rodolfo)", translation: "(to Rodolfo)" },
-          { speaker: "Marcello", original: "Che fai?", translation: "What are you doing?", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Nei cieli bigi\nguardo fumar dai mille\ncomignoli Parigi", translation: "In the gray skies\nI watch Paris smoke\nfrom a thousand chimneys", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(additando il camino senza fuoco)", translation: "(pointing to the unlit fireplace)" },
-          { speaker: "Rodolfo", original: "e penso a quel poltrone\ndi un vecchio caminetto ingannatore\nche vive in ozio come un gran signor!", translation: "and think of that lazy old fireplace,\nthat false old hearth\nlounging like a grand gentleman!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Le sue rendite oneste\nda un pezzo non riceve.", translation: "It hasn’t received\nits honest income for some time.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Quelle sciocche foreste\nche fan sotto la neve?", translation: "What foolish forests\nare those beneath the snow?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Rodolfo, io voglio dirti\nun mio pensier profondo:\nho un freddo cane.", translation: "Rodolfo, I want to tell you\na profound thought of mine:\nI’m freezing terribly.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(soffiando sulle dita)", translation: "(breathing on his fingers)" },
-          { speaker: "Rodolfo", original: "Ed io, Marcel, non ti nascondo\nche non credo al sudor della fronte!", translation: "And I, Marcello, won’t hide from you\nthat I don’t believe in earning my bread by the sweat of my brow!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Ho diacciate\nle dita… quasi ancor le tenessi immollate,\ngiù in quella gran ghiacciaia che è il cuore di Musetta.", translation: "My fingers are frozen—\nalmost as if I still had them soaking\nin that great icebox that is Musetta’s heart.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(lascia sfuggire un lungo sospirone, e tralascia di dipingere, deponendo tavolozza e pennelli)", translation: "(he lets out a long sigh and stops painting, setting down his palette and brushes)" },
-          { speaker: "Rodolfo", original: "L’amor è un caminetto che sciupa troppo…", translation: "Love is a fireplace that consumes too much…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "E in fretta!", translation: "And too fast!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Dove l’uomo è fascina…", translation: "Where the man is the firewood…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "E la donna è l’alare…", translation: "And the woman is the andiron…", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "L’uno brucia in un soffio…", translation: "One burns up in a flash…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "E l’altro sta a guardare.", translation: "And the other just watches.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Ma intanto qui si gela…", translation: "Meanwhile, we’re freezing here…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "E si muore d’inedia!", translation: "And starving to death!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Fuoco ci vuole…", translation: "We need a fire…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(afferrando una sedia e facendo atto di spezzarla)", translation: "(grabbing a chair and starting to break it)" },
-          { speaker: "Marcello", original: "Aspetta… sacrifichiam la sedia!", translation: "Wait… let’s sacrifice the chair!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(Rodolfo impedisce con energia l’atto di Marcello)", translation: "(Rodolfo forcefully stops Marcello)" },
-          { speaker: "Stage direction", original: "(con gioia, per un’idea che gli è balenata)", translation: "(joyfully, struck by an idea)" },
-          { speaker: "Rodolfo", original: "Eureka!", translation: "Eureka!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(corre al tavolo e di sotto ne leva un voluminoso scartafaccio)", translation: "(he runs to the table and pulls out a bulky manuscript from beneath it)" },
-          { speaker: "Marcello", original: "Trovasti?", translation: "Have you found it?", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Sì! Aguzza\nl’ingegno. L’idea vampi in fiamma!", translation: "Yes! Use your wits.\nLet the idea flare into flame!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(additando il suo quadro)", translation: "(pointing to his painting)" },
-          { speaker: "Marcello", original: "Bruciamo il Mar Rosso?", translation: "Shall we burn the Red Sea?", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "No. Puzza\nla tela dipinta. Il mio dramma,\nl’ardente mio dramma ci scaldi.", translation: "No. Painted canvas stinks.\nMy drama—my fiery drama—\nwill warm us.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(con comico spavento)", translation: "(with comic alarm)" },
-          { speaker: "Marcello", original: "Vuoi leggerlo forse? Mi geli.", translation: "Are you going to read it, perhaps? You’re chilling me.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "No, in cener la carta si sfaldi\ne l’estro rivoli a’ suoi cieli.\nAl secol gran danno minaccia!\nÈ Roma in periglio!", translation: "No, let the pages crumble to ash,\nand let inspiration return to its heavens.\nA great disaster threatens the age!\nRome is in peril!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Gran cor!", translation: "What courage!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(dà a Marcello una parte dello scartafaccio)", translation: "(he gives Marcello part of the manuscript)" },
-          { speaker: "Rodolfo", original: "A te l’atto primo.", translation: "Here, the first act is yours.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Qua!", translation: "Give it here!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Straccia.", translation: "Tear it up.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Accendi!", translation: "Light it!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(Rodolfo batte un acciarino, accende una candela e va al camino con Marcello: insieme danno fuoco ad una parte dello scartafaccio buttato sul focolare, poi entrambi prendono delle sedie e seggono, riscaldandosi voluttuosamente)", translation: "(Rodolfo strikes a flint and lights a candle. He and Marcello go to the fireplace and set part of the manuscript alight. Then they each take a chair and sit, luxuriating in the warmth.)" },
-          { speaker: "Rodolfo", original: "Che lieto baglior!", translation: "What a lovely glow!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Che lieto baglior!", translation: "What a lovely glow!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(si apre con fracasso la porta in fondo ed entra Colline gelato, intirizzito, battendo i piedi, gettando con ira sul tavolo un pacco di libri legato con un fazzoletto)", translation: "(the back door bursts open. Colline enters, frozen and shivering, stamping his feet and angrily throwing a bundle of books tied in a handkerchief onto the table)" },
-          { speaker: "Colline", original: "Già dell’Apocalisse appariscono i segni.\nIn giorno di Vigilia non s’accettano pegni!…", translation: "The signs of the Apocalypse are already appearing.\nOn Christmas Eve, they won’t accept pawns!…", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(si interrompe sorpreso, vedendo fuoco nel camino)", translation: "(he breaks off, surprised to see a fire in the fireplace)" },
-          { speaker: "Colline", original: "Una fiammata!", translation: "A blaze!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(a Colline)", translation: "(to Colline)" },
-          { speaker: "Marcello", original: "Zitto! Si dà il mio dramma…", translation: "Quiet! My drama is being given…", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Colline", original: "Al fuoco.\nLo trovo scintillante!", translation: "To the fire.\nI find it sparkling!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Rodolfo", original: "Vivo!", translation: "Alive!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(il fuoco diminuisce)", translation: "(the fire dies down)" },
-          { speaker: "Colline", original: "Ma dura poco.", translation: "But it won’t last long.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Rodolfo", original: "La brevità, gran pregio!", translation: "Brevity is a great virtue!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(levando la sedia a Rodolfo)", translation: "(taking Rodolfo’s chair)" },
-          { speaker: "Colline", original: "Autore, a me la sedia!", translation: "Author, give me the chair!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Quest’intermezzi fan morir d’inedia! Presto.", translation: "These interludes are starving us to death! Hurry.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(prende un’altra parte dello scartafaccio)", translation: "(he takes another part of the manuscript)" },
-          { speaker: "Rodolfo", original: "Atto secondo.", translation: "Act Two.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(a Colline)", translation: "(to Colline)" },
-          { speaker: "Marcello", original: "Non far susurro.", translation: "Don’t make a sound.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(Rodolfo straccia lo scartafaccio e lo getta nel camino: il fuoco si ravviva. Colline avvicina ancora più la sedia e si riscalda le mani: Rodolfo è in piedi presso ai due, col rimanente dello scartafaccio)", translation: "(Rodolfo tears up the manuscript and throws it into the fireplace; the flames leap up. Colline draws his chair closer and warms his hands. Rodolfo stands beside them with the rest of the manuscript.)" },
-          { speaker: "Colline", original: "Pensier profondo.", translation: "A profound thought.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Giusto color.", translation: "Just the right color.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "In quell’azzurro guizzo languente\nsfuma un’ardente scena d’amor!", translation: "In that fading blue flicker\nan ardent scene of love dissolves!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "Scoppietta un foglio.", translation: "A page crackles.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Là c’eran baci!", translation: "There were kisses in there!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(getta sul fuoco il rimanente dello scartafaccio)", translation: "(he throws the rest of the manuscript into the fire)" },
-          { speaker: "Rodolfo", original: "Tre atti or voglio d’un colpo udir!", translation: "Now I want to hear three acts at once!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "Tal degli audaci l’idea s’integra.", translation: "Thus the bold idea is made complete.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(applaudono entusiasticamente)", translation: "(they applaud enthusiastically)" },
-          { speaker: "Rodolfo, Marcello e Colline", original: "Bello in allegra vampa svanir.", translation: "How fine to vanish in a merry blaze.", literalText: true, speakerTranslation: "Rodolfo, Marcello, and Colline" },
-          { speaker: "Stage direction", original: "(la fiamma diminuisce)", translation: "(the flame dwindles)" },
-          { speaker: "Marcello", original: "Oh! Dio… già s’abbassa la fiamma.", translation: "Oh, heavens… the flame is already sinking.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Colline", original: "Che vano, che fragile dramma.", translation: "What an empty, fragile drama.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Già scricchiola, increspasi, muor!", translation: "It crackles, curls, and dies!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(il fuoco è spento)", translation: "(the fire goes out)" },
-          { speaker: "Marcello e Colline", original: "Abbasso! Abbasso l’autor!", translation: "Down with the author! Down with him!", literalText: true, speakerTranslation: "Marcello and Colline" },
-          { speaker: "Stage direction", original: "(dalla porta di mezzo entrano due garzoni, portando l’uno provviste di cibi, bottiglie di vino, sigari, e l’altro un fascio di legna. Al rumore i tre innanzi al camino si volgono e con grida di meraviglia si slanciano sulle provviste portate dal garzone e le depongono sul tavolo: Colline prende la legna e la porta presso il caminetto)", translation: "(Two delivery boys enter through the middle door: one carries food, bottles of wine, and cigars; the other, a bundle of firewood. At the noise, the three men by the fireplace turn and rush delightedly toward the supplies, which they put on the table. Colline takes the wood to the hearth.)" },
-          { speaker: "Rodolfo", original: "Legna!", translation: "Firewood!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Sigari!", translation: "Cigars!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Colline", original: "Bordò!", translation: "Bordeaux!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Rodolfo", original: "Legna!", translation: "Firewood!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Bordò!", translation: "Bordeaux!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(comincia a far sera)", translation: "(evening begins to fall)" },
-          { speaker: "Rodolfo, Marcello e Colline", original: "Le dovizie d’una fiera\nil destin ci destinò.", translation: "A fair’s abundance\nhas been bestowed on us by fate.", literalText: true, speakerTranslation: "Rodolfo, Marcello, and Colline" },
-          { speaker: "Stage direction", original: "(entra con aria di trionfo; gettando a terra alcuni scudi)", translation: "(Schaunard enters triumphantly and tosses a few coins onto the floor)" },
-          { speaker: "Schaunard", original: "La banca di Francia\nper voi si sbilancia!", translation: "The Bank of France\nhas opened its purse for you!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(i due garzoni partono. Colline, Rodolfo e Marcello raccattano gli scudi)", translation: "(The two delivery boys leave. Colline, Rodolfo, and Marcello gather up the coins.)" },
-          { speaker: "Colline", original: "Raccatta, raccatta…", translation: "Pick them up, pick them up…", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Son pezzi di latta…", translation: "They’re bits of tin…", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(mostrando a Marcello uno scudo)", translation: "(showing Marcello a coin)" },
-          { speaker: "Schaunard", original: "Sei sordo? Sei lippo?\nQuest’uomo chi è?", translation: "Are you deaf? Are you blind?\nWho is this man?", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(inchinandosi)", translation: "(bowing)" },
-          { speaker: "Rodolfo", original: "Luigi Filippo.\nM’inchino al mio Re.", translation: "Louis Philippe.\nI bow to my king.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Rodolfo, Marcello, Schaunard e Colline", original: "Sta Luigi Filippo ai nostri piè.", translation: "There lies Louis Philippe at our feet.", literalText: true, speakerTranslation: "Rodolfo, Marcello, Schaunard, and Colline" },
-          { speaker: "Stage direction", original: "(depongono gli scudi sul tavolo)", translation: "(They put the coins on the table.)" },
-          { speaker: "Stage direction", original: "(vorrebbe raccontare la sua fortuna, ma gli altri non l’ascoltano: vanno e vengono affaccendati disponendo ogni cosa sul tavolo)", translation: "(Schaunard tries to tell them of his good fortune, but they do not listen; they bustle about, arranging everything on the table.)" },
-          { speaker: "Schaunard", original: "Or vi dirò: quest’oro… o meglio, argento…\nha la sua brava istoria…", translation: "Now I’ll tell you: this gold… or rather, silver…\nhas quite a story behind it…", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(ponendo la legna nel camino)", translation: "(putting the firewood in the fireplace)" },
-          { speaker: "Marcello", original: "Riscaldiamo il camino.", translation: "Let’s warm the hearth.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Colline", original: "Tanto freddo ha sofferto.", translation: "It has suffered such cold.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Schaunard", original: "Un inglese, un signor, Lord o Milord\nche sia, volea un musicista!", translation: "An Englishman, a gentleman, a lord or milord,\nwhatever he was, wanted a musician!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(gettando via i libri di Colline dal tavolo)", translation: "(throwing Colline’s books off the table)" },
-          { speaker: "Marcello", original: "Via!\nPrepariamo\nla tavola!", translation: "Move!\nLet’s set\nthe table!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Schaunard", original: "Io volo…", translation: "I’m on it…", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Rodolfo", original: "L’esca dov’è?", translation: "Where’s the kindling?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "Là.", translation: "There.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Qua.", translation: "Here.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(Colline e Marcello accendono un gran fuoco nel camino)", translation: "(Colline and Marcello light a large fire in the fireplace.)" },
-          { speaker: "Schaunard", original: "E mi presento.\nM’accetta,\ngli domando:", translation: "So I introduce myself.\nHe takes me on;\nI ask him:", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Colline", original: "Arrosto freddo!", translation: "Cold roast!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(Colline e Marcello mettono a posto le vivande, mentre Rodolfo accende l’altra candela)", translation: "(Colline and Marcello arrange the food while Rodolfo lights the other candle.)" },
-          { speaker: "Marcello", original: "Pasticcio dolce!", translation: "Sweet pie!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Schaunard", original: "A quando le lezioni?\nMi presento,\nm’accetta e gli domando:\na quando le lezioni?\nRisponde:\nIncominciam!\n‘Guardare!’ e un pappagallo m’addita al primo pian,\npoi soggiunge: ‘Voi suonare\nfinché quello morire!’\nE fu così:\nsuonai tre lunghi dì…\nAllora usai l’incanto\ndi mia presenza bella…\nAffascinai l’ancella!\nGli propinai prezzemolo…", translation: "‘When do the lessons begin?’\nI introduce myself,\nhe takes me on, and I ask:\n‘When do the lessons begin?’\nHe replies:\n‘We begin!’\n‘Watch!’ And he points me to a parrot on the first floor,\nthen adds: ‘You play\nuntil it die!’\nAnd so it went:\nI played for three long days…\nThen I used the charm\nof my handsome presence…\nI captivated the maid!\nI fed him parsley…", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Rodolfo", original: "Fulgida folgori la sala splendida!", translation: "The splendid hall flashes with dazzling light!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(mette le due candele accese sul tavolo)", translation: "(he puts the two lit candles on the table)" },
-          { speaker: "Marcello", original: "Or le candele.", translation: "Now, the candles.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Colline", original: "Pasticcio dolce.", translation: "Sweet pie.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Mangiar senza tovaglia!", translation: "Eating without a tablecloth!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(levando di tasca un giornale e spiegandolo)", translation: "(taking a newspaper from his pocket and unfolding it)" },
-          { speaker: "Rodolfo", original: "Un’idea!", translation: "An idea!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello e Colline", original: "Il Costituzional!", translation: "The Constitutionnel!", literalText: true, speakerTranslation: "Marcello and Colline" },
-          { speaker: "Rodolfo", original: "Ottima carta!\nSi mangia e si divora un’appendice!", translation: "Excellent paper!\nWe’ll eat and devour an entire supplement!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(dispongono il giornale come una tovaglia: Rodolfo e Marcello avvicinano le quattro sedie al tavolo, mentre Colline è sempre affaccendato coi piatti di vivande)", translation: "(They spread the newspaper as a tablecloth. Rodolfo and Marcello draw the four chairs up to the table while Colline busies himself with the dishes.)" },
-          { speaker: "Schaunard", original: "Lorito allargò l’ali,\nLorito il becco aprì,\nun poco di prezzemolo,\nda Socrate morì!", translation: "The parrot spread its wings,\nthe parrot opened its beak;\na little parsley,\nand Socrates died!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(vedendo che nessuno gli bada, afferra Colline che gli passa vicino con un piatto)", translation: "(seeing that no one is paying attention, he grabs Colline as he passes with a dish)" },
-          { speaker: "Colline", original: "Chi?", translation: "Who?", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(indispettito)", translation: "(annoyed)" },
-          { speaker: "Schaunard", original: "Che il diavolo vi porti tutti quanti!\nEd or che fate?\nNo!\nQueste cibarie\nsono la salmeria\npei dì futuri\ntenebrosi e oscuri.\nPranzare in casa\nil dì della Vigilia\nmentre il Quartier Latino le sue vie\naddobba di salsiccie e leccornie?\nQuando un olezzo di frittelle imbalsama\nle vecchie strade?\nLà le ragazze cantano contente…", translation: "May the devil take the lot of you!\nAnd what are you doing now?\nNo!\nThis food\nis our reserve supply\nfor future days,\ndark and gloomy.\nDine at home\non Christmas Eve,\nwhile the Latin Quarter decks its streets\nwith sausages and delicacies?\nWhen the scent of fritters perfumes\nthe old streets?\nThere the girls are singing happily…", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Rodolfo, Marcello e Colline", original: "La vigilia di Natal!", translation: "On Christmas Eve!", literalText: true, speakerTranslation: "Rodolfo, Marcello, and Colline" },
-          { speaker: "Schaunard", original: "Ed han per eco ognuna uno studente!\nUn po’ di religione, o miei signori!\nSi beva in casa, ma si pranzi fuor!", translation: "And each has a student for an echo!\nA little piety, gentlemen!\nLet’s drink at home, but dine out!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(Rodolfo chiude la porta a chiave, poi tutti vanno intorno al tavolo e versano il vino)", translation: "(Rodolfo locks the door. Then they all gather around the table and pour the wine.)" },
-          { speaker: "Stage direction", original: "(internamente; battendo due colpi alla porta)", translation: "(from outside, knocking twice on the door)" },
-          { speaker: "Benoît", original: "Si può?", translation: "May I come in?", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(tutti s’arrestano stupefatti)", translation: "(everyone freezes in astonishment)" },
-          { speaker: "Marcello", original: "Chi è là?", translation: "Who’s there?", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Benoît", original: "Benoît!", translation: "Benoît!", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Marcello", original: "Il padrone di casa!", translation: "The landlord!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(depongono i bicchieri)", translation: "(they put down their glasses)" },
-          { speaker: "Schaunard", original: "Uscio sul muso!", translation: "The door right in his face!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(gridando verso la porta)", translation: "(shouting toward the door)" },
-          { speaker: "Colline", original: "Non c’è nessuno!", translation: "There’s nobody here!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Schaunard", original: "È chiuso!", translation: "It’s locked!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(interno)", translation: "(from outside)" },
-          { speaker: "Benoît", original: "Una parola.", translation: "Just a word.", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(dopo essersi consultato cogli amici, va ad aprire la porta)", translation: "(after conferring with his friends, Schaunard goes to open the door)" },
-          { speaker: "Schaunard", original: "Sola!", translation: "We’re alone!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(entra sorridente, mostrando una carta a Marcello)", translation: "(Benoît enters smiling and shows Marcello a paper)" },
-          { speaker: "Benoît", original: "Affitto!", translation: "The rent!", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(ricevendolo con grande cordialità)", translation: "(welcoming him with great warmth)" },
-          { speaker: "Marcello", original: "Olà!\nDate una sedia.", translation: "Well now!\nBring him a chair.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Presto.", translation: "Quickly.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(schermendosi)", translation: "(trying to wave them off)" },
-          { speaker: "Benoît", original: "Non occorre… vorrei…", translation: "There’s no need… I wanted…", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(insistendo con dolce violenza lo fa sedere)", translation: "(insisting with gentle force, Schaunard makes him sit down)" },
-          { speaker: "Schaunard", original: "Segga.", translation: "Please, sit.", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(offre a Benoît un bicchiere)", translation: "(offering Benoît a glass)" },
-          { speaker: "Marcello", original: "Vuol bere?", translation: "Would you like a drink?", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Benoît", original: "Grazie.", translation: "Thank you.", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(Benoît, Rodolfo, Marcello e Schaunard seduti: Colline in piedi)", translation: "(Benoît, Rodolfo, Marcello, and Schaunard sit; Colline remains standing.)" },
-          { speaker: "Rodolfo", original: "Tocchiamo!", translation: "Let’s clink glasses!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "Tocchiamo!", translation: "Let’s clink glasses!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(Tutti bevono)", translation: "(Everyone drinks.)" },
-          { speaker: "Schaunard", original: "Beva!", translation: "Drink up!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Rodolfo", original: "Tocchiam!", translation: "A toast!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(depone il bicchiere e si volge nuovamente a Marcello mostrandogli la carta)", translation: "(Benoît puts down his glass and turns back to Marcello, showing him the paper.)" },
-          { speaker: "Benoît", original: "Quest’è l’ultimo trimestre…", translation: "This is the last quarter’s rent…", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(ingenuamente)", translation: "(innocently)" },
-          { speaker: "Marcello", original: "N’ho piacere.", translation: "I’m glad to hear it.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Benoît", original: "E quindi…", translation: "And so…", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(interrompendolo)", translation: "(interrupting him)" },
-          { speaker: "Schaunard", original: "Ancora un sorso.", translation: "One more sip.", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Benoît", original: "Grazie.", translation: "Thank you.", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(alzandosi)", translation: "(standing up)" },
-          { speaker: "Rodolfo", original: "Tocchiam!", translation: "A toast!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "Tocchiam!", translation: "A toast!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Rodolfo, Marcello, Schaunard e Colline", original: "(alzandosi e toccando tutti il bicchiere di Benoît)\nAlla sua salute!", translation: "(standing and all touching their glasses to Benoît’s)\nTo your health!", literalText: true, speakerTranslation: "Rodolfo, Marcello, Schaunard, and Colline" },
-          { speaker: "Stage direction", original: "(Rodolfo si siede e tutti bevono: Colline va a prendere lo sgabello presso il cavalletto e si siede ancor esso)", translation: "(Rodolfo sits and everyone drinks. Colline fetches the stool by the easel and sits down too.)" },
-          { speaker: "Stage direction", original: "(riprendendo con Marcello)", translation: "(resuming his conversation with Marcello)" },
-          { speaker: "Benoît", original: "A lei ne vengo,\nperché il trimestre scorso…\nmi promise…", translation: "I came to see you\nbecause last quarter…\nyou promised me…", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(mostrando a Benoît gli scudi che sono sul tavolo)", translation: "(showing Benoît the coins on the table)" },
-          { speaker: "Marcello", original: "Promisi ed or mantengo.", translation: "I promised, and now I’ll make good on it.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(con stupore, piano a Marcello)", translation: "(in surprise, quietly to Marcello)" },
-          { speaker: "Rodolfo", original: "Che fai!?", translation: "What are you doing!?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(piano a Marcello)", translation: "(quietly to Marcello)" },
-          { speaker: "Schaunard", original: "Sei pazzo!!", translation: "Are you mad!!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(a Benoît, senza badare ai due)", translation: "(to Benoît, ignoring the other two)" },
-          { speaker: "Marcello", original: "Ha visto? Or via\nresti un momento in nostra compagnia.", translation: "You see? Now then,\nstay a little while in our company.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(appoggiando i gomiti sulla tavola; con marcata intenzione)", translation: "(leaning his elbows on the table, with pointed intent)" },
-          { speaker: "Marcello", original: "Dica: quant’anni ha,\ncaro signor Benoît?", translation: "Tell us, how old are you,\ndear Monsieur Benoît?", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Benoît", original: "Gl’anni? Per carità!", translation: "My age? Good heavens!", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Rodolfo", original: "Su e giù la nostra età.", translation: "About our age, give or take.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(protestando)", translation: "(protesting)" },
-          { speaker: "Benoît", original: "Di più! Molto di più.", translation: "Older! Much older.", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Colline", original: "Ha detto su e giù.", translation: "He said give or take.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(mentre fanno chiacchierare Benoît, gli riempiono il bicchiere tosto che l’ha vuotato)", translation: "(As they keep Benoît talking, they refill his glass as soon as he empties it.)" },
-          { speaker: "Stage direction", original: "(abbassando la voce e con tono di furberia)", translation: "(lowering his voice, slyly)" },
-          { speaker: "Marcello", original: "L’altra sera al Mabil… l’han colto\nin peccato d’amor!", translation: "The other night at the Mabil… they caught you\nin the act of love!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(inquieto)", translation: "(uneasy)" },
-          { speaker: "Benoît", original: "Io!?", translation: "Me!?", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Marcello", original: "Al Mabil… l’altra sera l’han colto.\nNeghi!", translation: "At the Mabil… they caught you the other night.\nDeny it!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Benoît", original: "Un caso.", translation: "A coincidence.", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(lusingandolo)", translation: "(flattering him)" },
-          { speaker: "Marcello", original: "Bella donna!", translation: "A beautiful woman!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(mezzo brillo, subito)", translation: "(already a little tipsy, promptly)" },
-          { speaker: "Benoît", original: "Ah, molto.", translation: "Ah, very.", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(gli batte una mano sulla spalla)", translation: "(clapping him on one shoulder)" },
-          { speaker: "Schaunard", original: "Briccone!", translation: "You rascal!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Rodolfo", original: "Briccone!", translation: "You rascal!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(fa lo stesso sull’altra spalla)", translation: "(doing the same on his other shoulder)" },
-          { speaker: "Colline", original: "Seduttore!", translation: "You seducer!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Schaunard", original: "Briccone!", translation: "You rascal!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Rodolfo", original: "Briccone!", translation: "You rascal!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(magnificando)", translation: "(in exaggerated praise)" },
-          { speaker: "Marcello", original: "Una quercia, un cannone…", translation: "A mighty oak, a cannon…", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "L’uomo ha buon gusto!", translation: "The man has good taste!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(ridendo)", translation: "(laughing)" },
-          { speaker: "Benoît", original: "Eh! Eh!", translation: "Ha! Ha!", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Marcello", original: "Il crin ricciuto e fulvo!", translation: "With curly, tawny hair!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Schaunard", original: "Briccon!", translation: "You rascal!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Marcello", original: "Ei gongolava arzillo e pettoruto.", translation: "He strutted about, jaunty and broad-chested.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(ringalluzzito)", translation: "(puffed up with pride)" },
-          { speaker: "Benoît", original: "Son vecchio, ma robusto.", translation: "I’m old, but sturdy.", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(con ironica gravità)", translation: "(with ironic solemnity)" },
-          { speaker: "Rodolfo, Schaunard e Colline", original: "Ei gongolava arzuto e pettorillo.", translation: "He strutted about, jaunty and broad-chested.", literalText: true, speakerTranslation: "Rodolfo, Schaunard, and Colline" },
-          { speaker: "Marcello", original: "E a lui cedea, la femminil virtù!", translation: "And feminine virtue yielded to him!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(in piena confidenza)", translation: "(speaking in full confidence)" },
-          { speaker: "Benoît", original: "Timido in gioventù\nora me ne ripago. Si sa! È uno svago\nqualche donnetta allegra\n(accenna a forme accentuate)\ne un po’…\nNon dico una balena\no un mappamondo\no un viso tondo\nda luna piena!\nMa magra, proprio magra, no, poi no!\nLe donne magre son grattacapi\ne spesso sopracapi…\ne son piene di doglie,\nper esempio: mia moglie…", translation: "Shy in my youth,\nnow I’m making up for it. You know how it is! A bit of fun\nwith some cheerful little woman,\n(indicating generous curves)\nand a little…\nI don’t mean a whale,\nor a globe,\nor a round face\nlike the full moon!\nBut thin—really thin? No, never!\nThin women are a headache,\nand often a heartache…\nand they’re full of aches,\nlike my wife, for instance…", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(dà un pugno sulla tavola e si alza: gli altri lo imitano: Benoît li guarda sbalordito)", translation: "(Marcello bangs the table and rises; the others follow. Benoît watches them, astonished.)" },
-          { speaker: "Marcello", original: "Quest’uomo ha moglie\ne sconcie voglie\nha nel cor.", translation: "This man has a wife\nand shameful desires\nin his heart.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Schaunard e Colline", original: "Orror!", translation: "Horror!", literalText: true, speakerTranslation: "Schaunard and Colline" },
-          { speaker: "Rodolfo", original: "E ammorba, e appesta\nla nostra onesta\nmagion!", translation: "He fouls and poisons\nour honest\nhome!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Schaunard e Colline", original: "Fuor!", translation: "Out!", literalText: true, speakerTranslation: "Schaunard and Colline" },
-          { speaker: "Stage direction", original: "(Benoît, allibito, si alza e tenta inutilmente di parlare)", translation: "(Benoît, stunned, rises and tries in vain to speak.)" },
-          { speaker: "Marcello", original: "Si abbruci dello zucchero.", translation: "Take a lump of sugar to burn it off.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Colline", original: "Si discacci il reprobo.", translation: "Drive the reprobate away.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Schaunard", original: "È la morale offesa che vi scaccia!", translation: "Out you go, expelled by our offended morals!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(gridando)", translation: "(shouting)" },
-          { speaker: "Benoît", original: "Io di… io di…", translation: "I… I…", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Stage direction", original: "(circondano Benoît, e lo spingono poco a poco verso la porta)", translation: "(They surround Benoît and gradually push him toward the door.)" },
-          { speaker: "Stage direction", original: "(sempre più sbalordito)", translation: "(in ever greater astonishment)" },
-          { speaker: "Benoît", original: "Miei signori…", translation: "Gentlemen…", literalText: true, speakerTranslation: "Benoît" },
-          { speaker: "Marcello, Schaunard e Colline", original: "Silenzio! Via, signore…", translation: "Silence! Out you go, sir…", literalText: true, speakerTranslation: "Marcello, Schaunard, and Colline" },
-          { speaker: "Stage direction", original: "(spingendo Benoît fuori della porta)", translation: "(pushing Benoît out through the door)" },
-          { speaker: "Rodolfo, Marcello, Schaunard e Colline", original: "Via di qua!", translation: "Out of here!", literalText: true, speakerTranslation: "Rodolfo, Marcello, Schaunard, and Colline" },
-          { speaker: "Stage direction", original: "(tutti sulla porta guardando verso il pianerottolo della scala)", translation: "(They all stand in the doorway, looking toward the landing.)" },
-          { speaker: "Rodolfo, Marcello, Schaunard e Colline", original: "E buona sera a vostra signoria…", translation: "And good evening to your lordship…", literalText: true, speakerTranslation: "Rodolfo, Marcello, Schaunard, and Colline" },
-          { speaker: "Stage direction", original: "(ritornando nel mezzo della scena; ridendo)", translation: "(returning to the middle of the room, laughing)" },
-          { speaker: "Rodolfo, Marcello, Schaunard e Colline", original: "Ah! Ah! Ah! Ah!", translation: "Ha! Ha! Ha! Ha!", literalText: true, speakerTranslation: "Rodolfo, Marcello, Schaunard, and Colline" },
-          { speaker: "Stage direction", original: "(chiude l’uscio)", translation: "(he shuts the door)" },
-          { speaker: "Marcello", original: "Ho pagato il trimestre!", translation: "I’ve paid the quarter’s rent!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Schaunard", original: "Al Quartiere Latin ci attende Momus.", translation: "Momus is waiting for us in the Latin Quarter.", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Marcello", original: "Viva chi spende!", translation: "Long live the spender!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Schaunard", original: "Dividiamo il bottin!", translation: "Let’s divide the spoils!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(si dividono gli scudi rimasti sul tavolo)", translation: "(They divide the coins left on the table.)" },
-          { speaker: "Rodolfo", original: "Dividiam!", translation: "Let’s divide them!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "Dividiam!", translation: "Let’s divide them!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(presentando uno specchio rotto a Colline)", translation: "(holding a broken mirror up for Colline)" },
-          { speaker: "Marcello", original: "Là ci son beltà scese dal cielo.\nOr che sei ricco, bada alla decenza.\nOrso, ravviati il pelo!", translation: "There are beauties come down from heaven.\nNow that you’re rich, make yourself presentable.\nBear, smooth your fur!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(sveste il camiciotto da lavoro e indossa l’abito)", translation: "(he takes off his work jacket and puts on his coat)" },
-          { speaker: "Colline", original: "Farò la conoscenza\nla prima volta d’un barbitonsore.\nGuidatemi al ridicolo\noltraggio d’un rasoio.\nAndiam!", translation: "For the first time, I’ll make the acquaintance\nof a barber.\nLead me to the ridiculous\naffront of a razor.\nLet’s go!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(comicamente)", translation: "(comically)" },
-          { speaker: "Schaunard, poi Marcello, poi Schaunard, poi Colline", original: "Andiam!", translation: "Let’s go!", literalText: true, speakerTranslation: "Schaunard, then Marcello, then Schaunard, then Colline" },
-          { speaker: "Rodolfo", original: "Io resto\nper terminar l’articolo\ndi fondo del Castoro.", translation: "I’ll stay\nto finish the leading article\nfor Il Castoro.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Marcello", original: "Fa’ presto.", translation: "Be quick.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Cinque minuti. Conosco il mestier.", translation: "Five minutes. I know my trade.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "T’aspetterem dabbasso dal portier.", translation: "We’ll wait for you downstairs by the porter.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Se tardi udrai che coro!", translation: "If you’re late, you’ll hear what a chorus we’ll make!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Cinque minuti.", translation: "Five minutes.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(prende dal tavolo un lume e va ad aprire l’uscio: Marcello, Schaunard e Colline escono e scendono la scala)", translation: "(He takes a lamp from the table and opens the door. Marcello, Schaunard, and Colline leave and go down the stairs.)" },
-          { speaker: "Stage direction", original: "(nell’escire)", translation: "(as he leaves)" },
-          { speaker: "Schaunard", original: "Taglia corta la coda al tuo Castor!", translation: "Keep that Castor article short!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(di fuori)", translation: "(from outside)" },
-          { speaker: "Marcello", original: "Occhio alla scala, tienti\nalla ringhiera.", translation: "Watch the stairs; hold on\nto the railing.", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(sul pianerottolo, presso l’uscio aperto alzando il lume)", translation: "(on the landing by the open door, lifting the lamp)" },
-          { speaker: "Rodolfo", original: "Adagio.", translation: "Careful.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "È buio pesto.", translation: "It’s pitch-dark.", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(le voci di Marcello, Schaunard e Colline si fanno sempre più lontane)", translation: "(Marcello, Schaunard, and Colline’s voices grow fainter and fainter.)" },
-          { speaker: "Schaunard", original: "Maledetto portier!", translation: "Damn that porter!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(rumore d’uno che ruzzola)", translation: "(the sound of someone tumbling down)" },
-          { speaker: "Colline", original: "Accidenti!", translation: "Damnation!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Rodolfo", original: "Colline, sei morto?", translation: "Colline, are you dead?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(lontano, dal basso della scala)", translation: "(far away, from the bottom of the stairs)" },
-          { speaker: "Colline", original: "Non ancor!", translation: "Not yet!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Stage direction", original: "(più lontano)", translation: "(farther away)" },
-          { speaker: "Marcello", original: "Vien presto!", translation: "Come soon!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(Rodolfo chiude l’uscio, depone il lume, sgombra un angolo del tavolo, vi colloca calamaio e carta, poi siede e si mette a scrivere dopo avere spento l’altro lume rimasto acceso; scrive, s’interrompe, pensa, ritorna a scrivere; s’inquieta, distrugge lo scritto e getta via la penna)", translation: "(Rodolfo shuts the door and sets down the lamp. He clears a corner of the table, places an inkwell and paper there, then sits down to write after extinguishing the other lamp. He writes, stops to think, starts again, grows frustrated, tears up what he has written, and throws away the pen.)" },
-          { speaker: "Stage direction", original: "(sfiduciato)", translation: "(discouraged)" },
-          { speaker: "Rodolfo", original: "Non sono in vena.", translation: "I’m not in the mood.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì bussa timidamente alla porta)", translation: "(Mimì knocks timidly at the door.)" },
-          { speaker: "Rodolfo", original: "Chi è là!?", translation: "Who’s there!?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(di fuori)", translation: "(from outside)" },
-          { speaker: "Mimì", original: "Scusi.", translation: "Excuse me.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(alzandosi)", translation: "(rising)" },
-          { speaker: "Rodolfo", original: "Una donna!", translation: "A woman!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Di grazia, mi s’è spento\nil lume.", translation: "Please, my light has gone\nout.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(corre ad aprire)", translation: "(he hurries to open the door)" },
-          { speaker: "Rodolfo", original: "Ecco.", translation: "There you are.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(sull’uscio, con un lume spento in mano ed una chiave)", translation: "(at the doorway, holding an unlit lamp and a key)" },
-          { speaker: "Mimì", original: "Vorrebbe?…", translation: "Would you?…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "S’accomodi un momento.", translation: "Please, come in for a moment.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Non occorre.", translation: "There’s no need.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(insistendo)", translation: "(insisting)" },
-          { speaker: "Rodolfo", original: "La prego, entri.", translation: "Please, come in.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì entra, ma subito è presa da soffocazione)", translation: "(Mimì enters, but is immediately overcome by breathlessness.)" },
-          { speaker: "Stage direction", original: "(premuroso)", translation: "(concerned)" },
-          { speaker: "Rodolfo", original: "Si sente male?", translation: "Are you feeling ill?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "No… nulla.", translation: "No… it’s nothing.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Impallidisce!", translation: "You’re turning pale!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì tossisce.)", translation: "(Mimì coughs.)" },
-          { speaker: "Mimì", original: "Il respir… quelle scale…", translation: "My breath… those stairs…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(sviene e Rodolfo è appena a tempo di sorreggerla ed adagiarla su di una sedia, mentre dalle mani di Mimì cadono e candeliere e chiave)", translation: "(She faints. Rodolfo just manages to catch her and lay her on a chair; her lamp and key fall from her hands.)" },
-          { speaker: "Stage direction", original: "(imbarazzato)", translation: "(flustered)" },
-          { speaker: "Rodolfo", original: "Ed ora come faccio?…", translation: "Now what do I do?…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(va a prendere dell’acqua e ne spruzza il viso di Mimì)", translation: "(He fetches some water and sprinkles Mimì’s face.)" },
-          { speaker: "Rodolfo", original: "Così!", translation: "There!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(guardandola con grande interesse)", translation: "(looking at her with great interest)" },
-          { speaker: "Rodolfo", original: "Che viso d’ammalata.", translation: "What a sickly little face.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì rinviene)", translation: "(Mimì comes to.)" },
-          { speaker: "Rodolfo", original: "Si sente meglio?", translation: "Do you feel better?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Sì.", translation: "Yes.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Qui c’è tanto freddo. Segga vicino al fuoco…", translation: "It’s so cold here. Sit by the fire…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì fa cenno di no)", translation: "(Mimì gestures no.)" },
-          { speaker: "Rodolfo", original: "Aspetti… un po’ di vino…", translation: "Wait… a little wine…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Grazie.", translation: "Thank you.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(le dà il bicchiere e le versa da bere)", translation: "(He gives her a glass and pours her a drink.)" },
-          { speaker: "Rodolfo", original: "A lei.", translation: "Here you are.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Poco, poco.", translation: "Just a little.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Così?", translation: "That much?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Grazie.", translation: "Thank you.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(beve)", translation: "(she drinks)" },
-          { speaker: "Stage direction", original: "(ammirandola)", translation: "(admiring her)" },
-          { speaker: "Rodolfo", original: "(Che bella bambina!)", translation: "(What a lovely girl!)", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(levandosi, cerca il suo candeliere)", translation: "(rising, she looks for her lamp)" },
-          { speaker: "Mimì", original: "Ora permetta\nche accenda il lume. È tutto passato.", translation: "Now let me\nlight my lamp. I’m quite all right again.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Tanta fretta?", translation: "In such a hurry?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Sì.", translation: "Yes.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(Rodolfo scorge a terra il candeliere, lo raccoglie, accende e lo consegna a Mimì senza far parola)", translation: "(Rodolfo sees the lamp on the floor, picks it up, lights it, and silently hands it to Mimì.)" },
-          { speaker: "Stage direction", original: "(s’avvia per uscire)", translation: "(starting to leave)" },
-          { speaker: "Mimì", original: "Grazie. Buona sera.", translation: "Thank you. Good evening.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(l’accompagna fino all’uscio)", translation: "(he walks her to the door)" },
-          { speaker: "Rodolfo", original: "Buona sera.", translation: "Good evening.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì esce. Rodolfo ritorna subito al tavolo)", translation: "(Mimì leaves. Rodolfo immediately returns to the table.)" },
-          { speaker: "Stage direction", original: "(interno)", translation: "(from outside)" },
-          { speaker: "Mimì", original: "Oh! Sventata, sventata,", translation: "Oh! What a scatterbrain, what a scatterbrain,", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(rientrando in scena, e fermandosi sul limitare della porta che rimane aperta)", translation: "(coming back into the room and stopping on the threshold of the still-open door)" },
-          { speaker: "Mimì", original: "la chiave della stanza\ndove l’ho lasciata?", translation: "where did I leave\nthe key to my room?", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Non stia sull’uscio; il lume vacilla al vento.", translation: "Don’t stand in the doorway; your light is flickering in the breeze.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Il lume di Mimì si spegne)", translation: "(Mimì’s lamp goes out.)" },
-          { speaker: "Mimì", original: "Oh Dio! Torni ad accenderlo.", translation: "Oh, heavens! Please light it again.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(accorre con la sua candela, ma avvicinandosi alla porta anche il suo lume si spegne: la camera rimane buia)", translation: "(He hurries over with his own candle, but as he reaches the door his light goes out too; the room is left in darkness.)" },
-          { speaker: "Rodolfo", original: "Oh Dio!… Anche il mio s’è spento!", translation: "Oh, heavens!… Mine has gone out too!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Ah!", translation: "Ah!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(avanzandosi a tentoni, incontra il tavolo e vi depone il suo candeliere)", translation: "(Feeling her way forward, she reaches the table and sets down her lamp.)" },
-          { speaker: "Mimì", original: "E la chiave ove sarà?", translation: "And where could the key be?", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(si trova presso la porta e la chiude)", translation: "(he finds himself by the door and closes it)" },
-          { speaker: "Rodolfo", original: "Buio pesto!", translation: "Pitch-dark!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Disgraziata!", translation: "What a wretched fool I am!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Ove sarà?", translation: "Where could it be?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(ripete con grazia, avvicinandosi ancora cautamente)", translation: "(she repeats it sweetly, cautiously edging closer)" },
-          { speaker: "Mimì", original: "Importuna è la vicina…", translation: "What a nuisance the neighbor is…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(si volge dalla parte ove ode la voce di Mimì)", translation: "(turning toward the place where he hears Mimì’s voice)" },
-          { speaker: "Rodolfo", original: "Ma le pare?", translation: "Do you really think so?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Importuna è la vicina…", translation: "What a nuisance the neighbor is…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(cerca la chiave sul pavimento, strisciando i piedi)", translation: "(she searches the floor for the key, shuffling her feet)" },
-          { speaker: "Rodolfo", original: "Cosa dice! Ma le pare!", translation: "What are you saying! Do you really think so!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Cerchi.", translation: "Look for it.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Cerco.", translation: "I am.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(urta nel tavolo, vi depone il suo candeliere e si mette a cercare la chiave brancicando le mani sul pavimento)", translation: "(He bumps into the table, sets down his candle, and feels along the floor for the key.)" },
-          { speaker: "Mimì", original: "Ove sarà?", translation: "Where could it be?", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(trova la chiave e lascia sfuggire una esclamazione, poi subito pentito mette la chiave in tasca)", translation: "(He finds the key and lets out an exclamation, then at once, regretting it, slips the key into his pocket.)" },
-          { speaker: "Rodolfo", original: "Ah!", translation: "Ah!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "L’ha trovata?!", translation: "Have you found it?!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "No.", translation: "No.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Mi parve…", translation: "I thought I heard…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "In verità.", translation: "Truly.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(cerca a tastoni)", translation: "(feeling around)" },
-          { speaker: "Mimì", original: "Cerca?", translation: "Are you looking?", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(finge di cercare, ma guidato dalla voce e dai passi di Mimì, tenta avvicinarsi ad essa)", translation: "(He pretends to search, but follows Mimì’s voice and footsteps, trying to draw closer to her.)" },
-          { speaker: "Rodolfo", original: "Cerco!", translation: "I’m looking!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì, china a terra, cerca sempre a tastoni: in questo momento Rodolfo si è avvicinato ed abbassandosi esso pure, la sua mano incontra quella di Mimì)", translation: "(Mimì keeps feeling along the floor, bent down. Rodolfo has come close; as he bends too, his hand meets hers.)" },
-          { speaker: "Stage direction", original: "(sorpresa)", translation: "(surprised)" },
-          { speaker: "Mimì", original: "Ah!", translation: "Ah!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(tenendo la mano di Mimì, con voce piena d’emozione)", translation: "(holding Mimì’s hand, with deep emotion)" },
-          { speaker: "Rodolfo", original: "Che gelida manina,\nse la lasci riscaldar.\nCercar che giova? Al buio non si trova.\nMa per fortuna è una notte di luna,\ne qui la luna l’abbiamo vicina.", translation: "What a cold little hand,\nlet me warm it for you.\nWhy keep searching? You can’t find it in the dark.\nBut luckily, it’s a moonlit night,\nand here we have the moon close by.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì vorrebbe ritirare la mano)", translation: "(Mimì tries to withdraw her hand.)" },
-          { speaker: "Rodolfo", original: "Aspetti, signorina,\nle dirò con due parole\nchi son, e che faccio, come vivo. Vuole?", translation: "Wait, miss,\nand in just a few words I’ll tell you\nwho I am, what I do, how I live. Shall I?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(Mimì tace: Rodolfo lascia la mano di Mimì, la quale indietreggiando trova una sedia sulla quale si lascia quasi cadere affranta dall’emozione)", translation: "(Mimì is silent. Rodolfo releases her hand. She backs away, finds a chair, and sinks onto it, overcome with emotion.)" },
-          { speaker: "Rodolfo", original: "Chi son? Sono un poeta.\nChe cosa faccio? Scrivo.\nE come vivo? Vivo!\nIn povertà mia lieta\nscialo da gran signore\nrime ed inni d’amore,\nper sogni e per chimere\ne per castelli in aria\nl’anima ho milionaria.\nTalor dal mio forziere\nruban tutti i gioielli\ndue ladri, gli occhi belli.\nV’entrâr con voi pur ora,\ned i miei sogni usati\ne i bei sogni miei\ntosto si dileguâr!\nMa il furto non m’accora\npoiché v’ha preso stanza\nla speranza!\nOr che mi conoscete\nparlate voi. Deh, parlate. Chi siete?\nVi piaccia dir!", translation: "Who am I? I’m a poet.\nWhat do I do? I write.\nAnd how do I live? I live!\nIn my happy poverty\nI spend like a grand gentleman\nmy verses and hymns of love;\nfor dreams and fancies\nand castles in the air,\nmy soul is a millionaire.\nAt times, from my treasure chest,\ntwo thieves steal all the jewels—\nyour beautiful eyes.\nThey entered with you just now,\nand my familiar dreams,\nmy lovely dreams,\nvanished in an instant!\nBut the theft does not grieve me,\nfor hope has taken up\nits dwelling there!\nNow that you know me,\nplease speak. Tell me, who are you?\nDo tell me!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(è un po’ titubante, poi si decide a parlare; sempre seduta)", translation: "(hesitating a little, then deciding to speak, still seated)" },
-          { speaker: "Mimì", original: "Sì.\nMi chiamano Mimì\nma il mio nome è Lucia.\nLa storia mia\nè breve: a tela o a seta\nricamo in casa e fuori…\nSon tranquilla e lieta\ned è mio svago\nfar gigli e rose.\nMi piaccion quelle cose\nche han sì dolce malia,\nche parlano d’amor, di primavere,\nche parlano di sogni e di chimere,\nquelle cose che han nome poesia…\nLei m’intende?", translation: "Yes.\nThey call me Mimì,\nbut my name is Lucia.\nMy story\nis short: on linen or silk\nI embroider at home and elsewhere…\nI am peaceful and happy,\nand my pleasure\nis making lilies and roses.\nI like those things\nwith such a sweet enchantment,\nthat speak of love and springtime,\nthat speak of dreams and fancies—\nthose things called poetry…\nDo you understand me?", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(commosso)", translation: "(moved)" },
-          { speaker: "Rodolfo", original: "Sì.", translation: "Yes.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "Mi chiamano Mimì,\nil perché non so.\nSola mi fo\nil pranzo da me stessa,\nnon vado sempre a messa\nma prego assai il Signor.\nVivo sola, soletta,\nlà in una bianca cameretta:\nguardo sui tetti e in cielo,\nma quando vien lo sgelo\nil primo sole è mio,\nil primo bacio dell’aprile è mio!\nIl primo sole è mio!\nGermoglia in un vaso una rosa…\nFoglia a foglia la spio!\nCosì gentil\nil profumo d’un fior!\nMa i fior ch’io faccio, ahimè!\nI fior ch’io faccio, ahimè, non hanno odore!\nAltro di me non le saprei narrare:\nsono la sua vicina\nche la vien fuori d’ora a importunare.", translation: "They call me Mimì;\nI don’t know why.\nI make my own\nsupper, all by myself;\nI don’t always go to Mass,\nbut I pray often to the Lord.\nI live alone, quite alone,\nthere in a little white room:\nI look out over the rooftops and up at the sky,\nbut when the thaw comes\nthe first sunshine belongs to me,\nthe first kiss of April is mine!\nThe first sunshine is mine!\nA rose sprouts in a pot…\nI watch it, leaf by leaf!\nHow gentle\na flower’s fragrance is!\nBut the flowers I make, alas!\nThe flowers I make, alas, have no scent!\nI can tell you nothing else about myself:\nI am your neighbor,\nwho has come out at this late hour to bother you.", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(dal cortile)", translation: "(from the courtyard)" },
-          { speaker: "Schaunard", original: "Ehi! Rodolfo!", translation: "Hey! Rodolfo!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Colline", original: "Rodolfo!", translation: "Rodolfo!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Marcello", original: "Olà. Non senti?!", translation: "Hey! Can’t you hear us?!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(alle grida degli amici, Rodolfo s’impazienta)", translation: "(Rodolfo grows impatient at his friends’ shouts.)" },
-          { speaker: "Rodolfo", original: "Lumaca!", translation: "Snail!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Colline", original: "Poetucolo!", translation: "Little poet!", literalText: true, speakerTranslation: "Colline" },
-          { speaker: "Schaunard", original: "Accidenti\nal pigro!", translation: "Blast\nthe lazybones!", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Stage direction", original: "(sempre più impaziente, Rodolfo a tentoni si avvia alla finestra e l’apre, spingendosi un poco fuori per rispondere agli amici che sono giù nel cortile: dalla finestra aperta entrano i raggi lunari, rischiarando così la camera)", translation: "(Growing more impatient, Rodolfo feels his way to the window and opens it. Leaning out a little, he answers his friends below in the courtyard. Moonlight streams through the open window and brightens the room.)" },
-          { speaker: "Stage direction", original: "(alla finestra)", translation: "(at the window)" },
-          { speaker: "Rodolfo", original: "Scrivo ancor tre righe a volo.", translation: "I’ll dash off three more lines.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(avviandosi un poco verso la finestra)", translation: "(moving a little toward the window)" },
-          { speaker: "Mimì", original: "Chi son?", translation: "Who is it?", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(rivolgendosi a Mimì)", translation: "(turning to Mimì)" },
-          { speaker: "Rodolfo", original: "Amici.", translation: "Friends.", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Schaunard", original: "Sentirai le tue…", translation: "You’ll get what’s coming to you…", literalText: true, speakerTranslation: "Schaunard" },
-          { speaker: "Marcello", original: "Che te ne fai lì solo?", translation: "What are you doing there all alone?", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Non son solo! Siamo in due.\nAndate da Momus! Tenete il posto,\nci saremo tosto…", translation: "I’m not alone! There are two of us.\nGo on to Momus! Save us a place;\nwe’ll be there soon…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(rimane ancora alla finestra, onde assicurarsi che gli amici se ne vanno)", translation: "(He stays at the window to make sure his friends leave.)" },
-          { speaker: "Stage direction", original: "(allontanandosi)", translation: "(moving away)" },
-          { speaker: "Marcello, Schaunard e Colline", original: "Momus, Momus, Momus,\nzitti e discreti andiamocene via.\nMomus, Momus…", translation: "Momus, Momus, Momus,\nquietly and discreetly, let’s be on our way.\nMomus, Momus…", literalText: true, speakerTranslation: "Marcello, Schaunard, and Colline" },
-          { speaker: "Stage direction", original: "(perdendosi)", translation: "(fading into the distance)" },
-          { speaker: "Marcello", original: "Trovò la poesia!…", translation: "He’s found his poetry!…", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Stage direction", original: "(perdendosi)", translation: "(fading into the distance)" },
-          { speaker: "Schaunard e Colline", original: "Momus, Momus, Momus!", translation: "Momus, Momus, Momus!", literalText: true, speakerTranslation: "Schaunard and Colline" },
-          { speaker: "Stage direction", original: "(Mimì si avvicina ancora più alla finestra, per modo che i raggi lunari la illuminano. Volgendosi, Rodolfo scorge Mimì avvolta come da un nimbo di luce, e la contempla, quasi estatico)", translation: "(Mimì moves closer to the window, where the moonlight falls upon her. Turning, Rodolfo sees her surrounded by a halo of light and gazes at her almost in ecstasy.)" },
-          { speaker: "Rodolfo", original: "O soave fanciulla, o dolce viso…", translation: "O gentle girl, O sweet face…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(molto lontano, ma quasi gridando)", translation: "(very far away, but almost shouting)" },
-          { speaker: "Marcello", original: "Trovò la poesia!", translation: "He’s found his poetry!", literalText: true, speakerTranslation: "Marcello" },
-          { speaker: "Rodolfo", original: "Di mite circonfuso alba lunar!\nIn te ravviso\nil sogno ch’io vorrei sempre sognar!\nFremon già nell’anima\nle dolcezze estreme,\nfremon nell’anima\ndolcezze estreme,\nnel bacio freme amor!", translation: "A soft moonlit dawn surrounds you!\nIn you I see\nthe dream I would always dream!\nAlready my soul trembles\nwith the sweetest rapture;\nmy soul trembles\nwith the sweetest rapture;\nin a kiss, love quivers!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(cingendo con le braccia Mimì)", translation: "(putting his arms around Mimì)" },
-          { speaker: "Stage direction", original: "(assai commossa)", translation: "(deeply moved)" },
-          { speaker: "Mimì", original: "Ah! Tu sol comandi, amore!…\nOh! Come dolci scendono\nle sue lusinghe al core,\ntu sol comandi, amor!", translation: "Ah! Love, you alone command!…\nOh, how sweetly your enticements\ndescend upon my heart;\nlove, you alone command!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(quasi abbandonandosi)", translation: "(almost yielding)" },
-          { speaker: "Stage direction", original: "(Rodolfo bacia Mimì)", translation: "(Rodolfo kisses Mimì.)" },
-          { speaker: "Stage direction", original: "(svincolandosi)", translation: "(breaking free)" },
-          { speaker: "Mimì", original: "No, per pietà!", translation: "No, please!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Sei mia!", translation: "You are mine!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Mimì", original: "V’aspettan gli amici…", translation: "Your friends are waiting…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "Già mi mandi via?", translation: "Are you sending me away already?", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(titubante)", translation: "(hesitantly)" },
-          { speaker: "Mimì", original: "Vorrei dir… ma non oso…", translation: "I’d like to say… but I don’t dare…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(con gentilezza)", translation: "(gently)" },
-          { speaker: "Rodolfo", original: "Di’!…", translation: "Tell me!…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(con graziosa furberia)", translation: "(with playful coyness)" },
-          { speaker: "Mimì", original: "Se venissi con voi?", translation: "What if I came with you?", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(sorpreso)", translation: "(surprised)" },
-          { speaker: "Rodolfo", original: "Che?… Mimì!", translation: "What?… Mimì!", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(insinuante)", translation: "(suggestively)" },
-          { speaker: "Rodolfo", original: "Sarebbe così dolce restar qui.\nC’è freddo fuori…", translation: "It would be so sweet to stay here.\nIt’s cold outside…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(con grande abbandono)", translation: "(with heartfelt abandon)" },
-          { speaker: "Mimì", original: "Vi starò vicina!", translation: "I’ll stay close to you!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Rodolfo", original: "E al ritorno?…", translation: "And when we come back?…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(maliziosa)", translation: "(mischievously)" },
-          { speaker: "Mimì", original: "Curioso!", translation: "How curious!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(aiuta amorosamente Mimì a mettersi lo scialle; con molta grazia a Mimì)", translation: "(tenderly helping Mimì put on her shawl, with great gentleness)" },
-          { speaker: "Rodolfo", original: "Dammi il braccio, mia piccina…", translation: "Give me your arm, my little one…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(dà il braccio a Rodolfo)", translation: "(she gives Rodolfo her arm)" },
-          { speaker: "Mimì", original: "Obbedisco, signor!", translation: "I obey, sir!", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(s’avviano sottobraccio alla porta d’uscita)", translation: "(they set off arm in arm toward the exit)" },
-          { speaker: "Rodolfo", original: "Che m’ami di’…", translation: "Tell me you love me…", literalText: true, speakerTranslation: "Rodolfo" },
-          { speaker: "Stage direction", original: "(con abbandono)", translation: "(with tender abandon)" },
-          { speaker: "Mimì", original: "Io t’amo…", translation: "I love you…", literalText: true, speakerTranslation: "Mimì" },
-          { speaker: "Stage direction", original: "(escono)", translation: "(they leave)" },
-          { speaker: "Stage direction", original: "(di fuori)", translation: "(offstage)" },
-          { speaker: "Mimì e Rodolfo", original: "Amor! Amor! Amor!", translation: "Love! Love! Love!", literalText: true, speakerTranslation: "Mimì and Rodolfo" },
-          { speaker: "Stage direction", original: "(cala il sipario)", translation: "(the curtain falls)" }
+          {
+            "speaker": "Stage direction",
+            "original": "a Rodolfo",
+            "translation": "to Rodolfo",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Che fai?",
+            "translation": "What are you doing?",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Nei cieli bigi\nguardo fumar dai mille\ncomignoli Parigi",
+            "translation": "In the gray skies\nI watch smoke rise from the thousand\nchimneys of Paris",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "additando il camino senza fuoco",
+            "translation": "pointing to the unlit fireplace",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "e penso a quel poltrone\ndi un vecchio caminetto ingannatore\nche vive in ozio come un gran signor!",
+            "translation": "and think of that idler,\nthat deceitful old fireplace,\nliving at leisure like a grand gentleman!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Le sue rendite oneste\nda un pezzo non riceve.",
+            "translation": "Its honest income\nit hasn’t received for some time.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Quelle sciocche foreste\nche fan sotto la neve?",
+            "translation": "Those foolish forests—\nwhat are they doing beneath the snow?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Rodolfo, io voglio dirti\nun mio pensier profondo:\nho un freddo cane.",
+            "translation": "Rodolfo, I want to tell you\na profound thought of mine:\nI’m freezing terribly.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "soffiando sulle dita",
+            "translation": "breathing on his fingers",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ed io, Marcel, non ti nascondo\nche non credo al sudor della fronte!",
+            "translation": "And I, Marcello, won’t hide from you\nthat I don’t believe in earning my bread by the sweat of my brow!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Ho diacciate\nle dita… quasi ancor le tenessi immollate,\ngiù in quella gran ghiacciaia che è il cuore di Musetta.",
+            "translation": "My fingers are frozen—\nalmost as if I still had them soaking\nin that great icebox that is Musetta’s heart.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "lascia sfuggire un lungo sospirone, e tralascia di dipingere, deponendo tavolozza e pennelli",
+            "translation": "he lets out a long sigh and stops painting, setting down his palette and brushes",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "L’amor è un caminetto che sciupa troppo…",
+            "translation": "Love is a fireplace that consumes too much…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "E in fretta!",
+            "translation": "And too fast!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Dove l’uomo è fascina…",
+            "translation": "Where the man is the firewood…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "E la donna è l’alare…",
+            "translation": "And the woman is the andiron…",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "L’uno brucia in un soffio…",
+            "translation": "One burns up in a flash…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "E l’altro sta a guardare.",
+            "translation": "And the other just watches.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ma intanto qui si gela…",
+            "translation": "Meanwhile, we’re freezing here…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "E si muore d’inedia!",
+            "translation": "And starving to death!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Fuoco ci vuole…",
+            "translation": "We need a fire…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "afferrando una sedia e facendo atto di spezzarla",
+            "translation": "grabbing a chair and starting to break it",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Aspetta… sacrifichiam la sedia!",
+            "translation": "Wait… let’s sacrifice the chair!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo impedisce con energia l’atto di Marcello",
+            "translation": "Rodolfo forcefully stops Marcello",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con gioia, per un’idea che gli è balenata",
+            "translation": "joyfully, struck by an idea",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Eureka!",
+            "translation": "Eureka!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "corre al tavolo e di sotto ne leva un voluminoso scartafaccio",
+            "translation": "he runs to the table and pulls out a bulky manuscript from beneath it",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Trovasti?",
+            "translation": "Have you found it?",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Sì! Aguzza\nl’ingegno. L’idea vampi in fiamma!",
+            "translation": "Yes! Sharpen\nyour wits. Let the idea burst into flame!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "additando il suo quadro",
+            "translation": "pointing to his painting",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Bruciamo il Mar Rosso?",
+            "translation": "Shall we burn the Red Sea?",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "No. Puzza\nla tela dipinta. Il mio dramma,\nl’ardente mio dramma ci scaldi.",
+            "translation": "No. It stinks,\npainted canvas. My drama,\nmy fiery drama will warm us.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con comico spavento",
+            "translation": "with comic alarm",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Vuoi leggerlo forse? Mi geli.",
+            "translation": "Are you going to read it, perhaps? You’re chilling me.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "No, in cener la carta si sfaldi\ne l’estro rivoli a’ suoi cieli.\nAl secol gran danno minaccia!\nÈ Roma in periglio!",
+            "translation": "No, let the pages crumble to ash,\nand let inspiration return to its heavens.\nA great disaster threatens the age!\nRome is in peril!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Gran cor!",
+            "translation": "What courage!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dà a Marcello una parte dello scartafaccio",
+            "translation": "he gives Marcello part of the manuscript",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "A te l’atto primo.",
+            "translation": "Here, the first act is yours.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Qua!",
+            "translation": "Give it here!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Straccia.",
+            "translation": "Tear it up.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Accendi!",
+            "translation": "Light it!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo batte un acciarino, accende una candela e va al camino con Marcello: insieme danno fuoco ad una parte dello scartafaccio buttato sul focolare, poi entrambi prendono delle sedie e seggono, riscaldandosi voluttuosamente",
+            "translation": "Rodolfo strikes a flint and lights a candle. He and Marcello go to the fireplace and set part of the manuscript alight. Then they each take a chair and sit, luxuriating in the warmth.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Che lieto baglior!",
+            "translation": "What a lovely glow!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Che lieto baglior!",
+            "translation": "What a lovely glow!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si apre con fracasso la porta in fondo ed entra Colline gelato, intirizzito, battendo i piedi, gettando con ira sul tavolo un pacco di libri legato con un fazzoletto",
+            "translation": "the back door bursts open. Colline enters, frozen and shivering, stamping his feet and angrily throwing a bundle of books tied in a handkerchief onto the table",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Già dell’Apocalisse appariscono i segni.\nIn giorno di Vigilia non s’accettano pegni!…",
+            "translation": "The signs of the Apocalypse are already appearing.\nOn Christmas Eve, they won’t accept pawns!…",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si interrompe sorpreso, vedendo fuoco nel camino",
+            "translation": "he breaks off, surprised to see a fire in the fireplace",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Una fiammata!",
+            "translation": "A blaze!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Colline",
+            "translation": "to Colline",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Zitto! Si dà il mio dramma…",
+            "translation": "Quiet! My drama is being given…",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Al fuoco.\nLo trovo scintillante!",
+            "translation": "To the fire.\nI find it sparkling!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Vivo!",
+            "translation": "Alive!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "il fuoco diminuisce",
+            "translation": "the fire dies down",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Ma dura poco.",
+            "translation": "But it won’t last long.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "La brevità, gran pregio!",
+            "translation": "Brevity is a great virtue!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "levando la sedia a Rodolfo",
+            "translation": "taking Rodolfo’s chair",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Autore, a me la sedia!",
+            "translation": "Author, give me the chair!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Quest’intermezzi fan morir d’inedia! Presto.",
+            "translation": "These interludes are starving us to death! Hurry.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "prende un’altra parte dello scartafaccio",
+            "translation": "he takes another part of the manuscript",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Atto secondo.",
+            "translation": "Act Two.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Colline",
+            "translation": "to Colline",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Non far susurro.",
+            "translation": "Don’t make a sound.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo straccia lo scartafaccio e lo getta nel camino: il fuoco si ravviva. Colline avvicina ancora più la sedia e si riscalda le mani: Rodolfo è in piedi presso ai due, col rimanente dello scartafaccio",
+            "translation": "Rodolfo tears up the manuscript and throws it into the fireplace; the flames leap up. Colline draws his chair closer and warms his hands. Rodolfo stands beside them with the rest of the manuscript.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Pensier profondo.",
+            "translation": "A profound thought.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Giusto color.",
+            "translation": "Just the right color.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "In quell’azzurro guizzo languente\nsfuma un’ardente scena d’amor!",
+            "translation": "In that fading blue flicker\nan ardent scene of love dissolves!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Scoppietta un foglio.",
+            "translation": "A page crackles.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Là c’eran baci!",
+            "translation": "There were kisses in there!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "getta sul fuoco il rimanente dello scartafaccio",
+            "translation": "he throws the rest of the manuscript into the fire",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Tre atti or voglio d’un colpo udir!",
+            "translation": "Now I want to hear three acts at once!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Tal degli audaci l’idea s’integra.",
+            "translation": "Thus the bold idea is made complete.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "applaudono entusiasticamente",
+            "translation": "they applaud enthusiastically",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo, Marcello e Colline",
+            "original": "Bello in allegra vampa svanir.",
+            "translation": "How fine to vanish in a merry blaze.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Marcello, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "la fiamma diminuisce",
+            "translation": "the flame dwindles",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Oh! Dio… già s’abbassa la fiamma.",
+            "translation": "Oh, heavens… the flame is already sinking.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Che vano, che fragile dramma.",
+            "translation": "What an empty, fragile drama.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Già scricchiola, increspasi, muor!",
+            "translation": "It crackles, curls, and dies!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "il fuoco è spento",
+            "translation": "the fire goes out",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello e Colline",
+            "original": "Abbasso! Abbasso l’autor!",
+            "translation": "Down with the author! Down with him!",
+            "literalText": true,
+            "speakerTranslation": "Marcello and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dalla porta di mezzo entrano due garzoni, portando l’uno provviste di cibi, bottiglie di vino, sigari, e l’altro un fascio di legna. Al rumore i tre innanzi al camino si volgono e con grida di meraviglia si slanciano sulle provviste portate dal garzone e le depongono sul tavolo: Colline prende la legna e la porta presso il caminetto",
+            "translation": "Two delivery boys enter through the middle door: one carries food, bottles of wine, and cigars; the other, a bundle of firewood. At the noise, the three men by the fireplace turn and rush delightedly toward the supplies, which they put on the table. Colline takes the wood to the hearth.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Legna!",
+            "translation": "Firewood!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Sigari!",
+            "translation": "Cigars!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Bordò!",
+            "translation": "Bordeaux!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Legna!",
+            "translation": "Firewood!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Bordò!",
+            "translation": "Bordeaux!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "comincia a far sera",
+            "translation": "evening begins to fall",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo, Marcello e Colline",
+            "original": "Le dovizie d’una fiera\nil destin ci destinò.",
+            "translation": "A fair’s abundance\nhas been bestowed on us by fate.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Marcello, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "entra con aria di trionfo; gettando a terra alcuni scudi",
+            "translation": "Schaunard enters triumphantly and tosses a few coins onto the floor",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "La banca di Francia\nper voi si sbilancia!",
+            "translation": "The Bank of France\nhas opened its purse for you!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "i due garzoni partono. Colline, Rodolfo e Marcello raccattano gli scudi",
+            "translation": "The two delivery boys leave. Colline, Rodolfo, and Marcello gather up the coins.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Raccatta, raccatta…",
+            "translation": "Pick them up, pick them up…",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Son pezzi di latta…",
+            "translation": "They’re bits of tin…",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "mostrando a Marcello uno scudo",
+            "translation": "showing Marcello a coin",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Sei sordo? Sei lippo?\nQuest’uomo chi è?",
+            "translation": "Are you deaf? Are you blind?\nWho is this man?",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "inchinandosi",
+            "translation": "bowing",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Luigi Filippo.\nM’inchino al mio Re.",
+            "translation": "Louis Philippe.\nI bow to my king.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Rodolfo, Marcello, Schaunard e Colline",
+            "original": "Sta Luigi Filippo ai nostri piè.",
+            "translation": "There lies Louis Philippe at our feet.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Marcello, Schaunard, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "depongono gli scudi sul tavolo",
+            "translation": "They put the coins on the table.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "vorrebbe raccontare la sua fortuna, ma gli altri non l’ascoltano: vanno e vengono affaccendati disponendo ogni cosa sul tavolo",
+            "translation": "Schaunard tries to tell them of his good fortune, but they do not listen; they bustle about, arranging everything on the table.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Or vi dirò: quest’oro… o meglio, argento…\nha la sua brava istoria…",
+            "translation": "Now I’ll tell you: this gold… or rather, silver…\nhas quite a story behind it…",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ponendo la legna nel camino",
+            "translation": "putting the firewood in the fireplace",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Riscaldiamo il camino.",
+            "translation": "Let’s warm the hearth.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Tanto freddo ha sofferto.",
+            "translation": "It has suffered such cold.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Un inglese, un signor, Lord o Milord\nche sia, volea un musicista!",
+            "translation": "An Englishman, a gentleman, a lord or milord,\nwhatever he was, wanted a musician!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "gettando via i libri di Colline dal tavolo",
+            "translation": "throwing Colline’s books off the table",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Via!\nPrepariamo\nla tavola!",
+            "translation": "Move!\nLet’s set\nthe table!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Io volo…",
+            "translation": "I’m on it…",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "L’esca dov’è?",
+            "translation": "Where’s the kindling?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Là.",
+            "translation": "There.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Qua.",
+            "translation": "Here.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Colline e Marcello accendono un gran fuoco nel camino",
+            "translation": "Colline and Marcello light a large fire in the fireplace.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "E mi presento.\nM’accetta,\ngli domando:",
+            "translation": "So I introduce myself.\nHe takes me on;\nI ask him:",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Arrosto freddo!",
+            "translation": "Cold roast!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Colline e Marcello mettono a posto le vivande, mentre Rodolfo accende l’altra candela",
+            "translation": "Colline and Marcello arrange the food while Rodolfo lights the other candle.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Pasticcio dolce!",
+            "translation": "Sweet pie!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "A quando le lezioni?\nMi presento,\nm’accetta e gli domando:\na quando le lezioni?\nRisponde:\nIncominciam!\n‘Guardare!’ e un pappagallo m’addita al primo pian,\npoi soggiunge: ‘Voi suonare\nfinché quello morire!’\nE fu così:\nsuonai tre lunghi dì…\nAllora usai l’incanto\ndi mia presenza bella…\nAffascinai l’ancella!\nGli propinai prezzemolo…",
+            "translation": "‘When do the lessons begin?’\nI introduce myself,\nhe takes me on, and I ask:\n‘When do the lessons begin?’\nHe replies:\n‘We begin!’\n‘Watch!’ And he points me to a parrot on the first floor,\nthen adds: ‘You play\nuntil it die!’\nAnd so it went:\nI played for three long days…\nThen I used the charm\nof my handsome presence…\nI captivated the maid!\nI fed him parsley…",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Fulgida folgori la sala splendida!",
+            "translation": "The splendid hall flashes with dazzling light!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "mette le due candele accese sul tavolo",
+            "translation": "he puts the two lit candles on the table",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Or le candele.",
+            "translation": "Now, the candles.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Pasticcio dolce.",
+            "translation": "Sweet pie.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Mangiar senza tovaglia!",
+            "translation": "Eating without a tablecloth!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "levando di tasca un giornale e spiegandolo",
+            "translation": "taking a newspaper from his pocket and unfolding it",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Un’idea!",
+            "translation": "An idea!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello e Colline",
+            "original": "Il Costituzional!",
+            "translation": "The Constitutionnel!",
+            "literalText": true,
+            "speakerTranslation": "Marcello and Colline"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ottima carta!\nSi mangia e si divora un’appendice!",
+            "translation": "Excellent paper!\nWe’ll eat and devour an entire supplement!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dispongono il giornale come una tovaglia: Rodolfo e Marcello avvicinano le quattro sedie al tavolo, mentre Colline è sempre affaccendato coi piatti di vivande",
+            "translation": "They spread the newspaper as a tablecloth. Rodolfo and Marcello draw the four chairs up to the table while Colline busies himself with the dishes.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Lorito allargò l’ali,\nLorito il becco aprì,\nun poco di prezzemolo,\nda Socrate morì!",
+            "translation": "The parrot spread its wings,\nthe parrot opened its beak;\na little parsley,\nand he died like Socrates!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "vedendo che nessuno gli bada, afferra Colline che gli passa vicino con un piatto",
+            "translation": "seeing that no one is paying attention, he grabs Colline as he passes with a dish",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Chi?",
+            "translation": "Who?",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "indispettito",
+            "translation": "annoyed",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Che il diavolo vi porti tutti quanti!\nEd or che fate?\nNo!\nQueste cibarie\nsono la salmeria\npei dì futuri\ntenebrosi e oscuri.\nPranzare in casa\nil dì della Vigilia\nmentre il Quartier Latino le sue vie\naddobba di salsiccie e leccornie?\nQuando un olezzo di frittelle imbalsama\nle vecchie strade?\nLà le ragazze cantano contente…",
+            "translation": "May the devil take the lot of you!\nAnd what are you doing now?\nNo!\nThis food\nis our reserve supply\nfor future days,\ndark and gloomy.\nDine at home\non Christmas Eve,\nwhile the Latin Quarter decks its streets\nwith sausages and delicacies?\nWhen the scent of fritters perfumes\nthe old streets?\nThere the girls are singing happily…",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Rodolfo, Marcello e Colline",
+            "original": "La vigilia di Natal!",
+            "translation": "On Christmas Eve!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Marcello, and Colline"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Ed han per eco ognuna uno studente!\nUn po’ di religione, o miei signori!\nSi beva in casa, ma si pranzi fuor!",
+            "translation": "And each has a student for an echo!\nA little piety, gentlemen!\nLet’s drink at home, but dine out!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo chiude la porta a chiave, poi tutti vanno intorno al tavolo e versano il vino",
+            "translation": "Rodolfo locks the door. Then they all gather around the table and pour the wine.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "internamente; battendo due colpi alla porta",
+            "translation": "from outside, knocking twice on the door",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Si può?",
+            "translation": "May I come in?",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "tutti s’arrestano stupefatti",
+            "translation": "everyone freezes in astonishment",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Chi è là?",
+            "translation": "Who’s there?",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Benoît!",
+            "translation": "Benoît!",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Il padrone di casa!",
+            "translation": "The landlord!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "depongono i bicchieri",
+            "translation": "they put down their glasses",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Uscio sul muso!",
+            "translation": "The door right in his face!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "gridando verso la porta",
+            "translation": "shouting toward the door",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Colline",
+            "original": "Non c’è nessuno!",
+            "translation": "There’s nobody here!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "È chiuso!",
+            "translation": "It’s locked!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "interno",
+            "translation": "from outside",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Una parola.",
+            "translation": "Just a word.",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dopo essersi consultato cogli amici, va ad aprire la porta",
+            "translation": "after conferring with his friends, Schaunard goes to open the door",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Sola!",
+            "translation": "Just one!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "entra sorridente, mostrando una carta a Marcello",
+            "translation": "Benoît enters smiling and shows Marcello a paper",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Affitto!",
+            "translation": "The rent!",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ricevendolo con grande cordialità",
+            "translation": "welcoming him with great warmth",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Olà!\nDate una sedia.",
+            "translation": "Well now!\nBring him a chair.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Presto.",
+            "translation": "Quickly.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "schermendosi",
+            "translation": "trying to wave them off",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Non occorre… vorrei…",
+            "translation": "There’s no need… I wanted…",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "insistendo con dolce violenza lo fa sedere",
+            "translation": "insisting with gentle force, Schaunard makes him sit down",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Segga.",
+            "translation": "Please, sit.",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "offre a Benoît un bicchiere",
+            "translation": "offering Benoît a glass",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Vuol bere?",
+            "translation": "Would you like a drink?",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Grazie.",
+            "translation": "Thank you.",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Benoît, Rodolfo, Marcello e Schaunard seduti: Colline in piedi",
+            "translation": "Benoît, Rodolfo, Marcello, and Schaunard sit; Colline remains standing.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Tocchiamo!",
+            "translation": "Let’s clink glasses!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Tocchiamo!",
+            "translation": "Let’s clink glasses!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Tutti bevono",
+            "translation": "Everyone drinks.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Beva!",
+            "translation": "Drink up!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Tocchiam!",
+            "translation": "A toast!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "depone il bicchiere e si volge nuovamente a Marcello mostrandogli la carta",
+            "translation": "Benoît puts down his glass and turns back to Marcello, showing him the paper.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Quest’è l’ultimo trimestre…",
+            "translation": "This is the last quarter’s rent…",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ingenuamente",
+            "translation": "innocently",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "N’ho piacere.",
+            "translation": "I’m glad to hear it.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Benoît",
+            "original": "E quindi…",
+            "translation": "And so…",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "interrompendolo",
+            "translation": "interrupting him",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Ancora un sorso.",
+            "translation": "One more sip.",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Grazie.",
+            "translation": "Thank you.",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "alzandosi",
+            "translation": "standing up",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Tocchiam!",
+            "translation": "A toast!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Tocchiam!",
+            "translation": "A toast!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Rodolfo, Marcello, Schaunard e Colline",
+            "original": "(alzandosi e toccando tutti il bicchiere di Benoît)\nAlla sua salute!",
+            "translation": "(standing and all touching their glasses to Benoît’s)\nTo your health!",
+            "literalText": false,
+            "speakerTranslation": "Rodolfo, Marcello, Schaunard, and Colline",
+            "inlineDirections": [
+              "alzandosi e toccando tutti il bicchiere di Benoît",
+              "standing and all touching their glasses to Benoît’s"
+            ]
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo si siede e tutti bevono: Colline va a prendere lo sgabello presso il cavalletto e si siede ancor esso",
+            "translation": "Rodolfo sits and everyone drinks. Colline fetches the stool by the easel and sits down too.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "riprendendo con Marcello",
+            "translation": "resuming his conversation with Marcello",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Benoît",
+            "original": "A lei ne vengo,\nperché il trimestre scorso…\nmi promise…",
+            "translation": "I came to see you\nbecause last quarter…\nyou promised me…",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "mostrando a Benoît gli scudi che sono sul tavolo",
+            "translation": "showing Benoît the coins on the table",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Promisi ed or mantengo.",
+            "translation": "I promised, and now I’ll make good on it.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con stupore, piano a Marcello",
+            "translation": "in surprise, quietly to Marcello",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Che fai!?",
+            "translation": "What are you doing!?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "piano a Marcello",
+            "translation": "quietly to Marcello",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Sei pazzo!!",
+            "translation": "Are you mad!!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Benoît, senza badare ai due",
+            "translation": "to Benoît, ignoring the other two",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Ha visto? Or via\nresti un momento in nostra compagnia.",
+            "translation": "You see? Now then,\nstay a little while in our company.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "appoggiando i gomiti sulla tavola; con marcata intenzione",
+            "translation": "leaning his elbows on the table, with pointed intent",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Dica: quant’anni ha,\ncaro signor Benoît?",
+            "translation": "Tell us, how old are you,\ndear Monsieur Benoît?",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Gl’anni? Per carità!",
+            "translation": "My age? Good heavens!",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Su e giù la nostra età.",
+            "translation": "About our age, give or take.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "protestando",
+            "translation": "protesting",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Di più! Molto di più.",
+            "translation": "Older! Much older.",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Ha detto su e giù.",
+            "translation": "He said give or take.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "mentre fanno chiacchierare Benoît, gli riempiono il bicchiere tosto che l’ha vuotato",
+            "translation": "As they keep Benoît talking, they refill his glass as soon as he empties it.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "abbassando la voce e con tono di furberia",
+            "translation": "lowering his voice, slyly",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "L’altra sera al Mabil… l’han colto\nin peccato d’amor!",
+            "translation": "The other night at the Mabil… they caught you\nin the act of love!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "inquieto",
+            "translation": "uneasy",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Io!?",
+            "translation": "Me!?",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Al Mabil… l’altra sera l’han colto.\nNeghi!",
+            "translation": "At the Mabil… they caught you the other night.\nDeny it!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Un caso.",
+            "translation": "A coincidence.",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "lusingandolo",
+            "translation": "flattering him",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Bella donna!",
+            "translation": "A beautiful woman!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "mezzo brillo, subito",
+            "translation": "already a little tipsy, promptly",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Ah, molto.",
+            "translation": "Ah, very.",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "gli batte una mano sulla spalla",
+            "translation": "clapping him on one shoulder",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Briccone!",
+            "translation": "You rascal!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Briccone!",
+            "translation": "You rascal!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "fa lo stesso sull’altra spalla",
+            "translation": "doing the same on his other shoulder",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Seduttore!",
+            "translation": "You seducer!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Briccone!",
+            "translation": "You rascal!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Briccone!",
+            "translation": "You rascal!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "magnificando",
+            "translation": "in exaggerated praise",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Una quercia, un cannone…",
+            "translation": "A mighty oak, a cannon…",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "L’uomo ha buon gusto!",
+            "translation": "The man has good taste!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ridendo",
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Eh! Eh!",
+            "translation": "Ha! Ha!",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Il crin ricciuto e fulvo!",
+            "translation": "With curly, tawny hair!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Briccon!",
+            "translation": "You rascal!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Ei gongolava arzillo e pettoruto.",
+            "translation": "He strutted about, jaunty and broad-chested.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ringalluzzito",
+            "translation": "puffed up with pride",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Son vecchio, ma robusto.",
+            "translation": "I’m old, but sturdy.",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con ironica gravità",
+            "translation": "with ironic solemnity",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo, Schaunard e Colline",
+            "original": "Ei gongolava arzuto e pettorillo.",
+            "translation": "He strutted about, jaunty and broad-chested.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Schaunard, and Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "E a lui cedea, la femminil virtù!",
+            "translation": "And feminine virtue yielded to him!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "in piena confidenza",
+            "translation": "speaking in full confidence",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Timido in gioventù\nora me ne ripago. Si sa! È uno svago\nqualche donnetta allegra\n(accenna a forme accentuate)\ne un po’…\nNon dico una balena\no un mappamondo\no un viso tondo\nda luna piena!\nMa magra, proprio magra, no, poi no!\nLe donne magre son grattacapi\ne spesso sopracapi…\ne son piene di doglie,\nper esempio: mia moglie…",
+            "translation": "Shy in my youth,\nnow I’m making up for it. You know how it is! A bit of fun\nwith some cheerful little woman,\n(indicating generous curves)\nand a little…\nI don’t mean a whale,\nor a globe,\nor a round face\nlike the full moon!\nBut thin—really thin? No, never!\nThin women are a headache,\nand often a heartache…\nand they’re full of aches,\nlike my wife, for instance…",
+            "literalText": false,
+            "speakerTranslation": "Benoît",
+            "inlineDirections": [
+              "accenna a forme accentuate",
+              "indicating generous curves"
+            ]
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dà un pugno sulla tavola e si alza: gli altri lo imitano: Benoît li guarda sbalordito",
+            "translation": "Marcello bangs the table and rises; the others follow. Benoît watches them, astonished.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Quest’uomo ha moglie\ne sconcie voglie\nha nel cor.",
+            "translation": "This man has a wife\nand shameful desires\nin his heart.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Schaunard e Colline",
+            "original": "Orror!",
+            "translation": "Horror!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard and Colline"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "E ammorba, e appesta\nla nostra onesta\nmagion!",
+            "translation": "He fouls and poisons\nour honest\nhome!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Schaunard e Colline",
+            "original": "Fuor!",
+            "translation": "Out!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Benoît, allibito, si alza e tenta inutilmente di parlare",
+            "translation": "Benoît, stunned, rises and tries in vain to speak.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Si abbruci dello zucchero.",
+            "translation": "Burn some sugar to clear the air.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Si discacci il reprobo.",
+            "translation": "Drive the reprobate away.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "È la morale offesa che vi scaccia!",
+            "translation": "Out you go, expelled by our offended morals!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "gridando",
+            "translation": "shouting",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Io di… io di…",
+            "translation": "I… I…",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "circondano Benoît, e lo spingono poco a poco verso la porta",
+            "translation": "They surround Benoît and gradually push him toward the door.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sempre più sbalordito",
+            "translation": "in ever greater astonishment",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Benoît",
+            "original": "Miei signori…",
+            "translation": "Gentlemen…",
+            "literalText": true,
+            "speakerTranslation": "Benoît"
+          },
+          {
+            "speaker": "Marcello, Schaunard e Colline",
+            "original": "Silenzio! Via, signore…",
+            "translation": "Silence! Out you go, sir…",
+            "literalText": true,
+            "speakerTranslation": "Marcello, Schaunard, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "spingendo Benoît fuori della porta",
+            "translation": "pushing Benoît out through the door",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo, Marcello, Schaunard e Colline",
+            "original": "Via di qua!",
+            "translation": "Out of here!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Marcello, Schaunard, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "tutti sulla porta guardando verso il pianerottolo della scala",
+            "translation": "They all stand in the doorway, looking toward the landing.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo, Marcello, Schaunard e Colline",
+            "original": "E buona sera a vostra signoria…",
+            "translation": "And good evening to your lordship…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Marcello, Schaunard, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ritornando nel mezzo della scena; ridendo",
+            "translation": "returning to the middle of the room, laughing",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo, Marcello, Schaunard e Colline",
+            "original": "Ah! Ah! Ah! Ah!",
+            "translation": "Ha! Ha! Ha! Ha!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo, Marcello, Schaunard, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "chiude l’uscio",
+            "translation": "he shuts the door",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Ho pagato il trimestre!",
+            "translation": "I’ve paid the quarter’s rent!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Al Quartiere Latin ci attende Momus.",
+            "translation": "Momus is waiting for us in the Latin Quarter.",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Viva chi spende!",
+            "translation": "Long live the spender!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Dividiamo il bottin!",
+            "translation": "Let’s divide the spoils!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si dividono gli scudi rimasti sul tavolo",
+            "translation": "They divide the coins left on the table.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Dividiam!",
+            "translation": "Let’s divide them!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Dividiam!",
+            "translation": "Let’s divide them!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "presentando uno specchio rotto a Colline",
+            "translation": "holding a broken mirror up for Colline",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Là ci son beltà scese dal cielo.\nOr che sei ricco, bada alla decenza.\nOrso, ravviati il pelo!",
+            "translation": "There are beauties come down from heaven.\nNow that you’re rich, make yourself presentable.\nBear, smooth your fur!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sveste il camiciotto da lavoro e indossa l’abito",
+            "translation": "he takes off his work jacket and puts on his coat",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Farò la conoscenza\nla prima volta d’un barbitonsore.\nGuidatemi al ridicolo\noltraggio d’un rasoio.\nAndiam!",
+            "translation": "For the first time, I’ll make the acquaintance\nof a barber.\nLead me to the ridiculous\naffront of a razor.\nLet’s go!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "comicamente",
+            "translation": "comically",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard, poi Marcello, poi Schaunard, poi Colline",
+            "original": "Andiam!",
+            "translation": "Let’s go!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard, then Marcello, then Schaunard, then Colline"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Io resto\nper terminar l’articolo\ndi fondo del Castoro.",
+            "translation": "I’ll stay\nto finish the leading article\nfor Il Castoro.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Fa’ presto.",
+            "translation": "Be quick.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Cinque minuti. Conosco il mestier.",
+            "translation": "Five minutes. I know my trade.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "T’aspetterem dabbasso dal portier.",
+            "translation": "We’ll wait for you downstairs by the porter.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Se tardi udrai che coro!",
+            "translation": "If you’re late, you’ll hear what a chorus we’ll make!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Cinque minuti.",
+            "translation": "Five minutes.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "prende dal tavolo un lume e va ad aprire l’uscio: Marcello, Schaunard e Colline escono e scendono la scala",
+            "translation": "He takes a lamp from the table and opens the door. Marcello, Schaunard, and Colline leave and go down the stairs.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "nell’escire",
+            "translation": "as he leaves",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Taglia corta la coda al tuo Castor!",
+            "translation": "Keep that Castor article short!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "di fuori",
+            "translation": "from outside",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Occhio alla scala, tienti\nalla ringhiera.",
+            "translation": "Watch the stairs; hold on\nto the railing.",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sul pianerottolo, presso l’uscio aperto alzando il lume",
+            "translation": "on the landing by the open door, lifting the lamp",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Adagio.",
+            "translation": "Careful.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Colline",
+            "original": "È buio pesto.",
+            "translation": "It’s pitch-dark.",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "le voci di Marcello, Schaunard e Colline si fanno sempre più lontane",
+            "translation": "Marcello, Schaunard, and Colline’s voices grow fainter and fainter.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Maledetto portier!",
+            "translation": "Damn that porter!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "rumore d’uno che ruzzola",
+            "translation": "the sound of someone tumbling down",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Accidenti!",
+            "translation": "Damnation!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Colline, sei morto?",
+            "translation": "Colline, are you dead?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "lontano, dal basso della scala",
+            "translation": "far away, from the bottom of the stairs",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Colline",
+            "original": "Non ancor!",
+            "translation": "Not yet!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "più lontano",
+            "translation": "farther away",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Vien presto!",
+            "translation": "Come soon!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo chiude l’uscio, depone il lume, sgombra un angolo del tavolo, vi colloca calamaio e carta, poi siede e si mette a scrivere dopo avere spento l’altro lume rimasto acceso; scrive, s’interrompe, pensa, ritorna a scrivere; s’inquieta, distrugge lo scritto e getta via la penna",
+            "translation": "Rodolfo shuts the door and sets down the lamp. He clears a corner of the table, places an inkwell and paper there, then sits down to write after extinguishing the other lamp. He writes, stops to think, starts again, grows frustrated, tears up what he has written, and throws away the pen.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sfiduciato",
+            "translation": "discouraged",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Non sono in vena.",
+            "translation": "I’m not in the mood.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì bussa timidamente alla porta",
+            "translation": "Mimì knocks timidly at the door.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Chi è là!?",
+            "translation": "Who’s there!?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "di fuori",
+            "translation": "from outside",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Scusi.",
+            "translation": "Excuse me.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "alzandosi",
+            "translation": "rising",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Una donna!",
+            "translation": "A woman!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Di grazia, mi s’è spento\nil lume.",
+            "translation": "Please, it has gone out—\nmy light.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "corre ad aprire",
+            "translation": "he hurries to open the door",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ecco.",
+            "translation": "There you are.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sull’uscio, con un lume spento in mano ed una chiave",
+            "translation": "at the doorway, holding an unlit lamp and a key",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Vorrebbe?…",
+            "translation": "Would you?…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "S’accomodi un momento.",
+            "translation": "Please, come in for a moment.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Non occorre.",
+            "translation": "There’s no need.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "insistendo",
+            "translation": "insisting",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "La prego, entri.",
+            "translation": "Please, come in.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì entra, ma subito è presa da soffocazione",
+            "translation": "Mimì enters, but is immediately overcome by breathlessness.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "premuroso",
+            "translation": "concerned",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Si sente male?",
+            "translation": "Are you feeling ill?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "No… nulla.",
+            "translation": "No… it’s nothing.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Impallidisce!",
+            "translation": "You’re turning pale!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì tossisce.",
+            "translation": "Mimì coughs.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Il respir… quelle scale…",
+            "translation": "My breath… those stairs…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sviene e Rodolfo è appena a tempo di sorreggerla ed adagiarla su di una sedia, mentre dalle mani di Mimì cadono e candeliere e chiave",
+            "translation": "She faints. Rodolfo just manages to catch her and lay her on a chair; her lamp and key fall from her hands.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "imbarazzato",
+            "translation": "flustered",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ed ora come faccio?…",
+            "translation": "Now what do I do?…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "va a prendere dell’acqua e ne spruzza il viso di Mimì",
+            "translation": "He fetches some water and sprinkles Mimì’s face.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Così!",
+            "translation": "There!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "guardandola con grande interesse",
+            "translation": "looking at her with great interest",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Che viso d’ammalata.",
+            "translation": "What a sickly little face.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì rinviene",
+            "translation": "Mimì comes to.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Si sente meglio?",
+            "translation": "Do you feel better?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Sì.",
+            "translation": "Yes.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Qui c’è tanto freddo. Segga vicino al fuoco…",
+            "translation": "It’s so cold here. Sit by the fire…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì fa cenno di no",
+            "translation": "Mimì gestures no.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Aspetti… un po’ di vino…",
+            "translation": "Wait… a little wine…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Grazie.",
+            "translation": "Thank you.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "le dà il bicchiere e le versa da bere",
+            "translation": "He gives her a glass and pours her a drink.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "A lei.",
+            "translation": "Here you are.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Poco, poco.",
+            "translation": "Just a little.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Così?",
+            "translation": "That much?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Grazie.",
+            "translation": "Thank you.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "beve",
+            "translation": "she drinks",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ammirandola",
+            "translation": "admiring her",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "(Che bella bambina!)",
+            "translation": "(What a lovely girl!)",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "levandosi, cerca il suo candeliere",
+            "translation": "rising, she looks for her lamp",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Ora permetta\nche accenda il lume. È tutto passato.",
+            "translation": "Now let me\nlight my lamp. I’m quite all right again.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Tanta fretta?",
+            "translation": "In such a hurry?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Sì.",
+            "translation": "Yes.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo scorge a terra il candeliere, lo raccoglie, accende e lo consegna a Mimì senza far parola",
+            "translation": "Rodolfo sees the lamp on the floor, picks it up, lights it, and silently hands it to Mimì.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "s’avvia per uscire",
+            "translation": "starting to leave",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Grazie. Buona sera.",
+            "translation": "Thank you. Good evening.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "l’accompagna fino all’uscio",
+            "translation": "he walks her to the door",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Buona sera.",
+            "translation": "Good evening.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì esce. Rodolfo ritorna subito al tavolo",
+            "translation": "Mimì leaves. Rodolfo immediately returns to the table.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "interno",
+            "translation": "from outside",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Oh! Sventata, sventata,",
+            "translation": "Oh! What a scatterbrain, what a scatterbrain,",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "rientrando in scena, e fermandosi sul limitare della porta che rimane aperta",
+            "translation": "coming back into the room and stopping on the threshold of the still-open door",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "la chiave della stanza\ndove l’ho lasciata?",
+            "translation": "The key to my room—\nwhere did I leave it?",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Non stia sull’uscio; il lume vacilla al vento.",
+            "translation": "Don’t stand in the doorway; your light is flickering in the breeze.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Il lume di Mimì si spegne",
+            "translation": "Mimì’s lamp goes out.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Oh Dio! Torni ad accenderlo.",
+            "translation": "Oh, heavens! Please light it again.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "accorre con la sua candela, ma avvicinandosi alla porta anche il suo lume si spegne: la camera rimane buia",
+            "translation": "He hurries over with his own candle, but as he reaches the door his light goes out too; the room is left in darkness.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Oh Dio!… Anche il mio s’è spento!",
+            "translation": "Oh, heavens!… Mine has gone out too!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Ah!",
+            "translation": "Ah!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "avanzandosi a tentoni, incontra il tavolo e vi depone il suo candeliere",
+            "translation": "Feeling her way forward, she reaches the table and sets down her lamp.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "E la chiave ove sarà?",
+            "translation": "And where could the key be?",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si trova presso la porta e la chiude",
+            "translation": "he finds himself by the door and closes it",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Buio pesto!",
+            "translation": "Pitch-dark!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Disgraziata!",
+            "translation": "What a wretched fool I am!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ove sarà?",
+            "translation": "Where could it be?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ripete con grazia, avvicinandosi ancora cautamente",
+            "translation": "she repeats it sweetly, cautiously edging closer",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Importuna è la vicina…",
+            "translation": "What a nuisance the neighbor is…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si volge dalla parte ove ode la voce di Mimì",
+            "translation": "turning toward the place where he hears Mimì’s voice",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ma le pare?",
+            "translation": "Not at all!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Importuna è la vicina…",
+            "translation": "What a nuisance the neighbor is…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "cerca la chiave sul pavimento, strisciando i piedi",
+            "translation": "she searches the floor for the key, shuffling her feet",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Cosa dice! Ma le pare!",
+            "translation": "What are you saying! Not at all!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Cerchi.",
+            "translation": "Look for it.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Cerco.",
+            "translation": "I am.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "urta nel tavolo, vi depone il suo candeliere e si mette a cercare la chiave brancicando le mani sul pavimento",
+            "translation": "He bumps into the table, sets down his candle, and feels along the floor for the key.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Ove sarà?",
+            "translation": "Where could it be?",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "trova la chiave e lascia sfuggire una esclamazione, poi subito pentito mette la chiave in tasca",
+            "translation": "He finds the key and lets out an exclamation, then at once, regretting it, slips the key into his pocket.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Ah!",
+            "translation": "Ah!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "L’ha trovata?!",
+            "translation": "Have you found it?!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "No.",
+            "translation": "No.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Mi parve…",
+            "translation": "I thought I heard…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "In verità.",
+            "translation": "Truly.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "cerca a tastoni",
+            "translation": "feeling around",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Cerca?",
+            "translation": "Are you looking?",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "finge di cercare, ma guidato dalla voce e dai passi di Mimì, tenta avvicinarsi ad essa",
+            "translation": "He pretends to search, but follows Mimì’s voice and footsteps, trying to draw closer to her.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Cerco!",
+            "translation": "I’m looking!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì, china a terra, cerca sempre a tastoni: in questo momento Rodolfo si è avvicinato ed abbassandosi esso pure, la sua mano incontra quella di Mimì",
+            "translation": "Mimì keeps feeling along the floor, bent down. Rodolfo has come close; as he bends too, his hand meets hers.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sorpresa",
+            "translation": "surprised",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Ah!",
+            "translation": "Ah!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "tenendo la mano di Mimì, con voce piena d’emozione",
+            "translation": "holding Mimì’s hand, with deep emotion",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Che gelida manina,\nse la lasci riscaldar.\nCercar che giova? Al buio non si trova.\nMa per fortuna è una notte di luna,\ne qui la luna l’abbiamo vicina.",
+            "translation": "What a cold little hand,\nlet me warm it for you.\nWhy keep searching? You can’t find it in the dark.\nBut luckily, it’s a moonlit night,\nand here we have the moon close by.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì vorrebbe ritirare la mano",
+            "translation": "Mimì tries to withdraw her hand.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Aspetti, signorina,\nle dirò con due parole\nchi son, e che faccio, come vivo. Vuole?",
+            "translation": "Wait, miss,\nand in just a few words I’ll tell you\nwho I am, what I do, how I live. Shall I?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì tace: Rodolfo lascia la mano di Mimì, la quale indietreggiando trova una sedia sulla quale si lascia quasi cadere affranta dall’emozione",
+            "translation": "Mimì is silent. Rodolfo releases her hand. She backs away, finds a chair, and sinks onto it, overcome with emotion.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Chi son? Sono un poeta.\nChe cosa faccio? Scrivo.\nE come vivo? Vivo!\nIn povertà mia lieta\nscialo da gran signore\nrime ed inni d’amore,\nper sogni e per chimere\ne per castelli in aria\nl’anima ho milionaria.\nTalor dal mio forziere\nruban tutti i gioielli\ndue ladri, gli occhi belli.\nV’entrâr con voi pur ora,\ned i miei sogni usati\ne i bei sogni miei\ntosto si dileguâr!\nMa il furto non m’accora\npoiché v’ha preso stanza\nla speranza!\nOr che mi conoscete\nparlate voi. Deh, parlate. Chi siete?\nVi piaccia dir!",
+            "translation": "Who am I? I’m a poet.\nWhat do I do? I write.\nAnd how do I live? I live!\nIn my happy poverty\nI spend like a grand gentleman\nmy verses and hymns of love;\nfor dreams and fancies\nand castles in the air,\nmy soul is a millionaire.\nAt times, from my treasure chest,\nsteal all the jewels\ntwo thieves—your beautiful eyes.\nThey entered with you just now,\nand my familiar dreams,\nmy lovely dreams,\nvanished in an instant!\nBut the theft does not grieve me,\nfor there has taken up residence\nhope!\nNow that you know me,\nplease speak. Tell me, who are you?\nDo tell me!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "è un po’ titubante, poi si decide a parlare; sempre seduta",
+            "translation": "hesitating a little, then deciding to speak, still seated",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Sì.\nMi chiamano Mimì\nma il mio nome è Lucia.\nLa storia mia\nè breve: a tela o a seta\nricamo in casa e fuori…\nSon tranquilla e lieta\ned è mio svago\nfar gigli e rose.\nMi piaccion quelle cose\nche han sì dolce malia,\nche parlano d’amor, di primavere,\nche parlano di sogni e di chimere,\nquelle cose che han nome poesia…\nLei m’intende?",
+            "translation": "Yes.\nThey call me Mimì,\nbut my name is Lucia.\nMy story\nis short: on linen or silk\nI embroider at home and elsewhere…\nI am peaceful and happy,\nand my pleasure\nis making lilies and roses.\nI like those things\nwith such a sweet enchantment,\nthat speak of love and springtime,\nthat speak of dreams and fancies—\nthose things called poetry…\nDo you understand me?",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "commosso",
+            "translation": "moved",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Sì.",
+            "translation": "Yes.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Mi chiamano Mimì,\nil perché non so.\nSola mi fo\nil pranzo da me stessa,\nnon vado sempre a messa\nma prego assai il Signor.\nVivo sola, soletta,\nlà in una bianca cameretta:\nguardo sui tetti e in cielo,\nma quando vien lo sgelo\nil primo sole è mio,\nil primo bacio dell’aprile è mio!\nIl primo sole è mio!\nGermoglia in un vaso una rosa…\nFoglia a foglia la spio!\nCosì gentil\nil profumo d’un fior!\nMa i fior ch’io faccio, ahimè!\nI fior ch’io faccio, ahimè, non hanno odore!\nAltro di me non le saprei narrare:\nsono la sua vicina\nche la vien fuori d’ora a importunare.",
+            "translation": "They call me Mimì;\nI don’t know why.\nAlone I make\nmy own dinner;\nI don’t always go to Mass,\nbut I pray often to the Lord.\nI live alone, quite alone,\nthere in a little white room:\nI look out over the rooftops and up at the sky,\nbut when the thaw comes\nthe first sunshine belongs to me,\nthe first kiss of April is mine!\nThe first sunshine is mine!\nA rose sprouts in a pot…\nI watch it, leaf by leaf!\nHow gentle\na flower’s fragrance is!\nBut the flowers I make, alas!\nThe flowers I make, alas, have no scent!\nI can tell you nothing else about myself:\nI am your neighbor,\nwho has come out at this late hour to bother you.",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dal cortile",
+            "translation": "from the courtyard",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Ehi! Rodolfo!",
+            "translation": "Hey! Rodolfo!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Rodolfo!",
+            "translation": "Rodolfo!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Olà. Non senti?!",
+            "translation": "Hey! Can’t you hear us?!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "alle grida degli amici, Rodolfo s’impazienta",
+            "translation": "Rodolfo grows impatient at his friends’ shouts.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Lumaca!",
+            "translation": "Snail!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Colline",
+            "original": "Poetucolo!",
+            "translation": "Little poet!",
+            "literalText": true,
+            "speakerTranslation": "Colline"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Accidenti\nal pigro!",
+            "translation": "Blast\nthe lazybones!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sempre più impaziente, Rodolfo a tentoni si avvia alla finestra e l’apre, spingendosi un poco fuori per rispondere agli amici che sono giù nel cortile: dalla finestra aperta entrano i raggi lunari, rischiarando così la camera",
+            "translation": "Growing more impatient, Rodolfo feels his way to the window and opens it. Leaning out a little, he answers his friends below in the courtyard. Moonlight streams through the open window and brightens the room.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "alla finestra",
+            "translation": "at the window",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Scrivo ancor tre righe a volo.",
+            "translation": "I’ll dash off three more lines.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "avviandosi un poco verso la finestra",
+            "translation": "moving a little toward the window",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Chi son?",
+            "translation": "Who is it?",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "rivolgendosi a Mimì",
+            "translation": "turning to Mimì",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Amici.",
+            "translation": "Friends.",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Schaunard",
+            "original": "Sentirai le tue…",
+            "translation": "You’ll get what’s coming to you…",
+            "literalText": true,
+            "speakerTranslation": "Schaunard"
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Che te ne fai lì solo?",
+            "translation": "What are you doing there all alone?",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Non son solo! Siamo in due.\nAndate da Momus! Tenete il posto,\nci saremo tosto…",
+            "translation": "I’m not alone! There are two of us.\nGo on to Momus! Save us a place;\nwe’ll be there soon…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "rimane ancora alla finestra, onde assicurarsi che gli amici se ne vanno",
+            "translation": "He stays at the window to make sure his friends leave.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "allontanandosi",
+            "translation": "moving away",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello, Schaunard e Colline",
+            "original": "Momus, Momus, Momus,\nzitti e discreti andiamocene via.\nMomus, Momus…",
+            "translation": "Momus, Momus, Momus,\nquietly and discreetly, let’s be on our way.\nMomus, Momus…",
+            "literalText": true,
+            "speakerTranslation": "Marcello, Schaunard, and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "perdendosi",
+            "translation": "fading into the distance",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Trovò la poesia!…",
+            "translation": "He’s found his poetry!…",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "perdendosi",
+            "translation": "fading into the distance",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Schaunard e Colline",
+            "original": "Momus, Momus, Momus!",
+            "translation": "Momus, Momus, Momus!",
+            "literalText": true,
+            "speakerTranslation": "Schaunard and Colline"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Mimì si avvicina ancora più alla finestra, per modo che i raggi lunari la illuminano. Volgendosi, Rodolfo scorge Mimì avvolta come da un nimbo di luce, e la contempla, quasi estatico",
+            "translation": "Mimì moves closer to the window, where the moonlight falls upon her. Turning, Rodolfo sees her surrounded by a halo of light and gazes at her almost in ecstasy.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "O soave fanciulla, o dolce viso…",
+            "translation": "O gentle girl, O sweet face…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "molto lontano, ma quasi gridando",
+            "translation": "very far away, but almost shouting",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Marcello",
+            "original": "Trovò la poesia!",
+            "translation": "He’s found his poetry!",
+            "literalText": true,
+            "speakerTranslation": "Marcello"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Di mite circonfuso alba lunar!\nIn te ravviso\nil sogno ch’io vorrei sempre sognar!\nFremon già nell’anima\nle dolcezze estreme,\nfremon nell’anima\ndolcezze estreme,\nnel bacio freme amor!",
+            "translation": "A soft moonlit dawn surrounds you!\nIn you I see\nthe dream I would always dream!\nAlready my soul trembles\nwith the sweetest rapture;\nmy soul trembles\nwith the sweetest rapture;\nin a kiss, love quivers!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "cingendo con le braccia Mimì",
+            "translation": "putting his arms around Mimì",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "assai commossa",
+            "translation": "deeply moved",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Ah! Tu sol comandi, amore!…\nOh! Come dolci scendono\nle sue lusinghe al core,\ntu sol comandi, amor!",
+            "translation": "Ah! You alone command, love!…\nOh, how sweetly they descend,\nyour enticements, into my heart;\nyou alone command, love!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "quasi abbandonandosi",
+            "translation": "almost yielding",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Rodolfo bacia Mimì",
+            "translation": "Rodolfo kisses Mimì.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "svincolandosi",
+            "translation": "breaking free",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "No, per pietà!",
+            "translation": "No, please!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Sei mia!",
+            "translation": "You are mine!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Mimì",
+            "original": "V’aspettan gli amici…",
+            "translation": "Your friends are waiting…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Già mi mandi via?",
+            "translation": "Are you sending me away already?",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "titubante",
+            "translation": "hesitantly",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Vorrei dir… ma non oso…",
+            "translation": "I’d like to say… but I don’t dare…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con gentilezza",
+            "translation": "gently",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Di’!…",
+            "translation": "Tell me!…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con graziosa furberia",
+            "translation": "with playful coyness",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Se venissi con voi?",
+            "translation": "What if I came with you?",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sorpreso",
+            "translation": "surprised",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Che?… Mimì!",
+            "translation": "What?… Mimì!",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "insinuante",
+            "translation": "suggestively",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Sarebbe così dolce restar qui.\nC’è freddo fuori…",
+            "translation": "It would be so sweet to stay here.\nIt’s cold outside…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con grande abbandono",
+            "translation": "with heartfelt abandon",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Vi starò vicina!",
+            "translation": "I’ll stay close to you!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "E al ritorno?…",
+            "translation": "And when we come back?…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "maliziosa",
+            "translation": "mischievously",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Curioso!",
+            "translation": "Wouldn’t you like to know!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "aiuta amorosamente Mimì a mettersi lo scialle; con molta grazia a Mimì",
+            "translation": "tenderly helping Mimì put on her shawl, with great gentleness",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Dammi il braccio, mia piccina…",
+            "translation": "Give me your arm, my little one…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dà il braccio a Rodolfo",
+            "translation": "she gives Rodolfo her arm",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Obbedisco, signor!",
+            "translation": "I obey, sir!",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "s’avviano sottobraccio alla porta d’uscita",
+            "translation": "they set off arm in arm toward the exit",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Rodolfo",
+            "original": "Che m’ami di’…",
+            "translation": "Tell me you love me…",
+            "literalText": true,
+            "speakerTranslation": "Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con abbandono",
+            "translation": "with tender abandon",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì",
+            "original": "Io t’amo…",
+            "translation": "I love you…",
+            "literalText": true,
+            "speakerTranslation": "Mimì"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "escono",
+            "translation": "they leave",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "di fuori",
+            "translation": "offstage",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "Mimì e Rodolfo",
+            "original": "Amor! Amor! Amor!",
+            "translation": "Love! Love! Love!",
+            "literalText": true,
+            "speakerTranslation": "Mimì and Rodolfo"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "cala il sipario",
+            "translation": "the curtain falls",
+            "shortCue": true,
+            "bracketStageDirection": true
+          }
         ]
       }
     ]

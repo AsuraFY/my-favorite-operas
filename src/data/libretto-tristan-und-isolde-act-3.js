@@ -3,12 +3,22 @@
 export const tristanActThreeScenes = [
   {
     "number": 1,
-    "title": "Der verwundete Tristan",
+    "title": "",
     "cast": "Tristan, Kurwenal, der Hirt",
     "summary": "At Kareol, Tristan wakes from a feverish delirium. Kurwenal tells him Isolde is sailing to heal him; Tristan’s hope rises and falls with the shepherd’s tune and the ship’s changing signals.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Vorspiel",
+        "type": "Vorspiel",
+        "originalTitle": "Hirtenreigen",
+        "translatedTitle": "Shepherds’ dance",
+        "routeItem": 1,
+        "beforeScene": true,
+        "instrumental": true,
+        "turns": []
+      },
+      {
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -17,8 +27,8 @@ export const tristanActThreeScenes = [
           },
           {
             "speaker": "Der Hirt",
-            "it": "(leise) Kurwenal! He! Sag, Kurwenal! Hör doch, Freund! Wacht er noch nicht?",
-            "en": "(Softly) Kurwenal! Hey! Tell me, Kurwenal! Listen, friend! Is he still not awake?"
+            "it": "(leise) Kurwenal! He!\nSag, Kurwenal!\nHör doch, Freund!\nWacht er noch nicht?",
+            "en": "(Softly) Kurwenal! Hey!\nTell me, Kurwenal!\nListen, friend!\nIs he still not awake?"
           },
           {
             "speaker": "Kurwenal",
@@ -132,8 +142,13 @@ export const tristanActThreeScenes = [
           },
           {
             "speaker": "Tristan",
-            "it": "(nach einem kleinen Schweigen) Dünkt dich das? Ich weiss es anders, doch kann ich's dir nicht sagen. Wo ich erwacht, weilt' ich nicht; doch, wo ich weilte, das kann ich dir nicht sagen. Die Sonne sah ich nicht, noch sah ich Land und Leute: doch, was ich sah, das kann ich dir nicht sagen. Ich war, wo ich von je gewesen, wohin auf je ich geh': im weiten Reich der Weltennacht. Nur ein Wissen dort uns eigen: göttlich ew'ges Urvergessen! Wie schwand mir seine Ahnung, sehnsücht'ge Mahnung, nenn' ich dich, die neu dem Licht des Tags mich zugetrieben? Was einzig mir geblieben, ein heiss-inbrünstig Lieben, aus Todeswonne-Grauen jagt's mich, das Licht zu schauen, das trügend hell und golden noch dir, Isolden, scheint!",
-            "en": "(After a brief silence) Is that what you think? I know otherwise, but cannot tell you. Where I awoke, I had not been; but where I had been, I cannot tell you. I saw neither sun nor land nor people; what I saw I cannot tell you. I was where I have always been, where I am always going: in the vast realm of world-night. There we know only one thing: divine, eternal oblivion! How did its foreboding fade away? Was it your yearning call, Isolde, that drove me anew toward the light of day? The one thing left to me is a fierce, ardent love; out of death’s blissful terror it drives me to see the light that still shines for you, Isolde, deceptive, bright, and golden!"
+            "it": "(nach einem kleinen Schweigen) Dünkt dich das? Ich weiss es anders, doch kann ich's dir nicht sagen.",
+            "en": "(After a brief silence) Is that what you think? I know otherwise, but cannot tell you."
+          },
+          {
+            "speaker": "Tristan",
+            "it": "Wo ich erwacht, weilt' ich nicht; doch, wo ich weilte, das kann ich dir nicht sagen. Die Sonne sah ich nicht, noch sah ich Land und Leute: doch, was ich sah, das kann ich dir nicht sagen. Ich war, wo ich von je gewesen, wohin auf je ich geh': im weiten Reich der Weltennacht. Nur ein Wissen dort uns eigen: göttlich ew'ges Urvergessen! Wie schwand mir seine Ahnung, sehnsücht'ge Mahnung, nenn' ich dich, die neu dem Licht des Tags mich zugetrieben? Was einzig mir geblieben, ein heiss-inbrünstig Lieben, aus Todeswonne-Grauen jagt's mich, das Licht zu schauen, das trügend hell und golden noch dir, Isolden, scheint!",
+            "en": "Where I awoke, I had not been; but where I had been, I cannot tell you. I saw neither sun nor land nor people; what I saw I cannot tell you. I was where I have always been, where I am always going: in the vast realm of world-night. There we know only one thing: divine, eternal oblivion! How did its foreboding fade away? Was it your yearning call, Isolde, that drove me anew toward the light of day? The one thing left to me is a fierce, ardent love; out of death’s blissful terror it drives me to see the light that still shines for you, Isolde, deceptive, bright, and golden!"
           },
           {
             "speaker": "Tristan",
@@ -177,8 +192,13 @@ export const tristanActThreeScenes = [
           },
           {
             "speaker": "Kurwenal",
-            "it": "(schreit entsetzt auf) Mein Herre! Tristan! Schrecklicher Zauber! O Minnetrug! O Liebeszwang! Der Welt holdester Wahn, wie ist's um dich getan! Hier liegt er nun, der wonnige Mann, der wie keiner geliebt und geminnt. Nun seht, was von ihm sie Dankes gewann, was je Minne sich gewinnt! (mit schluchzender Stimme) Bist du nun tot? Lebst du noch? Hat dich der Fluch entführt? (Er lauscht seinem Atem) O Wonne! Nein! Er regt sich, er lebt! Wie sanft er die Lippen rührt!",
-            "en": "(Crying out in horror) My lord! Tristan! Dreadful enchantment! O deception of love! O compulsion of passion! Fairest delusion in the world, what has become of you? Here lies the blissful man, who loved as no other has loved. Look what gratitude she won from him, what love can ever win! (Sobbing) Are you dead? Do you still live? Has the curse carried you away? (He listens to Tristan’s breathing.) O joy! No, he stirs, he lives! How gently his lips move!"
+            "it": "(schreit entsetzt auf) Mein Herre! Tristan! Schrecklicher Zauber! O Minnetrug! O Liebeszwang! Der Welt holdester Wahn, wie ist's um dich getan! Hier liegt er nun, der wonnige Mann, der wie keiner geliebt und geminnt. Nun seht, was von ihm sie Dankes gewann, was je Minne sich gewinnt!",
+            "en": "(Crying out in horror) My lord! Tristan! Dreadful enchantment! O deception of love! O compulsion of passion! Fairest delusion in the world, what has become of you? Here lies the blissful man, who loved as no other has loved. Look what gratitude she won from him, what love can ever win!"
+          },
+          {
+            "speaker": "Kurwenal",
+            "it": "(mit schluchzender Stimme) Bist du nun tot? Lebst du noch? Hat dich der Fluch entführt? (Er lauscht seinem Atem) O Wonne! Nein! Er regt sich, er lebt! Wie sanft er die Lippen rührt!",
+            "en": "(Sobbing) Are you dead? Do you still live? Has the curse carried you away? (He listens to Tristan’s breathing.) O joy! No, he stirs, he lives! How gently his lips move!"
           },
           {
             "speaker": "Tristan",
@@ -306,20 +326,85 @@ export const tristanActThreeScenes = [
             "en": "I’ll carry her up; trust my arms! But you, Tristan, stay faithfully on your couch! (Kurwenal hurries away.)"
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Die alte Weise",
-        "translatedTitle": "The Shepherd’s Old Tune"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Shepherd",
+          "Kurwenal",
+          "Tristan"
+        ]
+      }
+    ],
+    "originalHeading": "Erste Szene",
+    "translatedHeading": "Scene I",
+    "outline": [
+      {
+        "title": "Kurwenal! He! Sag, Kurwenal! – Die alte Weise; was weckt sie mich?",
+        "translation": "Kurwenal! Hey! Tell me, Kurwenal! — The old tune; what wakes me?",
+        "match": "(leise) Kurwenal! He!",
+        "sourceTurn": 1,
+        "speaker": "Der Hirt",
+        "characters": [
+          "Shepherd",
+          "Kurwenal",
+          "Tristan"
+        ]
+      },
+      {
+        "title": "Wo ich erwacht, weilt ich nicht",
+        "translation": "Where I awoke, I did not remain",
+        "match": "Wo ich erwacht, weilt' ich nicht; doch, wo ich weilte, das kann ich dir nicht sagen. Die Sonne sah ich nicht, noch sah ich Land und Leute: doch, was ich sah, das kann ich dir nicht sagen. Ich war, wo ich von je gewesen, wohin auf je ich geh': im weiten Reich der Weltennacht. Nur ein Wissen dort uns eigen: göttlich ew'ges Urvergessen! Wie schwand mir seine Ahnung, sehnsücht'ge Mahnung, nenn' ich dich, die neu dem Licht des Tags mich zugetrieben? Was einzig mir geblieben, ein heiss-inbrünstig Lieben, aus Todeswonne-Grauen jagt's mich, das Licht zu schauen, das trügend hell und golden noch dir, Isolden, scheint!",
+        "sourceTurn": 25,
+        "speaker": "Tristan",
+        "characters": [
+          "Tristan"
+        ]
+      },
+      {
+        "title": "Der einst ich trotzt’",
+        "translation": "He whom once I defied",
+        "match": "(nach grosser Erschütterung sich aufraffend) Der einst ich trotzt', aus Treu' zu dir, mit dir nach ihr nun muss ich mich sehnen. Glaub' meinem Wort: du sollst sie sehen hier und heut; den Trost kann ich dir geben - ist sie nur selbst noch am Leben.",
+        "sourceTurn": 27,
+        "speaker": "Kurwenal",
+        "characters": [
+          "Kurwenal",
+          "Tristan"
+        ]
+      },
+      {
+        "title": "Bist du nun tot?",
+        "translation": "Are you dead now?",
+        "match": "(mit schluchzender Stimme) Bist du nun tot? Lebst du noch? Hat dich der Fluch entführt? (Er lauscht seinem Atem) O Wonne! Nein! Er regt sich, er lebt! Wie sanft er die Lippen rührt!",
+        "sourceTurn": 35,
+        "speaker": "Kurwenal",
+        "characters": [
+          "Kurwenal",
+          "Tristan"
+        ]
+      },
+      {
+        "title": "O Wonne! Freude!",
+        "translation": "O bliss! Joy!",
+        "match": "O Wonne! Freude! Ha! Das Schiff! Von Norden seh' ich's nahen.",
+        "sourceTurn": 40,
+        "speaker": "Kurwenal",
+        "characters": [
+          "Kurwenal",
+          "Tristan"
+        ]
       }
     ]
   },
   {
     "number": 2,
-    "title": "Tristans Tod",
+    "title": "",
     "cast": "Tristan, Isolde, Kurwenal",
     "summary": "Isolde arrives just as Tristan rises from his sickbed. He dies in her arms, and she begs him to wake for one last hour.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Tristan",
@@ -352,20 +437,50 @@ export const tristanActThreeScenes = [
             "en": "Ah! It is I, it is I, sweetest friend! Rise, hear my call once more! Isolde cries: Isolde came, faithful to die with Tristan! Will you remain silent to me? Stay awake for just one hour, just one hour! Through such anxious days she kept watch in longing, longing to keep watch with you for one hour more. Will Tristan cheat Isolde of this one, eternally brief, final happiness in the world? Your wound—where is it? Let me heal it, so we may share the night in bliss and glory. Do not die of the wound—of the wound! Let the light of life go out for us together! Your gaze is broken; your heart is still. Not even a fleeting breath! Must she now stand grieving before you, she who came bravely across the sea to be joyfully joined to you? Too late! Defiant man! Do you punish me with the harshest ban? No mercy for the guilt of my suffering? May I not tell you my lament? Just once, ah, just once more! Tristan! Ah! Listen—he wakes! Beloved! (She collapses unconscious over his body.)"
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Tristans Tod",
-        "translatedTitle": "Tristan’s Death"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Tristan",
+          "Isolde"
+        ]
+      }
+    ],
+    "originalHeading": "Zweite Szene",
+    "translatedHeading": "Scene II",
+    "outline": [
+      {
+        "title": "O diese Sonne!",
+        "translation": "Oh, this sun!",
+        "match": "(in höchster Aufregung auf dem Lager sich mühend) O diese Sonne! Ha, dieser Tag! Ha, dieser Wonne sonnigster Tag! Jagendes Blut! Jauchzender Mut! Lust ohne Massen, freudiges Rasen! Auf des Lagers Bann wie sie ertragen! Wohlauf und daran, wo die Herzen schlagen! Tristan der Held, in jubelnder Kraft, hat sich vom Tod emporgerafft! (Er richtet sich hoch auf) Mit blutender Wunde bekämpft' ich einst Morolden: mit blutender Wunde erjag' ich mir heut' Isolden! (Er reisst sich den Verband der Wunde auf) Heia, mein Blut! Lustig nun fliesse! (Er springt vom Lager herab und schwankt vorwärts) Die mir die Wunde ewig schliesse, sie naht wie ein Held, sie naht mir zum Heil! Vergeh' die Welt meiner jauchzenden Eil'!",
+        "sourceTurn": 0,
+        "speaker": "Tristan",
+        "characters": [
+          "Tristan",
+          "Isolde"
+        ]
+      },
+      {
+        "title": "Ich bin’s, ich bin’s, süßester Freund!",
+        "translation": "It’s me, it’s me, sweetest friend!",
+        "match": "Ha! Ich bin's, ich bin's, süssester Freund! Auf, noch einmal hör' meinen Ruf! Isolde ruft: Isolde kam, mit Tristan treu zu sterben! Bleibst du mir stumm? Nur eine Stunde, nur eine Stunde bleibe mir wach! So bange Tage wachte sie sehnend, um eine Stunde, mit dir noch zu wachen: betrügt Isolden, betrügt sie Tristan um dieses einzige, ewig kurze letzte Weltenglück? Die Wunde? Wo? Lass sie mich heilen! Dass wonnig und hehr die Nacht wir teilen; nicht an der Wunde, an der Wunde stirb mir nicht: uns beiden vereint erlösche das Lebenslicht! Gebrochen der Blick! Still das Herz! Nicht eines Atems flücht'ges Wehn! Muss sie nun jammernd vor dir stehn, die sich wonnig dir zu vermählen mutig kam übers Meer? Zu spät! Trotziger Mann! Strafst du mich so mit härtestem Bann? Ganz ohne Huld meiner Leidens-Schuld? Nicht meine Klagen darf ich dir sagen? Nur einmal, ach! nur einmal noch! Tristan! Ha! horch! Er wacht! Geliebter! (Sie sinkt bewusstlos über der Leiche zusammen.)",
+        "sourceTurn": 5,
+        "speaker": "Isolde",
+        "characters": [
+          "Isolde"
+        ]
       }
     ]
   },
   {
     "number": 3,
-    "title": "Isoldes Liebestod",
+    "title": "",
     "cast": "Isolde, Marke, Brangäne, Kurwenal, der Hirt, der Steuermann, Melot, Ritter und Knappen",
     "summary": "Marke arrives seeking reconciliation but finds Tristan dead. As the others mourn, Isolde sees Tristan in a vision of love and sinks over his body.",
     "sections": [
       {
-        "label": "Dialog",
+        "label": "Szene",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -513,9 +628,48 @@ export const tristanActThreeScenes = [
             "en": "As if transfigured, Isolde sinks gently in Brangäne’s arms over Tristan’s body. Those around them are deeply moved and rapt. Marke blesses the dead. The curtain falls slowly."
           }
         ],
-        "type": "Passage",
-        "originalTitle": "Isoldes Liebestod",
-        "translatedTitle": "Isolde’s Love-Death"
+        "type": "Szene",
+        "originalTitle": "",
+        "translatedTitle": "",
+        "routeItem": 0,
+        "participants": [
+          "Shepherd",
+          "Kurwenal",
+          "Helmsman",
+          "Brangäne",
+          "Melot",
+          "King Marke",
+          "Isolde"
+        ]
+      }
+    ],
+    "originalHeading": "Dritte Szene",
+    "translatedHeading": "Scene III",
+    "outline": [
+      {
+        "title": "Kurwenal! Hör! Ein zweites Schiff",
+        "translation": "Kurwenal! Listen! A second ship",
+        "match": "(hastig und leise zu Kurwenal) Kurwenal! Hör'! Ein zweites Schiff.",
+        "sourceTurn": 1,
+        "speaker": "Der Hirt",
+        "characters": [
+          "Shepherd",
+          "Kurwenal",
+          "Helmsman",
+          "Brangäne",
+          "Melot",
+          "King Marke"
+        ]
+      },
+      {
+        "title": "Mild und leise (Isoldes Liebestod)",
+        "translation": "Softly and gently (Isolde’s Love-Death)",
+        "match": "Mild und leise wie er lächelt, wie das Auge hold er öffnet, seht ihr's, Freunde? Säh't ihr's nicht? Immer lichter wie er leuchtet, sternumstrahlet hoch sich hebt? Seht ihr's nicht? Wie das Herz ihm mutig schwillt, voll und hehr im Busen ihm quillt? Wie den Lippen, wonnig mild, süsser Atem sanft entweht: Freunde! Seht! Fühlt und seht ihr's nicht? Hör ich nur diese Weise, die so wundervoll und leise, Wonne klagend, alles sagend, mild versöhnend aus ihm tönend, in mich dringet, auf sich schwinget, hold erhallend um mich klinget? Heller schallend, mich umwallend, sind es Wellen sanfter Lüfte? Sind es Wogen wonniger Düfte? Wie sie schwellen, mich umrauschen, soll ich atmen, soll ich lauschen? Soll ich schlürfen, untertauchen? Süss in Düften mich verhauchen? In dem wogenden Schwall, in dem tönenden Schall, in des Weltatems wehendem All, ertrinken, versinken, unbewusst, höchste Lust!",
+        "sourceTurn": 27,
+        "speaker": "Isolde",
+        "characters": [
+          "Isolde"
+        ]
       }
     ]
   }

@@ -1,4 +1,4 @@
-// Carmen: French libretto from Opera Guide; line-aligned English draft.
+// Carmen Act I: French libretto from Opera Guide; reviewed line-aligned English.
 export const carmenActOneScenes = [
   {
     "number": 1,
@@ -11,10 +11,15 @@ export const carmenActOneScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
-            "original": "Une place à Séville. À droite, la porte de la manufacture de tabac. Au fond, face au public, pont praticable traversant la scène dans toute son étendue. De la scène on arrive à ce pont par un escalier tournant qui fait sa révolution à droite au-dessus de la porte de la\nmanufacture de tabac. Le dessous du pont est praticable. A gauche, au premier plan, le corps de garde. Devant le corps de garde, une petite galerie couverte, exhaussée de deux ou trois marches; près du corps de garde, dans un râtelier, les lances des\ndragons avec leurs banderolles jaunes et rouges.",
-            "translation": "A square in Seville. On the right, the door of the tobacco factory. At the rear, facing the audience, a bridge crossing the full width of the stage. A winding staircase leads from the stage up to the bridge, turning to the right above the factory door. The space beneath the bridge is accessible. On the left, in the foreground, the guardhouse. In front of it, a small covered gallery raised by two or three steps; beside the guardhouse, in a rack, the dragoons’ lances with their yellow and red pennants."
+            "original": "Une place à Séville. À droite, la porte de la manufacture de tabac. Au fond, face au public, pont praticable traversant la scène dans toute son étendue. De la scène on arrive à ce pont par un escalier tournant qui fait sa révolution à droite au-dessus de la porte de la manufacture de tabac. Le dessous du pont est praticable. A gauche, au premier plan, le corps de garde. Devant le corps de garde, une petite galerie couverte, exhaussée de deux ou trois marches; près du corps de garde, dans un râtelier, les lances des dragons avec leurs banderolles jaunes et rouges.",
+            "translation": "A square in Seville. On the right, the door of the tobacco factory. At the rear, facing the audience, a bridge crossing the full width of the stage. A winding staircase leads from the stage up to the bridge, turning to the right above the factory door. The space beneath the bridge is accessible. On the left, in the foreground, the guardhouse. In front of it, a small covered gallery raised by two or three steps; beside the guardhouse, in a rack, the dragoons’ lances with their yellow and red pennants.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 0,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true
       },
       {
         "number": "2",
@@ -22,15 +27,15 @@ export const carmenActOneScenes = [
         "participants": [
           "Chorus",
           "Morales",
-          "Micaëla",
-          "All",
-          "Morales and Chorus"
+          "Micaëla"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
-            "original": "Au lever du rideau, une quinzaine de soldats (Dragons du régiment d'Almanza) sont groupés devant le corps de garde.\nLes uns assis et fumant, les autres accoudés sur la balustrade de la galerie. Mouvement de passants sur la place. Des gens pressés, affairés vont, viennent, se rencontrent, se saluent, se bousculent, etc.",
-            "translation": "At the curtain’s rise, about fifteen soldiers (dragoons of the Almanza regiment) are gathered in front of the guardhouse.\nSome sit smoking, others lean on the gallery railing. Passersby move across the square. Busy, hurried people come and go, meet, greet one another, jostle, and so on."
+            "original": "Au lever du rideau, une quinzaine de soldats (Dragons du régiment d'Almanza) sont groupés devant le corps de garde. Les uns assis et fumant, les autres accoudés sur la balustrade de la galerie. Mouvement de passants sur la place. Des gens pressés, affairés vont, viennent, se rencontrent, se saluent, se bousculent, etc.",
+            "translation": "At the curtain’s rise, about fifteen soldiers (dragoons of the Almanza regiment) are gathered in front of the guardhouse. Some sit smoking, others lean on the gallery railing. Passersby move across the square. Busy, hurried people come and go, meet, greet one another, jostle, and so on.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CHOEUR",
@@ -55,8 +60,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Depuis quelques minutes Micaëla est entrée. Jupe bleue, nattes tombant sur les épaules, hésitante, embarrassée, elle regarde les soldats, avance, recule, etc.\naux soldats",
-            "translation": "Micaëla has been here for a few minutes. In a blue skirt, her braids falling over her shoulders, hesitant and embarrassed, she looks at the soldiers, steps forward, steps back, and so on.\n(to the soldiers)"
+            "original": "Depuis quelques minutes Micaëla est entrée. Jupe bleue, nattes tombant sur les épaules, hésitante, embarrassée, elle regarde les soldats, avance, recule, etc.",
+            "translation": "Micaëla has been here for a few minutes. In a blue skirt, her braids falling over her shoulders, hesitant and embarrassed, she looks at the soldiers, steps forward, steps back, and so on.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "aux soldats",
+            "translation": "to the soldiers",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -75,7 +88,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Micaëla",
-            "translation": "(to Micaëla)"
+            "translation": "to Micaëla",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -129,7 +144,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "désolée",
-            "translation": "(disappointed)"
+            "translation": "disappointed",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -197,7 +214,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Reprenant en riant la phrase du sergent.",
-            "translation": "(laughing, repeating the sergeant’s words)"
+            "translation": "laughing, repeating the sergeant’s words",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -209,7 +228,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "entourant Micaëla",
-            "translation": "(surrounding Micaëla)"
+            "translation": "surrounding Micaëla",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES et LE CHOEUR",
@@ -228,7 +249,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "cherchant à se dégager",
-            "translation": "(trying to get away)"
+            "translation": "trying to get away",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -254,7 +277,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Elle s'échappe et se sauve en courant.",
-            "translation": "She breaks free and runs off."
+            "translation": "She breaks free and runs off.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MORALES",
@@ -265,15 +290,33 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "CHOEUR",
-            "original": "Sur la place, etc.\nNo 2 a - Couplets de Morales",
-            "translation": "Across the square, and so on.\nNo. 2a — Morales’s couplets",
+            "original": "Sur la place, etc.",
+            "translation": "Across the square, and so on.",
             "literalText": true,
             "speakerTranslation": "Chorus"
-          },
+          }
+        ],
+        "routeItem": 1,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Sur la place",
+        "translatedTitle": "Across the square"
+      },
+      {
+        "number": "2a",
+        "type": "Couplets",
+        "routeItem": 18,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Attention! Chut! Taisons-nous!",
+        "translatedTitle": "Attention! Hush! Let’s be quiet!",
+        "turns": [
           {
             "speaker": "Stage direction",
             "original": "Le mouvement des passants qui avait cessé pendant la scène de Micaëla a repris avec une certaine animation. Parmi les gens qui vont et viennent, un vieux monsieur donnant le bras à une jeune dame... Le vieux monsieur voudrait continuer sa promenade, mais la jeune dame fait tout ce qu'elle peut pour le retenir sur la place. Elle paraît émue, inquiète. Elle regarde à droite, à gauche. Elle attend quelqu'un et ce quelqu'un ne vient pas. - Cette pantomime doit cadrer très exactement avec le couplet suivant.",
-            "translation": "The flow of passersby, which had stopped during Micaëla’s scene, resumes with some animation. Among those coming and going is an old gentleman escorting a young lady... The old gentleman would like to continue his walk, but the young lady does all she can to keep him in the square. She seems moved and anxious. She looks right and left. She is waiting for someone, and that someone does not come. This pantomime must match the following couplet exactly."
+            "translation": "The flow of passersby, which had stopped during Micaëla’s scene, resumes with some animation. Among those coming and going is an old gentleman escorting a young lady... The old gentleman would like to continue his walk, but the young lady does all she can to keep him in the square. She seems moved and anxious. She looks right and left. She is waiting for someone, and that someone does not come. This pantomime must match the following couplet exactly.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MORALES",
@@ -285,7 +328,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "En ce moment un jeune homme entre rapidement sur la place.",
-            "translation": "At this moment a young man enters the square quickly."
+            "translation": "At this moment a young man enters the square quickly.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MORALES",
@@ -296,8 +341,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Le second couplet continue et s'adapte fidèlement à la scène mimée par les trois personnages. Le jeune homme s'approche du vieux monsieur et de la jeune dame, salue et échange quelques mots à voix basse, etc.\nimitant le salut empressé du jeune homme.",
-            "translation": "The second couplet continues and closely follows the scene mimed by the three characters. The young man approaches the old gentleman and young lady, bows and exchanges a few quiet words, and so on.\n(imitating the young man’s eager greeting)"
+            "original": "Le second couplet continue et s'adapte fidèlement à la scène mimée par les trois personnages. Le jeune homme s'approche du vieux monsieur et de la jeune dame, salue et échange quelques mots à voix basse, etc.",
+            "translation": "The second couplet continues and closely follows the scene mimed by the three characters. The young man approaches the old gentleman and young lady, bows and exchanges a few quiet words, and so on.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "imitant le salut empressé du jeune homme.",
+            "translation": "imitating the young man’s eager greeting",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -309,7 +362,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Prenant l'air rechigné du vieux mari.",
-            "translation": "(assuming the old husband’s sour expression)"
+            "translation": "assuming the old husband’s sour expression",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -321,7 +376,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Reprenant l'air du jeune homme.",
-            "translation": "(returning to the young man’s expression)"
+            "translation": "returning to the young man’s expression",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -333,7 +390,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Puis l'air du vieux mari.",
-            "translation": "(then, the old husband’s expression)"
+            "translation": "then, the old husband’s expression",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -345,7 +404,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "imitant les mines souriantes de la dame",
-            "translation": "(imitating the lady’s smiling looks)"
+            "translation": "imitating the lady’s smiling looks",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -357,7 +418,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Le jeune homme, à ce moment, tire de sa poche un billet qu'il fait voir à la dame.",
-            "translation": "At this moment the young man takes a note from his pocket and shows it to the lady."
+            "translation": "At this moment the young man takes a note from his pocket and shows it to the lady.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MORALES",
@@ -369,7 +432,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Le mari, la femme et le galant font tous les trois très lentement un petit tour sur la place. Le jeune homme cherchant à remettre son billet doux à la dame.",
-            "translation": "The husband, wife, and gallant slowly make a little turn around the square together. The young man tries to pass his love note to the lady."
+            "translation": "The husband, wife, and gallant slowly make a little turn around the square together. The young man tries to pass his love note to the lady.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MORALES",
@@ -381,7 +446,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Le jeune homme, d'une main, montre quelque chose en l'air au vieux monsieur et, de l'autre, passe le billet à la dame.",
-            "translation": "With one hand the young man points something out in the sky to the old gentleman and, with the other, passes the note to the lady."
+            "translation": "With one hand the young man points something out in the sky to the old gentleman and, with the other, passes the note to the lady.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MORALES",
@@ -393,7 +460,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "TOUS",
@@ -402,6 +471,10 @@ export const carmenActOneScenes = [
             "literalText": true,
             "speakerTranslation": "All"
           }
+        ],
+        "participants": [
+          "Morales",
+          "Chorus"
         ]
       },
       {
@@ -413,8 +486,10 @@ export const carmenActOneScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
-            "original": "On entend au loin, très au loin, une marche militaire, clairons et fifres. C'est la garde montante qui arrive. Le vieux monsieur et le jeune homme échangent une cordiale poignée de main. Salut respectueux du jeune homme à la dame. Un officier sort du poste. Les soldats du poste vont prendre leurs lances et se rangent en ligne devant le corps de garde. Les passants à droite forment un\ngroupe pour assister à la parade. La marche militaire se rapproche, se rapproche ... La garde montante débouche enfin\nvenant de la gauche et traverse le pont. Deux clairons et deux fifres d'abord. Puis une bande de petits gamins qui s'efforcent de faire de grandes enjambées pour marcher au pas des dragons. - Aussi petits que possible les enfants.\nDerrière les enfants, le lieutenant Zuniga et le brigadier Don José, puis les dragons avec leurs lances.",
-            "translation": "In the distance, very far away, a military march can be heard: bugles and fifes. The incoming guard is approaching. The old gentleman and the young man exchange a cordial handshake. The young man respectfully salutes the lady. An officer comes out of the guard post. The soldiers there take their lances and line up in front of the guardhouse. Passersby gather at the right to watch the parade. The military march draws nearer and nearer... At last the incoming guard appears from the left and crosses the bridge. First come two buglers and two fifers. Then a band of little boys, trying to take great strides to keep pace with the dragoons. The children should be as small as possible.\nBehind the children come Lieutenant Zuniga and Corporal Don José, then the dragoons with their lances."
+            "original": "On entend au loin, très au loin, une marche militaire, clairons et fifres. C'est la garde montante qui arrive. Le vieux monsieur et le jeune homme échangent une cordiale poignée de main. Salut respectueux du jeune homme à la dame. Un officier sort du poste. Les soldats du poste vont prendre leurs lances et se rangent en ligne devant le corps de garde. Les passants à droite forment un groupe pour assister à la parade. La marche militaire se rapproche, se rapproche ... La garde montante débouche enfin venant de la gauche et traverse le pont. Deux clairons et deux fifres d'abord. Puis une bande de petits gamins qui s'efforcent de faire de grandes enjambées pour marcher au pas des dragons. - Aussi petits que possible les enfants. Derrière les enfants, le lieutenant Zuniga et le brigadier Don José, puis les dragons avec leurs lances.",
+            "translation": "In the distance, very far away, a military march can be heard: bugles and fifes. The incoming guard is approaching. The old gentleman and the young man exchange a cordial handshake. The young man respectfully salutes the lady. An officer comes out of the guard post. The soldiers there take their lances and line up in front of the guardhouse. Passersby gather at the right to watch the parade. The military march draws nearer and nearer... At last the incoming guard appears from the left and crosses the bridge. First come two buglers and two fifers. Then a band of little boys, trying to take great strides to keep pace with the dragoons. The children should be as small as possible. Behind the children come Lieutenant Zuniga and Corporal Don José, then the dragoons with their lances.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CHOEUR DES GAMINS",
@@ -426,9 +501,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "La garde montante va se ranger à droite en face de la garde descendante. Dès que les petits gamins qui se sont arrêtes à droite devant les curieux ont fini de chanter, les officiers se saluent de l'épée et se mettent à causer à voix basse. On relève les sentinelles.",
-            "translation": "The incoming guard lines up on the right, facing the outgoing guard. As soon as the little boys, stopped on the right in front of the onlookers, finish singing, the officers salute with their swords and begin speaking quietly. The sentries are relieved."
+            "translation": "The incoming guard lines up on the right, facing the outgoing guard. As soon as the little boys, stopped on the right in front of the onlookers, finish singing, the officers salute with their swords and begin speaking quietly. The sentries are relieved.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 2,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Avec la garde montante",
+        "translatedTitle": "With the incoming guard"
       },
       {
         "number": null,
@@ -436,13 +518,16 @@ export const carmenActOneScenes = [
         "participants": [
           "Morales",
           "José",
-          "Boys’ chorus"
+          "Boys’ chorus",
+          "Zuniga"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "original": "à Don José",
-            "translation": "(to Don José)"
+            "translation": "to Don José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALES",
@@ -481,8 +566,10 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Les factionnaires sont relevés. Sonneries des clairons. La garde descendante passe devant la garde montante. - Les gamins en troupe reprennent derrière les clairons et les fifres de la garde descendante la place qu'ils occupaient derrière les tambours et les\nfifres de la garde montante.",
-            "translation": "The sentries are relieved. Bugle calls. The outgoing guard passes in front of the incoming guard. The boys, in a group, take up again behind the bugles and fifes of the outgoing guard the place they held behind the drums and\nfifes of the incoming guard."
+            "original": "Les factionnaires sont relevés. Sonneries des clairons. La garde descendante passe devant la garde montante. - Les gamins en troupe reprennent derrière les clairons et les fifres de la garde descendante la place qu'ils occupaient derrière les tambours et les fifres de la garde montante.",
+            "translation": "The sentries are relieved. Bugle calls. The outgoing guard passes in front of the incoming guard. The boys, in a group, take up again behind the bugles and fifes of the outgoing guard the place they held behind the drums and fifes of the incoming guard.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CHOEUR DES GAMINS",
@@ -494,21 +581,30 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Soldats, gamins et curieux s'éloignent par le fond; choeur fifres et clairons vont diminuant. L'officier de la garde montante, pendant ce temps, passe silencieusement l'inspection de ses hommes. Quand le choeur des gamins et les fifres ont cessé de se faire entendre, le lieutenant dit.",
-            "translation": "Soldiers, boys, and onlookers leave at the rear; the chorus, fifes, and bugles gradually fade away. Meanwhile, the incoming guard’s officer silently inspects his men. When the boys’ chorus and fifes can no longer be heard, the lieutenant says:"
+            "translation": "Soldiers, boys, and onlookers leave at the rear; the chorus, fifes, and bugles gradually fade away. Meanwhile, the incoming guard’s officer silently inspects his men. When the boys’ chorus and fifes can no longer be heard, the lieutenant says:",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
-            "speaker": "CHOEUR DES GAMINS",
+            "speaker": "ZUNIGA",
             "original": "«Présentez lances ... Haut lances ... Rompez les rangs».",
             "translation": "“Present lances ... Raise lances ... Dismissed.”",
             "literalText": true,
-            "speakerTranslation": "Boys’ chorus"
+            "speakerTranslation": "Zuniga"
           },
           {
             "speaker": "Stage direction",
             "original": "Les dragons vont tous déposer leurs lances dans le râtelier, puis ils rentrent dans le corps de garde. Don José et Zuniga restent seuls en scène.",
-            "translation": "The dragoons put their lances in the rack, then go into the guardhouse. Don José and Zuniga remain alone onstage."
+            "translation": "The dragoons put their lances in the rack, then go into the guardhouse. Don José and Zuniga remain alone onstage.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 3,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Il y a une jolie fille",
+        "translatedTitle": "A pretty girl came to ask for you"
       },
       {
         "number": null,
@@ -528,7 +624,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "se levant",
-            "translation": "(rising)"
+            "translation": "rising",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -631,7 +729,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "en riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -657,14 +757,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "ZUNIGA",
             "original": "Et puis nous avons un faible pour les jupes bleues et pour les nattes tombant sur les épaules…",
-            "translation": "And yet you have a weakness for blue skirts and braids falling over the shoulders ...",
+            "translation": "And besides, we have a weakness for blue skirts and braids falling over the shoulders ...",
             "literalText": true,
             "speakerTranslation": "Zuniga"
           },
           {
             "speaker": "Stage direction",
             "original": "riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -697,7 +799,7 @@ export const carmenActOneScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Et vieux chrétien. Don José Lizzarabengoa, c'est mon nom ... On voulait que je fusse d'église, et l'on m'a fait étudier. Mais je ne profitais guère, j'aimais trop jouer à la paume ... Un jour que j'avais gagné, un gars de l'Alava me chercha querelle; j'eus encore l'avantage, mais cela m'obligea de quitter le pays. Je me fis soldat! Je n'avais plus mon père; ma mère me suivit et vint s'établir à dix lieues de Séville ... avec la petite Micaëla ... c'est une orpheline que ma mère a recueillie, et qui n'a pas voulu se séparer d'elle.",
-            "translation": "And an old Christian family. Don José Lizzarabengoa, that’s my name ... They wanted me to enter the Church, so they had me educated. But I didn’t make much progress; I loved playing pelota too much ... One day, after I’d won, a fellow from Álava picked a quarrel with me; I won again, but it forced me to leave home. I became a soldier! My father was already dead; my mother followed me and settled ten leagues from Seville ... with little Micaëla ... She’s an orphan my mother took in, and she wouldn’t leave her.",
+            "translation": "And from an Old Christian family. Don José Lizzarabengoa, that’s my name ... They wanted me to enter the Church, so they had me educated. But I didn’t make much progress; I loved playing pelota too much ... One day, after I’d won, a fellow from Álava picked a quarrel with me; I won again, but it forced me to leave home. I became a soldier! My father was already dead; my mother followed me and settled ten leagues from Seville ... with little Micaëla ... She’s an orphan my mother took in, and she wouldn’t leave her.",
             "literalText": true,
             "speakerTranslation": "José"
           },
@@ -725,7 +827,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "La cloche de la manufacture se fait entendre.",
-            "translation": "The factory bell is heard."
+            "translation": "The factory bell is heard.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -734,7 +838,12 @@ export const carmenActOneScenes = [
             "literalText": true,
             "speakerTranslation": "José"
           }
-        ]
+        ],
+        "routeItem": 4,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Dites-moi, brigadier?",
+        "translatedTitle": "Tell me, Corporal?"
       },
       {
         "number": "4",
@@ -743,31 +852,35 @@ export const carmenActOneScenes = [
           "Chorus",
           "Cigarette makers",
           "Young men",
-          "Cigarette makers and young men",
+          "young men",
           "Carmen"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "original": "La place se remplit de jeunes gens qui viennent se placer sur le passage des cigarières. Les soldats sortent du poste. Don José s'assied sur une chaise, et reste là fort indifférent à toutes ces allées et venues, travaillant à son épinglette.",
-            "translation": "The square fills with young men who take up positions along the cigarette girls’ route. The soldiers leave the guard post. Don José sits on a chair, quite indifferent to all this coming and going, working on his pin."
+            "translation": "The square fills with young men who take up positions along the cigarette girls’ route. The soldiers leave the guard post. Don José sits on a chair, quite indifferent to all this coming and going, working on his pin.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CHOEUR",
             "original": "La cloche a sonné, nous, des ouvrières\nNous venons ici guetter le retour;\nEt nous vous suivrons, brunes cigarières,\nEn vous murmurant des propos d'amour.",
-            "translation": "The bell has rung; we, the working girls,\nCome here to watch their return;\nAnd we’ll follow you, dark-haired cigarette girls,\nWhispering words of love to you.",
+            "translation": "The bell has rung; for the working girls\nWe have come here to watch and wait;\nAnd we’ll follow you, dark-haired cigarette girls,\nWhispering words of love to you.",
             "literalText": true,
             "speakerTranslation": "Chorus"
           },
           {
             "speaker": "Stage direction",
             "original": "A ce moment paraissent les cigarières, la cigarette aux lèvres. Elles passent sous le pont et descendent lentement en scène.",
-            "translation": "At this moment the cigarette girls appear, cigarettes at their lips. They pass beneath the bridge and slowly descend onto the stage."
+            "translation": "At this moment the cigarette girls appear, cigarettes at their lips. They pass beneath the bridge and slowly descend onto the stage.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CHOEUR",
             "original": "Voyez-les ... Regards impudents,\nMine coquette\nFumant toutes du bout des dents\nLa cigarette.",
-            "translation": "Look at them ... impudent glances,\nCoquettish air,\nAll smoking from the very tips\nOf their cigarettes.",
+            "translation": "Look at them ... impudent glances,\nCoquettish air,\nAll holding between their teeth\nA cigarette as they smoke.",
             "literalText": true,
             "speakerTranslation": "Chorus"
           },
@@ -781,7 +894,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "aux cigarières",
-            "translation": "(to the cigarette girls)"
+            "translation": "to the cigarette girls",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LES JEUNES GENS",
@@ -813,8 +928,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Entre Carmen. Absolument le costume et l'entrée indiqués par Mérimée. Elle a un bouquet de cassie à son corsage et une fleur de cassie dans le coin de la bouche.\nTrois ou quatre jeunes gens entrent avec Carmen. Ils la suivent, l'entourent, lui parlent. Elle minaude et caquette avec eux. Don José lève la tête. Il regarde Carmen, puis se remet à travailler tranquillement à son épinglette.\nentrés avec Carmen",
-            "translation": "Carmen enters. Her costume and entrance should follow Mérimée’s directions exactly. She has a spray of cassia in her bodice and a cassia blossom at the corner of her mouth.\nThree or four young men enter with Carmen. They follow her, surround her, and talk to her. She flirts and chatters with them. Don José raises his head, looks at Carmen, then calmly returns to his work on the pin.\n(the young men entering with Carmen)"
+            "original": "Entre Carmen. Absolument le costume et l'entrée indiqués par Mérimée. Elle a un bouquet de cassie à son corsage et une fleur de cassie dans le coin de la bouche. Trois ou quatre jeunes gens entrent avec Carmen. Ils la suivent, l'entourent, lui parlent. Elle minaude et caquette avec eux. Don José lève la tête. Il regarde Carmen, puis se remet à travailler tranquillement à son épinglette.",
+            "translation": "Carmen enters. Her costume and entrance should follow Mérimée’s directions exactly. She has a spray of cassia in her bodice and a cassia blossom at the corner of her mouth. Three or four young men enter with Carmen. They follow her, surround her, and talk to her. She flirts and chatters with them. Don José raises his head, looks at Carmen, then calmly returns to his work on the pin.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "entrés avec Carmen",
+            "translation": "the young men entering with Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LES JEUNES GENS",
@@ -826,7 +949,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "les regardant",
-            "translation": "(looking at them)"
+            "translation": "looking at them",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -835,7 +960,12 @@ export const carmenActOneScenes = [
             "literalText": true,
             "speakerTranslation": "Carmen"
           }
-        ]
+        ],
+        "routeItem": 5,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "La cloche a sonné",
+        "translatedTitle": "The bell has rung"
       },
       {
         "number": "5",
@@ -847,11 +977,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "CARMEN",
             "original": "L'amour est un oiseau rebelle\nQue nul ne peut apprivoiser,\nEt c'est bien en vain qu'on l'appelle\nS'il lui convient de refuser.\nRien n'y fait; menace ou prière,\nL'un parle bien, l'autre se tait;\nEt c'est l'autre que je préfère,\nIl n'a rien dit, mais il me plaît.\nL'amour est enfant de Bohème,\nIl n'a jamais, jamais connu de loi;\nSi tu ne m'aimes pas, je t'aime;\nSi je t'aime,\nPrends garde à toi!\nL'oiseau que tu croyais surprendre\nBattit de l'aile et s'envola\nL'amour est loin, tu peux l'attendre\nTu ne l'attends plus ... il est là\nTout autour de toi, vite, vite,\nIl vient, s'en va, puis il revient\nTu crois le tenir, il t'évite,\nTu crois l'éviter, il te tient.\nL'amour est enfant de Bohème,\nIl n'a jamais connu de loi;\nSi tu ne m'aimes pas, je t'aime;\nSi je t'aime,\nPrends garde à toi!",
-            "translation": "Love is a rebellious bird\nThat no one can tame,\nAnd it is quite useless to call it\nIf it chooses to refuse.\nNothing helps: threats or prayers;\nOne speaks, the other is silent;\nAnd it is the silent one I prefer;\nHe said nothing, but he pleases me.\nLove is a gypsy child,\nIt has never, ever known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!\nThe bird you thought you had caught\nFlaps its wings and flies away.\nLove is far off; you may wait for it;\nYou wait no longer ... and there it is.\nAll around you, quick, quick,\nIt comes, it goes, then comes back again.\nYou think you hold it; it slips away;\nYou think you escape it; it holds you.\nLove is a gypsy child,\nIt has never known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!",
+            "translation": "Love is a rebellious bird\nThat no one can tame,\nAnd it is quite useless to call it\nIf it chooses to refuse.\nNothing helps: threats or prayers;\nOne speaks eloquently, the other is silent;\nAnd it is the silent one I prefer;\nHe said nothing, but he pleases me.\nLove is a gypsy child,\nIt has never, ever known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!\nThe bird you thought to catch unawares\nBeat its wings and flew away.\nLove is far off; you may wait for it;\nYou wait no longer ... and there it is.\nAll around you, quick, quick,\nIt comes, it goes, then comes back again.\nYou think you hold it; it slips away;\nYou think you escape it; it holds you.\nLove is a gypsy child,\nIt has never known any law;\nIf you don’t love me, I love you;\nIf I love you,\nBeware!",
             "literalText": true,
             "speakerTranslation": "Carmen"
           }
-        ]
+        ],
+        "routeItem": 6,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "L’amour est un oiseau rebelle",
+        "translatedTitle": "Love is a rebellious bird"
       },
       {
         "number": "6",
@@ -872,8 +1007,10 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Moment de silence. Les jeunes gens entourent Carmen,celle-ci les regarde l'un après l'autre, sort du cercle qu'ils forment autour d'elle et s'en va droit à Don José, qui est toujours occupé de son\népinglette.",
-            "translation": "A moment of silence. The young men surround Carmen. She looks at them one by one, leaves the circle they have formed around her, and walks straight to Don José, who is still busy with his pin."
+            "original": "Moment de silence. Les jeunes gens entourent Carmen,celle-ci les regarde l'un après l'autre, sort du cercle qu'ils forment autour d'elle et s'en va droit à Don José, qui est toujours occupé de son épinglette.",
+            "translation": "A moment of silence. The young men surround Carmen. She looks at them one by one, leaves the circle they have formed around her, and walks straight to Don José, who is still busy with his pin.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -892,19 +1029,23 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
             "original": "Ton épinglette, vraiment! Ton épinglette, épinglier de mon âme...",
-            "translation": "Your pin, really! Your pin, pin-maker of my soul ...",
+            "translation": "Your pin, really! Your pin, my darling pin-maker ...",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
           {
             "speaker": "Stage direction",
             "original": "Elle arrache de son corsage la fleur de cassie et la lance à Don José. Il se lève brusquement. La fleur de cassie est tombée à ses pieds. Eclat de rire général.",
-            "translation": "She pulls the cassia flower from her bodice and throws it at Don José. He jumps to his feet. The flower falls at his feet. General laughter."
+            "translation": "She pulls the cassia flower from her bodice and throws it at Don José. He jumps to his feet. The flower falls at his feet. General laughter.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CHOEUR",
@@ -915,16 +1056,27 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "La cloche de la manufacture sonne une deuxième fois.\nSortie des ouvrières et des jeunes gens. Carmen sort la première en courant et elle entre dans la manufacture. Les jeunes gens sortent à droite et à gauche. Zuniga qui, pendant cette scène bavardait avec deux ou trois ouvrières, les quitte et rentre dans le poste après que les soldats y sont rentrés. Don José reste seul.",
-            "translation": "The factory bell rings a second time.\nThe workers and young men leave. Carmen runs out first and enters the factory. The young men leave to the right and left. Zuniga, who has been chatting with two or three workers during this scene, leaves them and enters the guard post after the soldiers have gone inside. Don José is left alone."
-          },
-          {
-            "speaker": "CHOEUR",
-            "original": "Monologue",
-            "translation": "Monologue",
-            "literalText": true,
-            "speakerTranslation": "Chorus"
-          },
+            "original": "La cloche de la manufacture sonne une deuxième fois. Sortie des ouvrières et des jeunes gens. Carmen sort la première en courant et elle entre dans la manufacture. Les jeunes gens sortent à droite et à gauche. Zuniga qui, pendant cette scène bavardait avec deux ou trois ouvrières, les quitte et rentre dans le poste après que les soldats y sont rentrés. Don José reste seul.",
+            "translation": "The factory bell rings a second time. The workers and young men leave. Carmen runs out first and enters the factory. The young men leave to the right and left. Zuniga, who has been chatting with two or three workers during this scene, leaves them and enters the guard post after the soldiers have gone inside. Don José is left alone.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          }
+        ],
+        "routeItem": 7,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Carmen, sur tes pas",
+        "translatedTitle": "Carmen, we follow in your wake"
+      },
+      {
+        "number": null,
+        "type": "Monologue",
+        "routeItem": 19,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Qu’est-ce que cela veut dire, ces façons-là?",
+        "translatedTitle": "What does all that behavior mean?",
+        "turns": [
           {
             "speaker": "JOSÉ",
             "original": "Qu'est-ce que cela veut dire, ces façons-là? ... Quelle effronterie! ...",
@@ -935,7 +1087,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "En souriant.",
-            "translation": "(smiling)"
+            "translation": "smiling",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -947,7 +1101,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Il regarde la fleur de cassie qui est par terre, à ses pieds. Il la ramasse.",
-            "translation": "He looks at the cassia flower on the ground at his feet and picks it up."
+            "translation": "He looks at the cassia flower on the ground at his feet and picks it up.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -959,7 +1115,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Il respire le parfum de la fleur.",
-            "translation": "He breathes in the flower’s fragrance."
+            "translation": "He breathes in the flower’s fragrance.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -971,8 +1129,13 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Entre Micaëla.",
-            "translation": "Micaëla enters."
+            "translation": "Micaëla enters.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
+        ],
+        "participants": [
+          "José"
         ]
       },
       {
@@ -993,7 +1156,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "cachant précipitamment la fleur de cassie",
-            "translation": "(quickly hiding the cassia flower)"
+            "translation": "quickly hiding the cassia flower",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1023,7 +1188,12 @@ export const carmenActOneScenes = [
             "literalText": true,
             "speakerTranslation": "Micaëla"
           }
-        ]
+        ],
+        "routeItem": 8,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Monsieur le brigadier?",
+        "translatedTitle": "Corporal?"
       },
       {
         "number": "7",
@@ -1043,14 +1213,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "MICAËLA",
             "original": "J'apporte de sa part, fidèle messagère,\nCette lettre.",
-            "translation": "I bring this letter from her,\nAs her faithful messenger.",
+            "translation": "As her faithful messenger, I bring you\nThis letter from her.",
             "literalText": true,
             "speakerTranslation": "Micaëla"
           },
           {
             "speaker": "Stage direction",
             "original": "regardant la lettre",
-            "translation": "(looking at the letter)"
+            "translation": "looking at the letter",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1069,7 +1241,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "elle lui remet une petite bourse",
-            "translation": "(she hands him a small purse)"
+            "translation": "she hands him a small purse",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -1102,14 +1276,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "MICAËLA",
             "original": "Oui, je parlerai;\nCe que l'on m'a donné,\nJe vous le donnerai.\nVotre mère avec moi sortait de la chapelle,\nEt c'est alors qu'en m'embrassant,\nTu vas, m'a-t-elle dit, t'en aller à la ville:\nLa route n'est pas longue,\nUne fois à Séville,\nTu chercheras mon fils,\nMon José, mon enfant\nEt tu lui diras que sa mère\nSonge nuit et jour à l'absent\nQu'elle regrette et qu'elle espère,\nQu'elle pardonne et qu'elle attend;\nTout cela, n'est-ce pas? mignonne,\nDe ma part tu le lui diras,\nEt ce baiser que je te donne\nDe ma part tu le lui rendras.",
-            "translation": "Yes, I’ll tell you;\nWhat I was given,\nI’ll give to you.\nYour mother was leaving the chapel with me,\nAnd as she kissed me, she said:\n‘You’re going to the city now;\nThe road is not long.\nOnce you reach Seville,\nYou’ll look for my son,\nMy José, my child,\nAnd tell him that his mother\nThinks night and day of the one away,\nWhom she misses and hopes for,\nWhom she forgives and awaits;\nAll that, my dear,\nYou’ll tell him for me,\nAnd this kiss that I give you,\nYou’ll give him for me.’",
+            "translation": "Yes, I’ll tell you;\nWhat I was given,\nI’ll give to you.\nYour mother was leaving the chapel with me,\nAnd it was then, as she kissed me,\n‘You’re going to the city,’ she said;\nThe road is not long.\nOnce you reach Seville,\nYou’ll look for my son,\nMy José, my child,\nAnd tell him that his mother\nThinks night and day of the one away,\nWhom she misses and hopes for,\nWhom she forgives and awaits;\nAll that, my dear,\nYou’ll tell him for me,\nAnd this kiss that I give you,\nYou’ll give him for me.’",
             "literalText": true,
             "speakerTranslation": "Micaëla"
           },
           {
             "speaker": "Stage direction",
             "original": "très ému",
-            "translation": "(deeply moved)"
+            "translation": "deeply moved",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1141,8 +1317,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Micaëla se hausse un peu sur la pointe des pieds et donne à Don José un baiser bien franc, bien maternel. Don José très ému la laisse faire. Il la regarde bien dans les yeux. - Un moment de silence.\ncontinuant de regarder Micaëla",
-            "translation": "Micaëla rises a little onto her toes and gives Don José a sincere, motherly kiss. Don José, deeply moved, lets her. He looks straight into her eyes. A moment of silence.\n(continuing to look at Micaëla)"
+            "original": "Micaëla se hausse un peu sur la pointe des pieds et donne à Don José un baiser bien franc, bien maternel. Don José très ému la laisse faire. Il la regarde bien dans les yeux. - Un moment de silence.",
+            "translation": "Micaëla rises a little onto her toes and gives Don José a sincere, motherly kiss. Don José, deeply moved, lets her. He looks straight into her eyes. A moment of silence.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "continuant de regarder Micaëla",
+            "translation": "continuing to look at Micaëla",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1161,7 +1345,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "les yeux fixés sur la manufacture",
-            "translation": "(his eyes fixed on the factory)"
+            "translation": "his eyes fixed on the factory",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1201,7 +1387,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Il l'embrasse.",
-            "translation": "He kisses her."
+            "translation": "He kisses her.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -1224,7 +1412,12 @@ export const carmenActOneScenes = [
             "literalText": true,
             "speakerTranslation": "Micaëla"
           }
-        ]
+        ],
+        "routeItem": 9,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Parle-moi de ma mère!",
+        "translatedTitle": "Tell me about my mother!"
       },
       {
         "number": null,
@@ -1251,7 +1444,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "embrassant la lettre avant de commencer à lire",
-            "translation": "(kissing the letter before beginning to read)"
+            "translation": "kissing the letter before beginning to read",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1263,19 +1458,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Lisant",
-            "translation": "(reading)"
-          },
-          {
-            "speaker": "JOSÉ",
-            "original": "«",
-            "translation": "“",
-            "literalText": true,
-            "speakerTranslation": "José"
+            "translation": "reading",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Stage direction",
             "original": "l'interrompant",
-            "translation": "(interrupting him)"
+            "translation": "interrupting him",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -1294,7 +1486,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "troublée",
-            "translation": "(flustered)"
+            "translation": "flustered",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MICAËLA",
@@ -1347,8 +1541,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Elle sort.\nlisant",
-            "translation": "She leaves.\n(reading)"
+            "original": "Elle sort.",
+            "translation": "She leaves.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "lisant",
+            "translation": "reading",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1360,21 +1562,23 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Au moment où il va arracher les fleurs de sa veste, grande rumeur dans l'intérieur de la manufacture. - Entre Zuniga suivi des soldats.",
-            "translation": "Just as he is about to tear the flowers from his jacket, a great commotion breaks out inside the factory. Zuniga enters, followed by soldiers."
+            "translation": "Just as he is about to tear the flowers from his jacket, a great commotion breaks out inside the factory. Zuniga enters, followed by soldiers.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 10,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Attends un peu maintenant",
+        "translatedTitle": "Wait a little now"
       },
       {
         "number": "8",
         "type": "Choeur",
         "participants": [
           "Zuniga",
-          "Cigarette makers’ chorus",
-          "First group of women",
-          "Second group of women",
-          "First group",
-          "Second group",
-          "All the women"
+          "Cigarette makers’ chorus"
         ],
         "turns": [
           {
@@ -1387,7 +1591,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Les ouvrières sortent rapidement et en désordre.",
-            "translation": "The workers rush out in disorder."
+            "translation": "The workers rush out in disorder.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CHŒUR DES CIGARIÈRES",
@@ -1434,7 +1640,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "entourant le lieutenant",
-            "translation": "(surrounding the lieutenant)"
+            "translation": "surrounding the lieutenant",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "TOUTES LES FEMMES",
@@ -1446,7 +1654,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "elles tirent l'officier de leur côté",
-            "translation": "(they pull the officer toward them)"
+            "translation": "they pull the officer toward them",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "PREMIER GROUPE",
@@ -1458,7 +1668,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "même jeu",
-            "translation": "(same action)"
+            "translation": "same action",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "DEUXIÈME GROUPE",
@@ -1498,7 +1710,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Don José",
-            "translation": "(to Don José)"
+            "translation": "to Don José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1601,9 +1815,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Les soldats réussissent enfin à repousser les cigarières. Les femmes sont maintenues à distance autour de la place par une haie de dragons. Carmen paraît, sur la porte de la manufacture, amenée par Don José et suivie par deux dragons.",
-            "translation": "At last the soldiers manage to push the cigarette girls back. The women are held at a distance around the square by a line of dragoons. Carmen appears in the factory doorway, brought out by Don José and followed by two dragoons."
+            "translation": "At last the soldiers manage to push the cigarette girls back. The women are held at a distance around the square by a line of dragoons. Carmen appears in the factory doorway, brought out by Don José and followed by two dragoons.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 11,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Au secours!",
+        "translatedTitle": "Help!"
       },
       {
         "number": null,
@@ -1631,7 +1852,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Il s'arrête sur un regard de Carmen.",
-            "translation": "He stops under Carmen’s gaze."
+            "translation": "He stops under Carmen’s gaze.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ZUNIGA",
@@ -1685,7 +1908,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à José",
-            "translation": "(to José)"
+            "translation": "to José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1697,7 +1922,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "après un moment d'hésitation",
-            "translation": "(after a moment’s hesitation)"
+            "translation": "after a moment’s hesitation",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1709,7 +1936,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Zuniga regarde Carmen; celle-ci, après un regard à DonJosé et un très léger haussement d'épaules, est redevenue impassible.",
-            "translation": "Zuniga looks at Carmen. After glancing at Don José and giving a very slight shrug, she has become impassive again."
+            "translation": "Zuniga looks at Carmen. After glancing at Don José and giving a very slight shrug, she has become impassive again.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -1735,7 +1964,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Carmen",
-            "translation": "(to Carmen)"
+            "translation": "to Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1747,7 +1978,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à José",
-            "translation": "(to José)"
+            "translation": "to José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1765,8 +1998,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Carmen se retourne brusquement et regarde encore une fois José.\nà Carmen",
-            "translation": "Carmen turns abruptly and looks at José once more.\n(to Carmen)"
+            "original": "Carmen se retourne brusquement et regarde encore une fois José.",
+            "translation": "Carmen turns abruptly and looks at José once more.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "à Carmen",
+            "translation": "to Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1775,7 +2016,12 @@ export const carmenActOneScenes = [
             "literalText": true,
             "speakerTranslation": "Zuniga"
           }
-        ]
+        ],
+        "routeItem": 12,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Voyons, brigadier",
+        "translatedTitle": "Well, Corporal"
       },
       {
         "number": "9",
@@ -1789,7 +2035,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Carmen, au lieu de répondre se met à fredonner.",
-            "translation": "Instead of answering, Carmen begins to hum."
+            "translation": "Instead of answering, Carmen begins to hum.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -1822,7 +2070,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à José",
-            "translation": "(to José)"
+            "translation": "to José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1833,8 +2083,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "En ce moment cinq ou six femmes à droite réussissent à forcer la ligne des factionnaires et se précipitent sur la scène en criant: «Oui, oui, c'est elle! ... s' Une de ces femmes se trouve près de Carmen. Celle-ci lève la main et veut se jeter sur la femme. Don José arrête Carmen. Les soldats écartent les femmes, et les repoussent cette fois tout à fait hors de la scène. Quelques sentinelles continuent à rester en vue gardant les abords de la place.\nà Carmen",
-            "translation": "At this moment five or six women on the right force their way through the sentries and rush onto the stage shouting, ‘Yes, yes, it’s her!’ One of them comes close to Carmen. Carmen raises her hand and tries to throw herself at the woman. Don José restrains Carmen. The soldiers scatter the women and push them completely offstage. A few sentries remain in view, guarding the edges of the square.\n(to Carmen)"
+            "original": "En ce moment cinq ou six femmes à droite réussissent à forcer la ligne des factionnaires et se précipitent sur la scène en criant: «Oui, oui, c'est elle! ... s' Une de ces femmes se trouve près de Carmen. Celle-ci lève la main et veut se jeter sur la femme. Don José arrête Carmen. Les soldats écartent les femmes, et les repoussent cette fois tout à fait hors de la scène. Quelques sentinelles continuent à rester en vue gardant les abords de la place.",
+            "translation": "At this moment five or six women on the right force their way through the sentries and rush onto the stage shouting, ‘Yes, yes, it’s her!’ One of them comes close to Carmen. Carmen raises her hand and tries to throw herself at the woman. Don José restrains Carmen. The soldiers scatter the women and push them completely offstage. A few sentries remain in view, guarding the edges of the square.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "à Carmen",
+            "translation": "to Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1846,7 +2104,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "aux soldats",
-            "translation": "(to the soldiers)"
+            "translation": "to the soldiers",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1857,8 +2117,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Moment de silence pendant lequel Carmen se remet à fredonner de la façon la plus impertinente en regardant l'officier.\napportant une corde",
-            "translation": "A moment of silence, during which Carmen resumes humming most impertinently while looking at the officer.\n(bringing a rope)"
+            "original": "Moment de silence pendant lequel Carmen se remet à fredonner de la façon la plus impertinente en regardant l'officier.",
+            "translation": "A moment of silence, during which Carmen resumes humming most impertinently while looking at the officer.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "apportant une corde",
+            "translation": "bringing a rope",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "UN SOLDAT",
@@ -1870,7 +2138,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Don José",
-            "translation": "(to Don José)"
+            "translation": "to Don José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1882,7 +2152,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Carmen, sans faire la moindre résistance, tend en souriant ses deux mains à Don José.",
-            "translation": "Carmen, without the slightest resistance, smilingly holds out both hands to Don José."
+            "translation": "Carmen, without the slightest resistance, smilingly holds out both hands to Don José.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ZUNIGA",
@@ -1894,7 +2166,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Les mains de Carmen sont liées, on la fait asseoir sur un escabeau devant le corps de garde. Elle reste là immobile, les yeux à terre.",
-            "translation": "Carmen’s hands are tied, and she is made to sit on a stool in front of the guardhouse. She sits motionless, eyes lowered."
+            "translation": "Carmen’s hands are tied, and she is made to sit on a stool in front of the guardhouse. She sits motionless, eyes lowered.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ZUNIGA",
@@ -1906,7 +2180,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Don José",
-            "translation": "(to Don José)"
+            "translation": "to Don José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -1917,10 +2193,17 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Il sort.\nUn petit moment de silence. Carmen lève les yeux et regarde Don José. Celui-ci se détourne, s'éloigne de quelques pas, puis revient à Carmen qui le regarde toujours.",
-            "translation": "He leaves. A brief silence. Carmen looks up at Don José. He turns away, walks a few steps off, then returns to Carmen, who is still watching him."
+            "original": "Il sort. Un petit moment de silence. Carmen lève les yeux et regarde Don José. Celui-ci se détourne, s'éloigne de quelques pas, puis revient à Carmen qui le regarde toujours.",
+            "translation": "He leaves. A brief silence. Carmen looks up at Don José. He turns away, walks a few steps off, then returns to Carmen, who is still watching him.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 13,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Tra la la… Coupe-moi, brûle-moi",
+        "translatedTitle": "Tra la la… Cut me, burn me"
       },
       {
         "number": null,
@@ -1947,26 +2230,30 @@ export const carmenActOneScenes = [
           {
             "speaker": "CARMEN",
             "original": "Hélas! que deviendrai-je? Seigneur officier, ayez pitié de moi ... Vous êtes si gentil ...",
-            "translation": "Alas! What will become of me? Lieutenant, have pity on me ... You’re so kind ...",
+            "translation": "Alas! What will become of me? Sir officer, have pity on me ... You’re so kind ...",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
           {
             "speaker": "Stage direction",
             "original": "José ne répond pas, s'éloigne et revient, toujours sous le regard de Carmen.",
-            "translation": "José gives no answer, walks away, then returns, still under Carmen’s gaze."
+            "translation": "José gives no answer, walks away, then returns, still under Carmen’s gaze.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
             "original": "Cette corde, comme vous l'avez serrée, cette corde…\nJ'ai les poignets brisés.",
-            "translation": "This rope, how tightly you’ve tied it ... this rope ...\nMy wrists are broken.",
+            "translation": "This rope, how tightly you’ve tied it ... this rope ...\nMy wrists are being crushed.",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
           {
             "speaker": "Stage direction",
             "original": "s'approchant de Carmen",
-            "translation": "(coming closer to Carmen)"
+            "translation": "coming closer to Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1977,8 +2264,16 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Il desserre la corde.\nbas",
-            "translation": "He loosens the rope.\n(quietly)"
+            "original": "Il desserre la corde.",
+            "translation": "He loosens the rope.",
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "bas",
+            "translation": "quietly",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1990,19 +2285,23 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "s'éloignant",
-            "translation": "(moving away)"
+            "translation": "moving away",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
             "original": "Nous ne sommes pas ici pour dire des balivernes ... Il faut aller à la prison. C'est la consigne, et il n'y a pas de remèdes.",
-            "translation": "We’re not here to talk nonsense ... We have to go to prison. It’s the order, and there’s no remedy.",
+            "translation": "We’re not here to talk nonsense ... You must go to prison. Those are my orders, and there’s no getting around them.",
             "literalText": true,
             "speakerTranslation": "José"
           },
           {
             "speaker": "Stage direction",
             "original": "Silence.",
-            "translation": "Silence."
+            "translation": "Silence.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2028,7 +2327,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "s'arrêtant",
-            "translation": "(stopping)"
+            "translation": "stopping",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -2039,7 +2340,7 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "CARMEN",
-            "original": "Oui, c'est là que je suis née… \tJ'ai été emmenée par des bohémiens à Séville. Je travaillais à la manufacture pour gagner de quoi retourner en Navarre, près de ma pauvre mère qui n'a que moi pour soutien ... On m'a insultée parce que je ne suis pas de ce pays de filous, de marchands d'oranges pourries, et ces coquines se sont mises contre moi parce que je leur ai dit que tous leurs Jacques de Séville avec leurs couteaux ne feraient pas peur à un gars de chez nous avec son béret bleu et son maquila. Camarade, mon ami, ne ferez-vous rien pour une payse?",
+            "original": "Oui, c'est là que je suis née… J'ai été emmenée par des bohémiens à Séville. Je travaillais à la manufacture pour gagner de quoi retourner en Navarre, près de ma pauvre mère qui n'a que moi pour soutien ... On m'a insultée parce que je ne suis pas de ce pays de filous, de marchands d'oranges pourries, et ces coquines se sont mises contre moi parce que je leur ai dit que tous leurs Jacques de Séville avec leurs couteaux ne feraient pas peur à un gars de chez nous avec son béret bleu et son maquila. Camarade, mon ami, ne ferez-vous rien pour une payse?",
             "translation": "Yes, that’s where I was born ... I was brought to Seville by gypsies. I worked at the factory to earn enough to return to Navarre, to my poor mother, who has no support but me ... They insulted me because I’m not from this land of rogues and sellers of rotten oranges, and those hussies turned on me because I told them all their Seville Jacks, with their knives, wouldn’t frighten a fellow from our country with his blue beret and his makila. Comrade, my friend, won’t you do something for a girl from home?",
             "literalText": true,
             "speakerTranslation": "Carmen"
@@ -2089,7 +2390,7 @@ export const carmenActOneScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Moi!",
-            "translation": "I do!",
+            "translation": "Me!",
             "literalText": true,
             "speakerTranslation": "José"
           },
@@ -2103,7 +2404,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "avec colère",
-            "translation": "(angrily)"
+            "translation": "angrily",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -2115,11 +2418,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "CARMEN",
             "original": "C'est très bien, seigneur officier, c'est très bien. Vous me défendez de parler, je ne parlerai plus .",
-            "translation": "Very well, Lieutenant, very well. You forbid me to speak; I won’t speak again.",
+            "translation": "Very well, sir officer, very well. You forbid me to speak; I won’t speak again.",
             "literalText": true,
             "speakerTranslation": "Carmen"
           }
-        ]
+        ],
+        "routeItem": 14,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Où me conduirez-vous?",
+        "translatedTitle": "Where are you taking me?"
       },
       {
         "number": "10",
@@ -2160,14 +2468,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "CARMEN",
             "original": "Mon officier n'est pas un capitaine,\nPas même un lieutenant,\nIl n'est que brigadier.\nMais c'est assez pour une bohémienne,\nEt je daigne m'en contenter!",
-            "translation": "My officer isn’t a captain,\nNot even a lieutenant;\nHe’s only a corporal.\nBut that’s enough for a gypsy,\nAnd I’ll gladly settle for him!",
+            "translation": "My officer isn’t a captain,\nNot even a lieutenant;\nHe’s only a corporal.\nBut that’s enough for a gypsy,\nAnd I deign to settle for him!",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
           {
             "speaker": "Stage direction",
             "original": "déliant la corde qui attache les mains de Carmen",
-            "translation": "(loosening the rope around Carmen’s hands)"
+            "translation": "loosening the rope around Carmen’s hands",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -2221,9 +2531,16 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "Carmen va se replacer sur son escabeau, les mains derrière le dos. Rentre Zuniga.",
-            "translation": "Carmen goes back to her stool, hands behind her back. Zuniga re-enters."
+            "translation": "Carmen goes back to her stool, hands behind her back. Zuniga re-enters.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 15,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Près des remparts de Séville",
+        "translatedTitle": "Near Seville’s ramparts"
       },
       {
         "number": "11",
@@ -2243,7 +2560,9 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "bas, à José",
-            "translation": "(quietly, to José)"
+            "translation": "quietly, to José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2254,8 +2573,10 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Elle se place entre les deux dragons. José à côté d'elle.\nLes femmes et les bourgeois pendant ce temps sont rentrés en scène toujours maintenus à distance par les dragons .\nCarmen traverse la scène de gauche à droite allant vers le pont...",
-            "translation": "She takes her place between the two dragoons, with José beside her. Meanwhile the women and townspeople have returned to the stage, still held back by the dragoons. Carmen crosses from left to right, heading toward the bridge ..."
+            "original": "Elle se place entre les deux dragons. José à côté d'elle. Les femmes et les bourgeois pendant ce temps sont rentrés en scène toujours maintenus à distance par les dragons . Carmen traverse la scène de gauche à droite allant vers le pont...",
+            "translation": "She takes her place between the two dragoons, with José beside her. Meanwhile the women and townspeople have returned to the stage, still held back by the dragoons. Carmen crosses from left to right, heading toward the bridge ...",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -2267,15 +2588,25 @@ export const carmenActOneScenes = [
           {
             "speaker": "Stage direction",
             "original": "En arrivant à l'entrée du pont à droite, Carmen pousse José qui se laisse renverser. Confusion, désordre, Carmen s'enfuit. Arrivée au milieu du pont, elle s'arrête un instant, jette sa corde à la volée par-dessus le parapet du pont et se sauve pendant que sur la scène, avec de grands éclats de rire, les cigarières entourent le lieutenant.",
-            "translation": "On reaching the bridge entrance at the right, Carmen pushes José, who lets himself fall. Confusion and disorder; Carmen escapes. Halfway across the bridge she pauses, flings her rope over the parapet, and runs off as the cigarette girls surround the lieutenant onstage with loud laughter."
+            "translation": "On reaching the bridge entrance at the right, Carmen pushes José, who lets himself fall. Confusion and disorder; Carmen escapes. Halfway across the bridge she pauses, flings her rope over the parapet, and runs off as the cigarette girls surround the lieutenant onstage with loud laughter.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 16,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Voici l’ordre",
+        "translatedTitle": "Here is the order"
       },
       {
         "number": null,
         "type": "Entracte",
         "participants": [],
-        "turns": []
+        "turns": [],
+        "routeItem": 17,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true
       }
     ]
   }

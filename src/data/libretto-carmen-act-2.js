@@ -1,4 +1,4 @@
-// Carmen: French libretto from Opera Guide; line-aligned English draft.
+// Carmen Act 2: French source and English reviewed 20 October 2026.
 export const carmenActTwoScenes = [
   {
     "number": 1,
@@ -6,35 +6,45 @@ export const carmenActTwoScenes = [
     "sections": [
       {
         "number": null,
-        "type": "Dialogue parlé",
+        "type": "Décor",
         "participants": [],
         "turns": [
           {
             "speaker": "Stage direction",
-            "original": "La taverne de Lillas Pastia. Tables à droite et à gauche. Carmen, Mercédès, Frasquita, le lieutenant Zuniga, Morales et un lieutenant. C'est la fin d'un dîner. La table est en désordre. Les officiers et les bohémiens raclent de la guitare dans un coin de la taverne et deux bohémiennes, au milieu de la scène, dansent.\nCarmen est assise regardant danser les bohémiennes, le lieutenant lui parle bas, mais elle ne fait aucune attention à lui. Elle se lève tout à coup et se met à chanter.",
-            "translation": "Lillas Pastia’s tavern. Tables on the right and left. Carmen, Mercédès, Frasquita, Lieutenant Zuniga, Morales, and another lieutenant. Dinner is ending; the table is in disarray. The officers and gypsies strum guitars in one corner while two gypsy women dance at center stage.\nCarmen sits watching the gypsy women dance. The lieutenant speaks softly to her, but she pays him no attention. Suddenly she stands and begins to sing."
+            "original": "La taverne de Lillas Pastia. Tables à droite et à gauche. Carmen, Mercédès, Frasquita, le lieutenant Zuniga, Morales et un lieutenant. C'est la fin d'un dîner. La table est en désordre. Les officiers et les bohémiens raclent de la guitare dans un coin de la taverne et deux bohémiennes, au milieu de la scène, dansent. Carmen est assise regardant danser les bohémiennes, le lieutenant lui parle bas, mais elle ne fait aucune attention à lui. Elle se lève tout à coup et se met à chanter.",
+            "translation": "Lillas Pastia’s tavern. Tables on the right and left. Carmen, Mercédès, Frasquita, Lieutenant Zuniga, Morales, and another lieutenant. Dinner is ending; the table is in disarray. The officers and gypsies strum guitars in one corner while two gypsy women dance at center stage. Carmen sits watching the gypsy women dance. The lieutenant speaks softly to her, but she pays him no attention. Suddenly she stands and begins to sing.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 0,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "La taverne de Lillas Pastia",
+        "translatedTitle": "Lillas Pastia’s tavern"
       },
       {
         "number": "12",
         "type": "Chanson bohème",
         "participants": [
           "Carmen",
-          "Carmen, Frasquita, and Mercédès"
+          "Frasquita",
+          "Mercédès"
         ],
         "turns": [
           {
             "speaker": "CARMEN",
             "original": "Les tringles des sistres tintaient\nAvec un éclat métallique.\nEt sur cette étrange musique\nLes zingarellas se levaient.\nTambours de basque allaient leur train.\nEt les guitares forcenées\nGrincaient sous des mains obstinées,\nMême chanson, même refrain.\nTra la la la la la la, Tra la la la la.",
-            "translation": "The bars of the sistrums rang\nWith metallic brilliance.\nAnd to that strange music\nThe gypsy girls rose up.\nThe Basque drums kept up their beat,\nAnd the frantic guitars\nSquealed beneath stubborn hands,\nSame song, same refrain.\nTra la la la la la la, tra la la la la.",
+            "translation": "The bars of the sistrums rang\nWith metallic brilliance.\nAnd to that strange music\nThe gypsy girls rose up.\nThe tambourines kept up their beat,\nAnd the frantic guitars\nSquealed beneath stubborn hands,\nSame song, same refrain.\nTra la la la la la la, tra la la la la.",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
           {
             "speaker": "Stage direction",
             "original": "Sur ce refrain, les bohémiennes dansent.",
-            "translation": "To this refrain, the gypsy women dance."
+            "translation": "To this refrain, the gypsy women dance.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN, FRASQUITA et MERCÉDÈS",
@@ -46,7 +56,7 @@ export const carmenActTwoScenes = [
           {
             "speaker": "CARMEN",
             "original": "Les anneaux de cuivre et d'argent\nReluisaient sur les peaux bistrées;\nD'orange ou de rouge zébrées\nLes étoffes flottaient au vent:\nLa danse au chant se mariait\nD'abord indécise et timide.\nPlus vive ensuite et plus rapide,\nCela montait, montait, montait!\nTra la la la la la la la, Tra la la la la la.",
-            "translation": "Copper and silver rings\nGleamed on dusky skin;\nOrange or red stripes\nMarked the cloth that fluttered in the breeze.\nDance and song joined together,\nAt first uncertain and shy,\nThen livelier, faster,\nIt rose and rose and rose!\nTra la la la la la la la, tra la la la la la.",
+            "translation": "Copper and silver rings\nGleamed on dusky skin;\nStriped with orange or red,\nThe fabrics fluttered in the breeze.\nDance and song joined together,\nAt first uncertain and shy,\nThen livelier, faster,\nIt rose and rose and rose!\nTra la la la la la la la, tra la la la la la.",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
@@ -60,7 +70,7 @@ export const carmenActTwoScenes = [
           {
             "speaker": "CARMEN",
             "original": "Les bohémiens à tour de bras,\nDe leurs instruments faisaient rage,\nEt cet éblouissant tapage,\nEnsorcelait les zingaras!\nSous le rythme de la chanson,\nArdentes, folles, enfiévrées,\nElles se laissaient, enivrées,\nEmporter par le tourbillon!\nTra la la la la la la, Tra la la la la.",
-            "translation": "The gypsy men played wildly\nWith all their strength,\nAnd that dazzling uproar\nEnchanted the gypsy girls!\nTo the rhythm of the song,\nFiery, wild, feverish,\nThey gave themselves, intoxicated,\nTo the swirling dance!\nTra la la la la la la, tra la la la la.",
+            "translation": "The gypsy men, with all their strength,\nMade their instruments rage,\nAnd that dazzling uproar\nEnchanted the gypsy girls!\nTo the rhythm of the song,\nFiery, wild, feverish,\nThey gave themselves, intoxicated,\nTo the swirling dance!\nTra la la la la la la, tra la la la la.",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
@@ -74,9 +84,16 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Mouvement de danse très rapide, très violent. Carmen elle-même danse et vient, avec les dernières notes de l'orchestre, tomber haletante sur un banc de la taverne. Après la danse, Lillas Pastia se met à tourner autour des officiers d'un air embarrassé.",
-            "translation": "The dance grows very fast, very fierce. Carmen herself dances and, with the orchestra’s final notes, drops breathless onto a tavern bench. After the dance, Lillas Pastia begins circling the officers with an embarrassed air."
+            "translation": "The dance grows very fast, very fierce. Carmen herself dances and, with the orchestra’s final notes, drops breathless onto a tavern bench. After the dance, Lillas Pastia begins circling the officers with an embarrassed air.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 1,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Les tringles des sistres tintaient",
+        "translatedTitle": "The bars of the sistrums rang"
       },
       {
         "number": null,
@@ -170,7 +187,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Pastia fait signe aux bohémiennes de refuser.",
-            "translation": "Pastia signals to the gypsy women to refuse."
+            "translation": "Pastia signals to the gypsy women to refuse.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "FRASQUITA",
@@ -238,7 +257,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Pendant que le lieutenant parle à Carmen, Moralès et les deux autres lieutenants essayent de fléchir Frasquita et Mercédès.",
-            "translation": "While the lieutenant speaks with Carmen, Morales and the other two lieutenants try to persuade Frasquita and Mercédès."
+            "translation": "While the lieutenant speaks with Carmen, Morales and the other two lieutenants try to persuade Frasquita and Mercédès.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ZUNIGA",
@@ -264,7 +285,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "comme si elle ne se rappelait pas",
-            "translation": "(as if she could not remember)"
+            "translation": "as if she could not remember",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -283,7 +306,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "même jeu",
-            "translation": "(same action)"
+            "translation": "same action",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -302,7 +327,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "sérieuse",
-            "translation": "(seriously)"
+            "translation": "seriously",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -363,7 +390,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "faisant claquer ses castagnettes",
-            "translation": "(clicking her castanets)"
+            "translation": "clicking her castanets",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -382,7 +411,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "à part",
-            "translation": "(aside)"
+            "translation": "aside",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -394,7 +425,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Haut",
-            "translation": "(aloud)"
+            "translation": "aloud",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -406,16 +439,23 @@ export const carmenActTwoScenes = [
           {
             "speaker": "MORALÈS",
             "original": "Il faudra bien.",
-            "translation": "You’ll have to.",
+            "translation": "We’ll have to.",
             "literalText": true,
             "speakerTranslation": "Moralès"
           },
           {
             "speaker": "Stage direction",
             "original": "La scène est interrompue par un choeur chanté dans la coulisse.",
-            "translation": "The scene is interrupted by a chorus sung offstage."
+            "translation": "The scene is interrupted by a chorus sung offstage.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 2,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Vous avez quelque chose à nous dire?",
+        "translatedTitle": "Is there something you want to tell us?"
       },
       {
         "number": "13",
@@ -460,7 +500,7 @@ export const carmenActTwoScenes = [
           {
             "speaker": "FRASQUITA",
             "original": "Je le reconnais ... c'est Escamillo ... un torero qui s'est fait remarquer aux dernières courses de Grenade et qui promet d'égaler la gloire de Montes et de Pepe Illo …",
-            "translation": "I recognize him ... it’s Escamillo ... a toreador who made a name for himself at the last races in Granada, and who promises to equal the glory of Montes and Pepe Illo ...",
+            "translation": "I recognize him ... it’s Escamillo ... a toreador who made a name for himself at the recent bullfights in Granada, and who promises to equal the glory of Montes and Pepe Illo ...",
             "literalText": true,
             "speakerTranslation": "Frasquita"
           },
@@ -481,7 +521,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Il va êi la fenêtre.",
-            "translation": "He goes to the window."
+            "translation": "He goes to the window.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "MORALÈS",
@@ -493,7 +535,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Quittant la fenêtre",
-            "translation": "Leaving the window."
+            "translation": "Leaving the window.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALÈS",
@@ -505,7 +549,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "suppliant",
-            "translation": "(pleading)"
+            "translation": "pleading",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "PASTIA",
@@ -531,9 +577,16 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Paraît Escamillo.",
-            "translation": "Escamillo appears."
+            "translation": "Escamillo appears.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 3,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Vivat! Vivat le torero!",
+        "translatedTitle": "Long live the toreador!"
       },
       {
         "number": null,
@@ -557,23 +610,28 @@ export const carmenActTwoScenes = [
             "literalText": true,
             "speakerTranslation": "Escamillo"
           }
-        ]
+        ],
+        "routeItem": 4,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ces dames et nous vous remercions",
+        "translatedTitle": "The ladies and we thank you"
       },
       {
         "number": "14",
         "type": "Couplets",
         "participants": [
           "Escamillo",
-          "All",
-          "Mercédès",
+          "Carmen",
           "Frasquita",
-          "Carmen"
+          "Mercédès",
+          "Chorus"
         ],
         "turns": [
           {
             "speaker": "ESCAMILLO",
-            "original": "Votre toast ... je peux vous le rendre,\nSeñors, Señors, car avec les soldats\nOui les toreros peuvent s'entendre,\nPour plaisirs ils ont les combats.\nLe cirque est plein, c'est jour de fête,\nLe cirque est plein du haut en bas.\nLes spectateurs perdant la tête,\nLes spectateurs s'interpellent à grands fracas:\nApostrophes, cris et tapage\nPoussés jusques à la fureur.\nCar c'est la fête du courage,\nC'est la fête des gens de cour.\nAllons en garde! Allons! Allons! Ah!\nToréador, en garde,\nToréador, toréador,\nEt songe bien, oui songe en combattant\nQu'un oeil noir te regarde\nEt que l'amour t'attend.\nToréador, l'amour,\nL'amour t'attend!",
-            "translation": "Your toast ... I can return it,\nSeñors, señors, for soldiers\nAnd toreadors can understand one another;\nTheir pleasures are battles.\nThe arena is full; it’s a day of celebration,\nThe arena is full from top to bottom.\nThe spectators, losing their heads,\nShout at one another in a great uproar:\nTaunts, cries, and tumult\nRise to a frenzy.\nFor this is the festival of courage,\nThe festival of people of rank.\nTake your guard! Come on! Come on! Ah!\nToreador, take your guard,\nToreador, toreador,\nAnd remember, yes, remember as you fight,\nThat a dark eye is watching you\nAnd love awaits you.\nToreador, love,\nLove awaits you!",
+            "original": "Votre toast ... je peux vous le rendre,\nSeñors, Señors, car avec les soldats\nOui les toreros peuvent s'entendre,\nPour plaisirs ils ont les combats.\nLe cirque est plein, c'est jour de fête,\nLe cirque est plein du haut en bas.\nLes spectateurs perdant la tête,\nLes spectateurs s'interpellent à grands fracas:\nApostrophes, cris et tapage\nPoussés jusques à la fureur.\nCar c'est la fête du courage,\nC'est la fête des gens de cœur.\nAllons en garde! Allons! Allons! Ah!\nToréador, en garde,\nToréador, toréador,\nEt songe bien, oui songe en combattant\nQu'un oeil noir te regarde\nEt que l'amour t'attend.\nToréador, l'amour,\nL'amour t'attend!",
+            "translation": "Your toast ... I can return it,\nSeñors, señors, for soldiers\nAnd toreadors can understand one another;\nTheir pleasures are battles.\nThe arena is full; it’s a day of celebration,\nThe arena is full from top to bottom.\nThe spectators, losing their heads,\nShout at one another in a great uproar:\nTaunts, cries, and tumult\nRise to a frenzy.\nFor this is the festival of courage,\nThe festival of the brave.\nTake your guard! Come on! Come on! Ah!\nToreador, take your guard,\nToreador, toreador,\nAnd remember, yes, remember as you fight,\nThat a dark eye is watching you\nAnd love awaits you.\nToreador, love,\nLove awaits you!",
             "literalText": true,
             "speakerTranslation": "Escamillo"
           },
@@ -650,9 +708,16 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "On boit, on échange des poignées de main avec le toréador.",
-            "translation": "They drink and exchange handshakes with the toreador."
+            "translation": "They drink and exchange handshakes with the toreador.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 5,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Votre toast… je peux vous le rendre",
+        "translatedTitle": "Your toast… I can return it"
       },
       {
         "number": null,
@@ -663,7 +728,7 @@ export const carmenActTwoScenes = [
           "Escamillo",
           "Carmen",
           "Moralès",
-          "Mercédès and Frasquita",
+          "Mercédès",
           "Frasquita",
           "Le Dancaïre",
           "Le Remendado"
@@ -686,7 +751,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Les officiers commencent à se préparer à partir. - Escamillo se trouve près de Carmen.",
-            "translation": "The officers begin getting ready to leave. Escamillo is standing near Carmen."
+            "translation": "The officers begin getting ready to leave. Escamillo is standing near Carmen.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "ESCAMILLO",
@@ -761,7 +828,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Frasquita et à Mercédès",
-            "translation": "(to Frasquita and Mercédès)"
+            "translation": "to Frasquita and Mercédès",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALÈS",
@@ -773,7 +842,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "sur un nouveau signe de Pastia",
-            "translation": "(at another signal from Pastia)"
+            "translation": "at another signal from Pastia",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MERCÉDÈS ET FRASQUITA",
@@ -785,7 +856,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Zuniga",
-            "translation": "(to Zuniga)"
+            "translation": "to Zuniga",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "MORALÈS",
@@ -804,7 +877,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Bas à Carmen",
-            "translation": "(quietly to Carmen)"
+            "translation": "quietly to Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -837,7 +912,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -849,7 +926,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "haut",
-            "translation": "(aloud)"
+            "translation": "aloud",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -867,8 +946,17 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Tout le monde sort, excepté Carmen, Frasquita, Mercédès et Lillas Pastia.\nà Pastia",
-            "translation": "Everyone leaves except Carmen, Frasquita, Mercédès, and Lillas Pastia.\n(to Pastia)"
+            "original": "Tout le monde sort, excepté Carmen, Frasquita, Mercédès et Lillas Pastia.",
+            "translation": "Everyone leaves except Carmen, Frasquita, Mercédès, and Lillas Pastia.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "à Pastia",
+            "translation": "to Pastia",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "FRASQUITA",
@@ -894,7 +982,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "ouvrant une porte et appelant du geste",
-            "translation": "(opening a door and beckoning)"
+            "translation": "opening a door and beckoning",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "PASTIA",
@@ -906,7 +996,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Entrent le Dancaïre et le Remendado. - Pastia ferme les portes, met les volets, etc.",
-            "translation": "Le Dancaïre and Le Remendado enter. Pastia closes the doors and shutters, and so on."
+            "translation": "Le Dancaïre and Le Remendado enter. Pastia closes the doors and shutters, and so on.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "FRASQUITA",
@@ -946,7 +1038,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "mettant la main sur son couteau",
-            "translation": "(putting his hand on his knife)"
+            "translation": "putting his hand on his knife",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -972,7 +1066,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -991,7 +1087,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "menaçant",
-            "translation": "(threateningly)"
+            "translation": "threateningly",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -1014,27 +1112,22 @@ export const carmenActTwoScenes = [
             "literalText": true,
             "speakerTranslation": "Le Dancaïre"
           }
-        ]
+        ],
+        "routeItem": 6,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Dis-moi ton nom",
+        "translatedTitle": "Tell me your name"
       },
       {
         "number": "15",
         "type": "Quintette",
         "participants": [
           "Le Dancaïre",
-          "Mercédès and Frasquita",
-          "Le Remendado",
-          "Carmen",
-          "Frasquita",
           "Mercédès",
-          "Frasquita, Mercédès, and Carmen",
-          "Le Remendado and Le Dancaïre",
-          "Le Dancaïre and Le Remendado",
-          "All five",
-          "Frasquita and Mercédès",
-          "Frasquita, Mercédès, Le Dancaïre, and Le Remendado",
-          "Le Dancaïre, Le Remendado, Frasquita, and Mercédès",
-          "Le Dancaïre, Le Remendado, Frasquita, and Mercédès",
-          "All four"
+          "Frasquita",
+          "Le Remendado",
+          "Carmen"
         ],
         "turns": [
           {
@@ -1173,7 +1266,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Mercédès et à Frasquita",
-            "translation": "(to Mercédès and Frasquita)"
+            "translation": "to Mercédès and Frasquita",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1297,7 +1392,7 @@ export const carmenActTwoScenes = [
           {
             "speaker": "LE DANCAÏRE et LE REMENDADO",
             "original": "La chose certes nous étonne,\nMais ce n'est pas le premier jour\nOù vous aurez su, ma mignonne.\nFaire marcher de front le devoir et l'amour.",
-            "translation": "The news certainly surprises us,\nBut it isn’t the first time, my dear,\nYou’ve managed to combine\nDuty and love side by side.",
+            "translation": "The news certainly surprises us,\nBut this would not be the first day\nOn which you have managed, my dear,\nTo make duty and love march side by side.",
             "literalText": true,
             "speakerTranslation": "Le Dancaïre and Le Remendado"
           },
@@ -1350,7 +1445,12 @@ export const carmenActTwoScenes = [
             "literalText": true,
             "speakerTranslation": "All five"
           }
-        ]
+        ],
+        "routeItem": 7,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Nous avons en tête une affaire",
+        "translatedTitle": "We have a scheme in mind"
       },
       {
         "number": null,
@@ -1394,7 +1494,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "furieux",
-            "translation": "(furious)"
+            "translation": "furious",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -1406,7 +1508,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "très calme",
-            "translation": "(very calmly)"
+            "translation": "very calmly",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1418,7 +1522,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "se jetant entre le Dancaïre et Carmen",
-            "translation": "(throwing himself between Dancaïre and Carmen)"
+            "translation": "throwing himself between Dancaïre and Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE REMENDADO",
@@ -1430,7 +1536,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "envoyant un coup de pied que le Remendado évite.",
-            "translation": "(she kicks at him; Remendado dodges)"
+            "translation": "Kicking at Remendado, who dodges.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -1442,7 +1550,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "se redressant",
-            "translation": "(straightening up)"
+            "translation": "straightening up",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE REMENDADO",
@@ -1517,7 +1627,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "remontant vers la fenêtre",
-            "translation": "(moving toward the window)"
+            "translation": "moving toward the window",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1554,7 +1666,12 @@ export const carmenActTwoScenes = [
             "literalText": true,
             "speakerTranslation": "Carmen"
           }
-        ]
+        ],
+        "routeItem": 8,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "En voilà assez",
+        "translatedTitle": "Enough of this"
       },
       {
         "number": "16",
@@ -1567,7 +1684,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "la voix très éloignée",
-            "translation": "(a very distant voice)"
+            "translation": "a very distant voice",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1586,16 +1705,23 @@ export const carmenActTwoScenes = [
           {
             "speaker": "JOSÉ",
             "original": "Où t'en vas-tu par là,\nDragon d'Almanza!\nMoi je m'en vais faire\nMordre la poussière\nÀ mon adversaire.\nS'il en est ainsi,\nPassez mon ami.\nAffaire d'honneur,\nAffaire de cour,\nPour nous tout est là.\nDragon d'Almanza!",
-            "translation": "Where are you going this way,\nAlmanza dragoon?\nI’m off to make\nMy opponent bite the dust.\nIf that’s the case,\nPass on, my friend.\nA matter of honor,\nA matter of love,\nThat’s everything\nto us.\nAlmanza dragoon!",
+            "translation": "Where are you going,\nAlmanza dragoon?\nI am going to make\nBite the dust\nMy adversary.\nIf that is so,\nPass on, my friend.\nA matter of honor,\nA matter of the heart,\nThat is everything to us.\nAlmanza dragoon!",
             "literalText": true,
             "speakerTranslation": "José"
           },
           {
             "speaker": "Stage direction",
             "original": "Carmen, le Dancaïre, le Remendado, Mercédès et Frasquita, par les volets entr'ouverts, regardent venir Don José.",
-            "translation": "Through the partly opened shutters Carmen, Dancaïre, Remendado, Mercédès, and Frasquita watch Don José approaching."
+            "translation": "Through the partly opened shutters Carmen, Dancaïre, Remendado, Mercédès, and Frasquita watch Don José approaching.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 9,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Halte-là! Qui va là?",
+        "translatedTitle": "Halt! Who goes there?"
       },
       {
         "number": null,
@@ -1627,7 +1753,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Carmen",
-            "translation": "(to Carmen)"
+            "translation": "to Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -1674,7 +1802,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "avec fatuité",
-            "translation": "(with vanity)"
+            "translation": "with vanity",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE REMENDADO",
@@ -1692,8 +1822,17 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Le Remendado se sauve et sort. Le Dancaïre le poursuit et sort à son tour entraînant Mercédès et Frasquita qui essaient de le calmer.\nla voix beaucoup plus rapprochée",
-            "translation": "Remendado runs off and leaves. Dancaïre follows him out, taking Mercédès and Frasquita with him as they try to calm him.\n(the voice much nearer)"
+            "original": "Le Remendado se sauve et sort. Le Dancaïre le poursuit et sort à son tour entraînant Mercédès et Frasquita qui essaient de le calmer.",
+            "translation": "Remendado runs off and leaves. Dancaïre follows him out, taking Mercédès and Frasquita with him as they try to calm him.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "la voix beaucoup plus rapprochée",
+            "translation": "the voice much nearer",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -1739,8 +1878,22 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "JOSÉ",
-            "original": "Que veux-tu? J'ai encore mon honneur de soldat, et déserter me semblerait un grand crime ... Oh! Je ne t'en suis pas moins reconnaissant...  Tu m'as envoyé une lime et une pièce d'or ... La lime me servira pour affiler ma lance et je la garde comme souvenir de toi. Lui tendant la pièce d'or.\nQuant à l'argent …",
-            "translation": "What can I say? I still have my soldier’s honor, and desertion would seem a great crime ... Oh, I’m no less grateful to you ... You sent me a file and a gold coin ... The file will help me sharpen my lance, and I’ll keep it as a keepsake from you. (holding out the coin)\nAs for the money ...",
+            "original": "Que veux-tu? J'ai encore mon honneur de soldat, et déserter me semblerait un grand crime ... Oh! Je ne t'en suis pas moins reconnaissant...  Tu m'as envoyé une lime et une pièce d'or ... La lime me servira pour affiler ma lance et je la garde comme souvenir de toi.",
+            "translation": "What can I say? I still have my soldier’s honor, and desertion would seem a great crime ... Oh, I’m no less grateful to you ... You sent me a file and a gold coin ... The file will help me sharpen my lance, and I’ll keep it as a keepsake from you.",
+            "literalText": true,
+            "speakerTranslation": "José"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Lui tendant la pièce d'or.",
+            "translation": "Holding out the gold coin to her.",
+            "shortCue": true,
+            "bracketStageDirection": true
+          },
+          {
+            "speaker": "JOSÉ",
+            "original": "Quant à l'argent …",
+            "translation": "As for the money ...",
             "literalText": true,
             "speakerTranslation": "José"
           },
@@ -1754,7 +1907,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Criant et frappant",
-            "translation": "(shouting and knocking)"
+            "translation": "shouting and knocking",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1765,8 +1920,17 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Entre Pastia\nl'empêchant de crier",
-            "translation": "Pastia enters.\n(stopping her from shouting)"
+            "original": "Entre Pastia",
+            "translation": "Pastia enters.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "l'empêchant de crier",
+            "translation": "stopping her from shouting",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "PASTIA",
@@ -1778,7 +1942,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "lui jetant la pièce",
-            "translation": "(throwing him the coin)"
+            "translation": "throwing him the coin",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1797,7 +1963,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "à José",
-            "translation": "(to José)"
+            "translation": "to José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1844,7 +2012,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "mettant ses deux mains dans les mains de José",
-            "translation": "(placing both her hands in José’s)"
+            "translation": "placing both her hands in José’s",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1856,7 +2026,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Rentre Lillas Pastia apportant sur un plateau des oranges, des bonbons, des fruits confits, du Manzanilla.",
-            "translation": "Lillas Pastia returns carrying oranges, sweets, candied fruit, and manzanilla on a tray."
+            "translation": "Lillas Pastia returns carrying oranges, sweets, candied fruit, and manzanilla on a tray.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -1868,7 +2040,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Pastia obéit et la moitié des objets roule par terre.",
-            "translation": "Pastia obeys, and half the things roll onto the floor."
+            "translation": "Pastia obeys, and half the things roll onto the floor.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -1880,7 +2054,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Pastia sort.",
-            "translation": "Pastia leaves."
+            "translation": "Pastia leaves.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -1892,7 +2068,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Elle est assise; Don José s'assied en face d'elle.",
-            "translation": "She sits; Don José sits opposite her."
+            "translation": "She sits; Don José sits opposite her.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -1967,7 +2145,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "en riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1986,7 +2166,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "tendrement",
-            "translation": "(tenderly)"
+            "translation": "tenderly",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -1998,7 +2180,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Elle casse une assiette, avec deux morceaux de faïence se fait des castagnettes et les essaie ...",
-            "translation": "She breaks a plate, makes castanets from two pieces of pottery, and tries them out ..."
+            "translation": "She breaks a plate, makes castanets from two pieces of pottery, and tries them out ...",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -2010,7 +2194,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "trouvant les castagnettes sur la table à  droite",
-            "translation": "(finding the castanets on the table to the right)"
+            "translation": "finding the castanets on the table to the right",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -2022,7 +2208,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "riant",
-            "translation": "(laughing)"
+            "translation": "laughing",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2045,7 +2233,12 @@ export const carmenActTwoScenes = [
             "literalText": true,
             "speakerTranslation": "Carmen"
           }
-        ]
+        ],
+        "routeItem": 10,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "C’est un dragon, ma foi",
+        "translatedTitle": "He really is a dragoon"
       },
       {
         "number": "17",
@@ -2065,7 +2258,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Elle fait asseoir Don José dans un coin du théâtre. Petite danse. Carmen du bout des lèvres fredonne un air qu'elle accompagne avec ses castagnettes. Don José la dévore des yeux. On entend au loin, très loin, des clairons qui sonnent la retraite. Don José prête l'oreille. Il croit entendre les clairons, mais les castagnettes de Carmen claquent très bruyamment. Don José s'approche de Carmen, lui prend le bras, et l'oblige à s'arrêter.",
-            "translation": "She seats Don José in a corner of the tavern. A little dance. Carmen hums a tune softly, accompanying herself on her castanets. Don José devours her with his eyes. In the far distance, bugles sound the retreat. Don José listens. He thinks he hears them, but Carmen’s castanets clatter very loudly. Don José approaches Carmen, takes her arm, and makes her stop."
+            "translation": "She seats Don José in a corner of the tavern. A little dance. Carmen hums a tune softly, accompanying herself on her castanets. Don José devours her with his eyes. In the far distance, bugles sound the retreat. Don José listens. He thinks he hears them, but Carmen’s castanets clatter very loudly. Don José approaches Carmen, takes her arm, and makes her stop.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -2097,8 +2292,10 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Elle reprend sa chanson qui rythme sur la retraite sonnée au dehors par les clairons. Carmen se remet à danser et Don José se remet à\nregarder Carmen. La retraite approche … approche... approche... passe sous les fenêtres de l'auberge … puis s'éloigne …\nLe son des clairons va s'affaiblissant. Nouvel effort de Don José pour s'arracher à cette contemplation de Carmen ... Il lui prend le bras\net l'oblige encore à s'arrêter.",
-            "translation": "She resumes her song, keeping time with the retreat sounded outside by the bugles. Carmen starts dancing again, and Don José goes back to watching her. The retreat draws nearer ... nearer ... nearer ... passes beneath the inn windows ... then fades away ...\nThe bugles grow fainter. Don José makes another effort to tear himself away from watching Carmen. He takes her arm\nand makes her stop again."
+            "original": "Elle reprend sa chanson qui rythme sur la retraite sonnée au dehors par les clairons. Carmen se remet à danser et Don José se remet à regarder Carmen. La retraite approche … approche... approche... passe sous les fenêtres de l'auberge … puis s'éloigne … Le son des clairons va s'affaiblissant. Nouvel effort de Don José pour s'arracher à cette contemplation de Carmen ... Il lui prend le bras et l'oblige encore à s'arrêter.",
+            "translation": "She resumes her song, keeping time with the retreat sounded outside by the bugles. Carmen starts dancing again, and Don José goes back to watching her. The retreat draws nearer ... nearer ... nearer ... passes beneath the inn windows ... then fades away ... The bugles grow fainter. Don José makes another effort to tear himself away from watching Carmen. He takes her arm and makes her stop again.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
@@ -2109,8 +2306,17 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Le bruit de la retraite cesse tout à coup.\nregardant Don José qui remet sa giberne et rattache le ceinturon de son sabre.",
-            "translation": "The sound of the retreat suddenly stops.\n(watching Don José put on his cartridge box and fasten his sword belt)"
+            "original": "Le bruit de la retraite cesse tout à coup.",
+            "translation": "The sound of the retreat suddenly stops.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "regardant Don José qui remet sa giberne et rattache le ceinturon de son sabre.",
+            "translation": "watching Don José put on his cartridge box and fasten his sword belt",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2122,7 +2328,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Avec fureur, lui envoyant son shako à la volée.",
-            "translation": "(furiously, flinging his shako at him)"
+            "translation": "furiously, flinging his shako at him",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2190,7 +2398,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "violemment",
-            "translation": "(violently)"
+            "translation": "violently",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -2202,12 +2412,14 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "De la main gauche il a saisi brusquement le bras de Carmen; de la main droite, il va chercher sous sa veste d'uniforme la fleur de cassie que Carmen lui a jetée au premier acte. Il montre cette fleur à Carmen.",
-            "translation": "With his left hand he suddenly seizes Carmen’s arm; with his right, he reaches under his uniform jacket for the cassia flower Carmen threw at him in Act I. He shows it to her."
+            "translation": "With his left hand he suddenly seizes Carmen’s arm; with his right, he reaches under his uniform jacket for the cassia flower Carmen threw at him in Act I. He shows it to her.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
             "original": "La fleur que tu m'avais jetée,\nDans ma prison m'était restée,\nFlétrie et sèche, cette fleur\nGardait toujours sa douce odeur;\nEt pendant des heures entières,\nSur mes yeux fermant mes paupières\nDe cette odeur je m'enivrais\nEt dans la nuit je te voyais.\nJe me prenais à te maudire\nÀ te détester, à me dire:\nPourquoi faut-il que le destin\nL'ait mise là sur mon chemin?\nPuis je m'accusais de blasphème\nEt je ne sentais en moi-même\nQu'un seul désir, un seul espoir,\nTe revoir, ô Carmen, oui te revoir! …\nCar tu n'avais eu qu'à paraître,\nQu'à jeter un regard sur moi\nPour t'emparer de tout mon être,\nÔ ma Carmen.\nEt j'étais une chose à toi.\nCarmen, je t'aime!",
-            "translation": "The flower you threw at me\nStayed with me in prison.\nWithered and dry, that flower\nStill kept its sweet fragrance;\nFor hours on end,\nWith closed eyes,\nI would lose myself in its scent,\nAnd in the night I saw you.\nI would curse you,\nHate you, tell myself:\nWhy must fate\nHave put her in my path?\nThen I accused myself of blasphemy,\nAnd all I felt within me\nWas a single desire, a single hope:—\nTo see you again, O Carmen, yes, see you again! ...\nFor all you had to do was appear,\nAll you had to do was look at me,\nAnd you took possession of my whole being,\nO my Carmen.\nAnd I became your thing.\nCarmen, I love you!",
+            "translation": "The flower you threw at me\nStayed with me in prison.\nWithered and dry, that flower\nStill kept its sweet fragrance;\nFor hours on end,\nWith closed eyes,\nI would lose myself in its scent,\nAnd in the night I saw you.\nI would curse you,\nHate you, tell myself:\nWhy must fate\nHave put her in my path?\nThen I accused myself of blasphemy,\nAnd all I felt within me\nWas a single desire, a single hope:—\nTo see you again, O Carmen, yes, see you again! ...\nFor all you had to do was appear,\nAll you had to do was look at me,\nAnd you took possession of my whole being,\nO my Carmen.\nAnd I belonged to you entirely.\nCarmen, I love you!",
             "literalText": true,
             "speakerTranslation": "José"
           },
@@ -2270,7 +2482,7 @@ export const carmenActTwoScenes = [
           {
             "speaker": "CARMEN",
             "original": "Là-bas, là-bas tu me suivrais.\nTu me suivrais, si tu m'aimais.\nTu n'y dépendrais de personne,\nPoint d'officier à qui tu doives obéir,\nEt point de retraite qui sonne\nPour dire à l'amoureux qu'il est temps de partir.\nLe ciel ouvert, la vie errante,\nPour pays l'univers, et pour loi ta volonté,\nEt surtout la chose enivrante,\nLa liberté! La liberté!",
-            "translation": "There, there you’d follow me.\nYou’d follow me if you loved me.\nThere you’d answer to no one,\nNo officer you must obey,\nAnd no retreat sounding\nTo tell a lover it’s time to go.\nThe open sky, a wandering life,\nThe world for our country, your will for our law,\nAnd above all, the intoxicating thing:—\nFreedom! Freedom!",
+            "translation": "There, there you’d follow me.\nYou’d follow me if you loved me.\nThere you’d answer to no one,\nNo officer you must obey,\nAnd no retreat sounding\nTo tell a lover it’s time to go.\nThe open sky, a wandering life,\nThe world for your country, your will for your law,\nAnd above all, the intoxicating thing:—\nFreedom! Freedom!",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
@@ -2340,7 +2552,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "S'arrachant brusquement des bras de Carmen.",
-            "translation": "(wrenching himself suddenly from Carmen’s arms)"
+            "translation": "wrenching himself suddenly from Carmen’s arms",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -2415,9 +2629,16 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Il va en courant jusqu'à la porte... Au moment où il y arrive, on frappe... Don José s'arrête. Silence. On frappe encore.",
-            "translation": "He runs to the door. As he reaches it, someone knocks. Don José stops. Silence. Another knock."
+            "translation": "He runs to the door. As he reaches it, someone knocks. Don José stops. Silence. Another knock.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
-        ]
+        ],
+        "routeItem": 11,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Je vais danser en votre honneur",
+        "translatedTitle": "I’ll dance in your honor"
       },
       {
         "number": "18",
@@ -2426,12 +2647,11 @@ export const carmenActTwoScenes = [
           "Zuniga",
           "José",
           "Carmen",
-          "Le Dancaïre and Le Remendado",
           "Le Dancaïre",
-          "Le Remendado and Chorus",
-          "Frasquita, Mercédès, Carmen, and the women",
-          "Le Remendado, Le Dancaïre, and the men",
-          "All"
+          "Le Remendado",
+          "Chorus",
+          "Frasquita",
+          "Mercédès"
         ],
         "turns": [
           {
@@ -2458,7 +2678,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "faisant sauter la porte.",
-            "translation": "(kicking the door open)"
+            "translation": "kicking the door open",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -2469,8 +2691,17 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "II entre et voit Don José. A Carmen.",
-            "translation": "He enters and sees Don José.\n(to Carmen)"
+            "original": "II entre et voit Don José.",
+            "translation": "He enters and sees Don José.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "A Carmen.",
+            "translation": "to Carmen",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -2482,7 +2713,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "à Don José",
-            "translation": "(to Don José)"
+            "translation": "to Don José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -2515,7 +2748,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "le frappant",
-            "translation": "(striking him)"
+            "translation": "striking him",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "ZUNIGA",
@@ -2527,7 +2762,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "sautant sur son sabre",
-            "translation": "(leaping for his sword)"
+            "translation": "leaping for his sword",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "JOSÉ",
@@ -2538,8 +2775,17 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Zuniga dégaine à moitié.\nse jetant entre eux deux",
-            "translation": "Zuniga half draws his sword.\n(throwing herself between them)"
+            "original": "Zuniga dégaine à moitié.",
+            "translation": "Zuniga half draws his sword.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "se jetant entre eux deux",
+            "translation": "throwing herself between them",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2551,7 +2797,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "appelant",
-            "translation": "(calling)"
+            "translation": "calling",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2563,7 +2811,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "Le Dancaïre, le Remendado et les bohémiens paraissent de tous les côtés. Carmen d'un geste montre Zuniga aux bohémiens; le Dancaïre et le Remendado se jettent sur lui, le désarment.",
-            "translation": "Dancaïre, Remendado, and the gypsies appear from every side. Carmen gestures toward Zuniga; Dancaïre and Remendado leap on him and disarm him."
+            "translation": "Dancaïre, Remendado, and the gypsies appear from every side. Carmen gestures toward Zuniga; Dancaïre and Remendado leap on him and disarm him.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "CARMEN",
@@ -2603,7 +2853,9 @@ export const carmenActTwoScenes = [
           {
             "speaker": "Stage direction",
             "original": "avec philosophie",
-            "translation": "(philosophically)"
+            "translation": "philosophically",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "LE DANCAÏRE",
@@ -2621,8 +2873,17 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "L'officier sort, emmené par quatre bohémiens, le pistolet à la main.\nà Don José",
-            "translation": "The officer leaves, escorted by four gypsies, with a pistol in hand.\n(to Don José)"
+            "original": "L'officier sort, emmené par quatre bohémiens, le pistolet à la main.",
+            "translation": "The officer is led away by four gypsies, pistols in hand.",
+            "shortCue": false,
+            "bracketStageDirection": false
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "à Don José",
+            "translation": "to Don José",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "CARMEN",
@@ -2668,12 +2929,27 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "TOUS",
-            "original": "Le ciel ouvert, la vie errante,\nPour pays tout l'univers\nPour loi ta volonté,\nEt surtout la chose enivrante:\nLa liberté! La liberté!\nEntr'acte",
-            "translation": "The open sky, a wandering life,\nThe whole world for our country,\nYour will for our law,\nAnd above all, the intoxicating thing:—\nFreedom! Freedom!\nEntr’acte.",
+            "original": "Le ciel ouvert, la vie errante,\nPour pays tout l'univers\nPour loi ta volonté,\nEt surtout la chose enivrante:\nLa liberté! La liberté!",
+            "translation": "The open sky, a wandering life,\nThe whole world for our country,\nYour will for our law,\nAnd above all, the intoxicating thing:—\nFreedom! Freedom!",
             "literalText": true,
             "speakerTranslation": "All"
           }
-        ]
+        ],
+        "routeItem": 12,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Holà! Carmen!",
+        "translatedTitle": "Hey! Carmen!"
+      },
+      {
+        "number": null,
+        "type": "Entracte",
+        "routeItem": 13,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "instrumental": true,
+        "participants": [],
+        "turns": []
       }
     ]
   }

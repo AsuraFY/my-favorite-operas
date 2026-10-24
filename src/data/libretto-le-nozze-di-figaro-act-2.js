@@ -11,13 +11,9 @@ export const figaroActTwoScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "Camera ricca con alcova e tre porte",
-            "en": "A richly furnished room with an alcove and three doors."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "La Contessa sola: poi Susanna e poi Figaro",
-            "en": "The Countess alone; then Susanna, and then Figaro."
+            "it": "Camera ricca con alcova e tre porte\nLa Contessa sola: poi Susanna e poi Figaro",
+            "en": "A richly furnished room with an alcove and three doors.\nThe Countess alone; then Susanna, and then Figaro.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
@@ -29,8 +25,9 @@ export const figaroActTwoScenes = [
         ],
         "number": 11,
         "participants": [
-          "La Contessa"
-        ]
+          "The Countess"
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Recitativo",
@@ -45,7 +42,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "entra",
-            "en": "Enters."
+            "en": "Enters.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -92,7 +91,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "cantando entro la scena",
-            "en": "Singing offstage."
+            "en": "Singing offstage.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -167,7 +168,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "alla Contessa",
-            "en": "To the Countess."
+            "en": "To the Countess.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -193,7 +196,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "segnando la Contessa",
-            "en": "Indicating the Countess."
+            "en": "Indicating the Countess.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -214,12 +219,14 @@ export const figaroActTwoScenes = [
             "it": "Aspetta: al Conte\nfarai subito dir, che verso sera\nattendati in giardino,\nil picciol Cherubino\nper mio consiglio non ancora partito\nda femmina vestito,\nfaremo che in sua vece ivi sen vada.\nQuesta è l'unica strada\nonde monsù sorpreso da madama\nsia costretto a far poi quel che si brama.",
             "literalText": true,
             "speakerTranslation": "Figaro",
-            "en": "Wait: you will immediately\nhave the Count told that towards evening\nyou await him in the garden;\nlittle Cherubino,\nwho on my advice has not yet left,\ndressed as a woman,\nwe shall have go there in your place.\nThis is the only way\nto force monsieur, caught by my lady,\nto do what we want afterwards."
+            "en": "Wait: have the Count\ntold at once that towards evening\nhe should wait for you in the garden;\nlittle Cherubino,\nwho on my advice has not yet left,\ndressed as a woman,\nwe shall have go there in your place.\nThis is the only way\nto force monsieur, caught by my lady,\nto do what we want afterwards."
           },
           {
             "speaker": "Stage direction",
             "it": "a Susanna",
-            "en": "To Susanna."
+            "en": "To Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -273,14 +280,17 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "parte",
-            "en": "Exits."
+            "en": "Exits.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
         ],
         "participants": [
-          "La Contessa",
+          "The Countess",
           "Susanna",
           "Figaro"
-        ]
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "La Contessa, Susanna, Figaro"
@@ -295,14 +305,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "La Contessa, Susanna, poi Cherubino",
-            "en": "The Countess, Susanna, then Cherubino."
+            "en": "The Countess, Susanna, then Cherubino.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
             "it": "Quanto duolmi, Susanna,\nche questo giovinotto abbia del Conte\nle stravaganze udite! Ah tu non sai! ...\nMa per qual causa mai\nDa me stessa ei non venne? ...\nDov'è la canzonetta?",
             "literalText": true,
             "speakerTranslation": "The Countess",
-            "en": "How it grieves me, Susanna,\nthat this young fellow has heard\nthe Count’s foolish behaviour! Ah, you do not know!...\nBut why ever\ndid he not come to me himself?...\nWhere is the little song?"
+            "en": "How it grieves me, Susanna,\nthat this young fellow has heard of the Count’s\noutrageous behaviour! Ah, you do not know!...\nBut why ever\ndid he not come to me himself?...\nWhere is the little song?"
           },
           {
             "speaker": "Susanna",
@@ -349,7 +361,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "additando Cherubino",
-            "en": "Pointing to Cherubino."
+            "en": "Pointing to Cherubino.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -381,10 +395,11 @@ export const figaroActTwoScenes = [
           }
         ],
         "participants": [
-          "La Contessa",
+          "The Countess",
           "Susanna",
           "Cherubino"
-        ]
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Arietta",
@@ -400,7 +415,8 @@ export const figaroActTwoScenes = [
         "number": 12,
         "participants": [
           "Cherubino"
-        ]
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Recitativo",
@@ -429,7 +445,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "si misura con Cherubin",
-            "en": "Compares her height with Cherubino’s."
+            "en": "Compares her height with Cherubino’s.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -441,7 +459,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "gli cava il manto",
-            "en": "Takes off his cloak."
+            "en": "Takes off his cloak.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -474,7 +494,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "chiude la porta",
-            "en": "Closes the door."
+            "en": "Closes the door.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -492,18 +514,9 @@ export const figaroActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "it": "Susanna va nel gabinetto a pigliar una cuffia:",
-            "en": "Susanna goes into the dressing room to fetch a cap."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Cherubino si accosta alla Contessa, e gli lascia veder la patente che terrà in petto:",
-            "en": "Cherubino approaches the Countess and shows her the commission he carries against his breast."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "la Contessa la prende, l'apre: e vede che manca il sigillo.",
-            "en": "The Countess takes it, opens it, and sees that the seal is missing."
+            "it": "Susanna va nel gabinetto a pigliar una cuffia:\nCherubino si accosta alla Contessa, e gli lascia veder la patente che terrà in petto:\nla Contessa la prende, l'apre: e vede che manca il sigillo.",
+            "en": "Susanna goes into the dressing room to fetch a cap.\nCherubino approaches the Countess and shows her the commission he carries against his breast.\nThe Countess takes it, opens it, and sees that the seal is missing.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
@@ -536,7 +549,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "gliela rende",
-            "en": "Returns it to him."
+            "en": "Returns it to him.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -548,7 +563,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "sorte",
-            "en": "Comes out."
+            "en": "Comes out.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -580,11 +597,11 @@ export const figaroActTwoScenes = [
           }
         ],
         "participants": [
-          "La Contessa",
+          "The Countess",
           "Susanna",
-          "Cherubin",
           "Cherubino"
-        ]
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Aria",
@@ -598,13 +615,9 @@ export const figaroActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "it": "prende Cherubino e se lo fa inginocchiare",
-            "en": "Takes Cherubino and makes him kneel."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "davanti poco discosto dalla Contessa che siede",
-            "en": "In front of, a short distance from, the seated Countess."
+            "it": "prende Cherubino e se lo fa inginocchiare\ndavanti poco discosto dalla Contessa che siede",
+            "en": "Takes Cherubino and makes him kneel.\nIn front of, a short distance from, the seated Countess.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
@@ -615,13 +628,9 @@ export const figaroActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "it": "lo pettina da un lato, poi lo prende pel mento",
-            "en": "Combs his hair on one side, then takes him by the chin."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "e lo volge a suo piacere",
-            "en": "And turns him as she pleases."
+            "it": "lo pettina da un lato, poi lo prende pel mento\ne lo volge a suo piacere",
+            "en": "Combs his hair on one side, then takes him by the chin.\nAnd turns him as she pleases.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
@@ -632,13 +641,9 @@ export const figaroActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "it": "Cherubino, mentre Susanna lo sta acconciando",
-            "en": "Cherubino, while Susanna is arranging his appearance,"
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "guarda la Contessa teneramente.",
-            "en": "looks tenderly at the Countess."
+            "it": "Cherubino, mentre Susanna lo sta acconciando\nguarda la Contessa teneramente.",
+            "en": "Cherubino, while Susanna is arranging his appearance,\nlooks tenderly at the Countess.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
@@ -650,7 +655,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "seguita ad acconciarlo ed a porgli la cuffia",
-            "en": "Continues arranging him and putting the cap on him."
+            "en": "Continues arranging him and putting the cap on him.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
@@ -662,7 +669,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano alla Contessa",
-            "en": "Softly to the Countess."
+            "en": "Softly to the Countess.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -675,7 +684,8 @@ export const figaroActTwoScenes = [
         "number": 13,
         "participants": [
           "Susanna"
-        ]
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Recitativo",
@@ -704,7 +714,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "eseguisce",
-            "en": "Does so."
+            "en": "Does so.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -723,7 +735,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "scoprendo un nastro, onde ha fasciato il braccio",
-            "en": "Discovering a ribbon with which he has bandaged his arm."
+            "en": "Discovering a ribbon with which he has bandaged his arm.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
@@ -770,7 +784,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Susanna parte in fretta",
-            "en": "Susanna exits quickly."
+            "en": "Susanna exits quickly.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -782,7 +798,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "entra e le dà il taffetà e le forbici",
-            "en": "Enters and gives her the sticking plaster and scissors."
+            "en": "Enters and gives her the sticking plaster and scissors.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
@@ -807,13 +825,9 @@ export const figaroActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
-            "it": "Susanna parte per la porta ch'è in fondo",
-            "en": "Susanna exits through the door at the back."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "e porta seco il mantello di Cherubino.",
-            "en": "And takes Cherubino’s cloak with her."
+            "it": "Susanna parte per la porta ch'è in fondo\ne porta seco il mantello di Cherubino.",
+            "en": "Susanna exits through the door at the back.\nAnd takes Cherubino’s cloak with her.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
@@ -881,7 +895,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "si sente picchiare alla porta.",
-            "en": "A knock is heard at the door."
+            "en": "A knock is heard at the door.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -893,7 +909,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "fuori della porta",
-            "en": "Outside the door."
+            "en": "Outside the door.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -947,12 +965,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "entra nel gabinetto e chiude",
-            "en": "Enters the dressing room and closes the door."
+            "en": "Enters the dressing room and closes the door.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Stage direction",
             "it": "prende la chiave",
-            "en": "Takes the key."
+            "en": "Takes the key.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -964,15 +986,18 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "corre ad aprire al Conte",
-            "en": "Runs to open the door to the Count."
+            "en": "Runs to open the door to the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
         ],
         "participants": [
-          "La Contessa",
+          "The Countess",
           "Susanna",
           "Cherubino",
-          "Il Conte"
-        ]
+          "The Count"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "La Contessa, Susanna, Cherubino, Cherubin, Il Conte"
@@ -987,7 +1012,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "La Contessa ed il Conte da cacciatore",
-            "en": "The Countess and the Count, dressed for hunting."
+            "en": "The Countess and the Count, dressed for hunting.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
@@ -1034,7 +1061,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Cherubino fa cadere un tavolino, ed una sedia in gabinetto, con molto strepito.",
-            "en": "Cherubino knocks over a small table and a chair in the dressing room with a loud crash."
+            "en": "Cherubino knocks over a small table and a chair in the dressing room with a loud crash.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
@@ -1144,14 +1173,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "La Susanna entra per la porta ond'è uscita, e si ferma vedendo il Conte, che dalla porta del gabinetto sta favellando.",
-            "en": "Susanna enters through the door by which she left and stops on seeing the Count speaking from the dressing-room door."
+            "en": "Susanna enters through the door by which she left and stops on seeing the Count speaking from the dressing-room door.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
         ],
         "participants": [
-          "Il Conte",
-          "La Contessa",
-          "Il Cont"
-        ]
+          "The Count",
+          "The Countess"
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Terzetto",
@@ -1229,7 +1260,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Susanna si nasconde entro l'alcova.",
-            "en": "Susanna hides in the alcove."
+            "en": "Susanna hides in the alcove.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -1255,10 +1288,11 @@ export const figaroActTwoScenes = [
         ],
         "number": 14,
         "participants": [
-          "Il Conte",
-          "La Contessa",
+          "The Count",
+          "The Countess",
           "Susanna"
-        ]
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Recitativo",
@@ -1301,7 +1335,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "chiude a chiave la porta che conduce alle stanze delle cameriere",
-            "en": "Locks the door leading to the maids’ rooms."
+            "en": "Locks the door leading to the maids’ rooms.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
@@ -1334,13 +1370,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Partono",
-            "en": "They exit."
+            "en": "They exit.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
         ],
         "participants": [
-          "Il Conte",
-          "La Contessa"
-        ]
+          "The Count",
+          "The Countess"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Il Conte, La Contessa, Il Cont, Susanna"
@@ -1355,12 +1394,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Susanna e Cherubino",
-            "en": "Susanna and Cherubino."
+            "en": "Susanna and Cherubino.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "uscendo dall'alcova in fretta; alla porta del gabinetto",
-            "en": "Hurrying out of the alcove, to the dressing-room door."
+            "en": "Hurrying out of the alcove, to the dressing-room door.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
@@ -1386,7 +1429,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "accostandosi or ad una, or ad un'altra porta",
-            "en": "Approaching first one door, then another."
+            "en": "Approaching first one door, then another.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susann",
@@ -1398,7 +1443,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Cherubino accostandosi or ad una, or ad un'altra porta",
-            "en": "Cherubino approaches first one door, then another."
+            "en": "Cherubino approaches first one door, then another.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna e Cherubino",
@@ -1424,7 +1471,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "affacciandosi alla finestra",
-            "en": "Looking out of the window."
+            "en": "Looking out of the window.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Cherubino",
@@ -1436,12 +1485,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "facendo moto di saltar giù",
-            "en": "Making a movement to jump down."
+            "en": "Making a movement to jump down.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Stage direction",
             "it": "trattenendolo",
-            "en": "Holding him back."
+            "en": "Holding him back.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -1453,7 +1506,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "tornando a guardare",
-            "en": "Looking again."
+            "en": "Looking again.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Cherubino",
@@ -1465,7 +1520,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "trattenendolo sempre",
-            "en": "Still holding him back."
+            "en": "Still holding him back.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -1477,7 +1534,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "si scioglie",
-            "en": "Breaks free."
+            "en": "Breaks free.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Cherubino",
@@ -1489,7 +1548,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "salta fuori",
-            "en": "Jumps out."
+            "en": "Jumps out.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -1502,10 +1563,9 @@ export const figaroActTwoScenes = [
         "number": 15,
         "participants": [
           "Susanna",
-          "Cherubino",
-          "Susann",
-          "Susanna e Cherubino"
-        ]
+          "Cherubino"
+        ],
+        "sourceTitlesOnly": true
       },
       {
         "type": "Recitativo",
@@ -1520,12 +1580,15 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "entra in gabinetto e si chiude dietro la porta",
-            "en": "Enters the dressing room and closes the door behind her."
+            "en": "Enters the dressing room and closes the door behind her.",
+            "shortCue": false,
+            "bracketStageDirection": false
           }
         ],
         "participants": [
           "Susanna"
-        ]
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Susanna, Cherubino, Susann, Susanna e Cherubino"
@@ -1540,7 +1603,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "La Contessa, il Conte con martello e tenaglia in mano; al suo arrivo esamina tutte le porte.",
-            "en": "The Countess and the Count, with hammer and pincers in his hand; on arriving he examines all the doors."
+            "en": "The Countess and the Count, with hammer and pincers in his hand; on arriving he examines all the doors.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
@@ -1635,9 +1700,10 @@ export const figaroActTwoScenes = [
           }
         ],
         "participants": [
-          "Il Conte",
-          "La Contessa"
-        ]
+          "The Count",
+          "The Countess"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Il Conte, La Contessa"
@@ -1652,12 +1718,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "La Contessa ed il Conte",
-            "en": "The Countess and the Count."
+            "en": "The Countess and the Count.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "alla porta del gabinetto",
-            "en": "At the dressing-room door."
+            "en": "At the dressing-room door.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -1746,7 +1816,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "dandogli la chiave",
-            "en": "Giving him the key."
+            "en": "Giving him the key.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -1800,9 +1872,10 @@ export const figaroActTwoScenes = [
         ],
         "number": 16,
         "participants": [
-          "Il Conte",
-          "La Contessa"
-        ]
+          "The Count",
+          "The Countess"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Il Conte, La Contessa"
@@ -1816,13 +1889,9 @@ export const figaroActTwoScenes = [
         "turns": [
           {
             "speaker": "Stage direction",
-            "it": "I suddetti e Susanna",
-            "en": "The same characters and Susanna."
-          },
-          {
-            "speaker": "Stage direction",
-            "it": "Il Conte apre il gabinetto e Susanna esce sulla porta, ed ivi si ferma.",
-            "en": "The Count opens the dressing room; Susanna comes out to the doorway and stops there."
+            "it": "I suddetti e Susanna\nIl Conte apre il gabinetto e Susanna esce sulla porta, ed ivi si ferma.",
+            "en": "The same characters and Susanna.\nThe Count opens the dressing room; Susanna comes out to the doorway and stops there.",
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
@@ -1890,14 +1959,17 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "entra nel gabinetto",
-            "en": "Enters the dressing room."
+            "en": "Enters the dressing room.",
+            "shortCue": true,
+            "bracketStageDirection": true
           }
         ],
         "participants": [
-          "Il Conte",
-          "La Contessa",
+          "The Count",
+          "The Countess",
           "Susanna"
-        ]
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Il Conte, La Contessa, Susanna"
@@ -1912,7 +1984,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "Susanna, la Contessa e poi il Conte",
-            "en": "Susanna, the Countess, and then the Count."
+            "en": "Susanna, the Countess, and then the Count.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "La Contessa",
@@ -1924,7 +1998,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "addita alla Contessa la finestra onde è saltato Cherubino",
-            "en": "Points out to the Countess the window from which Cherubino jumped."
+            "en": "Points out to the Countess the window from which Cherubino jumped.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Susanna",
@@ -1936,7 +2012,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "esce dal gabinetto",
-            "en": "Comes out of the dressing room."
+            "en": "Comes out of the dressing room.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -1984,7 +2062,7 @@ export const figaroActTwoScenes = [
             "speaker": "Il Conte",
             "speakerTranslation": "The Count",
             "it": "Quell'ira, Susanna,\nm'aita a calmar.",
-            "en": "Susanna, help me\nto calm that anger.",
+            "en": "That anger, Susanna,\nhelp me soothe it.",
             "literalText": true
           },
           {
@@ -1992,14 +2070,14 @@ export const figaroActTwoScenes = [
             "it": "Così si condanna\nchi può sospettar.",
             "literalText": true,
             "speakerTranslation": "Susanna",
-            "en": "Thus is condemned\nthe one who can suspect."
+            "en": "That is the punishment\nfor one who harbours suspicions."
           },
           {
             "speaker": "La Contessa",
             "it": "Adunque la fede\nd'un'anima amante\nsì fiera mercede\ndoveva sperar?",
             "literalText": true,
             "speakerTranslation": "The Countess",
-            "en": "So the faithfulness\nof a loving soul\nwas to expect\nso cruel a reward?"
+            "en": "So the faithfulness\nof a loving soul\nso cruel a reward\nwas meant to expect?"
           },
           {
             "speaker": "Susanna",
@@ -2018,7 +2096,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "To the Count."
+            "en": "To the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -2046,7 +2126,7 @@ export const figaroActTwoScenes = [
             "it": "Soffrir sì gran torto\nquest'alma non sa.",
             "literalText": true,
             "speakerTranslation": "The Countess",
-            "en": "This soul cannot\nbear so great a wrong."
+            "en": "To bear so great a wrong\nis beyond this heart."
           },
           {
             "speaker": "Il Conte",
@@ -2151,16 +2231,15 @@ export const figaroActTwoScenes = [
             "it": "Da questo momento\nquest'alma a conoscermi/conoscerla/conoscervi\napprender potrà.",
             "literalText": true,
             "speakerTranslation": "The Countess, Susanna and The Count",
-            "en": "From this moment\nthis soul, to know me/her/you,\nwill be able to learn."
+            "en": "From this moment\nthis heart can learn to know me/her/you\nfor who I am/she is/you are."
           }
         ],
         "participants": [
-          "La Contessa",
+          "The Countess",
           "Susanna",
-          "Il Conte",
-          "La Contessa e Susanna",
-          "La Contessa, Susanna ed Il Conte"
-        ]
+          "The Count"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "La Contessa, Susanna, Il Conte, La Contessa e Susanna, La Contessa, Susanna ed Il Conte"
@@ -2175,7 +2254,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "I suddetti e Figaro",
-            "en": "The same characters and Figaro."
+            "en": "The same characters and Figaro.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Figaro",
@@ -2187,7 +2268,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "prendendo Susanna sotto il braccio",
-            "en": "Taking Susanna’s arm."
+            "en": "Taking Susanna’s arm.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2227,7 +2310,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2239,7 +2324,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "mostrandogli il foglio",
-            "en": "Showing him the note."
+            "en": "Showing him the note.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2391,7 +2478,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "To the Count."
+            "en": "To the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa, Susanna e Figaro",
@@ -2410,14 +2499,11 @@ export const figaroActTwoScenes = [
         ],
         "participants": [
           "Figaro",
-          "Il Conte",
-          "La Contessa, Susanna e Figaro",
-          "Susanna, La Contessa ed Il Conte",
-          "Susanna",
-          "La Contessa",
-          "La Contessa e Susanna",
-          "Susanna e La Contessa"
-        ]
+          "The Count",
+          "The Countess",
+          "Susanna"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Figaro, Il Conte, La Contessa, Susanna e Figaro, Susanna, La Contessa ed Il Conte, Susanna, La Contessa, La Contessa e Susanna, Susanna e La Contessa"
@@ -2432,7 +2518,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "I suddetti ed Antonio giardiniere con un vaso di garofani schiacciato",
-            "en": "The same characters and Antonio the gardener, with a pot of crushed carnations."
+            "en": "The same characters and Antonio the gardener, with a pot of crushed carnations.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Antonio",
@@ -2493,7 +2581,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "mostrandogli il vaso",
-            "en": "Showing him the pot."
+            "en": "Showing him the pot.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Antonio",
@@ -2519,7 +2609,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Figaro",
-            "en": "Softly to Figaro."
+            "en": "Softly to Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna e La Contessa",
@@ -2545,7 +2637,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2564,7 +2658,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Figaro",
-            "en": "Softly to Figaro."
+            "en": "Softly to Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -2576,7 +2672,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Susanna",
-            "en": "Softly to Susanna."
+            "en": "Softly to Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -2595,7 +2693,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Antonio",
@@ -2607,7 +2707,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -2619,7 +2721,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2659,7 +2763,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2678,7 +2784,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Figaro",
-            "en": "Softly to Figaro."
+            "en": "Softly to Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna e La Contessa",
@@ -2690,7 +2798,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -2716,7 +2826,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "To the Count."
+            "en": "To the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -2728,7 +2840,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Antonio",
@@ -2747,7 +2861,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Antonio",
@@ -2773,7 +2889,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna e La Contessa",
@@ -2785,7 +2903,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2820,7 +2940,7 @@ export const figaroActTwoScenes = [
             "it": "Esso appunto\nda Siviglia a cavallo qui giunto,\nda Siviglia ov'ei forse sarà.",
             "literalText": true,
             "speakerTranslation": "Figaro",
-            "en": "He himself\nhas arrived here on horseback from Seville,\nfrom Seville, where he perhaps may be."
+            "en": "Him, indeed!\nHe has ridden back here from Seville, has he—\nfrom Seville, where he may well be now!"
           },
           {
             "speaker": "Antonio",
@@ -2846,7 +2966,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2886,7 +3008,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "additando la camera delle serve",
-            "en": "Pointing to the maids’ room."
+            "en": "Pointing to the maids’ room.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -2898,7 +3022,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "fingendo d'aversi stroppiato il piede",
-            "en": "Pretending to have injured his foot."
+            "en": "Pretending to have injured his foot.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -2910,7 +3036,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "porgendo a Figaro alcune carte chiuse",
-            "en": "Offering Figaro some folded papers."
+            "en": "Offering Figaro some folded papers.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Antonio",
@@ -2922,7 +3050,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "togliendogliele",
-            "en": "Taking them from him."
+            "en": "Taking them from him.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -2934,7 +3064,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano alla Contessa e Susanna",
-            "en": "Softly to the Countess and Susanna."
+            "en": "Softly to the Countess and Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -2946,7 +3078,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Figaro",
-            "en": "Softly to Figaro."
+            "en": "Softly to Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna e La Contessa",
@@ -2958,7 +3092,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "apre il foglio e lo chiude tosto",
-            "en": "Opens the paper and immediately closes it."
+            "en": "Opens the paper and immediately closes it.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
@@ -2970,7 +3106,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "cavando di tasca alcune carte per guardare",
-            "en": "Taking some papers from his pocket to examine them."
+            "en": "Taking some papers from his pocket to examine them.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Figaro",
@@ -2996,7 +3134,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -3008,7 +3148,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -3020,7 +3162,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "ad Antonio",
-            "en": "To Antonio."
+            "en": "To Antonio.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna, La Contessa e Figaro",
@@ -3046,7 +3190,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "riapre la carta e poi tosto la chiude; a Figaro",
-            "en": "Opens the paper again, then immediately closes it; to Figaro."
+            "en": "Opens the paper again, then immediately closes it; to Figaro.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
@@ -3058,7 +3204,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Susanna",
-            "en": "Softly to Susanna."
+            "en": "Softly to Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -3070,7 +3218,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Figaro",
-            "en": "Softly to Figaro."
+            "en": "Softly to Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -3082,7 +3232,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "a Figaro",
-            "en": "To Figaro."
+            "en": "To Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Il Conte",
@@ -3122,7 +3274,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Susanna",
-            "en": "Softly to Susanna."
+            "en": "Softly to Susanna.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "La Contessa",
@@ -3134,7 +3288,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "piano a Figaro",
-            "en": "Softly to Figaro."
+            "en": "Softly to Figaro.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Susanna",
@@ -3174,7 +3330,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "guarda e vede che manca il sigillo; guasta il foglio e con somma collera lo getta",
-            "en": "Looks and sees that the seal is missing; crumples the paper and throws it away in great anger."
+            "en": "Looks and sees that the seal is missing; crumples the paper and throws it away in great anger.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Il Conte",
@@ -3200,15 +3358,12 @@ export const figaroActTwoScenes = [
         ],
         "participants": [
           "Antonio",
-          "Il Conte",
-          "La Contessa, Susanna, Il Conte e Figaro",
-          "Susanna e La Contessa",
-          "Susanna, La Contessa e Figaro",
+          "The Count",
+          "The Countess",
           "Susanna",
-          "Figaro",
-          "La Contessa",
-          "Il Cont"
-        ]
+          "Figaro"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Antonio, Il Conte, La Contessa, Susanna, Il Conte e Figaro, Susanna e La Contessa, Susanna, La Contessa e Figaro, Susanna, Figaro, La Contessa, Il Cont"
@@ -3223,12 +3378,16 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "I suddetti , Marcellina, Bartolo e Basilio",
-            "en": "The same characters, Marcellina, Bartolo and Basilio."
+            "en": "The same characters, Marcellina, Bartolo and Basilio.",
+            "shortCue": false,
+            "bracketStageDirection": false
           },
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "To the Count."
+            "en": "To the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Marcellina, Basilio e Bartolo",
@@ -3254,7 +3413,9 @@ export const figaroActTwoScenes = [
           {
             "speaker": "Stage direction",
             "it": "al Conte",
-            "en": "To the Count."
+            "en": "To the Count.",
+            "shortCue": true,
+            "bracketStageDirection": true
           },
           {
             "speaker": "Figaro",
@@ -3275,7 +3436,7 @@ export const figaroActTwoScenes = [
             "it": "Un impegno nuziale\nha costui con me contratto.\nE pretendo che il contratto\ndeva meco effettuar.",
             "literalText": true,
             "speakerTranslation": "Marcellina",
-            "en": "This man has entered\ninto a marriage pledge with me.\nAnd I demand that the contract\nbe fulfilled with me."
+            "en": "A promise of marriage\nthis man has made to me.\nAnd I demand that his pledge\nto marry me be fulfilled."
           },
           {
             "speaker": "Susanna, La Contessa e Figaro",
@@ -3349,15 +3510,15 @@ export const figaroActTwoScenes = [
           }
         ],
         "participants": [
-          "Marcellina, Basilio e Bartolo",
-          "Il Conte",
-          "Susanna, La Contessa e Figaro",
-          "Figaro",
           "Marcellina",
-          "Bartolo",
           "Basilio",
-          "Marcellina, Basilio, Bartolo ed Il Cont"
-        ]
+          "Bartolo",
+          "The Count",
+          "Susanna",
+          "The Countess",
+          "Figaro"
+        ],
+        "sourceTitlesOnly": true
       }
     ],
     "cast": "Marcellina, Basilio e Bartolo, Il Conte, Susanna, La Contessa e Figaro, Figaro, Marcellina, Bartolo, Basilio, Marcellina, Basilio, Bartolo ed Il Cont"
