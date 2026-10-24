@@ -342,16 +342,12 @@ function renderCompleteOutlineAct(act) {
         scene.sections.map((section, index) => section.beforeScene ? '' : renderCompleteSectionLink(scene, section, index, act)).join("") + '</div></section>';
     }).join("") + '</details>';
 }function renderOutlinePage() {
-  const albums = (libretto.albums || []).map(album =>
-    '<a href="' + escapeHtml(album.url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(album.name) + '</a>'
-  ).join(', ');
   return '<div class="opera-reading-page opera-outline-page" data-libretto-slug="' + libretto.slug + '">' + renderOperaBar(1, "outline") +
     '<section class="opera-outline" aria-labelledby="opera-outline-title">' +
     '<div class="opera-outline__heading"><h1 id="opera-outline-title">Libretto Outline</h1></div>' +
     '<div class="opera-outline__acts">' +
     actCatalog().map(({ number }) => renderCompleteOutlineAct(number)).join("") +
-    '</div>' + (libretto.outlineRecording ? '<p class="opera-outline__recording"><strong>Outline source:</strong> <a href="' + escapeHtml(libretto.spotifyAlbumUrl) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(libretto.outlineRecording) + '</a></p>' : '') +
-    (albums ? '<p class="opera-outline__recording"><strong>Albums:</strong> ' + albums + '</p>' : '') +
+    '</div>' +
     '</section></div>';
 }
 

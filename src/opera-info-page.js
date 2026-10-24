@@ -11,7 +11,10 @@ function renderFavorites(items = []) {
     '<rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 8.5 6 3.5-6 3.5z" fill="currentColor" stroke="none"/></svg>';
   const peopleIcon = '<svg class="favorite-performance__people-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
     '<path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 20v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
-  const cards = items.filter(p => albumLinkPattern.test(p.spotifyUrl || "")).map(p => {
+  // The one selected outline reference leads the list; otherwise retain the user's order.
+  const favorites = items.filter(p => albumLinkPattern.test(p.spotifyUrl || ""));
+  const ordered = favorites.filter(p => p.outlineReference).concat(favorites.filter(p => !p.outlineReference));
+  const cards = ordered.map(p => {
     const yearTypeVenue = [p.recordingYear, p.recordingType, p.venue].filter(Boolean).join(" · ");
     const spotlight = p.spotlightArtist ? ' · ' + escape(p.spotlightArtist) : "";
     const credits = [
@@ -36,7 +39,9 @@ function renderFavorites(items = []) {
           : '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
             '"><span aria-label="Spotify album artwork unavailable">♫</span></div>') +
         '<div class="favorite-performance__main">' +
-          '<h3 class="favorite-performance__title">' + escape(p.title) + spotlight + '</h3>' +
+          '<div class="favorite-performance__heading"><h3 class="favorite-performance__title">' + escape(p.title) + spotlight + '</h3>' +
+            (p.outlineReference ? '<span class="favorite-performance__reference">Libretto outline reference</span>' : '') +
+          '</div>' +
           (yearTypeVenue ? '<p class="favorite-performance__edition">' + escape(yearTypeVenue) + '</p>' : '') +
           '<details class="favorite-performance__details">' +
             '<summary><span class="favorite-performance__summary-label">' + peopleIcon +

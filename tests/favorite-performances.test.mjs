@@ -20,6 +20,7 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.equal(album.orchestra, "Bavarian Radio Symphony Orchestra");
   assert.equal(album.recordingYear, "1981");
   assert.equal(album.spotifyEditionVerified, true);
+  assert.equal(album.outlineReference, true);
   assert.equal(album.coverImage, "https://i.scdn.co/image/ab67616d0000b2730d05706fe7f204d1e2b9659b");
   assert.equal(album.youtubeUrl, "https://www.youtube.com/watch?v=Wleg_0SWHW0");
   assert.deepEqual(album.featuredArtists.map(artist => artist.name), ["Peter Hofmann", "Hildegard Behrens"]);
@@ -33,6 +34,8 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.ok(!page.includes('data-spotify-cover="'));
   assert.ok(!page.includes("i.ytimg.com"));
   assert.ok(page.includes('<h3 class="favorite-performance__title">Tristan und Isolde · Leonard Bernstein</h3>'));
+  assert.ok(page.includes('<span class="favorite-performance__reference">Libretto outline reference</span>'));
+  assert.equal((page.match(/class="favorite-performance__reference"/g) || []).length, 1);
   assert.ok(page.includes("1981 · Live, semi-staged concert · Herkulessaal, Munich"));
   assert.ok(!page.includes("Location: Herkulessaal"));
   assert.equal((page.match(/class="favorite-performance__details"/g) || []).length, 1);
@@ -63,11 +66,33 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   }
 });
 
-test("Tristan retains its separate and unchanged full-outline Albums reference", () => {
+test("Tristan keeps source metadata but displays its outline reference only with favorites", () => {
   const libretto = getLibretto(slug);
+  assert.deepEqual(libretto.albums, [{ name: "Wagner: Tristan und Isolde", url }]);
   globalThis.window = { location: { hash: "#/operas/tristan-und-isolde?view=outline" } };
   const outline = createLibrettoRenderer(libretto).outline();
-  assert.ok(outline.includes('<strong>Albums:</strong>'));
-  assert.ok(outline.includes('href="' + url + '"'));
+  assert.ok(!outline.includes('<strong>Albums:</strong>'));
+  assert.ok(!outline.includes('<strong>Outline source:</strong>'));
+  assert.ok(!outline.includes('href="' + url + '"'));
   assert.ok(!outline.includes('class="favorite-performance"'));
+});
+
+test("an outline-reference favorite renders first and is tagged exactly once", () => {
+  const reference = operaInformation[slug].favoritePerformances[0];
+  const another = {
+    title: "Another approved performance",
+    spotifyUrl: "https://open.spotify.com/album/EXAMPLEONLY2026",
+    cast: []
+  };
+  const page = renderOperaInformationPage(getOpera(slug), {
+    ...operaInformation[slug],
+    favoritePerformances: [another, reference]
+  });
+  assert.equal((page.match(/class="favorite-performance"/g) || []).length, 2);
+  const referenceTitle = page.indexOf('<h3 class="favorite-performance__title">Tristan und Isolde · Leonard Bernstein</h3>');
+  const otherTitle = page.indexOf('<h3 class="favorite-performance__title">Another approved performance</h3>');
+  assert.ok(referenceTitle > -1 && otherTitle > referenceTitle);
+  assert.equal((page.match(/class="favorite-performance__reference"/g) || []).length, 1);
+  const secondCard = page.slice(otherTitle);
+  assert.ok(!secondCard.includes("Libretto outline reference"));
 });

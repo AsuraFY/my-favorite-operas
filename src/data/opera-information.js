@@ -126,6 +126,7 @@ export const operaInformation = {
       "youtubeVideoId": "Wleg_0SWHW0",
       "spotifyUrl": "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E",
       "spotifyEditionVerified": true,
+      "outlineReference": true,
       "coverImage": "https://i.scdn.co/image/ab67616d0000b2730d05706fe7f204d1e2b9659b",
       "featuredArtists": [
         { "name": "Peter Hofmann", "role": "Tristan" },

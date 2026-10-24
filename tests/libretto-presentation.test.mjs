@@ -320,22 +320,20 @@ test("Figaro renders each source line beside its own English line in source orde
 });
 
 // La Bohème
-test("La Bohème full outline links its user-selected Spotify album under Albums", () => {
+test("La Bohème retains the chosen source album internally without an outline footer", () => {
   const libretto = getLibretto("la-boheme");
   const reader = createLibrettoRenderer(libretto);
   const selectedName = "La Bohème - Puccini";
   const selectedUrl = "https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp";
   assert.deepEqual(libretto.albums, [{ name: selectedName, url: selectedUrl }]);
   const outline = reader.outline();
-  assert.ok(outline.includes(
-    '<strong>Albums:</strong> <a href="' + selectedUrl +
-    '" target="_blank" rel="noopener noreferrer">' + selectedName + '</a>'
-  ));
-  assert.equal(outline.split('<strong>Albums:</strong>').length - 1, 1);
+  assert.ok(!outline.includes('<strong>Albums:</strong>'));
+  assert.ok(!outline.includes('<strong>Outline source:</strong>'));
+  assert.ok(!outline.includes(selectedUrl));
   window.location.hash = "#/operas/la-boheme?act=1";
   assert.ok(!reader.scene(1).includes('<strong>Albums:</strong>'));
-
-  assert.ok(createLibrettoRenderer(getLibretto("tristan-und-isolde")).outline().includes('<strong>Albums:</strong>'));
+  const tristanOutline = createLibrettoRenderer(getLibretto("tristan-und-isolde")).outline();
+  assert.ok(!tristanOutline.includes('<strong>Albums:</strong>'));
 });
 
 test("La Bohème tableau location headings show their existing English translations in the reader", () => {
@@ -438,7 +436,7 @@ test("La Bohème outline shows characters from libretto speakers and keeps exact
   const outline = renderer.outline();
   assert.equal(count(outline, /class="opera-outline__act"/g), 4);
   assert.equal(libretto.spotifyAlbumUrl, undefined);
-  assert.ok(outline.includes("https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp"));
+  assert.ok(!outline.includes("https://open.spotify.com/album/5b1dUxE8wWIGTyBX5h8CEp"));
   assert.deepEqual(libretto.acts.map(act => act.scenes[0].outline.length), [8, 5, 5, 8]);
   assert.ok(!outline.includes("Performers:"));
   assert.ok(outline.includes("Libretto Outline"));
@@ -551,15 +549,15 @@ test("Macbeth sung asides remain lyrics and final scene links render", () => {
 });
 
 // Tristan und Isolde
-test("Tristan full libretto outline links the selected recording under Albums", () => {
+test("Tristan keeps the reference recording in source metadata, not the Libretto Outline", () => {
   const libretto = getLibretto("tristan-und-isolde");
   const url = "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E";
   assert.deepEqual(libretto.albums, [{ name: "Wagner: Tristan und Isolde", url }]);
   const reader = createLibrettoRenderer(libretto);
   const outline = reader.outline();
-  assert.ok(outline.includes('<strong>Albums:</strong> <a href="' + url +
-    '" target="_blank" rel="noopener noreferrer">Wagner: Tristan und Isolde</a>'));
+  assert.ok(!outline.includes("<strong>Albums:</strong>"));
   assert.ok(!outline.includes("<strong>Outline source:</strong>"));
+  assert.ok(!outline.includes('href="' + url + '"'));
   window.location.hash = "#/operas/tristan-und-isolde?act=1";
   assert.ok(!reader.scene(1).includes("<strong>Albums:</strong>"));
 });
@@ -1000,19 +998,16 @@ test('Butterfly review preserves all bilingual rows, dialogue order, stage cues 
   assert.equal(libretto.acts.flatMap(a=>a.scenes.flatMap(s=>s.sections)).length,34);
 });
 
-test("Tosca act sidebar headings are bilingual and its selected album is linked in the full outline", () => {
+test("Tosca act sidebar headings are bilingual and its album reference stays in metadata", () => {
   const libretto = getLibretto("tosca");
   const reader = createLibrettoRenderer(libretto);
   const spotifyUrl = "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo";
   assert.equal(libretto.bilingualActOutlineHeading, true);
   assert.deepEqual(libretto.albums, [{ name: "Puccini : Tosca", url: spotifyUrl }]);
   const outline = reader.outline();
-  assert.ok(outline.includes(
-    '<strong>Albums:</strong> <a href="' + spotifyUrl +
-    '" target="_blank" rel="noopener noreferrer">Puccini : Tosca</a>'
-  ));
-  assert.equal(outline.split('<strong>Albums:</strong>').length - 1, 1);
+  assert.ok(!outline.includes("<strong>Albums:</strong>"));
   assert.ok(!outline.includes("<strong>Outline source:</strong>"));
+  assert.ok(!outline.includes('href="' + spotifyUrl + '"'));
   const acts = [
     ["Atto primo", "Act I"],
     ["Atto secondo", "Act II"],
@@ -1023,7 +1018,7 @@ test("Tosca act sidebar headings are bilingual and its selected album is linked 
     const page = reader.scene(1);
     assert.ok(page.includes('<summary class="act-heading"><h2>' +
       italian + " · " + english + "</h2>"), "Act " + (index + 1));
-    assert.ok(!page.includes("<strong>Albums:</strong>"), "Album footer belongs only on full outline");
+    assert.ok(!page.includes("<strong>Albums:</strong>"), "Album footer should not appear on any libretto page");
   }
 
 });

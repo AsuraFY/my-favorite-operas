@@ -2931,6 +2931,8 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
 .favorite-performance__cover img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .favorite-performance__main { flex: 1 1 auto; min-width: 0; }
 .favorite-performance__title { margin: 0; font: 600 1.05rem/1.38 var(--serif); color: #173856; overflow-wrap: anywhere; }
+.favorite-performance__heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 10px; }
+.favorite-performance__reference { color: #68727a; font: 500 .72rem/1.35 var(--sans); }
 .favorite-performance__edition { font: .8rem/1.5 var(--sans); color: #647078; margin: 5px 0 0; }
 .favorite-performance__details { margin-top: 9px; }
 .favorite-performance__details summary { display: flex; justify-content: space-between; align-items: center; gap: 8px; width: 100%; padding: 7px 0; cursor: pointer; list-style: none; color: #34556a; font: 600 .84rem/1.5 var(--sans); }
@@ -2969,6 +2971,7 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
 }
 html[data-theme="night"] .opera-info__favorites > h2,
 html[data-theme="night"] .favorite-performance__title { color: var(--night-text); }
+html[data-theme="night"] .favorite-performance__reference { color: #c5c9cb; }
 html[data-theme="night"] .favorite-performance { background: #252b32; border-color: var(--night-border); }
 html[data-theme="night"] .favorite-performance__cover { background: #3a4048; color: #e5d7c0; }
 html[data-theme="night"] .favorite-performance__edition,

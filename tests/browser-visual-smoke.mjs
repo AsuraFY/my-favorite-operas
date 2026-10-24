@@ -191,6 +191,11 @@ try {
       check(await favoritesPage.locator(".favorite-performance__title").innerText() ===
         "Tristan und Isolde · Leonard Bernstein",
         viewport.label + ": the title should feature Bernstein without a separate highlighted name");
+      check(await favoritesPage.locator(".favorite-performance__reference").innerText() ===
+        "Libretto outline reference",
+        viewport.label + ": the outline-reference favorite must carry its label");
+      check(await favoritesPage.locator(".favorite-performance__reference").count() === 1,
+        viewport.label + ": only one outline-reference label should appear");
       check(await favoritesPage.locator(".favorite-performance__edition").innerText() ===
         "1981 · Live, semi-staged concert · Herkulessaal, Munich",
         viewport.label + ": venue must join the year and performance type");
@@ -244,6 +249,13 @@ try {
         viewport.label + ": Cast & Musical Direction did not collapse again");
       check(await favoritesPage.locator(".favorite-performance__links a").first().isVisible(),
         viewport.label + ": links must remain visible after closing the cast");
+      await favoritesPage.goto(base + "#/operas/tristan-und-isolde?view=outline",
+        { waitUntil: "domcontentloaded" });
+      await favoritesPage.locator(".opera-outline").waitFor({ timeout: 20000 });
+      check(await favoritesPage.locator(".opera-outline__recording").count() === 0,
+        viewport.label + ": outline should no longer repeat album/reference footers");
+      check(!(await favoritesPage.locator(".opera-outline").innerText()).includes("Albums:"),
+        viewport.label + ": legacy Albums text remains");
       await favoritesPage.goto(base + "#/operas/cosi-fan-tutte?view=synopsis",
         { waitUntil: "domcontentloaded" });
       await favoritesPage.locator(".opera-info__synopsis").waitFor({ timeout: 20000 });
