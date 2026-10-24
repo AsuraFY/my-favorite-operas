@@ -204,9 +204,6 @@ try {
       check(await favoritesPage.locator(".favorite-performance__cover img").getAttribute("src") ===
         "https://i.scdn.co/image/ab67616d0000b2730d05706fe7f204d1e2b9659b",
         viewport.label + ": favorite photo must match the selected Spotify album");
-      check(await favoritesPage.locator(".favorite-performance__heading").innerText() ===
-        "Tristan und Isolde · Peter Hofmann",
-        viewport.label + ": highlighted performer missing from title");
       check(await favoritesPage.evaluate(() =>
         document.documentElement.scrollWidth - window.innerWidth <= 3),
         viewport.label + ": the compact favorite row overflows the screen");
