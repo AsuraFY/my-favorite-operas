@@ -2,6 +2,59 @@
 const escape = (value = "") => String(value).replace(/[&<>"']/g, character =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 
+
+const albumLinkPattern = /^https:\/\/open\.spotify\.com\/album\/[A-Za-z0-9]+$/;
+function renderFavorites(items = []) {
+  const cards = items.filter(p => albumLinkPattern.test(p.spotifyUrl || "")).map(p => {
+    const cast = (p.cast || []).map(person => '<li><span>' + escape(person.role) +
+      '</span><strong>' + escape(person.name) + '</strong></li>').join("");
+    const artists = (p.featuredArtists || []).map(person =>
+      '<span class="favorite-performance__artist"><strong>' + escape(person.name) +
+      '</strong><small>' + escape(person.role) + '</small></span>').join("");
+    const credits = [p.conductor, p.orchestra].filter(Boolean).join(" · ");
+    const edition = [p.recordingYear, p.recordingType].filter(Boolean).join(" · ");
+    return '<article class="favorite-performance">' +
+      '<div class="favorite-performance__row">' +
+      '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
+      '"><span aria-label="Album cover unavailable">♫</span></div>' +
+      '<div class="favorite-performance__main">' +
+      '<div class="favorite-performance__heading"><h3>' + escape(p.title) + '</h3>' +
+      (p.librettoReference ? '<span class="favorite-performance__reference">Libretto reference</span>' : '') + '</div>' +
+      (edition ? '<p class="favorite-performance__edition">' + escape(edition) + '</p>' : '') +
+      '<p class="favorite-performance__production">' + escape(credits || "Conductor and orchestra not yet verified") + '</p>' +
+      '<div class="favorite-performance__artists">' + (artists ||
+      '<p class="favorite-performance__unverified">Featured artists pending verification for this recording</p>') + '</div>' +
+      '<div class="favorite-performance__links"><a href="' + escape(p.spotifyUrl) +
+      '" target="_blank" rel="noopener noreferrer">♫ Spotify <span aria-hidden="true">↗</span></a></div>' +
+      '</div></div><details class="favorite-performance__details"><summary>Full cast &amp; recording details</summary>' +
+      '<div class="favorite-performance__details-body">' + (cast
+        ? '<ul>' + cast + '</ul>'
+        : '<p class="favorite-performance__unverified">The cast and recording credits for this exact edition have not yet been verified.</p>') +
+      '</div></details></article>';
+  }).join("");
+  return cards ? '<section class="opera-info__favorites section-wrap" aria-labelledby="opera-info-favorites">' +
+    '<h2 id="opera-info-favorites">My Favorite Performances</h2>' + cards + '</section>' : "";
+}
+export function hydrateFavoriteCovers(root) {
+  for (const cover of root.querySelectorAll("[data-spotify-cover]")) {
+    const album = cover.dataset.spotifyCover;
+    if (!albumLinkPattern.test(album)) continue;
+    fetch("https://open.spotify.com/oembed?url=" + encodeURIComponent(album))
+      .then(response => response.ok ? response.json() : null)
+      .then(info => {
+        if (!info?.thumbnail_url || !cover.isConnected) return;
+        const url = new URL(info.thumbnail_url);
+        if (url.protocol !== "https:" || !["i.scdn.co","image-cdn-ak.spotifycdn.com"].includes(url.hostname)) return;
+        const img = document.createElement("img");
+        img.src = url.href;
+        img.alt = "Cover of the selected Spotify album";
+        img.loading = "lazy";
+        img.addEventListener("error", () => { if (img.isConnected) img.replaceWith(document.createTextNode("♫")); }, { once: true });
+        cover.replaceChildren(img);
+      }).catch(() => {});
+  }
+}
+
 export function renderOperaInformationPage(opera, details, { navigation = "", hasLibretto = false, hasLibrettoPage = false } = {}) {
   const characters = details?.characters || [];
   const synopsis = details?.synopsis || [opera.summary];
@@ -35,6 +88,7 @@ export function renderOperaInformationPage(opera, details, { navigation = "", ha
             '<li><div class="opera-info__character-top"><strong>' + escape(name) + '</strong><span>' + escape(role) + '</span></div><p>' + escape(description) + '</p></li>'
           ).join("") + '</ul></section>' +
       '</div>' +
+      renderFavorites(details?.favoritePerformances) +
     '</article>' +
     '<div class="opera-info__back section-wrap"><a href="#/operas">← Back to all operas</a></div>' +
   '</div>';
