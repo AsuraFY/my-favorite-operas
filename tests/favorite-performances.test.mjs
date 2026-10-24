@@ -26,7 +26,7 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.equal((page.match(/class="favorite-performance"/g) || []).length, 1);
   assert.ok(page.includes("My Favorite Performances"));
   assert.ok(page.indexOf('class="opera-info__content') < page.indexOf('class="opera-info__favorites'));
-  assert.ok(page.includes('data-spotify-cover="' + url + '"'));
+  assert.ok(page.includes('src="https://i.ytimg.com/vi/Wleg_0SWHW0/hqdefault.jpg"'));
   assert.ok(page.includes('href="' + url + '" target="_blank" rel="noopener noreferrer"'));
   assert.ok(page.includes('href="https://www.youtube.com/watch?v=Wleg_0SWHW0"'));
   assert.ok(page.includes("Spotify · edition unconfirmed"));
