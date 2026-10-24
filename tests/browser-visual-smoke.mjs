@@ -172,6 +172,41 @@ try {
       }
     }
 
+    // The first favorite performance is intentionally scoped to Tristan's Synopsis.
+    const favoritesPage = await context.newPage();
+    try {
+      await favoritesPage.goto(base + "#/operas/tristan-und-isolde?view=synopsis",
+        { waitUntil: "domcontentloaded" });
+      await favoritesPage.locator(".favorite-performance").first().waitFor({ timeout: 20000 });
+      check(await favoritesPage.locator(".favorite-performance").count() === 1,
+        viewport.label + ": Tristan should show one favorite recording");
+      check(await favoritesPage.locator(".favorite-performance__links a").getAttribute("href") ===
+        "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E",
+        viewport.label + ": incorrect selected Spotify album");
+      check(await favoritesPage.evaluate(() =>
+        document.documentElement.scrollWidth - window.innerWidth <= 3),
+        viewport.label + ": the compact favorite row overflows the screen");
+      const details = favoritesPage.locator(".favorite-performance__details");
+      check(!(await details.evaluate(el => el.open)),
+        viewport.label + ": full cast should be closed on first load");
+      await details.locator("summary").click();
+      check(await details.evaluate(el => el.open),
+        viewport.label + ": full cast should expand when clicked");
+      await favoritesPage.screenshot({
+        path: join(screenshotDir, "tristan-favorite-" + viewport.label + ".png"),
+        animations: "disabled"
+      });
+      await favoritesPage.goto(base + "#/operas/cosi-fan-tutte?view=synopsis",
+        { waitUntil: "domcontentloaded" });
+      await favoritesPage.locator(".opera-info__synopsis").waitFor({ timeout: 20000 });
+      check(await favoritesPage.locator(".favorite-performance").count() === 0,
+        viewport.label + ": favorites must not appear on other opera pages");
+    } catch (error) {
+      errors.push(viewport.label + " Tristan favorite: " + error.message);
+    } finally {
+      await favoritesPage.close();
+    }
+
     const page = await context.newPage();
     try {
       await visit(page, base, "la-boheme");
