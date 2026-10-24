@@ -180,9 +180,16 @@ try {
       await favoritesPage.locator(".favorite-performance").first().waitFor({ timeout: 20000 });
       check(await favoritesPage.locator(".favorite-performance").count() === 1,
         viewport.label + ": Tristan should show one favorite recording");
-      check(await favoritesPage.locator(".favorite-performance__links a").getAttribute("href") ===
+      check(await favoritesPage.locator(".favorite-performance__links a").count() === 2,
+        viewport.label + ": expected verified YouTube and separate Spotify links");
+      check(await favoritesPage.locator(".favorite-performance__links a").first().getAttribute("href") ===
+        "https://www.youtube.com/watch?v=Wleg_0SWHW0",
+        viewport.label + ": incorrect verified performance video");
+      check(await favoritesPage.locator(".favorite-performance__links a").last().getAttribute("href") ===
         "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E",
-        viewport.label + ": incorrect selected Spotify album");
+        viewport.label + ": Spotify album reference changed");
+      check(await favoritesPage.locator(".favorite-performance__artist").count() === 3,
+        viewport.label + ": missing featured singer/role cards");
       check(await favoritesPage.evaluate(() =>
         document.documentElement.scrollWidth - window.innerWidth <= 3),
         viewport.label + ": the compact favorite row overflows the screen");
