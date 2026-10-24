@@ -5,39 +5,63 @@ const escape = (value = "") => String(value).replace(/[&<>"']/g, character =>
 
 const albumLinkPattern = /^https:\/\/open\.spotify\.com\/album\/[A-Za-z0-9]+$/;
 function renderFavorites(items = []) {
+  const spotifyIcon = '<svg class="favorite-performance__platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="9.5"/><path d="M5.7 9.5c4.4-1.3 8.7-.9 12.7 1.3M6.6 13c3.7-1.1 7.2-.7 10.6 1.2M7.8 16.2c2.9-.7 5.7-.4 8.1.9"/></svg>';
+  const youtubeIcon = '<svg class="favorite-performance__platform-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true">' +
+    '<rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 8.5 6 3.5-6 3.5z" fill="currentColor" stroke="none"/></svg>';
   const cards = items.filter(p => albumLinkPattern.test(p.spotifyUrl || "")).map(p => {
-    const cast = (p.cast || []).map(person => '<li><span>' + escape(person.role) +
-      '</span><strong>' + escape(person.name) + '</strong></li>').join("");
-    const artists = (p.featuredArtists || []).map(person =>
-      '<span class="favorite-performance__artist"><strong>' + escape(person.name) +
-      '</strong><small>' + escape(person.role) + '</small></span>').join("");
-    const credits = [p.conductor, p.orchestra].filter(Boolean).join(" · ");
-    const venue = [p.chorus, p.venue].filter(Boolean).join(" · ");
-    const edition = [p.recordingYear, p.recordingType].filter(Boolean).join(" · ");
+    const cast = (p.cast || []).map(person =>
+      '<li><span>' + escape(person.role) + '</span><strong>' + escape(person.name) + '</strong></li>'
+    ).join("");
+    const leads = (p.featuredArtists || []).map(person =>
+      '<li class="favorite-performance__lead"><span aria-hidden="true" class="favorite-performance__bullet">•</span>' +
+      '<span><strong>' + escape(person.name) + '</strong> as ' + escape(person.role) + '</span></li>'
+    ).join("");
+    const yearAndType = [p.recordingYear, p.recordingType].filter(Boolean).join(" · ");
+    const credits = [
+      p.conductor ? 'Conductor: ' + p.conductor : "",
+      p.orchestra ? 'Orchestra: ' + p.orchestra : ""
+    ].filter(Boolean).join(" · ");
+    const location = [
+      p.chorus ? 'Chorus: ' + p.chorus : "",
+      p.venue ? 'Location: ' + p.venue : ""
+    ].filter(Boolean).join(" · ");
+    const spotlight = p.spotlightArtist
+      ? ' <span class="favorite-performance__spotlight">· ' + escape(p.spotlightArtist) + '</span>'
+      : "";
+    const spotifyLabel = p.spotifyEditionVerified
+      ? "Spotify album"
+      : "Spotify album (edition not independently confirmed)";
     return '<article class="favorite-performance">' +
       '<div class="favorite-performance__row">' +
-      (p.youtubeVideoId && /^[A-Za-z0-9_-]{11}$/.test(p.youtubeVideoId)
-        ? '<div class="favorite-performance__cover"><img src="https://i.ytimg.com/vi/' + escape(p.youtubeVideoId) +
-          '/hqdefault.jpg" alt="Video thumbnail for the selected 1981 performance" loading="lazy" /></div>'
-        : '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
-          '"><span aria-label="Album cover unavailable">♫</span></div>') +
-      '<div class="favorite-performance__main">' +
-      '<div class="favorite-performance__heading"><h3>' + escape(p.title) + '</h3>' +
-      (p.youtubeUrl ? '<span class="favorite-performance__reference">Video performance</span>' : (p.librettoReference ? '<span class="favorite-performance__reference">Libretto reference</span>' : '')) + '</div>' +
-      (edition ? '<p class="favorite-performance__edition">' + escape(edition) + '</p>' : '') +
-      '<p class="favorite-performance__production">' + escape(credits || "Conductor and orchestra not yet verified") + '</p>' +
-      (venue ? '<p class="favorite-performance__edition">' + escape(venue) + '</p>' : '') +
-      '<div class="favorite-performance__artists">' + (artists ||
-      '<p class="favorite-performance__unverified">Featured artists pending verification for this recording</p>') + '</div>' +
-      '<div class="favorite-performance__links">' +
-      (p.youtubeUrl ? '<a href="' + escape(p.youtubeUrl) + '" target="_blank" rel="noopener noreferrer">▶ YouTube · verified performance <span aria-hidden="true">↗</span></a>' : '') +
-      '<a href="' + escape(p.spotifyUrl) +
-      '" target="_blank" rel="noopener noreferrer">♫ Spotify · ' + (p.spotifyEditionVerified ? 'same recording' : 'edition unconfirmed') + ' <span aria-hidden="true">↗</span></a></div>' +
-      '</div></div><details class="favorite-performance__details"><summary>Full cast &amp; recording details</summary>' +
-      '<div class="favorite-performance__details-body">' + (cast
-        ? '<p class="favorite-performance__unverified">1981 Munich performance credits · conductor: ' + escape(p.conductor || "Not verified") + '; orchestra: ' + escape(p.orchestra || "Not verified") + (p.chorus ? '; chorus: ' + escape(p.chorus) : '') + '</p><ul>' + cast + '</ul>'
-        : '<p class="favorite-performance__unverified">The cast and recording credits for this exact edition have not yet been verified.</p>') +
-      '</div></details></article>';
+        '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
+        '"><span aria-label="Spotify album artwork unavailable">♫</span></div>' +
+        '<div class="favorite-performance__main">' +
+          '<div class="favorite-performance__heading"><h3>' + escape(p.title) + spotlight + '</h3></div>' +
+          (yearAndType ? '<p class="favorite-performance__edition">' + escape(yearAndType) + '</p>' : '') +
+          (credits ? '<p class="favorite-performance__production">' + escape(credits) + '</p>' : '') +
+          (location ? '<p class="favorite-performance__ensemble">' + escape(location) + '</p>' : '') +
+          '<ul class="favorite-performance__artists">' + (leads ||
+            '<li class="favorite-performance__unverified">Featured artists pending verification</li>') + '</ul>' +
+          '<div class="favorite-performance__links">' +
+            '<a href="' + escape(p.spotifyUrl) + '" target="_blank" rel="noopener noreferrer"' +
+              ' aria-label="' + escape(spotifyLabel) + '">' + spotifyIcon + '<span>Spotify</span></a>' +
+            (p.youtubeUrl ? '<a href="' + escape(p.youtubeUrl) +
+              '" target="_blank" rel="noopener noreferrer" aria-label="Watch the confirmed performance on YouTube">' +
+              youtubeIcon + '<span>YouTube</span></a>' : '') +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<details class="favorite-performance__details"><summary>Full cast &amp; recording details</summary>' +
+        '<div class="favorite-performance__details-body">' +
+          (cast ? '<ul>' + cast + '</ul>' :
+            '<p class="favorite-performance__unverified">Cast details are not yet available.</p>') +
+          (!p.spotifyEditionVerified
+            ? '<p class="favorite-performance__unverified favorite-performance__edition-note">The linked Spotify album has not been independently matched to this YouTube performance.</p>'
+            : '') +
+        '</div>' +
+      '</details>' +
+    '</article>';
   }).join("");
   return cards ? '<section class="opera-info__favorites section-wrap" aria-labelledby="opera-info-favorites">' +
     '<h2 id="opera-info-favorites">My Favorite Performances</h2>' + cards + '</section>' : "";
@@ -51,13 +75,13 @@ export function hydrateFavoriteCovers(root) {
       .then(info => {
         if (!info?.thumbnail_url || !cover.isConnected) return;
         const url = new URL(info.thumbnail_url);
-        if (url.protocol !== "https:" || !["i.scdn.co","image-cdn-ak.spotifycdn.com"].includes(url.hostname)) return;
+        if (url.protocol !== "https:" || !["i.scdn.co","image-cdn-ak.spotifycdn.com","image-cdn-fa.spotifycdn.com"].includes(url.hostname)) return;
         const img = document.createElement("img");
         img.src = url.href;
         img.alt = "Cover of the selected Spotify album";
         img.loading = "lazy";
-        img.addEventListener("error", () => { if (img.isConnected) img.replaceWith(document.createTextNode("♫")); }, { once: true });
-        cover.replaceChildren(img);
+        img.addEventListener("load", () => { if (cover.isConnected) cover.replaceChildren(img); }, { once: true });
+        img.addEventListener("error", () => {}, { once: true });
       }).catch(() => {});
   }
 }

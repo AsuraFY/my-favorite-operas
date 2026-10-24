@@ -114,7 +114,8 @@ export const operaInformation = {
       ]
     ],
     "favoritePerformances": [{
-      "title": "Tristan und Isolde — Leonard Bernstein",
+      "title": "Tristan und Isolde",
+      "spotlightArtist": "Peter Hofmann",
       "recordingYear": "1981",
       "recordingType": "Live, semi-staged concert",
       "venue": "Herkulessaal, Munich",
@@ -127,8 +128,7 @@ export const operaInformation = {
       "spotifyEditionVerified": false,
       "featuredArtists": [
         { "name": "Peter Hofmann", "role": "Tristan" },
-        { "name": "Hildegard Behrens", "role": "Isolde" },
-        { "name": "Yvonne Minton", "role": "Brangäne" }
+        { "name": "Hildegard Behrens", "role": "Isolde" }
       ],
       "cast": [
         { "name": "Peter Hofmann", "role": "Tristan" },

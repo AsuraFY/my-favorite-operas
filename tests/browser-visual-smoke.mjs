@@ -183,13 +183,18 @@ try {
       check(await favoritesPage.locator(".favorite-performance__links a").count() === 2,
         viewport.label + ": expected verified YouTube and separate Spotify links");
       check(await favoritesPage.locator(".favorite-performance__links a").first().getAttribute("href") ===
-        "https://www.youtube.com/watch?v=Wleg_0SWHW0",
-        viewport.label + ": incorrect verified performance video");
-      check(await favoritesPage.locator(".favorite-performance__links a").last().getAttribute("href") ===
         "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E",
         viewport.label + ": Spotify album reference changed");
-      check(await favoritesPage.locator(".favorite-performance__artist").count() === 3,
-        viewport.label + ": missing featured singer/role cards");
+      check(await favoritesPage.locator(".favorite-performance__links a").last().getAttribute("href") ===
+        "https://www.youtube.com/watch?v=Wleg_0SWHW0",
+        viewport.label + ": incorrect performance video");
+      check(await favoritesPage.locator(".favorite-performance__lead").count() === 2,
+        viewport.label + ": featured artists must be only Tristan and Isolde");
+      check(await favoritesPage.locator("[data-spotify-cover]").count() === 1,
+        viewport.label + ": favorite photo must come from the Spotify album");
+      check(await favoritesPage.locator(".favorite-performance__heading").innerText() ===
+        "Tristan und Isolde · Peter Hofmann",
+        viewport.label + ": highlighted performer missing from title");
       check(await favoritesPage.evaluate(() =>
         document.documentElement.scrollWidth - window.innerWidth <= 3),
         viewport.label + ": the compact favorite row overflows the screen");
