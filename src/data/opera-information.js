@@ -114,11 +114,33 @@ export const operaInformation = {
       ]
     ],
     "favoritePerformances": [{
-      "title": "Wagner: Tristan und Isolde",
+      "title": "Tristan und Isolde — Leonard Bernstein",
+      "recordingYear": "1981",
+      "recordingType": "Live, semi-staged concert",
+      "venue": "Herkulessaal, Munich",
+      "conductor": "Leonard Bernstein",
+      "orchestra": "Bavarian Radio Symphony Orchestra",
+      "chorus": "Bavarian Radio Chorus",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Wleg_0SWHW0",
+      "youtubeVideoId": "Wleg_0SWHW0",
       "spotifyUrl": "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E",
-      "librettoReference": true,
-      "featuredArtists": [],
-      "cast": []
+      "spotifyEditionVerified": false,
+      "featuredArtists": [
+        { "name": "Peter Hofmann", "role": "Tristan" },
+        { "name": "Hildegard Behrens", "role": "Isolde" },
+        { "name": "Yvonne Minton", "role": "Brangäne" }
+      ],
+      "cast": [
+        { "name": "Peter Hofmann", "role": "Tristan" },
+        { "name": "Hildegard Behrens", "role": "Isolde" },
+        { "name": "Yvonne Minton", "role": "Brangäne" },
+        { "name": "Bernd Weikl", "role": "Kurwenal" },
+        { "name": "Hans Sotin", "role": "King Marke" },
+        { "name": "Heribert Steinbach", "role": "Melot" },
+        { "name": "Heinz Zednik", "role": "Shepherd" },
+        { "name": "Thomas Moser", "role": "Young Sailor" },
+        { "name": "Raimund Grumbach", "role": "Steersman" }
+      ]
     }]
   },
   "macbeth": {
