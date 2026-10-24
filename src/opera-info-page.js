@@ -32,7 +32,6 @@ function renderFavorites(items = []) {
       ? "Listen on Spotify"
       : "Spotify album (edition not independently confirmed)";
     return '<article class="favorite-performance' + (p.outlineReference ? ' favorite-performance--outline-reference' : '') + '">' +
-      (p.outlineReference ? '<span class="favorite-performance__reference">Libretto outline reference</span>' : '') +
       '<div class="favorite-performance__row">' +
         (p.coverImage
           ? '<div class="favorite-performance__cover"><img src="' + escape(p.coverImage) +
@@ -59,6 +58,7 @@ function renderFavorites(items = []) {
         (p.youtubeUrl ? '<a href="' + escape(p.youtubeUrl) +
           '" target="_blank" rel="noopener noreferrer" aria-label="Watch the performance on YouTube">' +
           youtubeIcon + '<span>YouTube</span></a>' : '') +
+        (p.outlineReference ? '<span class="favorite-performance__reference">Libretto outline reference</span>' : '') +
       '</div>' +
     '</article>';
   }).join("");

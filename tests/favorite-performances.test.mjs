@@ -34,9 +34,13 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.ok(!page.includes('data-spotify-cover="'));
   assert.ok(!page.includes("i.ytimg.com"));
   assert.ok(page.includes('<h3 class="favorite-performance__title">Tristan und Isolde · Leonard Bernstein</h3>'));
-  assert.ok(page.includes('<article class="favorite-performance favorite-performance--outline-reference"><span class="favorite-performance__reference">Libretto outline reference</span>'));
+  assert.ok(page.includes('<article class="favorite-performance favorite-performance--outline-reference"><div class="favorite-performance__row">'));
   assert.equal((page.match(/class="favorite-performance__reference"/g) || []).length, 1);
-  assert.ok(page.indexOf('<span class="favorite-performance__reference">') < page.indexOf('<div class="favorite-performance__row">'));
+  const linkRow = page.indexOf('<div class="favorite-performance__links">');
+  const badge = page.indexOf('<span class="favorite-performance__reference">Libretto outline reference</span>');
+  assert.ok(linkRow > 0 && badge > linkRow, "reference label must follow the listening links");
+  assert.ok(page.indexOf('<span>YouTube</span></a>') < badge, "reference label must be last in the links row");
+  assert.ok(page.indexOf('<h3 class="favorite-performance__title">') < badge);
   assert.ok(!page.includes("favorite-performance__heading"));
   assert.ok(page.includes("1981 · Live, semi-staged concert · Herkulessaal, Munich"));
   assert.ok(!page.includes("Location: Herkulessaal"));

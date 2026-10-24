@@ -199,21 +199,30 @@ try {
       check(await favoritesPage.locator(".favorite-performance--outline-reference").count() === 1,
         viewport.label + ": reference marker should be attached only to its recording");
       const badgePlacement = await favoritesPage.locator(".favorite-performance").evaluate(card => {
-        const bounds = card.getBoundingClientRect();
+        const links = card.querySelector(".favorite-performance__links");
         const badge = card.querySelector(".favorite-performance__reference").getBoundingClientRect();
+        const footer = links.getBoundingClientRect();
         const title = card.querySelector(".favorite-performance__title").getBoundingClientRect();
+        const cover = card.querySelector(".favorite-performance__cover").getBoundingClientRect();
+        const youtube = links.querySelectorAll("a")[1].getBoundingClientRect();
         return {
-          top: badge.top - bounds.top,
-          right: bounds.right - badge.right,
-          inside: badge.left >= bounds.left && badge.right <= bounds.right,
-          noOverlap: badge.bottom <= title.top || badge.right <= title.left
+          inFooter: card.querySelector(".favorite-performance__reference").parentElement === links &&
+            badge.left >= footer.left && badge.right <= footer.right &&
+            badge.top >= footer.top && badge.bottom <= footer.bottom,
+          farRight: footer.right - badge.right,
+          noOverlap: badge.top >= youtube.bottom - 1 || badge.left >= youtube.right + 4,
+          unchangedTitleAlignment: Math.abs(title.top - cover.top) <= 4,
+          style: getComputedStyle(card.querySelector(".favorite-performance__reference")).backgroundColor
         };
       });
-      check(badgePlacement.inside && badgePlacement.top >= 4 && badgePlacement.top <= 18 &&
-        badgePlacement.right >= 4 && badgePlacement.right <= 18,
-        viewport.label + ": outline reference badge should sit in card top-right corner");
+      check(badgePlacement.inFooter && badgePlacement.farRight >= 6 && badgePlacement.farRight <= 19,
+        viewport.label + ": outline reference should be at far right of Spotify/YouTube footer");
       check(badgePlacement.noOverlap,
-        viewport.label + ": outline reference badge overlaps the recording title");
+        viewport.label + ": outline reference label overlaps listening links");
+      check(badgePlacement.unchangedTitleAlignment,
+        viewport.label + ": label introduced empty space above the opera title");
+      check(badgePlacement.style !== "rgba(0, 0, 0, 0)",
+        viewport.label + ": outline reference label needs a subtle gray background");
       check(await favoritesPage.locator(".favorite-performance__edition").innerText() ===
         "1981 · Live, semi-staged concert · Herkulessaal, Munich",
         viewport.label + ": venue must join the year and performance type");
