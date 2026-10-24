@@ -34,8 +34,11 @@ function renderFavorites(items = []) {
       : "Spotify album (edition not independently confirmed)";
     return '<article class="favorite-performance">' +
       '<div class="favorite-performance__row">' +
-        '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
-        '"><span aria-label="Spotify album artwork unavailable">♫</span></div>' +
+        (p.coverImage
+          ? '<div class="favorite-performance__cover"><img src="' + escape(p.coverImage) +
+            '" alt="' + escape(p.title + " — Spotify album cover") + '" loading="lazy" /></div>'
+          : '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
+            '"><span aria-label="Spotify album artwork unavailable">♫</span></div>') +
         '<div class="favorite-performance__main">' +
           '<div class="favorite-performance__heading"><h3>' + escape(p.title) + spotlight + '</h3></div>' +
           (yearAndType ? '<p class="favorite-performance__edition">' + escape(yearAndType) + '</p>' : '') +

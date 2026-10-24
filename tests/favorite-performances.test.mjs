@@ -19,7 +19,8 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.equal(album.conductor, "Leonard Bernstein");
   assert.equal(album.orchestra, "Bavarian Radio Symphony Orchestra");
   assert.equal(album.recordingYear, "1981");
-  assert.equal(album.spotifyEditionVerified, false);
+  assert.equal(album.spotifyEditionVerified, true);
+  assert.equal(album.coverImage, "https://i.scdn.co/image/ab67616d0000b2730d05706fe7f204d1e2b9659b");
   assert.equal(album.youtubeUrl, "https://www.youtube.com/watch?v=Wleg_0SWHW0");
   assert.deepEqual(album.featuredArtists.map(artist => artist.name), ["Peter Hofmann", "Hildegard Behrens"]);
   assert.deepEqual(album.featuredArtists.map(artist => artist.role), ["Tristan", "Isolde"]);
@@ -28,7 +29,8 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.equal((page.match(/class="favorite-performance"/g) || []).length, 1);
   assert.ok(page.includes("My Favorite Performances"));
   assert.ok(page.indexOf('class="opera-info__content') < page.indexOf('class="opera-info__favorites'));
-  assert.ok(page.includes('data-spotify-cover="' + url + '"'));
+  assert.ok(page.includes('src="' + album.coverImage + '"'));
+  assert.ok(!page.includes('data-spotify-cover="'));
   assert.ok(!page.includes("i.ytimg.com"));
   assert.ok(page.includes('class="favorite-performance__spotlight">· Peter Hofmann</span>'));
   assert.equal((page.match(/class="favorite-performance__lead"/g) || []).length, 2);
@@ -42,7 +44,7 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.ok(page.includes('href="https://www.youtube.com/watch?v=Wleg_0SWHW0"'));
   assert.ok(page.includes("Spotify</span></a>"));
   assert.ok(page.includes("YouTube</span></a>"));
-  assert.ok(page.includes("The linked Spotify album has not been independently matched"));
+  assert.ok(!page.includes("The linked Spotify album has not been independently matched"));
   for (const person of ["Peter Hofmann", "Hildegard Behrens", "Yvonne Minton", "Bernd Weikl", "Hans Sotin"]) assert.ok(page.includes(person));
   assert.ok(page.includes("<summary>Full cast &amp; recording details</summary>"));
   assert.ok(page.includes("Full cast &amp; recording details"));
