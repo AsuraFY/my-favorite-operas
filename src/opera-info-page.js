@@ -31,7 +31,8 @@ function renderFavorites(items = []) {
     const spotifyLabel = p.spotifyEditionVerified
       ? "Listen on Spotify"
       : "Spotify album (edition not independently confirmed)";
-    return '<article class="favorite-performance">' +
+    return '<article class="favorite-performance' + (p.outlineReference ? ' favorite-performance--outline-reference' : '') + '">' +
+      (p.outlineReference ? '<span class="favorite-performance__reference">Libretto outline reference</span>' : '') +
       '<div class="favorite-performance__row">' +
         (p.coverImage
           ? '<div class="favorite-performance__cover"><img src="' + escape(p.coverImage) +
@@ -39,9 +40,7 @@ function renderFavorites(items = []) {
           : '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
             '"><span aria-label="Spotify album artwork unavailable">♫</span></div>') +
         '<div class="favorite-performance__main">' +
-          '<div class="favorite-performance__heading"><h3 class="favorite-performance__title">' + escape(p.title) + spotlight + '</h3>' +
-            (p.outlineReference ? '<span class="favorite-performance__reference">Libretto outline reference</span>' : '') +
-          '</div>' +
+          '<h3 class="favorite-performance__title">' + escape(p.title) + spotlight + '</h3>' +
           (yearTypeVenue ? '<p class="favorite-performance__edition">' + escape(yearTypeVenue) + '</p>' : '') +
           '<details class="favorite-performance__details">' +
             '<summary><span class="favorite-performance__summary-label">' + peopleIcon +

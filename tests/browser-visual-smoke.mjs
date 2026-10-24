@@ -196,6 +196,24 @@ try {
         viewport.label + ": the outline-reference favorite must carry its label");
       check(await favoritesPage.locator(".favorite-performance__reference").count() === 1,
         viewport.label + ": only one outline-reference label should appear");
+      check(await favoritesPage.locator(".favorite-performance--outline-reference").count() === 1,
+        viewport.label + ": reference marker should be attached only to its recording");
+      const badgePlacement = await favoritesPage.locator(".favorite-performance").evaluate(card => {
+        const bounds = card.getBoundingClientRect();
+        const badge = card.querySelector(".favorite-performance__reference").getBoundingClientRect();
+        const title = card.querySelector(".favorite-performance__title").getBoundingClientRect();
+        return {
+          top: badge.top - bounds.top,
+          right: bounds.right - badge.right,
+          inside: badge.left >= bounds.left && badge.right <= bounds.right,
+          noOverlap: badge.bottom <= title.top || badge.right <= title.left
+        };
+      });
+      check(badgePlacement.inside && badgePlacement.top >= 4 && badgePlacement.top <= 18 &&
+        badgePlacement.right >= 4 && badgePlacement.right <= 18,
+        viewport.label + ": outline reference badge should sit in card top-right corner");
+      check(badgePlacement.noOverlap,
+        viewport.label + ": outline reference badge overlaps the recording title");
       check(await favoritesPage.locator(".favorite-performance__edition").innerText() ===
         "1981 · Live, semi-staged concert · Herkulessaal, Munich",
         viewport.label + ": venue must join the year and performance type");

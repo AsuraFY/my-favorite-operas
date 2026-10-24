@@ -27,15 +27,17 @@ test("one compact performance row appears on Tristan's Synopsis, and nowhere els
   assert.deepEqual(album.featuredArtists.map(artist => artist.role), ["Tristan", "Isolde"]);
   assert.equal(album.cast.length, 9);
   const page = renderOperaInformationPage(getOpera(slug), details);
-  assert.equal((page.match(/class="favorite-performance"/g) || []).length, 1);
+  assert.equal((page.match(/<article class="favorite-performance(?: favorite-performance--outline-reference)?"/g) || []).length, 1);
   assert.ok(page.includes("My Favorite Performances"));
   assert.ok(page.indexOf('class="opera-info__content') < page.indexOf('class="opera-info__favorites'));
   assert.ok(page.includes('src="' + album.coverImage + '"'));
   assert.ok(!page.includes('data-spotify-cover="'));
   assert.ok(!page.includes("i.ytimg.com"));
   assert.ok(page.includes('<h3 class="favorite-performance__title">Tristan und Isolde · Leonard Bernstein</h3>'));
-  assert.ok(page.includes('<span class="favorite-performance__reference">Libretto outline reference</span>'));
+  assert.ok(page.includes('<article class="favorite-performance favorite-performance--outline-reference"><span class="favorite-performance__reference">Libretto outline reference</span>'));
   assert.equal((page.match(/class="favorite-performance__reference"/g) || []).length, 1);
+  assert.ok(page.indexOf('<span class="favorite-performance__reference">') < page.indexOf('<div class="favorite-performance__row">'));
+  assert.ok(!page.includes("favorite-performance__heading"));
   assert.ok(page.includes("1981 · Live, semi-staged concert · Herkulessaal, Munich"));
   assert.ok(!page.includes("Location: Herkulessaal"));
   assert.equal((page.match(/class="favorite-performance__details"/g) || []).length, 1);
@@ -88,11 +90,13 @@ test("an outline-reference favorite renders first and is tagged exactly once", (
     ...operaInformation[slug],
     favoritePerformances: [another, reference]
   });
-  assert.equal((page.match(/class="favorite-performance"/g) || []).length, 2);
+  assert.equal((page.match(/<article class="favorite-performance(?: favorite-performance--outline-reference)?"/g) || []).length, 2);
   const referenceTitle = page.indexOf('<h3 class="favorite-performance__title">Tristan und Isolde · Leonard Bernstein</h3>');
   const otherTitle = page.indexOf('<h3 class="favorite-performance__title">Another approved performance</h3>');
   assert.ok(referenceTitle > -1 && otherTitle > referenceTitle);
   assert.equal((page.match(/class="favorite-performance__reference"/g) || []).length, 1);
   const secondCard = page.slice(otherTitle);
   assert.ok(!secondCard.includes("Libretto outline reference"));
+  assert.ok(page.includes('<article class="favorite-performance favorite-performance--outline-reference">'));
+  assert.ok(page.includes('<article class="favorite-performance">'));
 });
