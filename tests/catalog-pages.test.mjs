@@ -132,8 +132,10 @@ test("Tosca Acts I–III are available from its opera information page and direc
   assert.ok(outline.includes('class="libretto-participants"'));
   assert.ok(libretto.spotifyOutline.flatMap(act => act.scenes.flatMap(scene => scene.tracks)).every(track => !Object.hasOwn(track, "performers")),
     "outline characters are sourced from the libretto scenes, not Spotify performer metadata");
-  const spotifySourceIndex = outline.indexOf('href="https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo"');
-  assert.ok(spotifySourceIndex > outline.lastIndexOf("</details>"), "Spotify source appears after the complete outline");
+  assert.deepEqual(libretto.albums, [{ name: "Puccini : Tosca", url: "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo" }]);
+  assert.ok(!outline.includes("<strong>Albums:</strong>"), "Recording attribution belongs in curated favorites, not outline footers");
+  assert.ok(!outline.includes("<strong>Outline source:</strong>"));
+  assert.ok(!outline.includes('href="https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo"'));
   window.location.hash = "#/operas/tosca?act=2";
   const secondActPage = reader.scene(1);
   assert.ok(secondActPage.includes("ATTO SECONDO"));
