@@ -16,8 +16,11 @@ function renderFavorites(items = []) {
     const edition = [p.recordingYear, p.recordingType].filter(Boolean).join(" · ");
     return '<article class="favorite-performance">' +
       '<div class="favorite-performance__row">' +
-      '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
-      '"><span aria-label="Album cover unavailable">♫</span></div>' +
+      (p.youtubeVideoId && /^[A-Za-z0-9_-]{11}$/.test(p.youtubeVideoId)
+        ? '<div class="favorite-performance__cover"><img src="https://i.ytimg.com/vi/' + escape(p.youtubeVideoId) +
+          '/hqdefault.jpg" alt="Video thumbnail for the selected 1981 performance" loading="lazy" /></div>'
+        : '<div class="favorite-performance__cover" data-spotify-cover="' + escape(p.spotifyUrl) +
+          '"><span aria-label="Album cover unavailable">♫</span></div>') +
       '<div class="favorite-performance__main">' +
       '<div class="favorite-performance__heading"><h3>' + escape(p.title) + '</h3>' +
       (p.youtubeUrl ? '<span class="favorite-performance__reference">Video performance</span>' : (p.librettoReference ? '<span class="favorite-performance__reference">Libretto reference</span>' : '')) + '</div>' +
