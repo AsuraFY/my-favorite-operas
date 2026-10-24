@@ -2922,51 +2922,62 @@ body.musicals-theme .musical-breadcrumb a:focus-visible {outline-color:var(--mus
 }
 
 
-/* Compact favorite-performance rows on an opera's Synopsis page. */
+/* Compact favorite-performance rows on the Synopsis page. */
 .opera-info__favorites { padding-top: 4px; padding-bottom: 26px; }
 .opera-info__favorites > h2 { color: #173856; font: 600 clamp(1.55rem, 2.6vw, 2rem)/1.25 var(--serif); margin: 0 0 15px; }
-.favorite-performance { background: #faf6ef; border: 1px solid #ddd2c3; border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
+.favorite-performance { min-width: 0; background: #faf6ef; border: 1px solid #ddd2c3; border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
 .favorite-performance__row { display: flex; align-items: flex-start; gap: 14px; padding: 13px; }
 .favorite-performance__cover { flex: 0 0 82px; width: 82px; height: 82px; display: grid; place-items: center; overflow: hidden; border-radius: 5px; background: #e6dbcb; color: #756755; font: 2rem var(--serif); }
 .favorite-performance__cover img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .favorite-performance__main { flex: 1 1 auto; min-width: 0; }
-.favorite-performance__heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px 12px; }
-.favorite-performance__heading h3 { font: 600 1.05rem/1.38 var(--serif); color: #173856; margin: 0; }
-.favorite-performance__spotlight { color: #856345; font-weight: 600; }
-.favorite-performance__production, .favorite-performance__edition, .favorite-performance__ensemble { font: .8rem/1.45 var(--sans); color: #647078; margin: 3px 0 0; }
-.favorite-performance__artists { display: flex; flex-wrap: wrap; gap: 5px 22px; padding: 0; margin: 8px 0 0; list-style: none; }
-.favorite-performance__lead { display: flex; align-items: baseline; gap: 6px; color: #354b5b; font: .8rem/1.4 var(--sans); }
-.favorite-performance__bullet { color: #947657; font-weight: 700; }
-.favorite-performance__lead strong { font-weight: 600; }
-.favorite-performance__unverified { color: #647078; font: italic .78rem/1.45 var(--sans); margin: 0; }
-.favorite-performance__links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 17px; margin-top: 10px; }
-.favorite-performance__links a { display: inline-flex; align-items: center; gap: 5px; color: #244e70; font: 600 .8rem/1.4 var(--sans); text-decoration: none; }
+.favorite-performance__title { margin: 0; font: 600 1.05rem/1.38 var(--serif); color: #173856; overflow-wrap: anywhere; }
+.favorite-performance__edition { font: .8rem/1.5 var(--sans); color: #647078; margin: 5px 0 0; }
+.favorite-performance__details { margin-top: 9px; }
+.favorite-performance__details summary { display: flex; justify-content: space-between; align-items: center; gap: 8px; width: 100%; padding: 7px 0; cursor: pointer; list-style: none; color: #34556a; font: 600 .84rem/1.5 var(--sans); }
+.favorite-performance__details summary::-webkit-details-marker { display: none; }
+.favorite-performance__summary-label { display: inline-flex; align-items: center; gap: 7px; min-width: 0; }
+.favorite-performance__people-icon { flex: 0 0 17px; width: 17px; height: 17px; }
+.favorite-performance__chevron { font-size: 1.25rem; line-height: .7; transform: rotate(0deg); transition: transform .15s ease; }
+.favorite-performance__details[open] .favorite-performance__chevron { transform: rotate(180deg); }
+.favorite-performance__details summary:hover { color: #173856; }
+.favorite-performance__details summary:focus-visible, .favorite-performance__links a:focus-visible { outline: 2px solid #a77686; outline-offset: 3px; }
+.favorite-performance__details-body { padding: 9px 0 4px; border-top: 1px solid #e1d7c9; }
+.favorite-performance__direction { display: grid; gap: 3px; margin: 0 0 14px; }
+.favorite-performance__direction > div { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px; font: .82rem/1.5 var(--sans); }
+.favorite-performance__direction dt { font-weight: 600; color: #354b5b; }
+.favorite-performance__direction dt::after { content: ":"; }
+.favorite-performance__direction dd { margin: 0; color: #47555f; }
+.favorite-performance__cast-heading { margin: 0 0 8px; font: 600 .69rem/1.45 var(--sans); letter-spacing: .08em; color: #6c7378; }
+.favorite-performance__cast { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 18px; padding: 0; margin: 0; list-style: none; }
+.favorite-performance__cast li { display: flex; align-items: baseline; gap: 7px; min-width: 0; color: #354b5b; font: .8rem/1.45 var(--sans); }
+.favorite-performance__cast li span:last-child { overflow-wrap: anywhere; }
+.favorite-performance__cast strong { font-weight: 600; }
+.favorite-performance__cast-bullet { flex: 0 0 auto; color: #947657; }
+.favorite-performance__links { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 19px; padding: 10px 13px 12px; border-top: 1px solid #e1d7c9; }
+.favorite-performance__links a { display: inline-flex; align-items: center; gap: 6px; color: #244e70; font: 600 .8rem/1.4 var(--sans); text-decoration: none; }
 .favorite-performance__links a:hover span { text-decoration: underline; text-underline-offset: 3px; }
 .favorite-performance__platform-icon { flex: 0 0 17px; width: 17px; height: 17px; }
-.favorite-performance__details { border-top: 1px solid #e1d7c9; padding: 0 13px; }
-.favorite-performance__details summary { cursor: pointer; color: #34556a; font: 600 .8rem/1.5 var(--sans); padding: 9px 0; }
-.favorite-performance__details summary:focus-visible, .favorite-performance__links a:focus-visible { outline: 2px solid #a77686; outline-offset: 3px; }
-.favorite-performance__details-body { padding: 2px 0 13px; }
-.favorite-performance__details-body ul { padding: 0; margin: 0; list-style: none; }
-.favorite-performance__details-body li { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; font: .79rem/1.4 var(--sans); border-bottom: 1px solid #e1d7c9; }
-.favorite-performance__edition-note { margin-top: 11px; }
 @media (max-width: 700px) {
   .favorite-performance__row { gap: 10px; padding: 11px; }
   .favorite-performance__cover { flex-basis: 64px; width: 64px; height: 64px; }
-  .favorite-performance__heading h3 { font-size: .93rem; }
-  .favorite-performance__details { padding-inline: 11px; }
+  .favorite-performance__title { font-size: .94rem; }
+  .favorite-performance__cast { grid-template-columns: 1fr; }
+  .favorite-performance__links { padding: 10px 11px 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .favorite-performance__chevron { transition: none; }
 }
 html[data-theme="night"] .opera-info__favorites > h2,
-html[data-theme="night"] .favorite-performance__heading h3 { color: var(--night-text); }
+html[data-theme="night"] .favorite-performance__title { color: var(--night-text); }
 html[data-theme="night"] .favorite-performance { background: #252b32; border-color: var(--night-border); }
 html[data-theme="night"] .favorite-performance__cover { background: #3a4048; color: #e5d7c0; }
-html[data-theme="night"] .favorite-performance__spotlight { color: #e0c3a1; }
-html[data-theme="night"] .favorite-performance__production,
 html[data-theme="night"] .favorite-performance__edition,
-html[data-theme="night"] .favorite-performance__ensemble,
-html[data-theme="night"] .favorite-performance__unverified { color: #c5c9cb; }
-html[data-theme="night"] .favorite-performance__lead { color: #eee9e2; }
-html[data-theme="night"] .favorite-performance__bullet { color: #e0c3a1; }
-html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
-html[data-theme="night"] .favorite-performance__details { border-color: var(--night-border); }
+html[data-theme="night"] .favorite-performance__cast-heading { color: #c5c9cb; }
 html[data-theme="night"] .favorite-performance__details summary { color: #e5d4bf; }
+html[data-theme="night"] .favorite-performance__details-body,
+html[data-theme="night"] .favorite-performance__links { border-color: var(--night-border); }
+html[data-theme="night"] .favorite-performance__direction dt,
+html[data-theme="night"] .favorite-performance__direction dd,
+html[data-theme="night"] .favorite-performance__cast li { color: #eee9e2; }
+html[data-theme="night"] .favorite-performance__cast-bullet { color: #e0c3a1; }
+html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }

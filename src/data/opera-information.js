@@ -115,7 +115,7 @@ export const operaInformation = {
     ],
     "favoritePerformances": [{
       "title": "Tristan und Isolde",
-      "spotlightArtist": "Peter Hofmann",
+      "spotlightArtist": "Leonard Bernstein",
       "recordingYear": "1981",
       "recordingType": "Live, semi-staged concert",
       "venue": "Herkulessaal, Munich",

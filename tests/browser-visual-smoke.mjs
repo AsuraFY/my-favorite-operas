@@ -188,8 +188,19 @@ try {
       check(await favoritesPage.locator(".favorite-performance__links a").last().getAttribute("href") ===
         "https://www.youtube.com/watch?v=Wleg_0SWHW0",
         viewport.label + ": incorrect performance video");
-      check(await favoritesPage.locator(".favorite-performance__lead").count() === 2,
-        viewport.label + ": featured artists must be only Tristan and Isolde");
+      check(await favoritesPage.locator(".favorite-performance__title").innerText() ===
+        "Tristan und Isolde · Leonard Bernstein",
+        viewport.label + ": the title should feature Bernstein without a separate highlighted name");
+      check(await favoritesPage.locator(".favorite-performance__edition").innerText() ===
+        "1981 · Live, semi-staged concert · Herkulessaal, Munich",
+        viewport.label + ": venue must join the year and performance type");
+      check(await favoritesPage.locator(".favorite-performance__lead").count() === 0,
+        viewport.label + ": obsolete featured-performer bullet cards remain");
+      check(await favoritesPage.locator(".favorite-performance__details").count() === 1,
+        viewport.label + ": expected a single integrated personnel disclosure");
+      check(await favoritesPage.locator(".favorite-performance__summary-label").innerText() ===
+        "Cast & Musical Direction",
+        viewport.label + ": incorrect disclosure label");
       check(await favoritesPage.locator(".favorite-performance__cover img").getAttribute("src") ===
         "https://i.scdn.co/image/ab67616d0000b2730d05706fe7f204d1e2b9659b",
         viewport.label + ": favorite photo must match the selected Spotify album");
@@ -201,14 +212,41 @@ try {
         viewport.label + ": the compact favorite row overflows the screen");
       const details = favoritesPage.locator(".favorite-performance__details");
       check(!(await details.evaluate(el => el.open)),
-        viewport.label + ": full cast should be closed on first load");
-      await details.locator("summary").click();
-      check(await details.evaluate(el => el.open),
-        viewport.label + ": full cast should expand when clicked");
+        viewport.label + ": Cast & Musical Direction should be closed on first load");
+      check(!(await favoritesPage.locator(".favorite-performance__direction").isVisible()),
+        viewport.label + ": conductor/orchestra/chorus should start collapsed");
+      check(await favoritesPage.locator(".favorite-performance__links a").first().isVisible(),
+        viewport.label + ": Spotify must stay visible with the cast collapsed");
+      check(await favoritesPage.locator(".favorite-performance__links a").last().isVisible(),
+        viewport.label + ": YouTube must stay visible with the cast collapsed");
       await favoritesPage.screenshot({
-        path: join(screenshotDir, "tristan-favorite-" + viewport.label + ".png"),
+        path: join(screenshotDir, "tristan-favorite-collapsed-" + viewport.label + ".png"),
         animations: "disabled"
       });
+      await details.locator("summary").click();
+      check(await details.evaluate(el => el.open),
+        viewport.label + ": Cast & Musical Direction did not expand");
+      check(await favoritesPage.locator(".favorite-performance__direction dt").allInnerTexts().then(
+        labels => JSON.stringify(labels) === JSON.stringify(["Conductor", "Orchestra", "Chorus"])
+      ), viewport.label + ": personnel groups are missing or not in the approved order");
+      check(await favoritesPage.locator(".favorite-performance__direction").isVisible(),
+        viewport.label + ": musician details did not become visible");
+      check(await favoritesPage.locator(".favorite-performance__cast li").count() === 9,
+        viewport.label + ": all nine character performers must be present");
+      const castColumns = await favoritesPage.locator(".favorite-performance__cast").evaluate(
+        el => getComputedStyle(el).gridTemplateColumns.trim().split(/\s+/).length
+      );
+      check(castColumns === (viewport.label === "mobile" ? 1 : 2),
+        viewport.label + ": expected one cast column on mobile and two on desktop; got " + castColumns);
+      await favoritesPage.screenshot({
+        path: join(screenshotDir, "tristan-favorite-expanded-" + viewport.label + ".png"),
+        animations: "disabled"
+      });
+      await details.locator("summary").click();
+      check(!(await details.evaluate(el => el.open)),
+        viewport.label + ": Cast & Musical Direction did not collapse again");
+      check(await favoritesPage.locator(".favorite-performance__links a").first().isVisible(),
+        viewport.label + ": links must remain visible after closing the cast");
       await favoritesPage.goto(base + "#/operas/cosi-fan-tutte?view=synopsis",
         { waitUntil: "domcontentloaded" });
       await favoritesPage.locator(".opera-info__synopsis").waitFor({ timeout: 20000 });
