@@ -184,7 +184,8 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Speaker goes out with a priest, all priests put together with their palm branches."
           }
         ],
-        "number": 9
+        "number": 9,
+        "headingTranslation": "March of the Priests"
       },
       {
         "type": "Arie mir Chor",
@@ -212,7 +213,8 @@ export const dieZauberfloteActTwoScenes = [
         ],
         "number": 10,
         "originalTitle": "O Isis und Osiris",
-        "translatedTitle": "O Isis and Osiris"
+        "translatedTitle": "O Isis and Osiris",
+        "displayType": "Arie mit Chor"
       }
     ]
   },
