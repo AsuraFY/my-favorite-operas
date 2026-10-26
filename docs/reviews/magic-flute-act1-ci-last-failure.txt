@@ -2,7 +2,7 @@ TAP version 13
 # Subtest: Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte and numbers 1–8
 not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte and numbers 1–8
   ---
-  duration_ms: 13.428836
+  duration_ms: 22.054892
   type: 'test'
   location: '/home/runner/work/my-favorite-operas/my-favorite-operas/tests/die-zauberflote-act-1.test.mjs:8:1'
   failureType: 'testCodeFailure'
@@ -313,7 +313,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'erwacht, sieht furchtsam umher'
-                    translation: 'Awake, look fearfully around'
+                    translation: 'Awake, look fearful around'
                   19:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -367,7 +367,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'kommt den Fusssteig herunter, hat auf dem Rücken eine grosse Vogelsteige, die hoch über den Kopf geht, worin verschiedene Vögel sind; auch hält er mit beyden Händen ein Faunen-Flötchen, pfeift und singt.'
-                    translation: 'comes down the walkway, has on its back a large bird walkway, which goes high over the head, in which are different birds; He also holds a faunal flute with his hands, whistles and sings.'
+                    translation: 'comes down the footwalk, has on its back a large birdwalk which goes high above the head, in which are different birds; He also holds a faunal flute with his hands, whistles and sings.'
               1:
                 number: 2
                 type: 'Arie'
@@ -421,7 +421,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     translation: |-
                       I am the bird-catcher,
                       Always funny, heissa! hopsasa!
-                      The bird trapper is known
+                      The bird trapper is known to:
                       Bey old and young all over the country.
                       I want a net for girls;
                       I caught them dozens of times for me.
@@ -456,7 +456,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Sag mir, du lustiger Freund, wer du seyst?'
-                    translation: 'Tell me, funny friend, who you are?'
+                    translation: 'Tell me, you funny friend, who you are?'
                   8:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -564,7 +564,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Schon recht! aber wie nennt man eigentlich diese Gegend? - wer beherrscht sie? -'
-                    translation: 'Quite right! What do you call this area? - Who controls them? -'
+                    translation: 'Quite right! But what do you call this area? - Who controls them? -'
                   26:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -624,7 +624,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Von Essen und Trinken, wie alle Menschen.'
-                    translation: 'Of food and drink, like all people.'
+                    translation: 'Food and drink, like all people.'
                   36:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -654,7 +654,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'der bisher öfters auf seiner Flöte geblasen'
-                    translation: 'He has often blown on his flute.'
+                    translation: 'Who has often blown on his flute'
                   41:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -672,7 +672,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: "Sehen? - Die sternflammende Königinn sehen? - Wenn du noch mit einer solchen albernen Frage an mich kommst, so sperr' ich dich, so wahr ich Papageno heisse, wie einen Gimpel in mein Vogelhaus, verhandle dich dann mit meinen übrigen Vögeln an die nächtliche Königinn und ihre Jungfrauen, dann mögen sie dich meinetwegen sieden oder braten."
-                    translation: 'See?—The Star-Flaming Queens See?—If you come to me with such a silly question, I lock you, as I am called Papageno, like a gimmick in my bird house, then negotiate with my other birds with the nocturnal Queens and their virgins, then they may boil you or roast you for my sake.'
+                    translation: 'If you come to me with such a foolish question, I lock you, as I am called Papageno, like a gimmick in my bird house; then negotiate with my other birds with the nocturnal queens and their virgins, then they may boil or roast you for my sake.'
                   44:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -690,7 +690,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Sehen? - Die sternflammende Königinn sehen? - Welcher Sterbliche kann sich rühmen, sie je gesehen zu haben? - Welches Menschen Auge würde durch ihren schwarz durchwebten Schleyer blicken können?'
-                    translation: 'See? - See the Star-Flaming Queens? - What mortal can boast of having ever seen them? - What human eye would be able to see through its black-woven Schleyer?'
+                    translation: 'See? - See the Star-Flaming Queens? - What mortal can boast of having ever seen them? What human eye would be able to see through its black-woven Schleyer?'
                   47:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -702,7 +702,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: "Nun ist's klar; es ist eben diese nächtliche Königinn, von der mein Vater mir so oft erzählte. - Aber zu fassen, wie ich mich hierher verirrte, ist ausser meiner Macht. - Unfehlbar ist auch dieser Mann kein gewöhnlicher Mensch. - Vielleicht einer ihrer dienstbaren Geister."
-                    translation: "Now it's clear; It is these night queens that my father so often told me about. - But to grasp how I got lost here is out of my power. Infallible this man is not an ordinary man either. Perhaps one of their servant spirits."
+                    translation: "Now it's clear; It is those night queens that my father so often told me about. - But to grasp how I got lost here is out of my power. Infallible this man is not an ordinary man either. Perhaps one of their servant spirits."
                   49:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -852,7 +852,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Die drey Damen.'
-                    translation: 'The Drey Ladies.'
+                    translation: 'The drey ladies.'
                   1:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -870,7 +870,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Aha! das geht mich an. - Sieh dich um, Freund!'
-                    translation: "Aha! That's my business. - Look around you, friend!"
+                    translation: "Aha! That's my business. - Look around, friend!"
                   4:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -888,7 +888,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Sie sind vermuthlich sehr schön?'
-                    translation: 'You are probably very beautiful?'
+                    translation: 'Are you probably very beautiful?'
                   7:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -912,7 +912,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Sey still! sie drohen mir schon. - Du fragst, ob sie schön sind, und ich kann dir darauf nichts antworten, als dass ich in meinem Leben nichts Reitzenders sah. - Jetzt werden sie bald wieder gut werden. - -'
-                    translation: "Be quiet! they are threatening me. - You ask if they are beautiful, and I can answer you nothing but that I saw nothing more striking in my life. - Now they'll be good again soon. - -"
+                    translation: "Be quiet! they are threatening me. - You ask if they are beautiful, and I cannot answer you except that I saw nothing more striking in my life. - They'll be good again soon. - -"
                   11:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -930,13 +930,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: "Was muss ich denn heute verbrochen haben, dass sie gar so aufgebracht wider mich sind? - Hier, meine Schönen, übergeb' ich meine Vögel."
-                    translation: 'What must I have done today that they are so upset against me? Here, my beautiful ones, I hand over my birds.'
+                    translation: 'What must I have done today that they are so upset against me? - Here, my beautiful ones, I hand over my birds.'
                   14:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'reicht ihm eine schöne Bouteille Wasser'
-                    translation: 'Give him a beautiful boubal water'
+                    translation: 'Give him a beautiful boubine water'
                   15:
                     speaker: 'ERSTE DAME'
                     speakerTranslation: 'First Lady'
@@ -948,7 +948,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Second Lady'
                     literalText: true
                     original: 'Und mir befahl sie, dass ich, statt Zuckerbrod, diesen Stein dir überbringen soll. - Ich wünsche, dass er dir wohl bekommen möge.'
-                    translation: 'And she ordered me that instead of carrot, I should bring this stone to you. - I wish he would be well with you.'
+                    translation: 'And she ordered me that instead of carrot, I should bring this stone to you. - I want him to be good to you.'
                   17:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -960,7 +960,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: "Und statt der süssen Feigen hab' ich die Ehre, dir diess goldene Schloss vor den Mund zu schlagen."
-                    translation: 'And instead of the sweet figs, I have the honor of knocking this golden castle in your mouth.'
+                    translation: 'And instead of the sweet figs, I have the honor of knocking this golden castle at your mouth.'
                   19:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -972,7 +972,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Papageno zeigt seinen Schmerz durch Geberden.'
-                    translation: 'Papageno shows his pain through donors.'
+                    translation: 'Papageno shows his pain through givers.'
                   21:
                     speaker: 'ERSTE DAME'
                     speakerTranslation: 'First Lady'
@@ -994,7 +994,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: 'Und dass du nie dich der Heldenthaten rühmst, die andre vollzogen. -'
-                    translation: 'And that you never boast of the heroic deeds performed by others. -'
+                    translation: 'And that you never boast of the heroic deeds done by others. -'
                   24:
                     speaker: 'ERSTE DAME'
                     speakerTranslation: 'First Lady'
@@ -1062,7 +1062,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'First Lady'
                     literalText: true
                     original: 'Tamino ist gleich bey Empfang des Bildnisses aufmerksam geworden; seine Liebe nimmt zu, ob er gleich für alle diese Reden taub schien.'
-                    translation: 'Tamino has become attentive immediately upon receiving the portrait; His love increases, whether he seemed equally deaf to all these speeches.'
+                    translation: 'Tamino has become attentive immediately upon receiving the portrait; His love increases whether he seemed deaf to all these speeches.'
             summary: ''
           3:
             number: 4
@@ -1187,7 +1187,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: 'Hat beschlossen, dich ganz glücklich zu machen. - Hat dieser Jüngling, sprach sie, auch so viel Muth und Tapferkeit, als er zärtlich ist, o so ist meine Tochter ganz gewiss gerettet.'
-                    translation: 'I decided to make you happy. If this young man," said she, "has as much courage and bravery as he is tender, oh my daughter is certainly saved.'
+                    translation: 'I decided to make you happy. If this young man," said she, "has as much courage and bravery as he is tender, then my daughter is certainly saved.'
                   7:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -1235,7 +1235,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'O Pamina! du mir entrissen - du in der Gewalt eines üppigen Bösewichts! - bist vieleicht in diesem Augenblicke - schrecklicher Gedanke!'
-                    translation: 'O Pamina! thou wrested from me, thou wrestled with a lush villain! - you may be at this moment - terrible thought!'
+                    translation: 'O Pamina! thou snatched from me, thou wrought in the power of a luxurious villain! - you may be at this moment - terrible thought!'
                   15:
                     speaker: 'DIE DREY DAMEN'
                     speakerTranslation: 'Three Ladies'
@@ -1247,7 +1247,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'First Lady'
                     literalText: true
                     original: 'Lästere der holden Schönheit Tugend nicht! - Trotz aller Pein, so die Unschuld duldet, ist sie sich immer gleich. - Weder Zwang, noch Schmeicheley ist vermögend, sie zum Wege des Lasters zu verführen. - -'
-                    translation: 'Blaspheme the fair beauty of virtue not! - In spite of all pain, if innocence tolerates, it is always the same. Neither compulsion nor Schmeicheley is able to seduce them into the path of vice. - -'
+                    translation: 'Blaspheme the fair beauty of virtue not! - In spite of all punishment, if innocence tolerates, it is always the same to itself. Neither compulsion nor Schmeicheley is capable of seducing them into the path of vice. - -'
                   17:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -1365,13 +1365,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       O my dear son!
                       You are innocent, wise, pious;
                       A young man like you can do best.
-                      To console this deeply distressed mother heart.
+                      To comfort this deeply distressed mother heart.
                   1:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Zum Leiden bin ich auserkohren;'
-                    translation: 'For suffering I am extinguished;'
+                    translation: 'For suffering I am heeded;'
                   2:
                     speaker: 'KÖNIGINN'
                     speakerTranslation: 'Queen of the Night'
@@ -1402,7 +1402,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Your shy life.
                       I had to see her robbing me,
                       Oh help! was all she said:
-                      Their prayer was in vain.
+                      Their plea was in vain,
                       Because my help was too weak.
                       You will leave them free,
                       You will be the daughter's savior.
@@ -1450,7 +1450,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Ists denn auch Wirklichkeit, was ich sah? oder betäubten mich meine Sinnen? - O ihr guten Götter täuscht mich nicht! oder ich unterliege eurer Prüfung. - Schützet meinen Arm, stählt meinen Muth, und Taminos Herz wird ewigen Dank euch entgegen schlagen.'
-                    translation: "Is it real what I saw? or did my senses numb me? O good gods, do not deceive me, or I will be subject to your test. Protect my arm, steel my courage, and Tamino's heart will beat towards you eternal thanks."
+                    translation: "Is it real what I saw? or did my senses numb me? O good gods, do not deceive me, or I shall be subject to your trial. Protect my arm, steel my courage, and Tamino's heart will beat towards you eternal thanks."
                   4:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -1742,13 +1742,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Ey! Ey! was mag darinnen seyn?'
-                    translation: "Ey! Ey! What's inside?"
+                    translation: "Ey! Ey! What's in there?"
                   25:
                     speaker: 'DRITTE DAME'
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: 'Darinnen hörst du Glöckchen tönen.'
-                    translation: 'Inside you hear bells sounding.'
+                    translation: 'Inside you hear bells ringing.'
                   26:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -1821,7 +1821,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Drey Knäbchen jung, schön, hold und weise,
                       Umschweben uns auf unsrer Reise.
                     translation: |-
-                      Drey boys young, beautiful, handsome and wise,
+                      Drey boy young, beautiful, fair and wise,
                       Surround us on our journey.
                   35:
                     speaker: 'ALLE FÜNF'
@@ -1855,7 +1855,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Zwey Sclaven tragen, so bald das Theater in ein prächtiges ägyptisches Zimmer verwandelt ist, schöne Pölster nebst einem prächtigen türkischen Tisch heraus, breiten Teppiche auf, sodann kommt der dritte Sclav.'
-                    translation: 'Carrying Zwey slaves as soon as the theatre is transformed into a magnificent Egyptian room, beautiful pölster and a magnificent Turkish table, spreading carpets, then comes the third sclav.'
+                    translation: 'Carrying Zwey slaves as soon as the theatre is transformed into a magnificent Egyptian room, out beautiful pölster and a magnificent Turkish table, open carpets, then comes the third sclav.'
                   1:
                     speaker: 'DRITTER SCLAV'
                     speakerTranslation: 'Third Slave'
@@ -1903,7 +1903,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Slave'
                     literalText: true
                     original: 'Ist entsprungen.'
-                    translation: 'Has sprung.'
+                    translation: 'has sprung.'
                   9:
                     speaker: 'ERSTER UND ZWEYTER SCLAV'
                     speakerTranslation: 'First Slave, Second Slave'
@@ -1963,7 +1963,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Slave'
                     literalText: true
                     original: 'Du kennst ja den üppigen Wanst und seine Weise; das Mädchen aber war klüger als ich dachte. - In dem Augenblicke, da er zu siegen glaubte, rief sie Sarastros Namen: das erschütterte den Mohren; er blieb stumm und unbeweglich stehen - indess lief Pamina nach dem Kanal, und schiffte von selbst in einer Gondel dem Palmwäldchen zu.'
-                    translation: "Thou knowest the lush whirl and his manner; But the girl was smarter than I thought. - The moment he thought he was victorious, she called Sarastro's name: this shook the Moor; he remained silent and immobile - but Pamina ran to the canal, and sailed by himself in a gondola to the palm grove."
+                    translation: "Thou knowest the lush whirl and his manner; But the girl was smarter than I thought. - The moment he thought he was victorious, she called Sarastro's name: this shook the Moor; He remained silent and immobile - but Pamina ran to the canal, and sailed by himself in a gondola to the palm grove."
                   19:
                     speaker: 'ERSTER SCLAV'
                     speakerTranslation: 'First Slave'
@@ -2028,7 +2028,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'First Slave'
                     literalText: true
                     original: 'Doch nicht für Pamina? O ihr Götter! da seht Brüder, das Mädchen ist gefangen.'
-                    translation: 'But not for Pamina? O gods! see brothers, the girl is captured.'
+                    translation: 'But not for Pamina? O gods! see brothers, the girl is imprisoned.'
                   7:
                     speaker: 'ZWEYTER UND DRITTER SCLAV'
                     speakerTranslation: 'Second Slave, Third Slave'
@@ -2064,7 +2064,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Slave'
                     literalText: true
                     original: 'So was sehen zu müssen, ist Höllenmarter.'
-                    translation: 'To see this is hell.'
+                    translation: 'Seeing this is hell.'
                   13:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -2115,7 +2115,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'O welche Marter! welche Pein!'
-                    translation: 'O what torture! What a punishment!'
+                    translation: 'Oh, what torture! What a punishment!'
                   3:
                     speaker: 'MONOSTATOS'
                     speakerTranslation: 'Monostatos'
@@ -2146,7 +2146,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       He Sclaven! legt ihr Fesseln an,
                       Mein Hass, soll dich verderben.
                     translation: |-
-                      He Sclaven! put her fetters,
+                      He Sclaven! put your fetters on,
                       My hate, let it ruin you.
                   7:
                     speaker: 'Stage direction'
@@ -2209,7 +2209,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Aha! da sind ich Leute;
                       Gewagt! ich geh herein.
                     translation: |-
-                      Where am I? Where am I?
+                      Where am I? Where may I be?
                       Aha! there I am people;
                       Dare! I'll go in.
                   2:
@@ -2233,7 +2233,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Monostatos und Papageno sehen sich, - erschrecken einer über den andern.'
-                    translation: 'Monostatus and Papageno see each other, - frighten one over the other.'
+                    translation: 'Monostatus and Papageno see each other, - frightened one over the other.'
                   5:
                     speaker: 'BEYDE'
                     speakerTranslation: 'Both'
@@ -2294,7 +2294,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'Wie? - Noch schlägt dieses Herz? - Noch nicht vernichtet? - Zu neuen Qualen erwacht? - O das ist hart, sehr hart! - Mir bitterer, als der Tod.'
-                    translation: 'How? - Still beats this heart? - Still not destroyed? - Awakened to new torments? - O this is hard, very hard! - To me more bitter than death.'
+                    translation: 'How? - Still beats this heart? - Still not destroyed? - Awakened to new agony? - O this is hard, very hard! - To me more bitter than death.'
             summary: ''
           13:
             number: 14
@@ -2320,7 +2320,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Bin ich nicht ein Narr, dass ich mich schrecken liess? - Es giebt ja schwarze Vögel in der Welt, warum denn nicht auch schwarze Menschen? - Ah, sieh da! hier ist das schöne Fräulenbild noch. - Du Tochter der nächtlichen Königinn!'
-                    translation: "Am I not a fool to let myself be frightened?—There are black birds in the world, why not black men? - Ah, look there! here's the beautiful picture still. Daughter of the Night Queens!"
+                    translation: "Am I not a fool to let myself be frightened?—There are black birds in the world, why not black men? - Ah, look there! here's the beautiful picture still. - Daughter of the Night Queens!"
                   2:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -2362,7 +2362,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Ich dich eben so wenig.'
-                    translation: "I don't like you so much."
+                    translation: "I don't give you that much."
                   9:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -2392,19 +2392,19 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'er sieht das Portrait an, welches der Prinz zuvor empfangen, und Papageno nun an einem Bande am Halse trägt'
-                    translation: 'he looks at the portrait which the prince had previously received, and Papageno now wears on a gang on his neck'
+                    translation: 'he looks at the portrait which the prince had previously received, and Papageno is now wearing a gang on his neck'
                   14:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Die Augen schwarz - richtig, schwarz. - Die Lippen roth - richtig, roth - Blonde Haare - Blonde Haare. - Alles trift ein, bis auf Händ und Füsse. - - - Nach dem Gemählde zu schlüssen, sollst du weder Hände noch Füsse haben; denn hier sind auch keine angezeigt.'
-                    translation: 'The eyes black - right, black. - The lips red - right, red - blond hair - blond hair. Everything comes in, except hands and feet. After the marriage, you shall have neither hands nor feet. Because there is no indication here.'
+                    translation: 'The eyes black - right, black. - The lips red - right, red - blond hair - blond hair. Everything comes in, except hands and feet. After the marriage, you shall have neither hands nor feet. Because there are no signs here.'
                   15:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: "Erlaube mir - Ja ich bin's - Wie kam es in deine Hände?"
-                    translation: 'Allow me--Yes, I am--How did it get into your hands?'
+                    translation: 'Allow me - Yes, I am - How did it get into your hands?'
                   16:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -2464,13 +2464,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'Bey der Liebe.'
-                    translation: 'Bey of love.'
+                    translation: 'Bey of Love.'
                   26:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Richtig, bey der Liebe! - Das nenn ich Gedächtniss haben - Kurz also, diese grosse Liebe zu dir war der Peitschenstreich, um unsre Füsse in schnellen Gang zu bringen; nun sind wir hier, dir tausend schöne und angenehme Sachen zu sagen; dich in unsre Arme zu nehmen, und wenn es möglich ist, eben so schnell, wo nicht schneller als hierher, in den Pallast deiner Mutter zu eilen.'
-                    translation: 'True, bey love! - This I call having memory - In short, this great love for you was the stroke of the whip to get our feet into speed; Now we are here to tell you a thousand beautiful and pleasant things; take you into our arms, and if it is possible, just as quickly, where not faster than here, Hurry to your mother’s palace.'
+                    translation: 'True, bey love! - This is what I call having memory - In short, this great love for you was the stroke of the whip to get our feet into speed; Now we are here to tell you a thousand beautiful and pleasant things; take you into our arms, and if it is possible, just as quickly, where not faster than here, Hurry to your mother’s palace.'
                   27:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -2536,7 +2536,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'So haben wir keine Minute zu versäumen. - Um diese Zeit kommt Sarastro gewöhnlich von der Jagd zurück.'
-                    translation: 'So we do not have a minute to miss. - At this time Sarastro usually comes back from hunting.'
+                    translation: 'So we do not have a minute to miss. - Around this time Sarastro usually comes back from hunting.'
                   38:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -2572,7 +2572,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: "Schön's Fräulenbild, wenn dir wieder ein so böser Verdacht aufsteigen sollte, dass ich dich betrügen wollte, so denke nur fleissig an die Liebe, und jeder böse Argwohn wird schwinden."
-                    translation: 'Fine picture, if so evil a suspicion should arise to you that I would deceive you, think diligently of love, and all evil suspicion will fade away.'
+                    translation: 'Fine picture, if any suspicion should arise to you so evil that I would deceive you, think diligently of love, and all evil suspicion will fade away.'
                   44:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -2596,7 +2596,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Nicht einmahl ein Mädchen, viel weniger ein Weib! - Ja das ist betrübt! - Und unser einer hat doch auch bisweilen seine lustigen Stunden, wo man gern gesellschaftliche Unterhaltung haben möcht. -'
-                    translation: 'Not once a girl, much less a woman! - Yes, that is sad! - And our one also sometimes has his funny hours, where you like to have social entertainment. -'
+                    translation: 'Not once a girl, much less a woman! - Yes, that is sad! - And our one also sometimes has his funny hours, where you want to have social entertainment. -'
                   48:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -2637,7 +2637,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Die süssen Triebe mit zu fühlen,
                       Ist dann der Weiber erste Pflicht.
                     translation: |-
-                      The sweet urges to feel,
+                      The sweet desires to feel,
                       Then the woman is the first duty.
                   2:
                     speaker: 'BEYDE'
@@ -2762,7 +2762,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Dann Jüngling wirst du männlich siegen.
                     translation: |-
                       This announcement is not for us -
-                      Be steadfast, patient and silent.
+                      Be steadfast, patient, and silent.
                       Remember this: in short, be a man,
                       Then, young man, you will win.
                   5:
@@ -2795,9 +2795,9 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Is this the seat of the gods here?
                       The gates show, the pillars show,
                       That wisdom and work and arts dwell here;
-                      Where activity is overthrown and idleness gives way,
-                      His rule does not make vice easy.
-                      I am bravely entering the gate,
+                      Where activity is overthrown, and idleness gives way,
+                      His rule does not take vice easily.
+                      I will boldly enter the gate,
                       The intention is noble and pure and pure.
                       Say cowardly villain!
                       Saving fireplaces is my duty.
@@ -2824,7 +2824,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'er geht zur linken Pforte, eine Stimme von innen'
-                    translation: 'He goes to the left door, a voice from within'
+                    translation: 'he goes to the left door, a voice from within'
                   11:
                     speaker: 'STIMME'
                     speakerTranslation: 'Voice'
@@ -2852,7 +2852,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Vieleicht find ich den Eingang hier.
                     translation: |-
                       I see another door!
-                      Maybe I can find the entrance here.
+                      I may find the entrance here.
                   15:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -2906,7 +2906,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Sarastro herrscht in diesen Gründen?'
-                    translation: 'Sarastro rules in these reasons?'
+                    translation: 'Sarastro rules on these reasons?'
                   22:
                     speaker: 'PRIESTER'
                     speakerTranslation: 'Priest'
@@ -2924,7 +2924,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Er herrscht im Weisheitstempel hier.'
-                    translation: 'He rules in the wisdom stamp here.'
+                    translation: 'He rules in the stamp of wisdom here.'
                   25:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -3008,7 +3008,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Die Gram und Jammer niederdrückt.
                     translation: |-
                       Proven by an unhappy woman,
-                      The sorrow and misery is overwhelming.
+                      Destroying the grief and misery.
                   37:
                     speaker: 'PRIESTER'
                     speakerTranslation: 'Priest'
@@ -3080,7 +3080,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Wann also wird die Decke schwinden?'
-                    translation: 'So when will the ceiling dwindle?'
+                    translation: 'So when will the ceiling fade?'
                   45:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -3120,7 +3120,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Voices'
                     literalText: true
                     original: 'Bald Jüngling, oder nie!'
-                    translation: 'Soon, young man, or never!'
+                    translation: 'Soon young man, or never!'
                   51:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -3177,7 +3177,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       With every tone of thanks,
                       To describe how he sprang up here!
                       Pointing to the heart. He plays, immediately animals of all kinds come forth to listen to him. He stops and they flee. The birds whistle about it.
-                      How strong is not your magic sound,
+                      How strong is not your magic tone,
                       Because, fair flute, through your play
                       Even wild animals feel joy.
                       But only Pamina remains;
@@ -3220,7 +3220,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Ha, das ist Papagenos Ton.'
-                    translation: "This is Papageno's tone."
+                    translation: "Ha, that's Papageno's tone."
                   63:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -3237,7 +3237,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Vieleicht führt mich der Ton zu ihr.
                     translation: |-
                       Perhaps he saw fireplaces already,
-                      She may rush to me with him!
+                      She may come to me with him.
                       Perhaps the tone leads me to her.
                   65:
                     speaker: 'Stage direction'
@@ -3316,7 +3316,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Nur geschwinde! Nur geschwinde!
                     translation: |-
                       What joy is greater,
-                      Friend Tamino hears us already;
+                      Friend Tamino already hears us;
                       Here came the flute clay,
                       What luck if I find him!
                       Just go fast! Just go fast!
@@ -3363,8 +3363,8 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     translation: |-
                       Ha, I still caught you!
                       only herbey with steel and iron;
-                      Wait, they want to tell you Mores.
-                      Take the Monostatos!
+                      Wait, they want you to know Mores.
+                      Get rid of Monostatos!
                       only herbey with band and knitting;
                       Hey, you slaves are coming here!
                   2:
@@ -3390,7 +3390,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Dass die Ohren ihnen fingen.
                     translation: |-
                       He who dares much often wins much,
-                      Come on nice chime!
+                      Come on nice glockenspiel!
                       Let the bells sound, sound,
                       That the ears caught them.
                   5:
@@ -3398,7 +3398,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Er schlägt auf sein Instrument, sogleich singt Monostatos und die Sclaven, und gehen unter dem Gesang marschmässig ab.'
-                    translation: 'He strikes on his instrument, immediately sings Monostatos and the slaves, and walks off under the song.'
+                    translation: 'He strikes his instrument, immediately sings Monostatos and the slaves, and goes off marching under the song.'
                   6:
                     speaker: 'MONOSTATOS UND SCLAVEN'
                     speakerTranslation: 'Monostatos, Slaves'
@@ -3495,7 +3495,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Oh, if I were a mouse!
                       How will I hide,
                       If I were as small as snails,
-                      This is how I crawl into my house. -
+                      That's how I crawl into my house. -
                       My child, what shall we speak now?
                   15:
                     speaker: 'PAMINA'
@@ -3537,7 +3537,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Ein Zug von Gefolge; zuletzt fährt Sarastro auf einem Triumphwagen heraus, der von sechs Löwen gezogen wird. Vorige.'
-                    translation: 'A train of followers; Lastly, Sarastro drives out on a chariot pulled by six lions. Previous.'
+                    translation: 'A train of followers; Finally, Sarastro drives out on a chariot pulled by six lions. Previous.'
                   1:
                     speaker: 'CHORUS'
                     speakerTranslation: 'Chorus'
@@ -3549,7 +3549,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Er ist es, dem wir uns mit Freuden ergeben!'
-                    translation: 'It is He to whom we rejoice.'
+                    translation: 'He is to whom we surrender with joy!'
                   3:
                     speaker: 'CHORUS'
                     speakerTranslation: 'Chorus'
@@ -3585,11 +3585,11 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Der böse Mohr verlangte Liebe;
                       Darum, o Herr! entfloh ich dir.
                     translation: |-
-                      Lord, I am a criminal!
+                      Lord, I am a criminal.
                       I wanted to escape your power.
-                      The blame alone is not on me -
+                      But the blame is not on me -
                       The evil Moor demanded love;
-                      Therefore, O Lord, I fled from thee.
+                      Therefore, O Lord, I fled from you.
                   8:
                     speaker: 'SARASTRO'
                     speakerTranslation: 'Sarastro'
@@ -3602,7 +3602,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Zur Liebe will ich dich nicht zwingen,
                       Doch geh ich dir die Freyheit nicht.
                     translation: |-
-                      Stand up, amuse yourself, O love!
+                      Get up, amuse yourself, O love!
                       Because without first getting inside you
                       I know more from your heart:
                       You love someone else very much.
@@ -3627,7 +3627,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Du würdest um dein Glück gebracht,
                       Wenn ich dich ihren Händen liesse.
                     translation: |-
-                      Is in my power,
+                      is in my power,
                       You would be deprived of your happiness,
                       If I leave you in their hands.
                   11:
@@ -3652,7 +3652,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     translation: |-
                       And a proud woman.
                       A man must guide your hearts,
-                      For without him every woman cares
+                      For without him every woman
                       To step out of their sphere of activity.
             summary: ''
           18:
@@ -3854,7 +3854,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'u.s.f.'
-                    translation: 'U.S.'
+                    translation: 'u.s.f.'
               1:
                 type: 'Schlusschor'
                 threeLineOutline: true
@@ -3884,7 +3884,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Und Sterbliche den Göttern gleich.'
-                    translation: 'And mortals like gods.'
+                    translation: 'And mortals like the gods.'
             summary: ''
     characters:
       0: 'Tamino'
@@ -4175,7 +4175,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'erwacht, sieht furchtsam umher'
-                    translation: 'Awake, look fearfully around'
+                    translation: 'Awake, look fearful around'
                   19:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -4229,7 +4229,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'kommt den Fusssteig herunter, hat auf dem Rücken eine grosse Vogelsteige, die hoch über den Kopf geht, worin verschiedene Vögel sind; auch hält er mit beyden Händen ein Faunen-Flötchen, pfeift und singt.'
-                    translation: 'comes down the walkway, has on its back a large bird walkway, which goes high over the head, in which are different birds; He also holds a faunal flute with his hands, whistles and sings.'
+                    translation: 'comes down the footwalk, has on its back a large birdwalk which goes high above the head, in which are different birds; He also holds a faunal flute with his hands, whistles and sings.'
               1:
                 number: 2
                 type: 'Arie'
@@ -4283,7 +4283,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     translation: |-
                       I am the bird-catcher,
                       Always funny, heissa! hopsasa!
-                      The bird trapper is known
+                      The bird trapper is known to:
                       Bey old and young all over the country.
                       I want a net for girls;
                       I caught them dozens of times for me.
@@ -4318,7 +4318,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Sag mir, du lustiger Freund, wer du seyst?'
-                    translation: 'Tell me, funny friend, who you are?'
+                    translation: 'Tell me, you funny friend, who you are?'
                   8:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -4426,7 +4426,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Schon recht! aber wie nennt man eigentlich diese Gegend? - wer beherrscht sie? -'
-                    translation: 'Quite right! What do you call this area? - Who controls them? -'
+                    translation: 'Quite right! But what do you call this area? - Who controls them? -'
                   26:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -4486,7 +4486,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Von Essen und Trinken, wie alle Menschen.'
-                    translation: 'Of food and drink, like all people.'
+                    translation: 'Food and drink, like all people.'
                   36:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -4516,7 +4516,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'der bisher öfters auf seiner Flöte geblasen'
-                    translation: 'He has often blown on his flute.'
+                    translation: 'Who has often blown on his flute'
                   41:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -4534,7 +4534,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: "Sehen? - Die sternflammende Königinn sehen? - Wenn du noch mit einer solchen albernen Frage an mich kommst, so sperr' ich dich, so wahr ich Papageno heisse, wie einen Gimpel in mein Vogelhaus, verhandle dich dann mit meinen übrigen Vögeln an die nächtliche Königinn und ihre Jungfrauen, dann mögen sie dich meinetwegen sieden oder braten."
-                    translation: 'See?—The Star-Flaming Queens See?—If you come to me with such a silly question, I lock you, as I am called Papageno, like a gimmick in my bird house, then negotiate with my other birds with the nocturnal Queens and their virgins, then they may boil you or roast you for my sake.'
+                    translation: 'If you come to me with such a foolish question, I lock you, as I am called Papageno, like a gimmick in my bird house; then negotiate with my other birds with the nocturnal queens and their virgins, then they may boil or roast you for my sake.'
                   44:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -4552,7 +4552,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Sehen? - Die sternflammende Königinn sehen? - Welcher Sterbliche kann sich rühmen, sie je gesehen zu haben? - Welches Menschen Auge würde durch ihren schwarz durchwebten Schleyer blicken können?'
-                    translation: 'See? - See the Star-Flaming Queens? - What mortal can boast of having ever seen them? - What human eye would be able to see through its black-woven Schleyer?'
+                    translation: 'See? - See the Star-Flaming Queens? - What mortal can boast of having ever seen them? What human eye would be able to see through its black-woven Schleyer?'
                   47:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -4564,7 +4564,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: "Nun ist's klar; es ist eben diese nächtliche Königinn, von der mein Vater mir so oft erzählte. - Aber zu fassen, wie ich mich hierher verirrte, ist ausser meiner Macht. - Unfehlbar ist auch dieser Mann kein gewöhnlicher Mensch. - Vielleicht einer ihrer dienstbaren Geister."
-                    translation: "Now it's clear; It is these night queens that my father so often told me about. - But to grasp how I got lost here is out of my power. Infallible this man is not an ordinary man either. Perhaps one of their servant spirits."
+                    translation: "Now it's clear; It is those night queens that my father so often told me about. - But to grasp how I got lost here is out of my power. Infallible this man is not an ordinary man either. Perhaps one of their servant spirits."
                   49:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -4714,7 +4714,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Die drey Damen.'
-                    translation: 'The Drey Ladies.'
+                    translation: 'The drey ladies.'
                   1:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -4732,7 +4732,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Aha! das geht mich an. - Sieh dich um, Freund!'
-                    translation: "Aha! That's my business. - Look around you, friend!"
+                    translation: "Aha! That's my business. - Look around, friend!"
                   4:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -4750,7 +4750,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Sie sind vermuthlich sehr schön?'
-                    translation: 'You are probably very beautiful?'
+                    translation: 'Are you probably very beautiful?'
                   7:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -4774,7 +4774,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Sey still! sie drohen mir schon. - Du fragst, ob sie schön sind, und ich kann dir darauf nichts antworten, als dass ich in meinem Leben nichts Reitzenders sah. - Jetzt werden sie bald wieder gut werden. - -'
-                    translation: "Be quiet! they are threatening me. - You ask if they are beautiful, and I can answer you nothing but that I saw nothing more striking in my life. - Now they'll be good again soon. - -"
+                    translation: "Be quiet! they are threatening me. - You ask if they are beautiful, and I cannot answer you except that I saw nothing more striking in my life. - They'll be good again soon. - -"
                   11:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -4792,13 +4792,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: "Was muss ich denn heute verbrochen haben, dass sie gar so aufgebracht wider mich sind? - Hier, meine Schönen, übergeb' ich meine Vögel."
-                    translation: 'What must I have done today that they are so upset against me? Here, my beautiful ones, I hand over my birds.'
+                    translation: 'What must I have done today that they are so upset against me? - Here, my beautiful ones, I hand over my birds.'
                   14:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'reicht ihm eine schöne Bouteille Wasser'
-                    translation: 'Give him a beautiful boubal water'
+                    translation: 'Give him a beautiful boubine water'
                   15:
                     speaker: 'ERSTE DAME'
                     speakerTranslation: 'First Lady'
@@ -4810,7 +4810,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Second Lady'
                     literalText: true
                     original: 'Und mir befahl sie, dass ich, statt Zuckerbrod, diesen Stein dir überbringen soll. - Ich wünsche, dass er dir wohl bekommen möge.'
-                    translation: 'And she ordered me that instead of carrot, I should bring this stone to you. - I wish he would be well with you.'
+                    translation: 'And she ordered me that instead of carrot, I should bring this stone to you. - I want him to be good to you.'
                   17:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -4822,7 +4822,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: "Und statt der süssen Feigen hab' ich die Ehre, dir diess goldene Schloss vor den Mund zu schlagen."
-                    translation: 'And instead of the sweet figs, I have the honor of knocking this golden castle in your mouth.'
+                    translation: 'And instead of the sweet figs, I have the honor of knocking this golden castle at your mouth.'
                   19:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -4834,7 +4834,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Papageno zeigt seinen Schmerz durch Geberden.'
-                    translation: 'Papageno shows his pain through donors.'
+                    translation: 'Papageno shows his pain through givers.'
                   21:
                     speaker: 'ERSTE DAME'
                     speakerTranslation: 'First Lady'
@@ -4856,7 +4856,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: 'Und dass du nie dich der Heldenthaten rühmst, die andre vollzogen. -'
-                    translation: 'And that you never boast of the heroic deeds performed by others. -'
+                    translation: 'And that you never boast of the heroic deeds done by others. -'
                   24:
                     speaker: 'ERSTE DAME'
                     speakerTranslation: 'First Lady'
@@ -4924,7 +4924,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'First Lady'
                     literalText: true
                     original: 'Tamino ist gleich bey Empfang des Bildnisses aufmerksam geworden; seine Liebe nimmt zu, ob er gleich für alle diese Reden taub schien.'
-                    translation: 'Tamino has become attentive immediately upon receiving the portrait; His love increases, whether he seemed equally deaf to all these speeches.'
+                    translation: 'Tamino has become attentive immediately upon receiving the portrait; His love increases whether he seemed deaf to all these speeches.'
             summary: ''
           3:
             number: 4
@@ -5049,7 +5049,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: 'Hat beschlossen, dich ganz glücklich zu machen. - Hat dieser Jüngling, sprach sie, auch so viel Muth und Tapferkeit, als er zärtlich ist, o so ist meine Tochter ganz gewiss gerettet.'
-                    translation: 'I decided to make you happy. If this young man," said she, "has as much courage and bravery as he is tender, oh my daughter is certainly saved.'
+                    translation: 'I decided to make you happy. If this young man," said she, "has as much courage and bravery as he is tender, then my daughter is certainly saved.'
                   7:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -5097,7 +5097,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'O Pamina! du mir entrissen - du in der Gewalt eines üppigen Bösewichts! - bist vieleicht in diesem Augenblicke - schrecklicher Gedanke!'
-                    translation: 'O Pamina! thou wrested from me, thou wrestled with a lush villain! - you may be at this moment - terrible thought!'
+                    translation: 'O Pamina! thou snatched from me, thou wrought in the power of a luxurious villain! - you may be at this moment - terrible thought!'
                   15:
                     speaker: 'DIE DREY DAMEN'
                     speakerTranslation: 'Three Ladies'
@@ -5109,7 +5109,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'First Lady'
                     literalText: true
                     original: 'Lästere der holden Schönheit Tugend nicht! - Trotz aller Pein, so die Unschuld duldet, ist sie sich immer gleich. - Weder Zwang, noch Schmeicheley ist vermögend, sie zum Wege des Lasters zu verführen. - -'
-                    translation: 'Blaspheme the fair beauty of virtue not! - In spite of all pain, if innocence tolerates, it is always the same. Neither compulsion nor Schmeicheley is able to seduce them into the path of vice. - -'
+                    translation: 'Blaspheme the fair beauty of virtue not! - In spite of all punishment, if innocence tolerates, it is always the same to itself. Neither compulsion nor Schmeicheley is capable of seducing them into the path of vice. - -'
                   17:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -5227,13 +5227,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       O my dear son!
                       You are innocent, wise, pious;
                       A young man like you can do best.
-                      To console this deeply distressed mother heart.
+                      To comfort this deeply distressed mother heart.
                   1:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Zum Leiden bin ich auserkohren;'
-                    translation: 'For suffering I am extinguished;'
+                    translation: 'For suffering I am heeded;'
                   2:
                     speaker: 'KÖNIGINN'
                     speakerTranslation: 'Queen of the Night'
@@ -5264,7 +5264,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Your shy life.
                       I had to see her robbing me,
                       Oh help! was all she said:
-                      Their prayer was in vain.
+                      Their plea was in vain,
                       Because my help was too weak.
                       You will leave them free,
                       You will be the daughter's savior.
@@ -5312,7 +5312,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Ists denn auch Wirklichkeit, was ich sah? oder betäubten mich meine Sinnen? - O ihr guten Götter täuscht mich nicht! oder ich unterliege eurer Prüfung. - Schützet meinen Arm, stählt meinen Muth, und Taminos Herz wird ewigen Dank euch entgegen schlagen.'
-                    translation: "Is it real what I saw? or did my senses numb me? O good gods, do not deceive me, or I will be subject to your test. Protect my arm, steel my courage, and Tamino's heart will beat towards you eternal thanks."
+                    translation: "Is it real what I saw? or did my senses numb me? O good gods, do not deceive me, or I shall be subject to your trial. Protect my arm, steel my courage, and Tamino's heart will beat towards you eternal thanks."
                   4:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -5604,13 +5604,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Ey! Ey! was mag darinnen seyn?'
-                    translation: "Ey! Ey! What's inside?"
+                    translation: "Ey! Ey! What's in there?"
                   25:
                     speaker: 'DRITTE DAME'
                     speakerTranslation: 'Third Lady'
                     literalText: true
                     original: 'Darinnen hörst du Glöckchen tönen.'
-                    translation: 'Inside you hear bells sounding.'
+                    translation: 'Inside you hear bells ringing.'
                   26:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -5683,7 +5683,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Drey Knäbchen jung, schön, hold und weise,
                       Umschweben uns auf unsrer Reise.
                     translation: |-
-                      Drey boys young, beautiful, handsome and wise,
+                      Drey boy young, beautiful, fair and wise,
                       Surround us on our journey.
                   35:
                     speaker: 'ALLE FÜNF'
@@ -5717,7 +5717,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Zwey Sclaven tragen, so bald das Theater in ein prächtiges ägyptisches Zimmer verwandelt ist, schöne Pölster nebst einem prächtigen türkischen Tisch heraus, breiten Teppiche auf, sodann kommt der dritte Sclav.'
-                    translation: 'Carrying Zwey slaves as soon as the theatre is transformed into a magnificent Egyptian room, beautiful pölster and a magnificent Turkish table, spreading carpets, then comes the third sclav.'
+                    translation: 'Carrying Zwey slaves as soon as the theatre is transformed into a magnificent Egyptian room, out beautiful pölster and a magnificent Turkish table, open carpets, then comes the third sclav.'
                   1:
                     speaker: 'DRITTER SCLAV'
                     speakerTranslation: 'Third Slave'
@@ -5765,7 +5765,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Slave'
                     literalText: true
                     original: 'Ist entsprungen.'
-                    translation: 'Has sprung.'
+                    translation: 'has sprung.'
                   9:
                     speaker: 'ERSTER UND ZWEYTER SCLAV'
                     speakerTranslation: 'First Slave, Second Slave'
@@ -5825,7 +5825,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Slave'
                     literalText: true
                     original: 'Du kennst ja den üppigen Wanst und seine Weise; das Mädchen aber war klüger als ich dachte. - In dem Augenblicke, da er zu siegen glaubte, rief sie Sarastros Namen: das erschütterte den Mohren; er blieb stumm und unbeweglich stehen - indess lief Pamina nach dem Kanal, und schiffte von selbst in einer Gondel dem Palmwäldchen zu.'
-                    translation: "Thou knowest the lush whirl and his manner; But the girl was smarter than I thought. - The moment he thought he was victorious, she called Sarastro's name: this shook the Moor; he remained silent and immobile - but Pamina ran to the canal, and sailed by himself in a gondola to the palm grove."
+                    translation: "Thou knowest the lush whirl and his manner; But the girl was smarter than I thought. - The moment he thought he was victorious, she called Sarastro's name: this shook the Moor; He remained silent and immobile - but Pamina ran to the canal, and sailed by himself in a gondola to the palm grove."
                   19:
                     speaker: 'ERSTER SCLAV'
                     speakerTranslation: 'First Slave'
@@ -5890,7 +5890,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'First Slave'
                     literalText: true
                     original: 'Doch nicht für Pamina? O ihr Götter! da seht Brüder, das Mädchen ist gefangen.'
-                    translation: 'But not for Pamina? O gods! see brothers, the girl is captured.'
+                    translation: 'But not for Pamina? O gods! see brothers, the girl is imprisoned.'
                   7:
                     speaker: 'ZWEYTER UND DRITTER SCLAV'
                     speakerTranslation: 'Second Slave, Third Slave'
@@ -5926,7 +5926,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Third Slave'
                     literalText: true
                     original: 'So was sehen zu müssen, ist Höllenmarter.'
-                    translation: 'To see this is hell.'
+                    translation: 'Seeing this is hell.'
                   13:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -5977,7 +5977,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'O welche Marter! welche Pein!'
-                    translation: 'O what torture! What a punishment!'
+                    translation: 'Oh, what torture! What a punishment!'
                   3:
                     speaker: 'MONOSTATOS'
                     speakerTranslation: 'Monostatos'
@@ -6008,7 +6008,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       He Sclaven! legt ihr Fesseln an,
                       Mein Hass, soll dich verderben.
                     translation: |-
-                      He Sclaven! put her fetters,
+                      He Sclaven! put your fetters on,
                       My hate, let it ruin you.
                   7:
                     speaker: 'Stage direction'
@@ -6071,7 +6071,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Aha! da sind ich Leute;
                       Gewagt! ich geh herein.
                     translation: |-
-                      Where am I? Where am I?
+                      Where am I? Where may I be?
                       Aha! there I am people;
                       Dare! I'll go in.
                   2:
@@ -6095,7 +6095,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Monostatos und Papageno sehen sich, - erschrecken einer über den andern.'
-                    translation: 'Monostatus and Papageno see each other, - frighten one over the other.'
+                    translation: 'Monostatus and Papageno see each other, - frightened one over the other.'
                   5:
                     speaker: 'BEYDE'
                     speakerTranslation: 'Both'
@@ -6156,7 +6156,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'Wie? - Noch schlägt dieses Herz? - Noch nicht vernichtet? - Zu neuen Qualen erwacht? - O das ist hart, sehr hart! - Mir bitterer, als der Tod.'
-                    translation: 'How? - Still beats this heart? - Still not destroyed? - Awakened to new torments? - O this is hard, very hard! - To me more bitter than death.'
+                    translation: 'How? - Still beats this heart? - Still not destroyed? - Awakened to new agony? - O this is hard, very hard! - To me more bitter than death.'
             summary: ''
           13:
             number: 14
@@ -6182,7 +6182,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Bin ich nicht ein Narr, dass ich mich schrecken liess? - Es giebt ja schwarze Vögel in der Welt, warum denn nicht auch schwarze Menschen? - Ah, sieh da! hier ist das schöne Fräulenbild noch. - Du Tochter der nächtlichen Königinn!'
-                    translation: "Am I not a fool to let myself be frightened?—There are black birds in the world, why not black men? - Ah, look there! here's the beautiful picture still. Daughter of the Night Queens!"
+                    translation: "Am I not a fool to let myself be frightened?—There are black birds in the world, why not black men? - Ah, look there! here's the beautiful picture still. - Daughter of the Night Queens!"
                   2:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -6224,7 +6224,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Ich dich eben so wenig.'
-                    translation: "I don't like you so much."
+                    translation: "I don't give you that much."
                   9:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -6254,19 +6254,19 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'er sieht das Portrait an, welches der Prinz zuvor empfangen, und Papageno nun an einem Bande am Halse trägt'
-                    translation: 'he looks at the portrait which the prince had previously received, and Papageno now wears on a gang on his neck'
+                    translation: 'he looks at the portrait which the prince had previously received, and Papageno is now wearing a gang on his neck'
                   14:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Die Augen schwarz - richtig, schwarz. - Die Lippen roth - richtig, roth - Blonde Haare - Blonde Haare. - Alles trift ein, bis auf Händ und Füsse. - - - Nach dem Gemählde zu schlüssen, sollst du weder Hände noch Füsse haben; denn hier sind auch keine angezeigt.'
-                    translation: 'The eyes black - right, black. - The lips red - right, red - blond hair - blond hair. Everything comes in, except hands and feet. After the marriage, you shall have neither hands nor feet. Because there is no indication here.'
+                    translation: 'The eyes black - right, black. - The lips red - right, red - blond hair - blond hair. Everything comes in, except hands and feet. After the marriage, you shall have neither hands nor feet. Because there are no signs here.'
                   15:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: "Erlaube mir - Ja ich bin's - Wie kam es in deine Hände?"
-                    translation: 'Allow me--Yes, I am--How did it get into your hands?'
+                    translation: 'Allow me - Yes, I am - How did it get into your hands?'
                   16:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -6326,13 +6326,13 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'Bey der Liebe.'
-                    translation: 'Bey of love.'
+                    translation: 'Bey of Love.'
                   26:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Richtig, bey der Liebe! - Das nenn ich Gedächtniss haben - Kurz also, diese grosse Liebe zu dir war der Peitschenstreich, um unsre Füsse in schnellen Gang zu bringen; nun sind wir hier, dir tausend schöne und angenehme Sachen zu sagen; dich in unsre Arme zu nehmen, und wenn es möglich ist, eben so schnell, wo nicht schneller als hierher, in den Pallast deiner Mutter zu eilen.'
-                    translation: 'True, bey love! - This I call having memory - In short, this great love for you was the stroke of the whip to get our feet into speed; Now we are here to tell you a thousand beautiful and pleasant things; take you into our arms, and if it is possible, just as quickly, where not faster than here, Hurry to your mother’s palace.'
+                    translation: 'True, bey love! - This is what I call having memory - In short, this great love for you was the stroke of the whip to get our feet into speed; Now we are here to tell you a thousand beautiful and pleasant things; take you into our arms, and if it is possible, just as quickly, where not faster than here, Hurry to your mother’s palace.'
                   27:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -6398,7 +6398,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Pamina'
                     literalText: true
                     original: 'So haben wir keine Minute zu versäumen. - Um diese Zeit kommt Sarastro gewöhnlich von der Jagd zurück.'
-                    translation: 'So we do not have a minute to miss. - At this time Sarastro usually comes back from hunting.'
+                    translation: 'So we do not have a minute to miss. - Around this time Sarastro usually comes back from hunting.'
                   38:
                     speaker: 'PAPAGENO'
                     speakerTranslation: 'Papageno'
@@ -6434,7 +6434,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: "Schön's Fräulenbild, wenn dir wieder ein so böser Verdacht aufsteigen sollte, dass ich dich betrügen wollte, so denke nur fleissig an die Liebe, und jeder böse Argwohn wird schwinden."
-                    translation: 'Fine picture, if so evil a suspicion should arise to you that I would deceive you, think diligently of love, and all evil suspicion will fade away.'
+                    translation: 'Fine picture, if any suspicion should arise to you so evil that I would deceive you, think diligently of love, and all evil suspicion will fade away.'
                   44:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -6458,7 +6458,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Papageno'
                     literalText: true
                     original: 'Nicht einmahl ein Mädchen, viel weniger ein Weib! - Ja das ist betrübt! - Und unser einer hat doch auch bisweilen seine lustigen Stunden, wo man gern gesellschaftliche Unterhaltung haben möcht. -'
-                    translation: 'Not once a girl, much less a woman! - Yes, that is sad! - And our one also sometimes has his funny hours, where you like to have social entertainment. -'
+                    translation: 'Not once a girl, much less a woman! - Yes, that is sad! - And our one also sometimes has his funny hours, where you want to have social entertainment. -'
                   48:
                     speaker: 'PAMINA'
                     speakerTranslation: 'Pamina'
@@ -6499,7 +6499,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Die süssen Triebe mit zu fühlen,
                       Ist dann der Weiber erste Pflicht.
                     translation: |-
-                      The sweet urges to feel,
+                      The sweet desires to feel,
                       Then the woman is the first duty.
                   2:
                     speaker: 'BEYDE'
@@ -6624,7 +6624,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Dann Jüngling wirst du männlich siegen.
                     translation: |-
                       This announcement is not for us -
-                      Be steadfast, patient and silent.
+                      Be steadfast, patient, and silent.
                       Remember this: in short, be a man,
                       Then, young man, you will win.
                   5:
@@ -6657,9 +6657,9 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Is this the seat of the gods here?
                       The gates show, the pillars show,
                       That wisdom and work and arts dwell here;
-                      Where activity is overthrown and idleness gives way,
-                      His rule does not make vice easy.
-                      I am bravely entering the gate,
+                      Where activity is overthrown, and idleness gives way,
+                      His rule does not take vice easily.
+                      I will boldly enter the gate,
                       The intention is noble and pure and pure.
                       Say cowardly villain!
                       Saving fireplaces is my duty.
@@ -6686,7 +6686,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'er geht zur linken Pforte, eine Stimme von innen'
-                    translation: 'He goes to the left door, a voice from within'
+                    translation: 'he goes to the left door, a voice from within'
                   11:
                     speaker: 'STIMME'
                     speakerTranslation: 'Voice'
@@ -6714,7 +6714,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Vieleicht find ich den Eingang hier.
                     translation: |-
                       I see another door!
-                      Maybe I can find the entrance here.
+                      I may find the entrance here.
                   15:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -6768,7 +6768,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Sarastro herrscht in diesen Gründen?'
-                    translation: 'Sarastro rules in these reasons?'
+                    translation: 'Sarastro rules on these reasons?'
                   22:
                     speaker: 'PRIESTER'
                     speakerTranslation: 'Priest'
@@ -6786,7 +6786,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Er herrscht im Weisheitstempel hier.'
-                    translation: 'He rules in the wisdom stamp here.'
+                    translation: 'He rules in the stamp of wisdom here.'
                   25:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -6870,7 +6870,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Die Gram und Jammer niederdrückt.
                     translation: |-
                       Proven by an unhappy woman,
-                      The sorrow and misery is overwhelming.
+                      Destroying the grief and misery.
                   37:
                     speaker: 'PRIESTER'
                     speakerTranslation: 'Priest'
@@ -6942,7 +6942,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Wann also wird die Decke schwinden?'
-                    translation: 'So when will the ceiling dwindle?'
+                    translation: 'So when will the ceiling fade?'
                   45:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -6982,7 +6982,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Voices'
                     literalText: true
                     original: 'Bald Jüngling, oder nie!'
-                    translation: 'Soon, young man, or never!'
+                    translation: 'Soon young man, or never!'
                   51:
                     speaker: 'TAMINO'
                     speakerTranslation: 'Tamino'
@@ -7039,7 +7039,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       With every tone of thanks,
                       To describe how he sprang up here!
                       Pointing to the heart. He plays, immediately animals of all kinds come forth to listen to him. He stops and they flee. The birds whistle about it.
-                      How strong is not your magic sound,
+                      How strong is not your magic tone,
                       Because, fair flute, through your play
                       Even wild animals feel joy.
                       But only Pamina remains;
@@ -7082,7 +7082,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Tamino'
                     literalText: true
                     original: 'Ha, das ist Papagenos Ton.'
-                    translation: "This is Papageno's tone."
+                    translation: "Ha, that's Papageno's tone."
                   63:
                     speaker: 'Stage direction'
                     speakerTranslation: 'Stage direction'
@@ -7099,7 +7099,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Vieleicht führt mich der Ton zu ihr.
                     translation: |-
                       Perhaps he saw fireplaces already,
-                      She may rush to me with him!
+                      She may come to me with him.
                       Perhaps the tone leads me to her.
                   65:
                     speaker: 'Stage direction'
@@ -7178,7 +7178,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Nur geschwinde! Nur geschwinde!
                     translation: |-
                       What joy is greater,
-                      Friend Tamino hears us already;
+                      Friend Tamino already hears us;
                       Here came the flute clay,
                       What luck if I find him!
                       Just go fast! Just go fast!
@@ -7225,8 +7225,8 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     translation: |-
                       Ha, I still caught you!
                       only herbey with steel and iron;
-                      Wait, they want to tell you Mores.
-                      Take the Monostatos!
+                      Wait, they want you to know Mores.
+                      Get rid of Monostatos!
                       only herbey with band and knitting;
                       Hey, you slaves are coming here!
                   2:
@@ -7252,7 +7252,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Dass die Ohren ihnen fingen.
                     translation: |-
                       He who dares much often wins much,
-                      Come on nice chime!
+                      Come on nice glockenspiel!
                       Let the bells sound, sound,
                       That the ears caught them.
                   5:
@@ -7260,7 +7260,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Er schlägt auf sein Instrument, sogleich singt Monostatos und die Sclaven, und gehen unter dem Gesang marschmässig ab.'
-                    translation: 'He strikes on his instrument, immediately sings Monostatos and the slaves, and walks off under the song.'
+                    translation: 'He strikes his instrument, immediately sings Monostatos and the slaves, and goes off marching under the song.'
                   6:
                     speaker: 'MONOSTATOS UND SCLAVEN'
                     speakerTranslation: 'Monostatos, Slaves'
@@ -7357,7 +7357,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Oh, if I were a mouse!
                       How will I hide,
                       If I were as small as snails,
-                      This is how I crawl into my house. -
+                      That's how I crawl into my house. -
                       My child, what shall we speak now?
                   15:
                     speaker: 'PAMINA'
@@ -7399,7 +7399,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Ein Zug von Gefolge; zuletzt fährt Sarastro auf einem Triumphwagen heraus, der von sechs Löwen gezogen wird. Vorige.'
-                    translation: 'A train of followers; Lastly, Sarastro drives out on a chariot pulled by six lions. Previous.'
+                    translation: 'A train of followers; Finally, Sarastro drives out on a chariot pulled by six lions. Previous.'
                   1:
                     speaker: 'CHORUS'
                     speakerTranslation: 'Chorus'
@@ -7411,7 +7411,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Er ist es, dem wir uns mit Freuden ergeben!'
-                    translation: 'It is He to whom we rejoice.'
+                    translation: 'He is to whom we surrender with joy!'
                   3:
                     speaker: 'CHORUS'
                     speakerTranslation: 'Chorus'
@@ -7447,11 +7447,11 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Der böse Mohr verlangte Liebe;
                       Darum, o Herr! entfloh ich dir.
                     translation: |-
-                      Lord, I am a criminal!
+                      Lord, I am a criminal.
                       I wanted to escape your power.
-                      The blame alone is not on me -
+                      But the blame is not on me -
                       The evil Moor demanded love;
-                      Therefore, O Lord, I fled from thee.
+                      Therefore, O Lord, I fled from you.
                   8:
                     speaker: 'SARASTRO'
                     speakerTranslation: 'Sarastro'
@@ -7464,7 +7464,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Zur Liebe will ich dich nicht zwingen,
                       Doch geh ich dir die Freyheit nicht.
                     translation: |-
-                      Stand up, amuse yourself, O love!
+                      Get up, amuse yourself, O love!
                       Because without first getting inside you
                       I know more from your heart:
                       You love someone else very much.
@@ -7489,7 +7489,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                       Du würdest um dein Glück gebracht,
                       Wenn ich dich ihren Händen liesse.
                     translation: |-
-                      Is in my power,
+                      is in my power,
                       You would be deprived of your happiness,
                       If I leave you in their hands.
                   11:
@@ -7514,7 +7514,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     translation: |-
                       And a proud woman.
                       A man must guide your hearts,
-                      For without him every woman cares
+                      For without him every woman
                       To step out of their sphere of activity.
             summary: ''
           18:
@@ -7716,7 +7716,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'u.s.f.'
-                    translation: 'U.S.'
+                    translation: 'u.s.f.'
               1:
                 type: 'Schlusschor'
                 threeLineOutline: true
@@ -7746,7 +7746,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
                     speakerTranslation: 'Stage direction'
                     literalText: true
                     original: 'Und Sterbliche den Göttern gleich.'
-                    translation: 'And mortals like gods.'
+                    translation: 'And mortals like the gods.'
             summary: ''
     characters:
       0: 'Tamino'
@@ -7797,7 +7797,7 @@ not ok 1 - Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte an
 # Subtest: Die Zauberflöte first-act outline, bilingual reader and anchors render
 ok 2 - Die Zauberflöte first-act outline, bilingual reader and anchors render
   ---
-  duration_ms: 5.897644
+  duration_ms: 9.37988
   type: 'test'
   ...
 1..2
@@ -7808,4 +7808,4 @@ ok 2 - Die Zauberflöte first-act outline, bilingual reader and anchors render
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 98.973342
+# duration_ms 111.89323
