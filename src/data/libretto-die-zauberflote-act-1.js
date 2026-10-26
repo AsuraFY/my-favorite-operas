@@ -37,10 +37,7 @@ export const dieZauberfloteActOneScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Tamino",
-          "Three Ladies",
-          "First Lady",
-          "Second Lady",
-          "Third Lady"
+          "Three Ladies"
         ],
         "turns": [
           {
@@ -218,7 +215,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "versteckt sich hinter einem Baum",
             "translation": "Hiding behind a tree"
           }
-        ]
+        ],
+        "originalTitle": "Zu Hülfe! zu Hülfe!",
+        "translatedTitle": "Help! Help!"
       }
     ],
     "summary": ""
@@ -249,8 +248,7 @@ export const dieZauberfloteActOneScenes = [
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
-          "Papageno",
-          "Tamino"
+          "Papageno"
         ],
         "turns": [
           {
@@ -743,7 +741,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "Bin in meinem Leben nicht so stark gewesen, als heute.",
             "translation": "I have not been as strong in my life as I am today."
           }
-        ]
+        ],
+        "originalTitle": "Der Vogelfänger bin ich ja",
+        "translatedTitle": "I am the birdcatcher, yes indeed"
       }
     ],
     "summary": ""
@@ -1052,7 +1052,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "will ab",
             "translation": "Wants to leave"
           }
-        ]
+        ],
+        "originalTitle": "Dies Bildnis ist bezaubernd schön",
+        "translatedTitle": "This portrait is enchantingly beautiful"
       }
     ],
     "summary": ""
@@ -1346,7 +1348,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "Mit den drey Damen ab.",
             "translation": "With the drey ladies."
           }
-        ]
+        ],
+        "originalTitle": "O zittre nicht, mein lieber Sohn!",
+        "translatedTitle": "Oh, do not tremble, my dear son!"
       }
     ],
     "summary": ""
@@ -1408,7 +1412,8 @@ export const dieZauberfloteActOneScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Papageno",
-          "Tamino"
+          "Tamino",
+          "Three Ladies"
         ],
         "turns": [
           {
@@ -1460,7 +1465,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "Hm! Hm! Hm! Hm! Hm! Hm!",
             "translation": "Hm! Hm! Hm! Hm! Hm! Hm!"
           }
-        ]
+        ],
+        "originalTitle": "Hm! Hm! Hm! Hm!",
+        "translatedTitle": "Hmm! Hmm! Hmm! Hmm!"
       }
     ],
     "summary": ""
@@ -2048,7 +2055,8 @@ export const dieZauberfloteActOneScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Monostatos",
-          "Pamina"
+          "Pamina",
+          "Papageno"
         ],
         "turns": [
           {
@@ -2128,7 +2136,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "Nun fort! lasst mich bey ihr allein.\nDie Sclaven ab",
             "translation": "Go away! leave me alone.\nThe slaves go"
           }
-        ]
+        ],
+        "originalTitle": "Du feines Täubchen, nur herein!",
+        "translatedTitle": "Come in, pretty little dove!"
       }
     ],
     "summary": ""
@@ -2627,8 +2637,7 @@ export const dieZauberfloteActOneScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Pamina",
-          "Papageno",
-          "Both"
+          "Papageno"
         ],
         "turns": [
           {
@@ -2680,7 +2689,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "Ihr hoher Zweck zeigt deutlich an,\nNichts edlers sey, als Weib und Mann.\nMann und Weib, und Weib und Mann,\nReichen an die Götter an.\nBeyde ab",
             "translation": "Their high purpose clearly indicates,\nNothing is more noble than woman and man.\nMan and woman, and woman and man,\nReach out to the gods.\nBeyde ab"
           }
-        ]
+        ],
+        "originalTitle": "Bey Männern, welche Liebe fühlen",
+        "translatedTitle": "In men who feel love"
       }
     ],
     "summary": ""
@@ -2713,9 +2724,13 @@ export const dieZauberfloteActOneScenes = [
         "participants": [
           "Three Boys",
           "Tamino",
-          "Voice",
           "Priest",
-          "Voices"
+          "Voices",
+          "Pamina",
+          "Papageno",
+          "Monostatos",
+          "Sarastro",
+          "Chorus"
         ],
         "turns": [
           {
@@ -3180,7 +3195,9 @@ export const dieZauberfloteActOneScenes = [
             "original": "eilt ab",
             "translation": "Hurry off"
           }
-        ]
+        ],
+        "originalTitle": "Zum Ziele führt dich diese Bahn",
+        "translatedTitle": "This path will lead you to your goal"
       }
     ],
     "summary": ""
@@ -3195,7 +3212,6 @@ export const dieZauberfloteActOneScenes = [
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
-          "Both",
           "Pamina",
           "Papageno"
         ],
@@ -3256,7 +3272,10 @@ export const dieZauberfloteActOneScenes = [
             "original": "wollen gehen",
             "translation": "Want to go"
           }
-        ]
+        ],
+        "originalTitle": "Schnelle Füsse, rascher Muth",
+        "translatedTitle": "Quick feet, swift courage",
+        "displayType": "Finale"
       }
     ],
     "summary": ""
@@ -3272,10 +3291,9 @@ export const dieZauberfloteActOneScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Monostatos",
-          "Pamina",
-          "Papageno",
           "Slaves",
-          "Both"
+          "Pamina",
+          "Papageno"
         ],
         "turns": [
           {
@@ -3397,7 +3415,10 @@ export const dieZauberfloteActOneScenes = [
             "original": "Die Wahrheit ist nicht immer gut,\nWeil sie den Grossen wehe thut;\nDoch wär sie allezeit verhasst,\nSo wär mein Leben mir zur Last.",
             "translation": "The truth is not always good,\nBecause she woe to the great ones;\nIf it were ever hated,\nMy life would be a burden to me."
           }
-        ]
+        ],
+        "originalTitle": "Das klinget so herrlich, das klinget so schön!",
+        "translatedTitle": "How splendidly it rings, how lovely it sounds!",
+        "displayType": "Finale"
       }
     ],
     "summary": ""
@@ -3413,8 +3434,8 @@ export const dieZauberfloteActOneScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Chorus",
-          "Pamina",
-          "Sarastro"
+          "Sarastro",
+          "Pamina"
         ],
         "turns": [
           {
@@ -3508,7 +3529,10 @@ export const dieZauberfloteActOneScenes = [
             "original": "Und ein stolzes Weib.\nEin Mann muss eure Herzen leiten,\nDenn ohne ihn pflegt jedes Weib\nAus ihrem Wirkungskreis zu schreiten.",
             "translation": "And a proud woman.\nA man must guide your hearts,\nWithout him, every woman takes care of\nTo step out of their sphere of activity."
           }
-        ]
+        ],
+        "originalTitle": "Es lebe Sarastro! Sarastro soll leben!",
+        "translatedTitle": "Long live Sarastro! May Sarastro live!",
+        "displayType": "Finale"
       }
     ],
     "summary": ""
@@ -3526,8 +3550,8 @@ export const dieZauberfloteActOneScenes = [
           "Monostatos",
           "Pamina",
           "Tamino",
-          "All",
-          "Sarastro"
+          "Sarastro",
+          "Chorus"
         ],
         "turns": [
           {
@@ -3698,13 +3722,18 @@ export const dieZauberfloteActOneScenes = [
             "original": "u.s.f.",
             "translation": "U.S."
           }
-        ]
+        ],
+        "originalTitle": "Nun stolzer Jüngling, nur hieher!",
+        "translatedTitle": "Now, proud young man, come here!",
+        "displayType": "Finale"
       },
       {
         "type": "Schlusschor",
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
-        "participants": [],
+        "participants": [
+          "Chorus"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -3734,7 +3763,10 @@ export const dieZauberfloteActOneScenes = [
             "original": "Und Sterbliche den Göttern gleich.",
             "translation": "And mortals like the gods."
           }
-        ]
+        ],
+        "originalTitle": "Wenn Tugend und Gerechtigkeit",
+        "translatedTitle": "When virtue and justice",
+        "displayType": "Schlusschor"
       }
     ],
     "summary": ""
