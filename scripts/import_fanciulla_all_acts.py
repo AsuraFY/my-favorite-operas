@@ -8,6 +8,10 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from urllib.error import HTTPError, URLError
+from urllib.parse import quote
+import sys
+import time
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup, NavigableString
 
@@ -61,14 +65,11 @@ def closest_heading(node):
             break
     return None
 
-def fetch_source():
-    req=Request(SOURCE, headers={'User-Agent': 'Opera-library-archive/1.0 (content source attribution; research)'})
-    with urlopen(req,timeout=50) as response:
-        body=response.read()
+def _source_from_html(body):
     soup=BeautifulSoup(body,'html.parser')
     for tag in soup(['script','style','nav','footer','iframe']):tag.decompose()
     acts={i:[] for i in (1,2,3)}
-    act=0; speaker=None; cue_tag=None
+    act=0; speaker=None
     for node in soup.descendants:
         if not isinstance(node,NavigableString):continue
         if node.parent is None:continue
@@ -79,41 +80,135 @@ def fetch_source():
         if not vals:continue
         heading=closest_heading(node)
         kind=heading.name if heading else None
-        # h6 are the source's printed speaker cues; h5 are stage directions.
         for text in vals:
             clean=normalize(text)
             if clean in ACTS and len(text)<25:
-                act=ACTS[clean];speaker=None;cue_tag=None;continue
-            if text.strip().upper().replace('’', "'").startswith("FINE DELL'") and act==3:
+                act=ACTS[clean];speaker=None;continue
+            if clean.startswith("FINE DELL'") and act==3:
                 act=0;break
             if act==0:continue
             if kind=='h6':
-                speaker=normalize(text);cue_tag=heading
+                speaker=normalize(text)
                 continue
             if kind=='h5':
-                entry={'type':'direction','speaker':'Stage direction','speakerTranslation':'Stage direction','text':text}
+                entry={'type':'direction','speaker':'Stage direction',
+                       'speakerTranslation':'Stage direction','text':text}
             else:
-                # Descriptive prologues appear before the first cue in each act.
                 if speaker is None:
-                    entry={'type':'direction','speaker':'Stage direction','speakerTranslation':'Stage direction','text':text}
+                    entry={'type':'direction','speaker':'Stage direction',
+                           'speakerTranslation':'Stage direction','text':text}
                 else:
                     label=CHARACTERS.get(speaker)
                     if not label:
-                        # Preserve complex printed ensemble cues; translate verified
-                        # individual components and retain ambiguous source wording.
                         components=re.split(r'\s+E\s+|\s*,\s*',speaker)
                         label=', '.join(CHARACTERS.get(x,x.title()) for x in components)
-                    entry={'type':'verse','speaker':speaker,'speakerTranslation':label,'text':text}
-            # Print row granularity is the source line, not a browser word-wrap.
+                    entry={'type':'verse','speaker':speaker,
+                           'speakerTranslation':label,'text':text}
             acts[act].append(entry)
+    return acts
+
+
+def _source_from_markdown(body):
+    """Jina Reader renders the SAME supplied Flaminio page in Markdown.
+
+    Its output has ###### character names and ##### stage directions,
+    matching the site's h6/h5 structure. This is not a replacement edition.
+    """
+    acts={i:[] for i in (1,2,3)}
+    act=0; speaker=None
+    for raw in body.splitlines():
+        raw=raw.replace('\ufeff','').strip()
+        if not raw or raw in ('Markdown Content:', 'Content:'):
+            continue
+        if raw.startswith(('Title: ','URL Source: ','Published Time: ','Markdown Content:')):
+            continue
+        heading=re.match(r'^(#{1,6})[ \t]+(.*)',raw)
+        level=len(heading.group(1)) if heading else 0
+        txt=(heading.group(2) if heading else raw).strip()
+        txt=txt.replace('\\_','_').replace('\\*','*').replace('\\[','[').replace('\\]',']')
+        clean=normalize(txt.strip('*_ '))
+        if clean in ACTS and len(txt)<35:
+            act=ACTS[clean];speaker=None;continue
+        if clean.startswith("FINE DELL'") and act==3:
+            act=0;break
+        if act==0:continue
+        # A link in the website's footer is not part of the original libretto.
+        if level==6:
+            speaker=normalize(txt)
+            continue
+        if level==5:
+            entry={'type':'direction','speaker':'Stage direction',
+                'speakerTranslation':'Stage direction','text':txt}
+        else:
+            if not speaker:
+                entry={'type':'direction','speaker':'Stage direction',
+                    'speakerTranslation':'Stage direction','text':txt}
+            else:
+                label=CHARACTERS.get(speaker)
+                if not label:
+                    components=re.split(r'\s+E\s+|\s*,\s*',speaker)
+                    label=', '.join(CHARACTERS.get(x,x.title()) for x in components)
+                entry={'type':'verse','speaker':speaker,
+                       'speakerTranslation':label,'text':txt}
+        acts[act].append(entry)
+    return acts
+
+
+def _validate_source(acts):
     for act in (1,2,3):
         rows=acts[act]; verses=[x for x in rows if x['type']=='verse']
-        if len(rows)<(450 if act!=3 else 250):raise ValueError(f'Incomplete Act {act}: only {len(rows)} printed rows')
-        if len(verses)<(230 if act!=3 else 140):raise ValueError(f'Incomplete Act {act}: only {len(verses)} sung/spoken lines')
-        if not any('MINNIE' in x['speaker'] for x in verses):raise ValueError('Act '+str(act)+' lacks Minnie')
-        print(f'Act {act}: {len(rows)} printed source rows, {len(verses)} text rows, {len(rows)-len(verses)} directions')
-    if not any(re.search(r'Addio, addio, addio!', x['text'],re.I) for x in acts[3]):raise ValueError('Final opera line absent')
+        if len(rows)<(450 if act!=3 else 250):
+            raise ValueError(f'Incomplete Act {act}: only {len(rows)} printed rows')
+        if len(verses)<(230 if act!=3 else 140):
+            raise ValueError(f'Incomplete Act {act}: only {len(verses)} sung/spoken lines')
+        if not any('MINNIE' in x['speaker'] for x in verses):
+            raise ValueError('Act '+str(act)+' lacks Minnie')
+        print(f'Act {act}: {len(rows)} printed source rows, {len(verses)} text rows, {len(rows)-len(verses)} directions',flush=True)
+    if not any('Addio, addio, addio!' in x['text'] for x in acts[3]):
+        raise ValueError('Final opera line absent; refusing incomplete import')
     return acts
+
+
+def fetch_source():
+    cache=ROOT/'scripts/.fanciulla-original-source-rows.json'
+    if cache.is_file():
+        print('Loading validated original source rows from preflight cache',flush=True)
+        return _validate_source(json.loads(cache.read_text(encoding='utf8')))
+    # Some sites deny non-browser User-Agents or requests from datacenter IPs.
+    # Prefer the original HTML, then a reader proxy for the SAME URL.
+    source_hosts=[
+        (SOURCE,'html'),
+        (SOURCE.replace('www.flaminioonline.it','flaminioonline.it'),'html'),
+        ('https://r.jina.ai/'+SOURCE,'markdown'),
+        ('https://r.jina.ai/'+SOURCE.replace('https://','http://'),'markdown')
+    ]
+    errors=[]
+    for url,format in source_hosts:
+        try:
+            headers={
+                'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+                'Accept':'text/html,application/xhtml+xml,text/plain;q=0.9,*/*;q=0.8',
+                'Accept-Language':'it-IT,it;q=0.9,en-US;q=0.6',
+                'Referer':'https://www.google.com/',
+            }
+            if format=='markdown':
+                headers.update({'Accept':'text/plain','X-Return-Format':'markdown'})
+            req=Request(url,headers=headers)
+            print('Fetching Flaminio source via '+('original website' if format=='html' else 'reader fallback'),flush=True)
+            with urlopen(req,timeout=90) as response:
+                body=response.read()
+            if len(body)<25000:
+                raise ValueError('Source response unexpectedly short: '+str(len(body))+' bytes')
+            print('Source received: '+str(len(body))+' bytes; validating all acts',flush=True)
+            acts=_source_from_html(body) if format=='html' else _source_from_markdown(body.decode('utf-8-sig'))
+            _validate_source(acts)
+            cache.write_text(json.dumps(acts,ensure_ascii=False),encoding='utf8')
+            print('Validated all 3 source acts and saved them to a temporary local cache',flush=True)
+            return acts
+        except (HTTPError, URLError, TimeoutError, ValueError, UnicodeDecodeError) as exc:
+            print('Source attempt failed: '+str(exc),flush=True)
+            errors.append(str(exc))
+    raise RuntimeError('All four ways to access the supplied Flaminio source failed. '+ '; '.join(errors))
 
 def pack(rows):
     out=[]
