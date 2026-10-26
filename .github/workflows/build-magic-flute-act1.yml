@@ -45,7 +45,20 @@ jobs:
           git commit -m 'Record Magic Flute Act I regression diagnostic'
           git push origin HEAD:Update
       - name: Run full regression suite
-        run: npm test
+        id: complete_test
+        run: |
+          set -o pipefail
+          npm test 2>&1 | tee /tmp/magic-flute-full-test-output.txt
+      - name: Record failed full regression diagnostic
+        if: failure() && steps.complete_test.outcome == 'failure'
+        run: |
+          mkdir -p docs/reviews
+          cp /tmp/magic-flute-full-test-output.txt docs/reviews/magic-flute-full-ci-last-failure.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/reviews/magic-flute-full-ci-last-failure.txt
+          git commit -m 'Record complete regression diagnostic for Magic Flute'
+          git push origin HEAD:Update
       - name: Commit Act I to Update after successful checks
         run: |
           git config user.name 'github-actions[bot]'
