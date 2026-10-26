@@ -131,7 +131,8 @@ def split_entries(raw):
                 'threeLineOutline': True, 'sourceTitlesOnly': True,
                 'participants': [], 'turns': []}
             scene['sections'].append(section)
-            current_speaker = None
+            # In this edition the singer's cue can PRECEDE a numbered aria
+            # (e.g. TAMINO / Nr. 3 - Arie). Keep it across the heading.
             stage_at_begin = False
             continue
         if text == 'SCHLUSSCHOR':
