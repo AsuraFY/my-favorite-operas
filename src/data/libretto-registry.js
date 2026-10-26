@@ -16,7 +16,10 @@ import { samson } from "./libretto-samson-et-dalila-bundle.js?v=on-demand-202610
 import { laFanciullaDelWest } from "./libretto-la-fanciulla-del-west-bundle.js?v=fanciulla-all-acts-20261026";
 import { dieZauberflote } from "./libretto-die-zauberflote-bundle.js?v=zauberflote-outline-20261026";
 
-const completeLibretti = { [otello.slug]: otello, [laFanciullaDelWest.slug]: laFanciullaDelWest, [dieZauberflote.slug]: dieZauberflote, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca, [samson.slug]: samson };
+import { parsifal } from "./libretto-parsifal-bundle.js?v=draft-20261026";
+import { donGiovanni } from "./libretto-don-giovanni-bundle.js?v=draft-20261026";
+
+const completeLibretti = { [parsifal.slug]: parsifal, [donGiovanni.slug]: donGiovanni, [otello.slug]: otello, [laFanciullaDelWest.slug]: laFanciullaDelWest, [dieZauberflote.slug]: dieZauberflote, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca, [samson.slug]: samson };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }
