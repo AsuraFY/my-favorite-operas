@@ -18,161 +18,161 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "La scena si finge in una città della Spagna Giardino; da un lato il palazzo del Commendatore, al piè del quale stanno delle panche di pietra. Notte.",
-            "translation": ""
+            "translation": "The scene is set in a Spanish city. A garden; on one side stands the Commendatore's palace, with stone benches at its foot. Night."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Leporello con ferraiuolo, che passeggia davanti la casa di Donn'Anna; poi Don Giovanni, Donn'Anna; indi il Commendadore.",
-            "translation": ""
+            "translation": "Leporello, wearing a cloak, paces before Donna Anna's house; then Don Giovanni and Donna Anna enter, followed by the Commendatore."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Notte e giorno faticar\nPer chi nulla sa gradir;\nPiova e vento sopportar,\nMangiar male e mal dormir...\nVoglio far il gentiluomo,\nE non voglio più servir.\nOh che caro galantuomo!\nVoi star dentro con la bella,\nEd io far la sentinella!\nMa mi par... che venga gente... ;\nNon mi voglio far sentir.",
-            "translation": ""
+            "translation": "To toil by night and day\nFor one who shows no gratitude;\nTo bear the wind and rain,\nTo eat badly and sleep badly...\nI want to be a gentleman,\nAnd serve no longer.\nWhat a fine gentleman indeed!\nYou stay inside with the lady,\nWhile I stand guard outside!\nBut I think... someone's coming...\nI don't want to be heard."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "s'asconde",
-            "translation": ""
+            "translation": "He hides."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "tenendo forte pel braccio Don Giovanni ed egli cercando sempre di celarsi",
-            "translation": ""
+            "translation": "Holding Don Giovanni firmly by the arm, while he continually tries to conceal himself."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Non sperar' se non m'uccidi\nCh'io ti lasci fuggir mai",
-            "translation": ""
+            "translation": "Do not hope, unless you kill me,\nThat I shall ever let you escape."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Donna folle! indarno gridi!\nChi son io tu non saprai.",
-            "translation": ""
+            "translation": "Madwoman! Your cries are useless!\nYou will never know who I am."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Che tumulto! oh ciel, che gridi!\nIl padron in nuovi guai.",
-            "translation": ""
+            "translation": "What a commotion! Heavens, what shouting!\nMy master is in trouble again."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Gente! servi! al traditore!",
-            "translation": ""
+            "translation": "People! Servants! Stop the traitor!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Taci, e trema al mio furore.",
-            "translation": ""
+            "translation": "Be silent, and tremble at my fury."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Scellerato!",
-            "translation": ""
+            "translation": "Scoundrel!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sconsigliata!\nQuesta furia disperata\nMi vuol far precipitar.",
-            "translation": ""
+            "translation": "Reckless woman!\nThis desperate fury of hers\nWill bring about my ruin."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Come furia disperata\nTi saprò perseguitar.",
-            "translation": ""
+            "translation": "With desperate fury\nI shall pursue you relentlessly."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "sentendo il Commendadore, lascia Don Giovanni ed entra in casa",
-            "translation": ""
+            "translation": "On hearing the Commendatore, she releases Don Giovanni and goes into the house."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Sta a veder che il libertino\nMi farà precipitar.",
-            "translation": ""
+            "translation": "Just watch! That libertine\nWill bring about my ruin."
           },
           {
             "speaker": "COMMENDATORE",
             "speakerTranslation": "COMMENDATORE",
             "literalText": true,
             "original": "Lasciala, indegno!\nBattiti meco!",
-            "translation": ""
+            "translation": "Leave her, villain!\nFight me!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Va': non mi degno\nDi pugnar teco.",
-            "translation": ""
+            "translation": "Go away! I do not deign\nTo fight with you."
           },
           {
             "speaker": "COMMENDATORE",
             "speakerTranslation": "COMMENDATORE",
             "literalText": true,
             "original": "Così pretendi\nDa me fuggir?",
-            "translation": ""
+            "translation": "Do you think\nYou can escape me like that?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "(Potessi almeno\ndi qua partir!)",
-            "translation": ""
+            "translation": "(If only I could\nGet away from here!)"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Misero, attendi,\nSe vuoi morir.",
-            "translation": ""
+            "translation": "Wretched man, stay,\nIf you wish to die."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "combattono",
-            "translation": ""
+            "translation": "They fight."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "mortalmente ferito",
-            "translation": ""
+            "translation": "Mortally wounded."
           },
           {
             "speaker": "COMMENDATORE",
             "speakerTranslation": "COMMENDATORE",
             "literalText": true,
             "original": "Ah soccorso!... Son tradito!...\nL'assassino... m'ha ferito...\nE dal seno palpitante\nSento l'anima partir.",
-            "translation": ""
+            "translation": "Ah, help!... I have been betrayed!...\nThe murderer... has wounded me...\nAnd from my throbbing breast\nI feel my soul departing."
           },
           {
             "speaker": "Stage direction",
