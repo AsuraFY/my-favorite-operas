@@ -18,224 +18,224 @@ export const parsifalActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Freie, anmutige Frühlingsgegend auf dem Gebiete des Grales. Nach dem Hintergrunde zu sanft ansteigende Blumenaue. Den Vordergrund nimmt der Saum des Waldes ein, der sich nach rechts zu, auf steigendem Felsengrund, ausdehnt. Im Vordergrunde, an der Waldseite, ein Quell; ihm gegenüber, etwas tiefer, eine schlichte Einsiedlerhütte, an einen Felsblock gelehnt. Frühester Morgen.",
-            "translation": ""
+            "translation": "An open, lovely spring landscape within the realm of the Grail. A flower-filled meadow rises gently toward the background. The edge of a forest occupies the foreground, extending to the right over ascending rocky ground. At the front, beside the forest, is a spring; opposite it, a little lower down, stands a simple hermit's hut leaning against a boulder. Earliest morning."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "zum hohen Greise gealtert, als Einsiedler, nur in das Hemd des Gralsritters gekleidet, tritt aus der Hütte und lauscht.",
-            "translation": ""
+            "translation": "Now grown very old, a hermit wearing only the tunic of a Grail knight, he emerges from the hut and listens."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Von dorther kam das Stöhnen:\nso jammervoll klagt kein Wild,\nund gewiß gar nicht am heiligsten Morgen heut.",
-            "translation": ""
+            "translation": "The moaning came from over there:\nno animal cries out so pitifully,\nleast of all on this most sacred morning."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Dumpfes Stöhnen von Kundrys Stimme.",
-            "translation": ""
+            "translation": "A muffled groan in Kundry's voice."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Mich dünkt, ich kenne diesen Klageruf?",
-            "translation": ""
+            "translation": "I think I recognize that cry of anguish."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Er schreitet entschlossen einer Dornenhecke auf der Seite zu: diese ist gänzlich überwachsen; er reißt mit Gewalt das Gestrüpp auseinander: dann hält er plötzlich an.",
-            "translation": ""
+            "translation": "He strides resolutely toward a thorn thicket at one side. It has become completely overgrown; he violently tears the brush apart, then suddenly stops."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Ha! Sie – wieder da?\nDas winterlich rauhe Gedörn\nhielt sie verdeckt, – wie lang schon?\nAuf! Kundry! Auf!\nDer Winter floh, und Lenz ist da!\nErwache! Erwache dem Lenz!",
-            "translation": ""
+            "translation": "Ah! She—here again?\nThe harsh winter thorns\nconcealed her—but for how long?\nUp, Kundry! Up!\nWinter has fled and spring has come!\nAwake! Awake to spring!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Er zieht Kundry, ganz erstarrt und leblos, aus dem Gebüsch hervor und trägt sie auf einen nahen Rasenhügel.",
-            "translation": ""
+            "translation": "He pulls Kundry, utterly rigid and seemingly lifeless, from the undergrowth and carries her to a nearby grassy mound."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Kalt und starr. –\nDiesmal hielt ich sie wohl für tot:\ndoch war's ihr Stöhnen, was ich vernahm?",
-            "translation": ""
+            "translation": "Cold and rigid.\nThis time I thought her dead:\nyet was it her moaning that I heard?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Er reibt der erstarrt vor ihm ausgestreckten Kundry stark die Hände und Schläfe und bemüht sich in allem, die Erstarrung von ihr weichen zu machen. Endlich scheint das Leben in ihr zu erwachen – sie erwacht völlig – als sie die Augen geöffnet, stößt sie einen Schrei aus. – Sie ist in rauhem Büßergewande, ähnlich wie im ersten Aufzuge, nur ist ihre Gesichtsfarbe bleicher, aus Miene und Haltung ist die Wildheit verschwunden. – Sie starrt lange Gurnemanz an. Dann erhebt sie sich, ordnet sich Kleidung und Haar, und läßt sich sofort wie eine Magd zur Bedienung an.",
-            "translation": ""
+            "translation": "He vigorously rubs Kundry's hands and temples as she lies stiff before him, doing everything he can to dispel her rigidity. At last life seems to return to her. She awakens completely and, opening her eyes, lets out a cry. She wears rough penitential clothing, much as in the first act, but her complexion is paler and all wildness has vanished from her expression and bearing. She stares at Gurnemanz for a long time. Then she rises, straightens her clothes and hair, and immediately offers herself for service like a maid."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Du tolles Weib!\nHast du kein Wort für mich?\nIst dies der Dank,\ndaß dem Todesschlafe\nnoch einmal ich dich erweckt?",
-            "translation": ""
+            "translation": "You strange woman!\nHave you no word for me?\nIs this my thanks\nfor waking you once more\nfrom the sleep of death?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "neigt langsam das Haupt; dann bringt sie, rauh und abgebrochen, hervor:",
-            "translation": ""
+            "translation": "She slowly bows her head, then speaks in a rough, broken voice:"
           },
           {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
             "literalText": true,
             "original": "Dienen – dienen.",
-            "translation": ""
+            "translation": "To serve—to serve."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "schüttelt den Kopf.",
-            "translation": ""
+            "translation": "He shakes his head."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Das wird dich wenig mühn:\nauf Botschaft sendet sich's nicht mehr;\nKräuter und Wurzeln\nfindet ein jeder sich selbst,\nwir lernten's im Walde vom Tier.",
-            "translation": ""
+            "translation": "That will trouble you little:\nwe no longer send out messengers;\neveryone now gathers\nherbs and roots for himself,\nas the forest animals taught us."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Kundry hat sich während dem umgesehen, gewahrt die Hütte und geht hinein. – Gurnemanz blickt ihr verwundert nach.",
-            "translation": ""
+            "translation": "Meanwhile Kundry has looked around, noticed the hut, and gone inside. Gurnemanz watches her in astonishment."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Wie anders schreitet sie als sonst!\nWirkte dies der heilige Tag?\nOh! Tag der Gnade ohne Gleichen!\nGewiß, zu ihrem Heile\ndurft ich der Armen heut\nden Todesschlaf verscheuchen.",
-            "translation": ""
+            "translation": "How differently she moves now!\nIs it the work of this holy day?\nOh, day of grace beyond compare!\nSurely for her salvation\nI was permitted today\nto drive away the poor woman's deathlike sleep."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Kundry kommt wieder aus der Hütte; sie trägt einen Wasserkrug und geht damit zum Quelle. Sie gewahrt hier, nach dem Walde blickend, in der Ferne einen Kommenden und wendet sich zu Gurnemanz, um ihn darauf hinzudeuten.",
-            "translation": ""
+            "translation": "Kundry comes back out of the hut carrying a water pitcher and goes to the spring. Looking toward the forest, she sees someone approaching in the distance and turns to point him out to Gurnemanz."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "in den Wald blickend.",
-            "translation": ""
+            "translation": "Looking into the forest."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Wer nahet dort dem heiligen Quell?\nIn düst'rem Waffenschmucke?\nDas ist der Brüder keiner!",
-            "translation": ""
+            "translation": "Who approaches the sacred spring?\nClad in dark armor?\nHe is none of our brotherhood!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Während des folgenden Auftrittes des Parsifal entfernt sich Kundry mit dem gefüllten Kruge langsam in die Hütte, wo sie sich zu schaffen macht. – Parsifal tritt aus dem Walde auf. Er ist ganz in schwarzer Waffenrüstung; mit geschlossenem Helme und gesenktem Speere schreitet er, gebeugten Hauptes, träumerisch zögernd, langsam daher und setzt sich auf dem kleinen Rasenhügel am Quelle nieder.",
-            "translation": ""
+            "translation": "During Parsifal's following entrance Kundry slowly returns to the hut with the filled pitcher and busies herself inside. Parsifal emerges from the forest, entirely clad in black armor. With closed visor and lowered spear he advances slowly, head bowed, dreamily hesitating, then sits upon the small grassy mound beside the spring."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "nachdem er Parsifal staunend lange betrachtet tritt nun näher zu ihm.",
-            "translation": ""
+            "translation": "After watching Parsifal in amazement for some time, he steps closer."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Heil dir, mein Gast!\nBist du verirrt, und soll ich dich weisen?",
-            "translation": ""
+            "translation": "Greetings, my guest!\nAre you lost, and shall I guide you?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Parsifal schüttelt sanft das Haupt.",
-            "translation": ""
+            "translation": "Parsifal gently shakes his head."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Entbietest du mir keinen Gruß?",
-            "translation": ""
+            "translation": "Will you not return my greeting?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Parsifal neigt das Haupt.",
-            "translation": ""
+            "translation": "Parsifal bows his head."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "unmutig.",
-            "translation": ""
+            "translation": "Displeased."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Hei! – Was?\nWenn dein Gelübde\ndich bindet, mir zu schweigen,\nso mahnt das meine mich,\ndaß ich dir sage, was sich ziemt.\nHier bist du an geweihtem Ort:\nda zieht man nicht mit Waffen her,\ngeschloss'nen Helmes, Schild und Speer;\nund heute gar! Weißt du denn nicht,\nwelch heil'ger Tag heut ist?",
-            "translation": ""
+            "translation": "Hey! What is this?\nIf some vow\nbinds you to silence toward me,\nmy own vow bids me\ntell you what is proper.\nYou stand on consecrated ground:\nno one comes here armed,\nwith closed helmet, shield, and spear;\nleast of all today! Do you not know\nwhat holy day this is?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Parsifal schüttelt mit dem Kopfe.",
-            "translation": ""
+            "translation": "Parsifal shakes his head."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Ja! Woher kommst du denn?\nBei welchen Heiden weiltest du,\nzu wissen nicht, daß heute\nder allerheiligste Charfreitag ist?",
-            "translation": ""
+            "translation": "Well! Where have you come from?\nAmong what heathens have you lived,\nnot knowing that today\nis the most holy Good Friday?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Parsifal senkt das Haupt noch tiefer.",
-            "translation": ""
+            "translation": "Parsifal lowers his head even farther."
           },
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
             "original": "Schnell ab die Waffen!\nKränke nicht den Herrn, der heute,\nbar jeder Wehr, sein heilig Blut\nder sündigen Welt zur Sühne bot! –",
-            "translation": ""
+            "translation": "Remove your weapons at once!\nDo not offend the Lord, who today,\nwithout any defense, shed his sacred blood\nto atone for a sinful world!"
           },
           {
             "speaker": "Stage direction",
