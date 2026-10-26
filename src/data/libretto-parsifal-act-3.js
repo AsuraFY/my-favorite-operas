@@ -1,5 +1,4 @@
-// Parsifal, Dritter Aufzug — complete German source, from DraCor TEI edition of Richard Wagner's libretto.
-// Original-source preparation only. English translations are not yet complete; this module is not registered for public display.
+// Parsifal — Dritter Aufzug, source complete from DraCor TEI (compare Opera Guide). English editorial draft in preparation.
 export const parsifalActThreeScenes = [
   {
     "number": 1,
@@ -9,11 +8,10 @@ export const parsifalActThreeScenes = [
     "sections": [
       {
         "type": "Passage",
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
         "originalTitle": "Dritter Aufzug",
         "translatedTitle": "Act 3",
-        "threeLineOutline": true,
-        "sourceTitlesOnly": true,
-        "participants": [],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -41,6 +39,13 @@ export const parsifalActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Dumpfes Stöhnen von Kundrys Stimme.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Mich dünkt, ich kenne diesen Klageruf?",
             "translation": ""
           },
           {
@@ -90,6 +95,13 @@ export const parsifalActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "neigt langsam das Haupt; dann bringt sie, rauh und abgebrochen, hervor:",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Dienen – dienen.",
             "translation": ""
           },
           {
@@ -167,6 +179,13 @@ export const parsifalActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Parsifal schüttelt sanft das Haupt.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Entbietest du mir keinen Gruß?",
             "translation": ""
           },
           {
@@ -296,6 +315,13 @@ export const parsifalActThreeScenes = [
             "translation": ""
           },
           {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Heil mir, daß ich dich wieder finde.",
+            "translation": ""
+          },
+          {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
             "literalText": true,
@@ -307,6 +333,13 @@ export const parsifalActThreeScenes = [
             "speakerTranslation": "Parsifal",
             "literalText": true,
             "original": "Der Irrnis und der Leiden Pfade kam ich;\nsoll ich mich denen jetzt entwunden wähnen,\nda dieses Waldes Rauschen\nwieder ich vernehme,\ndich guten Greisen neu begrüße? ...\nOder – irr ich wieder?\nVerändert dünkt mich alles?",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "So sag, zu wem den Weg du suchtest?",
             "translation": ""
           },
           {
@@ -391,6 +424,13 @@ export const parsifalActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "sanft und matt.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Werd heut zu Amfortas ich noch geleitet?",
             "translation": ""
           },
           {
@@ -513,6 +553,13 @@ export const parsifalActThreeScenes = [
             "translation": ""
           },
           {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Das ist Charfreitags Zauber, Herr.",
+            "translation": ""
+          },
+          {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
             "literalText": true,
@@ -615,6 +662,20 @@ export const parsifalActThreeScenes = [
             "speakerTranslation": "Zweiter Zug",
             "literalText": true,
             "original": "Ihn fällte des Alters siegende Last,\nda den Gral er nicht mehr erschaute.",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTER ZUG",
+            "speakerTranslation": "Erster Zug",
+            "literalText": true,
+            "original": "Wer wehrt' ihm des Grales Huld zu erschauen?",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER ZUG",
+            "speakerTranslation": "Zweiter Zug",
+            "literalText": true,
+            "original": "Den dort ihr geleitet, der sündige Hüter.",
             "translation": ""
           },
           {
@@ -787,7 +848,7 @@ export const parsifalActThreeScenes = [
           },
           {
             "speaker": "ALLE",
-            "speakerTranslation": "All",
+            "speakerTranslation": "Alle",
             "literalText": true,
             "original": "Höchsten Heiles Wunder:\nErlösung dem Erlöser!",
             "translation": ""
