@@ -28,7 +28,20 @@ jobs:
       - name: Install minimal HTML source parser
         run: python -m pip install 'beautifulsoup4==4.13.4'
       - name: Preflight all three Italian source acts (original page or same-page reader)
-        run: python -u scripts/import_fanciulla_all_acts.py --preflight
+        id: source_preflight
+        run: |
+          set -o pipefail
+          python -u scripts/import_fanciulla_all_acts.py --preflight 2>&1 | tee /tmp/fanciulla-source-preflight.txt
+      - name: Record actionable source diagnostic if preflight fails
+        if: failure() && steps.source_preflight.outcome == 'failure'
+        run: |
+          mkdir -p docs/reviews
+          cp /tmp/fanciulla-source-preflight.txt docs/reviews/fanciulla-source-preflight-last-failure.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/reviews/fanciulla-source-preflight-last-failure.txt
+          git commit -m 'Record Flaminio source access diagnostic'
+          git push origin HEAD:Update
       - name: Install offline Italian-English translation
         run: python -m pip install 'argostranslate==1.10.0'
       - name: Import all three Italian acts with paired English drafts
