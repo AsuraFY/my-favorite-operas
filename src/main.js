@@ -3,7 +3,7 @@ import { MIN_ROW_GAP, MAX_ROW_GAP, DEFAULT_ROW_GAP, normalizeRowGap, migrateLine
 import { createLibrettoRenderer } from "./libretto-reader.js?v=favorite-outline-reference-20261024";
 import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=magic-flute-outline-20261026";
 import { operaInformation } from "./data/opera-information.js?v=favorite-outline-reference-20261024";
-import { renderOperaInformationPage, renderPlannedLibrettoPage, hydrateFavoriteCovers } from "./opera-info-page.js?v=outline-label-footer-20261024";
+import { renderOperaInformationPage, renderPlannedLibrettoPage, hydrateFavoriteCovers } from "./opera-info-page.js?v=fanciulla-act1-outline-20261026";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=beethoven-credit-20261020";
 
