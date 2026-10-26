@@ -16,14 +16,16 @@ test("Act I has 22 unique, unnumbered, bilingual listening landmarks",()=>{
  assert.ok(tracks.some(track=>track.originalTitle==="Signor Johnson, un valzer?"));
  assert.equal(tracks.at(-1).originalTitle,"Oh, non temete, nessuno ardirà");
 });
-test("Act I and complete outline expose approved reference landmarks without claiming a full libretto",()=>{
- for(const [view,act] of [["outline",1],["libretto",1]]){
-  const html=renderPlannedLibrettoPage(opera,details,view,act);
-  for(const track of tracks) assert.ok(html.includes(track.originalTitle.replaceAll("'","&#39;").replaceAll("&","&amp;").replaceAll("’","’")),track.originalTitle);
-  assert.ok(html.includes("22 reference-recording listening landmarks"));
-  assert.ok(html.includes("pending transcription and verification"));
-  assert.ok(!/N\. 1 · Introduzione/.test(html));
- }
+test("reference landmarks display in full outline but never replace the Act I libretto",()=>{
+ const html=renderPlannedLibrettoPage(opera,details,"outline",1);
+ for(const track of tracks)assert.ok(html.includes(track.originalTitle.replaceAll("'","&#39;").replaceAll("&","&amp;")),track.originalTitle);
+ assert.ok(html.includes("22 recording tracks"));
+ assert.ok(html.includes('class="fanciulla-outline__entry"'));
+ assert.ok(!html.includes("section-nav-link opera-outline__section"));
+ const act1=renderPlannedLibrettoPage(opera,details,"libretto",1);
+ assert.ok(act1.includes("have not yet been integrated"));
+ assert.ok(!act1.includes(tracks[2].originalTitle));
+ assert.ok(act1.includes("?view=outline"));
  const act2=renderPlannedLibrettoPage(opera,details,"libretto",2);
  assert.ok(act2.includes("will be added later"));
 });
