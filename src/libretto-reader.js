@@ -104,7 +104,7 @@ function renderOperaBar(act = 1, page = "libretto") {
 
 
 function actOutlineIcon(entry, inline = false) {
-  const type = String(entry.type || entry.label || "").toLocaleLowerCase();
+  const type = String(entry.displayType || entry.type || entry.label || "").toLocaleLowerCase();
   const dialogue = /^(recitativ[eo](?: accompagnato)?|récitatif(?: accompagné)?|dialogue parlé)$/.test(type);
   const musical = !dialogue && (entry.number != null || /^no\./i.test(type) ||
     /\bair\b|ouverture|sinfonia|temporale|aria|arietta|arioso|cavatina|canzone|chanson|duett|duo|terzett|trio|quartett|quintett|sestett|sextuor|coro|choeur|chœur|ensemble|concertato|final|introduzione|prélude|prelude|vorspiel|entracte|interludio|marcia|marche|habanera|séguedille|couplets|rondò|andante|stretta|quadro di stupore|romanza|inno|ballo|ballabile|battaglia|sonnambulismo/.test(type));
