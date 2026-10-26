@@ -299,14 +299,14 @@ export const dieZauberflote = {
     if 'dieZauberflote' not in code:
         needle='const completeLibretti ='
         assert needle in code
-        code=code.replace(needle, 'import { dieZauberflote } from "./libretto-die-zauberflote-bundle.js";\n\n'+needle)
+        code=code.replace(needle, 'import { dieZauberflote } from "./libretto-die-zauberflote-bundle.js?v=zauberflote-act1-20261026";\n\n'+needle)
         code=code.replace('const completeLibretti = {', 'const completeLibretti = { [dieZauberflote.slug]: dieZauberflote,')
         reg.write_text(code,encoding='utf-8')
     # One-act regression contract. This does not claim Act II is prepared.
     test_file=ROOT/'tests/die-zauberflote-act-1.test.mjs'
     test_file.write_text('''import test from "node:test";
 import assert from "node:assert/strict";
-import {dieZauberflote} from "../src/data/libretto-die-zauberflote-bundle.js";
+import {dieZauberflote} from "../src/data/libretto-die-zauberflote-bundle.js?v=zauberflote-act1-20261026";
 import {hasCompleteLibretto,loadLibretto} from "../src/data/libretto-loader.js";
 import {createLibrettoRenderer} from "../src/libretto-reader.js";
 import {resetReaderLocation} from "./helpers/libretto-helpers.mjs";
