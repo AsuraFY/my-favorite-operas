@@ -21,7 +21,7 @@ test("Fanciulla Act I has all 633 Italian source entries with paired English dra
 test("Act I is available through the existing on-demand reader", async () => {
   assert.equal(laFanciullaDelWest.slug,"la-fanciulla-del-west");
   assert.equal(laFanciullaDelWest.continuousAct,true);
-  assert.equal(laFanciullaDelWest.acts.length,1);
+  assert.equal(laFanciullaDelWest.acts.length,3);
   assert.equal(hasCompleteLibretto(laFanciullaDelWest.slug),true);
   assert.equal((await loadLibretto("la-fanciulla-del-west")).slug,laFanciullaDelWest.slug);
 });
