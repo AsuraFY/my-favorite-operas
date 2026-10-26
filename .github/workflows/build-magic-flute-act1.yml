@@ -2,6 +2,11 @@ name: Prepare Die Zauberflöte Act I (one-time)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [Update]
+    paths:
+      - scripts/import_die_zauberflote_act_1.py
+      - .github/workflows/build-magic-flute-act1.yml
 
 permissions:
   contents: write
@@ -32,7 +37,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add src/data/libretto-die-zauberflote-act-1.js src/data/libretto-die-zauberflote-bundle.js src/data/libretto-loader.js src/data/libretto-registry.js src/main.js tests/die-zauberflote-act-1.test.mjs
+          git add src/data/libretto-die-zauberflote-act-1.js src/data/libretto-die-zauberflote-bundle.js src/data/libretto-loader.js src/data/libretto-registry.js src/main.js src/boot.js index.html tests/die-zauberflote-act-1.test.mjs tests/lazy-libretto-loading.test.mjs tests/libretto-content.test.mjs tests/site-dependency-integrity.test.mjs tests/catalog-pages.test.mjs tests/browser-visual-smoke.mjs
           git diff --cached --check
           git commit -m 'Add Die Zauberflöte Act I from Opera Guide with bilingual draft and tests'
           git push origin HEAD:Update
