@@ -4,7 +4,7 @@ export const parsifalActThreeScenes = [
     "number": 1,
     "originalHeading": "Dritter Aufzug",
     "translatedHeading": "Act 3",
-    "summary": "",
+    "summary": "Parsifal returns on Good Friday and heals Amfortas with the recovered sacred spear.",
     "sections": [
       {
         "type": "Passage",
@@ -870,6 +870,117 @@ export const parsifalActThreeScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Von dorther kam das Stöhnen",
+        "translation": "The groaning came from there",
+        "match": "Von dorther kam das Stöhnen",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 2,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Heil dir, mein Gast!",
+        "translation": "Greetings, my guest!",
+        "match": "Heil dir, mein Gast!",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 22,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Heil mir, daß ich dich wieder finde",
+        "translation": "Blessed am I to find you again",
+        "match": "Heil mir, daß ich dich wieder finde",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 43,
+        "characters": [
+          "Parsifal"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Werd heut zu Amfortas ich noch geleitet?",
+        "translation": "Will I be led to Amfortas today?",
+        "match": "Werd heut zu Amfortas ich noch geleitet?",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 59,
+        "characters": [
+          "Parsifal"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Gesegnet sei, du Reiner",
+        "translation": "Blessed be you, pure one",
+        "match": "Gesegnet sei, du Reiner",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 66,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Mein erstes Amt verricht ich so",
+        "translation": "Thus I perform my first office",
+        "match": "Mein erstes Amt verricht ich so",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 73,
+        "characters": [
+          "Parsifal"
+        ]
+      },
+      {
+        "type": "",
+        "title": "O wehe, des höchsten Schmerzentags!",
+        "translation": "Alas, this day of greatest sorrow!",
+        "match": "O wehe, des höchsten Schmerzentags!",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 78,
+        "characters": [
+          "Parsifal"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Ja – Wehe! Wehe! Weh über mich!",
+        "translation": "Yes—woe upon me!",
+        "match": "Ja – Wehe! Wehe! Weh über mich!",
+        "speaker": "AMFORTAS",
+        "sourceTurn": 99,
+        "characters": [
+          "Amfortas"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Sei heil, entsündigt und gesühnt!",
+        "translation": "Be healed, freed from sin and atoned for!",
+        "match": "Sei heil, entsündigt und gesühnt!",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 112,
+        "characters": [
+          "Parsifal"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Höchsten Heiles Wunder:",
+        "translation": "Miracle of supreme redemption",
+        "match": "Höchsten Heiles Wunder:",
+        "speaker": "ALLE",
+        "sourceTurn": 119,
+        "characters": [
+          "Alle"
+        ]
+      }
+    ]
   }
 ];
