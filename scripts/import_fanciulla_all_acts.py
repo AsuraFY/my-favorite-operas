@@ -428,4 +428,9 @@ test("full outline and each act reader work without fabricated source scene/numb
 ''',encoding='utf8')
     print('Generated all 3 Italian/English acts, loader, registry, regression tests and review memo')
 
-if __name__=='__main__':write_outputs()
+if __name__=='__main__':
+    if '--preflight' in sys.argv:
+        fetch_source()
+        print('Source preflight passed: all three acts available and validated',flush=True)
+    else:
+        write_outputs()
