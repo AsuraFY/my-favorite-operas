@@ -212,7 +212,7 @@ export const operas = [
     "color": "parsifal",
     "initials": "P",
     "featured": false,
-    "librettoPlanned": true,
+    "librettoPlanned": false,
     "summary": "A young wanderer learns compassion and restores hope to the wounded guardian of the Holy Grail.",
     "note": "Wagner’s final opera follows a journey from innocence through temptation to understanding and renewal."
   },
@@ -374,7 +374,7 @@ export const operas = [
     color: "don-giovanni",
     initials: "DG",
     featured: false,
-    librettoPlanned: true,
+    librettoPlanned: false,
     summary: "The unrepentant nobleman Don Giovanni’s pursuit of women escalates after he kills the Commendatore.",
     note: "Mozart and Da Ponte blend comedy and danger in the story of a libertine confronted by his past."
   },
