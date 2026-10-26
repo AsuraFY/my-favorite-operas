@@ -178,6 +178,17 @@ def count_and_validate(scenes):
     original = [line for s in scenes for sec in s['sections'] for turn in sec['turns'] for line in turn['_sourceLines']]
     if len(original) < 400:
         raise ValueError(f'Source looks truncated: {len(original)} spoken/sung/stage lines')
+    # In Opera Guide the Queen's German cue KÖNIGINN stands immediately
+    # BEFORE Nr. 4. It must survive the section boundary.
+    queen_aria = [sec for sc in scenes for sec in sc['sections']
+                  if sec.get('number') == 4]
+    if len(queen_aria) != 1 or not any(
+        turn['speaker'] == 'KÖNIGINN'
+        and turn['speakerTranslation'] == 'Queen of the Night'
+        and turn.get('_sourceLines')
+        for turn in queen_aria[0]['turns']
+    ):
+        raise ValueError('Queen of the Night cue was lost at Nr. 4 heading')
     return original
 
 def translate_all(scenes):
