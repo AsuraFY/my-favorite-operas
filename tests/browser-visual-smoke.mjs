@@ -65,7 +65,7 @@ function chromeExecutable() {
 const slugs = [
   "cosi-fan-tutte", "il-barbiere-di-siviglia", "tristan-und-isolde",
   "macbeth", "turandot", "le-nozze-di-figaro", "carmen", "la-boheme",
-  "madama-butterfly", "tosca", "samson-et-dalila"
+  "madama-butterfly", "tosca", "samson-et-dalila", "the-magic-flute"
 ];
 const capture = new Set([
   "cosi-fan-tutte", "tristan-und-isolde", "la-boheme", "samson-et-dalila"

@@ -77,11 +77,11 @@ test("all local HTML, catalogue artwork, and CSS image assets exist", () => {
 test("eleven completed operas agree with the 31-entry catalogue and rendered reader routes", () => {
   const catalog = new Map(operas.map(opera => [opera.slug, opera]));
   assert.equal(catalog.size, 31);
-  assert.equal(librettoCatalog.length, 11);
+  assert.equal(librettoCatalog.length, 12);
   for (const libretto of librettoCatalog) {
     const metadata = catalog.get(libretto.slug);
     assert.ok(metadata, "Missing catalogue entry " + libretto.slug);
-    assert.equal(libretto.acts.length, metadata.acts, libretto.slug + ": wrong act count");
+    assert.equal(libretto.acts.length, libretto.partialLibretto ? 1 : metadata.acts, libretto.slug + ": wrong available act count");
     assert.ok(libretto.acts.every((act, i) => act.number === i + 1 && act.scenes.length > 0),
       libretto.slug + ": act sequence or scene missing");
     assert.ok(libretto.originalLanguage && libretto.translationLanguage,

@@ -5,7 +5,7 @@ import { getLibretto, librettoCatalog } from "../src/data/libretto-registry.js";
 import { hasCompleteLibretto, loadLibretto } from "../src/data/libretto-loader.js";
 
 test("all complete opera routes load equivalent text and metadata from their own modules", async () => {
-  assert.equal(librettoCatalog.length, 11);
+  assert.equal(librettoCatalog.length, 12);
   for (const expected of librettoCatalog) {
     assert.ok(hasCompleteLibretto(expected.slug), expected.slug);
     const loaded = await loadLibretto(expected.slug);
@@ -26,7 +26,7 @@ test("the browser entry point does not statically load every complete opera", ()
   assert.ok(main.includes("await loadLibretto(opera.slug)"));
   assert.ok(main.includes("if (renderId !== activeRenderId) return"), "stale navigation is ignored");
   assert.ok(main.includes('data-retry-libretto'), "failed opera imports can retry");
-  assert.equal((loader.match(/: \(\) => import\(/g) || []).length, 11);
+  assert.equal((loader.match(/: \(\) => import\(/g) || []).length, 12);
   assert.ok(!/^import\s/m.test(loader), "loader must have no static imports");
   for (const name of ["cosi-fan-tutte", "le-nozze-di-figaro", "samson-et-dalila"]) {
     assert.ok(loader.includes('./libretto-' + name + '-bundle.js'), name);
