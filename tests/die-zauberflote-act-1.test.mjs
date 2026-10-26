@@ -1,12 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {dieZauberflote} from "../src/data/libretto-die-zauberflote-bundle.js?v=zauberflote-act1-20261026";
+import {dieZauberflote} from "../src/data/libretto-die-zauberflote-bundle.js?v=zauberflote-acts1-2-20261026";
 import {hasCompleteLibretto,loadLibretto} from "../src/data/libretto-loader.js";
 import {createLibrettoRenderer} from "../src/libretto-reader.js";
 import {resetReaderLocation} from "./helpers/libretto-helpers.mjs";
 
 test("Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte and numbers 1–8", async()=>{
-  assert.equal(dieZauberflote.acts.length,1, "Act II is not yet populated");
+  assert.equal(dieZauberflote.acts.length,2, "Both acts are now available");
   assert.equal(dieZauberflote.opera.acts,2);
   assert.deepEqual(dieZauberflote.acts[0].scenes.map(scene=>scene.number),
     Array.from({length:19},(_,i)=>i+1));
@@ -44,5 +44,5 @@ test("Die Zauberflöte first-act outline, bilingual reader and anchors render",(
   const outline=reader.outline();
   assert.ok(outline.includes("Auftritt"));
   assert.ok(outline.includes("#/operas/the-magic-flute?act=1"));
-  assert.ok(!outline.includes("Nr. 9"));
+  assert.ok(outline.includes("?act=2"));
 });

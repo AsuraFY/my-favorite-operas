@@ -12,7 +12,7 @@ import { madamaButterfly } from "./libretto-madama-butterfly-bundle.js?v=on-dema
 import { tosca } from "./libretto-tosca-bundle.js?v=tosca-anchor-audit-20261023";
 import { samson } from "./libretto-samson-et-dalila-bundle.js?v=on-demand-20261023";
 
-import { dieZauberflote } from "./libretto-die-zauberflote-bundle.js?v=zauberflote-act1-20261026";
+import { dieZauberflote } from "./libretto-die-zauberflote-bundle.js?v=zauberflote-acts1-2-20261026";
 
 const completeLibretti = { [dieZauberflote.slug]: dieZauberflote, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca, [samson.slug]: samson };
 export function getLibretto(slug) {
