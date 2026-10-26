@@ -148,7 +148,7 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
       '<span class="opera-outline__section-title"><span class="section-nav-link__icon section-nav-link__icon--song" aria-hidden="true">♬</span> ' +
       escape(track.originalTitle) + '</span>' +
       (track.translatedTitle ? '<span class="opera-outline__section-translation">' + escape(track.translatedTitle) + '</span>' : '') +
-      '<span class="section-nav-link__characters"><span aria-label="Participants">♙</span> ' + escape(track.participants.join(", ")) + '</span>' +
+      '<span class="section-nav-link__characters"><svg viewBox="0 0 24 24" width="15" height="15" aria-label="Participants" role="img"><circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2M16.5 4.7a3 3 0 0 1 0 5.6M18 14a4 4 0 0 1 3 4v2"/></svg> ' + escape(track.participants.join(", ")) + '</span>' +
       '</div>').join("");
     const note = '<p class="libretto-source-note">22 reference-recording listening landmarks, not official numbered musical sections. The original Italian libretto and side-by-side English draft are pending transcription and verification. Participant credits are provisional.</p>';
     return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
