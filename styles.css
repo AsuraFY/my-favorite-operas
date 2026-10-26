@@ -2984,3 +2984,26 @@ html[data-theme="night"] .favorite-performance__direction dd,
 html[data-theme="night"] .favorite-performance__cast li { color: #eee9e2; }
 html[data-theme="night"] .favorite-performance__cast-bullet { color: #e0c3a1; }
 html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
+
+/* La fanciulla del West: provisional listening landmarks, in the outline only. */
+.fanciulla-outline { width: min(100% - 36px, 920px); padding: 38px 0 72px; }
+.fanciulla-outline > h1 { margin: 0 0 12px; font: 600 clamp(1.75rem, 3.2vw, 2.5rem)/1.22 var(--serif); color: var(--ink); }
+.fanciulla-outline > h2 { margin: 30px 0 14px; font: 600 1.4rem/1.3 var(--serif); color: var(--ink); }
+.fanciulla-outline__description { max-width: 68ch; line-height: 1.55; color: var(--muted); }
+.fanciulla-outline__list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
+.fanciulla-outline__entry { padding: 15px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.fanciulla-outline__original { display: flex; align-items: baseline; gap: 10px; color: var(--ink); font: 600 clamp(1.05rem, 2vw, 1.2rem)/1.45 var(--serif); overflow-wrap: anywhere; }
+.fanciulla-outline__note-icon { color: var(--gold); flex: 0 0 20px; text-align: center; }
+.fanciulla-outline__translation { margin: 4px 0 0 30px; font: italic 0.96rem/1.5 var(--serif); color: var(--muted); }
+.fanciulla-outline__participants { margin: 7px 0 0 30px; display: flex; align-items: flex-start; gap: 9px; font: 0.88rem/1.5 var(--sans); color: var(--muted); overflow-wrap: anywhere; }
+.fanciulla-outline__participants svg { flex: 0 0 16px; margin-top: 3px; }
+.fanciulla-outline__remaining { margin-top: 35px; color: var(--muted); }
+.fanciulla-outline__remaining h2 { margin-top: 22px; color: var(--ink); }
+.fanciulla-outline--pending { max-width: 760px; }
+.fanciulla-outline--pending p { max-width: 66ch; line-height: 1.65; }
+@media (max-width:700px) {
+  .fanciulla-outline { width: calc(100% - 36px); padding: 28px 0 55px; }
+  .fanciulla-outline__entry { padding: 12px 0; }
+  .fanciulla-outline__original { font-size: 1.02rem; }
+  .fanciulla-outline__translation { font-size: .92rem; }
+}
