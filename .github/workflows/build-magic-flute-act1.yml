@@ -30,7 +30,20 @@ jobs:
       - name: Import complete German Act I and draft line-paired English
         run: python scripts/import_die_zauberflote_act_1.py
       - name: Check Act I data and reader regression
-        run: node --test tests/die-zauberflote-act-1.test.mjs
+        id: act_one_test
+        run: |
+          set -o pipefail
+          node --test tests/die-zauberflote-act-1.test.mjs 2>&1 | tee /tmp/magic-flute-act1-test-output.txt
+      - name: Record failed Act I diagnostic in Update
+        if: failure() && steps.act_one_test.outcome == 'failure'
+        run: |
+          mkdir -p docs/reviews
+          cp /tmp/magic-flute-act1-test-output.txt docs/reviews/magic-flute-act1-ci-last-failure.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/reviews/magic-flute-act1-ci-last-failure.txt
+          git commit -m 'Record Magic Flute Act I regression diagnostic'
+          git push origin HEAD:Update
       - name: Run full regression suite
         run: npm test
       - name: Commit Act I to Update after successful checks
