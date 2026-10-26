@@ -1,4 +1,5 @@
 /* Shared opera introduction page, independent of libretto availability. */
+import { fanciullaActOneListeningOutline } from "./data/outline-la-fanciulla-del-west-act-1.js?v=20261026";
 const escape = (value = "") => String(value).replace(/[&<>"']/g, character =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 
@@ -142,6 +143,20 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
     tabs.map(([label, suffix, active]) => '<a class="opera-subnav__link' + (active ? ' is-active' : '') +
       '" href="' + base + suffix + '"' + (active ? ' aria-current="page"' : '') + '>' + label + '</a>').join("") + '</div></nav>';
   if (view === "synopsis") return renderOperaInformationPage(opera, details, { navigation, hasLibrettoPage: true });
+  if (opera.slug === "la-fanciulla-del-west" && (view === "outline" || (view === "libretto" && act === 1))) {
+    const rows = fanciullaActOneListeningOutline.map(track => '<div class="section-nav-link opera-outline__section">' +
+      '<span class="opera-outline__section-title"><span class="section-nav-link__icon section-nav-link__icon--song" aria-hidden="true">♬</span> ' +
+      escape(track.originalTitle) + '</span>' +
+      (track.translatedTitle ? '<span class="opera-outline__section-translation">' + escape(track.translatedTitle) + '</span>' : '') +
+      '<span class="section-nav-link__characters"><span aria-label="Participants">♙</span> ' + escape(track.participants.join(", ")) + '</span>' +
+      '</div>').join("");
+    const note = '<p class="libretto-source-note">22 reference-recording listening landmarks, not official numbered musical sections. German–English text is not supplied; the original Italian libretto and English draft are pending transcription and verification. Participant credits are provisional.</p>';
+    return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
+      '<h1>' + (view === "outline" ? 'Libretto Outline' : 'Atto primo · Act I — Listening Outline') + '</h1>' +
+      note + '<h2>Atto primo · Act I</h2><div class="opera-outline__sections">' + rows + '</div>' +
+      (view === "outline" ? '<p>Acts II and III: outlines pending.</p>' : '') +
+      '</section></div>';
+  }
   const heading = view === "outline" ? "Libretto Outline" : "Act " + (roman[act] || act);
   const message = view === "outline" ? "The act outline will be added later." : "The libretto and side-by-side English translation will be added later.";
   return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
