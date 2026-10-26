@@ -19,7 +19,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Das Theater ist eine felsichte Gegend, hie und da mit Bäumen überwachsen; auf beyden Seiten sind gangbare Berge, nebst einem runden Tempel.",
-            "translation": "The theatre is a wooden area, overgrown with trees here and there; On each side are viable mountains, along with a round temple."
+            "translation": "The stage depicts a rocky landscape, overgrown here and there with trees; on both sides are accessible hills, together with a round temple."
           },
           {
             "speaker": "Stage direction",
@@ -52,14 +52,14 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Er fällt in Ohnmacht; sogleich öffnet sich die Pforte des Tempels; drey verschleyerte Damen kommen heraus, jede mit einem silbernen Wurfspiess.",
-            "translation": "He faints; immediately the gate of the temple is opened; Drey-leaved ladies come out, each with a silver spear."
+            "translation": "He faints; immediately the temple gate opens, and three veiled ladies emerge, each holding a silver javelin."
           },
           {
             "speaker": "DIE DREY DAMEN",
             "speakerTranslation": "Three Ladies",
             "literalText": true,
             "original": "Triumph! Triumph! sie ist vollbracht\nDie Heldenthat. Er ist befreyt\nDurch unsers Armes Tapferkeit.",
-            "translation": "Triumph! Triumph! it is accomplished\nThe heroic feat. He is free\nThrough our poor bravery."
+            "translation": "Triumph! Triumph! The heroic deed is done.\nHe is freed\nby the courage of our arms."
           },
           {
             "speaker": "Stage direction",
@@ -132,8 +132,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "Should I leave? Hey, ey! how fine!"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "ALLE DREY",
+            "speakerTranslation": "Three Ladies",
             "literalText": true,
             "original": "Sie wären gern bey ihm allein.",
             "translation": "You would like to be alone with him."
@@ -165,7 +165,19 @@ export const dieZauberfloteActOneScenes = [
             "literalText": true,
             "original": "Sie gehen alle drey zur Pforte des Tempels ab, die sich selbst öffnet und schliesst.",
             "translation": "They all go drey to the gate of the temple, which opens and closes itself."
-          },
+          }
+        ],
+        "originalTitle": "Zu Hülfe! zu Hülfe!",
+        "translatedTitle": "Help! Help!"
+      },
+      {
+        "type": "Auftritt",
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "participants": [
+          "Tamino"
+        ],
+        "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
@@ -216,8 +228,7 @@ export const dieZauberfloteActOneScenes = [
             "translation": "Hiding behind a tree"
           }
         ],
-        "originalTitle": "Zu Hülfe! zu Hülfe!",
-        "translatedTitle": "Help! Help!"
+        "editorialNote": "Spoken dialogue after Nr. 1; the source does not provide a separate musical number."
       }
     ],
     "summary": ""
@@ -278,7 +289,20 @@ export const dieZauberfloteActOneScenes = [
             "literalText": true,
             "original": "pfeift, will nach der Arie nach der Pforte gehen",
             "translation": "Whistles, wants to go to the gate after the aria"
-          },
+          }
+        ],
+        "originalTitle": "Der Vogelfänger bin ich ja",
+        "translatedTitle": "I am the birdcatcher, yes indeed"
+      },
+      {
+        "type": "Auftritt",
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "participants": [
+          "Tamino",
+          "Papageno"
+        ],
+        "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
@@ -623,8 +647,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "How was that?"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "TAMINO",
+            "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Nach deinen Federn, die dich bedecken, halt' ich dich -",
             "translation": "After your feathers that cover you, I will hold you."
@@ -742,8 +766,7 @@ export const dieZauberfloteActOneScenes = [
             "translation": "I have not been as strong in my life as I am today."
           }
         ],
-        "originalTitle": "Der Vogelfänger bin ich ja",
-        "translatedTitle": "I am the birdcatcher, yes indeed"
+        "editorialNote": "Spoken dialogue following Nr. 2; source scene continues until Dritter Auftritt."
       }
     ],
     "summary": ""
@@ -809,8 +832,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "I do not know who they are. I only know so much that every day they take my birds from me, and bring me wine, carrot, and sweet figs."
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "TAMINO",
+            "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Sie sind vermuthlich sehr schön?",
             "translation": "Are you probably very beautiful?"
@@ -1869,8 +1892,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "What does the Moor say about the story?"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "ERSTER SCLAV",
+            "speakerTranslation": "First Slave",
             "literalText": true,
             "original": "Er weiss doch davon?",
             "translation": "Does he know about it?"
@@ -2741,8 +2764,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "Drey boys lead the Tamino in, everyone has a silver palm branch in their hands."
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "DREY KNABEN",
+            "speakerTranslation": "Three Boys",
             "literalText": true,
             "original": "Zum Ziele führt dich diese Bahn,",
             "translation": "This path leads you to the goal,"
@@ -2759,7 +2782,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Ihr holden Kleinen sagt mir an,\nOb ich Paminen retten kann.",
-            "translation": "You little ones tell me,\nCan I save fireplaces?"
+            "translation": "You little ones tell me,\nCan I save Pamina?"
           },
           {
             "speaker": "DREY KNABEN",
@@ -2780,7 +2803,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Die Weisheitslehre dieser Knaben\nSey ewig mir ins Herz gegraben.\nWo bin ich nun? - Was wird mit mir?\nIst dies der Sitz der Götter hier?\nEs zeigen die Pforten, es zeigen die Säulen,\nDass Klugheit und Arbeit und Künste hier weilen;\nWo Thätigkeit thronet, und Müssiggang weicht,\nErhält seine Herrschaft das Laster nicht leicht.\nIch mache mich muthig zur Pforte hinein,\nDie Absicht ist edel, und lauter und rein.\nErzittre feiger Bösewicht!\nPaminen retten ist mir Pflicht.",
-            "translation": "The Wisdom Teachings of These Boys\nBe eternally dug into my heart.\nWhere am I now? - What about me?\nIs this the seat of the gods here?\nThe gates show, the pillars show,\nThat wisdom and work and arts dwell here;\nWhere activity is overthrown and idleness gives way,\nHis rule does not make vice easy.\nI dare to enter the gate,\nThe intention is noble and pure and pure.\nSay cowardly villain!\nSaving fireplaces is my duty."
+            "translation": "The Wisdom Teachings of These Boys\nBe eternally dug into my heart.\nWhere am I now? - What about me?\nIs this the seat of the gods here?\nThe gates show, the pillars show,\nThat wisdom and work and arts dwell here;\nWhere activity is overthrown and idleness gives way,\nHis rule does not make vice easy.\nI dare to enter the gate,\nThe intention is noble and pure and pure.\nSay cowardly villain!\nSaving Pamina is my duty."
           },
           {
             "speaker": "Stage direction",
@@ -2906,7 +2929,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Er herrscht im Weisheitstempel hier.",
-            "translation": "He rules in the wisdom stamp here."
+            "translation": "He rules in the Temple of Wisdom here."
           },
           {
             "speaker": "TAMINO",
@@ -2972,8 +2995,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "Now give me your reasons."
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "TAMINO",
+            "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Er ist ein Unmensch, ein Tyrann!",
             "translation": "He is an inhuman, a tyrant!"
@@ -3004,7 +3027,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Die Absicht ist nur allzu klar;\nRiss nicht der Räuber ohn' Erbarmen,\nPaminen aus der Mutter Armen?",
-            "translation": "The intention is all too clear;\nDo not break the robber without mercy,\nFireplaces from the poor mother?"
+            "translation": "The intention is all too clear;\nDo not break the robber without mercy,\nPamina from the poor mother?"
           },
           {
             "speaker": "PRIESTER",
@@ -3186,7 +3209,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Vieleicht sah er Paminen schon,\nVieleicht eilt sie mit ihm zu mir!\nVieleicht führt mich der Ton zu ihr.",
-            "translation": "Perhaps he saw fireplaces already,\nShe may come to me with him.\nPerhaps the tone leads me to her."
+            "translation": "Perhaps he saw Pamina already,\nShe may come to me with him.\nPerhaps the tone leads me to her."
           },
           {
             "speaker": "Stage direction",
@@ -3453,8 +3476,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "Long live Sarastro! Let Sarastro live!"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "CHORUS",
+            "speakerTranslation": "Chorus",
             "literalText": true,
             "original": "Er ist es, dem wir uns mit Freuden ergeben!",
             "translation": "It is He to whom we rejoice."
@@ -3467,8 +3490,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "May he always enjoy life as a wise man!"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "CHORUS",
+            "speakerTranslation": "Chorus",
             "literalText": true,
             "original": "Er ist unser Abgott, dem alle sich weihn.",
             "translation": "He is our God, to whom all consecrate themselves."
@@ -3569,15 +3592,15 @@ export const dieZauberfloteActOneScenes = [
             "translation": "Now, proud young man, only here!\nHere is Sarastro, our Lord!"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "PAMINA UND TAMINO",
+            "speakerTranslation": "Pamina and Tamino",
             "literalText": true,
             "original": "Er ists! Er ists! ich glaub es kaum!",
             "translation": "It is! He is! I hardly believe it!"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "PAMINA UND TAMINO",
+            "speakerTranslation": "Pamina and Tamino",
             "literalText": true,
             "original": "Sie ists! Sie ists! es ist kein Traum!",
             "translation": "It is! It is! it is not a dream!"
@@ -3622,7 +3645,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Monostatos",
             "literalText": true,
             "original": "Dein Sclave liegt zu deinen Füssen,\nLass den verweg'nen Frevler büssen.\nBedenk, wie frech der Knabe ist!\nDurch dieses seltnen Vogels List,\nWollt er Paminen dir entführen;\nAllein, ich wusst ihn auszuspühren.\nDu kennst mich! - meine Wachsamkeit -",
-            "translation": "Your slave lies at your feet,\nLet the wicked man repent.\nRemember how naughty the boy is!\nBy this rare bird cunning,\nWill he kidnap fireplaces from you?\nAlone, I knew how to spy it.\nYou know me! - my vigilance -"
+            "translation": "Your slave lies at your feet,\nLet the wicked man repent.\nRemember how naughty the boy is!\nBy this rare bird cunning,\nWill he kidnap Pamina from you?\nAlone, I knew how to spy it.\nYou know me! - my vigilance -"
           },
           {
             "speaker": "SARASTRO",
@@ -3643,7 +3666,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Sarastro",
             "literalText": true,
             "original": "Nur 77 Sohlenstreich!",
-            "translation": "Only 77 strokes of sole!"
+            "translation": "Just seventy-seven strokes on the soles of his feet!"
           },
           {
             "speaker": "Stage direction",
@@ -3681,8 +3704,8 @@ export const dieZauberfloteActOneScenes = [
             "translation": "Long live Sarastro, the divine sage,"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "ALLE",
+            "speakerTranslation": "All",
             "literalText": true,
             "original": "Er lohnet und strafet in ähnlichem Kreise.",
             "translation": "He rewards and punishes in a similar circle."
@@ -3692,11 +3715,11 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "Sarastro",
             "literalText": true,
             "original": "Führt diese beyden Fremdlinge,\nIn unsern Prüfungstempel ein:\nBedecket ihre Häupter dann -",
-            "translation": "Lead these strangers,\nIn our test stamp:\nCover their heads then -"
+            "translation": "Lead these strangers,\nIn our temple of trials:\nCover their heads then -"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "SARASTRO",
+            "speakerTranslation": "Sarastro",
             "literalText": true,
             "original": "Sie müssen erst gereinigt seyn.",
             "translation": "They must first be cleansed."
@@ -3713,7 +3736,7 @@ export const dieZauberfloteActOneScenes = [
             "speakerTranslation": "All",
             "literalText": true,
             "original": "Führt diese beyden Fremdlinge\nIn unsern Prüfungstempel ein",
-            "translation": "Lead these strangers.\nIn our test stamp"
+            "translation": "Lead these strangers.\nIn our temple of trials"
           },
           {
             "speaker": "Stage direction",
@@ -3736,29 +3759,29 @@ export const dieZauberfloteActOneScenes = [
         ],
         "turns": [
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "SCHLUSSCHOR",
+            "speakerTranslation": "Final chorus",
             "literalText": true,
             "original": "Wenn Tugend und Gerechtigkeit",
             "translation": "When virtue and justice"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "SCHLUSSCHOR",
+            "speakerTranslation": "Final chorus",
             "literalText": true,
             "original": "Den grossen Pfad mit Ruhm bestreut;",
             "translation": "Sprinkle the great path with glory;"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "SCHLUSSCHOR",
+            "speakerTranslation": "Final chorus",
             "literalText": true,
             "original": "Dann ist die Erd' ein Himmelreich,",
             "translation": "Then the earth is a kingdom of heaven."
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "SCHLUSSCHOR",
+            "speakerTranslation": "Final chorus",
             "literalText": true,
             "original": "Und Sterbliche den Göttern gleich.",
             "translation": "And mortals like the gods."
