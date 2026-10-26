@@ -1,5 +1,6 @@
 /* Shared opera introduction page, independent of libretto availability. */
 import { fanciullaActOneListeningOutline } from "./data/outline-la-fanciulla-del-west-act-1.js?v=20261026";
+import { fanciullaActOneBilingualExcerpts } from "./data/libretto-la-fanciulla-del-west-act-1-excerpts.js?v=20261026";
 const escape = (value = "") => String(value).replace(/[&<>"']/g, character =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 
@@ -167,12 +168,30 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
         '</section></div>';
     }
     if (view === "libretto" && act === 1) {
+      const excerpts = fanciullaActOneBilingualExcerpts.map(section => {
+        const rows = section.turns.map(turn => '<div class="fanciulla-bilingual__row' +
+          (turn.speaker === "Stage direction" ? ' fanciulla-bilingual__row--direction' : '') +
+          '"><div class="fanciulla-bilingual__cell"><span class="fanciulla-bilingual__speaker">' +
+            escape(turn.speaker) + '</span><p>' + escape(turn.original).replaceAll('\\n', '<br>') + '</p></div>' +
+          '<div class="fanciulla-bilingual__cell"><span class="fanciulla-bilingual__speaker">' +
+            escape(turn.speakerTranslation) + '</span><p>' + escape(turn.translation).replaceAll('\\n', '<br>') +
+          '</p></div></div>').join('');
+        return '<section class="fanciulla-bilingual__excerpt">' +
+          '<h2>' + escape(section.originalTitle) + '</h2>' +
+          (section.translatedTitle ? '<p class="fanciulla-bilingual__title-translation">' + escape(section.translatedTitle) + '</p>' : '') +
+          rows + '</section>';
+      }).join('');
       return '<div class="opera-reading-page">' + navigation +
-        '<section class="opera-outline fanciulla-outline fanciulla-outline--pending">' +
+        '<section class="opera-outline fanciulla-bilingual">' +
           '<h1>Atto primo · Act I</h1>' +
-          '<p>The original Italian libretto and its side-by-side English draft have not yet been integrated. ' +
-          'This page is reserved for the complete Act I text, not the listening-track outline.</p>' +
-          '<a class="opera-info__read-link" href="' + base + '?view=outline">View the Act I listening outline</a>' +
+          '<p class="fanciulla-bilingual__notice"><strong>Incomplete libretto — selected source excerpts only.</strong> ' +
+          'The excerpts below are not contiguous and do not constitute the complete Act I. ' +
+          'Original Italian is transcribed from Flaminio; English is an unreviewed editorial draft. ' +
+          'The full source still needs to be imported and checked.</p>' +
+          '<div class="fanciulla-bilingual__columns" aria-hidden="true"><span>Italiano</span><span>English</span></div>' +
+          excerpts +
+          '<p class="fanciulla-bilingual__source">Source: <a href="https://www.flaminioonline.it/Guide/Puccini/Puccini-West78-testo.html" target="_blank" rel="noopener noreferrer">Flaminio Italian libretto, Act I</a>. ' +
+          '<a href="' + base + '?view=outline">View approved listening outline</a>.</p>' +
         '</section></div>';
     }
   }
