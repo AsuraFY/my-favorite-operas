@@ -64,6 +64,8 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
     ? "Full German–English libretto text will be added later. These are editorial listening divisions, not numbered scenes in Wagner's score."
     : "The act outline will be added later.")
     : "The libretto and side-by-side English translation will be added later.";
+  const parsifalReference = isParsifal ? '<p><a href="https://www.librettoarchive.com/Parsifal_libretto_German_English" target="_blank" rel="noopener noreferrer">Open complete German–English libretto (external reference)</a></p>' +
+    '<p>Historical publication source: <a href="https://commons.wikimedia.org/wiki/File:Parsifal,_a_stage-consecrating_festival-play._English_translation_by_Margareth_Glyn._Complete_vocal_score_in_a_facilitated_arrangement_by_Karl_Klindworth_(IA_parsifalstagecon00wagn).pdf" target="_blank" rel="noopener noreferrer">1904 bilingual vocal score, translated by Margareth Glyn</a>. The complete translation has not yet been transcribed into this site's reader.</p>' : "";
   const parsifalContents = isParsifal && view === "outline" ? '<div class="parsifal-listening-outline">' +
     parsifalOutline.map(group => '<section class="parsifal-outline-act" aria-labelledby="parsifal-act-' + group.act + '">' +
       '<h2 id="parsifal-act-' + group.act + '">Act ' + (roman[group.act] || group.act) + ' · ' + escape(group.title) + '</h2>' +
@@ -73,7 +75,7 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
         '<p>' + escape(summary) + '</p><p>Characters: ' + escape(voices) + '</p></li>').join("") + '</ol>' +
     '</section>').join("") + '</div>' : "";
   return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
-    '<h1>' + escape(heading) + '</h1><p>' + escape(message) + '</p>' + parsifalContents +
+    '<h1>' + escape(heading) + '</h1><p>' + escape(message) + '</p>' + parsifalReference + parsifalContents +
     (view === "outline" ? '<a class="opera-info__read-link" href="' + base + '?act=1">Read the libretto <span aria-hidden="true">→</span></a>' : '') +
     '</section></div>';
 }
