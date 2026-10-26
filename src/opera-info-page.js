@@ -143,19 +143,38 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
     tabs.map(([label, suffix, active]) => '<a class="opera-subnav__link' + (active ? ' is-active' : '') +
       '" href="' + base + suffix + '"' + (active ? ' aria-current="page"' : '') + '>' + label + '</a>').join("") + '</div></nav>';
   if (view === "synopsis") return renderOperaInformationPage(opera, details, { navigation, hasLibrettoPage: true });
-  if (opera.slug === "la-fanciulla-del-west" && (view === "outline" || (view === "libretto" && act === 1))) {
-    const rows = fanciullaActOneListeningOutline.map(track => '<div class="section-nav-link opera-outline__section">' +
-      '<span class="opera-outline__section-title"><span class="section-nav-link__icon section-nav-link__icon--song" aria-hidden="true">♬</span> ' +
-      escape(track.originalTitle) + '</span>' +
-      (track.translatedTitle ? '<span class="opera-outline__section-translation">' + escape(track.translatedTitle) + '</span>' : '') +
-      '<span class="section-nav-link__characters"><svg viewBox="0 0 24 24" width="15" height="15" aria-label="Participants" role="img"><circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2M16.5 4.7a3 3 0 0 1 0 5.6M18 14a4 4 0 0 1 3 4v2"/></svg> ' + escape(track.participants.join(", ")) + '</span>' +
-      '</div>').join("");
-    const note = '<p class="libretto-source-note">22 reference-recording listening landmarks, not official numbered musical sections. The original Italian libretto and side-by-side English draft are pending transcription and verification. Participant credits are provisional.</p>';
-    return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
-      '<h1>' + (view === "outline" ? 'Libretto Outline' : 'Atto primo · Act I — Listening Outline') + '</h1>' +
-      note + '<h2>Atto primo · Act I</h2><div class="opera-outline__sections">' + rows + '</div>' +
-      (view === "outline" ? '<p>Acts II and III: outlines pending.</p>' : '') +
-      '</section></div>';
+  if (opera.slug === "la-fanciulla-del-west") {
+    if (view === "outline") {
+      const peopleIcon = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6">' +
+        '<circle cx="9" cy="7.5" r="3"/><path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2M16.5 4.7a3 3 0 0 1 0 5.6M18 14a4 4 0 0 1 3 4v2"/></svg>';
+      const entries = fanciullaActOneListeningOutline.map(track =>
+        '<div class="fanciulla-outline__entry" role="listitem">' +
+          '<div class="fanciulla-outline__original"><span aria-hidden="true" class="fanciulla-outline__note-icon">♬</span><span>' +
+            escape(track.originalTitle) + '</span></div>' +
+          (track.translatedTitle ? '<p class="fanciulla-outline__translation">' + escape(track.translatedTitle) + '</p>' : '') +
+          '<div class="fanciulla-outline__participants">' + peopleIcon + '<span>' +
+            escape(track.participants.join(", ")) + '</span></div>' +
+        '</div>'
+      ).join("");
+      return '<div class="opera-reading-page">' + navigation +
+        '<section class="opera-outline fanciulla-outline">' +
+        '<h1>Libretto Outline</h1>' +
+        '<p class="fanciulla-outline__description">Listening landmarks for Act I, based on 22 recording tracks. These are not official numbered musical sections. Participant lists are provisional.</p>' +
+        '<h2>Atto primo · Act I</h2>' +
+        '<div class="fanciulla-outline__list" role="list">' + entries + '</div>' +
+        '<div class="fanciulla-outline__remaining"><h2>Atto secondo · Act II</h2><p>Outline in preparation.</p>' +
+        '<h2>Atto terzo · Act III</h2><p>Outline in preparation.</p></div>' +
+        '</section></div>';
+    }
+    if (view === "libretto" && act === 1) {
+      return '<div class="opera-reading-page">' + navigation +
+        '<section class="opera-outline fanciulla-outline fanciulla-outline--pending">' +
+          '<h1>Atto primo · Act I</h1>' +
+          '<p>The original Italian libretto and its side-by-side English draft have not yet been integrated. ' +
+          'This page is reserved for the complete Act I text, not the listening-track outline.</p>' +
+          '<a class="opera-info__read-link" href="' + base + '?view=outline">View the Act I listening outline</a>' +
+        '</section></div>';
+    }
   }
   const heading = view === "outline" ? "Libretto Outline" : "Act " + (roman[act] || act);
   const message = view === "outline" ? "The act outline will be added later." : "The libretto and side-by-side English translation will be added later.";
