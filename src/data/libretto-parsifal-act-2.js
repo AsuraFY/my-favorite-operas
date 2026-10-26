@@ -1,5 +1,4 @@
-// Parsifal, Zweiter Aufzug — complete German source, from DraCor TEI edition of Richard Wagner's libretto.
-// Original-source preparation only. English translations are not yet complete; this module is not registered for public display.
+// Parsifal — Zweiter Aufzug, source complete from DraCor TEI (compare Opera Guide). English editorial draft in preparation.
 export const parsifalActTwoScenes = [
   {
     "number": 1,
@@ -9,11 +8,10 @@ export const parsifalActTwoScenes = [
     "sections": [
       {
         "type": "Passage",
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
         "originalTitle": "Zweiter Aufzug",
         "translatedTitle": "Act 2",
-        "threeLineOutline": true,
-        "sourceTitlesOnly": true,
-        "participants": [],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -86,6 +84,13 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
+            "original": "Da weckte dich ein Andrer? He?",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -103,7 +108,70 @@ export const parsifalActTwoScenes = [
             "speaker": "KLINGSOR",
             "speakerTranslation": "Klingsor",
             "literalText": true,
+            "original": "Haha! – dort nach den keuschen Rittern?",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Da ... da ... dient ich.",
+            "translation": ""
+          },
+          {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
             "original": "Ja ja, den Schaden zu vergüten,\nden du ihnen böslich gebracht? –\nSie helfen dir nicht;\nfeil sind sie Alle,\nbiet ich den rechten Preis:\nder festeste fällt,\nsinkt er dir in die Arme, –\nund so verfällt er dem Speer,\nden ihrem Meister selbst ich entwandt. –\nDen gefährlichsten gilt's nun heut zu bestehn:\nihn schirmt der Torheit Schild.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Ich – will nicht. – Oh – Oh! –",
+            "translation": ""
+          },
+          {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
+            "original": "Wohl willst du, denn du mußt.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Du ... kannst mich nicht halten.",
+            "translation": ""
+          },
+          {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
+            "original": "Aber dich fassen.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Du? ...",
+            "translation": ""
+          },
+          {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
+            "original": "Dein Meister.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Aus welcher Macht?",
             "translation": ""
           },
           {
@@ -118,6 +186,13 @@ export const parsifalActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "grell lachend.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Haha! Bist du keusch?",
             "translation": ""
           },
           {
@@ -149,10 +224,24 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Ich will nicht!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "steigt hastig auf die Turmmauer.",
+            "translation": ""
+          },
+          {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
+            "original": "Jetzt schon erklimmt er die Burg.",
             "translation": ""
           },
           {
@@ -167,6 +256,20 @@ export const parsifalActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "hinabblickend.",
+            "translation": ""
+          },
+          {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
+            "original": "Ha! Er ist schön, der Knabe!",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Oh –! Oh –! Wehe mir! –",
             "translation": ""
           },
           {
@@ -216,6 +319,13 @@ export const parsifalActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Kundry verschwindet.",
+            "translation": ""
+          },
+          {
+            "speaker": "KLINGSOR",
+            "speakerTranslation": "Klingsor",
+            "literalText": true,
+            "original": "Sie fliehen.",
             "translation": ""
           },
           {
@@ -296,6 +406,20 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "EINZELNE",
+            "speakerTranslation": "Einzelne",
+            "literalText": true,
+            "original": "Mein Geliebter verwundert.",
+            "translation": ""
+          },
+          {
+            "speaker": "ANDERE",
+            "speakerTranslation": "Andere",
+            "literalText": true,
+            "original": "Wo find ich den meinen?",
+            "translation": ""
+          },
+          {
             "speaker": "ANDERE",
             "speakerTranslation": "Andere",
             "literalText": true,
@@ -366,10 +490,31 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "DIE MÄDCHEN",
+            "speakerTranslation": "Die Mädchen",
+            "literalText": true,
+            "original": "So willst du uns wohl nicht schlagen?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Das möcht ich nicht.",
+            "translation": ""
+          },
+          {
             "speaker": "MÄDCHEN",
             "speakerTranslation": "Mädchen",
             "literalText": true,
             "original": "Doch Schaden\nschufst du uns so vielen, –\ndu schlugest unsre Gespielen:\nwer spielt nun mit uns?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Das tu ich gern.",
             "translation": ""
           },
           {
@@ -398,6 +543,13 @@ export const parsifalActTwoScenes = [
             "speakerTranslation": "Die Geschmückten Mädchen",
             "literalText": true,
             "original": "Lasset den Knaben! Er gehöret mir!\nNein! Nein! Nein! Mir!",
+            "translation": ""
+          },
+          {
+            "speaker": "DIE ANDERN MÄDCHEN",
+            "speakerTranslation": "Die Andern Mädchen",
+            "literalText": true,
+            "original": "Hai Die Falschen! – Sie schmückten heimlich sich.",
             "translation": ""
           },
           {
@@ -450,6 +602,69 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "ERSTES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "An deinen Busen nimm mich!",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Die Stirn laß mich dir kühlen!",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Zweites Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Laß mich die Wange dir fühlen!",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Zweites Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "Den Mund laß mich dir küssen!",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Nein! Ich! Die Schönste bin ich.",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Zweites Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Nein! Ich bin die Schönste!",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES UND DRITTES MÄDCHEN DER ERSTEN UND ZWEITES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Erstes Und Drittes Mädchen Der Ersten Und Zweites Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "Ich bin schöner!",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "Nein! Ich dufte süßer.",
+            "translation": ""
+          },
+          {
+            "speaker": "BEIDE CHÖRE",
+            "speakerTranslation": "Beide Chöre",
+            "literalText": true,
+            "original": "Nein! Ich! Ja, ich!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -464,10 +679,122 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "ERSTES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "Was zankest du?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Weil ihr euch streitet.",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ERSTEN UND ZWEITES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Ersten Und Zweites Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "Wir streiten nur um dich.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Das meidet!",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Zweites Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Du laß von ihm: sieh, er will mich.",
+            "translation": ""
+          },
+          {
+            "speaker": "DRITTES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Drittes Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Mich lieber!",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Zweites Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "Nein, lieber will er mich!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "zu Parsifal.",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ZWEITEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Zweiten Gruppe",
+            "literalText": true,
+            "original": "Du wehrest mich von dir?",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Du scheuchest mich fort?",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTER CHOR",
+            "speakerTranslation": "Erster Chor",
+            "literalText": true,
+            "original": "Bist du feige vor Frauen?",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITE GRUPPE UND ZWEITER CHOR",
+            "speakerTranslation": "Zweite Gruppe Und Zweiter Chor",
+            "literalText": true,
+            "original": "Magst dich nicht getrauen?",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ERSTEN UND ZWEITEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Ersten Und Zweiten Gruppe",
+            "literalText": true,
+            "original": "Wie schlimm bist du, Zager und Kalter!",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTES MÄDCHEN DER ERSTEN GRUPPE",
+            "speakerTranslation": "Erstes Mädchen Der Ersten Gruppe",
+            "literalText": true,
+            "original": "Die Blumen läßt du umbuhlen den Falter?",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTER CHOR",
+            "speakerTranslation": "Erster Chor",
+            "literalText": true,
+            "original": "Auf, weichet dem Toren!",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTE GRUPPE",
+            "speakerTranslation": "Erste Gruppe",
+            "literalText": true,
+            "original": "Wir geben ihn verloren.",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER CHOR",
+            "speakerTranslation": "Zweiter Chor",
+            "literalText": true,
+            "original": "Doch sei er uns erkoren!",
             "translation": ""
           },
           {
@@ -485,10 +812,24 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Laßt ab! Ihr fangt mich nicht!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Er will fliehen, als er aus dem Blumenhage Kundrys Stimme vernimmt und betroffen stillsteht.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Parsifal! – Weile!",
             "translation": ""
           },
           {
@@ -541,6 +882,13 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Dies Alles – hab ich nun geträumt?",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -552,6 +900,13 @@ export const parsifalActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "noch ferne stehend.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Riefest du mich Namenlosen?",
             "translation": ""
           },
           {
@@ -744,6 +1099,13 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Erlösung, Frevlerin, biet ich auch dir.",
+            "translation": ""
+          },
+          {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
             "literalText": true,
@@ -772,6 +1134,13 @@ export const parsifalActTwoScenes = [
             "translation": ""
           },
           {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Wer durft ihn verwunden mit der heil'gen Wehr?",
+            "translation": ""
+          },
+          {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
             "literalText": true,
@@ -797,6 +1166,13 @@ export const parsifalActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Sie will ihn umarmen. Er stößt sie heftig von sich.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Vergeh, unseliges Weib!",
             "translation": ""
           },
           {
