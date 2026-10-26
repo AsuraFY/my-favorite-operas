@@ -60,3 +60,10 @@ Richard Wagner, *Parsifal*, WWV 111. Three acts, original German, libretto by Wa
 - [ ] Speaker, chorus and simultaneous singing labels checked.
 - [ ] Automated tests and browser/mobile regression checks pass.
 - [ ] Only then mark Parsifal's reader as complete.
+
+## Confirmed German source — supplied 26 October 2026
+- Full original-language libretto: https://opera-guide.ch/operas/parsifal/libretto/de/ (Opera Guide, *Parsifal*, Richard Wagner).
+- The page includes cast, prelude, ERSTER AUFZUG, ZWEITER AUFZUG and DRITTER AUFZUG, with dramatic dialogue, speaker names, and stage directions in a continuous text; retain its actual source order rather than converting editorial headings into asserted scene numbers.
+- The corresponding `/libretto/en/` endpoint contains only a link to another site and does **not** supply a full English libretto. English therefore still requires a separately verified, publishable translation.
+- Transcription must account for possible source typos (for example, one Act I speaker cue appears as `MFORTAS` instead of `AMFORTAS`); compare with the historical original before correcting, and record any editorial normalization.
+- Do not claim the full native reader is implemented merely because an external source link is available.
