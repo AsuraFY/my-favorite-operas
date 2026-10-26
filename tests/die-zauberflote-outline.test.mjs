@@ -34,7 +34,7 @@ test("all 21 numbered musical sections carry the agreed source incipits, transla
   expected.forEach(([number, form, original, translated, participant], index) => {
     const section=sections[index];
     assert.equal(section.number, number);
-    assert.equal(section.type, form === "Arie mir Chor" ? "Arie mir Chor" : form);
+    assert.equal(section.displayType || section.type, form === "Arie mir Chor" ? "Arie mit Chor" : form);
     if(original) assert.equal(section.originalTitle, original);
     else assert.equal(section.originalTitle, undefined);
     assert.equal(section.translatedTitle ?? section.headingTranslation, translated);
@@ -46,8 +46,8 @@ test("both acts' outline presents original headings, English lines and character
   resetReaderLocation();
   const outline=createLibrettoRenderer(dieZauberflote).outline();
   for(const [, ,original,translated] of expected){
-    if(original)assert.ok(outline.includes(original.replaceAll("&","&amp;")), original);
-    assert.ok(outline.includes(translated.replaceAll("&","&amp;")), translated);
+    if(original)assert.ok(outline.includes(original.replaceAll("&","&amp;").replaceAll("'","&#39;")), original);
+    assert.ok(outline.includes(translated.replaceAll("&","&amp;").replaceAll("'","&#39;")), translated);
   }
   assert.ok(outline.includes('class="libretto-participants"'));
   assert.ok(outline.includes("Wenn Tugend und Gerechtigkeit"));
