@@ -4,7 +4,7 @@ export const parsifalActOneScenes = [
     "number": 1,
     "originalHeading": "Erster Aufzug",
     "translatedHeading": "Act 1",
-    "summary": "",
+    "summary": "At Monsalvat, Gurnemanz relates the Grail's history while Parsifal first witnesses Amfortas's suffering.",
     "sections": [
       {
         "type": "Passage",
@@ -1787,6 +1787,106 @@ export const parsifalActOneScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "He! Ho! Waldhüter ihr",
+        "translation": "Ho there, guardians of the woods",
+        "match": "He! Ho! Waldhüter ihr",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 2,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Heil euch! – Wie geht's Amfortas heut?",
+        "translation": "Greetings! How is Amfortas today?",
+        "match": "Heil euch! – Wie geht's Amfortas heut?",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 10,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Er naht – sie bringen ihn getragen",
+        "translation": "He comes; they carry him here",
+        "match": "Er naht – sie bringen ihn getragen",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 34,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Ja, eine Verwünschte mag sie sein",
+        "translation": "Yes, she may be under a curse",
+        "match": "Ja, eine Verwünschte mag sie sein",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 62,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Gewiß! Im Fluge treff ich",
+        "translation": "Yes! I can hit whatever flies",
+        "match": "Gewiß! Im Fluge treff ich",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 116,
+        "characters": [
+          "Parsifal"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Wo bist du her?",
+        "translation": "Where do you come from?",
+        "match": "Wo bist du her?",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 125,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Vom Bade kehrt der König heim",
+        "translation": "The king returns from the bath",
+        "match": "Vom Bade kehrt der König heim",
+        "speaker": "GURNEMANZ",
+        "sourceTurn": 182,
+        "characters": [
+          "Gurnemanz"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Wehe! Wehe mir der Qual!",
+        "translation": "Alas, the torment I endure!",
+        "match": "Wehe! Wehe mir der Qual!",
+        "speaker": "AMFORTAS",
+        "sourceTurn": 207,
+        "characters": [
+          "Amfortas"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Selig im Glauben!",
+        "translation": "Blessed in faith",
+        "match": "Selig im Glauben!",
+        "speaker": "ALLE RITTER",
+        "sourceTurn": 235,
+        "characters": [
+          "Alle Ritter"
+        ]
+      }
+    ]
   }
 ];
