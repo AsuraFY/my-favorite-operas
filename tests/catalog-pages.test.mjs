@@ -333,3 +333,16 @@ test("A single CSS rule controls breadcrumb height, layout, and logo alignment",
   assert.ok(css.includes("top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height));"));
   assert.ok(css.includes("scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height)"));
 });
+
+
+test("Parsifal planned outline lists three bilingual acts without claiming the full libretto is complete", () => {
+  const opera = operas.find(item => item.slug === "parsifal");
+  const details = operaInformation.parsifal;
+  assert.equal(getLibretto("parsifal"), null);
+  const outline = renderPlannedLibrettoPage(opera, details, "outline", 1);
+  for (const phrase of ["The Grail domain", "The holy spear", "Good Friday spell", "Im Gebiete des Grales", "Klingsors Zauberschloss", "Karfreitagszauber", "Full German–English libretto text will be added later"]) {
+    assert.ok(outline.includes(phrase), "missing Parsifal outline text: " + phrase);
+  }
+  assert.equal((outline.match(/class="parsifal-outline-act"/g) || []).length, 3);
+  assert.ok(!outline.includes('class="libretto-row"'));
+});
