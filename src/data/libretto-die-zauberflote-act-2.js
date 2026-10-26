@@ -27,12 +27,7 @@ export const dieZauberfloteActTwoScenes = [
         "type": "Marsch der Priester",
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
-        "participants": [
-          "Sarastro",
-          "Second Priest",
-          "Third Priest",
-          "Speaker"
-        ],
+        "participants": [],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -215,7 +210,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Sarastro goes ahead, then all after him."
           }
         ],
-        "number": 10
+        "number": 10,
+        "originalTitle": "O Isis und Osiris",
+        "translatedTitle": "O Isis and Osiris"
       }
     ]
   },
@@ -638,7 +635,8 @@ export const dieZauberfloteActTwoScenes = [
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
-          "Zweite Priester Und Sprecher"
+          "Speaker",
+          "Second Priest"
         ],
         "turns": [
           {
@@ -663,7 +661,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "He saw himself abandoned at the end,\nRewarded his faithfulness with scorn!\nIn vain he wrestled his hands,\nDeath and despair were his reward.\nBeyde priests."
           }
         ],
-        "number": 11
+        "number": 11,
+        "originalTitle": "Bewahret euch vor Weibertücken",
+        "translatedTitle": "Guard yourselves against women's wiles"
       }
     ]
   },
@@ -740,10 +740,7 @@ export const dieZauberfloteActTwoScenes = [
         "participants": [
           "Three Ladies",
           "Papageno",
-          "Tamino",
-          "Tamino Und Papageno",
-          "Alle Fünf",
-          "Priest"
+          "Tamino"
         ],
         "turns": [
           {
@@ -985,7 +982,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "O hurt! O hurt! O hurt!\nThen begins the three-meal Accord."
           }
         ],
-        "number": 12
+        "number": 12,
+        "originalTitle": "Wie? Wie? Wie?",
+        "translatedTitle": "What? What? What?"
       }
     ]
   },
@@ -1193,7 +1192,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "He sneaks slowly and quietly."
           }
         ],
-        "number": 13
+        "number": 13,
+        "originalTitle": "Alles fühlt der Liebe Freuden",
+        "translatedTitle": "All feel the joys of love"
       }
     ]
   },
@@ -1405,7 +1406,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "It is sinking."
           }
         ],
-        "number": 14
+        "number": 14,
+        "originalTitle": "Der Hölle Rache kocht in meinem Herzen",
+        "translatedTitle": "Hell's vengeance boils within my heart"
       }
     ]
   },
@@ -1789,7 +1792,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Go away."
           }
         ],
-        "number": 15
+        "number": 15,
+        "originalTitle": "In diesen heil'gen Hallen",
+        "translatedTitle": "Within these sacred halls"
       }
     ]
   },
@@ -2275,7 +2280,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Under the terzett they put the table in the middle, and fly up."
           }
         ],
-        "number": 16
+        "number": 16,
+        "originalTitle": "Seyd uns zum zweytenmal willkommen",
+        "translatedTitle": "Welcome once again"
       }
     ]
   },
@@ -2525,7 +2532,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "off"
           }
         ],
-        "number": 17
+        "number": 17,
+        "originalTitle": "Ach, ich fühl's, es ist verschwunden",
+        "translatedTitle": "Ah, I feel it—it has vanished"
       }
     ]
   },
@@ -2725,7 +2734,7 @@ export const dieZauberfloteActTwoScenes = [
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
-          "Chorus"
+          "Priest Chorus"
         ],
         "turns": [
           {
@@ -2736,7 +2745,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "O Isis and Osiris, what bliss!\nThe dark night scares away the brightness of the sun.\nSoon the noble youth feels new life;\nSoon he will be fully given to our service.\nHis spirit is bold, his heart is pure,\nSoon he will be worthy of us."
           }
         ],
-        "number": 18
+        "number": 18,
+        "originalTitle": "O Isis und Osiris, welche Wonne!",
+        "translatedTitle": "O Isis and Osiris, what bliss!"
       }
     ]
   },
@@ -2818,8 +2829,8 @@ export const dieZauberfloteActTwoScenes = [
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
-          "Tamino",
           "Pamina",
+          "Tamino",
           "Sarastro"
         ],
         "turns": [
@@ -2971,7 +2982,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Remove"
           }
         ],
-        "number": 19
+        "number": 19,
+        "originalTitle": "Soll ich dich, Theurer! nicht mehr seh'n?",
+        "translatedTitle": "Shall I see you no more, dearest?"
       }
     ]
   },
@@ -3222,7 +3235,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "So the flame must consume me!\nBut kiss me a female mouth,\nSo I'm healthy again."
           }
         ],
-        "number": 20
+        "number": 20,
+        "originalTitle": "Ein Mädchen oder Weibchen",
+        "translatedTitle": "A maiden or a little wife"
       }
     ]
   },
@@ -3498,9 +3513,16 @@ export const dieZauberfloteActTwoScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Three Boys",
-          "First Boy",
-          "Second Boy",
-          "Third Boy"
+          "Pamina",
+          "Two Armored Men",
+          "Tamino",
+          "Priest Chorus",
+          "Papageno",
+          "Papagena",
+          "Monostatos",
+          "Queen of the Night",
+          "Three Ladies",
+          "Sarastro"
         ],
         "turns": [
           {
@@ -3567,7 +3589,9 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Going by side"
           }
         ],
-        "number": 21
+        "number": 21,
+        "originalTitle": "Bald prangt, den Morgen zu verkünden",
+        "translatedTitle": "Soon it will gleam to herald the morning"
       }
     ]
   },
@@ -3767,7 +3791,9 @@ export const dieZauberfloteActTwoScenes = [
             "original": "gehen ab",
             "translation": "leave"
           }
-        ]
+        ],
+        "originalTitle": "Du also bist mein Bräutigam?",
+        "translatedTitle": "So you are my bridegroom?"
       }
     ]
   },
@@ -3784,8 +3810,6 @@ export const dieZauberfloteActTwoScenes = [
           "Two Armored Men",
           "Tamino",
           "Pamina",
-          "Geharnischte",
-          "Zwey Geharnischte",
           "Chorus"
         ],
         "turns": [
@@ -4006,7 +4030,9 @@ export const dieZauberfloteActTwoScenes = [
             "original": "alle ab",
             "translation": "all off"
           }
-        ]
+        ],
+        "originalTitle": "Der, welcher wandert diese Strasse voll Beschwerden",
+        "translatedTitle": "Whoever walks this path of hardship"
       }
     ]
   },
@@ -4021,7 +4047,8 @@ export const dieZauberfloteActTwoScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Papageno",
-          "Three Boys"
+          "Three Boys",
+          "Papagena"
         ],
         "turns": [
           {
@@ -4255,7 +4282,9 @@ export const dieZauberfloteActTwoScenes = [
             "original": "Papageno sieht sich um; beyde haben unter dem Ritornell komisches Spiel.",
             "translation": "Papageno looks around; beyde have a funny game under the Ritornell."
           }
-        ]
+        ],
+        "originalTitle": "Papagena! Papagena! Papagena!",
+        "translatedTitle": "Papagena! Papagena! Papagena!"
       },
       {
         "type": "Duetto",
@@ -4263,8 +4292,7 @@ export const dieZauberfloteActTwoScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Papageno",
-          "Old Woman",
-          "Both"
+          "Papagena"
         ],
         "turns": [
           {
@@ -4365,7 +4393,9 @@ export const dieZauberfloteActTwoScenes = [
             "original": "Beyde ab",
             "translation": "Beyde ab"
           }
-        ]
+        ],
+        "originalTitle": "Pa - Pa - Pa - Pa - Pa - Pa - Papagena!",
+        "translatedTitle": "Pa-pa-pa-pa-pa-pa-Papagena!"
       }
     ]
   },
@@ -4380,12 +4410,10 @@ export const dieZauberfloteActTwoScenes = [
         "sourceTitlesOnly": true,
         "participants": [
           "Monostatos",
-          "Women",
           "Queen of the Night",
           "Three Ladies",
-          "All",
           "Sarastro",
-          "Chorus of Priests"
+          "Priest Chorus"
         ],
         "turns": [
           {
@@ -4514,7 +4542,9 @@ export const dieZauberfloteActTwoScenes = [
             "original": "Heil sey euch Geweihten! Ihr drangt durch die Nacht,\nDank sey dir, Osiris und Isis, gebracht!\nEs siegte die Stärke, und krönet zum Lohn\nDie Schönheit und Weisheit mit ewiger Kron'.",
             "translation": "May you be devotees! You enter the night,\nThanks be to you, Osiris and Isis!\nIt conquered strength, and crowned to reward\nBeauty and wisdom with eternal crown."
           }
-        ]
+        ],
+        "originalTitle": "Nur stille! stille! stille! stille!",
+        "translatedTitle": "Hush! Hush! Hush! Hush!"
       }
     ]
   }
