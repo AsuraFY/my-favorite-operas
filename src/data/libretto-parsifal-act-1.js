@@ -1,5 +1,4 @@
-// Parsifal, Erster Aufzug — complete German source, from DraCor TEI edition of Richard Wagner's libretto.
-// Original-source preparation only. English translations are not yet complete; this module is not registered for public display.
+// Parsifal — Erster Aufzug, source complete from DraCor TEI (compare Opera Guide). English editorial draft in preparation.
 export const parsifalActOneScenes = [
   {
     "number": 1,
@@ -9,11 +8,10 @@ export const parsifalActOneScenes = [
     "sections": [
       {
         "type": "Passage",
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
         "originalTitle": "Erster Aufzug",
         "translatedTitle": "Act 1",
-        "threeLineOutline": true,
-        "sourceTitlesOnly": true,
-        "participants": [],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -114,10 +112,24 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "ZWEITER RITTER",
+            "speakerTranslation": "Zweiter Ritter",
+            "literalText": true,
+            "original": "So nenn uns den!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "ausweichend.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Sorgt für das Bad!",
             "translation": ""
           },
           {
@@ -128,10 +140,59 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "ZWEITER KNAPPE",
+            "speakerTranslation": "Zweiter Knappe",
+            "literalText": true,
+            "original": "Seht dort die wilde Reiterin!",
+            "translation": ""
+          },
+          {
             "speaker": "ERSTER KNAPPE",
             "speakerTranslation": "Erster Knappe",
             "literalText": true,
             "original": "Hei!\nWie fliegen der Teufelsmähre die Mähnen!",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER RITTER",
+            "speakerTranslation": "Zweiter Ritter",
+            "literalText": true,
+            "original": "Ha! Kundry dort?",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTER RITTER",
+            "speakerTranslation": "Erster Ritter",
+            "literalText": true,
+            "original": "Die bringt wohl wicht'ge Kunde?",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER KNAPPE",
+            "speakerTranslation": "Zweiter Knappe",
+            "literalText": true,
+            "original": "Die Mähre taumelt.",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTER KNAPPE",
+            "speakerTranslation": "Erster Knappe",
+            "literalText": true,
+            "original": "Flog sie durch die Luft?",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER KNAPPE",
+            "speakerTranslation": "Zweiter Knappe",
+            "literalText": true,
+            "original": "Jetzt kriecht sie am Boden hin.",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTER KNAPPE",
+            "speakerTranslation": "Erster Knappe",
+            "literalText": true,
+            "original": "Mit den Mähnen fegt sie das Moos.",
             "translation": ""
           },
           {
@@ -142,10 +203,31 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "ZWEITER RITTER",
+            "speakerTranslation": "Zweiter Ritter",
+            "literalText": true,
+            "original": "Da schwingt sich die Wilde herab!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Kundry stürzt hastig, fast taumelnd, herein. Wilde Kleidung, hoch geschürzt; Gürtel von Schlangenhäuten lang herabhängend: schwarzes, in losen Zöpfen flatterndes Haar; tief braunrötliche Gesichtsfarbe; stechende schwarze Augen, zuweilen wild aufblitzend, öfters wie todesstarr und unbeweglich. – Sie eilt auf Gurnemanz zu und dringt ihm ein kleines Kristallgefäß auf.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Hier? Nimm du! – Balsam ...",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Woher brachtest du dies?",
             "translation": ""
           },
           {
@@ -184,6 +266,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Behutsam! Hört, der König stöhnt.",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -219,6 +308,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Uns sagtest du es so.",
+            "translation": ""
+          },
+          {
             "speaker": "AMFORTAS",
             "speakerTranslation": "Amfortas",
             "literalText": true,
@@ -230,6 +326,34 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "indem er Amfortas das Fläschchen Kundrys überreicht.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Doch zuvor – versuch es noch mit diesem!",
+            "translation": ""
+          },
+          {
+            "speaker": "AMFORTAS",
+            "speakerTranslation": "Amfortas",
+            "literalText": true,
+            "original": "Woher dies heimliche Gefäß?",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Dir ward es aus Arabia hergeführt.",
+            "translation": ""
+          },
+          {
+            "speaker": "AMFORTAS",
+            "speakerTranslation": "Amfortas",
+            "literalText": true,
+            "original": "Und wer gewann es?",
             "translation": ""
           },
           {
@@ -282,6 +406,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Sind die Tiere hier nicht heilig?",
+            "translation": ""
+          },
+          {
             "speaker": "DRITTER KNAPPE",
             "speakerTranslation": "Dritter Knappe",
             "literalText": true,
@@ -307,6 +438,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Dritter Knappe",
             "literalText": true,
             "original": "Doch haßt sie uns;\nsieh nur, wie hämisch dort nach uns sie blickt!",
+            "translation": ""
+          },
+          {
+            "speaker": "VIERTER KNAPPE",
+            "speakerTranslation": "Vierter Knappe",
+            "literalText": true,
+            "original": "Eine Heidin ist's, ein Zauberweib.",
             "translation": ""
           },
           {
@@ -356,6 +494,27 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Kundry schweigt düster.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Warum halfst du uns damals nicht?",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Ich helfe nie.",
+            "translation": ""
+          },
+          {
+            "speaker": "VIERTER KNAPPE",
+            "speakerTranslation": "Vierter Knappe",
+            "literalText": true,
+            "original": "Sie sagt's da selbst.",
             "translation": ""
           },
           {
@@ -422,6 +581,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "DRITTER KNAPPE",
+            "speakerTranslation": "Dritter Knappe",
+            "literalText": true,
+            "original": "So kanntest du Klingsor?",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -429,10 +595,38 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Wie geht's dem König?",
+            "translation": ""
+          },
+          {
+            "speaker": "ERSTER KNAPPE",
+            "speakerTranslation": "Erster Knappe",
+            "literalText": true,
+            "original": "Ihn frischt das Bad.",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER KNAPPE",
+            "speakerTranslation": "Zweiter Knappe",
+            "literalText": true,
+            "original": "Dem Balsam wich das Weh.",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "für sich.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Die Wunde ist's, die nie sich schließen will! –",
             "translation": ""
           },
           {
@@ -461,6 +655,20 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Kundry hat sich, in wütender Unruhe, oft heftig umgewendet.",
+            "translation": ""
+          },
+          {
+            "speaker": "VIERTER KNAPPE",
+            "speakerTranslation": "Vierter Knappe",
+            "literalText": true,
+            "original": "Vor Allem nun, der Speer kehr uns zurück!",
+            "translation": ""
+          },
+          {
+            "speaker": "DRITTER KNAPPE",
+            "speakerTranslation": "Dritter Knappe",
+            "literalText": true,
+            "original": "Ha! wer ihn brächt, ihm wär's zu Ruhm und Glück?",
             "translation": ""
           },
           {
@@ -499,6 +707,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Was gibt's?",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -506,10 +721,45 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "VIERTER KNAPPE",
+            "speakerTranslation": "Vierter Knappe",
+            "literalText": true,
+            "original": "Dort!",
+            "translation": ""
+          },
+          {
+            "speaker": "DRITTER KNAPPE",
+            "speakerTranslation": "Dritter Knappe",
+            "literalText": true,
+            "original": "Hier!",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER KNAPPE",
+            "speakerTranslation": "Zweiter Knappe",
+            "literalText": true,
+            "original": "Ein Schwan!",
+            "translation": ""
+          },
+          {
+            "speaker": "VIERTER KNAPPE",
+            "speakerTranslation": "Vierter Knappe",
+            "literalText": true,
+            "original": "Ein wilder Schwan!",
+            "translation": ""
+          },
+          {
             "speaker": "ALLE RITTER UND KNAPPEN",
             "speakerTranslation": "Alle Ritter Und Knappen",
             "literalText": true,
             "original": "Er ist verwundet.\nHa, wehe! Weh!",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Wer schoß den Schwan?",
             "translation": ""
           },
           {
@@ -534,6 +784,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "KNAPPEN UND RITTER",
+            "speakerTranslation": "Knappen Und Ritter",
+            "literalText": true,
+            "original": "Der war's! Der schoß!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -541,10 +798,52 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "KNAPPEN UND RITTER",
+            "speakerTranslation": "Knappen Und Ritter",
+            "literalText": true,
+            "original": "Dies der Bogen!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "den Pfeil aufweisend.",
+            "translation": ""
+          },
+          {
+            "speaker": "ZWEITER RITTER",
+            "speakerTranslation": "Zweiter Ritter",
+            "literalText": true,
+            "original": "Hier der Pfeil, dem seinen gleich.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Bist du's, der diesen Schwan erlegte?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Gewiß! Im Fluge treff ich, was fliegt!",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Du tatest das? Und bangt es dich nicht vor der Tat?",
+            "translation": ""
+          },
+          {
+            "speaker": "DIE KNAPPEN UND RITTER",
+            "speakerTranslation": "Die Knappen Und Ritter",
+            "literalText": true,
+            "original": "Strafe den Frevler!",
             "translation": ""
           },
           {
@@ -559,6 +858,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Parsifal hat Gurnemanz mit wachsender Ergriffenheit zugehört: jetzt zerbricht er seinen Bogen und schleudert die Pfeile von sich.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Wirst deiner Sündentat du inne?",
             "translation": ""
           },
           {
@@ -579,7 +885,70 @@ export const parsifalActOneScenes = [
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
             "literalText": true,
+            "original": "Ich wußte sie nicht.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Wo bist du her?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Das weiß ich nicht.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Wer ist dein Vater?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Das weiß ich nicht.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Wer sandte dich dieses Weges?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Das weiß ich nicht.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Dein Name denn?",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
             "original": "Ich hatte viele,\ndoch weiß ich ihrer keinen mehr.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Das weißt du Alles nicht?",
             "translation": ""
           },
           {
@@ -636,6 +1005,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Parsifal",
             "literalText": true,
             "original": "Ich hab eine Mutter; Herzeleide sie heißt.\nIm Wald und auf wilder Aue waren wir heim.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Wer gab dir den Bogen?",
             "translation": ""
           },
           {
@@ -716,10 +1092,38 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Wer fürchtet mich? Sag!",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Die Bösen.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Die mich bedrohten, waren sie bös?",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Gurnemanz lacht.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Wer ist gut?",
             "translation": ""
           },
           {
@@ -737,10 +1141,24 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Zu End ihr Gram: seine Mutter ist tot.",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "in furchtbarem Schrecken.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Tot? Meine Mutter? – Wer sagt's?",
             "translation": ""
           },
           {
@@ -755,6 +1173,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Parsifal springt wütend auf Kundry zu und faßt sie bei der Kehle. – Gurnemanz hält ihn zurück.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Verrückter Knabe! Wieder Gewalt?",
             "translation": ""
           },
           {
@@ -779,6 +1204,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Ich verschmachte! ...",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -800,6 +1232,13 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Nie tu ich Gutes: –",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
@@ -818,6 +1257,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Scheu auffahrend.",
+            "translation": ""
+          },
+          {
+            "speaker": "KUNDRY",
+            "speakerTranslation": "Kundry",
+            "literalText": true,
+            "original": "Nein! – Nicht schlafen! – Grausen faßt mich!",
             "translation": ""
           },
           {
@@ -853,6 +1299,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Gurnemanz hat Parsifals Arm sich sanft um den Nacken gelegt, und dessen Leib mit seinem eigenen Arme umschlungen; so geleitet er ihn bei sehr allmählichem Schreiten. – Hier hat die unmerkliche Verwandelung der Bühne bereits begonnen.",
+            "translation": ""
+          },
+          {
+            "speaker": "PARSIFAL",
+            "speakerTranslation": "Parsifal",
+            "literalText": true,
+            "original": "Wer ist der Gral?",
             "translation": ""
           },
           {
@@ -957,14 +1410,7 @@ export const parsifalActOneScenes = [
             "speaker": "KNABENSTIMMEN",
             "speakerTranslation": "Knabenstimmen",
             "literalText": true,
-            "original": "Der Glaube lebt;\ndie Taube schwebt,\ndes Heilands holder Bote.\nDer für euch fließt,",
-            "translation": ""
-          },
-          {
-            "speaker": "KNABENSTIMMEN",
-            "speakerTranslation": "Knabenstimmen",
-            "literalText": true,
-            "original": "des Weins genießt,\nund nehmt vom Lebensbrode!",
+            "original": "Der Glaube lebt;\ndie Taube schwebt,\ndes Heilands holder Bote.\nDer für euch fließt,\ndes Weins genießt,\nund nehmt vom Lebensbrode!",
             "translation": ""
           },
           {
@@ -975,10 +1421,10 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "TITUREL",
+            "speakerTranslation": "Titurel",
             "literalText": true,
-            "original": "Langes Schweigen.",
+            "original": "Mein Sohn Amfortas, bist du am Amt?",
             "translation": ""
           },
           {
@@ -986,6 +1432,27 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Langes Schweigen.",
+            "translation": ""
+          },
+          {
+            "speaker": "TITUREL",
+            "speakerTranslation": "Titurel",
+            "literalText": true,
+            "original": "Soll ich den Gral heut noch erschaun und leben?",
+            "translation": ""
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "literalText": true,
+            "original": "Langes Schweigen.",
+            "translation": ""
+          },
+          {
+            "speaker": "TITUREL",
+            "speakerTranslation": "Titurel",
+            "literalText": true,
+            "original": "Muß ich sterben, vom Retter ungeleitet?",
             "translation": ""
           },
           {
@@ -1070,6 +1537,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Die Ritter",
             "literalText": true,
             "original": "So ward es dir verhießen:\nharre getrost,\ndes Amtes walte heut!",
+            "translation": ""
+          },
+          {
+            "speaker": "TITUREL",
+            "speakerTranslation": "Titurel",
+            "literalText": true,
+            "original": "Enthüllet den Gral!",
             "translation": ""
           },
           {
@@ -1206,10 +1680,24 @@ export const parsifalActOneScenes = [
             "translation": ""
           },
           {
+            "speaker": "JÜNGLINGE",
+            "speakerTranslation": "Jünglinge",
+            "literalText": true,
+            "original": "Selig in Liebe!",
+            "translation": ""
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "volle Höhe der Kuppel.",
+            "translation": ""
+          },
+          {
+            "speaker": "KNABEN",
+            "speakerTranslation": "Knaben",
+            "literalText": true,
+            "original": "Selig im Glauben!",
             "translation": ""
           },
           {
@@ -1238,6 +1726,13 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "sehr ärgerlich.",
+            "translation": ""
+          },
+          {
+            "speaker": "GURNEMANZ",
+            "speakerTranslation": "Gurnemanz",
+            "literalText": true,
+            "original": "Du bist doch eben nur ein Tor!",
             "translation": ""
           },
           {
@@ -1270,9 +1765,23 @@ export const parsifalActOneScenes = [
           },
           {
             "speaker": "EINE ALTSTIMME",
-            "speakerTranslation": "A Voice From Above",
+            "speakerTranslation": "Eine Altstimme",
             "literalText": true,
             "original": "»Durch Mitleid wissend,\nder reine Tor ...«",
+            "translation": ""
+          },
+          {
+            "speaker": "MITTLERE HÖHE",
+            "speakerTranslation": "Mittlere Höhe",
+            "literalText": true,
+            "original": "Selig im Glauben!",
+            "translation": ""
+          },
+          {
+            "speaker": "AUS DER HÖCHSTEN HÖHE",
+            "speakerTranslation": "Aus Der Höchsten Höhe",
+            "literalText": true,
+            "original": "Selig im Glauben!",
             "translation": ""
           }
         ]
