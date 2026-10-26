@@ -19,7 +19,7 @@ export const dieZauberfloteActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Das Theater ist ein Palmwald; alle Bäume sind silberartig, die Blätter von Gold. 18 Sitze von Blättern; auf einem jeden Sitze steht eine Pyramide, und ein grosses schwarzes Horn mit Gold gefasst. In der Mitte ist die grösste Pyramide, auch die grössten Bäume. Sarastro nebst andern Priestern kommen in feyerlichen Schritten, jeder mit einem Palmzweige in der Hand. Ein Marsch mit blasenden Instrumenten begleitet den Zug.",
-            "translation": "The theater is a palm forest; All trees are silvery, the leaves of gold. 18 seats of leaves; On each seat stands a pyramid, and a large black horn set with gold. In the middle is the largest pyramid, also the largest trees. Sarastro and other priests come in feisty steps, each with a palm branch in his hand. A march with blowing instruments accompanies the train."
+            "translation": "The stage shows a palm grove; every tree is silvery, with golden leaves. There are eighteen leafy seats, each beside a pyramid and a large black horn rimmed with gold. At the centre stand the greatest pyramid and tallest trees. Sarastro and the other priests enter solemnly, each holding a palm branch. A march played by wind instruments accompanies the procession."
           }
         ]
       },
@@ -28,6 +28,24 @@ export const dieZauberfloteActTwoScenes = [
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [],
+        "turns": [],
+        "number": 9,
+        "headingTranslation": "March of the Priests",
+        "instrumental": true
+      },
+      {
+        "type": "Auftritt",
+        "routeItem": 3,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "participants": [
+          "Sarastro",
+          "First Priest",
+          "Second Priest",
+          "Third Priest",
+          "Speaker"
+        ],
+        "editorialNote": "Spoken dialogue after the instrumental march, before Nr. 10; not recitative.",
         "turns": [
           {
             "speaker": "Stage direction",
@@ -51,8 +69,8 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "stands on"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "ERSTER PRIESTER",
+            "speakerTranslation": "First Priest",
             "literalText": true,
             "original": "Er besitzt Tugend?",
             "translation": "Does he have virtue?"
@@ -183,9 +201,7 @@ export const dieZauberfloteActTwoScenes = [
             "original": "Sprecher geht mit einem Priester ab, alle Priester stellen sich mit ihren Palmzweigen zusammen.",
             "translation": "Speaker goes out with a priest, all priests put together with their palm branches."
           }
-        ],
-        "number": 9,
-        "headingTranslation": "March of the Priests"
+        ]
       },
       {
         "type": "Arie mir Chor",
@@ -214,7 +230,8 @@ export const dieZauberfloteActTwoScenes = [
         "number": 10,
         "originalTitle": "O Isis und Osiris",
         "translatedTitle": "O Isis and Osiris",
-        "displayType": "Arie mit Chor"
+        "displayType": "Arie mit Chor",
+        "routeItem": 2
       }
     ]
   },
@@ -646,7 +663,7 @@ export const dieZauberfloteActTwoScenes = [
             "speakerTranslation": "Zweite Priester Und Sprecher",
             "literalText": true,
             "original": "Bewahret euch vor Weibertücken:\nDies ist des Bundes erste Pflicht!\nManch weiser Mann liess sich berücken,",
-            "translation": "Save yourselves from mischief:\nThis is the covenant's first duty!\nMany a wise man was taken aback,"
+            "translation": "Guard yourselves against women's wiles:\nThis is the brotherhood's first duty!\nMany a wise man has been deceived,"
           },
           {
             "speaker": "Stage direction",
@@ -865,8 +882,8 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "But it also says the queens."
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "TAMINO",
+            "speakerTranslation": "Tamino",
             "literalText": true,
             "original": "Sie ist ein Weib, hat Weibersinn,",
             "translation": "She is a woman, has a woman's mind,"
@@ -2780,7 +2797,7 @@ export const dieZauberfloteActTwoScenes = [
             "speakerTranslation": "Sarastro",
             "literalText": true,
             "original": "Prinz, dein Betragen war bis hieher männlich und gelassen; nun hast du noch zwey gefährliche Wege zu wandern. - Schlägt dein Herz noch eben so warm für Pamina - und wünschest du einst als ein weiser Fürst zu regieren, so mögen die Götter dich ferner begleiten. - - Deine Hand - Man bringe Paminen!\nEine Stille herrscht bey allen Priestern, Pamina wird mit eben diesem Sack, welcher die Eingeweihten bedeckt, hereingeführt, Sarastro löst die Bande am Sacke auf.",
-            "translation": "Prince, your conduct was up to this time masculine and serene; Now you have two dangerous paths to walk. If your heart beats so warmly for Pamina, and if you wish to reign as a wise prince, may the gods continue to accompany you. - Your hand - Bring fireplaces!\nA silence reigns over all the priests; Pamina is brought in with this sack which covers the initiates; Sarastro dissolves the bonds at the sack."
+            "translation": "Prince, your conduct was up to this time masculine and serene; Now you have two dangerous paths to walk. If your heart beats so warmly for Pamina, and if you wish to reign as a wise prince, may the gods continue to accompany you. - Your hand - Bring Pamina!\nA silence reigns over all the priests; Pamina is brought in with this sack which covers the initiates; Sarastro dissolves the bonds at the sack."
           },
           {
             "speaker": "PAMINA",
@@ -2900,8 +2917,8 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Believe me, he feels / I feel the same urges,"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "SARASTRO UND TAMINO",
+            "speakerTranslation": "Sarastro and Tamino",
             "literalText": true,
             "original": "Wird / Werd' ewig dein Getreuer seyn!",
             "translation": "Will be your faithful forever!"
@@ -3539,7 +3556,7 @@ export const dieZauberfloteActTwoScenes = [
             "speakerTranslation": "First Boy",
             "literalText": true,
             "original": "Doch seht, Verzweiflung quält Paminen!",
-            "translation": "But look, despair torments fireplaces!"
+            "translation": "But look, despair torments Pamina!"
           },
           {
             "speaker": "ZWEYTER UND DRITTER KNABE",
@@ -3549,15 +3566,15 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Where is it?"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "ERSTER KNABE",
+            "speakerTranslation": "First Boy",
             "literalText": true,
             "original": "Sie ist von Sinnen!",
             "translation": "She's out of her mind!"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "ZWEYTER UND DRITTER KNABE",
+            "speakerTranslation": "Second and Third Boys",
             "literalText": true,
             "original": "Sie quält verschmähter Liebe Leiden.",
             "translation": "It tortures spurned love suffering."
@@ -3830,8 +3847,8 @@ export const dieZauberfloteActTwoScenes = [
             "translation": "Who walks this road full of complaints,"
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "ZWEY MÄNNER",
+            "speakerTranslation": "Two Armored Men",
             "literalText": true,
             "original": "Wird rein durch Feuer, Wasser, Luft und Erden;",
             "translation": "Be clean through fire, water, air and earth."
