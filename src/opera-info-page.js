@@ -1,3 +1,4 @@
+import { parsifalOutline } from "./data/parsifal-outline.js";
 /* Shared opera introduction page, independent of libretto availability. */
 const escape = (value = "") => String(value).replace(/[&<>"']/g, character =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
@@ -58,9 +59,21 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
       '" href="' + base + suffix + '"' + (active ? ' aria-current="page"' : '') + '>' + label + '</a>').join("") + '</div></nav>';
   if (view === "synopsis") return renderOperaInformationPage(opera, details, { navigation, hasLibrettoPage: true });
   const heading = view === "outline" ? "Libretto Outline" : "Act " + (roman[act] || act);
-  const message = view === "outline" ? "The act outline will be added later." : "The libretto and side-by-side English translation will be added later.";
+  const isParsifal = opera.slug === "parsifal";
+  const message = view === "outline" ? (isParsifal
+    ? "Full German–English libretto text will be added later. These are editorial listening divisions, not numbered scenes in Wagner's score."
+    : "The act outline will be added later.")
+    : "The libretto and side-by-side English translation will be added later.";
+  const parsifalContents = isParsifal && view === "outline" ? '<div class="parsifal-listening-outline">' +
+    parsifalOutline.map(group => '<section class="parsifal-outline-act" aria-labelledby="parsifal-act-' + group.act + '">' +
+      '<h2 id="parsifal-act-' + group.act + '">Act ' + (roman[group.act] || group.act) + ' · ' + escape(group.title) + '</h2>' +
+      '<p lang="de">' + escape(group.german) + '</p>' +
+      '<ol>' + group.parts.map(([english, german, voices, summary]) =>
+        '<li><strong>' + escape(english) + '</strong> <span lang="de">· ' + escape(german) + '</span>' +
+        '<p>' + escape(summary) + '</p><p>Characters: ' + escape(voices) + '</p></li>').join("") + '</ol>' +
+    '</section>').join("") + '</div>' : "";
   return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
-    '<h1>' + escape(heading) + '</h1><p>' + message + '</p>' +
+    '<h1>' + escape(heading) + '</h1><p>' + escape(message) + '</p>' + parsifalContents +
     (view === "outline" ? '<a class="opera-info__read-link" href="' + base + '?act=1">Read the libretto <span aria-hidden="true">→</span></a>' : '') +
     '</section></div>';
 }
