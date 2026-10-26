@@ -179,35 +179,35 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "muore",
-            "translation": ""
+            "translation": "he dies"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Ah... già cadde il sciagurato...\nAffannosa e agonizzante,\nGià dal seno palpitante\nVeggo l'anima partir.",
-            "translation": ""
+            "translation": "Ah... the wretched man has already fallen...\nAgonizing and in agony,\nAlready from her throbbing breast\nI see his soul depart."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Qual misfatto! qual eccesso!\nEntro il sen, dallo spavento,\nPalpitar il cor mi sento.\nIo non so che far, che dir.",
-            "translation": ""
+            "translation": "What a crime! What an excess!\nIn my chest, with fear,\nI feel my heart throb.\nI don't know what to do, what to say."
           }
         ]
       }
@@ -230,112 +230,112 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni, Leporello",
-            "translation": ""
+            "translation": "Don Giovanni, Leporello"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "sottovoce sempre",
-            "translation": ""
+            "translation": "always in a low voice"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Leporello, ove sei?",
-            "translation": ""
+            "translation": "Leporello, where are you?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "sottovoce sempre",
-            "translation": ""
+            "translation": "always in a low voice"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Son qui per disgrazia; e voi?",
-            "translation": ""
+            "translation": "I'm here by misfortune; and you?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Son qui.",
-            "translation": ""
+            "translation": "I'm here."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Chi è morto, voi o il vecchio?",
-            "translation": ""
+            "translation": "Who died, you or the old man?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Che domanda da bestia! Il vecchio.",
-            "translation": ""
+            "translation": "What a stupid question! The old man."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Bravo:\nDue imprese leggiadre:\nSforzar la figlia, ed ammazzar il padre.",
-            "translation": ""
+            "translation": "Bravo:\nTwo graceful feats:\nForcing the daughter, and killing the father."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "L'ha voluto, suo danno.",
-            "translation": ""
+            "translation": "He wanted it, to his detriment."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Ma Donn'Anna\nCosa ha voluto?",
-            "translation": ""
+            "translation": "But Donna Anna\nWhat did she want?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Taci,\nNon mi seccar, vien meco, se non vuoi",
-            "translation": ""
+            "translation": "Shut up,\nDon't bother me, come with me if you don't want to."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "in atto di batterlo",
-            "translation": ""
+            "translation": "in the act of beating him"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Qualche cosa ancor tu.",
-            "translation": ""
+            "translation": "Something you too."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Non vo' nulla, signor, non parlo più.",
-            "translation": ""
+            "translation": "I don't want anything, sir, I won't speak anymore."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "partono",
-            "translation": ""
+            "translation": "they leave"
           }
         ]
       }
@@ -358,182 +358,182 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Ottavio, Donn'Anna con servi che portono diversi lumi.",
-            "translation": ""
+            "translation": "Don Ottavio, Donna Anna with servants carrying various lights."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "con risolutezza",
-            "translation": ""
+            "translation": "with determination"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Ah! Del padre in periglio\nIn soccorso voliam.",
-            "translation": ""
+            "translation": "Ah! We fly to his father's aid in peril."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "con ferro ignudo in mano",
-            "translation": ""
+            "translation": "with naked iron in hand"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Tutto il mio sangue\nVerserò, se bisogna:\nMa dov'è il scellerato?",
-            "translation": ""
+            "translation": "All my blood\nI will shed, if necessary:\nBut where is the scoundrel?"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "In questo loco...",
-            "translation": ""
+            "translation": "In this place..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "vede il cadavere",
-            "translation": ""
+            "translation": "he sees the corpse"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Ma qual mai s'offre, oh Dei,\nSpettacolo funesto agli occhi miei!\nIl padre... padre mio... mio caro padre...",
-            "translation": ""
+            "translation": "But what a terrible spectacle, oh Gods,\nthis presents itself to my eyes!\nMy father... my father... my dear father..."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Signore!...",
-            "translation": ""
+            "translation": "Gentleman!..."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Ah l'assassino\nMel trucidò. Quel sangue...\nQuella piaga... quel volto\nTinto e coperto dei color di morte...\nEi non respira più... fredde ha le membra...\nPadre mio... caro padre... padre amato...\nIo manco... io moro.",
-            "translation": ""
+            "translation": "Ah, the murderer\nmurdered Mel. That blood...\nThat wound... that face\nTinted and covered with the hues of death...\nHe no longer breathes... his limbs are cold...\nMy father... dear father... beloved father...\nI am missing... I am dying."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Ah soccorrete, amici, il mio tesoro!\nCercatemi... recatemi...\nQualche odor... qualche spirto... ah non tardate...\nDonn'Anna... sposa... amica... Il duolo estremo\nLa meschinella uccide...",
-            "translation": ""
+            "translation": "Ah, help my treasure, friends!\nSeek me... bring me...\nSome scent... some spirit... ah, don't delay...\nDonna Anna... wife... friend... The ultimate grief\nThe wretched girl is killing..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "rinviene",
-            "translation": ""
+            "translation": "he comes to"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Ahi...",
-            "translation": ""
+            "translation": "Ouch..."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Già rinviene.\nDatele nuovi aiuti.",
-            "translation": ""
+            "translation": "She's already coming to.\nGive her more help."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Padre mio...",
-            "translation": ""
+            "translation": "My father..."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Celate, allontanate agli occhi suoi\nQuell'oggetto d'orrore.",
-            "translation": ""
+            "translation": "Conceal, keep away from his eyes\nThat object of horror."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Il Commendadore viene trasportato.",
-            "translation": ""
+            "translation": "The Commendadore is transported."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Anima mia... consòlati... fa' core...",
-            "translation": ""
+            "translation": "My soul... console yourself... take heart..."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Fuggi, crudele, fuggi!\nLascia che mora anch'io\nOra ch'è morto, oh Dio!\nChi a me la vita diè.",
-            "translation": ""
+            "translation": "Flee, cruel one, flee!\nLet me die too\nNow that he is dead, oh God!\nHe who gave me life."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Senti, cor mio, deh senti,\nGuardami un solo istante,\nTi parla il caro amante\nChe vive sol per te.",
-            "translation": ""
+            "translation": "Listen, my heart, oh listen,\nLook at me for just a moment,\nThe dear lover speaks to you\nWho lives only for you."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Tu sei... perdon, mio bene...\nL'affanno mio... le pene...\nAh il padre mio dov'è?",
-            "translation": ""
+            "translation": "You are... forgive me, my love...\nMy anguish... my pains...\nAh, where is my father?"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Il padre... lascia, o cara,\nLa rimembranza amara...\nHai sposo e padre in me.",
-            "translation": ""
+            "translation": "The father... leave, my dear,\nThe bitter memory...\nYou have a husband and a father in me."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Ah vendicar, se il puoi,\nGiura quel sangue ognor.",
-            "translation": ""
+            "translation": "Ah, avenge yourself, if you can,\nSwear that blood forever."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Lo giuro agli occhi tuoi,\nLo giuro al nostro amor.",
-            "translation": ""
+            "translation": "I swear it to your eyes,\nI swear it to our love."
           },
           {
             "speaker": "ANNA, OTTAVIO",
             "speakerTranslation": "ANNA, OTTAVIO",
             "literalText": true,
             "original": "Che giuramento, oh Dei!\nChe barbaro momento!\nTra cento affetti e cento\nVammi ondeggiando il cor.",
-            "translation": ""
+            "translation": "What an oath, oh Gods!\nWhat a barbaric moment!\nAmid a hundred affections and a hundred\nGo swaying my heart."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "partono",
-            "translation": ""
+            "translation": "they leave"
           }
         ]
       }
@@ -556,210 +556,210 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Alba chiara. Strada",
-            "translation": ""
+            "translation": "Clear dawn. Road"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni, Leporello.",
-            "translation": ""
+            "translation": "Don Giovanni, Leporello."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Orsù, spìcciati presto... cosa vuoi?",
-            "translation": ""
+            "translation": "Come on, hurry up... what do you want?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "L'affar di cui si tratta\nÈ importante.",
-            "translation": ""
+            "translation": "The matter at hand\nIt's important."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Lo credo.",
-            "translation": ""
+            "translation": "I believe it."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "È importantissimo.",
-            "translation": ""
+            "translation": "It's very important."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Meglio ancora: finiscila.",
-            "translation": ""
+            "translation": "Better yet: finish it."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Giurate\nDi non andar in collera.",
-            "translation": ""
+            "translation": "Swear\nnot to get angry."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Lo giuro sul mio onore,\nPurché non parli del Commendatore.",
-            "translation": ""
+            "translation": "I swear on my honor,\nAs long as you don't mention the Commander."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Siamo soli?",
-            "translation": ""
+            "translation": "Are we alone?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Lo vedo.",
-            "translation": ""
+            "translation": "I see it."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Nessun ci sente.",
-            "translation": ""
+            "translation": "Nobody can hear us."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Via!",
-            "translation": ""
+            "translation": "Go!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Vi posso dire tutto\nLiberamente?",
-            "translation": ""
+            "translation": "Can I tell you everything\nfreely?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sì!",
-            "translation": ""
+            "translation": "Yes!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Dunque quand'è così:\nCaro signor padrone,\nLa vita che menate",
-            "translation": ""
+            "translation": "So when it's like this:\nDear master,\nThe life you lead"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "all'orecchio, ma forte",
-            "translation": ""
+            "translation": "in the ear, but loud"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "è da briccone!",
-            "translation": ""
+            "translation": "it's rascally!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Temerario! In tal guisa",
-            "translation": ""
+            "translation": "Daring! In this way"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "E il giuramento!...",
-            "translation": ""
+            "translation": "And the oath!..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Non so di giuramenti... taci... o ch'io...",
-            "translation": ""
+            "translation": "I don't know about oaths... shut up... or I..."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Non parlo più, non fiato, o padron mio.",
-            "translation": ""
+            "translation": "I no longer speak, I no longer breathe, my master."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Così saremo amici; or odi un poco,\nSai tu perché son qui?",
-            "translation": ""
+            "translation": "So we'll be friends; now listen a little,\nDo you know why I'm here?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Non ne so nulla:\nMa, essendo l'alba chiara, non sarebbe\nQualche nuova conquista?\nIo lo devo saper per porla in lista.",
-            "translation": ""
+            "translation": "I don't know anything about it:\nBut since it's a clear dawn, wouldn't it be\nSome new conquest?\nI need to know to put it on the list."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Va' là, che sei il grand'uom: sappi ch'io sono\nInnamorato d'una bella dama;\nE son certo che m'ama.\nLa vidi... le parlai... meco al casino\nQuesta notte verrà... Zitto: mi pare\nSentir odor di femmina...",
-            "translation": ""
+            "translation": "Go there, you great man: know that I am\nIn love with a beautiful lady;\nAnd I am certain that she loves me.\nI saw her... I spoke to her... with me at the casino\nTonight she will come... Hush: I think\nI smell a woman..."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "(Cospetto!\nChe odorato perfetto!)",
-            "translation": ""
+            "translation": "(My goodness!\nWhat a perfect sense of smell!)"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "All'aria mi par bella.",
-            "translation": ""
+            "translation": "It looks beautiful in the open air to me."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "(E che occhio, dico!)",
-            "translation": ""
+            "translation": "(And what an eye, I say!)"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Ritiriamoci un poco,\nE scopriamo terren.",
-            "translation": ""
+            "translation": "Let's retreat a little,\nAnd discover land."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Già prese fuoco.",
-            "translation": ""
+            "translation": "It already caught fire."
           }
         ]
       }
@@ -782,308 +782,308 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "I suddetti in disparte; Donn'Elvira in abito da viaggio.",
-            "translation": ""
+            "translation": "The aforementioned aside; Donna Elvira in traveling dress."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Ah chi mi dice mai\nQuel barbaro dov'è,\nChe per mio scorno amai,\nChe mi mancò di fé?\nAh se ritrovo l'empio\nE a me non torna ancor,\nVo' farne orrendo scempio,\nGli vo' cavar il cor.",
-            "translation": ""
+            "translation": "Ah, who will ever tell me\nWhere is that barbarian,\nWho to my shame I loved,\nWho failed me in faith?\nAh, if I find the wicked man\nAnd he never returns to me,\nI want to make a horrible mess of him,\nI want to tear out his heart."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Udisti? qualche bella\nDal vago abbandonata. Poverina!\nCerchiam di consolare il suo tormento.",
-            "translation": ""
+            "translation": "Did you hear? Some beautiful\nFrom the vague abandoned. Poor thing!\nLet's try to console her torment."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Così ne consolò mille e ottocento.",
-            "translation": ""
+            "translation": "Thus he consoled eighteen hundred of them."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Signorina!",
-            "translation": ""
+            "translation": "Miss!"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Chi è là?",
-            "translation": ""
+            "translation": "Who's there?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Stelle! che vedo!",
-            "translation": ""
+            "translation": "Stars! What do I see!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "O bella! Donna Elvira!",
-            "translation": ""
+            "translation": "Oh beautiful! Donna Elvira!"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Don Giovanni!\nSei qui, mostro, fellon, nido d'inganni!",
-            "translation": ""
+            "translation": "Don Giovanni!\nYou're here, monster, traitor, nest of deceit!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "da sé",
-            "translation": ""
+            "translation": "by itself"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "(Che titoli cruscanti! Manco male\nChe lo conosce bene.)",
-            "translation": ""
+            "translation": "(What a crunchy headline! Not bad,\nHe knows it well.)"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Via, cara Donn'Elvira,\nCalmate quella collera... sentite...\nLasciatemi parlar...",
-            "translation": ""
+            "translation": "Come on, dear Donna Elvira,\nCalm down that anger... listen...\nLet me speak..."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Cosa puoi dire,\nDopo azion sì nera? In casa mia\nEntri furtivamente. A forza d'arte,\nDi giuramenti e di lusinghe, arrivi\nA sedurre il cor mio;\nM'innamori, o crudele,\nMi dichiari tua sposa, e poi, mancando\nDella terra e del cielo al santo dritto,\nCon enorme delitto\nDopo tre dì da Burgos t'allontani,\nM'abbandoni, mi fuggi, e mi lasci in preda\nAl rimorso ed al pianto,\nPer pena forse che t'amai cotanto!",
-            "translation": ""
+            "translation": "What can you say,\nAfter such a black deed?\nYou enter my house furtively.\nBy force of art,\nOaths and flattery, you succeed\nTo seduce my heart;\nYou fall in love with me, cruel one,\nYou declare me your bride, and then, failing\nThe holy right of earth and heaven,\nWith enormous crime\nAfter three days from Burgos you depart,\nYou abandon me, you flee me, and you leave me prey\nTo remorse and tears,\nPerhaps out of pity for having loved you so much!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "da sé",
-            "translation": ""
+            "translation": "by itself"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "(Pare un libro stampato.)",
-            "translation": ""
+            "translation": "(It looks like a printed book.)"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Oh in quanto a questo\nEbbi le mie ragioni:",
-            "translation": ""
+            "translation": "Oh, and about that,\nI had my reasons:"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello",
-            "translation": ""
+            "translation": "to Leporello"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "È vero?",
-            "translation": ""
+            "translation": "It is true?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "È vero.",
-            "translation": ""
+            "translation": "It is true."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "ironicamente",
-            "translation": ""
+            "translation": "ironically"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "E che ragioni forti!",
-            "translation": ""
+            "translation": "And what strong reasons!"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "E quali sono,\nSe non la tua perfidia,\nLa leggerezza tua? ma il giusto cielo\nVolle ch'io ti trovassi\nPer far le sue, le mie vendette.",
-            "translation": ""
+            "translation": "And what are they,\nIf not your perfidy,\nYour frivolity? But the just heaven\nWanted me to find you\nTo take its, my revenge."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Eh via,\nSiate più ragionevole...\n(Mi pone\nA cimento costei.)\nSe non credete\nAl labbro mio, credete\nA questo galantuomo.",
-            "translation": ""
+            "translation": "Come on,\nBe more reasonable...\n(He puts me\nto the test.)\nIf you don't believe\nmy words, believe\nthis gentleman."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "da sé",
-            "translation": ""
+            "translation": "by itself"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "(Salvo il vero.)",
-            "translation": ""
+            "translation": "(Except for the truth.)"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello",
-            "translation": ""
+            "translation": "to Leporello"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Via, dille un poco...",
-            "translation": ""
+            "translation": "Come on, tell her a little..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "sottovoce",
-            "translation": ""
+            "translation": "in a low voice"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "E cosa devo dirle?",
-            "translation": ""
+            "translation": "And what should I tell her?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sì, sì, dille pur tutto.",
-            "translation": ""
+            "translation": "Yes, yes, tell her everything."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello",
-            "translation": ""
+            "translation": "to Leporello"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Ebben, fa' presto...",
-            "translation": ""
+            "translation": "Well, hurry up..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "In questo fra tempo Don Giovanni fugge.",
-            "translation": ""
+            "translation": "In the meantime Don Giovanni flees."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Madama... veramente... in questo mondo\nConciossia cosa quando fosse che\nIl quadro non è tondo...",
-            "translation": ""
+            "translation": "Madam... truly... in this world\nSince whatever happens,\nThe painting isn't round..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello",
-            "translation": ""
+            "translation": "to Leporello"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Sciagurato!\nCosì del mio dolor gioco ti prendi?",
-            "translation": ""
+            "translation": "Wretch!\nSo you're playing with my pain?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "verso Don Giovanni che non crede partito",
-            "translation": ""
+            "translation": "towards Don Giovanni who does not believe he has left"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Ah voi...",
-            "translation": ""
+            "translation": "Oh you..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "non vedendolo",
-            "translation": ""
+            "translation": "not seeing it"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Stelle! l'iniquo\nFuggì! misera me! dove? In qual parte...",
-            "translation": ""
+            "translation": "Stars! The wicked one\nFlee! Wretched me! Where? In what place..."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Eh lasciate che vada. Egli non merta\nChe di lui ci pensiate...",
-            "translation": ""
+            "translation": "Oh, let him go. He doesn't deserve\nthat you think about him..."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Il scellerato\nM'ingannò, mi tradì!",
-            "translation": ""
+            "translation": "The scoundrel\nHe deceived me, he betrayed me!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Eh consolatevi:\nNon siete voi, non foste e non sarete\nNé la prima né l'ultima; guardate\nQuesto non picciol libro: è tutto pieno\nDei nomi di sue belle;\nOgni villa, ogni borgo, ogni paese\nÈ testimon di sue donnesche imprese.\nMadamina, il catalogo è questo\nDelle belle che amò il padron mio,\nUn catalogo egli è che ho fatt'io,\nOsservate, leggete con me.\nIn Italia seicento e quaranta,\nIn Lamagna duecento e trent'una,\nCento in Francia, in Turchia novant'una,\nMa in Ispagna son già mille e tre.\nV'ha fra queste contadine,\nCameriere, cittadine,\nV'han contesse, baronesse,\nMarchesane, principesse,\nE v'han donne d'ogni grado,\nD'ogni forma, d'ogni età.\nNella bionda egli ha l'usanza\nDi lodar la gentilezza,\nNella bruna la costanza,\nNella bianca la dolcezza.\nVuol d'inverno la grassotta,\nVuol d'estate la magrotta;\nE la grande maestosa,\nLa piccina è ognor vezzosa.\nDelle vecchie fa conquista\nPel piacer di porle in lista;\nMa passion predominante\nÈ la giovin principiante.\nNon si picca se sia ricca,\nSe sia brutta, se sia bella:\nPurché porti la gonnella,\nVoi sapete quel che fa.",
-            "translation": ""
+            "translation": "Oh, console yourselves:\nIt is not you, you were not, and you will not be\nNeither the first nor the last; look\nThis is no small book: it is filled\nWith the names of his beauties;\nEvery village, every hamlet, every town\nIs testimony to his womanly exploits.\nMy lady, this is the catalogue\nOf the beauties my master loved,\nThis is a catalogue I have made,\nLook, read with me.\nIn Italy, six hundred and forty,\nIn Germany, two hundred and thirty-one,\nOne hundred in France, ninety-one in Turkey,\nBut in Spain, there are already a thousand and three.\nAmong these, there are peasant women,\nMaids, city women,\nThere are countesses, baronesses,\nMarquises, princesses,\nAnd there are women of every rank,\nOf every shape, of every age.\nIn the blonde he has the habit\nTo praise kindness,\nIn the brunette, constancy,\nIn the white, sweetness.\nHe wants the plump one in winter,\nHe wants the thin one in summer;\nAnd the tall one majestic,\nThe little one is always charming.\nHe conquers old women\nFor the pleasure of listing them;\nBut his predominant passion\nIs the young beginner.\nHe doesn't care if she's rich,\nIf she's ugly, or if she's beautiful:\nAs long as she wears a petticoat,\nYou know what she does."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "parte",
-            "translation": ""
+            "translation": "part"
           }
         ]
       }
@@ -1106,21 +1106,21 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Donn'Elvira sola.",
-            "translation": ""
+            "translation": "Donna Elvira alone."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "In questa forma, dunque,\nMi tradì il scellerato? È questo il premio\nChe quel barbaro rende all'amor mio?\nAh vendicar vogl'io\nL'ingannato mio cor: pria ch'ei mi fugga...\nSi ricorra... si vada... Io sento in petto\nSol vendetta parlar, rabbia, e dispetto.",
-            "translation": ""
+            "translation": "In this way, then,\nDid the scoundrel betray me? Is this the reward\nThat that barbarian pays for my love?\nAh, I want to avenge\nMy deceived heart: before he flees me...\nLet him turn back... let him go... I feel in my chest\nOnly vengeance, rage, and spite speak."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "parte",
-            "translation": ""
+            "translation": "part"
           }
         ]
       }
@@ -1143,49 +1143,49 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Masetto, Zerlina, e coro di contadini e contadine che suonano, ballano e cantano.",
-            "translation": ""
+            "translation": "Masetto, Zerlina, and a choir of peasants, both men and women, who play, dance, and sing."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Giovinette che fate all'amore,\nNon lasciate che passi l'età:\nSe nel seno vi bulica il core,\nIl rimedio vedetelo qua.\nLa la la, la la la, la la lera\nChe piacer, che piacer che sarà!",
-            "translation": ""
+            "translation": "Young girls who make love,\nDon't let age pass:\nIf your heart is boiling in your breast,\nSee the remedy here.\nLa la la, la la la, la la la la\nWhat a pleasure, what a pleasure it will be!"
           },
           {
             "speaker": "CONTADINE",
             "speakerTranslation": "CONTADINE",
             "literalText": true,
             "original": "La la la, la la la, la la lera\nChe piacer, che piacer che sarà!",
-            "translation": ""
+            "translation": "La la la, la la la, la la lera\nWhat a pleasure, what a pleasure it will be!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Giovinotti leggeri di testa,\nNon andate girando qua e là.\nPoco dura de' matti la festa,\nMa per me cominciato non ha.\nLa la la, la la la, la la lera\nChe piacer, che piacer che sarà!",
-            "translation": ""
+            "translation": "Light-headed young men,\nDon't go wandering around.\nThe madmen's party doesn't last long,\nBut for me it hasn't even begun.\nLa la la, la la la, la la la la\nWhat a pleasure, what a pleasure it will be!"
           },
           {
             "speaker": "CONTADINI",
             "speakerTranslation": "CONTADINI",
             "literalText": true,
             "original": "La la la, la la la, la la lera\nChe piacer, che piacer che sarà!",
-            "translation": ""
+            "translation": "La la la, la la la, la la lera\nWhat a pleasure, what a pleasure it will be!"
           },
           {
             "speaker": "ZERLINA, MASETTO",
             "speakerTranslation": "ZERLINA, MASETTO",
             "literalText": true,
             "original": "Vieni, vieni, carino carina e godiamo,\nE cantiamo e balliamo e saltiamo;\nVieni, vieni, carino carina e godiamo,\nChe piacer, che piacer che sarà!",
-            "translation": ""
+            "translation": "Come, come, sweetheart, and let's enjoy,\nAnd let's sing and dance and jump;\nCome, come, sweetheart, and let's enjoy,\nWhat a pleasure, what a pleasure it will be!"
           },
           {
             "speaker": "TUTTI",
             "speakerTranslation": "TUTTI",
             "literalText": true,
             "original": "La la la, la la la, la la lera\nChe piacer, che piacer che sarà!",
-            "translation": ""
+            "translation": "La la la, la la la, la la lera\nWhat a pleasure, what a pleasure it will be!"
           }
         ]
       }
@@ -1208,322 +1208,322 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Zerlina, Masetto, contadini, contadine, Don Giovanni e Leporello.",
-            "translation": ""
+            "translation": "Zerlina, Masetto, peasants, Don Giovanni and Leporello."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "entrando da sé",
-            "translation": ""
+            "translation": "entering by himself"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Manco male è partita.",
-            "translation": ""
+            "translation": "Not bad, it started."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "da parte a Leporello",
-            "translation": ""
+            "translation": "aside from Leporello"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Oh guarda, guarda\nChe bella gioventù! che belle donne!",
-            "translation": ""
+            "translation": "Oh look, look\nWhat beautiful youth! What beautiful women!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Tra tante per mia fé\nVi sarà qualche cosa anche per me.",
-            "translation": ""
+            "translation": "Among so many for my faith,\nThere will be something for me too."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Cari amici, buon giorno. Seguitate\nA stare allegramente,\nSeguitate a suonar, o buona gente.\nC'è qualche sposalizio?",
-            "translation": ""
+            "translation": "Dear friends, good morning. Continue\nto be merry,\nKeep playing, good people.\nIs there a wedding?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Sì, signore,\nE la sposa son io.",
-            "translation": ""
+            "translation": "Yes, sir,\nAnd I am the bride."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Me ne consolo.\nLo sposo?",
-            "translation": ""
+            "translation": "I console myself.\nShall I marry him?"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Io, per servirla.",
-            "translation": ""
+            "translation": "I, to serve her."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Oh bravo! per servirmi: questo è vero\nParlar da galantuomo!",
-            "translation": ""
+            "translation": "Oh, well done! To serve me: that's true.\nSpeak like a gentleman!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Basta che sia marito.",
-            "translation": ""
+            "translation": "As long as he's a husband."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Oh il mio Masetto\nÈ un uom d'ottimo core.",
-            "translation": ""
+            "translation": "Oh, my Masetto\nHe's a man with a great heart."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Oh anch'io, vedete!\nVoglio che siamo amici. Il vostro nome?",
-            "translation": ""
+            "translation": "Oh, me too, you see!\nI want us to be friends. Your name?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Zerlina.",
-            "translation": ""
+            "translation": "Zerlina."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "E il tuo?",
-            "translation": ""
+            "translation": "And yours?"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Masetto.",
-            "translation": ""
+            "translation": "Masetto."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Oh caro il mio Masetto!\nCara la mia Zerlina! v'esibisco\nLa mia protezione.",
-            "translation": ""
+            "translation": "Oh, my dear Masetto!\nMy dear Zerlina! I offer you\nmy protection."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello che fa scherzi alle altre contadine",
-            "translation": ""
+            "translation": "to Leporello who plays pranks on the other peasant women"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Leporello...\nCosa fai lì, birbone?",
-            "translation": ""
+            "translation": "Leporello...\nWhat are you doing there, you rascal?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Anch'io, caro padrone,\nEsibisco la mia protezione.",
-            "translation": ""
+            "translation": "I too, dear master,\nexhibit my protection."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Presto, va' con costor: nel mio palazzo\nConducili sul fatto; ordina ch'abbiano\nCioccolata, caffè, vini, presciutti;\nCerca divertir tutti,\nMostra loro il giardino,\nLa galleria, le camere; in effetto,\nFa' che resti contento il mio Masetto.\nHai capito?",
-            "translation": ""
+            "translation": "Quick, go with these people: to my palace\nTake them right away; order them to have\nChocolate, coffee, wines, ham;\nTry to amuse everyone,\nShow them the garden,\nThe gallery, the rooms; in fact,\nMake sure my Masetto is happy.\nDo you understand?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Ho capito.",
-            "translation": ""
+            "translation": "I understand."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "ai contadini",
-            "translation": ""
+            "translation": "to the farmers"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Andiam!",
-            "translation": ""
+            "translation": "Let's go!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Don Giovanni",
-            "translation": ""
+            "translation": "to Don Giovanni"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Signore...",
-            "translation": ""
+            "translation": "Gentleman..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Cosa c'è?",
-            "translation": ""
+            "translation": "What's up?"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "La Zerlina\nSenza me non può star.",
-            "translation": ""
+            "translation": "Zerlina\nShe can't live without me."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "In vostro loco\nCi sarà sua Eccellenza, e saprà bene\nFare le vostre parti.",
-            "translation": ""
+            "translation": "His Excellency will be there in your place,\nand he will know how to play your parts well."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Oh la Zerlina\nÈ in man d'un Cavalier: va' pur, fra poco\nElla meco verrà.",
-            "translation": ""
+            "translation": "Oh, Zerlina\nis in the hands of a knight: go now, she will come with me soon."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Va', non temere!\nNelle mani son io d'un cavaliere.",
-            "translation": ""
+            "translation": "Go, do not fear!\nI am in the hands of a knight."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "E per questo?",
-            "translation": ""
+            "translation": "And for this?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "E per questo\nNon c'è da dubitar...",
-            "translation": ""
+            "translation": "And for this\nThere's no doubt..."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Ed io, cospetto...",
-            "translation": ""
+            "translation": "And I, in front..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Olà, finiam le dispute: se subito\nSenz'altro replicar, non te ne vai,",
-            "translation": ""
+            "translation": "Hey, let's end the disputes: if you don't immediately\nreply without further ado,"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "mostrandogli la spada",
-            "translation": ""
+            "translation": "showing him the sword"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Masetto, guarda ben, ti pentirai.",
-            "translation": ""
+            "translation": "Masetto, look carefully, you'll regret it."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Ho capito, signorsì,\nChino il capo e me ne vo:\nGià che piace a voi così,\nAltre repliche non fo.\nCavalier voi siete già,\nDubitar non posso, affé;\nMe lo dice la bontà\nChe volete aver per me.",
-            "translation": ""
+            "translation": "I understand, yes, sir.\nI bow my head and go:\nSince it pleases you,\nI won't make any further reply.\nYou are already a gentleman,\nI cannot doubt, honestly;\nYour kindness tells me\nWhat you wish for me."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "da parte Zerlina",
-            "translation": ""
+            "translation": "from Zerlina"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Bricconaccia, malandrina,\nFosti ognor la mia ruina.",
-            "translation": ""
+            "translation": "You rascal, you little rascal,\nYou have always been my downfall."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello che lo vuol condur seco",
-            "translation": ""
+            "translation": "to Leporello who wants to take him with him"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Vengo, vengo!",
-            "translation": ""
+            "translation": "I'm coming, I'm coming!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Zerlina",
-            "translation": ""
+            "translation": "to Zerlina"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Resta, resta!\nÈ una cosa molto onesta:\nFaccia il nostro cavaliere\nCavaliera ancora te.",
-            "translation": ""
+            "translation": "Stay, stay!\nIt's a very honest thing:\nMake our knight\nKnight you again."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Leporello parte con Masetto e con gli altri contadini.",
-            "translation": ""
+            "translation": "Leporello leaves with Masetto and the other peasants."
           }
         ]
       }
@@ -1546,140 +1546,140 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni e Zerlina.",
-            "translation": ""
+            "translation": "Don Giovanni and Zerlina."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Alfin siamo liberati,\nZerlinetta gentil, da quel scioccone.\nChe ne dite, mio ben, so far pulito?",
-            "translation": ""
+            "translation": "We're finally free,\ngentle Zerlinetta, from that fool.\nWhat do you say, my love, do I know how to clean?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Signore, è mio marito...",
-            "translation": ""
+            "translation": "Sir, this is my husband..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Chi? colui?\nVi par che un'onest'uomo,\nUn nobil Cavalier, qual io mi vanto,\nPossa soffrir che quel visetto d'oro,\nQuel viso inzuccherato,\nDa un bifolcaccio vil sia strapazzato?",
-            "translation": ""
+            "translation": "Who? He?\nDo you think an honest man,\nA noble knight, such as I boast of,\nCould tolerate that little golden face,\nThat sugary face,\nBeing abused by a vile peasant?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ma, signor, io gli diedi\nParola di sposarlo.",
-            "translation": ""
+            "translation": "But, sir, I gave him\nmy word that I would marry him."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Tal parola\nNon vale un zero; voi non siete fatta\nPer esser paesana: un'altra sorte\nVi procuran quegli occhi bricconcelli,\nQuei labbretti sì belli,\nQuelle ditucce candide e odorose:\nParmi toccar giuncata, e fiutar rose.",
-            "translation": ""
+            "translation": "Such a word\nis worthless; you are not made\nto be a peasant: another fate\nthose mischievous little eyes,\nthose beautiful lips,\nthose white and fragrant little fingers,\nprovide you:\nI seem to touch rush and smell roses."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ah non vorrei...",
-            "translation": ""
+            "translation": "Oh, I don't want to..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Che non vorreste?",
-            "translation": ""
+            "translation": "What wouldn't you want?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Alfine\nIngannata restar; io so che rado\nColle donne voi altri cavalieri\nSiete onesti e sinceri.",
-            "translation": ""
+            "translation": "Finally\nI remain deceived; I know that you other gentlemen\nare rarely honest and sincere with women."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "È un'impostura\nDella gente plebea! La nobiltà\nHa dipinta negli occhi l'onestà\nOrsù, non perdiam tempo: in questo istante\nIo vi voglio sposar.",
-            "translation": ""
+            "translation": "It's a sham\nOf the common people! The nobility\nHas honesty painted in its eyes\nCome on, let's not waste time: right now\nI want to marry you."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Voi?",
-            "translation": ""
+            "translation": "You?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Certo, io.\nQuel casinetto è mio: soli saremo,\nE là, gioiello mio, ci sposeremo.\nLà ci darem la mano,\nLà mi dirai di sì.\nVedi non è lontano:\nPartiam, ben mio, di qui.",
-            "translation": ""
+            "translation": "Of course, me.\nThat little house is mine: we'll be alone,\nAnd there, my jewel, we'll marry.\nThere we'll hold hands,\nThere you'll say yes to me.\nSee, it's not far:\nLet's leave, my love, from here."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Vorrei, e non vorrei,\nMi trema un poco il cor;\nFelice, è ver, sarei;\nMa può burlarmi ancor.",
-            "translation": ""
+            "translation": "I would like to, and I wouldn't,\nMy heart trembles a little;\nHappy, it's true, I would be;\nBut he can still mock me."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Vieni, mio bel diletto.",
-            "translation": ""
+            "translation": "Come, my beautiful darling."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Mi fa pietà Masetto.",
-            "translation": ""
+            "translation": "I feel sorry for Masetto."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Io cangerò tua sorte.",
-            "translation": ""
+            "translation": "I will change your fate."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Presto non son più forte.",
-            "translation": ""
+            "translation": "Soon I'm no longer strong."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Andiam, andiam!",
-            "translation": ""
+            "translation": "Let's go, let's go!"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Andiam!",
-            "translation": ""
+            "translation": "Let's go!"
           },
           {
             "speaker": "ZERLINA, DON GIOVANNI",
             "speakerTranslation": "ZERLINA, DON GIOVANNI",
             "literalText": true,
             "original": "Andiam, andiam, mio bene,\nA ristorar le pene\nD'un innocente amor.",
-            "translation": ""
+            "translation": "Let's go, let's go, my love,\nTo soothe the pains\nOf an innocent love."
           }
         ]
       }
@@ -1702,91 +1702,91 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "I suddetti e Donn'Elvira che ferma con atti disperatissimi Don Giovanni.",
-            "translation": ""
+            "translation": "The aforementioned and Donna Elvira who stops Don Giovanni with desperate acts."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Férmati, scellerato: il ciel mi fece\nUdir le tue perfidie; io sono a tempo\nDi salvar questa misera innocente\nDal tuo barbaro artiglio.",
-            "translation": ""
+            "translation": "Stop, you scoundrel: heaven made me\nHear your perfidious deeds; I have the time\nTo save this wretched innocent\nFrom your barbarous claws."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Meschina, cosa sento!",
-            "translation": ""
+            "translation": "Poor thing, what do I hear!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Amor, consiglio!",
-            "translation": ""
+            "translation": "Love, advice!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Elvira piano",
-            "translation": ""
+            "translation": "to Donna Elvira quietly"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Idol mio, non vedete\nCh'io voglio divertirmi...",
-            "translation": ""
+            "translation": "My idol, can't you see\nthat I want to have fun..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "ad alta voce",
-            "translation": ""
+            "translation": "aloud"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Divertirti?\nÈ vero! divertirti! Io so, crudele,\nCome tu ti diverti...",
-            "translation": ""
+            "translation": "Have fun?\nThat's right! Have fun! I know, cruel one,\nhow much fun you have..."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ma, signor cavaliere...\nÈ ver quel ch'ella dice?",
-            "translation": ""
+            "translation": "But, Sir Knight...\nIs what she says true?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "piano a Zerlina",
-            "translation": ""
+            "translation": "plan to Zerlina"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "La povera infelice\nÈ di me innamorata,\nE per pietà deggio fingere amore;\nCh'io son, per mia disgrazia, uom di buon core.",
-            "translation": ""
+            "translation": "The poor unfortunate\nShe is in love with me,\nAnd out of pity I must feign love;\nFor I am, unfortunately, a man of good heart."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Ah fuggi il traditor,\nNon lo lasciar più dir:\nIl labbro è mentitor,\nFallace il ciglio.\nDa' miei tormenti impara\nA creder a quel cor,\nE nasca il tuo timor\nDal mio periglio.",
-            "translation": ""
+            "translation": "Ah, flee the traitor,\nDo not let him speak any more:\nHis lips are deceitful,\nHis brows are deceitful.\nFrom my torments, learn\nTo believe that heart,\nAnd let your fear arise\nFrom my peril."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "parte, conducendo seco Zerlina",
-            "translation": ""
+            "translation": "he leaves, taking Zerlina with him"
           }
         ]
       }
@@ -1809,84 +1809,84 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni solo; poi Don Ottavio e Donn'Anna.",
-            "translation": ""
+            "translation": "Don Giovanni alone; then Don Ottavio and Donna Anna."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Mi par ch'oggi il demonio si diverta\nD'opporsi a' miei piacevoli progressi;\nVanno mal tutti quanti.",
-            "translation": ""
+            "translation": "It seems to me that today the devil is enjoying himself\nBy opposing my pleasant progress;\nEverything is going badly."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Anna, insieme con la quale entra",
-            "translation": ""
+            "translation": "to Donna Anna, together with whom he enters"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Ah ch'ora, idolo mio, son vani i pianti!\nDi vendetta si parli... Ah Don Giovanni!",
-            "translation": ""
+            "translation": "Ah, now, my idol, my tears are in vain!\nLet us speak of revenge... Ah, Don Giovanni!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Mancava questo, inver!",
-            "translation": ""
+            "translation": "This was missing, inver!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Don Giovanni",
-            "translation": ""
+            "translation": "to Don Giovanni"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Signore, a tempo\nVi ritroviam: avete core, avete\nAnima generosa?",
-            "translation": ""
+            "translation": "Lord, in time\nWe find you again: do you have heart, do you\nhave a generous soul?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "(Sta' a vedere\nChe il diavolo le ha detto qualche cosa.)\nChe domanda! perché?",
-            "translation": ""
+            "translation": "(Just wait and see\nThe devil told her something.)\nWhat a question! Why?"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Bisogno abbiamo\nDella vostra amicizia.",
-            "translation": ""
+            "translation": "We need\nyour friendship."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "(Mi torna il fiato in corpo.)\nComandate:\nI congiunti, i parenti,",
-            "translation": ""
+            "translation": "(My breath comes back to me.)\nCommand:\nRelatives, relatives,"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "con molto foco",
-            "translation": ""
+            "translation": "with a lot of fire"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Questa man, questo ferro, i beni, il sangue\nSpenderò per servirvi:\nMa voi, bella Donn'Anna,\nPerché così piangete?\nIl crudele chi fu che osò la calma\nTurbar del viver vostro...",
-            "translation": ""
+            "translation": "This hand, this sword, the goods, the blood\nI will spend to serve you:\nBut you, beautiful Donna Anna,\nWhy do you weep thus?\nWho was the cruel one who dared to disturb the calm\nof your life..."
           }
         ]
       }
@@ -1909,252 +1909,252 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "I suddetti; Donn'Elvira.",
-            "translation": ""
+            "translation": "The above mentioned; Donna Elvira."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Ah ti ritrovo ancor, perfido mostro!\nNon ti fidar, o misera,\nDi quel ribaldo cor!\nMe già tradì, quel barbaro:\nTe vuol tradir ancor.",
-            "translation": ""
+            "translation": "Ah, I find you again, perfidious monster!\nDo not trust, oh wretched one,\nthat rascal's heart!\nHe has already betrayed me, that barbarian:\nHe wants to betray you again."
           },
           {
             "speaker": "ANNA, OTTAVIO",
             "speakerTranslation": "ANNA, OTTAVIO",
             "literalText": true,
             "original": "Cieli! che aspetto nobile!\nChe dolce maestà!\nIl suo pallor, le lagrime,\nM'empiono di pietà.",
-            "translation": ""
+            "translation": "Heavens! What a noble countenance!\nWhat sweet majesty!\nHis pallor, his tears,\nFill me with pity."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte, Donn'Elvira ascolta",
-            "translation": ""
+            "translation": "aside, Donna Elvira listens"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "La povera ragazza\nÈ pazza, amici miei;\nLasciatemi con lei,\nForse si calmerà.",
-            "translation": ""
+            "translation": "The poor girl\nShe's crazy, my friends;\nLeave me with her.\nPerhaps she'll calm down."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Ah non credete al perfido!",
-            "translation": ""
+            "translation": "Ah, don't believe the wicked man!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "È pazza, non badate.",
-            "translation": ""
+            "translation": "She's crazy, don't mind."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Restate ancor, restate!",
-            "translation": ""
+            "translation": "Stay still, stay still!"
           },
           {
             "speaker": "ANNA, OTTAVIO",
             "speakerTranslation": "ANNA, OTTAVIO",
             "literalText": true,
             "original": "A chi si crederà!",
-            "translation": ""
+            "translation": "Who will be believed!"
           },
           {
             "speaker": "ANNA, OTTAVIO, DON GIOVANNI",
             "speakerTranslation": "ANNA, OTTAVIO, DON GIOVANNI",
             "literalText": true,
             "original": "Certo moto d'ignoto tormento\nDentro l'alma girare mi sento,\nChe mi dice per quell'infelice\nCento cose che intender non sa.",
-            "translation": ""
+            "translation": "I feel a certain stirring of unknown torment\nWithin my soul,\nwhich tells me for that unfortunate\nwoman a hundred things she cannot understand."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Sdegno, rabbia, dispetto, tormento\nDentro l'alma girare mi sento,\nChe mi dice di quel traditore\nCento cose che intender non sa.",
-            "translation": ""
+            "translation": "Disdain, anger, spite, torment\nI feel my soul swirling,\nWhat tells me about that traitor\nA hundred things he cannot understand."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Io di qua non vado via,\nSe non so com'è l'affar.",
-            "translation": ""
+            "translation": "I'm not leaving here,\nunless I know what's going on."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Non ha l'aria di pazzia\nIl suo volto, il suo parlar.",
-            "translation": ""
+            "translation": "He doesn't look mad.\nHis face, his speech."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Se men vado, si potria\nQualche cosa sospettar.",
-            "translation": ""
+            "translation": "If I leave, one might suspect\nsomething."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Da quel ceffo si dovria\nLa ner'alma giudicar.",
-            "translation": ""
+            "translation": "By that face one should judge\nthe black soul."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Don Giovanni",
-            "translation": ""
+            "translation": "to Don Giovanni"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Dunque, quella?",
-            "translation": ""
+            "translation": "So, that one?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "È pazzerella.",
-            "translation": ""
+            "translation": "She's crazy."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Elvira",
-            "translation": ""
+            "translation": "to Donna Elvira"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Dunque, quegli?",
-            "translation": ""
+            "translation": "So, those?"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "È un traditore.",
-            "translation": ""
+            "translation": "He is a traitor."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Infelice!",
-            "translation": ""
+            "translation": "Unhappy!"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Mentitore!",
-            "translation": ""
+            "translation": "Liar!"
           },
           {
             "speaker": "ANNA, OTTAVIO",
             "speakerTranslation": "ANNA, OTTAVIO",
             "literalText": true,
             "original": "Incomincio a dubitar.",
-            "translation": ""
+            "translation": "I'm starting to doubt."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "piano a Donn'Elvira",
-            "translation": ""
+            "translation": "piano to Donna Elvira"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Zitto, zitto, ché la gente\nSi raduna a noi d'intorno.\nSiate un poco più prudente,\nVi farete criticar.",
-            "translation": ""
+            "translation": "Hush, hush, for the people\nare gathering around us.\nBe a little more careful,\nyou'll get criticized."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "forte a Don Giovanni",
-            "translation": ""
+            "translation": "strong to Don Giovanni"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Non sperarlo, o scellerato:\nHo perduto la prudenza.\nLe tue colpe ed il mio stato\nVoglio a tutti palesar.",
-            "translation": ""
+            "translation": "Don't hope so, you scoundrel:\nI have lost my prudence.\nI want to reveal your sins and my condition\nto everyone."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "parte",
-            "translation": ""
+            "translation": "part"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte, guardando Don Giovanni",
-            "translation": ""
+            "translation": "aside, watching Don Giovanni"
           },
           {
             "speaker": "ANNA, OTTAVIO",
             "speakerTranslation": "ANNA, OTTAVIO",
             "literalText": true,
             "original": "Quegli accenti sì sommessi,\nQuel cangiarsi di colore,\nSon indizi troppo espressi,\nChe mi fan determinar.",
-            "translation": ""
+            "translation": "Those low accents,\nThat changing color,\nAre too clear clues,\nThat make me decide."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Povera sventurata! i passi suoi\nVoglio seguir: non voglio\nChe faccia un precipizio.\nPerdonate, bellissima Donn'Anna:\nSe servirvi poss'io,\nIn mia casa v'aspetto. Amici, addio.",
-            "translation": ""
+            "translation": "Poor unfortunate woman! I want to follow her steps: I don't want her to fall into a precipice.\nForgive me, beautiful Donna Anna:\nIf I can serve you,\nI await you in my house. Friends, farewell."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "parte",
-            "translation": ""
+            "translation": "part"
           }
         ]
       }
@@ -2177,119 +2177,119 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Donn'Anna e Don Ottavio.",
-            "translation": ""
+            "translation": "Donna Anna and Don Ottavio."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Don Ottavio, son morta!",
-            "translation": ""
+            "translation": "Don Ottavio, I'm dead!"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Cosa è stato?",
-            "translation": ""
+            "translation": "What was it?"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Per pietà, soccorretemi!",
-            "translation": ""
+            "translation": "Please help me!"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Mio bene...\nFate coraggio!",
-            "translation": ""
+            "translation": "My love...\nBe brave!"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Oh Dei! Quegli è il carnefice\nDel padre mio.",
-            "translation": ""
+            "translation": "Oh gods! That's my father's executioner."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Che dite...",
-            "translation": ""
+            "translation": "What do you say..."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Non dubitate più: gli ultimi accenti\nChe l'empio proferì tutta la voce\nRichiamar nel cor mio di quell'indegno\nChe nel mio appartamento...",
-            "translation": ""
+            "translation": "Doubt no more: the last words\nThat the wicked man uttered, all his voice\nRecall to my heart that unworthy\nWho in my apartment..."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Oh ciel! possibile\nChe sotto il sacro manto d'amicizia...\nMa come fu, narratemi,\nLo strano avvenimento.",
-            "translation": ""
+            "translation": "Oh heavens! Is it possible\nthat under the sacred cloak of friendship...\nBut how was it, tell me,\nThe strange event."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Era già alquanto\nAvanzata la notte,\nQuando nelle mie stanze, ove soletta\nMi trovai per sventura, entrar io vidi\nIn un mantello avvolto\nUn uom che al primo istante\nAvea preso per voi:\nMa riconobbi poi\nChe un inganno era il mio.",
-            "translation": ""
+            "translation": "It was already quite\nadvanced into the night,\nwhen I entered my rooms, where\nI had unfortunately found myself alone,\nand saw, wrapped in a cloak,\na man whom at first\nI had mistaken for you:\nBut I later recognized\nThat I had been deceiving myself."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "con affanno",
-            "translation": ""
+            "translation": "with difficulty"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Stelle! seguite.",
-            "translation": ""
+            "translation": "Stars! Follow."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Tacito a me s'appressa,\nE mi vuol abbracciar: sciogliermi cerco,\nEi più mi stringe; grido:\nNon vien alcun. Con una mano cerca\nD'impedire la voce,\nE coll'altra m'afferra\nStretta così, che già mi credo vinta.",
-            "translation": ""
+            "translation": "Silently he approaches me,\nAnd wants to embrace me: I try to free myself,\nHe squeezes me tighter; I cry out:\nNo one is coming. With one hand he tries\nTo block my voice,\nAnd with the other he grabs me,\nSo tightly, that I already think I'm defeated."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Perfido! e alfin?",
-            "translation": ""
+            "translation": "Wicked! and finally?"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Alfin il duol, l'orrore\nDell'infame attentato\nAccrebbe sì la lena mia, che, a forza\nDi svincolarmi, torcermi e piegarmi,\nDa lui mi sciolsi.",
-            "translation": ""
+            "translation": "Finally the grief, the horror\nof the infamous attack\nso increased my strength that, by force\nof freeing myself, twisting and bending,\nI freed myself from him."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Oimè! respiro.",
-            "translation": ""
+            "translation": "Oh dear! I'm breathing."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Allora\nRinforzo i stridi miei, chiamo soccorso,\nFugge il fellon, arditamente il seguo\nFin nella strada per fermarlo, e sono\nAssalitrice d'assalita. Il padre\nV'accorre, vuol conoscerlo, e l'iniquo,\nChe del povero vecchio era più forte,\nCompie il misfatto suo col dargli morte.\nOr sai chi l'onore\nRapire a me volse,\nChi fu il traditore,\nChe il padre mi tolse;\nVendetta ti chiedo;\nLa chiede il tuo cor.\nRammenta la piaga\nDel misero seno,\nRimira di sangue\nCoperto il terreno,\nSe l'ira in te langue\nD'un giusto furor.",
-            "translation": ""
+            "translation": "Then\nI reinforce my cries, I call for help,\nThe felon flees, I boldly follow him\nEven into the street to stop him, and I am\nThe assailant of the attacked. The father\nruns, wants to know him, and the wicked man,\nWho was stronger than the poor old man,\nCarries out his crime by killing him.\nNow do you know who wanted\nto steal my honor,\nWho was the traitor,\nWho took my father from me;\nRevenge I ask of you;\nYour heart demands it.\nRemember the wound\nof my wretched breast,\nLook at the ground covered with blood,\nIf the anger within you languishes\nWith a just fury."
           }
         ]
       }
@@ -2312,35 +2312,35 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Ottavio solo.",
-            "translation": ""
+            "translation": "Don Ottavio alone."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Come mai creder deggio\nDi sì nero delitto\nCapace un Cavaliero!\nAh di scoprire il vero\nOgni mezzo si cerchi; io sento in petto\nE di sposo e d'amico\nIl dover che mi parla:\nDisingannarla voglio, o vendicarla.",
-            "translation": ""
+            "translation": "How can I ever believe\nOf such a black crime\nA Knight capable!\nAh, to discover the truth\nLet every means be sought; I feel in my heart\nBoth as husband and as friend\nThe duty that speaks to me:\nI want to undeceive her, or avenge her."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "parte",
-            "translation": ""
+            "translation": "part"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Dalla sua pace\nLa mia dipende,\nQuel che a lei piace\nVita mi rende,\nQuel che le incresce\nMorte mi dà.\nS'ella sospira,\nSospiro anch'io;\nÈ mia quell'ira,\nQuel pianto è mio;\nE non ho bene,\ns'ella non l'ha.",
-            "translation": ""
+            "translation": "On her peace\nMine depends,\nWhat pleases her\nShe gives me life,\nWhat displeases her\nShe gives me death.\nIf she sighs,\nI sigh too;\nThat anger is mine,\nThat weeping is mine;\nAnd I have no good,\nif she has none."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "parte",
-            "translation": ""
+            "translation": "part"
           }
         ]
       }
@@ -2363,182 +2363,182 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Leporello solo; poi Don Giovanni.",
-            "translation": ""
+            "translation": "Leporello alone; then Don Giovanni."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Io deggio ad ogni patto\nPer sempre abbandonar questo bel matto!\nEccolo qui: guardate\nCon qual indifferenza se ne viene!",
-            "translation": ""
+            "translation": "I must, at any rate,\nForever abandon this beautiful madman!\nHere he is: look,\nWith what indifference he comes!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Oh Leporello mio, va tutto bene!",
-            "translation": ""
+            "translation": "Oh my Leporello, everything is fine!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Don Giovannino mio, va tutto male!",
-            "translation": ""
+            "translation": "My little Don Giovanni, everything is going badly!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Come va tutto male?",
-            "translation": ""
+            "translation": "How is everything going wrong?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Vado a casa,\nCome voi m'ordinaste,\nCon tutta quella gente...",
-            "translation": ""
+            "translation": "I'm going home,\nAs you ordered,\nWith all those people..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Bravo!",
-            "translation": ""
+            "translation": "Bravo!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "A forza\nDi chiacchiere, di vezzi e di bugie,\nCh'ho imparato sì bene a star con voi,\nCerco d'intrattenerli...",
-            "translation": ""
+            "translation": "By force\nOf chatter, of charms, and of lies,\nI've learned so well from being with you,\nI try to entertain them..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Bravo!",
-            "translation": ""
+            "translation": "Bravo!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Dico\nMille cose a Masetto per placarlo,\nPer trargli dal pensier la gelosia...",
-            "translation": ""
+            "translation": "I say\na thousand things to Masetto to appease him,\nto drive jealousy from his thoughts..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Bravo, in coscienza mia!",
-            "translation": ""
+            "translation": "Well done, in my conscience!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Faccio che bevano\nE gli uomini e le donne:\nSon già mezzi ubbriachi,\nAltri canta, altri scherza,\nAltri séguita a ber; in sul più bello,\nChi credete che càpiti?",
-            "translation": ""
+            "translation": "I make them drink\nAnd the men and women:\nThey're already half drunk,\nSome sing, some joke,\nSome keep drinking; at the best moment,\nWho do you think will arrive?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Zerlina!",
-            "translation": ""
+            "translation": "Zerlina!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Bravo! E con lei chi viene?",
-            "translation": ""
+            "translation": "Good! And who's coming with her?"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Donna Elvira!",
-            "translation": ""
+            "translation": "Lady Elvira!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Bravo! e disse di voi",
-            "translation": ""
+            "translation": "Bravo! and he said about you"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Tutto quel mal che in bocca le venia.",
-            "translation": ""
+            "translation": "All that pain that came into her mouth."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Bravo, in coscienza mia!",
-            "translation": ""
+            "translation": "Well done, in my conscience!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "E tu cosa facesti?",
-            "translation": ""
+            "translation": "And what did you do?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Tacqui.",
-            "translation": ""
+            "translation": "I was silent."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Ed ella?",
-            "translation": ""
+            "translation": "And her?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Seguì a gridar.",
-            "translation": ""
+            "translation": "He continued screaming."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "E tu?",
-            "translation": ""
+            "translation": "And you?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Quando mi parve\nChe già fosse sfogata, dolcemente\nFuor dell'orto la trassi, e con bell'arte,\nChiusa la porta a chiave, io mi cavai,\nE sulla via soletta la lasciai.",
-            "translation": ""
+            "translation": "When it seemed to me\nThat she had already vented her anger, I gently\nLeft her out of the garden, and with fine art,\nLocking the door, I got out,\nAnd left her alone on the street."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Bravo, bravo, arcibravo!\nL'affar non può andar meglio: incominciasti,\nIo saprò terminar. Troppo mi premono\nQueste contadinotte;\nLe voglio divertir finché vien notte.\nFin ch'han dal vino\nCalda la testa,\nUna gran festa\nFa' preparar.\nSe trovi in piazza\nQualche ragazza,\nTeco ancor quella\nCerca menar.\nSenza alcun ordine\nLa danza sia,\nChi 'l minuetto,\nChi la follia,\nChi l'alemanna\nFarai ballar.\nEd io fra tanto,\nDall'altro canto,\nCon questa e quella\nVo' amoreggiar.\nAh la mia lista\nDoman mattina\nD'una decina\nDevi aumentar.",
-            "translation": ""
+            "translation": "Bravo, bravo, very brave!\nThe business can't go better: you started,\nI'll know how to finish. I'm too pressed\nby these peasant girls;\nI want to amuse them until nightfall.\nWhile their heads are hot from the wine,\nHave a great party\nprepared.\nIf you find in the square\nSome girl,\nTry to lead her too\nWith you.\nWithout any order\nLet there be a dance,\nSome the minuet,\nSome the folly,\nSome the German,\nYou will make them dance.\nAnd I in the meantime,\nOn the other hand,\nWith this one and that one\nI want to flirt.\nAh, my list\nTomorrow morning\nYou must increase\nBy about ten."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "partono",
-            "translation": ""
+            "translation": "they leave"
           }
         ]
       }
@@ -2561,175 +2561,175 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Giardino di Don Giovanni con due porte chiuse a chiave per di fuori; nel fondo il palazzo illuminato; due nicchie ai lati.",
-            "translation": ""
+            "translation": "Don Giovanni's garden with two locked doors leading outside; the illuminated palace in the background; two niches on the sides."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Masetto e Zerlina; Coro di contadini e di contadine sparse qua e là che dormono e sedono sopra sofà d'erbe.",
-            "translation": ""
+            "translation": "Masetto and Zerlina; Chorus of peasants, both men and women, scattered here and there, sleeping and sitting on grassy sofas."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Masetto: senti un po'! Masetto, dico!",
-            "translation": ""
+            "translation": "Masetto: Listen! Masetto, I'm talking!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Non mi toccar.",
-            "translation": ""
+            "translation": "Don't touch me."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Perché?",
-            "translation": ""
+            "translation": "Why?"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Perché mi chiedi?\nPerfida! il tatto sopportar dovrei\nD'una man infedele?",
-            "translation": ""
+            "translation": "Why do you ask me?\nWicked one! Should I endure the touch\nof an unfaithful hand?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ah no: taci crudele!\nIo non merto da te tal trattamento!",
-            "translation": ""
+            "translation": "Oh no: shut up, cruel one!\nI don't deserve such treatment from you!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Come! ed hai l'ardimento di scusarti?\nStar sola con un uom; abbandonarmi\nIl dì delle mie nozze! porre in fronte\nA un villano d'onore\nQuesta marca d'infamia! Ah se non fosse,\nSe non fosse lo scandalo vorrei...",
-            "translation": ""
+            "translation": "What! And you have the audacity to apologize?\nTo be alone with a man; to abandon me\nOn my wedding day! To place in the face\nOf a villain of honor\nThis mark of infamy! Ah, if it weren't,\nIf it weren't the scandal, I would..."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ma se colpa io non ho! ma se da lui\nIngannata rimasi... E poi, che temi?\nTranquìllati, mia vita:\nNon mi toccò la punta delle dita.\nNon me lo credi? Ingrato!\nVien qui; sfògati; ammazzami, fa' tutto\nDi me quel che ti piace;\nMa poi, Masetto mio, ma poi fa' pace.\nBatti, batti, o bel Masetto,\nLa tua povera Zerlina:\nStarò qui come agnellina\nLe tue bòtte ad aspettar.\nLascerò straziarmi il crine,\nLascerò cavarmi gli occhi;\nE le care tue manine\nLieta poi saprò baciar.\nAh lo vedo, non hai core!\nPace, pace, o vita mia!\nIn contenti ed allegria\nNotte e dì vogliam passar.",
-            "translation": ""
+            "translation": "But if I'm not to blame! But if I was deceived by him... And then, what are you afraid of?\nCalm down, my life:\nHe didn't touch the tips of my fingers.\nDon't you believe me? Ungrateful!\nCome here; vent your anger; kill me, do everything\nwith me as you please;\nBut then, my Masetto, but then make peace.\nBeat, beat, oh handsome Masetto,\nYour poor Zerlina:\nI'll stay here like a little lamb\nWaiting for your blows.\nI'll let my hair be torn,\nI'll let my eyes be gouged out;\nAnd then I'll know how to happily kiss your dear little hands.\nAh, I see, you have no heart!\nPeace, peace, oh my life!\nIn happiness and joy\nWe want to spend night and day."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Guarda un po' come seppe\nQuesta strega sedurmi! siamo pure\nI deboli di testa!",
-            "translation": ""
+            "translation": "Look how she knew how to seduce\nthis witch! We're also\nweak-minded!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "di dentro",
-            "translation": ""
+            "translation": "inside"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sia preparato tutto a una gran festa!",
-            "translation": ""
+            "translation": "Let everything be prepared for a great party!"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ah Masetto, Masetto! odi la voce\nDel monsù cavaliero!",
-            "translation": ""
+            "translation": "Ah, Masetto, Masetto! Do you hear the voice\nof the gentleman knight?"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Ebben, che c'è?",
-            "translation": ""
+            "translation": "Well, what is it?"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Verrà!",
-            "translation": ""
+            "translation": "He will come!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Lascia che venga.",
-            "translation": ""
+            "translation": "Let it come."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ah se vi fosse\nUn buco da fuggir!",
-            "translation": ""
+            "translation": "Ah, if only there were\nA hole to escape from!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Di cosa temi?\nPerché diventi pallida? Ah capisco.\nCapisco, bricconcella!\nHai timor ch'io comprenda\nCom'è tra voi passata la faccenda.\nPresto presto pria ch'ei venga\nPor mi vo' da qualche lato:\nC'è una nicchia... qui celato\nCheto, cheto mi vo' star.",
-            "translation": ""
+            "translation": "What are you afraid of?\nWhy are you turning pale? Ah, I understand.\nI understand, little rascal!\nYou're afraid I'll understand\nHow things went down between you.\nQuick, hurry before he comes\nSo I'm going somewhere:\nThere's a niche... hidden here\nQuiet, quiet, I want to stay."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Senti senti... dove vai!\nNon t'asconder, o Masetto!\nSe ti trova, poveretto,\nTu non sai quel che può far.",
-            "translation": ""
+            "translation": "Listen, listen... where are you going?\nDon't hide, Masetto!\nIf he finds you, poor thing,\nYou don't know what he can do."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Faccia, dica quel che vuole!",
-            "translation": ""
+            "translation": "Go ahead, say what you want!"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ah non giovan le parole!",
-            "translation": ""
+            "translation": "Ah, words are of no use!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Parla forte, e qui t'arresta!",
-            "translation": ""
+            "translation": "Speak loudly, and stop here!"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Che capriccio ha nella testa!\nQuell'ingrato, quel crudele\nOggi vuol precipitar.",
-            "translation": ""
+            "translation": "What a whim he has in his head!\nThat ungrateful, cruel man\nToday he wants to fall."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Capirò se m'è fedele,\nE in qual modo andò l'affar.",
-            "translation": ""
+            "translation": "I'll understand if he's faithful to me,\nand how the matter went."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "entra nella nicchia",
-            "translation": ""
+            "translation": "enter the niche"
           }
         ]
       }
@@ -2752,42 +2752,42 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Zerlina; Don Giovanni con quattro servi nobilmente vestiti.",
-            "translation": ""
+            "translation": "Zerlina; Don Giovanni with four nobly dressed servants."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sù, svegliatevi, da bravi,\nSù, coraggio, o buona gente!\nVogliam stare allegramente,\nVogliam ridere e scherzar.",
-            "translation": ""
+            "translation": "Come on, wake up, good people!\nCome on, cheer up, good people!\nWe want to be happy,\nWe want to laugh and joke."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "ai servi",
-            "translation": ""
+            "translation": "to the servants"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Alla stanza della danza\nConducete tutti quanti,\nEd a tutti in abbondanza\nGran rinfreschi fate dar.",
-            "translation": ""
+            "translation": "To the dance hall\nBring everyone in,\nAnd give everyone plenty of\nrefreshments."
           },
           {
             "speaker": "SERVI",
             "speakerTranslation": "SERVI",
             "literalText": true,
             "original": "Sù, svegliatevi, da bravi,\nSù, coraggio, o buona gente!\nVogliam stare allegramente,\nVogliam ridere e scherzar.",
-            "translation": ""
+            "translation": "Come on, wake up, good people!\nCome on, cheer up, good people!\nWe want to be happy,\nWe want to laugh and joke."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "partono i servi e i contadini",
-            "translation": ""
+            "translation": "the servants and peasants leave"
           }
         ]
       }
@@ -2810,175 +2810,175 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni, Zerlina; Masetto nella nicchia.",
-            "translation": ""
+            "translation": "Don Giovanni, Zerlina; Masetto in the niche."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Tra quest'arbori celata\nSi può dar che non mi veda.",
-            "translation": ""
+            "translation": "Hidden among these trees\nPerhaps he won't see me."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "vuol nascondersi",
-            "translation": ""
+            "translation": "he wants to hide"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Zerlinetta mia garbata,\nT'ho già visto, non scappar.",
-            "translation": ""
+            "translation": "My gracious little Zerlinetta,\nI've already seen you, don't run away."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "la prende",
-            "translation": ""
+            "translation": "he takes it"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ah lasciatemi andar via...",
-            "translation": ""
+            "translation": "Oh let me go away..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "No, no, resta, gioia mia!",
-            "translation": ""
+            "translation": "No, no, stay, my darling!"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Se pietade avete in core...",
-            "translation": ""
+            "translation": "If you have pity in your heart..."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sì, ben mio, son tutto amore.\nVieni un poco in questo loco,\nFortunata io ti vo' far.",
-            "translation": ""
+            "translation": "Yes, my love, I am all love.\nCome to this place for a moment,\nI want to make you fortunate."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Ah s'ei vede il sposo mio,\nSo ben io quel che può far!",
-            "translation": ""
+            "translation": "Ah, if he sees my husband,\nI know well what he can do!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni, nell'aprire la nicchia, e vedendo Masetto, fa un moto di stupore.",
-            "translation": ""
+            "translation": "Don Giovanni, upon opening the niche and seeing Masetto, makes a gesture of amazement."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Masetto!",
-            "translation": ""
+            "translation": "Masetto!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Sì Masetto!",
-            "translation": ""
+            "translation": "Yes Masetto!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "un po' confuso",
-            "translation": ""
+            "translation": "a little confused"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "E chiuso là, perché?",
-            "translation": ""
+            "translation": "And closed there, why?"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "riprende ardire",
-            "translation": ""
+            "translation": "he regains his courage"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "La bella tua Zerlina\nNon può, la poverina,\nPiù star senza di te.",
-            "translation": ""
+            "translation": "Your beautiful Zerlina\nCan't, the poor thing,\nlive without you anymore."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "un poco ironico",
-            "translation": ""
+            "translation": "a little ironic"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Capisco, sì, signore.",
-            "translation": ""
+            "translation": "I understand, yes, sir."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Zerlina",
-            "translation": ""
+            "translation": "to Zerlina"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Adesso fate core.",
-            "translation": ""
+            "translation": "Now make heart."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Si sente il preludio della danza.",
-            "translation": ""
+            "translation": "The prelude to the dance can be heard."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "I suonatori udite;\nVenite omai con me.",
-            "translation": ""
+            "translation": "Listen to the musicians;\nCome with me now."
           },
           {
             "speaker": "MASETTO, ZERLINA",
             "speakerTranslation": "MASETTO, ZERLINA",
             "literalText": true,
             "original": "Sì, sì, facciamo core,\nEd a ballar con gli altri\nAndiamo tutti e tre.",
-            "translation": ""
+            "translation": "Yes, yes, let's join in,\nAnd let's dance with the others,\nLet's all three go."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "partono",
-            "translation": ""
+            "translation": "they leave"
           }
         ]
       }
@@ -3001,154 +3001,154 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Ottavio, Donn'Anna e Donn'Elvira in maschera; poi Leporello e Don giovanni alla finestra.",
-            "translation": ""
+            "translation": "Don Ottavio, Donna Anna, and Donna Elvira in masks; then Leporello and Don Giovanni at the window."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Bisogna aver coraggio,\nO cari amici miei,\nE i suoi misfatti rei\nScoprir potremo allor.",
-            "translation": ""
+            "translation": "We must have courage,\nO my dear friends,\nAnd then we will be able to discover his guilty misdeeds."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "L'amica dice bene:\nCoraggio aver conviene.\nDiscaccia, o vita mia,\nL'affanno ed il timor.",
-            "translation": ""
+            "translation": "My friend says well:\nCourage is needed.\nDrive away, oh my life,\nworry and fear."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Il passo è periglioso\nPuò nascer qualche imbroglio:\nTemo pel caro sposo\nE per noi temo ancor.",
-            "translation": ""
+            "translation": "The step is perilous.\nSome confusion may arise:\nI fear for my dear husband.\nAnd I fear for us still."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "apre la finestra e s'affaccia",
-            "translation": ""
+            "translation": "he opens the window and looks out"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Signor, guardate un poco\nChe maschere galanti!",
-            "translation": ""
+            "translation": "Sir, look a little,\nWhat gallant masks!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Fàlle passar avanti,\nDi' che ci fanno onor.",
-            "translation": ""
+            "translation": "Let them go ahead,\nSay they do us honor."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "rientra",
-            "translation": ""
+            "translation": "he's coming back"
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO",
             "literalText": true,
             "original": "(Al volto e alla voce\nSi scopre il traditor.)",
-            "translation": ""
+            "translation": "(The traitor is revealed by his face and voice.)"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Zì, zì, signore maschere!\nZì, zì...",
-            "translation": ""
+            "translation": "Zi, zi, sir masks!\nZi, zi..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "piano a Don Ottavio",
-            "translation": ""
+            "translation": "plan to Don Ottavio"
           },
           {
             "speaker": "ANNA, ELVIRA",
             "speakerTranslation": "ANNA, ELVIRA",
             "literalText": true,
             "original": "Via, rispondete.",
-            "translation": ""
+            "translation": "Come on, answer."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Zì, zì...",
-            "translation": ""
+            "translation": "Zi, zi..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello",
-            "translation": ""
+            "translation": "to Leporello"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Cosa chiedete?",
-            "translation": ""
+            "translation": "What are you asking for?"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Al ballo, se vi piace,\nV'invita il mio signor.",
-            "translation": ""
+            "translation": "To the ball, if you like,\nmy lord invites you."
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Grazie di tanto onore;\nAndiam, compagne belle!",
-            "translation": ""
+            "translation": "Thank you for this honor.\nLet's go, beautiful companions!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "L'amico anche su quelle\nProva farà d'amor.",
-            "translation": ""
+            "translation": "The friend will also test his love on those."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "entra e chiude",
-            "translation": ""
+            "translation": "enters and closes"
           },
           {
             "speaker": "ANNA, OTTAVIO",
             "speakerTranslation": "ANNA, OTTAVIO",
             "literalText": true,
             "original": "Protegga il giusto cielo\nIl zelo del mio cor.",
-            "translation": ""
+            "translation": "May the just heaven protect\nthe zeal of my heart."
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Vendichi il giusto cielo\nIl mio tradito amor.",
-            "translation": ""
+            "translation": "May the just heaven avenge\nmy betrayed love."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "partono",
-            "translation": ""
+            "translation": "they leave"
           }
         ]
       }
@@ -3171,679 +3171,679 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Sala illuminata e preparata per una gran festa di ballo.",
-            "translation": ""
+            "translation": "The room is lit up and ready for a big dance party."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni, Masetto, Zerlina, Leporello; contadini e contadine; poi Donn'Anna, Donn'Elvira e Don Ottavio in maschera; suonatori, servitori con rinfreschi.",
-            "translation": ""
+            "translation": "Don Giovanni, Masetto, Zerlina, Leporello; peasants, both male and female; then Donna Anna, Donna Elvira, and Don Ottavio in masks; musicians, and servants with refreshments."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Giovanni fa seder le ragazze, e Leporello i ragazzi, che saranno in atto di aver finito un ballo.",
-            "translation": ""
+            "translation": "Don Giovanni makes the girls sit down, and Leporello makes the boys sit down, who will be in the act of having finished a dance."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Riposate, vezzose ragazze.",
-            "translation": ""
+            "translation": "Rest, pretty girls."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Rinfrescatevi, bei giovanotti.",
-            "translation": ""
+            "translation": "Cool off, handsome young men."
           },
           {
             "speaker": "DON GIOVANNI, LEPORELLO",
             "speakerTranslation": "DON GIOVANNI, LEPORELLO",
             "literalText": true,
             "original": "Tornerete a far presto le pazze,\nTornerete a scherzar e ballar.",
-            "translation": ""
+            "translation": "You'll soon go back to acting crazy,\nYou'll go back to joking and dancing."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "si portano i rinfreschi",
-            "translation": ""
+            "translation": "they bring refreshments"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Ehi caffè!",
-            "translation": ""
+            "translation": "Hey coffee!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Cioccolata!",
-            "translation": ""
+            "translation": "Chocolate!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sorbetti!",
-            "translation": ""
+            "translation": "Sorbets!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Ah Zerlina, giudizio!",
-            "translation": ""
+            "translation": "Ah Zerlina, judgement!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Confetti!",
-            "translation": ""
+            "translation": "Confetti!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "ZERLINA, MASETTO",
             "speakerTranslation": "ZERLINA, MASETTO",
             "literalText": true,
             "original": "Troppo dolce comincia la scena,\nIn amaro potria terminar.",
-            "translation": ""
+            "translation": "The scene begins too sweetly,\nit could end bitterly."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "fa carezze a Zerlina",
-            "translation": ""
+            "translation": "he caresses Zerlina"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Sei pur vaga, brillante Zerlina!",
-            "translation": ""
+            "translation": "You are so charming, brilliant Zerlina!"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Sua bontà!",
-            "translation": ""
+            "translation": "Your goodness!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "fremendo",
-            "translation": ""
+            "translation": "quivering"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "La briccona fa festa.",
-            "translation": ""
+            "translation": "The rascal is celebrating."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "imita il padrone colle altre ragazze",
-            "translation": ""
+            "translation": "imitate the master with the other girls"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Sei pur cara, Giannotta, Sandrina!",
-            "translation": ""
+            "translation": "You are so sweet, Giannotta, Sandrina!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Tocca pur, che ti cada la testa!",
-            "translation": ""
+            "translation": "Just touch it, your head will fall off!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Quel Masetto mi par stralunato,\nBrutto brutto si fa quest'affar.",
-            "translation": ""
+            "translation": "That Masetto seems dazed to me.\nThis is a very bad business."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a parte",
-            "translation": ""
+            "translation": "aside"
           },
           {
             "speaker": "DON GIOVANNI, LEPORELLO",
             "speakerTranslation": "DON GIOVANNI, LEPORELLO",
             "literalText": true,
             "original": "Quel Masetto mi par stralunato,\nQui bisogna cervello adoprar.",
-            "translation": ""
+            "translation": "That Masetto seems dazed to me.\nHere we need to use our wits."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Ah briccona, mi vuoi disperar!",
-            "translation": ""
+            "translation": "Oh, you rascal, you want to make me despair!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Entrano Don Ottavio, Donn'Anna e Donn'Elvira mascherati.",
-            "translation": ""
+            "translation": "Enter Don Ottavio, Donna Anna and Donna Elvira in masks."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Venite pur avanti,\nVezzose mascherette!",
-            "translation": ""
+            "translation": "Come forward,\nyou charming little masks!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "È aperto a tutti quanti,\nViva la libertà!",
-            "translation": ""
+            "translation": "It's open to everyone.\nLong live freedom!"
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO",
             "literalText": true,
             "original": "Siam grati e tanti segni\nDi generosità.",
-            "translation": ""
+            "translation": "We are grateful and there are many signs\nof generosity."
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO, DON GIOVANNI, LEPORELLO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO, DON GIOVANNI, LEPORELLO",
             "literalText": true,
             "original": "Viva la libertà!",
-            "translation": ""
+            "translation": "Long live freedom!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "ai suonatori",
-            "translation": ""
+            "translation": "to the musicians"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Ricominciate il suono.",
-            "translation": ""
+            "translation": "Restart the sound."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello",
-            "translation": ""
+            "translation": "to Leporello"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Tu accoppia i ballerini.",
-            "translation": ""
+            "translation": "You pair the dancers."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Da bravi, via, ballate.",
-            "translation": ""
+            "translation": "Good boys, go on, dance."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Don Ottavio balla Menuetto con Donn'Anna.",
-            "translation": ""
+            "translation": "Don Ottavio dances Menuetto with Donna Anna."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Anna",
-            "translation": ""
+            "translation": "to Donna Anna"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Quella è la contadina.",
-            "translation": ""
+            "translation": "That's the peasant woman."
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Io moro!",
-            "translation": ""
+            "translation": "I'm dying!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Anna",
-            "translation": ""
+            "translation": "to Donna Anna"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Simulate.",
-            "translation": ""
+            "translation": "Simulate."
           },
           {
             "speaker": "DON GIOVANNI, LEPORELLO",
             "speakerTranslation": "DON GIOVANNI, LEPORELLO",
             "literalText": true,
             "original": "Va bene, in verità!",
-            "translation": ""
+            "translation": "Okay, actually!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "piano a Leporello",
-            "translation": ""
+            "translation": "Leporello piano"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "A bada tien Masetto.",
-            "translation": ""
+            "translation": "Keep Masetto at bay."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Masetto",
-            "translation": ""
+            "translation": "to Masetto"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Non balli, poveretto!\nVien qua, Masetto caro:\nFacciam quel ch'altri fa.",
-            "translation": ""
+            "translation": "Don't dance, poor thing!\nCome here, dear Masetto:\nLet's do what others do."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Zerlina",
-            "translation": ""
+            "translation": "to Zerlina"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Il tuo compagno io sono,\nZerlina, vien pur qua.",
-            "translation": ""
+            "translation": "I am your companion,\nZerlina, come here."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "si mette a ballare con Zerlina una contradanza",
-            "translation": ""
+            "translation": "he starts dancing a country dance with Zerlina"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Eh balla, amico mio!",
-            "translation": ""
+            "translation": "Eh dance, my friend!"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "No, no, ballar non voglio.",
-            "translation": ""
+            "translation": "No, no, I don't want to dance."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Caro Masetto, balla!",
-            "translation": ""
+            "translation": "Dear Masetto, dance!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Elvira",
-            "translation": ""
+            "translation": "to Donna Elvira"
           },
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
             "literalText": true,
             "original": "Resister non poss'io!",
-            "translation": ""
+            "translation": "I can't resist!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Anna",
-            "translation": ""
+            "translation": "to Donna Anna"
           },
           {
             "speaker": "ELVIRA, OTTAVIO",
             "speakerTranslation": "ELVIRA, OTTAVIO",
             "literalText": true,
             "original": "Fingete, per pietà!",
-            "translation": ""
+            "translation": "Pretend, for pity's sake!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Leporello balla la Teitsch con Masetto.",
-            "translation": ""
+            "translation": "Leporello dances the Teitsch with Masetto."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Zerlina",
-            "translation": ""
+            "translation": "to Zerlina"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Vieni con me, mia vita...",
-            "translation": ""
+            "translation": "Come with me, my life..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "ballando conduce Zerlina presso una porta, e la fa entrare quasi per forza",
-            "translation": ""
+            "translation": "dancing, he leads Zerlina to a door, and almost forces her in."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Leporello",
-            "translation": ""
+            "translation": "to Leporello"
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Lasciami... ah... no... Zerlina!...",
-            "translation": ""
+            "translation": "Leave me... ah... no... Zerlina!..."
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Oh numi! son tradita!...",
-            "translation": ""
+            "translation": "Oh gods! I am betrayed!..."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Masetto si cava dalle mani di Leporello e segue Zerlina.",
-            "translation": ""
+            "translation": "Masetto frees himself from Leporello's grasp and follows Zerlina."
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Qui nasce una ruina.",
-            "translation": ""
+            "translation": "A ruin is born here."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "segue in fretta Don Giovanni",
-            "translation": ""
+            "translation": "Don Giovanni quickly follows"
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO",
             "literalText": true,
             "original": "L'iniquo da se stesso\nNel laccio se ne va.",
-            "translation": ""
+            "translation": "The wicked man, by himself,\ngoes into the snare."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "di dentro, ad alta voce; strepito di piedi a destra",
-            "translation": ""
+            "translation": "inside, loudly; clatter of feet on the right"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Gente aiuto, aiuto gente!",
-            "translation": ""
+            "translation": "People help, help people!"
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO",
             "literalText": true,
             "original": "Soccorriamo l'innocente!",
-            "translation": ""
+            "translation": "Let us help the innocent!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "I suonatori e gli altri partono confusi.",
-            "translation": ""
+            "translation": "The musicians and the others leave in confusion."
           },
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
             "literalText": true,
             "original": "Ah Zerlina!",
-            "translation": ""
+            "translation": "Ah Zerlina!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "di dentro",
-            "translation": ""
+            "translation": "inside"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Scellerato!",
-            "translation": ""
+            "translation": "Scoundrel!"
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO",
             "literalText": true,
             "original": "Ora grida da quel lato...\nAh gittiamo giù la porta!",
-            "translation": ""
+            "translation": "Now shout from that side...\nAh, let's break down the door!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "gettano giù la porta",
-            "translation": ""
+            "translation": "they break down the door"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "esce da un'altra porta",
-            "translation": ""
+            "translation": "he goes out another door"
           },
           {
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
             "original": "Soccorretemi, son morta!",
-            "translation": ""
+            "translation": "Help me, I'm dead!"
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO, MASETTO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO, MASETTO",
             "literalText": true,
             "original": "Siam qui noi per tua difesa.",
-            "translation": ""
+            "translation": "We are here to defend you."
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "esce con spada in mano; conduce seco per un braccio Leporello, e finge di voler ferirlo; ma la spada non esce dal fodero",
-            "translation": ""
+            "translation": "He comes out with a sword in his hand; he leads Leporello by the arm and pretends to want to wound him; but the sword does not come out of its sheath."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Ecco il birbo che t'ha offesa:\nMa da me la pena avrà.\nMori, iniquo!",
-            "translation": ""
+            "translation": "Here's the scoundrel who offended you:\nBut he'll get his punishment from me.\nDie, you villain!"
           },
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
             "original": "Ah cosa fate!",
-            "translation": ""
+            "translation": "Oh what are you doing!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Mori, dico!",
-            "translation": ""
+            "translation": "Die, I say!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "cava una pistola contro Don Giovanni",
-            "translation": ""
+            "translation": "draws a gun on Don Giovanni"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Nol sperate!",
-            "translation": ""
+            "translation": "Don't get your hopes up!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "si cava la maschera",
-            "translation": ""
+            "translation": "the mask is removed"
           },
           {
             "speaker": "ANNA, ELVIRA, OTTAVIO",
             "speakerTranslation": "ANNA, ELVIRA, OTTAVIO",
             "literalText": true,
             "original": "L'empio crede con tal frode\nDi nasconder l'empietà.",
-            "translation": ""
+            "translation": "The wicked man believes with this deception\nTo hide his wickedness."
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Donn'Elvira!",
-            "translation": ""
+            "translation": "Donna Elvira!"
           },
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Sì malvagio!",
-            "translation": ""
+            "translation": "Yes evil!"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Don Ottavio!",
-            "translation": ""
+            "translation": "Don Ottavio!"
           },
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
             "original": "Sì signore!",
-            "translation": ""
+            "translation": "Yes sir!"
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "a Donn'Anna",
-            "translation": ""
+            "translation": "to Donna Anna"
           },
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
             "original": "Ah credete!...",
-            "translation": ""
+            "translation": "Oh, believe it!..."
           },
           {
             "speaker": "ANNA, ELVIRA, ZERLINA, OTTAVIO, MASETTO",
             "speakerTranslation": "ANNA, ELVIRA, ZERLINA, OTTAVIO, MASETTO",
             "literalText": true,
             "original": "Traditore!\nTutto, tutto già si sa!\nTrema, trema scellerato!\nSaprà tosto il mondo intero\nIl misfatto orrendo e nero,\nLa tua fiera crudeltà.\nOdi il tuon della vendetta\nChe ti fischia intorno intorno:\nSul tuo capo, in questo giorno,\nIl suo fulmine cadrà.",
-            "translation": ""
+            "translation": "Traitor!\nEverything, everything is already known!\nTremble, tremble, you scoundrel!\nThe whole world will soon know\nThe hideous and black crime,\nYour fierce cruelty.\nHear the thunder of vengeance\nWhich whistles around you:\nOn your head, this day,\nIts lightning will fall."
           },
           {
             "speaker": "DON GIOVANNI, LEPORELLO",
             "speakerTranslation": "DON GIOVANNI, LEPORELLO",
             "literalText": true,
             "original": "È confusa la mia sua testa,\nNon so sa più quel ch'io mi ei si faccia,\nE un'orribile tempesta\nMinacciando, oh Dio! mi lo va.\nMa non manca in me lui coraggio,\nNon mi si perdo perde o mi si confondo confonde.\nSe cadesse ancora il mondo\nNulla mai temer mi lo fa.",
-            "translation": ""
+            "translation": "My head is confused,\nI no longer know what he's doing to me,\nAnd a horrible storm\nThreatening, oh God! it's coming to me.\nBut he doesn't lack courage in me,\nI don't lose myself, I don't lose myself, or I get confused.\nIf the world were to fall again,\nNothing would ever make me fear him."
           }
         ]
       }
