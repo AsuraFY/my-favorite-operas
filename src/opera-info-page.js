@@ -150,7 +150,7 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
       (track.translatedTitle ? '<span class="opera-outline__section-translation">' + escape(track.translatedTitle) + '</span>' : '') +
       '<span class="section-nav-link__characters"><span aria-label="Participants">♙</span> ' + escape(track.participants.join(", ")) + '</span>' +
       '</div>').join("");
-    const note = '<p class="libretto-source-note">22 reference-recording listening landmarks, not official numbered musical sections. German–English text is not supplied; the original Italian libretto and English draft are pending transcription and verification. Participant credits are provisional.</p>';
+    const note = '<p class="libretto-source-note">22 reference-recording listening landmarks, not official numbered musical sections. The original Italian libretto and side-by-side English draft are pending transcription and verification. Participant credits are provisional.</p>';
     return '<div class="opera-reading-page">' + navigation + '<section class="opera-outline section-wrap">' +
       '<h1>' + (view === "outline" ? 'Libretto Outline' : 'Atto primo · Act I — Listening Outline') + '</h1>' +
       note + '<h2>Atto primo · Act I</h2><div class="opera-outline__sections">' + rows + '</div>' +
