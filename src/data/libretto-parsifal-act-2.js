@@ -4,7 +4,7 @@ export const parsifalActTwoScenes = [
     "number": 1,
     "originalHeading": "Zweiter Aufzug",
     "translatedHeading": "Act 2",
-    "summary": "",
+    "summary": "Klingsor summons Kundry to tempt Parsifal; the young man discovers compassion and rejects the enchanted garden.",
     "sections": [
       {
         "type": "Passage",
@@ -1248,6 +1248,117 @@ export const parsifalActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Die Zeit ist da",
+        "translation": "The time has come",
+        "match": "Die Zeit ist da",
+        "speaker": "KLINGSOR",
+        "sourceTurn": 1,
+        "characters": [
+          "Klingsor"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Ich – will nicht",
+        "translation": "I will not",
+        "match": "Ich – will nicht",
+        "speaker": "KUNDRY",
+        "sourceTurn": 16,
+        "characters": [
+          "Kundry"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Ha! Er ist schön, der Knabe",
+        "translation": "Ah, the boy is beautiful!",
+        "match": "Ha! Er ist schön, der Knabe",
+        "speaker": "KLINGSOR",
+        "sourceTurn": 35,
+        "characters": [
+          "Klingsor"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Wo ist der Frevler?",
+        "translation": "Where is the intruder?",
+        "match": "Wo ist der Frevler?",
+        "speaker": "MÄDCHEN",
+        "sourceTurn": 55,
+        "characters": [
+          "Mädchen"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Hier weile, Parsifal!",
+        "translation": "Stay here, Parsifal!",
+        "match": "Hier weile, Parsifal!",
+        "speaker": "KUNDRY",
+        "sourceTurn": 120,
+        "characters": [
+          "Kundry"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Bekenntnis",
+        "translation": "Confession",
+        "match": "Bekenntnis",
+        "speaker": "KUNDRY",
+        "sourceTurn": 137,
+        "characters": [
+          "Kundry"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Ja! ... diese Stimme",
+        "translation": "Yes, that voice",
+        "match": "Ja! ... diese Stimme",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 148,
+        "characters": [
+          "Parsifal"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Laß mich dich Göttlichen lieben",
+        "translation": "Let me love you, divine one",
+        "match": "Laß mich dich Göttlichen lieben",
+        "speaker": "KUNDRY",
+        "sourceTurn": 156,
+        "characters": [
+          "Kundry"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Mitleid! Mitleid mit mir!",
+        "translation": "Compassion! Have compassion for me!",
+        "match": "Mitleid! Mitleid mit mir!",
+        "speaker": "KUNDRY",
+        "sourceTurn": 163,
+        "characters": [
+          "Kundry"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Du weißt",
+        "translation": "You know",
+        "match": "Du weißt",
+        "speaker": "PARSIFAL",
+        "sourceTurn": 174,
+        "characters": [
+          "Parsifal"
+        ]
+      }
+    ]
   }
 ];
