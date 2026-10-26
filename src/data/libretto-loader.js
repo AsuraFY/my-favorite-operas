@@ -12,6 +12,7 @@ const loaders = Object.freeze({
   "tosca": () => import("./libretto-tosca-bundle.js?v=tosca-anchor-audit-20261023").then(module => module.tosca),
   "the-magic-flute": () => import("./libretto-die-zauberflote-bundle.js?v=zauberflote-outline-20261026").then(module => module.dieZauberflote),
   "la-fanciulla-del-west": () => import("./libretto-la-fanciulla-del-west-bundle.js?v=fanciulla-all-acts-20261026").then(module => module.laFanciullaDelWest),
+  "otello": () => import("./libretto-otello-bundle.js?v=otello-all-acts-20261026").then(module => module.otello),
   "samson-et-dalila": () => import("./libretto-samson-et-dalila-bundle.js?v=on-demand-20261023").then(module => module.samson)
 });
 const pending = new Map();
