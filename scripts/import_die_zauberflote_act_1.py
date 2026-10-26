@@ -245,6 +245,7 @@ export const dieZauberflote = {
   mobileArtworkLabel: "Die Zauberflöte",
   originalLanguage: "Deutsch",
   translationLanguage: "English",
+  partialLibretto: true, // Only Act I is published; Act II is not yet available.
   continuousAct: true,
   preserveLineBreaks: true,
   alignVerseLines: true,
@@ -286,7 +287,8 @@ export const dieZauberflote = {
     if 'dieZauberflote' not in code:
         needle='const completeLibretti ='
         assert needle in code
-        code=code.replace(needle, '// Die Zauberflöte Act I is intentionally NOT in this complete-work registry.\n'+needle)
+        code=code.replace(needle, 'import { dieZauberflote } from "./libretto-die-zauberflote-bundle.js";\n\n'+needle)
+        code=code.replace('const completeLibretti = {', 'const completeLibretti = { [dieZauberflote.slug]: dieZauberflote,')
         reg.write_text(code,encoding='utf-8')
     # One-act regression contract. This does not claim Act II is prepared.
     test_file=ROOT/'tests/die-zauberflote-act-1.test.mjs'
@@ -311,9 +313,9 @@ test("Die Zauberflöte Act I follows all 19 Opera Guide source Auftritte and num
   for (const turn of turns){
     assert.ok(turn.original?.trim(),"no missing source text");
     assert.ok(turn.translation?.trim(),"no missing English draft");
-    assert.equal(turn.original.split("\n").length,turn.translation.split("\n").length,
+    assert.equal(turn.original.split("\\n").length,turn.translation.split("\\n").length,
        "German/English printed lines must remain paired");
-    lines+=turn.original.split("\n").length;
+    lines+=turn.original.split("\\n").length;
   }
   assert.ok(lines>=400,"do not silently truncate Act I");
   assert.ok(turns.some(t=>t.speaker==="Stage direction"));
@@ -339,6 +341,45 @@ test("Die Zauberflöte first-act outline, bilingual reader and anchors render",(
   assert.ok(!outline.includes("Nr. 9"));
 });
 ''',encoding='utf-8')
+    # Update contracts to include the partial (Act I only) libretto.
+    for file_name in ['tests/lazy-libretto-loading.test.mjs',
+                      'tests/libretto-content.test.mjs',
+                      'tests/site-dependency-integrity.test.mjs']:
+        test_path = ROOT / file_name
+        test_text = test_path.read_text(encoding='utf-8')
+        test_text = test_text.replace('librettoCatalog.length, 11', 'librettoCatalog.length, 12')
+        if file_name.endswith('lazy-libretto-loading.test.mjs'):
+            test_text = test_text.replace("length, 11);", "length, 12);")
+            test_text = test_text.replace(
+              "(loader.match(/: \\(\\) => import\\(/g) || []).length, 11",
+              "(loader.match(/: \\(\\) => import\\(/g) || []).length, 12")
+        if file_name.endswith('site-dependency-integrity.test.mjs'):
+            test_text = test_text.replace(
+               'assert.equal(libretto.acts.length, metadata.acts, libretto.slug + ": wrong act count");',
+               'assert.equal(libretto.acts.length, libretto.partialLibretto ? 1 : metadata.acts, libretto.slug + ": wrong available act count");')
+        test_path.write_text(test_text, encoding='utf-8')
+    planned = ROOT/'tests/catalog-pages.test.mjs'
+    code = planned.read_text(encoding='utf-8')
+    code=code.replace('"la-traviata", "the-magic-flute", "aida"',
+                      '"la-traviata", "aida"')
+    planned.write_text(code, encoding='utf-8')
+    # Expand real-browser smoke review to this opera's new first-act route.
+    visual = ROOT/'tests/browser-visual-smoke.mjs'
+    code=visual.read_text(encoding='utf-8')
+    code=code.replace('"madama-butterfly", "tosca", "samson-et-dalila"',
+                      '"madama-butterfly", "tosca", "samson-et-dalila", "the-magic-flute"')
+    visual.write_text(code, encoding='utf-8')
+    # The boot URL must change so old cached main.js cannot mask the addition.
+    boot = ROOT/'src/boot.js'
+    code=boot.read_text(encoding='utf-8').replace(
+       'main.js?v=outline-label-footer-20261024',
+       'main.js?v=magic-flute-act1-20261026')
+    boot.write_text(code, encoding='utf-8')
+    html = ROOT/'index.html'
+    code=html.read_text(encoding='utf-8').replace(
+       'src/boot.js?v=verified-lyric-lines-20261023',
+       'src/boot.js?v=magic-flute-act1-20261026')
+    html.write_text(code, encoding='utf-8')
     # Bust the on-demand module cache; the existing user preference state remains intact.
     main=ROOT/'src/main.js'
     code=main.read_text(encoding='utf-8')
