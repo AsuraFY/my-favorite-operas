@@ -84,7 +84,7 @@ def fetch_source():
             clean=normalize(text)
             if clean in ACTS and len(text)<25:
                 act=ACTS[clean];speaker=None;cue_tag=None;continue
-            if text.strip().upper().startswith('FINE DELL') and act==3:
+            if text.strip().upper().replace('’', "'").startswith("FINE DELL'") and act==3:
                 act=0;break
             if act==0:continue
             if kind=='h6':
@@ -112,7 +112,7 @@ def fetch_source():
         if len(verses)<(230 if act!=3 else 140):raise ValueError(f'Incomplete Act {act}: only {len(verses)} sung/spoken lines')
         if not any('MINNIE' in x['speaker'] for x in verses):raise ValueError('Act '+str(act)+' lacks Minnie')
         print(f'Act {act}: {len(rows)} printed source rows, {len(verses)} text rows, {len(rows)-len(verses)} directions')
-    if not any('Addio, addio, addio!' in x['text'] for x in acts[3]):raise ValueError('Final opera line absent')
+    if not any(re.search(r'Addio, addio, addio!', x['text'],re.I) for x in acts[3]):raise ValueError('Final opera line absent')
     return acts
 
 def pack(rows):
