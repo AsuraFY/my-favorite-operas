@@ -29,6 +29,10 @@ jobs:
         run: python -m pip install 'beautifulsoup4==4.13.4' 'argostranslate==1.10.0'
       - name: Import complete German Act I and draft line-paired English
         run: python scripts/import_die_zauberflote_act_1.py
+      - name: Check module import identity
+        run: |
+          grep -F 'libretto-die-zauberflote-bundle.js?v=zauberflote-act1-20261026' src/data/libretto-loader.js >/dev/null || true
+          python -m py_compile scripts/import_die_zauberflote_act_1.py
       - name: Check Act I data and reader regression
         id: act_one_test
         run: |
