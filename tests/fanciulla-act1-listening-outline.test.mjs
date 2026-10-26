@@ -23,8 +23,11 @@ test("reference landmarks display in full outline but never replace the Act I li
  assert.ok(html.includes('class="fanciulla-outline__entry"'));
  assert.ok(!html.includes("section-nav-link opera-outline__section"));
  const act1=renderPlannedLibrettoPage(opera,details,"libretto",1);
- assert.ok(act1.includes("have not yet been integrated"));
- assert.ok(!act1.includes(tracks[2].originalTitle));
+ assert.ok(act1.includes("Incomplete libretto"));
+ assert.ok(act1.includes("selected source excerpts only"));
+ assert.ok(act1.includes('class="fanciulla-bilingual__row'));
+ assert.ok(act1.includes("Italiano"));
+ assert.ok(act1.includes("English"));
  assert.ok(act1.includes("?view=outline"));
  const act2=renderPlannedLibrettoPage(opera,details,"libretto",2);
  assert.ok(act2.includes("will be added later"));
