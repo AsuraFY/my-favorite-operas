@@ -10,7 +10,7 @@ const loaders = Object.freeze({
   "la-boheme": () => import("./libretto-la-boheme-bundle.js?v=on-demand-20261023").then(module => module.laBoheme),
   "madama-butterfly": () => import("./libretto-madama-butterfly-bundle.js?v=on-demand-20261023").then(module => module.madamaButterfly),
   "tosca": () => import("./libretto-tosca-bundle.js?v=tosca-anchor-audit-20261023").then(module => module.tosca),
-  "the-magic-flute": () => import("./libretto-die-zauberflote-bundle.js?v=zauberflote-acts1-2-20261026").then(module => module.dieZauberflote),
+  "the-magic-flute": () => import("./libretto-die-zauberflote-bundle.js?v=zauberflote-outline-20261026").then(module => module.dieZauberflote),
   "samson-et-dalila": () => import("./libretto-samson-et-dalila-bundle.js?v=on-demand-20261023").then(module => module.samson)
 });
 const pending = new Map();
