@@ -1,0 +1,61 @@
+name: Prepare Die Zauberflöte Act II
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [Update]
+    paths:
+      - scripts/import_die_zauberflote_act_2.py
+      - .github/workflows/build-magic-flute-act2.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: opera-magic-flute-act2-import
+  cancel-in-progress: false
+
+jobs:
+  prepare-act-two:
+    name: Import, validate, commit German–English Act II
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: Update
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install source parser and offline German–English translation
+        run: python -m pip install 'beautifulsoup4==4.13.4' 'argostranslate==1.10.0'
+      - name: Import Opera Guide's complete Act II
+        run: python scripts/import_die_zauberflote_act_2.py
+      - name: Validate complete opera and existing catalogue
+        run: npm test
+      - name: Validate browser layout on desktop and mobile
+        run: |
+          npm install --no-save --no-package-lock playwright-core@1.56.1
+          node tests/browser-visual-smoke.mjs
+      - name: Commit tested Act II to Update only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/data/libretto-die-zauberflote-act-2.js \
+             src/data/libretto-die-zauberflote-bundle.js \
+             src/data/libretto-loader.js src/data/libretto-registry.js \
+             tests/die-zauberflote-act-1.test.mjs \
+             tests/die-zauberflote-act-2.test.mjs \
+             tests/site-dependency-integrity.test.mjs \
+             src/main.js src/boot.js index.html \
+             docs/reviews/die-zauberflote-act-2.md
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'Act II is already present; no new commit.'
+            exit 0
+          fi
+          git commit -m 'Add Die Zauberflöte Act II from Opera Guide with bilingual draft and tests'
+          git push origin HEAD:Update
