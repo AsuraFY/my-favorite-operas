@@ -1,6 +1,6 @@
 // Bilingual reader draft: all passages translated, source and editorial review pending.
-import { donGiovanniActOneScenes } from "./libretto-don-giovanni-act-1.js?v=translation-draft-20261026";
-import { donGiovanniActTwoScenes } from "./libretto-don-giovanni-act-2.js?v=translation-draft-20261026";
+import { donGiovanniActOneScenes } from "./libretto-don-giovanni-act-1.js?v=otello-style-outline-20261026";
+import { donGiovanniActTwoScenes } from "./libretto-don-giovanni-act-2.js?v=otello-style-outline-20261026";
 import { getOpera } from "./operas.js";
 import { operaInformation } from "./opera-information.js";
 const info = operaInformation["don-giovanni"];
