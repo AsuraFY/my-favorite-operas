@@ -261,7 +261,44 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Ehi, via, buffone, non mi seccar.",
+        "translation": "Hey, come on, clown, don't bother me.",
+        "match": "Ehi, via, buffone, non mi seccar.",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 2,
+        "characters": [
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Lasciar le donne! pazzo!",
+        "translation": "Leave women! You fool!",
+        "match": "Lasciar le donne! pazzo!",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 20,
+        "characters": [
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Non hai veduto",
+        "translation": "Haven't you seen",
+        "match": "Non hai veduto",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 26,
+        "characters": [
+          "Don Giovanni",
+          "Leporello"
+        ]
+      }
+    ]
   },
   {
     "number": 2,
@@ -522,7 +559,59 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Ah taci, ingiusto core,",
+        "translation": "Ah, be silent, unjust heart,",
+        "match": "Ah taci, ingiusto core,",
+        "speaker": "ELVIRA",
+        "sourceTurn": 2,
+        "characters": [
+          "Donna Elvira",
+          "Leporello",
+          "Don Giovanni"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Discendi, o gioia bella:",
+        "translation": "Come down, oh beautiful joy:",
+        "match": "Discendi, o gioia bella:",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 11,
+        "characters": [
+          "Don Giovanni",
+          "Donna Elvira",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Dei, che cimento è questo!",
+        "translation": "Gods, what a trial this is!",
+        "match": "Dei, che cimento è questo!",
+        "speaker": "ELVIRA",
+        "sourceTurn": 19,
+        "characters": [
+          "Donna Elvira",
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Va' là, che se' il gran gonzo! Ascolta bene:",
+        "translation": "Go there, you're the big fool! Listen carefully:",
+        "match": "Va' là, che se' il gran gonzo! Ascolta bene:",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 28,
+        "characters": [
+          "Don Giovanni",
+          "Leporello"
+        ]
+      }
+    ]
   },
   {
     "number": 3,
@@ -769,7 +858,45 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Eccomi a voi!",
+        "translation": "Here I am!",
+        "match": "Eccomi a voi!",
+        "speaker": "ELVIRA",
+        "sourceTurn": 1,
+        "characters": [
+          "Donna Elvira",
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Dunque creder potrò che i pianti miei",
+        "translation": "So can I believe that my tears",
+        "match": "Dunque creder potrò che i pianti miei",
+        "speaker": "ELVIRA",
+        "sourceTurn": 5,
+        "characters": [
+          "Donna Elvira",
+          "Leporello",
+          "Don Giovanni"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Deh vieni alla finestra, o mio tesoro!",
+        "translation": "Come to the window, my darling!",
+        "match": "Deh vieni alla finestra, o mio tesoro!",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 32,
+        "characters": [
+          "Don Giovanni"
+        ]
+      }
+    ]
   },
   {
     "number": 4,
@@ -1002,7 +1129,42 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Non ci stanchiamo: il cor mio dice",
+        "translation": "Let us not tire: my heart says",
+        "match": "Non ci stanchiamo: il cor mio dice",
+        "speaker": "MASETTO",
+        "sourceTurn": 1,
+        "characters": [
+          "Masetto",
+          "Don Giovanni"
+        ]
+      },
+      {
+        "type": "",
+        "title": "(Bagatelle!) Bravissimo, Masetto!",
+        "translation": "(Bagatelle!) Bravo, Masetto!",
+        "match": "(Bagatelle!) Bravissimo, Masetto!",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 22,
+        "characters": [
+          "Don Giovanni"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Metà di voi qua vadano,",
+        "translation": "Half of you go here,",
+        "match": "Metà di voi qua vadano,",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 24,
+        "characters": [
+          "Don Giovanni"
+        ]
+      }
+    ]
   },
   {
     "number": 5,
@@ -1144,7 +1306,43 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Zitto! Lascia ch'io senta: ottimamente",
+        "translation": "Shut up! Let me hear: excellent.",
+        "match": "Zitto! Lascia ch'io senta: ottimamente",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 2,
+        "characters": [
+          "Don Giovanni",
+          "Masetto"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Questa per la pistola...",
+        "translation": "This one for the pistol...",
+        "match": "Questa per la pistola...",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 13,
+        "characters": [
+          "Don Giovanni",
+          "Masetto"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Taci, o sei morto!",
+        "translation": "Shut up, or you're dead!",
+        "match": "Taci, o sei morto!",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 16,
+        "characters": [
+          "Don Giovanni"
+        ]
+      }
+    ]
   },
   {
     "number": 6,
@@ -1293,7 +1491,43 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Ahi ahi! la testa mia!",
+        "translation": "Ouch! My head!",
+        "match": "Ahi ahi! la testa mia!",
+        "speaker": "MASETTO",
+        "sourceTurn": 2,
+        "characters": [
+          "Masetto",
+          "Zerlina"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Crudel! non tel diss'io,",
+        "translation": "Cruel one! Didn't I tell you,",
+        "match": "Crudel! non tel diss'io,",
+        "speaker": "ZERLINA",
+        "sourceTurn": 9,
+        "characters": [
+          "Zerlina",
+          "Masetto"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Vedrai, carino",
+        "translation": "You'll see, my dear",
+        "match": "Vedrai, carino",
+        "speaker": "ZERLINA",
+        "sourceTurn": 15,
+        "characters": [
+          "Zerlina"
+        ]
+      }
+    ]
   },
   {
     "number": 7,
@@ -1456,7 +1690,46 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Di molte faci il lume",
+        "translation": "The light of many torches",
+        "match": "Di molte faci il lume",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 1,
+        "characters": [
+          "Leporello",
+          "Donna Elvira"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Sola sola, in buio loco",
+        "translation": "Alone, alone, in a dark place",
+        "match": "Sola sola, in buio loco",
+        "speaker": "ELVIRA",
+        "sourceTurn": 7,
+        "characters": [
+          "Donna Elvira",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Tergi il ciglio, o vita mia,",
+        "translation": "Wipe away your brow, oh my life,",
+        "match": "Tergi il ciglio, o vita mia,",
+        "speaker": "OTTAVIO",
+        "sourceTurn": 13,
+        "characters": [
+          "Don Ottavio",
+          "Donna Anna",
+          "Donna Elvira",
+          "Leporello"
+        ]
+      }
+    ]
   },
   {
     "number": 8,
@@ -1570,7 +1843,55 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Ferma, briccone,",
+        "translation": "Stop, you rascal,",
+        "match": "Ferma, briccone,",
+        "speaker": "ZERLINA, MASETTO",
+        "sourceTurn": 2,
+        "characters": [
+          "Zerlina",
+          "Masetto",
+          "Donna Anna",
+          "Don Ottavio",
+          "Donna Elvira"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Perdon, perdono,",
+        "translation": "Forgive me, forgive me,",
+        "match": "Perdon, perdono,",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 9,
+        "characters": [
+          "Leporello",
+          "Donna Anna",
+          "Zerlina",
+          "Donna Elvira",
+          "Don Ottavio",
+          "Masetto"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Mille torbidi pensieri",
+        "translation": "A thousand turbid thoughts",
+        "match": "Mille torbidi pensieri",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 11,
+        "characters": [
+          "Leporello",
+          "Donna Anna",
+          "Zerlina",
+          "Donna Elvira",
+          "Don Ottavio",
+          "Masetto"
+        ]
+      }
+    ]
   },
   {
     "number": 9,
@@ -1761,7 +2082,44 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Dunque, quello sei tu che il mio Masetto",
+        "translation": "So, are you the one who cruelly mistreated my Masetto",
+        "match": "Dunque, quello sei tu che il mio Masetto",
+        "speaker": "ZERLINA",
+        "sourceTurn": 2,
+        "characters": [
+          "Zerlina",
+          "Donna Elvira",
+          "Don Ottavio",
+          "Masetto"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Ah pietà, signori miei,",
+        "translation": "Ah, have mercy, my lords,",
+        "match": "Ah pietà, signori miei,",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 12,
+        "characters": [
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "A voi, signore,",
+        "translation": "To you, sir,",
+        "match": "A voi, signore,",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 20,
+        "characters": [
+          "Leporello"
+        ]
+      }
+    ]
   },
   {
     "number": 10,
@@ -1819,7 +2177,32 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Ferma, perfido, ferma!...",
+        "translation": "Stop, you wicked man, stop!...",
+        "match": "Ferma, perfido, ferma!...",
+        "speaker": "ELVIRA",
+        "sourceTurn": 1,
+        "characters": [
+          "Donna Elvira",
+          "Masetto",
+          "Zerlina"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Il mio tesoro intanto",
+        "translation": "Meanwhile, go and comfort my beloved",
+        "match": "Il mio tesoro intanto",
+        "speaker": "OTTAVIO",
+        "sourceTurn": 4,
+        "characters": [
+          "Don Ottavio"
+        ]
+      }
+    ]
   },
   {
     "number": 11,
@@ -2465,7 +2848,70 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Ah ah ah questa è buona:",
+        "translation": "Ah, ah, ah, that's good:",
+        "match": "Ah ah ah questa è buona:",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 3,
+        "characters": [
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Diverse istorielle,",
+        "translation": "Various little stories,",
+        "match": "Diverse istorielle,",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 23,
+        "characters": [
+          "Don Giovanni",
+          "Leporello",
+          "Commendatore"
+        ]
+      },
+      {
+        "type": "",
+        "title": "«Dell'empio che mi trasse al passo estremo",
+        "translation": "\"Of the wicked man who drove me to my final step",
+        "match": "«Dell'empio che mi trasse al passo estremo",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 55,
+        "characters": [
+          "Leporello",
+          "Don Giovanni"
+        ]
+      },
+      {
+        "type": "",
+        "title": "O statua gentilissima",
+        "translation": "O most gracious statue",
+        "match": "O statua gentilissima",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 66,
+        "characters": [
+          "Leporello",
+          "Don Giovanni",
+          "Commendatore"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Mover mi possa appena...",
+        "translation": "I can barely move...",
+        "match": "Mover mi possa appena...",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 87,
+        "characters": [
+          "Leporello",
+          "Don Giovanni"
+        ]
+      }
+    ]
   },
   {
     "number": 12,
@@ -2558,7 +3004,32 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Calmatevi, idol mio; di quel ribaldo",
+        "translation": "Calm down, my idol; we will soon see that scoundrel's grave excesses punished; we will be avenged.",
+        "match": "Calmatevi, idol mio; di quel ribaldo",
+        "speaker": "OTTAVIO",
+        "sourceTurn": 2,
+        "characters": [
+          "Don Ottavio",
+          "Donna Anna"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Non mi dir, bell'idol mio",
+        "translation": "Do not tell me, my beloved",
+        "match": "Non mi dir, bell'idol mio",
+        "speaker": "ANNA",
+        "sourceTurn": 7,
+        "characters": [
+          "Donna Anna",
+          "Don Ottavio"
+        ]
+      }
+    ]
   },
   {
     "number": 13,
@@ -2819,7 +3290,32 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Già la mensa è preparata.",
+        "translation": "The table is already set.",
+        "match": "Già la mensa è preparata.",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 2,
+        "characters": [
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Questo pezzo di fagiano",
+        "translation": "This piece of pheasant",
+        "match": "Questo pezzo di fagiano",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 19,
+        "characters": [
+          "Leporello",
+          "Don Giovanni"
+        ]
+      }
+    ]
   },
   {
     "number": 14,
@@ -3178,7 +3674,46 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "L'ultima prova",
+        "translation": "The final test",
+        "match": "L'ultima prova",
+        "speaker": "ELVIRA",
+        "sourceTurn": 2,
+        "characters": [
+          "Donna Elvira",
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Réstati, barbaro,",
+        "translation": "Remain, barbarian,",
+        "match": "Réstati, barbaro,",
+        "speaker": "ELVIRA",
+        "sourceTurn": 21,
+        "characters": [
+          "Donna Elvira",
+          "Leporello",
+          "Don Giovanni"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Ah signor... per carità!...",
+        "translation": "Oh, sir... for goodness' sake!...",
+        "match": "Ah signor... per carità!...",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 34,
+        "characters": [
+          "Leporello",
+          "Don Giovanni"
+        ]
+      }
+    ]
   },
   {
     "number": 15,
@@ -3530,7 +4065,47 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Don Giovanni, a cenar teco",
+        "translation": "Don Giovanni, to dine with you",
+        "match": "Don Giovanni, a cenar teco",
+        "speaker": "COMMENDATORE",
+        "sourceTurn": 1,
+        "characters": [
+          "Commendatore",
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Pèntiti, cangia vita:",
+        "translation": "Repent, change your life:",
+        "match": "Pèntiti, cangia vita:",
+        "speaker": "COMMENDATORE",
+        "sourceTurn": 28,
+        "characters": [
+          "Commendatore",
+          "Don Giovanni",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Da qual tremore insolito...",
+        "translation": "From what unusual tremor...",
+        "match": "Da qual tremore insolito...",
+        "speaker": "DON GIOVANNI",
+        "sourceTurn": 40,
+        "characters": [
+          "Don Giovanni",
+          "Chorus",
+          "Leporello"
+        ]
+      }
+    ]
   },
   {
     "number": 16,
@@ -3707,6 +4282,66 @@ export const donGiovanniActTwoScenes = [
         ]
       }
     ],
-    "outline": []
+    "outline": [
+      {
+        "type": "",
+        "title": "Ah dove è il perfido,",
+        "translation": "Ah, where is the wicked,",
+        "match": "Ah dove è il perfido,",
+        "speaker": "ANNA, ELVIRA, ZERLINA, OTTAVIO, MASETTO",
+        "sourceTurn": 1,
+        "characters": [
+          "Donna Anna",
+          "Donna Elvira",
+          "Zerlina",
+          "Don Ottavio",
+          "Masetto",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Tra fumo e foco...",
+        "translation": "Between smoke and fire...",
+        "match": "Tra fumo e foco...",
+        "speaker": "LEPORELLO",
+        "sourceTurn": 9,
+        "characters": [
+          "Leporello",
+          "Donna Anna",
+          "Donna Elvira",
+          "Zerlina",
+          "Don Ottavio",
+          "Masetto"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Lascia, o caro, un anno ancora",
+        "translation": "Leave, my dear, one more year",
+        "match": "Lascia, o caro, un anno ancora",
+        "speaker": "ANNA",
+        "sourceTurn": 16,
+        "characters": [
+          "Donna Anna",
+          "Don Ottavio",
+          "Donna Elvira",
+          "Zerlina",
+          "Masetto",
+          "Leporello"
+        ]
+      },
+      {
+        "type": "",
+        "title": "Questo è il fin di chi fa mal!",
+        "translation": "This is the end of those who do evil!",
+        "match": "Questo è il fin di chi fa mal!",
+        "speaker": "TUTTI",
+        "sourceTurn": 22,
+        "characters": [
+          "All"
+        ]
+      }
+    ]
   }
 ];
