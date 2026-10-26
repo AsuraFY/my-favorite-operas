@@ -172,9 +172,9 @@ export function renderPlannedLibrettoPage(opera, details, view = "synopsis", sel
         const rows = section.turns.map(turn => '<div class="fanciulla-bilingual__row' +
           (turn.speaker === "Stage direction" ? ' fanciulla-bilingual__row--direction' : '') +
           '"><div class="fanciulla-bilingual__cell"><span class="fanciulla-bilingual__speaker">' +
-            escape(turn.speaker) + '</span><p>' + escape(turn.original).replaceAll('\\n', '<br>') + '</p></div>' +
+            escape(turn.speaker) + '</span><p>' + escape(turn.original).replaceAll('\n', '<br>') + '</p></div>' +
           '<div class="fanciulla-bilingual__cell"><span class="fanciulla-bilingual__speaker">' +
-            escape(turn.speakerTranslation) + '</span><p>' + escape(turn.translation).replaceAll('\\n', '<br>') +
+            escape(turn.speakerTranslation) + '</span><p>' + escape(turn.translation).replaceAll('\n', '<br>') +
           '</p></div></div>').join('');
         return '<section class="fanciulla-bilingual__excerpt">' +
           '<h2>' + escape(section.originalTitle) + '</h2>' +
