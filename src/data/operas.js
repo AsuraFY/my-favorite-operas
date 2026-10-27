@@ -620,6 +620,7 @@ export const operas = [
   },
   {
     "slug": "la-cenerentola",
+    "image": "./public/images/la-cenerentola-art.webp",
     "title": "La Cenerentola",
     "displayTitle": "Cinderella",
     "aliases": [
@@ -642,6 +643,7 @@ export const operas = [
   },
   {
     "slug": "hansel-und-gretel",
+    "image": "./public/images/hansel-und-gretel-art.webp",
     "title": "Hänsel und Gretel",
     "displayTitle": "Hansel and Gretel",
     "aliases": [
@@ -664,6 +666,7 @@ export const operas = [
   },
   {
     "slug": "nabucco",
+    "image": "./public/images/nabucco-art.webp",
     "title": "Nabucco",
     "displayTitle": "Nabucco",
     "aliases": [
@@ -686,6 +689,7 @@ export const operas = [
   },
   {
     "slug": "pagliacci",
+    "image": "./public/images/pagliacci-art.webp",
     "title": "Pagliacci",
     "displayTitle": "Pagliacci",
     "aliases": [
