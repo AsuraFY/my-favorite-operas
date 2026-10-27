@@ -1,16 +1,16 @@
 # Global audit
 
-> **Single living audit file** for the entire website. Add findings here after each audit; do not create a new date-specific or topic-specific audit report. Keep the current issue register up to date **and** append a timestamped history entry so past decisions are traceable.
+> **The sole active audit register.** Record global website issues and per-opera issues here, with stable IDs, current statuses, evidence, and dated updates. All former standalone review documents are retained verbatim in [archive.md](archive.md); do not create more audit files.
 
-**Last updated:** 2026-10-27 14:22 UTC  
+**Last updated:** 2026-10-27 (UTC)
 **Repository:** https://github.com/AsuraFY/my-favorite-operas  
 **Branch:** `Update` — do not modify `main` without explicit authorization.  
 **Current work priority:** Complete opera librettos; postpone heading corrections and the full browser audit until then.  
-**Audit scope:** Any future issue found in the website, libretto data, design, navigation, functionality, or verification can be tracked in this same file.
+**Audit scope:** Website-wide and opera-specific issues; each audit entry should clearly identify whether it concerns shared code or a particular opera.
 
 ## How this file is maintained
 
-1. **For every audit/update:** Add a new entry in **Dated audit history** with the exact date/time and time zone, scope, findings, evidence, and what changed (if anything).
+1. **For every audit/update:** Add a new entry in **Dated update log** (and preserve any relevant detailed evidence in the historical archive) with the exact date/time and time zone, scope, findings, evidence, and what changed (if anything).
 2. **For every issue:** Assign a stable ID, record its location, a reproducible description, category, first-seen date, current status, and next action. Update the **Current issue register** when its state changes; never silently remove an issue.
 3. **For fixes:** Record the changed file(s), commit or PR, verification method and result. A merged/committed fix alone is **not** `Resolved`.
 4. **For accepted exceptions:** Mark `Accepted` only after the user decides the deviation is okay, with a reason and the decision timestamp.
@@ -30,6 +30,52 @@
 | `Needs review` | Potential issue or editorial question; not yet confirmed as a defect |
 
 **Issue categories:** Styling · Content · Character attribution · Navigation · Accessibility · Functionality · Editorial · Verification.
+
+## Global website issues and verification
+
+| ID | Current status | Finding / follow-up |
+|---|---|---|
+| GLOBAL-01 | **Deferred** | Independent human desktop/mobile/night-mode visual inspection of all sixteen opera readers and outlines is not complete. The older automated Chromium checks covered eleven operas on a 2026-10-23 build, not the entire present branch. |
+| GLOBAL-02 | **Needs verification** | Follow every outline and deep link in a real browser, including back/forward, reload, sticky-header offsets and mobile navigation. Existing automated route tests are useful but do not certify actual interaction on every device. |
+| GLOBAL-03 | **Needs review** | Independent primary-source and English editorial validation is not complete across the whole catalogue; structural pair counts and passing tests cannot establish musical/literary accuracy. |
+| GLOBAL-04 | **Needs verification** | Previously recorded site-wide CSS asset/dependency, catalogue and Pages deployment checks apply to the then-tested commits. Rerun on the final libretto build before release. |
+| GLOBAL-05 | **Needs review** | 2026-10-26 Die Zauberflöte Act I CI failure log remains available as source evidence; whether that earlier failure still reproduces is unverified. Do not label it a live failure without rerunning CI. |
+
+## Opera-specific issues and follow-up
+
+| Opera | ID | Current status | Observation / next step |
+|---|---|---|---|
+| Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
+| Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
+| La fanciulla del West | AUD-02 | **Deferred** | Act I Introduzione has no supported English heading; verify Hello, Nick! and Hello, Minnie! title fallback handling. |
+| Tosca | AUD-03 | **Deferred** | The Act III bells/matins instrumental landmark may show misleading character credits; verify and omit unsupported credits. |
+| Turandot | AUD-04 | **Needs review** | Revisit generic Scena/form navigation titles with the latest named-incipit editorial rule; do not overwrite the approved 2026-10-19 correction with older form-only rules. |
+| Carmen | AUD-05 | **Needs review** | Assess generic Scène headings after libretto completion; earlier Act I and II–IV source/text corrections have automated verification in the historical record. |
+| Le nozze di Figaro | FIG-V01 | **Needs verification** | 81 section links and the outline scroll/route-ID corrections have tests; independent browser verification remains pending. |
+| La Bohème | BOH-V01 | **Needs verification** | Human visual verification of its 26 outline landmarks and four tableaux remains pending. |
+| Macbeth | MAC-V01 | **Needs verification** | Confirm final reader/outline behavior, act-only music symbols, 1847 alternative position and bilingual typography; later 2026-10-17 user instructions supersede earlier review rules. |
+| Madama Butterfly | BUT-V01 | **Needs verification** | Structural audit covered 34 sections, but fresh independent source and browser visual checking remain pending. |
+| Samson et Dalila | SAM-V01 | **Needs review** | Independent editorial/listening review of completed three-act translations and desktop/mobile visuals still pending. |
+| Otello | OTE-V01 | **Needs review** | English remains an unreviewed draft; source outline matches do not establish literary accuracy. |
+| Parsifal | PAR-V01 | **Needs review** | German transcription and English draft need source/editorial reconciliation. |
+| Don Giovanni | DON-V01 | **Needs review** | Source and English draft not finally reviewed; selective 47-entry outline is intentional and is not necessarily a defect. |
+| Così fan tutte | COS-V01 | **Needs verification** | Prior generated-reader section checks are not full browser visual certification. |
+| Il barbiere di Siviglia | BAR-V01 | **Needs verification** | Prior generated-reader checks are not full browser visual certification. |
+| Tristan und Isolde | TRI-V01 | **Needs verification** | Prior generated-reader checks are not full browser visual certification. |
+
+**Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
+
+## Dated update log
+
+### 2026-10-27 UTC — Unified audit register and archived previous reviews
+
+**Scope:** Review-document organization and synthesis of the repo's earlier reports (2026-10-15 through 2026-10-26), plus the 2026-10-27 sixteen-opera headings audit.
+
+**Added:** Global and opera-specific issue lists above, highlighting editorial draft risks, shared verification gaps, instrument-only attribution and previously documented source checks.
+
+**Resolved this session:** No website defects; review-file duplication eliminated only after archiving the original text. **Accepted:** No new defects accepted. **Ongoing:** All items marked Deferred, Needs review or Needs verification. **Priority:** Complete the librettos before heading fixes and final visual QA.
+
+**Source evidence:** [archive.md](archive.md) contains the historical reviews, test counts, dated corrections, source references and original baseline audit. A large raw CI log is retained as a separate archived diagnostic because embedding it would make the audit documents difficult to read.
 
 ## Current issue register
 
