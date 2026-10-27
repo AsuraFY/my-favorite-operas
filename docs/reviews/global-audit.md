@@ -67,6 +67,15 @@
 
 ## Dated update log
 
+### 2026-10-27 — Catalogue expansion and La traviata source selection
+
+**Catalogue added (Update):** La Cenerentola, Hänsel und Gretel, Nabucco and Pagliacci, as four planned works with no libretto bundle. The catalogue now contains 35 operas, of which 16 currently have bilingual libretto loaders and 19 do not.
+
+**La traviata:** Primary Italian libretto identified at https://opera-guide.ch/en/operas/la%2Btraviata/libretto/it/ with three acts, source scene headings, cast and original Italian text. Opera Guide also publishes an English libretto at https://opera-guide.ch/en/operas/la%2Btraviata/libretto/en/; whether its alignment/version may be reused and all translation/source checks remain to be determined. **Status: pending ingestion**, not a completed or published bilingual libretto. Preserve Italian source divisions and speaker labels and make a verified, aligned English translation before enabling the completed-libretto loader. No placeholder should be counted as a complete libretto.
+
+**Testing status:** The four catalogue entries were committed, but end-to-end browser/CI tests have not yet been run. No website guidelines were changed.
+
+
 ### 2026-10-27 UTC — Root documentation cleanup
 
 Archived the historical `BARBIERE_OUTLINE_REVIEW.md` and `WEBSITE_REVIEW.md` reports in `archive.md`; their original content is preserved. Migrated `PROJECT_GUIDELINES.md` into the existing Drive product/implementation specification and preserved its original in the archive before removing all three redundant root files. `README.md` is deliberately empty and unchanged. No new website defect was verified or resolved by this cleanup.
