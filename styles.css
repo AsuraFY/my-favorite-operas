@@ -3048,7 +3048,7 @@ html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
  * This is deliberately scoped to Parsifal until the design is approved.
  * Line 1: Così fan tutte title typography.
  * Line 2: Tosca's softer italic English translation.
- * Line 3: Così fan tutte's discreet character credit with its person icon.
+ * Line 3: the same unmodified shared .libretto-participants style used by Tosca, with its person icon.
  * After approval, replace this scoped trial with one shared component rule.
  */
 .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading {
@@ -3067,14 +3067,6 @@ html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
   color: #50647d;
   font: italic 0.875rem/1.3 var(--serif);
 }
-.opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > .libretto-participants {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  margin: 9px 0 0;
-  color: #516679;
-  font: italic 0.9375rem/1.32 var(--serif);
-}
 @media (max-width: 700px) {
   .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading {
     padding: 19px 0 20px;
@@ -3087,19 +3079,10 @@ html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
   .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > p.selected-section-heading__translation {
     font-size: 0.8125rem;
   }
-  .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > .libretto-participants {
-    gap: 5px;
-    margin-top: 8px;
-    font-size: 0.8125rem;
-    line-height: 1.28;
-  }
 }
 html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > h2 {
   color: #e8edf2;
 }
 html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > p.selected-section-heading__translation {
   color: var(--night-muted);
-}
-html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > .libretto-participants {
-  color: #aebcca;
 }
