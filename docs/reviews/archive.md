@@ -354,3 +354,379 @@ Verification: exact rendered French–English pairs; all twenty section destinat
 Checked 331 / 387 / 244 / 101 bilingual passages (523 / 567 / 411 / 231 sung or spoken source lines), their paired English divisions, the 51 section routes, and the short/full stage-direction distinction. All content pairs remain complete. Removed one escaped tab after “née…” in Carmen’s French Act I dialogue, without changing the spoken words. Added automated coverage for structure and route stability. This is a formatting/integrity review, not an independent critical-edition translation comparison.
 
 <!-- END ARCHIVED SOURCE: docs/reviews/carmen-act-1.md -->
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/carmen-acts-2-4.md -->
+
+## Archived source: `docs/reviews/carmen-acts-2-4.md`
+
+# Carmen Acts II–IV review
+
+Reviewed 20 October 2026, completing the Act I review.
+
+- Read the stored French and English throughout Acts II–IV; revised 25 translation entries for meaning, speaker/action accuracy, or individual-line correspondence.
+- Added recognizable French incipits and English titles to the full and act outlines, preserving musical types and all existing passage addresses. Opening settings are labeled as settings.
+- Separated narrative stage directions and short bracketed cues. Restored the omitted English cue “To Carmen.”
+- Removed entr’acte headings from sung text and represented them as instrumental sections after Acts II and III.
+- Consolidated duplicate chorus participants and included the returning ensemble in the Act III finale.
+- Corrected the Toreador song’s French transcription “gens de cour” to “gens de cœur” and translated it as “the brave.” The selected Opera Guide transcription contains the error; the university-hosted Carmen libretto confirms “cœur.”
+
+Sources: https://opera-guide.ch/operas/carmen/libretto/fr/ and https://iris.unive.it/retrieve/e4239ddc-51d4-7180-e053-3705fe0a3322/Carmen_v3.pdf
+
+## Verification
+
+The French text was compared against the published baseline after whitespace normalization, allowing only the documented cœur correction and relocation of entr’acte headings. No other French text was lost or changed.
+
+All 63 content, presentation and reader-navigation tests pass, including complete rendered bilingual pairs for the three acts, unique participants, bilingual outlines and every passage address. Final section counts are 14, 12 and 5; turn counts are 387, 244 and 101. Act I was not changed.
+
+A browser screenshot review has not been performed for this revision.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/carmen-acts-2-4.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/die-zauberflote-act-2.md -->
+
+## Archived source: `docs/reviews/die-zauberflote-act-2.md`
+
+# Die Zauberflöte — Act II import (26 October 2026)
+
+Primary text: Emanuel Schikaneder, historical German libretto, Opera Guide, https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/; accessed 26 October 2026.
+
+- Source structure: 30 **Auftritte**, musical numbers 9–21, 805 preserved source lines.
+- Preserves source scene boundaries, printed numbering, spoken dialogue and stage directions as distinct rows.
+- Translation is fresh offline machine-assisted German→English draft; **not reviewed for semantic correctness**.
+- Stage-direction attribution requires manual editorial spot-checks.
+- Complete automated structural checks do not constitute proof of translation quality.
+- Act I was imported previously and was not replaced by this change.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/die-zauberflote-act-2.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/die-zauberflote-editorial-audit-2026-10-26.md -->
+
+## Archived source: `docs/reviews/die-zauberflote-editorial-audit-2026-10-26.md`
+
+# Die Zauberflöte — editorial checkpoint (26 October 2026)
+
+**Branch:** Update only. **Primary source:** Emanuel Schikaneder's 1791 German libretto, Opera Guide: https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/. **Other source:** published Mozart number/incipit catalogue, previously cross-checked in the project's outline review.
+
+## Verified structure
+- Act I: 19 source Auftritte, musical Nos. 1–8, 466 speaker/direction turns and 692 paired German/English printed lines.
+- Act II: 30 source Auftritte, Nos. 9–21, 544 speaker/direction turns and 805 paired printed lines.
+- The ordinal musical outline and 3-line musical-number titles have been entered. Music within the two finales remains subject to cue-specific verification.
+
+## Corrections included in this checkpoint
+- Restored 16 Act I and six Act II falsely labelled Stage direction entries to spoken/sung person or chorus cues; source German line order unchanged.
+- Fixed the sung finale phrases ‘Zum Ziele führt dich diese Bahn’, ‘Wenn Tugend und Gerechtigkeit’, ‘Er lohnet und strafet’, and ‘Wird rein durch Feuer, Wasser, Luft und Erden’.
+- Distinguished unaccompanied speech after N. 1 Introduktion and N. 2 Arie from the musical pieces, without moving or deleting source lines.
+- N. 9 Marsch der Priester is instrumental; source speech following it is now an unnumbered spoken section before N. 10. Existing published N. 10 item link was retained using an explicit routeItem.
+- Corrected observed machine-translation mistakes including Pamina misrendered as 'fireplaces', Prüfungs-/Weisheitstempel as 'stamp', plus selected plainly mistranslated opening/stage lines.
+- Added focused structure, speaker, English pairing, and musical-boundary regression tests.
+
+## Still NOT approved
+**This is an editorial audit checkpoint, not an editorially reviewed edition.**
+- The English in both acts is still mostly unreviewed machine translation; some archaic German, idioms, poetic rhyme, dramatic intent and ensemble voices translate inaccurately. Mechanical line-pair tests cannot certify translation quality.
+- Stage/sung/verse classification was initially generated by heuristic and is still imperfect, particularly collective cues and lines whose speaker appears only once or between merged paragraphs.
+- German text must still be line-by-line collated against the actual 1791 edition on Opera Guide, including 18th-century typography and printed division breaks. The counts prove internal consistency, not complete source fidelity.
+- Musical-score boundaries inside Nos. 8 and 21 (and where source headings appear before dialogue) require a score-guided pass. Current outline participant lists may be overinclusive or fail to split an explicitly compound source cue.
+- Source speaker labels such as 'MOHR', 'WEIB', 'SCHLUSSCHOR' need careful display-name treatment and source-faithful contextual identification; avoid fabricating names from generic cues.
+- Visual desktop/mobile rendering, regression-test results, and live deployment must be checked separately and not assumed successful.
+
+## Editorial release criterion
+Before calling this opera final, verify every pair of German and English lines with native/contextual proofreading; separately reconcile every speaker cue, spoken prose, singing, stage instruction, and intra-finale music boundary with the primary source and score; then run and inspect Node and browser tests on the Update deployment. Keep draft status visible until then.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/die-zauberflote-editorial-audit-2026-10-26.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/figaro-outlines.md -->
+
+## Archived source: `docs/reviews/figaro-outlines.md`
+
+# Le nozze di Figaro — outline correction, 21 October 2026
+
+Compared all four acts against the Opera Website Guidelines, especially §§1.2–1.6. Primary source rechecked: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/ (21 October 2026).
+
+## Findings and corrections
+
+- Figaro lacked the shared three-line outline setting. Most sections had `sourceTitlesOnly` but no explicit title/translation, hiding recognizable incipits and English second lines. Added explicit bilingual navigation metadata for all 81 sections and enabled the agreed presentation for both outline views and section headings.
+- Musical numbers/types remain those of the existing source data. Recitative-and-aria sections show both their opening and familiar aria incipit (Nos. 18, 20, 27, 28). These are editorial navigation labels drawn from the text, not claims that the source prints formal aria titles.
+- Finale continuations now display their parent numbers: 16 in Act II, 23 in Act III, and 29 in Act IV. The separate `outlineNumber` preserves the original section numbering and route metadata while supporting the displayed heading.
+- Scene headings now use source-style Italian Roman numerals with English equivalents. No scene titles were invented.
+- The overture displays “Ouverture” once, followed by “Overture”. Its instrumental entry has no invented participants.
+- Existing English participant lists were checked for duplicates and retained. Ambiguous “All” cues were not expanded into invented memberships. Joint sung cues remain unchanged.
+- Act outlines show musical/recitative symbols; the full outline does not. Participant icons and names follow the translated title without a visible “Characters” label.
+- Two stale tests required familiar titles to be absent; updated them to the later user-confirmed incipit standard.
+
+## Verification
+
+68 relevant tests pass: the new all-entry outline tests and existing libretto-content, presentation and navigation suites. Each title phrase is checked against its own section’s Italian text, all 81 translations appear in both views, participant names remain unique, finale numbers are retained, and all existing destinations still resolve. Original act data files, sung text, English lyrics, scene order, and deep-link IDs were not changed. JavaScript syntax and `git diff --check` pass.
+
+Desktop/mobile browser visual QA remains pending. No new unresolved editorial choice was required.
+
+## Follow-up: outline scrolling
+
+The section jump’s CSS includes the sticky breadcrumb height, but `updateReaderSectionPosition` omitted it. Once the jump lock expired, a correctly landed section could sit 48px below the tracking threshold, causing the previous section to be selected and written into the URL. Added the breadcrumb height to tracking and to explicit passage-jump offsets. Regression tests reproduce the landing coordinates with desktop and mobile toolbar heights; 16 outline/navigation tests pass. Browser inspection did not complete, so live visual verification remains pending.
+
+## Follow-up: preserved route IDs
+
+The in-page click handler treated item IDs as array positions outside continuous acts and only matched canonical IDs inside them. It now resolves canonical IDs and historic alias anchors, and resolves scene-start item=0 to the first section when the scene has no such ID. Unresolved links retain normal route handling instead of being swallowed. Regression coverage clicks all 81 Figaro sections, their aliases, and every scene start across all four acts. All 17 outline/navigation tests pass; live visual verification remains pending.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/figaro-outlines.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/la-boheme.md -->
+
+## Archived source: `docs/reviews/la-boheme.md`
+
+# La Bohème — four-tableau review
+
+Reviewed 20 October 2026 against the stored Italian and the selected Teatro alla Scala libretto:
+https://www.teatroallascala.org/static/upload/la-/la-boheme-libretto.pdf
+
+## Changes
+
+- Reviewed all four tableaux and revised 40 English entries for meaning or line correspondence. Examples include the out-of-tune D on Schaunard’s horn, “Sola!” meaning “Just one!”, Mimì coming in this direction rather than to a vaulted passage, and the pawnbroker reference in Colline’s coat aria.
+- Restored Italian in two stage-direction entries that erroneously contained English (III, turn 54; IV, turn 238). These follow the source’s action in the existing turn grouping.
+- Assigned “Lumaca!” in Tableau I to Marcello, as in the source.
+- Preserved sung parenthetical asides as lyrics. Marked the two actual embedded action cues explicitly for stage-direction rendering.
+- Applied unbracketed narrative paragraphs with a Stage direction label and short bracketed cues without labels. Removed redundant enclosing parentheses from stage directions.
+- Retained the three-line outline entries and their English translations in both outline views and reader headings. Corrected descriptive musical forms, notably the Rodolfo–Marcello duet “O Mimì, tu più non torni” and the Act III passage involving Mimì, Rodolfo and Marcello. Forms are editorial descriptions, not a newly invented numbered score catalogue; the selected libretto provides no musical item numbers.
+- Derived explicit, unique participant lists from the actual passage speakers. Removed obsolete performer metadata and the recording reference in accordance with the user’s current instruction.
+- Updated cache versions for the changed data.
+
+## Verification
+
+All 64 content, presentation and reader-navigation tests pass. Tests check every rendered bilingual row, sung asides, narrative labels, unique participants and all 26 existing outline destinations. All 1,057 turn addresses and four continuous act pages remain intact.
+
+Original text was compared against the published baseline turn by turn. Apart from restoring the two wrong-language directions, only stage-direction enclosing parentheses and paragraph whitespace were normalized. No sung Italian was removed or rewritten.
+
+No browser screenshot review was performed for this revision.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/la-boheme.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/macbeth-outline.md -->
+
+## Archived source: `docs/reviews/macbeth-outline.md`
+
+# Macbeth outline review — 15 October 2026
+
+Scope: all four act outlines, full Libretto Outline, participant headings and bilingual speaker labels. Continuous act pages and existing scene/item addresses retained.
+
+Primary source: https://opera-guide.ch/operas/macbethverdi/libretto/it/ (accessed 15 October 2026). Follow the text actually presented, including revised passages; the former blanket “1847” description was insufficient. This review does not reconcile editions or rewrite the sung text or English translation.
+
+Source divisions: 19 / 7 / 4 / 11 scenes, with the last heading “Scena ultima.” Numbered musical divisions 1–15 include 8 1/2. A numbered division continues through subsequent scenes until the next source number. Repeated numbers in scene links identify parts of that same musical division, not new numbers. Invented scene/passsage titles removed; Bosco retained as the source setting, translated “A wood.” No incipits promoted to formal titles. No title translation is displayed where the source gives only a section type.
+
+The prelude now has a reading-page section and a link in both outlines. Item 0 still targets the original first scene section; the added prelude uses item 1. All 43 section destinations are checked in both outline views, with unique reading targets.
+
+Participants follow sung cues in first-appearance order. Joint cues expand into their known members. The three witch cues and their collective cue share one deduplicated list; all three apparition speakers are retained individually. Act III scene III credits the witches who sing, rather than the aerial spirits in the stage action. Generic roles use English in participant headings and on the English side; Italian speaker cues, sung asides and stage directions are retained. Contextually identifiable Tutti cues expand to the named ensemble or assassin groups.
+
+No album reference added. English translation wording remains outside this outline review. Original and translated text preservation and pairing are checked separately from semantic accuracy. Automated navigation/presentation checks are available; desktop and mobile visual QA remain unverified.
+
+## Act I line alignment — 15 October 2026
+
+Act I now renders each of its 228 sung source lines beside the corresponding English line in an individual row. Stage directions remain paired blocks with visible labels; speakers appear at the start of each speech. Acts II–IV retain their previous rendering pending user review. Italian text, outlines and section addresses are unchanged. English corrections restore the order of the sailor’s-wife lines and the negative meaning of Macbeth’s ocean image. This is a layout/alignment pass, not certification of the entire translation. All rendered pairs are checked against the data; visual review remains pending.
+
+## Act II line alignment — 15 October 2026
+
+Act II now uses individual paired rows for all 182 sung lines across seven scenes. Both occurrences of the drinking-song lines about hatred, resentment and love have their English phrasing reordered to follow the Italian line order. Original text, stage directions, outlines and addresses are preserved. The existing rendered-pair test now covers Acts I–II and confirms Acts III–IV keep their previous layout. All 95 tests pass; visual QA remains pending.
+
+## Acts III–IV line alignment — 16 October 2026
+
+All four acts now render sung text as individual Italian–English pairs. Act III contains 141 sung lines and Act IV contains 157. Four English passages were reordered to follow their Italian lines: Banco’s descendants ascending the throne, the spirits’ swirling dances, the royal tomb, and the question about the usurper’s hiding place. Italian source text, stage directions, outlines and link addresses remain unchanged. The existing rendered-pair test now checks all four acts. All 95 tests pass; desktop/mobile visual QA remains pending. This alignment review does not certify the entire translation as final.
+
+## Alternative ending — 17 October 2026
+
+Added the complete final scene of the 1847 ending after the retained revised ending in Act IV, No. 15. Editorial bilingual label “Finale alternativo — 1847 / Alternative ending — 1847” distinguishes the versions; this is not an inferred aria title. Includes Malcolm and Macduff’s introduction, all eight lines of “Mal per me che m’affidai,” death direction, and closing responses, with a fresh line-aligned English translation.
+
+Source: https://www.librettidopera.it/macbeth/a_04.html, “Finale originale del 1847, scena ultima,” explicitly marked replaced in 1865 (accessed 17 October 2026). This addition does not reconcile all other differences between editions. The existing Opera Guide text remains intact. New destination act=4&scene=11&item=1 appears in both outlines; all existing destinations remain unchanged. Long opening direction is one unbracketed bilingual paragraph; short cues are bracketed without labels. Automated checks cover every rendered pair and outline destination; visual QA remains pending.
+
+## Alternative placement — 17 October 2026
+
+At the user’s request, moved the complete 1847 alternative to the second section of Scene IX, immediately before Scene X, with the editorial label “Scena alternativa — 1847 / Alternative scene — 1847.” Both outlines now target act=4&scene=9&item=1. Italian and English text are unchanged; the revised final scene remains in Scene XI. This is a presentation placement requested by the user, not a claim that the source labels the original final scene “Scene IX.”
+
+## Outline consistency check — 17 October 2026
+
+Checked all 44 destinations, original number/type labels, optional title translations, English participant names, deduplication, and musical icons in both outlines. The full outline also omitted the musical symbols used by the act outline; both now use the same icon renderer. Confirmed heading mismatch: the act sidebar omitted Scene I’s source setting Bosco / A wood while the full outline displayed it. Both now display the original setting with the scene heading and its translation on a separate line without parentheses. Source numbered headings have no separate aria titles; absent title-translation rows are intentional under the no-invented-titles rule. Numbered multi-part forms remain intact rather than being arbitrarily classified as recitatives. The 1847 alternative remains in Scene IX as requested. No sung text or translation changed. Automated checks pass; visual QA remains unverified.
+
+## User correction — 17 October 2026
+
+Supersedes the preceding review’s treatment of line 2 and full-outline symbols. The user explicitly approved English translations of Macbeth’s complete section headings on line 2 even when the heading is a type rather than a separate aria title. Both Macbeth outlines now show that translation, including Prelude and the 1847 alternative’s label. Musical/recitative symbols belong only in act outlines; the preceding shared full-outline icon addition has been reverted. Participant icons remain in both views. Regression checks cover translation coverage and order for all 44 entries and the distinct icon rules. No libretto text or passage destinations changed.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/macbeth-outline.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/madama-butterfly-alignment.md -->
+
+## Archived source: `docs/reviews/madama-butterfly-alignment.md`
+
+# Madama Butterfly — bilingual structural audit (23 October 2026)
+
+Scope: all three completed acts on the `Update` branch, retaining the original 34 section routes and the prior 20 October editorial review.
+
+## Findings
+
+- Acts I–III contain 325, 197 and 115 French/Italian source and English bilingual turns respectively, for **637 total**. (Original language: **Italian**.)
+- The acts contain 563, 402 and 216 recorded sung-source lines respectively.
+- The 34 sections each retain an original-language and English title; route targets are unique.
+- Every stored original/translated turn is populated. All explicit line and stanza divisions match; no literal escaped newline sequences, malformed whitespace, or replacement characters were found.
+- Stage-direction grouping remains intact: 89 direction turns, of which 24 are short cues and 65 are narrative directions. Short cues retain brackets, while narrative directions remain unbracketed.
+- The existing reader and libretto suites already verify displayed bilingual rows, outline translations, and navigation; dedicated structural regression coverage was added.
+- No libretto text, translation wording, or navigation route was changed during this audit.
+
+Source of audit: the existing repository files and their recorded metadata. This is a **structural consistency review**, not a fresh critical-edition comparison or independent semantic retranslation. Live desktop/mobile browser visual review has not been performed.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/madama-butterfly-alignment.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/samson-et-dalila-act-1.md -->
+
+## Archived source: `docs/reviews/samson-et-dalila-act-1.md`
+
+# Samson et Dalila — Act I, 21 October 2026
+
+> **Current status (23 October 2026):** All three acts are now completed and available. The statement below that Acts II–III remain unprepared describes the original Act I review stage, not the current website. A three-act structural audit verified 205 bilingual passages, 836 sung-line pairs and 31 outline routes; new automated integrity coverage is recorded in `tests/samson-verse-integrity.test.mjs`. The original text and translations were not altered by this audit.
+
+
+## Profile and scope
+
+- Route: `#/operas/samson-et-dalila?act=1`; French with a fresh English translation.
+- Primary: Ferdinand Lemaire's public-domain libretto as printed in the ABAO 2020–2021 programme, printed pp. 213–224: https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf, accessed 21 October 2026. Only the French libretto is used; the Spanish translation and programme essays are not reproduced.
+- Six source scenes, 15 navigation sections, 44 sung turns comprising 322 French/English line pairs, and 16 separate stage-direction/cue entries. Each uninterrupted source turn renders in one bilingual row with preserved line breaks. The source's intervening stage cue splits Dalila's closing song at “À la nuit tombante”.
+- Acts II–III remain unprepared. Their direct URLs retain the prepared-page placeholder rather than silently displaying Act I. No Spotify recording was selected.
+
+## Source handling
+
+French was extracted from the programme's left column and compared against the complete Act I passage. All unused extraction lines were checked: they are act/scene headings, cast and speaker cues, the dance heading, or the single Spanish-column spillover `voluptuosos.)`. None is omitted sung text. Page furniture is excluded. Long stage directions are rejoined and stripped of enclosing parentheses; short cues retain their positions and render in italic brackets. Source cast rubrics are stored separately as `sourceCast`.
+
+Three transparent typographical corrections: “dc vos bras” → “de vos bras”; “attend sou retour” → “attend son retour”; “S’addressant” → “S’adressant”. Operone supplies the correct first two readings: https://operone.de/libretto/samson-et-dalila/. French spelling supplies the third. No substantive source variants were imported. In particular, the separate bass-chorus entry, the Messenger's separate reply in Scene IV, and the source's final chorus cue remain intact. Abimélech's “À moi !” remains inside the source's narrative direction.
+
+## Outlines and translation
+
+The six dramatic scenes follow the primary source. Navigation uses recognizable French incipits with English translations and deduplicated English participant names. No official musical numbers are asserted. Musical forms (Chœur, Air, Trio, Scène, Ballet) are supported by the scene index at https://www.opera-arias.com/saint-sa%C3%ABns/samson-et-dalila/; its incorrect role attributions for Abimélech, the High Priest, and the Old Hebrew are not adopted. “C’est toi que sa bouche invective” is an unclassified navigation passage, not an invented recitative. The dance heading is printed in the primary source. These navigation subdivisions are editorial, not additional source scene divisions.
+
+English is an original draft checked against each French turn for meaning, order, and matching verse breaks. Independent editorial/listening review remains pending. The public note is a single brief French-source credit; implementation and review details stay here.
+
+## Verification
+
+- Four dedicated tests pass: French text checksum/counts, complete bilingual turn rendering, every one of the 15 section destinations, and Act II/III placeholder routing.
+- Existing content, presentation, navigation and catalog checks: 83 passed; 21 unrelated catalog assertions failed. Baseline verification reproduced all 21 failures before this change (20 other prepared opera pages and Tosca's old outline link assertion). The old Samson-shell test is replaced with the new coverage.
+- `git diff --check` and JavaScript syntax checks passed.
+- Desktop/mobile browser visual QA has not been performed; local Playwright is unavailable. The established reader layout is reused.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/samson-et-dalila-act-1.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/samson-et-dalila-act-2.md -->
+
+## Archived source: `docs/reviews/samson-et-dalila-act-2.md`
+
+# Samson et Dalila — Act II, 21 October 2026
+
+## Scope and source
+
+Route: `#/operas/samson-et-dalila?act=2`. The French continues the same public-domain Ferdinand Lemaire libretto printed in the ABAO 2020–2021 programme, pp. 225–236: https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf (retrieved 21 October 2026). The programme’s Spanish translation and essays are not reproduced.
+
+Three source scenes, nine editorial navigation sections, 67 sung turns / 303 bilingual verse lines, and 22 stage-direction/cue entries. All dialogue follows the source order, including the alternating voices in the vengeance duet, Samson’s replies during “Mon cœur s’ouvre à ta voix”, the storm cues, and the final calls “À moi ! Philistins !” and “Trahison !”. Each uninterrupted turn stays in one bilingual row. A direction or named musical section can interrupt a turn.
+
+The extraction was compared with the complete French act. Unused lines are exclusively act/scene/cast/speaker headings and one Spanish spillover (“en actitud soñadora.”). Source cast rubrics remain metadata. Four evident typography/OCR corrections are recorded: “notre rare” → “notre race”; “dans te fond” → “dans le fond”; “ne petit trahir” → “ne peut trahir”; “II a dit” → “Il a dit”. The High Priest’s source accent variant “PRÈTRE” is retained in that French cue and mapped to the same English identity.
+
+## Presentation and review
+
+French incipits, English title translations, and deduplicated English participants appear in both outlines. Forms follow the previously consulted Opera-Arias scene index (https://www.opera-arias.com/saint-sa%C3%ABns/samson-et-dalila/); “J’ai gravi la montagne” remains unclassified rather than assigning a speculative type. No musical numbers are invented. The shared icon matcher now recognizes French “Récitatif” (and “Récitatif accompagné”) for the act-only recitative symbol.
+
+English is a fresh draft checked turn by turn against the French; independent editorial/listening review remains pending. Public provenance stays one line. The source’s wording and separate replies are retained without blending other editions.
+
+Act I now links forward to Act II. Both are available in the work navigation and outline. Act III remains unprepared and its direct URL retains the placeholder.
+
+## Verification
+
+52 tests passed: both Samson suites, the existing presentation suite, and reader-navigation suite. They cover the checked French checksum, verse counts, full bilingual rendering, every section destination, Act I → II navigation, and Act III placeholder routing. `git diff --check` passed. Existing unrelated catalog failures recorded in the Act I review were not retested or changed. Desktop/mobile visual verification remains pending; the established reader layout is reused.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/samson-et-dalila-act-2.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/samson-et-dalila-act-3.md -->
+
+## Archived source: `docs/reviews/samson-et-dalila-act-3.md`
+
+# Samson et Dalila — Act III, 21 October 2026
+
+## Source and scope
+
+Route: `#/operas/samson-et-dalila?act=3`. Same primary French source as Acts I–II: Ferdinand Lemaire’s public-domain libretto in the ABAO 2020–2021 programme, printed pp. 237–245, https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf (retrieved 21 October 2026). No Spanish translation or programme commentary is reproduced.
+
+Two tableaux, three source scenes, seven navigation sections, 35 sung turns / 211 bilingual verse lines, and 21 separate direction/cue entries. The Bacchanale is an instrumental section with no invented lyrics. Source tableau headings are displayed and translated. The finale includes the prayer, collapse, collective cry and end marker.
+
+## Text and presentation
+
+Every extracted French lyric and direction was checked for inclusion. Unused extraction lines consist only of headings, cast/speaker cues and the Spanish-column spillover “Despunta el día.)”. The source cast rubric supplies Samson’s entrance led by a child; its action is also retained as a bilingual direction. Page furniture is excluded. Two transparent typographical corrections: “jourson” → “jour son”; “guides par ton esprit” → “guidés par ton esprit”. The source’s future tense “tu retireras” is retained, rather than silently substituting the past tense used in some versions.
+
+Source repetitions are retained, including Dalila’s repeated vengeance statement and the final Philistine chorus. Sung variants “ma (ta)” and “mon (ton)” remain lyrics, not stage cues. Joint original speaker cues are preserved; English participant credits split clear identities and deduplicate them.
+
+Navigation incipits are editorial, without invented official numbers. Types follow the previously consulted Opera-Arias index: Récitatif, Chœur, Ballet, Scène, Air et ensemble, Duo and Finale. The two tableaux and Bacchanale heading are printed in the primary source. English is a fresh translation checked against each French turn; independent editorial/listening review remains pending. Public provenance is one short line.
+
+## Completion and validation
+
+All three acts are now available with their bilingual text and outlines: 836 sung French/English line pairs in total (322 + 303 + 211). Act II links forward to Act III; the last act has no onward-act link. Existing Act I/II checks were updated for the completed navigation without changing their French text.
+
+55 relevant tests passed: all three Samson suites plus the existing reader-presentation and navigation suites. Checks cover source checksums, line pairing, full-turn rendering, tableau headings, instrumental separation, sung parenthetical variants, deduplicated participants and every section destination. Syntax and `git diff --check` passed. Previously documented unrelated catalog failures were not retested or changed. Desktop/mobile visual verification remains pending; the established reader layout is reused.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/samson-et-dalila-act-3.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/tosca-review.md -->
+
+## Archived source: `docs/reviews/tosca-review.md`
+
+# Tosca review — 20 October 2026
+
+Scope: all three acts; Italian–English wording and line correspondence, speaker turns, stage directions, and both outlines. Primary source: https://opera-guide.ch/operas/tosca/libretto/it/ (accessed 20 October 2026). Existing Spotify recording remains the listening-order reference; musical types are editorial listening labels, not score numbering.
+
+Restored the Sacristan's “Non mi muovo!”, Cavaradossi's groan in Act II, Tosca's “Chi mi assicura?”, Scarpia's “E sia”, and Sciarrone's final offstage replies. Restored the interleaved interrogation, mock-execution bargain, and execution instructions. Separated “con forza crescente”, “Se la svigna”, and “fissando come in una visione” from sung text. Restored the opening settings of Acts I and II. Existing prose directions remain condensed in places; this is not a diplomatic transcription of every source direction.
+
+Corrected meaning and line correspondence, including “esulanti” (in exile), Scarpia's proposed exchange of a life for a moment, his use of the confessor and executioner, and Tosca's account of promising herself to Scarpia. Sung parenthetical asides remain lyrics. Short cues use square brackets with no label; full directions have one bilingual row, a Stage direction label in each language column, and no brackets.
+
+All 44 listening entries now resolve to their passages through the shared scene-outline renderer. All 18 existing scene/section addresses remain valid. The “Tosca? Che non mi veda” entry follows its source position in Scene VIII rather than pointing to Scene IX. Participant lists use the sung turns within each passage; joint cues and aliases are deduplicated. Musical icons appear only in the act outline.
+
+Validation: 68 content, presentation, navigation, and source-integrity checks pass. A normalized comparison of sung words with the source found no remaining omissions; remaining differences are source spelling/typographical variants and parsed joint speaker labels. Browser desktop/mobile and live deployment verification remain pending.
+
+## Three-act structural follow-up — 23 October 2026
+
+Checked all 18 scenes and 778 bilingual passage pairs (397 / 289 / 92), with 1,046 recorded sung-source lines (453 / 427 / 166). Every Italian passage has English text, all recorded line counts agree, and no escaped newline, empty text, or malformed stanza split was detected. Audited 44 outline landmarks and their bilingual labels. In Act I Scene V, Cavaradossi sings “Mia gelosa!” twice; pinned its existing outline entry to the first occurrence (source turn 86) so future text edits do not redirect it to the repeat. No lyric wording or translation text was changed. All 18 scene/section links remain unchanged. Added structural regression tests; browser visual inspection remains pending.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/tosca-review.md -->
+
+
+<!-- BEGIN ARCHIVED SOURCE: docs/reviews/turandot-outline.md -->
+
+## Archived source: `docs/reviews/turandot-outline.md`
+
+# Turandot outline review — 15 October 2026
+
+Scope: full outline and three act outlines, participant headings and all twenty numbered section links.
+
+Primary source: Ricordi libretto hosted by Teatro Regio Torino, https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf (accessed 15 October 2026; PDF pages 3–29). Retain the source numbers 1–20, section types, three acts and five tableaux. The Alfano ending in the Toscanini version remains included, as documented in the existing source note.
+
+The source headings identify numbered musical forms, without separate titles. Disable the reader’s inferred first-line titles for this opera. Following the clarified guideline of 19 October, keep the original-language form on line one and its English translation on line two, even without a separate title. Tableau headings appear in both outlines. Musical symbols appear only in act outlines. No album reference added.
+
+Participant lists follow sung cues in first-appearance order. Joint cues split into known characters/groups and deduplicate. Existing English speaker translations supply English role labels in the participant lists; the original Italian speaker cues and all bilingual turns remain unchanged.
+
+Verification: all twenty links in both outline views have unique section targets and select the correct section in a continuous act. Existing tests preserve source numbering, 436/346/332 sung-line counts, paired translations and the complete ending. A before/after comparison confirms all source and translated turns are unchanged. Visual desktop/mobile QA and semantic translation review remain unverified.
+
+Related correction: the same opt-in suppression of inferred titles also applies to the just-reviewed Macbeth, where first lines were still being inferred for numbered sections. Its source numbers and text are unchanged.
+
+## Complete bilingual review — 19 October 2026
+
+Read every Italian–English entry across all three acts for meaning and line correspondence. Revised 23 English entries, including “O sangue!” (“Or blood!”), the direction describing Turandot over her prey, Calaf's offer that Turandot may destroy him, and several overly literal phrases. This is a review against the stored Italian, not a fresh critical-edition comparison.
+
+Enabled separate paired rows for all 1,114 sung lines (436 / 346 / 332). All Italian words, sung line breaks and speaker turns remain intact. Consolidated six adjacent narrative-direction pairs; full paragraphs have one label per language and no brackets. Marked 130 compact performance cues for brackets without labels. Preserved all twenty section addresses, source divisions, participant lists and the Alfano ending.
+
+Verification covers exact rendered bilingual pairs, stage-direction labels, English outline headings, unique targets and passage selection. Browser visual verification remains pending.
+
+## Named outline entries — 19 October 2026
+
+The user's subsequent clarification supersedes the form-only heading rule above: both outlines now show number, musical type, and an explicitly reviewed title or sung incipit. Line two translates the title; line three retains the participants. All twenty entries have titles drawn from their own text, including familiar arias within larger numbered sections. No additional sections or links are introduced.
+
+No. 14 displays “N. 14 · Aria · Nessun dorma!” as requested. Its source classification “Introduzione e Romanza” remains stored separately; the introduction and its participants remain part of that section. Other entries retain their source musical types. Musical symbols remain confined to act outlines. The shared reading-page headings also use the same titles for orientation after following an outline link.
+
+<!-- END ARCHIVED SOURCE: docs/reviews/turandot-outline.md -->
