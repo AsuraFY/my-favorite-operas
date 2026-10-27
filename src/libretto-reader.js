@@ -15,21 +15,44 @@ function romanNumeral(value) {
   return numerals[value] || String(value);
 }
 
+// Shared source-grounded headings; explicit translations take precedence.
+function alignedTitleTranslation(section, title) {
+  const norm = x => String(x || "").normalize("NFD").toLowerCase()
+    .replace(/[\u0300-\u036f]/g, "").replace(/[^\p{L}\p{N}]+/gu, "");
+  const target = norm(title);
+  if (!target) return "";
+  for (const turn of section.turns || []) {
+    if (turn.speaker === (libretto.stageDirectionSpeaker || "Stage direction")) continue;
+    const original = String(turn.original ?? turn.it ?? "").split(/\r?\n/);
+    const english = String(turn.translation ?? turn.en ?? "").split(/\r?\n/);
+    if (original.length !== english.length) continue;
+    for (let i = 0; i < original.length; i++) {
+      const candidate = norm(original[i]);
+      if (candidate === target || (target.length > 12 && candidate.startsWith(target)))
+        return english[i]?.trim() || "";
+    }
+  }
+  return "";
+}
 function sectionTitles(scene, section, sectionIndex) {
   const act = libretto.acts.find(group => group.scenes.includes(scene))?.number;
-  const title = libretto.sectionTitleOverrides?.[act + ":" + scene.number + ":" + sectionIndex];
+  const override = libretto.sectionTitleOverrides?.[act + ":" + scene.number + ":" + sectionIndex];
   const numbered = section.number != null || /^No\./i.test(section.label || "");
-  if (!numbered && !section.originalTitle && !section.title && !title) return { original: "", translation: "" };
-  if (section.originalTitle || section.title || title) return {
-    original: section.originalTitle || section.title || title?.original || "",
-    translation: section.translatedTitle || title?.translation || ""
+  const explicit = section.originalTitle || section.title || override?.original || "";
+  if (explicit) return {
+    original: explicit,
+    translation: section.translatedTitle || override?.translation || alignedTitleTranslation(section, explicit)
   };
-  if (libretto.sourceTitlesOnly || section.sourceTitlesOnly) return { original: "", translation: "" };
-  const sung = section.turns.find(turn => turn.speaker !== (libretto.stageDirectionSpeaker || "Stage direction") &&
+  if ((!numbered && section.type !== "Passage") ||
+      ((libretto.sourceTitlesOnly || section.sourceTitlesOnly) && section.type !== "Passage"))
+    return { original: "", translation: "" };
+  const sung = (section.turns || []).find(turn => turn.speaker !== (libretto.stageDirectionSpeaker || "Stage direction") &&
     (turn.original ?? turn.it)?.trim());
-  const firstLine = (sung?.original ?? sung?.it ?? "").split(/\r?\n/).map(line => line.trim())
-    .find(line => line && !/^\([^)]*\)$/.test(line)) || "";
-  return { original: firstLine.replace(/[.,;:!?…]+$/, ""), translation: "" };
+  const original = String(sung?.original ?? sung?.it ?? "").split(/\r?\n/);
+  const english = String(sung?.translation ?? sung?.en ?? "").split(/\r?\n/);
+  const index = original.findIndex(line => line.trim() && !/^\([^)]*\)$/.test(line.trim()));
+  return { original: index >= 0 ? original[index].trim().replace(/[.,;:!?…]+$/, "") : "",
+    translation: index >= 0 && original.length === english.length ? english[index].trim() : "" };
 }
 // Keep public deep links stable when a source review inserts a section.
 function sectionRouteItem(section, index) {
@@ -60,27 +83,40 @@ function sceneSourceHeading(scene) {
 function sceneTranslatedHeading(scene) {
   return scene.translatedHeading || "Scene " + romanNumeral(scene.number);
 }
+// Verified generic musical-form translations; never infer opera score numbers.
+const sectionFormEnglish = Object.freeze({
+  "Recitativo":"Recitative", "Recitative":"Recitative", "Recitativ":"Recitative",
+  "Recitativo accompagnato":"Accompanied recitative", "Scena":"Scene",
+  "Scène":"Scene", "Szene":"Scene", "Auftritt":"Entrance",
+  "Duetto":"Duet", "Duettino":"Short duet", "Duett":"Duet",
+  "Terzetto":"Trio", "Terzettino":"Short trio", "Terzett":"Trio",
+  "Quartetto":"Quartet", "Quintetto":"Quintet", "Sestetto":"Sextet",
+  "Coro":"Chorus", "Chœur":"Chorus", "Choeur":"Chorus",
+  "Aria":"Aria", "Air":"Aria", "Cavatina":"Cavatina", "Canzone":"Song",
+  "Canzonetta":"Song", "Romanza":"Romance", "Rondò":"Rondo",
+  "Sinfonia":"Overture", "Ouverture":"Overture", "Vorspiel":"Prelude",
+  "Prélude":"Prelude", "Preludio":"Prelude", "Introduzione":"Introduction",
+  "Entracte":"Interlude", "Intermezzo":"Interlude", "Temporale":"Storm",
+  "Finale":"Finale", "Concertato":"Ensemble", "Dialogue":"Dialogue",
+  "Dialogo":"Dialogue", "Mélodrame":"Melodrama", "Marcia":"March",
+  "In soffitta":"In the attic", "Instrumental":"Instrumental"
+});
 function sectionPresentation(scene, section, sectionIndex) {
   const { match, number: no } = numberedSection(section);
-  const form = section.displayType || section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
+  const form = section.displayType || section.type || (match ? match[2] :
+    ((section.label || "").toLowerCase() === "recitative" ? (libretto.recitativeLabel || "Recitative") : section.label)) ||
+    (libretto.recitativeLabel || "Recitative");
   const titles = sectionTitles(scene, section, sectionIndex);
-  // Wagner's music drama and Otello's editorial listening landmarks are incipits,
-  // not verified stand-alone aria/recitative numbers. Show the incipit itself using
-  // the same section-heading typography as Così fan tutte and Il barbiere.
-  if (section.incipitOnly) return { heading: titles.original, subtitle: titles.translation, form: "", number: null };
+  if (section.incipitOnly) return { heading: titles.original,
+    subtitle: titles.translation || "English title pending review", form: "", number: null };
   const number = no == null ? "" : (libretto.numberLabel || "N.") + " " + no + " · ";
   const heading = section.type === "Passage" && titles.original ? titles.original :
     number + form + (titles.original ? " · " + titles.original : "");
-  const translatedForm = section.type === "Passage" ? "" : (libretto.translatedForms?.[form] || "");
-  const subtitle = section.threeLineOutline ? (titles.translation || translatedForm) : libretto.threeLineOutline && !libretto.translateSectionHeadings ? titles.translation : [translatedForm, titles.translation].filter(Boolean).join(" · ");
-  // Explicit heading translations also cover instrumental sections without aria titles.
-  if (section.headingTranslation) {
-    return { heading: section.inlineHeadingTranslation ? heading + " — " + section.headingTranslation : heading,
-      subtitle: section.inlineHeadingTranslation ? "" : section.headingTranslation, form, number: no };
-  }
-  // A section named for its scene can reuse the scene’s existing English title.
-  const sceneTranslation = sectionIndex === 0 && form === scene.title ? (scene.translatedTitle || "") : "";
-  return { heading, subtitle: subtitle || sceneTranslation, form, number: no };
+  const translatedForm = libretto.translatedForms?.[form] || sectionFormEnglish[form] || "";
+  const subtitle = titles.translation || section.headingTranslation ||
+    (sectionIndex === 0 && form === scene.title ? (scene.translatedTitle || "") : "") ||
+    translatedForm || "English title pending review";
+  return { heading, subtitle, form, number: no };
 }
 function actCatalog() {
   return (libretto.acts || []).filter(group => group.scenes?.length);
@@ -212,6 +248,10 @@ function sectionCharacterNames(section, act, sceneNumber) {
   for (const [source, label] of Object.entries(libretto.ensembleLabels || {})) {
     if (speakers.includes(source) && !(source === "Chorus" && speakers.includes("Chorus of Servants & Musicians"))) names.push(label);
   }
+  if (!names.length && speakers.length) for (const turn of section.turns) {
+    if (turn.speaker !== (libretto.stageDirectionSpeaker || "Stage direction"))
+      names.push(displayCharacterName(turn.speakerTranslation || turn.speaker));
+  }
   return [...new Set(names)];
 }
 function renderCharacterCredits(names, inline = false) {
@@ -300,7 +340,7 @@ function renderCompleteSectionLink(scene, section, index, act) {
   const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number + '&item=' + sectionRouteItem(section, index);
   return sourceDivisionHeading(section) + '<a class="section-nav-link opera-outline__section" href="' + href + '">' +
     '<span class="opera-outline__section-title">' + escapeHtml(presentation.heading) + '</span>' +
-    ((libretto.threeLineOutline || section.threeLineOutline || section.type === "Passage") && presentation.subtitle ? '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' : "") +
+    '<span class="opera-outline__section-translation">' + escapeHtml(presentation.subtitle) + '</span>' +
     sectionParticipantCredits(section, act, scene.number) + '</a>';
 
 }
@@ -533,7 +573,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   const showSectionHeading = !readerOutline && !(libretto.showReaderMusicalHeadings && section.type === "Passage");
   const selectedHeading = showSectionHeading ?
     '<div class="selected-section-heading"><h2>' + escapeHtml(selectedTitle) + '</h2>' +
-    ((libretto.threeLineOutline || section.threeLineOutline || section.type === "Passage") && heading.subtitle ? '<p class="selected-section-heading__translation">' + escapeHtml(heading.subtitle) + '</p>' : "") +
+    '<p class="selected-section-heading__translation">' + escapeHtml(heading.subtitle) + '</p>' +
     sectionParticipantCredits(section, act, scene.number) + '</div>' : '';
   const sectionLabel = isSpotifyScene || (libretto.showReaderMusicalHeadings && section.type === "Passage") ? "" : '<div class="libretto-section__label">' +
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>';
