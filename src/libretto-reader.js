@@ -431,7 +431,8 @@ function splitInlineDirections(value, literalText = false, inlineDirections) {
 }
 function renderSceneSection(scene, section, sectionIndex, act) {
   const heading = sectionPresentation(scene, section, sectionIndex);
-  const outlineLandmarks = (scene.outline || []).map(entry => ({
+  const outlineLandmarks = (scene.outline || []).filter(entry =>
+    entry.sourceSection == null || entry.sourceSection === sectionIndex).map(entry => ({
     entry,
     turnIndex: section.turns.findIndex((turn, index) =>
       (entry.sourceTurn == null || index === entry.sourceTurn) &&
