@@ -1,6 +1,6 @@
 // This is the only HTML entry point. A failed module import or startup now shows
 // a visible recovery message instead of leaving #app empty.
-import("./main.js?v=otello-parsifal-cosi-20261027").catch(error => {
+import("./main.js?v=global-three-line-20261027").catch(error => {
   console.error("The opera website could not start:", error);
   const app = document.querySelector("#app");
   if (!app) return;
