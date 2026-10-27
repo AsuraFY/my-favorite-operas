@@ -391,6 +391,7 @@ function formatLibrettoText(value, lineAnchors = null) {
   const text = String(value ?? "").replace(/\r\n?/g, "\n").trim();
   return text.split("\n").map((line, index) =>
     (lineAnchors?.get(index) || "") + escapeHtml(line.trim())).join("<br>");
+}
 
 // Bracketing is presentation-only; shortCue explicitly controls the label.
 function bracketStageDirection(value) {
