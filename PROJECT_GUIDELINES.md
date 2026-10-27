@@ -15,3 +15,12 @@
 - Use global selectors in styles.css and the shared renderer in src/libretto-reader.js. **Do not create per-opera heading CSS** for new opera additions. Future sections should provide originalTitle, translatedTitle and participants where possible.
 - Never invent musical classifications, translation lines, characters or score numbers. Prefer existing heading metadata, source-aligned bilingual text, established English musical-form equivalents, and speaker labels, in that order. Where an English heading remains unsupported, show an explicit review-pending label rather than fabricate a translation.
 - Instrumental overtures, preludes and interludes are exempt from character credits where no one sings. Existing source text, act divisions, and deep links should be preserved.
+
+## Global three-line section headings — design standard (27 October 2026)
+- The shared libretto reader and outline must present, in order: **original-language title**, **English translation**, **source-libretto characters**. Do not merge the title and English onto one line.
+- Use the shared renderer in `src/libretto-reader.js` and shared styling in `styles.css`. **Do not introduce per-opera heading CSS** or copy the heading design into each new opera's stylesheet.
+- Reader title: Così fan tutte serif design; English translation: regular (not italic) serif at 1.25rem, softly muted; characters: smaller italic serif with the discreet person icon; **zero added margin between lines 2 and 3**.
+- The outline follows the same three-level typographic hierarchy with proportional compact sizes, and no vertical gap between translation and characters.
+- For heading content, prefer explicit titles and verified English translations. Only derive an English incipit when it aligns with the same source-language lyric; musical-form-only sections can use an established English form name. **Never invent a translation or musical classification.** Flag missing metadata for editorial review.
+- Characters come from section participants or the actual speakers, not performer lists. Instrumental-only headings are exempt from the characters line.
+- Adding a new opera should supply section `originalTitle`, `translatedTitle`, `participants` where available and automatically inherit the default component with no CSS edit. Validate all headings on desktop, mobile and night mode.
