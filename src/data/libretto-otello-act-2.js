@@ -1,3 +1,1896 @@
 // Otello — complete original Italian Act 2, from user-provided Opera Guide saved HTML.
 // English is a first unreviewed draft; headings use source scene divisions and actual incipits.
-export const otelloActTwoScenes = [{"number":1,"originalHeading":"Scena I","translatedHeading":"Scene I","summary":"Iago tells Cassio to ask Desdemona to obtain his pardon.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Una sala terrena nel Castello.\nUna invetriata la divide da un grande giardino. Un verone.\nJago al di qua del verone. Cassio al di là.","translation":"A hall on the ground floor of the castle.\nA glass partition separates it from a large garden. A terrace.\nIago on this side of the terrace, Cassio on the other.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"al di qua del verone, a Cassio","translation":"On this side of the terrace, to Cassio.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Non ti crucciar. Se credi a me, tra poco\nfarai ritorno ai folleggianti amori\ndi Monna Bianca, altiero capitano,\ncoll'elsa d'oro e col balteo fregiato.","translation":"Do not grieve. If you trust me, before long\nyou will return to the playful embraces\nof Mistress Bianca, proud captain,\nwith golden sword-hilt and decorated belt.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"al di là del verone","translation":"On the far side of the terrace.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"CASSIO","original":"Non lusingarmi. . .","translation":"Do not flatter me...","speakerTranslation":"Cassio","literalText":true},{"speaker":"JAGO","original":"Attendi a ciò ch'io dico.\nTu dêi saper che Desdemona è il Duce\ndel nostro Duce, sol per essa ei vive.\nPregala tu, quell'anima cortese\nper te interceda e il tuo perdono è certo.","translation":"Attend to what I say.\nYou should know that Desdemona is the commander\nof our commander; he lives for her alone.\nBeg her gentle soul\nto intercede for you, and your pardon is certain.","speakerTranslation":"Iago","literalText":true},{"speaker":"CASSIO","original":"Ma come favellarle?","translation":"But how am I to speak to her?","speakerTranslation":"Cassio","literalText":true},{"speaker":"JAGO","original":"è suo costume\ngirsene a meriggiar fra quelle fronde\ncolla consorte mia. Quivi l'aspetta.\nOr t'è aperta la via di salvazione.\nVanne.","translation":"It is her custom\nto walk at midday among those trees\nwith my wife. Wait for her there.\nNow the path to your salvation is open.\nGo.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"Cassio s'allontana","translation":"Cassio walks away.","speakerTranslation":"Stage direction","literalText":true}],"originalTitle":"Non ti crucciar. Se credi a me, tra poco","translatedTitle":"Do not grieve. If you trust me, before long","participants":["Iago","Cassio"]}],"outline":[{"type":"","title":"Non ti crucciar. Se credi a me, tra poco","translation":"Do not grieve. If you trust me, before long","match":"Non ti crucciar","speaker":"JAGO","sourceTurn":2,"characters":["Iago","Cassio"]},{"type":"","title":"Attendi a ciò ch'io dico.","translation":"Attend to what I say.","match":"Attendi a ciò","speaker":"JAGO","sourceTurn":5,"characters":["Iago","Cassio"]}],"sourceSceneOutline":true},{"number":2,"originalHeading":"Scena II","translatedHeading":"Scene II","summary":"Alone, Iago declares his cruel creed and prepares to manipulate Othello.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Jago solo","translation":"Iago alone.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"seguendo coll'occhio Cassio","translation":"Following Cassio with his eyes.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Vanne; la tua meta già vedo.\nTi spinge il tuo dimone,\ne il tuo dimon son io.\nE me trascina il mio, nel quale io credo,\ninesorato Iddio.","translation":"Go; already I see your end.\nYour demon drives you,\nand I am your demon.\nAnd mine drags me along, the one in whom I believe,\nan implacable God.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"allontanandosi dal verone seza più guardar Cassio che sarà scomparso fra gli alberi","translation":"Walking away from the terrace without looking again at Cassio, who has disappeared among the trees.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Credo in un Dio crudel che m'ha creato\nsimile a sè e che nell'ira io nomo.\nDalla viltà d'un germe o d'un atòmo\nvile son nato.\nSon scellerato\nperchè son uomo;\ne sento il fango originario in me.\nSì! questa è la mia fe'!\nCredo con fermo cuor, siccome crede\nla vedovella al tempio,\nche il mal ch'io penso e che da me procede,\nper il mio destino adempio.\nCredo che il guisto è un istrion beffardo,\ne nel viso e nel cuor,\nche tutto è in lui bugiardo:\nlagrima, bacio, sguardo,\nsacrificio ed onor.\nE credo l'uom gioco d'iniqua sorte\ndal germe della culla\nal verme dell'avel.\nVien dopo tanta irrision la Morte.\nE poi? E poi? La Morte è il Nulla.\nè vecchia fola il Ciel.","translation":"I believe in a cruel God who made me\nin his image and whom I name in anger.\nFrom the vileness of a germ or atom\nI was born vile.\nI am wicked\nbecause I am human;\nand I feel the primal mire within me.\nYes! This is my faith!\nI believe with a steadfast heart, as the little widow\nbelieves in church,\nthat the evil I think and do\nI accomplish by destiny's decree.\nI believe the righteous man a mocking actor,\nin face and in heart,\nthat everything in him is false:\ntear, kiss, glance,\nsacrifice and honor.\nAnd I believe man a plaything of wicked fate\nfrom the seed of his cradle\nto the worm of his grave.\nAfter all this mockery comes Death.\nAnd then? And then? Death is Nothingness.\nHeaven is an old tale.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"Si vede passare nel giardino Desdemona con Emilia. Jago si slacia al verone, al di là del quale è appostato","translation":"Desdemona is seen crossing the garden with Emilia. Iago rushes to the terrace, on the far side of which Cassio is waiting.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"a Cassio","translation":"To Cassio.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Eccola …Cassio… a te… Questo è il momento.\nTi scuoti… vien Desdemona.","translation":"There she is... Cassio... go on... Now is the moment.\nStir yourself... Desdemona is coming.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"Cassio va verso Desdemona, la saluta, le s'accosta","translation":"Cassio goes towards Desdemona, greets her, and approaches her.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"S'è mosso; la saluta\ne s'avvicina.\nOr qui si tragga Otello! …aiuta, aiuta\nSàtana il mio cimento!\nGià conversano insieme … ed essa inclina,\nsorridendo, il bel viso.","translation":"He has moved; he greets her\nand draws close.\nNow bring Othello here!... Help, help,\nSatan, my venture!\nThey are already speaking... and she turns\nher beautiful smiling face towards him.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"si vedono ripassare nel giardino Cassio e Desdemona","translation":"Cassio and Desdemona are seen passing through the garden again.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Mi basta un lampo sol di quel sorriso\nper trascinare Otello alla ruina.","translation":"One glimmer of that smile is enough for me\nto drag Othello to ruin.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"fa per avviarsi rapido all'uscio del lato destro, ma s'arresta subitamente","translation":"He starts quickly towards the door on the right, but suddenly stops.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Andiam… Ma il caso in mio favor s'adopra.\nEccolo… al posto, all'opra.","translation":"Let us go... But chance is working in my favor.\nThere he is... to my post, to work.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"Si colloca immoto al verone, guardando fissamente verso il giardino, dove stanno Cassio e Desdemona","translation":"He stands motionless by the terrace, staring into the garden at Cassio and Desdemona.","speakerTranslation":"Stage direction","literalText":true}],"originalTitle":"Credo in un Dio crudel che m'ha creato","translatedTitle":"I believe in a cruel God who made me","participants":["Iago"]}],"outline":[{"type":"","title":"Credo in un Dio crudel che m'ha creato","translation":"I believe in a cruel God who made me","match":"Credo in un Dio crudel","speaker":"JAGO","sourceTurn":4,"characters":["Iago"]},{"type":"","title":"Mi basta un lampo sol di quel sorriso","translation":"One glimmer of that smile is enough for me","match":"Mi basta un lampo","speaker":"JAGO","sourceTurn":11,"characters":["Iago"]}],"sourceSceneOutline":true},{"number":3,"originalHeading":"Scena III","translatedHeading":"Scene III","summary":"Iago plants suspicion as Desdemona receives the people’s offerings.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Jago e Otello","translation":"Iago and Othello.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"simulando di non aver visto Otello e fingendo di parlare fra sè","translation":"Pretending not to have seen Othello and speaking as though to himself.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Ciò m'accora.","translation":"That troubles me.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Che parli?","translation":"What are you saying?","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Nulla … voi qui? una vana\nvoce m'uscì dal labbro …","translation":"Nothing... you here? A vain\nword slipped from my lips...","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Colui che s'allontana\ndalla mia sposa, è Cassio?","translation":"The man leaving\nmy wife—is that Cassio?","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Cassio? No …quei si scosse\ncome un reo nel vedervi.","translation":"Cassio? No... he started\nlike a guilty man when he saw you.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Credo che Cassio ei fosse.","translation":"I believe it was Cassio.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Mio signore…","translation":"My lord...","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Che brami?","translation":"What do you want?","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Cassio, nei primi dì del vostro amor,\nDesdemona non conosceva?","translation":"Did Cassio know Desdemona\nin the first days of your love?","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Sì.\nPerchè fai tale inchiesta?","translation":"Yes.\nWhy do you ask?","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Il mio pensiero è vago d'ubbie,\nnon di malizia.","translation":"My thought is vague with misgivings,\nnot malice.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Di' il tuo pensiero, Jago.","translation":"Tell me your thought, Iago.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Vi confidaste a Cassio?","translation":"Did you confide in Cassio?","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Spesso un mio dono o un cenno\nportava alla mia sposa.","translation":"He often carried a gift or a message\nto my bride.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Dassenno?","translation":"Indeed?","speakerTranslation":"Iago"},{"speaker":"OTELLO","original":"Si, dassenno.\nNol credi onesto?","translation":"Yes, indeed.\nDo you not think him honest?","speakerTranslation":"Othello"},{"speaker":"Stage direction","original":"imitando Otello","translation":"Imitating Othello.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Onesto?","translation":"Honest?","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Che ascondi nel tuo core?","translation":"What do you hide in your heart?","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Che asondo in cor, signore?","translation":"What do I hide in my heart, my lord?","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"\"Che ascondo in cor, signore?\"\nPel cielo, tu sei l'eco dei detti miei, nel chiostro\ndell'anima ricetti qualche terribil mostro.\nSì,","translation":"“What do I hide in my heart, my lord?”\nBy heaven, you echo my words; in the cloister\nof your soul you harbor some terrible monster.\nYes,","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"declamato","translation":"Declaimed.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"ben t'udii poc'anzi mormorar: \"Ciò m'accora.\"\nMa di che t'accoravi? Nomini Cassio e allora\ntu corrughi la fronte. Suvvia, parla, se m'ami.","translation":"I heard you just now mutter: “That troubles me.”\nBut what troubled you? You name Cassio, and then\nyou furrow your brow. Come, speak, if you love me.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Voi sapete ch'io v'amo.","translation":"You know that I love you.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Dunque senza velami\nt'esprimi, e senza ambagi.\nT'esca fuor dalla gola\nil tuo più rio pensiero colla più ria parola.","translation":"Then speak without veils\nand without evasion.\nLet your most wicked thought escape your throat\nin the most wicked words.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"S'anco teneste in mano tutta l'anima mia\nnol sapreste.","translation":"Even if you held my whole soul in your hand,\nyou would not know it.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Ah!","translation":"Ah!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"avvicinandosi molto ad Otello e sottovoce","translation":"Coming very close to Othello, in a low voice.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Temete, signor, la gelosia!\nè un'idra fosca, livida, cieca, col suo veleno\nsè stessa attosca, vivida piaga le squarcia il seno.","translation":"Beware, my lord, of jealousy!\nIt is a dark, livid, blind hydra; with its poison\nit poisons itself, a living wound tearing open its breast.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Miseria mia! No! il vano sospettar nulla giova.\nPria del dubbio l'indagine, dopo il dubbio la prova,\ndopo la prova (Otello ha sue leggi supreme),\namore e gelosia vadan dispersi insieme!","translation":"What misery! No! Vain suspicions serve no purpose.\nBefore doubt, inquiry; after doubt, proof;\nafter proof (Othello has his supreme laws),\nlet love and jealousy be scattered together!","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Un tal proposto spezza di mie labbra il suggello.\nNon parlo ancor di prova, pur, generoso Otello,\nvigilate. . .soventi le oneste e ben create\ncoscienze non vedono la frode:","translation":"Such resolve breaks the seal of my lips.\nI do not yet speak of proof, but generous Othello,\nbe watchful... often honest and well-bred\nconsciences do not perceive deceit:","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"sottovoce","translation":"In a whisper.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"vigilate.\nScrutate le parole di Desdemona, un detto\npuò ricondur la fede, può affermare il sospetto.","translation":"watch carefully.\nExamine Desdemona's words; one word\nmay restore your faith or confirm suspicion.","speakerTranslation":"Iago","literalText":true},{"speaker":"VOCI LONTANO","original":"Dove guardi splendono\nraggi, avvampan cuori,\ndove passi scendono\nnuvole di fiori.\nQui fra gigli e rose,\ncome a un casto altare,\npadri, bimbi, spose\nvengono a cantar.","translation":"Wherever you look, rays\nshine, hearts burst into flame;\nwherever you pass, clouds\nof flowers fall.\nHere among lilies and roses,\nas at a chaste altar,\nfathers, children, brides\ncome to sing.","speakerTranslation":"Distant voices","literalText":true},{"speaker":"Stage direction","original":"Si vede ricomparire Desdemona nel giardino, dalla vasta apertura del fondo: esse è circondata da donne dell'isola, da fanciulle, da marinai cipriotti e albanesi che si avanzano e le offrono fiori e rami fioriti ed altri doni. Alcuni s'accompagnano, cantando, sulla guzla (una specie di Mandòla), altri hanno delle piccole arpe ad armascollo.","translation":"Desdemona reappears in the garden through the wide opening at the back. Women of the island, girls and Cypriot and Albanian sailors surround her, offering flowers, flowering branches and other gifts. Some sing to the accompaniment of the guzla, a kind of mandolin; others carry small harps over their shoulders.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Eccola. . .vigilate.","translation":"There she is... be watchful.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"Una parte del Coro in scena; uniti a questa vi sarrano dei figuranti con Mandolini, Chitarre e Cornamuse. L'altra parte resterà dietro la tela, unitamente ai suonatori di Mandolini, Chittare e Cornamuse.","translation":"Part of the chorus is onstage, together with performers playing mandolins, guitars and bagpipes. The other part remains behind the curtain with more players.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"VOCI","original":"Dove guardi splendono\nraggi, avvampan cuori,\ndove passi scendono\nnuvole di fiori.\nQui fra gigli e rose,\ncome a un casto altare,\npadri, bimbi, spose\nvengono a cantar.","translation":"Wherever you look, rays\nshine, hearts burst into flame;\nwherever you pass, clouds\nof flowers fall.\nHere among lilies and roses,\nas at a chaste altar,\nfathers, children, brides\ncome to sing.","speakerTranslation":"Voices","literalText":true},{"speaker":"Stage direction","original":"spargendo al suolo fiori di giglio","translation":"Strewing lily blossoms on the ground.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"FANCIULLI","original":"T'offriamo il giglio soave stel\nche in man degl'angeli fu assunto in ciel,\nche abbella il fulgido manto\ne la gonna della Madonna\ne il santo vel.","translation":"We offer you the gentle lily stem\nthat in the angels' hands rose to heaven,\nthat adorns the shining cloak\nand robe of the Madonna\nand her holy veil.","speakerTranslation":"Children","literalText":true},{"speaker":"DONNE E MARINAI","original":"Mentre all'aura vola\nlieta la canzon,\nl'agile mandòla\nne accompagna il suon.","translation":"While through the air flies\nthe cheerful song,\nthe nimble mandolin\naccompanies its sound.","speakerTranslation":"Women E Sailors","literalText":true},{"speaker":"Stage direction","original":"offrendo a Desdemona dei monili di corallo e di perle","translation":"Offering Desdemona ornaments of coral and pearl.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"MARINAI","original":"A te le porpore, le perle e gli ostri,\nnella voragine còlti del mar.\nVogliam Desdemona coi doni nostri\ncome un'immagine sacra adornar.","translation":"To you the purple shells, the pearls, the dyes,\ngathered from the ocean's depths.\nWe would adorn Desdemona with our gifts\nas though she were a sacred image.","speakerTranslation":"Sailors","literalText":true},{"speaker":"DONNE E FANCIULLI","original":"Mentre all'aura vola\nlieta la canzon,\nl'agile mandòla\nne accompagna il suon.","translation":"While through the air flies\nthe cheerful song,\nthe nimble mandolin\naccompanies its sound.","speakerTranslation":"Women E Children","literalText":true},{"speaker":"Stage direction","original":"spargendo fronde e fiori","translation":"Strewing branches and flowers.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"LE DONNE","original":"A te la florida messe dai grembi\nspargiam al suolo, a nembi, a nembi.\nL'april circonda la sposa bionda\nd'un etra rorida che vibra al sol.","translation":"For you the flowering harvest from our laps\nwe scatter on the ground in showers and showers.\nApril surrounds the fair-haired bride\nwith a dewy air that shimmers in the sun.","speakerTranslation":"Women","literalText":true},{"speaker":"FANCIULLI E MARINAI","original":"Mentre all'aura vola","translation":"While through the air flies...","speakerTranslation":"Children E Sailors","literalText":true},{"speaker":"Stage direction","original":"etc…","translation":"And so on.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"TUTTI","original":"Dove guardi splendono raggi","translation":"Wherever you look, rays shine...","speakerTranslation":"All","literalText":true},{"speaker":"Stage direction","original":"etc…","translation":"And so on.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Splende il cielo, danza\nl'aura, olezza il fior.","translation":"The sky shines, the breeze\ndances, the flower gives fragrance.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Quel canto mi conquide.\nS'ella m'inganna, il ciel se stesso irride!","translation":"That song conquers me.\nIf she deceives me, heaven mocks itself!","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Beltà ed amor in dolce inno concordi!\nI vostri infrangerò soavi accordi.","translation":"Beauty and love united in a sweet hymn!\nI will shatter your gentle harmonies.","speakerTranslation":"Iago","literalText":true},{"speaker":"DESDEMONA","original":"Gioia, amor, speranza\ncantan nel mio cor.","translation":"Joy, love, hope\nsing within my heart.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"CIPRIOTI","original":"Vivi felice! vivi felice!\nAddio. Qui regna Amor.","translation":"Live happily! Live happily!\nFarewell. Here Love reigns.","speakerTranslation":"Cypriots","literalText":true},{"speaker":"OTELLO","original":"Quel canto mi conquide.","translation":"That song conquers me.","speakerTranslation":"Othello","literalText":true}],"originalTitle":"Ciò m'accora.","translatedTitle":"That troubles me.","participants":["Iago","Othello","Distant voices","Voices","Children","Women E Sailors","Sailors","Women E Children","Women","Children E Sailors","All","Desdemona","Cypriots"]}],"outline":[{"type":"","title":"Ciò m'accora.","translation":"That troubles me.","match":"Ciò m'accora","speaker":"JAGO","sourceTurn":2,"characters":["Iago","Othello"]},{"type":"","title":"Temete, signor, la gelosia!","translation":"Beware, my lord, of jealousy!","match":"Temete, signor, la gelosia","speaker":"JAGO","sourceTurn":30,"characters":["Iago","Othello"]},{"type":"","title":"Dove guardi splendono","translation":"Wherever you look, rays","match":"Dove guardi splendono","speaker":"VOCI LONTANO","sourceTurn":35,"characters":["Distant voices","Iago","Voices","Children","Women E Sailors","Sailors","Women E Children","Women","Children E Sailors","All","Desdemona"]},{"type":"","title":"Quel canto mi conquide.","translation":"That song conquers me.","match":"Quel canto mi conquide","speaker":"OTELLO","sourceTurn":53,"characters":["Othello","Iago","Desdemona","Cypriots"]}],"sourceSceneOutline":true},{"number":4,"originalHeading":"Scena IV","translatedHeading":"Scene IV","summary":"Desdemona pleads for Cassio and Iago steals her handkerchief.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Finito il Coro, Desdemona bacia la testa d'alcuni tra i fanciulli, e alcune donne le baciano il lembo della veste, ed essa porge una borsa ai marinai. Il Coro s'allontana. Desdemona, seguita poi da Emilia, entra nella sala e s'avanza verso Otello.","translation":"When the chorus ends, Desdemona kisses the heads of some children and some women kiss the hem of her dress. She gives a purse to the sailors. The chorus moves off. Desdemona, followed by Emilia, enters the hall and approaches Othello.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"a Otello","translation":"To Othello.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"D'un uom che geme sotto il tuo disdegno\nla preghiera ti porto.","translation":"I bring you the plea\nof a man who suffers under your displeasure.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Chi è costui?","translation":"Who is he?","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Cassio.","translation":"Cassio.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Era lui\nche ti parlava sotto quelle fronde?","translation":"Was it he\nwho spoke to you beneath those trees?","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Lui stesso, e il suo dolor che in me s'infonde\ntanto è verace che di grazia è degno.\nIntercedo per lui, per lui ti prego.\nTu gli perdona.","translation":"Yes, he, and his pain, which fills me,\nis so genuine that he deserves mercy.\nI intercede for him; for him I plead.\nForgive him.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"con asprezza","translation":"Harshly.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Non ora.","translation":"Not now.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Non oppormi il tuo diniego.\nGli perdona.","translation":"Do not refuse me.\nForgive him.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Non ora.","translation":"Not now.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Perchè torbida suona la voce tua?\nQual pena t'addolora?","translation":"Why does your voice sound troubled?\nWhat suffering distresses you?","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"M'ardon le tempie.","translation":"My temples burn.","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"spiegando il suo fazzoletto come per fasciare la fronte d'Otello","translation":"Unfolding her handkerchief to bind Othello's brow.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Quell'ardor molesto\nsvanirà, se con questo\nmorbido lino la mia man ti fascia.","translation":"That painful burning\nwill fade if my hand binds you\nwith this soft linen.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"getta il fazzoletto a terra","translation":"He throws the handkerchief to the ground.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Non ho d'uopo di ciò.","translation":"I have no need of it.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Tu sei crucciato, signor.","translation":"You are angry, my lord.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"aspramente","translation":"Harshly.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Mi lascia! mi lascia!","translation":"Leave me! Leave me!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"Emilia raccoglie il fazzoletto dal suolo.","translation":"Emilia picks up the handkerchief from the ground.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Se inconscia, contro te, sposo, ho peccato,\ndammi la dolce e lieta parola del perdono.","translation":"If unknowingly I have sinned against you, husband,\ngive me the sweet and joyful word of forgiveness.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"a parte","translation":"Aside.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"(Forse perchè gl'inganni\nd'arguto amor non tendo. . )","translation":"(Perhaps because I do not practice\nthe tricks of clever love...)","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"La tua fanciulla io sono\numile e mansueta;\nma il labbro tuo sospira,\nhai l'occhio fiso al suol.\nGuardami in volto e mira\ncome favella amor.\nVien ch'io t'allieti il core,\nch'io ti lenisca il duol.\nGuardami in volto e mira,","translation":"I am your girl,\nhumble and gentle;\nyet your lips sigh,\nyour eyes are fixed on the ground.\nLook at my face and see\nhow love speaks.\nCome, let me gladden your heart,\nlet me soothe your grief.\nLook at my face and see,","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"etc…","translation":"And so on.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"(… forse perchè discendo\nnella valle degli anni,\nforse perchè ho sul viso\nquest'atro tenebror. . .\nforse perchè gl'inganni d'arguto\namor non tendo,","translation":"(... perhaps because I descend\ninto the valley of years,\nperhaps because my face bears\nthis dark shadow...\nperhaps because I do not practice\nthe wiles of cunning love,","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"etc…","translation":"And so on.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Ella è perduta è irriso\nio sono e il core m'infrango\ne ruinar nel fango\nvedo il mio sogno d'or.\nElla è perduta e irriso,","translation":"She is lost and I am mocked!\nMy heart is breaking,\nand I see my golden dream\nfalling into the mud.\nShe is lost, and I am mocked,","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"etc…","translation":"And so on.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":")","translation":")","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"a Emilia sottovoce","translation":"To Emilia, whispering.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"(Quel vel mi porgi\nch'or hai raccolto.)","translation":"(Give me that handkerchief\nyou have just picked up.)","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"sottovoce a Jago","translation":"Whispering to Iago.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"(Qual frode scorgi?\nTi leggo in volto.)","translation":"(What fraud are you plotting?\nI read it in your face.)","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"T'opponi a vôto\nquand'io commando.","translation":"You resist in vain\nwhen I command.","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"Il tuo nefando\nlivor m'è noto.","translation":"I know your wicked\nhatred well.","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"Sospetto insano!","translation":"Mad suspicion!","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"Guardia fedel\nè questa mano.","translation":"This hand\nis its faithful guardian.","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"Dammi quel vel!","translation":"Give me that cloth!","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"afferra violentemente il braccio di Emilia","translation":"He violently grips Emilia's arm.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Su te l'irosa mia man s'aggrava!","translation":"My angry hand presses hard upon you!","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"Son la tua sposa,\nnon la tua schiava.","translation":"I am your wife,\nnot your slave.","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"La schiava impura\ntu sei di Jago.","translation":"Iago's impure slave,\nthat is what you are.","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"Ho il cor presago\nd'una sventura.","translation":"My heart foresees\nsome calamity.","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"Né mi paventi?","translation":"Do you not fear me?","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"Uomo crudel!","translation":"Cruel man!","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"A me.","translation":"To me.","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"Che tenti?","translation":"What are you trying to do?","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"A me quel vel!","translation":"Give me that cloth!","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"con un colpo di mano Jago ha carpito il fazzoletto ad Emilia","translation":"With a blow Iago snatches the handkerchief from Emilia.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"Uomo crudel!","translation":"Cruel man!","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"a sé stesso","translation":"To himself.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"(Già la mia brama\nconquido, ed ora\nsu questa trama\nJago lavora!)","translation":"(Already I have gained\nwhat I desired, and now\nupon this web\nIago will work!)","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"a sé stessa","translation":"To herself.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"(Vinser gli artigli\ntruci e codardi.\nDio dai perigli\nsempre ci guardi)","translation":"(His fierce and cowardly\nclaws have prevailed.\nMay God forever guard us\nfrom danger.)","speakerTranslation":"Emilia","literalText":true},{"speaker":"DESDEMONA","original":"Dammi la dolce e lieta parola del perdon.","translation":"Give me the sweet and joyful word of forgiveness.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Escite! Solo vo' restar.","translation":"Go out! I wish to be alone.","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"sottovoce ad Emilia che sta per escire","translation":"Softly to Emilia as she is about to leave.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Ti giova tacer. Intendi?","translation":"It is in your interest to keep silent. Understand?","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"Desdemona ed Emilia escono. Jago finge d'escire dalla porta del fondo, ma giuntovi s'arresta.","translation":"Desdemona and Emilia leave. Iago pretends to leave by the back door, but stops when he reaches it.","speakerTranslation":"Stage direction","literalText":true}],"originalTitle":"D'un uom che geme sotto il tuo disdegno","translatedTitle":"I bring you the plea","participants":["Desdemona","Othello","Iago","Emilia"]}],"outline":[{"type":"","title":"D'un uom che geme sotto il tuo disdegno","translation":"I bring you the plea","match":"D'un uom che geme","speaker":"DESDEMONA","sourceTurn":2,"characters":["Desdemona","Othello"]},{"type":"","title":"La tua fanciulla io sono","translation":"I am your girl,","match":"La tua fanciulla io sono","speaker":"DESDEMONA","sourceTurn":24,"characters":["Desdemona","Othello","Iago","Emilia"]},{"type":"","title":"Dammi quel vel!","translation":"Give me that cloth!","match":"Dammi quel vel","speaker":"JAGO","sourceTurn":39,"characters":["Iago","Emilia","Desdemona","Othello"]}],"sourceSceneOutline":true},{"number":5,"originalHeading":"Scena V","translatedHeading":"Scene V","summary":"Iago uses a dream and the handkerchief to inflame Othello’s jealousy.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Otello, Jago sul fondo","translation":"Othello, with Iago in the background.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"accasciato, su d'un sedile","translation":"Collapsed on a seat.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Desdemona rea!","translation":"Desdemona guilty!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"nel fondo guardando di nascosto il fazzoletto, poi riponendolo con cura nel giustacuore","translation":"At the back, secretly examining the handkerchief, then carefully hiding it in his doublet.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"(Con questi fili tramerò la prova\ndel peccato d'amor. Nella dimora\ndi Cassio ciò s'asconda)","translation":"(With these threads I shall weave proof\nof her adulterous love. Let it be hidden\nin Cassio's lodgings.)","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Atroce idea!","translation":"Horrible thought!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"fissando Otello","translation":"Watching Othello.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"(Il mio velen lavora)","translation":"(My poison is working.)","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Rea contro me! contro me!","translation":"Guilty towards me! Towards me!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"cupo","translation":"Darkly.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"(Soffri e ruggi!)","translation":"(Suffer and roar!)","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Atroce! atroce!","translation":"Horrible! Horrible!","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Non pensateci più.","translation":"Think no more of it.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"dopo essersi portato accanto ad Otello, bonariamente","translation":"After coming up beside Othello, kindly.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"balzando","translation":"Leaping up.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Tu? Indietro! fuggi!\nM'hai legato alla croce! Ahimè!\nPiù orrendo d'ogni orrenda ingiuria\ndell'ingiuria è il sospetto.\nNell'ore arcane della sua lussuria\n(e a me furate!) m'agitava il petto\nforse un presagio! Ero baldo, giulivo.\nNulla sapevo ancora; io non sentivo\nsul suo corpo divin che m'innamora\ne sui labbri mendaci\ngli ardenti baci\ndi Cassio! Ed ora! ed ora…\nOra e per sempre addio sante memorie,\naddio, sublimi incanti del pensier!\nAddio schiere fulgenti, addio vittorie,\ndardi volanti e volanti corsier!\nAddio, vessillo trionfale e pio,\ne diane squillanti in sul mattin!\nClamori e canti di battaglia, addio!\nDella gloria d'Otello è questo il fin.","translation":"You? Back! Flee!\nYou have nailed me to the cross! Alas!\nMore dreadful than any cruel insult\nis the suspicion of it.\nIn the secret hours of her lust\n(stolen from me!) perhaps my breast\nwas stirring with foreboding! I was bold, joyful.\nI still knew nothing; I did not feel\nupon her divine body that enchants me\nand on those deceitful lips\nthe burning kisses\nof Cassio! And now! And now...\nNow and forever farewell, holy memories,\nfarewell, sublime enchantments of thought!\nFarewell, shining armies, farewell victories,\nflying arrows and galloping steeds!\nFarewell, triumphant sacred banner,\nand trumpets sounding at dawn!\nClamor and songs of battle, farewell!\nThis is the end of Othello's glory.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Pace, signor.","translation":"Peace, my lord.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Sciagurato! mi trova una prova secura\nche Desdemona è impura. . .\nNon sfuggir! nulla ti giova!\nVo' una secura, una visibil prova!\nO sulla tua testa\ns'accenda e precipiti il fulmine\ndel mio spaventoso furor che si desta!","translation":"Wretch! Find me certain proof\nthat Desdemona is unchaste...\nDo not flee! It will not help you!\nI want sure and visible proof!\nOr upon your head\nshall blaze and fall the thunderbolt\nof my dreadful awakened fury!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"Afferra Jago alla gola e lo atterra.","translation":"He seizes Iago by the throat and throws him down.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Divina grazia difendimi!","translation":"Divine grace, protect me!","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"Alzandosi","translation":"Rising.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Il cielo vi protegga. Non son più vostro alfiere.\nVoglio che il mondo testimon mi sia\nche l'onestà è periglio.","translation":"May heaven protect you. I am no longer your ensign.\nI wish the world to witness\nthat honesty is dangerous.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"fa per andarsene","translation":"He makes as if to leave.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"No… rimani. Forse onesto tu sei.","translation":"No... stay. Perhaps you are honest.","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"sulla soglia fingendo d'andarsene","translation":"At the doorway, pretending to go.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Meglio varebbe ch'io fossi un ciurmador.","translation":"Better had I been a charlatan.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Per l'universo!\nCredo leale Desdemona e credo\nche non lo sia. Te credo onesto e credo\ndisleale. . .La prova io voglio!\nVoglio la certezza!","translation":"By the universe!\nI believe Desdemona faithful, and believe\nshe is not. I believe you honest, and believe\nyou disloyal... I want proof!\nI want certainty!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"ritornando verso Otello","translation":"Returning towards Othello.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Signor, frenate l'ansie.\nE qual certezza v'abbisogna?\nAvvinti verderli forse?","translation":"My lord, restrain your anguish.\nAnd what certainty do you need?\nPerhaps to see them in each other's arms?","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Ah, morte e dannazione!","translation":"Ah, death and damnation!","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Ardua impresa sarebbe; e qual certezza\nsognate voi se quell'immondo fatto\nsempre vi sfuggirà? Ma pur se guida\nè la ragione al vero, una sì forte\ncongettura riserbo che per poco alla\ncertezza vi conduce. Udite.","translation":"That would be a difficult task; and what certainty\ndo you dream of if that filthy act\nwill always escape your sight? Yet if reason\ncan guide us to truth, I have such strong\ngrounds for suspicion that they can bring you almost\nto certainty. Listen.","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"avvicinandosi molto ad Otello e sottovoce","translation":"Coming very close to Othello, whispering.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Era la notte, Cassio dormìa,\ngli stavo accanto.\nCon interrotte voci tradia\nl'intimo incanto.\nLe labbra lente, lente movea,\nnell'abbandono\ndel sogno ardente, e allor dicea,\ncon flebil suono:","translation":"It was night, Cassio slept,\nI stood beside him.\nIn broken words he betrayed\nhis inner enchantment.\nSlowly, slowly his lips moved\nin the abandon\nof his ardent dream, and then he said\nin a faint voice:","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"sottovoce parlate","translation":"Whispering the words.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"\"Desdemona soave! Il nostro amor s'asconda.\nCauti vegliamo! L'estasi del ciel\ntutto m'innonda.\"\nSeguìa più vago l'incubo blando;\ncon molle angoscia\nl'interna imago quasi baciando,\nei disse poscia:","translation":"“Sweet Desdemona! Let our love be hidden.\nLet us be careful! Heavenly ecstasy\nfloods my whole being.”\nThe gentle dream grew sweeter;\nwith soft anguish\nas if kissing the image within,\nhe then said:","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"sempre sottovoce","translation":"Still in a whisper.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"\"Il rio destino impreco\nche al Moro ti donò\".\nE allora il sogno\nin cieco letargo si mutò.","translation":"“I curse the cruel destiny\nthat gave you to the Moor.”\nAnd then the dream\nchanged into blind slumber.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Oh! mostuosa colpa!","translation":"Oh, monstrous guilt!","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Io non narrai che un sogno.","translation":"I told only a dream.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Un sogno che rivela un fatto.","translation":"A dream revealing a fact.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Un sogno che può dar forma di prova\nad altro indizio.","translation":"A dream that can become evidence\nof another clue.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"E qual?","translation":"And what is it?","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Talor vedeste\nin mano di Desdemona un tessuto trapunto\na fior e più sottil d'un velo?","translation":"Have you ever seen\nin Desdemona's hand a cloth embroidered\nwith flowers, finer than a veil?","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"È il fazzoletto ch'io le diedi,\npegno primo d'amor.","translation":"It is the handkerchief I gave her,\nmy first pledge of love.","speakerTranslation":"Othello","literalText":true},{"speaker":"JAGO","original":"Quel fazzoletto ieri\n(certo ne son) lo vidi in man di Cassio.","translation":"That handkerchief yesterday\n(I am certain) I saw in Cassio's hand.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Ah! Mille vite gli donasse Iddio!\nUna è povera preda al furor mio!!\nJago, ho il cor di gelo.\nLungi da me le pietose larve!\nTutto il mio vano amor escalo al cielo;\nGuardami, ei sparve.\nNelle suespire d’angue\nL’idra m’avvince!\nAh! Sangue, sangue, sangue!","translation":"Ah! May God grant him a thousand lives!\nOne is too poor a prey for my fury!\nIago, my heart is ice.\nAway from me, merciful phantoms!\nMy vain love rises to the sky;\nLook at me, it has vanished.\nIn the coils of a serpent\nthe hydra binds me!\nAh! Blood, blood, blood!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"S’inginocchia","translation":"He kneels.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Si, pel ciel marmoreo giuro!\nPer le attorte folgori!\nPer la Morte e per l’oscuro mar sterminator!\nD’ira e d’impeto tremendo\npresto fia che sfolgori\nQuesta man ch’io levo e stendo!","translation":"Yes, by the marble heavens I swear!\nBy the twisted lightning bolts!\nBy Death and the dark destroying sea!\nWith dreadful wrath and force\nsoon shall this hand I lift\nand stretch forth blaze!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"Levando la mano al cielo. Otello fa per alzarsi; Jago lo trattiene inginocchiato","translation":"Raising his hand toward heaven. Othello starts to rise; Iago keeps him kneeling.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"s'inginocchia anch'esso","translation":"Iago also kneels.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Non v'alzate ancor!\nTestimon è il Sol ch'io miro,\nche m'irradia e inanima\nl'ampia terra e il vasto spiro\ndel Creato inter,\nche ad Otello io sacro ardenti,\ncore, braccio ed anima\ns'anco ad opere cruenti\ns'armi il suo voler!\nJAGO e OTELLO","translation":"Do not rise yet!\nThe sun I see is witness,\nilluminating and animating\nthe vast earth and the great breath\nof all creation,\nthat I devote to Othello my ardent\nheart, arm and soul,\neven if his will commands\ndeeds of blood!\nIAGO and OTHELLO","speakerTranslation":"Iago","literalText":true},{"speaker":"Stage direction","original":"alzando le mani al cielo come chi giura","translation":"Raising their hands towards heaven as if taking an oath.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Sì, pel ciel marmoreo giuro!\nPer le attorte folgori!\nPer la Morte e per l'oscuro mar sterminator!\nD'ira e d'impeto tremendo presto fia\nche sfolgori questa man ch'io levo e stendo!\nDio vendicator!","translation":"Yes, by the marble heavens I swear!\nBy the twisted lightning bolts!\nBy Death and the dark destroying sea!\nSoon with dreadful wrath and force\nshall this hand I lift and stretch forth blaze!\nGod of vengeance!","speakerTranslation":"Iago","literalText":true}],"originalTitle":"Desdemona rea!","translatedTitle":"Desdemona guilty!","participants":["Othello","Iago"]}],"outline":[{"type":"","title":"Desdemona rea!","translation":"Desdemona guilty!","match":"Desdemona rea!","speaker":"OTELLO","sourceTurn":2,"characters":["Othello","Iago"]},{"type":"","title":"Ora e per sempre addio sante memorie,","translation":"Now and forever farewell, holy memories,","match":"Ora e per sempre addio","speaker":"OTELLO","sourceTurn":15,"characters":["Othello","Iago"]},{"type":"","title":"Era la notte, Cassio dormìa,","translation":"It was night, Cassio slept,","match":"Era la notte","speaker":"JAGO","sourceTurn":32,"characters":["Iago","Othello"]},{"type":"","title":"Sì, pel ciel marmoreo giuro!","translation":"Yes, by the marble heavens I swear!","match":"Sì, pel ciel marmoreo giuro!","speaker":"JAGO","sourceTurn":52,"characters":["Iago"]}],"sourceSceneOutline":true}];
+export const otelloActTwoScenes = [
+  {
+    "number": 1,
+    "originalHeading": "Scena I",
+    "translatedHeading": "Scene I",
+    "summary": "Iago tells Cassio to ask Desdemona to obtain his pardon.",
+    "sections": [
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Non ti crucciar. Se credi a me, tra poco",
+        "translatedTitle": "Do not grieve. If you trust me, before long",
+        "participants": [
+          "Iago",
+          "Cassio"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Una sala terrena nel Castello.\nUna invetriata la divide da un grande giardino. Un verone.\nJago al di qua del verone. Cassio al di là.",
+            "translation": "A hall on the ground floor of the castle.\nA glass partition separates it from a large garden. A terrace.\nIago on this side of the terrace, Cassio on the other.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "al di qua del verone, a Cassio",
+            "translation": "On this side of the terrace, to Cassio.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Non ti crucciar. Se credi a me, tra poco\nfarai ritorno ai folleggianti amori\ndi Monna Bianca, altiero capitano,\ncoll'elsa d'oro e col balteo fregiato.",
+            "translation": "Do not grieve. If you trust me, before long\nyou will return to the playful embraces\nof Mistress Bianca, proud captain,\nwith golden sword-hilt and decorated belt.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "al di là del verone",
+            "translation": "On the far side of the terrace.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "CASSIO",
+            "original": "Non lusingarmi. . .",
+            "translation": "Do not flatter me...",
+            "speakerTranslation": "Cassio",
+            "literalText": true
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Attendi a ciò ch'io dico.",
+        "translatedTitle": "Attend to what I say.",
+        "participants": [
+          "Iago",
+          "Cassio"
+        ],
+        "turns": [
+          {
+            "speaker": "JAGO",
+            "original": "Attendi a ciò ch'io dico.\nTu dêi saper che Desdemona è il Duce\ndel nostro Duce, sol per essa ei vive.\nPregala tu, quell'anima cortese\nper te interceda e il tuo perdono è certo.",
+            "translation": "Attend to what I say.\nYou should know that Desdemona is the commander\nof our commander; he lives for her alone.\nBeg her gentle soul\nto intercede for you, and your pardon is certain.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "CASSIO",
+            "original": "Ma come favellarle?",
+            "translation": "But how am I to speak to her?",
+            "speakerTranslation": "Cassio",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "è suo costume\ngirsene a meriggiar fra quelle fronde\ncolla consorte mia. Quivi l'aspetta.\nOr t'è aperta la via di salvazione.\nVanne.",
+            "translation": "It is her custom\nto walk at midday among those trees\nwith my wife. Wait for her there.\nNow the path to your salvation is open.\nGo.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Cassio s'allontana",
+            "translation": "Cassio walks away.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Non ti crucciar. Se credi a me, tra poco",
+        "translation": "Do not grieve. If you trust me, before long",
+        "match": "Non ti crucciar",
+        "speaker": "JAGO",
+        "sourceTurn": 2,
+        "characters": [
+          "Iago",
+          "Cassio"
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Attendi a ciò ch'io dico.",
+        "translation": "Attend to what I say.",
+        "match": "Attendi a ciò",
+        "speaker": "JAGO",
+        "sourceTurn": 0,
+        "characters": [
+          "Iago",
+          "Cassio"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  },
+  {
+    "number": 2,
+    "originalHeading": "Scena II",
+    "translatedHeading": "Scene II",
+    "summary": "Alone, Iago declares his cruel creed and prepares to manipulate Othello.",
+    "sections": [
+      {
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "routeItem": 0,
+        "threeLineOutline": true,
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Jago solo",
+            "translation": "Iago alone.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "seguendo coll'occhio Cassio",
+            "translation": "Following Cassio with his eyes.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Vanne; la tua meta già vedo.\nTi spinge il tuo dimone,\ne il tuo dimon son io.\nE me trascina il mio, nel quale io credo,\ninesorato Iddio.",
+            "translation": "Go; already I see your end.\nYour demon drives you,\nand I am your demon.\nAnd mine drags me along, the one in whom I believe,\nan implacable God.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "allontanandosi dal verone seza più guardar Cassio che sarà scomparso fra gli alberi",
+            "translation": "Walking away from the terrace without looking again at Cassio, who has disappeared among the trees.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ]
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Credo in un Dio crudel che m'ha creato",
+        "translatedTitle": "I believe in a cruel God who made me",
+        "participants": [
+          "Iago"
+        ],
+        "turns": [
+          {
+            "speaker": "JAGO",
+            "original": "Credo in un Dio crudel che m'ha creato\nsimile a sè e che nell'ira io nomo.\nDalla viltà d'un germe o d'un atòmo\nvile son nato.\nSon scellerato\nperchè son uomo;\ne sento il fango originario in me.\nSì! questa è la mia fe'!\nCredo con fermo cuor, siccome crede\nla vedovella al tempio,\nche il mal ch'io penso e che da me procede,\nper il mio destino adempio.\nCredo che il guisto è un istrion beffardo,\ne nel viso e nel cuor,\nche tutto è in lui bugiardo:\nlagrima, bacio, sguardo,\nsacrificio ed onor.\nE credo l'uom gioco d'iniqua sorte\ndal germe della culla\nal verme dell'avel.\nVien dopo tanta irrision la Morte.\nE poi? E poi? La Morte è il Nulla.\nè vecchia fola il Ciel.",
+            "translation": "I believe in a cruel God who made me\nin his image and whom I name in anger.\nFrom the vileness of a germ or atom\nI was born vile.\nI am wicked\nbecause I am human;\nand I feel the primal mire within me.\nYes! This is my faith!\nI believe with a steadfast heart, as the little widow\nbelieves in church,\nthat the evil I think and do\nI accomplish by destiny's decree.\nI believe the righteous man a mocking actor,\nin face and in heart,\nthat everything in him is false:\ntear, kiss, glance,\nsacrifice and honor.\nAnd I believe man a plaything of wicked fate\nfrom the seed of his cradle\nto the worm of his grave.\nAfter all this mockery comes Death.\nAnd then? And then? Death is Nothingness.\nHeaven is an old tale.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Si vede passare nel giardino Desdemona con Emilia. Jago si slacia al verone, al di là del quale è appostato",
+            "translation": "Desdemona is seen crossing the garden with Emilia. Iago rushes to the terrace, on the far side of which Cassio is waiting.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Cassio",
+            "translation": "To Cassio.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Eccola …Cassio… a te… Questo è il momento.\nTi scuoti… vien Desdemona.",
+            "translation": "There she is... Cassio... go on... Now is the moment.\nStir yourself... Desdemona is coming.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Cassio va verso Desdemona, la saluta, le s'accosta",
+            "translation": "Cassio goes towards Desdemona, greets her, and approaches her.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "S'è mosso; la saluta\ne s'avvicina.\nOr qui si tragga Otello! …aiuta, aiuta\nSàtana il mio cimento!\nGià conversano insieme … ed essa inclina,\nsorridendo, il bel viso.",
+            "translation": "He has moved; he greets her\nand draws close.\nNow bring Othello here!... Help, help,\nSatan, my venture!\nThey are already speaking... and she turns\nher beautiful smiling face towards him.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si vedono ripassare nel giardino Cassio e Desdemona",
+            "translation": "Cassio and Desdemona are seen passing through the garden again.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Mi basta un lampo sol di quel sorriso",
+        "translatedTitle": "One glimmer of that smile is enough for me",
+        "participants": [
+          "Iago"
+        ],
+        "turns": [
+          {
+            "speaker": "JAGO",
+            "original": "Mi basta un lampo sol di quel sorriso\nper trascinare Otello alla ruina.",
+            "translation": "One glimmer of that smile is enough for me\nto drag Othello to ruin.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "fa per avviarsi rapido all'uscio del lato destro, ma s'arresta subitamente",
+            "translation": "He starts quickly towards the door on the right, but suddenly stops.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Andiam… Ma il caso in mio favor s'adopra.\nEccolo… al posto, all'opra.",
+            "translation": "Let us go... But chance is working in my favor.\nThere he is... to my post, to work.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Si colloca immoto al verone, guardando fissamente verso il giardino, dove stanno Cassio e Desdemona",
+            "translation": "He stands motionless by the terrace, staring into the garden at Cassio and Desdemona.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 2
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Credo in un Dio crudel che m'ha creato",
+        "translation": "I believe in a cruel God who made me",
+        "match": "Credo in un Dio crudel",
+        "speaker": "JAGO",
+        "sourceTurn": 0,
+        "characters": [
+          "Iago"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Mi basta un lampo sol di quel sorriso",
+        "translation": "One glimmer of that smile is enough for me",
+        "match": "Mi basta un lampo",
+        "speaker": "JAGO",
+        "sourceTurn": 0,
+        "characters": [
+          "Iago"
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  },
+  {
+    "number": 3,
+    "originalHeading": "Scena III",
+    "translatedHeading": "Scene III",
+    "summary": "Iago plants suspicion as Desdemona receives the people’s offerings.",
+    "sections": [
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ciò m'accora.",
+        "translatedTitle": "That troubles me.",
+        "participants": [
+          "Iago",
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Jago e Otello",
+            "translation": "Iago and Othello.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "simulando di non aver visto Otello e fingendo di parlare fra sè",
+            "translation": "Pretending not to have seen Othello and speaking as though to himself.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Ciò m'accora.",
+            "translation": "That troubles me.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Che parli?",
+            "translation": "What are you saying?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Nulla … voi qui? una vana\nvoce m'uscì dal labbro …",
+            "translation": "Nothing... you here? A vain\nword slipped from my lips...",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Colui che s'allontana\ndalla mia sposa, è Cassio?",
+            "translation": "The man leaving\nmy wife—is that Cassio?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Cassio? No …quei si scosse\ncome un reo nel vedervi.",
+            "translation": "Cassio? No... he started\nlike a guilty man when he saw you.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Credo che Cassio ei fosse.",
+            "translation": "I believe it was Cassio.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Mio signore…",
+            "translation": "My lord...",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Che brami?",
+            "translation": "What do you want?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Cassio, nei primi dì del vostro amor,\nDesdemona non conosceva?",
+            "translation": "Did Cassio know Desdemona\nin the first days of your love?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Sì.\nPerchè fai tale inchiesta?",
+            "translation": "Yes.\nWhy do you ask?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Il mio pensiero è vago d'ubbie,\nnon di malizia.",
+            "translation": "My thought is vague with misgivings,\nnot malice.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Di' il tuo pensiero, Jago.",
+            "translation": "Tell me your thought, Iago.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Vi confidaste a Cassio?",
+            "translation": "Did you confide in Cassio?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Spesso un mio dono o un cenno\nportava alla mia sposa.",
+            "translation": "He often carried a gift or a message\nto my bride.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Dassenno?",
+            "translation": "Indeed?",
+            "speakerTranslation": "Iago"
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Si, dassenno.\nNol credi onesto?",
+            "translation": "Yes, indeed.\nDo you not think him honest?",
+            "speakerTranslation": "Othello"
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "imitando Otello",
+            "translation": "Imitating Othello.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Onesto?",
+            "translation": "Honest?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Che ascondi nel tuo core?",
+            "translation": "What do you hide in your heart?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Che asondo in cor, signore?",
+            "translation": "What do I hide in my heart, my lord?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "\"Che ascondo in cor, signore?\"\nPel cielo, tu sei l'eco dei detti miei, nel chiostro\ndell'anima ricetti qualche terribil mostro.\nSì,",
+            "translation": "“What do I hide in my heart, my lord?”\nBy heaven, you echo my words; in the cloister\nof your soul you harbor some terrible monster.\nYes,",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "declamato",
+            "translation": "Declaimed.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "ben t'udii poc'anzi mormorar: \"Ciò m'accora.\"\nMa di che t'accoravi? Nomini Cassio e allora\ntu corrughi la fronte. Suvvia, parla, se m'ami.",
+            "translation": "I heard you just now mutter: “That troubles me.”\nBut what troubled you? You name Cassio, and then\nyou furrow your brow. Come, speak, if you love me.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Voi sapete ch'io v'amo.",
+            "translation": "You know that I love you.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Dunque senza velami\nt'esprimi, e senza ambagi.\nT'esca fuor dalla gola\nil tuo più rio pensiero colla più ria parola.",
+            "translation": "Then speak without veils\nand without evasion.\nLet your most wicked thought escape your throat\nin the most wicked words.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "S'anco teneste in mano tutta l'anima mia\nnol sapreste.",
+            "translation": "Even if you held my whole soul in your hand,\nyou would not know it.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Ah!",
+            "translation": "Ah!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "avvicinandosi molto ad Otello e sottovoce",
+            "translation": "Coming very close to Othello, in a low voice.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Temete, signor, la gelosia!",
+        "translatedTitle": "Beware, my lord, of jealousy!",
+        "participants": [
+          "Iago",
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "JAGO",
+            "original": "Temete, signor, la gelosia!\nè un'idra fosca, livida, cieca, col suo veleno\nsè stessa attosca, vivida piaga le squarcia il seno.",
+            "translation": "Beware, my lord, of jealousy!\nIt is a dark, livid, blind hydra; with its poison\nit poisons itself, a living wound tearing open its breast.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Miseria mia! No! il vano sospettar nulla giova.\nPria del dubbio l'indagine, dopo il dubbio la prova,\ndopo la prova (Otello ha sue leggi supreme),\namore e gelosia vadan dispersi insieme!",
+            "translation": "What misery! No! Vain suspicions serve no purpose.\nBefore doubt, inquiry; after doubt, proof;\nafter proof (Othello has his supreme laws),\nlet love and jealousy be scattered together!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Un tal proposto spezza di mie labbra il suggello.\nNon parlo ancor di prova, pur, generoso Otello,\nvigilate. . .soventi le oneste e ben create\ncoscienze non vedono la frode:",
+            "translation": "Such resolve breaks the seal of my lips.\nI do not yet speak of proof, but generous Othello,\nbe watchful... often honest and well-bred\nconsciences do not perceive deceit:",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sottovoce",
+            "translation": "In a whisper.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "vigilate.\nScrutate le parole di Desdemona, un detto\npuò ricondur la fede, può affermare il sospetto.",
+            "translation": "watch carefully.\nExamine Desdemona's words; one word\nmay restore your faith or confirm suspicion.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Dove guardi splendono",
+        "translatedTitle": "Wherever you look, rays",
+        "participants": [
+          "Distant voices",
+          "Iago",
+          "Voices",
+          "Children",
+          "Women E Sailors",
+          "Sailors",
+          "Women E Children",
+          "Women",
+          "Children E Sailors",
+          "All",
+          "Desdemona"
+        ],
+        "turns": [
+          {
+            "speaker": "VOCI LONTANO",
+            "original": "Dove guardi splendono\nraggi, avvampan cuori,\ndove passi scendono\nnuvole di fiori.\nQui fra gigli e rose,\ncome a un casto altare,\npadri, bimbi, spose\nvengono a cantar.",
+            "translation": "Wherever you look, rays\nshine, hearts burst into flame;\nwherever you pass, clouds\nof flowers fall.\nHere among lilies and roses,\nas at a chaste altar,\nfathers, children, brides\ncome to sing.",
+            "speakerTranslation": "Distant voices",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Si vede ricomparire Desdemona nel giardino, dalla vasta apertura del fondo: esse è circondata da donne dell'isola, da fanciulle, da marinai cipriotti e albanesi che si avanzano e le offrono fiori e rami fioriti ed altri doni. Alcuni s'accompagnano, cantando, sulla guzla (una specie di Mandòla), altri hanno delle piccole arpe ad armascollo.",
+            "translation": "Desdemona reappears in the garden through the wide opening at the back. Women of the island, girls and Cypriot and Albanian sailors surround her, offering flowers, flowering branches and other gifts. Some sing to the accompaniment of the guzla, a kind of mandolin; others carry small harps over their shoulders.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Eccola. . .vigilate.",
+            "translation": "There she is... be watchful.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Una parte del Coro in scena; uniti a questa vi sarrano dei figuranti con Mandolini, Chitarre e Cornamuse. L'altra parte resterà dietro la tela, unitamente ai suonatori di Mandolini, Chittare e Cornamuse.",
+            "translation": "Part of the chorus is onstage, together with performers playing mandolins, guitars and bagpipes. The other part remains behind the curtain with more players.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "VOCI",
+            "original": "Dove guardi splendono\nraggi, avvampan cuori,\ndove passi scendono\nnuvole di fiori.\nQui fra gigli e rose,\ncome a un casto altare,\npadri, bimbi, spose\nvengono a cantar.",
+            "translation": "Wherever you look, rays\nshine, hearts burst into flame;\nwherever you pass, clouds\nof flowers fall.\nHere among lilies and roses,\nas at a chaste altar,\nfathers, children, brides\ncome to sing.",
+            "speakerTranslation": "Voices",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "spargendo al suolo fiori di giglio",
+            "translation": "Strewing lily blossoms on the ground.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "FANCIULLI",
+            "original": "T'offriamo il giglio soave stel\nche in man degl'angeli fu assunto in ciel,\nche abbella il fulgido manto\ne la gonna della Madonna\ne il santo vel.",
+            "translation": "We offer you the gentle lily stem\nthat in the angels' hands rose to heaven,\nthat adorns the shining cloak\nand robe of the Madonna\nand her holy veil.",
+            "speakerTranslation": "Children",
+            "literalText": true
+          },
+          {
+            "speaker": "DONNE E MARINAI",
+            "original": "Mentre all'aura vola\nlieta la canzon,\nl'agile mandòla\nne accompagna il suon.",
+            "translation": "While through the air flies\nthe cheerful song,\nthe nimble mandolin\naccompanies its sound.",
+            "speakerTranslation": "Women E Sailors",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "offrendo a Desdemona dei monili di corallo e di perle",
+            "translation": "Offering Desdemona ornaments of coral and pearl.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "MARINAI",
+            "original": "A te le porpore, le perle e gli ostri,\nnella voragine còlti del mar.\nVogliam Desdemona coi doni nostri\ncome un'immagine sacra adornar.",
+            "translation": "To you the purple shells, the pearls, the dyes,\ngathered from the ocean's depths.\nWe would adorn Desdemona with our gifts\nas though she were a sacred image.",
+            "speakerTranslation": "Sailors",
+            "literalText": true
+          },
+          {
+            "speaker": "DONNE E FANCIULLI",
+            "original": "Mentre all'aura vola\nlieta la canzon,\nl'agile mandòla\nne accompagna il suon.",
+            "translation": "While through the air flies\nthe cheerful song,\nthe nimble mandolin\naccompanies its sound.",
+            "speakerTranslation": "Women E Children",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "spargendo fronde e fiori",
+            "translation": "Strewing branches and flowers.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "LE DONNE",
+            "original": "A te la florida messe dai grembi\nspargiam al suolo, a nembi, a nembi.\nL'april circonda la sposa bionda\nd'un etra rorida che vibra al sol.",
+            "translation": "For you the flowering harvest from our laps\nwe scatter on the ground in showers and showers.\nApril surrounds the fair-haired bride\nwith a dewy air that shimmers in the sun.",
+            "speakerTranslation": "Women",
+            "literalText": true
+          },
+          {
+            "speaker": "FANCIULLI E MARINAI",
+            "original": "Mentre all'aura vola",
+            "translation": "While through the air flies...",
+            "speakerTranslation": "Children E Sailors",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "etc…",
+            "translation": "And so on.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "TUTTI",
+            "original": "Dove guardi splendono raggi",
+            "translation": "Wherever you look, rays shine...",
+            "speakerTranslation": "All",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "etc…",
+            "translation": "And so on.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Splende il cielo, danza\nl'aura, olezza il fior.",
+            "translation": "The sky shines, the breeze\ndances, the flower gives fragrance.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Quel canto mi conquide.",
+        "translatedTitle": "That song conquers me.",
+        "participants": [
+          "Othello",
+          "Iago",
+          "Desdemona",
+          "Cypriots"
+        ],
+        "turns": [
+          {
+            "speaker": "OTELLO",
+            "original": "Quel canto mi conquide.\nS'ella m'inganna, il ciel se stesso irride!",
+            "translation": "That song conquers me.\nIf she deceives me, heaven mocks itself!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Beltà ed amor in dolce inno concordi!\nI vostri infrangerò soavi accordi.",
+            "translation": "Beauty and love united in a sweet hymn!\nI will shatter your gentle harmonies.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Gioia, amor, speranza\ncantan nel mio cor.",
+            "translation": "Joy, love, hope\nsing within my heart.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "CIPRIOTI",
+            "original": "Vivi felice! vivi felice!\nAddio. Qui regna Amor.",
+            "translation": "Live happily! Live happily!\nFarewell. Here Love reigns.",
+            "speakerTranslation": "Cypriots",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Quel canto mi conquide.",
+            "translation": "That song conquers me.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          }
+        ],
+        "routeItem": 3
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Ciò m'accora.",
+        "translation": "That troubles me.",
+        "match": "Ciò m'accora",
+        "speaker": "JAGO",
+        "sourceTurn": 2,
+        "characters": [
+          "Iago",
+          "Othello"
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Temete, signor, la gelosia!",
+        "translation": "Beware, my lord, of jealousy!",
+        "match": "Temete, signor, la gelosia",
+        "speaker": "JAGO",
+        "sourceTurn": 0,
+        "characters": [
+          "Iago",
+          "Othello"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Dove guardi splendono",
+        "translation": "Wherever you look, rays",
+        "match": "Dove guardi splendono",
+        "speaker": "VOCI LONTANO",
+        "sourceTurn": 0,
+        "characters": [
+          "Distant voices",
+          "Iago",
+          "Voices",
+          "Children",
+          "Women E Sailors",
+          "Sailors",
+          "Women E Children",
+          "Women",
+          "Children E Sailors",
+          "All",
+          "Desdemona"
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Quel canto mi conquide.",
+        "translation": "That song conquers me.",
+        "match": "Quel canto mi conquide",
+        "speaker": "OTELLO",
+        "sourceTurn": 0,
+        "characters": [
+          "Othello",
+          "Iago",
+          "Desdemona",
+          "Cypriots"
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  },
+  {
+    "number": 4,
+    "originalHeading": "Scena IV",
+    "translatedHeading": "Scene IV",
+    "summary": "Desdemona pleads for Cassio and Iago steals her handkerchief.",
+    "sections": [
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "D'un uom che geme sotto il tuo disdegno",
+        "translatedTitle": "I bring you the plea",
+        "participants": [
+          "Desdemona",
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Finito il Coro, Desdemona bacia la testa d'alcuni tra i fanciulli, e alcune donne le baciano il lembo della veste, ed essa porge una borsa ai marinai. Il Coro s'allontana. Desdemona, seguita poi da Emilia, entra nella sala e s'avanza verso Otello.",
+            "translation": "When the chorus ends, Desdemona kisses the heads of some children and some women kiss the hem of her dress. She gives a purse to the sailors. The chorus moves off. Desdemona, followed by Emilia, enters the hall and approaches Othello.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Otello",
+            "translation": "To Othello.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "D'un uom che geme sotto il tuo disdegno\nla preghiera ti porto.",
+            "translation": "I bring you the plea\nof a man who suffers under your displeasure.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Chi è costui?",
+            "translation": "Who is he?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Cassio.",
+            "translation": "Cassio.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Era lui\nche ti parlava sotto quelle fronde?",
+            "translation": "Was it he\nwho spoke to you beneath those trees?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Lui stesso, e il suo dolor che in me s'infonde\ntanto è verace che di grazia è degno.\nIntercedo per lui, per lui ti prego.\nTu gli perdona.",
+            "translation": "Yes, he, and his pain, which fills me,\nis so genuine that he deserves mercy.\nI intercede for him; for him I plead.\nForgive him.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con asprezza",
+            "translation": "Harshly.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Non ora.",
+            "translation": "Not now.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Non oppormi il tuo diniego.\nGli perdona.",
+            "translation": "Do not refuse me.\nForgive him.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Non ora.",
+            "translation": "Not now.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Perchè torbida suona la voce tua?\nQual pena t'addolora?",
+            "translation": "Why does your voice sound troubled?\nWhat suffering distresses you?",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "M'ardon le tempie.",
+            "translation": "My temples burn.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "spiegando il suo fazzoletto come per fasciare la fronte d'Otello",
+            "translation": "Unfolding her handkerchief to bind Othello's brow.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Quell'ardor molesto\nsvanirà, se con questo\nmorbido lino la mia man ti fascia.",
+            "translation": "That painful burning\nwill fade if my hand binds you\nwith this soft linen.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "getta il fazzoletto a terra",
+            "translation": "He throws the handkerchief to the ground.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Non ho d'uopo di ciò.",
+            "translation": "I have no need of it.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Tu sei crucciato, signor.",
+            "translation": "You are angry, my lord.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "aspramente",
+            "translation": "Harshly.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Mi lascia! mi lascia!",
+            "translation": "Leave me! Leave me!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Emilia raccoglie il fazzoletto dal suolo.",
+            "translation": "Emilia picks up the handkerchief from the ground.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Se inconscia, contro te, sposo, ho peccato,\ndammi la dolce e lieta parola del perdono.",
+            "translation": "If unknowingly I have sinned against you, husband,\ngive me the sweet and joyful word of forgiveness.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a parte",
+            "translation": "Aside.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "(Forse perchè gl'inganni\nd'arguto amor non tendo. . )",
+            "translation": "(Perhaps because I do not practice\nthe tricks of clever love...)",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "La tua fanciulla io sono",
+        "translatedTitle": "I am your girl,",
+        "participants": [
+          "Desdemona",
+          "Othello",
+          "Iago",
+          "Emilia"
+        ],
+        "turns": [
+          {
+            "speaker": "DESDEMONA",
+            "original": "La tua fanciulla io sono\numile e mansueta;\nma il labbro tuo sospira,\nhai l'occhio fiso al suol.\nGuardami in volto e mira\ncome favella amor.\nVien ch'io t'allieti il core,\nch'io ti lenisca il duol.\nGuardami in volto e mira,",
+            "translation": "I am your girl,\nhumble and gentle;\nyet your lips sigh,\nyour eyes are fixed on the ground.\nLook at my face and see\nhow love speaks.\nCome, let me gladden your heart,\nlet me soothe your grief.\nLook at my face and see,",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "etc…",
+            "translation": "And so on.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "(… forse perchè discendo\nnella valle degli anni,\nforse perchè ho sul viso\nquest'atro tenebror. . .\nforse perchè gl'inganni d'arguto\namor non tendo,",
+            "translation": "(... perhaps because I descend\ninto the valley of years,\nperhaps because my face bears\nthis dark shadow...\nperhaps because I do not practice\nthe wiles of cunning love,",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "etc…",
+            "translation": "And so on.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Ella è perduta è irriso\nio sono e il core m'infrango\ne ruinar nel fango\nvedo il mio sogno d'or.\nElla è perduta e irriso,",
+            "translation": "She is lost and I am mocked!\nMy heart is breaking,\nand I see my golden dream\nfalling into the mud.\nShe is lost, and I am mocked,",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "etc…",
+            "translation": "And so on.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": ")",
+            "translation": ")",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Emilia sottovoce",
+            "translation": "To Emilia, whispering.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "(Quel vel mi porgi\nch'or hai raccolto.)",
+            "translation": "(Give me that handkerchief\nyou have just picked up.)",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sottovoce a Jago",
+            "translation": "Whispering to Iago.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "(Qual frode scorgi?\nTi leggo in volto.)",
+            "translation": "(What fraud are you plotting?\nI read it in your face.)",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "T'opponi a vôto\nquand'io commando.",
+            "translation": "You resist in vain\nwhen I command.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Il tuo nefando\nlivor m'è noto.",
+            "translation": "I know your wicked\nhatred well.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Sospetto insano!",
+            "translation": "Mad suspicion!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Guardia fedel\nè questa mano.",
+            "translation": "This hand\nis its faithful guardian.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Dammi quel vel!",
+        "translatedTitle": "Give me that cloth!",
+        "participants": [
+          "Iago",
+          "Emilia",
+          "Desdemona",
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "JAGO",
+            "original": "Dammi quel vel!",
+            "translation": "Give me that cloth!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "afferra violentemente il braccio di Emilia",
+            "translation": "He violently grips Emilia's arm.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Su te l'irosa mia man s'aggrava!",
+            "translation": "My angry hand presses hard upon you!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Son la tua sposa,\nnon la tua schiava.",
+            "translation": "I am your wife,\nnot your slave.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "La schiava impura\ntu sei di Jago.",
+            "translation": "Iago's impure slave,\nthat is what you are.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Ho il cor presago\nd'una sventura.",
+            "translation": "My heart foresees\nsome calamity.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Né mi paventi?",
+            "translation": "Do you not fear me?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Uomo crudel!",
+            "translation": "Cruel man!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "A me.",
+            "translation": "To me.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Che tenti?",
+            "translation": "What are you trying to do?",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "A me quel vel!",
+            "translation": "Give me that cloth!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con un colpo di mano Jago ha carpito il fazzoletto ad Emilia",
+            "translation": "With a blow Iago snatches the handkerchief from Emilia.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Uomo crudel!",
+            "translation": "Cruel man!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a sé stesso",
+            "translation": "To himself.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "(Già la mia brama\nconquido, ed ora\nsu questa trama\nJago lavora!)",
+            "translation": "(Already I have gained\nwhat I desired, and now\nupon this web\nIago will work!)",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a sé stessa",
+            "translation": "To herself.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "(Vinser gli artigli\ntruci e codardi.\nDio dai perigli\nsempre ci guardi)",
+            "translation": "(His fierce and cowardly\nclaws have prevailed.\nMay God forever guard us\nfrom danger.)",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Dammi la dolce e lieta parola del perdon.",
+            "translation": "Give me the sweet and joyful word of forgiveness.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Escite! Solo vo' restar.",
+            "translation": "Go out! I wish to be alone.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sottovoce ad Emilia che sta per escire",
+            "translation": "Softly to Emilia as she is about to leave.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Ti giova tacer. Intendi?",
+            "translation": "It is in your interest to keep silent. Understand?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Desdemona ed Emilia escono. Jago finge d'escire dalla porta del fondo, ma giuntovi s'arresta.",
+            "translation": "Desdemona and Emilia leave. Iago pretends to leave by the back door, but stops when he reaches it.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 2
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "D'un uom che geme sotto il tuo disdegno",
+        "translation": "I bring you the plea",
+        "match": "D'un uom che geme",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 2,
+        "characters": [
+          "Desdemona",
+          "Othello"
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "La tua fanciulla io sono",
+        "translation": "I am your girl,",
+        "match": "La tua fanciulla io sono",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 0,
+        "characters": [
+          "Desdemona",
+          "Othello",
+          "Iago",
+          "Emilia"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Dammi quel vel!",
+        "translation": "Give me that cloth!",
+        "match": "Dammi quel vel",
+        "speaker": "JAGO",
+        "sourceTurn": 0,
+        "characters": [
+          "Iago",
+          "Emilia",
+          "Desdemona",
+          "Othello"
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  },
+  {
+    "number": 5,
+    "originalHeading": "Scena V",
+    "translatedHeading": "Scene V",
+    "summary": "Iago uses a dream and the handkerchief to inflame Othello’s jealousy.",
+    "sections": [
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Desdemona rea!",
+        "translatedTitle": "Desdemona guilty!",
+        "participants": [
+          "Othello",
+          "Iago"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Otello, Jago sul fondo",
+            "translation": "Othello, with Iago in the background.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "accasciato, su d'un sedile",
+            "translation": "Collapsed on a seat.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Desdemona rea!",
+            "translation": "Desdemona guilty!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "nel fondo guardando di nascosto il fazzoletto, poi riponendolo con cura nel giustacuore",
+            "translation": "At the back, secretly examining the handkerchief, then carefully hiding it in his doublet.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "(Con questi fili tramerò la prova\ndel peccato d'amor. Nella dimora\ndi Cassio ciò s'asconda)",
+            "translation": "(With these threads I shall weave proof\nof her adulterous love. Let it be hidden\nin Cassio's lodgings.)",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Atroce idea!",
+            "translation": "Horrible thought!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "fissando Otello",
+            "translation": "Watching Othello.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "(Il mio velen lavora)",
+            "translation": "(My poison is working.)",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Rea contro me! contro me!",
+            "translation": "Guilty towards me! Towards me!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "cupo",
+            "translation": "Darkly.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "(Soffri e ruggi!)",
+            "translation": "(Suffer and roar!)",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Atroce! atroce!",
+            "translation": "Horrible! Horrible!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Non pensateci più.",
+            "translation": "Think no more of it.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dopo essersi portato accanto ad Otello, bonariamente",
+            "translation": "After coming up beside Othello, kindly.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "balzando",
+            "translation": "Leaping up.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ora e per sempre addio sante memorie,",
+        "translatedTitle": "Now and forever farewell, holy memories,",
+        "participants": [
+          "Othello",
+          "Iago"
+        ],
+        "turns": [
+          {
+            "speaker": "OTELLO",
+            "original": "Tu? Indietro! fuggi!\nM'hai legato alla croce! Ahimè!\nPiù orrendo d'ogni orrenda ingiuria\ndell'ingiuria è il sospetto.\nNell'ore arcane della sua lussuria\n(e a me furate!) m'agitava il petto\nforse un presagio! Ero baldo, giulivo.\nNulla sapevo ancora; io non sentivo\nsul suo corpo divin che m'innamora\ne sui labbri mendaci\ngli ardenti baci\ndi Cassio! Ed ora! ed ora…\nOra e per sempre addio sante memorie,\naddio, sublimi incanti del pensier!\nAddio schiere fulgenti, addio vittorie,\ndardi volanti e volanti corsier!\nAddio, vessillo trionfale e pio,\ne diane squillanti in sul mattin!\nClamori e canti di battaglia, addio!\nDella gloria d'Otello è questo il fin.",
+            "translation": "You? Back! Flee!\nYou have nailed me to the cross! Alas!\nMore dreadful than any cruel insult\nis the suspicion of it.\nIn the secret hours of her lust\n(stolen from me!) perhaps my breast\nwas stirring with foreboding! I was bold, joyful.\nI still knew nothing; I did not feel\nupon her divine body that enchants me\nand on those deceitful lips\nthe burning kisses\nof Cassio! And now! And now...\nNow and forever farewell, holy memories,\nfarewell, sublime enchantments of thought!\nFarewell, shining armies, farewell victories,\nflying arrows and galloping steeds!\nFarewell, triumphant sacred banner,\nand trumpets sounding at dawn!\nClamor and songs of battle, farewell!\nThis is the end of Othello's glory.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Pace, signor.",
+            "translation": "Peace, my lord.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Sciagurato! mi trova una prova secura\nche Desdemona è impura. . .\nNon sfuggir! nulla ti giova!\nVo' una secura, una visibil prova!\nO sulla tua testa\ns'accenda e precipiti il fulmine\ndel mio spaventoso furor che si desta!",
+            "translation": "Wretch! Find me certain proof\nthat Desdemona is unchaste...\nDo not flee! It will not help you!\nI want sure and visible proof!\nOr upon your head\nshall blaze and fall the thunderbolt\nof my dreadful awakened fury!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Afferra Jago alla gola e lo atterra.",
+            "translation": "He seizes Iago by the throat and throws him down.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Divina grazia difendimi!",
+            "translation": "Divine grace, protect me!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Alzandosi",
+            "translation": "Rising.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Il cielo vi protegga. Non son più vostro alfiere.\nVoglio che il mondo testimon mi sia\nche l'onestà è periglio.",
+            "translation": "May heaven protect you. I am no longer your ensign.\nI wish the world to witness\nthat honesty is dangerous.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "fa per andarsene",
+            "translation": "He makes as if to leave.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "No… rimani. Forse onesto tu sei.",
+            "translation": "No... stay. Perhaps you are honest.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sulla soglia fingendo d'andarsene",
+            "translation": "At the doorway, pretending to go.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Meglio varebbe ch'io fossi un ciurmador.",
+            "translation": "Better had I been a charlatan.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Per l'universo!\nCredo leale Desdemona e credo\nche non lo sia. Te credo onesto e credo\ndisleale. . .La prova io voglio!\nVoglio la certezza!",
+            "translation": "By the universe!\nI believe Desdemona faithful, and believe\nshe is not. I believe you honest, and believe\nyou disloyal... I want proof!\nI want certainty!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ritornando verso Otello",
+            "translation": "Returning towards Othello.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Signor, frenate l'ansie.\nE qual certezza v'abbisogna?\nAvvinti verderli forse?",
+            "translation": "My lord, restrain your anguish.\nAnd what certainty do you need?\nPerhaps to see them in each other's arms?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Ah, morte e dannazione!",
+            "translation": "Ah, death and damnation!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Ardua impresa sarebbe; e qual certezza\nsognate voi se quell'immondo fatto\nsempre vi sfuggirà? Ma pur se guida\nè la ragione al vero, una sì forte\ncongettura riserbo che per poco alla\ncertezza vi conduce. Udite.",
+            "translation": "That would be a difficult task; and what certainty\ndo you dream of if that filthy act\nwill always escape your sight? Yet if reason\ncan guide us to truth, I have such strong\ngrounds for suspicion that they can bring you almost\nto certainty. Listen.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "avvicinandosi molto ad Otello e sottovoce",
+            "translation": "Coming very close to Othello, whispering.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Era la notte, Cassio dormìa,",
+        "translatedTitle": "It was night, Cassio slept,",
+        "participants": [
+          "Iago",
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "JAGO",
+            "original": "Era la notte, Cassio dormìa,\ngli stavo accanto.\nCon interrotte voci tradia\nl'intimo incanto.\nLe labbra lente, lente movea,\nnell'abbandono\ndel sogno ardente, e allor dicea,\ncon flebil suono:",
+            "translation": "It was night, Cassio slept,\nI stood beside him.\nIn broken words he betrayed\nhis inner enchantment.\nSlowly, slowly his lips moved\nin the abandon\nof his ardent dream, and then he said\nin a faint voice:",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sottovoce parlate",
+            "translation": "Whispering the words.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "\"Desdemona soave! Il nostro amor s'asconda.\nCauti vegliamo! L'estasi del ciel\ntutto m'innonda.\"\nSeguìa più vago l'incubo blando;\ncon molle angoscia\nl'interna imago quasi baciando,\nei disse poscia:",
+            "translation": "“Sweet Desdemona! Let our love be hidden.\nLet us be careful! Heavenly ecstasy\nfloods my whole being.”\nThe gentle dream grew sweeter;\nwith soft anguish\nas if kissing the image within,\nhe then said:",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sempre sottovoce",
+            "translation": "Still in a whisper.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "\"Il rio destino impreco\nche al Moro ti donò\".\nE allora il sogno\nin cieco letargo si mutò.",
+            "translation": "“I curse the cruel destiny\nthat gave you to the Moor.”\nAnd then the dream\nchanged into blind slumber.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Oh! mostuosa colpa!",
+            "translation": "Oh, monstrous guilt!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Io non narrai che un sogno.",
+            "translation": "I told only a dream.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Un sogno che rivela un fatto.",
+            "translation": "A dream revealing a fact.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Un sogno che può dar forma di prova\nad altro indizio.",
+            "translation": "A dream that can become evidence\nof another clue.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "E qual?",
+            "translation": "And what is it?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Talor vedeste\nin mano di Desdemona un tessuto trapunto\na fior e più sottil d'un velo?",
+            "translation": "Have you ever seen\nin Desdemona's hand a cloth embroidered\nwith flowers, finer than a veil?",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "È il fazzoletto ch'io le diedi,\npegno primo d'amor.",
+            "translation": "It is the handkerchief I gave her,\nmy first pledge of love.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Quel fazzoletto ieri\n(certo ne son) lo vidi in man di Cassio.",
+            "translation": "That handkerchief yesterday\n(I am certain) I saw in Cassio's hand.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Ah! Mille vite gli donasse Iddio!\nUna è povera preda al furor mio!!\nJago, ho il cor di gelo.\nLungi da me le pietose larve!\nTutto il mio vano amor escalo al cielo;\nGuardami, ei sparve.\nNelle suespire d’angue\nL’idra m’avvince!\nAh! Sangue, sangue, sangue!",
+            "translation": "Ah! May God grant him a thousand lives!\nOne is too poor a prey for my fury!\nIago, my heart is ice.\nAway from me, merciful phantoms!\nMy vain love rises to the sky;\nLook at me, it has vanished.\nIn the coils of a serpent\nthe hydra binds me!\nAh! Blood, blood, blood!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "S’inginocchia",
+            "translation": "He kneels.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Si, pel ciel marmoreo giuro!\nPer le attorte folgori!\nPer la Morte e per l’oscuro mar sterminator!\nD’ira e d’impeto tremendo\npresto fia che sfolgori\nQuesta man ch’io levo e stendo!",
+            "translation": "Yes, by the marble heavens I swear!\nBy the twisted lightning bolts!\nBy Death and the dark destroying sea!\nWith dreadful wrath and force\nsoon shall this hand I lift\nand stretch forth blaze!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Levando la mano al cielo. Otello fa per alzarsi; Jago lo trattiene inginocchiato",
+            "translation": "Raising his hand toward heaven. Othello starts to rise; Iago keeps him kneeling.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "s'inginocchia anch'esso",
+            "translation": "Iago also kneels.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Non v'alzate ancor!\nTestimon è il Sol ch'io miro,\nche m'irradia e inanima\nl'ampia terra e il vasto spiro\ndel Creato inter,\nche ad Otello io sacro ardenti,\ncore, braccio ed anima\ns'anco ad opere cruenti\ns'armi il suo voler!\nJAGO e OTELLO",
+            "translation": "Do not rise yet!\nThe sun I see is witness,\nilluminating and animating\nthe vast earth and the great breath\nof all creation,\nthat I devote to Othello my ardent\nheart, arm and soul,\neven if his will commands\ndeeds of blood!\nIAGO and OTHELLO",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "alzando le mani al cielo come chi giura",
+            "translation": "Raising their hands towards heaven as if taking an oath.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Sì, pel ciel marmoreo giuro!",
+        "translatedTitle": "Yes, by the marble heavens I swear!",
+        "participants": [
+          "Iago"
+        ],
+        "turns": [
+          {
+            "speaker": "JAGO",
+            "original": "Sì, pel ciel marmoreo giuro!\nPer le attorte folgori!\nPer la Morte e per l'oscuro mar sterminator!\nD'ira e d'impeto tremendo presto fia\nche sfolgori questa man ch'io levo e stendo!\nDio vendicator!",
+            "translation": "Yes, by the marble heavens I swear!\nBy the twisted lightning bolts!\nBy Death and the dark destroying sea!\nSoon with dreadful wrath and force\nshall this hand I lift and stretch forth blaze!\nGod of vengeance!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          }
+        ],
+        "routeItem": 3
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Desdemona rea!",
+        "translation": "Desdemona guilty!",
+        "match": "Desdemona rea!",
+        "speaker": "OTELLO",
+        "sourceTurn": 2,
+        "characters": [
+          "Othello",
+          "Iago"
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Ora e per sempre addio sante memorie,",
+        "translation": "Now and forever farewell, holy memories,",
+        "match": "Ora e per sempre addio",
+        "speaker": "OTELLO",
+        "sourceTurn": 0,
+        "characters": [
+          "Othello",
+          "Iago"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Era la notte, Cassio dormìa,",
+        "translation": "It was night, Cassio slept,",
+        "match": "Era la notte",
+        "speaker": "JAGO",
+        "sourceTurn": 0,
+        "characters": [
+          "Iago",
+          "Othello"
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Sì, pel ciel marmoreo giuro!",
+        "translation": "Yes, by the marble heavens I swear!",
+        "match": "Sì, pel ciel marmoreo giuro!",
+        "speaker": "JAGO",
+        "sourceTurn": 0,
+        "characters": [
+          "Iago"
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  }
+];
