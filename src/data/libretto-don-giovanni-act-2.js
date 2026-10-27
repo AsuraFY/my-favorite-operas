@@ -1,3 +1,5 @@
+// Vienna N. 21b supplement from the critical 1788 libretto, Mozarteum: https://dme.mozarteum.at/libretti-edition/pdf/LV_512_518_0.pdf
+// English of Vienna addition is a new unreviewed editorial draft; surrounding DraCor-derived text unchanged.
 // Don Giovanni, Lorenzo Da Ponte — original Italian working transcription from DraCor TEI.
 // WARNING: source differs in small readings/scene segmentation from the requested Opera Guide edition.
 // This is a staging file only: English first draft and source reconciliation pending, do not register as a complete libretto.
@@ -2173,6 +2175,58 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "Partono",
             "translation": "They leave"
+          }
+        ]
+      },
+      {
+        "sourceDivision": {
+          "original": "Scena aggiunta · Versione di Vienna (1788)",
+          "translation": "Additional scene · Vienna version (1788)"
+        },
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "literalText": true,
+        "type": "Recitativo accompagnato",
+        "title": "In quali eccessi, o numi",
+        "translatedTitle": "What dreadful excesses, O heavens",
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "literalText": true,
+            "original": "Donna Elvira sola.",
+            "translation": "Donna Elvira, alone."
+          },
+          {
+            "speaker": "ELVIRA",
+            "speakerTranslation": "Donna Elvira",
+            "literalText": true,
+            "original": "In quali eccessi, o numi, in quai misfatti\norribili, tremendi\nè avvolto il sciagurato!\nAh no! non puote tardar l'ira del cielo,\nla giustizia tardar. Sentir già parmi\nla fatale saetta\nche gli piomba sul capo! Aperto veggio\nil baratro mortal! Misera Elvira!\nChe contrasto d'affetti in sen ti nasce!\nPerché questi sospiri e queste ambasce?",
+            "translation": "What terrible excesses, O heavens, what dreadful,\nappalling crimes have entangled that wretched man!\nAh no! Heaven's wrath cannot be long delayed,\nnor its justice. I seem already to hear\nthe fatal bolt\nfalling upon his head! I see\nthe deadly abyss opening! Wretched Elvira!\nWhat a conflict of feelings rises in your heart!\nWhy these sighs and this anguish?"
+          }
+        ]
+      },
+      {
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "literalText": true,
+        "type": "Aria",
+        "title": "Mi tradì quell'alma ingrata",
+        "translatedTitle": "That ungrateful soul betrayed me",
+        "turns": [
+          {
+            "speaker": "ELVIRA",
+            "speakerTranslation": "Donna Elvira",
+            "literalText": true,
+            "original": "Mi tradì quell'alma ingrata,\ninfelice, o Dio, mi fa.\nMa tradita e abbandonata\nprovo ancor per lui pietà.\nQuando sento il mio tormento,\ndi vendetta il cor favella;\nma se guardo il suo cimento,\npalpitando il cor mi va.",
+            "translation": "That ungrateful soul betrayed me\nand has made me miserable, O God.\nYet betrayed and abandoned,\nI still feel pity for him.\nWhen I feel my own torment,\nmy heart speaks of vengeance;\nbut when I behold the danger he faces,\nmy heart begins to tremble."
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "literalText": true,
+            "original": "(Parte.)",
+            "translation": "(She exits.)"
           }
         ]
       }
