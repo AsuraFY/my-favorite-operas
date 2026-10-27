@@ -11,9 +11,16 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Duetto · N. 14",
+        "label": "Duetto · N. 14",
+        "originalTitle": "Ehi, via, buffone, non mi seccar",
+        "translatedTitle": "Come now, fool, stop bothering me",
+        "participants": [
+          "Don Giovanni",
+          "Leporello"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -105,7 +112,22 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "Signore.",
             "translation": "Gentleman."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Vien qui, facciamo pace",
+        "translatedTitle": "Leporello, come here; let us make peace",
+        "participants": [
+          "Don Giovanni",
+          "Leporello"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
@@ -260,7 +282,8 @@ export const donGiovanniActTwoScenes = [
             "original": "Leporello si mette l'abito di Don Giovanni",
             "translation": "Leporello puts on Don Giovanni's clothes"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -286,9 +309,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "Leporello, come here; let us make peace",
         "match": "Vien qui, facciamo pace",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 13,
+        "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 0,
+        "sourceSection": 1,
         "characters": [
           "Don Giovanni",
           "Leporello"
@@ -305,9 +328,17 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Terzetto · N. 15",
+        "label": "Terzetto · N. 15",
+        "originalTitle": "Ah taci, ingiusto core",
+        "translatedTitle": "Ah, be silent, unjust heart",
+        "participants": [
+          "Donna Elvira",
+          "Don Giovanni",
+          "Leporello"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -490,7 +521,22 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "allegrissimo",
             "translation": "very cheerful"
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Amico, che ti par?",
+        "translatedTitle": "My friend, what do you think?",
+        "participants": [
+          "Don Giovanni",
+          "Leporello"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
@@ -554,7 +600,8 @@ export const donGiovanniActTwoScenes = [
             "original": "va in disparte",
             "translation": "he goes aside"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -581,9 +628,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "My friend, what do you think?",
         "match": "Amico, che ti par?",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 26,
+        "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 0,
+        "sourceSection": 1,
         "characters": [
           "Don Giovanni",
           "Leporello"
@@ -600,7 +647,8 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -832,10 +880,53 @@ export const donGiovanniActTwoScenes = [
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
-            "original": "Ih Eh Ih Eh Ih Ah! Par che la sorte\nMi secondi: veggiamo...\nLe finestre son queste: ora cantiamo.\nDeh vieni alla finestra, o mio tesoro!\nDeh vieni a consolar il mio pianto:\nSe neghi a me di dar qualche ristoro,\nDavanti agli occhi tuoi morir vogl'io.\nTu ch'hai la bocca dolce più che il miele,\nTu che il zucchero porti in mezzo al core,\nNon esser, gioia mia, con me crudele:\nLàsciati almen vedere, mio bell'amore!\nV'è gente alla finestra! sarà dessa:\nZì, zì...",
-            "translation": "Hee Hee Hee Hee Ah! It seems that fate\nseconds me: we see...\nThese are the windows: now let us sing.\nOh, come to the window, my darling!\nOh, come and console my tears:\nIf you deny me some solace,\nI want to die before your eyes.\nYou whose mouth is sweeter than honey,\nYou whose heart contains sugar,\nDo not be cruel to me, my joy:\nAt least let me see you, my beautiful love!\nThere are people at the window! It must be them:\nZi, zi..."
+            "original": "Ih Eh Ih Eh Ih Ah! Par che la sorte\nMi secondi: veggiamo...\nLe finestre son queste: ora cantiamo.",
+            "translation": "Hee Hee Hee Hee Ah! It seems that fate\nseconds me: we see...\nThese are the windows: now let us sing."
           }
-        ]
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Canzonetta · N. 16",
+        "label": "Canzonetta · N. 16",
+        "originalTitle": "Deh vieni alla finestra",
+        "translatedTitle": "Come to the window, my darling",
+        "participants": [
+          "Don Giovanni"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
+          {
+            "speaker": "DON GIOVANNI",
+            "speakerTranslation": "DON GIOVANNI",
+            "literalText": true,
+            "original": "Deh vieni alla finestra, o mio tesoro!\nDeh vieni a consolar il mio pianto:\nSe neghi a me di dar qualche ristoro,\nDavanti agli occhi tuoi morir vogl'io.\nTu ch'hai la bocca dolce più che il miele,\nTu che il zucchero porti in mezzo al core,\nNon esser, gioia mia, con me crudele:\nLàsciati almen vedere, mio bell'amore!",
+            "translation": "Oh, come to the window, my darling!\nOh, come and console my tears:\nIf you deny me some solace,\nI want to die before your eyes.\nYou whose mouth is sweeter than honey,\nYou whose heart contains sugar,\nDo not be cruel to me, my joy:\nAt least let me see you, my beautiful love!"
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "V'è gente alla finestra",
+        "translatedTitle": "There is someone at the window",
+        "participants": [
+          "Don Giovanni"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
+          {
+            "speaker": "DON GIOVANNI",
+            "speakerTranslation": "DON GIOVANNI",
+            "literalText": true,
+            "original": "V'è gente alla finestra! sarà dessa:\nZì, zì...",
+            "translation": "There are people at the window! It must be them:\nZi, zi..."
+          }
+        ],
+        "routeItem": 2
       }
     ],
     "outline": [
@@ -845,9 +936,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "Come to the window, my darling",
         "match": "Deh vieni alla finestra",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 32,
-        "sourceLine": 3,
-        "sourceSection": 0,
+        "sourceTurn": 0,
+        "sourceLine": 0,
+        "sourceSection": 1,
         "characters": [
           "Don Giovanni"
         ],
@@ -860,9 +951,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "There is someone at the window",
         "match": "V'è gente alla finestra",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 32,
-        "sourceLine": 11,
-        "sourceSection": 0,
+        "sourceTurn": 0,
+        "sourceLine": 0,
+        "sourceSection": 2,
         "characters": [
           "Don Giovanni"
         ],
@@ -878,7 +969,8 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1049,7 +1141,23 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "accennando a destra",
             "translation": "nodding to the right"
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 17",
+        "label": "Aria · N. 17",
+        "originalTitle": "Metà di voi qua vadano",
+        "translatedTitle": "Half of you go that way",
+        "participants": [
+          "Don Giovanni",
+          "Masetto",
+          "Peasant men"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
@@ -1099,7 +1207,8 @@ export const donGiovanniActTwoScenes = [
             "original": "prende seco Masetto, e parte",
             "translation": "takes Masetto with him and leaves"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -1109,9 +1218,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "Half of you go that way",
         "match": "Metà di voi qua vadano",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 24,
+        "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 0,
+        "sourceSection": 1,
         "characters": [
           "Don Giovanni",
           "Masetto",
@@ -1129,9 +1238,16 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Zitto! Lascia ch'io senta",
+        "translatedTitle": "Quiet! Let me listen",
+        "participants": [
+          "Don Giovanni",
+          "Masetto"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -1259,7 +1375,8 @@ export const donGiovanniActTwoScenes = [
             "original": "parte",
             "translation": "part"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -1288,7 +1405,8 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1401,8 +1519,29 @@ export const donGiovanniActTwoScenes = [
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
-            "original": "Via, via: non è gran mal, se il resto è sano.\nVientene meco a casa;\nPurché tu mi prometta\nD'essere men geloso,\nIo, io ti guarirò, caro il mio sposo.\nVedrai, carino,\nSe sei buonino,\nChe bel rimedio\nTi voglio dar:\nÈ naturale,\nNon dà disgusto,\nE lo speziale\nNon lo sa far.\nÈ un certo balsamo\nChe porto addosso:\nDare tel posso,\nSe il vuoi provar.\nSaper vorresti\nDove mi sta?\nSentilo battere,",
-            "translation": "Come on, come on: it's not a big deal, if the rest is healthy.\nCome home with me;\nAs long as you promise me\nTo be less jealous,\nI, I will heal you, my dear husband.\nYou'll see, my dear,\nIf you're good,\nWhat a beautiful remedy\nI want to give you:\nIt's natural,\nIt doesn't disgust,\nAnd the apothecary\nDoesn't know how to make it.\nIt's a certain balm\nThat I carry:\nI can give it to you,\nIf you want to try it.\nWould you like to know\nWhere it is?\nHear it beat,"
+            "original": "Via, via: non è gran mal, se il resto è sano.\nVientene meco a casa;\nPurché tu mi prometta\nD'essere men geloso,\nIo, io ti guarirò, caro il mio sposo.",
+            "translation": "Come on, come on: it's not a big deal, if the rest is healthy.\nCome home with me;\nAs long as you promise me\nTo be less jealous,\nI, I will heal you, my dear husband."
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 18",
+        "label": "Aria · N. 18",
+        "originalTitle": "Vedrai, carino",
+        "translatedTitle": "You will see, dear, if you are good",
+        "participants": [
+          "Zerlina"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
+          {
+            "speaker": "ZERLINA",
+            "speakerTranslation": "ZERLINA",
+            "literalText": true,
+            "original": "Vedrai, carino,\nSe sei buonino,\nChe bel rimedio\nTi voglio dar:\nÈ naturale,\nNon dà disgusto,\nE lo speziale\nNon lo sa far.\nÈ un certo balsamo\nChe porto addosso:\nDare tel posso,\nSe il vuoi provar.\nSaper vorresti\nDove mi sta?\nSentilo battere,",
+            "translation": "You'll see, my dear,\nIf you're good,\nWhat a beautiful remedy\nI want to give you:\nIt's natural,\nIt doesn't disgust,\nAnd the apothecary\nDoesn't know how to make it.\nIt's a certain balm\nThat I carry:\nI can give it to you,\nIf you want to try it.\nWould you like to know\nWhere it is?\nHear it beat,"
           },
           {
             "speaker": "Stage direction",
@@ -1425,7 +1564,8 @@ export const donGiovanniActTwoScenes = [
             "original": "parte con Masetto",
             "translation": "part with Masetto"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -1435,9 +1575,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "You will see, dear, if you are good",
         "match": "Vedrai, carino",
         "speaker": "ZERLINA",
-        "sourceTurn": 15,
-        "sourceLine": 5,
-        "sourceSection": 0,
+        "sourceTurn": 0,
+        "sourceLine": 0,
+        "sourceSection": 1,
         "characters": [
           "Zerlina"
         ],
@@ -1453,9 +1593,16 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Di molte faci il lume",
+        "translatedTitle": "The light of many torches",
+        "participants": [
+          "Leporello",
+          "Donna Elvira"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -1510,8 +1657,34 @@ export const donGiovanniActTwoScenes = [
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
-            "original": "Ah non lasciarmi!\nSola sola, in buio loco,\nPalpitar il cor mi sento,\nE m'assale un tal spavento,\nChe mi sembra di morir.",
-            "translation": "Ah, don't leave me!\nAlone, alone, in a dark place,\nI feel my heart throbbing,\nAnd such fear assails me,\nThat I feel like I'm dying."
+            "original": "Ah non lasciarmi!",
+            "translation": "Ah, don't leave me!"
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Sestetto · N. 19",
+        "label": "Sestetto · N. 19",
+        "originalTitle": "Sola sola, in buio loco",
+        "translatedTitle": "Alone in a dark place",
+        "participants": [
+          "Donna Elvira",
+          "Leporello",
+          "Donna Anna",
+          "Don Ottavio",
+          "Zerlina",
+          "Masetto"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
+          {
+            "speaker": "ELVIRA",
+            "speakerTranslation": "ELVIRA",
+            "literalText": true,
+            "original": "Sola sola, in buio loco,\nPalpitar il cor mi sento,\nE m'assale un tal spavento,\nChe mi sembra di morir.",
+            "translation": "Alone, alone, in a dark place,\nI feel my heart throbbing,\nAnd such fear assails me,\nThat I feel like I'm dying."
           },
           {
             "speaker": "Stage direction",
@@ -1604,7 +1777,8 @@ export const donGiovanniActTwoScenes = [
             "original": "nel sortire incontrano Zerlina e Masetto",
             "translation": "on their way out they meet Zerlina and Masetto"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -1630,9 +1804,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "Alone in a dark place",
         "match": "Sola sola, in buio loco",
         "speaker": "ELVIRA",
-        "sourceTurn": 7,
-        "sourceLine": 1,
-        "sourceSection": 0,
+        "sourceTurn": 0,
+        "sourceLine": 0,
+        "sourceSection": 1,
         "characters": [
           "Donna Elvira",
           "Leporello",
@@ -1653,7 +1827,8 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1755,7 +1930,8 @@ export const donGiovanniActTwoScenes = [
             "original": "Donn'Anna parte coi servi.",
             "translation": "Donna Anna leaves with the servants."
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
@@ -1767,9 +1943,19 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Dunque, quello sei tu",
+        "translatedTitle": "So you are the one",
+        "participants": [
+          "Zerlina",
+          "Masetto",
+          "Donna Elvira",
+          "Don Ottavio",
+          "Leporello"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -1854,7 +2040,21 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "a Don Ottavio e Donn'Elvira",
             "translation": "to Don Ottavio and Donna Elvira"
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 20",
+        "label": "Aria · N. 20",
+        "originalTitle": "Ah pietà, signori miei",
+        "translatedTitle": "Have mercy on me, good people",
+        "participants": [
+          "Leporello"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
@@ -1946,7 +2146,8 @@ export const donGiovanniActTwoScenes = [
             "original": "Ma s'io sapeva\nFuggìa per qua.",
             "translation": "But if I knew,\nI would have fled this way."
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -1975,9 +2176,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "Have mercy on me, good people",
         "match": "Ah pietà, signori miei",
         "speaker": "LEPORELLO",
-        "sourceTurn": 12,
+        "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 0,
+        "sourceSection": 1,
         "characters": [
           "Leporello"
         ],
@@ -1993,9 +2194,18 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Ferma, perfido, ferma",
+        "translatedTitle": "Stop, villain, stop",
+        "participants": [
+          "Donna Elvira",
+          "Don Ottavio",
+          "Zerlina",
+          "Masetto"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -2029,8 +2239,29 @@ export const donGiovanniActTwoScenes = [
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
             "literalText": true,
-            "original": "Amici miei,\nDopo eccessi sì enormi,\nDubitar non possiam che Don Giovanni\nNon sia l'empio uccisore\nDel padre di Donn'Anna. In questa casa\nPer poche ore fermatevi... un ricorso\nVo' far a chi si deve, e in pochi istanti\nVendicarvi prometto;\nCosì vuole dover, pietade, affetto.\nIl mio tesoro intanto\nAndate a consolar,\nE del bei ciglio il pianto\nCercate di asciugar.\nDitele che i suoi torti\nA vendicar io vado:\nChe sol di stragi e morti\nNunzio vogl'io tornar.",
-            "translation": "My friends,\nAfter such enormous excesses,\nWe cannot doubt that Don Giovanni\nIs not the wicked murderer\nOf Donna Anna's father. In this house\nStay for a few hours... I will appeal\nto the right person, and in a few moments\nI promise to avenge you;\nSo must pity, love.\nMeanwhile, my treasure\nGo and console her,\nAnd try to dry the tears from her beautiful eyes.\nTell her that I am going to avenge her wrongs:\nFor only of massacres and deaths\nI wish to return as messenger."
+            "original": "Amici miei,\nDopo eccessi sì enormi,\nDubitar non possiam che Don Giovanni\nNon sia l'empio uccisore\nDel padre di Donn'Anna. In questa casa\nPer poche ore fermatevi... un ricorso\nVo' far a chi si deve, e in pochi istanti\nVendicarvi prometto;\nCosì vuole dover, pietade, affetto.",
+            "translation": "My friends,\nAfter such enormous excesses,\nWe cannot doubt that Don Giovanni\nIs not the wicked murderer\nOf Donna Anna's father. In this house\nStay for a few hours... I will appeal\nto the right person, and in a few moments\nI promise to avenge you;\nSo must pity, love."
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 21",
+        "label": "Aria · N. 21",
+        "originalTitle": "Il mio tesoro intanto",
+        "translatedTitle": "Meanwhile, go and comfort my beloved",
+        "participants": [
+          "Don Ottavio"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
+          {
+            "speaker": "OTTAVIO",
+            "speakerTranslation": "OTTAVIO",
+            "literalText": true,
+            "original": "Il mio tesoro intanto\nAndate a consolar,\nE del bei ciglio il pianto\nCercate di asciugar.\nDitele che i suoi torti\nA vendicar io vado:\nChe sol di stragi e morti\nNunzio vogl'io tornar.",
+            "translation": "Meanwhile, my treasure\nGo and console her,\nAnd try to dry the tears from her beautiful eyes.\nTell her that I am going to avenge her wrongs:\nFor only of massacres and deaths\nI wish to return as messenger."
           },
           {
             "speaker": "Stage direction",
@@ -2038,28 +2269,28 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "Partono",
             "translation": "They leave"
-          }
-        ]
-      },
-      {
-        "sourceDivision": {
-          "original": "Scena aggiunta · Versione di Vienna (1788)",
-          "translation": "Additional scene · Vienna version (1788)"
-        },
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "literalText": true,
-        "type": "Recitativo accompagnato",
-        "title": "In quali eccessi, o numi",
-        "translatedTitle": "What dreadful excesses, O heavens",
-        "turns": [
+          },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "literalText": true,
             "original": "Donna Elvira sola.",
             "translation": "Donna Elvira, alone."
-          },
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "Recitativo accompagnato + Aria · N. 21b · Vienna",
+        "label": "Recitativo accompagnato + Aria · N. 21b · Vienna",
+        "originalTitle": "In quali eccessi, o numi",
+        "translatedTitle": "To what dreadful excesses, O heavens",
+        "participants": [
+          "Donna Elvira"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "Donna Elvira",
@@ -2067,15 +2298,19 @@ export const donGiovanniActTwoScenes = [
             "original": "In quali eccessi, o numi, in quai misfatti\norribili, tremendi\nè avvolto il sciagurato!\nAh no! non puote tardar l'ira del cielo,\nla giustizia tardar. Sentir già parmi\nla fatale saetta\nche gli piomba sul capo! Aperto veggio\nil baratro mortal! Misera Elvira!\nChe contrasto d'affetti in sen ti nasce!\nPerché questi sospiri e queste ambasce?",
             "translation": "What terrible excesses, O heavens, what dreadful,\nappalling crimes have entangled that wretched man!\nAh no! Heaven's wrath cannot be long delayed,\nnor its justice. I seem already to hear\nthe fatal bolt\nfalling upon his head! I see\nthe deadly abyss opening! Wretched Elvira!\nWhat a conflict of feelings rises in your heart!\nWhy these sighs and this anguish?"
           }
-        ]
+        ],
+        "routeItem": 2
       },
       {
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "literalText": true,
-        "type": "Aria",
-        "title": "Mi tradì quell'alma ingrata",
+        "type": "Aria · N. 21b · Vienna",
+        "label": "Aria · N. 21b · Vienna",
+        "originalTitle": "Mi tradì quell'alma ingrata",
         "translatedTitle": "That ungrateful soul betrayed me",
+        "participants": [
+          "Donna Elvira"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "ELVIRA",
@@ -2091,7 +2326,8 @@ export const donGiovanniActTwoScenes = [
             "original": "(Parte.)",
             "translation": "(She exits.)"
           }
-        ]
+        ],
+        "routeItem": 3
       }
     ],
     "outline": [
@@ -2119,9 +2355,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "Meanwhile, go and comfort my beloved",
         "match": "Il mio tesoro intanto",
         "speaker": "OTTAVIO",
-        "sourceTurn": 4,
-        "sourceLine": 9,
-        "sourceSection": 0,
+        "sourceTurn": 0,
+        "sourceLine": 0,
+        "sourceSection": 1,
         "characters": [
           "Don Ottavio"
         ],
@@ -2134,9 +2370,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "To what dreadful excesses, O heavens",
         "match": "In quali eccessi, o numi",
         "speaker": "ELVIRA",
-        "sourceTurn": 1,
+        "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 1,
+        "sourceSection": 2,
         "characters": [
           "Donna Elvira"
         ],
@@ -2151,7 +2387,7 @@ export const donGiovanniActTwoScenes = [
         "speaker": "ELVIRA",
         "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 2,
+        "sourceSection": 3,
         "characters": [
           "Donna Elvira"
         ]
@@ -2165,9 +2401,17 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Ah ah ah questa è buona",
+        "translatedTitle": "Ha, ha, now that is a good one",
+        "participants": [
+          "Don Giovanni",
+          "Leporello",
+          "Commendatore"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -2630,7 +2874,23 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "Che gusto, che spassetto!\nLo voglio far tremar.",
             "translation": "What a treat, what fun!\nI want to make him tremble."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Duetto · N. 22",
+        "label": "Duetto · N. 22",
+        "originalTitle": "O statua gentilissima",
+        "translatedTitle": "O most gracious statue",
+        "participants": [
+          "Leporello",
+          "Don Giovanni",
+          "Commendatore"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
@@ -2799,7 +3059,8 @@ export const donGiovanniActTwoScenes = [
             "original": "Partono.",
             "translation": "They're leaving."
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -2826,9 +3087,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "O most gracious statue",
         "match": "O statua gentilissima",
         "speaker": "LEPORELLO",
-        "sourceTurn": 66,
+        "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 0,
+        "sourceSection": 1,
         "characters": [
           "Leporello",
           "Don Giovanni",
@@ -2846,9 +3107,16 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Calmatevi, idol mio",
+        "translatedTitle": "Calm yourself, my love",
+        "participants": [
+          "Don Ottavio",
+          "Donna Anna"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -2898,7 +3166,22 @@ export const donGiovanniActTwoScenes = [
             "literalText": true,
             "original": "E che! vorresti,\nCon indugi novelli,\nAccrescer le mie pene?\nCrudele!",
             "translation": "What! Do you want,\nWith further delays,\nTo increase my suffering?\nCruel one!"
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Recitativo accompagnato + Rondò · N. 23",
+        "label": "Recitativo accompagnato + Rondò · N. 23",
+        "originalTitle": "Crudele? Ah no, mio bene",
+        "translatedTitle": "Cruel? Ah no, my love",
+        "participants": [
+          "Donna Anna",
+          "Don Ottavio"
+        ],
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "turns": [
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
@@ -2927,7 +3210,8 @@ export const donGiovanniActTwoScenes = [
             "original": "parte",
             "translation": "part"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -2953,9 +3237,9 @@ export const donGiovanniActTwoScenes = [
         "translation": "Cruel? Ah no, my love",
         "match": "Ah no, mio ben!",
         "speaker": "ANNA",
-        "sourceTurn": 7,
+        "sourceTurn": 0,
         "sourceLine": 0,
-        "sourceSection": 0,
+        "sourceSection": 1,
         "characters": [
           "Donna Anna",
           "Don Ottavio"
@@ -2972,9 +3256,17 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Finale II · N. 24",
+        "label": "Finale II · N. 24",
+        "originalTitle": "Già la mensa è preparata",
+        "translatedTitle": "The table is already laid",
+        "participants": [
+          "Don Giovanni",
+          "Leporello",
+          "Donna Elvira"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -3221,7 +3513,8 @@ export const donGiovanniActTwoScenes = [
             "original": "Sì eccellente è il cuoco mio,\nChe lo volle anch'ei provar.",
             "translation": "My cook is so excellent,\nthat he wanted to try it too."
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -3251,7 +3544,8 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -3598,7 +3892,8 @@ export const donGiovanniActTwoScenes = [
             "original": "s'asconde sotto la tavola",
             "translation": "he hides under the table"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
@@ -3610,9 +3905,17 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "Finale II · N. 24",
+        "label": "Finale II · N. 24",
+        "originalTitle": "Don Giovanni, a cenar teco",
+        "translatedTitle": "Don Giovanni, you invited me to dine",
+        "participants": [
+          "Commendatore",
+          "Don Giovanni",
+          "Leporello"
+        ],
         "threeLineOutline": true,
+        "sourceTitlesOnly": true,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -3950,7 +4253,8 @@ export const donGiovanniActTwoScenes = [
             "original": "Don Giovanni resta inghiottito dalla terra.",
             "translation": "Don Giovanni is swallowed up by the earth."
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -3980,7 +4284,8 @@ export const donGiovanniActTwoScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -4145,7 +4450,8 @@ export const donGiovanniActTwoScenes = [
             "original": "Questo è il fin di chi fa mal!\nE de' perfidi la morte\nAlla vita è sempre ugual!",
             "translation": "This is the end of those who do evil!\nAnd death for the wicked\nis always the same as life!"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
