@@ -40,6 +40,7 @@ function numberedSection(section) {
   return { match, number: section.outlineNumber ?? section.number ?? (match ? Number(match[1]) : null) };
 }
 function sectionNavigationLabel(section, scene, sectionIndex) {
+  if (section.incipitOnly) return sectionTitles(scene, section, sectionIndex).original;
   const { match, number: no } = numberedSection(section);
   const form = section.displayType || section.type || (match ? match[2] :
     ((section.label || "").toLocaleLowerCase() === "recitative" ? (libretto.recitativeLabel || "Recitative") : section.label));
@@ -63,6 +64,10 @@ function sectionPresentation(scene, section, sectionIndex) {
   const { match, number: no } = numberedSection(section);
   const form = section.displayType || section.type || (match ? match[2] : (libretto.recitativeLabel || "Recitative"));
   const titles = sectionTitles(scene, section, sectionIndex);
+  // Wagner's music drama and Otello's editorial listening landmarks are incipits,
+  // not verified stand-alone aria/recitative numbers. Show the incipit itself using
+  // the same section-heading typography as Così fan tutte and Il barbiere.
+  if (section.incipitOnly) return { heading: titles.original, subtitle: titles.translation, form: "", number: null };
   const number = no == null ? "" : (libretto.numberLabel || "N.") + " " + no + " · ";
   const heading = section.type === "Passage" && titles.original ? titles.original :
     number + form + (titles.original ? " · " + titles.original : "");
