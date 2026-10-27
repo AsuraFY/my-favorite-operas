@@ -14,7 +14,7 @@ const loaders = Object.freeze({
   "la-fanciulla-del-west": () => import("./libretto-la-fanciulla-del-west-bundle.js?v=fanciulla-all-acts-20261026").then(module => module.laFanciullaDelWest),
   "otello": () => import("./libretto-otello-bundle.js?v=otello-all-acts-20261026").then(module => module.otello),
   "parsifal": () => import("./libretto-parsifal-bundle.js?v=draft-20261026").then(module => module.parsifal),
-  "don-giovanni": () => import("./libretto-don-giovanni-bundle.js?v=arigoni-musical-forms-20261027").then(module => module.donGiovanni),
+  "don-giovanni": () => import("./libretto-don-giovanni-bundle.js?v=reader-headings-20261027").then(module => module.donGiovanni),
   "samson-et-dalila": () => import("./libretto-samson-et-dalila-bundle.js?v=on-demand-20261023").then(module => module.samson)
 });
 const pending = new Map();
