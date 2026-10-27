@@ -9,7 +9,16 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Introduzione · N. 1",
+        "label": "Introduzione · N. 1",
+        "originalTitle": "Notte e giorno faticar",
+        "translatedTitle": "To toil by night and day",
+        "participants": [
+          "Leporello",
+          "Don Giovanni",
+          "Donna Anna",
+          "Commendatore"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -209,7 +218,8 @@ export const donGiovanniActOneScenes = [
             "original": "Qual misfatto! qual eccesso!\nEntro il sen, dallo spavento,\nPalpitar il cor mi sento.\nIo non so che far, che dir.",
             "translation": "What a crime! What an excess!\nIn my chest, with fear,\nI feel my heart throb.\nI don't know what to do, what to say."
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -228,7 +238,8 @@ export const donGiovanniActOneScenes = [
           "Commendatore"
         ],
         "recordingSeconds": 407,
-        "recordingTime": "00:06:47"
+        "recordingTime": "00:06:47",
+        "sourceSection": 0
       }
     ]
   },
@@ -239,7 +250,14 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Leporello, ove sei?",
+        "translatedTitle": "Leporello, where are you?",
+        "participants": [
+          "Don Giovanni",
+          "Leporello"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -355,7 +373,8 @@ export const donGiovanniActOneScenes = [
             "original": "partono",
             "translation": "they leave"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -372,7 +391,8 @@ export const donGiovanniActOneScenes = [
           "Leporello"
         ],
         "recordingSeconds": 703,
-        "recordingTime": "00:11:43"
+        "recordingTime": "00:11:43",
+        "sourceSection": 0
       }
     ]
   },
@@ -383,7 +403,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -435,7 +456,22 @@ export const donGiovanniActOneScenes = [
             "literalText": true,
             "original": "vede il cadavere",
             "translation": "he sees the corpse"
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Recitativo accompagnato + Duetto · N. 2",
+        "label": "Recitativo accompagnato + Duetto · N. 2",
+        "originalTitle": "Ma qual mai s'offre, oh Dei",
+        "translatedTitle": "What terrible sight confronts me, O gods?",
+        "participants": [
+          "Donna Anna",
+          "Don Ottavio"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
           {
             "speaker": "ANNA",
             "speakerTranslation": "ANNA",
@@ -569,7 +605,8 @@ export const donGiovanniActOneScenes = [
             "original": "partono",
             "translation": "they leave"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -579,14 +616,15 @@ export const donGiovanniActOneScenes = [
         "translation": "What terrible sight confronts me, O gods?",
         "match": "Ma qual mai s'offre, oh Dei",
         "speaker": "ANNA",
-        "sourceTurn": 7,
+        "sourceTurn": 0,
         "sourceLine": 0,
         "characters": [
           "Donna Anna",
           "Don Ottavio"
         ],
         "recordingSeconds": 744,
-        "recordingTime": "00:12:24"
+        "recordingTime": "00:12:24",
+        "sourceSection": 1
       }
     ]
   },
@@ -597,7 +635,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -811,7 +850,8 @@ export const donGiovanniActOneScenes = [
             "original": "Già prese fuoco.",
             "translation": "It already caught fire."
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
@@ -823,7 +863,13 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Aria · N. 3",
+        "label": "Aria · N. 3",
+        "originalTitle": "Ah chi mi dice mai",
+        "translatedTitle": "Ah, who will ever tell me?",
+        "participants": [
+          "Donna Elvira"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -861,7 +907,23 @@ export const donGiovanniActOneScenes = [
             "literalText": true,
             "original": "Signorina!",
             "translation": "Miss!"
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Chi è là?",
+        "translatedTitle": "Who is there?",
+        "participants": [
+          "Donna Elvira",
+          "Don Giovanni",
+          "Leporello"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
@@ -1125,8 +1187,29 @@ export const donGiovanniActOneScenes = [
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
             "literalText": true,
-            "original": "Eh consolatevi:\nNon siete voi, non foste e non sarete\nNé la prima né l'ultima; guardate\nQuesto non picciol libro: è tutto pieno\nDei nomi di sue belle;\nOgni villa, ogni borgo, ogni paese\nÈ testimon di sue donnesche imprese.\nMadamina, il catalogo è questo\nDelle belle che amò il padron mio,\nUn catalogo egli è che ho fatt'io,\nOsservate, leggete con me.\nIn Italia seicento e quaranta,\nIn Lamagna duecento e trent'una,\nCento in Francia, in Turchia novant'una,\nMa in Ispagna son già mille e tre.\nV'ha fra queste contadine,\nCameriere, cittadine,\nV'han contesse, baronesse,\nMarchesane, principesse,\nE v'han donne d'ogni grado,\nD'ogni forma, d'ogni età.\nNella bionda egli ha l'usanza\nDi lodar la gentilezza,\nNella bruna la costanza,\nNella bianca la dolcezza.\nVuol d'inverno la grassotta,\nVuol d'estate la magrotta;\nE la grande maestosa,\nLa piccina è ognor vezzosa.\nDelle vecchie fa conquista\nPel piacer di porle in lista;\nMa passion predominante\nÈ la giovin principiante.\nNon si picca se sia ricca,\nSe sia brutta, se sia bella:\nPurché porti la gonnella,\nVoi sapete quel che fa.",
-            "translation": "Oh, console yourselves:\nIt is not you, you were not, and you will not be\nNeither the first nor the last; look\nThis is no small book: it is filled\nWith the names of his beauties;\nEvery village, every hamlet, every town\nIs testimony to his womanly exploits.\nMy lady, this is the catalogue\nOf the beauties my master loved,\nThis is a catalogue I have made,\nLook, read with me.\nIn Italy, six hundred and forty,\nIn Germany, two hundred and thirty-one,\nOne hundred in France, ninety-one in Turkey,\nBut in Spain, there are already a thousand and three.\nAmong these, there are peasant women,\nMaids, city women,\nThere are countesses, baronesses,\nMarquises, princesses,\nAnd there are women of every rank,\nOf every shape, of every age.\nIn the blonde he has the habit\nTo praise kindness,\nIn the brunette, constancy,\nIn the white, sweetness.\nHe wants the plump one in winter,\nHe wants the thin one in summer;\nAnd the tall one majestic,\nThe little one is always charming.\nHe conquers old women\nFor the pleasure of listing them;\nBut his predominant passion\nIs the young beginner.\nHe doesn't care if she's rich,\nIf she's ugly, or if she's beautiful:\nAs long as she wears a petticoat,\nYou know what she does."
+            "original": "Eh consolatevi:\nNon siete voi, non foste e non sarete\nNé la prima né l'ultima; guardate\nQuesto non picciol libro: è tutto pieno\nDei nomi di sue belle;\nOgni villa, ogni borgo, ogni paese\nÈ testimon di sue donnesche imprese.",
+            "translation": "Oh, console yourselves:\nIt is not you, you were not, and you will not be\nNeither the first nor the last; look\nThis is no small book: it is filled\nWith the names of his beauties;\nEvery village, every hamlet, every town\nIs testimony to his womanly exploits."
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "Aria · N. 4",
+        "label": "Aria · N. 4",
+        "originalTitle": "Madamina, il catalogo è questo",
+        "translatedTitle": "My lady, this is the catalogue",
+        "participants": [
+          "Leporello"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
+          {
+            "speaker": "LEPORELLO",
+            "speakerTranslation": "LEPORELLO",
+            "literalText": true,
+            "original": "Madamina, il catalogo è questo\nDelle belle che amò il padron mio,\nUn catalogo egli è che ho fatt'io,\nOsservate, leggete con me.\nIn Italia seicento e quaranta,\nIn Lamagna duecento e trent'una,\nCento in Francia, in Turchia novant'una,\nMa in Ispagna son già mille e tre.\nV'ha fra queste contadine,\nCameriere, cittadine,\nV'han contesse, baronesse,\nMarchesane, principesse,\nE v'han donne d'ogni grado,\nD'ogni forma, d'ogni età.\nNella bionda egli ha l'usanza\nDi lodar la gentilezza,\nNella bruna la costanza,\nNella bianca la dolcezza.\nVuol d'inverno la grassotta,\nVuol d'estate la magrotta;\nE la grande maestosa,\nLa piccina è ognor vezzosa.\nDelle vecchie fa conquista\nPel piacer di porle in lista;\nMa passion predominante\nÈ la giovin principiante.\nNon si picca se sia ricca,\nSe sia brutta, se sia bella:\nPurché porti la gonnella,\nVoi sapete quel che fa.",
+            "translation": "My lady, this is the catalogue\nOf the beauties my master loved,\nThis is a catalogue I have made,\nLook, read with me.\nIn Italy, six hundred and forty,\nIn Germany, two hundred and thirty-one,\nOne hundred in France, ninety-one in Turkey,\nBut in Spain, there are already a thousand and three.\nAmong these, there are peasant women,\nMaids, city women,\nThere are countesses, baronesses,\nMarquises, princesses,\nAnd there are women of every rank,\nOf every shape, of every age.\nIn the blonde he has the habit\nTo praise kindness,\nIn the brunette, constancy,\nIn the white, sweetness.\nHe wants the plump one in winter,\nHe wants the thin one in summer;\nAnd the tall one majestic,\nThe little one is always charming.\nHe conquers old women\nFor the pleasure of listing them;\nBut his predominant passion\nIs the young beginner.\nHe doesn't care if she's rich,\nIf she's ugly, or if she's beautiful:\nAs long as she wears a petticoat,\nYou know what she does."
           },
           {
             "speaker": "Stage direction",
@@ -1135,7 +1218,8 @@ export const donGiovanniActOneScenes = [
             "original": "parte",
             "translation": "part"
           }
-        ]
+        ],
+        "routeItem": 2
       }
     ],
     "outline": [
@@ -1151,7 +1235,8 @@ export const donGiovanniActOneScenes = [
           "Donna Elvira"
         ],
         "recordingSeconds": 1177,
-        "recordingTime": "00:19:37"
+        "recordingTime": "00:19:37",
+        "sourceSection": 0
       },
       {
         "type": "Recitativo",
@@ -1159,7 +1244,7 @@ export const donGiovanniActOneScenes = [
         "translation": "Who is there?",
         "match": "Chi è là?",
         "speaker": "ELVIRA",
-        "sourceTurn": 5,
+        "sourceTurn": 0,
         "sourceLine": 0,
         "characters": [
           "Donna Elvira",
@@ -1167,7 +1252,8 @@ export const donGiovanniActOneScenes = [
           "Leporello"
         ],
         "recordingSeconds": 1316,
-        "recordingTime": "00:21:56"
+        "recordingTime": "00:21:56",
+        "sourceSection": 1
       },
       {
         "type": "Aria · N. 4",
@@ -1175,13 +1261,14 @@ export const donGiovanniActOneScenes = [
         "translation": "My lady, this is the catalogue",
         "match": "Madamina, il catalogo è questo",
         "speaker": "LEPORELLO",
-        "sourceTurn": 42,
-        "sourceLine": 7,
+        "sourceTurn": 0,
+        "sourceLine": 0,
         "characters": [
           "Leporello"
         ],
         "recordingSeconds": 1537,
-        "recordingTime": "00:25:37"
+        "recordingTime": "00:25:37",
+        "sourceSection": 2
       }
     ]
   },
@@ -1192,7 +1279,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1217,7 +1305,8 @@ export const donGiovanniActOneScenes = [
             "original": "parte",
             "translation": "part"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
@@ -1229,7 +1318,15 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Coro · N. 5",
+        "label": "Coro · N. 5",
+        "originalTitle": "Giovinette che fate all'amore",
+        "translatedTitle": "Young women who are in love",
+        "participants": [
+          "Zerlina",
+          "Masetto",
+          "Peasant chorus"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1282,7 +1379,8 @@ export const donGiovanniActOneScenes = [
             "original": "La la la, la la la, la la lera\nChe piacer, che piacer che sarà!",
             "translation": "La la la, la la la, la la lera\nWhat a pleasure, what a pleasure it will be!"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -1300,7 +1398,8 @@ export const donGiovanniActOneScenes = [
           "Peasant chorus"
         ],
         "recordingSeconds": 1897,
-        "recordingTime": "00:31:37"
+        "recordingTime": "00:31:37",
+        "sourceSection": 0
       }
     ]
   },
@@ -1311,7 +1410,16 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Manco male è partita",
+        "translatedTitle": "At least she has gone",
+        "participants": [
+          "Don Giovanni",
+          "Leporello",
+          "Zerlina",
+          "Masetto"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1580,7 +1688,21 @@ export const donGiovanniActOneScenes = [
             "literalText": true,
             "original": "Masetto, guarda ben, ti pentirai.",
             "translation": "Masetto, look carefully, you'll regret it."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 6",
+        "label": "Aria · N. 6",
+        "originalTitle": "Ho capito, signorsì",
+        "translatedTitle": "I understand, yes sir!",
+        "participants": [
+          "Masetto"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
           {
             "speaker": "MASETTO",
             "speakerTranslation": "MASETTO",
@@ -1637,7 +1759,8 @@ export const donGiovanniActOneScenes = [
             "original": "Leporello parte con Masetto e con gli altri contadini.",
             "translation": "Leporello leaves with Masetto and the other peasants."
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -1656,7 +1779,8 @@ export const donGiovanniActOneScenes = [
           "Masetto"
         ],
         "recordingSeconds": 1990,
-        "recordingTime": "00:33:10"
+        "recordingTime": "00:33:10",
+        "sourceSection": 0
       },
       {
         "type": "Aria · N. 6",
@@ -1664,13 +1788,14 @@ export const donGiovanniActOneScenes = [
         "translation": "I understand, yes sir!",
         "match": "Ho capito, signorsì",
         "speaker": "MASETTO",
-        "sourceTurn": 38,
+        "sourceTurn": 0,
         "sourceLine": 0,
         "characters": [
           "Masetto"
         ],
         "recordingSeconds": 2110,
-        "recordingTime": "00:35:10"
+        "recordingTime": "00:35:10",
+        "sourceSection": 1
       }
     ]
   },
@@ -1681,7 +1806,14 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Alfin siamo liberati",
+        "translatedTitle": "At last we are free",
+        "participants": [
+          "Don Giovanni",
+          "Zerlina"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1766,8 +1898,30 @@ export const donGiovanniActOneScenes = [
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
-            "original": "Certo, io.\nQuel casinetto è mio: soli saremo,\nE là, gioiello mio, ci sposeremo.\nLà ci darem la mano,\nLà mi dirai di sì.\nVedi non è lontano:\nPartiam, ben mio, di qui.",
-            "translation": "Of course, me.\nThat little house is mine: we'll be alone,\nAnd there, my jewel, we'll marry.\nThere we'll hold hands,\nThere you'll say yes to me.\nSee, it's not far:\nLet's leave, my love, from here."
+            "original": "Certo, io.\nQuel casinetto è mio: soli saremo,\nE là, gioiello mio, ci sposeremo.",
+            "translation": "Of course, me.\nThat little house is mine: we'll be alone,\nAnd there, my jewel, we'll marry."
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Duettino · N. 7",
+        "label": "Duettino · N. 7",
+        "originalTitle": "Là ci darem la mano",
+        "translatedTitle": "There we shall join hands",
+        "participants": [
+          "Don Giovanni",
+          "Zerlina"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
+          {
+            "speaker": "DON GIOVANNI",
+            "speakerTranslation": "DON GIOVANNI",
+            "literalText": true,
+            "original": "Là ci darem la mano,\nLà mi dirai di sì.\nVedi non è lontano:\nPartiam, ben mio, di qui.",
+            "translation": "There we'll hold hands,\nThere you'll say yes to me.\nSee, it's not far:\nLet's leave, my love, from here."
           },
           {
             "speaker": "ZERLINA",
@@ -1825,7 +1979,8 @@ export const donGiovanniActOneScenes = [
             "original": "Andiam, andiam, mio bene,\nA ristorar le pene\nD'un innocente amor.",
             "translation": "Let's go, let's go, my love,\nTo soothe the pains\nOf an innocent love."
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -1842,7 +1997,8 @@ export const donGiovanniActOneScenes = [
           "Zerlina"
         ],
         "recordingSeconds": 2191,
-        "recordingTime": "00:36:31"
+        "recordingTime": "00:36:31",
+        "sourceSection": 0
       },
       {
         "type": "Duettino · N. 7",
@@ -1850,14 +2006,15 @@ export const donGiovanniActOneScenes = [
         "translation": "There we shall join hands",
         "match": "Là ci darem la mano",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 11,
-        "sourceLine": 3,
+        "sourceTurn": 0,
+        "sourceLine": 0,
         "characters": [
           "Don Giovanni",
           "Zerlina"
         ],
         "recordingSeconds": 2319,
-        "recordingTime": "00:38:39"
+        "recordingTime": "00:38:39",
+        "sourceSection": 1
       }
     ]
   },
@@ -1868,7 +2025,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -1948,7 +2106,21 @@ export const donGiovanniActOneScenes = [
             "literalText": true,
             "original": "La povera infelice\nÈ di me innamorata,\nE per pietà deggio fingere amore;\nCh'io son, per mia disgrazia, uom di buon core.",
             "translation": "The poor unfortunate\nShe is in love with me,\nAnd out of pity I must feign love;\nFor I am, unfortunately, a man of good heart."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 8",
+        "label": "Aria · N. 8",
+        "originalTitle": "Ah fuggi il traditor",
+        "translatedTitle": "Ah, flee the traitor",
+        "participants": [
+          "Donna Elvira"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
           {
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
@@ -1963,7 +2135,8 @@ export const donGiovanniActOneScenes = [
             "original": "parte, conducendo seco Zerlina",
             "translation": "he leaves, taking Zerlina with him"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -1973,11 +2146,12 @@ export const donGiovanniActOneScenes = [
         "translation": "Ah, flee the traitor",
         "match": "Ah fuggi il traditor",
         "speaker": "ELVIRA",
-        "sourceTurn": 11,
+        "sourceTurn": 0,
         "sourceLine": 0,
         "characters": [
           "Donna Elvira"
-        ]
+        ],
+        "sourceSection": 1
       }
     ]
   },
@@ -1988,7 +2162,15 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Mi par ch'oggi il demonio si diverta",
+        "translatedTitle": "The devil seems determined to thwart me today",
+        "participants": [
+          "Don Giovanni",
+          "Don Ottavio",
+          "Donna Anna"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -2076,7 +2258,8 @@ export const donGiovanniActOneScenes = [
             "original": "Questa man, questo ferro, i beni, il sangue\nSpenderò per servirvi:\nMa voi, bella Donn'Anna,\nPerché così piangete?\nIl crudele chi fu che osò la calma\nTurbar del viver vostro...",
             "translation": "This hand, this sword, the goods, the blood\nI will spend to serve you:\nBut you, beautiful Donna Anna,\nWhy do you weep thus?\nWho was the cruel one who dared to disturb the calm\nof your life..."
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -2094,7 +2277,8 @@ export const donGiovanniActOneScenes = [
           "Donna Anna"
         ],
         "recordingSeconds": 2558,
-        "recordingTime": "00:42:38"
+        "recordingTime": "00:42:38",
+        "sourceSection": 0
       }
     ]
   },
@@ -2105,7 +2289,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -2120,8 +2305,32 @@ export const donGiovanniActOneScenes = [
             "speaker": "ELVIRA",
             "speakerTranslation": "ELVIRA",
             "literalText": true,
-            "original": "Ah ti ritrovo ancor, perfido mostro!\nNon ti fidar, o misera,\nDi quel ribaldo cor!\nMe già tradì, quel barbaro:\nTe vuol tradir ancor.",
-            "translation": "Ah, I find you again, perfidious monster!\nDo not trust, oh wretched one,\nthat rascal's heart!\nHe has already betrayed me, that barbarian:\nHe wants to betray you again."
+            "original": "Ah ti ritrovo ancor, perfido mostro!",
+            "translation": "Ah, I find you again, perfidious monster!"
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Quartetto · N. 9",
+        "label": "Quartetto · N. 9",
+        "originalTitle": "Non ti fidar, o misera",
+        "translatedTitle": "Do not trust him, unfortunate woman",
+        "participants": [
+          "Donna Elvira",
+          "Donna Anna",
+          "Don Ottavio",
+          "Don Giovanni"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
+          {
+            "speaker": "ELVIRA",
+            "speakerTranslation": "ELVIRA",
+            "literalText": true,
+            "original": "Non ti fidar, o misera,\nDi quel ribaldo cor!\nMe già tradì, quel barbaro:\nTe vuol tradir ancor.",
+            "translation": "Do not trust, oh wretched one,\nthat rascal's heart!\nHe has already betrayed me, that barbarian:\nHe wants to betray you again."
           },
           {
             "speaker": "ANNA, OTTAVIO",
@@ -2346,7 +2555,21 @@ export const donGiovanniActOneScenes = [
             "literalText": true,
             "original": "Quegli accenti sì sommessi,\nQuel cangiarsi di colore,\nSon indizi troppo espressi,\nChe mi fan determinar.",
             "translation": "Those low accents,\nThat changing color,\nAre too clear clues,\nThat make me decide."
-          },
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Povera sventurata",
+        "translatedTitle": "Poor unfortunate woman",
+        "participants": [
+          "Don Giovanni"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
           {
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
@@ -2361,7 +2584,8 @@ export const donGiovanniActOneScenes = [
             "original": "parte",
             "translation": "part"
           }
-        ]
+        ],
+        "routeItem": 2
       }
     ],
     "outline": [
@@ -2371,8 +2595,8 @@ export const donGiovanniActOneScenes = [
         "translation": "Do not trust him, unfortunate woman",
         "match": "Non ti fidar, o misera",
         "speaker": "ELVIRA",
-        "sourceTurn": 1,
-        "sourceLine": 1,
+        "sourceTurn": 0,
+        "sourceLine": 0,
         "characters": [
           "Donna Elvira",
           "Donna Anna",
@@ -2380,7 +2604,8 @@ export const donGiovanniActOneScenes = [
           "Don Giovanni"
         ],
         "recordingSeconds": 2638,
-        "recordingTime": "00:43:58"
+        "recordingTime": "00:43:58",
+        "sourceSection": 1
       },
       {
         "type": "Recitativo",
@@ -2388,13 +2613,14 @@ export const donGiovanniActOneScenes = [
         "translation": "Poor unfortunate woman",
         "match": "Povera sventurata",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 34,
+        "sourceTurn": 0,
         "sourceLine": 0,
         "characters": [
           "Don Giovanni"
         ],
         "recordingSeconds": 2868,
-        "recordingTime": "00:47:48"
+        "recordingTime": "00:47:48",
+        "sourceSection": 2
       }
     ]
   },
@@ -2405,7 +2631,14 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo accompagnato + Aria · N. 10",
+        "label": "Recitativo accompagnato + Aria · N. 10",
+        "originalTitle": "Don Ottavio, son morta!",
+        "translatedTitle": "Don Ottavio, I am undone!",
+        "participants": [
+          "Donna Anna",
+          "Don Ottavio"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -2528,7 +2761,8 @@ export const donGiovanniActOneScenes = [
             "original": "Allora\nRinforzo i stridi miei, chiamo soccorso,\nFugge il fellon, arditamente il seguo\nFin nella strada per fermarlo, e sono\nAssalitrice d'assalita. Il padre\nV'accorre, vuol conoscerlo, e l'iniquo,\nChe del povero vecchio era più forte,\nCompie il misfatto suo col dargli morte.\nOr sai chi l'onore\nRapire a me volse,\nChi fu il traditore,\nChe il padre mi tolse;\nVendetta ti chiedo;\nLa chiede il tuo cor.\nRammenta la piaga\nDel misero seno,\nRimira di sangue\nCoperto il terreno,\nSe l'ira in te langue\nD'un giusto furor.",
             "translation": "Then\nI reinforce my cries, I call for help,\nThe felon flees, I boldly follow him\nEven into the street to stop him, and I am\nThe assailant of the attacked. The father\nruns, wants to know him, and the wicked man,\nWho was stronger than the poor old man,\nCarries out his crime by killing him.\nNow do you know who wanted\nto steal my honor,\nWho was the traitor,\nWho took my father from me;\nRevenge I ask of you;\nYour heart demands it.\nRemember the wound\nof my wretched breast,\nLook at the ground covered with blood,\nIf the anger within you languishes\nWith a just fury."
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": [
@@ -2545,7 +2779,8 @@ export const donGiovanniActOneScenes = [
           "Don Ottavio"
         ],
         "recordingSeconds": 2896,
-        "recordingTime": "00:48:16"
+        "recordingTime": "00:48:16",
+        "sourceSection": 0
       }
     ]
   },
@@ -2556,7 +2791,13 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Come mai creder deggio",
+        "translatedTitle": "How can I possibly believe it?",
+        "participants": [
+          "Don Ottavio"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -2580,7 +2821,21 @@ export const donGiovanniActOneScenes = [
             "literalText": true,
             "original": "parte",
             "translation": "part"
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 10a · Vienna",
+        "label": "Aria · N. 10a · Vienna",
+        "originalTitle": "Dalla sua pace",
+        "translatedTitle": "My peace depends upon hers",
+        "participants": [
+          "Don Ottavio"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
           {
             "speaker": "OTTAVIO",
             "speakerTranslation": "OTTAVIO",
@@ -2595,7 +2850,8 @@ export const donGiovanniActOneScenes = [
             "original": "parte",
             "translation": "part"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -2611,7 +2867,8 @@ export const donGiovanniActOneScenes = [
           "Don Ottavio"
         ],
         "recordingSeconds": 3275,
-        "recordingTime": "00:54:35"
+        "recordingTime": "00:54:35",
+        "sourceSection": 0
       },
       {
         "type": "Aria · N. 10a · Vienna",
@@ -2619,13 +2876,14 @@ export const donGiovanniActOneScenes = [
         "translation": "My peace depends upon hers",
         "match": "Dalla sua pace",
         "speaker": "OTTAVIO",
-        "sourceTurn": 3,
+        "sourceTurn": 0,
         "sourceLine": 0,
         "characters": [
           "Don Ottavio"
         ],
         "recordingSeconds": 3307,
-        "recordingTime": "00:55:07"
+        "recordingTime": "00:55:07",
+        "sourceSection": 1
       }
     ]
   },
@@ -2636,7 +2894,14 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Io deggio ad ogni patto",
+        "translatedTitle": "I must, whatever happens",
+        "participants": [
+          "Leporello",
+          "Don Giovanni"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -2812,8 +3077,29 @@ export const donGiovanniActOneScenes = [
             "speaker": "DON GIOVANNI",
             "speakerTranslation": "DON GIOVANNI",
             "literalText": true,
-            "original": "Bravo, bravo, arcibravo!\nL'affar non può andar meglio: incominciasti,\nIo saprò terminar. Troppo mi premono\nQueste contadinotte;\nLe voglio divertir finché vien notte.\nFin ch'han dal vino\nCalda la testa,\nUna gran festa\nFa' preparar.\nSe trovi in piazza\nQualche ragazza,\nTeco ancor quella\nCerca menar.\nSenza alcun ordine\nLa danza sia,\nChi 'l minuetto,\nChi la follia,\nChi l'alemanna\nFarai ballar.\nEd io fra tanto,\nDall'altro canto,\nCon questa e quella\nVo' amoreggiar.\nAh la mia lista\nDoman mattina\nD'una decina\nDevi aumentar.",
-            "translation": "Bravo, bravo, very brave!\nThe business can't go better: you started,\nI'll know how to finish. I'm too pressed\nby these peasant girls;\nI want to amuse them until nightfall.\nWhile their heads are hot from the wine,\nHave a great party\nprepared.\nIf you find in the square\nSome girl,\nTry to lead her too\nWith you.\nWithout any order\nLet there be a dance,\nSome the minuet,\nSome the folly,\nSome the German,\nYou will make them dance.\nAnd I in the meantime,\nOn the other hand,\nWith this one and that one\nI want to flirt.\nAh, my list\nTomorrow morning\nYou must increase\nBy about ten."
+            "original": "Bravo, bravo, arcibravo!\nL'affar non può andar meglio: incominciasti,\nIo saprò terminar. Troppo mi premono\nQueste contadinotte;\nLe voglio divertir finché vien notte.",
+            "translation": "Bravo, bravo, very brave!\nThe business can't go better: you started,\nI'll know how to finish. I'm too pressed\nby these peasant girls;\nI want to amuse them until nightfall."
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 11",
+        "label": "Aria · N. 11",
+        "originalTitle": "Fin ch'han dal vino",
+        "translatedTitle": "While wine has warmed their heads",
+        "participants": [
+          "Don Giovanni"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
+          {
+            "speaker": "DON GIOVANNI",
+            "speakerTranslation": "DON GIOVANNI",
+            "literalText": true,
+            "original": "Fin ch'han dal vino\nCalda la testa,\nUna gran festa\nFa' preparar.\nSe trovi in piazza\nQualche ragazza,\nTeco ancor quella\nCerca menar.\nSenza alcun ordine\nLa danza sia,\nChi 'l minuetto,\nChi la follia,\nChi l'alemanna\nFarai ballar.\nEd io fra tanto,\nDall'altro canto,\nCon questa e quella\nVo' amoreggiar.\nAh la mia lista\nDoman mattina\nD'una decina\nDevi aumentar.",
+            "translation": "While their heads are hot from the wine,\nHave a great party\nprepared.\nIf you find in the square\nSome girl,\nTry to lead her too\nWith you.\nWithout any order\nLet there be a dance,\nSome the minuet,\nSome the folly,\nSome the German,\nYou will make them dance.\nAnd I in the meantime,\nOn the other hand,\nWith this one and that one\nI want to flirt.\nAh, my list\nTomorrow morning\nYou must increase\nBy about ten."
           },
           {
             "speaker": "Stage direction",
@@ -2822,7 +3108,8 @@ export const donGiovanniActOneScenes = [
             "original": "partono",
             "translation": "they leave"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -2839,7 +3126,8 @@ export const donGiovanniActOneScenes = [
           "Don Giovanni"
         ],
         "recordingSeconds": 3584,
-        "recordingTime": "00:59:44"
+        "recordingTime": "00:59:44",
+        "sourceSection": 0
       },
       {
         "type": "Aria · N. 11",
@@ -2847,13 +3135,14 @@ export const donGiovanniActOneScenes = [
         "translation": "While wine has warmed their heads",
         "match": "Fin ch'han dal vino",
         "speaker": "DON GIOVANNI",
-        "sourceTurn": 24,
-        "sourceLine": 5,
+        "sourceTurn": 0,
+        "sourceLine": 0,
         "characters": [
           "Don Giovanni"
         ],
         "recordingSeconds": 3702,
-        "recordingTime": "01:01:42"
+        "recordingTime": "01:01:42",
+        "sourceSection": 1
       }
     ]
   },
@@ -2864,7 +3153,14 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "originalTitle": "Masetto: senti un po'",
+        "translatedTitle": "Masetto, listen a moment",
+        "participants": [
+          "Zerlina",
+          "Masetto"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -2928,8 +3224,29 @@ export const donGiovanniActOneScenes = [
             "speaker": "ZERLINA",
             "speakerTranslation": "ZERLINA",
             "literalText": true,
-            "original": "Ma se colpa io non ho! ma se da lui\nIngannata rimasi... E poi, che temi?\nTranquìllati, mia vita:\nNon mi toccò la punta delle dita.\nNon me lo credi? Ingrato!\nVien qui; sfògati; ammazzami, fa' tutto\nDi me quel che ti piace;\nMa poi, Masetto mio, ma poi fa' pace.\nBatti, batti, o bel Masetto,\nLa tua povera Zerlina:\nStarò qui come agnellina\nLe tue bòtte ad aspettar.\nLascerò straziarmi il crine,\nLascerò cavarmi gli occhi;\nE le care tue manine\nLieta poi saprò baciar.\nAh lo vedo, non hai core!\nPace, pace, o vita mia!\nIn contenti ed allegria\nNotte e dì vogliam passar.",
-            "translation": "But if I'm not to blame! But if I was deceived by him... And then, what are you afraid of?\nCalm down, my life:\nHe didn't touch the tips of my fingers.\nDon't you believe me? Ungrateful!\nCome here; vent your anger; kill me, do everything\nwith me as you please;\nBut then, my Masetto, but then make peace.\nBeat, beat, oh handsome Masetto,\nYour poor Zerlina:\nI'll stay here like a little lamb\nWaiting for your blows.\nI'll let my hair be torn,\nI'll let my eyes be gouged out;\nAnd then I'll know how to happily kiss your dear little hands.\nAh, I see, you have no heart!\nPeace, peace, oh my life!\nIn happiness and joy\nWe want to spend night and day."
+            "original": "Ma se colpa io non ho! ma se da lui\nIngannata rimasi... E poi, che temi?\nTranquìllati, mia vita:\nNon mi toccò la punta delle dita.\nNon me lo credi? Ingrato!\nVien qui; sfògati; ammazzami, fa' tutto\nDi me quel che ti piace;\nMa poi, Masetto mio, ma poi fa' pace.",
+            "translation": "But if I'm not to blame! But if I was deceived by him... And then, what are you afraid of?\nCalm down, my life:\nHe didn't touch the tips of my fingers.\nDon't you believe me? Ungrateful!\nCome here; vent your anger; kill me, do everything\nwith me as you please;\nBut then, my Masetto, but then make peace."
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Aria · N. 12",
+        "label": "Aria · N. 12",
+        "originalTitle": "Batti, batti, o bel Masetto",
+        "translatedTitle": "Beat me, dear Masetto",
+        "participants": [
+          "Zerlina"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
+          {
+            "speaker": "ZERLINA",
+            "speakerTranslation": "ZERLINA",
+            "literalText": true,
+            "original": "Batti, batti, o bel Masetto,\nLa tua povera Zerlina:\nStarò qui come agnellina\nLe tue bòtte ad aspettar.\nLascerò straziarmi il crine,\nLascerò cavarmi gli occhi;\nE le care tue manine\nLieta poi saprò baciar.\nAh lo vedo, non hai core!\nPace, pace, o vita mia!\nIn contenti ed allegria\nNotte e dì vogliam passar.",
+            "translation": "Beat, beat, oh handsome Masetto,\nYour poor Zerlina:\nI'll stay here like a little lamb\nWaiting for your blows.\nI'll let my hair be torn,\nI'll let my eyes be gouged out;\nAnd then I'll know how to happily kiss your dear little hands.\nAh, I see, you have no heart!\nPeace, peace, oh my life!\nIn happiness and joy\nWe want to spend night and day."
           },
           {
             "speaker": "MASETTO",
@@ -3043,7 +3360,8 @@ export const donGiovanniActOneScenes = [
             "original": "entra nella nicchia",
             "translation": "enter the niche"
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -3060,7 +3378,8 @@ export const donGiovanniActOneScenes = [
           "Masetto"
         ],
         "recordingSeconds": 3797,
-        "recordingTime": "01:03:17"
+        "recordingTime": "01:03:17",
+        "sourceSection": 0
       },
       {
         "type": "Aria · N. 12",
@@ -3068,13 +3387,14 @@ export const donGiovanniActOneScenes = [
         "translation": "Beat me, dear Masetto",
         "match": "Batti, batti, o bel Masetto",
         "speaker": "ZERLINA",
-        "sourceTurn": 8,
-        "sourceLine": 8,
+        "sourceTurn": 0,
+        "sourceLine": 0,
         "characters": [
           "Zerlina"
         ],
         "recordingSeconds": 3842,
-        "recordingTime": "01:04:02"
+        "recordingTime": "01:04:02",
+        "sourceSection": 1
       }
     ]
   },
@@ -3085,7 +3405,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -3131,7 +3452,8 @@ export const donGiovanniActOneScenes = [
             "original": "partono i servi e i contadini",
             "translation": "the servants and peasants leave"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
@@ -3143,7 +3465,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -3322,7 +3645,8 @@ export const donGiovanniActOneScenes = [
             "original": "partono",
             "translation": "they leave"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
@@ -3334,7 +3658,8 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Recitativo",
+        "label": "Recitativo",
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -3492,7 +3817,8 @@ export const donGiovanniActOneScenes = [
             "original": "partono",
             "translation": "they leave"
           }
-        ]
+        ],
+        "routeItem": 0
       }
     ],
     "outline": []
@@ -3504,7 +3830,16 @@ export const donGiovanniActOneScenes = [
     "summary": "",
     "sections": [
       {
-        "type": "Passage",
+        "type": "Finale I · N. 13",
+        "label": "Finale I · N. 13",
+        "originalTitle": "Riposate, vezzose ragazze",
+        "translatedTitle": "Rest, charming girls",
+        "participants": [
+          "Don Giovanni",
+          "Leporello",
+          "Zerlina",
+          "Masetto"
+        ],
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "turns": [
@@ -3703,7 +4038,27 @@ export const donGiovanniActOneScenes = [
             "literalText": true,
             "original": "Entrano Don Ottavio, Donn'Anna e Donn'Elvira mascherati.",
             "translation": "Enter Don Ottavio, Donna Anna and Donna Elvira in masks."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "Finale I · N. 13",
+        "label": "Finale I · N. 13",
+        "originalTitle": "Venite pur avanti",
+        "translatedTitle": "Come right in",
+        "participants": [
+          "Leporello",
+          "Don Giovanni",
+          "Donna Anna",
+          "Don Ottavio",
+          "Donna Elvira",
+          "Zerlina",
+          "Masetto"
+        ],
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "turns": [
           {
             "speaker": "LEPORELLO",
             "speakerTranslation": "LEPORELLO",
@@ -4187,7 +4542,8 @@ export const donGiovanniActOneScenes = [
             "original": "È confusa la mia sua testa,\nNon so sa più quel ch'io mi ei si faccia,\nE un'orribile tempesta\nMinacciando, oh Dio! mi lo va.\nMa non manca in me lui coraggio,\nNon mi si perdo perde o mi si confondo confonde.\nSe cadesse ancora il mondo\nNulla mai temer mi lo fa.",
             "translation": "My head is confused,\nI no longer know what he's doing to me,\nAnd a horrible storm\nThreatening, oh God! it's coming to me.\nBut he doesn't lack courage in me,\nI don't lose myself, I don't lose myself, or I get confused.\nIf the world were to fall again,\nNothing would ever make me fear him."
           }
-        ]
+        ],
+        "routeItem": 1
       }
     ],
     "outline": [
@@ -4206,7 +4562,8 @@ export const donGiovanniActOneScenes = [
           "Masetto"
         ],
         "recordingSeconds": 4085,
-        "recordingTime": "01:08:05"
+        "recordingTime": "01:08:05",
+        "sourceSection": 0
       },
       {
         "type": "Finale I · N. 13",
@@ -4214,7 +4571,7 @@ export const donGiovanniActOneScenes = [
         "translation": "Come right in",
         "match": "Venite pur avanti",
         "speaker": "LEPORELLO",
-        "sourceTurn": 28,
+        "sourceTurn": 0,
         "sourceLine": 0,
         "characters": [
           "Leporello",
@@ -4226,7 +4583,8 @@ export const donGiovanniActOneScenes = [
           "Masetto"
         ],
         "recordingSeconds": 4172,
-        "recordingTime": "01:09:32"
+        "recordingTime": "01:09:32",
+        "sourceSection": 1
       }
     ]
   }
