@@ -1,6 +1,6 @@
 // Bilingual reader draft: all passages translated, source and editorial review pending.
-import { donGiovanniActOneScenes } from "./libretto-don-giovanni-act-1.js?v=don-giovanni-reader-headings-20261027";
-import { donGiovanniActTwoScenes } from "./libretto-don-giovanni-act-2.js?v=don-giovanni-reader-headings-20261027";
+import { donGiovanniActOneScenes } from "./libretto-don-giovanni-act-1.js?v=don-giovanni-classic-sections-20261027";
+import { donGiovanniActTwoScenes } from "./libretto-don-giovanni-act-2.js?v=don-giovanni-classic-sections-20261027";
 import { getOpera } from "./operas.js";
 import { operaInformation } from "./opera-information.js";
 const info = operaInformation["don-giovanni"];
@@ -10,7 +10,7 @@ export const donGiovanni = {
   mobileArtworkUrl: "./public/images/don-giovanni-art.webp", mobileArtworkLabel: "Wolfgang Amadeus Mozart",
   originalLanguage: "Italiano", translationLanguage: "English",
   continuousAct: true, preserveLineBreaks: true, alignVerseLines: false,
-  threeLineOutline: true, sourceTitlesOnly: true, listeningOutlineOnly: true, showReaderMusicalHeadings: true,
+  threeLineOutline: true, sourceTitlesOnly: true, listeningOutlineOnly: true, showReaderMusicalHeadings: false,
   recordingVideoId: "DIvTXv65hyo",
   recordingCredit: "Orchestra Filarmonica Italiana · Alessandro Arigoni",
   sourceSceneOutline: true,
