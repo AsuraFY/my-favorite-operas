@@ -7,11 +7,15 @@ export const parsifalActThreeScenes = [
     "summary": "Parsifal returns on Good Friday and heals Amfortas with the recovered sacred spear.",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "",
+        "incipitOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "Dritter Aufzug",
-        "translatedTitle": "Act 3",
+        "sourceTitlesOnly": true,
+        "originalTitle": "Von dorther kam das Stöhnen",
+        "translatedTitle": "The groaning came from there",
+        "participants": [
+          "Gurnemanz"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -166,7 +170,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "nachdem er Parsifal staunend lange betrachtet tritt nun näher zu ihm.",
             "translation": "After watching Parsifal in amazement for some time, he steps closer."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Heil dir, mein Gast!",
+        "translatedTitle": "Greetings, my guest!",
+        "participants": [
+          "Gurnemanz"
+        ],
+        "turns": [
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
@@ -313,7 +331,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "erhebt sich langsam vom Gebete, blickt ruhig um sich, erkennt Gurnemanz und reicht diesem sanft die Hand zum Gruß.",
             "translation": "He slowly rises from his prayers, calmly looks around, recognizes Gurnemanz and gently extends his hand in greeting."
-          },
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Heil mir, daß ich dich wieder finde",
+        "translatedTitle": "Blessed am I to find you again",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -425,7 +457,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "sanft und matt.",
             "translation": "soft and matte."
-          },
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Werd heut zu Amfortas ich noch geleitet?",
+        "translatedTitle": "Will I be led to Amfortas today?",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -474,7 +520,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "schöpft hierbei mit der Hand aus dem Quell und besprengt Parsifals Haupt.",
             "translation": "He scoops water from the spring with his hand and sprinkles it on Parsifal's head."
-          },
+          }
+        ],
+        "routeItem": 3
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Gesegnet sei, du Reiner",
+        "translatedTitle": "Blessed be you, pure one",
+        "participants": [
+          "Gurnemanz"
+        ],
+        "turns": [
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
@@ -523,7 +583,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "schöpft unvermerkt Wasser aus der Quelle, neigt sich zu der vor ihm noch knienden Kundry und netzt ihr das Haupt.",
             "translation": "He discreetly scoops water from the spring, bends down to Kundry, who is still kneeling before him, and wets her head."
-          },
+          }
+        ],
+        "routeItem": 4
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Mein erstes Amt verricht ich so",
+        "translatedTitle": "Thus I perform my first office",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -558,7 +632,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "Das ist Charfreitags Zauber, Herr.",
             "translation": "That is the magic of Good Friday, sir."
-          },
+          }
+        ],
+        "routeItem": 5
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "O wehe, des höchsten Schmerzentags!",
+        "translatedTitle": "Alas, this day of greatest sorrow!",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -705,7 +793,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "sich matt ein wenig aufrichtend.",
             "translation": "lying down, rising slightly."
-          },
+          }
+        ],
+        "routeItem": 6
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ja – Wehe! Wehe! Weh über mich!",
+        "translatedTitle": "Yes—woe upon me!",
+        "participants": [
+          "Amfortas"
+        ],
+        "turns": [
           {
             "speaker": "AMFORTAS",
             "speakerTranslation": "Amfortas",
@@ -796,7 +898,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "Amfortas' Miene leuchtet in heiliger Entzückung auf; er scheint vor großer Ergriffenheit zu schwanken; Gurnemanz stützt ihn.",
             "translation": "Amfortas' face lights up in holy rapture; he seems to waver with great emotion; Gurnemanz supports him."
-          },
+          }
+        ],
+        "routeItem": 7
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Sei heil, entsündigt und gesühnt!",
+        "translatedTitle": "Be healed, freed from sin and atoned for!",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -845,7 +961,21 @@ export const parsifalActThreeScenes = [
             "literalText": true,
             "original": "mit Stimmen aus der mittleren sowie der höchsten Höhe.",
             "translation": "with voices from the middle and highest registers."
-          },
+          }
+        ],
+        "routeItem": 8
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Höchsten Heiles Wunder:",
+        "translatedTitle": "Miracle of supreme redemption",
+        "participants": [
+          "Alle"
+        ],
+        "turns": [
           {
             "speaker": "ALLE",
             "speakerTranslation": "Alle",
@@ -867,7 +997,8 @@ export const parsifalActThreeScenes = [
             "original": "Der Bühnenvorhang wird langsam geschlossen.",
             "translation": "The stage curtain is slowly closing."
           }
-        ]
+        ],
+        "routeItem": 9
       }
     ],
     "outline": [
@@ -880,7 +1011,9 @@ export const parsifalActThreeScenes = [
         "sourceTurn": 2,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -888,10 +1021,12 @@ export const parsifalActThreeScenes = [
         "translation": "Greetings, my guest!",
         "match": "Heil dir, mein Gast!",
         "speaker": "GURNEMANZ",
-        "sourceTurn": 22,
+        "sourceTurn": 0,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -899,10 +1034,12 @@ export const parsifalActThreeScenes = [
         "translation": "Blessed am I to find you again",
         "match": "Heil mir, daß ich dich wieder finde",
         "speaker": "PARSIFAL",
-        "sourceTurn": 43,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -910,10 +1047,12 @@ export const parsifalActThreeScenes = [
         "translation": "Will I be led to Amfortas today?",
         "match": "Werd heut zu Amfortas ich noch geleitet?",
         "speaker": "PARSIFAL",
-        "sourceTurn": 59,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -921,10 +1060,12 @@ export const parsifalActThreeScenes = [
         "translation": "Blessed be you, pure one",
         "match": "Gesegnet sei, du Reiner",
         "speaker": "GURNEMANZ",
-        "sourceTurn": 66,
+        "sourceTurn": 0,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 4,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -932,10 +1073,12 @@ export const parsifalActThreeScenes = [
         "translation": "Thus I perform my first office",
         "match": "Mein erstes Amt verricht ich so",
         "speaker": "PARSIFAL",
-        "sourceTurn": 73,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 5,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -943,10 +1086,12 @@ export const parsifalActThreeScenes = [
         "translation": "Alas, this day of greatest sorrow!",
         "match": "O wehe, des höchsten Schmerzentags!",
         "speaker": "PARSIFAL",
-        "sourceTurn": 78,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 6,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -954,10 +1099,12 @@ export const parsifalActThreeScenes = [
         "translation": "Yes—woe upon me!",
         "match": "Ja – Wehe! Wehe! Weh über mich!",
         "speaker": "AMFORTAS",
-        "sourceTurn": 99,
+        "sourceTurn": 0,
         "characters": [
           "Amfortas"
-        ]
+        ],
+        "sourceSection": 7,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -965,10 +1112,12 @@ export const parsifalActThreeScenes = [
         "translation": "Be healed, freed from sin and atoned for!",
         "match": "Sei heil, entsündigt und gesühnt!",
         "speaker": "PARSIFAL",
-        "sourceTurn": 112,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 8,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -976,10 +1125,12 @@ export const parsifalActThreeScenes = [
         "translation": "Miracle of supreme redemption",
         "match": "Höchsten Heiles Wunder:",
         "speaker": "ALLE",
-        "sourceTurn": 119,
+        "sourceTurn": 0,
         "characters": [
           "Alle"
-        ]
+        ],
+        "sourceSection": 9,
+        "sourceLine": 0
       }
     ]
   }
