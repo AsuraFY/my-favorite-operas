@@ -2949,12 +2949,12 @@ export const donGiovanniActTwoScenes = [
       },
       {
         "type": "Recitativo accompagnato + Rondò · N. 23",
-        "title": "Crudele!",
+        "title": "Crudele? Ah no, mio bene",
         "translation": "Cruel? Ah no, my love",
-        "match": "Crudele!",
-        "speaker": "OTTAVIO",
-        "sourceTurn": 6,
-        "sourceLine": 3,
+        "match": "Ah no, mio ben!",
+        "speaker": "ANNA",
+        "sourceTurn": 7,
+        "sourceLine": 0,
         "sourceSection": 0,
         "characters": [
           "Donna Anna",
