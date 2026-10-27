@@ -3041,25 +3041,3 @@ html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
-
-
-/* Don Giovanni: match the established bilingual libretto's musical title treatment. */
-[data-libretto-slug="don-giovanni"] .libretto-track-heading--within-turn {
-  display: block;
-  margin: 22px 0 13px;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
-  color: var(--ink);
-  font: 600 1.05rem/1.4 var(--serif);
-  scroll-margin-top: 8rem;
-}
-[data-libretto-slug="don-giovanni"] .libretto-track-heading--within-turn .libretto-track-heading__title {
-  display: block;
-}
-[data-libretto-slug="don-giovanni"] .libretto-track-heading--within-turn .opera-outline__section-translation {
-  display: block;
-  margin-top: 4px;
-}
-[data-libretto-slug="don-giovanni"] .libretto-track-heading--within-turn .libretto-participants {
-  margin-top: 5px;
-}
