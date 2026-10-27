@@ -459,7 +459,15 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       const position = turn.verseLineIndex == null ? item.entry.sourceLine : 0;
       const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionRouteItem(section, sectionIndex) +
         '-' + turn.sourceTurnIndex + '-l' + item.entry.sourceLine;
-      inlineAnchors.set(position, '<span class="libretto-turn-anchor" id="' + id + '" aria-hidden="true"></span>');
+      const entry = item.entry;
+      const visibleTitle = libretto.showReaderMusicalHeadings;
+      const headingHtml = visibleTitle
+        ? '<span class="libretto-track-heading libretto-track-heading--within-turn" id="' + id + '">' +
+          '<span class="libretto-track-heading__title">' + escapeHtml(outlineTrackTitle(entry)) + '</span>' +
+          (entry.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(entry.translation) + '</span>' : '') +
+          renderCharacterCredits(outlineEntryCharacters(entry, scene, act), true) + '</span>'
+        : '<span class="libretto-turn-anchor" id="' + id + '" aria-hidden="true"></span>';
+      inlineAnchors.set(position, headingHtml);
     }
     const anchorFirst = output => output.map((html, index) => {
       if (index !== 0 || !turn.startsSourceTurn) return html;
@@ -514,11 +522,13 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   const selectedTitle = isSpotifyScene && section.originalTitle
     ? section.originalTitle + (section.translatedTitle ? " · " + section.translatedTitle : "")
     : heading.heading;
-  const selectedHeading =
+  const readerOutline = libretto.showReaderMusicalHeadings && scene.outline?.length;
+  const showSectionHeading = !readerOutline && !(libretto.showReaderMusicalHeadings && section.type === "Passage");
+  const selectedHeading = showSectionHeading ?
     '<div class="selected-section-heading"><h2>' + escapeHtml(selectedTitle) + '</h2>' +
     ((libretto.threeLineOutline || section.threeLineOutline || section.type === "Passage") && heading.subtitle ? '<p class="selected-section-heading__translation">' + escapeHtml(heading.subtitle) + '</p>' : "") +
-    sectionParticipantCredits(section, act, scene.number) + '</div>';
-  const sectionLabel = isSpotifyScene ? "" : '<div class="libretto-section__label">' +
+    sectionParticipantCredits(section, act, scene.number) + '</div>' : '';
+  const sectionLabel = isSpotifyScene || (libretto.showReaderMusicalHeadings && section.type === "Passage") ? "" : '<div class="libretto-section__label">' +
     escapeHtml(sectionNavigationLabel(section, scene, sectionIndex)) + '</div>';
   return '<section class="libretto-scene-section" id="libretto-section-' + act + '-' + scene.number +
     '-' + sectionRouteItem(section, sectionIndex) + '" data-libretto-item="' + sectionRouteItem(section, sectionIndex) + '" data-source-scene="' + scene.number + '">' +
