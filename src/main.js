@@ -1,6 +1,6 @@
 import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
 import { MIN_ROW_GAP, MAX_ROW_GAP, DEFAULT_ROW_GAP, normalizeRowGap, migrateLineSpacing, stepRowGap, applyReadingSpacing } from "./reading-spacing.js?v=lyric-row-gap-20261023";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=don-giovanni-reader-headings-20261027";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=classic-sections-20261027";
 import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=arigoni-outline-20261027";
 import { operaInformation } from "./data/opera-information.js?v=favorite-outline-reference-20261024";
 import { renderOperaInformationPage, renderPlannedLibrettoPage, hydrateFavoriteCovers } from "./opera-info-page.js?v=fanciulla-act1-outline-20261026";
