@@ -1,3 +1,1567 @@
 // Otello — complete original Italian Act 4, from user-provided Opera Guide saved HTML.
 // English is a first unreviewed draft; headings use source scene divisions and actual incipits.
-export const otelloActFourScenes = [{"number":1,"originalHeading":"Scena I","translatedHeading":"Scene I","summary":"Desdemona prepares for bed, remembering Barbara and the Willow Song.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"La Camera di Desdemona. Letto, inginocchiatoio, tavolo, specchio, sedie. Una lampada arde appesa davanti all'immagine della Madonna che sta al disopra dell'inginocchiatoio. Porta a destra. Un lume acceso sul tavolo. È notte.\nDesdemona ed Emilia","translation":"Desdemona's chamber. A bed, a prayer kneeler, table, mirror and chairs. A lamp burns before the image of the Virgin above the kneeler. A door to the right. A light on the table. Night.\nDesdemona and Emilia.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"Era più calmo?","translation":"Was he calmer?","speakerTranslation":"Emilia","literalText":true},{"speaker":"DESDEMONA","original":"Mi parea. M'ingiunse\ndi coricarmi e d'attenderlo. Emilia,\nte ne prego, distendi sul mio letto\nla mia candida veste nuziale.","translation":"So it seemed. He ordered me\nto go to bed and wait for him. Emilia,\nI beg you, spread upon my bed\nmy white bridal gown.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Emilia eseguisce","translation":"Emilia does so.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Senti. Se pria di te morir dovessi\nmi seppellisci con un di quei veli.","translation":"Listen. If I should die before you,\nbury me in one of those veils.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"EMILIA","original":"Scacciate queste idee.","translation":"Cast away such thoughts.","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"sedendo macchinalmente davanti allo specchio","translation":"Sitting mechanically before the mirror.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Son mesta, tanto, tanto.\nMia madre aveva una povera ancella,\ninnamorata e bella.\nEra il suo nome\nBarbara. Amava\nun uom che poi l'abbandonò; cantava\nun canzone: „la canzon del Salice“.","translation":"I am so, so sad.\nMy mother had a poor maidservant,\nin love and beautiful.\nHer name was\nBarbara. She loved\na man who later abandoned her; she sang\na song: “The Willow Song.”","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Ad Emilia","translation":"To Emilia.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Mi disciogli le chiome…\nIo questa sera ho la memoria piena\ndi quella cantilena…\n„Piangea cantando\nnell'erma landa,\npiangea la mesta…\nO Salce! Salce! Salce!\nSedea chinando\nsul sen la testa!\nSalce! Salce! Salce!\nCantiamo! Cantiamo! il Salce funebre\nsarà la mia ghirlanda.“","translation":"Unbind my hair...\nTonight my memory is full\nof that little song...\n“She wept as she sang\nupon the lonely heath,\nshe wept in sorrow...\nO willow! Willow! Willow!\nShe sat with her head\nbowed upon her breast!\nWillow! Willow! Willow!\nLet us sing! Let us sing! The funeral willow\nshall be my garland.”","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"ad Emilia","translation":"To Emilia.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Affrettati; fra poco giunge Otello.\n„Scorreano i rivi fra le zolle in fior,\ngemea quel core affranto,\ne dalle ciglia le sgorgava il cor\nl'amara onda del pianto.\nSalce! Salce! Salce!\nCantiamo! Cantiamo! Il Salce funebre\nsarà la mia ghirlanda.\nScendean 'augelli a vol dai rami cupi\nverso quel dolce canto.\nE gli occhi suoi piangean tanto, tanto,\nda impietosir le rupi.“","translation":"Hurry; Othello will soon arrive.\n“Streams flowed among the flowering clods,\nthat broken heart lamented,\nand from her lashes her heart poured out\na bitter flood of tears.\nWillow! Willow! Willow!\nLet us sing! Let us sing! The funeral willow\nshall be my garland.\nBirds flew down from the dark branches\ntowards that gentle song.\nAnd her eyes wept so much, so much,\nthat they could move the very rocks to pity.”","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"a Emilia, levandosi un anello dal dito","translation":"To Emilia, taking a ring from her finger.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Riponi quest'anello.","translation":"Put away this ring.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"alzandosi","translation":"Rising.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Povera Barbara! Solea la storia\ncon questo semplice suono finir:\n„Egli era nato per la sua gloria,\nio per amar…“","translation":"Poor Barbara! She used to end\nher story with this simple refrain:\n“He was born for his own glory,\nI to love...”","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"ad Emilia","translation":"To Emilia.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Ascolta.","translation":"Listen.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Emilia fa qualche passo","translation":"Emilia takes a few steps.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Odo un lamento.\nTaci. Chi batte a quella porta?","translation":"I hear a moan.\nBe still. Who knocks at that door?","speakerTranslation":"Desdemona","literalText":true},{"speaker":"EMILIA","original":"È il vento.","translation":"It is the wind.","speakerTranslation":"Emilia","literalText":true},{"speaker":"DESDEMONA","original":"„Io per amarlo e per morir…\nCantiamo! Cantiamo!\nSalce! Salce! Salce!“\nEmilia, addio. Come m'ardon le ciglia!\nè presagio di pianto. Buona notte.","translation":"“I to love him and to die...\nLet us sing! Let us sing!\nWillow! Willow! Willow!”\nEmilia, farewell. How my eyelids burn!\nIt is an omen of tears. Good night.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Emilia si volge per partire","translation":"Emilia turns to leave.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Ah! Emilia, Emilia,","translation":"Ah! Emilia, Emilia!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Emilia ritorna e Desdemona l'abbraccia","translation":"Emilia returns, and Desdemona embraces her.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Addio, Emilia, addio!","translation":"Farewell, Emilia, farewell!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Emilia esce","translation":"Emilia leaves.","speakerTranslation":"Stage direction","literalText":true}],"originalTitle":"Era più calmo?","translatedTitle":"Was he calmer?","participants":["Emilia","Desdemona"]}],"outline":[{"type":"","title":"Era più calmo?","translation":"Was he calmer?","match":"Era più calmo?","speaker":"EMILIA","sourceTurn":1,"characters":["Emilia","Desdemona"]},{"type":"","title":"Son mesta, tanto, tanto.","translation":"I am so, so sad.","match":"Son mesta, tanto","speaker":"DESDEMONA","sourceTurn":7,"characters":["Desdemona"]},{"type":"","title":"„Piangea cantando","translation":"“She wept as she sang","match":"Piangea cantando","speaker":"DESDEMONA","sourceTurn":9,"characters":["Desdemona"]},{"type":"","title":"Riponi quest'anello.","translation":"Put away this ring.","match":"Riponi quest'anello","speaker":"DESDEMONA","sourceTurn":13,"characters":["Desdemona","Emilia"]}],"sourceSceneOutline":true},{"number":2,"originalHeading":"Scena II","translatedHeading":"Scene II","summary":"Desdemona prays before lying down.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Desdemona sola","translation":"Desdemona alone.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"va all'inginocchiatoio","translation":"She goes to the prayer kneeler.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Ave Maria, piena di grazia, eletta\nfra le spose e le vergini sei tu,\nsia benedetto il frutto, o benedetta,\ndi tue materne viscere, Gesù.\nPrega per chi adorando a te si prostra,\nprega nel peccator, per l'innocente,\ne pel debole oppresso e pel possente,\nmisero anch'esso, tua pietà dimostra.\nPrega per chi sotto l'oltraggio piega\nla fronte e sotto la malvagia sorte;\nper noi, per noi tu prega, prega\nsempre e nell'ora della morte nostra,\nprega per noi, prega per noi, prega.","translation":"Hail Mary, full of grace, chosen\namong wives and virgins are you;\nblessed be the fruit, O blessed one,\nof your maternal womb, Jesus.\nPray for those who kneel before you in adoration;\npray for the sinner, for the innocent,\nfor the weak and oppressed, and for the mighty,\nwretched too: show your mercy.\nPray for those who bow their heads\nbeneath insult and cruel fate;\nfor us, for us pray, pray\nalways and at the hour of our death,\npray for us, pray for us, pray.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Resta ancora inginocchiata e appoggiando la fronte sull'inginocchiato io ripete mentalmente l'orazione di cui non s'odono che le prime e le ultime parole","translation":"She remains kneeling, resting her brow upon the prayer desk and repeating the prayer silently, of which only the first and last words can be heard.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Ave Maria…\nnell'ora della morte.\nAve!…Amen!","translation":"Hail Mary...\nat the hour of death.\nHail!... Amen!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"Si alza e va a coricasi","translation":"She rises and goes to bed.","speakerTranslation":"Stage direction","literalText":true}],"originalTitle":"Ave Maria, piena di grazia, eletta","translatedTitle":"Hail Mary, full of grace, chosen","participants":["Desdemona"]}],"outline":[{"type":"","title":"Ave Maria, piena di grazia, eletta","translation":"Hail Mary, full of grace, chosen","match":"Ave Maria, piena di grazia","speaker":"DESDEMONA","sourceTurn":2,"characters":["Desdemona"]}],"sourceSceneOutline":true},{"number":3,"originalHeading":"Scena III","translatedHeading":"Scene III","summary":"Othello confronts and kills Desdemona; Emilia discovers what happened.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Desdemona e Otello\nOtello entra da una porta segreta, depone una scimitarra sul tavolo, s'arresta davanti alla face, titubante se spegnerla o no. Guarda Desdemona. Spegne la face. La scena resta rischiarata dal solo lume dell'inginocchiatoio. Otello, spinto da un impeto di furore, s'avvicina al letto, ma là s'arresta. Contempla Desdemona che dorme. la bacia tre volte. All'ultimo bacio Desdemona si desta.","translation":"Desdemona and Othello.\nOthello enters through a secret door, sets a scimitar on the table and pauses by a torch, uncertain whether to extinguish it. He watches Desdemona. He extinguishes the torch. Only the lamp by the prayer kneeler lights the stage. Othello, driven by a burst of fury, approaches the bed, then stops. He gazes at the sleeping Desdemona and kisses her three times. At the last kiss she wakes.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"si alza","translation":"She rises.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Chi è là? Otello?","translation":"Who is there? Othello?","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Sì! Diceste questa sera le vostre preci?","translation":"Yes! Have you said your prayers tonight?","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Orai…","translation":"I have prayed...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Se vi sovviene\ndi qualche colpa commessa che attenda\ngrazia dal ciel, imploratela tosto.","translation":"If you remember\nany sin you have committed that awaits\nheaven's forgiveness, beg for it at once.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Perché?","translation":"Why?","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"T'affretta. Uccidere non voglio\nl'anima tua.","translation":"Hurry. I do not wish\nto kill your soul.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"D'uccider parli?","translation":"You speak of killing?","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Sì.","translation":"Yes.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Pietà di me, mio Dio!","translation":"My God, have mercy upon me!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Amen.","translation":"Amen.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"E abbiate pietà voi pure.","translation":"And you, too, have mercy.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Pensa ai tuoi peccati.","translation":"Think of your sins.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Mio peccato è l'amor.","translation":"My sin is love.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Perciò tu muori.","translation":"For that you must die.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"E perché t'amo m'uccidi?","translation":"And because I love you, you kill me?","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Ami Cassio.","translation":"You love Cassio.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"No! sull'anima mia!","translation":"No! Upon my soul!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Quel fazzoletto ch'io ti donai gli desti.","translation":"You gave him the handkerchief I gave you.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Non è vero.","translation":"That is not true.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Nella sua man lo vidi.","translation":"I saw it in his hand.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Io rea non sono!","translation":"I am not guilty!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Confessa!","translation":"Confess!","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Giuro!","translation":"I swear!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Bada allo spergiuro…\nPensa che sei sul tuo letto di morte.","translation":"Beware of perjury...\nRemember that you are on your deathbed.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Non per morir.","translation":"Not to die.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Per morir tosto.","translation":"To die very soon.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Aita!\nCassio non amo…ch'ei qui venga…ei parli.","translation":"Help!\nI do not love Cassio... let him come here and speak.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Muto è per sempre.","translation":"He is forever silent.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Cielo! Morto?","translation":"Heavens! Dead?","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"freddo","translation":"Coldly.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Morto.","translation":"Dead.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Son perduta! ei tradito!","translation":"I am lost! He has been betrayed!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"con forza","translation":"With force.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"E pianger l'osi?","translation":"And you dare weep for him?","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Otello…non uccidermi…","translation":"Othello... do not kill me...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Tu invano ti difendi.","translation":"You defend yourself in vain.","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Ch'io viva ancor…ch'io viva ancor…\nch'io viva ancor…","translation":"Let me live a little longer... let me live...\nlet me live a little longer...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Giù! cadi, giù, cadi, prostituta…","translation":"Down! Fall, down, fall, harlot...","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Pietà!","translation":"Mercy!","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"Muori!!","translation":"Die!!","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Ch'io viva questa notte…","translation":"Let me live through this night...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"No!","translation":"No!","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Un'ora…","translation":"One hour...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"No!","translation":"No!","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Un istante…","translation":"One moment...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"No!","translation":"No!","speakerTranslation":"Othello","literalText":true},{"speaker":"DESDEMONA","original":"Sol ch'io dica un'Ave.","translation":"Only to say a Hail Mary.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"OTELLO","original":"È tardi!","translation":"Too late!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"La soffoca. un grido di Desdemona. S'ode bussare alla porta","translation":"He smothers her. Desdemona cries out. A knock is heard at the door.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"contemplando il corpo di Desdemona inerte","translation":"Contemplating Desdemona's lifeless body.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Calma come la tomba.","translation":"Still as the tomb.","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"picchia di nuovo","translation":"Knocking again.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"Aprite! Aprite!","translation":"Open! Open!","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"trabalzando","translation":"Starting.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Chi è là? Chi batte?","translation":"Who is there? Who knocks?","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"Signor mio…ven prego, lasciate\nch'io vi parli…Aprite!","translation":"My lord... I beg you, let me\nspeak to you... open!","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"aprendo","translation":"Opening the door.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Emilia! che avvenne?","translation":"Emilia! What has happened?","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"entrando","translation":"Entering.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"Un gran delitto! Cassio uccise Roderigo.","translation":"A terrible crime! Cassio has killed Roderigo.","speakerTranslation":"Emilia","literalText":true},{"speaker":"OTELLO","original":"E Cassio?","translation":"And Cassio?","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"Vive.","translation":"He lives.","speakerTranslation":"Emilia","literalText":true},{"speaker":"OTELLO","original":"Cassio vive!","translation":"Cassio lives!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"dal letto","translation":"From the bed.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"DESDEMONA","original":"Ingiustamente…uccisa ingiustamente…","translation":"Unjustly... unjustly murdered...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"accorrendo al letto","translation":"Running to the bed.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"Chi geme là?…Orror!","translation":"Who moans there?... Horror!","speakerTranslation":"Emilia","literalText":true},{"speaker":"DESDEMONA","original":"Muoio innocente…","translation":"I die innocent...","speakerTranslation":"Desdemona","literalText":true},{"speaker":"EMILIA","original":"Gran Dio!…Chi fu? chi fu?","translation":"Great God!... Who did it? Who?","speakerTranslation":"Emilia","literalText":true},{"speaker":"DESDEMONA","original":"Nessuno…io stessa…Al mio\nSignor mi raccomanda…muoio innocente…\nAddio.","translation":"Nobody... I myself... Commend me\nto my lord... I die innocent...\nFarewell.","speakerTranslation":"Desdemona","literalText":true},{"speaker":"Stage direction","original":"muore","translation":"She dies.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"O mentitrice! io l'uccisi.","translation":"O liar! I killed her.","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"Assassino!","translation":"Murderer!","speakerTranslation":"Emilia","literalText":true},{"speaker":"OTELLO","original":"Fu di Cassio la druda. A Jago il chiedi.","translation":"She was Cassio's mistress. Ask Iago.","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"A Jago?","translation":"Iago?","speakerTranslation":"Emilia","literalText":true},{"speaker":"OTELLO","original":"A Jago.","translation":"Iago.","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"Stolto!! E tu il credesti?","translation":"Fool!! And you believed him?","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"fa per avventarsi contro Emilia","translation":"About to rush at Emilia.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Negarlo ardisci?","translation":"Dare you deny it?","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"Non ti temo.","translation":"I do not fear you.","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"la afferra","translation":"He seizes her.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Bada!","translation":"Beware!","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"Olà! Soccorso! Aiuto!","translation":"Ho there! Help! Help!","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"si svincola e corre verso la porta, gridando disperatamente","translation":"She breaks free and runs to the door, crying out desperately.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"Otello uccise Desdemona!","translation":"Othello has killed Desdemona!","speakerTranslation":"Emilia","literalText":true}],"originalTitle":"Chi è là? Otello?","translatedTitle":"Who is there? Othello?","participants":["Desdemona","Othello","Emilia"]}],"outline":[{"type":"","title":"Chi è là? Otello?","translation":"Who is there? Othello?","match":"Chi è là? Otello?","speaker":"DESDEMONA","sourceTurn":2,"characters":["Desdemona","Othello"]},{"type":"","title":"Confessa!","translation":"Confess!","match":"Confessa!","speaker":"OTELLO","sourceTurn":23,"characters":["Othello","Desdemona"]},{"type":"","title":"Muori!!","translation":"Die!!","match":"Muori!!","speaker":"OTELLO","sourceTurn":41,"characters":["Othello","Desdemona","Emilia"]},{"type":"","title":"Ingiustamente…uccisa ingiustamente…","translation":"Unjustly... unjustly murdered...","match":"Ingiustamente…","speaker":"DESDEMONA","sourceTurn":66,"characters":["Desdemona","Emilia","Othello"]},{"type":"","title":"Otello uccise Desdemona!","translation":"Othello has killed Desdemona!","match":"Otello uccise Desdemona!","speaker":"EMILIA","sourceTurn":86,"characters":["Emilia"]}],"sourceSceneOutline":true},{"number":4,"originalHeading":"Scena IV","translatedHeading":"Scene IV","summary":"Iago’s plot is exposed, and Othello takes his own life.","sections":[{"type":"Passage","threeLineOutline":true,"sourceTitlesOnly":true,"turns":[{"speaker":"Stage direction","original":"Otello, Emilia, Lodovico, Cassio e Jago, più tardi Montano con gente armata","translation":"Othello, Emilia, Lodovico, Cassio and Iago; later Montano with armed men.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"vedendo Desdemona","translation":"Seeing Desdemona.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"CASSIO, JAGO, LODOVICO","original":"Quai grida!\nOrrore! Orror!","translation":"What cries are these!\nHorror! Horror!","speakerTranslation":"Cassio, Iago, Lodovico","literalText":true},{"speaker":"Stage direction","original":"a Jago","translation":"To Iago.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"EMILIA","original":"Jago, smentisci quel vile assassino.\nHai tu creduto Desdemona infida?\nParla!","translation":"Iago, contradict that vile murderer.\nDid you believe Desdemona unfaithful?\nSpeak!","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"Tal la credea.","translation":"So I believed her.","speakerTranslation":"Iago","literalText":true},{"speaker":"OTELLO","original":"Quel fazzoletto che un dì le diedi,\na Cassio essa donava.","translation":"That handkerchief I once gave her,\nshe gave to Cassio.","speakerTranslation":"Othello","literalText":true},{"speaker":"EMILIA","original":"O potenza divina!","translation":"O divine power!","speakerTranslation":"Emilia","literalText":true},{"speaker":"Stage direction","original":"ad Emilia","translation":"To Emilia.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"Taci!","translation":"Be silent!","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"No, tutto rivelo!","translation":"No, I will reveal everything!","speakerTranslation":"Emilia","literalText":true},{"speaker":"JAGO","original":"Taci!","translation":"Be silent!","speakerTranslation":"Iago","literalText":true},{"speaker":"EMILIA","original":"No! Costui\ndalla mia man quel fazzoletto svelse\na viva forza.","translation":"No! This man\ntore that handkerchief from my hand\nby force.","speakerTranslation":"Emilia","literalText":true},{"speaker":"CASSIO","original":"E nella mia dimora\ntrovai quel vel.","translation":"And in my lodgings\nI found that cloth.","speakerTranslation":"Cassio","literalText":true},{"speaker":"Stage direction","original":"Entrando ed indicando Jago","translation":"Entering and pointing to Iago.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"MONTANO","original":"Rodrigo morente mi svelò di quest'uom l'arti nefande.","translation":"As he died, Roderigo revealed this man's wicked schemes to me.","speakerTranslation":"Montano","literalText":true},{"speaker":"Stage direction","original":"a Jago","translation":"To Iago.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Ah! discolpati!","translation":"Ah! Defend yourself!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"fuggendo","translation":"Fleeing.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"JAGO","original":"No!","translation":"No!","speakerTranslation":"Iago","literalText":true},{"speaker":"LODOVICO","original":"Ferma!","translation":"Stop him!","speakerTranslation":"Lodovico","literalText":true},{"speaker":"MONTANO","original":"S'insegua.","translation":"Pursue him.","speakerTranslation":"Montano","literalText":true},{"speaker":"CASSIO, LODOVICO","original":"Afferratelo!","translation":"Seize him!","speakerTranslation":"Cassio, Lodovico","literalText":true},{"speaker":"Stage direction","original":"alcuni escono inseguendo Jago","translation":"Some leave to pursue Iago.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"Stage direction","original":"slanciandosi per afferrar la spada","translation":"Leaping to grasp his sword.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"E il ciel non ha più fulmini?","translation":"Has heaven no thunderbolts left?","speakerTranslation":"Othello","literalText":true},{"speaker":"LODOVICO","original":"La spada a me!","translation":"Give me the sword!","speakerTranslation":"Lodovico","literalText":true},{"speaker":"OTELLO","original":"Tant'osi?…\nNiun mi tema\ns'anco armato mi vede. Ecco la fine\ndel mio camin…Oh! Gloria! Otello fu.","translation":"You dare so much?...\nLet no one fear me\nthough they see me armed. Here is the end\nof my journey... Oh! Glory! Othello was.","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"Lascia cadere la spada. Va presso al letto, contemplando Desdemona","translation":"He drops his sword. He approaches the bed and gazes at Desdemona.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"E tu…come sei pallida! e stanca, e muta, e bella,\npia creatura nata sotto maligna stella.\nFredda come la casta tua vita…\ne in cielo assorta.\nDesdemona! Desdemona!…Ah…morta! morta! morta!…","translation":"And you... how pale you are! So weary, silent, beautiful,\ngentle creature born beneath an evil star.\nCold as your pure life...\nand gathered into heaven.\nDesdemona! Desdemona!... Ah... dead! Dead! Dead!...","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"estraendo furtivamente dalle vesti un pugnale","translation":"Secretly drawing a dagger from his clothes.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"OTELLO","original":"Ho un'arma ancor!","translation":"I still have a weapon!","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"si ferisce","translation":"He stabs himself.","speakerTranslation":"Stage direction","literalText":true},{"speaker":"CASSIO","original":"Ah! ferma!","translation":"Ah! Stop!","speakerTranslation":"Cassio","literalText":true},{"speaker":"LODOVICO, MONTANO","original":"Sciagurato!","translation":"Wretched man!","speakerTranslation":"Lodovico, Montano","literalText":true},{"speaker":"OTELLO","original":"Pria d'ucciderti…sposa…ti baciai.\nOr morendo…nell'ombra…\nin cui mi giacio…\nUn bacio…un bacio ancora…ah!…un altro bacio…","translation":"Before I killed you... wife... I kissed you.\nNow as I die... in the darkness...\nwhere I lie...\nA kiss... another kiss... ah!... one more kiss...","speakerTranslation":"Othello","literalText":true},{"speaker":"Stage direction","original":"muore","translation":"He dies.","speakerTranslation":"Stage direction","literalText":true}],"originalTitle":"Jago, smentisci quel vile assassino.","translatedTitle":"Iago, contradict that vile murderer.","participants":["Cassio, Iago, Lodovico","Emilia","Iago","Othello","Cassio","Montano","Lodovico","Cassio, Lodovico","Lodovico, Montano"]}],"outline":[{"type":"","title":"Jago, smentisci quel vile assassino.","translation":"Iago, contradict that vile murderer.","match":"Jago, smentisci","speaker":"EMILIA","sourceTurn":4,"characters":["Emilia","Iago","Othello","Cassio","Montano","Lodovico","Cassio, Lodovico"]},{"type":"","title":"E il ciel non ha più fulmini?","translation":"Has heaven no thunderbolts left?","match":"E il ciel non ha più fulmini?","speaker":"OTELLO","sourceTurn":25,"characters":["Othello","Lodovico"]},{"type":"","title":"E tu…come sei pallida! e stanca, e muta, e bella,","translation":"And you... how pale you are! So weary, silent, beautiful,","match":"E tu…come sei pallida!","speaker":"OTELLO","sourceTurn":29,"characters":["Othello","Cassio","Lodovico, Montano"]},{"type":"","title":"Un bacio…un bacio ancora…ah!…un altro bacio…","translation":"A kiss... another kiss... ah!... one more kiss...","match":"Un bacio…un bacio ancora","speaker":"OTELLO","sourceTurn":35,"characters":["Othello"]}],"sourceSceneOutline":true}];
+export const otelloActFourScenes = [
+  {
+    "number": 1,
+    "originalHeading": "Scena I",
+    "translatedHeading": "Scene I",
+    "summary": "Desdemona prepares for bed, remembering Barbara and the Willow Song.",
+    "sections": [
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Era più calmo?",
+        "translatedTitle": "Was he calmer?",
+        "participants": [
+          "Emilia",
+          "Desdemona"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "La Camera di Desdemona. Letto, inginocchiatoio, tavolo, specchio, sedie. Una lampada arde appesa davanti all'immagine della Madonna che sta al disopra dell'inginocchiatoio. Porta a destra. Un lume acceso sul tavolo. È notte.\nDesdemona ed Emilia",
+            "translation": "Desdemona's chamber. A bed, a prayer kneeler, table, mirror and chairs. A lamp burns before the image of the Virgin above the kneeler. A door to the right. A light on the table. Night.\nDesdemona and Emilia.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Era più calmo?",
+            "translation": "Was he calmer?",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Mi parea. M'ingiunse\ndi coricarmi e d'attenderlo. Emilia,\nte ne prego, distendi sul mio letto\nla mia candida veste nuziale.",
+            "translation": "So it seemed. He ordered me\nto go to bed and wait for him. Emilia,\nI beg you, spread upon my bed\nmy white bridal gown.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Emilia eseguisce",
+            "translation": "Emilia does so.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Senti. Se pria di te morir dovessi\nmi seppellisci con un di quei veli.",
+            "translation": "Listen. If I should die before you,\nbury me in one of those veils.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Scacciate queste idee.",
+            "translation": "Cast away such thoughts.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "sedendo macchinalmente davanti allo specchio",
+            "translation": "Sitting mechanically before the mirror.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Son mesta, tanto, tanto.",
+        "translatedTitle": "I am so, so sad.",
+        "participants": [
+          "Desdemona"
+        ],
+        "turns": [
+          {
+            "speaker": "DESDEMONA",
+            "original": "Son mesta, tanto, tanto.\nMia madre aveva una povera ancella,\ninnamorata e bella.\nEra il suo nome\nBarbara. Amava\nun uom che poi l'abbandonò; cantava\nun canzone: „la canzon del Salice“.",
+            "translation": "I am so, so sad.\nMy mother had a poor maidservant,\nin love and beautiful.\nHer name was\nBarbara. She loved\na man who later abandoned her; she sang\na song: “The Willow Song.”",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Ad Emilia",
+            "translation": "To Emilia.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "„Piangea cantando",
+        "translatedTitle": "“She wept as she sang",
+        "participants": [
+          "Desdemona"
+        ],
+        "turns": [
+          {
+            "speaker": "DESDEMONA",
+            "original": "Mi disciogli le chiome…\nIo questa sera ho la memoria piena\ndi quella cantilena…\n„Piangea cantando\nnell'erma landa,\npiangea la mesta…\nO Salce! Salce! Salce!\nSedea chinando\nsul sen la testa!\nSalce! Salce! Salce!\nCantiamo! Cantiamo! il Salce funebre\nsarà la mia ghirlanda.“",
+            "translation": "Unbind my hair...\nTonight my memory is full\nof that little song...\n“She wept as she sang\nupon the lonely heath,\nshe wept in sorrow...\nO willow! Willow! Willow!\nShe sat with her head\nbowed upon her breast!\nWillow! Willow! Willow!\nLet us sing! Let us sing! The funeral willow\nshall be my garland.”",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ad Emilia",
+            "translation": "To Emilia.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Affrettati; fra poco giunge Otello.\n„Scorreano i rivi fra le zolle in fior,\ngemea quel core affranto,\ne dalle ciglia le sgorgava il cor\nl'amara onda del pianto.\nSalce! Salce! Salce!\nCantiamo! Cantiamo! Il Salce funebre\nsarà la mia ghirlanda.\nScendean 'augelli a vol dai rami cupi\nverso quel dolce canto.\nE gli occhi suoi piangean tanto, tanto,\nda impietosir le rupi.“",
+            "translation": "Hurry; Othello will soon arrive.\n“Streams flowed among the flowering clods,\nthat broken heart lamented,\nand from her lashes her heart poured out\na bitter flood of tears.\nWillow! Willow! Willow!\nLet us sing! Let us sing! The funeral willow\nshall be my garland.\nBirds flew down from the dark branches\ntowards that gentle song.\nAnd her eyes wept so much, so much,\nthat they could move the very rocks to pity.”",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Emilia, levandosi un anello dal dito",
+            "translation": "To Emilia, taking a ring from her finger.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Riponi quest'anello.",
+        "translatedTitle": "Put away this ring.",
+        "participants": [
+          "Desdemona",
+          "Emilia"
+        ],
+        "turns": [
+          {
+            "speaker": "DESDEMONA",
+            "original": "Riponi quest'anello.",
+            "translation": "Put away this ring.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "alzandosi",
+            "translation": "Rising.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Povera Barbara! Solea la storia\ncon questo semplice suono finir:\n„Egli era nato per la sua gloria,\nio per amar…“",
+            "translation": "Poor Barbara! She used to end\nher story with this simple refrain:\n“He was born for his own glory,\nI to love...”",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ad Emilia",
+            "translation": "To Emilia.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Ascolta.",
+            "translation": "Listen.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Emilia fa qualche passo",
+            "translation": "Emilia takes a few steps.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Odo un lamento.\nTaci. Chi batte a quella porta?",
+            "translation": "I hear a moan.\nBe still. Who knocks at that door?",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "È il vento.",
+            "translation": "It is the wind.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "„Io per amarlo e per morir…\nCantiamo! Cantiamo!\nSalce! Salce! Salce!“\nEmilia, addio. Come m'ardon le ciglia!\nè presagio di pianto. Buona notte.",
+            "translation": "“I to love him and to die...\nLet us sing! Let us sing!\nWillow! Willow! Willow!”\nEmilia, farewell. How my eyelids burn!\nIt is an omen of tears. Good night.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Emilia si volge per partire",
+            "translation": "Emilia turns to leave.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Ah! Emilia, Emilia,",
+            "translation": "Ah! Emilia, Emilia!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Emilia ritorna e Desdemona l'abbraccia",
+            "translation": "Emilia returns, and Desdemona embraces her.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Addio, Emilia, addio!",
+            "translation": "Farewell, Emilia, farewell!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Emilia esce",
+            "translation": "Emilia leaves.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 3
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Era più calmo?",
+        "translation": "Was he calmer?",
+        "match": "Era più calmo?",
+        "speaker": "EMILIA",
+        "sourceTurn": 1,
+        "characters": [
+          "Emilia",
+          "Desdemona"
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Son mesta, tanto, tanto.",
+        "translation": "I am so, so sad.",
+        "match": "Son mesta, tanto",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 0,
+        "characters": [
+          "Desdemona"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "„Piangea cantando",
+        "translation": "“She wept as she sang",
+        "match": "Piangea cantando",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 0,
+        "characters": [
+          "Desdemona"
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Riponi quest'anello.",
+        "translation": "Put away this ring.",
+        "match": "Riponi quest'anello",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 0,
+        "characters": [
+          "Desdemona",
+          "Emilia"
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  },
+  {
+    "number": 2,
+    "originalHeading": "Scena II",
+    "translatedHeading": "Scene II",
+    "summary": "Desdemona prays before lying down.",
+    "sections": [
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ave Maria, piena di grazia, eletta",
+        "translatedTitle": "Hail Mary, full of grace, chosen",
+        "participants": [
+          "Desdemona"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Desdemona sola",
+            "translation": "Desdemona alone.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "va all'inginocchiatoio",
+            "translation": "She goes to the prayer kneeler.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Ave Maria, piena di grazia, eletta\nfra le spose e le vergini sei tu,\nsia benedetto il frutto, o benedetta,\ndi tue materne viscere, Gesù.\nPrega per chi adorando a te si prostra,\nprega nel peccator, per l'innocente,\ne pel debole oppresso e pel possente,\nmisero anch'esso, tua pietà dimostra.\nPrega per chi sotto l'oltraggio piega\nla fronte e sotto la malvagia sorte;\nper noi, per noi tu prega, prega\nsempre e nell'ora della morte nostra,\nprega per noi, prega per noi, prega.",
+            "translation": "Hail Mary, full of grace, chosen\namong wives and virgins are you;\nblessed be the fruit, O blessed one,\nof your maternal womb, Jesus.\nPray for those who kneel before you in adoration;\npray for the sinner, for the innocent,\nfor the weak and oppressed, and for the mighty,\nwretched too: show your mercy.\nPray for those who bow their heads\nbeneath insult and cruel fate;\nfor us, for us pray, pray\nalways and at the hour of our death,\npray for us, pray for us, pray.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Resta ancora inginocchiata e appoggiando la fronte sull'inginocchiato io ripete mentalmente l'orazione di cui non s'odono che le prime e le ultime parole",
+            "translation": "She remains kneeling, resting her brow upon the prayer desk and repeating the prayer silently, of which only the first and last words can be heard.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Ave Maria…\nnell'ora della morte.\nAve!…Amen!",
+            "translation": "Hail Mary...\nat the hour of death.\nHail!... Amen!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Si alza e va a coricasi",
+            "translation": "She rises and goes to bed.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 0
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Ave Maria, piena di grazia, eletta",
+        "translation": "Hail Mary, full of grace, chosen",
+        "match": "Ave Maria, piena di grazia",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 2,
+        "characters": [
+          "Desdemona"
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  },
+  {
+    "number": 3,
+    "originalHeading": "Scena III",
+    "translatedHeading": "Scene III",
+    "summary": "Othello confronts and kills Desdemona; Emilia discovers what happened.",
+    "sections": [
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Chi è là? Otello?",
+        "translatedTitle": "Who is there? Othello?",
+        "participants": [
+          "Desdemona",
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Desdemona e Otello\nOtello entra da una porta segreta, depone una scimitarra sul tavolo, s'arresta davanti alla face, titubante se spegnerla o no. Guarda Desdemona. Spegne la face. La scena resta rischiarata dal solo lume dell'inginocchiatoio. Otello, spinto da un impeto di furore, s'avvicina al letto, ma là s'arresta. Contempla Desdemona che dorme. la bacia tre volte. All'ultimo bacio Desdemona si desta.",
+            "translation": "Desdemona and Othello.\nOthello enters through a secret door, sets a scimitar on the table and pauses by a torch, uncertain whether to extinguish it. He watches Desdemona. He extinguishes the torch. Only the lamp by the prayer kneeler lights the stage. Othello, driven by a burst of fury, approaches the bed, then stops. He gazes at the sleeping Desdemona and kisses her three times. At the last kiss she wakes.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si alza",
+            "translation": "She rises.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Chi è là? Otello?",
+            "translation": "Who is there? Othello?",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Sì! Diceste questa sera le vostre preci?",
+            "translation": "Yes! Have you said your prayers tonight?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Orai…",
+            "translation": "I have prayed...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Se vi sovviene\ndi qualche colpa commessa che attenda\ngrazia dal ciel, imploratela tosto.",
+            "translation": "If you remember\nany sin you have committed that awaits\nheaven's forgiveness, beg for it at once.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Perché?",
+            "translation": "Why?",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "T'affretta. Uccidere non voglio\nl'anima tua.",
+            "translation": "Hurry. I do not wish\nto kill your soul.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "D'uccider parli?",
+            "translation": "You speak of killing?",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Sì.",
+            "translation": "Yes.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Pietà di me, mio Dio!",
+            "translation": "My God, have mercy upon me!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Amen.",
+            "translation": "Amen.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "E abbiate pietà voi pure.",
+            "translation": "And you, too, have mercy.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Pensa ai tuoi peccati.",
+            "translation": "Think of your sins.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Mio peccato è l'amor.",
+            "translation": "My sin is love.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Perciò tu muori.",
+            "translation": "For that you must die.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "E perché t'amo m'uccidi?",
+            "translation": "And because I love you, you kill me?",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Ami Cassio.",
+            "translation": "You love Cassio.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "No! sull'anima mia!",
+            "translation": "No! Upon my soul!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Quel fazzoletto ch'io ti donai gli desti.",
+            "translation": "You gave him the handkerchief I gave you.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Non è vero.",
+            "translation": "That is not true.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Nella sua man lo vidi.",
+            "translation": "I saw it in his hand.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Io rea non sono!",
+            "translation": "I am not guilty!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Confessa!",
+        "translatedTitle": "Confess!",
+        "participants": [
+          "Othello",
+          "Desdemona"
+        ],
+        "turns": [
+          {
+            "speaker": "OTELLO",
+            "original": "Confessa!",
+            "translation": "Confess!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Giuro!",
+            "translation": "I swear!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Bada allo spergiuro…\nPensa che sei sul tuo letto di morte.",
+            "translation": "Beware of perjury...\nRemember that you are on your deathbed.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Non per morir.",
+            "translation": "Not to die.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Per morir tosto.",
+            "translation": "To die very soon.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Aita!\nCassio non amo…ch'ei qui venga…ei parli.",
+            "translation": "Help!\nI do not love Cassio... let him come here and speak.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Muto è per sempre.",
+            "translation": "He is forever silent.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Cielo! Morto?",
+            "translation": "Heavens! Dead?",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "freddo",
+            "translation": "Coldly.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Morto.",
+            "translation": "Dead.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Son perduta! ei tradito!",
+            "translation": "I am lost! He has been betrayed!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "con forza",
+            "translation": "With force.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "E pianger l'osi?",
+            "translation": "And you dare weep for him?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Otello…non uccidermi…",
+            "translation": "Othello... do not kill me...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Tu invano ti difendi.",
+            "translation": "You defend yourself in vain.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Ch'io viva ancor…ch'io viva ancor…\nch'io viva ancor…",
+            "translation": "Let me live a little longer... let me live...\nlet me live a little longer...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Giù! cadi, giù, cadi, prostituta…",
+            "translation": "Down! Fall, down, fall, harlot...",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Pietà!",
+            "translation": "Mercy!",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Muori!!",
+        "translatedTitle": "Die!!",
+        "participants": [
+          "Othello",
+          "Desdemona",
+          "Emilia"
+        ],
+        "turns": [
+          {
+            "speaker": "OTELLO",
+            "original": "Muori!!",
+            "translation": "Die!!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Ch'io viva questa notte…",
+            "translation": "Let me live through this night...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "No!",
+            "translation": "No!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Un'ora…",
+            "translation": "One hour...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "No!",
+            "translation": "No!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Un istante…",
+            "translation": "One moment...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "No!",
+            "translation": "No!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Sol ch'io dica un'Ave.",
+            "translation": "Only to say a Hail Mary.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "È tardi!",
+            "translation": "Too late!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "La soffoca. un grido di Desdemona. S'ode bussare alla porta",
+            "translation": "He smothers her. Desdemona cries out. A knock is heard at the door.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "contemplando il corpo di Desdemona inerte",
+            "translation": "Contemplating Desdemona's lifeless body.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Calma come la tomba.",
+            "translation": "Still as the tomb.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "picchia di nuovo",
+            "translation": "Knocking again.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Aprite! Aprite!",
+            "translation": "Open! Open!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "trabalzando",
+            "translation": "Starting.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Chi è là? Chi batte?",
+            "translation": "Who is there? Who knocks?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Signor mio…ven prego, lasciate\nch'io vi parli…Aprite!",
+            "translation": "My lord... I beg you, let me\nspeak to you... open!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "aprendo",
+            "translation": "Opening the door.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Emilia! che avvenne?",
+            "translation": "Emilia! What has happened?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "entrando",
+            "translation": "Entering.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Un gran delitto! Cassio uccise Roderigo.",
+            "translation": "A terrible crime! Cassio has killed Roderigo.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "E Cassio?",
+            "translation": "And Cassio?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Vive.",
+            "translation": "He lives.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Cassio vive!",
+            "translation": "Cassio lives!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "dal letto",
+            "translation": "From the bed.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ingiustamente…uccisa ingiustamente…",
+        "translatedTitle": "Unjustly... unjustly murdered...",
+        "participants": [
+          "Desdemona",
+          "Emilia",
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "DESDEMONA",
+            "original": "Ingiustamente…uccisa ingiustamente…",
+            "translation": "Unjustly... unjustly murdered...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "accorrendo al letto",
+            "translation": "Running to the bed.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Chi geme là?…Orror!",
+            "translation": "Who moans there?... Horror!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Muoio innocente…",
+            "translation": "I die innocent...",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Gran Dio!…Chi fu? chi fu?",
+            "translation": "Great God!... Who did it? Who?",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "DESDEMONA",
+            "original": "Nessuno…io stessa…Al mio\nSignor mi raccomanda…muoio innocente…\nAddio.",
+            "translation": "Nobody... I myself... Commend me\nto my lord... I die innocent...\nFarewell.",
+            "speakerTranslation": "Desdemona",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "muore",
+            "translation": "She dies.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "O mentitrice! io l'uccisi.",
+            "translation": "O liar! I killed her.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Assassino!",
+            "translation": "Murderer!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Fu di Cassio la druda. A Jago il chiedi.",
+            "translation": "She was Cassio's mistress. Ask Iago.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "A Jago?",
+            "translation": "Iago?",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "A Jago.",
+            "translation": "Iago.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Stolto!! E tu il credesti?",
+            "translation": "Fool!! And you believed him?",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "fa per avventarsi contro Emilia",
+            "translation": "About to rush at Emilia.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Negarlo ardisci?",
+            "translation": "Dare you deny it?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Non ti temo.",
+            "translation": "I do not fear you.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "la afferra",
+            "translation": "He seizes her.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Bada!",
+            "translation": "Beware!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "Olà! Soccorso! Aiuto!",
+            "translation": "Ho there! Help! Help!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si svincola e corre verso la porta, gridando disperatamente",
+            "translation": "She breaks free and runs to the door, crying out desperately.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 3
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Otello uccise Desdemona!",
+        "translatedTitle": "Othello has killed Desdemona!",
+        "participants": [
+          "Emilia"
+        ],
+        "turns": [
+          {
+            "speaker": "EMILIA",
+            "original": "Otello uccise Desdemona!",
+            "translation": "Othello has killed Desdemona!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          }
+        ],
+        "routeItem": 4
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Chi è là? Otello?",
+        "translation": "Who is there? Othello?",
+        "match": "Chi è là? Otello?",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 2,
+        "characters": [
+          "Desdemona",
+          "Othello"
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Confessa!",
+        "translation": "Confess!",
+        "match": "Confessa!",
+        "speaker": "OTELLO",
+        "sourceTurn": 0,
+        "characters": [
+          "Othello",
+          "Desdemona"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Muori!!",
+        "translation": "Die!!",
+        "match": "Muori!!",
+        "speaker": "OTELLO",
+        "sourceTurn": 0,
+        "characters": [
+          "Othello",
+          "Desdemona",
+          "Emilia"
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Ingiustamente…uccisa ingiustamente…",
+        "translation": "Unjustly... unjustly murdered...",
+        "match": "Ingiustamente…",
+        "speaker": "DESDEMONA",
+        "sourceTurn": 0,
+        "characters": [
+          "Desdemona",
+          "Emilia",
+          "Othello"
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Otello uccise Desdemona!",
+        "translation": "Othello has killed Desdemona!",
+        "match": "Otello uccise Desdemona!",
+        "speaker": "EMILIA",
+        "sourceTurn": 0,
+        "characters": [
+          "Emilia"
+        ],
+        "sourceSection": 4,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  },
+  {
+    "number": 4,
+    "originalHeading": "Scena IV",
+    "translatedHeading": "Scene IV",
+    "summary": "Iago’s plot is exposed, and Othello takes his own life.",
+    "sections": [
+      {
+        "type": "Recitativo",
+        "label": "Recitativo",
+        "routeItem": 0,
+        "threeLineOutline": true,
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "original": "Otello, Emilia, Lodovico, Cassio e Jago, più tardi Montano con gente armata",
+            "translation": "Othello, Emilia, Lodovico, Cassio and Iago; later Montano with armed men.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "vedendo Desdemona",
+            "translation": "Seeing Desdemona.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "CASSIO, JAGO, LODOVICO",
+            "original": "Quai grida!\nOrrore! Orror!",
+            "translation": "What cries are these!\nHorror! Horror!",
+            "speakerTranslation": "Cassio, Iago, Lodovico",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Jago",
+            "translation": "To Iago.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ]
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Jago, smentisci quel vile assassino.",
+        "translatedTitle": "Iago, contradict that vile murderer.",
+        "participants": [
+          "Emilia",
+          "Iago",
+          "Othello",
+          "Cassio",
+          "Montano",
+          "Lodovico",
+          "Cassio, Lodovico"
+        ],
+        "turns": [
+          {
+            "speaker": "EMILIA",
+            "original": "Jago, smentisci quel vile assassino.\nHai tu creduto Desdemona infida?\nParla!",
+            "translation": "Iago, contradict that vile murderer.\nDid you believe Desdemona unfaithful?\nSpeak!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Tal la credea.",
+            "translation": "So I believed her.",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Quel fazzoletto che un dì le diedi,\na Cassio essa donava.",
+            "translation": "That handkerchief I once gave her,\nshe gave to Cassio.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "O potenza divina!",
+            "translation": "O divine power!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "ad Emilia",
+            "translation": "To Emilia.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Taci!",
+            "translation": "Be silent!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "No, tutto rivelo!",
+            "translation": "No, I will reveal everything!",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "Taci!",
+            "translation": "Be silent!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "EMILIA",
+            "original": "No! Costui\ndalla mia man quel fazzoletto svelse\na viva forza.",
+            "translation": "No! This man\ntore that handkerchief from my hand\nby force.",
+            "speakerTranslation": "Emilia",
+            "literalText": true
+          },
+          {
+            "speaker": "CASSIO",
+            "original": "E nella mia dimora\ntrovai quel vel.",
+            "translation": "And in my lodgings\nI found that cloth.",
+            "speakerTranslation": "Cassio",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Entrando ed indicando Jago",
+            "translation": "Entering and pointing to Iago.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "MONTANO",
+            "original": "Rodrigo morente mi svelò di quest'uom l'arti nefande.",
+            "translation": "As he died, Roderigo revealed this man's wicked schemes to me.",
+            "speakerTranslation": "Montano",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "a Jago",
+            "translation": "To Iago.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Ah! discolpati!",
+            "translation": "Ah! Defend yourself!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "fuggendo",
+            "translation": "Fleeing.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "JAGO",
+            "original": "No!",
+            "translation": "No!",
+            "speakerTranslation": "Iago",
+            "literalText": true
+          },
+          {
+            "speaker": "LODOVICO",
+            "original": "Ferma!",
+            "translation": "Stop him!",
+            "speakerTranslation": "Lodovico",
+            "literalText": true
+          },
+          {
+            "speaker": "MONTANO",
+            "original": "S'insegua.",
+            "translation": "Pursue him.",
+            "speakerTranslation": "Montano",
+            "literalText": true
+          },
+          {
+            "speaker": "CASSIO, LODOVICO",
+            "original": "Afferratelo!",
+            "translation": "Seize him!",
+            "speakerTranslation": "Cassio, Lodovico",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "alcuni escono inseguendo Jago",
+            "translation": "Some leave to pursue Iago.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "slanciandosi per afferrar la spada",
+            "translation": "Leaping to grasp his sword.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "E il ciel non ha più fulmini?",
+        "translatedTitle": "Has heaven no thunderbolts left?",
+        "participants": [
+          "Othello",
+          "Lodovico"
+        ],
+        "turns": [
+          {
+            "speaker": "OTELLO",
+            "original": "E il ciel non ha più fulmini?",
+            "translation": "Has heaven no thunderbolts left?",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "LODOVICO",
+            "original": "La spada a me!",
+            "translation": "Give me the sword!",
+            "speakerTranslation": "Lodovico",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Tant'osi?…\nNiun mi tema\ns'anco armato mi vede. Ecco la fine\ndel mio camin…Oh! Gloria! Otello fu.",
+            "translation": "You dare so much?...\nLet no one fear me\nthough they see me armed. Here is the end\nof my journey... Oh! Glory! Othello was.",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "Lascia cadere la spada. Va presso al letto, contemplando Desdemona",
+            "translation": "He drops his sword. He approaches the bed and gazes at Desdemona.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "E tu…come sei pallida! e stanca, e muta, e bella,",
+        "translatedTitle": "And you... how pale you are! So weary, silent, beautiful,",
+        "participants": [
+          "Othello",
+          "Cassio",
+          "Lodovico, Montano"
+        ],
+        "turns": [
+          {
+            "speaker": "OTELLO",
+            "original": "E tu…come sei pallida! e stanca, e muta, e bella,\npia creatura nata sotto maligna stella.\nFredda come la casta tua vita…\ne in cielo assorta.\nDesdemona! Desdemona!…Ah…morta! morta! morta!…",
+            "translation": "And you... how pale you are! So weary, silent, beautiful,\ngentle creature born beneath an evil star.\nCold as your pure life...\nand gathered into heaven.\nDesdemona! Desdemona!... Ah... dead! Dead! Dead!...",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "estraendo furtivamente dalle vesti un pugnale",
+            "translation": "Secretly drawing a dagger from his clothes.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "OTELLO",
+            "original": "Ho un'arma ancor!",
+            "translation": "I still have a weapon!",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "si ferisce",
+            "translation": "He stabs himself.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          },
+          {
+            "speaker": "CASSIO",
+            "original": "Ah! ferma!",
+            "translation": "Ah! Stop!",
+            "speakerTranslation": "Cassio",
+            "literalText": true
+          },
+          {
+            "speaker": "LODOVICO, MONTANO",
+            "original": "Sciagurato!",
+            "translation": "Wretched man!",
+            "speakerTranslation": "Lodovico, Montano",
+            "literalText": true
+          }
+        ],
+        "routeItem": 3
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Un bacio…un bacio ancora…ah!…un altro bacio…",
+        "translatedTitle": "A kiss... another kiss... ah!... one more kiss...",
+        "participants": [
+          "Othello"
+        ],
+        "turns": [
+          {
+            "speaker": "OTELLO",
+            "original": "Pria d'ucciderti…sposa…ti baciai.\nOr morendo…nell'ombra…\nin cui mi giacio…\nUn bacio…un bacio ancora…ah!…un altro bacio…",
+            "translation": "Before I killed you... wife... I kissed you.\nNow as I die... in the darkness...\nwhere I lie...\nA kiss... another kiss... ah!... one more kiss...",
+            "speakerTranslation": "Othello",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "original": "muore",
+            "translation": "He dies.",
+            "speakerTranslation": "Stage direction",
+            "literalText": true
+          }
+        ],
+        "routeItem": 4
+      }
+    ],
+    "outline": [
+      {
+        "type": "",
+        "title": "Jago, smentisci quel vile assassino.",
+        "translation": "Iago, contradict that vile murderer.",
+        "match": "Jago, smentisci",
+        "speaker": "EMILIA",
+        "sourceTurn": 0,
+        "characters": [
+          "Emilia",
+          "Iago",
+          "Othello",
+          "Cassio",
+          "Montano",
+          "Lodovico",
+          "Cassio, Lodovico"
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "E il ciel non ha più fulmini?",
+        "translation": "Has heaven no thunderbolts left?",
+        "match": "E il ciel non ha più fulmini?",
+        "speaker": "OTELLO",
+        "sourceTurn": 0,
+        "characters": [
+          "Othello",
+          "Lodovico"
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "E tu…come sei pallida! e stanca, e muta, e bella,",
+        "translation": "And you... how pale you are! So weary, silent, beautiful,",
+        "match": "E tu…come sei pallida!",
+        "speaker": "OTELLO",
+        "sourceTurn": 0,
+        "characters": [
+          "Othello",
+          "Cassio",
+          "Lodovico, Montano"
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
+      },
+      {
+        "type": "",
+        "title": "Un bacio…un bacio ancora…ah!…un altro bacio…",
+        "translation": "A kiss... another kiss... ah!... one more kiss...",
+        "match": "Un bacio…un bacio ancora",
+        "speaker": "OTELLO",
+        "sourceTurn": 0,
+        "characters": [
+          "Othello"
+        ],
+        "sourceSection": 4,
+        "sourceLine": 0
+      }
+    ],
+    "sourceSceneOutline": true
+  }
+];
