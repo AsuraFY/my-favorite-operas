@@ -7,11 +7,15 @@ export const parsifalActTwoScenes = [
     "summary": "Klingsor summons Kundry to tempt Parsifal; the young man discovers compassion and rejects the enchanted garden.",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "",
+        "incipitOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "Zweiter Aufzug",
-        "translatedTitle": "Act 2",
+        "sourceTitlesOnly": true,
+        "originalTitle": "Die Zeit ist da",
+        "translatedTitle": "The time has come",
+        "participants": [
+          "Klingsor"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -124,7 +128,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "Ja ja, den Schaden zu vergüten,\nden du ihnen böslich gebracht? –\nSie helfen dir nicht;\nfeil sind sie Alle,\nbiet ich den rechten Preis:\nder festeste fällt,\nsinkt er dir in die Arme, –\nund so verfällt er dem Speer,\nden ihrem Meister selbst ich entwandt. –\nDen gefährlichsten gilt's nun heut zu bestehn:\nihn schirmt der Torheit Schild.",
             "translation": "Yes, yes, to compensate for the damage\nyou maliciously caused them? –\nThey will not help you;\nthey are all for sale,\nI offer the right price:\nthe steadiest falls,\nhe sinks into your arms, –\nand thus he falls to the spear,\nwhich I myself wrested from their master. –\nThe most dangerous one must now face today:\nfool's shield protects him."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ich – will nicht",
+        "translatedTitle": "I will not",
+        "participants": [
+          "Kundry"
+        ],
+        "turns": [
           {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
@@ -257,7 +275,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "hinabblickend.",
             "translation": "looking down."
-          },
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ha! Er ist schön, der Knabe",
+        "translatedTitle": "Ah, the boy is beautiful!",
+        "participants": [
+          "Klingsor"
+        ],
+        "turns": [
           {
             "speaker": "KLINGSOR",
             "speakerTranslation": "Klingsor",
@@ -397,7 +429,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "vom Schlosse heraus.",
             "translation": "from the castle."
-          },
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Wo ist der Frevler?",
+        "translatedTitle": "Where is the intruder?",
+        "participants": [
+          "Mädchen"
+        ],
+        "turns": [
           {
             "speaker": "MÄDCHEN",
             "speakerTranslation": "Mädchen",
@@ -852,7 +898,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "allmählich sichtbar werdend.",
             "translation": "gradually becoming visible."
-          },
+          }
+        ],
+        "routeItem": 3
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Hier weile, Parsifal!",
+        "translatedTitle": "Stay here, Parsifal!",
+        "participants": [
+          "Kundry"
+        ],
+        "turns": [
           {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
@@ -971,7 +1031,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "immer noch in liegender Stellung, beugt sich über Parsifals Haupt, faßt sanft seine Stirne und schlingt traulich ihren Arm um seinen Nacken.",
             "translation": "Still lying down, she bends over Parsifal's head, gently grasps his forehead, and tenderly wraps her arm around his neck."
-          },
+          }
+        ],
+        "routeItem": 4
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Bekenntnis",
+        "translatedTitle": "Confession",
+        "participants": [
+          "Kundry"
+        ],
+        "turns": [
           {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
@@ -1048,7 +1122,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "immer in gebeugter Stellung, starr zu Kundry aufblickend, während diese sich zu ihm neigt und die liebkosenden Bewegungen ausführt, die er mit dem Folgenden bezeichnet.",
             "translation": "always in a bent-over position, staring rigidly up at Kundry, while she leans towards him and performs the caressing movements which he describes as follows."
-          },
+          }
+        ],
+        "routeItem": 5
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ja! ... diese Stimme",
+        "translatedTitle": "Yes, that voice",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -1104,7 +1192,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "Erlösung, Frevlerin, biet ich auch dir.",
             "translation": "Redemption, you wicked woman, I offer to you too."
-          },
+          }
+        ],
+        "routeItem": 6
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Laß mich dich Göttlichen lieben",
+        "translatedTitle": "Let me love you, divine one",
+        "participants": [
+          "Kundry"
+        ],
+        "turns": [
           {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
@@ -1153,7 +1255,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "Flehend.",
             "translation": "Pleading."
-          },
+          }
+        ],
+        "routeItem": 7
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Mitleid! Mitleid mit mir!",
+        "translatedTitle": "Compassion! Have compassion for me!",
+        "participants": [
+          "Kundry"
+        ],
+        "turns": [
           {
             "speaker": "KUNDRY",
             "speakerTranslation": "Kundry",
@@ -1230,7 +1346,21 @@ export const parsifalActTwoScenes = [
             "literalText": true,
             "original": "wendet sich von der Höhe der Mauertrümmer zu Kundry zurück.",
             "translation": "turns back from the height of the wall ruins towards Kundry."
-          },
+          }
+        ],
+        "routeItem": 8
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Du weißt",
+        "translatedTitle": "You know",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -1245,7 +1375,8 @@ export const parsifalActTwoScenes = [
             "original": "Parsifal enteilt. Kundry hat sich ein wenig erhoben und nach ihm geblickt.",
             "translation": "Parsifal escaped. Kundry rose slightly and looked after him."
           }
-        ]
+        ],
+        "routeItem": 9
       }
     ],
     "outline": [
@@ -1258,7 +1389,9 @@ export const parsifalActTwoScenes = [
         "sourceTurn": 1,
         "characters": [
           "Klingsor"
-        ]
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1266,10 +1399,12 @@ export const parsifalActTwoScenes = [
         "translation": "I will not",
         "match": "Ich – will nicht",
         "speaker": "KUNDRY",
-        "sourceTurn": 16,
+        "sourceTurn": 0,
         "characters": [
           "Kundry"
-        ]
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1277,10 +1412,12 @@ export const parsifalActTwoScenes = [
         "translation": "Ah, the boy is beautiful!",
         "match": "Ha! Er ist schön, der Knabe",
         "speaker": "KLINGSOR",
-        "sourceTurn": 35,
+        "sourceTurn": 0,
         "characters": [
           "Klingsor"
-        ]
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1288,10 +1425,12 @@ export const parsifalActTwoScenes = [
         "translation": "Where is the intruder?",
         "match": "Wo ist der Frevler?",
         "speaker": "MÄDCHEN",
-        "sourceTurn": 55,
+        "sourceTurn": 0,
         "characters": [
           "Mädchen"
-        ]
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1299,10 +1438,12 @@ export const parsifalActTwoScenes = [
         "translation": "Stay here, Parsifal!",
         "match": "Hier weile, Parsifal!",
         "speaker": "KUNDRY",
-        "sourceTurn": 120,
+        "sourceTurn": 0,
         "characters": [
           "Kundry"
-        ]
+        ],
+        "sourceSection": 4,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1310,10 +1451,12 @@ export const parsifalActTwoScenes = [
         "translation": "Confession",
         "match": "Bekenntnis",
         "speaker": "KUNDRY",
-        "sourceTurn": 137,
+        "sourceTurn": 0,
         "characters": [
           "Kundry"
-        ]
+        ],
+        "sourceSection": 5,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1321,10 +1464,12 @@ export const parsifalActTwoScenes = [
         "translation": "Yes, that voice",
         "match": "Ja! ... diese Stimme",
         "speaker": "PARSIFAL",
-        "sourceTurn": 148,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 6,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1332,10 +1477,12 @@ export const parsifalActTwoScenes = [
         "translation": "Let me love you, divine one",
         "match": "Laß mich dich Göttlichen lieben",
         "speaker": "KUNDRY",
-        "sourceTurn": 156,
+        "sourceTurn": 0,
         "characters": [
           "Kundry"
-        ]
+        ],
+        "sourceSection": 7,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1343,10 +1490,12 @@ export const parsifalActTwoScenes = [
         "translation": "Compassion! Have compassion for me!",
         "match": "Mitleid! Mitleid mit mir!",
         "speaker": "KUNDRY",
-        "sourceTurn": 163,
+        "sourceTurn": 0,
         "characters": [
           "Kundry"
-        ]
+        ],
+        "sourceSection": 8,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1354,10 +1503,12 @@ export const parsifalActTwoScenes = [
         "translation": "You know",
         "match": "Du weißt",
         "speaker": "PARSIFAL",
-        "sourceTurn": 174,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 9,
+        "sourceLine": 0
       }
     ]
   }
