@@ -67,6 +67,12 @@
 
 ## Dated update log
 
+### 2026-10-27 UTC — Root documentation cleanup
+
+Archived the historical `BARBIERE_OUTLINE_REVIEW.md` and `WEBSITE_REVIEW.md` reports in `archive.md`; their original content is preserved. Migrated `PROJECT_GUIDELINES.md` into the existing Drive product/implementation specification and preserved its original in the archive before removing all three redundant root files. `README.md` is deliberately empty and unchanged. No new website defect was verified or resolved by this cleanup.
+
+
+
 ### 2026-10-27 UTC — Unified audit register and archived previous reviews
 
 **Scope:** Review-document organization and synthesis of the repo's earlier reports (2026-10-15 through 2026-10-26), plus the 2026-10-27 sixteen-opera headings audit.
@@ -256,7 +262,7 @@ This is **not** proof that all links work when clicked in a browser. In particul
 
 - Global styling: [`styles.css`](../../styles.css)
 - Shared heading/reader/outline rendering: [`src/libretto-reader.js`](../../src/libretto-reader.js)
-- Project conventions: [`PROJECT_GUIDELINES.md`](../../PROJECT_GUIDELINES.md)
+- Project conventions: [Drive product & implementation specification](https://docs.google.com/document/d/1f6nHTppsfuElAV87YS4LReIBMRg2BJb7KFwFlglMb_g/edit) (migrated guidelines); historical repository source is in [archive.md](archive.md).
 - Opera loader registry: [`src/data/libretto-loader.js`](../../src/data/libretto-loader.js)
 - Figaro outline metadata: [`src/data/figaro-outline-metadata.js`](../../src/data/figaro-outline-metadata.js)
 - Branch: https://github.com/AsuraFY/my-favorite-operas/tree/Update
