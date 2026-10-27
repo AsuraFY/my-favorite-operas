@@ -618,6 +618,94 @@ export const operas = [
     summary: "A practical joke sends Gabriel von Eisenstein to jail while his wife Rosalinde, their maid and their friends all attend the same masked ball in disguise. By morning, the tangled deceptions are exposed over champagne.",
     note: "Strauss’s sparkling Viennese operetta turns mistaken identities and a revenge plot into a night of dancing and laughter."
   },
+  {
+    "slug": "la-cenerentola",
+    "title": "La Cenerentola",
+    "displayTitle": "Cinderella",
+    "aliases": [
+      "La Cenerentola, ossia La bontà in trionfo",
+      "Cinderella (Rossini)"
+    ],
+    "composer": "Gioachino Rossini",
+    "librettist": "Jacopo Ferretti",
+    "premiered": "25 January 1817",
+    "premieredAt": "Teatro Valle, Rome",
+    "language": "Italian",
+    "genre": "Dramma giocoso",
+    "acts": 2,
+    "color": "cosi",
+    "initials": "LC",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "Kind-hearted Angelina, known as Cenerentola, is mistreated by her stepfamily. A prince's search for a bride sets disguises, misunderstandings and an unexpected act of generosity in motion.",
+    "note": "Rossini's spirited Cinderella comedy replaces fairy-tale magic with human wit, forgiveness and dazzling ensembles."
+  },
+  {
+    "slug": "hansel-und-gretel",
+    "title": "Hänsel und Gretel",
+    "displayTitle": "Hansel and Gretel",
+    "aliases": [
+      "Hansel and Gretel",
+      "Hänsel und Gretel (Humperdinck)"
+    ],
+    "composer": "Engelbert Humperdinck",
+    "librettist": "Adelheid Wette",
+    "premiered": "23 December 1893",
+    "premieredAt": "Hoftheater, Weimar",
+    "language": "German",
+    "genre": "Fairy-tale opera",
+    "acts": 3,
+    "color": "tristan",
+    "initials": "HG",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "Lost in the woods, the siblings Hänsel and Gretel encounter a gingerbread house and its dangerous occupant. Their resourcefulness helps them outwit the witch and free other children.",
+    "note": "A musical fairy tale combining folk-inspired melodies, magical atmosphere and an uplifting ending."
+  },
+  {
+    "slug": "nabucco",
+    "title": "Nabucco",
+    "displayTitle": "Nabucco",
+    "aliases": [
+      "Nabucodonosor",
+      "Nebuchadnezzar"
+    ],
+    "composer": "Giuseppe Verdi",
+    "librettist": "Temistocle Solera",
+    "premiered": "9 March 1842",
+    "premieredAt": "Teatro alla Scala, Milan",
+    "language": "Italian",
+    "genre": "Dramma lirico",
+    "acts": 4,
+    "color": "macbeth",
+    "initials": "N",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "The Babylonian king Nabucco's struggle for power entangles his daughters, a captive people and rival loyalties, as ambition, faith and political turmoil collide.",
+    "note": "Verdi's early breakthrough includes the celebrated chorus Va, pensiero."
+  },
+  {
+    "slug": "pagliacci",
+    "title": "Pagliacci",
+    "displayTitle": "Pagliacci",
+    "aliases": [
+      "I Pagliacci",
+      "The Clowns"
+    ],
+    "composer": "Ruggero Leoncavallo",
+    "librettist": "Ruggero Leoncavallo",
+    "premiered": "21 May 1892",
+    "premieredAt": "Teatro Dal Verme, Milan",
+    "language": "Italian",
+    "genre": "Verismo opera",
+    "acts": 2,
+    "color": "macbeth",
+    "initials": "P",
+    "featured": false,
+    "librettoPlanned": true,
+    "summary": "A travelling troupe arrives to stage a comedy, but jealousy and betrayal among its performers blur the boundary between the play and their lives.",
+    "note": "A compact and devastating drama, preceded by a prologue and famous for Canio's aria Vesti la giubba."
+  },
 ];
 
 export function getOpera(slug) {
