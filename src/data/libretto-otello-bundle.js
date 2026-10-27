@@ -2,10 +2,10 @@
 // Italian source text is preserved; English is an unreviewed first draft.
 import { getOpera } from "./operas.js";
 import { operaInformation } from "./opera-information.js";
-import { otelloActOneScenes } from "./libretto-otello-act-1.js?v=otello-20261026";
-import { otelloActTwoScenes } from "./libretto-otello-act-2.js?v=otello-20261026";
-import { otelloActThreeScenes } from "./libretto-otello-act-3.js?v=otello-20261026";
-import { otelloActFourScenes } from "./libretto-otello-act-4.js?v=otello-20261026";
+import { otelloActOneScenes } from "./libretto-otello-act-1.js?v=cosi-classic-sections-20261027";
+import { otelloActTwoScenes } from "./libretto-otello-act-2.js?v=cosi-classic-sections-20261027";
+import { otelloActThreeScenes } from "./libretto-otello-act-3.js?v=cosi-classic-sections-20261027";
+import { otelloActFourScenes } from "./libretto-otello-act-4.js?v=cosi-classic-sections-20261027";
 const info = operaInformation["otello"];
 export const otello = {
   slug: "otello",
@@ -17,6 +17,7 @@ export const otello = {
   continuousAct: true,
   preserveLineBreaks: true,
   alignVerseLines: true,
+  showReaderMusicalHeadings: false,
   threeLineOutline: true,
   sourceTitlesOnly: true,
   sourceSceneOutline: true,
