@@ -730,3 +730,128 @@ The user's subsequent clarification supersedes the form-only heading rule above:
 No. 14 displays “N. 14 · Aria · Nessun dorma!” as requested. Its source classification “Introduzione e Romanza” remains stored separately; the introduction and its participants remain part of that section. Other entries retain their source musical types. Musical symbols remain confined to act outlines. The shared reading-page headings also use the same titles for orientation after following an outline link.
 
 <!-- END ARCHIVED SOURCE: docs/reviews/turandot-outline.md -->
+
+
+---
+
+<!-- BEGIN ARCHIVED SOURCE: BARBIERE_OUTLINE_REVIEW.md -->
+
+## Archived source: `BARBIERE_OUTLINE_REVIEW.md`
+
+# Il barbiere di Siviglia — outline review, 14 October 2026
+
+## Scope and authority
+
+Reviewed the full Libretto Outline and both act outlines against Opera_Website_Guidelines.md and the existing primary source, Cesare Sterbini's 1816 libretto as transcribed by Librettidopera.it:
+
+- https://www.librettidopera.it/barb_siv/a_01.html
+- https://www.librettidopera.it/barb_siv/a_02.html
+- https://www.librettidopera.it/barb_siv/som.html (musical types and incipits)
+
+Accessed 14 October 2026. This edition supplies types and incipits, but no numeric musical labels. No score numbers have been invented. Incipits are explicit source-indexed navigation titles, not automatically extracted from lyrics. Untitled recitatives have no title-translation line. The source has no separate dramatic scene titles, so editorial scene titles have been removed.
+
+## Corrections
+
+- Retained all 16 Act I and 11 Act II scenes. Both outlines use the same original type/title, English title, and unique English participant names; Italian/English speaker labels remain separate in the libretto.
+- Added Sinfonia before Scene I and Temporale between Scenes VIII and IX of Act II, with no singing participants. Both have reader targets.
+- Restored the omitted opening verses of Cessa di più resistere from Act II, Scene XI with a fresh English translation. Separated its existing continuation from the preceding accompanied recitative.
+- Corrected the source boundaries around Ehi Fiorello / Gente indiscreta and the recitative leading into All'idea di quel metallo. No pre-existing text was removed.
+- Corrected Fermi tutti and the tableau of astonishment to remain within Finale I; Orsù, signor don Bartolo remains within the Quintetto. The existing passage divisions are retained for navigation, without claiming new musical numbers.
+- Resolved Tutti and joint cues to the source ensemble members instead of duplicating individual singers with an Ensemble credit. Corrected the Act II Alcalde's label to Magistrate / Alcalde, distinct from the Act I Officer.
+- Preserved all existing item addresses using stable routeItem values. New entries have unused addresses. These are URL identifiers, not displayed musical numbers.
+- Retained ♬ for musical sections and ▤ for recitatives, including the accompanied recitative.
+
+## Verification and remaining work
+
+There are 55 outline entries (30 in Act I, 25 in Act II), including two instrumental entries, across 27 source scenes. All 88 automated tests pass, including every section target, title/translation/participant ordering, source boundaries, stable deep links, and restored aria verse pairing. Existing Act I text is preserved; Act II adds the missing aria passage and the storm direction.
+
+Desktop and mobile visual verification remains pending: the supported browser preview is unavailable in this environment. This is an outline/source-division review, not a complete word-for-word review of the existing libretto or its English translation. Existing English remains a draft; the broader lyric and translation review is still outstanding.
+
+<!-- END ARCHIVED SOURCE: BARBIERE_OUTLINE_REVIEW.md -->
+
+
+---
+
+<!-- BEGIN ARCHIVED SOURCE: WEBSITE_REVIEW.md -->
+
+## Archived source: `WEBSITE_REVIEW.md`
+
+# Website review — 12 October 2026
+
+## Result
+
+The blank website was caused by invalid published JavaScript in La Bohème Act I. During the earlier push, I mistakenly copied a truncated command response, including its warning, into the source file. The complete source is now restored and the live reader starts successfully. This was a publishing failure; moving the project to React would not have prevented it.
+
+## Fixes completed
+
+| Priority | Finding | Correction |
+|---|---|---|
+| Critical | A corrupted libretto module stopped the entire application from starting. | Restored every Act I turn from the intact prior commit, preserved its outline, and refreshed cached import URLs. |
+| High | Deployment could succeed without testing the committed source. | GitHub Pages now runs `npm test` before uploading the website. Added syntax and source-integrity checks for every shipped JavaScript module. |
+| High | Import failures left a completely blank screen. | Added a small startup loader with an accessible error message and reload button, plus a JavaScript-disabled message. |
+| Medium | The outline highlight disappeared after passing a named passage. | Track named landmarks until the following landmark, rather than matching every dialogue turn. Select the last passage at the end of the page when it cannot scroll to the sticky boundary. Scope anchors by act, scene, section, and turn. |
+| Medium | Several outline links used ambiguous phrases or appeared out of source order. | Corrected the targets for the friends’ departure, Mimì’s arrival and introduction, Parpignol, the bonnet, and the muff. Added tests requiring one source match per landmark and increasing reading order. |
+| Medium | “Skip to content” changed the hash route and sent readers to the homepage. | Focus and scroll the current main content without changing the route. |
+| Medium | Continuous-act pages lacked a visible primary heading on desktop. | Give the first scene heading the primary heading level while retaining subsequent scene headings. |
+
+## Verification
+
+- **75 automated checks pass** across nine test files, including the new navigation and publishing checks.
+- Generated **166 routes**, covering all 31 opera entries, prepared and planned destinations, Musicals, search, and missing-item pages. Checked their markup for duplicate IDs, missing accessibility references, missing image files, and primary headings; no issues found.
+- Opened **all 31 opera introduction pages, all 26 prepared acts, and all eight full outlines in the live browser**. They rendered without application errors or horizontal overflow at the desktop viewport.
+- Exercised accent-insensitive opera search, the Musical search, Mahler About/Lyrics navigation, the 33 paired lyric rows, outline collapse/reopen, keyboard Skip to content, and theme/font settings. Restored the preferences after testing.
+- Fetched the published recovery files back from GitHub and compared their contents exactly with the reviewed versions.
+
+## Recommended next work
+
+| Priority | Area | Finding and recommendation |
+|---|---|---|
+| Medium | Startup performance | About 1.89 MB of libretto/catalog JavaScript is imported before even the homepage starts. Load an opera’s text when its reader is opened. This would also isolate future content errors. |
+| Medium | Reader search | The route supports searching within an act, but the visible header search always searches the opera catalog. Add an explicitly labelled “Search this act” control if this feature should be available to readers. |
+| Medium | Editorial consistency | Some group speaker names in La Bohème’s Italian column are English, such as “Vendors and children” and “Mimì and Rodolfo.” Review these against the source alongside the draft translations. |
+| Low | CSS maintenance | The stylesheet has 2,564 lines, including earlier layouts overridden by later rules and unused contents-layout selectors. Consolidate it with mobile visual checks to reduce the chance of future regressions. |
+| Low | Route accessibility | After changing pages, keyboard focus generally stays where it was. Add deliberate heading focus or a short route announcement for screen-reader users. |
+
+## Limits
+
+Desktop behaviour was checked in a real browser. Mobile media rules and drawer logic were inspected, but the available browser did not provide a phone viewport, so this is not a completed 360–430 px device visual review. The automated metadata checks verify consistency, not historical accuracy. The libretti and translations still need a separate editorial comparison with their sources; every verse was not retranslated during this review.
+
+The existing plain JavaScript structure is suitable for this site. Lazy loading, clearer reader search, and CSS cleanup are more useful next steps than a framework migration.
+
+<!-- END ARCHIVED SOURCE: WEBSITE_REVIEW.md -->
+
+
+---
+
+<!-- BEGIN ARCHIVED SOURCE: PROJECT_GUIDELINES.md -->
+
+## Archived source: `PROJECT_GUIDELINES.md`
+
+# Project guidelines
+
+## Libretto outlines and act pages
+- Each outline entry has three fields: original title, English translation, and characters.
+- Derive characters from the source libretto's character list, scene participants, and speaker labels. Never derive characters from Spotify performer metadata.
+- Spotify may guide track order and scene grouping. It does not change the agreed outline format or provide the character source.
+- Show the source-libretto characters on the side-by-side translation page as well, alongside the speaker labels in each language.
+- Keep the Spotify album link at the bottom as the source, using a neutral label without performer credits.
+- After pushing a page update, include the published page URL in the feedback.
+
+
+## Shared heading component — approved 27 October 2026
+- All opera outline entries and bilingual reading sections use three ordered fields: (1) original-language title or source musical form, (2) English translation or English musical-form name, and (3) characters derived from section participants and actual libretto speakers.
+- Both outline and reader use the same shared CSS hierarchy. In the reader, line 1 uses the Così fan tutte title typography; line 2 is regular (not italic), softly muted and 1.25rem; line 3 uses the smaller italic character-credit typography with its person icon. There is **zero margin between lines 2 and 3**. The outline uses the same hierarchy at a smaller scale.
+- Use global selectors in styles.css and the shared renderer in src/libretto-reader.js. **Do not create per-opera heading CSS** for new opera additions. Future sections should provide originalTitle, translatedTitle and participants where possible.
+- Never invent musical classifications, translation lines, characters or score numbers. Prefer existing heading metadata, source-aligned bilingual text, established English musical-form equivalents, and speaker labels, in that order. Where an English heading remains unsupported, show an explicit review-pending label rather than fabricate a translation.
+- Instrumental overtures, preludes and interludes are exempt from character credits where no one sings. Existing source text, act divisions, and deep links should be preserved.
+
+## Global three-line section headings — design standard (27 October 2026)
+- The shared libretto reader and outline must present, in order: **original-language title**, **English translation**, **source-libretto characters**. Do not merge the title and English onto one line.
+- Use the shared renderer in `src/libretto-reader.js` and shared styling in `styles.css`. **Do not introduce per-opera heading CSS** or copy the heading design into each new opera's stylesheet.
+- Reader title: Così fan tutte serif design; English translation: regular (not italic) serif at 1.25rem, softly muted; characters: smaller italic serif with the discreet person icon; **zero added margin between lines 2 and 3**.
+- The outline follows the same three-level typographic hierarchy with proportional compact sizes, and no vertical gap between translation and characters.
+- For heading content, prefer explicit titles and verified English translations. Only derive an English incipit when it aligns with the same source-language lyric; musical-form-only sections can use an established English form name. **Never invent a translation or musical classification.** Flag missing metadata for editorial review.
+- Characters come from section participants or the actual speakers, not performer lists. Instrumental-only headings are exempt from the characters line.
+- Adding a new opera should supply section `originalTitle`, `translatedTitle`, `participants` where available and automatically inherit the default component with no CSS edit. Validate all headings on desktop, mobile and night mode.
+
+<!-- END ARCHIVED SOURCE: PROJECT_GUIDELINES.md -->
