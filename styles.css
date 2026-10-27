@@ -3026,3 +3026,18 @@ html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
 .fanciulla-bilingual__source{line-height:1.65}
 .fanciulla-bilingual__source a{text-decoration:underline}
 @media(max-width:650px){.fanciulla-bilingual__columns{font-size:.8rem}.fanciulla-bilingual__cell{padding:10px 7px}.fanciulla-bilingual__cell+.fanciulla-bilingual__cell{padding-left:10px}.fanciulla-bilingual__cell p{font-size:.88rem}.fanciulla-bilingual__speaker{font-size:.7rem}}
+
+/* Don Giovanni listening references: independent links, distinct from libretto passage navigation. */
+[data-libretto-slug="don-giovanni"] .opera-outline__recording-link,
+.opera-outline-page[data-libretto-slug="don-giovanni"] .opera-outline__recording-link {
+  display: inline-block;
+  margin: 0 0 8px 13px;
+  font: 600 0.74rem/1.4 var(--sans);
+  color: #31577d;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+[data-libretto-slug="don-giovanni"] .opera-outline__recording-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
