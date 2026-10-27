@@ -3043,84 +3043,28 @@ html[data-theme="night"] .favorite-performance__links a { color: #e5d0ad; }
 }
 
 
-/*
- * Parsifal three-line section heading design trial, 27 October 2026.
- * This is deliberately scoped to Parsifal until the design is approved.
- * Line 1: Così fan tutte title typography.
- * Line 2: Tosca's softer italic English translation.
- * Line 3: identical italic type, color and line-height to line 2; zero interline gap, preserving the character icon.
- * After approval, replace this scoped trial with one shared component rule.
- */
-.opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading {
-  padding: 23px 0 22px;
-  text-align: left;
-}
-.opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > h2 {
-  margin: 0;
-  color: #163b66;
-  font: 500 clamp(1.5625rem, calc(2.25vw * var(--reading-scale)), 2.125rem)/1.18 var(--serif);
-  letter-spacing: -.025em;
-}
-.opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > p.selected-section-heading__translation {
-  display: block;
-  margin: 3px 0 0;
-  color: #50647d;
-  font: italic 0.875rem/1.3 var(--serif);
-}
-.opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > .libretto-participants {
-  margin: 0;
-  color: #50647d;
-  font: italic 0.875rem/1.3 var(--serif);
-}
-@media (max-width: 700px) {
-  .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading {
-    padding: 19px 0 20px;
-  }
-  .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > h2 {
-    color: #172b48;
-    font: 500 1.75rem/1.15 var(--serif);
-    letter-spacing: -.025em;
-  }
-  .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > p.selected-section-heading__translation {
-    font-size: 0.8125rem;
-  }
-  .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > .libretto-participants {
-    margin: 0;
-    font-size: 0.8125rem;
-    line-height: 1.3;
-  }
-}
-html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > h2 {
-  color: #e8edf2;
-}
-html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > p.selected-section-heading__translation {
-  color: var(--night-muted);
-}
-html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"] .selected-section-heading > .libretto-participants {
-  color: var(--night-muted);
-}
 
-
-/* Parsifal Act I: Così fan tutte exact three-line heading prototype.
-   Only line 2 uses a softer color; keep line 2 to 3 gap at zero.
-   Acts II and III retain the previous Parsifal draft. */
-.opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading {
+/* Shared three-line opera section heading: approved Parsifal Act I design.
+   Original title: Così typography; English: same size, regular, softly muted;
+   Characters: Così italic credits, immediately under the translation.
+   Applies to every opera and any future libretto using the shared renderer. */
+.opera-reading-page .selected-section-heading {
   padding: 23px 0 18px;
   text-align: left;
 }
-.opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > h2 {
+.opera-reading-page .selected-section-heading > h2 {
   margin: 0;
   color: #163b66;
   font: 500 clamp(1.5625rem, calc(2.25vw * var(--reading-scale)), 2.125rem)/1.18 var(--serif);
   letter-spacing: -.025em;
 }
-.opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > p.selected-section-heading__translation {
+.opera-reading-page .selected-section-heading > p.selected-section-heading__translation {
   display: block;
   margin: 4px 0 0;
   color: #65798b;
   font: normal 1.25rem/1.35 var(--serif);
 }
-.opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > .libretto-participants {
+.opera-reading-page .selected-section-heading > .libretto-participants {
   display: flex;
   align-items: flex-start;
   gap: 6px;
@@ -3128,41 +3072,61 @@ html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"] .sel
   color: #516679;
   font: italic 0.9375rem/1.32 var(--serif);
 }
-.opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .libretto-scene-section + .libretto-scene-section .selected-section-heading {
-  padding-top: 0;
-}
 @media (max-width: 700px) {
-  .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading {
+  .opera-reading-page .selected-section-heading {
     position: relative;
     padding: 19px 0 17px;
     text-align: left;
   }
-  .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > h2 {
+  .opera-reading-page .selected-section-heading > h2 {
     color: #172b48;
     font: 500 1.75rem/1.15 var(--serif);
     letter-spacing: -.025em;
   }
-  .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > p.selected-section-heading__translation {
+  .opera-reading-page .selected-section-heading > p.selected-section-heading__translation {
     margin-top: 4px;
     color: #65798b;
     font: normal 1.25rem/1.3 var(--serif);
   }
-  .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > .libretto-participants {
+  .opera-reading-page .selected-section-heading > .libretto-participants {
     gap: 5px;
     margin: 0;
     font-size: 0.8125rem;
     line-height: 1.28;
   }
-  .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .libretto-scene-section + .libretto-scene-section .selected-section-heading {
-    padding-top: 0;
-  }
 }
-html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > h2 {
+html[data-theme="night"] .opera-reading-page .selected-section-heading > h2 {
   color: #e8edf2;
 }
-html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > p.selected-section-heading__translation {
+html[data-theme="night"] .opera-reading-page .selected-section-heading > p.selected-section-heading__translation {
   color: var(--night-muted);
 }
-html[data-theme="night"] .opera-reading-page[data-libretto-slug="parsifal"][data-act="1"] .selected-section-heading > .libretto-participants {
+html[data-theme="night"] .opera-reading-page .selected-section-heading > .libretto-participants {
   color: var(--night-muted);
 }
+/* The compact outline reuses the same 3-line hierarchy, scaled as a unit. */
+.opera-outline__section.section-nav-link { color: #163b66; }
+.opera-outline__section .opera-outline__section-title {
+  display: block;
+  color: inherit;
+  font: 500 1.0625rem/1.4 var(--serif);
+}
+.opera-outline__section .opera-outline__section-translation {
+  display: block;
+  margin: 4px 0 0;
+  color: #65798b;
+  font: normal 0.875rem/1.35 var(--serif);
+}
+.opera-outline__section .libretto-participants {
+  margin: 0;
+  color: #516679;
+  font: italic 0.75rem/1.32 var(--serif);
+}
+@media (max-width: 700px) {
+  .opera-outline__section .opera-outline__section-title { font-size: 0.9375rem; }
+  .opera-outline__section .opera-outline__section-translation { font-size: 0.8125rem; }
+  .opera-outline__section .libretto-participants { font-size: 0.75rem; }
+}
+html[data-theme="night"] .opera-outline__section .opera-outline__section-title { color: #e8edf2; }
+html[data-theme="night"] .opera-outline__section .opera-outline__section-translation,
+html[data-theme="night"] .opera-outline__section .libretto-participants { color: var(--night-muted); }
