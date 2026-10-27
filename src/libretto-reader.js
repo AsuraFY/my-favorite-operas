@@ -273,6 +273,7 @@ function renderSceneOutlineLinks(scene, act, showIcons = false) {
   return (scene.outline || []).map(entry => {
     let targetSection = -1, targetTurn = -1;
     for (const [sectionIndex, section] of scene.sections.entries()) {
+      if (entry.sourceSection != null && sectionIndex !== entry.sourceSection) continue;
       const turnIndex = section.turns.findIndex((turn, index) => (entry.sourceTurn == null || index === entry.sourceTurn) && (entry.speaker == null || turn.speaker === entry.speaker) && String(turn.original ?? turn.it ?? "").includes(entry.match));
       if (turnIndex >= 0) { targetSection = sectionRouteItem(section, sectionIndex); targetTurn = turnIndex; break; }
     }
@@ -472,7 +473,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
     const anchorFirst = output => output.map((html, index) => {
       if (index !== 0 || !turn.startsSourceTurn) return html;
       const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionRouteItem(section, sectionIndex) + '-' + turn.sourceTurnIndex;
-      if (landmark) return '<h3 class="libretto-track-heading" id="' + id + '">' +
+      if (landmark && libretto.showReaderMusicalHeadings !== false) return '<h3 class="libretto-track-heading" id="' + id + '">' +
         escapeHtml(outlineTrackTitle(landmark)) +
         (landmark.translation ? '<span class="opera-outline__section-translation">' + escapeHtml(landmark.translation) + '</span>' : '') +
         renderCharacterCredits(outlineEntryCharacters(landmark, scene, act), true) + '</h3>' + html;
