@@ -136,7 +136,10 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
       '><summary class="scene-group__summary"><span>Scene '+romanNumeral(outlineScene.number)+'</span>'+
       '<span class="scene-group__chevron" aria-hidden="true">⌄</span></summary><div class="section-nav">'+links+'</div></details>';
   }).join("");
-  return scenes.map(item=>{
+  const prelude = libretto.listeningOutlineOnly && act === 1 && libretto.acts[0]?.prelude ?
+    '<div class="opera-outline__prelude"><span class="opera-outline__section-title">' +
+    escapeHtml(libretto.acts[0].prelude.title) + '</span>' + renderRecordingCueLink(libretto.acts[0].prelude) + '</div>' : "";
+  return prelude + scenes.filter(item => !libretto.listeningOutlineOnly || item.outline?.length).map(item=>{
     if (item.outline?.length) return renderOutlinePreludes(item, act) + (libretto.sourceSceneOutline ? '<h3>' + escapeHtml(sceneSourceHeading(item)) + ' · ' + escapeHtml(sceneTranslatedHeading(item)) + '</h3>' : '') + '<div class="section-nav">' + renderSceneOutlineLinks(item, act, true) + '</div>';
     const sectionLinks=item.sections.map((section,index)=>{
       const active=item.number===selectedScene&&index===selectedItem;
@@ -172,6 +175,16 @@ function renderActSceneLinks(act, selectedScene=0, selectedItem=-1, expandAll=fa
 }
 function outlineTrackTitle(entry) {
   return [entry.type, entry.title].filter(Boolean).join(" · ");
+}
+// Recording timestamps identify listening chapters, not Mozart's score numbers.
+function renderRecordingCueLink(entry) {
+  if (!libretto.recordingVideoId || !Number.isInteger(entry?.recordingSeconds)) return "";
+  const time = entry.recordingTime || String(entry.recordingSeconds) + "s";
+  const href = "https://www.youtube.com/watch?v=" + encodeURIComponent(libretto.recordingVideoId) +
+    "&t=" + entry.recordingSeconds + "s";
+  return '<a class="opera-outline__recording-link" href="' + escapeHtml(href) +
+    '" target="_blank" rel="noopener noreferrer" aria-label="Open recording at ' +
+    escapeHtml(time) + '">▶ ' + escapeHtml(time) + '</a>';
 }
 function characterIcon() {
   return '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false">' +
@@ -269,9 +282,11 @@ function renderSceneOutlineLinks(scene, act, showIcons = false) {
     if (targetSection < 0 || targetTurn < 0) {
       return '<span class="section-nav-link opera-outline__section is-unavailable" aria-disabled="true">' + label + '</span>';
     }
+    const line = Number.isInteger(entry.sourceLine) && entry.sourceLine > 0 ? "&line=" + entry.sourceLine : "";
     const href = '#/operas/' + libretto.slug + '?act=' + act + '&scene=' + scene.number +
-      '&item=' + targetSection + '&turn=' + targetTurn;
-    return '<a class="section-nav-link opera-outline__section" href="' + href + '">' + label + '</a>';
+      '&item=' + targetSection + '&turn=' + targetTurn + line;
+    return '<a class="section-nav-link opera-outline__section" href="' + href + '">' + label + '</a>' +
+      renderRecordingCueLink(entry);
   }).join('');
 }
 function renderCompleteSectionLink(scene, section, index, act) {
@@ -324,10 +339,11 @@ function renderCompleteOutlineAct(act) {
   const prelude = group.prelude
     ? '<div class="opera-outline__sections opera-outline__sections--prelude"><div class="opera-outline__section opera-outline__prelude"><span class="opera-outline__section-title">' +
       escapeHtml(group.prelude.title) + '</span><span class="opera-outline__section-translation">' +
-      escapeHtml(group.prelude.translation || '') + '</span></div></div>'
+      escapeHtml(group.prelude.translation || '') + '</span>' +
+      renderRecordingCueLink(group.prelude) + '</div></div>'
     : '';
   return '<details class="opera-outline__act" open aria-labelledby="outline-act-' + act + '">' +
-    header + prelude + group.scenes.map(scene => {
+    header + prelude + group.scenes.filter(scene => !libretto.listeningOutlineOnly || scene.outline?.length).map(scene => {
       const sceneId = 'outline-scene-' + act + '-' + scene.number;
       if (scene.outline?.length) return renderOutlinePreludes(scene, act) + '<section class="opera-outline__scene" aria-labelledby="' + sceneId + '">' +
         '<h3 id="' + sceneId + '">' + escapeHtml(libretto.sourceSceneOutline ? sceneSourceHeading(scene) + ' · ' + sceneTranslatedHeading(scene) : scene.title || actName) +
@@ -371,10 +387,11 @@ function sectionParticipantCredits(section, act, sceneNumber) {
 }
 // Only verified line divisions in the source may produce verse breaks.
 // Punctuation is never evidence of an editorial line boundary.
-function formatLibrettoText(value) {
+function formatLibrettoText(value, lineAnchors = null) {
   const text = String(value ?? "").replace(/\r\n?/g, "\n").trim();
-  return text.split("\n").map(line => escapeHtml(line.trim())).join("<br>");
-}
+  return text.split("\n").map((line, index) =>
+    (lineAnchors?.get(index) || "") + escapeHtml(line.trim())).join("<br>");
+
 // Bracketing is presentation-only; shortCue explicitly controls the label.
 function bracketStageDirection(value) {
   let text = String(value ?? "").trim();
@@ -432,7 +449,17 @@ function renderSceneSection(scene, section, sectionIndex, act) {
   });
   const rows = turns.flatMap(turn => {
     const speaker = turn.speaker;
-    const landmark = outlineLandmarks.find(item => item.turnIndex === turn.sourceTurnIndex)?.entry;
+    const landmark = outlineLandmarks.find(item => item.turnIndex === turn.sourceTurnIndex &&
+      !(item.entry.sourceLine > 0))?.entry;
+    const inlineAnchors = new Map();
+    for (const item of outlineLandmarks) {
+      if (item.turnIndex !== turn.sourceTurnIndex || !(item.entry.sourceLine > 0)) continue;
+      if (turn.verseLineIndex != null && turn.verseLineIndex !== item.entry.sourceLine) continue;
+      const position = turn.verseLineIndex == null ? item.entry.sourceLine : 0;
+      const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionRouteItem(section, sectionIndex) +
+        '-' + turn.sourceTurnIndex + '-l' + item.entry.sourceLine;
+      inlineAnchors.set(position, '<span class="libretto-turn-anchor" id="' + id + '" aria-hidden="true"></span>');
+    }
     const anchorFirst = output => output.map((html, index) => {
       if (index !== 0 || !turn.startsSourceTurn) return html;
       const id = 'libretto-turn-' + act + '-' + scene.number + '-' + sectionRouteItem(section, sectionIndex) + '-' + turn.sourceTurnIndex;
@@ -475,7 +502,7 @@ function renderSceneSection(scene, section, sectionIndex, act) {
       } else if (originalPart.value.trim() || translatedPart.value.trim()) {
         output.push('<div class="libretto-row' + verseRowClass + '"><div class="libretto-cell libretto-cell--german">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(originalSpeaker) + '</span>') + '<p>' +
-          formatLibrettoText(originalPart.value) + '</p></div><div class="libretto-cell libretto-cell--english">' +
+          formatLibrettoText(originalPart.value, inlineAnchors) + '</p></div><div class="libretto-cell libretto-cell--english">' +
           (turn.hideSpeaker ? '' : '<span class="libretto-speaker libretto-speaker--' + speakerClass(speaker) + '">' + escapeHtml(speakerTranslation) + '</span>') + '<p>' +
           formatLibrettoText(translatedPart.value) + '</p></div></div>');
       }
