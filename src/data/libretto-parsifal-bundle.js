@@ -1,7 +1,7 @@
 // Bilingual reader draft: all passages translated, source and editorial review pending.
-import { parsifalActOneScenes } from "./libretto-parsifal-act-1.js?v=translation-draft-20261026";
-import { parsifalActTwoScenes } from "./libretto-parsifal-act-2.js?v=translation-draft-20261026";
-import { parsifalActThreeScenes } from "./libretto-parsifal-act-3.js?v=translation-draft-20261026";
+import { parsifalActOneScenes } from "./libretto-parsifal-act-1.js?v=cosi-classic-sections-20261027";
+import { parsifalActTwoScenes } from "./libretto-parsifal-act-2.js?v=cosi-classic-sections-20261027";
+import { parsifalActThreeScenes } from "./libretto-parsifal-act-3.js?v=cosi-classic-sections-20261027";
 import { getOpera } from "./operas.js";
 import { operaInformation } from "./opera-information.js";
 const info = operaInformation["parsifal"];
@@ -11,6 +11,7 @@ export const parsifal = {
   mobileArtworkUrl: "./public/images/parsifal-art.webp", mobileArtworkLabel: "Richard Wagner",
   originalLanguage: "Deutsch", translationLanguage: "English",
   continuousAct: true, preserveLineBreaks: true, alignVerseLines: false,
+  showReaderMusicalHeadings: false,
   threeLineOutline: true, sourceTitlesOnly: true,
   sourceSceneOutline: true,
   stageDirectionSpeaker: "Stage direction", stageDirectionLabel: "Stage direction",
