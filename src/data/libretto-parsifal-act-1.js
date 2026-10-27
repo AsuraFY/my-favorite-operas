@@ -7,11 +7,15 @@ export const parsifalActOneScenes = [
     "summary": "At Monsalvat, Gurnemanz relates the Grail's history while Parsifal first witnesses Amfortas's suffering.",
     "sections": [
       {
-        "type": "Passage",
-        "sourceTitlesOnly": true,
+        "type": "",
+        "incipitOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "Erster Aufzug",
-        "translatedTitle": "Act 1",
+        "sourceTitlesOnly": true,
+        "originalTitle": "He! Ho! Waldhüter ihr",
+        "translatedTitle": "Ho there, guardians of the woods",
+        "participants": [
+          "Gurnemanz"
+        ],
         "turns": [
           {
             "speaker": "Stage direction",
@@ -82,7 +86,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "Zwei Ritter treten, von der Burg her, auf.",
             "translation": "Two knights enter, coming from the direction of the castle."
-          },
+          }
+        ],
+        "routeItem": 0
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Heil euch! – Wie geht's Amfortas heut?",
+        "translatedTitle": "Greetings! How is Amfortas today?",
+        "participants": [
+          "Gurnemanz"
+        ],
+        "turns": [
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
@@ -250,7 +268,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "Ein Zug von Knappen und Rittern, die Sänfte tragend und geleitend, in welcher Amfortas ausgestreckt liegt, gelangt – von links her – auf die Bühne. – Gurnemanz hat sich, von Kundry ab, sogleich den Ankommenden zugewendet.",
             "translation": "A procession of squires and knights, carrying and escorting the litter in which Amfortas lies stretched out, enters the stage from the left. Gurnemanz, having left Kundry, immediately turns to face the arrivals."
-          },
+          }
+        ],
+        "routeItem": 1
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Er naht – sie bringen ihn getragen",
+        "translatedTitle": "He comes; they carry him here",
+        "participants": [
+          "Gurnemanz"
+        ],
+        "turns": [
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
@@ -446,7 +478,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "Eine Heidin ist's, ein Zauberweib.",
             "translation": "She is a pagan woman, a sorceress."
-          },
+          }
+        ],
+        "routeItem": 2
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Ja, eine Verwünschte mag sie sein",
+        "translatedTitle": "Yes, she may be under a curse",
+        "participants": [
+          "Gurnemanz"
+        ],
+        "turns": [
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
@@ -824,7 +870,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "Bist du's, der diesen Schwan erlegte?",
             "translation": "Are you the one who killed this swan?"
-          },
+          }
+        ],
+        "routeItem": 3
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Gewiß! Im Fluge treff ich",
+        "translatedTitle": "Yes! I can hit whatever flies",
+        "participants": [
+          "Parsifal"
+        ],
+        "turns": [
           {
             "speaker": "PARSIFAL",
             "speakerTranslation": "Parsifal",
@@ -887,7 +947,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "Ich wußte sie nicht.",
             "translation": "I didn't know her."
-          },
+          }
+        ],
+        "routeItem": 4
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Wo bist du her?",
+        "translatedTitle": "Where do you come from?",
+        "participants": [
+          "Gurnemanz"
+        ],
+        "turns": [
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
@@ -1286,7 +1360,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "Sie sinkt hinter dem Gebüsch zusammen und bleibt von jetzt an unbemerkt. – Vom See her gewahrt man Bewegung und endlich den im Hintergrunde sich heimwendenden Zug der Ritter und Knappen mit der Sänfte.",
             "translation": "She collapses behind the bushes and remains unnoticed from now on. – From the lake, movement is perceived, and finally, in the background, the procession of knights and squires with the litter, turning homeward."
-          },
+          }
+        ],
+        "routeItem": 5
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Vom Bade kehrt der König heim",
+        "translatedTitle": "The king returns from the bath",
+        "participants": [
+          "Gurnemanz"
+        ],
+        "turns": [
           {
             "speaker": "GURNEMANZ",
             "speakerTranslation": "Gurnemanz",
@@ -1461,7 +1549,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "im Ausbruche qualvoller Verzweiflung sich halb aufrichtend.",
             "translation": "half-righting himself in an outburst of agonizing despair."
-          },
+          }
+        ],
+        "routeItem": 6
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Wehe! Wehe mir der Qual!",
+        "translatedTitle": "Alas, the torment I endure!",
+        "participants": [
+          "Amfortas"
+        ],
+        "turns": [
           {
             "speaker": "AMFORTAS",
             "speakerTranslation": "Amfortas",
@@ -1657,7 +1759,21 @@ export const parsifalActOneScenes = [
             "literalText": true,
             "original": "Nehmet vom Wein,\nwandelt ihn neu\nzu Lebens feurigem Blute,\nfroh im Verein,\nBrudergetreu\nzu kämpfen mit seligem Mute!",
             "translation": "Take of the wine,\ntransform it anew\ninto life's fiery blood,\njoyfully united,\ntrue to brotherhood,\nto fight with blessed courage!"
-          },
+          }
+        ],
+        "routeItem": 7
+      },
+      {
+        "type": "",
+        "incipitOnly": true,
+        "threeLineOutline": true,
+        "sourceTitlesOnly": true,
+        "originalTitle": "Selig im Glauben!",
+        "translatedTitle": "Blessed in faith",
+        "participants": [
+          "Alle Ritter"
+        ],
+        "turns": [
           {
             "speaker": "ALLE RITTER",
             "speakerTranslation": "Alle Ritter",
@@ -1784,7 +1900,8 @@ export const parsifalActOneScenes = [
             "original": "Selig im Glauben!",
             "translation": "Blessed in faith!"
           }
-        ]
+        ],
+        "routeItem": 8
       }
     ],
     "outline": [
@@ -1797,7 +1914,9 @@ export const parsifalActOneScenes = [
         "sourceTurn": 2,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 0,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1805,10 +1924,12 @@ export const parsifalActOneScenes = [
         "translation": "Greetings! How is Amfortas today?",
         "match": "Heil euch! – Wie geht's Amfortas heut?",
         "speaker": "GURNEMANZ",
-        "sourceTurn": 10,
+        "sourceTurn": 0,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 1,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1816,10 +1937,12 @@ export const parsifalActOneScenes = [
         "translation": "He comes; they carry him here",
         "match": "Er naht – sie bringen ihn getragen",
         "speaker": "GURNEMANZ",
-        "sourceTurn": 34,
+        "sourceTurn": 0,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 2,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1827,10 +1950,12 @@ export const parsifalActOneScenes = [
         "translation": "Yes, she may be under a curse",
         "match": "Ja, eine Verwünschte mag sie sein",
         "speaker": "GURNEMANZ",
-        "sourceTurn": 62,
+        "sourceTurn": 0,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 3,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1838,10 +1963,12 @@ export const parsifalActOneScenes = [
         "translation": "Yes! I can hit whatever flies",
         "match": "Gewiß! Im Fluge treff ich",
         "speaker": "PARSIFAL",
-        "sourceTurn": 116,
+        "sourceTurn": 0,
         "characters": [
           "Parsifal"
-        ]
+        ],
+        "sourceSection": 4,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1849,10 +1976,12 @@ export const parsifalActOneScenes = [
         "translation": "Where do you come from?",
         "match": "Wo bist du her?",
         "speaker": "GURNEMANZ",
-        "sourceTurn": 125,
+        "sourceTurn": 0,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 5,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1860,10 +1989,12 @@ export const parsifalActOneScenes = [
         "translation": "The king returns from the bath",
         "match": "Vom Bade kehrt der König heim",
         "speaker": "GURNEMANZ",
-        "sourceTurn": 182,
+        "sourceTurn": 0,
         "characters": [
           "Gurnemanz"
-        ]
+        ],
+        "sourceSection": 6,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1871,10 +2002,12 @@ export const parsifalActOneScenes = [
         "translation": "Alas, the torment I endure!",
         "match": "Wehe! Wehe mir der Qual!",
         "speaker": "AMFORTAS",
-        "sourceTurn": 207,
+        "sourceTurn": 0,
         "characters": [
           "Amfortas"
-        ]
+        ],
+        "sourceSection": 7,
+        "sourceLine": 0
       },
       {
         "type": "",
@@ -1882,10 +2015,12 @@ export const parsifalActOneScenes = [
         "translation": "Blessed in faith",
         "match": "Selig im Glauben!",
         "speaker": "ALLE RITTER",
-        "sourceTurn": 235,
+        "sourceTurn": 0,
         "characters": [
           "Alle Ritter"
-        ]
+        ],
+        "sourceSection": 8,
+        "sourceLine": 0
       }
     ]
   }
