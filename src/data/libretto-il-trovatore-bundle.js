@@ -36,5 +36,5 @@ export const trovatore = {
     paragraphs: info.synopsis,
     characters: info.characters
   },
-  source: 'Original Italian: https://opera-guide.ch/operas/il+trovatore/libretto/it/ (user-supplied saved Italian libretto). English: independent AI-generated working translation awaiting editorial review. All four parts include the source's 5 / 5 / 6 / 4 scene structure; editorial and musical verification remain pending.'
+  source: 'Original Italian: https://opera-guide.ch/operas/il+trovatore/libretto/it/ (user-supplied saved Italian libretto). English: independent AI-generated working translation awaiting editorial review. All four parts include the verified 5 / 5 / 6 / 4 source-scene structure; editorial and musical verification remain pending.'
 };
