@@ -360,7 +360,7 @@ test("Aida Act I exposes two bilingual scenes without claiming Acts II–IV are 
   const libretto = getLibretto("aida");
   assert.ok(libretto);
   assert.equal(opera.acts, 4);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2]);
   assert.deepEqual(libretto.acts[0].scenes.map(scene => scene.number), [1, 2]);
   const sections = libretto.acts[0].scenes.flatMap(scene => scene.sections);
   const turns = sections.flatMap(section => section.turns);
