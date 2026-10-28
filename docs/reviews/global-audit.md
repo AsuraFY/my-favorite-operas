@@ -45,6 +45,7 @@
 
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
+| Rigoletto | RIG-V01 | **In progress** | Acts II–III not yet published. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
 | Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
 | Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
 | La fanciulla del West | AUD-02 | **Deferred** | Act I Introduzione has no supported English heading; verify Hello, Nick! and Hello, Minnie! title fallback handling. |
@@ -66,6 +67,16 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-28 (UTC) — Rigoletto Acts II–III source structure verified; no new act published
+
+**Branch:** `Update` only. **Primary source:** https://opera-guide.ch/operas/rigoletto/libretto/it/ (Francesco Maria Piave, original Italian). Research confirmed that the remaining acts should not have invented scene headings:
+
+- **Act II:** No. 8 — Scena ed Aria (the Duke's lament); No. 9 — Scena ed Aria (Rigoletto among the courtiers, including his plea); No. 10 — Scena e Duetto (Gilda's account, Monterone's passage and Rigoletto's vow of revenge).
+- **Act III:** No. 11 — Scena e Canzone (the inn and the Duke's song); No. 12 — Quartetto (Duke, Maddalena, Gilda and Rigoletto); No. 13 — Scena, Terzetto e Tempesta (the murder plot and Gilda's sacrifice); No. 14 — Scena e Duetto Finale (the sack and the tragic recognition).
+
+**Status:** The complete source and independent English translations have **not** been adequately prepared or validated as bilingual data for these acts. No Act II or III module was committed in this checkpoint. Do not mark either act complete or generate stage directions/lyrics from memory. Preserve the existing Act I reader until each full act can be verified and committed separately. No new site-level regression claims were made.
+
 
 ### 2026-10-28 (UTC) — Rigoletto Act I initial bilingual working draft
 
