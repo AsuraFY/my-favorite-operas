@@ -27,5 +27,5 @@ export const traviata = {
     {number: 2, originalHeading: 'ATTO SECONDO', scenes: traviataActTwoScenes},
     {number: 3, originalHeading: 'ATTO TERZO', scenes: traviataActThreeScenes}],
   synopsis: {eyebrow: 'Giuseppe Verdi · Opera in three acts · All three acts available · English translation unreviewed', paragraphs: info.synopsis, characters: info.characters},
-  source: 'Italian: original public-domain libretto at https://opera-guide.ch/operas/la+traviata/libretto/it/ (all three acts). English: independently authored AI working translation, editorial review pending. One passage in Act II scene XIV is truncated in the retrieved Opera Guide transcription; this is flagged in the text. Other source variants need proofing.'
+  source: 'Italian: original public-domain libretto at https://opera-guide.ch/operas/la+traviata/libretto/it/ (all three acts). English: independently authored AI working translation, editorial review pending. Act II scene XIV was reconciled against public-domain libretto editions at Teatro Regio Parma and Wikisource because the retrieved Opera Guide HTML was truncated. Other source variants need proofing.'
 };
