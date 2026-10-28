@@ -120,7 +120,7 @@ test("Tosca Acts I–III are available from its opera information page and direc
   const libretto = getLibretto("tosca");
   assert.ok(libretto);
   assert.equal(opera.acts, 3);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3, 4]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
   const reader = createLibrettoRenderer(libretto);
   const navigation = reader.navigation();
   const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
@@ -355,12 +355,12 @@ test("A single CSS rule controls breadcrumb height, layout, and logo alignment",
   assert.ok(css.includes("scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height)"));
 });
 
-test("Aida Act I exposes two bilingual scenes without claiming Acts II–IV are complete", () => {
+test("Aida exposes four bilingual acts with two Act I scenes", () => {
   const opera = operas.find(item => item.slug === "aida");
   const libretto = getLibretto("aida");
   assert.ok(libretto);
   assert.equal(opera.acts, 4);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3, 4]);
   assert.deepEqual(libretto.acts[0].scenes.map(scene => scene.number), [1, 2]);
   const sections = libretto.acts[0].scenes.flatMap(scene => scene.sections);
   const turns = sections.flatMap(section => section.turns);
