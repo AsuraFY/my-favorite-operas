@@ -998,3 +998,139 @@ export const trovatoreActTwoScenes = [
           },
           {
             "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "opponendosi",
+            "translation": "Opposing him.",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "E tu speri?",
+            "translation": "And you dare hope?",
+            "literalText": true
+          },
+          {
+            "speaker": "LEONORA",
+            "speakerTranslation": "Leonora",
+            "original": "Ah!",
+            "translation": "Ah!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "al Conte",
+            "translation": "To the Count.",
+            "literalText": true
+          },
+          {
+            "speaker": "MANRICO",
+            "speakerTranslation": "Manrico",
+            "original": "T'arresta...",
+            "translation": "Stop!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "sguainando la spada",
+            "translation": "Drawing his sword.",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "Involarmi costei! No!",
+            "translation": "You would steal her from me? No!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "accerchiando il Conte",
+            "translation": "Surrounding the Count.",
+            "literalText": true
+          },
+          {
+            "speaker": "RUIZ, ARMATI",
+            "speakerTranslation": "Ruiz, Armati",
+            "original": "Vaneggi!",
+            "translation": "You are raving!",
+            "literalText": true
+          },
+          {
+            "speaker": "FERRANDO, SEGUACI",
+            "speakerTranslation": "Ferrando, Seguaci",
+            "original": "Che tenti, Signor?",
+            "translation": "What are you trying to do, my lord?",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Il Conte è disarmato da quei di Ruiz\ncon gesti ed accenti di maniaco furore",
+            "translation": "The Count is disarmed by Ruiz's men.\nWith gestures and cries of mad fury.",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "Di ragione ogni lume perdei!",
+            "translation": "I have lost every light of reason!",
+            "literalText": true
+          },
+          {
+            "speaker": "LEONORA",
+            "speakerTranslation": "Leonora",
+            "original": "(M'atterrisce..)",
+            "translation": "(He frightens me.)",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "Ho le furie nel cor!",
+            "translation": "The furies rage within my heart!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "a Manrico",
+            "translation": "To Manrico.",
+            "literalText": true
+          },
+          {
+            "speaker": "RUIZ, ARMATI",
+            "speakerTranslation": "Ruiz, Armati",
+            "original": "Vien: la sorte sorride per te.",
+            "translation": "Come: fortune smiles on you.",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "al Conte",
+            "translation": "To the Count.",
+            "literalText": true
+          },
+          {
+            "speaker": "FERRANDO, SEGUACI",
+            "speakerTranslation": "Ferrando, Seguaci",
+            "original": "Cedi; or ceder viltade non è.",
+            "translation": "Yield; yielding now is no cowardice.",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Manrico tragge seco Leonora, il Conte è respinto; le donne rifuggono al cenobio.\nScende subito la tela",
+            "translation": "Manrico takes Leonora with him; the Count is driven back; the women retreat to the convent.\nThe curtain falls at once.",
+            "literalText": true
+          }
+        ]
+      }
+    ]
+  }
+];

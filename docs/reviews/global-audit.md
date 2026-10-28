@@ -69,6 +69,11 @@
 
 ## Dated update log
 
+### 2026-10-28 (UTC) — Il trovatore Act II and IV file-integrity repair
+
+The first published Act II and IV blobs were truncated during file transfer even though the preparation files passed syntax checks locally. GitHub Actions `Verify Update` run 40769889492 revealed an additional module syntax failure beyond the existing 16 baseline test failures. Both full source-faithful bilingual preparation files have now been reassembled using contiguous line windows, validated as parseable JSON payloads with the expected five and four scenes respectively, and replaced on `Update`. Fresh CI must verify that the introduced syntax regression is eliminated. Detailed editorial checking remains pending.
+
+
 ### 2026-10-28 (UTC) — Il trovatore Act IV bilingual working draft
 
 **Branch:** `Update`. Part IV (*Il supplizio*) now preserves all four original source scenes, including the source's final heading `SCENA ULTIMA`, 157 aligned Italian/English speaker and direction turns, Leonora's prayer and poison, the prison duet, Azucena's memories, and the final revelation. Italian text was extracted from the user-supplied Opera Guide MHT without omitting source turns. English is an independently drafted AI-generated working translation awaiting editorial review. Stage directions preserved and translated. No invented musical division numbering. All four parts now populated. Detailed source-fidelity, verse alignment, and browser QA remain to be reviewed.

@@ -998,3 +998,198 @@ export const trovatoreActFourScenes = [
             "original": "Che festi!... o cielo!",
             "translation": "What have you done? Oh heavens!",
             "literalText": true
+          },
+          {
+            "speaker": "LEONORA",
+            "speakerTranslation": "Leonora",
+            "original": "Prima che d'altri vivere...\nIo volli tua morir!...",
+            "translation": "Rather than live for another,\nI wished to die as yours!",
+            "literalText": true
+          },
+          {
+            "speaker": "MANRICO",
+            "speakerTranslation": "Manrico",
+            "original": "Insano!... ed io quest'angelo\nOsava maledir!",
+            "translation": "Madman that I am! And I dared\nCurse this angel!",
+            "literalText": true
+          },
+          {
+            "speaker": "LEONORA",
+            "speakerTranslation": "Leonora",
+            "original": "Più non resisto!",
+            "translation": "I can bear no more!",
+            "literalText": true
+          },
+          {
+            "speaker": "MANRICO",
+            "speakerTranslation": "Manrico",
+            "original": "Ahi misera!...",
+            "translation": "Ah, unhappy woman!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Entra il Conte, arrestandosi sulla soglia",
+            "translation": "The Count enters and stops at the threshold.",
+            "literalText": true
+          },
+          {
+            "speaker": "LEONORA",
+            "speakerTranslation": "Leonora",
+            "original": "Ecco l'istante... io moro...",
+            "translation": "Here is the moment. I am dying.",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "stringendogli la destra in segno d'addio",
+            "translation": "Clasping his right hand in farewell.",
+            "literalText": true
+          },
+          {
+            "speaker": "LEONORA",
+            "speakerTranslation": "Leonora",
+            "original": "Manrico! Or la tua grazia...\nPadre del cielo... imploro...\nPrima... che... d'altri vivere...\nIo volli... tua morir!",
+            "translation": "Manrico! Now I implore\nThe Father of heaven\nFor your pardon.\nRather than live for another,\nI wished to die as yours!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Spira",
+            "translation": "She dies.",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "(Ah! volle me deludere,\nE per costui morir!)",
+            "translation": "(Ah, she meant to deceive me\nAnd die for this man!)",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "additando agli armati Manrico",
+            "translation": "Pointing Manrico out to the armed men.",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "Sia tratto al ceppo!",
+            "translation": "Take him to the execution block!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "partendo tra gli armati",
+            "translation": "Leaving among the armed men.",
+            "literalText": true
+          },
+          {
+            "speaker": "MANRICO",
+            "speakerTranslation": "Manrico",
+            "original": "Madre... oh madre, addio!",
+            "translation": "Mother, oh Mother, farewell!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "destandosi",
+            "translation": "Waking.",
+            "literalText": true
+          },
+          {
+            "speaker": "AZUCENA",
+            "speakerTranslation": "Azucena",
+            "original": "Manrico!... Ov'è mio figlio?",
+            "translation": "Manrico! Where is my son?",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "A morte corre!...",
+            "translation": "He is going to his death!",
+            "literalText": true
+          },
+          {
+            "speaker": "AZUCENA",
+            "speakerTranslation": "Azucena",
+            "original": "Ah ferma!... m'odi...",
+            "translation": "Ah, stop! Listen to me!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "trascinando Azucena verso la finestra",
+            "translation": "Dragging Azucena toward the window.",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "Vedi?...",
+            "translation": "Look!",
+            "literalText": true
+          },
+          {
+            "speaker": "AZUCENA",
+            "speakerTranslation": "Azucena",
+            "original": "Cielo!",
+            "translation": "Heaven!",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "È spento!",
+            "translation": "He is dead!",
+            "literalText": true
+          },
+          {
+            "speaker": "AZUCENA",
+            "speakerTranslation": "Azucena",
+            "original": "Egli era tuo fratello!..",
+            "translation": "He was your brother!",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "Ei!... quale orror!...",
+            "translation": "He! What horror!",
+            "literalText": true
+          },
+          {
+            "speaker": "AZUCENA",
+            "speakerTranslation": "Azucena",
+            "original": "Sei vendicata, o madre!",
+            "translation": "You are avenged, Mother!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "inorridito",
+            "translation": "Horrified.",
+            "literalText": true
+          },
+          {
+            "speaker": "CONTE",
+            "speakerTranslation": "Count di Luna",
+            "original": "E vivo ancor!",
+            "translation": "And I am still alive!",
+            "literalText": true
+          }
+        ]
+      }
+    ]
+  }
+];
