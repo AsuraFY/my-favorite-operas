@@ -368,7 +368,7 @@ test("Aida Act I exposes two bilingual scenes without claiming Acts II–IV are 
   for (const turn of turns) {
     assert.ok(turn.original.trim());
     assert.ok(turn.translation.trim());
-    assert.equal(turn.original.split("\\n").length, turn.translation.split("\\n").length);
+    assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length);
   }
   const page = renderOperaInformationPage(opera, operaInformation.aida, {hasLibretto:true});
   assert.ok(page.includes('href="#/operas/aida?act=1"'));
