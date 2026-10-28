@@ -67,6 +67,13 @@
 
 ## Dated update log
 
+### 2026-10-28 (UTC) — Traviata targeted source repair and aria navigation
+
+**TRAVIATA-01 updated: Resolved for the identified Act II scene XIV truncation.** The final eight-line Alfredo passage and the falling-purse stage direction were restored from matching public-domain Italian text published by Teatro Regio Parma (https://www.teatroregioparma.it/Archivi/Archivio2014/uploads/LIBRETTO_La_traviata.pdf) and Wikisource (https://it.wikisource.org/wiki/La_traviata/Atto_secondo), after the primary Opera Guide HTML was found truncated. Correction commits `a75291c` and `990cdf4`. This resolves the identified gap; it does **not** constitute a full edition-wide source audit.
+
+**Reader refinement:** Act I now separates the original-language landmarks `Ah, fors'è lui` and `Sempre libera degg'io` into their own original/English paired passages (`dd6592c`). In Act III, `Addio, del passato` and the offstage masked carnival chorus appear as separate navigation passages with the chorus correctly attributed (`e490654`). **TRAVIATA-02 remains Needs review:** full per-line English alignment, original language proofreading, stage-direction attribution and independent browser visual QA pending. The full repository regression suite is still affected by pre-existing stale checks, even though the specific three-act Traviata test passed in run 40743021730.
+
+
 ### 2026-10-28 (UTC) — La traviata: three-act bilingual working draft
 
 **Branch:** `Update` only. **Source:** https://opera-guide.ch/operas/la+traviata/libretto/it/ (Italian, Francesco Maria Piave, public domain). The original-language HTML was fetched as supplied by Opera Guide; English was independently written as an AI working translation, **not copied from the site's English edition**.
