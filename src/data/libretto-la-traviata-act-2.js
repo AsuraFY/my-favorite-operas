@@ -2043,8 +2043,15 @@ export const traviataActTwoScenes = [
           {
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
-            "original": "Ogni suo aver tal femmina\nPer amor mio sperdea\nIo cieco, vile, misero,\nTutto accettar potea,\nMa",
-            "translation": "This woman spent all her possessions for love of me, and I, blind, base and miserable, accepted them all. But... [The consulted source breaks off here.]",
+            "original": "Ogni suo aver tal femmina\nPer amor mio sperdea\nIo cieco, vile, misero,\nTutto accettar potea,\nMa è tempo ancora! tergermi\nDa tanta macchia bramo\nQui testimoni vi chiamo\nChe qui pagata io l'ho.",
+            "translation": "This woman spent all she had\nBecause of her love for me;\nI, blind, base and wretched,\nCould accept it all.\nBut there is still time! I yearn\nTo cleanse myself of this stain;\nI call you all as witnesses\nThat here I have paid her.",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Getta con furente sprezzo una borsa ai piedi di Violetta, che sviene tra le braccia di Flora e del Dottore. In tal momento entra il padre.",
+            "translation": "With furious contempt he throws a purse at Violetta's feet. She faints into the arms of Flora and the Doctor; Alfredo's father enters.",
             "literalText": true
           }
         ]
