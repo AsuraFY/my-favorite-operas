@@ -1878,7 +1878,9 @@ button { font: inherit; }
   }
 
   .directory-card__image--standalone img {
-    object-fit: contain;
+    /* Portrait opera art fills the same landscape card as other artworks. */
+    object-fit: cover;
+    object-position: center 35%;
   }
 }
 
@@ -3130,3 +3132,11 @@ html[data-theme="night"] .opera-reading-page .selected-section-heading > .libret
 html[data-theme="night"] .opera-outline__section .opera-outline__section-title { color: #e8edf2; }
 html[data-theme="night"] .opera-outline__section .opera-outline__section-translation,
 html[data-theme="night"] .opera-outline__section .libretto-participants { color: var(--night-muted); }
+
+/* The four portrait commissions share a consistent facial focal point on detail pages. */
+.opera-info__cover img[src$="/la-cenerentola-art.webp"],
+.opera-info__cover img[src$="/hansel-und-gretel-art.webp"],
+.opera-info__cover img[src$="/nabucco-art.webp"],
+.opera-info__cover img[src$="/pagliacci-art.webp"] {
+  object-position: center 35%;
+}
