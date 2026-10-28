@@ -1982,13 +1982,13 @@ export const traviataActTwoScenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "Ne appellaste? Che volete?",
-        "translatedTitle": "You called? What do you want?",
+        "originalTitle": "Questa donna conoscete?",
+        "translatedTitle": "Do you know this woman?",
         "participants": [
+          "Stage direction",
           "All",
           "Alfredo",
-          "Violetta",
-          "Germont"
+          "Violetta"
         ],
         "turns": [
           {
@@ -2043,8 +2043,40 @@ export const traviataActTwoScenes = [
           {
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
-            "original": "Ogni suo aver tal femmina\nPer amor mio sperdea\nIo cieco, vile, misero,\nTutto accettar potea,\nMa èCENA XV\n(Detti, ed il Signor Germont, ch'entra all'ultime parole)",
-            "translation": "She spent everything she possessed for love of me, and I, blind and contemptible, accepted it all. Yet now she abandons me! In front of everyone I throw back what she gave. (He insults and humiliates her.)",
+            "original": "Ogni suo aver tal femmina\nPer amor mio sperdea\nIo cieco, vile, misero,\nTutto accettar potea,\nMa",
+            "translation": "This woman spent all her possessions for love of me, and I, blind, base and miserable, accepted them all. But... [The consulted source breaks off here.]",
+            "literalText": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "originalHeading": "SCENA XV",
+    "translatedHeading": "Scene XV",
+    "summary": "Germont rebukes Alfredo while Violetta is overcome by the public humiliation.",
+    "sections": [
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "Oh, infamia orribile",
+        "translatedTitle": "What a terrible disgrace",
+        "participants": [
+          "All",
+          "Germont",
+          "Alfredo",
+          "Violetta",
+          "Baron"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "SCENA XV. Detti, ed il Signor Germont, ch'entra all'ultime parole.",
+            "translation": "Scene XV. The same characters; Giorgio Germont enters during Alfredo's final words.",
             "literalText": true
           },
           {
@@ -2074,21 +2106,7 @@ export const traviataActTwoScenes = [
             "original": "(riavendosi)\nAlfredo, Alfredo, di questo core\nNon puoi comprendere tutto l'amore;\nTu non conosci che fino a prezzo\nDel tuo disprezzo - provato io l'ho!\nMa verrà giorno in che il saprai\nCom'io t'amassi confesserai\nDio dai rimorsi ti salvi allora;\nIo spenta ancora - pur t'amerò.",
             "translation": "(Recovering.) Alfredo, you cannot understand how much this heart loves you. I proved that love even at the cost of your scorn. One day you shall know everything.",
             "literalText": true
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "A questa donna l'atroce insulto",
-        "translatedTitle": "(Quietly to Alfredo.) You offended every guest by insulting this woman. Your outrage will not g",
-        "participants": [
-          "Baron",
-          "All"
-        ],
-        "turns": [
+          },
           {
             "speaker": "BARONE",
             "speakerTranslation": "Baron",
