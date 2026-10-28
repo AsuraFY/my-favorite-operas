@@ -1,6 +1,6 @@
 // This is the only HTML entry point. A failed module import or startup now shows
 // a visible recovery message instead of leaving #app empty.
-import("./main.js?v=aida-act2-20261028").catch(error => {
+import("./main.js?v=aida-act3-20261028").catch(error => {
   console.error("The opera website could not start:", error);
   const app = document.querySelector("#app");
   if (!app) return;
