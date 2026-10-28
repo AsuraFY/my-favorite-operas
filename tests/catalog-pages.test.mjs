@@ -64,7 +64,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "aida", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
@@ -353,4 +353,26 @@ test("A single CSS rule controls breadcrumb height, layout, and logo alignment",
   assert.ok(main.includes('stickyBarObserver.observe(breadcrumb)'));
   assert.ok(css.includes("top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height));"));
   assert.ok(css.includes("scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height)"));
+});
+
+test("Aida Act I exposes two bilingual scenes without claiming Acts II–IV are complete", () => {
+  const opera = operas.find(item => item.slug === "aida");
+  const libretto = getLibretto("aida");
+  assert.ok(libretto);
+  assert.equal(opera.acts, 4);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  assert.deepEqual(libretto.acts[0].scenes.map(scene => scene.number), [1, 2]);
+  const sections = libretto.acts[0].scenes.flatMap(scene => scene.sections);
+  const turns = sections.flatMap(section => section.turns);
+  assert.ok(turns.length > 100);
+  for (const turn of turns) {
+    assert.ok(turn.original.trim());
+    assert.ok(turn.translation.trim());
+    assert.equal(turn.original.split("\\n").length, turn.translation.split("\\n").length);
+  }
+  const page = renderOperaInformationPage(opera, operaInformation.aida, {hasLibretto:true});
+  assert.ok(page.includes('href="#/operas/aida?act=1"'));
+  const outline = createLibrettoRenderer(libretto).outline();
+  assert.ok(outline.includes("Celeste Aida"));
+  assert.ok(outline.includes("Ritorna vincitor"));
 });
