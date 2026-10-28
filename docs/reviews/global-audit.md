@@ -67,6 +67,11 @@
 
 ## Dated update log
 
+### 2026-10-28 (UTC) — Rigoletto Act I initial bilingual working draft
+
+**Branch:** `Update` only. **Source:** https://opera-guide.ch/operas/rigoletto/libretto/it/ (Act I, scenes 1–2, Nos. 1–7). The public-domain Italian has been manually structured into aligned passages with independent AI-generated English working translations. Both source scenes are represented, including the major stage directions and final curse, while Acts II and III remain pending. The translation awaits editorial review; source spelling variants, speaker labels, attribution, complete coverage and verse alignment require detailed verification. The existing site-wide regression failures predate this change; a full local test run and independent browser verification have not yet been completed.
+
+
 ### 2026-10-28 (UTC) — Traviata targeted source repair and aria navigation
 
 **TRAVIATA-01 updated: Resolved for the identified Act II scene XIV truncation.** The final eight-line Alfredo passage and the falling-purse stage direction were restored from matching public-domain Italian text published by Teatro Regio Parma (https://www.teatroregioparma.it/Archivi/Archivio2014/uploads/LIBRETTO_La_traviata.pdf) and Wikisource (https://it.wikisource.org/wiki/La_traviata/Atto_secondo), after the primary Opera Guide HTML was found truncated. Correction commits `a75291c` and `990cdf4`. This resolves the identified gap; it does **not** constitute a full edition-wide source audit.
