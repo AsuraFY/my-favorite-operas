@@ -69,6 +69,11 @@
 
 ## Dated update log
 
+### 2026-10-28 (UTC) — Il trovatore final integrity verification
+
+**Branch:** `Update`, final fix `357cf9e`. GitHub Actions `Verify Update` run **40770279842** completed with **193 passed / 16 failed / 209 tests**, matching the previously observed 16 existing regression failures. The introduced source-integrity/syntax failure was corrected by restoring the complete Act II and IV transfer payloads in commit `75e2b2f` and fixing a quoted source-description string in `357cf9e`; the source-integrity test then passed. GitHub Pages build/deployment run **40770279146** succeeded. The `Verify Update` workflow's gated preview was skipped because of those existing 16 failures. No independent complete reader navigation/browser QA was performed. Original Italian source rows were preserved and the original–English working turns paired; literary quality and precise English verse alignment still require human editorial review.
+
+
 ### 2026-10-28 (UTC) — Il trovatore Act II and IV file-integrity repair
 
 The first published Act II and IV blobs were truncated during file transfer even though the preparation files passed syntax checks locally. GitHub Actions `Verify Update` run 40769889492 revealed an additional module syntax failure beyond the existing 16 baseline test failures. Both full source-faithful bilingual preparation files have now been reassembled using contiguous line windows, validated as parseable JSON payloads with the expected five and four scenes respectively, and replaced on `Update`. Fresh CI must verify that the introduced syntax regression is eliminated. Detailed editorial checking remains pending.
