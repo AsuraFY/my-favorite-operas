@@ -725,5 +725,167 @@ export const operaInformation = {
     ],
     characters: [["Gabriel von Eisenstein", "Tenor or baritone", "A husband who delays his trip to prison for a masked ball."], ["Rosalinde", "Soprano", "Eisenstein’s wife, who attends the ball in disguise."], ["Adele", "Soprano", "The Eisensteins’ maid, who dreams of acting."], ["Dr. Falke", "Baritone", "Eisenstein’s friend, who arranges the revenge."], ["Frank", "Baritone", "The prison governor, also at the ball incognito."]],
     sources: ["https://www.metopera.org/user-information/synopses-archive/die-fledermaus/"]
+  },
+  "la-cenerentola": {
+    "synopsis": [
+      "Angelina, called Cenerentola, is treated as a servant by her stepfather Don Magnifico and her two stepsisters. Prince Ramiro hopes to find a bride who loves him for himself, so he exchanges clothes with his valet Dandini while the royal tutor Alidoro secretly observes Angelina's kindness.",
+      "At the palace, the disguised prince and Angelina fall in love. She leaves him a bracelet as a way to find her again. Ramiro discovers her identity and marries her, while Angelina chooses to forgive the family that mistreated her."
+    ],
+    "characters": [
+      [
+        "Angelina (Cenerentola)",
+        "Mezzo-soprano",
+        "A kind young woman treated as a servant in her stepfather's house."
+      ],
+      [
+        "Don Ramiro",
+        "Tenor",
+        "The prince who disguises himself to discover true affection."
+      ],
+      [
+        "Dandini",
+        "Baritone",
+        "Ramiro's valet, who pretends to be the prince."
+      ],
+      [
+        "Don Magnifico",
+        "Bass",
+        "Angelina's stepfather, eager for a wealthy marriage for his daughters."
+      ],
+      [
+        "Alidoro",
+        "Bass",
+        "The prince's tutor, who recognizes Angelina's generosity."
+      ],
+      [
+        "Clorinda",
+        "Soprano",
+        "One of Angelina's vain stepsisters."
+      ],
+      [
+        "Tisbe",
+        "Mezzo-soprano",
+        "Angelina's other stepsister."
+      ]
+    ]
+  },
+  "hansel-und-gretel": {
+    "synopsis": [
+      "The siblings Hänsel and Gretel play instead of finishing their chores. Their mother sends them into the forest to gather strawberries, but night falls and they lose their way. The Sandman helps them sleep safely beneath the trees.",
+      "The next morning, the children discover a tempting gingerbread house, home to a witch who intends to cook them. Gretel outwits her, the enchanted children are freed, and Hänsel and Gretel reunite with their parents."
+    ],
+    "characters": [
+      [
+        "Hänsel",
+        "Mezzo-soprano",
+        "Gretel's brother, adventurous and mischievous."
+      ],
+      [
+        "Gretel",
+        "Soprano",
+        "Hänsel's sister, who tricks the witch and saves them both."
+      ],
+      [
+        "Gertrud (Mother)",
+        "Mezzo-soprano",
+        "The children's worried mother."
+      ],
+      [
+        "Peter (Father)",
+        "Baritone",
+        "Their father, a broom maker."
+      ],
+      [
+        "The Witch",
+        "Mezzo-soprano or tenor",
+        "The inhabitant of the gingerbread house, who traps children."
+      ],
+      [
+        "The Sandman",
+        "Soprano",
+        "A protective forest spirit who sends the children to sleep."
+      ],
+      [
+        "The Dew Fairy",
+        "Soprano",
+        "A spirit who wakes the children at daybreak."
+      ]
+    ]
+  },
+  "nabucco": {
+    "synopsis": [
+      "As the Babylonian king Nabucco threatens Jerusalem, the high priest Zaccaria rallies his people. The Babylonian Fenena loves the Hebrew Ismaele, while her ambitious sister Abigaille hopes to claim both Ismaele and the throne. Nabucco declares himself a god and is struck down by a sudden loss of reason.",
+      "Abigaille seizes power and orders the destruction of the Hebrews. In captivity they lament their lost homeland. Nabucco regains his senses, intervenes to save Fenena and the prisoners, and renounces the false idol. Abigaille's ambition ends in tragedy."
+    ],
+    "characters": [
+      [
+        "Nabucco",
+        "Baritone",
+        "King of Babylon, brought low by his claim to divine power."
+      ],
+      [
+        "Abigaille",
+        "Soprano",
+        "A proud and ambitious woman who seeks the throne."
+      ],
+      [
+        "Fenena",
+        "Mezzo-soprano",
+        "Nabucco's daughter, in love with Ismaele."
+      ],
+      [
+        "Ismaele",
+        "Tenor",
+        "A Hebrew prince who loves Fenena."
+      ],
+      [
+        "Zaccaria",
+        "Bass",
+        "High priest of the Hebrews and guardian of his people."
+      ],
+      [
+        "Anna",
+        "Soprano",
+        "Zaccaria's sister and a Hebrew woman."
+      ],
+      [
+        "Abdallo",
+        "Tenor",
+        "A Babylonian officer loyal to Nabucco."
+      ]
+    ]
+  },
+  "pagliacci": {
+    "synopsis": [
+      "A traveling theater troupe arrives in a village to perform a comedy. Its leader Canio warns that the emotions of the stage must not be confused with real life, but his wife Nedda secretly loves Silvio. Tonio, whom Nedda has rejected, reveals the affair to Canio.",
+      "During the performance, the story of an unfaithful wife mirrors the actors' real lives. Canio's jealousy overwhelms his role as Pagliaccio, and a cheerful theatrical entertainment turns into an actual tragedy before the spectators."
+    ],
+    "characters": [
+      [
+        "Canio (Pagliaccio)",
+        "Tenor",
+        "Leader of the troupe, whose jealousy breaks through his stage role."
+      ],
+      [
+        "Nedda (Colombina)",
+        "Soprano",
+        "Canio's wife, who hopes to escape with Silvio."
+      ],
+      [
+        "Tonio (Taddeo)",
+        "Baritone",
+        "A troupe member who betrays Nedda after she rejects him."
+      ],
+      [
+        "Silvio",
+        "Baritone",
+        "A villager in love with Nedda."
+      ],
+      [
+        "Beppe (Arlecchino)",
+        "Tenor",
+        "A member of the troupe who plays Nedda's stage lover."
+      ]
+    ]
   }
 };

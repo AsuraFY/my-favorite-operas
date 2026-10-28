@@ -13,9 +13,9 @@ import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
 beforeEach(resetReaderLocation);
 
 // Opera information and planned libretto pages.
-test("all thirty-one opera information pages contain verified metadata and full introductory sections", () => {
-  assert.equal(operas.length, 31);
-  assert.equal(new Set(operas.map(opera => opera.slug)).size, 31);
+test("all thirty-five opera information pages contain verified metadata and full introductory sections", () => {
+  assert.equal(operas.length, 35);
+  assert.equal(new Set(operas.map(opera => opera.slug)).size, 35);
   for (const opera of operas) {
     const information = operaInformation[opera.slug];
     assert.ok(information, "missing details for " + opera.slug);
@@ -35,6 +35,24 @@ test("all thirty-one opera information pages contain verified metadata and full 
   }
 });
 
+test("four newly added opera illustrations match their directory destinations and synopsis covers", () => {
+  const slugs = ["la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"];
+  const main = readFileSync("src/main.js", "utf8");
+  assert.ok(main.includes('href="#/operas/${opera.slug}"'), "directory cards must link to the correct opera");
+  assert.ok(main.includes('<img src="${opera.image}"'), "directory cards must render each image");
+  for (const slug of slugs) {
+    const opera = operas.find(item => item.slug === slug);
+    assert.ok(opera, "missing opera " + slug);
+    assert.equal(opera.image, "./public/images/" + slug + "-art.webp");
+    const details = operaInformation[slug];
+    assert.ok(details, "missing synopsis and cast for " + slug);
+    const page = renderOperaInformationPage(opera, details);
+    assert.ok(page.includes('src="' + opera.image + '"'), "incorrect synopsis image for " + slug);
+    assert.ok(page.includes('Illustration inspired by ' + opera.title), "missing artwork description for " + slug);
+    assert.equal(getLibretto(slug), null, "new opera should not claim a completed libretto");
+  }
+});
+
 test("Every catalog image path points to an optimized WebP asset", () => {
   const illustratedOperas = operas.filter(opera => opera.image);
   assert.ok(illustratedOperas.length > 0);
@@ -46,7 +64,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "aida", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "aida", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
@@ -79,7 +97,7 @@ test("La Bohème Act I is available from its opera information page", () => {
   assert.ok(html.includes("Libretto Outline"));
 });
 
-test("search-friendly aliases, thirty-one routes and act counts remain intact", () => {
+test("search-friendly aliases, thirty-five routes and act counts remain intact", () => {
   const acts = Object.fromEntries(operas.map(opera => [opera.slug, opera.acts]));
   assert.deepEqual(acts, {
     "il-barbiere-di-siviglia": 2, "tristan-und-isolde": 3,
@@ -87,7 +105,8 @@ test("search-friendly aliases, thirty-one routes and act counts remain intact", 
     "la-traviata": 3, "the-magic-flute": 2, aida: 4, tosca: 3, "madama-butterfly": 3, rigoletto: 3, "don-giovanni": 2,
     "la-boheme": 4, "lucia-di-lammermoor": 3, "eugene-onegin": 3, "les-contes-dhoffmann": 4, norma: 2,
     "il-trovatore": 4, "das-rheingold": 1, "die-walkure": 3, siegfried: 3, gotterdammerung: 3,
-    "lelisir-damore": 2, "die-fledermaus": 3
+    "lelisir-damore": 2, "die-fledermaus": 3,
+    "la-cenerentola": 2, "hansel-und-gretel": 3, "nabucco": 4, "pagliacci": 2
   });
   assert.ok(operas.find(item => item.slug === "le-nozze-di-figaro").aliases.includes("Marriage of Figaro"));
   assert.deepEqual(getLibretto("turandot").acts.map(act => act.number), [1, 2, 3]);
