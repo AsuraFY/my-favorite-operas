@@ -1,9 +1,10 @@
-// Il trovatore: four-part opera, only Act I currently transcribed and translated.
+// Il trovatore: four-part opera, Acts I–II currently transcribed and translated.
 // Italian from Opera Guide user-supplied MHT; English independently AI-generated working
-// translation awaiting editorial review. Acts II–IV remain pending, never implied complete.
+// translation awaiting editorial review. Acts III–IV remain pending, never implied complete.
 import { getOpera } from './operas.js';
 import { operaInformation } from './opera-information.js';
 import { trovatoreActOneScenes } from './libretto-il-trovatore-act-1.js?v=trovatore-act1-20261028';
+import { trovatoreActTwoScenes } from './libretto-il-trovatore-act-2.js?v=trovatore-act2-20261028';
 const info = operaInformation['il-trovatore'];
 export const trovatore = {
   slug: 'il-trovatore',
@@ -24,14 +25,14 @@ export const trovatore = {
   stageDirectionLabel: 'Stage direction',
   acts: [
     { number: 1, originalHeading: 'PARTE PRIMA - Il Duello', scenes: trovatoreActOneScenes },
-    { number: 2, originalHeading: 'PARTE SECONDA - La Gitana', scenes: [] },
+    { number: 2, originalHeading: 'PARTE SECONDA - La Gitana', scenes: trovatoreActTwoScenes },
     { number: 3, originalHeading: 'PARTE TERZA - Il figlio della Zingara', scenes: [] },
     { number: 4, originalHeading: 'PARTE QUARTA - Il supplizio', scenes: [] }
   ],
   synopsis: {
-    eyebrow: 'Giuseppe Verdi · Opera in four parts · Part I available · Parts II–IV pending · English AI-generated working translation awaiting editorial review',
+    eyebrow: 'Giuseppe Verdi · Opera in four parts · Parts I–II available · Parts III–IV pending · English AI-generated working translation awaiting editorial review',
     paragraphs: info.synopsis,
     characters: info.characters
   },
-  source: 'Original Italian: https://opera-guide.ch/operas/il+trovatore/libretto/it/ (user-supplied saved Italian libretto). English: independent AI-generated working translation awaiting editorial review. Part I includes all five source scenes; editorial and musical verification remain pending.'
+  source: 'Original Italian: https://opera-guide.ch/operas/il+trovatore/libretto/it/ (user-supplied saved Italian libretto). English: independent AI-generated working translation awaiting editorial review. Parts I and II each include all five source scenes; editorial and musical verification remain pending.'
 };

@@ -45,7 +45,7 @@
 
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
-| Il trovatore | TRO-V01 | **In progress** | Part I Italian/English AI working translation entered from user-supplied Opera Guide MHT, five source scenes. Parts II–IV pending. Source-fidelity, verse pairing and independent browser visual QA need review. |
+| Il trovatore | TRO-V01 | **In progress** | Parts I–II Italian/English AI working translations entered from user-supplied Opera Guide MHT, five source scenes. Parts III–IV pending. Source-fidelity, verse pairing and independent browser visual QA need review. |
 | Rigoletto | RIG-V01 | **In progress** | Acts II and III now published as independent AI working drafts; require Italian source fidelity and complete English editorial review; independent browser checks pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
 | Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
 | Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
@@ -68,6 +68,10 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-28 (UTC) — Il trovatore Act II bilingual working draft
+**Branch:** `Update`. User-supplied Italian Opera Guide MHT was parsed in full. Part II (*La gitana*) preserves five original source scenes, 144 original/English speaker/direction turns and 352 extracted Italian printed source lines. The English is independently written as an AI-generated working translation awaiting editorial review. The original Italian is checked against the source extraction without omission. Stage directions and source incipits retained; no invented musical numbering. Parts III–IV pending. The translation, musical divisions and browser behavior remain subject to independent review.
+
 
 ### 2026-10-28 (UTC) — Il trovatore Act I from uploaded original-source archive
 
