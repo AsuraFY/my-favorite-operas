@@ -1,7 +1,7 @@
 import { operas, getOpera } from "./data/operas.js?v=opera-catalog-art-20261027";
 import { MIN_ROW_GAP, MAX_ROW_GAP, DEFAULT_ROW_GAP, normalizeRowGap, migrateLineSpacing, stepRowGap, applyReadingSpacing } from "./reading-spacing.js?v=lyric-row-gap-20261023";
 import { createLibrettoRenderer } from "./libretto-reader.js?v=global-three-line-20261027";
-import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=traviata-act1-20261028";
+import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=traviata-all-acts-20261028";
 import { operaInformation } from "./data/opera-information.js?v=opera-catalog-art-20261027";
 import { renderOperaInformationPage, renderPlannedLibrettoPage, hydrateFavoriteCovers } from "./opera-info-page.js?v=fanciulla-act1-outline-20261026";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";

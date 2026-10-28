@@ -377,12 +377,15 @@ test("Aida exposes four bilingual acts with two Act I scenes", () => {
   assert.ok(outline.includes("Ritorna vincitor"));
 });
 
-test("La traviata Act I preserves five source scenes with parallel English working translations", () => {
+test("La traviata contains three acts with all source scenes and parallel English draft passages", () => {
   const libretto = getLibretto("la-traviata");
   assert.ok(libretto);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1,2,3]);
   assert.deepEqual(libretto.acts[0].scenes.map(scene => scene.number), [1,2,3,4,5]);
-  const turns = libretto.acts[0].scenes.flatMap(scene=>scene.sections.flatMap(section=>section.turns));
+  assert.deepEqual(libretto.acts[1].scenes.map(scene => scene.number), Array.from({length:15},(_,i)=>i+1));
+  assert.deepEqual(libretto.acts[2].scenes.map(scene => scene.number), [1,2,3,4,5,6]);
+  const turns = libretto.acts.flatMap(act=>act.scenes.flatMap(scene=>scene.sections.flatMap(section=>section.turns)));
+  assert.ok(turns.length > 350);
   assert.ok(turns.length >= 100);
   assert.ok(turns.every(turn=>turn.original.trim()&&turn.translation.trim()));
   assert.ok(createLibrettoRenderer(libretto).outline().includes("Libiam ne"));

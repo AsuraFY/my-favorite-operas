@@ -1,8 +1,10 @@
-// La traviata: Act I is available as an Italian/English working draft; Acts II and III are pending.
+// La traviata: All three acts are available as Italian/English working drafts. Editorial review pending.
 // The original Italian is public domain. English is independently AI-translated, pending editorial review.
 import { getOpera } from './operas.js';
 import { operaInformation } from './opera-information.js';
 import { traviataActOneScenes } from './libretto-la-traviata-act-1.js?v=traviata-act1-20261028';
+import { traviataActTwoScenes } from './libretto-la-traviata-act-2.js?v=traviata-all-acts-20261028';
+import { traviataActThreeScenes } from './libretto-la-traviata-act-3.js?v=traviata-all-acts-20261028';
 const info = operaInformation['la-traviata'];
 export const traviata = {
   slug: 'la-traviata',
@@ -21,7 +23,9 @@ export const traviata = {
   showReaderMusicalHeadings: false,
   stageDirectionSpeaker: 'Stage direction',
   stageDirectionLabel: 'Stage direction',
-  acts: [{number: 1, originalHeading: 'ATTO PRIMO', scenes: traviataActOneScenes}],
-  synopsis: {eyebrow: 'Giuseppe Verdi · Opera in three acts · Act I available · English translation unreviewed', paragraphs: info.synopsis, characters: info.characters},
-  source: 'Italian: https://opera-guide.ch/operas/la+traviata/libretto/it/ (Act I, original Italian). English: independent AI working translation, editorial review pending; Acts II and III not yet published.'
+  acts: [{number: 1, originalHeading: 'ATTO PRIMO', scenes: traviataActOneScenes},
+    {number: 2, originalHeading: 'ATTO SECONDO', scenes: traviataActTwoScenes},
+    {number: 3, originalHeading: 'ATTO TERZO', scenes: traviataActThreeScenes}],
+  synopsis: {eyebrow: 'Giuseppe Verdi · Opera in three acts · All three acts available · English translation unreviewed', paragraphs: info.synopsis, characters: info.characters},
+  source: 'Italian: original public-domain libretto at https://opera-guide.ch/operas/la+traviata/libretto/it/ (all three acts). English: independently authored AI working translation, editorial review pending. One passage in Act II scene XIV is truncated in the retrieved Opera Guide transcription; this is flagged in the text. Other source variants need proofing.'
 };
