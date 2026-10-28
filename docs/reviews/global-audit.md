@@ -67,6 +67,18 @@
 
 ## Dated update log
 
+### 2026-10-28 (UTC) — La traviata: three-act bilingual working draft
+
+**Branch:** `Update` only. **Source:** https://opera-guide.ch/operas/la+traviata/libretto/it/ (Italian, Francesco Maria Piave, public domain). The original-language HTML was fetched as supplied by Opera Guide; English was independently written as an AI working translation, **not copied from the site's English edition**.
+
+**Delivery:** Act I source data `a4002c6` and reader activation `6c6ecdb` (5 scenes, 102 original-English entries); Act II original and English draft `dcdff3a`, scene-XV adjustment `ad39178` (15 scenes, 231 entries); Act III source and English draft `456bb1a` (6 scenes, 87 entries); complete three-act reader activation `b9ff8ad`. Temporary source-capture test and interim English-dictionary modules were removed. Source stage directions are generally preserved inline, and some original Italian text includes source-level typographic irregularities.
+
+**TRAVIATA-01 — Needs review (source fidelity):** Opera Guide's retrieved Act II text appears to break off mid-speech at the transition from scene XIV to XV (Alfredo's public accusation, near `Ma è`). Rather than invent the missing Italian, the displayed working text flags the truncation. Reconcile against an authoritative public-domain score/libretto before claiming complete literal text.
+
+**TRAVIATA-02 — Needs review (translation/format):** English is an original, **unreviewed semantic draft**; many long singing passages are translated as continuous English prose rather than verse-by-verse paired lines. Review and expand the original-English alignment, particularly the major arias, ensembles, and stage directions. Scene/subsection headings include editorial navigation incipits; they are not claimed as source-authenticated track numbers.
+
+**Validation:** The La traviata three-act navigation test passed in GitHub Actions `Verify Update` run 40743021730. The **overall regression suite still fails** with unrelated stale tests (including old catalogue totals); the verified preview publication was skipped. GitHub Pages deployment reported success for commit `b9ff8ad`, but independent browser visual QA was not completed. No changes to `main` or approved guidelines.
+
 ### 2026-10-28 (UTC) — Aida Acts II–IV delivered as separate Update commits
 
 **Act II:** commit `7f0af69`; two source scenes, 116 grouped speaker passages plus separately represented instrumental/stage directions; nine editorial listening sections. **Act III:** commit `a176028`; Nile-bank sequence represented in one source scene, 104 grouped speaker passages and four editorial listening sections. **Act IV:** commit `840ae62`; two source scenes, 93 grouped speaker passages, including the trial and final tomb. Aida's bilingual bundle now registers all four acts, with English independently drafted for side-by-side reading. `main` and Drive guidelines unchanged.
