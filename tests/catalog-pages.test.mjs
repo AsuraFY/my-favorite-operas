@@ -64,7 +64,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
@@ -375,4 +375,15 @@ test("Aida exposes four bilingual acts with two Act I scenes", () => {
   const outline = createLibrettoRenderer(libretto).outline();
   assert.ok(outline.includes("Celeste Aida"));
   assert.ok(outline.includes("Ritorna vincitor"));
+});
+
+test("La traviata Act I preserves five source scenes with parallel English working translations", () => {
+  const libretto = getLibretto("la-traviata");
+  assert.ok(libretto);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1]);
+  assert.deepEqual(libretto.acts[0].scenes.map(scene => scene.number), [1,2,3,4,5]);
+  const turns = libretto.acts[0].scenes.flatMap(scene=>scene.sections.flatMap(section=>section.turns));
+  assert.ok(turns.length >= 100);
+  assert.ok(turns.every(turn=>turn.original.trim()&&turn.translation.trim()));
+  assert.ok(createLibrettoRenderer(libretto).outline().includes("Libiam ne"));
 });
