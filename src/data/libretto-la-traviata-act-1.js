@@ -869,8 +869,68 @@ export const traviataActOneScenes = [
           {
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
-            "original": "È strano! è strano! in core\nScolpiti ho quegli accenti!\nSarìa per me sventura un serio amore?\nChe risolvi, o turbata anima mia?\nNull'uomo ancora t'accendeva O gioia\nCh'io non conobbi, essere amata amando!\nE sdegnarla poss'io\nPer l'aride follie del viver mio?\nAh, fors'è lui che l'anima\nSolinga ne' tumulti\nGodea sovente pingere\nDe' suoi colori occulti!\nLui che modesto e vigile\nAll'egre soglie ascese,\nE nuova febbre accese,\nDestandomi all'amor.\nA quell'amor ch'è palpito\nDell'universo intero,\nMisterioso, altero,\nCroce e delizia al cor.\nA me fanciulla, un candido\nE trepido desire\nQuesti effigiò dolcissimo\nSignor dell'avvenire,\nQuando ne' cieli il raggio\nDi sua beltà vedea,\nE tutta me pascea\nDi quel divino error.\nSentìa che amore è palpito\nDell'universo intero,\nMisterioso, altero,\nCroce e delizia al cor!\n(Resta concentrata un istante, poi dice)\nFollie! follie delirio vano è questo!\nPovera donna, sola\nAbbandonata in questo\nPopoloso deserto\nChe appellano Parigi,\nChe spero or più?\nChe far degg'io!\nGioire,\nDi voluttà nei vortici perire.\nSempre libera degg'io\nFolleggiar di gioia in gioia,\nVo' che scorra il viver mio\nPei sentieri del piacer,\nNasca il giorno, o il giorno muoia,\nSempre lieta ne' ritrovi\nA diletti sempre nuovi\nDee volare il mio pensier.\n(Entra a sinistra)",
-            "translation": "How strange! His words are engraved upon my heart. Could serious love bring me misfortune? What should I decide, troubled soul? No man has ever moved me before. Oh, unknown joy: to be loved while loving! Could I reject it for the barren follies of my life? Perhaps he is the one my soul imagined amid the crowd, coloured by secret dreams; modest and attentive, he visited my sickbed and kindled a new fever: love. Love is the heartbeat of the universe, mysterious and proud, a cross and a delight to the heart. From childhood I dreamed of such a tender desire and of the one who would shape my future. (After a pause.) Folly! Empty delirium! Poor woman, alone in this crowded desert called Paris, what hope is left? I must enjoy myself and lose myself in the whirl of pleasure. Forever free I must fly from joy to joy. Let my life run along the paths of pleasure; whether day rises or sets, my thoughts must soar to ever-new delights.",
+            "original": "È strano! è strano! in core\nScolpiti ho quegli accenti!\nSarìa per me sventura un serio amore?\nChe risolvi, o turbata anima mia?\nNull'uomo ancora t'accendeva O gioia\nCh'io non conobbi, essere amata amando!\nE sdegnarla poss'io\nPer l'aride follie del viver mio?",
+            "translation": "How strange! How strange! Those words\nare engraved upon my heart!\nWould a serious love bring misfortune to me?\nWhat will you decide, my troubled soul?\nNo man has ever stirred your heart. Oh joy\nI never knew: to love and be loved!\nCould I reject such happiness\nfor the barren follies of my life?",
+            "literalText": true
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "Ah, fors'è lui",
+        "translatedTitle": "Ah, perhaps he is the one",
+        "participants": [
+          "Violetta"
+        ],
+        "turns": [
+          {
+            "speaker": "VIOLETTA",
+            "speakerTranslation": "Violetta",
+            "original": "Ah, fors'è lui che l'anima\nSolinga ne' tumulti\nGodea sovente pingere\nDe' suoi colori occulti!\nLui che modesto e vigile\nAll'egre soglie ascese,\nE nuova febbre accese,\nDestandomi all'amor.\nA quell'amor ch'è palpito\nDell'universo intero,\nMisterioso, altero,\nCroce e delizia al cor.\nA me fanciulla, un candido\nE trepido desire\nQuesti effigiò dolcissimo\nSignor dell'avvenire,\nQuando ne' cieli il raggio\nDi sua beltà vedea,\nE tutta me pascea\nDi quel divino error.\nSentìa che amore è palpito\nDell'universo intero,\nMisterioso, altero,\nCroce e delizia al cor!",
+            "translation": "Ah, perhaps he is the one my lonely soul\nso often painted secretly amid the crowd\nwith hidden colours and imagined dreams.\nModest and attentive, he came to my sickbed\nand kindled a new fever in my heart:\nhe awakened me to love.\nThat love is the pulse of the whole universe,\nmysterious, proud, both torment and delight.\nAs a young girl I imagined a tender desire,\na sweet lord of the years to come;\nI saw the rays of his beauty in the sky\nand fed my heart upon that radiant dream.\nI felt love as the heartbeat of the universe:\nmysterious, proud, torment and delight.",
+            "literalText": true
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "Follie! follie delirio vano è questo!",
+        "translatedTitle": "Folly! This is empty delirium!",
+        "participants": [
+          "Violetta"
+        ],
+        "turns": [
+          {
+            "speaker": "VIOLETTA",
+            "speakerTranslation": "Violetta",
+            "original": "(Resta concentrata un istante, poi dice)\nFollie! follie delirio vano è questo!\nPovera donna, sola\nAbbandonata in questo\nPopoloso deserto\nChe appellano Parigi,\nChe spero or più?\nChe far degg'io!\nGioire,\nDi voluttà nei vortici perire.",
+            "translation": "(She pauses, then speaks.)\nFolly! Folly! This is only empty delirium!\nA poor woman, alone and forsaken\nin the crowded desert called Paris—\nwhat hope can I still cherish?\nWhat should I do?\nEnjoy myself!\nLose myself in the whirl of pleasure.",
+            "literalText": true
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "Sempre libera degg'io",
+        "translatedTitle": "Forever free, I must remain",
+        "participants": [
+          "Violetta"
+        ],
+        "turns": [
+          {
+            "speaker": "VIOLETTA",
+            "speakerTranslation": "Violetta",
+            "original": "Sempre libera degg'io\nFolleggiar di gioia in gioia,\nVo' che scorra il viver mio\nPei sentieri del piacer,\nNasca il giorno, o il giorno muoia,\nSempre lieta ne' ritrovi\nA diletti sempre nuovi\nDee volare il mio pensier.\n(Entra a sinistra)",
+            "translation": "Forever free, I must\nfly from one pleasure to another.\nI want my life to follow\nthe paths of enjoyment.\nWhether a day is born or dies,\nalways joyful among companions,\nmy thoughts must speed toward\never-new delights. (She exits.)",
             "literalText": true
           }
         ]
