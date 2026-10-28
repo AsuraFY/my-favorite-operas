@@ -2,7 +2,7 @@
 
 > **The sole active audit register.** Record global website issues and per-opera issues here, with stable IDs, current statuses, evidence, and dated updates. All former standalone review documents are retained verbatim in [archive.md](archive.md); do not create more audit files.
 
-**Last updated:** 2026-10-27 (UTC)
+**Last updated:** 2026-10-28 (UTC)
 **Repository:** https://github.com/AsuraFY/my-favorite-operas  
 **Branch:** `Update` — do not modify `main` without explicit authorization.  
 **Current work priority:** Complete opera librettos; postpone heading corrections and the full browser audit until then.  
@@ -66,6 +66,15 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-28 (UTC) — Aida Act I bilingual reader (Update)
+
+**Scope:** Aida, Act I only. Source: https://opera-guide.ch/operas/aida/libretto/it/ (Italian text, original two scenes). Working English translation authored for side-by-side display and **not editorially verified**. Nine navigation/reading landmarks are editorial incipits, not claimed to be official numbered musical sections.
+
+**Implementation:** Added `src/data/libretto-aida-act-1-scene-1.js`, `src/data/libretto-aida-act-1-scene-2.js`, the Act I aggregator and bundle; registered Aida in lazy loader and offline test registry; refreshed boot cache; added Act I alignment test. Commits: `dc4f4ed`, `99ef05c`. Act I contains two scenes, 119 dialogue/stage-direction turns with nonempty original and English text. **Acts II–IV remain pending** and are not registered as available. Source transcriptions contain apparent typos and variants including "per to", "sver[t]urato", "Scaerdotesse" that require editorial comparison against an authoritative edition. No website guidelines were changed.
+
+**Status: Needs verification/editorial review.** Source was compared at passage level against the linked Opera Guide page, but independent proofing of every original word and the draft English has **not** been completed. Browser visual QA not performed. GitHub Actions `Verify Update` run 40737948247 failed: 16 existing/stale regression expectations across the repository (including an obsolete 31-opera count). The specific new Aida Act I test was not reported as failing, but the suite overall did not pass and preview publish was skipped. Follow up by updating unrelated stale tests separately, conducting visual checks, and reviewing Act I source fidelity and translation.
+
 
 ### 2026-10-27 — Catalogue expansion and La traviata source selection
 
