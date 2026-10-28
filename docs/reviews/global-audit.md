@@ -45,7 +45,7 @@
 
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
-| Rigoletto | RIG-V01 | **In progress** | Acts II–III not yet published. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
+| Rigoletto | RIG-V01 | **In progress** | Act III AI working draft published; Act II still pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
 | Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
 | Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
 | La fanciulla del West | AUD-02 | **Deferred** | Act I Introduzione has no supported English heading; verify Hello, Nick! and Hello, Minnie! title fallback handling. |
@@ -67,6 +67,11 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-28 (UTC) — Rigoletto Act III bilingual working draft
+
+**Update branch only.** Act III has been entered with four numbered musical sections (Nos. 11–14), 203 original/English paired passages including stage directions, the Duke's song, the quartet, the storm and Gilda's final encounter. English is an independent AI-generated working translation. **Status: Needs review.** A meticulous source-to-source collation and independent editorial review remain necessary, including source variants, exact verse breaks, and on-stage directions. The act data's structural and pairing checks are not proof of faithful complete textual coverage. Act II remains pending at this checkpoint.
+
 
 ### 2026-10-28 (UTC) — Rigoletto Acts II–III source structure verified; no new act published
 
