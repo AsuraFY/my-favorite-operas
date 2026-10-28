@@ -67,6 +67,15 @@
 
 ## Dated update log
 
+### 2026-10-28 (UTC) — Aida Acts II–IV delivered as separate Update commits
+
+**Act II:** commit `7f0af69`; two source scenes, 116 grouped speaker passages plus separately represented instrumental/stage directions; nine editorial listening sections. **Act III:** commit `a176028`; Nile-bank sequence represented in one source scene, 104 grouped speaker passages and four editorial listening sections. **Act IV:** commit `840ae62`; two source scenes, 93 grouped speaker passages, including the trial and final tomb. Aida's bilingual bundle now registers all four acts, with English independently drafted for side-by-side reading. `main` and Drive guidelines unchanged.
+
+**Source and verification:** Italian is based on the user-selected Opera Guide Aida libretto (https://opera-guide.ch/operas/aida/libretto/it/), with an independent publicly available Italian transcription used to assist segmentation. **English translations are unreviewed drafts.** Some source material contains spelling/formatting variants; speaker attribution and the original Italian need exhaustive comparison to Opera Guide. Short editorial headings/incipits are navigation aids rather than asserted official musical numbers. Do not treat the presence of all four acts as final literary review approval.
+
+**Outstanding:** Source-by-source Italian collation, English proofreading and verse line alignment checks, full desktop/mobile/night-mode visual browser QA, and successful complete `Verify Update` regression CI. Previous CI still had stale/independent tests; do not mark full QA as complete without passing evidence. **Status: Needs verification.**
+
+
 ### 2026-10-28 (UTC) — Aida Act I bilingual reader (Update)
 
 **Scope:** Aida, Act I only. Source: https://opera-guide.ch/operas/aida/libretto/it/ (Italian text, original two scenes). Working English translation authored for side-by-side display and **not editorially verified**. Nine navigation/reading landmarks are editorial incipits, not claimed to be official numbered musical sections.
