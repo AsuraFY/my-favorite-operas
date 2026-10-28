@@ -11,7 +11,7 @@ import { laBoheme } from "./libretto-la-boheme-bundle.js?v=on-demand-20261023";
 import { madamaButterfly } from "./libretto-madama-butterfly-bundle.js?v=on-demand-20261023";
 import { tosca } from "./libretto-tosca-bundle.js?v=tosca-anchor-audit-20261023";
 import { otello } from "./libretto-otello-bundle.js?v=otello-all-acts-20261026";
-import { aida } from "./libretto-aida-bundle.js?v=aida-act3-20261028";
+import { aida } from "./libretto-aida-bundle.js?v=aida-act4-20261028";
 import { samson } from "./libretto-samson-et-dalila-bundle.js?v=on-demand-20261023";
 
 import { laFanciullaDelWest } from "./libretto-la-fanciulla-del-west-bundle.js?v=fanciulla-all-acts-20261026";

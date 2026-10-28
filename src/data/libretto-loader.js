@@ -15,7 +15,7 @@ const loaders = Object.freeze({
   "otello": () => import("./libretto-otello-bundle.js?v=cosi-classic-20261027").then(module => module.otello),
   "parsifal": () => import("./libretto-parsifal-bundle.js?v=cosi-classic-20261027").then(module => module.parsifal),
   "don-giovanni": () => import("./libretto-don-giovanni-bundle.js?v=classic-sections-20261027").then(module => module.donGiovanni),
-  "aida": () => import("./libretto-aida-bundle.js?v=aida-act3-20261028").then(module => module.aida),
+  "aida": () => import("./libretto-aida-bundle.js?v=aida-act4-20261028").then(module => module.aida),
   "samson-et-dalila": () => import("./libretto-samson-et-dalila-bundle.js?v=on-demand-20261023").then(module => module.samson)
 });
 const pending = new Map();

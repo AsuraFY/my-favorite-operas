@@ -120,7 +120,7 @@ test("Tosca Acts I–III are available from its opera information page and direc
   const libretto = getLibretto("tosca");
   assert.ok(libretto);
   assert.equal(opera.acts, 3);
-  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3]);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3, 4]);
   const reader = createLibrettoRenderer(libretto);
   const navigation = reader.navigation();
   const html = renderOperaInformationPage(opera, operaInformation[opera.slug], { hasLibretto: true, navigation });
