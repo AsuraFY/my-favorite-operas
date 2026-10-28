@@ -45,6 +45,7 @@
 
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
+| Il trovatore | TRO-V01 | **In progress** | Part I Italian/English AI working translation entered from user-supplied Opera Guide MHT, five source scenes. Parts II–IV pending. Source-fidelity, verse pairing and independent browser visual QA need review. |
 | Rigoletto | RIG-V01 | **In progress** | Acts II and III now published as independent AI working drafts; require Italian source fidelity and complete English editorial review; independent browser checks pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
 | Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
 | Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
@@ -67,6 +68,11 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-28 (UTC) — Il trovatore Act I from uploaded original-source archive
+
+**Branch:** `Update` only. The user supplied a 2026 Opera Guide MHT with the original Italian libretto (https://opera-guide.ch/operas/il+trovatore/libretto/it/). All four parts were found in the archive, with source scene counts **5 / 5 / 6 / 4**. Act I (*Il duello*) was manually translated independently into English and structured as five original source scenes with 95 aligned speaker/stage-direction turns. The five scenes preserve all **276 extracted Italian printed source lines**, including stage directions and the final swordfight. **AI-generated English working translation awaiting editorial review.** Source divisions are used instead of invented official musical number labels; the outline uses source-based lyric incipits. Parts II–IV remain pending. Structural source coverage was checked locally against the saved source; a human literary and musical review and browser testing are still required.
+
 
 ### 2026-10-28 (UTC) — Rigoletto Act II bilingual working draft
 
