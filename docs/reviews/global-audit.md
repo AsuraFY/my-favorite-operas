@@ -45,7 +45,7 @@
 
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
-| Rigoletto | RIG-V01 | **In progress** | Act III AI working draft published; Act II still pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
+| Rigoletto | RIG-V01 | **In progress** | Acts II and III now published as independent AI working drafts; require Italian source fidelity and complete English editorial review; independent browser checks pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
 | Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
 | Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
 | La fanciulla del West | AUD-02 | **Deferred** | Act I Introduzione has no supported English heading; verify Hello, Nick! and Hello, Minnie! title fallback handling. |
@@ -67,6 +67,11 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-28 (UTC) — Rigoletto Act II bilingual working draft
+
+**Update branch only.** Act II has been entered with its three source musical divisions (Nos. 8–10), comprising 141 original/English paired entries. The complete dramatic trajectory is included: Duke's lament, the courtiers' account, Rigoletto's search and plea, Gilda's account, Monterone's departure and the vengeance duet. English is an independent AI-generated working translation, **not an edited literary translation**. **Needs review:** source spelling and verse fidelity, turn boundaries, source coverage, speaker and direction checking, and independent browser QA. Both Acts II and III remain subject to editorial verification. No unsupported scene subdivisions were inserted.
+
 
 ### 2026-10-28 (UTC) — Rigoletto Act III bilingual working draft
 
