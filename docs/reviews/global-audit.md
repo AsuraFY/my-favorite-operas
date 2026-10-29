@@ -45,6 +45,7 @@
 
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
+| Pagliacci | PAG-V01 | **Needs review** | Prologue and both acts have complete paired AI working text; Opera Guide collation, literary/editorial verification and independent browser checks are outstanding. |
 | Il trovatore | TRO-V01 | **In progress** | All four parts entered as Italian/English AI working translations from user-supplied Opera Guide MHT, five source scenes. All four parts available; detailed source-fidelity, editorial and browser review pending. Source-fidelity, verse pairing and independent browser visual QA need review. |
 | L'elisir d'amore | ELISIR-V01 | **In progress** | Both acts on Update, 10+9 source scenes, independently written Italian/English AI working translations. Italian from public-domain librettidopera.it transcription; comparison with user-preferred Opera Guide, English line/editorial QA and browser verification pending. |
 | Rigoletto | RIG-V01 | **In progress** | Acts II and III now published as independent AI working drafts; require Italian source fidelity and complete English editorial review; independent browser checks pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
@@ -69,6 +70,11 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-29 (UTC) — Pagliacci complete bilingual working draft
+
+**Update branch only.** Ruggero Leoncavallo's *Pagliacci* has a Prologue (31 Italian source lines), Act I (four scenes; 414 source lines), and Act II (two scenes; 344 source lines) from the public-domain librettidopera.it transcription by way of Sottovoce Q248644. All 789 source lines have independently written paired English working translation lines, including stage directions. The Prologue is displayed at the beginning of the Act I reader, preserving the existing two-act navigation; the original scene and act headings are retained. **AI-generated working translation awaiting editorial review.** Pending: independent source comparison with Opera Guide, complete editorial and speaker attribution audit, browser verification, and distinguishing baseline test failures from regressions. Commits: prologue + Act I `bf77f50`, Act II `0319329`.
+
 
 ### 2026-10-29 (UTC) — L'elisir targeted content regression added
 

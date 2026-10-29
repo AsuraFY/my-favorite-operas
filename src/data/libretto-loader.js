@@ -17,6 +17,7 @@ const loaders = Object.freeze({
   "don-giovanni": () => import("./libretto-don-giovanni-bundle.js?v=classic-sections-20261027").then(module => module.donGiovanni),
   "il-trovatore": () => import("./libretto-il-trovatore-bundle.js?v=trovatore-act1-20261028").then(module => module.trovatore),
   "lelisir-damore": () => import("./libretto-lelisir-damore-bundle.js?v=elisir-both-acts-20261029").then(module => module.elisir),
+  "pagliacci": () => import("./libretto-pagliacci-bundle.js?v=pagliacci-complete-20261029").then(module => module.pagliacci),
   "rigoletto": () => import("./libretto-rigoletto-bundle.js?v=rigoletto-act1-20261028").then(module => module.rigoletto),
   "la-traviata": () => import("./libretto-la-traviata-bundle.js?v=traviata-all-acts-20261028").then(module => module.traviata),
   "aida": () => import("./libretto-aida-bundle.js?v=aida-act4-20261028").then(module => module.aida),
