@@ -46,7 +46,7 @@
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
 | Il trovatore | TRO-V01 | **In progress** | All four parts entered as Italian/English AI working translations from user-supplied Opera Guide MHT, five source scenes. All four parts available; detailed source-fidelity, editorial and browser review pending. Source-fidelity, verse pairing and independent browser visual QA need review. |
-| L'elisir d'amore | ELISIR-V01 | **In progress** | Act I 10 source scenes, independent Italian/English AI working translation on Update; Act II pending. Italian from public-domain librettidopera.it transcription; comparison with user-preferred Opera Guide, English line/editorial QA and browser verification pending. |
+| L'elisir d'amore | ELISIR-V01 | **In progress** | Both acts on Update, 10+9 source scenes, independently written Italian/English AI working translations. Italian from public-domain librettidopera.it transcription; comparison with user-preferred Opera Guide, English line/editorial QA and browser verification pending. |
 | Rigoletto | RIG-V01 | **In progress** | Acts II and III now published as independent AI working drafts; require Italian source fidelity and complete English editorial review; independent browser checks pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
 | Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
 | Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
@@ -69,6 +69,11 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-29 (UTC) — L'elisir d'amore Act II working translation
+
+**Update only.** Act II has nine scenes and 259 independently drafted English/Italian paired entries, including the 'Una furtiva lagrima' aria, Adina's confession and final ensemble. All Act II passage pairs have equal original/English line counts after a structural review. Act I remains an unreviewed draft and has some non-matching English verse breaks. The original Italian uses the public-domain Romani transcription via librettidopera.it / Sottovoce; it has not been fully reconciled with Opera Guide. No English published translation has been copied. Full editorial QA and independent mobile/desktop browser review still needed.
+
 
 ### 2026-10-29 (UTC) — L'elisir d'amore Act I working translation
 
