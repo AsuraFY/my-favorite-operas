@@ -25,7 +25,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Foresta sacra de' druidi; in mezzo la quercia d'Irminsul, al piè della quale vedesi la pietra druidica che serve d'altare. Colli in distanza sparsi di selve.È notte; lontani fuochi trapelano dai boschi.\nAl suono di marcia religiosa difilano le schiere de' Galli, indi la processione de' Druidi.\nPer ultimo Oroveso coi maggiori Sacerdoti.",
-            "translation": "A sacred Druid forest, with the oak of Irminsul at its centre; the Druid stone used as an altar stands at its foot. Hills covered in woods rise in the distance. It is night, and distant fires gleam among the trees.",
+            "translation": "A sacred Druid forest, with the oak of Irminsul at its centre and an altar stone beneath it. Hills and woods in the distance. It is night; distant fires gleam among trees.\n(To a religious march, ranks of Gauls file past, followed by a procession of Druids.)\n(Oroveso follows last, accompanied by the chief priests.)",
             "literalText": true
           },
           {
@@ -272,7 +272,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Druidi dal fondo, Sacerdotesse, Guerrieri, Bardi, Eubagi,Sacrificatori, e in mezzo a tutti Oroveso.\ngenerale",
-            "translation": "Druids enter from the back, with priestesses, warriors, bards, religious attendants, sacrificers and Oroveso in their midst.",
+            "translation": "Druids enter from the back, with priestesses, warriors, bards, ritual attendants, sacrificers and Oroveso.\n(General entrance.)",
             "literalText": true
           },
           {
@@ -439,7 +439,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Adalgisa sola.\n(entra)",
-            "translation": "Adalgisa alone.",
+            "translation": "Adalgisa alone.\n(She enters.)",
             "literalText": true
           },
           {
@@ -489,7 +489,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Pollione, Flavio, e detta.\n(a Flavio)",
-            "translation": "Pollione and Flavio enter, joining Adalgisa.",
+            "translation": "Pollione and Flavio enter, joining Adalgisa.\n(To Flavio.)",
             "literalText": true
           },
           {
