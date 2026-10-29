@@ -1,5 +1,6 @@
 // Each complete opera has its own import graph; home and directory stay lean.
 const loaders = Object.freeze({
+  "die-walkure": () => import("./libretto-die-walkure-bundle.js?v=walkure-complete-20261029").then(module => module.dieWalkure),
   "manon": () => import("./libretto-manon-bundle.js?v=manon-complete-20261029").then(module => module.manon),
   "eugene-onegin": () => import("./libretto-eugene-onegin-bundle.js?v=onegin-english-20261029").then(module => module.eugeneOnegin),
   "les-contes-dhoffmann": () => import("./libretto-les-contes-dhoffmann-bundle.js?v=hoffmann-20261029").then(module => module.lesContesDHoffmann),
