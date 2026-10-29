@@ -71,6 +71,13 @@
 
 ## Dated update log
 
+### 2026-10-29 — La Cenerentola two-act bilingual working draft
+
+**Update branch only.** *La Cenerentola* by Gioachino Rossini, original Italian by Jacopo Ferretti, has two original-source acts represented in the bilingual reader. **Act I: 15 scenes and 880 Italian source-line records** (commit `37ea826`); **Act II: 10 scenes and 700 source-line records** (commit `dee436a`). All **1,580** sung and stage-direction source records were paired with an independently written English AI working translation, maintaining source line breaks within grouped speaker turns, and preserving scene headings and scene descriptions. Reader bundle, lazy loader and four dedicated source/reader tests were added separately.
+
+**Source:** Public-domain Italian transcription, https://www.librettidopera.it/cenere/cenere.html, from Sottovoce Q176700. Opera Guide also offers an Italian text at https://opera-guide.ch/operas/la+cenerentola+ossia+la+bonta+in+trionfo/libretto/it/ but its indexed divisions differ; an exhaustive source reconciliation is outstanding. **AI-generated English working translation awaiting editorial review**, not a certified translation. In the source Act II Scene IV the vocal lines lack speaker names; assigning Alidoro is provisional. Original Italian source was not corrected or silently rewritten. Literary accuracy, scene/speaker attribution, independent browser/mobile and Opera Guide checks remain pending. `main` is untouched.
+
+
 ### 2026-10-29 — Norma: two-act bilingual working draft
 
 **Update branch only.** The Italian public-domain *Norma* by Felice Romani was transcribed from [librettidopera.it](https://www.librettidopera.it/norma/norma.html) via Sottovoce Q320353, with Opera Guide ([Italian source](https://opera-guide.ch/operas/norma/libretto/it/)) as the preferred subsequent collation reference. Act I: **nine scenes, 502 source-line records**; Act II: **eleven scenes, 460 source-line records**. Each of the **962** Italian sung and stage-direction source-line records has an independently authored English working translation. Scene settings also have independent English descriptions. All 20 source scene headings preserved. Both acts are wired into the reusable reader with separate imports and on-demand loading. Act I original draft commit: `77ab825`; Act II: `a5be241`. Subsequent commits translated source scene settings and added loader and four specific tests.
