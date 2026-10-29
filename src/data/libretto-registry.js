@@ -26,7 +26,8 @@ import {hanselUndGretel} from "./libretto-hansel-und-gretel-bundle.js?v=hansel-c
 import {dieFledermaus} from "./libretto-die-fledermaus-bundle.js?v=fledermaus-complete-20261029";
 import { dasRheingold } from "./libretto-das-rheingold-bundle.js?v=rheingold-complete-20261029";
 import {siegfried} from "./libretto-siegfried-bundle.js?v=siegfried-complete-20261029";
-const completeLibretti = { [siegfried.slug]:siegfried, [dasRheingold.slug]:dasRheingold, [dieFledermaus.slug]:dieFledermaus, [hanselUndGretel.slug]: hanselUndGretel, [traviata.slug]: traviata, [aida.slug]: aida, [parsifal.slug]: parsifal, [donGiovanni.slug]: donGiovanni, [otello.slug]: otello, [laFanciullaDelWest.slug]: laFanciullaDelWest, [dieZauberflote.slug]: dieZauberflote, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca, [samson.slug]: samson };
+import {gotterdammerung} from "./libretto-gotterdammerung-bundle.js?v=gotterdammerung-20261029";
+const completeLibretti = { [gotterdammerung.slug]:gotterdammerung, [siegfried.slug]:siegfried, [dasRheingold.slug]:dasRheingold, [dieFledermaus.slug]:dieFledermaus, [hanselUndGretel.slug]: hanselUndGretel, [traviata.slug]: traviata, [aida.slug]: aida, [parsifal.slug]: parsifal, [donGiovanni.slug]: donGiovanni, [otello.slug]: otello, [laFanciullaDelWest.slug]: laFanciullaDelWest, [dieZauberflote.slug]: dieZauberflote, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca, [samson.slug]: samson };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
 }

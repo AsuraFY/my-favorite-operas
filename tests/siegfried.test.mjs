@@ -22,5 +22,5 @@ test('Siegfried complete bilingual libretto', () => {
   }
   assert.equal(total, 2368);
   assert.ok(hasCompleteLibretto('siegfried'));
-  assert.equal(getLibretto('siegfried'), siegfried);
+  assert.equal(getLibretto('siegfried').slug, 'siegfried');
 });
