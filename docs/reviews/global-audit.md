@@ -70,6 +70,11 @@
 
 ## Dated update log
 
+### 2026-10-29 (UTC) — L'elisir d'amore metadata and bundle refresh
+
+Corrected the librettist credit to Felice Romani in new source comments and refreshed the lazy-load bundle cache key after both acts were published. No change to original Italian lyric/direction text or English translation. Full Opera Guide collation, editorial review and independent visual/browser certification remain pending.
+
+
 ### 2026-10-29 (UTC) — L'elisir d'amore Act I verse-break alignment repair
 
 Act I draft has been adjusted so each original Italian line within its 209 bilingual turns has a corresponding English line, including the final scenes. No original Italian wording was changed in this alignment pass. Acts I and II still need careful independent comparison with Opera Guide and literary/editorial review; automated line-count equality does not prove semantic fidelity. The global website tests and browser visual review are not certified by this editorial adjustment.

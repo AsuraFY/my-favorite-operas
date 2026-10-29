@@ -1,4 +1,4 @@
-// L'elisir d'amore Act II: Italian transcription of public-domain Giovanni Romani libretto.
+// L'elisir d'amore Act II: Italian transcription of public-domain Felice Romani libretto.
 // English: independent AI-generated working translation awaiting editorial review.
 export const elisirActTwoScenes = [
   {
