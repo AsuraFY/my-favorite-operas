@@ -21,6 +21,7 @@ const loaders = Object.freeze({
   "lucia-di-lammermoor": () => import("./libretto-lucia-di-lammermoor-bundle.js?v=lucia-complete-20261029").then(module => module.luciaDiLammermoor),
   "norma": () => import("./libretto-norma-bundle.js?v=norma-two-acts-20261029").then(module => module.norma),
   "la-cenerentola": () => import("./libretto-la-cenerentola-bundle.js?v=cenerentola-complete-20261029").then(module => module.laCenerentola),
+  "die-fledermaus": () => import("./libretto-die-fledermaus-bundle.js?v=fledermaus-complete-20261029").then(module => module.dieFledermaus),
   "hansel-und-gretel": () => import("./libretto-hansel-und-gretel-bundle.js?v=hansel-complete-20261029").then(module => module.hanselUndGretel),
   "nabucco": () => import("./libretto-nabucco-bundle.js?v=nabucco-complete-20261029").then(module => module.nabucco),
   "rigoletto": () => import("./libretto-rigoletto-bundle.js?v=rigoletto-act1-20261028").then(module => module.rigoletto),

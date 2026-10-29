@@ -1,0 +1,3 @@
+# Die Fledermaus — bilingual working libretto
+
+The original 1874 German libretto by Carl Haffner and Richard Genée is transcribed from Opera Guide/Sottovoce Q464930. All 2,294 German records (772/903/619 by act) have line-corresponding machine-assisted English working translations, including dialogue and stage directions. Speaker turns are grouped and all source musical numbers retained. The three acts are registered in the on-demand reader on `Update`. These translations have **not** been independently edited for accuracy, idiom, rhyme, or singability, and must not be described as a finished performance translation. Historical German source drafts are retained for audit. `main` is untouched.

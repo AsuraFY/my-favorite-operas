@@ -29,7 +29,7 @@ test('Opening English working translation has exact German source anchors',()=>{
   assert.ok(row.translation.trim());
  }
 });
-test('Die Fledermaus is staged, not falsely advertised as a complete bilingual reader',()=>{
- assert.equal(hasCompleteLibretto('die-fledermaus'),false);
+test('The staged original remains accessible alongside the complete working bilingual edition',()=>{
+ assert.equal(hasCompleteLibretto('die-fledermaus'),true);
  assert.match(acts[0].workingStatus,/translation pending/);
 });
