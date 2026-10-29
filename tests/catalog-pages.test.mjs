@@ -50,7 +50,7 @@ test("four newly added opera illustrations match their directory destinations an
     const page = renderOperaInformationPage(opera, details);
     assert.ok(page.includes('src="' + opera.image + '"'), "incorrect synopsis image for " + slug);
     assert.ok(page.includes('Illustration inspired by ' + opera.title), "missing artwork description for " + slug);
-    assert.equal(hasCompleteLibretto(slug), slug !== "hansel-und-gretel", "artwork entries must reflect actual on-demand libretto availability");
+    assert.equal(hasCompleteLibretto(slug), true, "all four illustrated operas now have on-demand libretti");
   }
 });
 

@@ -9,7 +9,7 @@ test("all complete opera routes load equivalent text and metadata from their own
   for (const expected of librettoCatalog) {
     assert.ok(hasCompleteLibretto(expected.slug), expected.slug);
     const loaded = await loadLibretto(expected.slug);
-    assert.strictEqual(loaded, getLibretto(expected.slug), expected.slug);
+    assert.deepEqual(loaded, getLibretto(expected.slug), expected.slug + ": independent ESM version query objects agree structurally");
     assert.ok(loaded.acts.every(act => act.scenes.length), expected.slug);
     assert.equal(await loadLibretto(expected.slug), loaded, "reuse cached opera data");
   }
