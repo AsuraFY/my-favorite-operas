@@ -19,6 +19,7 @@ const loaders = Object.freeze({
   "lelisir-damore": () => import("./libretto-lelisir-damore-bundle.js?v=elisir-both-acts-20261029").then(module => module.elisir),
   "pagliacci": () => import("./libretto-pagliacci-bundle.js?v=pagliacci-complete-20261029").then(module => module.pagliacci),
   "lucia-di-lammermoor": () => import("./libretto-lucia-di-lammermoor-bundle.js?v=lucia-complete-20261029").then(module => module.luciaDiLammermoor),
+  "norma": () => import("./libretto-norma-bundle.js?v=norma-two-acts-20261029").then(module => module.norma),
   "rigoletto": () => import("./libretto-rigoletto-bundle.js?v=rigoletto-act1-20261028").then(module => module.rigoletto),
   "la-traviata": () => import("./libretto-la-traviata-bundle.js?v=traviata-all-acts-20261028").then(module => module.traviata),
   "aida": () => import("./libretto-aida-bundle.js?v=aida-act4-20261028").then(module => module.aida),
