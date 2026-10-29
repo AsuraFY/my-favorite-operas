@@ -982,7 +982,7 @@ export const elisirActOneScenes = [
             "speaker": "ADINA",
             "speakerTranslation": "Adina",
             "original": "(Chi è quel matto?\nTraveggo? o è Nemorino?\nCosì allegro! e perché?)",
-            "translation": "(Who is that madman? Am I imagining things, or is it Nemorino? Why is he so cheerful?)",
+            "translation": "(Who is that madman?\nAm I imagining things, or is it Nemorino?\nWhy is he so cheerful?)",
             "literalText": true
           },
           {
@@ -1003,7 +1003,7 @@ export const elisirActOneScenes = [
             "speaker": "NEMORINO",
             "speakerTranslation": "Nemorino",
             "original": "Ma no... non ci appressiam. De' miei sospiri\nnon si stanchi per or. Tant'è... domani\nadorar mi dovrà quel cor spietato.)",
-            "translation": "(No, I must not approach her. Let her not grow tired of my sighs yet. Tomorrow her pitiless heart will have to adore me.)",
+            "translation": "(No, let us not approach her. Let her not\nTire of my sighs just yet. Tomorrow\nHer pitiless heart must adore me.)",
             "literalText": true
           },
           {
@@ -1024,7 +1024,7 @@ export const elisirActOneScenes = [
             "speaker": "ADINA",
             "speakerTranslation": "Adina",
             "original": "(Non so se è finta o vera\nla sua giocondità.)",
-            "translation": "(I cannot tell whether his merriment is genuine or feigned.)",
+            "translation": "(I cannot tell whether his merriment\nIs genuine or feigned.)",
             "literalText": true
           },
           {
@@ -1045,7 +1045,7 @@ export const elisirActOneScenes = [
             "speaker": "NEMORINO",
             "speakerTranslation": "Nemorino",
             "original": "(Esulti pur la barbara\nper poco alle mie pene!\ndomani avranno termine,\ndomani mi amerà.)",
-            "translation": "(Let the cruel girl rejoice in my sufferings a little longer!\nTomorrow they will end, tomorrow she will love me.)",
+            "translation": "(Let that cruel girl rejoice\nA little longer in my pain!\nTomorrow it shall end,\nTomorrow she shall love me.)",
             "literalText": true
           },
           {
@@ -1059,7 +1059,7 @@ export const elisirActOneScenes = [
             "speaker": "ADINA",
             "speakerTranslation": "Adina",
             "original": "(Spezzar vorria lo stolido,\ngettar le sue catene;\nma gravi più del solito\npesar le sentirà.)",
-            "translation": "(The fool would like to break free and cast off his chains,\nBut he will find them heavier than ever.)",
+            "translation": "(The fool wants to break\nAnd throw off his chains;\nBut he will feel them weigh\nMore heavily than ever.)",
             "literalText": true
           },
           {
@@ -1080,14 +1080,14 @@ export const elisirActOneScenes = [
             "speaker": "ADINA",
             "speakerTranslation": "Adina",
             "original": "Bravissimo!\nLa lezïon ti giova.",
-            "translation": "Bravo! This lesson is doing you good.",
+            "translation": "Bravo!\nThe lesson is doing you good.",
             "literalText": true
           },
           {
             "speaker": "NEMORINO",
             "speakerTranslation": "Nemorino",
             "original": "È ver: la metto in opera\ncosì per una prova.",
-            "translation": "Indeed; I am putting it into practice as a trial.",
+            "translation": "Indeed; I am putting it to use\nJust as a trial.",
             "literalText": true
           },
           {
@@ -1115,21 +1115,21 @@ export const elisirActOneScenes = [
             "speaker": "NEMORINO",
             "speakerTranslation": "Nemorino",
             "original": "Si estinguerà fra poco.\nAncora un giorno solo,\ne il core guarirà.",
-            "translation": "It will die out shortly.\nJust one more day and my heart will be cured.",
+            "translation": "It will die out shortly.\nJust one more day,\nAnd my heart shall be cured.",
             "literalText": true
           },
           {
             "speaker": "ADINA",
             "speakerTranslation": "Adina",
             "original": "Davver? Me ne consolo...\nMa pure... si vedrà.",
-            "translation": "Really? I'm pleased for you... But we shall see.",
+            "translation": "Really? I'm glad for you.\nYet we shall see.",
             "literalText": true
           },
           {
             "speaker": "NEMORINO",
             "speakerTranslation": "Nemorino",
             "original": "(Esulti pur la barbara\nper poco alle mie pene!\ndomani avranno termine,\ndomani mi amerà.)",
-            "translation": "(Let the cruel girl rejoice in my sufferings a little longer!\nTomorrow they will end; tomorrow she will love me.)",
+            "translation": "(Let that cruel girl rejoice\nA little longer in my pain!\nTomorrow it shall end,\nTomorrow she shall love me.)",
             "literalText": true
           },
           {
@@ -1143,7 +1143,7 @@ export const elisirActOneScenes = [
             "speaker": "ADINA",
             "speakerTranslation": "Adina",
             "original": "(Spezzar vorria lo stolido,\ngettar le sue catene;\nma gravi più del solito\npesar le sentirà.)",
-            "translation": "(The fool would like to break free and cast off his chains,\nBut he will find them heavier than ever.)",
+            "translation": "(The fool wants to break\nAnd throw off his chains;\nBut he will feel them weigh\nMore heavily than ever.)",
             "literalText": true
           }
         ]
@@ -1173,7 +1173,7 @@ export const elisirActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Belcore di dentro, indi in iscena e detti.\n(cantando)",
-            "translation": "Belcore sings offstage, then enters, joining the others. (Singing.)",
+            "translation": "Belcore sings offstage, then enters, joining the others.\n(Singing.)",
             "literalText": true
           },
           {
@@ -1327,7 +1327,7 @@ export const elisirActOneScenes = [
             "speaker": "BELCORE",
             "speakerTranslation": "Belcore",
             "original": "(Che cosa trova a ridere\ncotesto scimunito?\nOr or lo piglio a scoppole\nse non va via di qua.)",
-            "translation": "(What does this simpleton find so funny?\nI shall soon give him a thrashing\nIf he doesn't leave.)",
+            "translation": "(What makes that simpleton laugh?\nWhat does he find so amusing?\nI'll soon give him a thrashing\nUnless he goes away.)",
             "literalText": true
           },
           {
@@ -1684,14 +1684,14 @@ export const elisirActOneScenes = [
             "speaker": "NEMORINO",
             "speakerTranslation": "Nemorino",
             "original": "Mi sprezza il sergente ~ mi burla l'ingrata,\nzimbello alla gente ~ mi fa la spietata.\nL'oppresso mio core ~ più speme non ha.\nDottore! Dottore!\nSoccorso! Pietà.",
-            "translation": "The sergeant despises me; the ungrateful girl mocks me.\nThe pitiless one makes me everyone's laughingstock.\nMy oppressed heart has no more hope.\nDoctor, doctor! Help! Have mercy!",
+            "translation": "The sergeant despises me; that ungrateful girl mocks me,\nThat pitiless woman makes me a laughingstock.\nMy oppressed heart has lost all hope.\nDoctor! Doctor!\nHelp! Have mercy!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Adina dà la mano a Belcore e si avvia con esso.\nRaddoppiano le smanie di Nemorino; gli Astanti lo dileggiano.",
-            "translation": "Adina takes Belcore's hand and goes away with him. Nemorino grows still more frantic while the onlookers mock him.",
+            "translation": "Adina takes Belcore's hand and leaves with him.\nNemorino grows more frantic, while the bystanders mock him.",
             "literalText": true
           }
         ]

@@ -70,6 +70,11 @@
 
 ## Dated update log
 
+### 2026-10-29 (UTC) — L'elisir d'amore Act I verse-break alignment repair
+
+Act I draft has been adjusted so each original Italian line within its 209 bilingual turns has a corresponding English line, including the final scenes. No original Italian wording was changed in this alignment pass. Acts I and II still need careful independent comparison with Opera Guide and literary/editorial review; automated line-count equality does not prove semantic fidelity. The global website tests and browser visual review are not certified by this editorial adjustment.
+
+
 ### 2026-10-29 (UTC) — L'elisir d'amore Act II working translation
 
 **Update only.** Act II has nine scenes and 259 independently drafted English/Italian paired entries, including the 'Una furtiva lagrima' aria, Adina's confession and final ensemble. All Act II passage pairs have equal original/English line counts after a structural review. Act I remains an unreviewed draft and has some non-matching English verse breaks. The original Italian uses the public-domain Romani transcription via librettidopera.it / Sottovoce; it has not been fully reconciled with Opera Guide. No English published translation has been copied. Full editorial QA and independent mobile/desktop browser review still needed.
