@@ -22,7 +22,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Interno dell'abitazione di Norma.Da una parte un letto romano coperto di pelle d'orso.I figli di Norma sono addormentati.\n(Norma con una lampa e un pugnale alla mano.\nSiede e posa la lampa sopra una tavola. È pallida, contraffatta, ecc.)",
-            "translation": "Interno dell'abitazione di Norma.Da una parte un letto romano coperto di pelle d'orso.I figli di Norma sono addormentati.\n(Norma enters with a lamp and dagger.)\n(She sits and puts the lamp on a table, pale and distressed.)",
+            "translation": "Inside Norma's dwelling. A Roman bed covered with bearskin stands to one side. Norma's children are asleep.",
             "literalText": true
           },
           {
@@ -142,7 +142,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Clotilde, e detta.\n(entra Clotilde)",
-            "translation": "Clotilde, e detta.\n(Clotilde enters.)",
+            "translation": "Clotilde enters and joins Norma.",
             "literalText": true
           },
           {
@@ -208,7 +208,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Adalgisa e Norma.\n(con timore)",
-            "translation": "Adalgisa e Norma.\n(Fearfully.)",
+            "translation": "Adalgisa joins Norma.",
             "literalText": true
           },
           {
@@ -454,7 +454,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Luogo solitario presso il bosco dei Druidi cinto da burroni e da caverne.In fondo un lago attraversato da un ponte di pietra.Guerrieri galli.\nIº",
-            "translation": "Luogo solitario presso il bosco dei Druidi cinto da burroni e da caverne.In fondo un lago attraversato da un ponte di pietra.Guerrieri galli.\n(First group.)",
+            "translation": "A lonely place by the Druids' wood, surrounded by ravines and caves, with a lake crossed by a stone bridge in the distance. Gallic warriors gather.",
             "literalText": true
           },
           {
@@ -511,7 +511,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Oroveso e detti.",
-            "translation": "Oroveso e detti.",
+            "translation": "Oroveso enters and joins the others.",
             "literalText": true
           },
           {
@@ -618,7 +618,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Tempio d'Irminsul. Ara da un lato.Norma, indi Clotilde.",
-            "translation": "Tempio d'Irminsul. Ara da un lato.Norma, indi Clotilde.",
+            "translation": "The temple of Irminsul, with an altar to one side. Norma is present; Clotilde enters later.",
             "literalText": true
           },
           {
@@ -760,7 +760,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Accorrono da varie parti Oroveso, i Druidi, i Bardi e le Ministre.A poco a poco il tempio si riempie d'Armati.Norma si colloca sull'altare.",
-            "translation": "Accorrono da varie parti Oroveso, i Druidi, i Bardi e le Ministre.A poco a poco il tempio si riempie d'Armati.Norma si colloca sull'altare.",
+            "translation": "Oroveso, the Druids, the bards and the priestesses rush in from different directions. Armed men gradually fill the temple. Norma takes her place at the altar.",
             "literalText": true
           },
           {
@@ -846,7 +846,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Clotilde, frettolosa, e detti.",
-            "translation": "Clotilde, frettolosa, e detti.",
+            "translation": "Clotilde rushes in, joining the others.",
             "literalText": true
           },
           {
@@ -914,7 +914,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Pollione fra Soldati, e detti.",
-            "translation": "Pollione fra Soldati, e detti.",
+            "translation": "Pollione enters among armed Gauls, joining the others.",
             "literalText": true
           },
           {
@@ -1098,7 +1098,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Norma e Pollione.",
-            "translation": "Norma e Pollione.",
+            "translation": "Norma and Pollione.",
             "literalText": true
           },
           {
@@ -1335,7 +1335,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Ritornano Oroveso, i Druidi, i Bardi e i Guerrieri.",
-            "translation": "Ritornano Oroveso, i Druidi, i Bardi e i Guerrieri.",
+            "translation": "Oroveso, the Druids, bards and warriors return.",
             "literalText": true
           },
           {
