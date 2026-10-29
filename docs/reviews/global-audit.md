@@ -46,6 +46,7 @@
 | Opera | ID | Current status | Observation / next step |
 |---|---|---|---|
 | Il trovatore | TRO-V01 | **In progress** | All four parts entered as Italian/English AI working translations from user-supplied Opera Guide MHT, five source scenes. All four parts available; detailed source-fidelity, editorial and browser review pending. Source-fidelity, verse pairing and independent browser visual QA need review. |
+| L'elisir d'amore | ELISIR-V01 | **In progress** | Act I 10 source scenes, independent Italian/English AI working translation on Update; Act II pending. Italian from public-domain librettidopera.it transcription; comparison with user-preferred Opera Guide, English line/editorial QA and browser verification pending. |
 | Rigoletto | RIG-V01 | **In progress** | Acts II and III now published as independent AI working drafts; require Italian source fidelity and complete English editorial review; independent browser checks pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
 | Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
 | Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
@@ -68,6 +69,11 @@
 **Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
 
 ## Dated update log
+
+### 2026-10-29 (UTC) — L'elisir d'amore Act I working translation
+
+**Update only.** Act I comprises ten original scenes with 209 separately paired Italian/English passage entries. The Italian is based on the public-domain Romani libretto as transcribed by librettidopera.it, through the Sottovoce structured transcription; comparison against the preferred Opera Guide edition was not possible in this environment. English is an independently composed AI working translation, awaiting complete editorial review and source/verse-break collation. Act II remains pending. No independent visual/browser QA or complete repository test run has yet been certified for this commit.
+
 
 ### 2026-10-28 (UTC) — Il trovatore final integrity verification
 
