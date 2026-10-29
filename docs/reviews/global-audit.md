@@ -71,6 +71,13 @@
 
 ## Dated update log
 
+### 2026-10-29 — Norma: two-act bilingual working draft
+
+**Update branch only.** The Italian public-domain *Norma* by Felice Romani was transcribed from [librettidopera.it](https://www.librettidopera.it/norma/norma.html) via Sottovoce Q320353, with Opera Guide ([Italian source](https://opera-guide.ch/operas/norma/libretto/it/)) as the preferred subsequent collation reference. Act I: **nine scenes, 502 source-line records**; Act II: **eleven scenes, 460 source-line records**. Each of the **962** Italian sung and stage-direction source-line records has an independently authored English working translation. Scene settings also have independent English descriptions. All 20 source scene headings preserved. Both acts are wired into the reusable reader with separate imports and on-demand loading. Act I original draft commit: `77ab825`; Act II: `a5be241`. Subsequent commits translated source scene settings and added loader and four specific tests.
+
+**Review pending, not certified:** AI-generated English working translation awaiting full editorial review. Literal source record line counts and paired English breaks were validated on construction, but Italian wording has not been exhaustively collated against Opera Guide, and English wording, dramaturgical speaker assignments, and editorial accuracy require review. In the source transcription Act I Scene V has vocal lines without speaker names; they were provisionally assigned to Adalgisa on dramatic context. Some bare 'Insieme' ensemble markers are retained as transcription artefacts pending review. Real-browser/mobile visual verification is outstanding. No changes to `main`.
+
+
 ### 2026-10-29 — Lucia di Lammermoor bilingual draft
 
 The **Update** branch now has all three reading acts of *Lucia di Lammermoor*: Act I / source "La partenza" (5 real scenes, plus the source's part-heading marker), Act II / "Il contratto nuziale - I" (6 real scenes, plus the part-heading marker), and Act III / "Il contratto nuziale - II" (9 real scenes). The corresponding Italian transcription from [librettidopera.it](https://www.librettidopera.it/lucialam/lucialam.html), via [Sottovoce Q244209](https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q244209.json), comprises **911 source line records**, with paired independently authored English AI working translation records. Source headings and the full text of stage directions are included in the reader. Three-site-act navigation preserves the first-part / second-part subdivision in the act headings. Committed separately: Act I `6302da5`, Act II `d9bacb8`, Act III `2860277`; the bundle and lazy loader are registered in following commits.
