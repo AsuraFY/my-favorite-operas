@@ -71,6 +71,11 @@
 
 ## Dated update log
 
+### 2026-10-29 (UTC) — Pagliacci deployment and test verification
+
+**Final verified HEAD:** `ce31f2e` on `Update`. GitHub Actions run [40848805087](https://github.com/AsuraFY/my-favorite-operas/actions/runs/40848805087): **213 tests, 197 passed, 16 failed**; the 16 failing test names match the pre-Pagliacci baseline at `373402d` (four previously added L'elisir tests also passed). GitHub Pages run [40848804548](https://github.com/AsuraFY/my-favorite-operas/actions/runs/40848804548) succeeded. The separate workflow's gated verified preview was skipped because baseline tests fail; the browser-visual-smoke step in that workflow did not run. Verify in an actual browser before calling presentation QA complete. Source accuracy warning: the librettidopera.it/Sottovoce transcription labels the final `La commedia è finita!` turn as `LA FOLLA`; do not silently change it without score/source collation. Source stage-description spacing and punctuation may be imperfect in the structured transcription. No main branch changes.
+
+
 ### 2026-10-29 (UTC) — Pagliacci complete bilingual working draft
 
 **Update branch only.** Ruggero Leoncavallo's *Pagliacci* has a Prologue (31 Italian source lines), Act I (four scenes; 414 source lines), and Act II (two scenes; 344 source lines) from the public-domain librettidopera.it transcription by way of Sottovoce Q248644. All 789 source lines have independently written paired English working translation lines, including stage directions. The Prologue is displayed at the beginning of the Act I reader, preserving the existing two-act navigation; the original scene and act headings are retained. **AI-generated working translation awaiting editorial review.** Pending: independent source comparison with Opera Guide, complete editorial and speaker attribution audit, browser verification, and distinguishing baseline test failures from regressions. Commits: prologue + Act I `bf77f50`, Act II `0319329`.
