@@ -70,6 +70,11 @@
 
 ## Dated update log
 
+### 2026-10-29 (UTC) — L'elisir targeted content regression added
+
+Added tests for both source scene counts (10 and 9), 468 Italian/English speaking and stage-direction entries, equal line counts, distinctive text anchors, final passage and the lazy-loaded two-act reader. Passing structural checks do not certify complete literary or musical fidelity; Opera Guide collation and browser visual QA remain pending. Historical 16 unrelated global test failures require separate remediation.
+
+
 ### 2026-10-29 (UTC) — L'elisir d'amore metadata and bundle refresh
 
 Corrected the librettist credit to Felice Romani in new source comments and refreshed the lazy-load bundle cache key after both acts were published. No change to original Italian lyric/direction text or English translation. Full Opera Guide collation, editorial review and independent visual/browser certification remain pending.
