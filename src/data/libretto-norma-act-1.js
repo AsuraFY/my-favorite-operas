@@ -25,7 +25,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Foresta sacra de' druidi; in mezzo la quercia d'Irminsul, al piè della quale vedesi la pietra druidica che serve d'altare. Colli in distanza sparsi di selve.È notte; lontani fuochi trapelano dai boschi.\nAl suono di marcia religiosa difilano le schiere de' Galli, indi la processione de' Druidi.\nPer ultimo Oroveso coi maggiori Sacerdoti.",
-            "translation": "Foresta sacra de' druidi; in mezzo la quercia d'Irminsul, al piè della quale vedesi la pietra druidica che serve d'altare. Colli in distanza sparsi di selve.È notte; lontani fuochi trapelano dai boschi.\n(To a religious march, ranks of Gauls file past, followed by a procession of Druids.)\n(Last comes Oroveso with the chief priests.)",
+            "translation": "A sacred Druid forest, with the oak of Irminsul at its centre; the Druid stone used as an altar stands at its foot. Hills covered in woods rise in the distance. It is night, and distant fires gleam among the trees.",
             "literalText": true
           },
           {
@@ -104,7 +104,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Pollione e Flavio.",
-            "translation": "Pollione e Flavio.",
+            "translation": "Pollione and Flavio.",
             "literalText": true
           },
           {
@@ -272,7 +272,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Druidi dal fondo, Sacerdotesse, Guerrieri, Bardi, Eubagi,Sacrificatori, e in mezzo a tutti Oroveso.\ngenerale",
-            "translation": "Druidi dal fondo, Sacerdotesse, Guerrieri, Bardi, Eubagi,Sacrificatori, e in mezzo a tutti Oroveso.\n(General entrance.)",
+            "translation": "Druids enter from the back, with priestesses, warriors, bards, religious attendants, sacrificers and Oroveso in their midst.",
             "literalText": true
           },
           {
@@ -313,7 +313,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Norma in mezzo alle sue Ministre. Ha sciolti i capelli, la fronte circondata di una corona di verbena, ed armata la mano d'una falce d'oro.Si colloca sulla pietra druidica, e volge gli occhi d'intorno come ispirata.Tutti fanno silenzio.",
-            "translation": "Norma in mezzo alle sue Ministre. Ha sciolti i capelli, la fronte circondata di una corona di verbena, ed armata la mano d'una falce d'oro.Si colloca sulla pietra druidica, e volge gli occhi d'intorno come ispirata.Tutti fanno silenzio.",
+            "translation": "Norma stands amid her priestesses, with her hair loose, a crown of vervain on her brow and a golden sickle in her hand. She mounts the Druid stone and looks around as if inspired. Everyone falls silent.",
             "literalText": true
           },
           {
@@ -439,7 +439,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Adalgisa sola.\n(entra)",
-            "translation": "Adalgisa sola.\n(She enters.)",
+            "translation": "Adalgisa alone.",
             "literalText": true
           },
           {
@@ -489,7 +489,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Pollione, Flavio, e detta.\n(a Flavio)",
-            "translation": "Pollione, Flavio, e detta.\n(To Flavio.)",
+            "translation": "Pollione and Flavio enter, joining Adalgisa.",
             "literalText": true
           },
           {
@@ -784,7 +784,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Abitazione di Norma.Norma, Clotilde: recano per mano due piccoli Fanciulli.",
-            "translation": "Abitazione di Norma.Norma, Clotilde: recano per mano due piccoli Fanciulli.",
+            "translation": "Norma's home. Norma and Clotilde lead two little children by the hand.",
             "literalText": true
           },
           {
@@ -897,7 +897,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Entra Adalgisa.",
-            "translation": "Entra Adalgisa.",
+            "translation": "Adalgisa enters.",
             "literalText": true
           },
           {
@@ -1095,7 +1095,7 @@ export const normaActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Pollione, e dette.",
-            "translation": "Pollione, e dette.",
+            "translation": "Pollione enters, joining the women.",
             "literalText": true
           },
           {
