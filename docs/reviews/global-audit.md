@@ -71,6 +71,13 @@
 
 ## Dated update log
 
+### 2026-10-29 — Lucia di Lammermoor bilingual draft
+
+The **Update** branch now has all three reading acts of *Lucia di Lammermoor*: Act I / source "La partenza" (5 real scenes, plus the source's part-heading marker), Act II / "Il contratto nuziale - I" (6 real scenes, plus the part-heading marker), and Act III / "Il contratto nuziale - II" (9 real scenes). The corresponding Italian transcription from [librettidopera.it](https://www.librettidopera.it/lucialam/lucialam.html), via [Sottovoce Q244209](https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q244209.json), comprises **911 source line records**, with paired independently authored English AI working translation records. Source headings and the full text of stage directions are included in the reader. Three-site-act navigation preserves the first-part / second-part subdivision in the act headings. Committed separately: Act I `6302da5`, Act II `d9bacb8`, Act III `2860277`; the bundle and lazy loader are registered in following commits.
+
+**Review status — not certified:** AI-generated English working translation awaiting editorial review. Source line-count and source record pairing were verified during construction; a professional line-by-line source comparison with Opera Guide, translation accuracy and literary review, speaker and stage-direction checking, and independent responsive browser testing are pending. This opera should not be represented as an editorially reviewed libretto until those steps are complete. Pre-existing CI failures are recorded separately below and must not be confused with new regressions.
+
+
 ### 2026-10-29 (UTC) — Pagliacci deployment and test verification
 
 **Final verified HEAD:** `ce31f2e` on `Update`. GitHub Actions run [40848805087](https://github.com/AsuraFY/my-favorite-operas/actions/runs/40848805087): **213 tests, 197 passed, 16 failed**; the 16 failing test names match the pre-Pagliacci baseline at `373402d` (four previously added L'elisir tests also passed). GitHub Pages run [40848804548](https://github.com/AsuraFY/my-favorite-operas/actions/runs/40848804548) succeeded. The separate workflow's gated verified preview was skipped because baseline tests fail; the browser-visual-smoke step in that workflow did not run. Verify in an actual browser before calling presentation QA complete. Source accuracy warning: the librettidopera.it/Sottovoce transcription labels the final `La commedia è finita!` turn as `LA FOLLA`; do not silently change it without score/source collation. Source stage-description spacing and punctuation may be imperfect in the structured transcription. No main branch changes.
