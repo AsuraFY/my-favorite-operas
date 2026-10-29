@@ -14,9 +14,10 @@ for (const [a, scenes] of acts.entries()) {
   const sceneNames = scenes.map(s=>s.originalHeading);
   assert.equal(new Set(sceneNames).size, scenes.length);
   for(const scene of scenes) {
-   assert.equal(scene.sections.length, 1);
-   assert.ok(scene.sections[0].turns.length >= 2);
-   for (const turn of scene.sections[0].turns) {
+   assert.ok(scene.sections.length >= 1);
+   assert.ok(scene.sections.every(section => section.turns.length > 0));
+   assert.ok(scene.sections.reduce((sum, section) => sum + section.turns.length, 0) >= 2);
+   for (const turn of scene.sections.flatMap(section => section.turns)) {
     assert.ok(turn.original.trim(), "empty Italian");
     assert.ok(turn.translation.trim(), "empty English");
     assert.equal(turn.original.split("\\n").length,turn.translation.split("\\n").length,"unaligned verse");
@@ -24,10 +25,14 @@ for (const [a, scenes] of acts.entries()) {
    const seen=new Set();
    for(const entry of scene.outline) {
     assert.ok(entry.title&&entry.translation&&entry.match);
-    const i=scene.sections[0].turns.findIndex((turn,n)=> (entry.sourceTurn==null||n===entry.sourceTurn) && (!entry.speaker||turn.speaker===entry.speaker) && turn.original.includes(entry.match));
+    const sectionIndex = entry.sourceSection ?? 0;
+    const section = scene.sections[sectionIndex];
+    assert.ok(section, "missing outline source section " + entry.title);
+    const i=section.turns.findIndex((turn,n)=> (entry.sourceTurn==null||n===entry.sourceTurn) && (!entry.speaker||turn.speaker===entry.speaker) && turn.original.includes(entry.match));
     assert.ok(i>=0,"broken outline target "+entry.title);
-    assert.ok(!seen.has(i),"duplicate outline target");
-    seen.add(i);
+    const target = sectionIndex + ":" + i;
+    assert.ok(!seen.has(target),"duplicate outline target");
+    seen.add(target);
     assert.ok(entry.characters.length,"missing characters in outline");
    }
   }

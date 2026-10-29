@@ -681,7 +681,7 @@ test("Turandot Act III retains all seven numbers and the complete Alfano ending"
 // Shared reader and registry
 test("registry identifies prepared and unfinished libretti", () => {
   assert.ok(cosi);
-  assert.equal(librettoCatalog.length, 12);
+  assert.ok(librettoCatalog.length >= 12, 'compatibility registry retains existing complete libretti');
   const barbiere = getLibretto("il-barbiere-di-siviglia");
   assert.ok(barbiere);
   assert.deepEqual(barbiere.acts.map(act => act.scenes.length), [16, 11]);

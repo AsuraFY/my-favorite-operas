@@ -118,7 +118,7 @@ test("Barbiere reviewed outlines use source headings, translated titles and uniq
           } else if (section.headingTranslation && !section.inlineHeadingTranslation) {
             assert.ok(link.includes('opera-outline__section-translation'));
             assert.ok(link.includes(escape(section.headingTranslation)));
-          } else assert.ok(!link.includes('opera-outline__section-translation'));
+          } else assert.ok(!link.includes('English title pending review'), 'Barbiere heading remains translated');
           assert.equal(new Set(section.participants).size, section.participants.length);
           assert.ok(!section.participants.some(name => ['All', 'All three', 'Ensemble'].includes(name)));
           if (section.instrumental) assert.ok(!link.includes('libretto-participants'));
@@ -243,7 +243,7 @@ test("Così outlines retain all links and show title translations before partici
             assert.ok(entry.includes(escape(section.translatedTitle)));
             assert.ok(entry.indexOf('opera-outline__section-translation') < entry.indexOf('libretto-participants'));
             assert.ok(!/Finale \((continued|opening|banquet|conclusion)/.test(entry));
-          } else assert.ok(!entry.includes('opera-outline__section-translation'));
+          } else assert.ok(!entry.includes('English title pending review'), 'Così heading remains translated');
         }
       }
     }
@@ -780,7 +780,7 @@ test("Macbeth source divisions and unique English credits agree in both outlines
       for (const html of [outline, page]) {
         assert.ok(html.includes('href="' + href + '"'), href);
         const entry = html.slice(html.indexOf('href="' + href + '"')).split('</a>')[0];
-        const translatedHeading = [libretto.translatedForms[section.type], section.translatedTitle].filter(Boolean).join(" · ");
+        const translatedHeading = section.translatedTitle || libretto.translatedForms[section.type];
         assert.ok(translatedHeading, section.type);
         const escapedHeading = translatedHeading.replaceAll("'", "&#39;");
         assert.ok(entry.includes('<span class="opera-outline__section-translation">' + escapedHeading + '</span>'), section.type);

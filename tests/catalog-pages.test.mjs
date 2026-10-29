@@ -6,6 +6,7 @@ import { operaInformation } from "../src/data/opera-information.js";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/opera-info-page.js";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "../src/opera-breadcrumb.js";
 import { getLibretto } from "../src/data/libretto-registry.js";
+import { hasCompleteLibretto } from "../src/data/libretto-loader.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { renderMusicalPage, renderMusicalsPage } from "../src/musicals-page.js";
 import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
@@ -49,7 +50,7 @@ test("four newly added opera illustrations match their directory destinations an
     const page = renderOperaInformationPage(opera, details);
     assert.ok(page.includes('src="' + opera.image + '"'), "incorrect synopsis image for " + slug);
     assert.ok(page.includes('Illustration inspired by ' + opera.title), "missing artwork description for " + slug);
-    assert.equal(getLibretto(slug), null, "new opera should not claim a completed libretto");
+    assert.equal(hasCompleteLibretto(slug), slug !== "hansel-und-gretel", "artwork entries must reflect actual on-demand libretto availability");
   }
 });
 
@@ -64,7 +65,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"].filter(slug => !hasCompleteLibretto(slug))) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");

@@ -1670,7 +1670,6 @@ button { font: inherit; }
   .opera-outline__act { margin-bottom: 32px; }
   .opera-outline__scene { margin-bottom: 17px; padding-bottom: 15px; }
   .opera-outline__section.section-nav-link { padding: 9px 6px; font-size: 0.9375rem; white-space: normal; }
-  .opera-outline__section .libretto-participants { font-size: 0.75rem; }
 }
 
 /* Single bilingual scene heading, followed immediately by brief context. */

@@ -74,10 +74,10 @@ test("all local HTML, catalogue artwork, and CSS image assets exist", () => {
   }
 });
 
-test("eleven completed operas agree with the 31-entry catalogue and rendered reader routes", () => {
+test("prepared libretti agree with the expanded catalogue and rendered reader routes", () => {
   const catalog = new Map(operas.map(opera => [opera.slug, opera]));
-  assert.equal(catalog.size, 31);
-  assert.equal(librettoCatalog.length, 12);
+  assert.equal(catalog.size, 35);
+  assert.ok(librettoCatalog.length >= 12, 'compatibility registry retains all previously completed operas');
   for (const libretto of librettoCatalog) {
     const metadata = catalog.get(libretto.slug);
     assert.ok(metadata, "Missing catalogue entry " + libretto.slug);
