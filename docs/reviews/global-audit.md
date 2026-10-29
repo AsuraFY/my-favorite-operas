@@ -71,6 +71,13 @@
 
 ## Dated update log
 
+### 2026-10-29 — Nabucco: complete four-part bilingual working draft
+
+**Update branch only.** Added *Nabucco* (Giuseppe Verdi / Temistocle Solera) from the public-domain Italian libretto at [librettidopera.it](https://www.librettidopera.it/nabucco/nabucco.html), structured via [Sottovoce Q202230](https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q202230.json). Original source has four named parts: **Gerusalemme**, **L'empio**, **La profezia**, **L'idolo infranto**. The parts contain respectively **7, 8, 5, 5** actual named scenes and **230, 186, 170, 141** original source line records (the first lines in each part include tableau/stage headings), totalling **25 named scenes and 727 source line records**. Every line record of sung text and directions is paired with an independently authored English working translation. Separate commits: Act I `e51db7b`, Act II `426de92`, Act III `86589b6`, Act IV `caaf88e`. Registered on-demand through `src/data/libretto-nabucco-bundle.js` and `src/data/libretto-loader.js`; four focused Node tests added.
+
+**Status: AI-generated working translations awaiting editorial review.** Source record counts and Italian/English line pairing were checked during construction; full Italian text collation with [Opera Guide](https://opera-guide.ch/operas/nabucco/libretto/it/), exact English editorial accuracy, speaker/staging review and real browser/mobile QA remain outstanding. Original transcription uses 'Assiria' where the narrative concerns Babylonians; original wording preserved rather than silently corrected. The separate verified-preview pipeline may remain gated by pre-existing regression-suite failures. No changes to `main`.
+
+
 ### 2026-10-29 — La Cenerentola two-act bilingual working draft
 
 **Update branch only.** *La Cenerentola* by Gioachino Rossini, original Italian by Jacopo Ferretti, has two original-source acts represented in the bilingual reader. **Act I: 15 scenes and 880 Italian source-line records** (commit `37ea826`); **Act II: 10 scenes and 700 source-line records** (commit `dee436a`). All **1,580** sung and stage-direction source records were paired with an independently written English AI working translation, maintaining source line breaks within grouped speaker turns, and preserving scene headings and scene descriptions. Reader bundle, lazy loader and four dedicated source/reader tests were added separately.
