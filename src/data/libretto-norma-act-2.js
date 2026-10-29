@@ -22,7 +22,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Interno dell'abitazione di Norma.Da una parte un letto romano coperto di pelle d'orso.I figli di Norma sono addormentati.\n(Norma con una lampa e un pugnale alla mano.\nSiede e posa la lampa sopra una tavola. È pallida, contraffatta, ecc.)",
-            "translation": "Inside Norma's dwelling. A Roman bed covered with bearskin stands to one side. Norma's children are asleep.",
+            "translation": "Inside Norma's home: a Roman bed covered with bearskin, where her children sleep.\n(Norma enters holding a lamp and a dagger.)\n(She sits and places the lamp on the table. Her face is pale and troubled.)",
             "literalText": true
           },
           {
@@ -142,7 +142,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Clotilde, e detta.\n(entra Clotilde)",
-            "translation": "Clotilde enters and joins Norma.",
+            "translation": "Clotilde enters and joins Norma.\n(Clotilde enters.)",
             "literalText": true
           },
           {
@@ -208,7 +208,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Adalgisa e Norma.\n(con timore)",
-            "translation": "Adalgisa joins Norma.",
+            "translation": "Adalgisa joins Norma.\n(Fearfully.)",
             "literalText": true
           },
           {
@@ -454,7 +454,7 @@ export const normaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Luogo solitario presso il bosco dei Druidi cinto da burroni e da caverne.In fondo un lago attraversato da un ponte di pietra.Guerrieri galli.\nIº",
-            "translation": "A lonely place by the Druids' wood, surrounded by ravines and caves, with a lake crossed by a stone bridge in the distance. Gallic warriors gather.",
+            "translation": "A lonely place beside the Druid forest, surrounded by ravines and caves, with a lake crossed by a stone bridge. Gallic warriors stand nearby.\n(First warrior.)",
             "literalText": true
           },
           {
