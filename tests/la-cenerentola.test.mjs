@@ -22,7 +22,7 @@ test('La Cenerentola opening, palace reversals, and forgiveness finale remain in
  const a=allTurns(acts[0]).map(t=>t.original).join('\n');
  const b=allTurns(acts[1]).map(t=>t.original).join('\n');
  assert.match(a,/Una volta c'era un re/);
- assert.match(a,/Ma una serva/);
+ assert.match(b,/Ma una serva/);
  assert.match(b,/Questo è un nodo avviluppato/);
  assert.match(b,/Nacqui all'affanno, al pianto/);
  assert.match(allTurns(acts[1]).at(-1).original,/incomincia a giubilar/);
