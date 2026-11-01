@@ -1,5 +1,5 @@
 // This opera's metadata and act modules load only when its page is visited.
-import { getOpera } from "./operas.js?v=tosca-act1-2";
+import { getOpera } from "../../catalog.js?v=tosca-act1-2";
 import { madamaButterflyActOneScenes } from "./act-1.js?v=madama-butterfly-review-20261020-1";
 import { madamaButterflyActTwoScenes } from "./act-2.js?v=madama-butterfly-review-20261020-2";
 import { madamaButterflyActThreeScenes } from "./act-3.js?v=madama-butterfly-review-20261020-3";
