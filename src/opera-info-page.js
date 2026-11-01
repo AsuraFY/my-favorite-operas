@@ -1,6 +1,6 @@
 /* Shared opera introduction page, independent of libretto availability. */
-import { fanciullaActOneListeningOutline } from "./data/outline-la-fanciulla-del-west-act-1.js?v=20261026";
-import { fanciullaActOneBilingualExcerpts } from "./data/libretto-la-fanciulla-del-west-act-1-excerpts.js?v=20261026";
+import { fanciullaActOneListeningOutline } from "./data/operas/librettos/la-fanciulla-del-west/outline-act-1.js?v=20261026";
+import { fanciullaActOneBilingualExcerpts } from "./data/operas/drafts/la-fanciulla-del-west-act-1-excerpts.js?v=20261026";
 const escape = (value = "") => String(value).replace(/[&<>"']/g, character =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 

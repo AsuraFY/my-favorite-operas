@@ -1,6 +1,6 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { applyFigaroOutlineMetadata } from "./outline-metadata.js?v=figaro-outlines-20261021";
-import { getOpera } from "./operas.js?v=tosca-act1-2";
+import { getOpera } from "../../catalog.js?v=tosca-act1-2";
 import { figaroActOneScenes } from "./act-1.js?v=figaro-stage-cues-20261023";
 import { figaroActTwoScenes } from "./act-2.js?v=figaro-act2-review-1";
 import { figaroActThreeScenes } from "./act-3.js?v=figaro-act3-review-1";

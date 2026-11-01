@@ -1,6 +1,6 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { applyCosiOutlineMetadata } from "./outline-metadata.js";
-import { getOpera } from "./operas.js?v=tosca-act1-2";
+import { getOpera } from "../../catalog.js?v=tosca-act1-2";
 import { cosiActOneScenes } from "./act-1.js?v=cosi-lines-1";
 import { cosiActTwoScenes } from "./act-2.js?v=cosi-lines-1";
 

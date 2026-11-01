@@ -1,5 +1,5 @@
-import { beethovenSources, beethovenVocalBlocks } from "./data/musical-beethoven-ode-to-joy.js";
-import { mahlerFinaleEvents, mahlerFinaleSources, mahlerFinaleTranslations } from "./data/musical-mahler-symphony-2.js";
+import { beethovenSources, beethovenVocalBlocks } from "./data/musicals/beethoven-ode-to-joy.js";
+import { mahlerFinaleEvents, mahlerFinaleSources, mahlerFinaleTranslations } from "./data/musicals/mahler-symphony-2.js";
 
 const musicalWorks = [
   {
