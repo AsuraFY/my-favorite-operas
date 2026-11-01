@@ -1,9 +1,9 @@
 // La fanciulla del West: complete three acts from the supplied PDF; English drafts await editorial review.
-import { getOpera } from "./operas.js";
-import { operaInformation } from "./opera-information.js";
-import { fanciullaActOneScenes } from "./libretto-la-fanciulla-del-west-act-1.js?v=fanciulla-act1-complete-20261026";
-import { fanciullaActTwoScenes } from "./libretto-la-fanciulla-del-west-act-2.js?v=fanciulla-acts23-20261026";
-import { fanciullaActThreeScenes } from "./libretto-la-fanciulla-del-west-act-3.js?v=fanciulla-acts23-20261026";
+import { getOpera } from "../../catalog.js";
+import { operaInformation } from "../../information.js";
+import { fanciullaActOneScenes } from "./act-1.js?v=fanciulla-act1-complete-20261026";
+import { fanciullaActTwoScenes } from "./act-2.js?v=fanciulla-acts23-20261026";
+import { fanciullaActThreeScenes } from "./act-3.js?v=fanciulla-acts23-20261026";
 const info = operaInformation["la-fanciulla-del-west"];
 export const laFanciullaDelWest = {
   slug: "la-fanciulla-del-west",

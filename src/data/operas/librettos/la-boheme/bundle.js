@@ -1,9 +1,9 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { laBohemeActOneScenes } from "./libretto-la-boheme-act-1.js?v=boheme-review-1";
-import { laBohemeActTwoScenes } from "./libretto-la-boheme-act-2.js?v=boheme-review-1";
-import { laBohemeActThreeScenes } from "./libretto-la-boheme-act-3.js?v=boheme-review-1";
-import { laBohemeActFourScenes } from "./libretto-la-boheme-act-4.js?v=boheme-review-1";
+import { laBohemeActOneScenes } from "./act-1.js?v=boheme-review-1";
+import { laBohemeActTwoScenes } from "./act-2.js?v=boheme-review-1";
+import { laBohemeActThreeScenes } from "./act-3.js?v=boheme-review-1";
+import { laBohemeActFourScenes } from "./act-4.js?v=boheme-review-1";
 
 export const laBoheme = {
   slug: "la-boheme",

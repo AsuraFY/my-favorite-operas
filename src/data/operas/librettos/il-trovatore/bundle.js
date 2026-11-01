@@ -1,12 +1,12 @@
 // Il trovatore: four-part opera, All four acts transcribed and translated.
 // Italian from Opera Guide user-supplied MHT; English independently AI-generated working
 // translation awaiting editorial review. All four acts supplied as AI working translations, pending editorial review.
-import { getOpera } from './operas.js';
-import { operaInformation } from './opera-information.js';
-import { trovatoreActOneScenes } from './libretto-il-trovatore-act-1.js?v=trovatore-act1-20261028';
-import { trovatoreActTwoScenes } from './libretto-il-trovatore-act-2.js?v=trovatore-act2-20261028';
-import { trovatoreActThreeScenes } from './libretto-il-trovatore-act-3.js?v=trovatore-act3-20261028';
-import { trovatoreActFourScenes } from './libretto-il-trovatore-act-4.js?v=trovatore-act4-20261028';
+import { getOpera } from '../../catalog.js';
+import { operaInformation } from '../../information.js';
+import { trovatoreActOneScenes } from './act-1.js?v=trovatore-act1-20261028';
+import { trovatoreActTwoScenes } from './act-2.js?v=trovatore-act2-20261028';
+import { trovatoreActThreeScenes } from './act-3.js?v=trovatore-act3-20261028';
+import { trovatoreActFourScenes } from './act-4.js?v=trovatore-act4-20261028';
 const info = operaInformation['il-trovatore'];
 export const trovatore = {
   slug: 'il-trovatore',
