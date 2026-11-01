@@ -1,7 +1,7 @@
 // Die Zauberflöte: both original German acts; English drafts await review.
-import { getOpera } from "./operas.js";
-import { dieZauberfloteActOneScenes } from "./libretto-die-zauberflote-act-1.js";
-import { dieZauberfloteActTwoScenes } from "./libretto-die-zauberflote-act-2.js";
+import { getOpera } from "../../catalog.js";
+import { dieZauberfloteActOneScenes } from "./act-1.js";
+import { dieZauberfloteActTwoScenes } from "./act-2.js";
 export const dieZauberflote = {
   slug: "the-magic-flute",
   opera: getOpera("the-magic-flute"),

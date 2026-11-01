@@ -1,8 +1,8 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { turandotActOneScenes } from "./libretto-turandot-act-1.js?v=turandot-titles-1";
-import { turandotActTwoScenes } from "./libretto-turandot-act-2.js?v=turandot-titles-1";
-import { turandotActThreeScenes } from "./libretto-turandot-act-3.js?v=turandot-titles-1";
+import { turandotActOneScenes } from "./act-1.js?v=turandot-titles-1";
+import { turandotActTwoScenes } from "./act-2.js?v=turandot-titles-1";
+import { turandotActThreeScenes } from "./act-3.js?v=turandot-titles-1";
 
 export const turandot = {
   alignVerseLines: true,
