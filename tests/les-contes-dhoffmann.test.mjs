@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {lesContesDHoffmann as hoffmann} from '../src/data/libretto-les-contes-dhoffmann-bundle.js';
-import {getLibretto} from '../src/data/libretto-registry.js';
-import {hasCompleteLibretto} from '../src/data/libretto-loader.js';
+import {lesContesDHoffmann as hoffmann} from '../src/data/operas/librettos/les-contes-dhoffmann/bundle.js';
+import {getLibretto} from '../src/data/operas/libretto-registry.js';
+import {hasCompleteLibretto} from '../src/data/operas/libretto-loader.js';
 test('Les Contes d’Hoffmann retains all five source parts in four reader divisions',()=>{
  assert.deepEqual(hoffmann.acts.map(a=>a.number),[1,2,3,4]);
  assert.deepEqual(hoffmann.acts.map(a=>a.scenes.length),[4,12,6,15]);

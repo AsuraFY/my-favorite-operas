@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getLibretto } from "../src/data/libretto-registry.js";
+import { getLibretto } from "../src/data/operas/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 const opera=getLibretto("la-boheme");
 const expected=[{turns:465,stage:177,lines:468,outline:8},{turns:204,stage:15,lines:399,outline:5},{turns:144,stage:30,lines:253,outline:5},{turns:244,stage:88,lines:301,outline:8}];

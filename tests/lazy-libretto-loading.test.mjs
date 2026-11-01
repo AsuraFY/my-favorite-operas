@@ -1,8 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { getLibretto, librettoCatalog } from "../src/data/libretto-registry.js";
-import { hasCompleteLibretto, loadLibretto } from "../src/data/libretto-loader.js";
+import { getLibretto, librettoCatalog } from "../src/data/operas/libretto-registry.js";
+import { hasCompleteLibretto, loadLibretto } from "../src/data/operas/libretto-loader.js";
 
 test("all complete opera routes load equivalent text and metadata from their own modules", async () => {
   assert.ok(librettoCatalog.length >= 12, 'compatibility registry preserves original libretti');
@@ -20,7 +20,7 @@ test("all complete opera routes load equivalent text and metadata from their own
 test("the browser entry point does not statically load every complete opera", () => {
   const read = path => readFileSync(new URL(path, import.meta.url), "utf8");
   const main = read("../src/main.js");
-  const loader = read("../src/data/libretto-loader.js");
+  const loader = read("../src/data/operas/libretto-loader.js");
   assert.ok(main.includes('import { hasCompleteLibretto, loadLibretto }'));
   assert.ok(!main.includes('from "./data/libretto-registry.js'), "main must not import the eager compatibility registry");
   assert.ok(main.includes("await loadLibretto(opera.slug)"));

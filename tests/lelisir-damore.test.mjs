@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { elisirActOneScenes } from '../src/data/libretto-lelisir-damore-act-1.js';
-import { elisirActTwoScenes } from '../src/data/libretto-lelisir-damore-act-2.js';
-import { elisir } from '../src/data/libretto-lelisir-damore-bundle.js';
-import { hasCompleteLibretto, loadLibretto } from '../src/data/libretto-loader.js';
+import { elisirActOneScenes } from '../src/data/operas/librettos/lelisir-damore/act-1.js';
+import { elisirActTwoScenes } from '../src/data/operas/librettos/lelisir-damore/act-2.js';
+import { elisir } from '../src/data/operas/librettos/lelisir-damore/bundle.js';
+import { hasCompleteLibretto, loadLibretto } from '../src/data/operas/libretto-loader.js';
 
 const acts = [elisirActOneScenes, elisirActTwoScenes];
 const sourceCounts = [10, 9];

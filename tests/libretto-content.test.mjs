@@ -1,6 +1,6 @@
 import test, { beforeEach } from "node:test";
 import assert from "node:assert/strict";
-import { getLibretto, librettoCatalog } from "../src/data/libretto-registry.js";
+import { getLibretto, librettoCatalog } from "../src/data/operas/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { count, resetReaderLocation } from "./helpers/libretto-helpers.mjs";
 

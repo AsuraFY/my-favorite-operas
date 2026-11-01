@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {cenerentolaActOneScenes} from '../src/data/libretto-la-cenerentola-act-1.js';
-import {cenerentolaActTwoScenes} from '../src/data/libretto-la-cenerentola-act-2.js';
-import {laCenerentola} from '../src/data/libretto-la-cenerentola-bundle.js';
-import {hasCompleteLibretto,loadLibretto} from '../src/data/libretto-loader.js';
+import {cenerentolaActOneScenes} from '../src/data/operas/librettos/la-cenerentola/act-1.js';
+import {cenerentolaActTwoScenes} from '../src/data/operas/librettos/la-cenerentola/act-2.js';
+import {laCenerentola} from '../src/data/operas/librettos/la-cenerentola/bundle.js';
+import {hasCompleteLibretto,loadLibretto} from '../src/data/operas/libretto-loader.js';
 const acts=[cenerentolaActOneScenes,cenerentolaActTwoScenes];
 const allTurns=scenes=>scenes.flatMap(s=>s.sections.flatMap(x=>x.turns));
 test('La Cenerentola includes fifteen scenes in Act I and ten in Act II',()=>{

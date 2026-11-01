@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {hanselActOneScenes} from '../src/data/libretto-hansel-und-gretel-act-1.js';
-import {hanselActTwoScenes} from '../src/data/libretto-hansel-und-gretel-act-2.js';
-import {hanselActThreeScenes} from '../src/data/libretto-hansel-und-gretel-act-3.js';
-import {hanselUndGretel} from '../src/data/libretto-hansel-und-gretel-bundle.js';
-import {hasCompleteLibretto,loadLibretto} from '../src/data/libretto-loader.js';
+import {hanselActOneScenes} from '../src/data/operas/librettos/hansel-und-gretel/act-1.js';
+import {hanselActTwoScenes} from '../src/data/operas/librettos/hansel-und-gretel/act-2.js';
+import {hanselActThreeScenes} from '../src/data/operas/librettos/hansel-und-gretel/act-3.js';
+import {hanselUndGretel} from '../src/data/operas/librettos/hansel-und-gretel/bundle.js';
+import {hasCompleteLibretto,loadLibretto} from '../src/data/operas/libretto-loader.js';
 const groups=[hanselActOneScenes,hanselActTwoScenes,hanselActThreeScenes];
 test('Hänsel und Gretel has all three pictures, and all eleven 1905 source scenes',()=>{
  assert.deepEqual(groups.map(a=>a.length),[3,3,5]);

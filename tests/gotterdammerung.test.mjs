@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {gotterdammerung} from '../src/data/libretto-gotterdammerung-bundle.js';
-import {getLibretto} from '../src/data/libretto-registry.js';
-import {hasCompleteLibretto} from '../src/data/libretto-loader.js';
+import {gotterdammerung} from '../src/data/operas/librettos/gotterdammerung/bundle.js';
+import {getLibretto} from '../src/data/operas/libretto-registry.js';
+import {hasCompleteLibretto} from '../src/data/operas/libretto-loader.js';
 test('Götterdämmerung preserves prologue, three acts and 1921 paired records',()=>{
  assert.deepEqual(gotterdammerung.acts.map(a=>a.number),[1,2,3]);
  assert.deepEqual(gotterdammerung.acts.map(a=>a.scenes.length),[5,5,3]);
