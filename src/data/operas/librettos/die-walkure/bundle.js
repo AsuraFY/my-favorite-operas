@@ -1,9 +1,9 @@
 // Die Walküre: all three acts, original German and independent machine-generated English working translation.
-import {getOpera} from './operas.js';
-import {operaInformation} from './opera-information.js';
-import {walkureActOneScenes} from './libretto-die-walkure-act-1.js?v=walkure-complete-20261029';
-import {walkureActTwoScenes} from './libretto-die-walkure-act-2.js?v=walkure-complete-20261029';
-import {walkureActThreeScenes} from './libretto-die-walkure-act-3.js?v=walkure-complete-20261029';
+import {getOpera} from '../../catalog.js';
+import {operaInformation} from '../../information.js';
+import {walkureActOneScenes} from './act-1.js?v=walkure-complete-20261029';
+import {walkureActTwoScenes} from './act-2.js?v=walkure-complete-20261029';
+import {walkureActThreeScenes} from './act-3.js?v=walkure-complete-20261029';
 const info=operaInformation['die-walkure'];
 export const dieWalkure={
  slug:'die-walkure',opera:getOpera('die-walkure'),

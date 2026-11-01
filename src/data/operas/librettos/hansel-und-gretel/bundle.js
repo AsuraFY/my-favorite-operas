@@ -1,10 +1,10 @@
 // Hänsel und Gretel — the original German text with its public-domain 1905 English performing adaptation.
 // Source: F. Rullman 1905, transcribed as Project Gutenberg #43289; source lines and historical English do not share exact verse lineation.
-import {getOpera} from './operas.js';
-import {operaInformation} from './opera-information.js';
-import {hanselActOneScenes} from './libretto-hansel-und-gretel-act-1.js?v=hansel-1905-20261029';
-import {hanselActTwoScenes} from './libretto-hansel-und-gretel-act-2.js?v=hansel-1905-20261029';
-import {hanselActThreeScenes} from './libretto-hansel-und-gretel-act-3.js?v=hansel-1905-20261029';
+import {getOpera} from '../../catalog.js';
+import {operaInformation} from '../../information.js';
+import {hanselActOneScenes} from './act-1.js?v=hansel-1905-20261029';
+import {hanselActTwoScenes} from './act-2.js?v=hansel-1905-20261029';
+import {hanselActThreeScenes} from './act-3.js?v=hansel-1905-20261029';
 const info=operaInformation['hansel-und-gretel'];
 export const hanselUndGretel={
  slug:'hansel-und-gretel',opera:getOpera('hansel-und-gretel'),

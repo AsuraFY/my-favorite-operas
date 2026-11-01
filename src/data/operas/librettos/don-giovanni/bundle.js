@@ -1,8 +1,8 @@
 // Bilingual reader draft: all passages translated, source and editorial review pending.
-import { donGiovanniActOneScenes } from "./libretto-don-giovanni-act-1.js?v=don-giovanni-classic-sections-20261027";
-import { donGiovanniActTwoScenes } from "./libretto-don-giovanni-act-2.js?v=don-giovanni-classic-sections-20261027";
-import { getOpera } from "./operas.js";
-import { operaInformation } from "./opera-information.js";
+import { donGiovanniActOneScenes } from "./act-1.js?v=don-giovanni-classic-sections-20261027";
+import { donGiovanniActTwoScenes } from "./act-2.js?v=don-giovanni-classic-sections-20261027";
+import { getOpera } from "../../catalog.js";
+import { operaInformation } from "../../information.js";
 const info = operaInformation["don-giovanni"];
 export const donGiovanni = {
   slug: "don-giovanni", opera: getOpera("don-giovanni"),
