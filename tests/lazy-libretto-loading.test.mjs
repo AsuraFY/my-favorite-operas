@@ -29,6 +29,6 @@ test("the browser entry point does not statically load every complete opera", ()
   assert.ok((loader.match(/: \(\) => import\(/g) || []).length >= librettoCatalog.length, "on-demand loader covers compatibility libretti");
   assert.ok(!/^import\s/m.test(loader), "loader must have no static imports");
   for (const name of ["cosi-fan-tutte", "le-nozze-di-figaro", "samson-et-dalila", "nabucco"]) {
-    assert.ok(loader.includes('./libretto-' + name + '-bundle.js'), name);
+    assert.ok(loader.includes('./librettos/' + name + '/bundle.js'), name);
   }
 });
