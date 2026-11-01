@@ -65,7 +65,7 @@ function chromeExecutable() {
 const slugs = [
   "cosi-fan-tutte", "il-barbiere-di-siviglia", "tristan-und-isolde",
   "macbeth", "turandot", "le-nozze-di-figaro", "carmen", "la-boheme",
-  "madama-butterfly", "tosca", "samson-et-dalila"
+  "madama-butterfly", "tosca", "samson-et-dalila", "the-magic-flute"
 ];
 const capture = new Set([
   "cosi-fan-tutte", "tristan-und-isolde", "la-boheme", "samson-et-dalila"
@@ -170,6 +170,128 @@ try {
       } finally {
         await page.close();
       }
+    }
+
+    // The first favorite performance is intentionally scoped to Tristan's Synopsis.
+    const favoritesPage = await context.newPage();
+    try {
+      await favoritesPage.goto(base + "#/operas/tristan-und-isolde?view=synopsis",
+        { waitUntil: "domcontentloaded" });
+      await favoritesPage.locator(".favorite-performance").first().waitFor({ timeout: 20000 });
+      check(await favoritesPage.locator(".favorite-performance").count() === 1,
+        viewport.label + ": Tristan should show one favorite recording");
+      check(await favoritesPage.locator(".favorite-performance__links a").count() === 2,
+        viewport.label + ": expected verified YouTube and separate Spotify links");
+      check(await favoritesPage.locator(".favorite-performance__links a").first().getAttribute("href") ===
+        "https://open.spotify.com/album/0EGfzKnX0HmZNYNRCZJC5E",
+        viewport.label + ": Spotify album reference changed");
+      check(await favoritesPage.locator(".favorite-performance__links a").last().getAttribute("href") ===
+        "https://www.youtube.com/watch?v=Wleg_0SWHW0",
+        viewport.label + ": incorrect performance video");
+      check(await favoritesPage.locator(".favorite-performance__title").innerText() ===
+        "Tristan und Isolde · Leonard Bernstein",
+        viewport.label + ": the title should feature Bernstein without a separate highlighted name");
+      check(await favoritesPage.locator(".favorite-performance__reference").innerText() ===
+        "Libretto outline reference",
+        viewport.label + ": the outline-reference favorite must carry its label");
+      check(await favoritesPage.locator(".favorite-performance__reference").count() === 1,
+        viewport.label + ": only one outline-reference label should appear");
+      check(await favoritesPage.locator(".favorite-performance--outline-reference").count() === 1,
+        viewport.label + ": reference marker should be attached only to its recording");
+      const badgePlacement = await favoritesPage.locator(".favorite-performance").evaluate(card => {
+        const links = card.querySelector(".favorite-performance__links");
+        const badge = card.querySelector(".favorite-performance__reference").getBoundingClientRect();
+        const footer = links.getBoundingClientRect();
+        const title = card.querySelector(".favorite-performance__title").getBoundingClientRect();
+        const cover = card.querySelector(".favorite-performance__cover").getBoundingClientRect();
+        const youtube = links.querySelectorAll("a")[1].getBoundingClientRect();
+        return {
+          inFooter: card.querySelector(".favorite-performance__reference").parentElement === links &&
+            badge.left >= footer.left && badge.right <= footer.right &&
+            badge.top >= footer.top && badge.bottom <= footer.bottom,
+          farRight: footer.right - badge.right,
+          noOverlap: badge.top >= youtube.bottom - 1 || badge.left >= youtube.right + 4,
+          unchangedTitleAlignment: Math.abs(title.top - cover.top) <= 4,
+          style: getComputedStyle(card.querySelector(".favorite-performance__reference")).backgroundColor
+        };
+      });
+      check(badgePlacement.inFooter && badgePlacement.farRight >= 6 && badgePlacement.farRight <= 19,
+        viewport.label + ": outline reference should be at far right of Spotify/YouTube footer");
+      check(badgePlacement.noOverlap,
+        viewport.label + ": outline reference label overlaps listening links");
+      check(badgePlacement.unchangedTitleAlignment,
+        viewport.label + ": label introduced empty space above the opera title");
+      check(badgePlacement.style !== "rgba(0, 0, 0, 0)",
+        viewport.label + ": outline reference label needs a subtle gray background");
+      check(await favoritesPage.locator(".favorite-performance__edition").innerText() ===
+        "1981 · Live, semi-staged concert · Herkulessaal, Munich",
+        viewport.label + ": venue must join the year and performance type");
+      check(await favoritesPage.locator(".favorite-performance__lead").count() === 0,
+        viewport.label + ": obsolete featured-performer bullet cards remain");
+      check(await favoritesPage.locator(".favorite-performance__details").count() === 1,
+        viewport.label + ": expected a single integrated personnel disclosure");
+      check(await favoritesPage.locator(".favorite-performance__summary-label").innerText() ===
+        "Cast & Musical Direction",
+        viewport.label + ": incorrect disclosure label");
+      check(await favoritesPage.locator(".favorite-performance__cover img").getAttribute("src") ===
+        "https://i.scdn.co/image/ab67616d0000b2730d05706fe7f204d1e2b9659b",
+        viewport.label + ": favorite photo must match the selected Spotify album");
+      check(await favoritesPage.evaluate(() =>
+        document.documentElement.scrollWidth - window.innerWidth <= 3),
+        viewport.label + ": the compact favorite row overflows the screen");
+      const details = favoritesPage.locator(".favorite-performance__details");
+      check(!(await details.evaluate(el => el.open)),
+        viewport.label + ": Cast & Musical Direction should be closed on first load");
+      check(!(await favoritesPage.locator(".favorite-performance__direction").isVisible()),
+        viewport.label + ": conductor/orchestra/chorus should start collapsed");
+      check(await favoritesPage.locator(".favorite-performance__links a").first().isVisible(),
+        viewport.label + ": Spotify must stay visible with the cast collapsed");
+      check(await favoritesPage.locator(".favorite-performance__links a").last().isVisible(),
+        viewport.label + ": YouTube must stay visible with the cast collapsed");
+      await favoritesPage.screenshot({
+        path: join(screenshotDir, "tristan-favorite-collapsed-" + viewport.label + ".png"),
+        animations: "disabled"
+      });
+      await details.locator("summary").click();
+      check(await details.evaluate(el => el.open),
+        viewport.label + ": Cast & Musical Direction did not expand");
+      check(await favoritesPage.locator(".favorite-performance__direction dt").allInnerTexts().then(
+        labels => JSON.stringify(labels) === JSON.stringify(["Conductor", "Orchestra", "Chorus"])
+      ), viewport.label + ": personnel groups are missing or not in the approved order");
+      check(await favoritesPage.locator(".favorite-performance__direction").isVisible(),
+        viewport.label + ": musician details did not become visible");
+      check(await favoritesPage.locator(".favorite-performance__cast li").count() === 9,
+        viewport.label + ": all nine character performers must be present");
+      const castColumns = await favoritesPage.locator(".favorite-performance__cast").evaluate(
+        el => getComputedStyle(el).gridTemplateColumns.trim().split(/\s+/).length
+      );
+      check(castColumns === (viewport.label === "mobile" ? 1 : 2),
+        viewport.label + ": expected one cast column on mobile and two on desktop; got " + castColumns);
+      await favoritesPage.screenshot({
+        path: join(screenshotDir, "tristan-favorite-expanded-" + viewport.label + ".png"),
+        animations: "disabled"
+      });
+      await details.locator("summary").click();
+      check(!(await details.evaluate(el => el.open)),
+        viewport.label + ": Cast & Musical Direction did not collapse again");
+      check(await favoritesPage.locator(".favorite-performance__links a").first().isVisible(),
+        viewport.label + ": links must remain visible after closing the cast");
+      await favoritesPage.goto(base + "#/operas/tristan-und-isolde?view=outline",
+        { waitUntil: "domcontentloaded" });
+      await favoritesPage.locator(".opera-outline").waitFor({ timeout: 20000 });
+      check(await favoritesPage.locator(".opera-outline__recording").count() === 0,
+        viewport.label + ": outline should no longer repeat album/reference footers");
+      check(!(await favoritesPage.locator(".opera-outline").innerText()).includes("Albums:"),
+        viewport.label + ": legacy Albums text remains");
+      await favoritesPage.goto(base + "#/operas/cosi-fan-tutte?view=synopsis",
+        { waitUntil: "domcontentloaded" });
+      await favoritesPage.locator(".opera-info__synopsis").waitFor({ timeout: 20000 });
+      check(await favoritesPage.locator(".favorite-performance").count() === 0,
+        viewport.label + ": favorites must not appear on other opera pages");
+    } catch (error) {
+      errors.push(viewport.label + " Tristan favorite: " + error.message);
+    } finally {
+      await favoritesPage.close();
     }
 
     const page = await context.newPage();

@@ -1,9 +1,9 @@
-import { operas, getOpera } from "./data/operas.js?v=tosca-act1-2";
+import { operas, getOpera } from "./data/operas.js?v=opera-catalog-art-20261027";
 import { MIN_ROW_GAP, MAX_ROW_GAP, DEFAULT_ROW_GAP, normalizeRowGap, migrateLineSpacing, stepRowGap, applyReadingSpacing } from "./reading-spacing.js?v=lyric-row-gap-20261023";
-import { createLibrettoRenderer } from "./libretto-reader.js?v=verified-lyric-lines-20261023";
-import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=on-demand-20261023";
-import { operaInformation } from "./data/opera-information.js?v=info-9";
-import { renderOperaInformationPage, renderPlannedLibrettoPage } from "./opera-info-page.js?v=info-page-3";
+import { createLibrettoRenderer } from "./libretto-reader.js?v=global-three-line-20261027";
+import { hasCompleteLibretto, loadLibretto } from "./data/libretto-loader.js?v=traviata-all-acts-20261028";
+import { operaInformation } from "./data/opera-information.js?v=opera-catalog-art-20261027";
+import { renderOperaInformationPage, renderPlannedLibrettoPage, hydrateFavoriteCovers } from "./opera-info-page.js?v=fanciulla-act1-outline-20261026";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "./opera-breadcrumb.js?v=breadcrumb-shared-1";
 import { renderMusicalsPage, renderMusicalPage } from "./musicals-page.js?v=beethoven-credit-20261020";
 
@@ -620,14 +620,16 @@ function highlightReaderSection(index, syncUrl = false) {
   const landmarks = [...(sidebar?.querySelectorAll(".section-nav-link") || [])].flatMap(link => {
     const params = new URLSearchParams((link.getAttribute("href") || "").split("?")[1] || "");
     if (!params.has("turn") || Number(params.get("scene")) !== scene || Number(params.get("item")) !== sectionItem) return [];
-    const target = root.querySelector("#libretto-turn-" + act + "-" + scene + "-" + sectionItem + "-" + Number(params.get("turn")));
-    return typeof target?.getBoundingClientRect === "function" ? [{ target, turn: Number(params.get("turn")) }] : [];
+    const line = params.has("line") ? "-l" + Number(params.get("line")) : "";
+    const target = root.querySelector("#libretto-turn-" + act + "-" + scene + "-" + sectionItem + "-" + Number(params.get("turn")) + line);
+    return typeof target?.getBoundingClientRect === "function" ? [{ target, turn: Number(params.get("turn")), line: Number(params.get("line")) || 0 }] : [];
   });
   const atEnd = typeof document !== "undefined" &&
     window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
   const activeLandmark = atEnd ? landmarks.at(-1) :
     landmarks.filter(entry => entry.target.getBoundingClientRect().top <= readingTop).at(-1) || landmarks[0];
   const activeTurnIndex = activeLandmark?.turn ?? null;
+  const activeLineIndex = activeLandmark?.line ?? 0;
   root.dataset.scene = String(scene);
   if (root.dataset.continuousAct === "true") {
     const sceneNumbers = [...new Set(items.map(el => Number(el.dataset.sourceScene)))];
@@ -644,7 +646,8 @@ function highlightReaderSection(index, syncUrl = false) {
     const params = new URLSearchParams(url.split("?")[1] || "");
     const selected = Number(params.get("act")) === act &&
       Number(params.get("scene")) === scene &&
-      (params.has("turn") ? Number(params.get("turn")) === activeTurnIndex :
+      (params.has("turn") ? Number(params.get("turn")) === activeTurnIndex &&
+        (Number(params.get("line")) || 0) === activeLineIndex :
         (link.classList.contains("is-song") || Number(params.get("item")) === sectionItem));
     link.classList.toggle("is-current", selected);
     if (selected) link.setAttribute("aria-current", "page");
@@ -661,7 +664,11 @@ function highlightReaderSection(index, syncUrl = false) {
       params.set("act", String(act));
       params.set("scene", String(scene));
       params.set("item", String(sectionItem));
-      if (activeTurnIndex != null && params.has("turn")) params.set("turn", String(activeTurnIndex));
+      if (activeTurnIndex != null && params.has("turn")) {
+        params.set("turn", String(activeTurnIndex));
+        if (activeLineIndex > 0) params.set("line", String(activeLineIndex));
+        else params.delete("line");
+      }
       window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search + path + "?" + params.toString());
     }
   }
@@ -759,7 +766,8 @@ function handleSceneSectionLink(event) {
       (root.dataset.continuousAct !== "true" && Number(params.get("scene")) !== Number(root.dataset.scene))) return;
   if (params.has("turn")) {
     const target = root.querySelector("#libretto-turn-" + Number(root.dataset.act) + "-" +
-      Number(params.get("scene")) + "-" + (Number(params.get("item")) || 0) + "-" + Number(params.get("turn")));
+      Number(params.get("scene")) + "-" + (Number(params.get("item")) || 0) + "-" + Number(params.get("turn")) +
+      (params.has("line") ? "-l" + Number(params.get("line")) : ""));
     if (!target) return;
     event.preventDefault();
     closeActOutline(false);
@@ -868,6 +876,7 @@ async function render() {
     const selectedView = routeParams.get("view") || (libretto && !hasLibrettoDestination ? "synopsis" : "");
     shell(opera ? renderOperaBreadcrumb(opera) + operaPage(opera, libretto, scene, query, item, mobileContents, selectedView) : `<section class="not-found section-wrap"><p class="eyebrow">A quiet intermission</p><h1>This page is not in the collection.</h1><a class="button button--dark" href="#/operas">Return to all operas ${arrow}</a></section>`, opera ? (libretto ? "opera" : "operas") : "");
     document.title = opera ? `${opera.title} — My favorite Operas` : "Page not found — My favorite Operas";
+    if (opera?.slug === "tristan-und-isolde" && selectedView === "synopsis") hydrateFavoriteCovers(app);
   } else {
     window.location.hash = "#/";
     return;
@@ -880,7 +889,8 @@ async function render() {
   else if (reader) highlightReaderSection(0, false);
   if (reader && routeParams.has("turn")) {
     const target = reader.querySelector("#libretto-turn-" + Number(reader.dataset.act) + "-" +
-      (Number(routeParams.get("scene")) || 1) + "-" + (Number(routeParams.get("item")) || 0) + "-" + Number(routeParams.get("turn")));
+      (Number(routeParams.get("scene")) || 1) + "-" + (Number(routeParams.get("item")) || 0) + "-" + Number(routeParams.get("turn")) +
+      (routeParams.has("line") ? "-l" + Number(routeParams.get("line")) : ""));
     jumpToReaderPassage(reader, target);
   }
   updateReaderTopButton();

@@ -6,6 +6,7 @@ import { operaInformation } from "../src/data/opera-information.js";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/opera-info-page.js";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "../src/opera-breadcrumb.js";
 import { getLibretto } from "../src/data/libretto-registry.js";
+import { hasCompleteLibretto } from "../src/data/libretto-loader.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { renderMusicalPage, renderMusicalsPage } from "../src/musicals-page.js";
 import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
@@ -13,9 +14,9 @@ import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
 beforeEach(resetReaderLocation);
 
 // Opera information and planned libretto pages.
-test("all thirty-one opera information pages contain verified metadata and full introductory sections", () => {
-  assert.equal(operas.length, 31);
-  assert.equal(new Set(operas.map(opera => opera.slug)).size, 31);
+test("all thirty-five opera information pages contain verified metadata and full introductory sections", () => {
+  assert.equal(operas.length, 35);
+  assert.equal(new Set(operas.map(opera => opera.slug)).size, 35);
   for (const opera of operas) {
     const information = operaInformation[opera.slug];
     assert.ok(information, "missing details for " + opera.slug);
@@ -35,6 +36,24 @@ test("all thirty-one opera information pages contain verified metadata and full 
   }
 });
 
+test("four newly added opera illustrations match their directory destinations and synopsis covers", () => {
+  const slugs = ["la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"];
+  const main = readFileSync("src/main.js", "utf8");
+  assert.ok(main.includes('href="#/operas/${opera.slug}"'), "directory cards must link to the correct opera");
+  assert.ok(main.includes('<img src="${opera.image}"'), "directory cards must render each image");
+  for (const slug of slugs) {
+    const opera = operas.find(item => item.slug === slug);
+    assert.ok(opera, "missing opera " + slug);
+    assert.equal(opera.image, "./public/images/" + slug + "-art.webp");
+    const details = operaInformation[slug];
+    assert.ok(details, "missing synopsis and cast for " + slug);
+    const page = renderOperaInformationPage(opera, details);
+    assert.ok(page.includes('src="' + opera.image + '"'), "incorrect synopsis image for " + slug);
+    assert.ok(page.includes('Illustration inspired by ' + opera.title), "missing artwork description for " + slug);
+    assert.equal(hasCompleteLibretto(slug), true, "all four illustrated operas now have on-demand libretti");
+  }
+});
+
 test("Every catalog image path points to an optimized WebP asset", () => {
   const illustratedOperas = operas.filter(opera => opera.image);
   assert.ok(illustratedOperas.length > 0);
@@ -46,7 +65,7 @@ test("Every catalog image path points to an optimized WebP asset", () => {
   }
 });
 
-for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "la-traviata", "the-magic-flute", "aida", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus"]) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
+for (const slug of [ "la-fanciulla-del-west", "manon", "otello", "parsifal", "rigoletto", "don-giovanni", "lucia-di-lammermoor", "eugene-onegin", "les-contes-dhoffmann", "norma", "il-trovatore", "das-rheingold", "die-walkure", "siegfried", "gotterdammerung", "lelisir-damore", "die-fledermaus", "la-cenerentola", "hansel-und-gretel", "nabucco", "pagliacci"].filter(slug => !hasCompleteLibretto(slug))) test(`${slug}: description and planned libretto destinations retain usable navigation`, () => {
   const opera = operas.find(item => item.slug === slug);
   const details = operaInformation[opera.slug];
   assert.equal(getLibretto(opera.slug), null, "the libretto text is not prepared yet");
@@ -79,7 +98,7 @@ test("La Bohème Act I is available from its opera information page", () => {
   assert.ok(html.includes("Libretto Outline"));
 });
 
-test("search-friendly aliases, thirty-one routes and act counts remain intact", () => {
+test("search-friendly aliases, thirty-five routes and act counts remain intact", () => {
   const acts = Object.fromEntries(operas.map(opera => [opera.slug, opera.acts]));
   assert.deepEqual(acts, {
     "il-barbiere-di-siviglia": 2, "tristan-und-isolde": 3,
@@ -87,7 +106,8 @@ test("search-friendly aliases, thirty-one routes and act counts remain intact", 
     "la-traviata": 3, "the-magic-flute": 2, aida: 4, tosca: 3, "madama-butterfly": 3, rigoletto: 3, "don-giovanni": 2,
     "la-boheme": 4, "lucia-di-lammermoor": 3, "eugene-onegin": 3, "les-contes-dhoffmann": 4, norma: 2,
     "il-trovatore": 4, "das-rheingold": 1, "die-walkure": 3, siegfried: 3, gotterdammerung: 3,
-    "lelisir-damore": 2, "die-fledermaus": 3
+    "lelisir-damore": 2, "die-fledermaus": 3,
+    "la-cenerentola": 2, "hansel-und-gretel": 3, "nabucco": 4, "pagliacci": 2
   });
   assert.ok(operas.find(item => item.slug === "le-nozze-di-figaro").aliases.includes("Marriage of Figaro"));
   assert.deepEqual(getLibretto("turandot").acts.map(act => act.number), [1, 2, 3]);
@@ -132,8 +152,10 @@ test("Tosca Acts I–III are available from its opera information page and direc
   assert.ok(outline.includes('class="libretto-participants"'));
   assert.ok(libretto.spotifyOutline.flatMap(act => act.scenes.flatMap(scene => scene.tracks)).every(track => !Object.hasOwn(track, "performers")),
     "outline characters are sourced from the libretto scenes, not Spotify performer metadata");
-  const spotifySourceIndex = outline.indexOf('href="https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo"');
-  assert.ok(spotifySourceIndex > outline.lastIndexOf("</details>"), "Spotify source appears after the complete outline");
+  assert.deepEqual(libretto.albums, [{ name: "Puccini : Tosca", url: "https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo" }]);
+  assert.ok(!outline.includes("<strong>Albums:</strong>"), "Recording attribution belongs in curated favorites, not outline footers");
+  assert.ok(!outline.includes("<strong>Outline source:</strong>"));
+  assert.ok(!outline.includes('href="https://open.spotify.com/album/6ulb4DNzatXOL88B4Zr0oo"'));
   window.location.hash = "#/operas/tosca?act=2";
   const secondActPage = reader.scene(1);
   assert.ok(secondActPage.includes("ATTO SECONDO"));
@@ -334,15 +356,38 @@ test("A single CSS rule controls breadcrumb height, layout, and logo alignment",
   assert.ok(css.includes("scroll-margin-top: calc(var(--sticky-site-height) + var(--sticky-breadcrumb-height) + var(--sticky-opera-height)"));
 });
 
-
-test("Parsifal planned outline lists three bilingual acts without claiming the full libretto is complete", () => {
-  const opera = operas.find(item => item.slug === "parsifal");
-  const details = operaInformation.parsifal;
-  assert.equal(getLibretto("parsifal"), null);
-  const outline = renderPlannedLibrettoPage(opera, details, "outline", 1);
-  for (const phrase of ["The Grail domain", "The holy spear", "Good Friday spell", "Im Gebiete des Grales", "Klingsors Zauberschloss", "Karfreitagszauber", "Full German–English libretto text will be added later"]) {
-    assert.ok(outline.includes(phrase), "missing Parsifal outline text: " + phrase);
+test("Aida exposes four bilingual acts with two Act I scenes", () => {
+  const opera = operas.find(item => item.slug === "aida");
+  const libretto = getLibretto("aida");
+  assert.ok(libretto);
+  assert.equal(opera.acts, 4);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1, 2, 3, 4]);
+  assert.deepEqual(libretto.acts[0].scenes.map(scene => scene.number), [1, 2]);
+  const sections = libretto.acts[0].scenes.flatMap(scene => scene.sections);
+  const turns = sections.flatMap(section => section.turns);
+  assert.ok(turns.length > 100);
+  for (const turn of turns) {
+    assert.ok(turn.original.trim());
+    assert.ok(turn.translation.trim());
+    assert.equal(turn.original.split("\n").length, turn.translation.split("\n").length);
   }
-  assert.equal((outline.match(/class="parsifal-outline-act"/g) || []).length, 3);
-  assert.ok(!outline.includes('class="libretto-row"'));
+  const page = renderOperaInformationPage(opera, operaInformation.aida, {hasLibretto:true});
+  assert.ok(page.includes('href="#/operas/aida?act=1"'));
+  const outline = createLibrettoRenderer(libretto).outline();
+  assert.ok(outline.includes("Celeste Aida"));
+  assert.ok(outline.includes("Ritorna vincitor"));
+});
+
+test("La traviata contains three acts with all source scenes and parallel English draft passages", () => {
+  const libretto = getLibretto("la-traviata");
+  assert.ok(libretto);
+  assert.deepEqual(libretto.acts.map(act => act.number), [1,2,3]);
+  assert.deepEqual(libretto.acts[0].scenes.map(scene => scene.number), [1,2,3,4,5]);
+  assert.deepEqual(libretto.acts[1].scenes.map(scene => scene.number), Array.from({length:15},(_,i)=>i+1));
+  assert.deepEqual(libretto.acts[2].scenes.map(scene => scene.number), [1,2,3,4,5,6]);
+  const turns = libretto.acts.flatMap(act=>act.scenes.flatMap(scene=>scene.sections.flatMap(section=>section.turns)));
+  assert.ok(turns.length > 350);
+  assert.ok(turns.length >= 100);
+  assert.ok(turns.every(turn=>turn.original.trim()&&turn.translation.trim()));
+  assert.ok(createLibrettoRenderer(libretto).outline().includes("Libiam ne"));
 });

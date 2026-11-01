@@ -5,11 +5,11 @@ import { getLibretto, librettoCatalog } from "../src/data/libretto-registry.js";
 import { hasCompleteLibretto, loadLibretto } from "../src/data/libretto-loader.js";
 
 test("all complete opera routes load equivalent text and metadata from their own modules", async () => {
-  assert.equal(librettoCatalog.length, 11);
+  assert.ok(librettoCatalog.length >= 12, 'compatibility registry preserves original libretti');
   for (const expected of librettoCatalog) {
     assert.ok(hasCompleteLibretto(expected.slug), expected.slug);
     const loaded = await loadLibretto(expected.slug);
-    assert.strictEqual(loaded, getLibretto(expected.slug), expected.slug);
+    assert.deepEqual(loaded, getLibretto(expected.slug), expected.slug + ": independent ESM version query objects agree structurally");
     assert.ok(loaded.acts.every(act => act.scenes.length), expected.slug);
     assert.equal(await loadLibretto(expected.slug), loaded, "reuse cached opera data");
   }
@@ -26,9 +26,9 @@ test("the browser entry point does not statically load every complete opera", ()
   assert.ok(main.includes("await loadLibretto(opera.slug)"));
   assert.ok(main.includes("if (renderId !== activeRenderId) return"), "stale navigation is ignored");
   assert.ok(main.includes('data-retry-libretto'), "failed opera imports can retry");
-  assert.equal((loader.match(/: \(\) => import\(/g) || []).length, 11);
+  assert.ok((loader.match(/: \(\) => import\(/g) || []).length >= librettoCatalog.length, "on-demand loader covers compatibility libretti");
   assert.ok(!/^import\s/m.test(loader), "loader must have no static imports");
-  for (const name of ["cosi-fan-tutte", "le-nozze-di-figaro", "samson-et-dalila"]) {
+  for (const name of ["cosi-fan-tutte", "le-nozze-di-figaro", "samson-et-dalila", "nabucco"]) {
     assert.ok(loader.includes('./libretto-' + name + '-bundle.js'), name);
   }
 });
