@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { dieZauberflote } from "../src/data/libretto-die-zauberflote-bundle.js?v=zauberflote-outline-20261026";
+import { dieZauberflote } from "../src/data/operas/librettos/the-magic-flute/bundle.js?v=zauberflote-outline-20261026";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
 

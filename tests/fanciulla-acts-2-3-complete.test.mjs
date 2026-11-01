@@ -1,9 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { fanciullaActTwoScenes } from "../src/data/libretto-la-fanciulla-del-west-act-2.js";
-import { fanciullaActThreeScenes } from "../src/data/libretto-la-fanciulla-del-west-act-3.js";
-import { laFanciullaDelWest } from "../src/data/libretto-la-fanciulla-del-west-bundle.js";
-import { loadLibretto } from "../src/data/libretto-loader.js";
+import { fanciullaActTwoScenes } from "../src/data/operas/librettos/la-fanciulla-del-west/act-2.js";
+import { fanciullaActThreeScenes } from "../src/data/operas/librettos/la-fanciulla-del-west/act-3.js";
+import { laFanciullaDelWest } from "../src/data/operas/librettos/la-fanciulla-del-west/bundle.js";
+import { loadLibretto } from "../src/data/operas/libretto-loader.js";
 
 for (const [act, scenes, expected, sectionCount] of [[2,fanciullaActTwoScenes,559,12],[3,fanciullaActThreeScenes,343,11]]) {
  test(`Act ${act} has complete PDF source entries, bilingual drafts and listening sections`,()=>{

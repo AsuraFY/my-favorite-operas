@@ -1,8 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getOpera } from "../src/data/operas.js";
-import { operaInformation } from "../src/data/opera-information.js";
-import { fanciullaActOneListeningOutline as tracks } from "../src/data/outline-la-fanciulla-del-west-act-1.js";
+import { getOpera } from "../src/data/operas/catalog.js";
+import { operaInformation } from "../src/data/operas/information.js";
+import { fanciullaActOneListeningOutline as tracks } from "../src/data/operas/librettos/la-fanciulla-del-west/outline-act-1.js";
 import { renderPlannedLibrettoPage } from "../src/opera-info-page.js";
 
 const opera=getOpera("la-fanciulla-del-west");

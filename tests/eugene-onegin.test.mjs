@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {eugeneOnegin} from '../src/data/libretto-eugene-onegin-bundle.js';
-import {hasCompleteLibretto} from '../src/data/libretto-loader.js';
+import {eugeneOnegin} from '../src/data/operas/librettos/eugene-onegin/bundle.js';
+import {hasCompleteLibretto} from '../src/data/operas/libretto-loader.js';
 test('Eugene Onegin English-first reader retains all 1434 English records without fake Russian',()=>{
  assert.equal(eugeneOnegin.acts.length,3);
  let count=0;

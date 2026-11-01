@@ -1,6 +1,6 @@
 import test, {beforeEach} from 'node:test';
 import assert from 'node:assert/strict';
-import {getLibretto} from '../src/data/libretto-registry.js';
+import {getLibretto} from '../src/data/operas/libretto-registry.js';
 import {createLibrettoRenderer} from '../src/libretto-reader.js';
 import {assertActTargets,resetReaderLocation} from './helpers/libretto-helpers.mjs';
 const work=getLibretto('le-nozze-di-figaro');

@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { fanciullaActOneBilingualExcerpts as sections } from "../src/data/libretto-la-fanciulla-del-west-act-1-excerpts.js";
-import { getOpera } from "../src/data/operas.js";
+import { fanciullaActOneBilingualExcerpts as sections } from "../src/data/operas/drafts/la-fanciulla-del-west-act-1-excerpts.js";
+import { getOpera } from "../src/data/operas/catalog.js";
 import { renderPlannedLibrettoPage } from "../src/opera-info-page.js";
 test("Act I bilingual excerpts retain line pairing, speakers and transparent partial status",()=>{
   assert.ok(sections.length>=4);

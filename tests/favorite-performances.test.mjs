@@ -1,8 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { operaInformation } from "../src/data/opera-information.js";
-import { getOpera } from "../src/data/operas.js";
-import { getLibretto } from "../src/data/libretto-registry.js";
+import { operaInformation } from "../src/data/operas/information.js";
+import { getOpera } from "../src/data/operas/catalog.js";
+import { getLibretto } from "../src/data/operas/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { renderOperaInformationPage } from "../src/opera-info-page.js";
 

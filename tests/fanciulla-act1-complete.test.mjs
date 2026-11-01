@@ -1,9 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { fanciullaActOneScenes } from "../src/data/libretto-la-fanciulla-del-west-act-1.js";
-import { laFanciullaDelWest } from "../src/data/libretto-la-fanciulla-del-west-bundle.js";
-import { hasCompleteLibretto, loadLibretto } from "../src/data/libretto-loader.js";
-import { fanciullaActOneListeningOutline } from "../src/data/outline-la-fanciulla-del-west-act-1.js";
+import { fanciullaActOneScenes } from "../src/data/operas/librettos/la-fanciulla-del-west/act-1.js";
+import { laFanciullaDelWest } from "../src/data/operas/librettos/la-fanciulla-del-west/bundle.js";
+import { hasCompleteLibretto, loadLibretto } from "../src/data/operas/libretto-loader.js";
+import { fanciullaActOneListeningOutline } from "../src/data/operas/librettos/la-fanciulla-del-west/outline-act-1.js";
 
 test("Fanciulla Act I has all 633 Italian source entries with paired English drafts", () => {
   const sections = fanciullaActOneScenes.flatMap(scene => scene.sections);
