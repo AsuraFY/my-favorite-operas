@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {siegfried} from '../src/data/libretto-siegfried-bundle.js';
-import {getLibretto} from '../src/data/libretto-registry.js';
-import {hasCompleteLibretto} from '../src/data/libretto-loader.js';
+import {siegfried} from '../src/data/operas/librettos/siegfried/bundle.js';
+import {getLibretto} from '../src/data/operas/libretto-registry.js';
+import {hasCompleteLibretto} from '../src/data/operas/libretto-loader.js';
 
 test('Siegfried complete bilingual libretto', () => {
   assert.equal(siegfried.acts.length, 3);

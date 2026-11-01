@@ -3,8 +3,8 @@ import assert from "node:assert/strict";
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
-import { librettoCatalog } from "../src/data/libretto-registry.js";
-import { operas } from "../src/data/operas.js";
+import { librettoCatalog } from "../src/data/operas/libretto-registry.js";
+import { operas } from "../src/data/operas/catalog.js";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const sourceDir = join(root, "src");
