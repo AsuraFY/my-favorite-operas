@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {beethovenVocalBlocks as blocks, beethovenSources as sources} from '../src/data/musical-beethoven-ode-to-joy.js';
+import {beethovenVocalBlocks as blocks, beethovenSources as sources} from '../src/data/musicals/beethoven-ode-to-joy.js';
 import {renderMusicalPage} from '../src/musicals-page.js';
 // Independent source-part fingerprints from OpenScore Orchestra MusicXML, 20 October 2026.
 const expected = {

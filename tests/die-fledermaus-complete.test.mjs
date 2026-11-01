@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {fledermausActOneScenes as one} from '../src/data/libretto-die-fledermaus-act-1.js';
-import {fledermausActTwoScenes as two} from '../src/data/libretto-die-fledermaus-act-2.js';
-import {fledermausActThreeScenes as three} from '../src/data/libretto-die-fledermaus-act-3.js';
-import {dieFledermaus} from '../src/data/libretto-die-fledermaus-bundle.js';
-import {hasCompleteLibretto,loadLibretto} from '../src/data/libretto-loader.js';
+import {fledermausActOneScenes as one} from '../src/data/operas/librettos/die-fledermaus/act-1.js';
+import {fledermausActTwoScenes as two} from '../src/data/operas/librettos/die-fledermaus/act-2.js';
+import {fledermausActThreeScenes as three} from '../src/data/operas/librettos/die-fledermaus/act-3.js';
+import {dieFledermaus} from '../src/data/operas/librettos/die-fledermaus/bundle.js';
+import {hasCompleteLibretto,loadLibretto} from '../src/data/operas/libretto-loader.js';
 const acts=[one,two,three];
 test('Die Fledermaus three acts preserve every source record with one English line',()=>{
  assert.deepEqual(acts.map(x=>x.length),[7,7,7]);

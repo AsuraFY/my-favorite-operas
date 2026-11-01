@@ -63,8 +63,8 @@ function chromeExecutable() {
 }
 
 // Catalogue-driven coverage: never silently omit newly added operas.
-import { operas } from "../src/data/operas.js";
-import { hasCompleteLibretto } from "../src/data/libretto-loader.js";
+import { operas } from "../src/data/operas/catalog.js";
+import { hasCompleteLibretto } from "../src/data/operas/libretto-loader.js";
 const slugs = operas.map(opera => opera.slug);
 assert.equal(slugs.length, 35, "Expected all 35 catalogued operas");
 assert.equal(new Set(slugs).size, slugs.length, "Duplicate catalogue slug");

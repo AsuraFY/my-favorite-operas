@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {fledermausGermanAct1Source} from '../src/data/drafts/die-fledermaus-german-act-1.js';
-import {fledermausGermanAct2Source} from '../src/data/drafts/die-fledermaus-german-act-2.js';
-import {fledermausGermanAct3Source} from '../src/data/drafts/die-fledermaus-german-act-3.js';
-import {fledermausOpeningEnglishDraft} from '../src/data/drafts/die-fledermaus-english-opening.js';
-import {hasCompleteLibretto} from '../src/data/libretto-loader.js';
+import {fledermausGermanAct1Source} from '../src/data/operas/drafts/die-fledermaus-german-act-1.js';
+import {fledermausGermanAct2Source} from '../src/data/operas/drafts/die-fledermaus-german-act-2.js';
+import {fledermausGermanAct3Source} from '../src/data/operas/drafts/die-fledermaus-german-act-3.js';
+import {fledermausOpeningEnglishDraft} from '../src/data/operas/drafts/die-fledermaus-english-opening.js';
+import {hasCompleteLibretto} from '../src/data/operas/libretto-loader.js';
 const acts=[fledermausGermanAct1Source,fledermausGermanAct2Source,fledermausGermanAct3Source];
 test('Die Fledermaus German source retains every one of the 2,294 line records',()=>{
  assert.deepEqual(acts.map(a=>a.scenes.length),[7,7,7]);

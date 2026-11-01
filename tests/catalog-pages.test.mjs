@@ -1,12 +1,12 @@
 import test, { beforeEach } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { operas } from "../src/data/operas.js";
-import { operaInformation } from "../src/data/opera-information.js";
+import { operas } from "../src/data/operas/catalog.js";
+import { operaInformation } from "../src/data/operas/information.js";
 import { renderOperaInformationPage, renderPlannedLibrettoPage } from "../src/opera-info-page.js";
 import { renderOperaBreadcrumb, filterOperasByComposer } from "../src/opera-breadcrumb.js";
-import { getLibretto } from "../src/data/libretto-registry.js";
-import { hasCompleteLibretto } from "../src/data/libretto-loader.js";
+import { getLibretto } from "../src/data/operas/libretto-registry.js";
+import { hasCompleteLibretto } from "../src/data/operas/libretto-loader.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { renderMusicalPage, renderMusicalsPage } from "../src/musicals-page.js";
 import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
@@ -235,7 +235,7 @@ test("Mahler lyrics preserve columns, translation toggle, and precise relationsh
 });
 
 test("every score-aligned German line has its paired English translation", async () => {
-  const { mahlerFinaleEvents, mahlerFinaleTranslations } = await import("../src/data/musical-mahler-symphony-2.js");
+  const { mahlerFinaleEvents, mahlerFinaleTranslations } = await import("../src/data/musicals/mahler-symphony-2.js");
   for (const event of mahlerFinaleEvents.filter(x => x.kind === "vocal"))
     for (const lane of event.lanes)
       for (const line of lane.lines)
@@ -244,7 +244,7 @@ test("every score-aligned German line has its paired English translation", async
 });
 
 test("Mahler's score-aligned German preserves the complete repeated choral line and the two Bereite calls", async () => {
-  const { mahlerFinaleEvents, mahlerFinaleTranslations } = await import("../src/data/musical-mahler-symphony-2.js");
+  const { mahlerFinaleEvents, mahlerFinaleTranslations } = await import("../src/data/musicals/mahler-symphony-2.js");
   const sterben = mahlerFinaleEvents.find(event => event.id === "sterben");
   assert.deepEqual(sterben.lanes[0].lines, [
     "Sterben werd’ ich, um zu leben!",
@@ -260,7 +260,7 @@ test("Mahler's score-aligned German preserves the complete repeated choral line 
 });
 
 test("Mahler data preserves end repetitions and independent vocal lines", async () => {
-  const { mahlerFinaleEvents } = await import("../src/data/musical-mahler-symphony-2.js");
+  const { mahlerFinaleEvents } = await import("../src/data/musicals/mahler-symphony-2.js");
   const ids = mahlerFinaleEvents.map(event => event.id);
   assert.equal(new Set(ids).size, ids.length);
   const final = mahlerFinaleEvents.find(event => event.id === "finale");

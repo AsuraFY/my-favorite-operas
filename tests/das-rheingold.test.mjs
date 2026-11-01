@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { rheingoldScenes } from '../src/data/libretto-das-rheingold-scenes.js';
-import { dasRheingold } from '../src/data/libretto-das-rheingold-bundle.js';
-import { hasCompleteLibretto,loadLibretto } from '../src/data/libretto-loader.js';
-import { getLibretto } from '../src/data/libretto-registry.js';
+import { rheingoldScenes } from '../src/data/operas/librettos/das-rheingold/act-1.js';
+import { dasRheingold } from '../src/data/operas/librettos/das-rheingold/bundle.js';
+import { hasCompleteLibretto,loadLibretto } from '../src/data/operas/libretto-loader.js';
+import { getLibretto } from '../src/data/operas/libretto-registry.js';
 import { createLibrettoRenderer } from '../src/libretto-reader.js';
 import { resetReaderLocation } from './helpers/libretto-helpers.mjs';
 test('Das Rheingold is one act with exactly four source scenes',()=>{
