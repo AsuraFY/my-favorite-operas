@@ -2,10 +2,10 @@
 // Italian public-domain libretto: https://www.librettidopera.it/norma/norma.html (via Sottovoce Q320353).
 // Cross-reference: https://opera-guide.ch/operas/norma/libretto/it/
 // Independent AI-generated English working translation awaiting editorial review and source collation.
-import {getOpera} from './operas.js';
-import {operaInformation} from './opera-information.js';
-import {normaActOneScenes} from './libretto-norma-act-1.js?v=norma-act1-20261029';
-import {normaActTwoScenes} from './libretto-norma-act-2.js?v=norma-act2-20261029';
+import {getOpera} from '../../catalog.js';
+import {operaInformation} from '../../information.js';
+import {normaActOneScenes} from './act-1.js?v=norma-act1-20261029';
+import {normaActTwoScenes} from './act-2.js?v=norma-act2-20261029';
 const info=operaInformation.norma;
 export const norma={
   slug:'norma',opera:getOpera('norma'),

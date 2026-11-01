@@ -1,8 +1,8 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { madamaButterflyActOneScenes } from "./libretto-madama-butterfly-act-1.js?v=madama-butterfly-review-20261020-1";
-import { madamaButterflyActTwoScenes } from "./libretto-madama-butterfly-act-2.js?v=madama-butterfly-review-20261020-2";
-import { madamaButterflyActThreeScenes } from "./libretto-madama-butterfly-act-3.js?v=madama-butterfly-review-20261020-3";
+import { madamaButterflyActOneScenes } from "./act-1.js?v=madama-butterfly-review-20261020-1";
+import { madamaButterflyActTwoScenes } from "./act-2.js?v=madama-butterfly-review-20261020-2";
+import { madamaButterflyActThreeScenes } from "./act-3.js?v=madama-butterfly-review-20261020-3";
 
 export const madamaButterfly = {
   slug: "madama-butterfly",

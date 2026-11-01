@@ -1,9 +1,9 @@
 // This opera's metadata and act modules load only when its page is visited.
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { macbethActOneScenes } from "./libretto-macbeth-act-1.js?v=macbeth-stage-cues-20261023";
-import { macbethActTwoScenes } from "./libretto-macbeth-act-2.js?v=macbeth-stage-cues-20261023";
-import { macbethActThreeScenes } from "./libretto-macbeth-act-3.js?v=macbeth-stage-cues-20261023";
-import { macbethActFourScenes } from "./libretto-macbeth-act-4.js?v=macbeth-stage-cues-20261023";
+import { macbethActOneScenes } from "./act-1.js?v=macbeth-stage-cues-20261023";
+import { macbethActTwoScenes } from "./act-2.js?v=macbeth-stage-cues-20261023";
+import { macbethActThreeScenes } from "./act-3.js?v=macbeth-stage-cues-20261023";
+import { macbethActFourScenes } from "./act-4.js?v=macbeth-stage-cues-20261023";
 
 export const macbeth = {
   translateSectionHeadings: true,

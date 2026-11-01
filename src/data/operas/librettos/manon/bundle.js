@@ -2,13 +2,13 @@
 // Acts I–IV: original French Meilhac/Gille from Opera Guide (structured via Sottovoce Q842063);
 // English independently machine-translated on 2026-10-29 and awaiting human editorial review.
 // Act V: 1895 public-domain James Cartwright Macy bilingual edition (alternate ending).
-import {getOpera} from './operas.js';
-import {operaInformation} from './opera-information.js';
-import {manonActOneScenes} from './libretto-manon-act-1.js?v=manon-complete-20261029';
-import {manonActTwoScenes} from './libretto-manon-act-2.js?v=manon-complete-20261029';
-import {manonActThreeScenes} from './libretto-manon-act-3.js?v=manon-complete-20261029';
-import {manonActFourScenes} from './libretto-manon-act-4.js?v=manon-complete-20261029';
-import {manonActFiveScenes} from './libretto-manon-act-5.js?v=manon-complete-20261029';
+import {getOpera} from '../../catalog.js';
+import {operaInformation} from '../../information.js';
+import {manonActOneScenes} from './act-1.js?v=manon-complete-20261029';
+import {manonActTwoScenes} from './act-2.js?v=manon-complete-20261029';
+import {manonActThreeScenes} from './act-3.js?v=manon-complete-20261029';
+import {manonActFourScenes} from './act-4.js?v=manon-complete-20261029';
+import {manonActFiveScenes} from './act-5.js?v=manon-complete-20261029';
 const info=operaInformation['manon'];
 export const manon={
  slug:'manon',opera:getOpera('manon'),

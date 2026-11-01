@@ -2,12 +2,12 @@
 // Italian public-domain libretto by Temistocle Solera: https://www.librettidopera.it/nabucco/nabucco.html
 // Structured transcription Sottovoce Q202230. Reference https://opera-guide.ch/operas/nabucco/libretto/it/
 // English: independently written AI-generated working translation awaiting editorial review.
-import { getOpera } from './operas.js';
-import { operaInformation } from './opera-information.js';
-import { nabuccoActOneScenes } from './libretto-nabucco-act-1.js?v=nabucco-act1-20261029';
-import { nabuccoActTwoScenes } from './libretto-nabucco-act-2.js?v=nabucco-act2-20261029';
-import { nabuccoActThreeScenes } from './libretto-nabucco-act-3.js?v=nabucco-act3-20261029';
-import { nabuccoActFourScenes } from './libretto-nabucco-act-4.js?v=nabucco-act4-20261029';
+import { getOpera } from '../../catalog.js';
+import { operaInformation } from '../../information.js';
+import { nabuccoActOneScenes } from './act-1.js?v=nabucco-act1-20261029';
+import { nabuccoActTwoScenes } from './act-2.js?v=nabucco-act2-20261029';
+import { nabuccoActThreeScenes } from './act-3.js?v=nabucco-act3-20261029';
+import { nabuccoActFourScenes } from './act-4.js?v=nabucco-act4-20261029';
 const info = operaInformation.nabucco;
 export const nabucco = {
  slug:'nabucco', opera:getOpera('nabucco'),
