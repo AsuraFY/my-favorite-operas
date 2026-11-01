@@ -2,8 +2,8 @@
 import { samsonActThreeScenes } from "./act-3.js?v=samson-act3-20261021";
 import { samsonActTwoScenes } from "./act-2.js?v=samson-act2-20261021";
 import { samsonActOneScenes } from "./act-1.js?v=samson-act1-20261021";
-import { operaInformation } from "./opera-information.js?v=info-9";
-import { getOpera } from "./operas.js?v=tosca-act1-2";
+import { operaInformation } from "../../information.js?v=info-9";
+import { getOpera } from "../../catalog.js?v=tosca-act1-2";
 
 export const samson = {
   slug: "samson-et-dalila",

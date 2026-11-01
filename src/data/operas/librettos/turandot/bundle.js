@@ -1,5 +1,5 @@
 // This opera's metadata and act modules load only when its page is visited.
-import { getOpera } from "./operas.js?v=tosca-act1-2";
+import { getOpera } from "../../catalog.js?v=tosca-act1-2";
 import { turandotActOneScenes } from "./act-1.js?v=turandot-titles-1";
 import { turandotActTwoScenes } from "./act-2.js?v=turandot-titles-1";
 import { turandotActThreeScenes } from "./act-3.js?v=turandot-titles-1";

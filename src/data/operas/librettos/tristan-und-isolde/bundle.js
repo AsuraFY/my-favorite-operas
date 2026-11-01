@@ -1,5 +1,5 @@
 // This opera's metadata and act modules load only when its page is visited.
-import { getOpera } from "./operas.js?v=tosca-act1-2";
+import { getOpera } from "../../catalog.js?v=tosca-act1-2";
 import { tristanActOneScenes } from "./act-1.js?v=tristan-verified-verses-20261023";
 import { tristanActTwoScenes } from "./act-2.js?v=tristan-verified-verses-20261023";
 import { tristanActThreeScenes } from "./act-3.js?v=tristan-verified-verses-20261023";
