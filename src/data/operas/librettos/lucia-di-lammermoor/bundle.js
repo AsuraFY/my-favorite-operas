@@ -2,11 +2,11 @@
 // Italian: public-domain Salvadore Cammarano, https://www.librettidopera.it/lucialam/lucialam.html
 // Via Sottovoce Q244209, https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q244209.json
 // Independent AI English working translation; editorial review and Opera Guide collation pending.
-import { getOpera } from './operas.js';
-import { operaInformation } from './opera-information.js';
-import { luciaActOneScenes } from './libretto-lucia-di-lammermoor-act-1.js?v=lucia-act1-20261029';
-import { luciaActTwoScenes } from './libretto-lucia-di-lammermoor-act-2.js?v=lucia-act2-20261029';
-import { luciaActThreeScenes } from './libretto-lucia-di-lammermoor-act-3.js?v=lucia-act3-20261029';
+import { getOpera } from '../../catalog.js';
+import { operaInformation } from '../../information.js';
+import { luciaActOneScenes } from './act-1.js?v=lucia-act1-20261029';
+import { luciaActTwoScenes } from './act-2.js?v=lucia-act2-20261029';
+import { luciaActThreeScenes } from './act-3.js?v=lucia-act3-20261029';
 const info = operaInformation['lucia-di-lammermoor'];
 export const luciaDiLammermoor = {
  slug:'lucia-di-lammermoor', opera:getOpera('lucia-di-lammermoor'),

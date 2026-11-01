@@ -1,10 +1,10 @@
 // La traviata: All three acts are available as Italian/English working drafts. Editorial review pending.
 // The original Italian is public domain. English is independently AI-translated, pending editorial review.
-import { getOpera } from './operas.js';
-import { operaInformation } from './opera-information.js';
-import { traviataActOneScenes } from './libretto-la-traviata-act-1.js?v=traviata-act1-20261028';
-import { traviataActTwoScenes } from './libretto-la-traviata-act-2.js?v=traviata-all-acts-20261028';
-import { traviataActThreeScenes } from './libretto-la-traviata-act-3.js?v=traviata-all-acts-20261028';
+import { getOpera } from '../../catalog.js';
+import { operaInformation } from '../../information.js';
+import { traviataActOneScenes } from './act-1.js?v=traviata-act1-20261028';
+import { traviataActTwoScenes } from './act-2.js?v=traviata-all-acts-20261028';
+import { traviataActThreeScenes } from './act-3.js?v=traviata-all-acts-20261028';
 const info = operaInformation['la-traviata'];
 export const traviata = {
   slug: 'la-traviata',

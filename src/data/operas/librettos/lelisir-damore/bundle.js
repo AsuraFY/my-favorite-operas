@@ -1,10 +1,10 @@
 // L'elisir d'amore — Both acts available as Italian/English AI working translations; editorial review pending.
 // Italian: public-domain Felice Romani libretto, librettidopera.it transcription.
 // English is independently generated and awaiting full editorial/source review.
-import { getOpera } from './operas.js';
-import { operaInformation } from './opera-information.js';
-import { elisirActOneScenes } from './libretto-lelisir-damore-act-1.js?v=elisir-act1-20261029';
-import { elisirActTwoScenes } from './libretto-lelisir-damore-act-2.js?v=elisir-act2-20261029';
+import { getOpera } from '../../catalog.js';
+import { operaInformation } from '../../information.js';
+import { elisirActOneScenes } from './act-1.js?v=elisir-act1-20261029';
+import { elisirActTwoScenes } from './act-2.js?v=elisir-act2-20261029';
 const info = operaInformation['lelisir-damore'];
 export const elisir = {
   slug: 'lelisir-damore', opera: getOpera('lelisir-damore'),

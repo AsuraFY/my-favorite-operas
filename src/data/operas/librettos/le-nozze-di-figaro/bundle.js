@@ -1,10 +1,10 @@
 // This opera's metadata and act modules load only when its page is visited.
-import { applyFigaroOutlineMetadata } from "./figaro-outline-metadata.js?v=figaro-outlines-20261021";
+import { applyFigaroOutlineMetadata } from "./outline-metadata.js?v=figaro-outlines-20261021";
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { figaroActOneScenes } from "./libretto-le-nozze-di-figaro-act-1.js?v=figaro-stage-cues-20261023";
-import { figaroActTwoScenes } from "./libretto-le-nozze-di-figaro-act-2.js?v=figaro-act2-review-1";
-import { figaroActThreeScenes } from "./libretto-le-nozze-di-figaro-act-3.js?v=figaro-act3-review-1";
-import { figaroActFourScenes } from "./libretto-le-nozze-di-figaro-act-4.js?v=figaro-act4-review-1";
+import { figaroActOneScenes } from "./act-1.js?v=figaro-stage-cues-20261023";
+import { figaroActTwoScenes } from "./act-2.js?v=figaro-act2-review-1";
+import { figaroActThreeScenes } from "./act-3.js?v=figaro-act3-review-1";
+import { figaroActFourScenes } from "./act-4.js?v=figaro-act4-review-1";
 
 export const figaro = {
   threeLineOutline: true,
