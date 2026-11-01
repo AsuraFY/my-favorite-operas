@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
-import { getLibretto } from '../src/data/libretto-registry.js';
+import { getLibretto } from '../src/data/operas/libretto-registry.js';
 import { createLibrettoRenderer } from '../src/libretto-reader.js';
 import { assertActTargets, renderedVersePairs, expectedPairedRows, resetReaderLocation } from './helpers/libretto-helpers.mjs';
 const libretto = getLibretto('samson-et-dalila');

@@ -1,11 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { otelloActOneScenes } from "../src/data/libretto-otello-act-1.js";
-import { otelloActTwoScenes } from "../src/data/libretto-otello-act-2.js";
-import { otelloActThreeScenes } from "../src/data/libretto-otello-act-3.js";
-import { otelloActFourScenes } from "../src/data/libretto-otello-act-4.js";
-import { otello } from "../src/data/libretto-otello-bundle.js";
-import { hasCompleteLibretto, loadLibretto } from "../src/data/libretto-loader.js";
+import { otelloActOneScenes } from "../src/data/operas/librettos/otello/act-1.js";
+import { otelloActTwoScenes } from "../src/data/operas/librettos/otello/act-2.js";
+import { otelloActThreeScenes } from "../src/data/operas/librettos/otello/act-3.js";
+import { otelloActFourScenes } from "../src/data/operas/librettos/otello/act-4.js";
+import { otello } from "../src/data/operas/librettos/otello/bundle.js";
+import { hasCompleteLibretto, loadLibretto } from "../src/data/operas/libretto-loader.js";
 const acts = [otelloActOneScenes, otelloActTwoScenes, otelloActThreeScenes, otelloActFourScenes];
 const sceneCounts = [3, 5, 9, 4];
 for (const [a, scenes] of acts.entries()) {

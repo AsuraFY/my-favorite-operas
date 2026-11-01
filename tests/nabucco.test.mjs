@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {nabuccoActOneScenes} from '../src/data/libretto-nabucco-act-1.js';
-import {nabuccoActTwoScenes} from '../src/data/libretto-nabucco-act-2.js';
-import {nabuccoActThreeScenes} from '../src/data/libretto-nabucco-act-3.js';
-import {nabuccoActFourScenes} from '../src/data/libretto-nabucco-act-4.js';
-import {nabucco} from '../src/data/libretto-nabucco-bundle.js';
-import {hasCompleteLibretto,loadLibretto} from '../src/data/libretto-loader.js';
+import {nabuccoActOneScenes} from '../src/data/operas/librettos/nabucco/act-1.js';
+import {nabuccoActTwoScenes} from '../src/data/operas/librettos/nabucco/act-2.js';
+import {nabuccoActThreeScenes} from '../src/data/operas/librettos/nabucco/act-3.js';
+import {nabuccoActFourScenes} from '../src/data/operas/librettos/nabucco/act-4.js';
+import {nabucco} from '../src/data/operas/librettos/nabucco/bundle.js';
+import {hasCompleteLibretto,loadLibretto} from '../src/data/operas/libretto-loader.js';
 const acts=[nabuccoActOneScenes,nabuccoActTwoScenes,nabuccoActThreeScenes,nabuccoActFourScenes];
 const allTurns=scenes=>scenes.flatMap(scene=>scene.sections.flatMap(section=>section.turns));
 

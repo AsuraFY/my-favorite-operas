@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { luciaActOneScenes } from '../src/data/libretto-lucia-di-lammermoor-act-1.js';
-import { luciaActTwoScenes } from '../src/data/libretto-lucia-di-lammermoor-act-2.js';
-import { luciaActThreeScenes } from '../src/data/libretto-lucia-di-lammermoor-act-3.js';
-import { luciaDiLammermoor } from '../src/data/libretto-lucia-di-lammermoor-bundle.js';
-import { hasCompleteLibretto, loadLibretto } from '../src/data/libretto-loader.js';
+import { luciaActOneScenes } from '../src/data/operas/librettos/lucia-di-lammermoor/act-1.js';
+import { luciaActTwoScenes } from '../src/data/operas/librettos/lucia-di-lammermoor/act-2.js';
+import { luciaActThreeScenes } from '../src/data/operas/librettos/lucia-di-lammermoor/act-3.js';
+import { luciaDiLammermoor } from '../src/data/operas/librettos/lucia-di-lammermoor/bundle.js';
+import { hasCompleteLibretto, loadLibretto } from '../src/data/operas/libretto-loader.js';
 
 const acts = [luciaActOneScenes, luciaActTwoScenes, luciaActThreeScenes];
 const sceneCounts = [5, 6, 9];

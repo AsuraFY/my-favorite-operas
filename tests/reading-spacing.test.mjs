@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { getLibretto } from "../src/data/libretto-registry.js";
+import { getLibretto } from "../src/data/operas/libretto-registry.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { resetReaderLocation, renderedVersePairs } from "./helpers/libretto-helpers.mjs";
 import {

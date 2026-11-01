@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normaActOneScenes } from '../src/data/libretto-norma-act-1.js';
-import { normaActTwoScenes } from '../src/data/libretto-norma-act-2.js';
-import { norma } from '../src/data/libretto-norma-bundle.js';
-import { hasCompleteLibretto, loadLibretto } from '../src/data/libretto-loader.js';
+import { normaActOneScenes } from '../src/data/operas/librettos/norma/act-1.js';
+import { normaActTwoScenes } from '../src/data/operas/librettos/norma/act-2.js';
+import { norma } from '../src/data/operas/librettos/norma/bundle.js';
+import { hasCompleteLibretto, loadLibretto } from '../src/data/operas/libretto-loader.js';
 const acts=[normaActOneScenes,normaActTwoScenes];
 const turns=act=>act.flatMap(scene=>scene.sections.flatMap(section=>section.turns));
 
