@@ -1,8 +1,8 @@
 // This opera's metadata and act modules load only when its page is visited.
-import { applyCosiOutlineMetadata } from "./cosi-outline-metadata.js";
+import { applyCosiOutlineMetadata } from "./outline-metadata.js";
 import { getOpera } from "./operas.js?v=tosca-act1-2";
-import { cosiActOneScenes } from "./libretto-cosi-fan-tutte-act-1.js?v=cosi-lines-1";
-import { cosiActTwoScenes } from "./libretto-cosi-fan-tutte-act-2.js?v=cosi-lines-1";
+import { cosiActOneScenes } from "./act-1.js?v=cosi-lines-1";
+import { cosiActTwoScenes } from "./act-2.js?v=cosi-lines-1";
 
 const characters = [
   ["Fiordiligi", "Soprano", "Dorabella’s sister, engaged to Guglielmo; she struggles to remain loyal during the test."],

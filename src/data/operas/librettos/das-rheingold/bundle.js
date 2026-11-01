@@ -1,8 +1,8 @@
 // Das Rheingold — complete German-English working text, one act with four continuous scenes.
 // Original public-domain German by Richard Wagner; English machine-assisted translation pending editorial review.
-import { getOpera } from './operas.js';
-import { operaInformation } from './opera-information.js';
-import { rheingoldScenes } from './libretto-das-rheingold-scenes.js?v=rheingold-four-scenes-20261029';
+import { getOpera } from '../../catalog.js';
+import { operaInformation } from '../../information.js';
+import { rheingoldScenes } from './act-1.js?v=rheingold-four-scenes-20261029';
 const info=operaInformation['das-rheingold'];
 export const dasRheingold={
  slug:'das-rheingold',opera:getOpera('das-rheingold'),composerShort:'R. WAGNER',mobileComposer:'Richard Wagner',

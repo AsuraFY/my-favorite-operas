@@ -1,9 +1,9 @@
 // Complete German-English machine-assisted working draft; human editorial review pending.
-import {getOpera} from './operas.js';
-import {operaInformation} from './opera-information.js';
-import {fledermausActOneScenes} from './libretto-die-fledermaus-act-1.js?v=fledermaus-20261029';
-import {fledermausActTwoScenes} from './libretto-die-fledermaus-act-2.js?v=fledermaus-20261029';
-import {fledermausActThreeScenes} from './libretto-die-fledermaus-act-3.js?v=fledermaus-20261029';
+import {getOpera} from '../../catalog.js';
+import {operaInformation} from '../../information.js';
+import {fledermausActOneScenes} from './act-1.js?v=fledermaus-20261029';
+import {fledermausActTwoScenes} from './act-2.js?v=fledermaus-20261029';
+import {fledermausActThreeScenes} from './act-3.js?v=fledermaus-20261029';
 const info=operaInformation['die-fledermaus'];
 export const dieFledermaus={
  slug:'die-fledermaus',opera:getOpera('die-fledermaus'),composerShort:'J. STRAUSS II',mobileComposer:'Johann Strauss II',
