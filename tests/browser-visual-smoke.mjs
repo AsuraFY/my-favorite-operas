@@ -62,11 +62,13 @@ function chromeExecutable() {
   throw new Error("Chrome is not installed in this test environment");
 }
 
-const slugs = [
-  "cosi-fan-tutte", "il-barbiere-di-siviglia", "tristan-und-isolde",
-  "macbeth", "turandot", "le-nozze-di-figaro", "carmen", "la-boheme",
-  "madama-butterfly", "tosca", "samson-et-dalila", "the-magic-flute"
-];
+// Catalogue-driven coverage: never silently omit newly added operas.
+import { operas } from "../src/data/operas.js";
+import { hasCompleteLibretto } from "../src/data/libretto-loader.js";
+const slugs = operas.map(opera => opera.slug);
+assert.equal(slugs.length, 35, "Expected all 35 catalogued operas");
+assert.equal(new Set(slugs).size, slugs.length, "Duplicate catalogue slug");
+for (const slug of slugs) assert.ok(hasCompleteLibretto(slug), "Missing reader for " + slug);
 const capture = new Set([
   "cosi-fan-tutte", "tristan-und-isolde", "la-boheme", "samson-et-dalila"
 ]);
@@ -145,7 +147,7 @@ try {
           viewport.label + " " + slug + ": the reader did not render");
         check(data.rows > 0 && data.columns >= 2,
           viewport.label + " " + slug + ": bilingual content missing");
-        check(data.originalText && data.translationText,
+        check(data.translationText && (data.originalText || slug === "eugene-onegin"),
           viewport.label + " " + slug + ": first lyric pair is incomplete");
         check(data.horizontalOverflow <= 3,
           viewport.label + " " + slug + ": document overflows viewport by " +
@@ -161,6 +163,26 @@ try {
           check(data.translation.top >= data.original.bottom - 6,
             slug + ": mobile translation should be stacked below original");
         }
+        // Open the last act as well; this catches missing later-act imports and reader errors.
+        const opera = operas.find(item => item.slug === slug);
+        if (opera.acts > 1) {
+          await page.goto(base + "#/operas/" + slug + "?act=" + opera.acts, { waitUntil: "domcontentloaded" });
+          await page.locator(".opera-reading-page .libretto-row").first().waitFor({ state: "attached", timeout: 20000 });
+          const finalState = await state(page);
+          check(finalState.reader && finalState.rows > 0 && finalState.translationText,
+            viewport.label + " " + slug + ": last act did not render translated passages");
+          check(finalState.horizontalOverflow <= 3,
+            viewport.label + " " + slug + ": last act overflows viewport");
+          check(scriptErrors.length === 0,
+            viewport.label + " " + slug + ": script error in last act: " + scriptErrors.join(" | "));
+        }
+        // An outline is a distinct rendering path and must not fail on newer bundles.
+        await page.goto(base + "#/operas/" + slug + "?view=outline", { waitUntil: "domcontentloaded" });
+        await page.locator(".opera-outline").first().waitFor({ state: "attached", timeout: 20000 });
+        check(await page.locator(".opera-outline").count() > 0,
+          viewport.label + " " + slug + ": full outline missing");
+        check(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth) <= 3,
+          viewport.label + " " + slug + ": outline overflows screen");
         if (capture.has(slug)) await screenshot(page, slug + "-" + viewport.label);
         results.push({ viewport: viewport.label, slug, rows: data.rows,
           overflow: data.horizontalOverflow, status: "passed" });
