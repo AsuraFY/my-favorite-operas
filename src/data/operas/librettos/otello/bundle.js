@@ -1,11 +1,11 @@
 // Otello (Verdi / Boito): all four acts from the user-provided Opera Guide Italian HTML.
 // Italian source text is preserved; English is an unreviewed first draft.
-import { getOpera } from "./operas.js";
-import { operaInformation } from "./opera-information.js";
-import { otelloActOneScenes } from "./libretto-otello-act-1.js?v=cosi-classic-sections-20261027";
-import { otelloActTwoScenes } from "./libretto-otello-act-2.js?v=cosi-classic-sections-20261027";
-import { otelloActThreeScenes } from "./libretto-otello-act-3.js?v=cosi-classic-sections-20261027";
-import { otelloActFourScenes } from "./libretto-otello-act-4.js?v=cosi-classic-sections-20261027";
+import { getOpera } from "../../catalog.js";
+import { operaInformation } from "../../information.js";
+import { otelloActOneScenes } from "./act-1.js?v=cosi-classic-sections-20261027";
+import { otelloActTwoScenes } from "./act-2.js?v=cosi-classic-sections-20261027";
+import { otelloActThreeScenes } from "./act-3.js?v=cosi-classic-sections-20261027";
+import { otelloActFourScenes } from "./act-4.js?v=cosi-classic-sections-20261027";
 const info = operaInformation["otello"];
 export const otello = {
   slug: "otello",

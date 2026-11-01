@@ -1,9 +1,9 @@
 // Bilingual reader draft: all passages translated, source and editorial review pending.
-import { parsifalActOneScenes } from "./libretto-parsifal-act-1.js?v=cosi-classic-sections-20261027";
-import { parsifalActTwoScenes } from "./libretto-parsifal-act-2.js?v=cosi-classic-sections-20261027";
-import { parsifalActThreeScenes } from "./libretto-parsifal-act-3.js?v=cosi-classic-sections-20261027";
-import { getOpera } from "./operas.js";
-import { operaInformation } from "./opera-information.js";
+import { parsifalActOneScenes } from "./act-1.js?v=cosi-classic-sections-20261027";
+import { parsifalActTwoScenes } from "./act-2.js?v=cosi-classic-sections-20261027";
+import { parsifalActThreeScenes } from "./act-3.js?v=cosi-classic-sections-20261027";
+import { getOpera } from "../../catalog.js";
+import { operaInformation } from "../../information.js";
 const info = operaInformation["parsifal"];
 export const parsifal = {
   slug: "parsifal", opera: getOpera("parsifal"),

@@ -3,10 +3,10 @@
 // Structured transcription: https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q248644.json
 // English: independently written AI-generated working translation awaiting editorial review.
 // Prologue is presented at the beginning of the Act I reading page, without inventing a third act.
-import {getOpera} from './operas.js';
-import {operaInformation} from './opera-information.js';
-import {pagliacciPrologueScenes, pagliacciActOneScenes} from './libretto-pagliacci-act-1.js?v=pagliacci-prologue-act1-20261029';
-import {pagliacciActTwoScenes} from './libretto-pagliacci-act-2.js?v=pagliacci-act2-20261029';
+import {getOpera} from '../../catalog.js';
+import {operaInformation} from '../../information.js';
+import {pagliacciPrologueScenes, pagliacciActOneScenes} from './act-1.js?v=pagliacci-prologue-act1-20261029';
+import {pagliacciActTwoScenes} from './act-2.js?v=pagliacci-act2-20261029';
 const info=operaInformation['pagliacci'];
 const prologue=pagliacciPrologueScenes.map(scene=>({...scene,number:1,originalHeading:'PROLOGO',translatedHeading:'Prologue'}));
 const actOne=pagliacciActOneScenes.map((scene,index)=>({...scene,number:index+2}));

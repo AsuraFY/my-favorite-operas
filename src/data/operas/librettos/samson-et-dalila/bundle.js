@@ -1,7 +1,7 @@
 // This opera's metadata and act modules load only when its page is visited.
-import { samsonActThreeScenes } from "./libretto-samson-et-dalila-act-3.js?v=samson-act3-20261021";
-import { samsonActTwoScenes } from "./libretto-samson-et-dalila-act-2.js?v=samson-act2-20261021";
-import { samsonActOneScenes } from "./libretto-samson-et-dalila-act-1.js?v=samson-act1-20261021";
+import { samsonActThreeScenes } from "./act-3.js?v=samson-act3-20261021";
+import { samsonActTwoScenes } from "./act-2.js?v=samson-act2-20261021";
+import { samsonActOneScenes } from "./act-1.js?v=samson-act1-20261021";
 import { operaInformation } from "./opera-information.js?v=info-9";
 import { getOpera } from "./operas.js?v=tosca-act1-2";
 

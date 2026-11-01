@@ -1,11 +1,11 @@
 // Original Italian: public-domain Piave libretto in Opera Guide (Act I).
 // English: independent AI-generated working translation awaiting editorial review.
 // All three acts have bilingual AI working drafts; source and editorial review pending.
-import { getOpera } from './operas.js';
-import { operaInformation } from './opera-information.js';
-import { rigolettoActOneScenes } from './libretto-rigoletto-act-1.js?v=rigoletto-act1-20261028';
-import { rigolettoActThreeScenes } from './libretto-rigoletto-act-3.js?v=rigoletto-act3-20261028';
-import { rigolettoActTwoScenes } from './libretto-rigoletto-act-2.js?v=rigoletto-act2-20261028';
+import { getOpera } from '../../catalog.js';
+import { operaInformation } from '../../information.js';
+import { rigolettoActOneScenes } from './act-1.js?v=rigoletto-act1-20261028';
+import { rigolettoActThreeScenes } from './act-3.js?v=rigoletto-act3-20261028';
+import { rigolettoActTwoScenes } from './act-2.js?v=rigoletto-act2-20261028';
 const info = operaInformation.rigoletto;
 export const rigoletto = {
   slug: 'rigoletto', opera: getOpera('rigoletto'),
