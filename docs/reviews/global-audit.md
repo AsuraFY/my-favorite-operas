@@ -19,7 +19,7 @@
 - Regression coverage added in `tests/die-walkure-source-integrity.test.mjs` and `tests/opera-participant-names.test.mjs`; **the latest passing CI for those edits is not established**.
 - Google Drive guideline §1.4 was updated and read back on November 2, with the approved **universal participant-list rule**.
 
-**Immediate next action:** Check the **current `Update` commit** in [GitHub Actions — Verify Update](https://github.com/AsuraFY/my-favorite-operas/actions/workflows/verify-update.yml). If tests fail, repair the failures without weakening valid assertions; if passed, verify the intended preview commit and browse affected opera acts (particularly *Die Walküre* Act III and *Manon* Act I). Record run URL, tested SHA, screenshots and manual review separately. Then continue remaining Phase B issues `05`, `08`, `09`.
+**Immediate next action:** Check the **current `Update` commit** in [GitHub Actions — Verify Update](https://github.com/AsuraFY/my-favorite-operas/actions/workflows/verify-update.yml). If tests fail, repair the failures without weakening valid assertions; if passed, verify the intended preview commit and browse affected opera acts (particularly *Die Walküre* Act III and *Manon* Act I). Record run URL, tested SHA, screenshots and manual review separately. The remaining Phase B issues `05`, `08`, `09` have implementation commits; validate these with fresh tests and a real reader/outline review. Separate Manon Act V edition decision remains in Phase C.
 
 **Important:** A committed fix is **Needs verification**, not `Resolved`. A publicly reachable GitHub Pages link may reflect a different release than `Update`. Always give the user direct opera/act page links after opera edits and disclose whether those exact commits are visibly deployed.
 
@@ -40,7 +40,7 @@
 | Phase | Tracked issues | Current position | Next deliverable |
 |---|---|---|---|
 | **A — Reliable test gate** | AUD-20261101-01–03 | Verified historical checkpoint on 2026-11-01; latest head **unverified** | Re-run Node/browser checks and confirm preview for the latest `Update` head |
-| **B — Definite source/presentation repairs** | AUD-20261101-04–09; AUD-20261102-01 | **In progress** | Verify *Die Walküre* and *Manon* participant/source fixes; reconcile *Manon* edition and stage directions; fix *La fanciulla* headings |
+| **B — Definite source/presentation repairs** | AUD-20261101-04–09; AUD-20261102-01 | **Implemented; verification pending** | All Phase B edits committed; run new-head CI/browser and source/semantic spot-checks before sign-off |
 | **C — Editorial fidelity and nomenclature** | AUD-20261101-10–16 | Queued / needs review | Source, scene/section, speaker, English wording and provenance comparisons; no invented or copyrighted text |
 | **D — Reader, outline, accessibility and visual sign-off** | AUD-20261101-17–20; AUD-20261102-01 | Queued / needs verification | All 35 plus future operas: detailed participants, both outlines, desktop/mobile/night, screen-reader, anchors, recordings |
 | **E — Metadata, governance, release** | AUD-20261101-21–22; GLOBAL issues | Queued | Correct obsolete content/status references with approval when guideline edits required; reconcile tracker; request separate `main` merge authorization |
@@ -57,11 +57,11 @@ Statuses in this table are the **consolidated Nov 2 assessment**, not a claim of
 | `AUD-20261101-02` | P0 · A | Needs verification | **All-35 Chromium coverage** — 876 assertions / 70 opera×viewport checks passed at 2026-11-01 checkpoint; re-run current head and retain artifacts. Human visual inspection is separate. |
 | `AUD-20261101-03` | P0 · A/E | Needs verification | **Preview and public release distinction** — Match tested commit to Update preview; compare with main Pages independently; never assert public URL has newer edits without proof. Merge only by explicit user approval. |
 | `AUD-20261101-04` | P0 · B | Needs verification | **Die Walküre Acts II–III scenic preambles** — Restored 2 omissions; exact German source 1,806 lines and integrity test committed; verify new-head Node/browser, direction treatment and opening visuals. |
-| `AUD-20261101-05` | P0 · B/C | Open | **Manon original edition and Prélude** — Reconcile duplicated/stray Act I Prélude, original scene boundaries and source edition; Act V edition variant remains a separate decision. Do not silently move or rewrite. |
+| `AUD-20261101-05` | P0 · B/C | Needs verification | **Manon original edition and Prélude** — Moved terminal Act I `Prélude` cue to opening Act II (source text/English unchanged; source position reconciled against Sottovoce Q842063 and historical libretto). Act III's two tableaux retained; Act V mixed edition separately tracked in AUD-20261101-14. New-head CI/visual confirmation pending. |
 | `AUD-20261101-06` | P1 · B | Needs verification | **Manon English generic/group speaker cues** — Acts I–V participant/role edits committed Nov 2; verify all descriptive English labels on the English side, no false group splitting and no changes to sung text. |
 | `AUD-20261101-07` | P1 · B | Needs verification | **Die Walküre German group and voice labels** — Acts I–III participant/English cue edits committed Nov 2; verify true participants, German voice attribution, collective cues and full source alignment. |
-| `AUD-20261101-08` | P1 · B | Open | **Manon/Die Walküre direction semantics** — Classify short action cues vs substantive directions by dramatic function, preserving square brackets, source text and sung asides; test representative scenes. |
-| `AUD-20261101-09` | P1 · B | Open | **La fanciulla del West missing English titles** — Source-check Act I Introduzione / Hello, Nick! / Hello, Minnie! and explicitly populate correct outline translations; verify both outlines. |
+| `AUD-20261101-08` | P1 · B | Needs verification | **Manon/Die Walküre direction semantics** — Each Stage direction turn now explicitly flags compact versus extended cue in the eight act files, preserving source/translation texts and sung asides. Verify semantic edge cases and rendering in browser; do not interpret automatic flags as editorial sign-off. |
+| `AUD-20261101-09` | P1 · B | Needs verification | **La fanciulla del West missing English titles** — Explicitly populated `Introduction`, `Hello, Nick!`, `Hello, Minnie!` in both Act I section metadata and historical listening-outline metadata. Current-head CI/preview and both-outline visual confirmation pending. |
 | `AUD-20261101-10` | P1 · C | Needs review | **Die Zauberflöte generic Auftritt and Arie mir Chor** — Verify 48 generic Auftritt headings, form anomaly and actual source incipits without inventing official titles. |
 | `AUD-20261101-11` | P1 · C | Needs review | **Tosca Act III instrumental credits** — Verify bells/matins landmark and remove singers from instrumental-only credit lines where source confirms none. |
 | `AUD-20261101-12` | P1 · C | Needs review | **Turandot / Carmen generic headings** — Check Scena/Scène and section incipits; use source-supported navigation labels and correct translations only. |
@@ -180,6 +180,14 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 **Release gate:** Current `Update` tests green (not merely old green checks); verified preview commit matches; no unapproved source or translation substitutions; relevant manual day/night/mobile/keyboard checks recorded; approved guidelines met or explicit exceptions recorded; licensing/provenance reviewed; **separate approval requested before any merge into `main`**.
 
 ## 8. Dated execution log and handover history
+
+### 2026-11-02 — Phase B content repairs implemented; independent verification outstanding
+
+- *Manon* Acts I–V: set stage-direction `shortCue` classification, preserving the source French, existing English line text, and character/sung passages. Moved the duplicated Act I-terminal `Prélude` directive to Act II start; maintained the independent prelude at Act I opening. Acts I–IV from Sottovoce Q842063; the historical Act V J. C. Macy variant remains a separately tracked Phase C editorial issue. Updated Act V English collective-role labels for Soldiers/Sergeant. Commits: `e41b9c7d`, `0986851c`, `2709ff64`, `fff1e68c`, `65e24ad4`.
+- *Die Walküre* Acts I–III: all stage-direction turns classified short vs extended, with original German and English passage content preserved. Commits: `00e86f98`, `e23354a2`, `c73693a`.
+- *La fanciulla del West* Act I: filled translated headings in main reader metadata and historical listening outline without changing source Italian or assigning new official numbers. Commits: `e593120a`, `82b733ea`.
+- Added `tests/phase-b-repairs.test.mjs` (`9ed54569`) checking *Manon* Prélude position/source counts, stage flags, and *Fanciulla* metadata. The earlier participant/source-integrity tests remain in place.
+- **Do not mark resolved yet**: no new-head successful `npm test`, Chromium run or verified Update preview was obtained in this session; real browser presentation and selected stage-direction semantics still require verification. `main` untouched.
 
 ### 2026-11-02 — Google Drive guidelines converted to Markdown
 
