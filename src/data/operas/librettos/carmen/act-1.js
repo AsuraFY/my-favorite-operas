@@ -637,7 +637,7 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "ZUNIGA",
-            "original": "Je ne suis dans 'e régiment que depuis deux jours et jamais je n'étais venu à Séville. Qu'est-ce que c'est que ce grand bâtiment?",
+            "original": "Je ne suis dans le régiment que depuis deux jours et jamais je n'étais venu à Séville. Qu'est-ce que c'est que ce grand bâtiment?",
             "translation": "I’ve been with the regiment only two days, and I’d never been to Seville before. What is that large building?",
             "literalText": true,
             "speakerTranslation": "Zuniga"
@@ -1689,7 +1689,7 @@ export const carmenActOneScenes = [
           {
             "speaker": "DEUXIÈME GROUPE",
             "original": "Et ce jour-là tu pourras\nA bon droit faire la fière;\nDeux laquais suivront derrière\nT'émouchant à tour de bras.",
-            "translation": "‘And on that day you’ll be able\nTo put on airs quite rightly;\nTwo footmen will follow behind,\nWaving fans at you with all their might.’",
+            "translation": "‘And on that day you’ll be able\nTo put on airs quite rightly;\nTwo footmen will follow behind,\nShooing flies away from you with all their might.’",
             "literalText": true,
             "speakerTranslation": "Second group"
           },
@@ -1935,14 +1935,14 @@ export const carmenActOneScenes = [
           },
           {
             "speaker": "Stage direction",
-            "original": "Zuniga regarde Carmen; celle-ci, après un regard à DonJosé et un très léger haussement d'épaules, est redevenue impassible.",
+            "original": "Zuniga regarde Carmen; celle-ci, après un regard à Don José et un très léger haussement d'épaules, est redevenue impassible.",
             "translation": "Zuniga looks at Carmen. After glancing at Don José and giving a very slight shrug, she has become impassive again.",
             "shortCue": false,
             "bracketStageDirection": false
           },
           {
             "speaker": "JOSÉ",
-            "original": "Le cas m'a paru clair. J'ai prié mademoiselle de me suivre…Elle a d'abord fait un mouvement comme pourrésister ... puis elle s'est\nrésignée ... et m'a suivi, douce comme un mouton!",
+            "original": "Le cas m'a paru clair. J'ai prié mademoiselle de me suivre…Elle a d'abord fait un mouvement comme pour résister ... puis elle s'est\nrésignée ... et m'a suivi, douce comme un mouton!",
             "translation": "The case seemed clear to me. I asked Mademoiselle to come with me ... At first she made a move as if to resist ... then she\ngave in ... and followed me, docile as a lamb!",
             "literalText": true,
             "speakerTranslation": "José"
