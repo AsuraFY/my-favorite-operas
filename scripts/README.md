@@ -1,19 +1,28 @@
-# Repository scripts
+# Scripts
 
-This directory is reserved for **active, approved development scripts**. The four one-time Python libretto importers were moved to [`archive/`](./archive/) after their corresponding opera readers had been integrated.
+This folder is for **active, approved development scripts**. Completed one-time opera importers belong in [`archive/`](./archive/) and must not run in normal development or deployment.
 
-## Archive policy
+## Archived imports
 
-When an opera's source preparation and integration have finished and a generator is no longer needed:
+The following operas have their libretto readers integrated. Their old importers are retained only as historical source-processing references.
 
-1. Move its one-time importer, relevant helper files and any dedicated workflow definition into `scripts/archive/`.
-2. Record the opera, what the script generated, and why it was archived in `scripts/archive/README.md`.
-3. Remove or retire all active automation triggers and document old entry points.
-4. Keep the archived code for provenance and reproducibility, **not** for automatic regeneration. Do not execute archived code as part of normal releases or development.
-5. If a source must be re-imported, develop a **new, reviewed draft-staging process** that never overwrites the accepted libretto without an explicit review and approval.
+| Opera | Archived importer | Existing libretto |
+| --- | --- | --- |
+| *Manon* | `archive/import-manon.py` | `src/data/operas/librettos/manon/` |
+| *Die Zauberflöte*, Act I | `archive/import_die_zauberflote_act_1.py` | `src/data/operas/librettos/the-magic-flute/` |
+| *Die Zauberflöte*, Act II | `archive/import_die_zauberflote_act_2.py` | `src/data/operas/librettos/the-magic-flute/` |
+| *La fanciulla del West* | `archive/import_fanciulla_all_acts.py` | `src/data/operas/librettos/la-fanciulla-del-west/` |
 
-## Current status
+Also archived: `archive/legacy_import_guard.py` (read-only inspection / protection against overwrites) and `archive/build-manon.workflow.yml` (retired workflow, deliberately outside `.github/workflows/`).
 
-There are **no active libretto-import generators** in this top-level folder. The website loads committed JavaScript data from `src/data/operas/librettos/<opera-slug>/`; it does **not** run Python importers for visitors.
+**Do not execute or re-enable archived scripts.** Some were designed for incomplete early versions and may create outdated bundles or test files. The live site uses the committed JavaScript librettos and does not need Python importers at runtime.
 
-**Important:** A structurally complete libretto reader does not imply its English translation has passed human editorial review. See the opera audit and source notes for editorial status.
+## Policy for future operas
+
+1. Work on new imports in an active, reviewable draft workflow, without overwriting accepted librettos.
+2. When an opera's import stage is complete, move its one-time importer and relevant helpers/workflow files into `scripts/archive/`.
+3. Update **this README only** with the opera, script, purpose/status, and current source location. Do not create a second README inside `archive/`.
+4. Disable any automation triggers that could still run the archived importer. Keep archived code for provenance, not active execution.
+5. Any later source regeneration or editorial correction requires a separately reviewed change.
+
+**Editorial note:** A structurally complete reader does not mean that the English translation has passed human editorial review. Consult the opera audit roadmap for remaining text-quality work.
