@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {operaOrigins} from './helpers/opera-origins.mjs';
 import { elisirActOneScenes } from '../src/data/operas/librettos/lelisir-damore/act-1.js';
 import { elisirActTwoScenes } from '../src/data/operas/librettos/lelisir-damore/act-2.js';
 import { elisir } from '../src/data/operas/librettos/lelisir-damore/bundle.js';
@@ -53,5 +54,7 @@ test('L’elisir lazy reader exposes both acts and keeps English marked unreview
   assert.equal(libretto.slug, 'lelisir-damore');
   assert.equal(libretto.acts.length, 2);
   assert.match(libretto.synopsis.eyebrow, /working translations/i);
-  assert.match(libretto.source, /editorial review pending/i);
+  const origins = operaOrigins('lelisir-damore');
+  assert.match(origins, /Independent AI-generated English working translation/);
+  assert.match(origins, /detailed comparison .* remains outstanding/i);
 });
