@@ -25,7 +25,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Siegmund, Sieglinde\nDas Innere eines Wohnraumes. In der Mitte steht der Stamm einer mächtigen Esche, dessen stark erhabene Wurzeln sich weithin in den Erdboden verlieren; von seinem Wipfel ist der Baum durch ein gezimmertes Dach geschieden, welches so durchschnitten ist, dass der Stamm und die nach allen Seiten hin sich ausstreckenden Äste durch genau entsprechende Öffnungen hindurchgehen; von dem belaubten Wipfel wird angenommen, dass er sich über dieses Dach ausbreite. Um den Eschenstamm, als Mittelpunkt, ist nun ein Saal gezimmert; die Wände sind aus roh behauenem Holzwerk, hier und da mit geflochtenen und gewebten Decken behangen. Rechts im Vordergrunde steht der Herd, dessen Rauchfang seitwärts zum Dache hinausführt: hinter dem Herde befindet sich ein innerer Raum, gleich einem Vorratsspeicher, zu dem man auf einigen hölzernen Stufen hinaufsteigt: davor hängt, halb zurückgeschlagen, eine geflochtene Decke. Im Hintergrunde eine Eingangstür mit schlichtem Holzriegel. Links die Tür zu einem inneren Gemache, zu dem gleichfalls Stufen hinaufführen; weiter vornen auf derselben Seite ein Tisch mit einer breiten, an der Wand angezimmerten Bank dahinter und hölzernen Schemeln davor\nEin kurzes Orchestervorspiel von heftiger, stürmischer Bewegung leitet ein. Als der Vorhang aufgeht, öffnet Siegmund von aussen hastig die Eingangstür und tritt ein: es ist gegen Abend, starkes Gewitter, im Begriff, sich zu legen. Siegmund hält einen Augenblick den Riegel in der Hand und überblickt den Wohnraum: er scheint von übermässiger Anstrengung erschöpft; sein Gewand und Aussehen zeigen, dass er sich auf der Flucht befinde. Da er niemand gewahrt, schliesst er die Tür hinter sich, schreitet auf den Herd zu und wirft sich dort ermattet auf eine Decke von Bärenfell",
             "translation": "Siegmund, Sieglinde\nThe interior of a living space. In the center stands the trunk of a mighty ash tree, its prominent roots spreading far into the ground; the tree's crown is separated from its canopy by a timbered roof, which is cut in such a way that the trunk and the branches extending in all directions pass through precisely corresponding openings; the leafy canopy is presumed to spread out over this roof. Around the ash trunk, as its central point, a hall has been constructed; the walls are of roughly hewn timber, hung here and there with woven and braided blankets. To the right in the foreground stands the hearth, its chimney leading sideways out to the roof; behind the hearth is an inner room, like a storeroom, which one ascends by a few wooden steps; in front of it hangs a woven blanket, half-folded back. In the background is an entrance door with a simple wooden bolt. To the left is the door to an inner chamber, which is also reached by steps; Further forward on the same side was a table with a wide bench behind it, built against the wall, and wooden stools in front.\nA short, tempestuous orchestral prelude introduces the scene. As the curtain rises, Siegmund hastily opens the front door from the outside and enters: it is evening, a heavy thunderstorm is raging, about to subside. Siegmund holds the bolt for a moment and surveys the room: he seems exhausted from excessive exertion; his clothing and appearance indicate that he is fleeing. Seeing no one, he closes the door behind him, strides towards the hearth, and throws himself wearily onto a bearskin blanket.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -39,7 +40,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er sinkt zurück und bleibt einige Zeit regungslos ausgestreckt. Sieglinde tritt aus der Tür des inneren Gemaches; sie glaubte ihren Mann heimgekehrt: ihre ernste Miene zeigt sich dann verwundert, als sie einen Fremden am Herde ausgestreckt sieht\nnoch im Hintergrunde",
             "translation": "He sinks back and remains stretched out motionless for some time. Sieglinde steps out of the inner chamber door; she believed her husband had returned home: her serious expression then turns to surprise when she sees a stranger stretched out by the hearth.\nstill in the background",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGLINDE",
@@ -53,7 +55,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie tritt ruhig einige Schritte näher",
             "translation": "She calmly takes a few steps closer.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -67,7 +70,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Da Siegmund sich nicht regt, tritt sie noch etwas näher und betrachtet ihn",
             "translation": "Since Siegmund doesn't move, she steps a little closer and looks at him.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -81,7 +85,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie neigt sich zu ihm herab und lauscht",
             "translation": "She leans down towards him and listens.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -95,7 +100,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "fährt jäh mit dem Haupt in die Höhe",
             "translation": "suddenly raises his head",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -116,7 +122,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie nimmt schnell ein Trinkhorn und geht damit aus dem Hause. Sie kommt zurück und reicht das gefüllte Trinkhorn Siegmund",
             "translation": "She quickly grabs a drinking horn and leaves the house. She returns and hands the filled drinking horn to Siegmund.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -130,7 +137,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Siegmund trinkt und reicht ihr das Horn zurück. Als er ihr mit dem Haupte Dank zuwinkt, haftet sein Blick mit steigender Teilnahme an ihren Mienen",
             "translation": "Siegmund drinks and hands her back the horn. As he nods his head in thanks, his gaze lingers with growing sympathy on her expression.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -158,7 +166,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "mit besorgter Hast",
             "translation": "with anxious haste",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -172,7 +181,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "schüttelt sich und springt lebhaft vom Lager zum Sitz auf",
             "translation": "shakes himself and jumps lively from the bed to the seat",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -186,7 +196,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "geht nach dem Speicher, füllt ein Horn mit Met und reicht es Siegmund mit freundlicher Bewegtheit",
             "translation": "He goes to the storehouse, fills a horn with mead, and hands it to Siegmund with friendly enthusiasm.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -221,7 +232,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sieglinde nippt am Horne und reicht es ihm wieder. Siegmund tut einen langen Zug, indem er den Blick mit wachsender Wärme auf sie heftet. Er setzt so das Horn ab und lässt es langsam sinken, während der Ausdruck seiner Miene in starke Ergriffenheit übergeht. Er seufzt tief auf und senkt den Blick düster zu Boden\nmit bebender Stimme",
             "translation": "Sieglinde sipped from the horn and handed it back to him. Siegmund took a long draught, his gaze fixed on her with growing warmth. He set the horn down and lets it slowly fall, his expression deepening with emotion. He sighed deeply and lowered his gaze somberly to the ground.\nwith a trembling voice",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -235,7 +247,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er bricht schnell auf, um fortzugehen",
             "translation": "He quickly sets off to leave.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -249,7 +262,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "er geht nach hinten\nlebhaft sich umwendend",
             "translation": "he goes backwards\nlively turning around",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGLINDE",
@@ -263,7 +277,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "von ihrem Rufe gefesselt, wendet sich wieder; langsam und düster",
             "translation": "Captivated by her call, he turns back; slowly and gloomily.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -277,7 +292,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er schreitet schnell bis zur Tür und hebt den Riegel\nin heftigem Selbstvergessen ihm nachrufend",
             "translation": "He strides quickly to the door and lifts the bolt.\ncalling out to him in a fit of intense self-forgetfulness",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGLINDE",
@@ -291,7 +307,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Siegmund bleibt tief erschüttert stehen; er forscht in Sieglindes Mienen; diese schlägt verschämt und traurig die Augen nieder. Langes Schweigen\nkehrt zurück",
             "translation": "Siegmund stood there, deeply shaken; he studied Sieglinde's expression; she lowered her eyes in shame and sadness. A long silence.\nreturns",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -305,7 +322,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er lehnt sich an den Herd; sein Blick haftet mit ruhiger und entschlossener Teilnahme an Sieglinde; diese hebt langsam das Auge wieder zu ihm auf. Beide blicken sich in langem Schweigen mit dem Ausdruck tiefster Ergriffenheit in die Augen",
             "translation": "He leans against the stove; his gaze rests on Sieglinde with calm and resolute concern; she slowly raises her eyes to him again. They gaze into each other's eyes in a long silence, their expressions of profound emotion evident.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       }
@@ -335,7 +353,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "dem Blicke Hundings entgegnend",
             "translation": "meeting Hunding's gaze",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGLINDE",
@@ -363,7 +382,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "der ruhig und fest Hunding beobachtet",
             "translation": "who calmly and steadily observed Hunding",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -384,7 +404,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "er legt seine Waffen ab und übergibt sie Sieglinde. Zu Sieglinde",
             "translation": "He lays down his weapons and hands them over to Sieglinde. To Sieglinde",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HUNDING",
@@ -398,7 +419,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sieglinde hängt die Waffen an Ästen des Eschenstammes auf, dann holt sie Speise und Trank aus dem Speicher und rüstet auf dem Tische das Nachtmahl. Unwillkürlich heftet sie wieder den Blick auf Siegmund. Hunding misst scharf und verwundert Siegmunds Züge, die er mit denen seiner Frau vergleicht; für sich",
             "translation": "Sieglinde hangs the weapons on the branches of the ash tree, then fetches food and drink from the granary and prepares supper on the table. Involuntarily, her gaze falls once more on Siegmund. Hunding studies Siegmund's features sharply and with wonder, comparing them to those of his wife; for himself",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "HUNDING",
@@ -412,7 +434,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "er birgt sein Befremden und wendet sich wie unbefangen zu Siegmund",
             "translation": "He conceals his bewilderment and turns to Siegmund as if unselfconscious.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HUNDING",
@@ -433,7 +456,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "am Tische und Siegmund den Sitz bietend",
             "translation": "at the table and offering Siegmund a seat",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HUNDING",
@@ -447,7 +471,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Siegmund, der sich am Tisch niedergesetzt, blickt nachdenklich vor sich hin. Sieglinde, die sich neben Hunding, Siegmund gegenüber, gesetzt, heftet ihr Auge mit auffallender Teilnahme und Spannung auf diesen\nder beide beobachtet",
             "translation": "Siegmund, who had sat down at the table, gazed thoughtfully ahead. Sieglinde, who had sat down next to Hunding, opposite Siegmund, fixed her eyes on him with striking interest and anticipation.\nwho observed both",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "HUNDING",
@@ -461,7 +486,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "unbefangen und teilnahmsvoll",
             "translation": "unbiased and empathetic",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -490,7 +516,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "blickt auf, sieht ihr in das Auge und beginnt ernst",
             "translation": "looks up, looks into her eye and begins seriously",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -504,7 +531,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "zu Hunding gewandt",
             "translation": "turned to Hunding",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -554,7 +582,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er sieht zu Sieglinde auf und gewahrt ihren teilnehmenden Blick",
             "translation": "He looks up at Sieglinde and notices her sympathetic gaze.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HUNDING",
@@ -575,7 +604,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "immer lebhafter",
             "translation": "increasingly lively",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -589,7 +619,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "mit einem Blicke voll schmerzlichen Feuers auf Sieglinde",
             "translation": "with a look full of painful fire at Sieglinde",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -617,7 +648,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er steht auf und schreitet auf den Herd zu. Sieglinde blickt erbleichend und tief erschüttert zu Boden\nerhebt sich, sehr finster",
             "translation": "He stands up and strides towards the stove. Sieglinde looks down, pale and deeply shaken.\nrises, very dark",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "HUNDING",
@@ -631,7 +663,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er geht herab",
             "translation": "He goes down",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HUNDING",
@@ -645,7 +678,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sieglinde schreitet mit besorgter Gebärde zwischen die beiden Männer vor\nbarsch",
             "translation": "Sieglinde steps forward between the two men with a worried gesture.\nperch",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "HUNDING",
@@ -659,7 +693,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sieglinde steht eine Weile unentschieden und sinnend. Sie wendet sich langsam und zögernden Schrittes nach dem Speicher. Dort hält sie wieder an und bleibt, in Sinnen verloren, mit halb abgewandtem Gesicht stehen. Mit ruhigem Entschluss öffnet sie den Schrein, füllt ein Trinkhorn und schüttet aus einer Büchse Würze hinein. Dann wendet sie das Auge auf Siegmund, um seinem Blicke zu begegnen, den dieser fortwährend auf sie heftet. Sie gewahrt Hundings Spähen und wendet sich sogleich zum Schlafgemach. Auf den Stufen kehrt sie sich noch einmal um, heftet das Auge sehnsuchtsvoll auf Siegmund und deutet mit dem Blicke andauernd und mit sprechender Bestimmtheit auf eine Stelle am Eschenstamme. Hunding fährt auf und treibt sie mit einer heftigen Gebärde zum Fortgehen an. Mit einem letzten Blick auf Siegmund geht sie in das Schlafgemach und schliesst hinter sich die Türe\nnimmt seine Waffen vom Stamme herab",
             "translation": "Sieglinde stood for a while, undecided and pensive. She turned slowly and hesitantly toward the granary. There she paused again and stood, lost in thought, with her face half averted. With calm resolve, she opened the shrine, filled a drinking horn, and poured spices into it from a tin. Then she turned her gaze to Siegmund, to meet his gaze, which he kept fixed upon her. She noticed Hunding's watchful eyes and immediately turned toward the bedchamber. On the steps, she turned once more, fixed her gaze longingly on Siegmund, and pointed with a persistent and eloquent expression at a spot on the ash tree trunk. Hunding started and, with a forceful gesture, urged her to leave. With one last look at Siegmund, she went into the bedchamber and closed the door behind her.\ntakes his weapons down from the trunk",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "HUNDING",
@@ -673,7 +708,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Im Abgehen sich zu Siegmund wendend",
             "translation": "Turning towards Siegmund as he left",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HUNDING",
@@ -687,7 +723,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er geht mit den Waffen in das Gemach; man hört ihn von innen den Riegel schliessen",
             "translation": "He goes into the room with the weapons; from inside he can be heard closing the bolt.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       }
@@ -722,7 +759,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Das Feuer bricht zusammen; es fällt aus der aufsprühenden Glut plötzlich ein greller Schein auf die Stelle des Eschenstammes, welche Sieglindes Blick bezeichnet hatte und an der man jetzt deutlich einen Schwertgriff haften sieht",
             "translation": "The fire collapses; from the splashing embers, a bright light suddenly falls on the spot on the ash trunk which Sieglinde's gaze had indicated and where a sword hilt can now be clearly seen.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -736,7 +774,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "von hier an verglimmt das Herdfeuer allmählich",
             "translation": "From here on, the hearth fire gradually dies down.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -750,7 +789,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ein neuer schwacher Aufschein des Feuers",
             "translation": "A new, faint glimmer of fire",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -764,7 +804,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Das Feuer ist gänzlich verloschen: volle Nacht. Das Seitengemach öffnet sich leise: Sieglinde, in weissem Gewande, tritt heraus und schreitet leise, doch rasch, auf den Herd zu",
             "translation": "The fire has completely gone out: full night. The side room opens quietly: Sieglinde, in a white gown, steps out and walks softly, but quickly, towards the hearth.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       },
@@ -792,7 +833,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "freudig überrascht aufspringend",
             "translation": "jumping up in joyful surprise",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -806,7 +848,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "mit geheimnisvoller Hast",
             "translation": "with mysterious haste",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -820,7 +863,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "hitzig unterbrechend",
             "translation": "interrupting heatedly",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -841,7 +885,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "mit Glut Sieglinde umfassend",
             "translation": "with embers Sieglinde comprehensive",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -869,7 +914,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Die grosse Türe springt auf\nfährt erschrocken zusammen und reisst sich los",
             "translation": "The large door springs open\nHe jumps in fright and tears himself away.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGLINDE",
@@ -883,7 +929,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Die Tür bleibt weit geöffnet: aussen herrliche Frühlingsnacht; der Vollmond leuchtet herein und wirft sein helles Licht auf das Paar, das so sich plötzlich in voller Deutlichkeit wahrnehmen kann\nin leiser Entzückung",
             "translation": "The door remains wide open: outside, a glorious spring night; the full moon shines in and casts its bright light on the couple, who can suddenly perceive each other in full clarity.\nin quiet delight",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -897,7 +944,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Siegmund zieht Sieglinde mit sanfter Gewalt zu sich auf das Lager, so dass sie neben ihm zu sitzen kommt, Wachsende Helligkeit des Mondscheines",
             "translation": "Siegmund gently but firmly pulls Sieglinde onto the bed with him, so that she comes to sit beside him, Growing brightness of the moonlight",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -932,7 +980,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie hängt sich entzückt an seinen Hals und blickt ihm nahe ins Gesicht\nmit Hingerissenheit",
             "translation": "She clings to his neck in delight and looks closely into his face.\nwith rapture",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGMUND",
@@ -946,7 +995,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "dicht an seinen Augen",
             "translation": "close to his eyes",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -967,7 +1017,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "schlägt ihm die Locken von der Stirn zurück und betrachtet ihn staunend",
             "translation": "He brushes his curls back from his forehead and looks at him in amazement.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -1016,7 +1067,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "den Blick schnell abwendend",
             "translation": "quickly averting his gaze",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -1030,7 +1082,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aufgeregt",
             "translation": "upset",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -1051,7 +1104,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ihm wieder in die Augen spähend",
             "translation": "peering into his eyes again",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -1100,7 +1154,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ausser sich",
             "translation": "beside himself",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -1114,7 +1169,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "springt auf den Stamm zu und fasst den Schwertgriff",
             "translation": "jumps towards the trunk and grabs the sword hilt",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1142,7 +1198,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er zieht mit einem gewaltigen Zuck das Schwert aus dem Stamme und zeigt es der von Staunen und Entzücken erfassten Sieglinde",
             "translation": "With a mighty jerk, he pulls the sword from the trunk and shows it to Sieglinde, who is overcome with amazement and delight.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGMUND",
@@ -1156,7 +1213,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er hat sie umfasst, um sie mit sich fortzuziehen\nreisst sich in höchster Trunkenheit von ihm los und stellt sich ihm gegenüber",
             "translation": "He embraced her, intending to pull her away with him.\nIn a state of extreme drunkenness, she tears herself away from him and confronts him.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGLINDE",
@@ -1177,7 +1235,8 @@ export const walkureActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er zieht sie mit wütender Glut an sich; sie sinkt mit einem Schrei an seine Brust. Der Vorhang fällt schnell",
             "translation": "He pulls her to him with furious fervor; she collapses with a cry against his chest. The curtain falls quickly.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       }
