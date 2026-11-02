@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {operaOrigins} from './helpers/opera-origins.mjs';
 import { normaActOneScenes } from '../src/data/operas/librettos/norma/act-1.js';
 import { normaActTwoScenes } from '../src/data/operas/librettos/norma/act-2.js';
 import { norma } from '../src/data/operas/librettos/norma/bundle.js';
@@ -35,5 +36,7 @@ test('Norma loads on demand with explicit AI translation review status',async()=
  const v=await loadLibretto('norma');
  assert.equal(v.slug,'norma');
  assert.equal(v.acts.length,2);
- assert.match(v.source,/awaiting editorial review/);
+ const origins = operaOrigins('norma');
+ assert.match(origins, /Independent AI-generated English working translation/);
+ assert.match(origins, /source verification remains needed/i);
 });
