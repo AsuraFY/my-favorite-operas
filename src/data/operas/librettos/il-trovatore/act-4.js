@@ -32,7 +32,7 @@ export const trovatoreActFourScenes = [
             "speaker": "RUIZ",
             "speakerTranslation": "Ruiz",
             "original": "Siam giunti; ecco la torre, ove di Stato\nGemono i prigionieri... ah, l'infelice\nIvi fu tratto!",
-            "translation": "We have arrived; here is the tower\nWhere prisoners of the state languish.\nAlas, the unhappy man\nWas brought here!",
+            "translation": "We have arrived; here stands the tower where\nPrisoners of the state languish... Alas, the unhappy man\nWas brought here!",
             "literalText": true
           },
           {
@@ -194,7 +194,7 @@ export const trovatoreActFourScenes = [
             "speaker": "CONTE",
             "speakerTranslation": "Count di Luna",
             "original": "Abuso io forse del poter che pieno\nIn me trasmise il prence! A tal mi traggi,\nDonna per me funesta!... Ov'ella è mai?\nRipreso Castellor, di lei contezza\nNon ebbi, e furo ondarne\nTante ricerche e tante!\nAh! dove sei, crudele?",
-            "translation": "Perhaps I abuse the full power\nThe prince entrusted to me!\nYou drive me to this, woman fatal to me!\nWhere can she be?\nSince Castellor was retaken,\nI have heard nothing of her,\nThough I have searched everywhere!\nAh, where are you, cruel woman?",
+            "translation": "Perhaps I abuse the full power\nThe prince entrusted to me! You drive me to this,\nWoman fatal to me!... Where can she be?\nSince Castellor was retaken,\nI have had no news of her, though\nI searched and searched in vain!\nAh, where are you, cruel woman?",
             "literalText": true
           },
           {
@@ -608,7 +608,7 @@ export const trovatoreActFourScenes = [
             "speaker": "AZUCENA",
             "speakerTranslation": "Azucena",
             "original": "Non odi?... gente appressa...\nI carnefici son... vogliono al rogo\nTrarmi!... Difendi la tua madre!",
-            "translation": "Do you not hear? People approach.\nThey are the executioners; they want\nTo drag me to the stake!\nDefend your mother!",
+            "translation": "Do you not hear? Someone approaches...\nThe executioners... They want to drag me\nTo the stake! Defend your mother!",
             "literalText": true
           },
           {
@@ -1052,7 +1052,7 @@ export const trovatoreActFourScenes = [
             "speaker": "LEONORA",
             "speakerTranslation": "Leonora",
             "original": "Manrico! Or la tua grazia...\nPadre del cielo... imploro...\nPrima... che... d'altri vivere...\nIo volli... tua morir!",
-            "translation": "Manrico! Now I implore\nThe Father of heaven\nFor your pardon.\nRather than live for another,\nI wished to die as yours!",
+            "translation": "Manrico! Now I ask for mercy...\nFather in heaven, I implore you...\nRather than live for another,\nI wished to die as yours!",
             "literalText": true
           },
           {
