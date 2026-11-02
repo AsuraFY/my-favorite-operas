@@ -24,6 +24,14 @@ export const walkureActTwoScenes = [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
+            "original": "Wildes Felsengebirge Im Hintergrund zieht sich von unten her eine Schlucht herauf, die auf ein erhöhtes Felsjoch mündet; von diesem senkt sich der Boden dem Vordergrunde zu wieder abwärts",
+            "translation": "Wild, rocky mountains. In the background a gorge rises from below toward a high rocky ridge; from there the ground slopes downward again toward the foreground.",
+            "shortCue": false,
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
             "original": "Wotan, Brünnhilde als Walküre, später Fricka Wotan, kriegerisch gewaffnet, mit dem Speer; vor ihm Brünnhilde, als Walküre, ebenfalls in voller Waffenrüstung",
             "translation": "Wotan, Brünnhilde as a Valkyrie, later Fricka Wotan, warrior-armed with a spear; before him Brünnhilde, as a Valkyrie, also in full armor",
             "literalText": true
