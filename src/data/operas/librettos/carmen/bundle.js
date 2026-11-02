@@ -92,6 +92,6 @@ export const carmen = {
       ["Lillas Pastia", "Speaking role", "The tavern keeper whose inn is a smugglers’ meeting place."]
     ]
   },
-  source: "Georges Bizet and Henri Meilhac & Ludovic Halévy, Carmen (1875), French libretto and act/number divisions from Opera Guide: https://opera-guide.ch/operas/carmen/libretto/fr/. Accessed 11 October 2026. English is a fresh line-by-line draft."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
