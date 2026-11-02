@@ -25,5 +25,5 @@ export const luciaDiLammermoor = {
   eyebrow:'Gaetano Donizetti · Dramatic opera in three acts (original: two parts) · All acts available as AI working translations · Editorial review pending',
   paragraphs:info.synopsis, characters:info.characters
  },
- source:'Italian: Salvadore Cammarano, public-domain libretto transcribed at https://www.librettidopera.it/lucialam/lucialam.html via Sottovoce Wikidata Q244209. English: independently written AI-generated working translation awaiting detailed editorial review and source collation with https://opera-guide.ch/. Scene counts: five in Act I, six in Act II, nine in Act III. Three website acts map to the Italian source\'s two-part structure (La partenza; Il contratto nuziale I and II).'
+ source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
