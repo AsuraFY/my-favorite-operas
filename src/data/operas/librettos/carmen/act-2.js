@@ -631,28 +631,28 @@ export const carmenActTwoScenes = [
           {
             "speaker": "ESCAMILLO",
             "original": "Votre toast ... je peux vous le rendre,\nSeñors, Señors, car avec les soldats\nOui les toreros peuvent s'entendre,\nPour plaisirs ils ont les combats.\nLe cirque est plein, c'est jour de fête,\nLe cirque est plein du haut en bas.\nLes spectateurs perdant la tête,\nLes spectateurs s'interpellent à grands fracas:\nApostrophes, cris et tapage\nPoussés jusques à la fureur.\nCar c'est la fête du courage,\nC'est la fête des gens de cœur.\nAllons en garde! Allons! Allons! Ah!\nToréador, en garde,\nToréador, toréador,\nEt songe bien, oui songe en combattant\nQu'un oeil noir te regarde\nEt que l'amour t'attend.\nToréador, l'amour,\nL'amour t'attend!",
-            "translation": "Your toast ... I can return it,\nSeñors, señors, for soldiers\nAnd toreadors can understand one another;\nTheir pleasures are battles.\nThe arena is full; it’s a day of celebration,\nThe arena is full from top to bottom.\nThe spectators, losing their heads,\nShout at one another in a great uproar:\nTaunts, cries, and tumult\nRise to a frenzy.\nFor this is the festival of courage,\nThe festival of the brave.\nTake your guard! Come on! Come on! Ah!\nToreador, take your guard,\nToreador, toreador,\nAnd remember, yes, remember as you fight,\nThat a dark eye is watching you\nAnd love awaits you.\nToreador, love,\nLove awaits you!",
+            "translation": "Your toast ... I can return it,\nSeñors, señors, for soldiers\nAnd toreadors can understand one another;\nTheir pleasures are battles.\nThe arena is full; it’s a day of celebration,\nThe arena is full from top to bottom.\nThe spectators, losing their heads,\nShout at one another in a great uproar:\nTaunts, cries, and tumult\nRise to a frenzy.\nFor this is the festival of courage,\nThe festival of the brave.\nTake your guard! Come on! Come on! Ah!\nToreador, be on guard,\nToreador, toreador,\nAnd remember, yes, remember as you fight,\nThat a dark eye is watching you\nAnd love awaits you.\nToreador, love,\nLove awaits you!",
             "literalText": true,
             "speakerTranslation": "Escamillo"
           },
           {
             "speaker": "TOUS",
             "original": "Toréador en garde,\nToréador, toréador\nEn combattant songe qu'un oeil noir te regarde\nEt que l'amour t'attend,\nToréador, l'amour, l'amour t'attend!",
-            "translation": "Toreador, take your guard,\nToreador, toreador,\nAs you fight, remember a dark eye is watching you\nAnd love awaits you,\nToreador, love, love awaits you!",
+            "translation": "Toreador, be on guard,\nToreador, toreador,\nAs you fight, remember a dark eye is watching you\nAnd love awaits you,\nToreador, love, love awaits you!",
             "literalText": true,
             "speakerTranslation": "All"
           },
           {
             "speaker": "ESCAMILLO",
             "original": "Tout d'un coup on fait silence;\nOn fait silence. Ah que se passe-t-il?\nPlus de cris; c'est l'instant\nLe taureau s'élance en bondissant hors du toril …\nIl s'élance, il entre, il frappe, un cheval roule\nEntraînant un picador.\n«Ah bravo toro!», hurle la foule.\nLe taureau va ... il vient ... il vient et frappe encor!\nEn secouant ses banderilles,\nPlein de fureur, il court!\nLe cirque est plein de sang;\nOn se sauve, on franchit les grilles;\nC'est ton tour maintenant.\nAllons en garde! Allons! Allons! Ah!\nToréador, en garde!\nToréador, toréador!\nEt songe bien, oui songe en combattant\nQu'un oeil noir te regarde\nEt que l'amour t'attend.\nToréador, l'amour t'attend!",
-            "translation": "All at once there is silence;\nSilence. Ah, what is happening?\nNo more cries; this is the moment.\nThe bull leaps out of the pen ...\nHe leaps in, charges, strikes; a horse falls,\nDragging a picador with it.\n‘Well done, bull!’ the crowd roars.\nThe bull charges ... turns ... comes back and strikes again!\nShaking his banderillas,\nFurious, he races around!\nThe arena is full of blood;\nPeople flee and vault the barriers;\nNow it’s your turn.\nTake your guard! Come on! Come on! Ah!\nToreador, take your guard!\nToreador, toreador!\nAnd remember, yes, remember as you fight,\nThat a dark eye is watching you\nAnd love awaits you.\nToreador, love awaits you!",
+            "translation": "All at once there is silence;\nSilence. Ah, what is happening?\nNo more cries; this is the moment.\nThe bull leaps out of the pen ...\nHe leaps in, charges, strikes; a horse falls,\nDragging a picador with it.\n‘Well done, bull!’ the crowd roars.\nThe bull charges ... turns ... comes back and strikes again!\nShaking his banderillas,\nFurious, he races around!\nThe arena is full of blood;\nPeople flee and vault the barriers;\nNow it’s your turn.\nTake your guard! Come on! Come on! Ah!\nToreador, be on guard!\nToreador, toreador!\nAnd remember, yes, remember as you fight,\nThat a dark eye is watching you\nAnd love awaits you.\nToreador, love awaits you!",
             "literalText": true,
             "speakerTranslation": "Escamillo"
           },
           {
             "speaker": "TOUS",
             "original": "Toréador en garde!\nToréador! Toréador!\nEn combattant songe qu'un oeil noir te regarde,\nEt que l'amour t'attend.\nToréador, l'amour, l'amour t'attend!",
-            "translation": "Toreador, take your guard!\nToreador! Toreador!\nAs you fight, remember a dark eye is watching you,\nAnd love awaits you.\nToreador, love, love awaits you!",
+            "translation": "Toreador, be on guard!\nToreador! Toreador!\nAs you fight, remember a dark eye is watching you,\nAnd love awaits you.\nToreador, love, love awaits you!",
             "literalText": true,
             "speakerTranslation": "All"
           },
@@ -1306,7 +1306,7 @@ export const carmenActTwoScenes = [
             "speakerTranslation": "Le Dancaïre"
           },
           {
-            "speaker": "FRASQUJTA, MERCÉDÈS, LE DANCAÏRE et LE REMENDADO",
+            "speaker": "FRASQUITA, MERCÉDÈS, LE DANCAÏRE et LE REMENDADO",
             "original": "La raison! La raison! La raison! La raison!",
             "translation": "The reason! The reason! The reason! The reason!",
             "literalText": true,
@@ -2286,7 +2286,7 @@ export const carmenActTwoScenes = [
           {
             "speaker": "CARMEN",
             "original": "Bravo! Bravo! J'avais beau faire …\nIl est mélancolique\nDe danser sans orchestre. Et vive la musique qui nous tombe du ciel!\nLa la la la la la la la la la …",
-            "translation": "Bravo! Bravo! I tried hard enough ...\nIt’s dreary\nTo dance without an orchestra. Long live the music falling from the sky!\nLa la la la la la la la la ...",
+            "translation": "Bravo! Bravo! I tried in vain ...\nIt’s dreary\nTo dance without an orchestra. Long live the music falling from the sky!\nLa la la la la la la la la ...",
             "literalText": true,
             "speakerTranslation": "Carmen"
           },
@@ -2299,7 +2299,7 @@ export const carmenActTwoScenes = [
           },
           {
             "speaker": "JOSÉ",
-            "original": "Tu ne m'a pas compris … Carmen, c'est la retraite ...\nIl faut que, moi, je rentre au quartier pour l'appel.",
+            "original": "Tu ne m'as pas compris … Carmen, c'est la retraite ...\nIl faut que, moi, je rentre au quartier pour l'appel.",
             "translation": "You haven’t understood me ... Carmen, it’s the retreat ...\nI have to go back to the barracks for roll call.",
             "literalText": true,
             "speakerTranslation": "José"
