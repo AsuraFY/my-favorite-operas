@@ -16,14 +16,12 @@ export const walkureActThreeScenes = [
         "originalTitle": "Hojotoho! Hojotoho! Heiaha! Heiaha!",
         "translatedTitle": "Hojotoho! Hojotoho! Heiaha! Heiaha!",
         "participants": [
-          "GERHILDE",
-          "HELMWIGES STIMME",
-          "GERHILDE, WALTRAUTE UND SCHWERTLEITE",
-          "ORTLINDE",
-          "WALTRAUTE",
-          "HELMWIGE",
-          "SCHWERTLEITE",
-          "SIEGRUNES STIMME"
+          "Gerhilde",
+          "Helmwige",
+          "Waltraute",
+          "Schwertleite",
+          "Ortlinde",
+          "Siegrune"
         ],
         "turns": [
           {
@@ -57,7 +55,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "HELMWIGES STIMME",
-            "speakerTranslation": "HELMWIGES STIMME",
+            "speakerTranslation": "HELMWIGE'S VOICE",
             "original": "Hojotoho! Hojotoho! Heiaha!",
             "translation": "Hojotoho! Hojotoho! Heiaha!",
             "literalText": true
@@ -71,7 +69,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "GERHILDE, WALTRAUTE UND SCHWERTLEITE",
-            "speakerTranslation": "GERHILDE, WALTRAUTE UND SCHWERTLEITE",
+            "speakerTranslation": "GERHILDE, WALTRAUTE AND SCHWERTLEITE",
             "original": "Heiaha! Heiaha!",
             "translation": "Heiaha! Heiaha!",
             "literalText": true
@@ -204,7 +202,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "SIEGRUNES STIMME",
-            "speakerTranslation": "SIEGRUNES STIMME",
+            "speakerTranslation": "SIEGRUNE'S VOICE",
             "original": "Arbeit gab's!\nSind die andren schon da?",
             "translation": "There was work!\nAre the others already here?",
             "literalText": true
@@ -226,24 +224,19 @@ export const walkureActThreeScenes = [
         "originalTitle": "Hojotoho! Hojotoho!",
         "translatedTitle": "Hojotoho! Hojotoho!",
         "participants": [
-          "SCHWERTLEITE UND WALTRAUTE",
-          "GERHILDE",
-          "GRIMGERDE UND ROSSWEISSE",
-          "WALTRAUTE",
-          "HELMWIGE, ORTLINDE UND SIEGRUNE",
-          "ROSSWEISSES UND GRIMGERDES STIMMEN",
-          "DIE SECHS ANDEREN WALKÜREN",
-          "ORTLINDE",
-          "HELMWIGE",
-          "ROSSWEISSE UND GRIMGERDE",
-          "SCHWERTLEITE",
-          "GRIMGERDE",
-          "ROSSWEISSE"
+          "Schwertleite",
+          "Waltraute",
+          "Gerhilde",
+          "Grimgerde",
+          "Rossweisse",
+          "Helmwige",
+          "Ortlinde",
+          "Siegrune"
         ],
         "turns": [
           {
             "speaker": "SCHWERTLEITE UND WALTRAUTE",
-            "speakerTranslation": "SCHWERTLEITE UND WALTRAUTE",
+            "speakerTranslation": "SCHWERTLEITE AND WALTRAUTE",
             "original": "Hojotoho! Hojotoho!\nHeiaha!",
             "translation": "Hojotoho! Hojotoho!\nHeiaha!",
             "literalText": true
@@ -264,7 +257,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "GRIMGERDE UND ROSSWEISSE",
-            "speakerTranslation": "GRIMGERDE UND ROSSWEISSE",
+            "speakerTranslation": "GRIMGERDE AND ROSSWEISSE",
             "original": "Hojotoho! Hojotoho!\nHeiaha!",
             "translation": "Hojotoho! Hojotoho!\nHeiaha!",
             "literalText": true
@@ -306,14 +299,14 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "HELMWIGE, ORTLINDE UND SIEGRUNE",
-            "speakerTranslation": "HELMWIGE, ORTLINDE UND SIEGRUNE",
+            "speakerTranslation": "HELMWIGE, ORTLINDE AND SIEGRUNE",
             "original": "Gegrüsst, ihr Reisige!\nRossweiss' und Grimgerde!",
             "translation": "Greetings, fellow travelers!\nRossweiss' and Grimgerde!",
             "literalText": true
           },
           {
             "speaker": "ROSSWEISSES UND GRIMGERDES STIMMEN",
-            "speakerTranslation": "ROSSWEISSES UND GRIMGERDES STIMMEN",
+            "speakerTranslation": "ROSSWEISSE'S AND GRIMGERDE'S VOICES",
             "original": "Hojotoho! Hojotoho!\nHeiaha!",
             "translation": "Hojotoho! Hojotoho!\nHeiaha!",
             "literalText": true
@@ -327,7 +320,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE SECHS ANDEREN WALKÜREN",
-            "speakerTranslation": "DIE SECHS ANDEREN WALKÜREN",
+            "speakerTranslation": "THE SIX OTHER VALKYRIES",
             "original": "Hojotoho! Hojotoho! Heiaha! Heiaha!",
             "translation": "Hojotoho! Hojotoho! Heiaha! Heiaha!",
             "literalText": true
@@ -383,14 +376,14 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "ROSSWEISSE UND GRIMGERDE",
-            "speakerTranslation": "ROSSWEISSE UND GRIMGERDE",
+            "speakerTranslation": "ROSSWEISSE AND GRIMGERDE",
             "original": "Hojotoho! Hojotoho!",
             "translation": "Hojotoho! Hojotoho!",
             "literalText": true
           },
           {
             "speaker": "DIE SECHS ANDEREN WALKÜREN",
-            "speakerTranslation": "DIE SECHS ANDEREN WALKÜREN",
+            "speakerTranslation": "THE SIX OTHER VALKYRIES",
             "original": "Willkommen! Willkommen!",
             "translation": "Welcome! Welcome!",
             "literalText": true
@@ -440,18 +433,15 @@ export const walkureActThreeScenes = [
         "originalTitle": "Auf sie noch harren müssen wir hier:",
         "translatedTitle": "We still have to wait for them here:",
         "participants": [
-          "WALTRAUTE",
-          "SIEGRUNE",
-          "DIE ACHT WALKÜREN",
-          "GRIMGERDE",
-          "ROSSWEISSE",
-          "ORTLINDE",
-          "HELMWIGE",
-          "GERHILDE",
-          "SCHWERTLEITE",
-          "HELMWIGE, GERHILDE, SIEGRUNE, ROSSWEISSE",
-          "ORTLINDE, WALTRAUTE, GRIMGERDE, SCHWERTLEITE",
-          "BRÜNNHILDE"
+          "Waltraute",
+          "Siegrune",
+          "Gerhilde",
+          "Ortlinde",
+          "Schwertleite",
+          "Helmwige",
+          "Grimgerde",
+          "Rossweisse",
+          "Brünnhilde"
         ],
         "turns": [
           {
@@ -512,7 +502,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Hojotoho! Hojotoho!\nBrünnhilde! Hei!",
             "translation": "Hojotoho! Hojotoho!\nBrünnhilde! Hey!",
             "literalText": true
@@ -681,17 +671,20 @@ export const walkureActThreeScenes = [
         "originalTitle": "Wo rittest du her in rasender Hast?",
         "translatedTitle": "Where did you ride from in such a furious haste?",
         "participants": [
-          "DIE ACHT WALKÜREN",
-          "BRÜNNHILDE",
-          "ORTLINDE",
-          "WALTRAUTE",
-          "DIE WEITEREN SECHS WALKÜREN",
-          "SECHS WALKÜREN"
+          "Gerhilde",
+          "Ortlinde",
+          "Waltraute",
+          "Schwertleite",
+          "Helmwige",
+          "Siegrune",
+          "Grimgerde",
+          "Rossweisse",
+          "Brünnhilde"
         ],
         "turns": [
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Wo rittest du her in rasender Hast?\nSo fliegt nur, wer auf der Flucht!",
             "translation": "Where did you ride from in such a furious haste?\nOnly those who are fleeing fly like that!",
             "literalText": true
@@ -712,7 +705,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Bist du von Sinnen? Sprich! Sage uns! Wie?\nVerfolgt dich Heervater?\nFliehst du vor ihm?",
             "translation": "Are you out of your mind? Speak up! Tell us! How?\nIs the Father of the Army persecuting you?\nAre you running away from him?",
             "literalText": true
@@ -761,7 +754,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE WEITEREN SECHS WALKÜREN",
-            "speakerTranslation": "DIE WEITEREN SECHS WALKÜREN",
+            "speakerTranslation": "THE OTHER SIX VALKYRIES",
             "original": "Heervater reitet sein heiliges Ross!",
             "translation": "The All-Father rides his holy steed!",
             "literalText": true
@@ -775,7 +768,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "SECHS WALKÜREN",
-            "speakerTranslation": "SECHS WALKÜREN",
+            "speakerTranslation": "SIX VALKYRIES",
             "original": "Was ist mit dem Weibe?",
             "translation": "What about the woman?",
             "literalText": true
@@ -810,7 +803,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "SECHS WALKÜREN",
-            "speakerTranslation": "SECHS WALKÜREN",
+            "speakerTranslation": "SIX VALKYRIES",
             "original": "Betörte Schwester, was tatest du?\nWehe! Brünnhilde, wehe!\nBrach ungehorsam\nBrünnhilde Heervaters heilig Gebot?",
             "translation": "Bewitched sister, what did you do?\nWoe! Brünnhilde, woe!\nBroke disobediently\nBrünnhilde's Heervater's holy commandment?",
             "literalText": true
@@ -832,15 +825,16 @@ export const walkureActThreeScenes = [
         "originalTitle": "Nächtig zieht es von Norden heran.",
         "translatedTitle": "It will move in from the north during the night.",
         "participants": [
-          "WALTRAUTE",
-          "ORTLINDE",
-          "ROSSWEISSE, GRIMGERDE, SCHWERTLEITE",
-          "HELMWIGE, GERHILDE, SCHWERTLEITE",
-          "BRÜNNHILDE",
-          "SIEGRUNE",
-          "ROSSWEISSE",
-          "HELMWIGE",
-          "SIEGLINDE"
+          "Waltraute",
+          "Ortlinde",
+          "Rossweisse",
+          "Grimgerde",
+          "Schwertleite",
+          "Helmwige",
+          "Gerhilde",
+          "Brünnhilde",
+          "Siegrune",
+          "Sieglinde"
         ],
         "turns": [
           {
@@ -965,15 +959,13 @@ export const walkureActThreeScenes = [
         "originalTitle": "ein Wälsung wächst dir im Schoss!",
         "translatedTitle": "A Wälsung will grow in your lap!",
         "participants": [
-          "BRÜNNHILDE",
-          "SIEGLINDE",
-          "WALTRAUTE",
-          "ORTLINDE",
-          "DIE SECHS ANDEREN WALKÜREN",
-          "SIEGRUNE",
-          "SCHWERTLEITE",
-          "GRIMGERDE",
-          "SECHS WALKÜREN"
+          "Brünnhilde",
+          "Sieglinde",
+          "Waltraute",
+          "Ortlinde",
+          "Siegrune",
+          "Schwertleite",
+          "Grimgerde"
         ],
         "turns": [
           {
@@ -1027,7 +1019,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE SECHS ANDEREN WALKÜREN",
-            "speakerTranslation": "DIE SECHS ANDEREN WALKÜREN",
+            "speakerTranslation": "THE SIX OTHER VALKYRIES",
             "original": "Fort mit dem Weibe, droht ihm Gefahr:\nder Walküren keine wag' ihren Schutz!",
             "translation": "Away with the woman, he is in danger:\nThe Valkyries do not dare to offer their protection!",
             "literalText": true
@@ -1118,7 +1110,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "SECHS WALKÜREN",
-            "speakerTranslation": "SECHS WALKÜREN",
+            "speakerTranslation": "SIX VALKYRIES",
             "original": "Brünnhilde, hör' seines Nahens Gebraus'!",
             "translation": "Brünnhilde, hear the roar of his approaching!",
             "literalText": true
@@ -1154,12 +1146,17 @@ export const walkureActThreeScenes = [
         "originalTitle": "Verwahr' ihm die starken Schwertesstücken;",
         "translatedTitle": "Keep the heavy sword pieces safe for him;",
         "participants": [
-          "BRÜNNHILDE",
-          "SIEGLINDE",
-          "WOTANS STIMME",
-          "ORTLINDE UND WALTRAUTE",
-          "ALLE ACHT WALKÜREN",
-          "DIE ACHT WALKÜREN"
+          "Brünnhilde",
+          "Sieglinde",
+          "Wotan",
+          "Ortlinde",
+          "Waltraute",
+          "Gerhilde",
+          "Schwertleite",
+          "Helmwige",
+          "Siegrune",
+          "Grimgerde",
+          "Rossweisse"
         ],
         "turns": [
           {
@@ -1192,7 +1189,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "WOTANS STIMME",
-            "speakerTranslation": "WOTANS STIMME",
+            "speakerTranslation": "WOTAN'S VOICE",
             "original": "Steh'! Brünnhild'!",
             "translation": "Stop! Brünnhilde!",
             "literalText": true
@@ -1206,14 +1203,14 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "ORTLINDE UND WALTRAUTE",
-            "speakerTranslation": "ORTLINDE UND WALTRAUTE",
+            "speakerTranslation": "ORTLINDE AND WALTRAUTE",
             "original": "Den Fels erreichten Ross und Reiter!",
             "translation": "Horse and rider reached the rock!",
             "literalText": true
           },
           {
             "speaker": "ALLE ACHT WALKÜREN",
-            "speakerTranslation": "ALLE ACHT WALKÜREN",
+            "speakerTranslation": "ALL EIGHT VALKYRIES",
             "original": "Weh', Brünnhild'! Rache entbrennt!",
             "translation": "Woe, Brünnhilde! Revenge is unleashed!",
             "literalText": true
@@ -1234,7 +1231,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Hieher, Verlor'ne! Lass dich nicht sehn!\nSchmiege dich an uns und schweige dem Ruf!",
             "translation": "Come here, you lost soul! Don't let yourself be seen!\nSnuggle up to us and ignore the call!",
             "literalText": true
@@ -1248,7 +1245,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Weh'! Wütend schwingt sich Wotan vom Ross! -\nHieher rast sein rächender Schritt!",
             "translation": "Woe! Wotan angrily leaps from his horse!\nHere rushes his vengeful step!",
             "literalText": true
@@ -1271,9 +1268,15 @@ export const walkureActThreeScenes = [
         "originalTitle": "Wo ist Brünnhild', wo die Verbrecherin?",
         "translatedTitle": "Where is Brünnhilde, where is the criminal?",
         "participants": [
-          "WOTAN",
-          "DIE ACHT WALKÜREN",
-          "ROSSWEISSE"
+          "Wotan",
+          "Gerhilde",
+          "Ortlinde",
+          "Waltraute",
+          "Schwertleite",
+          "Helmwige",
+          "Siegrune",
+          "Grimgerde",
+          "Rossweisse"
         ],
         "turns": [
           {
@@ -1292,7 +1295,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Schrecklich ertost dein Toben!\nWas taten, Vater, die Töchter,\ndass sie dich reizten zu rasender Wut?",
             "translation": "Terribly raging is your fury!\nWhat did the father and daughters do?\nthat they provoked you to a furious rage?",
             "literalText": true
@@ -1313,7 +1316,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Unsern Schutz flehte sie an!\nMit Furcht und Zagen fasst sie dein Zorn:\nfür die bange Schwester bitten wir nun,\ndass den ersten Zorn du bezähmst.\nLass dich erweichen für sie, zähm deinen Zorn!",
             "translation": "She begged for our protection!\nYour anger grips her with fear and dread:\nWe now pray for our anxious sister,\nthat you tame your first anger.\nLet yourself be moved by her, tame your anger!",
             "literalText": true
@@ -1342,9 +1345,16 @@ export const walkureActThreeScenes = [
         "originalTitle": "Hier bin ich, Vater: gebiete die Strafe!",
         "translatedTitle": "Here I am, Father: command the punishment!",
         "participants": [
-          "BRÜNNHILDE",
-          "WOTAN",
-          "DIE ACHT WALKÜREN"
+          "Brünnhilde",
+          "Wotan",
+          "Gerhilde",
+          "Ortlinde",
+          "Waltraute",
+          "Schwertleite",
+          "Helmwige",
+          "Siegrune",
+          "Grimgerde",
+          "Rossweisse"
         ],
         "turns": [
           {
@@ -1391,7 +1401,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Wehe! Weh'!\nSchwester, ach Schwester!",
             "translation": "Woe! Woe!\nSister, oh sister!",
             "literalText": true
@@ -1413,8 +1423,15 @@ export const walkureActThreeScenes = [
         "originalTitle": "Der dich zwingt, wird dir's entziehn!",
         "translatedTitle": "He who forces you will take it away from you!",
         "participants": [
-          "WOTAN",
-          "DIE ACHT WALKÜREN"
+          "Wotan",
+          "Gerhilde",
+          "Ortlinde",
+          "Waltraute",
+          "Schwertleite",
+          "Helmwige",
+          "Siegrune",
+          "Grimgerde",
+          "Rossweisse"
         ],
         "turns": [
           {
@@ -1433,7 +1450,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Halt' ein, o Vater! Halt' ein den Fluch!\nSoll die Maid verblühn und verbleichen dem Mann?\nHör unser Fleh'n! Schrecklicher Gott,\nwende von ihr die schreiende Schmach!\nWie die Schwester träfe uns selber der Schimpf!",
             "translation": "Stop, O Father! Stop the curse!\nShould the maiden wither and fade before the man?\nHear our plea! Terrible God,\nTurn away from her the screaming disgrace!\nLike our sister, we too would be scorned!",
             "literalText": true
@@ -1461,7 +1478,7 @@ export const walkureActThreeScenes = [
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
-            "speakerTranslation": "DIE ACHT WALKÜREN",
+            "speakerTranslation": "THE EIGHT VALKYRIES",
             "original": "Weh! Weh!",
             "translation": "Woe! Woe!",
             "literalText": true
@@ -1491,8 +1508,8 @@ export const walkureActThreeScenes = [
         "originalTitle": "War es so schmählich, was ich verbrach,",
         "translatedTitle": "Was what I did so shameful?",
         "participants": [
-          "BRÜNNHILDE",
-          "WOTAN"
+          "Brünnhilde",
+          "Wotan"
         ],
         "turns": [
           {
@@ -1603,8 +1620,8 @@ export const walkureActThreeScenes = [
         "originalTitle": "Weil für dich im Auge das eine ich hielt,",
         "translatedTitle": "Because I held the one self in my sight for you",
         "participants": [
-          "BRÜNNHILDE",
-          "WOTAN"
+          "Brünnhilde",
+          "Wotan"
         ],
         "turns": [
           {
@@ -1631,8 +1648,8 @@ export const walkureActThreeScenes = [
         "originalTitle": "Wohl taugte dir nicht die tör'ge Maid,",
         "translatedTitle": "Perhaps the foolish maiden didn't suit you,",
         "participants": [
-          "BRÜNNHILDE",
-          "WOTAN"
+          "Brünnhilde",
+          "Wotan"
         ],
         "turns": [
           {
@@ -1708,8 +1725,8 @@ export const walkureActThreeScenes = [
         "originalTitle": "Nie suche bei mir Schutz für die Frau,",
         "translatedTitle": "Never seek protection from me for a woman,",
         "participants": [
-          "WOTAN",
-          "BRÜNNHILDE"
+          "Wotan",
+          "Brünnhilde"
         ],
         "turns": [
           {
@@ -1827,7 +1844,7 @@ export const walkureActThreeScenes = [
         "originalTitle": "Leb' wohl, du kühnes, herrliches Kind!",
         "translatedTitle": "Farewell, you bold, glorious child!",
         "participants": [
-          "WOTAN"
+          "Wotan"
         ],
         "turns": [
           {
@@ -1882,7 +1899,7 @@ export const walkureActThreeScenes = [
         "originalTitle": "Loge, hör'! Lausche hieher!",
         "translatedTitle": "Loge, listen! Listen here!",
         "participants": [
-          "WOTAN"
+          "Wotan"
         ],
         "turns": [
           {
