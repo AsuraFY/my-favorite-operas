@@ -16,8 +16,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Wes Herd dies auch sei, hier muss ich rasten.",
         "translatedTitle": "Whatever herd this may be, here I must rest.",
         "participants": [
-          "SIEGMUND",
-          "SIEGLINDE"
+          "Siegmund",
+          "Sieglinde"
         ],
         "turns": [
           {
@@ -198,8 +198,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Des seimigen Metes süssen Trank",
         "translatedTitle": "The sweet drink of the creamy mead",
         "participants": [
-          "SIEGLINDE",
-          "SIEGMUND"
+          "Sieglinde",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -325,9 +325,9 @@ export const walkureActOneScenes = [
         "originalTitle": "Müd am Herd fand ich den Mann:",
         "translatedTitle": "I found the man tired at the stove:",
         "participants": [
-          "SIEGLINDE",
-          "HUNDING",
-          "SIEGMUND"
+          "Sieglinde",
+          "Hunding",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -473,9 +473,9 @@ export const walkureActOneScenes = [
         "originalTitle": "Gast, wer du bist, wüsst' ich gern.",
         "translatedTitle": "Guest, I'd like to know who you are.",
         "participants": [
-          "SIEGLINDE",
-          "SIEGMUND",
-          "HUNDING"
+          "Sieglinde",
+          "Siegmund",
+          "Hunding"
         ],
         "turns": [
           {
@@ -537,9 +537,9 @@ export const walkureActOneScenes = [
         "originalTitle": "Ein starkes Jagen auf uns stellten die Neidinge an:",
         "translatedTitle": "The Neidinge launched a fierce chase after us:",
         "participants": [
-          "SIEGMUND",
-          "HUNDING",
-          "SIEGLINDE"
+          "Siegmund",
+          "Hunding",
+          "Sieglinde"
         ],
         "turns": [
           {
@@ -601,8 +601,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Nun weisst du, fragende Frau,",
         "translatedTitle": "Now you know, questioning woman,",
         "participants": [
-          "SIEGMUND",
-          "HUNDING"
+          "Siegmund",
+          "Hunding"
         ],
         "turns": [
           {
@@ -707,7 +707,7 @@ export const walkureActOneScenes = [
         "originalTitle": "Ein Schwert verhiess mir der Vater,",
         "translatedTitle": "My father promised me a sword,",
         "participants": [
-          "SIEGMUND"
+          "Siegmund"
         ],
         "turns": [
           {
@@ -776,8 +776,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Schläfst du, Gast?",
         "translatedTitle": "Are you asleep, guest?",
         "participants": [
-          "SIEGLINDE",
-          "SIEGMUND"
+          "Sieglinde",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -853,8 +853,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Dich selige Frau hält nun der Freund,",
         "translatedTitle": "Your friend now holds you, blessed woman.",
         "participants": [
-          "SIEGMUND",
-          "SIEGLINDE"
+          "Siegmund",
+          "Sieglinde"
         ],
         "turns": [
           {
@@ -916,8 +916,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Du bist der Lenz, nach dem ich verlangte",
         "translatedTitle": "You are the spring I longed for",
         "participants": [
-          "SIEGLINDE",
-          "SIEGMUND"
+          "Sieglinde",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -993,8 +993,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Im Bach erblickt' ich mein eigen Bild -",
         "translatedTitle": "In the stream I saw my own image -",
         "participants": [
-          "SIEGLINDE",
-          "SIEGMUND"
+          "Sieglinde",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -1126,8 +1126,8 @@ export const walkureActOneScenes = [
         "originalTitle": "Siegmund heiss' ich und Siegmund bin ich!",
         "translatedTitle": "My name is Siegmund, and I am Siegmund!",
         "participants": [
-          "SIEGMUND",
-          "SIEGLINDE"
+          "Siegmund",
+          "Sieglinde"
         ],
         "turns": [
           {
