@@ -1,7 +1,4 @@
 // Manon, Jules Massenet — five-act bilingual working reading edition.
-// Acts I–IV: original French Meilhac/Gille from Opera Guide (structured via Sottovoce Q842063);
-// English independently machine-translated on 2026-10-29 and awaiting human editorial review.
-// Act V: 1895 public-domain James Cartwright Macy bilingual edition (alternate ending).
 import {getOpera} from '../../catalog.js';
 import {operaInformation} from '../../information.js';
 import {manonActOneScenes} from './act-1.js?v=manon-complete-20261029';
