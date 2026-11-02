@@ -17,8 +17,8 @@ export const manonActTwoScenes = [
         "originalTitle": "Manon!",
         "translatedTitle": "Manon!",
         "participants": [
-          "DES GRIEUX",
-          "MANON"
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
@@ -206,11 +206,11 @@ export const manonActTwoScenes = [
         "originalTitle": "Oui, je vais la porter!",
         "translatedTitle": "Yes, I'm going to wear it!",
         "participants": [
-          "DES GRIEUX",
-          "MANON",
+          "Des Grieux",
+          "Manon",
           "The Maid",
-          "LESCAUT",
-          "BRÉTIGNY"
+          "Lescaut",
+          "Brétigny"
         ],
         "turns": [
           {
@@ -419,10 +419,10 @@ export const manonActTwoScenes = [
         "originalTitle": "Contiens-toi!",
         "translatedTitle": "Hold yourself back!",
         "participants": [
-          "BRÉTIGNY",
-          "LESCAUT",
-          "DES GRIEUX",
-          "MANON"
+          "Brétigny",
+          "Lescaut",
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
@@ -568,9 +568,9 @@ export const manonActTwoScenes = [
         "originalTitle": "Contiens-toi, Lescaut!",
         "translatedTitle": "Hold yourself back, Lescaut!",
         "participants": [
-          "BRÉTIGNY",
-          "LESCAUT",
-          "DES GRIEUX"
+          "Brétigny",
+          "Lescaut",
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -744,10 +744,10 @@ export const manonActTwoScenes = [
         "originalTitle": "Je venais d'écrire à mon père…",
         "translatedTitle": "I had just written to my father…",
         "participants": [
-          "DES GRIEUX",
-          "LESCAUT",
-          "MANON",
-          "BRÉTIGNY"
+          "Des Grieux",
+          "Lescaut",
+          "Manon",
+          "Brétigny"
         ],
         "turns": [
           {
@@ -949,10 +949,10 @@ export const manonActTwoScenes = [
         "originalTitle": "Que ces mots sont touchants!",
         "translatedTitle": "How touching these words are!",
         "participants": [
-          "LESCAUT",
-          "BRÉTIGNY",
-          "MANON",
-          "DES GRIEUX"
+          "Lescaut",
+          "Brétigny",
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -1210,10 +1210,10 @@ export const manonActTwoScenes = [
         "originalTitle": "C'est parfait!",
         "translatedTitle": "That's perfect!",
         "participants": [
-          "LESCAUT",
-          "BRÉTIGNY",
-          "MANON",
-          "DES GRIEUX",
+          "Lescaut",
+          "Brétigny",
+          "Manon",
+          "Des Grieux",
           "The Maid"
         ],
         "turns": [
@@ -1423,8 +1423,8 @@ export const manonActTwoScenes = [
         "originalTitle": "Quoi ?",
         "translatedTitle": "What ?",
         "participants": [
-          "MANON",
-          "DES GRIEUX"
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -1528,8 +1528,8 @@ export const manonActTwoScenes = [
         "originalTitle": "À table!",
         "translatedTitle": "Dinner's ready!",
         "participants": [
-          "MANON",
-          "DES GRIEUX"
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -1696,8 +1696,8 @@ export const manonActTwoScenes = [
         "originalTitle": "Je ne veux pas!",
         "translatedTitle": "I don't want to!",
         "participants": [
-          "MANON",
-          "DES GRIEUX"
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
