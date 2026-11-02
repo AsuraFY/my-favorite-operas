@@ -29,6 +29,14 @@ export const walkureActThreeScenes = [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
+            "original": "Auf dem Gipfel eines Felsenberges. Rechts begrenzt ein Tannenwald die Szene. Links der Eingang einer Felshöhle, die einen natürlichen Saal bildet: darüber steigt der Fels zu seiner höchsten Spitze auf. Nach hinten ist die Aussicht gänzlich frei; höhere und niedere Felssteine bilden den Rand vor dem Abhange, der - wie anzunehmen ist - nach dem Hintergrund zu steil hinabführt. Einzelne Wolkenzüge jagen, wie vom Sturm getrieben, am Felsensaume vorbei",
+            "translation": "At the summit of a rocky mountain. A fir forest borders the scene on the right. To the left is the entrance to a rocky cave that forms a natural hall; above it the rock rises to its highest point. The view toward the back is completely open; rocks of varying heights mark the edge of a precipice which, as is to be imagined, falls steeply toward the background. Scattered clouds race past the rocky edge, as if driven by a storm.",
+            "shortCue": false,
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
             "original": "Gerhilde, Ortlinde, Waltraute und Schwertleite, später Helmwige, Siegrune, Grimgerde, Rossweisse, Brünnhilde, Sieglinde, Gerhilde, Ortlinde, Waltraute und Schwertleite haben sich auf der Felsspitze, an und über der Höhle, gelagert, sie sind in voller Waffenrüstung\nzuhöchst gelagert und dem Hintergrunde zurufend, wo ein starkes Gewölk herzieht",
             "translation": "Gerhilde, Ortlinde, Waltraute and Schwertleite, later Helmwige, Siegrune, Grimgerde, Rossweisse, Brünnhilde, Sieglinde, Gerhilde, Ortlinde, Waltraute and Schwertleite have encamped on the rocky peak, at and above the cave; they are in full armor.\npositioned at the highest point and calling out towards the background, where a strong cloud is moving in.",
             "literalText": true
