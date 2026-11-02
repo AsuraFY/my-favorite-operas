@@ -27,7 +27,8 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "La route du Hâvre. Des Grieux est seul, assis au bord de la route.",
             "translation": "A lonely spot on the road to Havre. Des Grieux is seated by the wayside.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "DES GRIEUX",
@@ -41,7 +42,8 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il aperçoit Lescaut qui approche.",
             "translation": "He sees Lescaut approaching.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -125,11 +127,12 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ils écoutent, interdits. Des voix de soldats se font entendre au loin.",
             "translation": "They listen. Voices of soldiers are heard in the distance.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LES SOLDATS",
-            "speakerTranslation": "LES SOLDATS",
+            "speakerTranslation": "The Soldiers",
             "original": "Capitaine, ô gué, es-tu fatigué de nous voir à pied ? Mais non, mais non ! La Ramée, on n'est pas trop mal sur un bon cheval pour mener l'armée.",
             "translation": "Captain, riding by, dost thou pitying sigh, as we march left, right? No, no! 'Tis not so. For a gallant bay carries thee all day, and thy heart is light.",
             "literalText": true
@@ -267,11 +270,12 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut entraîne Des Grieux derrière le buisson. Les soldats approchent.",
             "translation": "The soldiers come nearer. Lescaut draws Des Grieux behind some bushes.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LES SOLDATS",
-            "speakerTranslation": "LES SOLDATS",
+            "speakerTranslation": "The Soldiers",
             "original": "Capitaine, ô gué...",
             "translation": "Captain, riding by...",
             "literalText": true
@@ -281,25 +285,26 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Les soldats paraissent.",
             "translation": "The soldiers appear.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "UN SERGENT",
-            "speakerTranslation": "UN SERGENT",
+            "speakerTranslation": "A Sergeant",
             "original": "C'est bien la moins, car ce n'est pas la gloire d'escorter l'arme au bras et de faire embarquer des demoiselles sans vertu ! N'importe ! C'est le métier. Et que disent là-bas les captives ?",
             "translation": "There is no glory in escorting such fair companions as ours. But no matter, 'tis our business. And what do the prisoners say?",
             "literalText": true
           },
           {
             "speaker": "UN SOLDAT",
-            "speakerTranslation": "UN SOLDAT",
+            "speakerTranslation": "A Soldier",
             "original": "Oh ! rien ! Elles ne bougent pas ! L'une d'elles est déjà malade, à demi morte.",
             "translation": "Oh, nothing; they are very quiet, and one of them is already half dead.",
             "literalText": true
           },
           {
             "speaker": "UN SERGENT",
-            "speakerTranslation": "UN SERGENT",
+            "speakerTranslation": "A Sergeant",
             "original": "Manon, alors ?",
             "translation": "Oh, that's Manon!",
             "literalText": true
@@ -323,7 +328,8 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut et le sergent s'entretiennent.",
             "translation": "Lescaut and the sergeant confer together.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -358,7 +364,8 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut sort avec le soldat. Manon paraît ; elle descend péniblement et comme brisée par la fatigue.",
             "translation": "Lescaut leaves with the soldier. Manon appears, exhausted by fatigue.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -620,7 +627,8 @@ export const manonActFiveScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Elle meurt. Des Grieux jette un cri déchirant et tombe sur le corps de Manon. Rideau.",
             "translation": "She dies. Des Grieux utters a distracted cry and falls upon her body. The curtain slowly descends.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       }
