@@ -19,5 +19,5 @@ export const parsifal = {
     {number: 2, originalHeading: "Aufzug II", scenes: parsifalActTwoScenes},
     {number: 3, originalHeading: "Aufzug III", scenes: parsifalActThreeScenes}],
   synopsis: {eyebrow: "Richard Wagner · Complete bilingual working draft · Translation unreviewed", paragraphs: info.synopsis, characters: info.characters},
-  source: "German transcription from DraCor TEI, pending line-by-line reconciliation against user's Opera Guide source. English machine-assisted draft, not editorially verified."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
