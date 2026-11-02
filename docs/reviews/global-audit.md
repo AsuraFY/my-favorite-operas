@@ -27,7 +27,7 @@
 
 | Role | Canonical document | How to use it |
 |---|---|---|
-| **Approved design/editorial rules** | [Opera_Website_Guidelines — Google Drive](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit) | **Only** active opera guidelines. Latest user decisions prevail; **any further guideline edit requires explicit approval**. §1.4 governs all present/future opera participants. |
+| **Approved design/editorial rules** | [Opera_Guidelines.md — Google Drive](https://drive.google.com/file/d/1-NhM8ayIHj9ceQn9frQWLc0qXOKYjDYp/view) | **Only** active opera guidelines. Latest user decisions prevail; **any further guideline edit requires explicit approval**. §1.4 governs all present/future opera participants. |
 | **Active tracker and repair roadmap** | **This file —** `docs/reviews/global-audit.md` | One master issue register, phase board, per-opera checklist, evidence and next-chat handover. Update here on every repair. |
 | **Development / release procedures** | [development-workflow.md](../guidelines/development-workflow.md) | Working branch, review, tests and release mechanics. Some old implementation examples are stale; verify against the latest actual repository and resolve in a separate workflow update. |
 | **Dated review snapshot** | [November 1 Drive Audit & Repair Roadmap](https://drive.google.com/file/d/1HrV7yw8iyx1Y3EEC5UyiRNbW6oIBhAY0/view) | Historical source for the 22 `AUD-20261101-xx` findings and original phase sequencing. **Do not maintain as a competing live tracker.** |
@@ -181,6 +181,12 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — Google Drive guidelines converted to Markdown
+
+- Active guidelines are now exactly three Markdown files in Drive: [Website_Guidelines.md](https://drive.google.com/file/d/1iR8xPKO2JrsXZG_b_Jd_cIMUTLVAiBXf/view), [Opera_Guidelines.md](https://drive.google.com/file/d/1-NhM8ayIHj9ceQn9frQWLc0qXOKYjDYp/view), and unchanged [Musical_Website_Guidelines.md](https://drive.google.com/file/d/159vEOn1Zh8OU03ch6ySmULzin9uR7Oun/view). The old native Google Docs files were moved to Drive Archive. No opera code or main change.
+
+
+
 ### 2026-11-02 — Documentation folder layout simplified
 
 - Moved the active development workflow to [`docs/guidelines/development-workflow.md`](../guidelines/development-workflow.md), without altering its procedural text.
@@ -200,7 +206,7 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 - *Die Walküre* preambles: `cb9fe825` (Act II), `f80c5a88` (Act III), regression `ca5d3f6f`; subsequent participant edits `4ef6a508`, `3094306a`, `b8b859df`.
 - *Manon* translated speaker labels: `ac2e879d`, `2a5c5e66`, `76f0c397`, `322c1cb4`. Updated participant arrays (Acts I–V): `de29e640`, `24ea6f76`, `4e593fba`, `6be3b444`, `75f032e3`.
 - Cross-opera regression `922ce500`; prior audit log commit `05388687`. **Not yet verified on the new head.**
-- Permanent rules agreed and updated in Google Drive [§1.4](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit): ensemble cues in libretto versus genuine unique character names in lists.
+- Permanent rules agreed and updated in Google Drive [§1.4](https://drive.google.com/file/d/1-NhM8ayIHj9ceQn9frQWLc0qXOKYjDYp/view): ensemble cues in libretto versus genuine unique character names in lists.
 
 ### 2026-11-01 — Reliable automated checkpoint (historical)
 
@@ -212,7 +218,7 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 At the beginning of any new chat, read in order:
 1. **This tracker**: checkpoint, phase board, stable issues, today's execution log, next unverified work.
-2. [Active Google Drive guidelines](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit), especially §1.4 for singer lists and act/full outlines.
+2. [Active Google Drive guidelines](https://drive.google.com/file/d/1-NhM8ayIHj9ceQn9frQWLc0qXOKYjDYp/view), especially §1.4 for singer lists and act/full outlines.
 3. [Development workflow](../guidelines/development-workflow.md) for branch/test mechanics; double-check any historical examples against current repo files.
 4. Current GitHub `Update` head, most recent relevant CI/preview and target opera modules; source materials as needed.
 5. Only if necessary, historical [archive](../archive/) and [November 1 baseline](https://drive.google.com/file/d/1HrV7yw8iyx1Y3EEC5UyiRNbW6oIBhAY0/view).
