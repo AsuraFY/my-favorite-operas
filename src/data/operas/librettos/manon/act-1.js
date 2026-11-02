@@ -19,7 +19,6 @@ export const manonActOneScenes = [
         "participants": [
           "GUILLOT",
           "BRÉTIGNY",
-          "GUILLOT, BRÉTIGNY",
           "POUSSETTE",
           "JAVOTTE"
         ],
@@ -61,7 +60,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "GUILLOT, BRÉTIGNY",
-            "speakerTranslation": "GUILLOT, BRÉTIGNY",
+            "speakerTranslation": "GUILLOT and BRÉTIGNY",
             "original": "Morbleu! Viendrez-vous à la fin?",
             "translation": "Good heavens! Will you come in the end?",
             "literalText": true
@@ -181,20 +180,20 @@ export const manonActOneScenes = [
         "originalTitle": "Monsieur l'Hôtelier!",
         "translatedTitle": "Mr. Hotelier!",
         "participants": [
-          "LES CINQ ENSEMBLE",
+          "The Five Together",
           "BRÉTIGNY",
           "GUILLOT",
-          "LES AUTRES ENSEMBLE",
-          "L'HÔTELIER",
-          "LES AUTRES",
+          "The Others Together",
+          "The Innkeeper",
+          "The Others",
           "JAVOTTE",
           "POUSSETTE",
-          "LES CINQ"
+          "The Five"
         ],
         "turns": [
           {
             "speaker": "LES CINQ ENSEMBLE",
-            "speakerTranslation": "LES CINQ ENSEMBLE",
+            "speakerTranslation": "The Five Together",
             "original": "Monsieur l'Hôtelier!",
             "translation": "Mr. Hotelier!",
             "literalText": true
@@ -229,7 +228,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES AUTRES ENSEMBLE",
-            "speakerTranslation": "LES AUTRES ENSEMBLE",
+            "speakerTranslation": "The Others Together",
             "original": "Montrez-vous hospitalier!",
             "translation": "Be hospitable!",
             "literalText": true
@@ -250,7 +249,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Moi! vous abandonner?\nJe ne dirai qu'un mot:\nqu'on serve le dîner!",
             "translation": "Me! Abandon you?\nI will only say one word:\nLet's serve dinner!",
             "literalText": true
@@ -264,28 +263,28 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Hors-d'œuvres de choix!",
             "translation": "Choice hors d'oeuvres!",
             "literalText": true
           },
           {
             "speaker": "LES AUTRES",
-            "speakerTranslation": "LES AUTRES",
+            "speakerTranslation": "The Others",
             "original": "Bien!",
             "translation": "GOOD!",
             "literalText": true
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Et diverses épices!\nPoisson! Poulet!",
             "translation": "And various spices!\nFish! Chicken!",
             "literalText": true
           },
           {
             "speaker": "LES AUTRES",
-            "speakerTranslation": "LES AUTRES",
+            "speakerTranslation": "The Others",
             "original": "Parfait!",
             "translation": "Perfect!",
             "literalText": true
@@ -320,7 +319,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES AUTRES",
-            "speakerTranslation": "LES AUTRES",
+            "speakerTranslation": "The Others",
             "original": "Voilà qu'en cadence,\non vient nous servir!",
             "translation": "And so, in rhythm,\nThey come to serve us!",
             "literalText": true
@@ -334,7 +333,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Et pour arroser le repas,\nde vieux vins...",
             "translation": "And to accompany the meal,\nold wines...",
             "literalText": true
@@ -355,14 +354,14 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Et pour compléter les services:\nle pâté de canard!",
             "translation": "And to complete the services:\nDuck pâté!",
             "literalText": true
           },
           {
             "speaker": "LES CINQ",
-            "speakerTranslation": "LES CINQ",
+            "speakerTranslation": "The Five",
             "original": "Un pâté!",
             "translation": "A pie!",
             "literalText": true
@@ -377,20 +376,20 @@ export const manonActOneScenes = [
         "originalTitle": "Non pas, Messieurs,",
         "translatedTitle": "No, gentlemen,",
         "participants": [
-          "L'HÔTELIER",
+          "The Innkeeper",
           "GUILLOT",
           "BRÉTIGNY",
           "POUSSETTE",
-          "LES QUATRE AUTRES",
-          "LES CINQ",
-          "LE CHŒUR DES BOURGEOIS",
+          "The Other Four",
+          "The Five",
+          "Chorus of Townspeople",
           "LESCAUT",
-          "LES GARDES"
+          "The Guards"
         ],
         "turns": [
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Non pas, Messieurs,\nun objet d'art!",
             "translation": "No, gentlemen,\nA work of art!",
             "literalText": true
@@ -418,21 +417,21 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES QUATRE AUTRES",
-            "speakerTranslation": "LES QUATRE AUTRES",
+            "speakerTranslation": "The Other Four",
             "original": "Voilà qu'en cadence...",
             "translation": "And so, in rhythm...",
             "literalText": true
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Voyez ! On vient vous servir!",
             "translation": "Look! We've come to serve you!",
             "literalText": true
           },
           {
             "speaker": "LES CINQ",
-            "speakerTranslation": "LES CINQ",
+            "speakerTranslation": "The Five",
             "original": "On vient nous servir!\nÔ sort délectable\nlorsque l'on a faim\nde se mettre enfin à table!\nOn vient nous servir!\nÀ table! À table! À table! etc.",
             "translation": "They come to serve us!\nO delightful fate\nwhen you are hungry\nto finally sit down at the table!\nThey come to serve us!\nDinner's ready! Dinner's ready! Dinner's ready! etc.",
             "literalText": true
@@ -446,7 +445,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "C'est très bien de dîner! Il faut aussi payer!\nEt je vais... Mais, au fait, pensons au\nChevalier Des Grieux ! Le temps passe...\nEt j'ai promis de retenir sa place au premier coche.",
             "translation": "It's very nice to have dinner! But you have to pay too!\nAnd I'm going to... But, by the way, let's think about the\nChevalier Des Grieux! Time flies...\nAnd I promised to reserve his place at the first carriage.",
             "literalText": true
@@ -460,7 +459,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Et mais, voilà déjà la ribambelle des bons\nbourgeois ! Ils viennent regarder si l'on peut\nlorgner quelque belle, ou se moquer de\nquelque voyageur!\nJ'ai remarqué que l'homme est très observateur!",
             "translation": "And but, here already is the whole string of good ones\nBourgeoisie! They come to see if we can\nto ogle some beautiful woman, or to make fun of\nsome traveler!\nI noticed that the man is very observant!",
             "literalText": true
@@ -474,7 +473,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LE CHŒUR DES BOURGEOIS",
-            "speakerTranslation": "LE CHŒUR DES BOURGEOIS",
+            "speakerTranslation": "Chorus of Townspeople",
             "original": "Entendez-vous la cloche,\nvoici l'heure du coche,\nil faut tout voir, tout voir!\nLes voyageurs, les voyageuses,\nil faut tout voir!\nPour nous, c'est un devoir!",
             "translation": "Do you hear the bell?\nIt's time for the coach,\nYou have to see everything, see everything!\nThe travelers,\nYou have to see everything!\nFor us, it's a duty!",
             "literalText": true
@@ -495,7 +494,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES GARDES",
-            "speakerTranslation": "LES GARDES",
+            "speakerTranslation": "The Guards",
             "original": "C'est bien ici!",
             "translation": "This is the right place!",
             "literalText": true
@@ -524,21 +523,21 @@ export const manonActOneScenes = [
         "originalTitle": "Quelle plaisanterie!",
         "translatedTitle": "What a joke!",
         "participants": [
-          "LES GARDES",
+          "The Guards",
           "LESCAUT",
-          "LE CHŒUR",
-          "UNE VIEILLE DAME",
-          "UN VOYAGEUR",
-          "LE PORTEUR",
-          "UNE VOYAGEUSE",
-          "UNE AUTRE VOYAGEUSE",
-          "UN AUTRE VOYAGEUR",
-          "LES PASSAGERS ENSEMBLE"
+          "Chorus",
+          "An Elderly Lady",
+          "A Traveler",
+          "The Porter",
+          "A Female Traveler",
+          "Another Female Traveler",
+          "Another Traveler",
+          "The Passengers Together"
         ],
         "turns": [
           {
             "speaker": "LES GARDES",
-            "speakerTranslation": "LES GARDES",
+            "speakerTranslation": "The Guards",
             "original": "Quelle plaisanterie!\nLescaut, tu pourrais nous quitter?",
             "translation": "What a joke!\nLescaut, could you leave us?",
             "literalText": true
@@ -552,7 +551,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES GARDES",
-            "speakerTranslation": "LES GARDES",
+            "speakerTranslation": "The Guards",
             "original": "Rappelle-toi!",
             "translation": "Remember!",
             "literalText": true
@@ -566,7 +565,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES GARDES",
-            "speakerTranslation": "LES GARDES",
+            "speakerTranslation": "The Guards",
             "original": "Lescaut!",
             "translation": "Lescaut!",
             "literalText": true
@@ -587,7 +586,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LE CHŒUR",
-            "speakerTranslation": "LE CHŒUR",
+            "speakerTranslation": "Chorus",
             "original": "Les voilà! Les voilà!",
             "translation": "Here they are! Here they are!",
             "literalText": true
@@ -601,84 +600,84 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "UNE VIEILLE DAME",
-            "speakerTranslation": "UNE VIEILLE DAME",
+            "speakerTranslation": "An Elderly Lady",
             "original": "Oh ! ma coiffure!\nOh ! ma toilette!",
             "translation": "Oh! My hairstyle!\nOh! My toilet!",
             "literalText": true
           },
           {
             "speaker": "LE CHŒUR",
-            "speakerTranslation": "LE CHŒUR",
+            "speakerTranslation": "Chorus",
             "original": "Voyez-vous pas cette coquette!",
             "translation": "Don't you see this flirtatious girl!",
             "literalText": true
           },
           {
             "speaker": "UN VOYAGEUR",
-            "speakerTranslation": "UN VOYAGEUR",
+            "speakerTranslation": "A Traveler",
             "original": "Eh! le porteur!",
             "translation": "Hey! The porter!",
             "literalText": true
           },
           {
             "speaker": "LE PORTEUR",
-            "speakerTranslation": "LE PORTEUR",
+            "speakerTranslation": "The Porter",
             "original": "Dans un instant!",
             "translation": "In a moment!",
             "literalText": true
           },
           {
             "speaker": "LE CHŒUR",
-            "speakerTranslation": "LE CHŒUR",
+            "speakerTranslation": "Chorus",
             "original": "Ah! le singulier personnage!",
             "translation": "Ah! What a singular character!",
             "literalText": true
           },
           {
             "speaker": "UNE VOYAGEUSE",
-            "speakerTranslation": "UNE VOYAGEUSE",
+            "speakerTranslation": "A Female Traveler",
             "original": "Où sont mes oiseaux et ma cage?",
             "translation": "Where are my birds and my cage?",
             "literalText": true
           },
           {
             "speaker": "UN VOYAGEUR",
-            "speakerTranslation": "UN VOYAGEUR",
+            "speakerTranslation": "A Traveler",
             "original": "Hé ! Postillon!",
             "translation": "Hey! Postilion!",
             "literalText": true
           },
           {
             "speaker": "UNE AUTRE VOYAGEUSE",
-            "speakerTranslation": "UNE AUTRE VOYAGEUSE",
+            "speakerTranslation": "Another Female Traveler",
             "original": "Postillon!",
             "translation": "Postillon!",
             "literalText": true
           },
           {
             "speaker": "UN AUTRE VOYAGEUR",
-            "speakerTranslation": "UN AUTRE VOYAGEUR",
+            "speakerTranslation": "Another Traveler",
             "original": "Hé! Postillon!",
             "translation": "Hey! Postman!",
             "literalText": true
           },
           {
             "speaker": "UNE AUTRE VOYAGEUSE",
-            "speakerTranslation": "UNE AUTRE VOYAGEUSE",
+            "speakerTranslation": "Another Female Traveler",
             "original": "Postillon!",
             "translation": "Postillon!",
             "literalText": true
           },
           {
             "speaker": "UN AUTRE VOYAGEUR",
-            "speakerTranslation": "UN AUTRE VOYAGEUR",
+            "speakerTranslation": "Another Traveler",
             "original": "Ma malle!\nMon panier!",
             "translation": "My trunk!\nMy basket!",
             "literalText": true
           },
           {
             "speaker": "LES PASSAGERS ENSEMBLE",
-            "speakerTranslation": "LES PASSAGERS ENSEMBLE",
+            "speakerTranslation": "The Passengers Together",
             "original": "Postillon! Postillon! Postillon!\nDonnez à chacun son bagage!\nVoyons, voyons, voyons, voyons!\nAh, l'on devrait faire avant tout son testament!\nLES POSTILLONS et LES PORTEURS\nMoins de tapage!\nNon, non, non, non, non!\nDieux ! quel tracas et quel tourment\nquand il faut monter en voiture !\nAh! je le jure,\non ferait bien de faire avant son testament! etc.\nLES POSTILLONS et LES PORTEURS\nAh! c'est à se damner vraiment,\nchacun d'eux gémit et murmure!\nRien qu'en montant dans la voiture,\net recommence en descendant!\n‚a recommence en descendant! etc.\nAh! c'est à se damner vraiment!\nChacun gémit!\nTaisez-vous! Taisez-vous! Taisez-vous! etc.",
             "translation": "Postilion! Postilion! Postilion!\nGive everyone their own baggage!\nLet's see, let's see, let's see, let's see!\nAh, one should make one's will first and foremost!\nThe Postilions and the Carriers\nLess fuss!\nNo, no, no, no, no!\nGood heavens! What trouble and torment!\nwhen you have to get in the car!\nAh! I swear,\nWe would do well to make our will beforehand! etc.\nThe Postilions and the Carriers\nAh! It's truly enough to make you damn yourself,\nEach of them groaned and murmured!\nJust by getting into the car,\nand start again going down!\n\"It starts again going downhill! etc.\"\nAh! It's absolutely divine!\nEveryone is groaning!\nBe quiet! Be quiet! Be quiet! etc.",
             "literalText": true
@@ -693,16 +692,16 @@ export const manonActOneScenes = [
         "originalTitle": "Ah! c'est à se damner vraiment,",
         "translatedTitle": "Ah! It's truly enough to make you damn yourself,",
         "participants": [
-          "LE CHŒUR",
-          "LES PASSAGÈRES",
-          "LES PASSAGERS",
+          "Chorus",
+          "Female Passengers",
+          "The Passengers",
           "LESCAUT",
           "MANON"
         ],
         "turns": [
           {
             "speaker": "LE CHŒUR",
-            "speakerTranslation": "LE CHŒUR",
+            "speakerTranslation": "Chorus",
             "original": "Ah! c'est à se damner vraiment,\nchacun gémit!\nRien qu'en montant ou descendant!\nDieux! quel tourment!\nAh! quel tracas et quel tourment!\nAh! Ah! Ah! Ah! etc.",
             "translation": "Ah! It's truly enough to make you damn yourself,\nEveryone groaned!\nJust by going up or down!\nGods! What torment!\nAh! What a nuisance and what torment!\nHa! Ha! Ha! Ha! etc.",
             "literalText": true
@@ -716,7 +715,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES PASSAGÈRES",
-            "speakerTranslation": "LES PASSAGÈRES",
+            "speakerTranslation": "Female Passengers",
             "original": "Je suis la première!",
             "translation": "I'm the first!",
             "literalText": true
@@ -730,7 +729,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES PASSAGERS",
-            "speakerTranslation": "LES PASSAGERS",
+            "speakerTranslation": "The Passengers",
             "original": "Je suis le premier!\nLES POSTILLONS et LES PORTEURS\nLe dernier! Non!",
             "translation": "I'm the first!\nThe Postilions and the Carriers\nThe last one! No!",
             "literalText": true
@@ -744,7 +743,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LE CHŒUR",
-            "speakerTranslation": "LE CHŒUR",
+            "speakerTranslation": "Chorus",
             "original": "Le dernier! Non!",
             "translation": "The last one! No!",
             "literalText": true
@@ -758,7 +757,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LE CHŒUR",
-            "speakerTranslation": "LE CHŒUR",
+            "speakerTranslation": "Chorus",
             "original": "Voyez cette jeune fille!",
             "translation": "Look at this young girl!",
             "literalText": true
@@ -836,37 +835,37 @@ export const manonActOneScenes = [
         "originalTitle": "Partez! On sonne!",
         "translatedTitle": "Go! The bell's ringing!",
         "participants": [
-          "LES POSTILLONS",
-          "LES VOYAGEURS",
-          "PLUSIEURS VOYAGEURS",
-          "LES BOURGEOIS",
+          "The Postilions",
+          "The Travelers",
+          "Several Travelers",
+          "Townspeople",
           "LESCAUT"
         ],
         "turns": [
           {
             "speaker": "LES POSTILLONS",
-            "speakerTranslation": "LES POSTILLONS",
+            "speakerTranslation": "The Postilions",
             "original": "Partez! On sonne!",
             "translation": "Go! The bell's ringing!",
             "literalText": true
           },
           {
             "speaker": "LES VOYAGEURS",
-            "speakerTranslation": "LES VOYAGEURS",
+            "speakerTranslation": "The Travelers",
             "original": "Comment? Partir!",
             "translation": "How? Leave!",
             "literalText": true
           },
           {
             "speaker": "LES POSTILLONS",
-            "speakerTranslation": "LES POSTILLONS",
+            "speakerTranslation": "The Postilions",
             "original": "Allons! Sortez!\nVoici l'autre voiture!",
             "translation": "Come on! Get out!\nHere's the other car!",
             "literalText": true
           },
           {
             "speaker": "LES VOYAGEURS",
-            "speakerTranslation": "LES VOYAGEURS",
+            "speakerTranslation": "The Travelers",
             "original": "Partir? Comment?\nQuelle mésaventure!",
             "translation": "Leave? How?\nWhat a mishap!",
             "literalText": true
@@ -880,35 +879,35 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "PLUSIEURS VOYAGEURS",
-            "speakerTranslation": "PLUSIEURS VOYAGEURS",
+            "speakerTranslation": "Several Travelers",
             "original": "Mon carton! Mes oiseaux! Non!\nMon paquet! Mon panier! Non!\nMon chapeau! etc.",
             "translation": "My cardboard box! My birds! No!\nMy package! My basket! No!\nMy hat! etc.",
             "literalText": true
           },
           {
             "speaker": "LES POSTILLONS",
-            "speakerTranslation": "LES POSTILLONS",
+            "speakerTranslation": "The Postilions",
             "original": "Partez! Allons! On sonne! Partez!",
             "translation": "Go! Come on! The bell's ringing! Go!",
             "literalText": true
           },
           {
             "speaker": "LES VOYAGEURS",
-            "speakerTranslation": "LES VOYAGEURS",
+            "speakerTranslation": "The Travelers",
             "original": "On nous rançonne!\nVoyons! Voyons! Voyons! Voyons!\nDieux! quel tracas et quel tourment,\nquand il faut monter en voiture!\nAh! je le jure,\non ferait bien de faire avant son testament!\nAh! l'on devrait faire avant tout son testament!\nQuel tracas! Quel tourment! etc.",
             "translation": "We are being extorted!\nLet's see! Let's see! Let's see! Let's see!\nGods! What trouble and torment!\nwhen you have to get in the car!\nAh! I swear,\nWe would do well to make our wills beforehand!\nAh! One should make one's will first and foremost!\nWhat a nuisance! What torment! etc.",
             "literalText": true
           },
           {
             "speaker": "LES POSTILLONS",
-            "speakerTranslation": "LES POSTILLONS",
+            "speakerTranslation": "The Postilions",
             "original": "Voici l'autre voiture!\nOn sonne! Partez, partez, partez!\nAh! c'est à se damner vraiment!\nChacun d'eux gémit et murmure!\nRien qu'en montant dans la voiture\net recommence en descendant!\nAh! c'est à se damner vraiment!\nChacun gémit!\nTaisez-vous! Quel tourment! etc.",
             "translation": "Here's the other car!\nThe bell's ringing! Go, go, go!\nAh! It's absolutely divine!\nEach of them groaned and murmured!\nJust by getting into the car\nand start again going down!\nAh! It's absolutely divine!\nEveryone is groaning!\nBe quiet! What torment! etc.",
             "literalText": true
           },
           {
             "speaker": "LES BOURGEOIS",
-            "speakerTranslation": "LES BOURGEOIS",
+            "speakerTranslation": "Townspeople",
             "original": "Ah! Ah! Ah! etc.\nAh! c'est à se damner vraiment!\nChacun gémit!\nRien qu'en montant ou descendant!\nDieux! quel tourment!\nAh! quel tracas et quel tourment!\nAh! Ah! Ah! etc.",
             "translation": "Ha! Ha! Ha! etc.\nAh! It's absolutely divine!\nEveryone is groaning!\nJust by going up or down!\nGods! What torment!\nAh! What a nuisance and what torment!\nHa! Ha! Ha! etc.",
             "literalText": true
@@ -944,7 +943,7 @@ export const manonActOneScenes = [
         "originalTitle": "Il faut tout voir!",
         "translatedTitle": "You have to see everything!",
         "participants": [
-          "LES BOURGEOIS",
+          "Townspeople",
           "GUILLOT",
           "MANON",
           "BRÉTIGNY",
@@ -955,7 +954,7 @@ export const manonActOneScenes = [
         "turns": [
           {
             "speaker": "LES BOURGEOIS",
-            "speakerTranslation": "LES BOURGEOIS",
+            "speakerTranslation": "Townspeople",
             "original": "Il faut tout voir!\nPour nous c'est un devoir!",
             "translation": "You have to see everything!\nFor us, it's a duty!",
             "literalText": true
@@ -1100,9 +1099,9 @@ export const manonActOneScenes = [
           "GUILLOT",
           "LESCAUT",
           "MANON",
-          "UN GARDE",
-          "UN AUTRE GARDE",
-          "DEUX GARDES"
+          "A Guard",
+          "Another Guard",
+          "Two Guards"
         ],
         "turns": [
           {
@@ -1205,14 +1204,14 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "UN GARDE",
-            "speakerTranslation": "UN GARDE",
+            "speakerTranslation": "A Guard",
             "original": "Eh bien, tu ne viens pas?",
             "translation": "Well, aren't you coming?",
             "literalText": true
           },
           {
             "speaker": "UN AUTRE GARDE",
-            "speakerTranslation": "UN AUTRE GARDE",
+            "speakerTranslation": "Another Guard",
             "original": "Les cartes et les dés nous attendent là-bas!",
             "translation": "The cards and dice are waiting for us there!",
             "literalText": true
@@ -1226,7 +1225,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "DEUX GARDES",
-            "speakerTranslation": "DEUX GARDES",
+            "speakerTranslation": "Two Guards",
             "original": "Écoutons la sagesse!",
             "translation": "Let us listen to wisdom!",
             "literalText": true
@@ -1649,9 +1648,10 @@ export const manonActOneScenes = [
         "translatedTitle": "Both of them! In Paris! In Paris!",
         "participants": [
           "MANON",
-          "MANON, DES GRIEUX",
           "DES GRIEUX",
-          "POUSSETTE, JAVOTTE, ROSETTE",
+          "POUSSETTE",
+          "JAVOTTE",
+          "ROSETTE",
           "LESCAUT"
         ],
         "turns": [
@@ -1664,7 +1664,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "MANON, DES GRIEUX",
-            "speakerTranslation": "MANON, DES GRIEUX",
+            "speakerTranslation": "MANON and DES GRIEUX",
             "original": "À Paris! À Paris, tous les deux!\nNous vivrons à Paris! Tous les deux!",
             "translation": "To Paris! To Paris, both of them!\nWe'll live in Paris! Just the two of us!",
             "literalText": true
@@ -1734,7 +1734,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "MANON, DES GRIEUX",
-            "speakerTranslation": "MANON, DES GRIEUX",
+            "speakerTranslation": "MANON and DES GRIEUX",
             "original": "Nous n'aurons que des jours bénis!\nÀ Paris! À Paris, tous les deux!\nNous vivrons à Paris! Tous les deux!",
             "translation": "We will only have blessed days!\nTo Paris! To Paris, both of them!\nWe'll live in Paris! Just the two of us!",
             "literalText": true
@@ -1755,7 +1755,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "POUSSETTE, JAVOTTE, ROSETTE",
-            "speakerTranslation": "POUSSETTE, JAVOTTE, ROSETTE",
+            "speakerTranslation": "POUSSETTE and JAVOTTE and ROSETTE",
             "original": "Revenez, Guillot, revenez!",
             "translation": "Come back, Guillot, come back!",
             "literalText": true
@@ -1850,8 +1850,8 @@ export const manonActOneScenes = [
           "DES GRIEUX",
           "LESCAUT",
           "GUILLOT",
-          "L'HÔTELIER",
-          "LES BOURGEOIS"
+          "The Innkeeper",
+          "Townspeople"
         ],
         "turns": [
           {
@@ -2024,7 +2024,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Quoi? Cette jeune fille?...\nElle est partie, avec un jeune homme!",
             "translation": "What? That young girl?...\nShe left, with a young man!",
             "literalText": true
@@ -2038,7 +2038,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Écoutez!",
             "translation": "Listen!",
             "literalText": true
@@ -2052,7 +2052,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "LES BOURGEOIS",
-            "speakerTranslation": "LES BOURGEOIS",
+            "speakerTranslation": "Townspeople",
             "original": "Elle est partie!",
             "translation": "She's gone!",
             "literalText": true
@@ -2073,7 +2073,7 @@ export const manonActOneScenes = [
           },
           {
             "speaker": "L'HÔTELIER",
-            "speakerTranslation": "L'HÔTELIER",
+            "speakerTranslation": "The Innkeeper",
             "original": "Dans la voiture de Monsieur!",
             "translation": "In the gentleman's car!",
             "literalText": true
@@ -2088,7 +2088,7 @@ export const manonActOneScenes = [
         "originalTitle": "Dans la voiture de Monsieur!",
         "translatedTitle": "In the gentleman's car!",
         "participants": [
-          "LES BOURGEOIS",
+          "Townspeople",
           "GUILLOT",
           "LESCAUT",
           "BRÉTIGNY"
@@ -2096,7 +2096,7 @@ export const manonActOneScenes = [
         "turns": [
           {
             "speaker": "LES BOURGEOIS",
-            "speakerTranslation": "LES BOURGEOIS",
+            "speakerTranslation": "Townspeople",
             "original": "Dans la voiture de Monsieur!",
             "translation": "In the gentleman's car!",
             "literalText": true
