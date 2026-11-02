@@ -1,7 +1,4 @@
 // Pagliacci — Prologue and two acts, complete bilingual working translation.
-// Italian source: Ruggero Leoncavallo, Pagliacci, public-domain libretto, https://www.librettidopera.it/pagliacci/pagliacci.html
-// Structured transcription: https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q248644.json
-// English: independently written AI-generated working translation awaiting editorial review.
 // Prologue is presented at the beginning of the Act I reading page, without inventing a third act.
 import {getOpera} from '../../catalog.js';
 import {operaInformation} from '../../information.js';
