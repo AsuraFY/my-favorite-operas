@@ -792,6 +792,7 @@ export const trovatoreActTwoScenes = [
           "Leonora",
           "Women",
           "Count di Luna",
+          "Manrico",
           "Ferrando, Seguaci"
         ],
         "turns": [
@@ -896,8 +897,15 @@ export const trovatoreActTwoScenes = [
           {
             "speaker": "CONTE",
             "speakerTranslation": "Count di Luna",
-            "original": "Dunque gli estinti lasciano\nDi morte il regno eterno;\nA danno mio rinunzia\nLe prede sue l'inferno!\nMa se non mai si fransero\nDe' giorni tuoi gli stami,\nSe vivi e viver brami,\nFuggi da lei, da me. Manrico\nNé m'ebbe il ciel, né l'orrido\nVarco infernal sentiero...\nInfami sgherri vibrano\nMortali colpi, è vero!\nPotenza irresistibile\nHanno de' fiumi l'onde!\nMa gli empi un Dio confonde!\nQuel Dio soccorse a me.",
-            "translation": "Then do the dead leave\nDeath's eternal domain?\nHas hell renounced its prey\nTo injure me?\nBut if your life was not ended,\nIf you live and wish to keep living,\nFlee from her, flee from me! Manrico:\nNeither heaven received me nor the dreadful\nPath to hell;\nIt is true, vile henchmen strike\nMortal blows!\nThe rushing waters of rivers\nHave irresistible power!\nBut God confounds the wicked!\nThat God came to my aid.",
+            "original": "Dunque gli estinti lasciano\nDi morte il regno eterno;\nA danno mio rinunzia\nLe prede sue l'inferno!\nMa se non mai si fransero\nDe' giorni tuoi gli stami,\nSe vivi e viver brami,\nFuggi da lei, da me.",
+            "translation": "Then do the dead leave\nDeath's eternal domain?\nHas hell renounced its prey\nTo injure me?\nBut if your life was not ended,\nIf you live and wish to keep living,\nFlee from her, flee from me!",
+            "literalText": true
+          },
+          {
+            "speaker": "MANRICO",
+            "speakerTranslation": "Manrico",
+            "original": "Né m'ebbe il ciel, né l'orrido\nVarco infernal sentiero...\nInfami sgherri vibrano\nMortali colpi, è vero!\nPotenza irresistibile\nHanno de' fiumi l'onde!\nMa gli empi un Dio confonde!\nQuel Dio soccorse a me.",
+            "translation": "Neither heaven received me nor the dreadful\nPath to hell;\nIt is true, vile henchmen strike\nMortal blows!\nThe rushing waters of rivers\nHave irresistible power!\nBut God confounds the wicked!\nThat God came to my aid.",
             "literalText": true
           },
           {
