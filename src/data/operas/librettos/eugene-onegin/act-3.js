@@ -36,7 +36,7 @@ export const oneginAct3Scenes=[
             "speaker": "ONEGIN",
             "speakerTranslation": "ONEGIN",
             "original": "",
-            "translation": "I'm bored here too.\nThe brilliance and bustle of society\ncannot dispel my constant\nworld?weariness!\nHaving killed my best friend in a duel,\nhaving no aim, no work,\nI have reached the age of twenty?six\nwearied by the idleness of leisure;\nwithout employment, wife or occupation,\nI've found nothing to which I could devote myself!\nRestlessness held me in thrall,\nthe desire for constant change of scene,\nan extremely vexing trait,\na cross that few would choose!\nI left my country estates,\nthe solitude of woods and fields,\nwhere a bloodstained ghost\nconfronted me every day!\nI began to travel, aimlessly,\ngoing where fancy led me …\nAnd what happened? I found, to my disgust,\nthat travel was boring, too!\nI returned and went, like Chatsky,\nstraight from a ship to a ball!",
+            "translation": "I'm bored here too.\nThe brilliance and bustle of society\ncannot dispel my constant\nworld-weariness!\nHaving killed my best friend in a duel,\nhaving no aim, no work,\nI have reached the age of twenty-six\nwearied by the idleness of leisure;\nwithout employment, wife or occupation,\nI've found nothing to which I could devote myself!\nRestlessness held me in thrall,\nthe desire for constant change of scene,\nan extremely vexing trait,\na cross that few would choose!\nI left my country estates,\nthe solitude of woods and fields,\nwhere a bloodstained ghost\nconfronted me every day!\nI began to travel, aimlessly,\ngoing where fancy led me …\nAnd what happened? I found, to my disgust,\nthat travel was boring, too!\nI returned and went, like Chatsky,\nstraight from a ship to a ball!",
             "literalText": true,
             "sourceStartIndex": 2,
             "sourceLineCount": 24
@@ -207,7 +207,7 @@ export const oneginAct3Scenes=[
             "speaker": "PRINCE GREMIN",
             "speakerTranslation": "PRINCE GREMIN",
             "original": "",
-            "translation": "A bout two years.",
+            "translation": "About two years.",
             "literalText": true,
             "sourceStartIndex": 63,
             "sourceLineCount": 1
@@ -278,7 +278,7 @@ export const oneginAct3Scenes=[
             "speaker": "PRINCE GREMIN",
             "speakerTranslation": "PRINCE GREMIN",
             "original": "",
-            "translation": "Love is no respecter of age,\nits transports bless alike\nthose in the bloom of youth\nyet unacquainted with the world\nand the grey?headed warrior\ntempered by experience!\nOnegin, I shan't disguise the fact\nthat I love Tatyana to distraction!\nMy life was slipping drearily away;\nshe appeared and brightened it\nlike a ray of sunlight in a stormy sky,\nand brought me life and youth, yes, youth and happiness!\nAmong these sly, poor?spirited,\nfoolish, pampered children,\nthese scoundrels both absurd and boring,\ndull, fractious arbiters,\namong the pious coquettes\nand sycophantic slaves,\namid affable, modish hypocrisy\ncourteous, affectionate infidelities,\namid the icy censure\nof cruel?hearted vanity,\namid the vexing vacuity\nof calculation, thought and conversation,\nshe shines like a star\nin the night's darkest hour, in a pure, clear sky,\nand to me she always appears\nin the radiant,\nradiant nimbus of an angel!\nLove is no respecter of age, etc.\nSo come, I'll present you to her.",
+            "translation": "Love is no respecter of age,\nits transports bless alike\nthose in the bloom of youth\nyet unacquainted with the world\nand the grey-headed warrior\ntempered by experience!\nOnegin, I shan't disguise the fact\nthat I love Tatyana to distraction!\nMy life was slipping drearily away;\nshe appeared and brightened it\nlike a ray of sunlight in a stormy sky,\nand brought me life and youth, yes, youth and happiness!\nAmong these sly, poor-spirited,\nfoolish, pampered children,\nthese scoundrels both absurd and boring,\ndull, fractious arbiters,\namong the pious coquettes\nand sycophantic slaves,\namid affable, modish hypocrisy\ncourteous, affectionate infidelities,\namid the icy censure\nof cruel-hearted vanity,\namid the vexing vacuity\nof calculation, thought and conversation,\nshe shines like a star\nin the night's darkest hour, in a pure, clear sky,\nand to me she always appears\nin the radiant,\nradiant nimbus of an angel!\nLove is no respecter of age, etc.\nSo come, I'll present you to her.",
             "literalText": true,
             "sourceStartIndex": 69,
             "sourceLineCount": 31
@@ -386,7 +386,7 @@ export const oneginAct3Scenes=[
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Tatyana leaves on Prince Gremin's arm, returning the greetinngs of the guests. Onegin follows her with his eyes.",
+            "translation": "Tatyana leaves on Prince Gremin's arm, returning the greetings of the guests. Onegin follows her with his eyes.",
             "literalText": true,
             "sourceStartIndex": 116,
             "sourceLineCount": 1
