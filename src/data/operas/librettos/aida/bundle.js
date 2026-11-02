@@ -31,5 +31,5 @@ export const aida = {
     paragraphs: info.synopsis,
     characters: info.characters
   },
-  source: 'Original Italian: https://opera-guide.ch/operas/aida/libretto/it/ (Act I, Scena I-II). Source transcription contains some apparent spelling/typographic anomalies; these remain subject to source review. English: new working translation; editorial verification pending. All four acts have working bilingual text.'
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
