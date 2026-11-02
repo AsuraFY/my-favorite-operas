@@ -18,9 +18,9 @@ export const manonActThreeScenes = [
         "translatedTitle": "Look at the flowery mules!",
         "participants": [
           "The Vendors",
-          "POUSSETTE",
-          "JAVOTTE",
-          "ROSETTE"
+          "Poussette",
+          "Javotte",
+          "Rosette"
         ],
         "turns": [
           {
@@ -96,11 +96,11 @@ export const manonActThreeScenes = [
         "originalTitle": "Tout !",
         "translatedTitle": "All !",
         "participants": [
-          "POUSSETTE",
-          "ROSETTE",
-          "JAVOTTE",
+          "Poussette",
+          "Rosette",
+          "Javotte",
           "The Vendors",
-          "LESCAUT"
+          "Lescaut"
         ],
         "turns": [
           {
@@ -218,11 +218,11 @@ export const manonActThreeScenes = [
         "originalTitle": "Bonjour, Poussette!",
         "translatedTitle": "Hello, Stroller!",
         "participants": [
-          "GUILLOT",
-          "POUSSETTE",
-          "JAVOTTE",
-          "ROSETTE",
-          "BRÉTIGNY"
+          "Guillot",
+          "Poussette",
+          "Javotte",
+          "Rosette",
+          "Brétigny"
         ],
         "turns": [
           {
@@ -412,9 +412,9 @@ export const manonActThreeScenes = [
         "participants": [
           "The Promenaders",
           "The Merchants",
-          "BRÉTIGNY",
+          "Brétigny",
           "The Noblemen",
-          "MANON"
+          "Manon"
         ],
         "turns": [
           {
@@ -477,8 +477,8 @@ export const manonActThreeScenes = [
         "translatedTitle": "Let's make the most of our youth!",
         "participants": [
           "Young People",
-          "MANON",
-          "BRÉTIGNY",
+          "Manon",
+          "Brétigny",
           "A Merchant",
           "The Count"
         ],
@@ -613,8 +613,8 @@ export const manonActThreeScenes = [
         "translatedTitle": "My son is bringing me.",
         "participants": [
           "The Count",
-          "BRÉTIGNY",
-          "MANON"
+          "Brétigny",
+          "Manon"
         ],
         "turns": [
           {
@@ -803,7 +803,7 @@ export const manonActThreeScenes = [
         "translatedTitle": "Madam !",
         "participants": [
           "The Count",
-          "MANON"
+          "Manon"
         ],
         "turns": [
           {
@@ -963,10 +963,10 @@ export const manonActThreeScenes = [
         "originalTitle": "On oublie!",
         "translatedTitle": "Forget it!",
         "participants": [
-          "MANON",
-          "BRÉTIGNY",
-          "GUILLOT",
-          "LESCAUT"
+          "Manon",
+          "Brétigny",
+          "Guillot",
+          "Lescaut"
         ],
         "turns": [
           {
@@ -1168,9 +1168,9 @@ export const manonActThreeScenes = [
         "originalTitle": "C'est un plaisir de souveraine,",
         "translatedTitle": "It's a sovereign's pleasure,",
         "participants": [
-          "GUILLOT",
-          "MANON",
-          "LESCAUT",
+          "Guillot",
+          "Manon",
+          "Lescaut",
           "The Crowd"
         ],
         "turns": [
@@ -1299,7 +1299,7 @@ export const manonActThreeScenes = [
         "participants": [
           "Ladies' Chorus",
           "The Count",
-          "DES GRIEUX"
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -1382,7 +1382,7 @@ export const manonActThreeScenes = [
         "originalTitle": "Rien ne peut m'empêcher",
         "translatedTitle": "Nothing can stop me",
         "participants": [
-          "DES GRIEUX",
+          "Des Grieux",
           "The Count",
           "The Seminary Porter"
         ],
@@ -1503,10 +1503,10 @@ export const manonActThreeScenes = [
         "translatedTitle": "He is young… and his faith seems sincere…",
         "participants": [
           "The Seminary Porter",
-          "MANON",
+          "Manon",
           "The Porter",
           "Voices in the Chapel",
-          "DES GRIEUX"
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -1666,8 +1666,8 @@ export const manonActThreeScenes = [
         "originalTitle": "Non! j'avais écrit sur le sable",
         "translatedTitle": "No! I wrote in the sand",
         "participants": [
-          "DES GRIEUX",
-          "MANON"
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
@@ -1778,8 +1778,8 @@ export const manonActThreeScenes = [
         "originalTitle": "Ô Dieu! Soutenez-moi dans cet instant suprême!",
         "translatedTitle": "O God! Support me in this supreme moment!",
         "participants": [
-          "DES GRIEUX",
-          "MANON"
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
