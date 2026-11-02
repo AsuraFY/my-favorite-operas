@@ -6,18 +6,18 @@ an independent offline translator, NOT copied from a contemporary libretto.
 It is an editorial draft, not a verified English translation.
 """
 from __future__ import annotations
-import json
-import re
-from pathlib import Path
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
-
 from legacy_import_guard import guard_existing_published_libretto
 import sys
 if __name__ == "__main__":
     guard_existing_published_libretto("the-magic-flute", sys.argv)
     if "--check" in sys.argv:
         sys.exit(0)
+
+import json
+import re
+from pathlib import Path
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = "https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/"
