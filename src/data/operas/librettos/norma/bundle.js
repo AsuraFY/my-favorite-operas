@@ -23,5 +23,5 @@ export const norma={
     eyebrow:'Vincenzo Bellini · Opera in two acts · Both acts available as AI-generated English working translations awaiting editorial review',
     paragraphs:info.synopsis,characters:info.characters
   },
-  source:'Italian: Felice Romani public-domain Norma libretto, https://www.librettidopera.it/norma/norma.html, structured via Sottovoce Q320353 (9 scenes Act I, 11 scenes Act II; 962 source-line records). Opera Guide reference https://opera-guide.ch/operas/norma/libretto/it/; detailed source collation pending. English: independent AI-generated working translation awaiting editorial review; all vocal and direction records paired; one source-omitted speaker attribution in Act I Scene V provisionally assigned to Adalgisa, pending verification.'
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
