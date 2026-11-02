@@ -33,7 +33,7 @@ export const oneginAct2Scenes=[
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The principal reception?room of the Larins' house, where a ball is in progress. The room is brightly lit by a central chandelier and candles in sconces along the wall. Uniformed officers are among the guests. As the curtain rises, the younger people are dancing a waltz while the older ones watch admiringly. Onegin is dancing with Tatyana and Lensky with Olga. Mme Larina bustles about with the air of an anxious hostess.",
+            "translation": "The principal reception-room of the Larins' house, where a ball is in progress. The room is brightly lit by a central chandelier and candles in sconces along the wall. Uniformed officers are among the guests. As the curtain rises, the younger people are dancing a waltz while the older ones watch admiringly. Onegin is dancing with Tatyana and Lensky with Olga. Mme Larina bustles about with the air of an anxious hostess.",
             "literalText": true,
             "sourceStartIndex": 0,
             "sourceLineCount": 1
@@ -204,7 +204,7 @@ export const oneginAct2Scenes=[
             "speaker": "ONEGIN",
             "speakerTranslation": "ONEGIN",
             "original": "",
-            "translation": "There's public opinion for you! I've heard\nmore than enough of this repulsive\ntittle?tattle! It serves me right,\nall his! Why did I ever come\nto this stupid ball? Why?\nI won't forgive Vladimir\nThis service! I'll\nflirt with Olga …\nThat'll make him mad!\nHere she is! …",
+            "translation": "There's public opinion for you! I've heard\nmore than enough of this repulsive\ntittle-tattle! It serves me right,\nall this! Why did I ever come\nto this stupid ball? Why?\nI won't forgive Vladimir\nThis service! I'll\nflirt with Olga …\nThat'll make him mad!\nHere she is! …",
             "literalText": true,
             "sourceStartIndex": 50,
             "sourceLineCount": 10
@@ -911,7 +911,7 @@ export const oneginAct2Scenes=[
             "speaker": "TATYANA",
             "speakerTranslation": "TATYANA",
             "original": "",
-            "translation": "Oh, my heart is torn with anguish!\nLike an ice?cold hand …",
+            "translation": "Oh, my heart is torn with anguish!\nLike an ice-cold hand …",
             "literalText": true,
             "sourceStartIndex": 255,
             "sourceLineCount": 2
@@ -995,7 +995,7 @@ export const oneginAct2Scenes=[
             "speaker": "GUESTS",
             "speakerTranslation": "GUESTS",
             "original": "",
-            "translation": "Can it be, that after such revelry,\ntheir quarrel will end our day with a duel?\nYoung men are so hot?blooded!\nThey argue, they quarrel\nand soon there's a fight!\nThey argue, etc.\n… Will their quarrel end in a duel?\nYoung men are so hot?blooded!\nThey always act on impulse!",
+            "translation": "Can it be, that after such revelry,\ntheir quarrel will end our day with a duel?\nYoung men are so hot-blooded!\nThey argue, they quarrel\nand soon there's a fight!\nThey argue, etc.\n… Will their quarrel end in a duel?\nYoung men are so hot-blooded!\nThey always act on impulse!",
             "literalText": true,
             "sourceStartIndex": 270,
             "sourceLineCount": 9
@@ -1013,7 +1013,7 @@ export const oneginAct2Scenes=[
             "speaker": "OLGA",
             "speakerTranslation": "OLGA",
             "original": "",
-            "translation": "Oh, men are so hot?blooded,\nThey always act on impulse ;\nthey can't avoid quarrelling, etc.\nHis heart is consumed with jealousy,\nbut I'm not in the least to blame,\nnot in the least!",
+            "translation": "Oh, men are so hot-blooded,\nThey always act on impulse ;\nthey can't avoid quarrelling, etc.\nHis heart is consumed with jealousy,\nbut I'm not in the least to blame,\nnot in the least!",
             "literalText": true,
             "sourceStartIndex": 285,
             "sourceLineCount": 6
@@ -1022,7 +1022,7 @@ export const oneginAct2Scenes=[
             "speaker": "LARINA",
             "speakerTranslation": "LARINA",
             "original": "",
-            "translation": "All, young men are so hot?blooded!\nThey always act on impulse,\nthey can't avoid quarrelling, etc.\nI’m afraid that, after all the revelry,\nthe night will end in a duel!\nYoung men are so hot?blooded!",
+            "translation": "Ah, young men are so hot-blooded!\nThey always act on impulse,\nthey can't avoid quarrelling, etc.\nI’m afraid that, after all the revelry,\nthe night will end in a duel!\nYoung men are so hot-blooded!",
             "literalText": true,
             "sourceStartIndex": 291,
             "sourceLineCount": 6
@@ -1040,7 +1040,7 @@ export const oneginAct2Scenes=[
             "speaker": "GUESTS, LARINA",
             "speakerTranslation": "GUESTS, LARINA",
             "original": "",
-            "translation": "Ah, young men arc such hot?heads!\nNot a moment passes without some quarrel!\nThey argue, they quarrel,\nand suddenly they're ready for a fight!",
+            "translation": "Ah, young men are such hot-heads!\nNot a moment passes without some quarrel!\nThey argue, they quarrel,\nand suddenly they're ready for a fight!",
             "literalText": true,
             "sourceStartIndex": 300,
             "sourceLineCount": 4
@@ -1103,7 +1103,7 @@ export const oneginAct2Scenes=[
             "speaker": "OLGA",
             "speakerTranslation": "OLGA",
             "original": "",
-            "translation": "Ah, men are such hot?heads, etc.\nI am not in the least to blame, not in the least!",
+            "translation": "Ah, men are such hot-heads, etc.\nI am not in the least to blame, not in the least!",
             "literalText": true,
             "sourceStartIndex": 322,
             "sourceLineCount": 2
@@ -1116,7 +1116,7 @@ export const oneginAct2Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "Ah, young men are such hot?heads, etc.",
+        "translatedTitle": "Ah, young men are such hot-heads, etc.",
         "participants": [
           "LARINA",
           "ONEGIN",
@@ -1131,7 +1131,7 @@ export const oneginAct2Scenes=[
             "speaker": "LARINA",
             "speakerTranslation": "LARINA",
             "original": "",
-            "translation": "Ah, young men are such hot?heads, etc.\nYoung men are such hot-heads!",
+            "translation": "Ah, young men are such hot-heads, etc.\nYoung men are such hot-heads!",
             "literalText": true,
             "sourceStartIndex": 324,
             "sourceLineCount": 2
@@ -1272,7 +1272,7 @@ export const oneginAct2Scenes=[
             "speaker": "ZARETSKY",
             "speakerTranslation": "ZARETSKY",
             "original": "",
-            "translation": "Even so, it strikes, me as rather strange\nthat he isn't here; it's seven o'clock.\nI thought he'd be waiting for us!",
+            "translation": "Even so, it strikes me as rather strange\nthat he isn't here; it's seven o'clock.\nI thought he'd be waiting for us!",
             "literalText": true,
             "sourceStartIndex": 354,
             "sourceLineCount": 3
@@ -1317,7 +1317,7 @@ export const oneginAct2Scenes=[
             "speaker": "LENSKY",
             "speakerTranslation": "LENSKY",
             "original": "",
-            "translation": "blessed, too, the coming of darkness!\nEarly in the morning the dawn-light gleams\nand the day begins to brighten,\nwhile I, perhaps, will enter\nthe mysterious shadow of the grave!\nAnd the memory of a young poet\nwill be engulfed by Lethe's sluggish stream.\nThe world will forget me; but you,\nYou! … Olga …\nSay,\nwill you come, maid of beauty,\nto shed a tear on the untimely urn\nand think: he loved me!\nTo me alone he devoted\nthe sad dawn of his storm?tossed life!\nOh, Olga, I loved you,\nto you alone I devoted\nthe sad dawn of my storm?tossed life!\nOh, Olga, I loved you!\nMy heart's beloved, my desired one,\ncome, oh come! My desired one,\ncome, I am your betrothed, come, come!\nI wait for you, my desired one,\ncome, come; I am your betrothed!\nWhere, where, where have you gone,\ngolden days, golden days of my youth?",
+            "translation": "blessed, too, the coming of darkness!\nEarly in the morning the dawn-light gleams\nand the day begins to brighten,\nwhile I, perhaps, will enter\nthe mysterious shadow of the grave!\nAnd the memory of a young poet\nwill be engulfed by Lethe's sluggish stream.\nThe world will forget me; but you,\nYou! … Olga …\nSay,\nwill you come, maid of beauty,\nto shed a tear on the untimely urn\nand think: he loved me!\nTo me alone he devoted\nthe sad dawn of his storm-tossed life!\nOh, Olga, I loved you,\nto you alone I devoted\nthe sad dawn of my storm-tossed life!\nOh, Olga, I loved you!\nMy heart's beloved, my desired one,\ncome, oh come! My desired one,\ncome, I am your betrothed, come, come!\nI wait for you, my desired one,\ncome, come; I am your betrothed!\nWhere, where, where have you gone,\ngolden days, golden days of my youth?",
             "literalText": true,
             "sourceStartIndex": 369,
             "sourceLineCount": 26
