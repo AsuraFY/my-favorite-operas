@@ -16,9 +16,9 @@ export const walkureActTwoScenes = [
         "originalTitle": "Nun zäume dein Ross, reisige Maid!",
         "translatedTitle": "Now saddle your horse, traveling maiden!",
         "participants": [
-          "WOTAN",
-          "BRÜNNHILDE",
-          "FRICKA"
+          "Wotan",
+          "Brünnhilde",
+          "Fricka"
         ],
         "turns": [
           {
@@ -116,8 +116,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Ich vernahm Hundings Not,",
         "translatedTitle": "I heard of Hunding's distress,",
         "participants": [
-          "FRICKA",
-          "WOTAN"
+          "Fricka",
+          "Wotan"
         ],
         "turns": [
           {
@@ -179,8 +179,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "So ist es denn aus mit den ewigen Göttern,",
         "translatedTitle": "So, that's the end of the eternal gods,",
         "participants": [
-          "FRICKA",
-          "WOTAN"
+          "Fricka",
+          "Wotan"
         ],
         "turns": [
           {
@@ -214,8 +214,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Mit tiefem Sinne willst du mich täuschen:",
         "translatedTitle": "You want to deceive me with some profound meaning:",
         "participants": [
-          "FRICKA",
-          "WOTAN"
+          "Fricka",
+          "Wotan"
         ],
         "turns": [
           {
@@ -333,9 +333,9 @@ export const walkureActTwoScenes = [
         "originalTitle": "Mit Unfreien streitet kein Edler,",
         "translatedTitle": "No nobleman argues with unfree people,",
         "participants": [
-          "FRICKA",
-          "WOTAN",
-          "BRÜNNHILDE"
+          "Fricka",
+          "Wotan",
+          "Brünnhilde"
         ],
         "turns": [
           {
@@ -502,8 +502,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Ich rief sie für Siegmund zu Ross!",
         "translatedTitle": "I summoned them for Siegmund on horseback!",
         "participants": [
-          "WOTAN",
-          "FRICKA"
+          "Wotan",
+          "Fricka"
         ],
         "turns": [
           {
@@ -580,8 +580,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Schlimm, fürcht' ich, schloss der Streit,",
         "translatedTitle": "Bad, I'm afraid, concluded the argument,",
         "participants": [
-          "BRÜNNHILDE",
-          "WOTAN"
+          "Brünnhilde",
+          "Wotan"
         ],
         "turns": [
           {
@@ -706,8 +706,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "von mir doch barg sie ein Pfand:",
         "translatedTitle": "But she held a pledge from me:",
         "participants": [
-          "WOTAN",
-          "BRÜNNHILDE"
+          "Wotan",
+          "Brünnhilde"
         ],
         "turns": [
           {
@@ -748,8 +748,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "der im eignen Trotze der Trauteste mir?",
         "translatedTitle": "The one who, in his own defiance, is the most trustworthy of me?",
         "participants": [
-          "WOTAN",
-          "BRÜNNHILDE"
+          "Wotan",
+          "Brünnhilde"
         ],
         "turns": [
           {
@@ -832,8 +832,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Und für das Ende sorgt Alberich!",
         "translatedTitle": "And Alberich brings about the end!",
         "participants": [
-          "WOTAN",
-          "BRÜNNHILDE"
+          "Wotan",
+          "Brünnhilde"
         ],
         "turns": [
           {
@@ -923,8 +923,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Den du zu lieben stets mich gelehrt,",
         "translatedTitle": "You who always taught me to love,",
         "participants": [
-          "BRÜNNHILDE",
-          "WOTAN"
+          "Brünnhilde",
+          "Wotan"
         ],
         "turns": [
           {
@@ -1036,8 +1036,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Raste nun hier; gönne dir Ruh'!",
         "translatedTitle": "Rest here now; grant yourself peace!",
         "participants": [
-          "SIEGMUND",
-          "SIEGLINDE"
+          "Siegmund",
+          "Sieglinde"
         ],
         "turns": [
           {
@@ -1106,8 +1106,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Was je Schande dir schuf,",
         "translatedTitle": "Whatever ever brought shame upon you,",
         "participants": [
-          "SIEGMUND",
-          "SIEGLINDE"
+          "Siegmund",
+          "Sieglinde"
         ],
         "turns": [
           {
@@ -1198,8 +1198,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Siegmund! Sieh auf mich!",
         "translatedTitle": "Siegmund! Look at me!",
         "participants": [
-          "BRÜNNHILDE",
-          "SIEGMUND"
+          "Brünnhilde",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -1345,8 +1345,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Solang du lebst, zwäng' dich wohl nichts:",
         "translatedTitle": "As long as you live, nothing will force you:",
         "participants": [
-          "BRÜNNHILDE",
-          "SIEGMUND"
+          "Brünnhilde",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -1471,8 +1471,8 @@ export const walkureActTwoScenes = [
         "originalTitle": "Alles wär' dir das arme Weib,",
         "translatedTitle": "That poor woman would mean everything to you,",
         "participants": [
-          "BRÜNNHILDE",
-          "SIEGMUND"
+          "Brünnhilde",
+          "Siegmund"
         ],
         "turns": [
           {
@@ -1583,7 +1583,7 @@ export const walkureActTwoScenes = [
         "originalTitle": "Hörst du den Ruf? Nun rüste dich, Held!",
         "translatedTitle": "Do you hear the call? Now prepare yourself, hero!",
         "participants": [
-          "BRÜNNHILDE"
+          "Brünnhilde"
         ],
         "turns": [
           {
@@ -1618,10 +1618,9 @@ export const walkureActTwoScenes = [
         "originalTitle": "Zauberfest bezähmt ein Schlaf",
         "translatedTitle": "A magical spell tames sleep",
         "participants": [
-          "SIEGMUND",
-          "SIEGLINDE",
-          "HUNDINGS STIMME",
-          "SIEGMUNDS STIMME"
+          "Siegmund",
+          "Sieglinde",
+          "Hunding"
         ],
         "turns": [
           {
@@ -1703,7 +1702,7 @@ export const walkureActTwoScenes = [
           },
           {
             "speaker": "HUNDINGS STIMME",
-            "speakerTranslation": "HUNDINGS STIMME",
+            "speakerTranslation": "HUNDING'S VOICE",
             "original": "Wehwalt! Wehwalt!\nSteh' mir zum Streit, sollen dich Hunde nicht halten!",
             "translation": "Wehwalt! Wehwalt!\nStand by me in my fight, let dogs not hold you back!",
             "literalText": true
@@ -1717,7 +1716,7 @@ export const walkureActTwoScenes = [
           },
           {
             "speaker": "SIEGMUNDS STIMME",
-            "speakerTranslation": "SIEGMUNDS STIMME",
+            "speakerTranslation": "SIEGMUND'S VOICE",
             "original": "Wo birgst du dich, dass ich vorbei dir schoss?\nSteh', dass ich dich stelle!",
             "translation": "Where are you hiding that I shot past you?\nStand, so that I may confront you!",
             "literalText": true
@@ -1739,11 +1738,11 @@ export const walkureActTwoScenes = [
         "originalTitle": "Hunding! Siegmund!",
         "translatedTitle": "Hunding! Siegmund!",
         "participants": [
-          "SIEGLINDE",
-          "HUNDING",
-          "SIEGMUND",
-          "BRÜNNHILDE",
-          "WOTAN"
+          "Sieglinde",
+          "Hunding",
+          "Siegmund",
+          "Brünnhilde",
+          "Wotan"
         ],
         "turns": [
           {
