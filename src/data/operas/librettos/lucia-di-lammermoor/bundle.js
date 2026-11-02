@@ -1,7 +1,4 @@
 // Lucia di Lammermoor — bilingual libretto in three acts.
-// Italian: public-domain Salvadore Cammarano, https://www.librettidopera.it/lucialam/lucialam.html
-// Via Sottovoce Q244209, https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q244209.json
-// Independent AI English working translation; editorial review and Opera Guide collation pending.
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
 import { luciaActOneScenes } from './act-1.js?v=lucia-act1-20261029';
