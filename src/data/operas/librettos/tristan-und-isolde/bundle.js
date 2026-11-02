@@ -45,6 +45,6 @@ export const tristan = {
     ]
   },
   characters: ["Tristan", "Isolde", "King Marke", "Brangäne", "Kurwenal", "Melot", "Der Hirt", "Der Steuermann", "Schiffsvolk", "Hofleute", "Männer", "Frauen"],
-  source: "Richard Wagner, Tristan und Isolde (1859), libretto text and stage direction layout: https://opera-guide.ch/en/operas/tristan+und+isolde/libretto/de/"
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
