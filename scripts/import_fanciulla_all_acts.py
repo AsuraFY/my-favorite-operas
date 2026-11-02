@@ -5,6 +5,13 @@ The URL was chosen by the project owner. Never invent source numbers or scenes.
 Italian source retains printed lyric lines; English is a machine-assisted draft.
 """
 from __future__ import annotations
+from legacy_import_guard import guard_existing_published_libretto
+import sys
+if __name__ == "__main__":
+    guard_existing_published_libretto("la-fanciulla-del-west", sys.argv)
+    if "--check" in sys.argv:
+        sys.exit(0)
+
 import json
 import re
 from pathlib import Path
@@ -14,13 +21,6 @@ import sys
 import time
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup, NavigableString
-
-from legacy_import_guard import guard_existing_published_libretto
-import sys
-if __name__ == "__main__":
-    guard_existing_published_libretto("la-fanciulla-del-west", sys.argv)
-    if "--check" in sys.argv:
-        sys.exit(0)
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = 'https://www.flaminioonline.it/Guide/Puccini/Puccini-West78-testo.html'
