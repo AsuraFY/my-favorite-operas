@@ -13,7 +13,7 @@ export const fanciullaActOneScenes = [
         "listeningLandmark": true,
         "routeItem": 0,
         "originalTitle": "Introduzione",
-        "translatedTitle": "",
+        "translatedTitle": "Introduction",
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
@@ -65,7 +65,7 @@ export const fanciullaActOneScenes = [
         "listeningLandmark": true,
         "routeItem": 1,
         "originalTitle": "Hello, Nick!",
-        "translatedTitle": "",
+        "translatedTitle": "Hello, Nick!",
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
@@ -2291,7 +2291,7 @@ export const fanciullaActOneScenes = [
         "listeningLandmark": true,
         "routeItem": 7,
         "originalTitle": "Hello, Minnie!",
-        "translatedTitle": "",
+        "translatedTitle": "Hello, Minnie!",
         "threeLineOutline": true,
         "sourceTitlesOnly": true,
         "participants": [
