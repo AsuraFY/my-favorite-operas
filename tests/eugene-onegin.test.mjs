@@ -27,3 +27,13 @@ test('Eugene Onegin retains all seven source-supported tableaux with stable Engl
  assert.ok(scenes[4].sections[0].turns[0].translation.includes('A rustic water-mill'));
  assert.ok(scenes[6].sections[0].turns[0].translation.includes('The drawing room of Prince Gremin'));
 });
+
+test('Eugene Onegin English text has no known damaged transcription tokens',()=>{
+ const lines=eugeneOnegin.acts.flatMap(a=>a.scenes.flatMap(sc=>sc.sections.flatMap(sec=>sec.turns.map(t=>t.translation)))).join('\n');
+ for(const token of ['qa portable stove','for cach other','principels','dread fully','self?deception','reception?room','tittle?tattle','ice?cold','hot?blooded','hot?heads','it strikes, me','storm?tossed','world?weariness','twenty?six','A bout two years','grey?headed','poor?spirited','cruel?hearted','greetinngs']){
+  assert.ok(!lines.includes(token), 'Uncorrected source transcription token: '+token);
+ }
+ assert.match(lines,/twenty-six/);
+ assert.match(lines,/highest principles/);
+ assert.match(lines,/dreadfully shy/);
+});
