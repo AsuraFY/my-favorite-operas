@@ -37,7 +37,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Gerhilde, Ortlinde, Waltraute und Schwertleite, später Helmwige, Siegrune, Grimgerde, Rossweisse, Brünnhilde, Sieglinde, Gerhilde, Ortlinde, Waltraute und Schwertleite haben sich auf der Felsspitze, an und über der Höhle, gelagert, sie sind in voller Waffenrüstung\nzuhöchst gelagert und dem Hintergrunde zurufend, wo ein starkes Gewölk herzieht",
             "translation": "Gerhilde, Ortlinde, Waltraute and Schwertleite, later Helmwige, Siegrune, Grimgerde, Rossweisse, Brünnhilde, Sieglinde, Gerhilde, Ortlinde, Waltraute and Schwertleite have encamped on the rocky peak, at and above the cave; they are in full armor.\npositioned at the highest point and calling out towards the background, where a strong cloud is moving in.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GERHILDE",
@@ -51,7 +52,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "im Hintergrunde",
             "translation": "in the background",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HELMWIGES STIMME",
@@ -65,7 +67,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "In dem Gewölk bricht Blitzesglanz aus; eine Walküre zu Ross wird in ihm sichtbar: über ihrem Sattel hängt ein erschlagener Krieger. Die Erscheinung zieht, immer näher, am Felsensaume von links nach rechts vorbei\nder Ankommenden entgegenrufend",
             "translation": "Lightning flashes through the clouds; a Valkyrie on horseback becomes visible within them: a slain warrior hangs above her saddle. The apparition moves ever closer, past the edge of the cliffs from left to right.\ncalling out to the arrivals",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GERHILDE, WALTRAUTE UND SCHWERTLEITE",
@@ -79,7 +82,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Die Wolke mit der Erscheinung ist rechts hinter dem Tann verschwunden\nin den Tann hineinrufend",
             "translation": "The cloud containing the apparition has disappeared to the right behind the fir tree.\nshouting into the fir trees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "ORTLINDE",
@@ -93,7 +97,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "hineinrufend",
             "translation": "calling out",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WALTRAUTE",
@@ -107,7 +112,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aus dem Tann auftretend",
             "translation": "emerging from the fir trees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HELMWIGE",
@@ -128,7 +134,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ist etwas näher herabgestiegen",
             "translation": "descended a little closer",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GERHILDE",
@@ -142,7 +149,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "springt auf",
             "translation": "jumps up",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "ORTLINDE",
@@ -156,7 +164,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie läuft in den Tann\nSchwertleite, Gerhilde und Helmwige lachen laut auf",
             "translation": "She runs into the woods\nSchwertleite, Gerhilde and Helmwige laughed loudly",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GERHILDE",
@@ -170,7 +179,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "in den Tann zurückrufend",
             "translation": "recalling to the fir forest",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HELMWIGE",
@@ -184,7 +194,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "auf der Höhe, wo sie für Gerhilde die Wacht übernommen, nach rechts in den Hintergrund rufend",
             "translation": "on the hilltop where she had taken over the watch for Gerhilde, calling out to the right into the background",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WALTRAUTE",
@@ -198,7 +209,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie lauscht nach rechts\nvon der rechten Seite des Hintergrundes her",
             "translation": "She listens to the right\nfrom the right side of the background",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGRUNES STIMME",
@@ -212,7 +224,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "nach rechts in den Hintergrund rufend",
             "translation": "calling out to the right into the background",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -253,7 +266,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ihre Gebärden sowie ein heller Glanz hinter dem Tann zeigen an, dass soeben Siegrune dort angelangt ist. Aus der Tiefe hört man zwei Stimmen zugleich\nlinks im Hintergrunde",
             "translation": "Her gestures, as well as a bright gleam behind the fir trees, indicate that Siegrune has just arrived. From the depths, two voices can be heard simultaneously.\nleft in the background",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GRIMGERDE UND ROSSWEISSE",
@@ -267,7 +281,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "nach links",
             "translation": "to the left",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WALTRAUTE",
@@ -281,7 +296,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ebenso",
             "translation": "as well",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GERHILDE",
@@ -295,7 +311,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "In einem blitzerglänzenden Wolkenzuge, der von links her vorbeizieht, erscheinen Grimgerde und Rossweisse, ebenfalls auf Rossen, jede einen Erschlagenen im Sattel führend. Helmwige, Ortlinde und Siegrune sind aus dem Tann getreten und winken vom Felsensaume den Ankommenden zu",
             "translation": "In a flashing, shimmering cloud formation passing by from the left, Grimgerde and Rossweisse appear, also on horseback, each leading a slain man in the saddle. Helmwige, Ortlinde, and Siegrune have stepped out of the fir trees and wave to the approaching figures from the edge of the cliffs.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "HELMWIGE, ORTLINDE UND SIEGRUNE",
@@ -316,7 +333,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Die Erscheinung verschwindet hinter dem Tann",
             "translation": "The apparition disappears behind the fir trees.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DIE SECHS ANDEREN WALKÜREN",
@@ -330,7 +348,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "in den Tann rufend",
             "translation": "calling into the fir trees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GERHILDE",
@@ -344,7 +363,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ebenfalls in den Tann rufend",
             "translation": "also calling into the fir trees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "ORTLINDE",
@@ -358,7 +378,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Die Walküren lachen\nwährend die anderen lachen",
             "translation": "The Valkyries are laughing\nwhile the others laugh",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "HELMWIGE",
@@ -372,7 +393,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Die Walküren lachen\naus dem Tann tretend",
             "translation": "The Valkyries are laughing\nemerging from the fir trees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "ROSSWEISSE UND GRIMGERDE",
@@ -456,7 +478,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "auf der Felswarte, von wo sie hinausspäht",
             "translation": "on the rocky lookout point, from where she peers out",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGRUNE",
@@ -470,7 +493,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "in den Hintergrund rufend",
             "translation": "calling into the background",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGRUNE",
@@ -484,7 +508,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "zu den anderen",
             "translation": "to the others",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGRUNE",
@@ -498,7 +523,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "alle eilen auf die Warte",
             "translation": "Everyone rushes to the waiting area.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
@@ -512,7 +538,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie spähen mit wachsender Verwunderung",
             "translation": "They peered with growing astonishment.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WALTRAUTE",
@@ -575,7 +602,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "hinabrufend",
             "translation": "recalling down",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WALTRAUTE",
@@ -596,7 +624,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Gerhilde und Helmwige stürzen in den Tann. Siegrune und Rossweisse laufen ihnen nach",
             "translation": "Gerhilde and Helmwige fall into the fir trees. Siegrune and Rossweisse run after them.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "HELMWIGE, GERHILDE, SIEGRUNE, ROSSWEISSE",
@@ -617,7 +646,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "in den Tann blickend",
             "translation": "looking into the fir trees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WALTRAUTE",
@@ -638,7 +668,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "alle in den Tann laufend",
             "translation": "all running into the fir trees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "ORTLINDE, WALTRAUTE, GRIMGERDE, SCHWERTLEITE",
@@ -652,7 +683,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Alle Walküren kehren auf die Bühne zurück; mit ihnen kommt Brünnhilde, Sieglinde unterstützend und hereingeleitend\natemlos",
             "translation": "All the Valkyries return to the stage; Brünnhilde and Sieglinde come with them, supporting and escorting them in.\nbreathless",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -701,7 +733,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "heftig erschreckend",
             "translation": "intensely frightening",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
@@ -715,7 +748,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "wendet sich ängstlich, um zu spähen, und kehrt wieder zurück",
             "translation": "turns around fearfully to peer, and then returns.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -729,7 +763,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ortlinde und Waltraute springen auf die Felsenspitze zur Warte",
             "translation": "Ortlinde and Waltraute jump onto the rocky outcrop to the lookout point.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -785,7 +820,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "kleinmütig",
             "translation": "fainthearted",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -799,7 +835,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "in grösster Bestürzung",
             "translation": "in utter dismay",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SECHS WALKÜREN",
@@ -813,7 +850,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "von der Warte",
             "translation": "from the perspective",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -849,7 +887,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ebenso",
             "translation": "as well",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "ORTLINDE",
@@ -926,7 +965,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "die bisher finster und kalt vor sich hingestarrt, fährt, als Brünnhilde sie lebhaft - wie zum Schutze - umfasst, mit einer abwehrenden Gebärde auf",
             "translation": "who had been staring darkly and coldly ahead, starts with a defensive gesture when Brünnhilde embraces her vividly – ​​as if for protection.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "SIEGLINDE",
@@ -947,7 +987,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "stark und drängend",
             "translation": "strong and urgent",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -980,7 +1021,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "erschrickt zunächst heftig; sogleich strahlt aber ihr Gesicht in erhabener Freude auf",
             "translation": "She is initially startled; but immediately her face shines with sublime joy",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -994,7 +1036,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Immer finstereres Gewitter steigt im Hintergrunde auf: nahender Donner\nauf der Warte",
             "translation": "An increasingly dark storm is rising in the background: approaching thunder.\nwaiting",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "WALTRAUTE",
@@ -1008,7 +1051,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ebenso",
             "translation": "as well",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "ORTLINDE",
@@ -1029,7 +1073,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "auf den Knien vor Brünnhilde",
             "translation": "on her knees before Brünnhilde",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -1043,7 +1088,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "mit lebhaftem Entschluss hebt sie Sieglinde auf",
             "translation": "With lively determination, she lifts Sieglinde up.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1099,7 +1145,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "auf der Warte",
             "translation": "waiting",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WALTRAUTE",
@@ -1120,7 +1167,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sieglinde die Richtung weisend",
             "translation": "Sieglinde pointing the way",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1134,7 +1182,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie zieht die Stücken von Siegmunds Schwert unter ihrem Panzer hervor und überreicht sie Sieglinde",
             "translation": "She pulls the pieces of Siegmund's sword out from under her armor and hands them to Sieglinde.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1171,7 +1220,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "in grösster Rührung",
             "translation": "deeply moved",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "SIEGLINDE",
@@ -1185,7 +1235,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie eilt rechts im Vordergrunde von dannen. - Die Felsenhöhe ist von schwarzen Gewitterwolken umlagert; furchtbarer Sturm braust aus dem Hintergrunde daher, wachsender Feuerschein rechts daselbst",
             "translation": "She hurries away on the right in the foreground. - The rocky height is surrounded by black storm clouds; a terrible storm roars from the background, a growing glow of fire there on the right.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "WOTANS STIMME",
@@ -1199,7 +1250,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Brünnhilde, nachdem sie eine Weile Sieglinde nachgesehen, wendet sich in den Hintergrund, blickt in den Tann und kommt angstvoll wieder vor\nvon der Warte herabsteigend",
             "translation": "Brünnhilde, after watching Sieglinde for a while, turns into the background, looks into the fir trees, and comes forward again fearfully.\ndescending from the lookout",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "ORTLINDE UND WALTRAUTE",
@@ -1227,7 +1279,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "flüchten ängstlich nach der Felsenspitze hinauf; Brünnhilde lässt sich von ihnen nachziehen",
             "translation": "They flee fearfully up to the rocky peak; Brünnhilde lets them pull her after her.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
@@ -1241,7 +1294,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sie verbergen Brünnhilde unter sich und blicken ängstlich nach dem Tann, der jetzt von grellem Feuerschein erhellt wird, während der Hintergrund ganz finster geworden ist",
             "translation": "They hide Brünnhilde beneath them and look fearfully towards the fir tree, which is now illuminated by a glaring firelight, while the background has become completely dark.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
@@ -1284,7 +1338,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Wotan tritt in höchster zorniger Aufgeregtheit aus dem Tann auf und schreitet vor der Gruppe der Walküren auf der Höhe, nach Brünnhilde spähend, heftig einher.",
             "translation": "Wotan emerges from the fir forest in a state of extreme anger and strides furiously ahead of the group of Valkyries on the hilltop, peering for Brünnhilde.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "WOTAN",
@@ -1333,7 +1388,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "tritt aus der Schar der Walküren hervor, schreitet demütigen, doch festen Schrittes von der Felsenspitze herab und tritt so in geringer Entfernung vor Wotan",
             "translation": "He emerges from the ranks of the Valkyries, descends with humble but firm steps from the rocky peak, and thus stands at a short distance before Wotan.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       },
@@ -1376,7 +1432,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "heftig erschreckend",
             "translation": "intensely frightening",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1397,7 +1454,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "verlassen, in aufgeregter Bewegung, ihre Stellung, indem sie sich etwas tiefer herabziehen",
             "translation": "abandoning their position in agitated movements, they lower themselves somewhat further.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
@@ -1446,7 +1504,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "kommen in höchster Aufregung von der Felsenspitze ganz herab und umgeben in ängstlichen Gruppen Brünnhilde, welche halb kniend vor Wotan liegt",
             "translation": "They come down from the top of the rock in great excitement and surround Brünnhilde in fearful groups, who lies half-kneeling before Wotan.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "DIE ACHT WALKÜREN",
@@ -1467,7 +1526,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Brünnhilde sinkt mit einem Schrei zu Boden; die Walküren weichen entsetzt mit heftigem Geräusch von ihrer Seite",
             "translation": "Brünnhilde sinks to the ground with a scream; the Valkyries recoil from her side in horror with a loud noise.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WOTAN",
@@ -1488,7 +1548,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Die Walküren fahren mit wildem Wehschrei auseinander und stürzen in hastiger Flucht in den Tann. Schwarzes Gewölk lagert sich dicht am Felsenrande: man hört wildes Geräusch im Tann. Ein greller Blitzesglanz bricht in dem Gewölk aus; in ihm erblickt man die Walküren mit verhängtem Zügel, in eine Schar zusammengedrängt, wild davonjagen. Bald legt sich der Sturm; die Gewitterwolken verziehen sich allmählich. In der folgenden Szene bricht, bei endlich ruhigem Wetter, Abenddämmerung ein, der am Schlusse Nacht folgt",
             "translation": "The Valkyries scatter with wild cries of anguish and rush in hasty flight into the fir forest. Black clouds gather close to the rocky edge; a wild commotion can be heard in the fir trees. A brilliant flash of lightning erupts in the clouds; within it, the Valkyries are seen, their reins hanging loose, huddled together in a group, racing wildly away. Soon the storm subsides; the storm clouds gradually dissipate. In the following scene, with finally calm weather, dusk falls, which is followed by night at the end.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       }
@@ -1517,7 +1578,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "beginnt das Haupt langsam ein wenig zu erheben. Schüchtern beginnend und steigernd",
             "translation": "He begins to slowly raise his head a little. Starting shyly and gradually increasing the height.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1531,7 +1593,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "in unveränderter Stellung, ernst und düster",
             "translation": "in unchanged position, serious and somber",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WOTAN",
@@ -1580,7 +1643,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "leise und bitter",
             "translation": "quiet and bitter",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WOTAN",
@@ -1608,7 +1672,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "leise beginnend",
             "translation": "Starting quietly",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1706,7 +1771,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "heimlich",
             "translation": "secretly",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1741,7 +1807,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "heimlich",
             "translation": "secretly",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1755,7 +1822,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "heftig",
             "translation": "violent",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WOTAN",
@@ -1783,7 +1851,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "stürzt auf ihre Knie",
             "translation": "falls to her knees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1804,7 +1873,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "seine Knie umfassend",
             "translation": "encompassing his knees",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1818,7 +1888,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "mit wilder Begeisterung",
             "translation": "with wild enthusiasm",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÜNNHILDE",
@@ -1832,7 +1903,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "überwältigt und tief ergriffen, wendet sich lebhhaft zu Brünnhilde, erhebt sie von den Knien und blickt ihr gerührt in das Auge",
             "translation": "Overwhelmed and deeply moved, he turns animatedly to Brünnhilde, raises her from her knees and looks touched into her eyes.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1859,7 +1931,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "sehr leidenschaftlich",
             "translation": "very passionate",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WOTAN",
@@ -1873,7 +1946,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Brünnhilde sinkt, gerührt und begeistert, an Wotans Brust; er hält sie lange umfangen. Sie schlägt das Haupt wieder zurück und blickt, immer noch ihn umfassend, feierlich ergriffen Wotan in das Auge",
             "translation": "Brünnhilde, moved and enraptured, sinks against Wotan's breast; he holds her embraced for a long time. She throws her head back and, still embracing him, gazes solemnly and deeply into Wotan's eyes.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "WOTAN",
@@ -1887,7 +1961,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er küsst sie lange auf die Augen. Sie sinkt mit geschlossenen Augen, sanft ermattend, in seinen Armen zurück. Er geleitet sie zart auf einen niedrigen Mooshügel zu liegen, über den sich eine breitästige Tanne ausstreckt. Er betrachtet sie und schliesst ihr den Helm: sein Auge weilt dann auf der Gestalt der Schlafenden, die er mit dem grossen Stahlschilde der Walküre ganz zudeckt. Langsam kehrt er sich ab, mit einem schmerzlichen Blicke wendet er sich noch einmal um. Dann schreitet er mit feierlichem Entschlusse in die Mitte der Bühne und kehrt seines Speeres Spitze gegen einen mächtigen Felsstein",
             "translation": "He kisses her eyes for a long time. She sinks back in his arms, her eyes closed, gently growing weary. He softly guides her to lie on a low mossy mound, over which a broad-branched fir tree stretches. He gazes at her and closes her helmet: his eyes then rest on the sleeping figure, which he completely covers with the Valkyrie's great steel shield. Slowly he turns away, a sorrowful glance lingering on her face. Then, with solemn resolve, he strides to the center of the stage and points the tip of his spear toward a mighty boulder.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       },
@@ -1914,7 +1989,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er stösst mit dem Folgenden dreimal mit dem Speer auf den Stein",
             "translation": "He then thrusts his spear at the stone three times.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "WOTAN",
@@ -1928,7 +2004,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Dem Stein entfährt ein Feuerstrahl, der zur allmählich immer helleren Flammenglut anschwillt. Lichte Flackerlohe bricht aus. Lichte Brunst umgibt Wotan mit wildem Flackern. Er weist mit dem Speere gebieterisch dem Feuermeere den Umkreis des Felsenrandes zur Strömung an; alsbald zieht es sich nach dem Hintergrunde, wo es nun fortwährend den Bergsaum umlodert",
             "translation": "A jet of fire bursts from the stone, swelling into a gradually ever brighter blaze. A bright, flickering flame erupts. A fiery blaze surrounds Wotan with wild flickering. With his spear, he commands the sea of ​​fire to flow within the radius of the rock's edge; immediately it retreats to the background, where it now continually blazes around the mountain's rim.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "WOTAN",
@@ -1942,7 +2019,8 @@ export const walkureActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Er streckt den Speer wie zum Banne aus, dann blickt er schmerzlich auf Brünnhilde zurück, wendet sich langsam zum Gehen und blickt noch einmal zurück, ehe er durch das Feuer verschwindet. Der Vorhang fällt",
             "translation": "He stretches out the spear as if casting a spell, then looks back painfully at Brünnhilde, slowly turns to leave, and glances back once more before disappearing into the fire. The curtain falls.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       }
