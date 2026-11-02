@@ -29,5 +29,5 @@ export const manon={
  eyebrow:'Five-act bilingual working reader · English Acts I–IV machine translated, editorial review pending',
  paragraphs:info.synopsis,characters:info.characters
  },
- source:'French Acts I–IV: Henri Meilhac and Philippe Gille, public-domain libretto, https://opera-guide.ch/operas/manon/libretto/fr/ (transcribed from Sottovoce Q842063: 1,931 original source records including the prelude). English Acts I–IV: independently generated Google Translate working draft on 29 October 2026, not a verified published translation. Act V: 1895 J. C. Macy bilingual edition, University of Rochester Sibley Music Library https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemId=28674. Historical versions differ: the Macy edition presents Act V as an alternate Scene II of Act IV. Source-derived incipits are navigation aids, not asserted musical-number titles. Human editorial and native-browser QA pending.'
+ source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
