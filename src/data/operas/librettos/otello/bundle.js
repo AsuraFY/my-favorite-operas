@@ -31,5 +31,5 @@ export const otello = {
     {number: 4, originalHeading: "Atto quarto", scenes: otelloActFourScenes}
   ],
   synopsis: {eyebrow:"G. Verdi · Opera in four acts · All four acts available", paragraphs:info.synopsis, characters:info.characters},
-  source: "Original Italian: Opera Guide, https://opera-guide.ch/en/operas/otello/libretto/it/ (user-supplied saved MHTML on 26 October 2026), with the four source acts and 21 source scenes retained. English: assistant-generated unreviewed draft; do not cite it as a verified translation. Outline landmarks are editorial incipits from the original text, not official numbered pieces."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
