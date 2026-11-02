@@ -24,9 +24,18 @@ export const manonActTwoScenes = [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
+            "original": "Prélude",
+            "translation": "Prelude",
+            "literalText": true,
+            "shortCue": false
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
             "original": "L'appartement de la rue Vivienne\nL'appartement de Des Grieux et de Manon, rue Vivienne, à Paris.\nDes Grieux est assis devant le bureau. Manon s'avance doucement derrière lui et cherche à lire ce qu'il écrit.",
             "translation": "The apartment on Rue Vivienne\nThe apartment of Des Grieux and Manon, on rue Vivienne, in Paris.\nDes Grieux is sitting in front of the desk. Manon slowly moves forward behind him and tries to read what he is writing.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "DES GRIEUX",
@@ -96,7 +105,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "lisant la lettre",
             "translation": "reading the letter",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -166,7 +176,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "avec enthousiasme",
             "translation": "with enthusiasm",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -225,7 +236,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il s'arrête et regarde un bouquet qui est placé sur la cheminée.",
             "translation": "He stops and looks at a bouquet that is placed on the mantelpiece.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -274,7 +286,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "On entend un bruit de voix dehors.",
             "translation": "We hear voices outside.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -288,7 +301,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "entre, effarée",
             "translation": "between, horrified",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LA SERVANTE",
@@ -309,7 +323,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "bas à Manon et vite",
             "translation": "Goodbye to Manon and quickly",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LA SERVANTE",
@@ -323,7 +338,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "bas",
             "translation": "down",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -337,7 +353,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "bas",
             "translation": "down",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LA SERVANTE",
@@ -358,7 +375,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Au moment où il va s'élancer, la porte s'ouvre. Entrent Brétigny, costumé en garde, et Lescaut.",
             "translation": "Just as he is about to rush forward, the door opens. Brétigny, dressed as a guard, and Lescaut enter.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LESCAUT",
@@ -458,7 +476,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny",
             "translation": "in Brétigny",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -500,7 +519,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "le retenant",
             "translation": "holding him",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -535,7 +555,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -549,7 +570,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny",
             "translation": "in Brétigny",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -592,7 +614,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -683,7 +706,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -697,7 +721,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "en riant",
             "translation": "laughing",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -711,7 +736,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "en riant",
             "translation": "laughing",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY, LESCAUT",
@@ -762,7 +788,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "prenant la lettre",
             "translation": "taking the letter",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -776,7 +803,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut suit Manon et Brétigny et éloigne volontairement Des Grieux.",
             "translation": "Lescaut follows Manon and Brétigny and deliberately keeps Des Grieux away.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -790,7 +818,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Brètigny reste près de Manon.",
             "translation": "Brètigny remains close to Manon.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -853,7 +882,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "faisant un pas",
             "translation": "taking a step",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -881,7 +911,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "lisant la lettre",
             "translation": "reading the letter",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -909,7 +940,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny",
             "translation": "in Brétigny",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1065,7 +1097,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "corrigeant lui-même",
             "translation": "correcting himself",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1229,7 +1262,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Manon",
             "translation": "to Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1243,7 +1277,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1257,7 +1292,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny",
             "translation": "in Brétigny",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1306,7 +1342,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ils sortent, les répliques suivantes sont entendues au loin.",
             "translation": "They go outside, the following replies are heard in the distance.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT, BRÉTIGNY",
@@ -1320,7 +1357,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à elle-même, pensive",
             "translation": "to herself, pensive",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1334,7 +1372,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à lui-même, joyeusement",
             "translation": "to himself, joyfully",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1348,7 +1387,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Entre la servante.",
             "translation": "Enter the maid.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1446,7 +1486,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il sort, laissant Manon seule.",
             "translation": "He leaves, leaving Manon alone.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1460,7 +1501,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Peu à peu elle s'est approchée de la table toute servie.",
             "translation": "Little by little she approached the fully set table.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1474,7 +1516,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "entendant Des Grieux",
             "translation": "hearing Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1551,7 +1594,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "avec amertume, à part",
             "translation": "bitterly, apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1586,7 +1630,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "On entend frapper doucement à la porte.\nà part",
             "translation": "We hear a soft knocking at the door.\napart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -1607,7 +1652,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "se levant",
             "translation": "getting up",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1719,7 +1765,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il l'embrasse et sort. On entend un bruit de lutte. Manon se lève et se précipite à la fenêtre. Elle entend une voiture qui s'éloigne.",
             "translation": "He kisses her and leaves. A struggle is heard. Manon gets up and rushes to the window. She hears a car driving away.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -1733,7 +1780,8 @@ export const manonActTwoScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Entracte",
             "translation": "Intermission",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       }
