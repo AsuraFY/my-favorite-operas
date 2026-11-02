@@ -19,5 +19,5 @@ export const dieWalkure={
   {number:3,originalHeading:'DRITTER AUFZUG',scenes:walkureActThreeScenes}
  ],
  synopsis:{eyebrow:'Richard Wagner · Ring Cycle · Three acts · German–English working reading edition; translation awaiting editorial review',paragraphs:info.synopsis,characters:info.characters},
- source:'German: Richard Wagner, Die Walküre, public-domain libretto, https://opera-guide.ch/operas/die+walkure/libretto/de/ via Sottovoce Q324319. All 1,806 original source records, across 11 scenes, preserved with paired independently machine-generated English working translations (Google Translate, 29 October 2026). This is not a literary-reviewed or singable translation. Navigation passages are editorial incipit subdivisions rather than score-number headings; native-browser QA and source collation pending.'
+ source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
