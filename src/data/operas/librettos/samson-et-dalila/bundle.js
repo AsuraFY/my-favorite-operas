@@ -33,6 +33,6 @@ export const samson = {
     paragraphs: operaInformation["samson-et-dalila"].synopsis,
     characters: operaInformation["samson-et-dalila"].characters
   },
-  source: "Ferdinand Lemaire, Samson et Dalila, Acts I–III. French: ABAO programme, pp. 213–245, https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf (accessed 21 October 2026). Fresh English draft, checked against the French; independent review pending. All three acts added. See docs/reviews/samson-et-dalila-act-1.md, docs/reviews/samson-et-dalila-act-2.md and docs/reviews/samson-et-dalila-act-3.md."
+  source: "Ferdinand Lemaire, Samson et Dalila, Acts I–III. French: ABAO programme, pp. 213–245, https://www.esm.rochester.edu/uploads/Locke-Libro-ABAO-2020-2021.pdf (accessed 21 October 2026). Fresh English draft, checked against the French; independent review pending. All three acts added. Opera-specific editorial status and future source/translation verification are tracked in docs/reviews/global-audit.md."
 };
 
