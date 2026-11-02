@@ -82,7 +82,7 @@ export const trovatoreActThreeScenes = [
             "speaker": "TUTTI",
             "speakerTranslation": "All",
             "original": "Tu c'inviti a danza!\nSquilli, echeggi la tromba guerriera,\nChiami all'armi,\nalla pugna, all'assalto;\nFia domani la nostra bandiera\nDi quei merli piantata sull'alto.\nNo, giammai non sorrise vittoria\nDi più liete speranze finor!...\nIvi l'util ci aspetta e la gloria,\nIvi opimi la preda e l'onor.",
-            "translation": "You invite us to a dance!\nLet the war trumpet sound and echo,\nCalling us to arms, to battle, to attack;\nTomorrow our flag will be planted\nHigh upon those battlements.\nNever has victory smiled upon us\nWith more joyful promise!\nProfit and glory await us there,\nAnd rich spoils and honor!",
+            "translation": "You invite us to a dance!\nLet the war trumpet sound and echo,\nCalling us to arms,\nTo battle, to attack;\nTomorrow our flag will be planted\nHigh upon those battlements.\nNever has victory smiled upon us\nWith more joyful promise!\nProfit and glory await us there,\nAnd rich spoils and honor!",
             "literalText": true
           },
           {
@@ -124,7 +124,7 @@ export const trovatoreActThreeScenes = [
             "speaker": "CONTE",
             "speakerTranslation": "Count di Luna",
             "original": "In braccio al mio rival! Questo pensiero\nCome persecutor demone ovunque\nM'insegue!... In braccio al mio rival!... Ma corro,\nSurta appena l'aurora,\nIo corro a separarvi... Oh Leonora!",
-            "translation": "In my rival's arms! That thought\nPursues me everywhere\nLike a persecuting demon!\nIn my rival's arms! But as soon\nAs dawn breaks, I shall rush\nTo separate you... Oh Leonora!",
+            "translation": "In my rival's arms! That thought\nLike a haunting demon pursues me\nEverywhere!... In my rival's arms! But I shall hurry\nAt the first light of dawn\nTo separate you... Oh Leonora!",
             "literalText": true
           },
           {
@@ -319,7 +319,7 @@ export const trovatoreActThreeScenes = [
             "speaker": "AZUCENA",
             "speakerTranslation": "Azucena",
             "original": "D'una zingara è costume\nMover senza disegno\nIl passo vagabondo,\nEd è suo tetto il ciel,\nSua patria il mondo.",
-            "translation": "A gypsy woman is accustomed\nTo wander without a plan,\nWith heaven for her roof\nAnd the world for her homeland.",
+            "translation": "A gypsy woman's custom is\nTo let her wandering steps\nRoam without a plan;\nHer roof is the sky,\nHer homeland the world.",
             "literalText": true
           },
           {
@@ -684,7 +684,7 @@ export const trovatoreActThreeScenes = [
             "speaker": "MANRICO",
             "speakerTranslation": "Manrico",
             "original": "Tu va'; le belliche opre,\nNell'assenza mia breve, a te commetto.\nChe nulla manchi!...",
-            "translation": "Go; I entrust you\nWith the preparations for battle\nDuring my brief absence.\nSee that nothing is lacking!",
+            "translation": "Go; the preparations for war\nI entrust to you during my brief absence.\nSee that nothing is lacking!",
             "literalText": true
           },
           {
