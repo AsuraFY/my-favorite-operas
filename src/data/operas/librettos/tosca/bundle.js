@@ -110,7 +110,7 @@ export const tosca = {
   ],
   characters: ["Floria Tosca", "Mario Cavaradossi", "Baron Scarpia", "Cesare Angelotti", "The Sacristan", "Spoletta", "Sciarrone", "Jailer", "A Shepherd", "Chorus"],
   characterDisplayNames: { Tosca: "Floria Tosca", Cavaradossi: "Mario Cavaradossi", Scarpia: "Baron Scarpia", Angelotti: "Cesare Angelotti", "Tosca's voice": "Floria Tosca", "Cavaradossi (offstage)": "Mario Cavaradossi", "Crowd": "Crowd", "The Crowd": "Crowd", "A Shepherd (offstage)": "A Shepherd" },
-  source: "Italian libretto, character names, and scene divisions for Acts I–III: Opera Guide, Tosca, https://opera-guide.ch/operas/tosca/libretto/it/. Italian–English wording and line pairing reviewed on 20 October 2026. Restored missing replies and dialogue order; separated sung asides from short cues and long directions. The earlier English draft consulted https://lyricaloperatheater.com/PDFs/Tosca-libretto_English-Italian_2022.pdf. Musical types are editorial listening labels; no score numbers are inferred. Browser visual verification remains pending. The Spotify recording linked at the foot of the outline guides only the track order and scene grouping. Acts I–III are populated."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
 // Use the actual sung participants for each Tosca passage, including joint cues.
