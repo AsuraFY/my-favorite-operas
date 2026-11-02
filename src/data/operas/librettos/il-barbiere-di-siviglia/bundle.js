@@ -67,6 +67,6 @@ export const barbiere = {
     "1:16": { "The Count": "disguised as a cavalry soldier" }
   },
   ensembleLabels: {},
-  source: "Cesare Sterbini, Il barbiere di Siviglia (1816), Librettidopera.it. Outline types, incipits and divisions checked 14 October 2026 against the act texts and https://www.librettidopera.it/barb_siv/som.html. No numeric labels supplied by this edition. English remains a draft. Acts I–II: https://www.librettidopera.it/barb_siv/a_01.html and https://www.librettidopera.it/barb_siv/a_02.html"
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
