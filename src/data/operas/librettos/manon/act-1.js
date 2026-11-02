@@ -17,10 +17,10 @@ export const manonActOneScenes = [
         "originalTitle": "Holà! Hé! Monsieur l'Hôtelier?",
         "translatedTitle": "Hola! Hey! Mr. Hotelier?",
         "participants": [
-          "GUILLOT",
-          "BRÉTIGNY",
-          "POUSSETTE",
-          "JAVOTTE"
+          "Guillot",
+          "Brétigny",
+          "Poussette",
+          "Javotte"
         ],
         "turns": [
           {
@@ -180,15 +180,11 @@ export const manonActOneScenes = [
         "originalTitle": "Monsieur l'Hôtelier!",
         "translatedTitle": "Mr. Hotelier!",
         "participants": [
-          "The Five Together",
-          "BRÉTIGNY",
-          "GUILLOT",
-          "The Others Together",
+          "Brétigny",
+          "Guillot",
           "The Innkeeper",
-          "The Others",
-          "JAVOTTE",
-          "POUSSETTE",
-          "The Five"
+          "Javotte",
+          "Poussette"
         ],
         "turns": [
           {
@@ -377,13 +373,11 @@ export const manonActOneScenes = [
         "translatedTitle": "No, gentlemen,",
         "participants": [
           "The Innkeeper",
-          "GUILLOT",
-          "BRÉTIGNY",
-          "POUSSETTE",
-          "The Other Four",
-          "The Five",
+          "Guillot",
+          "Brétigny",
+          "Poussette",
           "Chorus of Townspeople",
-          "LESCAUT",
+          "Lescaut",
           "The Guards"
         ],
         "turns": [
@@ -524,15 +518,14 @@ export const manonActOneScenes = [
         "translatedTitle": "What a joke!",
         "participants": [
           "The Guards",
-          "LESCAUT",
+          "Lescaut",
           "Chorus",
           "An Elderly Lady",
           "A Traveler",
           "The Porter",
           "A Female Traveler",
           "Another Female Traveler",
-          "Another Traveler",
-          "The Passengers Together"
+          "Another Traveler"
         ],
         "turns": [
           {
@@ -695,8 +688,8 @@ export const manonActOneScenes = [
           "Chorus",
           "Female Passengers",
           "The Passengers",
-          "LESCAUT",
-          "MANON"
+          "Lescaut",
+          "Manon"
         ],
         "turns": [
           {
@@ -837,9 +830,8 @@ export const manonActOneScenes = [
         "participants": [
           "The Postilions",
           "The Travelers",
-          "Several Travelers",
           "Townspeople",
-          "LESCAUT"
+          "Lescaut"
         ],
         "turns": [
           {
@@ -944,12 +936,12 @@ export const manonActOneScenes = [
         "translatedTitle": "You have to see everything!",
         "participants": [
           "Townspeople",
-          "GUILLOT",
-          "MANON",
-          "BRÉTIGNY",
-          "POUSSETTE",
-          "JAVOTTE",
-          "ROSETTE"
+          "Guillot",
+          "Manon",
+          "Brétigny",
+          "Poussette",
+          "Javotte",
+          "Rosette"
         ],
         "turns": [
           {
@@ -1095,13 +1087,11 @@ export const manonActOneScenes = [
         "originalTitle": "Guillot, laissez Mademoiselle!",
         "translatedTitle": "Guillot, leave Mademoiselle alone!",
         "participants": [
-          "BRÉTIGNY",
-          "GUILLOT",
-          "LESCAUT",
-          "MANON",
-          "A Guard",
-          "Another Guard",
-          "Two Guards"
+          "Brétigny",
+          "Guillot",
+          "Lescaut",
+          "Manon",
+          "The Guards"
         ],
         "turns": [
           {
@@ -1261,9 +1251,9 @@ export const manonActOneScenes = [
         "originalTitle": "Et maintenant, voyons à qui de nous",
         "translatedTitle": "And now, let's see which of us...",
         "participants": [
-          "LESCAUT",
-          "MANON",
-          "DES GRIEUX"
+          "Lescaut",
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -1360,8 +1350,8 @@ export const manonActOneScenes = [
         "originalTitle": "Est-ce la folie?",
         "translatedTitle": "Is this madness?",
         "participants": [
-          "DES GRIEUX",
-          "MANON"
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
@@ -1507,8 +1497,8 @@ export const manonActOneScenes = [
         "originalTitle": "Non! Je ne veux pas croire à cette cruauté!",
         "translatedTitle": "No! I refuse to believe in such cruelty!",
         "participants": [
-          "DES GRIEUX",
-          "MANON"
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
@@ -1647,12 +1637,12 @@ export const manonActOneScenes = [
         "originalTitle": "Tous les deux! À Paris! À Paris!",
         "translatedTitle": "Both of them! In Paris! In Paris!",
         "participants": [
-          "MANON",
-          "DES GRIEUX",
-          "POUSSETTE",
-          "JAVOTTE",
-          "ROSETTE",
-          "LESCAUT"
+          "Manon",
+          "Des Grieux",
+          "Poussette",
+          "Javotte",
+          "Rosette",
+          "Lescaut"
         ],
         "turns": [
           {
@@ -1847,9 +1837,9 @@ export const manonActOneScenes = [
         "originalTitle": "Viens! Partons!",
         "translatedTitle": "Come on! Let's go!",
         "participants": [
-          "DES GRIEUX",
-          "LESCAUT",
-          "GUILLOT",
+          "Des Grieux",
+          "Lescaut",
+          "Guillot",
           "The Innkeeper",
           "Townspeople"
         ],
@@ -2089,9 +2079,9 @@ export const manonActOneScenes = [
         "translatedTitle": "In the gentleman's car!",
         "participants": [
           "Townspeople",
-          "GUILLOT",
-          "LESCAUT",
-          "BRÉTIGNY"
+          "Guillot",
+          "Lescaut",
+          "Brétigny"
         ],
         "turns": [
           {
