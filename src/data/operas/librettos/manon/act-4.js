@@ -17,13 +17,13 @@ export const manonActFourScenes = [
         "originalTitle": "Faites vos jeux, Messieurs!",
         "translatedTitle": "Place your bets, gentlemen!",
         "participants": [
-          "CROUPIERS",
-          "PREMIER JOUEUR",
-          "DEUXIÈME JOUEUR",
-          "UNE VOIX",
+          "Croupiers",
+          "First Gambler",
+          "Second Gambler",
+          "A Voice",
           "LESCAUT",
-          "UN JOUEUR",
-          "LES AIGREFINS"
+          "A Gambler",
+          "The Swindlers"
         ],
         "turns": [
           {
@@ -35,42 +35,42 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "CROUPIERS",
-            "speakerTranslation": "CROUPIERS",
+            "speakerTranslation": "Croupiers",
             "original": "Faites vos jeux, Messieurs!",
             "translation": "Place your bets, gentlemen!",
             "literalText": true
           },
           {
             "speaker": "PREMIER JOUEUR",
-            "speakerTranslation": "PREMIER JOUEUR",
+            "speakerTranslation": "First Gambler",
             "original": "Mille pistoles!",
             "translation": "A thousand pistoles!",
             "literalText": true
           },
           {
             "speaker": "DEUXIÈME JOUEUR",
-            "speakerTranslation": "DEUXIÈME JOUEUR",
+            "speakerTranslation": "Second Gambler",
             "original": "C'est tenu!",
             "translation": "It's settled!",
             "literalText": true
           },
           {
             "speaker": "PREMIER JOUEUR",
-            "speakerTranslation": "PREMIER JOUEUR",
+            "speakerTranslation": "First Gambler",
             "original": "Je double!",
             "translation": "I'm doubling!",
             "literalText": true
           },
           {
             "speaker": "DEUXIÈME JOUEUR",
-            "speakerTranslation": "DEUXIÈME JOUEUR",
+            "speakerTranslation": "Second Gambler",
             "original": "Brelan!",
             "translation": "Three of a kind!",
             "literalText": true
           },
           {
             "speaker": "PREMIER JOUEUR",
-            "speakerTranslation": "PREMIER JOUEUR",
+            "speakerTranslation": "First Gambler",
             "original": "C'est perdu!",
             "translation": "It's lost!",
             "literalText": true
@@ -84,28 +84,28 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "PREMIER JOUEUR",
-            "speakerTranslation": "PREMIER JOUEUR",
+            "speakerTranslation": "First Gambler",
             "original": "Deux!",
             "translation": "Two!",
             "literalText": true
           },
           {
             "speaker": "DEUXIÈME JOUEUR",
-            "speakerTranslation": "DEUXIÈME JOUEUR",
+            "speakerTranslation": "Second Gambler",
             "original": "Cinq!",
             "translation": "Five!",
             "literalText": true
           },
           {
             "speaker": "PREMIER JOUEUR",
-            "speakerTranslation": "PREMIER JOUEUR",
+            "speakerTranslation": "First Gambler",
             "original": "Sept!",
             "translation": "Seven!",
             "literalText": true
           },
           {
             "speaker": "DEUXIÈME JOUEUR",
-            "speakerTranslation": "DEUXIÈME JOUEUR",
+            "speakerTranslation": "Second Gambler",
             "original": "Dix!",
             "translation": "Ten!",
             "literalText": true
@@ -119,7 +119,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "UNE VOIX",
-            "speakerTranslation": "UNE VOIX",
+            "speakerTranslation": "A Voice",
             "original": "Cent louis!",
             "translation": "One hundred louis!",
             "literalText": true
@@ -133,7 +133,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "UN JOUEUR",
-            "speakerTranslation": "UN JOUEUR",
+            "speakerTranslation": "A Gambler",
             "original": "Je vous jure que l'argent m'appartient!",
             "translation": "I swear to you that the money belongs to me!",
             "literalText": true
@@ -147,7 +147,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "UN JOUEUR",
-            "speakerTranslation": "UN JOUEUR",
+            "speakerTranslation": "A Gambler",
             "original": "J'avais l'as et le Roi!",
             "translation": "I had the ace and the king!",
             "literalText": true
@@ -168,7 +168,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LES AIGREFINS",
-            "speakerTranslation": "LES AIGREFINS",
+            "speakerTranslation": "The Swindlers",
             "original": "Le joueur sans prudence\nlivre tout au hasard,\nmais le vrai sage pense\nque jouer est un art!\nPour la rendre opportune\nnous savons sans danger,\nnous savons sans danger,\nnous savons quand il faut corriger\nl'erreur de la fortune!",
             "translation": "The careless player\nbook chosen at random\nBut the truly wise man thinks\nthat playing is an art!\nTo make it timely\nwe know it's safe,\nwe know it's safe,\nwe know when to correct\nA mistake of fortune!",
             "literalText": true
@@ -205,10 +205,10 @@ export const manonActFourScenes = [
         "translatedTitle": "Gold comes to the most beautiful women all by itself!",
         "participants": [
           "POUSSETTE",
-          "LES AIGREFINS",
+          "The Swindlers",
           "LESCAUT",
           "GUILLOT",
-          "CROUPIERS"
+          "Croupiers"
         ],
         "turns": [
           {
@@ -220,7 +220,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LES AIGREFINS",
-            "speakerTranslation": "LES AIGREFINS",
+            "speakerTranslation": "The Swindlers",
             "original": "Le joueur sans prudence\nlivre tout au hasard, etc.",
             "translation": "The careless player\nbook at random, etc.",
             "literalText": true
@@ -276,7 +276,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "CROUPIERS",
-            "speakerTranslation": "CROUPIERS",
+            "speakerTranslation": "Croupiers",
             "original": "Faites vos jeux, Messieurs!",
             "translation": "Place your bets, gentlemen!",
             "literalText": true
@@ -315,7 +315,7 @@ export const manonActFourScenes = [
           "GUILLOT",
           "DES GRIEUX",
           "LESCAUT",
-          "CROUPIERS",
+          "Croupiers",
           "MANON"
         ],
         "turns": [
@@ -377,7 +377,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "CROUPIERS",
-            "speakerTranslation": "CROUPIERS",
+            "speakerTranslation": "Croupiers",
             "original": "Faites vos jeux, Messieurs!",
             "translation": "Place your bets, gentlemen!",
             "literalText": true
@@ -600,10 +600,10 @@ export const manonActFourScenes = [
           "POUSSETTE",
           "JAVOTTE",
           "DES GRIEUX",
-          "JAVOTTE, ROSETTE",
+          "ROSETTE",
           "LESCAUT",
           "MANON",
-          "CROUPIERS"
+          "Croupiers"
         ],
         "turns": [
           {
@@ -664,7 +664,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "JAVOTTE, ROSETTE",
-            "speakerTranslation": "JAVOTTE, ROSETTE",
+            "speakerTranslation": "JAVOTTE and ROSETTE",
             "original": "Nous parions!",
             "translation": "We're betting!",
             "literalText": true
@@ -713,7 +713,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "CROUPIERS",
-            "speakerTranslation": "CROUPIERS",
+            "speakerTranslation": "Croupiers",
             "original": "Faites vos jeux, Messieurs!",
             "translation": "Place your bets, gentlemen!",
             "literalText": true
@@ -961,17 +961,17 @@ export const manonActFourScenes = [
         "originalTitle": "Quand on est dans le monde,",
         "translatedTitle": "When you are in the world,",
         "participants": [
-          "TOUS",
+          "Everyone",
           "GUILLOT",
           "LESCAUT",
-          "LES AIGREFINS",
+          "The Swindlers",
           "MANON",
           "DES GRIEUX"
         ],
         "turns": [
           {
             "speaker": "TOUS",
-            "speakerTranslation": "TOUS",
+            "speakerTranslation": "Everyone",
             "original": "Quand on est dans le monde,\nil faut se tenir mieux! Messieurs!\nVoyons, Messieurs!",
             "translation": "When you are in the world,\nYou need to behave better, gentlemen!\nCome on, gentlemen!",
             "literalText": true
@@ -1041,7 +1041,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LES AIGREFINS",
-            "speakerTranslation": "LES AIGREFINS",
+            "speakerTranslation": "The Swindlers",
             "original": "Le maladroit! Ah! Quel ennui!\nLa chose ne s'est jamais vue!\nNon, non, jamais! certainement!",
             "translation": "The clumsy fellow! Ah! How annoying!\nThis has never been seen before!\nNo, no, never! Certainly not!",
             "literalText": true
@@ -1055,7 +1055,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LES AIGREFINS",
-            "speakerTranslation": "LES AIGREFINS",
+            "speakerTranslation": "The Swindlers",
             "original": "Faites vos jeux, Messieurs!\nPOUSSETTE, JAVOTTE et ROSETTE\nNon, non, jamais!\nJamais on n'a volé!\nVoyons, Messieurs! Messieurs!",
             "translation": "Place your bets, gentlemen!\nSTROLLER, JAVOTTE and ROSETTE\nNo, no, never!\nWe never stole anything!\nCome now, gentlemen! Gentlemen!",
             "literalText": true
@@ -1069,7 +1069,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LES AIGREFINS",
-            "speakerTranslation": "LES AIGREFINS",
+            "speakerTranslation": "The Swindlers",
             "original": "Faites vos jeux, Messieurs!\nLE CHŒUR et LES JOUEURS\nOn n'a volé jamais pareillement!\nNon, non, jamais! jamais! etc.",
             "translation": "Place your bets, gentlemen!\nTHE CHOIR and THE PLAYERS\nWe've never flown like this before!\nNo, no, never! Never! etc.",
             "literalText": true
@@ -1083,7 +1083,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LES AIGREFINS",
-            "speakerTranslation": "LES AIGREFINS",
+            "speakerTranslation": "The Swindlers",
             "original": "On a volé! c'est lui! etc.",
             "translation": "It was stolen! It was him! etc.",
             "literalText": true
@@ -1135,10 +1135,10 @@ export const manonActFourScenes = [
         "participants": [
           "DES GRIEUX",
           "MANON",
-          "UNE VOIX",
+          "A Voice",
           "LESCAUT",
           "GUILLOT",
-          "LE COMTE"
+          "The Count"
         ],
         "turns": [
           {
@@ -1178,7 +1178,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "UNE VOIX",
-            "speakerTranslation": "UNE VOIX",
+            "speakerTranslation": "A Voice",
             "original": "Ouvrez! au nom du Roi!",
             "translation": "Open up! In the name of the King!",
             "literalText": true
@@ -1269,7 +1269,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Et moi... m'y jetez-vous aussi?",
             "translation": "And me... will you throw yourself in too?",
             "literalText": true
@@ -1290,7 +1290,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Oui, je viens t'arracher à la honte\nqui chaque jour grandit sur toi;\ninsensé! Vois-tu pas qu'elle monte,\net va s'élever jusqu'à moi!",
             "translation": "Yes, I'm here to rescue you from shame.\nwhich grows on you every day;\nFoolish! Can't you see she's going uphill?\nand will rise up to me!",
             "literalText": true
@@ -1314,10 +1314,9 @@ export const manonActFourScenes = [
         "participants": [
           "DES GRIEUX",
           "GUILLOT",
-          "LE COMTE",
+          "The Count",
           "MANON",
-          "GUILLOT, LE COMTE",
-          "TOUS LES AUTRES"
+          "Everyone Else"
         ],
         "turns": [
           {
@@ -1336,7 +1335,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Oui, je viens t'arracher à la honte!\nEt malgré ton regard qui m'implore...\nPas de pardon!\nNon ! pas de pardon!\nJe dois veiller sur notre honneur!\nLES AIGREFINS, LE CHŒUR et LES JOUEURS\nAh! cédez à ses pleurs!\nPour sa jeunesse! Grâce!\nTant de beauté mérite que l'on ait pitié!",
             "translation": "Yes, I'm here to rescue you from this shame!\nAnd despite your pleading gaze...\nNo forgiveness!\nNo! No forgiveness!\nI must safeguard our honor!\nTHE SCAMMERS, THE CHOORES, AND THE JUMPERERS\nAh! Give in to her tears!\nFor his youth! Grace!\nSuch beauty deserves our pity!",
             "literalText": true
@@ -1350,7 +1349,7 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Qu'on l'emmène!\nPlus tard, on vous délivrera.",
             "translation": "Let's take him away!\nLater, you will be freed.",
             "literalText": true
@@ -1413,14 +1412,14 @@ export const manonActFourScenes = [
           },
           {
             "speaker": "GUILLOT, LE COMTE",
-            "speakerTranslation": "GUILLOT, LE COMTE",
+            "speakerTranslation": "GUILLOT and The Count",
             "original": "Non! jamais!",
             "translation": "No! Never!",
             "literalText": true
           },
           {
             "speaker": "TOUS LES AUTRES",
-            "speakerTranslation": "TOUS LES AUTRES",
+            "speakerTranslation": "Everyone Else",
             "original": "Ah! pitié!",
             "translation": "Oh! Have mercy!",
             "literalText": true
