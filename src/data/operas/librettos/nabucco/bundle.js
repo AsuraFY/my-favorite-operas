@@ -27,5 +27,5 @@ export const nabucco = {
   eyebrow:'Giuseppe Verdi · Four-part opera · All parts available as AI-generated English working translations awaiting editorial review',
   paragraphs:info.synopsis,characters:info.characters
  },
- source:'Italian: Temistocle Solera, Nabucco (public domain), https://www.librettidopera.it/nabucco/nabucco.html, structured from Sottovoce Q202230. 7 real scenes in Part I (230 source line records including a stage heading), 8 in Part II (186 records), 5 in Part III (170 records), 5 in Part IV (141 records), total 727 original source line records. English: independently written AI-generated working translations for all source line records including stage directions. Editorial review, exact Opera Guide collation, speaker/wording audit, and independent browser verification pending. The four source parts are mapped to the reader\'s four act tabs.'
+ source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
