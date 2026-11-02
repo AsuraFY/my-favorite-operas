@@ -21,5 +21,5 @@ export const rigoletto = {
     { number: 3, originalHeading: 'ATTO TERZO', scenes: rigolettoActThreeScenes }
   ],
   synopsis: { eyebrow: 'Giuseppe Verdi · Opera in three acts · All three acts available as AI working translations · Editorial review pending · AI-generated English working translation awaiting editorial review', paragraphs: info.synopsis, characters: info.characters },
-  source: 'Original Italian: https://opera-guide.ch/operas/rigoletto/libretto/it/ (Acts I–III). English: independent AI-generated working translation awaiting editorial review. Italian follows the supplied Opera Guide transcription, including apparent typographical variants; detailed line-by-line editorial verification remains pending.'
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
