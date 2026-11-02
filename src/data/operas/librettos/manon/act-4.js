@@ -21,7 +21,7 @@ export const manonActFourScenes = [
           "First Gambler",
           "Second Gambler",
           "A Voice",
-          "LESCAUT",
+          "Lescaut",
           "A Gambler",
           "The Swindlers"
         ],
@@ -204,10 +204,10 @@ export const manonActFourScenes = [
         "originalTitle": "L'or vient tout seul aux plus belles!",
         "translatedTitle": "Gold comes to the most beautiful women all by itself!",
         "participants": [
-          "POUSSETTE",
+          "Poussette",
           "The Swindlers",
-          "LESCAUT",
-          "GUILLOT",
+          "Lescaut",
+          "Guillot",
           "Croupiers"
         ],
         "turns": [
@@ -312,11 +312,11 @@ export const manonActFourScenes = [
         "originalTitle": "Mais qui donc nous arrive et fait tout ce",
         "translatedTitle": "But who is it that is happening to us and doing all this?",
         "participants": [
-          "GUILLOT",
-          "DES GRIEUX",
-          "LESCAUT",
+          "Guillot",
+          "Des Grieux",
+          "Lescaut",
           "Croupiers",
-          "MANON"
+          "Manon"
         ],
         "turns": [
           {
@@ -455,9 +455,9 @@ export const manonActFourScenes = [
         "originalTitle": "Vous avez tort,",
         "translatedTitle": "You are wrong.",
         "participants": [
-          "LESCAUT",
-          "MANON",
-          "DES GRIEUX"
+          "Lescaut",
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -596,13 +596,13 @@ export const manonActFourScenes = [
         "originalTitle": "Un mot, s'il vous plaît, Chevalier,",
         "translatedTitle": "One word, please, Knight,",
         "participants": [
-          "GUILLOT",
-          "POUSSETTE",
-          "JAVOTTE",
-          "DES GRIEUX",
-          "ROSETTE",
-          "LESCAUT",
-          "MANON",
+          "Guillot",
+          "Poussette",
+          "Javotte",
+          "Des Grieux",
+          "Rosette",
+          "Lescaut",
+          "Manon",
           "Croupiers"
         ],
         "turns": [
@@ -749,10 +749,10 @@ export const manonActFourScenes = [
         "originalTitle": "Permettez-moi de jouer sur parole,",
         "translatedTitle": "Let me play on word,",
         "participants": [
-          "LESCAUT",
-          "GUILLOT",
-          "DES GRIEUX",
-          "MANON"
+          "Lescaut",
+          "Guillot",
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
@@ -961,12 +961,11 @@ export const manonActFourScenes = [
         "originalTitle": "Quand on est dans le monde,",
         "translatedTitle": "When you are in the world,",
         "participants": [
-          "Everyone",
-          "GUILLOT",
-          "LESCAUT",
+          "Guillot",
+          "Lescaut",
           "The Swindlers",
-          "MANON",
-          "DES GRIEUX"
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -1133,11 +1132,11 @@ export const manonActFourScenes = [
         "originalTitle": "Eh mais... qui frappe de la sorte?...",
         "translatedTitle": "Hey, but... who's hitting like that?...",
         "participants": [
-          "DES GRIEUX",
-          "MANON",
+          "Des Grieux",
+          "Manon",
           "A Voice",
-          "LESCAUT",
-          "GUILLOT",
+          "Lescaut",
+          "Guillot",
           "The Count"
         ],
         "turns": [
@@ -1312,11 +1311,10 @@ export const manonActFourScenes = [
         "originalTitle": "Ah! comprends ce regard qui t'implore,",
         "translatedTitle": "Ah! understand that look that implores you,",
         "participants": [
-          "DES GRIEUX",
-          "GUILLOT",
+          "Des Grieux",
+          "Guillot",
           "The Count",
-          "MANON",
-          "Everyone Else"
+          "Manon"
         ],
         "turns": [
           {
