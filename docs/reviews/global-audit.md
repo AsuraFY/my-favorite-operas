@@ -67,8 +67,8 @@ Statuses in this table are the **consolidated Nov 2 assessment**, not a claim of
 | `AUD-20261101-12` | P1 · C | Source labels assessed; further editorial review pending | **Turandot / Carmen generic headings** — Check Scena/Scène and section incipits; use source-supported navigation labels and correct translations only. |
 | `AUD-20261101-13` | P1 · C | Seven tableaux implemented; verification / rights pending | **Eugene Onegin English-first, seven tableaux** — Respect approved English-first reader, document text edition/rights and authentic seven-tableau boundaries; never fabricate Russian alignment. |
 | `AUD-20261101-14` | P1 · C | Mixed-edition source identified; editorial decision pending | **Manon Act V mixed-edition variant** — Document J. C. Macy Act V contextual differences versus Acts I–IV; obtain editorial decision before substitutions. |
-| `AUD-20261101-15` | P1 · C | Needs review | **Working English translations across catalogue** — Per act, collate original, speakers, directions, stanza alignment, incipits and English semantics. Working draft ≠ literary approval. |
-| `AUD-20261101-16` | P1 · C | Needs review | **Rights, licensing, translator/source provenance** — Inventory exact editions, translator, license and URL/access information for originals, translations and imagery; remediate unsuitable sources. |
+| `AUD-20261101-15` | P1 · C | Catalogue metadata inventoried; translation review pending | **Working English translations across catalogue** — Per act, collate original, speakers, directions, stanza alignment, incipits and English semantics. Working draft ≠ literary approval. |
+| `AUD-20261101-16` | P1 · C | Source inventory started; rights clearance unresolved | **Rights, licensing, translator/source provenance** — Inventory exact editions, translator, license and URL/access information for originals, translations and imagery; remediate unsuitable sources. |
 | `AUD-20261101-17` | P2 · D | Needs verification | **Both outlines and participant attribution** — Check 3-line hierarchy, original/English headings, instrumentals, icons/spacing, no duplicate/collective credits, no untranslated generic role or phantom character. |
 | `AUD-20261101-18` | P2 · D | Needs verification | **Responsive navigation and accessibility** — Keyboard/focus, drawer, sticky offsets, copied links/reload/history, contrast, reduced motion, desktop/mobile/night screenshots and screen reader. |
 | `AUD-20261101-19` | P2 · D | Needs verification | **Favorite Performances card** — Verify approved Tristan/Bernstein media, accurate cast, disclosure behavior, reference label, day/night and mobile. |
@@ -180,6 +180,28 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 **Release gate:** Current `Update` tests green (not merely old green checks); verified preview commit matches; no unapproved source or translation substitutions; relevant manual day/night/mobile/keyboard checks recorded; approved guidelines met or explicit exceptions recorded; licensing/provenance reviewed; **separate approval requested before any merge into `main`**.
 
 ## 8. Dated execution log and handover history
+
+### 2026-11-02 — Phase C provenance & translation inventory (35 operas; not sign-off)
+
+Inspected all **35 active libretto bundles** on `Update`; identified source/provenance descriptions and distinguished draft translations, historic adaptations and review claims. This is a **metadata inventory, not line-by-line translation review or legal clearance**. At least these source families require separate licensing/reproduction assessment: Opera Guide transcriptions, Librettidopera (terms/attribution and non-commercial/share-alike conditions), DraCor TEI editions, public-domain Project Gutenberg historical editions, modern opera-house PDF editions, and LibrettoArchive English reading text. Composer/librettist lifetime alone does not prove a modern translation or transcription is free to republish.
+
+| Priority/operas | Verified repository metadata | Pending evidence or action |
+|---|---|---|
+| **P0: Eugene Onegin** | English-first, 1,434 records; sourced through Opera Guide/Sottovoce; *LibrettoArchive* listed as comparison, text not claimed reproduced | Identify exact published English translator, edition and reproduction rights before redistribution claims. Maintain blank Russian and seven tableau boundaries. |
+| **P0: Manon** | Acts I–IV Opera Guide/Sottovoce with independent machine-translated English; Act V 1895 Macy bilingual variant | Verify printed translator/edition, edition mixing policy, original license/reuse permissions, and make selected variant explicit to readers. |
+| **P0: Turandot / modern PDF** | 1926 Ricordi material hosted by Teatro Regio Torino; independent English | Verify original libretto territory-specific copyright, Ricordi/publication rights, PDF/transcription and images; do not assume 1926 = public domain worldwide. |
+| **P1: Don Giovanni / Parsifal** | German/Italian text from DraCor TEI, machine-assisted English; acknowledged need to reconcile against preferred Opera Guide | Capture exact TEI ID/version/creator attribution and license and source corrections before marking verified. |
+| **P1: Così fan tutte / Le nozze di Figaro / Tosca / Madama Butterfly** | Prior review/translation claims and source-linked outline profiles | Distinguish self-reported prior editorial passes from independent acceptance; check translator provenance and edition-level rights; no new translation sign-off. |
+| **P1: Hänsel und Gretel** | Project Gutenberg historic 1905 bilingual Rullman edition; English described as nonliteral historical performing adaptation | Preserve historical adaptation identity; verify original release details and relevant territorial rights; do not recast as independent literal translation. |
+| **P1: Samson et Dalila** | Original French from ABAO programme PDF pp. 213–245; independent English draft | Verify whether modern programme reproduction adds rights or conditions; corrected stale links to old per-act review files in metadata (`db4de96e`). |
+| **P1: Librettidopera source family** | *Il barbiere*, *La Cenerentola*, *L'elisir d'amore*, *Lucia*, *Nabucco*, *Norma*, *Pagliacci*, plus secondary/source cross-checks | Evaluate site attribution, non-commercial and share-alike conditions as applied to our usage; provide clear credits/permissions where required. |
+| **Other operas** | Opera Guide, Scala PDFs, specific user-supplied documents, Sottovoce transcriptions and original translation drafts listed in bundles | Complete edition URL/title, publisher/translator, retrieval date, source version, original/translation/editorial status and explicit license evidence for each act. |
+
+**Issue 15 remains unresolved:** existing English lines are often labeled independent AI/working drafts, with limited prior review claims on select operas. Pairing/line counts demonstrate structure **not accuracy**; no corpus-wide semantic or stylistic translation collation has been completed. Prioritize actual original/English scene comparisons, speaker identity, stage directions, forms and approved exceptions; track evidence per opera under §6.
+
+**Issue 16 remains unresolved:** source credits are not licensing proof. No permission/license determination or jurisdiction-by-jurisdiction clearance is claimed. For any original, translation, artwork or edition with unclear reuse rights, record uncertainty rather than assuming public domain.
+
+**Next planned operational task:** add regression validation for per-opera provenance fields and explicit `editorialStatus`/source-edition provenance where needed, then conduct a documented act-level sample across high-risk English texts. Do not add autogenerated English quality claims.
 
 ### 2026-11-02 — Phase C continued: Turandot, Carmen, Eugene Onegin, Manon
 
