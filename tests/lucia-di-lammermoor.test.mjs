@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {operaOrigins} from './helpers/opera-origins.mjs';
 import { luciaActOneScenes } from '../src/data/operas/librettos/lucia-di-lammermoor/act-1.js';
 import { luciaActTwoScenes } from '../src/data/operas/librettos/lucia-di-lammermoor/act-2.js';
 import { luciaActThreeScenes } from '../src/data/operas/librettos/lucia-di-lammermoor/act-3.js';
@@ -43,5 +44,7 @@ test('Lucia is on-demand loadable and is explicitly labeled an unreviewed AI wor
   assert.equal(result.slug,'lucia-di-lammermoor');
   assert.equal(result.acts.length,3);
   assert.match(result.synopsis.eyebrow,/AI working translations/i);
-  assert.match(result.source,/editorial review/i);
+  const origins = operaOrigins('lucia-di-lammermoor');
+  assert.match(origins, /Independently written AI-generated English working translation/);
+  assert.match(origins, /detailed source collation pending/i);
 });
