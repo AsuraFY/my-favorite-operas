@@ -18,5 +18,5 @@ export const donGiovanni = {
   acts: [{number: 1, originalHeading: "Atto I", prelude: {title:"Ouverture · Instrumental",translation:"Overture — no sung text",recordingSeconds:0,recordingTime:"00:00:00"}, scenes: donGiovanniActOneScenes},
     {number: 2, originalHeading: "Atto II", scenes: donGiovanniActTwoScenes}],
   synopsis: {eyebrow: "Wolfgang Amadeus Mozart · Complete bilingual working draft · Translation unreviewed", paragraphs: info.synopsis, characters: info.characters},
-  source: "Italian transcription from DraCor TEI, not yet reconciled against user's Opera Guide source. Several text readings may be corrupt. English machine-assisted draft, not editorially verified. Arigoni recording chapters matched to libretto scene passages and critical score musical forms. Vienna supplement N. 21b from Mozarteum critical libretto (https://dme.mozarteum.at/libretti-edition/pdf/LV_512_518_0.pdf), with new English editorial draft."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
