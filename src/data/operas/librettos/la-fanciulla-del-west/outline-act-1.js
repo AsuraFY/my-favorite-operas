@@ -6,7 +6,7 @@ export const fanciullaActOneListeningOutline = [
   {
     "trackIndex": 1,
     "originalTitle": "Introduzione",
-    "translatedTitle": null,
+    "translatedTitle": "Introduction",
     "participants": [
       "Distant Voices",
       "A Distant Voice"
@@ -15,7 +15,7 @@ export const fanciullaActOneListeningOutline = [
   {
     "trackIndex": 2,
     "originalTitle": "Hello, Nick!",
-    "translatedTitle": null,
+    "translatedTitle": "Hello, Nick!",
     "participants": [
       "Joe",
       "Bello",
@@ -90,7 +90,7 @@ export const fanciullaActOneListeningOutline = [
   {
     "trackIndex": 8,
     "originalTitle": "Hello, Minnie!",
-    "translatedTitle": null,
+    "translatedTitle": "Hello, Minnie!",
     "participants": [
       "Minnie",
       "Miners",
