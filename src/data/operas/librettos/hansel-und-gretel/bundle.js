@@ -1,5 +1,4 @@
 // Hänsel und Gretel — the original German text with its public-domain 1905 English performing adaptation.
-// Source: F. Rullman 1905, transcribed as Project Gutenberg #43289; source lines and historical English do not share exact verse lineation.
 import {getOpera} from '../../catalog.js';
 import {operaInformation} from '../../information.js';
 import {hanselActOneScenes} from './act-1.js?v=hansel-1905-20261029';
