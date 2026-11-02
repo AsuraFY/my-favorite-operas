@@ -181,6 +181,13 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — Phase C Il trovatore 19 verse alignment exceptions reviewed
+
+- The previous voice-attribution correction passed [Verify Update run 41444770702](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41444770702) and matching Pages build at `b1240815`.
+- Inspected **all 19** identified non-stage-direction Italian/English line-count mismatches across Parts I–IV (4/7/4/4). Revised the English wording and lineation by passage rather than applying automatic breaks. Targeted semantic fixes include Azucena's maternal rescue narrative, the Count's imagery of life's threads, and idiomatic descriptions of vows, weather, and battle. No source Italian or speaker assignments intentionally changed; counts remain Parts I–IV **95/145/108/157 turns** (505 total, including the earlier Count/Manrico split).
+- Part commits: `4ef2922`, `64becc8`, `1f267b2`, `ef103f5`. Added `tests/il-trovatore-verse-alignment.test.mjs` (`6db4d95`) guarding turn counts and Italian-English line counts. All 19 previously flagged mismatches have been addressed in code.
+- **Status:** targeted alignment correction, **not** completed published-edition collation or literary translation approval. New current-head Node/Chromium and verified Update preview required; `main` untouched.
+
 ### 2026-11-02 — Phase C Il trovatore speaker attribution review
 
 - Confirmed [Carmen Acts II–IV Verify Update run 41442823583](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41442823583) succeeded on application SHA `dc23f8d4`; Pages build run 41442822617 also succeeded.
