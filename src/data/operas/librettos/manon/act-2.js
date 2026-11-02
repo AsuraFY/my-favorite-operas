@@ -208,7 +208,7 @@ export const manonActTwoScenes = [
         "participants": [
           "DES GRIEUX",
           "MANON",
-          "LA SERVANTE",
+          "The Maid",
           "LESCAUT",
           "BRÉTIGNY"
         ],
@@ -292,7 +292,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LA SERVANTE",
-            "speakerTranslation": "LA SERVANTE",
+            "speakerTranslation": "The Maid",
             "original": "Deux gardes du corps sont là qui font rage,\nl'un se dit le parent de Madame!",
             "translation": "Two bodyguards are there, raging.\nOne of them claims to be Madame's relative!",
             "literalText": true
@@ -313,7 +313,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LA SERVANTE",
-            "speakerTranslation": "LA SERVANTE",
+            "speakerTranslation": "The Maid",
             "original": "L'autre, c'est... ne parlons pas trop haut...\nL'autre, c'est quelqu'un qui vous aime...\nCe fermier général qui loge près d'ici.",
             "translation": "The other one is... let's not speak too loudly...\nThe other one is someone who loves you...\nThis tax farmer who lives nearby.",
             "literalText": true
@@ -341,7 +341,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LA SERVANTE",
-            "speakerTranslation": "LA SERVANTE",
+            "speakerTranslation": "The Maid",
             "original": "Monsieur de Brétigny.",
             "translation": "Mr. de Brétigny.",
             "literalText": true
@@ -570,9 +570,7 @@ export const manonActTwoScenes = [
         "participants": [
           "BRÉTIGNY",
           "LESCAUT",
-          "DES GRIEUX",
-          "LESCAUT, BRÉTIGNY",
-          "BRÉTIGNY, LESCAUT"
+          "DES GRIEUX"
         ],
         "turns": [
           {
@@ -619,7 +617,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LESCAUT, BRÉTIGNY",
-            "speakerTranslation": "LESCAUT, BRÉTIGNY",
+            "speakerTranslation": "LESCAUT and BRÉTIGNY",
             "original": "La chose est claire,\nentre lurons.",
             "translation": "The matter is clear,\nbetween friends.",
             "literalText": true
@@ -654,7 +652,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LESCAUT, BRÉTIGNY",
-            "speakerTranslation": "LESCAUT, BRÉTIGNY",
+            "speakerTranslation": "LESCAUT and BRÉTIGNY",
             "original": "La chose est claire, entre lurons.",
             "translation": "The matter is clear, between us.",
             "literalText": true
@@ -675,7 +673,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LESCAUT, BRÉTIGNY",
-            "speakerTranslation": "LESCAUT, BRÉTIGNY",
+            "speakerTranslation": "LESCAUT and BRÉTIGNY",
             "original": "Voilà l'affaire!",
             "translation": "That's the problem!",
             "literalText": true
@@ -717,7 +715,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "BRÉTIGNY, LESCAUT",
-            "speakerTranslation": "BRÉTIGNY, LESCAUT",
+            "speakerTranslation": "BRÉTIGNY and LESCAUT",
             "original": "C'est ainsi qu'on traite une affaire!\nEntre lurons et bons garçons!\nLa chose est claire, etc.",
             "translation": "That's how you handle a case!\nBetween jokers and good boys!\nThe matter is clear, etc.",
             "literalText": true
@@ -1214,10 +1212,9 @@ export const manonActTwoScenes = [
         "participants": [
           "LESCAUT",
           "BRÉTIGNY",
-          "LESCAUT, BRÉTIGNY",
           "MANON",
           "DES GRIEUX",
-          "LA SERVANTE"
+          "The Maid"
         ],
         "turns": [
           {
@@ -1278,7 +1275,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LESCAUT, BRÉTIGNY",
-            "speakerTranslation": "LESCAUT, BRÉTIGNY",
+            "speakerTranslation": "LESCAUT and BRÉTIGNY",
             "original": "La chose est claire,\nentre lurons...",
             "translation": "The matter is clear,\nbetween friends...",
             "literalText": true
@@ -1299,7 +1296,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LESCAUT, BRÉTIGNY",
-            "speakerTranslation": "LESCAUT, BRÉTIGNY",
+            "speakerTranslation": "LESCAUT and BRÉTIGNY",
             "original": "... c'est ainsi qu'on traite une affaire!",
             "translation": "...that's how you handle a case!",
             "literalText": true
@@ -1313,7 +1310,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LESCAUT, BRÉTIGNY",
-            "speakerTranslation": "LESCAUT, BRÉTIGNY",
+            "speakerTranslation": "LESCAUT and BRÉTIGNY",
             "original": "Entre lurons et bons garçons … Voilà l'affaire!",
             "translation": "Between jokers and good lads… That's the deal!",
             "literalText": true
@@ -1362,7 +1359,7 @@ export const manonActTwoScenes = [
           },
           {
             "speaker": "LA SERVANTE",
-            "speakerTranslation": "LA SERVANTE",
+            "speakerTranslation": "The Maid",
             "original": "C'est l'heure du souper, Monsieur.",
             "translation": "It's supper time, sir.",
             "literalText": true
