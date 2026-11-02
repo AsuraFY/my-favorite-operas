@@ -181,6 +181,12 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — Additional non-functional provenance comment cleanup
+
+- Removed redundant original-edition, publisher and translation-source comments from active opera `bundle.js` files, retaining each bundle's `source` pointer to `docs/info/operas-origins.md`. No libretto text, participant lists, scene data, outline routing or translation passages changed.
+- Kept the legacy Flaminio link in `src/opera-info-page.js` because it is part of rendered fallback HTML; removing it would visibly change that obsolete route. Historical act data and import scripts were not rewritten.
+- Verification: source register still has 35 records and active bundle pointers. Latest-head Node and browser tests remain unconfirmed; this is a documentation-only cleanup, not a confirmed production deployment. `main` untouched.
+
 ### 2026-11-02 — 35-opera source register centralized in Markdown
 
 - Created canonical [`docs/info/operas-origins.md`](../info/operas-origins.md) with **35 opera entries**, each listing original libretto source and URL or explicit unknown, English translation source/URL or independent origin, and a brief edition summary. Source and comparison links are distinguished; unknown original/English provenance is not invented.
