@@ -181,6 +181,13 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — Phase C Carmen Act I bilingual spot-review
+
+- Verified the latest Eugene Onegin correction checkpoint: [Verify Update run 41439336823](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41439336823) **success** on `e66b97fea2`; the corresponding Pages deployment run 41439336458 succeeded. This verifies that preceding editing checkpoint, **not** subsequent Carmen changes.
+- Inspected *Carmen* Act I's 20 sections / **331 turns** across spoken dialogue, sung sections and stage directions. French-to-English line checks identified one semantic mistake: `T'émouchant à tour de bras` refers to chasing flies away, not `Waving fans`; corrected to `Shooing flies away from you with all their might.` Also repaired three obvious French textual spacing/transcription defects (`dans 'e régiment`, `pourrésister`, `DonJosé`) without altering speaker identities, acts or navigation. Act commit `43cc943`.
+- Added focused `tests/carmen-act1-editorial.test.mjs` (`9015f7f`) checking original/English correction and 331-turn structural invariant. This is a **targeted editorial review, not full independently accepted Act I or all-four-act translation sign-off**.
+- The new changes require current-head CI/Chromium/Update preview verification; do not copy previous test pass to this checkpoint. `main` untouched.
+
 ### 2026-11-02 — Phase C targeted English transcription proofreading: Eugene Onegin
 
 - Proofread all three English-first act files for concrete transcription artifacts (malformed hyphens, misspellings and punctuation) and corrected **30 occurrences** across 22 exact replacement patterns without inventing a Russian text or substituting an alternate published translation. Examples: `principels → principles`, `qa portable stove → a portable stove`, `world?weariness → world-weariness`, `twenty?six → twenty-six`, `greetinngs → greetings`. Corrections are mechanical to the existing English reading edition, **not a full literary or semantic translation approval**. Act commits: `4cfd506`, `120b796`, `d32b4f7`.
