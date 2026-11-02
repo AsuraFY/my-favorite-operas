@@ -28,7 +28,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Prélude\nL'hôtellerie d'Amiens\nLa cour d'une hôtellerie à Amiens.\nPoussette, Javotte, Rosette, Guillot et Brétigny entrent.",
             "translation": "Prelude\nAmiens hotels\nThe courtyard of a hotel in Amiens.\nPoussette, Javotte, Rosette, Guillot and Brétigny enter.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GUILLOT",
@@ -84,7 +85,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "GUILLOT, puis BRÉTIGNY",
             "translation": "GUILLOT, then BRÉTIGNY",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -105,7 +107,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "GUILLOT, puis BRÉTIGNY",
             "translation": "GUILLOT, then BRÉTIGNY",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "POUSSETTE",
@@ -126,7 +129,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "ensemble",
             "translation": "together",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -140,7 +144,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "suivie par les autres",
             "translation": "followed by the others",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "POUSSETTE",
@@ -206,7 +211,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "POUSSETTE, JAVOTTE, ROSETTE, puis GUILLOT",
             "translation": "STROLLER, JAVOTTE, ROSETTE, then GUILLOT",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -255,7 +261,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "À ce moment, des marmitons sortent de l'hôtellerie en portant des plats.",
             "translation": "At that moment, kitchen boys came out of the inn carrying dishes.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "L'HÔTELIER",
@@ -339,7 +346,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aux marmitons",
             "translation": "to the cooks",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -435,7 +443,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ils rentrent dans le pavillon dont la fenêtre et la porte se referment. L'hôtelier est seul en scène.",
             "translation": "They enter the pavilion, whose window and door close. The hotelier is alone on stage.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "L'HÔTELIER",
@@ -449,7 +458,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Les bourgeois commencent à envahir la scène.",
             "translation": "The bourgeoisie are beginning to invade the scene.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "L'HÔTELIER",
@@ -463,7 +473,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il entre dans le bureau; cloche.\nentrant au son d'une cloche",
             "translation": "He enters the office; bell.\nentering at the sound of a bell",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LE CHŒUR DES BOURGEOIS",
@@ -477,7 +488,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "entrant, suivi de deux gardes",
             "translation": "entering, followed by two guards",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -498,7 +510,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "les congédiant",
             "translation": "dismissing them",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -575,7 +588,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Cloche. Les deux gardes sortent par le fond.\nNouveau coup de cloche.",
             "translation": "Bell. The two guards exit through the back.\nAnother bell rings.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LE CHŒUR",
@@ -589,7 +603,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Sur la fin du chœur, on a vu au fond la rue se remplir de postillons et de porteurs chargés de malles, de cartons, de valises, et précédés d'une foule de voyageurs et de voyageuses qui tournent autour d'eux pour obtenir leurs bagages.",
             "translation": "Towards the end of the chorus, we saw the street at the back filling up with postilions and porters laden with trunks, boxes, suitcases, and preceded by a crowd of travelers, both men and women, who were milling around them to get their luggage.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "UNE VIEILLE DAME",
@@ -704,7 +719,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "courant après les positions et porteurs",
             "translation": "current following positions and carriers",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES PASSAGÈRES",
@@ -718,7 +734,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "courant aussi après eux",
             "translation": "running after them too",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES PASSAGERS",
@@ -732,7 +749,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "les imitant et riant",
             "translation": "imitating them and laughing",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LE CHŒUR",
@@ -746,7 +764,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Manon vient de sortir de la foule et considère tout ce tohu-bohu avec étonnement.",
             "translation": "Manon has just emerged from the crowd and is observing all this commotion with astonishment.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LE CHŒUR",
@@ -760,7 +779,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "la regardant",
             "translation": "looking at her",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -795,7 +815,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "se détourant",
             "translation": "turning away",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -816,7 +837,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Gros remue-ménage: les passagers, précédés des postillons, reviennent dans la cour de l'auberge. La cloche sonne.\naux voyageurs",
             "translation": "A great commotion: the passengers, preceded by the postilions, return to the inn courtyard. The bell rings.\nto travelers",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       },
@@ -867,7 +889,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Bousculades et cris.",
             "translation": "Pushing and shoving, and shouting.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "PLUSIEURS VOYAGEURS",
@@ -909,7 +932,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "La scène se vide peu à peu, la foule s'éloigne, laissant ensemble Lescaut et Manon.\ndéclare à Manon qu'il va chercher ses paquets restés à la voiture",
             "translation": "The stage gradually empties, the crowd moves away, leaving Lescaut and Manon together.\nHe tells Manon that he is going to get his packages that were left in the car.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LESCAUT",
@@ -923,7 +947,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "sortant peu à peu de la cour de l'auberge",
             "translation": "gradually emerging from the inn courtyard",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -956,7 +981,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Le dernier des bourgeois disparaît. Manon est seule. Guillot apparaît sur le balcon.",
             "translation": "The last of the bourgeois disappears. Manon is alone. Guillot appears on the balcony.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GUILLOT",
@@ -970,7 +996,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "apercevant Manon",
             "translation": "catching sight of Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -984,7 +1011,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -998,7 +1026,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1026,7 +1055,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Son rire est répété par Brétigny, Javotte, Poussette et Rosette qui viennent d'arriver sur le balcon.",
             "translation": "His laughter is repeated by Brétigny, Javotte, Poussette and Rosette who have just arrived on the balcony.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -1106,7 +1136,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "bas à Manon",
             "translation": "Manon's bottom",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1120,7 +1151,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut vient de rentrer.",
             "translation": "Lescaut has just returned.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1155,7 +1187,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Guillot se retire dans le pavillon.",
             "translation": "Guillot withdrew to the pavilion.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1169,7 +1202,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ils rentrent tous en riant dans le pavillon.",
             "translation": "They all went back into the pavilion laughing.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1225,7 +1259,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Manon",
             "translation": "to Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1239,7 +1274,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aux gardes",
             "translation": "to the guards",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1268,7 +1304,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Manon",
             "translation": "to Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1282,7 +1319,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut sort, laissant Manon seule.",
             "translation": "Lescaut leaves, leaving Manon alone.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1296,7 +1334,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Long silence, pendant lequel Manon semble plongée dans ses réflexions. On sent à l'expression de son visage, qu'une sorte de combat se livre en elle. Elle devient rêveuse et machinalement porte les yeux sur le\npavillon dans lequel sont enfermées Poussette, Javotte, Rosette.",
             "translation": "A long silence, during which Manon seems lost in thought. One senses from her facial expression that a kind of internal struggle is taking place. She becomes dreamy and mechanically glances at the\npavilion in which Poussette, Javotte, Rosette are locked up.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -1310,7 +1349,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "apercevant Des Grieux",
             "translation": "catching sight of Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1324,7 +1364,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Elle s'assied vivement et reprend la position que lui avait indiquée Lescaut.\nsans la voir",
             "translation": "She sat up quickly and resumed the position Lescaut had indicated to her.\nwithout seeing her",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "DES GRIEUX",
@@ -1338,7 +1379,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "involontairement Des Grieux s'est tourné vers Manon, il la regarde d'abord avec étonnement, puis avec extase et comme si une vision lui apparaissait",
             "translation": "Involuntarily, Des Grieux turned towards Manon; he looked at her first with astonishment, then with ecstasy, as if a vision were appearing to him.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       },
@@ -1366,7 +1408,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Peu à peu et involontairement il s'est rapproché de Manon.",
             "translation": "Gradually and unintentionally, he grew closer to Manon.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1408,7 +1451,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1471,7 +1515,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "après un long silence",
             "translation": "after a long silence",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1569,7 +1614,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "À ce moment, le postillon à qui Guillot a dit précédemment de se tenir aux ordres de Manon paraît dans le fond. Manon le regarde, réfléchit et sourit.",
             "translation": "At that moment, the postilion, whom Guillot had previously told to obey Manon's orders, appeared in the background. Manon looked at him, thought for a moment, and smiled.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -1597,7 +1643,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "au postillon, qui se retire",
             "translation": "to the postilion, who withdraws",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1611,7 +1658,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "troublée",
             "translation": "troubled",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1734,7 +1782,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "éclats de rire venant du pavillon\ndéclamant",
             "translation": "bursts of laughter coming from the pavilion\ndeclaiming",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -1769,7 +1818,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "au dehors, aviné",
             "translation": "outside, drunk",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1804,7 +1854,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "du pavillon",
             "translation": "of the pavilion",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1818,7 +1869,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1856,7 +1908,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ils partent.\napparaissant, un peu ivre",
             "translation": "They leave.\nappearing, a little drunk",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LESCAUT",
@@ -1870,7 +1923,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il la cherche.",
             "translation": "He's looking for her.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1884,7 +1938,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "descendant lentement l'escalier",
             "translation": "slowly descending the stairs",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1933,7 +1988,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "L'hôtelier et les bourgeois arrivent, lentement, de tous côtés et se moquent des deux hommes.\nà Guillot",
             "translation": "The hotelier and the bourgeois arrive slowly from all sides and mock the two men.\nto Guillot",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LESCAUT",
@@ -1961,7 +2017,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aux bourgeois",
             "translation": "to the bourgeois",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1975,7 +2032,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Guillot",
             "translation": "to Guillot",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -2024,7 +2082,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "On entend le coche au loin.",
             "translation": "We can hear the coach in the distance.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "L'HÔTELIER",
@@ -2059,7 +2118,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "désignant Guillot",
             "translation": "designating Guillot",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "L'HÔTELIER",
@@ -2096,7 +2156,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "alors que Lescaut se précipite sur lui",
             "translation": "as Lescaut rushes towards him",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -2110,7 +2171,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "essayant de saisir Guillot",
             "translation": "trying to grasp Guillot",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -2131,7 +2193,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "luttant avec l'hôtelier",
             "translation": "struggling with the hotelier",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -2145,7 +2208,8 @@ export const manonActOneScenes = [
             "speakerTranslation": "Stage direction",
             "original": "arrivant avec les trois dames",
             "translation": "arriving with the three ladies",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -2159,13 +2223,6 @@ export const manonActOneScenes = [
             "speakerTranslation": "GUILLOT",
             "original": "Taisez-vous tous!\nJe veux être vengé,\net de cette perfide et de cet enragé!\nPOUSSETTE, JAVOTTE, ROSETTE, BRÉTIGNY et LES BOURGEOIS\nAh! Ah! Ah! Ah! La drôle de figure!\nEt vous, petit, vous le paierez!",
             "translation": "Everyone be quiet!\nI want to be avenged.\nand of this treacherous and enraged woman!\nSTROLLER, JAVOTTE, ROSETTE, BRÉTIGNY and THE BOURGEOIS\nHa! Ha! Ha! Ha! What a funny face!\nAnd you, little one, will pay for it!",
-            "literalText": true
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "Prélude",
-            "translation": "Prelude",
             "literalText": true
           }
         ]
