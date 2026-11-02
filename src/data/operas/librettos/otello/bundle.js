@@ -1,4 +1,3 @@
-// Otello (Verdi / Boito): all four acts from the user-provided Opera Guide Italian HTML.
 // Italian source text is preserved; English is an unreviewed first draft.
 import { getOpera } from "../../catalog.js";
 import { operaInformation } from "../../information.js";
