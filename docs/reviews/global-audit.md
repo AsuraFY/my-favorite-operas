@@ -1,6 +1,6 @@
 # My Favorite Operas — Active Review & Repair Tracker
 
-> **SINGLE ACTIVE REVIEW FILE.** This document is the operational source of truth for audit findings, repair sequencing, statuses, evidence, and handover. Do not create another active review, separate master roadmap, or competing issue-status file. Historical reports are in [../archive/reviews/](../archive/reviews/).
+> **SINGLE ACTIVE REVIEW FILE.** This document is the operational source of truth for audit findings, repair sequencing, statuses, evidence, and handover. Do not create another active review, separate master roadmap, or competing issue-status file. Historical reports are in [../archive/](../archive/).
 
 **Last synchronized:** 2026-11-02 (UTC / Africa-Dakar)  
 **Repository:** [AsuraFY/my-favorite-operas](https://github.com/AsuraFY/my-favorite-operas) · **Working branch:** `Update` · **Production branch:** `main` (never modify or merge without separate explicit approval)  
@@ -29,9 +29,9 @@
 |---|---|---|
 | **Approved design/editorial rules** | [Opera_Website_Guidelines — Google Drive](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit) | **Only** active opera guidelines. Latest user decisions prevail; **any further guideline edit requires explicit approval**. §1.4 governs all present/future opera participants. |
 | **Active tracker and repair roadmap** | **This file —** `docs/reviews/global-audit.md` | One master issue register, phase board, per-opera checklist, evidence and next-chat handover. Update here on every repair. |
-| **Development / release procedures** | [development-workflow.md](../development-workflow.md) | Working branch, review, tests and release mechanics. Some old implementation examples are stale; verify against the latest actual repository and resolve in a separate workflow update. |
+| **Development / release procedures** | [development-workflow.md](../guidelines/development-workflow.md) | Working branch, review, tests and release mechanics. Some old implementation examples are stale; verify against the latest actual repository and resolve in a separate workflow update. |
 | **Dated review snapshot** | [November 1 Drive Audit & Repair Roadmap](https://drive.google.com/file/d/1HrV7yw8iyx1Y3EEC5UyiRNbW6oIBhAY0/view) | Historical source for the 22 `AUD-20261101-xx` findings and original phase sequencing. **Do not maintain as a competing live tracker.** |
-| **Historical research/specifications** | [Archived repo reviews](../archive/reviews/), [archived Parsifal plan](../archive/plans/parsifal-reader-outline-and-source-plan.md), [V1 product specification](https://docs.google.com/document/d/1f6nHTppsfuElAV87YS4LReIBMRg2BJb7KFwFlglMb_g/edit) | Provenance and past decisions only. Earlier plans and the V1 specification are superseded wherever the active guideline or current user decisions differ. |
+| **Historical research/specifications** | [Archived repo reviews](../archive/), [archived Parsifal plan](../archive/parsifal-reader-outline-and-source-plan.md), [V1 product specification](https://docs.google.com/document/d/1f6nHTppsfuElAV87YS4LReIBMRg2BJb7KFwFlglMb_g/edit) | Provenance and past decisions only. Earlier plans and the V1 specification are superseded wherever the active guideline or current user decisions differ. |
 
 **Rule of precedence:** Explicit latest user decision → active Google Drive guideline → current source/CI evidence → this issue tracker and current implementation workflow → archived historical evidence. The archive does not establish current code status.
 
@@ -84,7 +84,7 @@ Statuses in this table are the **consolidated Nov 2 assessment**, not a claim of
 
 ## 5. Earlier issue IDs retained (do not lose prior work)
 
-The 26 older stable IDs below remain searchable and unresolved unless independently verified. Where a 2026-11-01 issue overlaps, preserve the older ID as an **alias** pointing to the newer issue; do not count the same defect twice. Expanded historical descriptions and past test results are preserved verbatim in [the archived tracker snapshot](../archive/reviews/global-audit-snapshot-2026-11-02.md).
+The 26 older stable IDs below remain searchable and unresolved unless independently verified. Where a 2026-11-01 issue overlaps, preserve the older ID as an **alias** pointing to the newer issue; do not count the same defect twice. Expanded historical descriptions and past test results are preserved verbatim in [the archived tracker snapshot](../archive/global-audit-snapshot-2026-11-02.md).
 
 | Earlier ID | Carried-forward status | Concern / linkage |
 |---|---|---|
@@ -181,11 +181,18 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — Documentation folder layout simplified
+
+- Moved the active development workflow to [`docs/guidelines/development-workflow.md`](../guidelines/development-workflow.md), without altering its procedural text.
+- Flattened all historical reports and the old *Parsifal* plan into [`docs/archive/`](../archive/), with no `reviews/` or `plans/` subdivisions. Existing original documents were preserved byte-for-byte.
+- Left [`docs/reviews/global-audit.md`](./global-audit.md) as the **only active review document** and updated its archive/workflow links.
+- This is a document-path reorganization only; no opera content, source code, CI requirements or `main` changes were made.
+
 ### 2026-11-02 — Unified reviews into this single operational file
 
 - Made `docs/reviews/global-audit.md` the **only active review/repair tracker** on `Update`.
 - Imported 22 November 1 issues and phases A–E from the Google Drive snapshot without renumbering IDs; included all 35 per-opera review slots and the approved Nov 2 participant rule as `AUD-20261102-01`.
-- Preserved original audit content in [global-audit-snapshot-2026-11-02.md](../archive/reviews/global-audit-snapshot-2026-11-02.md). Moved the other review reports into [../archive/reviews/](../archive/reviews/) and the superseded Parsifal plan to [../archive/plans/](../archive/plans/); historical contents retained. No opera source edits in this organization commit.
+- Preserved original audit content in [global-audit-snapshot-2026-11-02.md](../archive/global-audit-snapshot-2026-11-02.md). Moved the other review reports into [../archive/](../archive/) and the superseded Parsifal plan to [../archive/](../archive/); historical contents retained. No opera source edits in this organization commit.
 - The dated Google Drive roadmap and V1 product specification are retained for reference; **they are not independently updated or active**.
 
 ### 2026-11-02 — Phase B source and participant work (on `Update`, test acceptance pending)
@@ -197,7 +204,7 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ### 2026-11-01 — Reliable automated checkpoint (historical)
 
-- Repo organization and 35 integrated lazy-loaded opera readers documented in the [archived organization report](../archive/reviews/repository-organization-2026-11-01.md).
+- Repo organization and 35 integrated lazy-loaded opera readers documented in the [archived organization report](../archive/repository-organization-2026-11-01.md).
 - [Run 41363468298](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41363468298): **224/224 Node, 876 Chromium assertions / 70 combinations**; dependent verified `Update` preview passed.
 - Historical `main` merge was `0c49782`; **subsequent `Update` edits have not been authorized for merge**.
 
@@ -206,9 +213,9 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 At the beginning of any new chat, read in order:
 1. **This tracker**: checkpoint, phase board, stable issues, today's execution log, next unverified work.
 2. [Active Google Drive guidelines](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit), especially §1.4 for singer lists and act/full outlines.
-3. [Development workflow](../development-workflow.md) for branch/test mechanics; double-check any historical examples against current repo files.
+3. [Development workflow](../guidelines/development-workflow.md) for branch/test mechanics; double-check any historical examples against current repo files.
 4. Current GitHub `Update` head, most recent relevant CI/preview and target opera modules; source materials as needed.
-5. Only if necessary, historical [archive](../archive/reviews/) and [November 1 baseline](https://drive.google.com/file/d/1HrV7yw8iyx1Y3EEC5UyiRNbW6oIBhAY0/view).
+5. Only if necessary, historical [archive](../archive/) and [November 1 baseline](https://drive.google.com/file/d/1HrV7yw8iyx1Y3EEC5UyiRNbW6oIBhAY0/view).
 
 **After each task:** Update issue status and verification evidence **here**, do not create another review file. Give the user a short explanation plus the modified opera's direct act page URL for visual review; distinguish `Update` preview from public `main`. Keep `main` unchanged without explicit approval. If guidelines need changing, present the exact revision and obtain approval before editing the Google Doc.
 
