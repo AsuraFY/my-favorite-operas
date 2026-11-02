@@ -10,7 +10,8 @@ test('Tosca Act III matins interval does not claim vocal participants', () => {
  assert.equal(bells.type,'Interludio');
  assert.deepEqual(bells.characters,[]);
  const shepherd=first.outline.find(x=>x.title==="Io de' sospiri");
- assert.ok(shepherd.characters.includes('A Shepherd (offstage)'));
+ assert.ok(shepherd.characters.includes('A Shepherd'));
+ assert.ok(first.sections.flatMap(s => s.turns).some(t => t.speaker === 'A Shepherd (offstage)' && t.original.includes("Io de' sospiri")));
  const stage=first.sections.flatMap(s=>s.turns).find(t=>t.original.includes('le campane delle chiese suonano mattutino'));
  assert.equal(stage.speaker,'Stage direction');
 });
