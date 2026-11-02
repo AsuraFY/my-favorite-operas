@@ -1,5 +1,3 @@
-// Original Italian: public-domain Piave libretto in Opera Guide (Act I).
-// English: independent AI-generated working translation awaiting editorial review.
 // All three acts have bilingual AI working drafts; source and editorial review pending.
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
