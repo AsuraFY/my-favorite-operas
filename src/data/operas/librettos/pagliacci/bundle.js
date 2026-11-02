@@ -26,5 +26,5 @@ export const pagliacci={
   eyebrow:'Ruggero Leoncavallo · Prologue and opera in two acts · AI-generated English working translation awaiting editorial review',
   paragraphs:info.synopsis,characters:info.characters
  },
- source:'Original Italian: Ruggero Leoncavallo (public domain), libretto transcription at https://www.librettidopera.it/pagliacci/pagliacci.html through Sottovoce Q248644. Prologue: 31 lines; Act I: 414; Act II: 344. English: independent AI working translation, not a published translation; line-to-line editorial, speaker/direction and Opera Guide collation pending. The original source act/scene headings are preserved, but Prologue appears in Act I reader tab for existing two-act navigation.'
+ source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
