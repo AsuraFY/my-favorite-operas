@@ -28,7 +28,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Le Cours-la-Reine\nLa promenade du Cours-la-Reine un jour de fête populaire. À droite, l'enseigne d'un bal.\nEntre les grandes arbres, des boutiques de marchands de toutes sortes: modistes, marchands de jouets, saltimbanques, marchands de chansons, etc.\nGrand mouvement au lever du rideau: des marchands et des marchandes poursuivent des passants, seigneurs, bourgeois et\nbourgeoises, en leur offrant divers objets.\nAu fond on aperçoit les rives de la Seine et la coupole des Invalides.",
             "translation": "The Queen's Courtyard\nThe promenade along Cours-la-Reine on a popular festival day. On the right, the sign for a dance.\nAmong the large trees, there were shops of all kinds of merchants: milliners, toy merchants, street performers, song sellers, etc.\nA great deal of activity as the curtain rises: merchants and market women chase passersby, lords, bourgeois and\nbourgeois women, by offering them various objects.\nIn the background you can see the banks of the Seine and the dome of Les Invalides.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LES VENDEURS",
@@ -42,7 +43,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Au loin, musique de bal. Poussette et Javotte, puis Rosette paraissent dans la foule; trois petit clercs les aperçoivent et, sur un signe d'elles, courent à leur rencontre.",
             "translation": "In the distance, dance music. Poussette and Javotte, then Rosette appear in the crowd; three little clerks spot them and, at a sign from them, run to meet them.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "POUSSETTE, JAVOTTE",
@@ -157,7 +159,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Elles sortent.",
             "translation": "They go out.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES VENDEURS",
@@ -206,7 +209,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut sort, poursuivi par les marchands.\nPoussette, Javotte et Rosette sortent de la salle de danse avec trois jeunes gens.\nles apercevant",
             "translation": "Lescaut leaves, pursued by the merchants.\nPoussette, Javotte and Rosette leave the dance hall with three young men.\ncatching sight of them",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       },
@@ -258,7 +262,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Poussette et Javotte se sauvent.",
             "translation": "Poussette and Javotte run away.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -272,7 +277,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "se sauvant",
             "translation": "running away",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "ROSETTE",
@@ -293,7 +299,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "entrant",
             "translation": "entering",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -370,7 +377,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "sort en se frottant les mains et en fredonnant",
             "translation": "goes out rubbing his hands together and humming",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -384,7 +392,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Rentrée des promeneurs et des marchands. Parmi eux, des élégantes et leurs escortes.",
             "translation": "The return of strollers and merchants. Among them, elegant ladies and their escorts.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GUILLOT",
@@ -398,7 +407,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Pendant ce temps, Brétigny s'est avancé avec quelques seigneurs de ses amis et a aidé Manon à descendre de sa chaise.",
             "translation": "Meanwhile, Brétigny stepped forward with some of his lord friends and helped Manon down from her chair.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -436,7 +446,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aux promeneurs",
             "translation": "to the walkers",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES MARCHANDS",
@@ -523,7 +534,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny",
             "translation": "in Brétigny",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -551,7 +563,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Manon s'éloigne et se dirige vers les petites boutiques du fond du théâtre, escortée des curieux qui sortent peu à peu.",
             "translation": "Manon walks away and heads towards the small shops at the back of the theatre, escorted by the curious who are gradually leaving.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -565,7 +578,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "au fond",
             "translation": "basically",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "UN MARCHAND",
@@ -579,7 +593,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Les promeneurs et les marchands s'en vont peu à peu …",
             "translation": "The strollers and the merchants gradually leave…",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -643,7 +658,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "qui s'est retournée tout en feignant de parler à un marchand",
             "translation": "who turned around while pretending to be talking to a merchant",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -671,7 +687,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Manon s'éloigne après avoir entendu ces derniers mots.\nsouriant",
             "translation": "Manon walks away after hearing these last words.\nsmiling",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "BRÉTIGNY",
@@ -685,7 +702,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "souriant aussi",
             "translation": "smiling too",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LE COMTE",
@@ -699,7 +717,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "montrant Manon qui est au fond",
             "translation": "showing Manon who is at the back",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "BRÉTIGNY",
@@ -734,7 +753,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny, le comte se tient à part à quelque distance",
             "translation": "At Brétigny, the count stood apart at some distance",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -755,7 +775,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il salue le comte et sort.\nà part",
             "translation": "He greets the count and leaves.\napart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LE COMTE",
@@ -769,7 +790,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "au Comte",
             "translation": "to the Count",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -790,7 +812,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "saluant",
             "translation": "greeting",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -818,7 +841,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "se rapprochant",
             "translation": "getting closer",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -881,7 +905,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -981,7 +1006,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Le comte salue respectueusement et se retire.",
             "translation": "The count bows respectfully and withdraws.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -995,7 +1021,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "La foule des seigneurs, dames élégantes, promeneurs et marchands revient.\nEntrent Brétigny, Guillot puis Lescaut, accompagnés de plusieurs amis.",
             "translation": "The crowd of lords, elegant ladies, strollers and merchants returns.\nEnter Brétigny, Guillot and then Lescaut, accompanied by several friends.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "BRÉTIGNY",
@@ -1030,7 +1057,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "se tournant vers Manon",
             "translation": "turning towards Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1093,7 +1121,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Lescaut",
             "translation": "to Lescaut",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1128,7 +1157,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il prend la bourse et sort.",
             "translation": "He takes the purse and leaves.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1142,7 +1172,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Préambule: La Présentation",
             "translation": "Preamble: The Presentation",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1156,7 +1187,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1186,7 +1218,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il limite les danseurs",
             "translation": "It limits the dancers",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1200,7 +1233,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Ballet\nPremière Entrée\nDeuxième Entrée\nTroisième Entrée\nQuatrième Entrée\nà part",
             "translation": "Ballet\nFirst Entry\nSecond Entrance\nThird Entrance\nFourth Entrance\napart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -1214,7 +1248,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "voyant Lescaut près d'elle",
             "translation": "seeing Lescaut near her",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1307,7 +1342,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "La parloir du séminaire de Saint-Sulpice\nDes grandes dames, bourgeoises et dévotes sortent de la chapelle.\nlouant Des Grieux",
             "translation": "The parlor of the Saint-Sulpice seminary\nGrand ladies, bourgeois and devout, emerge from the chapel.\npraising Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "CHŒUR DES DAMES",
@@ -1321,7 +1357,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Des Grieux apparaît.",
             "translation": "Des Grieux appears.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "CHŒUR DES DAMES",
@@ -1335,7 +1372,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Les dames sortent peu à peu et saluent Des Grieux avec de profondes révérences.",
             "translation": "The ladies gradually leave and greet Des Grieux with deep curtsies.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LE COMTE",
@@ -1462,7 +1500,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il sort.\nseul",
             "translation": "He leaves.\nalone",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "DES GRIEUX",
@@ -1490,7 +1529,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il sort.",
             "translation": "He leaves.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1521,7 +1561,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Manon entre.",
             "translation": "Manon enters.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1542,7 +1583,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "lui donnant de l'argent",
             "translation": "giving him money",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1556,7 +1598,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Le portier sort.",
             "translation": "The goalkeeper leaves.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1570,7 +1613,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "au fond",
             "translation": "basically",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "VOIX DANS LA CHAPELLE",
@@ -1598,7 +1642,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Des Grieux entre.",
             "translation": "Des Grieux enters.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1612,7 +1657,8 @@ export const manonActThreeScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Manon se retourne tandis que Des Grieux s'avance vers elle.",
             "translation": "Manon turns around as Des Grieux advances towards her.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
