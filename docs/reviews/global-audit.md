@@ -1,470 +1,215 @@
-# Global audit
+# My Favorite Operas — Active Review & Repair Tracker
 
-> **The sole active audit register.** Record global website issues and per-opera issues here, with stable IDs, current statuses, evidence, and dated updates. All former standalone review documents are retained verbatim in [archive.md](archive.md); do not create more audit files.
+> **SINGLE ACTIVE REVIEW FILE.** This document is the operational source of truth for audit findings, repair sequencing, statuses, evidence, and handover. Do not create another active review, separate master roadmap, or competing issue-status file. Historical reports are in [../archive/reviews/](../archive/reviews/).
 
-**Last updated:** 2026-10-28 (UTC)
-**Repository:** https://github.com/AsuraFY/my-favorite-operas  
-**Branch:** `Update` — do not modify `main` without explicit authorization.  
-**Current work priority:** Complete opera librettos; postpone heading corrections and the full browser audit until then.  
-**Audit scope:** Website-wide and opera-specific issues; each audit entry should clearly identify whether it concerns shared code or a particular opera.
+**Last synchronized:** 2026-11-02 (UTC / Africa-Dakar)  
+**Repository:** [AsuraFY/my-favorite-operas](https://github.com/AsuraFY/my-favorite-operas) · **Working branch:** `Update` · **Production branch:** `main` (never modify or merge without separate explicit approval)  
+**Scope:** All 35 current operas **and every future opera**, shared reader, outlines, information pages, CI and release.  
+**Current focus:** Phase B source and participant-attribution corrections; Phase A automated gate was verified on an **older** Update checkpoint, but current repairs still need CI/preview confirmation.
 
-## How this file is maintained
+## 1. START HERE — current checkpoint and next action
 
-1. **For every audit/update:** Add a new entry in **Dated update log** (and preserve any relevant detailed evidence in the historical archive) with the exact date/time and time zone, scope, findings, evidence, and what changed (if anything).
-2. **For every issue:** Assign a stable ID, record its location, a reproducible description, category, first-seen date, current status, and next action. Update the **Current issue register** when its state changes; never silently remove an issue.
-3. **For fixes:** Record the changed file(s), commit or PR, verification method and result. A merged/committed fix alone is **not** `Resolved`.
-4. **For accepted exceptions:** Mark `Accepted` only after the user decides the deviation is okay, with a reason and the decision timestamp.
-5. **For follow-up:** Preserve work that is paused as `Deferred`, potential issues needing source/editorial judgment as `Needs review`, and fixes awaiting tests as `Needs verification`.
-6. **For subsequent updates:** Put the latest event at the top of the history section. Keep the initial baseline below as historical evidence, not as a replacement for current statuses.
+**Latest working state when this tracker was consolidated:** `Update` commit [`05388687`](https://github.com/AsuraFY/my-favorite-operas/commit/053886872b9137270a9f0730ae36e84159220cfa) (doc-only audit notes after prior source edits). **No current-head Node/browser or preview result was confirmed in this consolidation.** `main` was not touched.
 
-**Status definitions**
+**What was verified previously:** 2026-11-01 [Verify Update run 41363468298](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41363468298) passed **224/224 Node tests** and **876 Chromium assertions** across **70 viewport/operas combinations** (35 desktop + 35 mobile); the dependent Update preview job succeeded. This proves only that historical tested commit, not later Phase B commits. The earlier [41353260510](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41353260510) gate also passed 224 Node/876 browser assertions.
 
-| Status | Meaning |
-|---|---|
-| `Open` | Confirmed issue still needing correction |
-| `In progress` | Correction being worked on |
-| `Needs verification` | Change proposed or applied but not adequately checked |
-| `Resolved` | Correction verified, with evidence and a timestamp |
-| `Accepted` | User explicitly agreed not to change it; rationale recorded |
-| `Deferred` | Still outstanding, intentionally postponed |
-| `Needs review` | Potential issue or editorial question; not yet confirmed as a defect |
+**Most recent repairs committed, not yet independently accepted:**
+- *Die Walküre* Acts II & III source scenic preambles restored, 1,806 original German source records; new integrity test. November 2 participant attribution/English speaker work covers Acts I–III.
+- *Manon* Acts I–IV English speaker labels and all Acts I–V participant arrays revised; temporary cues removed from outline credits, **not from sung passage labels**.
+- Regression coverage added in `tests/die-walkure-source-integrity.test.mjs` and `tests/opera-participant-names.test.mjs`; **the latest passing CI for those edits is not established**.
+- Google Drive guideline §1.4 was updated and read back on November 2, with the approved **universal participant-list rule**.
 
-**Issue categories:** Styling · Content · Character attribution · Navigation · Accessibility · Functionality · Editorial · Verification.
+**Immediate next action:** Check the **current `Update` commit** in [GitHub Actions — Verify Update](https://github.com/AsuraFY/my-favorite-operas/actions/workflows/verify-update.yml). If tests fail, repair the failures without weakening valid assertions; if passed, verify the intended preview commit and browse affected opera acts (particularly *Die Walküre* Act III and *Manon* Act I). Record run URL, tested SHA, screenshots and manual review separately. Then continue remaining Phase B issues `05`, `08`, `09`.
 
-## Global website issues and verification
+**Important:** A committed fix is **Needs verification**, not `Resolved`. A publicly reachable GitHub Pages link may reflect a different release than `Update`. Always give the user direct opera/act page links after opera edits and disclose whether those exact commits are visibly deployed.
 
-| ID | Current status | Finding / follow-up |
+## 2. Document roles and priority (avoid conflicting instructions)
+
+| Role | Canonical document | How to use it |
 |---|---|---|
-| GLOBAL-01 | **Deferred** | Independent human desktop/mobile/night-mode visual inspection of all sixteen opera readers and outlines is not complete. The older automated Chromium checks covered eleven operas on a 2026-10-23 build, not the entire present branch. |
-| GLOBAL-02 | **Needs verification** | Follow every outline and deep link in a real browser, including back/forward, reload, sticky-header offsets and mobile navigation. Existing automated route tests are useful but do not certify actual interaction on every device. |
-| GLOBAL-03 | **Needs review** | Independent primary-source and English editorial validation is not complete across the whole catalogue; structural pair counts and passing tests cannot establish musical/literary accuracy. |
-| GLOBAL-04 | **Needs verification** | Previously recorded site-wide CSS asset/dependency, catalogue and Pages deployment checks apply to the then-tested commits. Rerun on the final libretto build before release. |
-| GLOBAL-05 | **Needs review** | 2026-10-26 Die Zauberflöte Act I CI failure log remains available as source evidence; whether that earlier failure still reproduces is unverified. Do not label it a live failure without rerunning CI. |
+| **Approved design/editorial rules** | [Opera_Website_Guidelines — Google Drive](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit) | **Only** active opera guidelines. Latest user decisions prevail; **any further guideline edit requires explicit approval**. §1.4 governs all present/future opera participants. |
+| **Active tracker and repair roadmap** | **This file —** `docs/reviews/global-audit.md` | One master issue register, phase board, per-opera checklist, evidence and next-chat handover. Update here on every repair. |
+| **Development / release procedures** | [development-workflow.md](../development-workflow.md) | Working branch, review, tests and release mechanics. Some old implementation examples are stale; verify against the latest actual repository and resolve in a separate workflow update. |
+| **Dated review snapshot** | [November 1 Drive Audit & Repair Roadmap](https://drive.google.com/file/d/1HrV7yw8iyx1Y3EEC5UyiRNbW6oIBhAY0/view) | Historical source for the 22 `AUD-20261101-xx` findings and original phase sequencing. **Do not maintain as a competing live tracker.** |
+| **Historical research/specifications** | [Archived repo reviews](../archive/reviews/), [archived Parsifal plan](../archive/plans/parsifal-reader-outline-and-source-plan.md), [V1 product specification](https://docs.google.com/document/d/1f6nHTppsfuElAV87YS4LReIBMRg2BJb7KFwFlglMb_g/edit) | Provenance and past decisions only. Earlier plans and the V1 specification are superseded wherever the active guideline or current user decisions differ. |
 
-## Opera-specific issues and follow-up
+**Rule of precedence:** Explicit latest user decision → active Google Drive guideline → current source/CI evidence → this issue tracker and current implementation workflow → archived historical evidence. The archive does not establish current code status.
 
-| Opera | ID | Current status | Observation / next step |
+## 3. Phase board — one plan for remaining operations
+
+| Phase | Tracked issues | Current position | Next deliverable |
 |---|---|---|---|
-| Pagliacci | PAG-V01 | **Needs review** | Prologue and both acts have complete paired AI working text; Opera Guide collation, literary/editorial verification and independent browser checks are outstanding. |
-| Il trovatore | TRO-V01 | **In progress** | All four parts entered as Italian/English AI working translations from user-supplied Opera Guide MHT, five source scenes. All four parts available; detailed source-fidelity, editorial and browser review pending. Source-fidelity, verse pairing and independent browser visual QA need review. |
-| L'elisir d'amore | ELISIR-V01 | **In progress** | Both acts on Update, 10+9 source scenes, independently written Italian/English AI working translations. Italian from public-domain librettidopera.it transcription; comparison with user-preferred Opera Guide, English line/editorial QA and browser verification pending. |
-| Rigoletto | RIG-V01 | **In progress** | Acts II and III now published as independent AI working drafts; require Italian source fidelity and complete English editorial review; independent browser checks pending. Opera Guide explicitly labels Act II numbers 8–10 and Act III numbers 11–14 without separate scene headings; complete Italian transcription, independent English alignment, stage directions, source collation and reader/browser checks remain pending. |
-| Die Zauberflöte | AUD-01 | **Deferred** | 15 unsupported English headings, 48 generic Auftritt/Entrance headings and source spelling of Arie mir Chor need review. |
-| Die Zauberflöte | ZAUB-E01 | **Needs review** | English in Acts I–II remains substantially unreviewed machine-assisted draft; German source, speaker/stage classification and musical boundaries (including Nos. 8 and 21) require detailed editorial and score comparison. |
-| La fanciulla del West | AUD-02 | **Deferred** | Act I Introduzione has no supported English heading; verify Hello, Nick! and Hello, Minnie! title fallback handling. |
-| Tosca | AUD-03 | **Deferred** | The Act III bells/matins instrumental landmark may show misleading character credits; verify and omit unsupported credits. |
-| Turandot | AUD-04 | **Needs review** | Revisit generic Scena/form navigation titles with the latest named-incipit editorial rule; do not overwrite the approved 2026-10-19 correction with older form-only rules. |
-| Carmen | AUD-05 | **Needs review** | Assess generic Scène headings after libretto completion; earlier Act I and II–IV source/text corrections have automated verification in the historical record. |
-| Le nozze di Figaro | FIG-V01 | **Needs verification** | 81 section links and the outline scroll/route-ID corrections have tests; independent browser verification remains pending. |
-| La Bohème | BOH-V01 | **Needs verification** | Human visual verification of its 26 outline landmarks and four tableaux remains pending. |
-| Macbeth | MAC-V01 | **Needs verification** | Confirm final reader/outline behavior, act-only music symbols, 1847 alternative position and bilingual typography; later 2026-10-17 user instructions supersede earlier review rules. |
-| Madama Butterfly | BUT-V01 | **Needs verification** | Structural audit covered 34 sections, but fresh independent source and browser visual checking remain pending. |
-| Samson et Dalila | SAM-V01 | **Needs review** | Independent editorial/listening review of completed three-act translations and desktop/mobile visuals still pending. |
-| Otello | OTE-V01 | **Needs review** | English remains an unreviewed draft; source outline matches do not establish literary accuracy. |
-| Parsifal | PAR-V01 | **Needs review** | German transcription and English draft need source/editorial reconciliation. |
-| Don Giovanni | DON-V01 | **Needs review** | Source and English draft not finally reviewed; selective 47-entry outline is intentional and is not necessarily a defect. |
-| Così fan tutte | COS-V01 | **Needs verification** | Prior generated-reader section checks are not full browser visual certification. |
-| Il barbiere di Siviglia | BAR-V01 | **Needs verification** | Prior generated-reader checks are not full browser visual certification. |
-| Tristan und Isolde | TRI-V01 | **Needs verification** | Prior generated-reader checks are not full browser visual certification. |
+| **A — Reliable test gate** | AUD-20261101-01–03 | Verified historical checkpoint on 2026-11-01; latest head **unverified** | Re-run Node/browser checks and confirm preview for the latest `Update` head |
+| **B — Definite source/presentation repairs** | AUD-20261101-04–09; AUD-20261102-01 | **In progress** | Verify *Die Walküre* and *Manon* participant/source fixes; reconcile *Manon* edition and stage directions; fix *La fanciulla* headings |
+| **C — Editorial fidelity and nomenclature** | AUD-20261101-10–16 | Queued / needs review | Source, scene/section, speaker, English wording and provenance comparisons; no invented or copyrighted text |
+| **D — Reader, outline, accessibility and visual sign-off** | AUD-20261101-17–20; AUD-20261102-01 | Queued / needs verification | All 35 plus future operas: detailed participants, both outlines, desktop/mobile/night, screen-reader, anchors, recordings |
+| **E — Metadata, governance, release** | AUD-20261101-21–22; GLOBAL issues | Queued | Correct obsolete content/status references with approval when guideline edits required; reconcile tracker; request separate `main` merge authorization |
 
-**Evidence discipline:** Status reflects the latest documented review, not a new live-browser validation. Preserve verified historical corrections as such; no previously resolved issue has been reopened solely because reports were consolidated.
+**Sequencing:** Phase A's historical automation is green; rerun for newer changes. Phase B and Phase C can surface additional participant defects and must respect the approved guideline. Phase D is the catalogue-wide acceptance gate; it is **not** permission to declare all 35 reviewed from a browser smoke count. Phase E releases only with explicit `main` merge approval.
 
-## Dated update log
+## 4. MASTER ISSUE REGISTER — November 1 roadmap, preserved IDs
 
-### 2026-11-02 (UTC) — Phase B reopened: universal participant naming in Die Walküre and Manon
+Statuses in this table are the **consolidated Nov 2 assessment**, not a claim of fresh browser testing. Do not relabel from 'Needs verification' to 'Resolved' without commit+CI+manual evidence appropriate to the finding.
 
-User-approved universal rule (Google Drive Opera Website Guidelines §1.4): unique identifiable singers/genuine ensembles, English descriptive roles, original proper names, expanded joint cues, and no temporary collective cues in outline participant lists. Original and translated speaker cues must be preserved inside the sung libretto.
-
-**Die Walküre:** Acts I–III participant arrays reconciled against actual original singer cues; voice attributions and joined German names map to individual singers, with the eight identifiable Valkyries used for eight-Valkyrie group cues. Original German and English sung texts unchanged. Commits 4ef6a508, 3094306a, b8b859df.
-
-**Manon:** Acts I–V participant arrays remove collective singing instructions such as The Five Together, The Others Together, The Other Four, Everyone, Everyone Else; retain real groups and split named joint cues. Sung texts and original cue attributions unchanged. Commits de29e640, 24ea6f76, 4e593fba, 6be3b444, 75f032e3.
-
-Added focused regression tests in tests/opera-participant-names.test.mjs (922ce500). **Status: Needs verification** — fresh CI, browser tests, and deployment for this head have not yet been confirmed. Existing Manon source-edition/prelude/editorial tasks remain outstanding; main untouched.
-
-
-
-### 2026-11-02 (UTC) — Phase B / Manon Acts I–IV English speaker and outline labels
-
-**Issue:** AUD-20261101-06 and the speaker-label portion of AUD-20261101-05. Corrected generic and collective speaker translations on the English side while keeping French source cues untouched. For each original act, updated `speakerTranslation` for named generic roles and groups and applied deduplicated English participant lists in its musical/reading section outlines. Joint cues retain their source speaker string and are rendered in the English equivalent; outline credits split clear joint cues into individual members. All source-speaker, original and translated text values were checked unchanged by the transformation.
-
-**Commits on Update:** Act I `ac2e879d`; Act II `2a5c5e66`; Act III `76f0c397`; Act IV `322c1cb4`. **Needs verification:** New head CI and desktop/mobile browser preview have not been confirmed; do not label this complete or released. **Still open:** Act I duplicate `Prélude` marker occurs at both opening and conclusion of the Sottovoce Q842063 French transcription; source-edition reconciliation is needed before moving or removing it. The selected Act V comes from a different historical edition. English literary checking and direction classification are separate unfinished tasks.
-
-
-
-### 2026-11-02 (UTC) — Phase B / Die Walküre source preambles restored (CI verification pending)
-
-**Issue:** AUD-20261101-04 from the November 1 Drive roadmap. **Branch:** `Update` only; `main` untouched. Compared the Sottovoce Q324319 transcription, which separates the Act II and Act III scenic preambles into standalone one-record act-heading blocks, with the three reader acts. All 1,804 previously displayed German records matched the chosen transcription exactly, in order. Restored the missing `Wildes Felsengebirge` and `Auf dem Gipfel eines Felsenberges` directions at the beginning of Acts II and III, with independently written English descriptions; both are displayed as substantial stage directions under the approved bracket/label renderer. Recorded source counts now **481 / 732 / 593 = 1,806**.
-
-**Commits:** Act II `cb9fe825`; Act III `f80c5a88`; source-integrity regression `ca5d3f6f`. New test `tests/die-walkure-source-integrity.test.mjs` checks three-act scene counts, source-record totals, all-act source-order checksums, paired English line counts and both restored preambles. No sung text or existing translations were modified. English remains an unreviewed working translation.
-
-**Status: Needs verification.** Source equality was checked against the archived transcription before committing, but no fresh GitHub Actions `Verify Update` run or browser/preview confirmation has been obtained for the new test commit. Run latest `Update` Node and desktop/mobile browser suite, check verified preview deployment, then update to `Resolved` only if evidence passes. Source/English literary and scene-level editorial review is still a separate task.
-
-
-
-### 2026-10-29 — Nabucco: complete four-part bilingual working draft
-
-**Update branch only.** Added *Nabucco* (Giuseppe Verdi / Temistocle Solera) from the public-domain Italian libretto at [librettidopera.it](https://www.librettidopera.it/nabucco/nabucco.html), structured via [Sottovoce Q202230](https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q202230.json). Original source has four named parts: **Gerusalemme**, **L'empio**, **La profezia**, **L'idolo infranto**. The parts contain respectively **7, 8, 5, 5** actual named scenes and **230, 186, 170, 141** original source line records (the first lines in each part include tableau/stage headings), totalling **25 named scenes and 727 source line records**. Every line record of sung text and directions is paired with an independently authored English working translation. Separate commits: Act I `e51db7b`, Act II `426de92`, Act III `86589b6`, Act IV `caaf88e`. Registered on-demand through `src/data/libretto-nabucco-bundle.js` and `src/data/libretto-loader.js`; four focused Node tests added.
-
-**Status: AI-generated working translations awaiting editorial review.** Source record counts and Italian/English line pairing were checked during construction; full Italian text collation with [Opera Guide](https://opera-guide.ch/operas/nabucco/libretto/it/), exact English editorial accuracy, speaker/staging review and real browser/mobile QA remain outstanding. Original transcription uses 'Assiria' where the narrative concerns Babylonians; original wording preserved rather than silently corrected. The separate verified-preview pipeline may remain gated by pre-existing regression-suite failures. No changes to `main`.
-
-
-### 2026-10-29 — La Cenerentola two-act bilingual working draft
-
-**Update branch only.** *La Cenerentola* by Gioachino Rossini, original Italian by Jacopo Ferretti, has two original-source acts represented in the bilingual reader. **Act I: 15 scenes and 880 Italian source-line records** (commit `37ea826`); **Act II: 10 scenes and 700 source-line records** (commit `dee436a`). All **1,580** sung and stage-direction source records were paired with an independently written English AI working translation, maintaining source line breaks within grouped speaker turns, and preserving scene headings and scene descriptions. Reader bundle, lazy loader and four dedicated source/reader tests were added separately.
-
-**Source:** Public-domain Italian transcription, https://www.librettidopera.it/cenere/cenere.html, from Sottovoce Q176700. Opera Guide also offers an Italian text at https://opera-guide.ch/operas/la+cenerentola+ossia+la+bonta+in+trionfo/libretto/it/ but its indexed divisions differ; an exhaustive source reconciliation is outstanding. **AI-generated English working translation awaiting editorial review**, not a certified translation. In the source Act II Scene IV the vocal lines lack speaker names; assigning Alidoro is provisional. Original Italian source was not corrected or silently rewritten. Literary accuracy, scene/speaker attribution, independent browser/mobile and Opera Guide checks remain pending. `main` is untouched.
-
-
-### 2026-10-29 — Norma: two-act bilingual working draft
-
-**Update branch only.** The Italian public-domain *Norma* by Felice Romani was transcribed from [librettidopera.it](https://www.librettidopera.it/norma/norma.html) via Sottovoce Q320353, with Opera Guide ([Italian source](https://opera-guide.ch/operas/norma/libretto/it/)) as the preferred subsequent collation reference. Act I: **nine scenes, 502 source-line records**; Act II: **eleven scenes, 460 source-line records**. Each of the **962** Italian sung and stage-direction source-line records has an independently authored English working translation. Scene settings also have independent English descriptions. All 20 source scene headings preserved. Both acts are wired into the reusable reader with separate imports and on-demand loading. Act I original draft commit: `77ab825`; Act II: `a5be241`. Subsequent commits translated source scene settings and added loader and four specific tests.
-
-**Review pending, not certified:** AI-generated English working translation awaiting full editorial review. Literal source record line counts and paired English breaks were validated on construction, but Italian wording has not been exhaustively collated against Opera Guide, and English wording, dramaturgical speaker assignments, and editorial accuracy require review. In the source transcription Act I Scene V has vocal lines without speaker names; they were provisionally assigned to Adalgisa on dramatic context. Some bare 'Insieme' ensemble markers are retained as transcription artefacts pending review. Real-browser/mobile visual verification is outstanding. No changes to `main`.
-
-
-### 2026-10-29 — Lucia di Lammermoor bilingual draft
-
-The **Update** branch now has all three reading acts of *Lucia di Lammermoor*: Act I / source "La partenza" (5 real scenes, plus the source's part-heading marker), Act II / "Il contratto nuziale - I" (6 real scenes, plus the part-heading marker), and Act III / "Il contratto nuziale - II" (9 real scenes). The corresponding Italian transcription from [librettidopera.it](https://www.librettidopera.it/lucialam/lucialam.html), via [Sottovoce Q244209](https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q244209.json), comprises **911 source line records**, with paired independently authored English AI working translation records. Source headings and the full text of stage directions are included in the reader. Three-site-act navigation preserves the first-part / second-part subdivision in the act headings. Committed separately: Act I `6302da5`, Act II `d9bacb8`, Act III `2860277`; the bundle and lazy loader are registered in following commits.
-
-**Review status — not certified:** AI-generated English working translation awaiting editorial review. Source line-count and source record pairing were verified during construction; a professional line-by-line source comparison with Opera Guide, translation accuracy and literary review, speaker and stage-direction checking, and independent responsive browser testing are pending. This opera should not be represented as an editorially reviewed libretto until those steps are complete. Pre-existing CI failures are recorded separately below and must not be confused with new regressions.
-
-
-### 2026-10-29 (UTC) — Pagliacci deployment and test verification
-
-**Final verified HEAD:** `ce31f2e` on `Update`. GitHub Actions run [40848805087](https://github.com/AsuraFY/my-favorite-operas/actions/runs/40848805087): **213 tests, 197 passed, 16 failed**; the 16 failing test names match the pre-Pagliacci baseline at `373402d` (four previously added L'elisir tests also passed). GitHub Pages run [40848804548](https://github.com/AsuraFY/my-favorite-operas/actions/runs/40848804548) succeeded. The separate workflow's gated verified preview was skipped because baseline tests fail; the browser-visual-smoke step in that workflow did not run. Verify in an actual browser before calling presentation QA complete. Source accuracy warning: the librettidopera.it/Sottovoce transcription labels the final `La commedia è finita!` turn as `LA FOLLA`; do not silently change it without score/source collation. Source stage-description spacing and punctuation may be imperfect in the structured transcription. No main branch changes.
-
-
-### 2026-10-29 (UTC) — Pagliacci complete bilingual working draft
-
-**Update branch only.** Ruggero Leoncavallo's *Pagliacci* has a Prologue (31 Italian source lines), Act I (four scenes; 414 source lines), and Act II (two scenes; 344 source lines) from the public-domain librettidopera.it transcription by way of Sottovoce Q248644. All 789 source lines have independently written paired English working translation lines, including stage directions. The Prologue is displayed at the beginning of the Act I reader, preserving the existing two-act navigation; the original scene and act headings are retained. **AI-generated working translation awaiting editorial review.** Pending: independent source comparison with Opera Guide, complete editorial and speaker attribution audit, browser verification, and distinguishing baseline test failures from regressions. Commits: prologue + Act I `bf77f50`, Act II `0319329`.
-
-
-### 2026-10-29 (UTC) — L'elisir targeted content regression added
-
-Added tests for both source scene counts (10 and 9), 468 Italian/English speaking and stage-direction entries, equal line counts, distinctive text anchors, final passage and the lazy-loaded two-act reader. Passing structural checks do not certify complete literary or musical fidelity; Opera Guide collation and browser visual QA remain pending. Historical 16 unrelated global test failures require separate remediation.
-
-
-### 2026-10-29 (UTC) — L'elisir d'amore metadata and bundle refresh
-
-Corrected the librettist credit to Felice Romani in new source comments and refreshed the lazy-load bundle cache key after both acts were published. No change to original Italian lyric/direction text or English translation. Full Opera Guide collation, editorial review and independent visual/browser certification remain pending.
-
-
-### 2026-10-29 (UTC) — L'elisir d'amore Act I verse-break alignment repair
-
-Act I draft has been adjusted so each original Italian line within its 209 bilingual turns has a corresponding English line, including the final scenes. No original Italian wording was changed in this alignment pass. Acts I and II still need careful independent comparison with Opera Guide and literary/editorial review; automated line-count equality does not prove semantic fidelity. The global website tests and browser visual review are not certified by this editorial adjustment.
-
-
-### 2026-10-29 (UTC) — L'elisir d'amore Act II working translation
-
-**Update only.** Act II has nine scenes and 259 independently drafted English/Italian paired entries, including the 'Una furtiva lagrima' aria, Adina's confession and final ensemble. All Act II passage pairs have equal original/English line counts after a structural review. Act I remains an unreviewed draft and has some non-matching English verse breaks. The original Italian uses the public-domain Romani transcription via librettidopera.it / Sottovoce; it has not been fully reconciled with Opera Guide. No English published translation has been copied. Full editorial QA and independent mobile/desktop browser review still needed.
-
-
-### 2026-10-29 (UTC) — L'elisir d'amore Act I working translation
-
-**Update only.** Act I comprises ten original scenes with 209 separately paired Italian/English passage entries. The Italian is based on the public-domain Romani libretto as transcribed by librettidopera.it, through the Sottovoce structured transcription; comparison against the preferred Opera Guide edition was not possible in this environment. English is an independently composed AI working translation, awaiting complete editorial review and source/verse-break collation. Act II remains pending. No independent visual/browser QA or complete repository test run has yet been certified for this commit.
-
-
-### 2026-10-28 (UTC) — Il trovatore final integrity verification
-
-**Branch:** `Update`, final fix `357cf9e`. GitHub Actions `Verify Update` run **40770279842** completed with **193 passed / 16 failed / 209 tests**, matching the previously observed 16 existing regression failures. The introduced source-integrity/syntax failure was corrected by restoring the complete Act II and IV transfer payloads in commit `75e2b2f` and fixing a quoted source-description string in `357cf9e`; the source-integrity test then passed. GitHub Pages build/deployment run **40770279146** succeeded. The `Verify Update` workflow's gated preview was skipped because of those existing 16 failures. No independent complete reader navigation/browser QA was performed. Original Italian source rows were preserved and the original–English working turns paired; literary quality and precise English verse alignment still require human editorial review.
-
-
-### 2026-10-28 (UTC) — Il trovatore Act II and IV file-integrity repair
-
-The first published Act II and IV blobs were truncated during file transfer even though the preparation files passed syntax checks locally. GitHub Actions `Verify Update` run 40769889492 revealed an additional module syntax failure beyond the existing 16 baseline test failures. Both full source-faithful bilingual preparation files have now been reassembled using contiguous line windows, validated as parseable JSON payloads with the expected five and four scenes respectively, and replaced on `Update`. Fresh CI must verify that the introduced syntax regression is eliminated. Detailed editorial checking remains pending.
-
-
-### 2026-10-28 (UTC) — Il trovatore Act IV bilingual working draft
-
-**Branch:** `Update`. Part IV (*Il supplizio*) now preserves all four original source scenes, including the source's final heading `SCENA ULTIMA`, 157 aligned Italian/English speaker and direction turns, Leonora's prayer and poison, the prison duet, Azucena's memories, and the final revelation. Italian text was extracted from the user-supplied Opera Guide MHT without omitting source turns. English is an independently drafted AI-generated working translation awaiting editorial review. Stage directions preserved and translated. No invented musical division numbering. All four parts now populated. Detailed source-fidelity, verse alignment, and browser QA remain to be reviewed.
-
-
-### 2026-10-28 (UTC) — Il trovatore Act III bilingual working draft
-**Branch:** `Update`. Part III (*Il figlio della Zingara*) contains six source scenes, 108 paired speaker/direction turns, including the military camp, Azucena's arrest, and the wedding interrupted by her impending execution. Original Italian was preserved from the supplied Opera Guide MHT; English was independently authored as an AI-generated working translation awaiting editorial review. No invented musical number labels. Source extraction coverage checked; browser testing and editorial verification pending. Part IV remains pending.
-
-
-### 2026-10-28 (UTC) — Il trovatore Act II bilingual working draft
-**Branch:** `Update`. User-supplied Italian Opera Guide MHT was parsed in full. Part II (*La gitana*) preserves five original source scenes, 144 original/English speaker/direction turns and 352 extracted Italian printed source lines. The English is independently written as an AI-generated working translation awaiting editorial review. The original Italian is checked against the source extraction without omission. Stage directions and source incipits retained; no invented musical numbering. Parts III–IV pending. The translation, musical divisions and browser behavior remain subject to independent review.
-
-
-### 2026-10-28 (UTC) — Il trovatore Act I from uploaded original-source archive
-
-**Branch:** `Update` only. The user supplied a 2026 Opera Guide MHT with the original Italian libretto (https://opera-guide.ch/operas/il+trovatore/libretto/it/). All four parts were found in the archive, with source scene counts **5 / 5 / 6 / 4**. Act I (*Il duello*) was manually translated independently into English and structured as five original source scenes with 95 aligned speaker/stage-direction turns. The five scenes preserve all **276 extracted Italian printed source lines**, including stage directions and the final swordfight. **AI-generated English working translation awaiting editorial review.** Source divisions are used instead of invented official musical number labels; the outline uses source-based lyric incipits. Parts II–IV remain pending. Structural source coverage was checked locally against the saved source; a human literary and musical review and browser testing are still required.
-
-
-### 2026-10-28 (UTC) — Rigoletto Act II bilingual working draft
-
-**Update branch only.** Act II has been entered with its three source musical divisions (Nos. 8–10), comprising 141 original/English paired entries. The complete dramatic trajectory is included: Duke's lament, the courtiers' account, Rigoletto's search and plea, Gilda's account, Monterone's departure and the vengeance duet. English is an independent AI-generated working translation, **not an edited literary translation**. **Needs review:** source spelling and verse fidelity, turn boundaries, source coverage, speaker and direction checking, and independent browser QA. Both Acts II and III remain subject to editorial verification. No unsupported scene subdivisions were inserted.
-
-
-### 2026-10-28 (UTC) — Rigoletto Act III bilingual working draft
-
-**Update branch only.** Act III has been entered with four numbered musical sections (Nos. 11–14), 203 original/English paired passages including stage directions, the Duke's song, the quartet, the storm and Gilda's final encounter. English is an independent AI-generated working translation. **Status: Needs review.** A meticulous source-to-source collation and independent editorial review remain necessary, including source variants, exact verse breaks, and on-stage directions. The act data's structural and pairing checks are not proof of faithful complete textual coverage. Act II remains pending at this checkpoint.
-
-
-### 2026-10-28 (UTC) — Rigoletto Acts II–III source structure verified; no new act published
-
-**Branch:** `Update` only. **Primary source:** https://opera-guide.ch/operas/rigoletto/libretto/it/ (Francesco Maria Piave, original Italian). Research confirmed that the remaining acts should not have invented scene headings:
-
-- **Act II:** No. 8 — Scena ed Aria (the Duke's lament); No. 9 — Scena ed Aria (Rigoletto among the courtiers, including his plea); No. 10 — Scena e Duetto (Gilda's account, Monterone's passage and Rigoletto's vow of revenge).
-- **Act III:** No. 11 — Scena e Canzone (the inn and the Duke's song); No. 12 — Quartetto (Duke, Maddalena, Gilda and Rigoletto); No. 13 — Scena, Terzetto e Tempesta (the murder plot and Gilda's sacrifice); No. 14 — Scena e Duetto Finale (the sack and the tragic recognition).
-
-**Status:** The complete source and independent English translations have **not** been adequately prepared or validated as bilingual data for these acts. No Act II or III module was committed in this checkpoint. Do not mark either act complete or generate stage directions/lyrics from memory. Preserve the existing Act I reader until each full act can be verified and committed separately. No new site-level regression claims were made.
-
-
-### 2026-10-28 (UTC) — Rigoletto Act I initial bilingual working draft
-
-**Branch:** `Update` only. **Source:** https://opera-guide.ch/operas/rigoletto/libretto/it/ (Act I, scenes 1–2, Nos. 1–7). The public-domain Italian has been manually structured into aligned passages with independent AI-generated English working translations. Both source scenes are represented, including the major stage directions and final curse, while Acts II and III remain pending. The translation awaits editorial review; source spelling variants, speaker labels, attribution, complete coverage and verse alignment require detailed verification. The existing site-wide regression failures predate this change; a full local test run and independent browser verification have not yet been completed.
-
-
-### 2026-10-28 (UTC) — Traviata targeted source repair and aria navigation
-
-**TRAVIATA-01 updated: Resolved for the identified Act II scene XIV truncation.** The final eight-line Alfredo passage and the falling-purse stage direction were restored from matching public-domain Italian text published by Teatro Regio Parma (https://www.teatroregioparma.it/Archivi/Archivio2014/uploads/LIBRETTO_La_traviata.pdf) and Wikisource (https://it.wikisource.org/wiki/La_traviata/Atto_secondo), after the primary Opera Guide HTML was found truncated. Correction commits `a75291c` and `990cdf4`. This resolves the identified gap; it does **not** constitute a full edition-wide source audit.
-
-**Reader refinement:** Act I now separates the original-language landmarks `Ah, fors'è lui` and `Sempre libera degg'io` into their own original/English paired passages (`dd6592c`). In Act III, `Addio, del passato` and the offstage masked carnival chorus appear as separate navigation passages with the chorus correctly attributed (`e490654`). **TRAVIATA-02 remains Needs review:** full per-line English alignment, original language proofreading, stage-direction attribution and independent browser visual QA pending. The full repository regression suite is still affected by pre-existing stale checks, even though the specific three-act Traviata test passed in run 40743021730.
-
-
-### 2026-10-28 (UTC) — La traviata: three-act bilingual working draft
-
-**Branch:** `Update` only. **Source:** https://opera-guide.ch/operas/la+traviata/libretto/it/ (Italian, Francesco Maria Piave, public domain). The original-language HTML was fetched as supplied by Opera Guide; English was independently written as an AI working translation, **not copied from the site's English edition**.
-
-**Delivery:** Act I source data `a4002c6` and reader activation `6c6ecdb` (5 scenes, 102 original-English entries); Act II original and English draft `dcdff3a`, scene-XV adjustment `ad39178` (15 scenes, 231 entries); Act III source and English draft `456bb1a` (6 scenes, 87 entries); complete three-act reader activation `b9ff8ad`. Temporary source-capture test and interim English-dictionary modules were removed. Source stage directions are generally preserved inline, and some original Italian text includes source-level typographic irregularities.
-
-**TRAVIATA-01 — Needs review (source fidelity):** Opera Guide's retrieved Act II text appears to break off mid-speech at the transition from scene XIV to XV (Alfredo's public accusation, near `Ma è`). Rather than invent the missing Italian, the displayed working text flags the truncation. Reconcile against an authoritative public-domain score/libretto before claiming complete literal text.
-
-**TRAVIATA-02 — Needs review (translation/format):** English is an original, **unreviewed semantic draft**; many long singing passages are translated as continuous English prose rather than verse-by-verse paired lines. Review and expand the original-English alignment, particularly the major arias, ensembles, and stage directions. Scene/subsection headings include editorial navigation incipits; they are not claimed as source-authenticated track numbers.
-
-**Validation:** The La traviata three-act navigation test passed in GitHub Actions `Verify Update` run 40743021730. The **overall regression suite still fails** with unrelated stale tests (including old catalogue totals); the verified preview publication was skipped. GitHub Pages deployment reported success for commit `b9ff8ad`, but independent browser visual QA was not completed. No changes to `main` or approved guidelines.
-
-### 2026-10-28 (UTC) — Aida Acts II–IV delivered as separate Update commits
-
-**Act II:** commit `7f0af69`; two source scenes, 116 grouped speaker passages plus separately represented instrumental/stage directions; nine editorial listening sections. **Act III:** commit `a176028`; Nile-bank sequence represented in one source scene, 104 grouped speaker passages and four editorial listening sections. **Act IV:** commit `840ae62`; two source scenes, 93 grouped speaker passages, including the trial and final tomb. Aida's bilingual bundle now registers all four acts, with English independently drafted for side-by-side reading. `main` and Drive guidelines unchanged.
-
-**Source and verification:** Italian is based on the user-selected Opera Guide Aida libretto (https://opera-guide.ch/operas/aida/libretto/it/), with an independent publicly available Italian transcription used to assist segmentation. **English translations are unreviewed drafts.** Some source material contains spelling/formatting variants; speaker attribution and the original Italian need exhaustive comparison to Opera Guide. Short editorial headings/incipits are navigation aids rather than asserted official musical numbers. Do not treat the presence of all four acts as final literary review approval.
-
-**Outstanding:** Source-by-source Italian collation, English proofreading and verse line alignment checks, full desktop/mobile/night-mode visual browser QA, and successful complete `Verify Update` regression CI. Previous CI still had stale/independent tests; do not mark full QA as complete without passing evidence. **Status: Needs verification.**
-
-
-### 2026-10-28 (UTC) — Aida Act I bilingual reader (Update)
-
-**Scope:** Aida, Act I only. Source: https://opera-guide.ch/operas/aida/libretto/it/ (Italian text, original two scenes). Working English translation authored for side-by-side display and **not editorially verified**. Nine navigation/reading landmarks are editorial incipits, not claimed to be official numbered musical sections.
-
-**Implementation:** Added `src/data/libretto-aida-act-1-scene-1.js`, `src/data/libretto-aida-act-1-scene-2.js`, the Act I aggregator and bundle; registered Aida in lazy loader and offline test registry; refreshed boot cache; added Act I alignment test. Commits: `dc4f4ed`, `99ef05c`. Act I contains two scenes, 119 dialogue/stage-direction turns with nonempty original and English text. **Acts II–IV remain pending** and are not registered as available. Source transcriptions contain apparent typos and variants including "per to", "sver[t]urato", "Scaerdotesse" that require editorial comparison against an authoritative edition. No website guidelines were changed.
-
-**Status: Needs verification/editorial review.** Source was compared at passage level against the linked Opera Guide page, but independent proofing of every original word and the draft English has **not** been completed. Browser visual QA not performed. GitHub Actions `Verify Update` run 40737948247 failed: 16 existing/stale regression expectations across the repository (including an obsolete 31-opera count). The specific new Aida Act I test was not reported as failing, but the suite overall did not pass and preview publish was skipped. Follow up by updating unrelated stale tests separately, conducting visual checks, and reviewing Act I source fidelity and translation.
-
-
-### 2026-10-27 — Catalogue expansion and La traviata source selection
-
-**Catalogue added (Update):** La Cenerentola, Hänsel und Gretel, Nabucco and Pagliacci, as four planned works with no libretto bundle. The catalogue now contains 35 operas, of which 16 currently have bilingual libretto loaders and 19 do not.
-
-**La traviata:** Primary Italian libretto identified at https://opera-guide.ch/en/operas/la%2Btraviata/libretto/it/ with three acts, source scene headings, cast and original Italian text. Opera Guide also publishes an English libretto at https://opera-guide.ch/en/operas/la%2Btraviata/libretto/en/; whether its alignment/version may be reused and all translation/source checks remain to be determined. **Status: pending ingestion**, not a completed or published bilingual libretto. Preserve Italian source divisions and speaker labels and make a verified, aligned English translation before enabling the completed-libretto loader. No placeholder should be counted as a complete libretto.
-
-**Testing status:** The four catalogue entries were committed, but end-to-end browser/CI tests have not yet been run. No website guidelines were changed.
-
-
-### 2026-10-27 UTC — Root documentation cleanup
-
-Archived the historical `BARBIERE_OUTLINE_REVIEW.md` and `WEBSITE_REVIEW.md` reports in `archive.md`; their original content is preserved. Migrated `PROJECT_GUIDELINES.md` into the existing Drive product/implementation specification and preserved its original in the archive before removing all three redundant root files. `README.md` is deliberately empty and unchanged. No new website defect was verified or resolved by this cleanup.
-
-
-
-### 2026-10-27 UTC — Unified audit register and archived previous reviews
-
-**Scope:** Review-document organization and synthesis of the repo's earlier reports (2026-10-15 through 2026-10-26), plus the 2026-10-27 sixteen-opera headings audit.
-
-**Added:** Global and opera-specific issue lists above, highlighting editorial draft risks, shared verification gaps, instrument-only attribution and previously documented source checks.
-
-**Resolved this session:** No website defects; review-file duplication eliminated only after archiving the original text. **Accepted:** No new defects accepted. **Ongoing:** All items marked Deferred, Needs review or Needs verification. **Priority:** Complete the librettos before heading fixes and final visual QA.
-
-**Source evidence:** [archive.md](archive.md) contains the historical reviews, test counts, dated corrections, source references and original baseline audit. A large raw CI log is retained as a separate archived diagnostic because embedding it would make the audit documents difficult to read.
-
-## Current issue register
-
-*The register describes the latest known state. Initial findings were recorded on 2026-10-27; none has subsequently been fixed or visually re-tested as part of this file migration.*
-
-| ID | Type | Area | Finding / decision needed | Status | First noted | Next action |
-|---|---|---|---|---|---|---|
-| AUD-01 | Content | Die Zauberflöte | 15 unsupported English headings use “English title pending review”; 48 generic `Auftritt / Entrance` headings; verify source label `Arie mir Chor` | **Deferred** | 2026-10-27 | Complete libretto and editorial source checks, then revise source-supported headings |
-| AUD-02 | Content | La fanciulla del West | Act I `Introduzione` lacks a supported English subtitle; `Hello, Nick!` and `Hello, Minnie!` depend on aligned-text fallback | **Deferred** | 2026-10-27 | Confirm translation against source; explicitly fill verified title metadata |
-| AUD-03 | Character attribution | Tosca | Act III, Scene I bells/matins instrumental outline landmark may present a misleading fallback character list | **Deferred** | 2026-10-27 | Recheck source and instrumental exception, then omit unsupported singer credits |
-| AUD-04 | Editorial | Turandot | Repeated musical-form-only labels, e.g. `Scena`, could be too generic for navigation; not established as a defect | **Needs review** | 2026-10-27 | Assess against finished libretto; prefer real incipits only where source supports them |
-| AUD-05 | Editorial | Carmen | Repeated form labels, e.g. `Scène`, need no-generic-heading editorial review; not established as a defect | **Needs review** | 2026-10-27 | Assess against finished libretto while preserving instrumental exceptions |
-
-**Current roll-up (as of 2026-10-27 14:22 UTC):** 3 confirmed content/attribution issues deferred; 2 editorial questions awaiting review; **0 verified resolved**; **0 user-accepted exceptions**. Do not treat prior static passes as final browser-visual approval.
-
-## Verification and follow-up backlog
-
-| ID | Scope | Current state | Completion criterion |
+| Stable issue ID | Priority · Phase | Status | Scope, action and acceptance |
 |---|---|---|---|
-| AUD-V01 | All 16 operas — reader and outline desktop, mobile, night mode | **Deferred until librettos complete** | Inspect every section, long credits, type/color/size/spacing, icon, outline links, and instrumental exceptions in a real browser against `Update` |
-| AUD-V02 | Deep-link navigation and scrolling | **Needs verification** | Click outline links, validate targets, refresh URLs, check scrolling/offset on desktop and mobile |
-| AUD-V03 | Editorial content quality | **Ongoing with libretto completion** | Confirm source-grounded translations, credits, classifications and known unreviewed drafts; record any resulting issues above |
+| `AUD-20261101-01` | P0 · A | Needs verification | **Node test gate** — 224/224 passed at 2026-11-01 checkpoint (run 41363468298); capture pass/fail on **current Update head** before accepting later edits. |
+| `AUD-20261101-02` | P0 · A | Needs verification | **All-35 Chromium coverage** — 876 assertions / 70 opera×viewport checks passed at 2026-11-01 checkpoint; re-run current head and retain artifacts. Human visual inspection is separate. |
+| `AUD-20261101-03` | P0 · A/E | Needs verification | **Preview and public release distinction** — Match tested commit to Update preview; compare with main Pages independently; never assert public URL has newer edits without proof. Merge only by explicit user approval. |
+| `AUD-20261101-04` | P0 · B | Needs verification | **Die Walküre Acts II–III scenic preambles** — Restored 2 omissions; exact German source 1,806 lines and integrity test committed; verify new-head Node/browser, direction treatment and opening visuals. |
+| `AUD-20261101-05` | P0 · B/C | Open | **Manon original edition and Prélude** — Reconcile duplicated/stray Act I Prélude, original scene boundaries and source edition; Act V edition variant remains a separate decision. Do not silently move or rewrite. |
+| `AUD-20261101-06` | P1 · B | Needs verification | **Manon English generic/group speaker cues** — Acts I–V participant/role edits committed Nov 2; verify all descriptive English labels on the English side, no false group splitting and no changes to sung text. |
+| `AUD-20261101-07` | P1 · B | Needs verification | **Die Walküre German group and voice labels** — Acts I–III participant/English cue edits committed Nov 2; verify true participants, German voice attribution, collective cues and full source alignment. |
+| `AUD-20261101-08` | P1 · B | Open | **Manon/Die Walküre direction semantics** — Classify short action cues vs substantive directions by dramatic function, preserving square brackets, source text and sung asides; test representative scenes. |
+| `AUD-20261101-09` | P1 · B | Open | **La fanciulla del West missing English titles** — Source-check Act I Introduzione / Hello, Nick! / Hello, Minnie! and explicitly populate correct outline translations; verify both outlines. |
+| `AUD-20261101-10` | P1 · C | Needs review | **Die Zauberflöte generic Auftritt and Arie mir Chor** — Verify 48 generic Auftritt headings, form anomaly and actual source incipits without inventing official titles. |
+| `AUD-20261101-11` | P1 · C | Needs review | **Tosca Act III instrumental credits** — Verify bells/matins landmark and remove singers from instrumental-only credit lines where source confirms none. |
+| `AUD-20261101-12` | P1 · C | Needs review | **Turandot / Carmen generic headings** — Check Scena/Scène and section incipits; use source-supported navigation labels and correct translations only. |
+| `AUD-20261101-13` | P1 · C | Needs review | **Eugene Onegin English-first, seven tableaux** — Respect approved English-first reader, document text edition/rights and authentic seven-tableau boundaries; never fabricate Russian alignment. |
+| `AUD-20261101-14` | P1 · C | Needs review | **Manon Act V mixed-edition variant** — Document J. C. Macy Act V contextual differences versus Acts I–IV; obtain editorial decision before substitutions. |
+| `AUD-20261101-15` | P1 · C | Needs review | **Working English translations across catalogue** — Per act, collate original, speakers, directions, stanza alignment, incipits and English semantics. Working draft ≠ literary approval. |
+| `AUD-20261101-16` | P1 · C | Needs review | **Rights, licensing, translator/source provenance** — Inventory exact editions, translator, license and URL/access information for originals, translations and imagery; remediate unsuitable sources. |
+| `AUD-20261101-17` | P2 · D | Needs verification | **Both outlines and participant attribution** — Check 3-line hierarchy, original/English headings, instrumentals, icons/spacing, no duplicate/collective credits, no untranslated generic role or phantom character. |
+| `AUD-20261101-18` | P2 · D | Needs verification | **Responsive navigation and accessibility** — Keyboard/focus, drawer, sticky offsets, copied links/reload/history, contrast, reduced motion, desktop/mobile/night screenshots and screen reader. |
+| `AUD-20261101-19` | P2 · D | Needs verification | **Favorite Performances card** — Verify approved Tristan/Bernstein media, accurate cast, disclosure behavior, reference label, day/night and mobile. |
+| `AUD-20261101-20` | P2 · D | Needs review | **Madama Butterfly performance provenance** — Recover exactly which user-selected recording was used; do not invent a favorite or metadata. |
+| `AUD-20261101-21` | P2 · E | Open | **Obsolete guidelines inventory and catalogue flags** — Confirm 35/35 registry, reconcile stale 31/11 in §7.12 and 29 librettoPlanned flags; **guideline corrections require user approval**. |
+| `AUD-20261101-22` | P2 · E | Needs verification | **Historical audit/CI inconsistencies** — Reconcile 12/16/31-opera snapshots and old failures against current branch; preserve original evidence without confusing it with active status. |
 
-## Dated audit history
+### New universal cross-opera issue, approved 2026-11-02
 
-### 2026-10-27 14:22 UTC — Established the living global audit file
+| Stable issue ID | Priority · Phase | Status | Scope, action and acceptance |
+|---|---|---|---|
+| `AUD-20261102-01` | P1 · B/D | **In progress — implementation in 2 operas; 0 formally accepted** | Apply the active §1.4 rule to **all 35 current plus future operas** in full and act outlines and relevant character lists. Include each true singer only once, split identifiable joint labels, omit temporary together/others/all cues from participant lists, keep legitimate named ensembles, translate generic roles into English while retaining proper names. Keep original-language cues and English equivalents **inside the libretto**; do not guess unidentified participants. Check `Die Walküre` and `Manon` committed changes with new-head CI + visual review, then inspect the other 33 independently. Record source evidence and act-level sign-off. |
 
-**Action:** Converted the date-specific heading audit into this single, generic tracking file at `docs/reviews/global-audit.md`. Recorded existing findings in the current issue register and retained original evidence below.
+## 5. Earlier issue IDs retained (do not lose prior work)
 
-**New issue discoveries:** None — this was a documentation/organization update, not a fresh audit.
+The 26 older stable IDs below remain searchable and unresolved unless independently verified. Where a 2026-11-01 issue overlaps, preserve the older ID as an **alias** pointing to the newer issue; do not count the same defect twice. Expanded historical descriptions and past test results are preserved verbatim in [the archived tracker snapshot](../archive/reviews/global-audit-snapshot-2026-11-02.md).
 
-**Verified resolved since the baseline:** None.
+| Earlier ID | Carried-forward status | Concern / linkage |
+|---|---|---|
+| `GLOBAL-01` | Needs verification | All 35 require independent desktop/mobile/night visual inspection; previous 16/11 references are historical. |
+| `GLOBAL-02` | Needs verification | Verify outline links, browser history, reloading, sticky header offsets and responsive navigation. |
+| `GLOBAL-03` | Needs review | Primary-source and English editorial review outstanding across catalogue. |
+| `GLOBAL-04` | Needs verification | Check assets/dependencies/Pages deployment at latest approved release build. |
+| `GLOBAL-05` | Needs review | The Oct 26 Magic Flute CI error is historical; check if current version reproduces before labeling as a defect. |
+| `PAG-V01` | Needs review | Pagliacci original/English draft source and literary verification. |
+| `TRO-V01` | In progress (historical) | Il trovatore all four parts entered; Italian/source, English and browser review pending. |
+| `ELISIR-V01` | In progress (historical) | L’elisir d’amore two-act source collation, English and browser review pending. |
+| `RIG-V01` | In progress (historical) | Rigoletto Acts II–III source, English, section and browser review pending. |
+| `AUD-01` | Deferred legacy alias | Die Zauberflöte headings; covered by AUD-20261101-10. |
+| `ZAUB-E01` | Needs review | Die Zauberflöte independent German/English, speaker and stage review. |
+| `AUD-02` | Deferred legacy alias | La fanciulla del West Act I translated headings; covered by AUD-20261101-09. |
+| `AUD-03` | Deferred legacy alias | Tosca Act III instrumental credits; covered by AUD-20261101-11. |
+| `AUD-04` | Needs review legacy alias | Turandot generic headings; covered by AUD-20261101-12. |
+| `AUD-05` | Needs review legacy alias | Carmen generic headings; covered by AUD-20261101-12. |
+| `FIG-V01` | Needs verification | Figaro 81-link browser route and outline behavior. |
+| `BOH-V01` | Needs verification | La Bohème 26 outline landmarks and four tableaux, human browser review. |
+| `MAC-V01` | Needs verification | Macbeth layout, translation, alternative scene placement. |
+| `BUT-V01` | Needs verification | Madama Butterfly source/editorial and visual inspection. |
+| `SAM-V01` | Needs review | Samson et Dalila French/English and source evaluation. |
+| `OTE-V01` | Needs review | Otello original and draft English editorial reconciliation. |
+| `PAR-V01` | Needs review | Parsifal original and draft English editorial reconciliation. |
+| `DON-V01` | Needs review | Don Giovanni source, selective 47-item outline and English. |
+| `COS-V01` | Needs verification | Così fan tutte independent visual review. |
+| `BAR-V01` | Needs verification | Il barbiere di Siviglia independent visual review. |
+| `TRI-V01` | Needs verification | Tristan und Isolde independent visual review. |
 
-**Accepted / intentionally not fixing:** None. Instrumental exceptions are part of the approved design, but no unresolved defect has been individually accepted.
+## 6. Per-opera verification matrix — 35 integrated readers
 
-**Still outstanding:** AUD-01, AUD-02, AUD-03; pending editorial review AUD-04, AUD-05; browser and navigation tests AUD-V01–AUD-V03.
+**Meaning of the participant column:** "Not assessed" means **no November 2 guideline sign-off**, not a demonstrated defect. "Changed; needs verification" means code is committed but the acceptance check is **not complete**. The final status column covers independent source, literary/editorial, and manual reader approval; 35/35 technical loader coverage is **not** 35/35 editorial completion.
 
-**Decision:** Finish the operas' librettos first. Reopen the audit issues afterward. No website code, CSS, libretto text, or `main` branch change is authorized by this log update.
+| # | Opera | Universal participant rule (§1.4) | Complete editorial / visual sign-off | Individual audit focus from 2026-11-01 |
+|---:|---|---|---|---|
+| 01 | *Il barbiere di Siviglia* | **Not assessed** | **Not signed off** | check two-act incipits, Sinfonia/Temporale instrumental headings, direction cues, English review. |
+| 02 | *Tristan und Isolde* | **Not assessed** | **Not signed off** | check German forms, user-selected Bernstein reference, favorite card and full-cast details. |
+| 03 | *Così fan tutte* | **Not assessed** | **Not signed off** | check existing numbered sections, 33 untitled recitatives, Italian/English alignment. |
+| 04 | *Macbeth* | **Not assessed** | **Not signed off** | 19/7/4/11 scene preservation, 1847 alternative, witches group naming, direction cues. |
+| 05 | *Turandot* | **Not assessed** | **Not signed off** | 20 official sections, version/Alfano ending, generic headings. |
+| 06 | *Le nozze di Figaro* | **Not assessed** | **Not signed off** | 81 landmarks, official Nos. 1–29, aliases/long act pages. |
+| 07 | *Samson et Dalila* | **Not assessed** | **Not signed off** | three acts, two Act III tableaux, Bacchanale exception, French text. |
+| 08 | *La fanciulla del West* | **Not assessed** | **Not signed off** | three untranslated headings, early reader outline/listening references. |
+| 09 | *Manon* | Changed Nov 2; **needs verification** | **Not signed off** | five acts; prelude, speakers, machine English, edition-mixed Act V. |
+| 10 | *Otello* | **Not assessed** | **Not signed off** | Italian 3/5/9/4 scene sequence, 59 outline matches and English draft. |
+| 11 | *Parsifal* | **Not assessed** | **Not signed off** | German original, outline landmarks, stage business/English review. |
+| 12 | *Carmen* | **Not assessed** | **Not signed off** | four acts, French dialogue/form distinctions, translated headings. |
+| 13 | *La traviata* | **Not assessed** | **Not signed off** | three acts, source/English correspondence and reader navigation. |
+| 14 | *Die Zauberflöte* | **Not assessed** | **Not signed off** | 49 source scenes, 75 sections, 48 Auftritt entries and spelling. |
+| 15 | *Aida* | **Not assessed** | **Not signed off** | four acts, source numbering and scene/chorus attribution. |
+| 16 | *Tosca* | **Not assessed** | **Not signed off** | 3 acts and 44 outline links, bells landmark, album provenance. |
+| 17 | *Madama Butterfly* | **Not assessed** | **Not signed off** | three acts, 34 sections, selected recording provenance. |
+| 18 | *Rigoletto* | **Not assessed** | **Not signed off** | three acts, Part II–III numbering and English draft. |
+| 19 | *Don Giovanni* | **Not assessed** | **Not signed off** | two acts, deliberate selective 47-entry outline, not every recitative. |
+| 20 | *La Bohème* | **Not assessed** | **Not signed off** | four tableaux, 26 user-selected recording landmarks and title translations. |
+| 21 | *Lucia di Lammermoor* | **Not assessed** | **Not signed off** | three parts, Mad Scene source, attribution and ensemble labels. |
+| 22 | *Eugene Onegin* | **Not assessed** | **Not signed off** | English-first, seven tableaux, source/version transparency. |
+| 23 | *Les contes d’Hoffmann* | **Not assessed** | **Not signed off** | Prologue, three acts, Epilogue, edition and source order. |
+| 24 | *Norma* | **Not assessed** | **Not signed off** | two acts, 20 scenes, source speaker ambiguity in Act I. |
+| 25 | *Il trovatore* | **Not assessed** | **Not signed off** | four parts, Italian original and MHT source fidelity. |
+| 26 | *Das Rheingold* | **Not assessed** | **Not signed off** | four continuous scenes, source directions, English draft. |
+| 27 | *Die Walküre* | Changed Nov 2; **needs verification** | **Not signed off** | two omitted scenic preambles, group cues, long directions. |
+| 28 | *Siegfried* | **Not assessed** | **Not signed off** | nine scenes, German source and English draft. |
+| 29 | *Götterdämmerung* | **Not assessed** | **Not signed off** | prologue, three acts, source variant and English draft. |
+| 30 | *L’elisir d’amore* | **Not assessed** | **Not signed off** | two acts, 19 scenes, original source and drafts. |
+| 31 | *Die Fledermaus* | **Not assessed** | **Not signed off** | three acts, spoken/sung dialogue treatment, German/English. |
+| 32 | *La Cenerentola* | **Not assessed** | **Not signed off** | two acts, 25 scenes, Alidoro Act II Scene IV provisional attribution. |
+| 33 | *Hänsel und Gretel* | **Not assessed** | **Not signed off** | three acts, German scene/speaker source and English. |
+| 34 | *Nabucco* | **Not assessed** | **Not signed off** | four named parts, 25 scenes, translation/source concordance. |
+| 35 | *Pagliacci* | **Not assessed** | **Not signed off** | Prologue \+ two acts, correct two-act navigation and English. |
 
-### 2026-10-27 — Original 16-opera heading audit (baseline)
+**For each opera and each act, use one consistent acceptance checklist:**
 
-**Audit method:** Examined shared CSS, renderer and the 12 remaining opera data modules on `Update`, while retaining previous generated-reader passes for the first four operas.
+- [ ] Primary original source and exact edition/version recorded; legal provenance and translation rights considered.
+- [ ] All acts, scenic divisions, source official numbers/types, sung lines, stage directions, tableaux and original→English pairing checked for completeness.
+- [ ] **English participants:** real individuals and genuine groups only; one entry per entity; split all identifiable joint cues in all source languages, remove temporary "together/others/all" cues, avoid invented or ambiguous members.
+- [ ] **Libretto speakers remain intact:** original-language labels before their sung passages and accurate English equivalents on the English side; no sung text lost when outline credits are cleaned.
+- [ ] **Original names unchanged, descriptive roles English:** accents and approved character spellings preserved; speaker/alias ambiguity documented.
+- [ ] Both outlines respect three-line structure, participant alignment/icons, original/English titles and incipits, correct forms/music-vs-recitative symbols, and instrumental-only no-credit exceptions.
+- [ ] Short and extended stage directions follow §1.4 bracket, italic/yellow and label rules without confusing sung parenthetical text.
+- [ ] Outline anchors, previous/next, mobile navigation, refresh/deep links, keyboard and contrast checked on real pages in desktop/mobile/day/night; no overflow.
+- [ ] English is **explicitly** marked working/unreviewed or has source-grounded editorial sign-off — machine pairing alone is not approval.
+- [ ] Relevant tests and current-head CI pass; intended preview URL verified; user receives direct affected opera/act link plus concise change description and deployment caveat.
+- [ ] Reviewer, date, exact branch/commit, evidence links and final status entered in this tracker; only then mark `Resolved`.
 
-**Result:** Common three-line heading CSS found; most stored bilingual data follows the intended structure. Three confirmed content/attribution concerns identified and two additional editorial checks noted. No full desktop/mobile/night-mode browser visual pass was conducted.
+## 7. Verification and release gates
 
-**Baseline evidence and detailed table:** Preserved in the section below for reference. Later status changes must appear in the issue register and a newer dated history entry; do not rewrite the original findings as if they never happened.
+**Status vocabulary:** `Open` = confirmed unresolved; `In progress` = implementation underway; `Needs verification` = modified or test required; `Needs review` = source/editorial judgment required; `Resolved` = evidence-backed fix, dated; `Accepted` = user-approved exception with rationale; `Deferred` = knowingly postponed. `Not assessed` is only a per-opera checklist state and never means "failed".
 
-## Initial baseline evidence (recorded 2026-10-27)
+Every resolved issue must cite **actual changed paths, commit SHA, source edition if applicable, test name and result, Actions run link, preview target and manual/screenshot check status**. Note when a test is a historical checkpoint. Keep editorial, browser, and publication acceptance separate.
 
-The following preserves the complete technical findings and limitations from the original audit. It is a **historical snapshot**, not the live status register.
+**Release gate:** Current `Update` tests green (not merely old green checks); verified preview commit matches; no unapproved source or translation substitutions; relevant manual day/night/mobile/keyboard checks recorded; approved guidelines met or explicit exceptions recorded; licensing/provenance reviewed; **separate approval requested before any merge into `main`**.
 
-### 1. Approved design to preserve
+## 8. Dated execution log and handover history
 
-The globally approved heading hierarchy applies to **every libretto-reader section and every libretto-outline entry**, including future operas.
+### 2026-11-02 — Unified reviews into this single operational file
 
-1. **Original-language heading:** Large serif, matching the Così fan tutte reference typography; source-grounded title/incipit or supported musical-form label.
-2. **English translation:** Regular **not italic** serif, **1.25rem in the reader**, muted blue-grey `#65798b`. Outline typography is proportionally smaller.
-3. **Character credits:** Smaller italic serif with a discreet person icon, derived from source participants and/or actual libretto speakers, never recording performers.
+- Made `docs/reviews/global-audit.md` the **only active review/repair tracker** on `Update`.
+- Imported 22 November 1 issues and phases A–E from the Google Drive snapshot without renumbering IDs; included all 35 per-opera review slots and the approved Nov 2 participant rule as `AUD-20261102-01`.
+- Preserved original audit content in [global-audit-snapshot-2026-11-02.md](../archive/reviews/global-audit-snapshot-2026-11-02.md). Moved the other review reports into [../archive/reviews/](../archive/reviews/) and the superseded Parsifal plan to [../archive/plans/](../archive/plans/); historical contents retained. No opera source edits in this organization commit.
+- The dated Google Drive roadmap and V1 product specification are retained for reference; **they are not independently updated or active**.
 
-There must be **zero added margin between lines 2 and 3**. Each heading is displayed in the proper order in both the reader and outline. Instrumental-only sections may omit character credits. Never fabricate translations, musical classifications, score numbers, or singers.
+### 2026-11-02 — Phase B source and participant work (on `Update`, test acceptance pending)
 
-The rules belong in shared `styles.css` and `src/libretto-reader.js`, not opera-specific CSS. Layout must be checked at desktop, mobile, and night mode sizes.
+- *Die Walküre* preambles: `cb9fe825` (Act II), `f80c5a88` (Act III), regression `ca5d3f6f`; subsequent participant edits `4ef6a508`, `3094306a`, `b8b859df`.
+- *Manon* translated speaker labels: `ac2e879d`, `2a5c5e66`, `76f0c397`, `322c1cb4`. Updated participant arrays (Acts I–V): `de29e640`, `24ea6f76`, `4e593fba`, `6be3b444`, `75f032e3`.
+- Cross-opera regression `922ce500`; prior audit log commit `05388687`. **Not yet verified on the new head.**
+- Permanent rules agreed and updated in Google Drive [§1.4](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit): ensemble cues in libretto versus genuine unique character names in lists.
 
-### 2. Scope and method
+### 2026-11-01 — Reliable automated checkpoint (historical)
 
-Examined the `Update` branch's:
+- Repo organization and 35 integrated lazy-loaded opera readers documented in the [archived organization report](../archive/reviews/repository-organization-2026-11-01.md).
+- [Run 41363468298](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41363468298): **224/224 Node, 876 Chromium assertions / 70 combinations**; dependent verified `Update` preview passed.
+- Historical `main` merge was `0c49782`; **subsequent `Update` edits have not been authorized for merge**.
 
-- `styles.css` — shared reader, outline, mobile, and night-mode heading selectors.
-- `src/libretto-reader.js` — heading generation, speaker credits, outline rendering and link matching.
-- `PROJECT_GUIDELINES.md` — approved rules and content-grounding conventions.
-- `src/data/libretto-loader.js` and the relevant opera bundles.
-- The act/scene/section data modules for the **12 remaining operas**, plus relevant auxiliary outline metadata.
+## 9. New-chat handover protocol
 
-The prior handoff reported generated-reader checks for four operas. These are preserved without repeating those checks. Static source checks are **not** a full end-to-end browser audit and cannot certify actual rendered typography, spacing, responsive overflow, night-mode contrast or scroll behavior.
+At the beginning of any new chat, read in order:
+1. **This tracker**: checkpoint, phase board, stable issues, today's execution log, next unverified work.
+2. [Active Google Drive guidelines](https://docs.google.com/document/d/1S2FscuJRpW9QACYLr9YNUFRhDiGr0X93q0IIxgcHjc4/edit), especially §1.4 for singer lists and act/full outlines.
+3. [Development workflow](../development-workflow.md) for branch/test mechanics; double-check any historical examples against current repo files.
+4. Current GitHub `Update` head, most recent relevant CI/preview and target opera modules; source materials as needed.
+5. Only if necessary, historical [archive](../archive/reviews/) and [November 1 baseline](https://drive.google.com/file/d/1HrV7yw8iyx1Y3EEC5UyiRNbW6oIBhAY0/view).
 
-The source audit found the intended global CSS properties and responsive/night rules. **No new shared-CSS styling failure was established**. This does not guarantee that every rendered page is visually correct.
+**After each task:** Update issue status and verification evidence **here**, do not create another review file. Give the user a short explanation plus the modified opera's direct act page URL for visual review; distinguish `Update` preview from public `main`. Keep `main` unchanged without explicit approval. If guidelines need changing, present the exact revision and obtain approval before editing the Google Doc.
 
-### 3. Complete 16-opera status table
-
-**Reading this table:** “Prior generated pass” refers to checks done before this report. “Static pass” means source/data paths support the agreed three-line structure, subject to the notes and visual tests. Neither means final visual approval.
-
-| # | Opera | Main sections checked | Libretto reader | Libretto outline | Notes |
-|---:|---|---:|---|---|---|
-| 1 | Così fan tutte | 69 | Prior generated pass | Prior generated pass | Browser visuals not certified |
-| 2 | Il barbiere di Siviglia | 54 | Prior generated pass | Prior generated pass | One documented instrumental exception |
-| 3 | Tristan und Isolde | 11 | Prior generated pass | Prior generated pass | Browser visuals not certified |
-| 4 | Macbeth | 43 | Prior generated pass | Prior generated pass | One documented instrumental exception |
-| 5 | Turandot | 20 | Static pass; form-only titles | Static pass; editorial review | Repeated generic form names merit review |
-| 6 | Le nozze di Figaro | 81 | Static pass | Static pass | All 81 outline metadata route keys matched |
-| 7 | Carmen | 51 | Static pass | Static pass | Mostly form-based headings; instrumental exceptions |
-| 8 | La Bohème | 4 main sections | Static pass | Static pass | 26 outline links source-matched |
-| 9 | Madama Butterfly | 34 | Static pass | Static pass | Explicit bilingual section titles across all 34 sections |
-| 10 | Tosca | 18 | Static pass | **Attribution concern** | Bells/matins instrumental passage has problematic singer fallback |
-| 11 | Die Zauberflöte | 75 | **Content issues** | **Content issues** | 15 pending English headings and 48 generic `Auftritt` headings |
-| 12 | La fanciulla del West | 45 | **One heading issue** | **Same issue** | `Introduzione` missing English heading |
-| 13 | Otello | 62 | Static pass | Static pass | 59 outline links source-matched; translation unreviewed |
-| 14 | Parsifal | 29 | Static pass | Static pass | 29 outline links source-matched; source reconciliation pending |
-| 15 | Don Giovanni | 61 | Static pass | Static pass | 47 outline links source-matched; editorial and source review pending |
-| 16 | Samson et Dalila | 31 | Static pass | Static pass | Bilingual headings present; independent editorial review pending |
-
-**Important counting note:** La Bohème contains four main tableau sections, each with its own deeper listening outline; the four is not the number of outline entries. These counts reflect the reported/generated sections or parsed section objects, not proof of individually rendered visual checks.
-
-### 4. Confirmed issues — preserve for later correction
-
-#### AUD-01 — Die Zauberflöte: incomplete or overly generic headings
-- **Category:** Content/heading metadata, **not** a proven global CSS bug.
-- **Priority:** High.
-- **Observed:** 15 sections rely on a fallback label **“English title pending review”** because their German musical-form names have no explicit translated heading and no shared translation mapping.
-- **Observed:** 48 section headings are generic `Auftritt / Entrance`, which may be inadequate for the site's no-generic-heading standard.
-- **Observed:** The label `Arie mir Chor` needs comparison to source text (possible transcription or spelling issue); do not silently assume a corrected form.
-- **Files:** `src/data/libretto-die-zauberflote-act-1.js`, `src/data/libretto-die-zauberflote-act-2.js`, and `src/data/libretto-die-zauberflote-bundle.js`.
-- **Later action:** Check against the German libretto and a defensible English rendering; add supported metadata, verify characters and the original/English distinction; test generated headings and browser visuals.
-
-#### AUD-02 — La fanciulla del West: missing English heading
-- **Category:** Content/translation fallback, **not** a proven CSS bug.
-- **Priority:** Medium.
-- **Observed:** Act I `Introduzione` has an empty `translatedTitle`; the renderer cannot derive English from a corresponding lyric line, leading to the review-pending placeholder.
-- **Observed:** `Hello, Nick!` and `Hello, Minnie!` also lack explicit translated-title fields, but their aligned English lyric text currently allows the renderer to recover the identical English headings.
-- **File:** `src/data/libretto-la-fanciulla-del-west-act-1.js`.
-- **Later action:** Verify and explicitly document a source-grounded English heading for `Introduzione`; ensure English-language phrases retained from the Italian libretto are handled intentionally.
-
-#### AUD-03 — Tosca: instrumental attribution in outline
-- **Category:** Content attribution/exception, **not** a proven CSS bug.
-- **Priority:** Medium.
-- **Observed:** Act III, Scene I, the bells-ringing-at-matins landmark is linked to stage directions rather than sung lines.
-- **Observed:** When that outline landmark has no speakers, the bundle uses a fallback list including Jailer, Sentinel, Sergeant, Soldiers, and Mario Cavaradossi. A stage-direction/instrumental landmark should not misleadingly assign vocal credits.
-- **Files:** `src/data/libretto-tosca-act-3.js`, `src/data/libretto-tosca-bundle.js`.
-- **Later action:** Verify whether to omit singer credits entirely for this instrumental entry, while retaining the existing landmark and deep link.
-
-### 5. Other editorial observations, not established styling failures
-
-- **Turandot:** 20 sections; original-language musical-form headings and corresponding English form mappings are present. Repeated labels such as `Scena` should be assessed for navigation usefulness and whether a source incipit can be provided without inventing one.
-- **Carmen:** 51 sections; translated musical-form mappings are present. Review generic labels such as `Scène` against the no-generic-heading design requirement. Introductory/prelude/entracte exceptions must not receive invented singers.
-- **Le nozze di Figaro:** All **81** section route keys matched the **81** entries in `src/data/figaro-outline-metadata.js`; no missing or duplicated route keys were found in that check.
-- **La Bohème:** Four main tableaux plus 26 translated outline landmarks; all 26 source-match conditions checked successfully.
-- **Madama Butterfly:** All 34 parsed sections had explicit original-language and English titles in the inspected data.
-- **Tosca:** All 18 main parsed sections had explicit bilingual titles; the attribution issue relates to the separate outline entry.
-- **Otello:** All 59 inspected outline landmarks matched their specified source turns. English translation remains an unreviewed draft.
-- **Parsifal:** All 29 inspected outline landmarks matched their specified source turns. The German source and machine-assisted English draft still need editorial reconciliation.
-- **Don Giovanni:** All 47 outline landmarks matched the specified source turns. The listening outline is selective, and does not necessarily list every recitative. The imported source and draft English remain unreviewed.
-- **Samson et Dalila:** Explicit original/English headings exist in its 31 main sections. Editorial sign-off remains distinct from heading structure.
-
-### 6. Outline-link checks and verification limits
-
-The audit evaluated the stored `match`, `speaker`, `sourceSection`, and/or `sourceTurn` conditions that the renderer uses to resolve outline links. In the analyzed data, **205 outline entries** matched source-turn conditions:
-
-| Opera | Stored outline entries source-matched |
-|---|---:|
-| La Bohème | 26 |
-| Tosca | 44 |
-| Otello | 59 |
-| Parsifal | 29 |
-| Don Giovanni | 47 |
-| **Total** | **205** |
-
-This is **not** proof that all links work when clicked in a browser. In particular, browser-side routing, scroll offset, fixed headers, anchors on mobile, and page reloading must still be tested. Other operas were checked structurally but are **not** included in this 205-link figure.
-
-**Not completed:** Real-browser screenshot/visual inspection of each opera's reader and full outline; desktop/tablet/mobile overflow checks; night-mode appearance and contrast; live navigation/scroll/deep-link reopening; exhaustive literary or musical source validation.
-
-**Branch distinction:** The live GitHub Pages URL may use a different deployed branch. The source of truth for later testing and corrections is the latest intended `Update` build, not an assumption that the published `main` site is identical.
-
-### 7. Deferred follow-up plan
-
-**Do not start correcting heading issues now.** First complete/populate and editorially review the remaining librettos. On resumption:
-
-1. Recheck `Update` for intervening changes and compare against this saved audit.
-2. Resolve **AUD-01** in Die Zauberflöte from the verified German source and translations.
-3. Resolve **AUD-02** in La fanciulla del West without inventing English.
-4. Resolve **AUD-03** in Tosca, honoring instrumental-only exceptions.
-5. Review repeated generic headings in Turandot and Carmen and any new heading content introduced by libretto completion.
-6. Generate/check all sections for all **16** operas, not merely the existence of global CSS.
-7. Conduct actual browser visual checks: original title, English non-italic/color/size, italic character line plus person icon, **no spacing between lines 2 and 3**, source-grounded credits, ordering, instrumental exceptions, outline links, desktop/mobile/night mode.
-8. Document remaining issues separately, and request user review **before** changing website functionality or styles.
-
-**Repository guardrail:** All subsequent review work remains on **`Update`**. Never modify or merge into **`main`** without explicit authorization. Avoid unrelated functionality changes.
-
-### 8. Reference paths
-
-- Global styling: [`styles.css`](../../styles.css)
-- Shared heading/reader/outline rendering: [`src/libretto-reader.js`](../../src/libretto-reader.js)
-- Project conventions: [Drive product & implementation specification](https://docs.google.com/document/d/1f6nHTppsfuElAV87YS4LReIBMRg2BJb7KFwFlglMb_g/edit) (migrated guidelines); historical repository source is in [archive.md](archive.md).
-- Opera loader registry: [`src/data/libretto-loader.js`](../../src/data/libretto-loader.js)
-- Figaro outline metadata: [`src/data/figaro-outline-metadata.js`](../../src/data/figaro-outline-metadata.js)
-- Branch: https://github.com/AsuraFY/my-favorite-operas/tree/Update
-- Public website: https://asurafy.github.io/my-favorite-operas/ (**not a substitute for testing `Update`**)
-
----
-
-**Handoff state:** Audit preserved. **Pause heading fixes until librettos are completed**, then continue with the deferred follow-up plan. No code, CSS, libretto, or `main` branch changes are authorized by this report.
-
+**Next remaining operations at this checkpoint:** (1) verify latest `Update` CI/preview and Manon/Walküre visuals; (2) resolve Manon Act I Prélude/edition evidence; (3) audit stage-direction semantic cues in Manon and Die Walküre; (4) fill source-backed La fanciulla del West Act I English headings; (5) progress through all-35 source and participant matrix before editorial and release sign-off.
