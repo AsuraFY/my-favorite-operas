@@ -27,7 +27,7 @@ export const oneginAct1Scenes=[
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Introduction\nThe garden of the Larin country estate. On the left a house with a terrace; on the right, a shady tree. It is early evening.\nMadame Larina is sitting under the tree making jam on qa portable stove; Filipyevna is helping her. The doors leading from the house onto the terrace are open and the voices of the two girls, singing a duet, can be heard coming from within.",
+            "translation": "Introduction\nThe garden of the Larin country estate. On the left a house with a terrace; on the right, a shady tree. It is early evening.\nMadame Larina is sitting under the tree making jam on a portable stove; Filipyevna is helping her. The doors leading from the house onto the terrace are open and the voices of the two girls, singing a duet, can be heard coming from within.",
             "literalText": true,
             "sourceStartIndex": 0,
             "sourceLineCount": 3
@@ -1375,7 +1375,7 @@ export const oneginAct1Scenes=[
             "speaker": "OLGA",
             "speakerTranslation": "OLGA",
             "original": "",
-            "translation": "In rural tranquillity …\n… we grew up together;\nand do you remember how our parents\ndestined us, even as children, for cach other?",
+            "translation": "In rural tranquillity …\n… we grew up together;\nand do you remember how our parents\ndestined us, even as children, for each other?",
             "literalText": true,
             "sourceStartIndex": 366,
             "sourceLineCount": 4
@@ -1465,7 +1465,7 @@ export const oneginAct1Scenes=[
             "speaker": "ONEGIN",
             "speakerTranslation": "ONEGIN",
             "original": "",
-            "translation": "My uncle was a man of the highest principels;\nwhen he finally took to his bed\nhe forced the respect of all\nand it was the best thing he could do.\nMay others profit from his example!\nBut, my God, what a bore it was,\nsitting by an invalid day and night,\nnever daring to move a step away!",
+            "translation": "My uncle was a man of the highest principles;\nwhen he finally took to his bed\nhe forced the respect of all\nand it was the best thing he could do.\nMay others profit from his example!\nBut, my God, what a bore it was,\nsitting by an invalid day and night,\nnever daring to move a step away!",
             "literalText": true,
             "sourceStartIndex": 384,
             "sourceLineCount": 8
@@ -1483,7 +1483,7 @@ export const oneginAct1Scenes=[
             "speaker": "FILIPYEVNA",
             "speakerTranslation": "FILIPYEVNA",
             "original": "",
-            "translation": "There goes my little dove,\nwith meekly drooping head, downcast eyes.\nShe's dread fully shy!\nI wonder!\nSuppose she's taken a fancy to this new young man? …",
+            "translation": "There goes my little dove,\nwith meekly drooping head, downcast eyes.\nShe's dreadfully shy!\nI wonder!\nSuppose she's taken a fancy to this new young man? …",
             "literalText": true,
             "sourceStartIndex": 393,
             "sourceLineCount": 5
@@ -1862,7 +1862,7 @@ export const oneginAct1Scenes=[
             "speaker": "TATYANA",
             "speakerTranslation": "TATYANA",
             "original": "",
-            "translation": "'Who are you'? My guardian angel\nor a wily tempter?\nPut my doubts at rest.\nMaybe this is all an empty dream,\nthe self?deception of an inexperienced soul,\nand something quite different is to be …'",
+            "translation": "'Who are you'? My guardian angel\nor a wily tempter?\nPut my doubts at rest.\nMaybe this is all an empty dream,\nthe self-deception of an inexperienced soul,\nand something quite different is to be …'",
             "literalText": true,
             "sourceStartIndex": 531,
             "sourceLineCount": 6
