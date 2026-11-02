@@ -10,10 +10,17 @@ import re
 import urllib.request
 from pathlib import Path
 
+import sys
+from legacy_import_guard import guard_existing_published_libretto
+if __name__ == "__main__":
+    guard_existing_published_libretto("manon", sys.argv)
+    if "--check" in sys.argv:
+        sys.exit(0)
+
 SOURCE_URL = "https://raw.githubusercontent.com/martin-he543/sottovoce/main/public/libretti/texts/Q842063.json"
 FALLBACK_URL = "https://raw.githubusercontent.com/martin-he543/sottovoce/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q842063.json"
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "src" / "data"
+DATA = ROOT / "src" / "data" / "operas" / "librettos" / "manon"
 SOURCE_CREDIT = "https://opera-guide.ch/operas/manon/libretto/fr/"
 MODEL_NAME = "Helsinki-NLP/opus-mt-fr-en"
 ACTS = [
@@ -140,7 +147,7 @@ def build(parsed,translations):
                 }[act_number],
                 "sections":sections,
             })
-        target=DATA/f"libretto-manon-act-{act_number}.js"
+        target=DATA/f"act-{act_number}.js"
         target.write_text(
             f"// Manon (Massenet) — Act {act_number}, French transcription from {SOURCE_CREDIT}\n"
             f"// English: independently generated {MODEL_NAME} machine-translation working draft.\n"
@@ -156,13 +163,13 @@ def make_bundle():
 // Acts I-IV: public-domain French transcribed at Opera Guide via Sottovoce;
 // independent MarianMT English working translation, NOT editorially reviewed.
 // Act V: 1895 J. C. Macy public-domain French/English edition (adapted variant).
-import {getOpera} from './operas.js';
-import {operaInformation} from './opera-information.js';
-import {manonActOneScenes} from './libretto-manon-act-1.js?v=manon-full-20261029';
-import {manonActTwoScenes} from './libretto-manon-act-2.js?v=manon-full-20261029';
-import {manonActThreeScenes} from './libretto-manon-act-3.js?v=manon-full-20261029';
-import {manonActFourScenes} from './libretto-manon-act-4.js?v=manon-full-20261029';
-import {manonActFiveScenes} from './libretto-manon-act-5.js?v=manon-full-20261029';
+import {getOpera} from '../../catalog.js';
+import {operaInformation} from '../../information.js';
+import {manonActOneScenes} from './act-1.js?v=manon-full-20261029';
+import {manonActTwoScenes} from './act-2.js?v=manon-full-20261029';
+import {manonActThreeScenes} from './act-3.js?v=manon-full-20261029';
+import {manonActFourScenes} from './act-4.js?v=manon-full-20261029';
+import {manonActFiveScenes} from './act-5.js?v=manon-full-20261029';
 const info = operaInformation['manon'];
 export const manon = {
  slug:'manon',opera:getOpera('manon'),composerShort:'J. MASSENET',mobileComposer:'Jules Massenet',
@@ -185,10 +192,10 @@ export const manon = {
  source:'French Acts I–IV: public-domain Meilhac/Gille libretto transcribed via https://opera-guide.ch/operas/manon/libretto/fr/ and Sottovoce Q842063. English Acts I–IV: newly generated Helsinki-NLP/opus-mt-fr-en (MarianMT) English working draft, not a published translation, not verified or line-by-line editorially reviewed. Act V: public-domain 1895 J. C. Macy bilingual edition, University of Rochester Sibley Music Library https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemId=28674. The 1895 edition presents Act V as an alternate Scene II of Act IV; versions differ. Section labels in Acts I–IV use source incipits as listening landmarks; not claimed musical number headings. Native-browser tests and authoritative critical collation pending.'
 };
 """
-    (DATA/"libretto-manon-bundle.js").write_text(content,encoding="utf-8")
-    loader=DATA/"libretto-loader.js"
+    (DATA/"bundle.js").write_text(content,encoding="utf-8")
+    loader=ROOT/"src/data/operas/libretto-loader.js"
     txt=loader.read_text(encoding="utf-8")
-    target='  "manon": () => import("./libretto-manon-bundle.js?v=manon-full-20261029").then(module => module.manon),\n'
+    target='  "manon": () => import("./librettos/manon/bundle.js?v=manon-full-20261029").then(module => module.manon),\n'
     if '"manon":' not in txt:
         txt=txt.replace('const loaders = Object.freeze({\n','const loaders = Object.freeze({\n'+target,1)
         loader.write_text(txt,encoding="utf-8")

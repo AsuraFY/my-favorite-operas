@@ -1,42 +1,38 @@
-name: Build Manon bilingual working libretto
+name: Validate historical Manon importer (read-only)
+
+# This importer was a one-time content generator. No push trigger and no writes.
 on:
-  push:
-    branches: [Update]
-    paths:
-      - 'scripts/import-manon.py'
-      - '.github/workflows/build-manon.yml'
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
+
 jobs:
-  import:
+  validate:
+    name: Safe source-import preflight
     runs-on: ubuntu-latest
-    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: Update
-          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: pip
-      - name: Install French-English translation dependencies
-        run: pip install 'torch>=2.2,<3' 'transformers>=4.41,<5' 'sentencepiece>=0.2' 'sacremoses>=0.1'
-      - name: Import original text and create aligned English draft
-        run: python scripts/import-manon.py
-      - name: Syntax and completeness checks
+      - name: Validate legacy Python syntax without importing optional dependencies
         run: |
-          node --check src/data/libretto-manon-bundle.js
-          for n in 1 2 3 4 5; do node --check "src/data/libretto-manon-act-$n.js"; done
-          node --check src/data/libretto-loader.js
-          node --test
-      - name: Commit generated librettos to Update
+          python - <<'PY'
+          import ast
+          from pathlib import Path
+          for path in sorted(Path('scripts').glob('import*.py')):
+              ast.parse(path.read_text(encoding='utf-8'), filename=str(path))
+              print('Syntax OK:', path)
+          PY
+      - name: Read-only preflight for already integrated librettos
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/libretto-manon-act-{1,2,3,4}.js src/data/libretto-manon-bundle.js src/data/libretto-loader.js
-          if ! git diff --cached --quiet; then
-            git commit -m "Integrate Manon acts I-V with independent bilingual draft"
-            git push origin HEAD:Update
-          fi
+          python -B scripts/import-manon.py --check
+          python -B scripts/import_die_zauberflote_act_1.py --check
+          python -B scripts/import_die_zauberflote_act_2.py --check
+          python -B scripts/import_fanciulla_all_acts.py --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run regression suite
+        run: npm test

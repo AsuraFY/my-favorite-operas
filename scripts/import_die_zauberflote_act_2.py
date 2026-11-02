@@ -12,6 +12,13 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 
+from legacy_import_guard import guard_existing_published_libretto
+import sys
+if __name__ == "__main__":
+    guard_existing_published_libretto("the-magic-flute", sys.argv)
+    if "--check" in sys.argv:
+        sys.exit(0)
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = "https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/"
 FINAL_LINE = "Die Schönheit und Weisheit mit ewiger Kron'."
@@ -244,19 +251,19 @@ def replace_once(path,old,new):
 
 
 def integrate(scenes,source_count):
-    act=ROOT/'src/data/libretto-die-zauberflote-act-2.js'
+    act=ROOT/'src/data/operas/librettos/the-magic-flute/act-2.js'
     act.write_text('// Emanuel Schikaneder (1791), Opera Guide: ZWEITER AKT, Auftritte 1–30.\n'
       '// German retains source orthography and printed line order.\n'
       '// English is a fresh offline machine-assisted draft, NOT editorially reviewed.\n'
       '// Source: '+SOURCE+' · checked 26 October 2026.\n'
       'export const dieZauberfloteActTwoScenes = '+json.dumps(scenes,ensure_ascii=False,indent=2)+';\n',encoding='utf8')
-    b=ROOT/'src/data/libretto-die-zauberflote-bundle.js'
+    b=ROOT/'src/data/operas/librettos/the-magic-flute/bundle.js'
     c=b.read_text(encoding='utf8')
     assert 'dieZauberfloteActTwoScenes' not in c,'Already installed Act II'
     c=c.replace('// Die Zauberflöte: Act I only. Act II is not yet populated.',
       '// Die Zauberflöte: both original German acts; English drafts await review.')
     c=c.replace('export const dieZauberflote = {',
-      'import { dieZauberfloteActTwoScenes } from "./libretto-die-zauberflote-act-2.js";\nexport const dieZauberflote = {')
+      'import { dieZauberfloteActTwoScenes } from "./act-2.js";\nexport const dieZauberflote = {')
     c=c.replace('  partialLibretto: true, // Only Act I is published; Act II is not yet available.\n','')
     c=c.replace('scenes: dieZauberfloteActOneScenes }],',
                 'scenes: dieZauberfloteActOneScenes },\n    { number: 2, originalHeading: "Zweiter Akt", scenes: dieZauberfloteActTwoScenes }],')
@@ -269,7 +276,7 @@ def integrate(scenes,source_count):
     b.write_text(c,encoding='utf8')
     original='zauberflote-act1-20261026'
     updated='zauberflote-acts1-2-20261026'
-    for name in ('src/data/libretto-loader.js','src/data/libretto-registry.js',
+    for name in ('src/data/operas/libretto-loader.js','src/data/operas/libretto-registry.js',
                  'tests/die-zauberflote-act-1.test.mjs'):
         f=ROOT/name
         replace_once(f,original,updated)
@@ -295,9 +302,9 @@ def integrate(scenes,source_count):
     test_file=ROOT/'tests/die-zauberflote-act-2.test.mjs'
     test_file.write_text('''import test from "node:test";
 import assert from "node:assert/strict";
-import { dieZauberflote } from "../src/data/libretto-die-zauberflote-bundle.js?v=zauberflote-acts1-2-20261026";
-import { getLibretto } from "../src/data/libretto-registry.js";
-import { loadLibretto } from "../src/data/libretto-loader.js";
+import { dieZauberflote } from "../src/data/operas/librettos/the-magic-flute/bundle.js?v=zauberflote-acts1-2-20261026";
+import { getLibretto } from "../src/data/operas/libretto-registry.js";
+import { loadLibretto } from "../src/data/operas/libretto-loader.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
 
@@ -353,7 +360,7 @@ test("Act II is available in the bilingual reader and full-opera outline",()=>{
 
 
 def main():
-    if (ROOT/'src/data/libretto-die-zauberflote-act-2.js').exists():
+    if (ROOT/'src/data/operas/librettos/the-magic-flute/act-2.js').exists():
         print('Act II already exists; source importer is idempotent.')
         return
     lines=source_lines();print('Opera Guide German Act II source rows:',len(lines))

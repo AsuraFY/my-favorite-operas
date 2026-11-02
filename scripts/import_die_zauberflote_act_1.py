@@ -12,6 +12,13 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 
+from legacy_import_guard import guard_existing_published_libretto
+import sys
+if __name__ == "__main__":
+    guard_existing_published_libretto("the-magic-flute", sys.argv)
+    if "--check" in sys.argv:
+        sys.exit(0)
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = 'https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/'
 SCENES = {
@@ -238,16 +245,16 @@ def translate_all(scenes):
 
 
 def write_content(scenes):
-    act = ROOT/'src/data/libretto-die-zauberflote-act-1.js'
+    act = ROOT/'src/data/operas/librettos/the-magic-flute/act-1.js'
     act.write_text('// Opera Guide, German Die Zauberflöte, ERSTER AKT (Auftritte 1–19).\n'
       '// German: historical Emanuel Schikaneder libretto (1791), not modernized.\n'
       '// English: offline machine-assisted draft; NOT editorially reviewed.\n'
       '// Source: '+SOURCE+' (retrieved 26 October 2026).\n'
       'export const dieZauberfloteActOneScenes = '+json.dumps(scenes,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
-    bundle = ROOT/'src/data/libretto-die-zauberflote-bundle.js'
+    bundle = ROOT/'src/data/operas/librettos/the-magic-flute/bundle.js'
     bundle.write_text('''// Die Zauberflöte: Act I only. Act II is not yet populated.
 import { getOpera } from "./operas.js";
-import { dieZauberfloteActOneScenes } from "./libretto-die-zauberflote-act-1.js";
+import { dieZauberfloteActOneScenes } from "./act-1.js";
 export const dieZauberflote = {
   slug: "the-magic-flute",
   opera: getOpera("the-magic-flute"),
@@ -287,14 +294,14 @@ export const dieZauberflote = {
   source: "Act I only. German source: Emanuel Schikaneder (1791), Opera Guide, https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/ (retrieved 26 October 2026). All 19 source Auftritte and numbered musical sections 1–8 retained. German text keeps historical orthography. English is an offline machine-assisted first draft and HAS NOT been editorially reviewed; do not cite as a verified translation. Act II is not yet implemented."
 };
 ''',encoding='utf-8')
-    loader = ROOT/'src/data/libretto-loader.js'
+    loader = ROOT/'src/data/operas/libretto-loader.js'
     code=loader.read_text(encoding='utf-8')
     if '"the-magic-flute": ()' not in code:
         needle='  "samson-et-dalila": () => import('
         assert needle in code, 'Cannot find loader insertion point'
         code=code.replace(needle, '  "the-magic-flute": () => import("./libretto-die-zauberflote-bundle.js?v=zauberflote-act1-20261026").then(module => module.dieZauberflote),\n'+needle)
         loader.write_text(code,encoding='utf-8')
-    reg=ROOT/'src/data/libretto-registry.js'
+    reg=ROOT/'src/data/operas/libretto-registry.js'
     code=reg.read_text(encoding='utf-8')
     if 'dieZauberflote' not in code:
         needle='const completeLibretti ='
@@ -306,8 +313,8 @@ export const dieZauberflote = {
     test_file=ROOT/'tests/die-zauberflote-act-1.test.mjs'
     test_file.write_text('''import test from "node:test";
 import assert from "node:assert/strict";
-import {dieZauberflote} from "../src/data/libretto-die-zauberflote-bundle.js?v=zauberflote-act1-20261026";
-import {hasCompleteLibretto,loadLibretto} from "../src/data/libretto-loader.js";
+import {dieZauberflote} from "../src/data/operas/librettos/the-magic-flute/bundle.js?v=zauberflote-act1-20261026";
+import {hasCompleteLibretto,loadLibretto} from "../src/data/operas/libretto-loader.js";
 import {createLibrettoRenderer} from "../src/libretto-reader.js";
 import {resetReaderLocation} from "./helpers/libretto-helpers.mjs";
 

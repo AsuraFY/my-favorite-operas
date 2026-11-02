@@ -15,6 +15,13 @@ import time
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup, NavigableString
 
+from legacy_import_guard import guard_existing_published_libretto
+import sys
+if __name__ == "__main__":
+    guard_existing_published_libretto("la-fanciulla-del-west", sys.argv)
+    if "--check" in sys.argv:
+        sys.exit(0)
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = 'https://www.flaminioonline.it/Guide/Puccini/Puccini-West78-testo.html'
 EDITION = 'Civinini and Zangarini, Ricordi (1910), Italian libretto as transcribed by Flaminio Online'
@@ -300,9 +307,9 @@ def write_outputs():
     acts=fetch_source()
     sections={a:make_sections(acts,a) for a in (1,2,3)}
     translate(sections)
-    out=ROOT/'src/data'
+    out=ROOT/'src/data/operas/librettos/la-fanciulla-del-west'
     for act in (1,2,3):
-        path=out/f'libretto-la-fanciulla-del-west-act-{act}.js'
+        path=out/f'act-{act}.js'
         obj=[{'number':1,'originalHeading':HEADINGS[act-1],
             'translatedHeading':'Act '+('I','II','III')[act-1],
             'sections':sections[act],'summary':''}]
@@ -312,9 +319,9 @@ def write_outputs():
         path.write_text(header+f'export const fanciullaAct{act}Scenes = '+json.dumps(obj,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
     bundle='''// Complete three-act Italian source, English unreviewed draft.
 import { getOpera } from "./operas.js";
-import { fanciullaAct1Scenes } from "./libretto-la-fanciulla-del-west-act-1.js";
-import { fanciullaAct2Scenes } from "./libretto-la-fanciulla-del-west-act-2.js";
-import { fanciullaAct3Scenes } from "./libretto-la-fanciulla-del-west-act-3.js";
+import { fanciullaAct1Scenes } from "./act-1.js";
+import { fanciullaAct2Scenes } from "./act-2.js";
+import { fanciullaAct3Scenes } from "./act-3.js";
 export const fanciulla = {
   slug: "la-fanciulla-del-west",
   opera: getOpera("la-fanciulla-del-west"),
@@ -350,17 +357,17 @@ export const fanciulla = {
   source: "Three-act Italian text: Guelfo Civinini and Carlo Zangarini, La fanciulla del West, Ricordi (1910), transcribed at https://www.flaminioonline.it/Guide/Puccini/Puccini-West78-testo.html (retrieved 26 October 2026). The source contains act headings but no numbered scenes or musical sections; neutral passage links and source-verified lyric incipits are editorial navigation, NOT official numbers or formal titles. English is an offline machine-assisted draft and HAS NOT been editorially reviewed."
 };
 '''
-    (out/'libretto-la-fanciulla-del-west-bundle.js').write_text(bundle,encoding='utf-8')
+    (out/'bundle.js').write_text(bundle,encoding='utf-8')
     def rewrite(path,old,new):
         p=ROOT/path;c=p.read_text(encoding='utf8')
         if old not in c:raise ValueError('Missing patch marker '+str(path)+' '+old[:80])
         p.write_text(c.replace(old,new),encoding='utf8')
-    rewrite('src/data/libretto-loader.js',
+    rewrite('src/data/operas/libretto-loader.js',
       '  "samson-et-dalila": () => import(',
-      '  "la-fanciulla-del-west": () => import("./libretto-la-fanciulla-del-west-bundle.js?v=fanciulla-three-acts-20261026").then(module => module.fanciulla),\n  "samson-et-dalila": () => import(')
-    rewrite('src/data/libretto-registry.js',
+      '  "la-fanciulla-del-west": () => import("./bundle.js?v=fanciulla-three-acts-20261026").then(module => module.fanciulla),\n  "samson-et-dalila": () => import(')
+    rewrite('src/data/operas/libretto-registry.js',
       'const completeLibretti = {',
-      'import { fanciulla } from "./libretto-la-fanciulla-del-west-bundle.js?v=fanciulla-three-acts-20261026";\n\nconst completeLibretti = { [fanciulla.slug]: fanciulla, ')
+      'import { fanciulla } from "./bundle.js?v=fanciulla-three-acts-20261026";\n\nconst completeLibretti = { [fanciulla.slug]: fanciulla, ')
     for path in ['tests/lazy-libretto-loading.test.mjs','tests/site-dependency-integrity.test.mjs','tests/libretto-content.test.mjs']:
         rewrite(path,'librettoCatalog.length, 12','librettoCatalog.length, 13')
     rewrite('tests/lazy-libretto-loading.test.mjs','(loader.match(/: \\(\\) => import\\(/g) || []).length, 12','(loader.match(/: \\(\\) => import\\(/g) || []).length, 13')
@@ -372,9 +379,9 @@ export const fanciulla = {
     path=ROOT/'tests/fanciulla-del-west-complete.test.mjs'
     path.write_text('''import test from "node:test";
 import assert from "node:assert/strict";
-import { fanciulla } from "../src/data/libretto-la-fanciulla-del-west-bundle.js?v=fanciulla-three-acts-20261026";
-import { getLibretto } from "../src/data/libretto-registry.js";
-import { loadLibretto, hasCompleteLibretto } from "../src/data/libretto-loader.js";
+import { fanciulla } from "../src/data/bundle.js?v=fanciulla-three-acts-20261026";
+import { getLibretto } from "../src/data/operas/libretto-registry.js";
+import { loadLibretto, hasCompleteLibretto } from "../src/data/operas/libretto-loader.js";
 import { createLibrettoRenderer } from "../src/libretto-reader.js";
 import { resetReaderLocation } from "./helpers/libretto-helpers.mjs";
 test("all three Flaminio acts have complete bilingual aligned text, speakers and directions", async()=>{
