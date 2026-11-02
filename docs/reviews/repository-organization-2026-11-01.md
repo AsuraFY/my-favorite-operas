@@ -23,3 +23,11 @@ The relocation and import-path repairs are complete on `Update`. GitHub Actions 
 **Existing generator scripts remain legacy utilities:** `scripts/import-manon.py`, both `scripts/import_die_zauberflote_act_*.py` and `scripts/import_fanciulla_all_acts.py` still refer to the former flat `src/data` layout. They were intentionally preserved, not executed. **Do not run them or dispatch `build-manon.yml` until their output paths and code-generation templates have been migrated and tested**, or they could create duplicate files in the old locations. Migrating these source-processing scripts is a follow-up maintenance task, not a prerequisite for the verified website runtime.
 
 The branch `main` was not changed by this refactor. Do not merge until explicitly authorized.
+
+## Legacy import-script safety remediation — 2026-11-01
+
+- Four historical source importers now use the reorganized source-file paths and the shared `scripts/legacy_import_guard.py` preflight.
+- `--check` only confirms the existing completed bundle and expected act files; it performs **no network request, translation, regeneration or file write**. Normal execution is refused to prevent overwriting accepted texts or reviving obsolete partial bundles/tests. These importers are archived, **not approved regeneration tools**.
+- `.github/workflows/build-manon.yml` is **manual/read-only only** (no push trigger, no write permission, no git push). It validates syntax, checks the completed files and runs Node tests.
+- Historical generated bundle and test templates remain archival: do not reactivate regeneration without separately updating their content assumptions, source provenance and tests, and reviewing the proposed changes.
+- Commit: `a471c2e8526e36570068b33a3e452b4bbaa82617`.
