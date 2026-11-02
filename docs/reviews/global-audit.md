@@ -71,6 +71,18 @@
 
 ## Dated update log
 
+### 2026-11-02 (UTC) — Phase B reopened: universal participant naming in Die Walküre and Manon
+
+User-approved universal rule (Google Drive Opera Website Guidelines §1.4): unique identifiable singers/genuine ensembles, English descriptive roles, original proper names, expanded joint cues, and no temporary collective cues in outline participant lists. Original and translated speaker cues must be preserved inside the sung libretto.
+
+**Die Walküre:** Acts I–III participant arrays reconciled against actual original singer cues; voice attributions and joined German names map to individual singers, with the eight identifiable Valkyries used for eight-Valkyrie group cues. Original German and English sung texts unchanged. Commits 4ef6a508, 3094306a, b8b859df.
+
+**Manon:** Acts I–V participant arrays remove collective singing instructions such as The Five Together, The Others Together, The Other Four, Everyone, Everyone Else; retain real groups and split named joint cues. Sung texts and original cue attributions unchanged. Commits de29e640, 24ea6f76, 4e593fba, 6be3b444, 75f032e3.
+
+Added focused regression tests in tests/opera-participant-names.test.mjs (922ce500). **Status: Needs verification** — fresh CI, browser tests, and deployment for this head have not yet been confirmed. Existing Manon source-edition/prelude/editorial tasks remain outstanding; main untouched.
+
+
+
 ### 2026-11-02 (UTC) — Phase B / Manon Acts I–IV English speaker and outline labels
 
 **Issue:** AUD-20261101-06 and the speaker-label portion of AUD-20261101-05. Corrected generic and collective speaker translations on the English side while keeping French source cues untouched. For each original act, updated `speakerTranslation` for named generic roles and groups and applied deduplicated English participant lists in its musical/reading section outlines. Joint cues retain their source speaker string and are rendered in the English equivalent; outline credits split clear joint cues into individual members. All source-speaker, original and translated text values were checked unchanged by the transformation.
