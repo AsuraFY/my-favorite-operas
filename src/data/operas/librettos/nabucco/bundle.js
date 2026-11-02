@@ -1,7 +1,4 @@
 // Nabucco — all four dramatic parts in bilingual Italian-English working text.
-// Italian public-domain libretto by Temistocle Solera: https://www.librettidopera.it/nabucco/nabucco.html
-// Structured transcription Sottovoce Q202230. Reference https://opera-guide.ch/operas/nabucco/libretto/it/
-// English: independently written AI-generated working translation awaiting editorial review.
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
 import { nabuccoActOneScenes } from './act-1.js?v=nabucco-act1-20261029';
