@@ -105,7 +105,7 @@ export const trovatoreActTwoScenes = [
             "speaker": "AZUCENA",
             "speakerTranslation": "Azucena",
             "original": "Del pari mesta\nChe la storia funesta\nDa cui tragge argomento!",
-            "translation": "As sad as the terrible story\nFrom which it takes its theme!",
+            "translation": "Just as sorrowful\nAs the terrible story\nFrom which it takes its theme!",
             "literalText": true
           },
           {
@@ -189,7 +189,7 @@ export const trovatoreActTwoScenes = [
             "speaker": "AZUCENA",
             "speakerTranslation": "Azucena",
             "original": "E tu la ignori,\nTu pur!... Ma, giovinetto, i passi tuoi\nD'ambizion lo sprone\nLungi traea!... Dell'ava il fine acerbo\nE quest'istoria... La incolpò superbo\nConte di malefizio, onde asserìa\nColto un bambin suo figlio... Essa bruciata\nVenne ov'arde quel foco!",
-            "translation": "And you do not know it,\nNot even you? When you were a boy,\nAmbition's spur carried you\nFar away! Your grandmother's cruel end,\nAnd this story... A proud Count accused her\nOf casting a spell upon his child.\nShe was burned where that fire burns!",
+            "translation": "And you know nothing of it,\nNot even you! Yet, as a young man, your steps\nWere driven far away\nBy ambition's spur!... Your grandmother's bitter fate\nAnd this tale... A proud count accused her\nOf sorcery, claiming she had bewitched\nHis infant son... She was burned\nWhere that fire still burns!",
             "literalText": true
           },
           {
@@ -329,7 +329,7 @@ export const trovatoreActTwoScenes = [
             "speaker": "AZUCENA",
             "speakerTranslation": "Azucena",
             "original": "A me, se vivi ancora,\nNol dêi? Notturna, nei pugnati campi\nDi Pelilla, ove spento\nFama ti disse, a darti\nSepoltura non mossi?\nLa fuggente aura vital\nNon iscovrì, nel seno\nNon t'arrestò materno affetto?...\nE quante cure non spesi\nA risanar le tante ferite! ...",
-            "translation": "Is it not to me that you owe your life?\nAt night on the battlefield\nOf Pelilla, where rumor said\nYou had fallen, did I not go\nTo bury you? Did I not discover\nThe faint breath of life, and did a mother's love\nNot hold it in my breast? How many cares\nDid I expend to heal your many wounds!",
+            "translation": "Is it not to me\nThat you owe your life? At night on the battlefield\nOf Pelilla, where rumor said\nYou had fallen, did I not go\nTo give you burial?\nDid I not find your fading breath of life,\nAnd did a mother's love not\nHold it within your breast?...\nAnd how much care did I devote\nTo healing your many wounds!",
             "literalText": true
           },
           {
@@ -350,7 +350,7 @@ export const trovatoreActTwoScenes = [
             "speaker": "AZUCENA",
             "speakerTranslation": "Azucena",
             "original": "Ecco mercede\nAi giorni, che l'infame\nNel singolar certame\nEbbe salvi da te!... Qual t'acciecava\nStrana pietà per esso?",
-            "translation": "And that was his reward\nFor the days you spared that villain's life\nIn single combat! What strange compassion\nBlinded you for him?",
+            "translation": "This is the reward\nFor the life that villain\nWas spared by your hand\nIn single combat!... What strange pity\nBlinded you toward him?",
             "literalText": true
           },
           {
@@ -670,7 +670,7 @@ export const trovatoreActTwoScenes = [
             "speaker": "CONTE",
             "speakerTranslation": "Count di Luna",
             "original": "Ardita, e qual furente amore\nEd irritato orgoglio\nChiesero a me. Spento il rival, caduto\nOgni ostacol sembrava a' miei desiri;\nNovello e più possente ella ne appresta...\nL'altare! Ah no, non fia\nD'altri Leonora!...\nLeonora è mia!\nIl balen del suo sorriso\nD'una stella vince il raggio!\nIl fulgor del suo bel viso\nNovo infonde in me coraggio!...\nAh! l'amor, l'amore ond'ardo\nLe favelli in mio favor!\nSperda il sole d'un suo sguardo\nLa tempesta del mio cor.",
-            "translation": "Daring indeed, as my furious love\nAnd wounded pride demand.\nWith my rival dead, it seemed that\nEvery obstacle to my desire had fallen;\nYet she now sets up a new and stronger one:\nThe altar! No, Leonora shall not\nBelong to another! Leonora is mine!\nThe flash of her smile\nOutshines the light of a star!\nThe radiance of her beautiful face\nGives me fresh courage!\nAh, may the love that burns within me\nSpeak to her in my favor!\nMay the sun of one glance from her\nDispel the storm in my heart!",
+            "translation": "Daring indeed, as my furious love\nAnd wounded pride demand.\nWith my rival dead, it seemed that\nEvery obstacle to my desire had fallen;\nYet she now sets up a new and stronger one:\nThe altar! No, Leonora shall not\nBelong to another!\nLeonora is mine!\nThe flash of her smile\nOutshines the light of a star!\nThe radiance of her beautiful face\nGives me fresh courage!\nAh, may the love that burns within me\nSpeak to her in my favor!\nMay the sun of one glance from her\nDispel the storm in my heart!",
             "literalText": true
           },
           {
@@ -768,7 +768,7 @@ export const trovatoreActTwoScenes = [
             "speaker": "CORO INTERNO DI RELIGIOSE",
             "speakerTranslation": "Nuns’ chorus from within",
             "original": "Ah!... se l'error t'ingombra,\nO figlia d'Eva, i rai,\nPresso a morir, vedrai\nChe un'ombra, un sogno fu,\nAnzi del sogno un'ombra\nLa speme di quaggiù!\nVieni e t'asconda il velo\nAd ogni sguardo umano!\nAura o pensier mondano\nQui vivo più non è.\nAl ciel ti volgi e il cielo\nSi schiuderà per te.",
-            "translation": "Ah, if error clouds your eyes,\nDaughter of Eve, near death\nYou will see that the hopes of this world\nWere only a shadow, a dream,\nIndeed the shadow of a dream!\nCome, let the veil conceal you\nFrom every human gaze!\nNo worldly breeze or thought\nCan live here anymore.\nTurn toward heaven, and heaven\nWill open itself to you.",
+            "translation": "Ah, if error clouds your eyes,\nO daughter of Eve, you will see,\nAs death draws near,\nThat the hopes of this world were\nOnly a shadow, a dream,\nIndeed a shadow of a dream!\nCome, let the veil conceal you\nFrom every human gaze!\nNo worldly breeze or thought\nCan live here any longer.\nTurn toward heaven, and heaven\nWill open itself to you.",
             "literalText": true
           }
         ]
@@ -898,7 +898,7 @@ export const trovatoreActTwoScenes = [
             "speaker": "CONTE",
             "speakerTranslation": "Count di Luna",
             "original": "Dunque gli estinti lasciano\nDi morte il regno eterno;\nA danno mio rinunzia\nLe prede sue l'inferno!\nMa se non mai si fransero\nDe' giorni tuoi gli stami,\nSe vivi e viver brami,\nFuggi da lei, da me.",
-            "translation": "Then do the dead leave\nDeath's eternal domain?\nHas hell renounced its prey\nTo injure me?\nBut if your life was not ended,\nIf you live and wish to keep living,\nFlee from her, flee from me!",
+            "translation": "Then do the dead leave\nDeath's eternal domain?\nHas hell renounced its prey\nTo injure me?\nBut if the threads of your days\nWere never broken,\nIf you live and long to live,\nFlee from her, flee from me!",
             "literalText": true
           },
           {
