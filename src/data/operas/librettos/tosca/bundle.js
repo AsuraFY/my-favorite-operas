@@ -132,7 +132,8 @@ for (const act of tosca.acts) for (const scene of act.scenes) {
     const next = scene.outline[index + 1];
     const end = next ? turns.findIndex((turn, position) => position > start && turn.original.includes(next.match)) : turns.length;
     entry.characters = toscaParticipants(turns.slice(start, end), act.number, scene.number);
-    if (!entry.characters.length && act.number === 3 && scene.number === 1) entry.characters = ["Jailer", "Sentinel", "Sergeant", "Soldiers", "Mario Cavaradossi"];
+    // Do not invent singers for instrumental intervals: Act III church bells/matins
+    // is source stage business only, even though named people enter during it.
   }
 }
 
