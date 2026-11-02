@@ -43,6 +43,6 @@ export const turandot = {
     ]
   },
   characters: ["Turandot", "Calaf", "Liù", "Timur", "Ping", "Pang", "Pong", "Altoum", "Il Mandarino", "Il Principe di Persia"],
-  source: "Giuseppe Adami and Renato Simoni, Turandot (1926), complete Italian libretto, Ricordi edition hosted by Teatro Regio Torino: https://www.teatroregio.torino.it/sites/default/files/uploads/inline-files/Turandot%20-%20Libretto.pdf. English: original line-by-line translation. Act III includes the ending completed by Franco Alfano in Arturo Toscanini’s version, printed in grey in the PDF because it was not performed in that production."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
