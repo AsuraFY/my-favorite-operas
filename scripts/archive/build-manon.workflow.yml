@@ -1,3 +1,6 @@
+# ARCHIVED WORKFLOW — historical reference only. Not an active GitHub Actions workflow.
+# The former Manon generation workflow has been retired; do not move this file
+# back into .github/workflows without a separately approved redesign.
 name: Validate historical Manon importer (read-only)
 
 # This importer was a one-time content generator. No push trigger and no writes.

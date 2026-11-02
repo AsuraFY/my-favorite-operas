@@ -19,7 +19,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = "https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/"
 FINAL_LINE = "Die Schönheit und Weisheit mit ewiger Kron'."
 SCENES = [

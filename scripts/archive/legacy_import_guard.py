@@ -6,7 +6,7 @@ A historical importer is never allowed to overwrite an existing bundle.
 """
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 ACTS = {
     "manon": 5,
     "the-magic-flute": 2,
@@ -43,4 +43,4 @@ if __name__ == "__main__":
     if len(sys.argv) == 3 and sys.argv[1] == "--check":
         guard_existing_published_libretto(sys.argv[2], sys.argv)
     else:
-        raise SystemExit("Usage: python -B scripts/legacy_import_guard.py --check <opera-slug>")
+        raise SystemExit("Usage: python -B scripts/archive/legacy_import_guard.py --check <opera-slug>")

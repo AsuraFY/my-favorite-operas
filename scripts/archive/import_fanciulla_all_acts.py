@@ -22,7 +22,7 @@ import time
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup, NavigableString
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = 'https://www.flaminioonline.it/Guide/Puccini/Puccini-West78-testo.html'
 EDITION = 'Civinini and Zangarini, Ricordi (1910), Italian libretto as transcribed by Flaminio Online'
 ACTS = {'ATTO PRIMO': 1, 'ATTO SECONDO': 2, 'ATTO TERZO': 3}

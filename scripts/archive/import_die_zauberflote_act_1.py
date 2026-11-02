@@ -5,13 +5,6 @@ Static-site content is committed after a successful run. This script is NOT a
 browser/runtime dependency. English is a machine-assisted first draft, explicitly
 not an editorially approved translation.
 """
-import json
-import os
-import re
-from pathlib import Path
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
-
 from legacy_import_guard import guard_existing_published_libretto
 import sys
 if __name__ == "__main__":
@@ -19,7 +12,15 @@ if __name__ == "__main__":
     if "--check" in sys.argv:
         sys.exit(0)
 
-ROOT = Path(__file__).resolve().parents[1]
+
+import json
+import os
+import re
+from pathlib import Path
+from urllib.request import Request, urlopen
+from bs4 import BeautifulSoup
+
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = 'https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/'
 SCENES = {
     'ERSTER': 1, 'ZWEITER': 2, 'DRITTER': 3, 'VIERTER': 4,

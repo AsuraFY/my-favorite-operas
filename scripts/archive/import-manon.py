@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Import public-domain French Manon text and independently draft English with MarianMT.
 
-Runs in GitHub Actions on the Update branch only. Never copy the modern English
-translation stored in the source repository: the English below is generated from
-the original French text by an open machine-translation model.
+ARCHIVED ONE-TIME GENERATOR — NOT ACTIVE. Preserved for provenance only.
+The shared guard prevents regenerating or replacing a completed libretto.
 """
 import json
 import re
@@ -19,7 +18,7 @@ if __name__ == "__main__":
 
 SOURCE_URL = "https://raw.githubusercontent.com/martin-he543/sottovoce/main/public/libretti/texts/Q842063.json"
 FALLBACK_URL = "https://raw.githubusercontent.com/martin-he543/sottovoce/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q842063.json"
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "src" / "data" / "operas" / "librettos" / "manon"
 SOURCE_CREDIT = "https://opera-guide.ch/operas/manon/libretto/fr/"
 MODEL_NAME = "Helsinki-NLP/opus-mt-fr-en"
