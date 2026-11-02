@@ -181,6 +181,14 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — Phase C Carmen Acts II–IV targeted editorial pass
+
+- Confirmed previous Carmen Act I checkpoint [Verify Update run 41441055085](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41441055085) and the matching Pages build **succeeded** at SHA `b250a792`.
+- Inspected all **14 / 12 / 5 sections and 387 / 244 / 101 turns** for Acts II / III / IV respectively (732 turns total). No empty English passages found.
+- Repaired Act II's French `Tu ne m'a pas compris` to `Tu ne m'as pas compris` and the corrupted singer cue `FRASQUJTA` to `FRASQUITA` (without changing its translated singer list); refined `J'avais beau faire` from `I tried hard enough` to `I tried in vain`; changed the awkward recurrent English toreador refrain `take your guard` to `be on guard` (4 instances). Commit `e6b15e5`.
+- Repaired Act III Micaëla's French `Au fond du cour` to `Au fond du coeur` (`11edea6`) and Act IV's twice-corrupted `hardis chubs` to `hardis chulos` (`0beb01d`), consistent with existing English rendering.
+- Added regression test `tests/carmen-acts2-4-editorial.test.mjs` (`e283315`) guarding scene/section/turn counts and exact repaired terms. **This is a targeted consistency and semantic review, not full French-edition collation or complete literary approval.** These changes need a new successful current-head Node/browser/preview gate. `main` untouched.
+
 ### 2026-11-02 — Phase C Carmen Act I bilingual spot-review
 
 - Verified the latest Eugene Onegin correction checkpoint: [Verify Update run 41439336823](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41439336823) **success** on `e66b97fea2`; the corresponding Pages deployment run 41439336458 succeeded. This verifies that preceding editing checkpoint, **not** subsequent Carmen changes.
