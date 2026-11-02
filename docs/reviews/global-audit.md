@@ -5,7 +5,7 @@
 **Last synchronized:** 2026-11-02 (UTC / Africa-Dakar)  
 **Repository:** [AsuraFY/my-favorite-operas](https://github.com/AsuraFY/my-favorite-operas) · **Working branch:** `Update` · **Production branch:** `main` (never modify or merge without separate explicit approval)  
 **Scope:** All 35 current operas **and every future opera**, shared reader, outlines, information pages, CI and release.  
-**Current focus:** Phase B source and participant-attribution corrections; Phase A automated gate was verified on an **older** Update checkpoint, but current repairs still need CI/preview confirmation.
+**Current focus:** Phase C editorial acceptance and Phase D visual/manual sign-off. On 2026-11-02 the latest application commit `b7d0130c` passed the current Node + browser test gate and verified `Update` preview (run 41437867374). A later audit-only commit does not change tested application code.
 
 ## 1. START HERE — current checkpoint and next action
 
@@ -19,7 +19,7 @@
 - Regression coverage added in `tests/die-walkure-source-integrity.test.mjs` and `tests/opera-participant-names.test.mjs`; **the latest passing CI for those edits is not established**.
 - Google Drive guideline §1.4 was updated and read back on November 2, with the approved **universal participant-list rule**.
 
-**Immediate next action:** Check the **current `Update` commit** in [GitHub Actions — Verify Update](https://github.com/AsuraFY/my-favorite-operas/actions/workflows/verify-update.yml). If tests fail, repair the failures without weakening valid assertions; if passed, verify the intended preview commit and browse affected opera acts (particularly *Die Walküre* Act III and *Manon* Act I). Record run URL, tested SHA, screenshots and manual review separately. The remaining Phase B issues `05`, `08`, `09` have implementation commits; validate these with fresh tests and a real reader/outline review. Separate Manon Act V edition decision remains in Phase C.
+**Immediate next action:** The full automated gate **passed** for application SHA [`b7d0130c`](https://github.com/AsuraFY/my-favorite-operas/commit/b7d0130cbad956324d8b95e3cbdfa3e3477c6408): [Verify Update run 41437867374](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41437867374), **236/236 Node tests**, **876 browser assertions across 35 operas × desktop/mobile (70)**, uploaded visual artifact, and successful dependent **Publish verified Update preview** job. [Pages dynamic build run 41437867705](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41437867705) also succeeded. **Human inspection of affected acts, all-35 editorial, accessibility/night checks, and public `main` release remain separate and unapproved.** Continue Phase C translation/edition review and targeted Phase B manual review.
 
 **Important:** A committed fix is **Needs verification**, not `Resolved`. A publicly reachable GitHub Pages link may reflect a different release than `Update`. Always give the user direct opera/act page links after opera edits and disclose whether those exact commits are visibly deployed.
 
@@ -39,9 +39,9 @@
 
 | Phase | Tracked issues | Current position | Next deliverable |
 |---|---|---|---|
-| **A — Reliable test gate** | AUD-20261101-01–03 | Verified historical checkpoint on 2026-11-01; latest head **unverified** | Re-run Node/browser checks and confirm preview for the latest `Update` head |
-| **B — Definite source/presentation repairs** | AUD-20261101-04–09; AUD-20261102-01 | **Implemented; verification pending** | All Phase B edits committed; run new-head CI/browser and source/semantic spot-checks before sign-off |
-| **C — Editorial fidelity and nomenclature** | AUD-20261101-10–16 | Queued / needs review | Source, scene/section, speaker, English wording and provenance comparisons; no invented or copyrighted text |
+| **A — Reliable test gate** | AUD-20261101-01–03 | **Verified on application SHA `b7d0130c`, 2026-11-02** | Keep test/preview SHA evidence, rerun after later application changes |
+| **B — Definite source/presentation repairs** | AUD-20261101-04–09; AUD-20261102-01 | **Implemented; Node/browser automated gate passed, manual editorial/visual sign-off pending** | Verify affected scenes and stage semantics in reader/outline |
+| **C — Editorial fidelity and nomenclature** | AUD-20261101-10–16 | **In progress; several corrections made, translation/edition review outstanding** | Source/translation semantic collation; Manon Act V editorial choice |
 | **D — Reader, outline, accessibility and visual sign-off** | AUD-20261101-17–20; AUD-20261102-01 | Queued / needs verification | All 35 plus future operas: detailed participants, both outlines, desktop/mobile/night, screen-reader, anchors, recordings |
 | **E — Metadata, governance, release** | AUD-20261101-21–22; GLOBAL issues | Queued | Correct obsolete content/status references with approval when guideline edits required; reconcile tracker; request separate `main` merge authorization |
 
@@ -180,6 +180,14 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 **Release gate:** Current `Update` tests green (not merely old green checks); verified preview commit matches; no unapproved source or translation substitutions; relevant manual day/night/mobile/keyboard checks recorded; approved guidelines met or explicit exceptions recorded; licensing/provenance reviewed; **separate approval requested before any merge into `main`**.
 
 ## 8. Dated execution log and handover history
+
+### 2026-11-02 — Current Update gate verified for application SHA `b7d0130c`
+
+- **Initial failure diagnosed:** [Verify Update run 41436033887](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41436033887) on earlier SHA `6065185b` failed 5/236 Node assertions. Four stale tests looked for provenance/status phrases in JavaScript `source` strings after source register centralization. The fifth Tosca test expected an offstage *display* name instead of the mapped `A Shepherd` while the original libretto cue remains `A Shepherd (offstage)`. Browser step and dependent preview were skipped. These were assertion expectations, **not** grounds to weaken source/reader integrity checks.
+- **Regression repair:** created `tests/helpers/opera-origins.mjs` and updated four translation-status tests to read the correct per-opera entry in `docs/info/operas-origins.md`. Updated Tosca assertion to check both the actual English display name and the original offstage speaker cue. Five corrections are test-only; opera passages, navigation, speaker cues and page rendering were **not changed**.
+- **Successful exact-commit gate:** [Verify Update run **41437867374**](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41437867374), tested SHA [`b7d0130cbad956324d8b95e3cbdfa3e3477c6408`](https://github.com/AsuraFY/my-favorite-operas/commit/b7d0130cbad956324d8b95e3cbdfa3e3477c6408): **236/236 Node**, **876 browser assertions / 70 opera×viewport combinations** (35 desktop + 35 mobile), visual screenshot artifact `opera-browser-review` (artifact ID 13137556522), **successful Publish verified Update preview** dependent job. The separate [Pages build/deployment run 41437867705](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41437867705) also succeeded on that SHA.
+- **Scope of acceptance:** automated Node, desktop/mobile Chromium smoke/layout checks and verified Update preview succeeded. They do **not** establish independent manual review of the full bilingual content, all participant credits, stage-direction meaning, night-mode screenshots, screen-reader accessibility, or publication to `main`. The follow-up commit editing **this audit only** is not itself the tested app SHA. Future application changes require a fresh gate.
+- **Branch policy:** `main` unchanged; no merge authorized.
 
 ### 2026-11-02 — Additional non-functional provenance comment cleanup
 
