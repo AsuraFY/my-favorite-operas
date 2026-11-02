@@ -62,8 +62,8 @@ Statuses in this table are the **consolidated Nov 2 assessment**, not a claim of
 | `AUD-20261101-07` | P1 · B | Needs verification | **Die Walküre German group and voice labels** — Acts I–III participant/English cue edits committed Nov 2; verify true participants, German voice attribution, collective cues and full source alignment. |
 | `AUD-20261101-08` | P1 · B | Needs verification | **Manon/Die Walküre direction semantics** — Each Stage direction turn now explicitly flags compact versus extended cue in the eight act files, preserving source/translation texts and sung asides. Verify semantic edge cases and rendering in browser; do not interpret automatic flags as editorial sign-off. |
 | `AUD-20261101-09` | P1 · B | Needs verification | **La fanciulla del West missing English titles** — Explicitly populated `Introduction`, `Hello, Nick!`, `Hello, Minnie!` in both Act I section metadata and historical listening-outline metadata. Current-head CI/preview and both-outline visual confirmation pending. |
-| `AUD-20261101-10` | P1 · C | Needs review | **Die Zauberflöte generic Auftritt and Arie mir Chor** — Verify 48 generic Auftritt headings, form anomaly and actual source incipits without inventing official titles. |
-| `AUD-20261101-11` | P1 · C | Needs review | **Tosca Act III instrumental credits** — Verify bells/matins landmark and remove singers from instrumental-only credit lines where source confirms none. |
+| `AUD-20261101-10` | P1 · C | Source structure assessed; wider review pending | **Die Zauberflöte generic Auftritt and Arie mir Chor** — Verify 48 generic Auftritt headings, form anomaly and actual source incipits without inventing official titles. |
+| `AUD-20261101-11` | P1 · C | Implemented; verification pending | **Tosca Act III instrumental credits** — Verify bells/matins landmark and remove singers from instrumental-only credit lines where source confirms none. |
 | `AUD-20261101-12` | P1 · C | Needs review | **Turandot / Carmen generic headings** — Check Scena/Scène and section incipits; use source-supported navigation labels and correct translations only. |
 | `AUD-20261101-13` | P1 · C | Needs review | **Eugene Onegin English-first, seven tableaux** — Respect approved English-first reader, document text edition/rights and authentic seven-tableau boundaries; never fabricate Russian alignment. |
 | `AUD-20261101-14` | P1 · C | Needs review | **Manon Act V mixed-edition variant** — Document J. C. Macy Act V contextual differences versus Acts I–IV; obtain editorial decision before substitutions. |
@@ -180,6 +180,14 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 **Release gate:** Current `Update` tests green (not merely old green checks); verified preview commit matches; no unapproved source or translation substitutions; relevant manual day/night/mobile/keyboard checks recorded; approved guidelines met or explicit exceptions recorded; licensing/provenance reviewed; **separate approval requested before any merge into `main`**.
 
 ## 8. Dated execution log and handover history
+
+### 2026-11-02 — Phase C opened: *Die Zauberflöte* and *Tosca* source/outline checks
+
+- *Die Zauberflöte* retains 49 source Auftritte (19 Act I, 30 Act II), including 48 unnumbered `Auftritt` sections plus other continuations; these labels are actual scene/dialogue divisions, not necessarily missing aria titles. No invented titles added. No. 10 already had correct reader `displayType: 'Arie mit Chor'` while original dataset `type: 'Arie mir Chor'` preserves the historical transcription. Source spelling still warrants edition-level reconciliation, so issue 10 remains review-pending.
+- *Tosca* Act III bells/matins stage direction is **not sung**. Removed the hard-coded fabricated fallback character list for empty Act III Scene I outline entries; the first shepherd-song credit remains source-derived. Commit `5e2947a`.
+- Added `tests/tosca-instrumental-credits.test.mjs` (`b567e218`) to guard both distinctions. **Current-head CI/browser not yet verified**, and Phase B test/visual acceptance remains open. Do not mark Phase C complete.
+- Next Phase C issues: review *Turandot*/*Carmen* generic incipits (12), *Eugene Onegin* seven-tableau/source rights (13), *Manon* mixed Act V edition (14), full catalogue English translation and legal provenance (15–16).
+- All changes on `Update`; `main` untouched.
 
 ### 2026-11-02 — Phase B content repairs implemented; independent verification outstanding
 
