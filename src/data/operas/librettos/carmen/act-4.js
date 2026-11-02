@@ -262,7 +262,7 @@ export const carmenActFourScenes = [
           },
           {
             "speaker": "CHOEUR",
-            "original": "Et puis saluons au passage,\nSaluons les hardis chubs,\nBravo! Viva! Gloire au courage.\nVoici les hardis chubs!\nVoyez les banderilleros,\nVoyez quel air de crânerie!\nVoyez! Voyez! Voyez!\nQuels regards et de quel éclat\nÉtincelle la broderie\nDe leur costume de combat!\nVoici les banderilleros!",
+            "original": "Et puis saluons au passage,\nSaluons les hardis chulos,\nBravo! Viva! Gloire au courage.\nVoici les hardis chulos!\nVoyez les banderilleros,\nVoyez quel air de crânerie!\nVoyez! Voyez! Voyez!\nQuels regards et de quel éclat\nÉtincelle la broderie\nDe leur costume de combat!\nVoici les banderilleros!",
             "translation": "And now let us greet them as they pass,\nLet us greet the daring chulos,\nBravo! Viva! Glory to their courage.\nHere are the daring chulos!\nLook at the banderilleros,\nSee how boldly they stride!\nLook! Look! Look!\nWhat glances, and what brilliance\nShines from the embroidery\nOn their fighting costumes!\nHere are the banderilleros!",
             "literalText": true,
             "speakerTranslation": "Chorus"
