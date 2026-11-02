@@ -39,6 +39,6 @@ export const laBoheme = {
       "Back in the garret, Rodolfo and Marcello pretend to work while longing for Mimì and Musetta. Schaunard and Colline join them for a comic interlude, but the mood changes when Musetta brings the gravely ill Mimì. Their friends try to comfort her; Mimì dies as Rodolfo calls her name."
     ]
   },
-  source: "Giacomo Puccini, La bohème (1896), Italian libretto by Luigi Illica and Giuseppe Giacosa, text and divisions from Teatro alla Scala's libretto PDF: https://www.teatroallascala.org/static/upload/la-/la-boheme-libretto.pdf. English is a fresh line-by-line translation. Each completed tableau is presented continuously, one page per tableau."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
