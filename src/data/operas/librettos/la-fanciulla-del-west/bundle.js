@@ -21,5 +21,5 @@ export const laFanciullaDelWest = {
     {number: 2, originalHeading: "Atto secondo", scenes: fanciullaActTwoScenes},
     {number: 3, originalHeading: "Atto terzo", scenes: fanciullaActThreeScenes}],
   synopsis: {eyebrow:"G. Puccini · Opera in three acts · All three acts available", paragraphs:info.synopsis, characters:info.characters},
-  source: "Italian: Guelfo Civinini and Carlo Zangarini, La fanciulla del West, supplied PDF (Act I, PDF pp. 3–23), checked against key passages of Flaminio Online. Complete Act I from opening setting through Minnie's final Ah!. English: assistant-produced complete first draft, not editorially reviewed. Navigation: 22 nonofficial recording listening landmarks. Acts II and III from PDF pp. 24–41 and 42–53 respectively, translated as unreviewed drafts."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
