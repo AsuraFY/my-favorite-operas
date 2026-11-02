@@ -1,7 +1,4 @@
 // Norma (Vincenzo Bellini, Felice Romani): two complete Italian-English working draft acts.
-// Italian public-domain libretto: https://www.librettidopera.it/norma/norma.html (via Sottovoce Q320353).
-// Cross-reference: https://opera-guide.ch/operas/norma/libretto/it/
-// Independent AI-generated English working translation awaiting editorial review and source collation.
 import {getOpera} from '../../catalog.js';
 import {operaInformation} from '../../information.js';
 import {normaActOneScenes} from './act-1.js?v=norma-act1-20261029';
