@@ -38,5 +38,5 @@ export const dieZauberflote = {
       ["Monostatos", "Tenor", "An overseer in Sarastro’s household."]
     ]
   },
-  source: "Both acts. German source: Emanuel Schikaneder (1791), Opera Guide, https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/ (retrieved 26 October 2026). Act I: 19 source Auftritte and numbers 1–8. Act II: 30 source Auftritte and numbers 9–21 retained. German text keeps historical orthography. English is an offline machine-assisted first draft and HAS NOT been editorially reviewed; do not cite as a verified translation. The English remains an unreviewed translation draft. Act II source lines: 805."
+  source: "English has NOT been editorially reviewed. Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
