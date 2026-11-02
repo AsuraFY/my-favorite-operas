@@ -17,8 +17,7 @@ export const manonActThreeScenes = [
         "originalTitle": "Voyez mules à fleurettes!",
         "translatedTitle": "Look at the flowery mules!",
         "participants": [
-          "LES VENDEURS",
-          "POUSSETTE, JAVOTTE",
+          "The Vendors",
           "POUSSETTE",
           "JAVOTTE",
           "ROSETTE"
@@ -33,7 +32,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LES VENDEURS",
-            "speakerTranslation": "LES VENDEURS",
+            "speakerTranslation": "The Vendors",
             "original": "Voyez mules à fleurettes!\nRouge, mouches et manchettes!\nFichus et coqueluchons!\nAchetez-moi mes chansons!\nBillets pour la loterie!\nPoudre, râpes à tabac!\nRubans, cannes et chapeau !\nÉlixir pour l'estomac!\nIl est temps qu'on se régale!\nBonnets, paniers, collerettes!\nPlumes et fines aigrettes!\nGaze, linons et manchons!\nBonbons et pâtisserie!\nJouets, balles et sabots!\nMa cuisine est sans égale, etc.\nLES VENDEURS, BOURGEOIS et BOURGEOISES\nC'est fête au Cours-la-Reine!\nOn y rit, on y boit à la santé du Roi!\nOn y rit, on y boit,\npendant une semaine!\nOn y rit, on y boit à la santé du Roi!\nC'est fête au Cours-la-Reine!\nOn y boit à la santé du Roi.",
             "translation": "Look at the flowery mules!\nRed, flies and cuffs!\nFichus and coqueluchons!\nBuy me my songs!\nLottery tickets!\nPowder, tobacco graters!\nRibbons, canes and a hat!\nElixir for the stomach!\nIt's time we enjoyed ourselves!\nHats, baskets, ruffs!\nFeathers and fine egrets!\nGauze, linens and sleeves!\nSweets and pastries!\nToys, balls and hooves!\nMy cooking is unparalleled, etc.\nTHE SALESMEN, BOURGEOIS and BOURGEOIS WOMEN\nIt's party time at Cours-la-Reine!\nThere, people laugh and drink to the King's health!\nPeople laugh there, they drink there,\nfor a week!\nThere, people laugh and drink to the King's health!\nIt's party time at Cours-la-Reine!\nThey drink to the King's health.",
             "literalText": true
@@ -47,7 +46,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "POUSSETTE, JAVOTTE",
-            "speakerTranslation": "POUSSETTE, JAVOTTE",
+            "speakerTranslation": "POUSSETTE and JAVOTTE",
             "original": "La charmante promenade!\nAh, que ce séjour est doux! que c'est bon!\nQue c'est bon une escapade,\nloin des regards d'un jaloux.",
             "translation": "What a lovely walk!\nAh, how lovely this stay is! How wonderful!\nHow wonderful a getaway is!\naway from the eyes of a jealous person.",
             "literalText": true
@@ -99,9 +98,8 @@ export const manonActThreeScenes = [
         "participants": [
           "POUSSETTE",
           "ROSETTE",
-          "POUSSETTE, JAVOTTE",
           "JAVOTTE",
-          "LES VENDEURS",
+          "The Vendors",
           "LESCAUT"
         ],
         "turns": [
@@ -121,7 +119,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "POUSSETTE, JAVOTTE",
-            "speakerTranslation": "POUSSETTE, JAVOTTE",
+            "speakerTranslation": "POUSSETTE and JAVOTTE",
             "original": "Mais que Guillot n'en sache rien!\nPOUSSETTE, JAVOTTE and ROSETTE\nRien!\nLa charmante promenade!\nAh ! que ce séjour est doux! Que c'est bon!\nQue c'est bon une escapade,\nloin des regards d'un jaloux!",
             "translation": "But Guillot mustn't know anything about it!\nSTROLLER, JAVOTTE and ROSETTE\nNothing!\nWhat a lovely walk!\nAh! How sweet this stay is! How wonderful!\nHow wonderful a getaway is!\nFar from the eyes of a jealous person!",
             "literalText": true
@@ -149,7 +147,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "POUSSETTE, JAVOTTE",
-            "speakerTranslation": "POUSSETTE, JAVOTTE",
+            "speakerTranslation": "POUSSETTE and JAVOTTE",
             "original": "Loin des regards d'un jaloux!\nQue c'est bon!",
             "translation": "Away from the eyes of a jealous person!\nThat's delicious!",
             "literalText": true
@@ -163,7 +161,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LES VENDEURS",
-            "speakerTranslation": "LES VENDEURS",
+            "speakerTranslation": "The Vendors",
             "original": "Voyez mules à fleurettes! etc.\nLES VENDEURS, BOURGEOIS et BOURGEOISES\nC'est fête au Cours-la-Reine!\nOn y rit, on y boit à la santé du Roi.\nTenez, Monsieur!\nPrenez, Monsieur!\nChoisissez! prenez! choisissez!",
             "translation": "Look at the flowery mules! etc.\nTHE SALESMEN, BOURGEOIS and BOURGEOIS WOMEN\nIt's party time at Cours-la-Reine!\nThere, people laugh and drink to the King's health.\nHere, sir!\nTake it, sir!\nChoose! Take! Choose!",
             "literalText": true
@@ -177,7 +175,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LES VENDEURS",
-            "speakerTranslation": "LES VENDEURS",
+            "speakerTranslation": "The Vendors",
             "original": "Tenez, Monsieur! tenez! prenez!",
             "translation": "Here, sir! Here! Take!",
             "literalText": true
@@ -191,7 +189,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LES VENDEURS",
-            "speakerTranslation": "LES VENDEURS",
+            "speakerTranslation": "The Vendors",
             "original": "Tenez! Monsieur! tenez! prenez! tenez! prenez!",
             "translation": "Here! Sir! Here! Take! Here! Take!",
             "literalText": true
@@ -412,23 +410,23 @@ export const manonActThreeScenes = [
         "originalTitle": "Quelle est cette princesse?",
         "translatedTitle": "Who is this princess?",
         "participants": [
-          "LES PROMENEURS",
-          "LES MARCHANDS",
+          "The Promenaders",
+          "The Merchants",
           "BRÉTIGNY",
-          "LES SEIGNEURS",
+          "The Noblemen",
           "MANON"
         ],
         "turns": [
           {
             "speaker": "LES PROMENEURS",
-            "speakerTranslation": "LES PROMENEURS",
+            "speakerTranslation": "The Promenaders",
             "original": "Quelle est cette princesse?",
             "translation": "Who is this princess?",
             "literalText": true
           },
           {
             "speaker": "LES MARCHANDS",
-            "speakerTranslation": "LES MARCHANDS",
+            "speakerTranslation": "The Merchants",
             "original": "C'est au moins une duchesse!",
             "translation": "She's at least a duchess!",
             "literalText": true
@@ -442,7 +440,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LES MARCHANDS",
-            "speakerTranslation": "LES MARCHANDS",
+            "speakerTranslation": "The Merchants",
             "original": "Eh? Ne savez-vous pas son nom?\nC'est Manon!\nC'est la belle Manon!\nLES PROMENEURS et LES MARCHANDS\nVoici les élégantes!\nLes belles indolentes!\nMaîtresses des cœurs\naux regards vainqueurs! etc.",
             "translation": "Huh? Don't you know his name?\nIt's Manon!\nThat's the beautiful Manon!\nTHE STROLLERKEEPER AND THE MERCHANTS\nHere come the elegant ladies!\nThe beautiful indolent ones!\nMistresses of hearts\nto victorious looks! etc.",
             "literalText": true
@@ -456,7 +454,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LES SEIGNEURS",
-            "speakerTranslation": "LES SEIGNEURS",
+            "speakerTranslation": "The Noblemen",
             "original": "Ravissante Manon!",
             "translation": "Lovely Manon!",
             "literalText": true
@@ -478,16 +476,16 @@ export const manonActThreeScenes = [
         "originalTitle": "Profitons bien de la jeunesse!",
         "translatedTitle": "Let's make the most of our youth!",
         "participants": [
-          "JEUNES GENS",
+          "Young People",
           "MANON",
           "BRÉTIGNY",
-          "UN MARCHAND",
-          "LE COMTE"
+          "A Merchant",
+          "The Count"
         ],
         "turns": [
           {
             "speaker": "JEUNES GENS",
-            "speakerTranslation": "JEUNES GENS",
+            "speakerTranslation": "Young People",
             "original": "Profitons bien de la jeunesse!\nRions! Ah! Ah!",
             "translation": "Let's make the most of our youth!\nLet's laugh! Ha! Ha!",
             "literalText": true
@@ -501,7 +499,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "JEUNES GENS",
-            "speakerTranslation": "JEUNES GENS",
+            "speakerTranslation": "Young People",
             "original": "Profitons bien de la jeunesse!",
             "translation": "Let's make the most of our youth!",
             "literalText": true
@@ -515,7 +513,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "JEUNES GENS",
-            "speakerTranslation": "JEUNES GENS",
+            "speakerTranslation": "Young People",
             "original": "Profitons bien de la jeunesse!\nRions! Ah! Ah!",
             "translation": "Let's make the most of our youth!\nLet's laugh! Ha! Ha!",
             "literalText": true
@@ -571,7 +569,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "UN MARCHAND",
-            "speakerTranslation": "UN MARCHAND",
+            "speakerTranslation": "A Merchant",
             "original": "Poudre, râpes à tabac!",
             "translation": "Powder, tobacco graters!",
             "literalText": true
@@ -592,7 +590,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Monsieur de Brétigny?",
             "translation": "Mr. de Brétigny?",
             "literalText": true
@@ -614,14 +612,14 @@ export const manonActThreeScenes = [
         "originalTitle": "C'est mon fils qui m'amène.",
         "translatedTitle": "My son is bringing me.",
         "participants": [
-          "LE COMTE",
+          "The Count",
           "BRÉTIGNY",
           "MANON"
         ],
         "turns": [
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "C'est mon fils qui m'amène.",
             "translation": "My son is bringing me.",
             "literalText": true
@@ -635,7 +633,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Il n'est plus Chevalier,\nc'est l'Abbé Des Grieux qu'à présent il faut dire!...",
             "translation": "He is no longer a Knight,\nIt is Abbé Des Grieux we must now mention!",
             "literalText": true
@@ -663,7 +661,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Le ciel l'attire! Dans les ordres, il veut entrer.\nIl est à St-Sulpice, et ce soir en Sorbonne,\nil prononce un discours...",
             "translation": "Heaven beckons! He wants to enter the clergy.\nHe is at St-Sulpice, and tonight at the Sorbonne.\nHe gives a speech...",
             "literalText": true
@@ -691,7 +689,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "C'est vous qui l'avez fait, en vous chargeant\nde briser net l'amour qui l'attachait à\ncertaine personne.",
             "translation": "You did it, by taking charge.\nto abruptly break the love that bound him to\ncertain person.",
             "literalText": true
@@ -712,7 +710,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "C'est elle?",
             "translation": "Is that her?",
             "literalText": true
@@ -726,7 +724,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Je devine alors la raison qui vous fit, avec\ntant de zèle, predre les intérêts de mon fils...\nMais, pardon! Elle veut vous parler.\nElle est vraiment fort belle!",
             "translation": "I can then guess the reason that made you, with\nSo much zeal, putting my son's interests at risk...\nBut, excuse me! She wants to talk to you.\nShe is really very beautiful!",
             "literalText": true
@@ -761,7 +759,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Elle est charmante\net je comprends qu'on l'aime!",
             "translation": "She is charming\nAnd I understand why people love it!",
             "literalText": true
@@ -782,7 +780,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "C'est un petit défault, très petit, ici-bas!",
             "translation": "It's a small flaw, a very small one, down here!",
             "literalText": true
@@ -804,13 +802,13 @@ export const manonActThreeScenes = [
         "originalTitle": "Madame !",
         "translatedTitle": "Madam !",
         "participants": [
-          "LE COMTE",
+          "The Count",
           "MANON"
         ],
         "turns": [
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Madame !",
             "translation": "Madam !",
             "literalText": true
@@ -831,7 +829,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Mais oui!",
             "translation": "Yes, indeed!",
             "literalText": true
@@ -845,7 +843,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Qui donc?",
             "translation": "Who then?",
             "literalText": true
@@ -859,7 +857,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Ah! Très bien!",
             "translation": "Ah! Very good!",
             "literalText": true
@@ -873,7 +871,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Faut-il donc savoir tant de choses?\nQue deviennent les plus beaux jours?\nOù vont les premiers amours?\nOù vole le parfum des roses?",
             "translation": "Do we really need to know so much?\nWhat becomes of the best days?\nWhere do first loves go?\nWhere does the scent of roses fly?",
             "literalText": true
@@ -894,7 +892,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Ignorer n'est-il plus sage,\nau passé pourquoi s'attarder?",
             "translation": "Is ignoring something no longer wise?\nWhy dwell on the past?",
             "literalText": true
@@ -908,7 +906,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Ses larmes coulaient en silence.",
             "translation": "Her tears flowed silently.",
             "literalText": true
@@ -922,7 +920,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Non!",
             "translation": "No!",
             "literalText": true
@@ -936,7 +934,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Son cœur guéri de sa blessure,\ns'est refermé!",
             "translation": "His heart, healed of its wound,\nIt has closed!",
             "literalText": true
@@ -950,7 +948,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Il a fait ainsi que votre amie,\nce que l'on doit faire ici-bas,\nquand on est sage, n'est-ce pas?\nOn oublie!",
             "translation": "He did the same as your friend,\nwhat we must do here below,\nWhen one is good, isn't that right?\nForget it!",
             "literalText": true
@@ -1173,7 +1171,7 @@ export const manonActThreeScenes = [
           "GUILLOT",
           "MANON",
           "LESCAUT",
-          "LA FOULE"
+          "The Crowd"
         ],
         "turns": [
           {
@@ -1276,7 +1274,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LA FOULE",
-            "speakerTranslation": "LA FOULE",
+            "speakerTranslation": "The Crowd",
             "original": "C'est fête au Cours-la-Reine\nOn y danse, on y boit, à la santé du Roi! etc.",
             "translation": "It's party time at Cours-la-Reine\nThere they dance, there they drink, to the King's health! etc.",
             "literalText": true
@@ -1299,8 +1297,8 @@ export const manonActThreeScenes = [
         "originalTitle": "Quelle éloquence!",
         "translatedTitle": "What eloquence!",
         "participants": [
-          "CHŒUR DES DAMES",
-          "LE COMTE",
+          "Ladies' Chorus",
+          "The Count",
           "DES GRIEUX"
         ],
         "turns": [
@@ -1313,7 +1311,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "CHŒUR DES DAMES",
-            "speakerTranslation": "CHŒUR DES DAMES",
+            "speakerTranslation": "Ladies' Chorus",
             "original": "Quelle éloquence!\nL'admirable orateur! etc.\nQuelle abondance! etc.\nLe grand prédicateur! etc.\nQuelle éloquence!\nEt dans sa voix quelle douceur!\nQuelle douceur et quelle flamme!\nComme en l'écoutant... en l'écoutant...\nla ferveur pénètre doucement\njusqu'au fond de nos âmes...\nAh ! Ah ! Quel orateur ! L'admirable orateur!\nLe grand prédicateur!\nDe quel art divin, etc.\nIl a dans sa thèse, etc.\nPeint Saint-Augustin, etc.\nEt Saint Thérèse, etc.\nLui-même est un saint, etc.\nC'est un fait certain! un saint!\nN'est-ce pas, ma chère?\nC'est un saint, etc.\nC'est certain, etc.\nC'est un saint! un saint!",
             "translation": "What eloquence!\nThe admirable orator! etc.\nWhat abundance! etc.\nThe great preacher! etc.\nWhat eloquence!\nAnd what sweetness in her voice!\nWhat sweetness and what a flame!\nLike when you listen to him... when you listen to him...\nfervor penetrates gently\nto the very depths of our souls...\nAh! Ah! What an orator! The admirable orator!\nThe great preacher!\nOf what divine art, etc.\nHe has in his thesis, etc.\nPainted Saint Augustine, etc.\nAnd Saint Teresa, etc.\nHe himself is a saint, etc.\nThat's a certain fact! A saint!\nIsn't that right, my dear?\nHe's a saint, etc.\nThat's certain, etc.\nHe's a saint! A saint!",
             "literalText": true
@@ -1327,7 +1325,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "CHŒUR DES DAMES",
-            "speakerTranslation": "CHŒUR DES DAMES",
+            "speakerTranslation": "Ladies' Chorus",
             "original": "C'est lui ! c'est l'Abbé Des Grieux!\nVoyez comme il baisse les yeux!",
             "translation": "It's him! It's Abbé Des Grieux!\nLook how he lowers his eyes!",
             "literalText": true
@@ -1341,7 +1339,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Bravo, mon cher, succès complet!\nNotre maison doit être fière\nd'avoir parmi les siens un nouveau Bossuet!",
             "translation": "Well done, my dear, complete success!\nOur house should be proud\nto have a new Bossuet among their own!",
             "literalText": true
@@ -1355,7 +1353,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Et, c'est pour de bon, Chevalier, que tu\nprétends au ciel pour jamais te lier?",
             "translation": "And, Knight, that's for real, that you\nDo you aspire to heaven to be bound forever?",
             "literalText": true
@@ -1369,7 +1367,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Les grands mots que voilà!\nQuelle route as-tu donc suivie,\net que sais-tu de cette vie\npour penser qu'elle finit là?\nÉpouse quelque brave fille,\ndigne de nous, digne de toi,\ndeviens un père de famille\nni pire, ni meilleur que moi.\nLe ciel n'en veut pas davantage,\nc'est là le devoir, entends-tu?\nC'est là le devoir!\nLa vertu qui fait du tapage\nn'est déjà plus de la vertu!\nÉpouse quelque brave fille, etc.",
             "translation": "Those are some big words!\nWhich route did you take?\nAnd what do you know about this life?\nTo think that she ends up there?\nMarry some good girl,\nworthy of us, worthy of you,\nbecome a family man\nNeither worse nor better than me.\nHeaven doesn't want any more of it.\nThat's the duty, do you hear?\nThat is the duty!\nThe virtue that makes a fuss\nThat's no longer a virtue!\nMarry some good girl, etc.",
             "literalText": true
@@ -1385,8 +1383,8 @@ export const manonActThreeScenes = [
         "translatedTitle": "Nothing can stop me",
         "participants": [
           "DES GRIEUX",
-          "LE COMTE",
-          "LE PORTIER DU SÉMINAIRE"
+          "The Count",
+          "The Seminary Porter"
         ],
         "turns": [
           {
@@ -1398,7 +1396,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "C'est dit, alors?",
             "translation": "Is that settled then?",
             "literalText": true
@@ -1412,7 +1410,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Soit! Je franchirai donc seul cette grille, et\nvais leur annoncer là-bas qu'ils ont un saint\ndans la famille. J'en sais beaucoup qui ne\nme croiront pas!",
             "translation": "So be it! I will therefore cross this gate alone, and\nI'm going to tell them there that they have a saint\nin the family. I know many who don't\nThey won't believe me!",
             "literalText": true
@@ -1426,7 +1424,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Un mot encore! Comme il n'est pas certain\nque l'on te donne ici, du jour au lendemain,\nun bénéfice, une abbaye, je vais dès ce soir\nt'envoyer trente mille livres...",
             "translation": "One more word! As it is not certain\nthat they give you here, overnight,\na benefice, an abbey, I'm going tonight\nSend you thirty thousand pounds...",
             "literalText": true
@@ -1440,7 +1438,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "C'est à toi, c'est ta part sur le bien de ta mère.\nEt maintenant … adieu, mon fils.",
             "translation": "It's yours, it's your share of your mother's estate.\nAnd now… goodbye, my son.",
             "literalText": true
@@ -1454,7 +1452,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE COMTE",
-            "speakerTranslation": "LE COMTE",
+            "speakerTranslation": "The Count",
             "original": "Adieu... reste à prier!",
             "translation": "Goodbye... all that remains is to pray!",
             "literalText": true
@@ -1475,7 +1473,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE PORTIER DU SÉMINAIRE",
-            "speakerTranslation": "LE PORTIER DU SÉMINAIRE",
+            "speakerTranslation": "The Seminary Porter",
             "original": "C'est l'office.",
             "translation": "This is the office.",
             "literalText": true
@@ -1504,16 +1502,16 @@ export const manonActThreeScenes = [
         "originalTitle": "Il est jeune … et sa foi semble sincère …",
         "translatedTitle": "He is young… and his faith seems sincere…",
         "participants": [
-          "LE PORTIER DU SÉMINAIRE",
+          "The Seminary Porter",
           "MANON",
-          "LE PORTIER",
-          "VOIX DANS LA CHAPELLE",
+          "The Porter",
+          "Voices in the Chapel",
           "DES GRIEUX"
         ],
         "turns": [
           {
             "speaker": "LE PORTIER DU SÉMINAIRE",
-            "speakerTranslation": "LE PORTIER DU SÉMINAIRE",
+            "speakerTranslation": "The Seminary Porter",
             "original": "Il est jeune … et sa foi semble sincère …\nil a fait grand émoi parmi les plus belles de nos fidèles!",
             "translation": "He is young… and his faith seems sincere…\nIt caused quite a stir among our most beautiful and faithful followers!",
             "literalText": true
@@ -1534,7 +1532,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "LE PORTIER",
-            "speakerTranslation": "LE PORTIER",
+            "speakerTranslation": "The Porter",
             "original": "Fort bien!",
             "translation": "Very good!",
             "literalText": true
@@ -1576,7 +1574,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "VOIX DANS LA CHAPELLE",
-            "speakerTranslation": "VOIX DANS LA CHAPELLE",
+            "speakerTranslation": "Voices in the Chapel",
             "original": "Magnificat anima mea Dominum, etc.\nEt exsultavit spiritus meus, etc.",
             "translation": "Magnificat anima mea Dominum, etc.\nAnd exsultavit spiritus meus, etc.",
             "literalText": true
@@ -1590,7 +1588,7 @@ export const manonActThreeScenes = [
           },
           {
             "speaker": "VOIX DANS LA CHAPELLE",
-            "speakerTranslation": "VOIX DANS LA CHAPELLE",
+            "speakerTranslation": "Voices in the Chapel",
             "original": "In Deo salutari meo, salutari meo, etc.",
             "translation": "In Deo salutari meo, salutari meo, etc.",
             "literalText": true
