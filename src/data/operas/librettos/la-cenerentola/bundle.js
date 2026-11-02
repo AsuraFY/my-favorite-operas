@@ -1,6 +1,4 @@
 // La Cenerentola, ossia La bontà in trionfo, complete two-act bilingual working draft.
-// Original Italian by Jacopo Ferretti, public-domain transcription: https://www.librettidopera.it/cenere/cenere.html
-// Structured source: Sottovoce Q176700. English: independently authored AI-generated working translation awaiting editorial review.
 import {getOpera} from '../../catalog.js';
 import {operaInformation} from '../../information.js';
 import {cenerentolaActOneScenes} from './act-1.js?v=cenerentola-act1-20261029';
