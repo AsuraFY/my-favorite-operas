@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {operaOrigins} from './helpers/opera-origins.mjs';
 import {hanselActOneScenes} from '../src/data/operas/librettos/hansel-und-gretel/act-1.js';
 import {hanselActTwoScenes} from '../src/data/operas/librettos/hansel-und-gretel/act-2.js';
 import {hanselActThreeScenes} from '../src/data/operas/librettos/hansel-und-gretel/act-3.js';
@@ -27,5 +28,5 @@ test('German originals and historical English preserve famous lines and ending',
 test('Historical nonliteral English is explicitly labelled and lazily loaded',async()=>{
  assert.equal(hasCompleteLibretto('hansel-und-gretel'),true);
  assert.equal((await loadLibretto('hansel-und-gretel')).acts.length,3);
- assert.match(hanselUndGretel.source,/not a literal/);
+ assert.match(operaOrigins('hansel-und-gretel'),/not a literal/);
 });
