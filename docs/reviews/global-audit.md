@@ -67,7 +67,7 @@ Statuses in this table are the **consolidated Nov 2 assessment**, not a claim of
 | `AUD-20261101-12` | P1 · C | Source labels assessed; further editorial review pending | **Turandot / Carmen generic headings** — Check Scena/Scène and section incipits; use source-supported navigation labels and correct translations only. |
 | `AUD-20261101-13` | P1 · C | Seven tableaux implemented; verification / rights pending | **Eugene Onegin English-first, seven tableaux** — Respect approved English-first reader, document text edition/rights and authentic seven-tableau boundaries; never fabricate Russian alignment. |
 | `AUD-20261101-14` | P1 · C | Mixed-edition source identified; editorial decision pending | **Manon Act V mixed-edition variant** — Document J. C. Macy Act V contextual differences versus Acts I–IV; obtain editorial decision before substitutions. |
-| `AUD-20261101-15` | P1 · C | Catalogue metadata inventoried; translation review pending | **Working English translations across catalogue** — Per act, collate original, speakers, directions, stanza alignment, incipits and English semantics. Working draft ≠ literary approval. |
+| `AUD-20261101-15` | P1 · C | Targeted Onegin transcription corrections committed; detailed translation review pending | **Working English translations across catalogue** — Per act, collate original, speakers, directions, stanza alignment, incipits and English semantics. Working draft ≠ literary approval. |
 | `AUD-20261101-16` | P1 · C | Source inventory started; rights clearance unresolved | **Rights, licensing, translator/source provenance** — Inventory exact editions, translator, license and URL/access information for originals, translations and imagery; remediate unsuitable sources. |
 | `AUD-20261101-17` | P2 · D | Needs verification | **Both outlines and participant attribution** — Check 3-line hierarchy, original/English headings, instrumentals, icons/spacing, no duplicate/collective credits, no untranslated generic role or phantom character. |
 | `AUD-20261101-18` | P2 · D | Needs verification | **Responsive navigation and accessibility** — Keyboard/focus, drawer, sticky offsets, copied links/reload/history, contrast, reduced motion, desktop/mobile/night screenshots and screen reader. |
@@ -180,6 +180,12 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 **Release gate:** Current `Update` tests green (not merely old green checks); verified preview commit matches; no unapproved source or translation substitutions; relevant manual day/night/mobile/keyboard checks recorded; approved guidelines met or explicit exceptions recorded; licensing/provenance reviewed; **separate approval requested before any merge into `main`**.
 
 ## 8. Dated execution log and handover history
+
+### 2026-11-02 — Phase C targeted English transcription proofreading: Eugene Onegin
+
+- Proofread all three English-first act files for concrete transcription artifacts (malformed hyphens, misspellings and punctuation) and corrected **30 occurrences** across 22 exact replacement patterns without inventing a Russian text or substituting an alternate published translation. Examples: `principels → principles`, `qa portable stove → a portable stove`, `world?weariness → world-weariness`, `twenty?six → twenty-six`, `greetinngs → greetings`. Corrections are mechanical to the existing English reading edition, **not a full literary or semantic translation approval**. Act commits: `4cfd506`, `120b796`, `d32b4f7`.
+- Preserved all **1,434 source records** (704 + 438 + 292), 7 tableaux, source indexes, turn count, speaker cues and blank Russian original column. Updated affected English section incipits consistently. Added token regression checks in `tests/eugene-onegin.test.mjs` (`99ec62c`).
+- Existing successful 236 Node / 876 browser automated gate is for previous application SHA `b7d0130c`; **the editorial change commits require a new current-head test and preview**. No claim of full human translation verification or authoritative English edition rights. `main` untouched.
 
 ### 2026-11-02 — Current Update gate verified for application SHA `b7d0130c`
 
