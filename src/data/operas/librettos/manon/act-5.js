@@ -17,9 +17,9 @@ export const manonActFiveScenes = [
         "type": "Passage",
         "summary": "Des Grieux waits on the road to Le Havre as Lescaut's proposed rescue begins to collapse.",
         "participants": [
-          "DES GRIEUX",
-          "LESCAUT",
-          "LES SOLDATS"
+          "Des Grieux",
+          "Lescaut",
+          "The Soldiers"
         ],
         "turns": [
           {
@@ -191,12 +191,12 @@ export const manonActFiveScenes = [
         "type": "Passage",
         "summary": "Lescaut persuades Des Grieux to stand aside and negotiates with the soldiers.",
         "participants": [
-          "DES GRIEUX",
-          "LESCAUT",
-          "LES SOLDATS",
-          "UN SERGENT",
-          "UN SOLDAT",
-          "MANON"
+          "Lescaut",
+          "Des Grieux",
+          "The Soldiers",
+          "A Sergeant",
+          "A Soldier",
+          "Manon"
         ],
         "turns": [
           {
@@ -375,8 +375,8 @@ export const manonActFiveScenes = [
         "type": "Passage",
         "summary": "Reunited, Manon asks forgiveness and Des Grieux promises her a future together.",
         "participants": [
-          "DES GRIEUX",
-          "MANON"
+          "Des Grieux",
+          "Manon"
         ],
         "turns": [
           {
@@ -478,8 +478,8 @@ export const manonActFiveScenes = [
         "type": "Passage",
         "summary": "Manon remembers the lovers' past and dies in Des Grieux's arms.",
         "participants": [
-          "MANON",
-          "DES GRIEUX"
+          "Manon",
+          "Des Grieux"
         ],
         "turns": [
           {
