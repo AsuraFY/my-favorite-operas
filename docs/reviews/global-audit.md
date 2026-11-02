@@ -181,6 +181,13 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — Phase C Il trovatore speaker attribution review
+
+- Confirmed [Carmen Acts II–IV Verify Update run 41442823583](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41442823583) succeeded on application SHA `dc23f8d4`; Pages build run 41442822617 also succeeded.
+- Inspected **Il trovatore** Parts I–IV (504 turns) and detected **19 turns** with differing Italian and English line counts across four parts. These are flagged for deliberate verse-alignment review, **not** mechanically relineated, since literal alignment can alter dramatic poetry.
+- Identified a concrete mistaken speaker boundary in **Part II, Scene IV**: a single `CONTE` turn contained the Count's `Dunque gli estinti…Fuggi da lei, da me` and Manrico's `Né m'ebbe il ciel…Quel Dio soccorse a me`. Split it into two consecutive speaker turns without changing the sung Italian or English content, added Manrico to the section's participants, and retained placement. Code commit `b6166fe`; regression `tests/il-trovatore-speakers.test.mjs` (`b0b3771`).
+- Additional joint cue/participant label review and 19 verse-alignment exceptions remain for Phase C/D. The new source edits require a fresh Node/Chromium/preview run; past green builds do not verify them. `main` unchanged.
+
 ### 2026-11-02 — Phase C Carmen Acts II–IV targeted editorial pass
 
 - Confirmed previous Carmen Act I checkpoint [Verify Update run 41441055085](https://github.com/AsuraFY/my-favorite-operas/actions/runs/41441055085) and the matching Pages build **succeeded** at SHA `b250a792`.
