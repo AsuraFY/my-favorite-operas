@@ -71,6 +71,16 @@
 
 ## Dated update log
 
+### 2026-11-02 (UTC) — Phase B / Die Walküre source preambles restored (CI verification pending)
+
+**Issue:** AUD-20261101-04 from the November 1 Drive roadmap. **Branch:** `Update` only; `main` untouched. Compared the Sottovoce Q324319 transcription, which separates the Act II and Act III scenic preambles into standalone one-record act-heading blocks, with the three reader acts. All 1,804 previously displayed German records matched the chosen transcription exactly, in order. Restored the missing `Wildes Felsengebirge` and `Auf dem Gipfel eines Felsenberges` directions at the beginning of Acts II and III, with independently written English descriptions; both are displayed as substantial stage directions under the approved bracket/label renderer. Recorded source counts now **481 / 732 / 593 = 1,806**.
+
+**Commits:** Act II `cb9fe825`; Act III `f80c5a88`; source-integrity regression `ca5d3f6f`. New test `tests/die-walkure-source-integrity.test.mjs` checks three-act scene counts, source-record totals, all-act source-order checksums, paired English line counts and both restored preambles. No sung text or existing translations were modified. English remains an unreviewed working translation.
+
+**Status: Needs verification.** Source equality was checked against the archived transcription before committing, but no fresh GitHub Actions `Verify Update` run or browser/preview confirmation has been obtained for the new test commit. Run latest `Update` Node and desktop/mobile browser suite, check verified preview deployment, then update to `Resolved` only if evidence passes. Source/English literary and scene-level editorial review is still a separate task.
+
+
+
 ### 2026-10-29 — Nabucco: complete four-part bilingual working draft
 
 **Update branch only.** Added *Nabucco* (Giuseppe Verdi / Temistocle Solera) from the public-domain Italian libretto at [librettidopera.it](https://www.librettidopera.it/nabucco/nabucco.html), structured via [Sottovoce Q202230](https://github.com/martin-he543/sottovoce/blob/ff573f9e35a565bdb6afed35c83f091e69f5a40b/public/libretti/texts/Q202230.json). Original source has four named parts: **Gerusalemme**, **L'empio**, **La profezia**, **L'idolo infranto**. The parts contain respectively **7, 8, 5, 5** actual named scenes and **230, 186, 170, 141** original source line records (the first lines in each part include tableau/stage headings), totalling **25 named scenes and 727 source line records**. Every line record of sung text and directions is paired with an independently authored English working translation. Separate commits: Act I `e51db7b`, Act II `426de92`, Act III `86589b6`, Act IV `caaf88e`. Registered on-demand through `src/data/libretto-nabucco-bundle.js` and `src/data/libretto-loader.js`; four focused Node tests added.
