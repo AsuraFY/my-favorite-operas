@@ -1,6 +1,4 @@
 // Il trovatore: four-part opera, All four acts transcribed and translated.
-// Italian from Opera Guide user-supplied MHT; English independently AI-generated working
-// translation awaiting editorial review. All four acts supplied as AI working translations, pending editorial review.
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
 import { trovatoreActOneScenes } from './act-1.js?v=trovatore-act1-20261028';
