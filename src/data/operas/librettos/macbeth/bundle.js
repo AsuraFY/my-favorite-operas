@@ -62,6 +62,6 @@ export const macbeth = {
     ]
   },
   characters: ["Macbeth", "Lady Macbeth", "Banco", "Fleanzio", "Streghe", "Duncano", "Malcolm", "Macduff"],
-  source: "Giuseppe Verdi, Macbeth, Italian text and numbered divisions as presented by Opera Guide (accessed 2026-10-15; includes revised passages): https://opera-guide.ch/operas/macbethverdi/libretto/it/; separately labeled 1847 alternative ending: https://www.librettidopera.it/macbeth/a_04.html (accessed 2026-10-17)."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
