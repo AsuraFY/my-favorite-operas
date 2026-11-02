@@ -231,7 +231,7 @@ export const trovatoreActOneScenes = [
             "speaker": "ALTRI",
             "speakerTranslation": "Others",
             "original": "In upupa o strige talora si muta!\nIn corvo tal'altra; più spesso in civetta!\nSull'alba fuggente al par di saetta.",
-            "translation": "Sometimes she becomes a hoopoe or an owl!\nAt others a raven, but most often a screech owl!\nShe flees with the speed of lightning\nAt daybreak.",
+            "translation": "Sometimes she becomes a hoopoe or an owl!\nAt other times a raven, but most often a screech owl!\nAt dawn she flees as swiftly as lightning.",
             "literalText": true
           },
           {
@@ -330,7 +330,7 @@ export const trovatoreActOneScenes = [
             "speaker": "LEONORA",
             "speakerTranslation": "Leonora",
             "original": "Ne' tornei. V'apparve\nBruno le vesti ed il cimier, lo scudo\nBruno e di stemma ignudo,\nSconosciuto guerrier, che dell'agone\nGli onori ottenne... Al vincitor sul crine\nIl serto io posi... Civil guerra intanto\nArse... Nol vidi più! come d'aurato\nSogno fuggente imago! ed era volta\nLunga stagion... ma poi...",
-            "translation": "At the tournament. There appeared\nA warrior, unknown, with dark clothing\nAnd a dark crest, his shield\nWithout a coat of arms. He won\nThe honors of the contest... I placed\nThe victor's wreath upon his brow.\nThen civil war broke out...\nI saw him no more, like the fading image\nOf a golden dream! A long time\nPassed... but then...",
+            "translation": "At the tournament, there appeared\nAn unknown warrior in dark clothes, his crest\nAnd shield dark, and without a coat of arms;\nHe won the honors of the contest...\nI placed the wreath upon the victor's brow...\nMeanwhile, civil war\nBroke out... I saw him no more! Like the image\nOf a fleeting golden dream! A long\nTime passed... but then...",
             "literalText": true
           },
           {
@@ -670,7 +670,7 @@ export const trovatoreActOneScenes = [
             "speaker": "MANRICO",
             "speakerTranslation": "Manrico",
             "original": "Che tardi?... or via, le guardie\nAppella, ed il rivale\nAl ferro del carnefice\nConsegna.",
-            "translation": "What are you waiting for? Come,\nSummon the guards and hand your rival\nOver to the executioner's blade.",
+            "translation": "Why delay? Come now, summon the guards\nAnd hand your rival\nOver to the executioner's\nBlade.",
             "literalText": true
           },
           {
@@ -719,7 +719,7 @@ export const trovatoreActOneScenes = [
             "speaker": "LEONORA",
             "speakerTranslation": "Leonora",
             "original": "(Che mai farò?\nUn sol mio grido perdere\nLo puote..) M'odi...",
-            "translation": "(What shall I do?\nOne cry from me could ruin him...) Hear me...",
+            "translation": "(What shall I do?\nOne cry from me might mean\nHis ruin...) Listen to me...",
             "literalText": true
           },
           {
