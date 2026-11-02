@@ -31,7 +31,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "L'Hôtel de Transylvanie\nUne grande et luxueuse salle de l'Hôtel de Transylvanie, séparée par de large baies des autres salons. Des tables de jeu sont installées dans cette salle et dans les autres salons. Au lever du rideau, une foule de joueurs entourent les tables.",
             "translation": "The Hotel of Transylvania\nA large and luxurious room in the Hotel Transylvania, separated from the other lounges by wide bay windows. Gaming tables are set up in this room and in the other lounges. As the curtain rises, a crowd of players surrounds the tables.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "CROUPIERS",
@@ -80,7 +81,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à la table de dés",
             "translation": "at the dice table",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "PREMIER JOUEUR",
@@ -115,7 +117,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "au fond",
             "translation": "basically",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "UNE VOIX",
@@ -164,7 +167,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "s'avançant pridemment",
             "translation": "advancing proudly",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES AIGREFINS",
@@ -185,7 +189,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "allant et venant dans la salle en suivant les joueurs et les aigrefins",
             "translation": "going back and forth in the room, following the players and the swindlers",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -230,7 +235,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut revient triomphant. Il est entouré des aigrefins, de Poussette, Javotte et Rosette.",
             "translation": "Lescaut returns in triumph. He is surrounded by the swindlers, Poussette, Javotte and Rosette.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "LESCAUT",
@@ -244,7 +250,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "bruit de monnaie venant de dernière",
             "translation": "The sound of coins coming from the last",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -258,7 +265,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "qui vient d'entrer",
             "translation": "who just entered",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -286,7 +294,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Tandis que Guillot félicite Lescaut, les croupiers regagnent leurs places à la table du pharaon. Guillot garde Poussette et les\nautres filles avec lui.",
             "translation": "While Guillot congratulates Lescaut, the croupiers return to their seats at the Pharaoh's table. Guillot keeps Poussette and the\nother girls with him.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GUILLOT",
@@ -300,7 +309,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Grand tapage. Tout le monde se lève pour regarder les personnes qui entrent, dont Manon et Des Grieux.",
             "translation": "There was a great commotion. Everyone stood up to watch the people entering, including Manon and Des Grieux.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           }
         ]
       },
@@ -331,7 +341,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Elles sortent.",
             "translation": "They go out.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -352,7 +363,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Guillot",
             "translation": "to Guillot",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -373,7 +385,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut entraîne Guillot dehors, les autres retournent aux tables de jeu. Manon reste avec Des Grieux. Le voyant triste, elle s'approche de lui.",
             "translation": "Lescaut leads Guillot outside, the others return to the gaming tables. Manon stays with Des Grieux. Seeing him sad, she goes to him.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "CROUPIERS",
@@ -429,7 +442,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "se rapprochant de Manon",
             "translation": "getting closer to Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -507,7 +521,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Manon",
             "translation": "to Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -584,7 +599,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -632,7 +648,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -688,7 +705,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "avec admiration",
             "translation": "with admiration",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -702,7 +720,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il va se mettre à une autre table de jeu.",
             "translation": "He will move to another gaming table.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -730,7 +749,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "MANON, puis POUSSETTE",
             "translation": "MANON, then STROLLER",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -767,7 +787,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -795,7 +816,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "s'approchant des joueurs, à Des Grieux",
             "translation": "approaching the players, at Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -872,7 +894,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "quittant la table de jeux",
             "translation": "leaving the gaming table",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -886,7 +909,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "se levant aussi",
             "translation": "getting up too",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -942,7 +966,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Chacun se précipite.",
             "translation": "Everyone rushes forward.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -987,7 +1012,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux et Manon",
             "translation": "to Des Grieux and Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1001,7 +1027,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Il sort.",
             "translation": "He leaves.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1022,7 +1049,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LESCAUT",
@@ -1036,7 +1064,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES AIGREFINS",
@@ -1050,7 +1079,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aux joueurs",
             "translation": "to the players",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES AIGREFINS",
@@ -1064,7 +1094,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "aux joueurs",
             "translation": "to the players",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES AIGREFINS",
@@ -1078,7 +1109,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "indiquant Des Grieux",
             "translation": "indicating Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LES AIGREFINS",
@@ -1106,7 +1138,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "En ce moment, on frappe fortement à la porte.",
             "translation": "Right now, there's a strong knock at the door.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1120,7 +1153,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           }
         ]
       },
@@ -1152,7 +1186,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "On frappe de nouveau.",
             "translation": "There's another strike.",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1166,7 +1201,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à part",
             "translation": "apart",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1194,7 +1230,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "Lescaut s'enfuit. Un exempt de police et des gardes font irruption dans la piéce.\nmontrant Des Grieux",
             "translation": "Lescaut flees. A police officer and guards burst into the room.\nshowing Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "GUILLOT",
@@ -1208,7 +1245,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Guillot",
             "translation": "to Guillot",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "MANON",
@@ -1222,7 +1260,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Manon",
             "translation": "to Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1236,7 +1275,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "GUILLOT",
@@ -1264,7 +1304,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "à Des Grieux",
             "translation": "to Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LE COMTE",
@@ -1343,7 +1384,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "montrant Des Grieux",
             "translation": "showing Des Grieux",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "LE COMTE",
@@ -1357,7 +1399,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "montrant Manon",
             "translation": "showing Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -1378,7 +1421,8 @@ export const manonActFourScenes = [
             "speakerTranslation": "Stage direction",
             "original": "s'approchant pour protéger Manon",
             "translation": "approaching to protect Manon",
-            "literalText": true
+            "literalText": true,
+            "shortCue": true
           },
           {
             "speaker": "DES GRIEUX",
