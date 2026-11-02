@@ -19,5 +19,5 @@ export const hanselUndGretel={
  {number:2,originalHeading:'ZWEITES BILD — IM WALDE',scenes:hanselActTwoScenes},
  {number:3,originalHeading:'DRITTES BILD — DAS KNUSPERHÄUSCHEN',scenes:hanselActThreeScenes}],
  synopsis:{eyebrow:'Engelbert Humperdinck · Three-picture fairy-tale opera · Public-domain 1905 English singing adaptation; lineation and speaker grouping awaiting editorial review',paragraphs:info.synopsis,characters:info.characters},
- source:'German: Adelheid Wette, Hänsel und Gretel, public-domain F. Rullman libretto (1905), https://www.gutenberg.org/ebooks/43289. English: public-domain contemporary performing adaptation from the same edition; not a literal word-for-word translation. Three pictures with 3, 3 and 5 dramatic scenes respectively. Complete original and historical adaptation transcribed per scene; several non-identical speech divisions have been grouped; verse-by-verse collation and independent browser/editorial review remain pending.'
+ source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
