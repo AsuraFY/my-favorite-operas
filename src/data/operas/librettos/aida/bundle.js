@@ -1,6 +1,4 @@
 // Aida: Act I available; All four acts transcribed and supplied with working English translations.
-// Original Italian: public-domain Antonio Ghislanzoni libretto, as transcribed by Opera Guide.
-// English: independent assistant-produced first translation, pending editorial review.
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
 import { aidaActOneScenes } from './act-1.js?v=aida-act1-20261028';
