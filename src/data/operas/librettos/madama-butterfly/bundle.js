@@ -73,6 +73,6 @@ export const madamaButterfly = {
       ["Goro", "Tenor", "A marriage broker."]
     ]
   },
-  source: "Italian libretto and stage directions: Opera Guide, Madama Butterfly, Atti primo, secondo, and terzo: https://opera-guide.ch/operas/madama+butterfly/libretto/it/. The Spotify recording linked by the user guides the section outline. Reviewed against the Italian on 20 October 2026: restored interleaved dialogue and missing replies, corrected English line correspondence and meaning, separated stage cues from singing, and retained all 34 section routes. The opera is presented in three acts. Section types are editorial listening labels, not asserted score numbers. The earlier draft consulted https://lyricaloperatheater.com/PDFs/MadamaButterfly_libretto_translation.pdf. Browser visual verification remains pending."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
