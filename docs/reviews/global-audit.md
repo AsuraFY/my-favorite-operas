@@ -181,6 +181,13 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 
 ## 8. Dated execution log and handover history
 
+### 2026-11-02 — 35-opera source register centralized in Markdown
+
+- Created canonical [`docs/info/operas-origins.md`](../info/operas-origins.md) with **35 opera entries**, each listing original libretto source and URL or explicit unknown, English translation source/URL or independent origin, and a brief edition summary. Source and comparison links are distinguished; unknown original/English provenance is not invented.
+- Simplified the bibliographic `source` fields in all 35 active `src/data/operas/librettos/*/bundle.js` modules to point to the register. Preserved the `Die Zauberflöte` text-status phrase used by the existing test. Did not change original lyric, translated lyric, speaker, source-record, or navigation data. Historical archive and source comments in individual act modules were not rewritten; this register is the canonical bibliographic reference.
+- Added `tests/opera-origins-register.test.mjs` to enforce 35 entries, three fields per entry and matching bundle pointers. **Current-head CI/browser execution not yet confirmed**, so do not treat this as tested deployment.
+- Do not conflate documentation centralization with legal clearance or translation approval; Phase C's editorial and rights checks remain open. All changes confined to `Update`, not `main`.
+
 ### 2026-11-02 — Phase C provenance & translation inventory (35 operas; not sign-off)
 
 Inspected all **35 active libretto bundles** on `Update`; identified source/provenance descriptions and distinguished draft translations, historic adaptations and review claims. This is a **metadata inventory, not line-by-line translation review or legal clearance**. At least these source families require separate licensing/reproduction assessment: Opera Guide transcriptions, Librettidopera (terms/attribution and non-commercial/share-alike conditions), DraCor TEI editions, public-domain Project Gutenberg historical editions, modern opera-house PDF editions, and LibrettoArchive English reading text. Composer/librettist lifetime alone does not prove a modern translation or transcription is free to republish.
