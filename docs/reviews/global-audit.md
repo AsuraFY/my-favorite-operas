@@ -71,6 +71,14 @@
 
 ## Dated update log
 
+### 2026-11-02 (UTC) — Phase B / Manon Acts I–IV English speaker and outline labels
+
+**Issue:** AUD-20261101-06 and the speaker-label portion of AUD-20261101-05. Corrected generic and collective speaker translations on the English side while keeping French source cues untouched. For each original act, updated `speakerTranslation` for named generic roles and groups and applied deduplicated English participant lists in its musical/reading section outlines. Joint cues retain their source speaker string and are rendered in the English equivalent; outline credits split clear joint cues into individual members. All source-speaker, original and translated text values were checked unchanged by the transformation.
+
+**Commits on Update:** Act I `ac2e879d`; Act II `2a5c5e66`; Act III `76f0c397`; Act IV `322c1cb4`. **Needs verification:** New head CI and desktop/mobile browser preview have not been confirmed; do not label this complete or released. **Still open:** Act I duplicate `Prélude` marker occurs at both opening and conclusion of the Sottovoce Q842063 French transcription; source-edition reconciliation is needed before moving or removing it. The selected Act V comes from a different historical edition. English literary checking and direction classification are separate unfinished tasks.
+
+
+
 ### 2026-11-02 (UTC) — Phase B / Die Walküre source preambles restored (CI verification pending)
 
 **Issue:** AUD-20261101-04 from the November 1 Drive roadmap. **Branch:** `Update` only; `main` untouched. Compared the Sottovoce Q324319 transcription, which separates the Act II and Act III scenic preambles into standalone one-record act-heading blocks, with the three reader acts. All 1,804 previously displayed German records matched the chosen transcription exactly, in order. Restored the missing `Wildes Felsengebirge` and `Auf dem Gipfel eines Felsenberges` directions at the beginning of Acts II and III, with independently written English descriptions; both are displayed as substantial stage directions under the approved bracket/label renderer. Recorded source counts now **481 / 732 / 593 = 1,806**.
