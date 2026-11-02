@@ -55,7 +55,7 @@ export const figaro = {
       ["Coro", "Chorus", "Peasant men and women."]
     ]
   },
-  source: "Lorenzo Da Ponte, Le nozze di Figaro (1786), Italian libretto, all acts from Opera Guide: https://opera-guide.ch/operas/le+nozze+di+figaro/libretto/it/. Accessed 11 October 2026. Acts I–II have editorially reviewed line-aligned English translations. Acts III–IV were editorially reviewed against the Italian on 17 October 2026; embedded speaker cues and scraped footer artifacts were corrected. Desktop/mobile visual review remains pending."
+  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
 
 applyFigaroOutlineMetadata(figaro.acts);
