@@ -1,6 +1,4 @@
 // L'elisir d'amore — Both acts available as Italian/English AI working translations; editorial review pending.
-// Italian: public-domain Felice Romani libretto, librettidopera.it transcription.
-// English is independently generated and awaiting full editorial/source review.
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
 import { elisirActOneScenes } from './act-1.js?v=elisir-act1-20261029';
