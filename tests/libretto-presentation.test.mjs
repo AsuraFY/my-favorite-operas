@@ -1050,7 +1050,7 @@ test('Tosca review preserves bilingual rows, sung asides, dialogue order and all
         assert.ok(html.includes(`href="${href}"`), entry.title);
         const link = html.slice(html.indexOf(`href="${href}"`)).split('</a>')[0];
         assert.ok(link.includes('opera-outline__section-translation'));
-        assert.ok(link.includes('libretto-participants'));
+        assert.equal(link.includes('libretto-participants'), entry.characters.length > 0, 'instrumental landmarks must not inherit voices');
       }
       assert.ok(page.includes(`id="libretto-turn-${act.number}-${scene.number}-0-${turn}"`));
       assert.equal(new Set(entry.characters).size, entry.characters.length);
