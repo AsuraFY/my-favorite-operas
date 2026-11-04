@@ -198,6 +198,15 @@ try {
         if (phaseCAcceptance.has(slug)) {
           await screenshot(page, "phase-c-" + slug + "-outline-" + viewport.label);
         }
+        if (slug === "tosca") {
+          const bellCredit = await page.evaluate(() => {
+            const links = [...document.querySelectorAll(".opera-outline .section-nav-link")];
+            const bells = links.find(x => x.textContent.includes("Le campane suonano mattutino"));
+            return bells ? { found: true, credit: !!bells.querySelector(".libretto-participants") } : { found: false };
+          });
+          check(bellCredit.found && !bellCredit.credit,
+            viewport.label + ": Tosca church-bells interlude must have no participant credit");
+        }
         if (slug === "manon") {
           await page.goto(base + "#/operas/manon?view=synopsis", { waitUntil: "domcontentloaded" });
           await page.locator(".opera-info__synopsis").first().waitFor({ state: "attached", timeout: 20000 });
