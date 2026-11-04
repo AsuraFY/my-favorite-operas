@@ -29,8 +29,8 @@ test('Zauberflote preserves source Auftritte and displays standard No. 10 form w
 test('Tosca bell interlude renders without an inherited shepherd credit', () => {
  globalThis.window = { location: { hash: '#/operas/tosca?view=outline' } };
  const outline = createLibrettoRenderer(tosca).outline();
- const items = [...outline.matchAll(/<a class="section-nav-link opera-outline__section"[^>]*>[\\s\\S]*?<\\/a>/g)];
- const bells = items.map(x => x[0]).find(x => x.includes('Le campane suonano mattutino'));
+ const items = outline.split('<a class="section-nav-link opera-outline__section"').slice(1).map(x => x.split('</a>')[0]);
+ const bells = items.find(x => x.includes('Le campane suonano mattutino'));
  assert.ok(bells, 'Bells item must appear as a real outline link');
  assert.ok(!bells.includes('libretto-participants'), 'Instrumental bells must not show an inherited singer');
  assert.ok(!bells.includes('A Shepherd'), 'The shepherd sings in the preceding item only');
