@@ -291,7 +291,9 @@ function uniqueOutlineCharacters(names) {
   return [...unique.values()];
 }
 function outlineEntryCharacters(entry, scene, act) {
-  if (entry.characters?.length) return uniqueOutlineCharacters(entry.characters);
+  // An explicit empty list is meaningful: an instrumental/stage-only landmark
+  // must not inherit a singer from its surrounding scene.
+  if (Array.isArray(entry.characters)) return uniqueOutlineCharacters(entry.characters);
   const position = matchingOutlineTurn(entry, scene);
   if (position) {
     const section = scene.sections[position.sectionIndex];
