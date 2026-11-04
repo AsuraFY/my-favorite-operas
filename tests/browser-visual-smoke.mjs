@@ -72,6 +72,11 @@ for (const slug of slugs) assert.ok(hasCompleteLibretto(slug), "Missing reader f
 const capture = new Set([
   "cosi-fan-tutte", "tristan-und-isolde", "la-boheme", "samson-et-dalila"
 ]);
+// Phase C acceptance: retain actual reader/outline screenshots for the five
+// opera-specific issues (10-14), rather than inferring a visual pass from smoke.
+const phaseCAcceptance = new Set([
+  "the-magic-flute", "tosca", "turandot", "carmen", "eugene-onegin", "manon"
+]);
 const viewports = [
   { label: "desktop", width: 1440, height: 900 },
   { label: "mobile", width: 390, height: 844 }
@@ -143,6 +148,9 @@ try {
       try {
         await visit(page, base, slug);
         const data = await state(page);
+        if (phaseCAcceptance.has(slug)) {
+          await screenshot(page, "phase-c-" + slug + "-act1-" + viewport.label);
+        }
         check(data.reader && !data.loading,
           viewport.label + " " + slug + ": the reader did not render");
         check(data.rows > 0 && data.columns >= 2,
@@ -169,6 +177,9 @@ try {
           await page.goto(base + "#/operas/" + slug + "?act=" + opera.acts, { waitUntil: "domcontentloaded" });
           await page.locator(".opera-reading-page .libretto-row").first().waitFor({ state: "attached", timeout: 20000 });
           const finalState = await state(page);
+          if (phaseCAcceptance.has(slug)) {
+            await screenshot(page, "phase-c-" + slug + "-lastact-" + viewport.label);
+          }
           check(finalState.reader && finalState.rows > 0 && finalState.translationText,
             viewport.label + " " + slug + ": last act did not render translated passages");
           check(finalState.horizontalOverflow <= 3,
@@ -184,6 +195,16 @@ try {
         check(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth) <= 3,
           viewport.label + " " + slug + ": outline overflows screen");
         if (capture.has(slug)) await screenshot(page, slug + "-" + viewport.label);
+        if (phaseCAcceptance.has(slug)) {
+          await screenshot(page, "phase-c-" + slug + "-outline-" + viewport.label);
+        }
+        if (slug === "manon") {
+          await page.goto(base + "#/operas/manon?view=synopsis", { waitUntil: "domcontentloaded" });
+          await page.locator(".opera-info__synopsis").first().waitFor({ state: "attached", timeout: 20000 });
+          check((await page.locator(".opera-info__synopsis").innerText()).includes("not a single uniform edition"),
+            viewport.label + ": Manon mixed-edition disclaimer missing from the synopsis");
+          await screenshot(page, "phase-c-manon-synopsis-" + viewport.label);
+        }
         results.push({ viewport: viewport.label, slug, rows: data.rows,
           overflow: data.horizontalOverflow, status: "passed" });
       } catch (error) {
