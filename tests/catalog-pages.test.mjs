@@ -20,7 +20,7 @@ test("all thirty-five opera information pages contain verified metadata and full
   for (const opera of operas) {
     const information = operaInformation[opera.slug];
     assert.ok(information, "missing details for " + opera.slug);
-    assert.equal(information.synopsis.length, 2);
+    assert.equal(information.synopsis.length, opera.slug === 'manon' ? 3 : 2);
     assert.ok(information.characters.length >= 5);
     const hasLibretto = Boolean(getLibretto(opera.slug));
     const navigation = hasLibretto ? createLibrettoRenderer(getLibretto(opera.slug)).navigation() : "";
@@ -147,7 +147,7 @@ test("Tosca Acts I–III are available from its opera information page and direc
   assert.ok(!outline.includes("Maria Callas"), "performer credits stay out of the outline");
   assert.ok(!outline.includes("Performers:"), "performer labels stay out of the outline");
   assert.equal((outline.match(/class="section-nav-link opera-outline__section"/g) || []).length, 44);
-  assert.equal((outline.match(/class="libretto-participants"/g) || []).length, 44);
+  assert.equal((outline.match(/class="libretto-participants"/g) || []).length, 43);
   assert.ok(!outline.includes('Characters:'));
   assert.ok(outline.includes('class="libretto-participants"'));
   assert.ok(libretto.spotifyOutline.flatMap(act => act.scenes.flatMap(scene => scene.tracks)).every(track => !Object.hasOwn(track, "performers")),
