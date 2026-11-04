@@ -210,9 +210,13 @@ try {
         if (slug === "manon") {
           await page.goto(base + "#/operas/manon?view=synopsis", { waitUntil: "domcontentloaded" });
           await page.locator(".opera-info__synopsis").first().waitFor({ state: "attached", timeout: 20000 });
-          check((await page.locator(".opera-info__synopsis").innerText()).includes("not a single uniform edition"),
+          const editionNote = page.locator(".opera-info__synopsis p").filter({ hasText: "Editorial edition note" }).first();
+          check(await editionNote.count() === 1 &&
+            (await editionNote.innerText()).includes("not a single uniform edition"),
             viewport.label + ": Manon mixed-edition disclaimer missing from the synopsis");
-          await screenshot(page, "phase-c-manon-synopsis-" + viewport.label);
+          await editionNote.scrollIntoViewIfNeeded();
+          check(await editionNote.isVisible(), viewport.label + ": Manon edition notice is not visibly rendered");
+          await screenshot(page, "phase-c-manon-edition-notice-" + viewport.label);
         }
         results.push({ viewport: viewport.label, slug, rows: data.rows,
           overflow: data.horizontalOverflow, status: "passed" });
