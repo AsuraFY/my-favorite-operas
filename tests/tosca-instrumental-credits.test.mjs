@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createLibrettoRenderer } from '../src/libretto-reader.js';
 import {tosca} from '../src/data/operas/librettos/tosca/bundle.js';
 import {dieZauberflote} from '../src/data/operas/librettos/the-magic-flute/bundle.js';
 
@@ -23,4 +24,13 @@ test('Zauberflote preserves source Auftritte and displays standard No. 10 form w
  assert.equal(numbered.type,'Arie mir Chor');
  assert.equal(numbered.displayType,'Arie mit Chor');
  assert.equal(numbered.originalTitle,'O Isis und Osiris');
+});
+
+test('Tosca bell interlude renders without an inherited shepherd credit', () => {
+ globalThis.window = { location: { hash: '#/operas/tosca?view=outline' } };
+ const outline = createLibrettoRenderer(tosca).outline();
+ const around = outline.match(/<a class="section-nav-link opera-outline__section"[^>]*>[\\s\\S]*?Le campane suonano mattutino[\\s\\S]*?<\\/a>/);
+ assert.ok(around, 'Bells item must appear as a real outline link');
+ assert.ok(!around[0].includes('libretto-participants'), 'Instrumental bells must not show an inherited singer');
+ assert.ok(!around[0].includes('A Shepherd'), 'The shepherd sings in the preceding item only');
 });
