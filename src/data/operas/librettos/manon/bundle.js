@@ -24,8 +24,7 @@ export const manon={
  ],
  synopsis:{
  eyebrow:'Five-act bilingual working reader · English Acts I–IV machine translated, editorial review pending',
- paragraphs:[...info.synopsis,
-  'Editorial edition note: Acts I–IV use an independently translated working text; Act V follows a separate historical French–English performing edition from 1895. This compilation is not a single uniform edition. See the central opera-source register for provenance.'],characters:info.characters
+ paragraphs:info.synopsis,characters:info.characters
  },
  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
 };
