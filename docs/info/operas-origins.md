@@ -100,7 +100,7 @@ For implementation status, editorial defects, verification runs and release read
 
 - **Original libretto source:** Original Russian text **not supplied**. Current reader is English-first, transcribed via Opera Guide/Sottovoce; precise underlying published English edition unspecified.
 - **English translation source:** English reading text from Opera Guide via Sottovoce (1,434 records). [LibrettoArchive — alternate English text for comparison](https://www.librettoarchive.com/Eugene_Onegin_libretto_English), **not claimed as the reproduced text**.
-- **Brief summary:** Three acts, seven tableaux. No aligned Russian text is asserted; translator/edition of existing English remains to be established.
+- **Brief summary:** Three acts, seven tableaux. No aligned Russian text is asserted; translator/edition of existing English remains to be established. [Boosey & Hawkes lists a separately identified English edition by David Lloyd-Jones](https://www.boosey.com/pages/opera/moredetails?musicid=27403); this **does not establish** that Lloyd-Jones translated the website's Opera Guide/Sottovoce text, and must not be used as substitute attribution or reuse authorization.
 
 ### Götterdämmerung
 <a id="gotterdammerung"></a>
@@ -205,7 +205,7 @@ For implementation status, editorial defects, verification runs and release read
 
 - **Original libretto source:** Acts I–IV: [Opera Guide — French](https://opera-guide.ch/operas/manon/libretto/fr/), via Sottovoce Q842063. Act V: [University of Rochester — 1895 J. C. Macy bilingual edition](https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemId=28674).
 - **English translation source:** Acts I–IV: independent Google Translate working English (29 October 2026), **no external translation text link**. Act V: historical English in the [same 1895 Macy bilingual edition](https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemId=28674).
-- **Brief summary:** Five website acts compiled from different editions. The Macy final act corresponds to an alternative historical division; do not present this as one uniform original edition.
+- **Brief summary:** Five website acts compiled from different editions. [BnF authority](https://catalogue.bnf.fr/ark:/12148/cb13916039t) identifies *Manon* as **five acts, six tableaux**, and a [1883 contemporary account](https://fr.wikisource.org/wiki/Page:La_libre_revue_litt%C3%A9raire_et_artistique%2C_1883.djvu/283) describes the Le Havre death scene in Act V. [Opera Guide's French transcription](https://opera-guide.ch/operas/manon/libretto/fr/) ends with the Act IV arrest and does not include this final scene; the historical Act V was added from the separately recorded 1895 Macy source. **The missing Opera Guide Act V is not evidence that Massenet's original opera had only four acts.** Do not present the compilation as a uniform transcribed edition or claim reuse permissions without separately verifying them.
 
 ### Nabucco
 <a id="nabucco"></a>
@@ -268,7 +268,7 @@ For implementation status, editorial defects, verification runs and release read
 
 - **Original libretto source:** [Opera Guide — German](https://opera-guide.ch/en/operas/die%2Bzauberflote/libretto/de/), Emanuel Schikaneder text.
 - **English translation source:** Independently machine-assisted English draft, **not editorially reviewed**; no published English source URL.
-- **Brief summary:** Two acts, 49 source Auftritte with numbers 1–21. German retains historical orthography; distinguish dialogue from numbered music.
+- **Brief summary:** Two acts, 49 source Auftritte with numbers 1–21. German retains historical orthography; distinguish dialogue from numbered music. **Independent historical bibliography:** [Stiftung Mozarteum catalogue — Schikaneder's 1791 Alberti first printing](https://dme.mozarteum.at/DME/libretti-catalog/liste.php?l=2) identifies the original edition, but is not claimed as the direct transcription source. Opera Guide prints *Nr. 10 — Arie mir Chor*; [Mozarteum Köchel entry KV 620/10](https://kv.mozarteum.at/de/work/aria-con-coro-o-isis-und-osiris-schenket-7182) identifies the musical work as an aria with chorus. The reader therefore keeps the source wording and displays *Arie mit Chor* as an editorial normalization.
 
 ### Tosca
 <a id="tosca"></a>
