@@ -238,6 +238,12 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 - Added focused `tests/carmen-act1-editorial.test.mjs` (`9015f7f`) checking original/English correction and 331-turn structural invariant. This is a **targeted editorial review, not full independently accepted Act I or all-four-act translation sign-off**.
 - The new changes require current-head CI/Chromium/Update preview verification; do not copy previous test pass to this checkpoint. `main` untouched.
 
+### 2026-11-05 — Issue 13 Russian + romanized heading format
+
+- On user request, the **22 section titles** of *Eugene Onegin* now use `Russian title (romanized Russian title)` in the source-title line; the separate English heading remains in `translatedTitle`. Numbered sections retain their existing historical numbering and no No. 12 is invented; the additional editorial closing label is presented without an invented score number.
+- Changed Act I–III source-title data, bumped reader/registry import version and added a targeted title-format regression test. Seven-scene architecture, libretto verse text, line offsets, and source-language-empty reading convention were intentionally preserved.
+- **Editorial distinction:** Russian-form labels are source-informed navigation forms, including editorial wording where the source has no discrete formal movement title; they are not a claim of verbatim score plate headings. Full literary verification and current-head CI/browser/preview sign-off remain outstanding. `main` untouched.
+
 ### 2026-11-05 — Issue 13 independent translation implemented on Update (acceptance pending)
 
 - **User decision:** Replace the existing Opera Guide/Sottovoce *Eugene Onegin* English translation with independently prepared English reading text from the historical Russian, using the same project approach as other original-English drafts. Working branch: `Update`; `main` must remain untouched.
