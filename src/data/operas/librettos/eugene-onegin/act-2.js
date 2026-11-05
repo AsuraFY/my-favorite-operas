@@ -14,7 +14,7 @@ export const oneginAct2Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 13 — Антракт и вальс со сценой и хором (Antrakt i val's so stsenoy i khorom)",
         "translatedTitle": "No. 13 — Entr'acte, waltz, scene and chorus",
         "participants": [
           "Guests",
@@ -289,7 +289,7 @@ export const oneginAct2Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 14 — Сцена и куплеты Трике (Stsena i kuplety Trike)",
         "translatedTitle": "No. 14 — Scene and Triquet’s couplets",
         "participants": [
           "Lensky",
@@ -573,7 +573,7 @@ export const oneginAct2Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 15 — Мазурка и сцена (Mazurka i stsena)",
         "translatedTitle": "No. 15 — Mazurka and scene",
         "participants": [
           "Captain",
@@ -755,7 +755,7 @@ export const oneginAct2Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 16 — Финал (Final)",
         "translatedTitle": "No. 16 — Finale",
         "participants": [
           "Lensky",
@@ -982,7 +982,7 @@ export const oneginAct2Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 17 — Интродукция, сцена и ария Ленского (Introduktsiya, stsena i ariya Lenskogo)",
         "translatedTitle": "No. 17 — Introduction, scene and Lensky's aria",
         "participants": [
           "Zaretsky",
@@ -1064,7 +1064,7 @@ export const oneginAct2Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 18 — Сцена поединка (Stsena poedinka)",
         "translatedTitle": "No. 18 — The duel",
         "participants": [
           "Zaretsky",
