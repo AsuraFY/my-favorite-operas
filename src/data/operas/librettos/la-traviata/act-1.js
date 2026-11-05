@@ -27,7 +27,7 @@ export const traviataActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "ATTO PRIMO\nPreludio\nSCENA I\n(Salotto in casa di Violetta. Nel fondo è la porta che mette ad altra sala; ve ne sono altre due laterali; a sinistra, un caminetto con sopra uno specchio. Nel mezzo è una tavola riccamente imbandita.\nVioletta, seduta sopra un divano, sta discorrendo col Dottore e con alcuni amici, mentre alri vanno ad incontrare quelli che sopraggiungono,tra i quali sono il Barone e Flora al braccio del Marchese.)",
-            "translation": "Act I. Prelude. Violetta's drawing room: a richly prepared banquet; she talks with friends as more guests arrive.",
+            "translation": "ACT I\nPrelude\nSCENE I\n(Violetta's drawing room. At the back a door leads into another room; there are two more doors at the sides. On the left stands a fireplace with a mirror above it. A richly laden table stands in the centre.\nVioletta is seated on a sofa, talking with the Doctor and several friends, while others go to greet arriving guests, among them the Baron and Flora, who is on the Marquis's arm.)",
             "literalText": true
           },
           {
