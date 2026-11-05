@@ -2,7 +2,7 @@
 const loaders = Object.freeze({
   "die-walkure": () => import("./librettos/die-walkure/bundle.js?v=walkure-complete-20261029").then(module => module.dieWalkure),
   "manon": () => import("./librettos/manon/bundle.js?v=manon-complete-20261029").then(module => module.manon),
-  "eugene-onegin": () => import("./librettos/eugene-onegin/bundle.js?v=onegin-independent-20261105").then(module => module.eugeneOnegin),
+  "eugene-onegin": () => import("./librettos/eugene-onegin/bundle.js?v=onegin-ru-romanized-20261105").then(module => module.eugeneOnegin),
   "les-contes-dhoffmann": () => import("./librettos/les-contes-dhoffmann/bundle.js?v=hoffmann-20261029").then(module => module.lesContesDHoffmann),
   "gotterdammerung": () => import("./librettos/gotterdammerung/bundle.js?v=gotterdammerung-20261029").then(module => module.gotterdammerung),
   "siegfried": () => import("./librettos/siegfried/bundle.js?v=siegfried-complete-20261029").then(module => module.siegfried),
