@@ -35,7 +35,7 @@ export const manonActOneScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Holà! Hé! Monsieur l'Hôtelier?\nCombien de temps faut-il crier\navant que vous daigniez entendre?",
-            "translation": "Hola! Hey! Mr. Hotelier?\nHow long should you shout?\nbefore you deign to listen?",
+            "translation": "Ho there! Hey! Innkeeper!\nHow long must we shout\nbefore you deign to hear us?",
             "literalText": true
           },
           {
@@ -56,21 +56,21 @@ export const manonActOneScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "Vous moquez-vous de faire attendre?",
-            "translation": "Are you making people wait?",
+            "translation": "Are you deliberately keeping us waiting?",
             "literalText": true
           },
           {
             "speaker": "GUILLOT, BRÉTIGNY",
             "speakerTranslation": "GUILLOT and BRÉTIGNY",
             "original": "Morbleu! Viendrez-vous à la fin?",
-            "translation": "Good heavens! Will you come in the end?",
+            "translation": "By heavens! Will you come at last?",
             "literalText": true
           },
           {
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Foi de Guillot Morfontaine!\nC'est par trop de cruauté\npour des gens de qualité!",
-            "translation": "Guillot Morfontaine's word!\nIt's too cruel\nFor quality people!",
+            "translation": "On Guillot Morfontaine's honor!\nThis is far too cruel\nto people of rank!",
             "literalText": true
           },
           {
@@ -121,7 +121,7 @@ export const manonActOneScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Il n'entend pas!\nPOUSSETTE, puis JAVOTTE, puis ROSETTE",
-            "translation": "He can't hear!\nSTROLLER, then JAVOTTE, then ROSETTE",
+            "translation": "He can't hear!\nPOUSSETTE, then JAVOTTE, then ROSETTE",
             "literalText": true
           },
           {
@@ -136,7 +136,7 @@ export const manonActOneScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "On le rappelle!\nOn le harcèle!\nOn le rappelle!\nPOUSSETTE, JAVOTTE, ROSETTE, GUILLOT et BRÉTIGNY\nVoyons, Monsieur l'Hôtelier!\nMontrez-vous hospitalier! etc.",
-            "translation": "Just a reminder!\nHe's being harassed!\nJust a reminder!\nSTROLLER, JAVOTTE, ROSETTE, GUILLOT and BRÉTIGNY\nCome now, Mr. Hotelier!\nBe hospitable! etc.",
+            "translation": "Just a reminder!\nHe's being harassed!\nJust a reminder!\nPOUSSETTE, JAVOTTE, ROSETTE, GUILLOT and BRÉTIGNY\nCome now, Mr. Hotelier!\nBe hospitable! etc.",
             "literalText": true
           },
           {
@@ -158,7 +158,7 @@ export const manonActOneScenes = [
             "speaker": "JAVOTTE",
             "speakerTranslation": "JAVOTTE",
             "original": "Ayez pitié!\nPOUSSETTE, JAVOTTE et ROSETTE\nSauvez-nous de la famine!\nVoyons, Monsieur...",
-            "translation": "Have mercy!\nSTROLLER, JAVOTTE and ROSETTE\nSave us from famine!\nLet's see, sir...",
+            "translation": "Have mercy!\nPOUSSETTE, JAVOTTE and ROSETTE\nSave us from famine!\nLet's see, sir...",
             "literalText": true
           },
           {
@@ -210,7 +210,7 @@ export const manonActOneScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "POUSSETTE, JAVOTTE, ROSETTE, puis GUILLOT",
-            "translation": "STROLLER, JAVOTTE, ROSETTE, then GUILLOT",
+            "translation": "POUSSETTE, JAVOTTE, ROSETTE, then GUILLOT",
             "literalText": true,
             "shortCue": true
           },
@@ -218,14 +218,14 @@ export const manonActOneScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "Pas de réponse?\nIl est sourd à notre semonce!\nPOUSSETTE, JAVOTTE et ROSETTE\nRecommençons!",
-            "translation": "No response?\nHe is deaf to our warning!\nSTROLLER, JAVOTTE and ROSETTE\nLet's start again!",
+            "translation": "No response?\nHe is deaf to our warning!\nPOUSSETTE, JAVOTTE and ROSETTE\nLet's start again!",
             "literalText": true
           },
           {
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Pas trop de bruit,\ncela redouble l'appétit.\nPOUSSETTE, JAVOTTE, ROSETTE et BRÉTIGNY\nVoyons, Monsieur l'Hôtelier!",
-            "translation": "Not too noisy,\nThis increases the appetite.\nSTROLLER, JAVOTTE, ROSETTE and BRÉTIGNY\nCome now, Mr. Hotelier!",
+            "translation": "Not too noisy,\nThis increases the appetite.\nPOUSSETTE, JAVOTTE, ROSETTE and BRÉTIGNY\nCome now, Mr. Hotelier!",
             "literalText": true
           },
           {
@@ -1097,7 +1097,7 @@ export const manonActOneScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "Cette fois ci, le drôle a par hasard découvert\nun trésor. Jamais plus doux regard n'illumina\nplus gracieux visage.\nPOUSSETTE, JAVOTTE et ROSETTE\nRevenez, Guillot, revenez!\nDieu sait où vous mène un faux pas!\nCher ami Guillot, n'en faites pas!\nRevenez! Vous allez vous casser le ne!\nRevenez donc, Guillot!\nAh! Ah! Ah! etc.\nAllons, Guillot, laissez Mademoiselle,\net revenez, l'on vous appelle.",
-            "translation": "This time, the joker discovered by chance\na treasure. Never did a gentler gaze illuminate\nmore graceful face.\nSTROLLER, JAVOTTE and ROSETTE\nCome back, Guillot, come back!\nGod knows where a misstep can lead!\nDear friend Guillot, don't worry!\nCome back! You're going to break your nose!\nCome back then, Guillot!\nHa! Ha! Ha! etc.\nCome now, Guillot, leave Mademoiselle alone,\nand come back, they'll call you.",
+            "translation": "This time, the joker discovered by chance\na treasure. Never did a gentler gaze illuminate\nmore graceful face.\nPOUSSETTE, JAVOTTE and ROSETTE\nCome back, Guillot, come back!\nGod knows where a misstep can lead!\nDear friend Guillot, don't worry!\nCome back! You're going to break your nose!\nCome back then, Guillot!\nHa! Ha! Ha! etc.\nCome now, Guillot, leave Mademoiselle alone,\nand come back, they'll call you.",
             "literalText": true
           },
           {
@@ -1194,7 +1194,7 @@ export const manonActOneScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "POUSSETTE, JAVOTTE, ROSETTE et BRÉTIGNY\nRevenez, Guillot, revenez!\nDieu sait où vous mène un faux-pas!\nCher ami Guillot, n'en faites pas.\nRevenez !\nVous vous êtes cassé le nez!",
-            "translation": "STROLLER, JAVOTTE, ROSETTE and BRÉTIGNY\nCome back, Guillot, come back!\nGod knows where a misstep can lead!\nDear friend Guillot, don't worry.\nCome back!\nYou broke your nose!",
+            "translation": "POUSSETTE, JAVOTTE, ROSETTE and BRÉTIGNY\nCome back, Guillot, come back!\nGod knows where a misstep can lead!\nDear friend Guillot, don't worry.\nCome back!\nYou broke your nose!",
             "literalText": true
           },
           {
@@ -1803,7 +1803,7 @@ export const manonActOneScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Qu'avez-vous?\nPOUSSETTE, JAVOTTE et ROSETTE\nVous allez vous casser le nez!\nRevenez donc, Guillot, ah! ah! etc.",
-            "translation": "What's wrong?\nSTROLLER, JAVOTTE and ROSETTE\nYou're going to break your nose!\nCome back then, Guillot, ah! ah! etc.",
+            "translation": "What's wrong?\nPOUSSETTE, JAVOTTE and ROSETTE\nYou're going to break your nose!\nCome back then, Guillot, ah! ah! etc.",
             "literalText": true
           },
           {
@@ -1846,7 +1846,7 @@ export const manonActOneScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Viens! Partons!\nPOUSSETTE, JAVOTTE et ROSETTE",
-            "translation": "Come on! Let's go!\nSTROLLER, JAVOTTE and ROSETTE",
+            "translation": "Come on! Let's go!\nPOUSSETTE, JAVOTTE and ROSETTE",
             "literalText": true
           },
           {
@@ -2222,7 +2222,7 @@ export const manonActOneScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Taisez-vous tous!\nJe veux être vengé,\net de cette perfide et de cet enragé!\nPOUSSETTE, JAVOTTE, ROSETTE, BRÉTIGNY et LES BOURGEOIS\nAh! Ah! Ah! Ah! La drôle de figure!\nEt vous, petit, vous le paierez!",
-            "translation": "Everyone be quiet!\nI want to be avenged.\nand of this treacherous and enraged woman!\nSTROLLER, JAVOTTE, ROSETTE, BRÉTIGNY and THE BOURGEOIS\nHa! Ha! Ha! Ha! What a funny face!\nAnd you, little one, will pay for it!",
+            "translation": "Everyone be quiet!\nI want to be avenged.\nand of this treacherous and enraged woman!\nPOUSSETTE, JAVOTTE, ROSETTE, BRÉTIGNY and THE BOURGEOIS\nHa! Ha! Ha! Ha! What a funny face!\nAnd you, little one, will pay for it!",
             "literalText": true
           }
         ]
