@@ -39,7 +39,7 @@ export const aidaActThreeScenes = [
             "speaker": "RAMFIS",
             "speakerTranslation": "Ramfis",
             "original": "(ad Amneris)\nVieni d'Iside al tempio: all vigilia\nDelle tue nozze, invoca\nDella Diva il favore. Iside legge\nDe' mortali nel core; ogni mistero\nDegli umani a lei è noto.",
-            "translation": "(To Amneris.) Come into the temple of Isis. On the eve of your wedding invoke her blessing. She will hear your prayer.",
+            "translation": "(To Amneris.)\nCome to the temple of Isis. On the eve\nof your wedding, seek\nthe goddess's favour. Isis reads\nmortal hearts; every human secret\nis known to her.",
             "literalText": true
           },
           {
