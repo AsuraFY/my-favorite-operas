@@ -238,6 +238,12 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 - Added focused `tests/carmen-act1-editorial.test.mjs` (`9015f7f`) checking original/English correction and 331-turn structural invariant. This is a **targeted editorial review, not full independently accepted Act I or all-four-act translation sign-off**.
 - The new changes require current-head CI/Chromium/Update preview verification; do not copy previous test pass to this checkpoint. `main` untouched.
 
+### 2026-11-05 — Issue 15 Manon Act II focused English fidelity pass
+
+- **Act II reviewed and corrected** on `Update`: 10 sections, 226 source turns. Corrected negation (`ne l'irrite`: des Grieux fears the letter **may anger** his father); repeated `porter la lettre` (**deliver** rather than wear a letter); Brétigny's threat to **abduct des Grieux** (`l'enlever`) rather than remove an object; pronouns (des Grieux adores **her**, Manon); stage cues (`bas` = quietly, not down); Lescaut's threatening dialogue; and Manon's farewell to their little table.
+- Corrections preserved every original French record and singer/speaker cue; per-turn French/English line-break count checked at all 226 turns, including the nine-line `Retenez-moi` refrain. Act II source divisions and act/tableau counts unchanged. Specific automated assertions appended to `tests/manon-english-editorial.test.mjs`; reader cache token refreshed.
+- **Scope and status:** A targeted Act II English pass, not an independently signed-off critical translation. Other Manon acts and the remaining 34 operas still need comprehensive Issue 15 editorial coverage. Full Node/browser suite and SHA-matched preview remain unverified. `main` untouched.
+
 ### 2026-11-05 — User closed Issue 14; Issue 15 first targeted corrections
 
 - **Explicit user disposition:** “Complete, next.” Accordingly **AUD-20261101-14 is completed by user decision** for the implemented historical-French Act V replacement. This is an editorial acceptance instruction, **not** evidence that the unrun latest-commit Node, Chromium, preview and independent French critical-text checks passed. Those remain part of the shared Phase D / cross-opera gates, and the licensing inventory remains under 16.
