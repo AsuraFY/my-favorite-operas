@@ -44,9 +44,9 @@ test('each act has contiguous line offsets for the NEW English translation, not 
 
 test('historical Russian musical divisions and distinctive scenes are present',()=>{
   const labels=passages.map(p=>p.translatedTitle);
-  for(let number=1;number<=11;number++)assert.ok(labels.some(s=>s.startsWith(`No. ${number} —`)), `Missing Act I Russian number ${number}`);
+  for(let number=1;number<=12;number++)assert.ok(labels.some(s=>s.startsWith(`No. ${number} —`)), `Missing Act I Russian number ${number}`);
   for(let number=13;number<=22;number++)assert.ok(labels.some(s=>s.startsWith(`No. ${number} —`)), `Missing Russian number ${number}`);
-  assert.ok(labels.some(s=>s.startsWith('Closing scene')),'Act I unnumbered closing dialogue missing');
+  assert.ok(labels.includes("No. 12 — Scene and Onegin's aria"),'Act I No. 12 with Onegin\'s reply must be present');
   assert.match(allText,/I am writing to you/);
   assert.match(allText,/I am in love/);
   assert.match(allText,/What a scandal/);
@@ -71,5 +71,5 @@ test('all 22 Eugene Onegin sections have Cyrillic titles followed by romanized R
   }
   assert.equal(passages[0].originalTitle,'№ 1 — Дуэт и квартет (Duet i kvartet)');
   assert.equal(passages.at(-1).originalTitle,"№ 22 — Заключительная сцена (Zaklyuchitel'naya stsena)");
-  assert.ok(passages.some(p=>p.originalTitle==='Ответ Онегина (Otvet Onegina)'), 'unnumbered editorial closing section');
+  assert.ok(passages.some(p=>p.originalTitle==='№ 12 — Сцена и ария Онегина (Stsena i ariya Onegina)'), 'No. 12 restored from the score');
 });
