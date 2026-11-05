@@ -2,38 +2,62 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {eugeneOnegin} from '../src/data/operas/librettos/eugene-onegin/bundle.js';
 import {hasCompleteLibretto} from '../src/data/operas/libretto-loader.js';
-test('Eugene Onegin English-first reader retains all 1434 English records without fake Russian',()=>{
- assert.equal(eugeneOnegin.acts.length,3);
- let count=0;
- for(const act of eugeneOnegin.acts)for(const scene of act.scenes)for(const section of scene.sections){count+=section.sourceLineCount;for(const turn of section.turns){assert.ok(turn.translation);assert.equal(turn.original,'');}}
- assert.equal(count,1434);assert.ok(hasCompleteLibretto('eugene-onegin'));
+
+const scenes=eugeneOnegin.acts.flatMap(a=>a.scenes);
+const passages=scenes.flatMap(s=>s.sections);
+const allTurns=passages.flatMap(s=>s.turns);
+const allText=allTurns.map(t=>t.translation).join('\n');
+
+test('Eugene Onegin independently translated English reader keeps three acts and seven tableaux',()=>{
+  assert.equal(eugeneOnegin.acts.length,3);
+  assert.deepEqual(eugeneOnegin.acts.map(a=>a.scenes.length),[3,2,2]);
+  assert.deepEqual(scenes.map(s=>s.sections.length),[7,3,2,4,2,3,1]);
+  assert.deepEqual(scenes.map(s=>Number(s.translatedHeading.match(/^Scene (\d+) — /)?.[1])),[1,2,3,4,5,6,7]);
+  assert.ok(hasCompleteLibretto('eugene-onegin'));
+  assert.ok(eugeneOnegin.synopsis.eyebrow.includes('Independent English reading translation'));
 });
 
-test('Eugene Onegin retains all seven source-supported tableaux with stable English record indices',()=>{
- assert.deepEqual(eugeneOnegin.acts.map(a=>a.scenes.length),[3,2,2]);
- const counts=[704,438,292];
- for(const [i,act] of eugeneOnegin.acts.entries()){
-   const turns=act.scenes.flatMap(s=>s.sections.flatMap(x=>x.turns));
-   const all=turns.flatMap(t=>Array.from({length:t.sourceLineCount},(_,j)=>t.sourceStartIndex+j));
-   assert.deepEqual(all,Array.from({length:counts[i]},(_,j)=>j),'all source records in original sequence');
-   for(const scene of act.scenes){
-     assert.match(scene.translatedHeading,/^Scene [1-7] — /);
-     assert.ok(scene.sections.length>0);
-   }
- }
- const scenes=eugeneOnegin.acts.flatMap(a=>a.scenes);
- assert.deepEqual(scenes.map(s=>Number(s.translatedHeading.match(/^Scene (\d+)/)[1])),[1,2,3,4,5,6,7]);
- assert.ok(scenes[1].sections[0].turns[0].translation.includes('Tatyana\'s room'));
- assert.ok(scenes[4].sections[0].turns[0].translation.includes('A rustic water-mill'));
- assert.ok(scenes[6].sections[0].turns[0].translation.includes('The drawing room of Prince Gremin'));
+test('each act has contiguous line offsets for the NEW English translation, not the old 1434 Opera Guide records',()=>{
+  const minima=[550,350,180];
+  for(const [i,act] of eugeneOnegin.acts.entries()){
+    let next=0;
+    for(const scene of act.scenes){
+      for(const section of scene.sections){
+        assert.ok(section.turns.length>0);
+        assert.equal(section.sourceStartIndex,next);
+        assert.ok(section.translatedTitle);
+        let count=0;
+        for(const turn of section.turns){
+          assert.ok(turn.translation?.trim(), 'no empty translation turns');
+          assert.equal(turn.original,'', 'do not fabricate bilingual alignment');
+          assert.equal(turn.sourceStartIndex,next);
+          assert.equal(turn.sourceLineCount,turn.translation.split('\n').length);
+          next+=turn.sourceLineCount;
+          count+=turn.sourceLineCount;
+        }
+        assert.equal(section.sourceLineCount,count);
+      }
+    }
+    assert.ok(next>minima[i], `Act ${i+1} translation line coverage unusually short: ${next}`);
+  }
 });
 
-test('Eugene Onegin English text has no known damaged transcription tokens',()=>{
- const lines=eugeneOnegin.acts.flatMap(a=>a.scenes.flatMap(sc=>sc.sections.flatMap(sec=>sec.turns.map(t=>t.translation)))).join('\n');
- for(const token of ['qa portable stove','for cach other','principels','dread fully','self?deception','reception?room','tittle?tattle','ice?cold','hot?blooded','hot?heads','it strikes, me','storm?tossed','world?weariness','twenty?six','A bout two years','grey?headed','poor?spirited','cruel?hearted','greetinngs']){
-  assert.ok(!lines.includes(token), 'Uncorrected source transcription token: '+token);
- }
- assert.match(lines,/twenty-six/);
- assert.match(lines,/highest principles/);
- assert.match(lines,/dreadfully shy/);
+test('historical Russian musical divisions and distinctive scenes are present',()=>{
+  const labels=passages.map(p=>p.translatedTitle);
+  for(let number=1;number<=11;number++)assert.ok(labels.some(s=>s.startsWith(`No. ${number} —`)), `Missing Act I Russian number ${number}`);
+  for(let number=13;number<=22;number++)assert.ok(labels.some(s=>s.startsWith(`No. ${number} —`)), `Missing Russian number ${number}`);
+  assert.ok(labels.some(s=>s.startsWith('Closing scene')),'Act I unnumbered closing dialogue missing');
+  assert.match(allText,/I am writing to you/);
+  assert.match(allText,/I am in love/);
+  assert.match(allText,/What a scandal/);
+  assert.match(allText,/my spring/);
+  assert.match(allText,/I shall remain faithful/);
+  assert.ok(allTurns.some(t=>t.speaker==='Stage direction'), 'missing stage directions');
+  assert.ok(allTurns.some(t=>t.speaker.includes('Tatyana')), 'missing singer cues');
+});
+
+test('explicitly document that this is a project translation and not the historical English transcription',()=>{
+  assert.match(eugeneOnegin.synopsis.eyebrow,/Russian libretto/);
+  assert.ok(!allText.includes('qa portable stove'));
+  assert.ok(!allText.includes('principels'));
 });
