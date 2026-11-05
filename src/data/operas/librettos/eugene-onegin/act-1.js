@@ -14,7 +14,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 1 — Дуэт и квартет (Duet i kvartet)",
         "translatedTitle": "No. 1 — Duet and quartet",
         "participants": [
           "Tatyana",
@@ -330,7 +330,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 2 — Хор и пляска крестьян (Khor i plyaska krest'yan)",
         "translatedTitle": "No. 2 — Peasants' chorus and dance",
         "participants": [
           "Solo Singer",
@@ -449,7 +449,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 3 — Сцена и ария Ольги (Stsena i ariya Ol'gi)",
         "translatedTitle": "No. 3 — Scene and Olga’s aria",
         "participants": [
           "Tatyana",
@@ -502,7 +502,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 4 — Сцена (Stsena)",
         "translatedTitle": "No. 4 — Scene",
         "participants": [
           "Larina",
@@ -740,7 +740,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 5 — Сцена и квартет (Stsena i kvartet)",
         "translatedTitle": "No. 5 — Scene and quartet",
         "participants": [
           "Lensky",
@@ -977,7 +977,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 6 — Сцена ариозо Ленского (Stsena ariozo Lenskogo)",
         "translatedTitle": "No. 6 — Scene and Lensky’s arioso",
         "participants": [
           "Lensky",
@@ -1168,7 +1168,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 7 — Заключительная сцена (Zaklyuchitel'naya stsena)",
         "translatedTitle": "No. 7 — Closing scene",
         "participants": [
           "Larina",
@@ -1297,7 +1297,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 8 — Антракт и сцена с няней (Antrakt i stsena s nyaney)",
         "translatedTitle": "No. 8 — Entr'acte and scene with the nurse",
         "participants": [
           "Filipyevna",
@@ -1468,7 +1468,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 9 — Сцена письма (Stsena pis'ma)",
         "translatedTitle": "No. 9 — Letter scene",
         "participants": [
           "Tatyana"
@@ -1578,7 +1578,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 10 — Сцена и дуэт (Stsena i duet)",
         "translatedTitle": "No. 10 — Scene and duet",
         "participants": [
           "Tatyana",
@@ -1794,7 +1794,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "№ 11 — Хор девушек (Khor devushek)",
         "translatedTitle": "No. 11 — Girls' chorus",
         "participants": [
           "Girls",
@@ -1877,7 +1877,7 @@ export const oneginAct1Scenes = [
         "incipitOnly": true,
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
-        "originalTitle": "",
+        "originalTitle": "Ответ Онегина (Otvet Onegina)",
         "translatedTitle": "Closing scene — Onegin's reply",
         "participants": [
           "Onegin",
