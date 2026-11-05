@@ -1,11 +1,13 @@
-// English reading text sourced from existing Sottovoce/Opera Guide transcription.
-// Russian column intentionally blank: no aligned Russian original has been verified.
-export const oneginAct2Scenes=[
+// Independent project English reading translation from the historical Russian libretto.
+// Source: https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)
+// These line indices count translation lines, NOT historical Opera Guide English records.
+// New translation prepared 2026-11-05; source-by-source literary sign-off is tracked in docs/reviews/global-audit.md.
+export const oneginAct2Scenes = [
   {
-    "number": 1,
+    "number": 4,
     "originalHeading": "",
     "translatedHeading": "Scene 4 — Tatyana's name-day ball",
-    "summary": "The Larin house · English reading text only; no aligned Russian source verified.",
+    "summary": "At a ball at the Larins' house, Onegin provokes Lensky and the quarrel becomes a challenge.",
     "sections": [
       {
         "type": "Passage",
@@ -13,245 +15,271 @@ export const oneginAct2Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "Well, what a surprise!",
+        "translatedTitle": "No. 13 — Entr'acte, waltz, scene and chorus",
         "participants": [
-          "GUESTS",
-          "ELDERLY GENTLEMEN",
-          "ELDERLY LADIES",
-          "YOUNG GIRLS",
-          "CAPTAIN",
-          "GROUP A",
-          "GROUP B",
-          "BOTH GROUPS",
-          "ONEGIN",
-          "LENSKY"
+          "Guests",
+          "Older Landowners",
+          "Older Ladies",
+          "Young Women",
+          "Captain",
+          "First Group Of Ladies",
+          "Second Group",
+          "First Group",
+          "Ladies",
+          "Onegin",
+          "Lensky"
         ],
         "sourceStartIndex": 0,
-        "sourceLineCount": 65,
+        "sourceLineCount": 77,
         "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The principal reception-room of the Larins' house, where a ball is in progress. The room is brightly lit by a central chandelier and candles in sconces along the wall. Uniformed officers are among the guests. As the curtain rises, the younger people are dancing a waltz while the older ones watch admiringly. Onegin is dancing with Tatyana and Lensky with Olga. Mme Larina bustles about with the air of an anxious hostess.",
+            "translation": "A ball at the Larins' house. Young people dance while older guests sit in groups talking and observing them.",
             "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 0,
             "sourceLineCount": 1
           },
           {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
             "original": "",
-            "translation": "Well, what a surprise!\nWe never expected\na military band!\nRevelry - and to spare!\nA long time has passed\nsince we were so entertained!\nA marvellous party,\nwould you not all agree? etc.\nA long time has passed\nsince we were so entertained!\nA marvellous party,\nwould you not all agree?\nBravo, bravo, bravo, bravo!\nWhat a lovely surprise!\nBravo, bravo, bravo, bravo!\nA splendid surprise for us all!",
+            "translation": "What a surprise! We never expected\na military band here!\nWhat splendid entertainment!\nIt has been so long since we were treated so well.\nA marvellous celebration, wouldn't you say?\nSo long since we've had such a treat!\nA wonderful celebration, wouldn't you say?\nBravo, bravo, bravo, bravo!\nWhat a surprise for us!\nBravo, bravo, bravo, bravo!\nWhat a splendid surprise!",
             "literalText": true,
             "sourceStartIndex": 1,
-            "sourceLineCount": 16
+            "sourceLineCount": 11
           },
           {
-            "speaker": "ELDERLY GENTLEMEN",
-            "speakerTranslation": "ELDERLY GENTLEMEN",
+            "speaker": "Older Landowners",
+            "speakerTranslation": "Older Landowners",
             "original": "",
-            "translation": "On our estates we don't often meet with\nthe merry sparkle of a jolly ball.\nThe hunt is our only amusement,\ndear to us is its hubbub and stir.",
+            "translation": "At our country estates we seldom see\nthe sparkling joy of a merry ball.\nHunting is our only pastime,\nand we love the noise and excitement of the chase.",
             "literalText": true,
-            "sourceStartIndex": 17,
+            "sourceStartIndex": 12,
             "sourceLineCount": 4
           },
           {
-            "speaker": "ELDERLY LADIES",
-            "speakerTranslation": "ELDERLY LADIES",
+            "speaker": "Older Ladies",
+            "speakerTranslation": "Older Ladies",
             "original": "",
-            "translation": "Amusement indeed! The whole day they dash\nover hill and dale, marshland and scrub!\nThey tire themselves out, then collapse into bed,\nand that's all the amusement we poor women get!",
+            "translation": "Some entertainment! They rush all day\nthrough thickets, meadows, marshes and bushes,\nwear themselves out, then lie down to rest—\nand that's the pleasure left to us poor women!",
             "literalText": true,
-            "sourceStartIndex": 21,
+            "sourceStartIndex": 16,
             "sourceLineCount": 4
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "surrounding Captain Buyanov",
+            "translation": "A captain appears. The young women gather around him.",
             "literalText": true,
-            "sourceStartIndex": 25,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 20,
             "sourceLineCount": 1
           },
           {
-            "speaker": "YOUNG GIRLS",
-            "speakerTranslation": "YOUNG GIRLS",
+            "speaker": "Young Women",
+            "speakerTranslation": "Young Women",
             "original": "",
-            "translation": "Oh, Trifon Petrovich\nhow kind you are, really!\nWe're so grateful to you …",
+            "translation": "Oh, Trifon Petrovich,\nhow very kind of you!\nWe are so grateful!",
             "literalText": true,
-            "sourceStartIndex": 26,
+            "sourceStartIndex": 21,
             "sourceLineCount": 3
           },
           {
-            "speaker": "CAPTAIN",
-            "speakerTranslation": "CAPTAIN",
+            "speaker": "Captain",
+            "speakerTranslation": "Captain",
             "original": "",
-            "translation": "Not at all …\nThe pleasure is all mine!",
+            "translation": "Oh, please!\nThe pleasure is entirely mine!",
             "literalText": true,
-            "sourceStartIndex": 29,
+            "sourceStartIndex": 24,
             "sourceLineCount": 2
           },
           {
-            "speaker": "YOUNG GIRLS",
-            "speakerTranslation": "YOUNG GIRLS",
+            "speaker": "Young Women",
+            "speakerTranslation": "Young Women",
             "original": "",
-            "translation": "We’ll enjoy the dancing so much!",
+            "translation": "We shall have a wonderful dance!",
             "literalText": true,
-            "sourceStartIndex": 31,
+            "sourceStartIndex": 26,
             "sourceLineCount": 1
           },
           {
-            "speaker": "CAPTAIN",
-            "speakerTranslation": "CAPTAIN",
+            "speaker": "Captain",
+            "speakerTranslation": "Captain",
             "original": "",
-            "translation": "I mean to enjoy it too.\nLet’s begin, then!",
+            "translation": "And I mean to enjoy it myself.\nCome, let us begin!",
             "literalText": true,
-            "sourceStartIndex": 32,
+            "sourceStartIndex": 27,
             "sourceLineCount": 2
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Onegin is still dancing with Tatyana. The other couples stop dancing and watch them.\nconversing",
+            "translation": "The dancing resumes. Tatyana and Onegin are among the couples, attracting the ladies' attention.",
             "literalText": true,
-            "sourceStartIndex": 34,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 29,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "First Group Of Ladies",
+            "speakerTranslation": "First Group Of Ladies",
+            "original": "",
+            "translation": "Just look! Just look!\nThere go the two lovebirds!",
+            "literalText": true,
+            "sourceStartIndex": 30,
             "sourceLineCount": 2
           },
           {
-            "speaker": "GROUP A",
-            "speakerTranslation": "GROUP A",
+            "speaker": "Second Group",
+            "speakerTranslation": "Second Group",
             "original": "",
-            "translation": "Just look there! Just look!\nThe lovebirds are dancing together!",
+            "translation": "About time, too!",
+            "literalText": true,
+            "sourceStartIndex": 32,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "First Group",
+            "speakerTranslation": "First Group",
+            "original": "",
+            "translation": "What a bridegroom!",
+            "literalText": true,
+            "sourceStartIndex": 33,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Second Group",
+            "speakerTranslation": "Second Group",
+            "original": "",
+            "translation": "Poor little Tanya!",
+            "literalText": true,
+            "sourceStartIndex": 34,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "First Group",
+            "speakerTranslation": "First Group",
+            "original": "",
+            "translation": "He'll marry her ...",
+            "literalText": true,
+            "sourceStartIndex": 35,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Both Groups",
+            "speakerTranslation": "Both Groups",
+            "original": "",
+            "translation": "And then he'll tyrannize her!\nThey say he is a gambler!",
             "literalText": true,
             "sourceStartIndex": 36,
             "sourceLineCount": 2
           },
           {
-            "speaker": "GROUP B",
-            "speakerTranslation": "GROUP B",
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "High time, too ...",
+            "translation": "When the dance ends, Onegin walks slowly through the room, overhearing the conversation.",
             "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 38,
             "sourceLineCount": 1
           },
           {
-            "speaker": "GROUP A",
-            "speakerTranslation": "GROUP A",
+            "speaker": "Ladies",
+            "speakerTranslation": "Ladies",
             "original": "",
-            "translation": "What a bridegroom!",
+            "translation": "He is shockingly ill-mannered, madly eccentric;\nhe will not even kiss a lady's hand.\nHe is a freethinker, and drinks nothing\nbut red wine by the glass!",
             "literalText": true,
             "sourceStartIndex": 39,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "GROUP B",
-            "speakerTranslation": "GROUP B",
-            "original": "",
-            "translation": "How sorry one is for Tanya!",
-            "literalText": true,
-            "sourceStartIndex": 40,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "GROUP A",
-            "speakerTranslation": "GROUP A",
-            "original": "",
-            "translation": "He'll marry her …",
-            "literalText": true,
-            "sourceStartIndex": 41,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "BOTH GROUPS",
-            "speakerTranslation": "BOTH GROUPS",
-            "original": "",
-            "translation": "… and then play the tyrant!\nThy say he's a gambler!",
-            "literalText": true,
-            "sourceStartIndex": 42,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Onegin, passing, overhears the conversation.",
-            "literalText": true,
-            "sourceStartIndex": 44,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "BOTH GROUPS",
-            "speakerTranslation": "BOTH GROUPS",
-            "original": "",
-            "translation": "He’s dreadfully uncouth, his behaviour's quite mad,\nhe won't kiss the ladies' hands,\nhe’s a freemason, he drinks\nonly red wine - by the tumblerful!",
-            "literalText": true,
-            "sourceStartIndex": 45,
             "sourceLineCount": 4
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "aside",
+            "translation": "So that is their opinion!\nI have heard quite enough\nof this disgusting gossip.\nAnd I have only myself to blame!\nWhy did I come to this foolish ball?\nI shall never forgive Vladimir\nfor doing me this favour.\nI shall pay attention to Olga\nand make him thoroughly furious.\nThere she is!",
             "literalText": true,
-            "sourceStartIndex": 49,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "There's public opinion for you! I've heard\nmore than enough of this repulsive\ntittle-tattle! It serves me right,\nall this! Why did I ever come\nto this stupid ball? Why?\nI won't forgive Vladimir\nThis service! I'll\nflirt with Olga …\nThat'll make him mad!\nHere she is! …",
-            "literalText": true,
-            "sourceStartIndex": 50,
+            "sourceStartIndex": 43,
             "sourceLineCount": 10
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Olga passes by with Lensky",
+            "translation": "Onegin approaches Olga, just as Lensky comes towards her.",
             "literalText": true,
-            "sourceStartIndex": 60,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 53,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "May I have the pleasure?",
+            "translation": "May I have this dance?",
             "literalText": true,
-            "sourceStartIndex": 61,
+            "sourceStartIndex": 54,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "You promised it to me!",
+            "literalText": true,
+            "sourceStartIndex": 55,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "You must have misunderstood.",
+            "literalText": true,
+            "sourceStartIndex": 56,
             "sourceLineCount": 1
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Olqa seems undecided.",
+            "translation": "Olga dances with Onegin.",
             "literalText": true,
-            "sourceStartIndex": 62,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 57,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "You promised me this one!",
+            "translation": "What is happening?\nI cannot believe my eyes! Olga!\nHeavens, what has come over me?",
             "literalText": true,
-            "sourceStartIndex": 63,
-            "sourceLineCount": 1
+            "sourceStartIndex": 58,
+            "sourceLineCount": 3
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
             "original": "",
-            "translation": "You must have made a mistake!",
+            "translation": "What a glorious feast! What a surprise!\nWhat fine hospitality!\nSuch wonderful entertainment!\nA glorious feast! What a surprise!\nWho expected a military band?\nWhat entertainment!\nIt's been so long since we've had such a treat!\nA magnificent feast, isn't it?\nBravo, bravo, bravo, bravo!\nWhat a surprise for us!\nBravo, bravo, bravo, bravo!\nA wonderful feast, don't you agree?\nYes, a military band was wholly unexpected!\nA splendid feast! Such merriment!\nA splendid feast!",
             "literalText": true,
-            "sourceStartIndex": 64,
+            "sourceStartIndex": 61,
+            "sourceLineCount": 15
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "As Olga finishes her dance, Lensky approaches. Onegin watches from a distance.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 76,
             "sourceLineCount": 1
           }
         ]
@@ -262,204 +290,281 @@ export const oneginAct2Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "Why, what's, this!",
+        "translatedTitle": "No. 14 — Scene and Triquet’s couplets",
         "participants": [
-          "LENSKY",
-          "GUESTS",
-          "OLGA",
-          "ONEGIN"
+          "Lensky",
+          "Olga",
+          "Onegin",
+          "Young Women",
+          "Triquet",
+          "Guests"
         ],
-        "sourceStartIndex": 65,
-        "sourceLineCount": 65,
+        "sourceStartIndex": 77,
+        "sourceLineCount": 86,
         "turns": [
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Olga and Onegin dance: he plies her with exaggerated attentions to which she responds with evident gratification.",
+            "translation": "Have I deserved to be mocked like this?\nOh, Olga, how cruelly you treat me!\nWhat have I done?",
             "literalText": true,
-            "sourceStartIndex": 65,
+            "sourceStartIndex": 77,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "I have no idea what wrong I've done!",
+            "literalText": true,
+            "sourceStartIndex": 80,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Why, what's, this!\nI can’t believe my eyes!\nOlga!\nHeavens, what's happening to me!",
+            "translation": "You danced every écossaise, every waltz\nwith Onegin!\nI asked you, and you refused me.",
             "literalText": true,
-            "sourceStartIndex": 66,
+            "sourceStartIndex": 81,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "Vladimir, how strange you are!\nYou get angry over trifles.",
+            "literalText": true,
+            "sourceStartIndex": 84,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "Trifles?\nWas I supposed to watch without feeling\nwhile you laughed and flirted with him?\nHe leaned towards you, pressed your hand—\nI saw it all!",
+            "literalText": true,
+            "sourceStartIndex": 86,
+            "sourceLineCount": 5
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "It's nonsense, every word!\nYou are jealous for no reason.\nWe were merely chatting.\nHe is so agreeable!",
+            "literalText": true,
+            "sourceStartIndex": 91,
             "sourceLineCount": 4
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "as they dance",
+            "translation": "Agreeable, is he?\nOh, Olga, you do not love me!",
             "literalText": true,
-            "sourceStartIndex": 70,
-            "sourceLineCount": 1
+            "sourceStartIndex": 95,
+            "sourceLineCount": 2
           },
           {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "A marvellous party!\nWhat a surprise!\nA marvellous party!\nWhat a surprise!\nWhat a delicious treat! rep.\nRevelry - and to spare!\nA marvellous party!\nWhat a surprise!\nWe never expected\nA military band!\nRevelry - and to spare!\nA long time has passed\nsince we were so entertained!\nA marvellous party! Isn't that so?\nBravo, bravo, bravo, bravo!\nWhat a surprise!\nBravo, bravo, bravo, bravo!\nDon't you agree?\nA marvellous party,\ndon't you agree?\nIndeed, we never expected\na military band!\nA marvellous party, etc.\nRevelry - and to spare!\nA marvellous party!",
-            "literalText": true,
-            "sourceStartIndex": 71,
-            "sourceLineCount": 25
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "As soon as the dance ends, Lensky approaches Olga.",
-            "literalText": true,
-            "sourceStartIndex": 96,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Have I deserved such ridicule from you?\nOh, Olga, how cruelly you treat me!\nWhat have I done?",
+            "translation": "How strangely you're behaving!",
             "literalText": true,
             "sourceStartIndex": 97,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "I can't see hat I've done anything wrong!",
-            "literalText": true,
-            "sourceStartIndex": 100,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Every écossaise, every waltz\nyou have danced with Onegin!\nI asked you, but was refused!",
+            "translation": "You do not love me!\nWill you dance the cotillion with me?",
             "literalText": true,
-            "sourceStartIndex": 101,
-            "sourceLineCount": 3
+            "sourceStartIndex": 98,
+            "sourceLineCount": 2
           },
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Vladimir, this is ridiculous,\nyou're angry about nothing at all!",
+            "translation": "No, with me.\nYou gave me your word, did you not?",
+            "literalText": true,
+            "sourceStartIndex": 100,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "And I shall keep my word.",
+            "literalText": true,
+            "sourceStartIndex": 102,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Lensky gestures imploringly.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 103,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "There is your punishment\nfor being so jealous!",
             "literalText": true,
             "sourceStartIndex": 104,
             "sourceLineCount": 2
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "What! Nothing!\nHow could I be indifferent\nwhile you laughed and flirted with him?\nHe was leaning over you and squeezing\nyour hand! I saw it all!",
+            "translation": "Olga!",
             "literalText": true,
             "sourceStartIndex": 106,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "That's all stuff and nonsense!\nYou have no reason to be jealous,\nwe were only chatting;\nhe's very nice!",
-            "literalText": true,
-            "sourceStartIndex": 111,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Nice, even!\nOh, Olga, you don't love me!",
-            "literalText": true,
-            "sourceStartIndex": 115,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "How strange you are!",
-            "literalText": true,
-            "sourceStartIndex": 117,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "You don't love me!\nWill you dance\nthe cotillon with me'?",
+            "translation": "I will not change my mind!",
             "literalText": true,
-            "sourceStartIndex": 118,
-            "sourceLineCount": 3
+            "sourceStartIndex": 107,
+            "sourceLineCount": 1
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Onegin approaches them.",
+            "translation": "Olga and Onegin turn away. A lively group of young ladies comes towards them.",
             "literalText": true,
-            "sourceStartIndex": 121,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 108,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "No, with me.\nYou promised me, didn't you'?",
+            "translation": "Look! All the young ladies\nare coming this way with Triquet.",
             "literalText": true,
-            "sourceStartIndex": 122,
+            "sourceStartIndex": 109,
             "sourceLineCount": 2
           },
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "And I'll keep my promise!",
+            "translation": "Who is he?",
             "literalText": true,
+            "sourceStartIndex": 111,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "A Frenchman who lives with Kharlikov.",
+            "literalText": true,
+            "sourceStartIndex": 112,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Young Women",
+            "speakerTranslation": "Young Women",
+            "original": "",
+            "translation": "Monsieur Triquet, Monsieur Triquet!\nBe so kind as to sing a verse!",
+            "literalText": true,
+            "sourceStartIndex": 113,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Triquet",
+            "speakerTranslation": "Triquet",
+            "original": "",
+            "translation": "I have brought a song with me;\nbut where is the young lady?\nShe must stand before me,\nfor this song was composed for her!",
+            "literalText": true,
+            "sourceStartIndex": 115,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Young Women",
+            "speakerTranslation": "Young Women",
+            "original": "",
+            "translation": "There she is! There she is!",
+            "literalText": true,
+            "sourceStartIndex": 119,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Triquet",
+            "speakerTranslation": "Triquet",
+            "original": "",
+            "translation": "Ah, so here you are!\nHere is the queen of the day.\nLadies, I am about to begin.\nPlease, do not interrupt me.",
+            "literalText": true,
+            "sourceStartIndex": 120,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Triquet ceremoniously brings Tatyana into the middle of the circle and sings.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 124,
             "sourceLineCount": 1
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Triquet",
+            "speakerTranslation": "Triquet",
             "original": "",
-            "translation": "to Lensky",
+            "translation": "Gathered for this celebration,\nlet us admire the charm and beauty\nof the young lady whose birthday we honour.\nHer gentle, enchanting presence\nsheds its brightness over us all.\nWhat pleasure, what happiness to behold her!\nMay destiny fulfil her every wish;\nmay joy, games and delight\nalways keep a smile upon her lips.\nMay she be like a star that shines forever\nin the sky above this country,\nlighting our days and our nights.\nYou are a rose, you are a rose,\na lovely rose, beautiful Tatyana!\nYou are a rose, you are a rose,\na lovely rose, beautiful Tatyana!",
             "literalText": true,
             "sourceStartIndex": 125,
-            "sourceLineCount": 1
+            "sourceLineCount": 16
           },
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Triquet",
+            "speakerTranslation": "Triquet",
             "original": "",
-            "translation": "That's your punishment\nfor being jealous!",
+            "translation": "What a wonderful day it was\nwhen beautiful Tatyana\nwas born here in this quiet countryside!\nAnd we have come here—\ngirls and ladies, gentlemen too—\nto watch her blossom like a flower!",
             "literalText": true,
-            "sourceStartIndex": 126,
-            "sourceLineCount": 2
+            "sourceStartIndex": 141,
+            "sourceLineCount": 6
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
             "original": "",
-            "translation": "Olga!",
+            "translation": "Bravo, bravo, bravo, Monsieur Triquet!\nYour song is splendid,\nand so charmingly sung!",
             "literalText": true,
-            "sourceStartIndex": 128,
-            "sourceLineCount": 1
+            "sourceStartIndex": 147,
+            "sourceLineCount": 3
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Triquet",
+            "speakerTranslation": "Triquet",
             "original": "",
-            "translation": "to Lensky",
+            "translation": "May you enjoy great happiness,\nremain forever the fairy of these shores,\nand never be bored or ill.\nAnd amid all your good fortune,\ndo not forget your humble servant\nor all your friends!\nYou are a rose, you are a rose,\nbeautiful Tatyana!\nYou are a rose, you are a rose,\nbeautiful Tatyana!",
             "literalText": true,
-            "sourceStartIndex": 129,
-            "sourceLineCount": 1
+            "sourceStartIndex": 150,
+            "sourceLineCount": 10
+          },
+          {
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
+            "original": "",
+            "translation": "Bravo, bravo, bravo, Monsieur Triquet!\nYour song is splendid\nand so charmingly sung!",
+            "literalText": true,
+            "sourceStartIndex": 160,
+            "sourceLineCount": 3
           }
         ]
       },
@@ -469,752 +574,397 @@ export const oneginAct2Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "Not for the world!",
+        "translatedTitle": "No. 15 — Mazurka and scene",
         "participants": [
-          "OLGA",
-          "ONEGIN",
-          "YOUNG GIRLS",
-          "TRIQUET",
-          "GUESTS",
-          "CAPTAIN",
-          "LENSKY"
+          "Captain",
+          "Onegin",
+          "Lensky",
+          "Guests",
+          "Larina"
         ],
-        "sourceStartIndex": 130,
-        "sourceLineCount": 64,
+        "sourceStartIndex": 163,
+        "sourceLineCount": 59,
         "turns": [
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Captain",
+            "speakerTranslation": "Captain",
             "original": "",
-            "translation": "Not for the world!",
+            "translation": "Ladies and gentlemen, take your places, please!\nThe cotillion is about to begin!\nCome along!",
             "literalText": true,
-            "sourceStartIndex": 130,
-            "sourceLineCount": 1
+            "sourceStartIndex": 163,
+            "sourceLineCount": 3
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "to Onegin",
+            "translation": "A mazurka begins. Onegin dances with Olga while Lensky watches jealously. When the dance ends, Onegin approaches Lensky.",
             "literalText": true,
-            "sourceStartIndex": 131,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Look!",
-            "literalText": true,
-            "sourceStartIndex": 132,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "All the young ladies are coming this way with Triquet.",
-            "literalText": true,
-            "sourceStartIndex": 133,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Who is he?",
-            "literalText": true,
-            "sourceStartIndex": 134,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "A Frenchman, he lives at the Kharlikov's.",
-            "literalText": true,
-            "sourceStartIndex": 135,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "YOUNG GIRLS",
-            "speakerTranslation": "YOUNG GIRLS",
-            "original": "",
-            "translation": "Monsieur Triquet, Monsieur Triquet,\nplease sing us some verses!",
-            "literalText": true,
-            "sourceStartIndex": 136,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TRIQUET",
-            "speakerTranslation": "TRIQUET",
-            "original": "",
-            "translation": "I'as ze verses wiz me.\nBut where, I ask, is Mademoiselle?\n'E must be 'ere in front of me,\nfor the verses were written for her!",
-            "literalText": true,
-            "sourceStartIndex": 138,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Here she is! Here she is!",
-            "literalText": true,
-            "sourceStartIndex": 142,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "The guests form a circle, placing Tatyana in the middle, where, despite her embarrassment and attempts to escape, she has to stand while M. Triquet adresses his couplets to her.",
-            "literalText": true,
-            "sourceStartIndex": 143,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TRIQUET",
-            "speakerTranslation": "TRIQUET",
-            "original": "",
-            "translation": "Aha!\n'Ere is ze queen zis day.\nMesdames, I will begin.\nPlease to not interrupt me.\nAs guests, let us pay tribute\nto the charm and beauty\nof the one whose name-day we celebrate.\nHer sweet, enchanting countenance\nsheds radiance all around.\nWhat a pleasure, what a joy to see her!\nShine upon us forever, beautiful Tatyana! rep.",
-            "literalText": true,
-            "sourceStartIndex": 144,
-            "sourceLineCount": 11
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Bravo, bravo, bravo, Monsieur Triquet!\nYour verses are wonderful and very, very nicely sung!",
-            "literalText": true,
-            "sourceStartIndex": 155,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TRIQUET",
-            "speakerTranslation": "TRIQUET",
-            "original": "",
-            "translation": "May destiny fulfil her every wish,\nmay joy, amusement and pleasure\never wreathe her lips in smiles!\nMay she be like a star in our country's firmament,\never shining and casting light,\nilluminating our days and nights.\nShine upon us forever, beautiful Tatyana! rep.",
-            "literalText": true,
-            "sourceStartIndex": 157,
-            "sourceLineCount": 7
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Bravo, bravo, bravo, Monsieur Triquet!\nYour verses are wonderful and very, very nicely sung!",
-            "literalText": true,
-            "sourceStartIndex": 164,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Tatyana curtsies confusedly and Triquet hands her the verses with an exaggerated bow.",
-            "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 166,
             "sourceLineCount": 1
           },
           {
-            "speaker": "CAPTAIN",
-            "speakerTranslation": "CAPTAIN",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Ladies and gentlemen, take your places, please\nthe cotillon's about to begin!\nIf you please!",
+            "translation": "Not dancing, Lensky?\nYou stand there like some Lord Byron.\nWhat's the matter with you?",
             "literalText": true,
             "sourceStartIndex": 167,
             "sourceLineCount": 3
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "The Captain offers Tatyana his arm and leads off the dance. Onegin and Olga dance together for a while, then Onegin escorts her back to her seat. Lensky is standing gloomily behind them. Onegin turns to Lensky, pretending he has only just noticed him there.",
+            "translation": "With me? Nothing.\nI am admiring you,\nwhat a wonderful friend you are!",
             "literalText": true,
             "sourceStartIndex": 170,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Aren't you dancing, Lensky?\nYou're standing around like some Childe Harold!\nWhat's up with you?",
-            "literalText": true,
-            "sourceStartIndex": 171,
             "sourceLineCount": 3
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "With me? Nothing.\nI’m admiring you;\nWhat a fine friend you are!",
+            "translation": "Well, well!\nI never expected such a compliment.\nWhy are you sulking?",
             "literalText": true,
-            "sourceStartIndex": 174,
+            "sourceStartIndex": 173,
             "sourceLineCount": 3
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Olga is chosen for a figure in the mazurka.",
+            "translation": "Sulking? Not at all!\nI am admiring the way\nyour clever words and fashionable chatter\nturn girls' heads\nand disturb their peace of mind.\nTatyana alone is evidently not enough for you.\nFor love of me, you surely mean\nto ruin Olga's happiness,\nupset her heart, and then laugh at her.\nWhat honourable conduct!",
             "literalText": true,
-            "sourceStartIndex": 177,
-            "sourceLineCount": 1
+            "sourceStartIndex": 176,
+            "sourceLineCount": 10
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Well, well!\nI didn't expect such an avowal!\nWhat are you sulking about?",
-            "literalText": true,
-            "sourceStartIndex": 178,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Me, sulking'? Not at all!\nI’m admiring how, with artful words\nand man-of-the-world chatter,\nyou turn heads and disturb the peace of mind\nof all the young girls!",
-            "literalText": true,
-            "sourceStartIndex": 181,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "The guests gradually leave off dancing as they become aware of the quarrel.",
+            "translation": "What? You must have lost your mind!",
             "literalText": true,
             "sourceStartIndex": 186,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Obviously, Tatyana is not enough\nfor you. Out of love for me,\nyou evidently want to ruin Olga,\nupset her peace of mind, and then\nhave a good laugh at her expense!\nOh, how admirable!…",
+            "translation": "Wonderful!\nYou insult me\nand then call me insane.",
             "literalText": true,
             "sourceStartIndex": 187,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "What? You must be mad!",
-            "literalText": true,
-            "sourceStartIndex": 193,
-            "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Excellent!",
-        "participants": [
-          "LENSKY",
-          "GUESTS",
-          "ONEGIN",
-          "LARINA",
-          "TATYANA",
-          "LARINA, OLGA"
-        ],
-        "sourceStartIndex": 194,
-        "sourceLineCount": 65,
-        "turns": [
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Excellent!\nYou insult me, and then you call me\na madman!",
-            "literalText": true,
-            "sourceStartIndex": 194,
             "sourceLineCount": 3
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
             "original": "",
-            "translation": "Everybody stops dancing. The guests surround the quarrelling men.",
+            "translation": "What's happening? What is it?\nWhat are they arguing about?",
             "literalText": true,
-            "sourceStartIndex": 197,
-            "sourceLineCount": 1
+            "sourceStartIndex": 190,
+            "sourceLineCount": 2
           },
           {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "What's up? What's going on there?\nWhat's the matter?",
+            "translation": "Onegin, you are no longer my friend!\nI want nothing more to do with you.\nI despise you!",
+            "literalText": true,
+            "sourceStartIndex": 192,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
+            "original": "",
+            "translation": "What an unexpected surprise!\nWhat a quarrel has broken out!\nThis has become serious!",
+            "literalText": true,
+            "sourceStartIndex": 195,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "Listen, Lensky, you are mistaken.\nYou're mistaken!\nWe've attracted enough attention\nwith this argument.\nI have disturbed no one's peace,\nand I assure you I have no intention\nof doing so.",
             "literalText": true,
             "sourceStartIndex": 198,
-            "sourceLineCount": 2
+            "sourceLineCount": 7
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Onegin! You're no longer my friend!\nI no longer wish\nto be on close terms with you!\nI … despise you!",
+            "translation": "Then why did you squeeze her hand,\nwhy whisper things to her?\nShe blushed and laughed!\nWhat were you saying to her?",
             "literalText": true,
-            "sourceStartIndex": 200,
+            "sourceStartIndex": 205,
             "sourceLineCount": 4
           },
           {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Here's an unexpected turn of events!\nWhat a quarrel has blown up!\nThis is no laughing matter!",
+            "translation": "Listen, this is absurd!\nEveryone is watching us.",
             "literalText": true,
-            "sourceStartIndex": 204,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "drawing Lensky to one side",
-            "literalText": true,
-            "sourceStartIndex": 207,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Listen, Lensky, you're wrong,\nyou're wrong!\nWe've attracted enough attention with our quarrel!\nI haven't disturbed anyone's peace of mind yet,\nand neither, I admit, have I any intention of doing so!",
-            "literalText": true,
-            "sourceStartIndex": 208,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Then why were you\nsqueezing her hand\nand whispering to her?\nShe laughed and blushed!\nWhat were you saying to her?",
-            "literalText": true,
-            "sourceStartIndex": 213,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Listen, - this is ridiculous,\neveryone's crowding round us!",
-            "literalText": true,
-            "sourceStartIndex": 218,
+            "sourceStartIndex": 209,
             "sourceLineCount": 2
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "What do I care?\nYou've insulted me\nand I demand satisfaction!",
+            "translation": "I do not care!\nYou have insulted me.\nI demand satisfaction.",
+            "literalText": true,
+            "sourceStartIndex": 211,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
+            "original": "",
+            "translation": "What is it?\nTell us, tell us what has happened!",
+            "literalText": true,
+            "sourceStartIndex": 214,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "Quite simply, I demand\nthat Mr Onegin explain his actions to me.\nHe refuses. Therefore\nI ask him to accept my challenge.",
+            "literalText": true,
+            "sourceStartIndex": 216,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Oh, heavens! In my own house!\nHave mercy, please!",
             "literalText": true,
             "sourceStartIndex": 220,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "What's it all about? Tell us.\nTell us what has happened.",
-            "literalText": true,
-            "sourceStartIndex": 223,
             "sourceLineCount": 2
-          },
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "",
+        "translatedTitle": "No. 16 — Finale",
+        "participants": [
+          "Lensky",
+          "Onegin",
+          "Tatyana",
+          "Larina",
+          "Olga",
+          "Guests"
+        ],
+        "sourceStartIndex": 222,
+        "sourceLineCount": 111,
+        "turns": [
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "I have simply asked Mr. Onegin\nto explain his behaviour to me!\nHe does not wish to do so, so I\nask him to accept my challenge.",
+            "translation": "In your house! In your house!\nHere in your home,\nmy childhood passed like a golden dream.\nHere I first learned\nthe joy of innocent, radiant love.\nBut today I have discovered something else:\nI have learned that life is no romance;\nhonour is only an empty sound,\nfriendship a hollow word,\na cruel and pitiful deception!",
             "literalText": true,
-            "sourceStartIndex": 225,
-            "sourceLineCount": 4
+            "sourceStartIndex": 222,
+            "sourceLineCount": 10
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "hurrying up",
-            "literalText": true,
-            "sourceStartIndex": 229,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Dear God! In our house!\nSpare us, spare us!",
-            "literalText": true,
-            "sourceStartIndex": 230,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "In your house! In your house!\nIn your house, as in a golden dream,\nmy childhood years flowed gently by!\nIn your house I first tasted\nthe joys of a pure, serene love!\nBut today, I have learnt …\n… something different,\nI have learnt that life is no romantic novel,\nthat honour is but a sound, friendship an empty …",
+            "translation": "Alone before my conscience,\nI am dissatisfied with myself.\nI have mocked his shy, tender love\nfar too carelessly.\nLoving that young man with all my heart,\nI should have shown myself\nnot a captive of prejudice,\nbut a man of honour and sound judgment.",
             "literalText": true,
             "sourceStartIndex": 232,
-            "sourceLineCount": 9
+            "sourceLineCount": 8
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "In the depths of my heart\nI am displeased with myself.\nWith this shy and tender passion",
+            "translation": "I am shaken; my mind cannot\nunderstand Eugene's conduct.\nA jealous anguish troubles me,\ntorments me!\nLike someone's icy hand\nit grips my heart—\nso painfully, so cruelly.",
             "literalText": true,
-            "sourceStartIndex": 241,
-            "sourceLineCount": 3
+            "sourceStartIndex": 240,
+            "sourceLineCount": 7
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Larina, Olga",
+            "speakerTranslation": "Larina, Olga",
             "original": "",
-            "translation": "… word,\na humiliating, pathetic lie,\nyes,a humiliating, pathetic, yes,\npathetic lie!",
+            "translation": "I fear that after all this merriment\nthe night may end in a duel!",
             "literalText": true,
-            "sourceStartIndex": 244,
-            "sourceLineCount": 4
+            "sourceStartIndex": 247,
+            "sourceLineCount": 2
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
             "original": "",
-            "translation": "… I've trifled too thoughtlessly.\nLoving the youth with all my heart,\nI should have shown myself",
+            "translation": "Poor Lensky! Poor young man!",
             "literalText": true,
-            "sourceStartIndex": 248,
-            "sourceLineCount": 3
+            "sourceStartIndex": 249,
+            "sourceLineCount": 1
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "I am stunned, I cannot\nunderstand Eugene; I am tormented\nby pangs of jealousy!",
+            "translation": "I have made a cruel, careless joke.",
+            "literalText": true,
+            "sourceStartIndex": 250,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "Here I have learned that a maiden\ncan be as beautiful and lovely as an angel,\nradiant as the day,\nwhile her soul—her very soul—\ncan be treacherous and wicked as a demon!",
             "literalText": true,
             "sourceStartIndex": 251,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Poor Lensky!",
-            "literalText": true,
-            "sourceStartIndex": 254,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Oh, my heart is torn with anguish!\nLike an ice-cold hand …",
-            "literalText": true,
-            "sourceStartIndex": 255,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "LARINA, OLGA",
-            "speakerTranslation": "LARINA, OLGA",
-            "original": "",
-            "translation": "I fear that after all our revelry,\nthe night may end with a duel!",
-            "literalText": true,
-            "sourceStartIndex": 257,
-            "sourceLineCount": 2
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "… impervious to vulgar prejudice,",
-        "participants": [
-          "ONEGIN",
-          "GUESTS",
-          "TATYANA",
-          "LENSKY",
-          "OLGA",
-          "LARINA",
-          "GUESTS, LARINA"
-        ],
-        "sourceStartIndex": 259,
-        "sourceLineCount": 65,
-        "turns": [
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "… impervious to vulgar prejudice,\na man of honour and good sense.",
-            "literalText": true,
-            "sourceStartIndex": 259,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Poor young man!",
-            "literalText": true,
-            "sourceStartIndex": 261,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "… it clutches at my heart\npainfully, cruelly!",
-            "literalText": true,
-            "sourceStartIndex": 262,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I have trifled too thoughtlessly!",
-            "literalText": true,
-            "sourceStartIndex": 264,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "I have learnt here that …\n… a young girl\nmay be beautiful as an angel, sweet\nand lovely as the day, but in her heart, in her heart\nas wicked and sly as a fiend!",
-            "literalText": true,
-            "sourceStartIndex": 265,
             "sourceLineCount": 5
           },
           {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "Can it be, that after such revelry,\ntheir quarrel will end our day with a duel?\nYoung men are so hot-blooded!\nThey argue, they quarrel\nand soon there's a fight!\nThey argue, etc.\n… Will their quarrel end in a duel?\nYoung men are so hot-blooded!\nThey always act on impulse!",
+            "translation": "Ah, I am lost, I am lost!\nMy heart tells me so.\nYet even ruin at his hands is dear to me.\nI shall perish, my heart has said,\nand I dare not complain.\nWhy should I complain?\nHe cannot make me happy!",
             "literalText": true,
-            "sourceStartIndex": 270,
-            "sourceLineCount": 9
+            "sourceStartIndex": 256,
+            "sourceLineCount": 7
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "Ah, I am lost, I am lost!\nI feel it in my heart,\nbut destruction by him is dear to me!\nI am doomed, I am doomed, my heart\ntold me as much,\nI dare not, I cannot complain!",
+            "translation": "Men are so hot-blooded:\nthey act without thinking.\nThey cannot get along without a quarrel!\nJealousy has taken hold of his heart,\nbut I have done nothing wrong!",
             "literalText": true,
-            "sourceStartIndex": 279,
-            "sourceLineCount": 6
+            "sourceStartIndex": 263,
+            "sourceLineCount": 5
           },
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "Oh, men are so hot-blooded,\nThey always act on impulse ;\nthey can't avoid quarrelling, etc.\nHis heart is consumed with jealousy,\nbut I'm not in the least to blame,\nnot in the least!",
+            "translation": "Young people are so hot-blooded!\nThey rush to conclusions\nand cannot be without a quarrel.\nAfter all this merriment,\nI fear the night will end in a duel!",
             "literalText": true,
-            "sourceStartIndex": 285,
-            "sourceLineCount": 6
+            "sourceStartIndex": 268,
+            "sourceLineCount": 5
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Olga, Larina",
+            "speakerTranslation": "Olga, Larina",
             "original": "",
-            "translation": "Ah, young men are so hot-blooded!\nThey always act on impulse,\nthey can't avoid quarrelling, etc.\nI’m afraid that, after all the revelry,\nthe night will end in a duel!\nYoung men are so hot-blooded!",
+            "translation": "They argue, they quarrel,\nand at once they are ready to fight.\nWhat a fine celebration!\nWhat a scandal!",
+            "literalText": true,
+            "sourceStartIndex": 273,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "Alone before my conscience,\nI am dissatisfied with myself.\nI have mocked his shy, tender love\nfar too carelessly.\nI ought to have shown myself\nnot a plaything of prejudice,\nbut a man grown wise and mature.\nI am to blame!\nAlone before my conscience\nI am dissatisfied with myself.\nI have made a careless joke\nof his shy and tender passion.\nBut nothing can be done:\nI must now answer for the insults.",
+            "literalText": true,
+            "sourceStartIndex": 277,
+            "sourceLineCount": 14
+          },
+          {
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
+            "original": "",
+            "translation": "Will their quarrel follow our entertainment\nand end in a duel?\nMen are so hot-blooded,\nacting rashly in everything.\nThey cannot avoid an argument;\nnow they are ready to fight!\nWhat a fine celebration!\nWhat a scandal!",
             "literalText": true,
             "sourceStartIndex": 291,
-            "sourceLineCount": 6
+            "sourceLineCount": 8
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "In my innermost heart,\nI am displeased with myself, etc.\nI ought to have shown myself …",
+            "translation": "No, Olga, you are innocent, my angel.\nYou are innocent, entirely innocent.\nHe is a base, deceitful, heartless betrayer;\nhe shall be punished!\nYou are innocent, my angel.\nHe is your ignoble tempter,\nbut I shall be your defender.\nI will never endure a seducer\ntempting your young heart\nwith heated sighs and praise;\nnor a vile and poisonous worm\ngnawing at the stem of a lily\nuntil the flower, barely open,\nwilts before its second dawn.\nOh, traitor! Dishonourable seducer!",
             "literalText": true,
-            "sourceStartIndex": 297,
-            "sourceLineCount": 3
+            "sourceStartIndex": 299,
+            "sourceLineCount": 15
           },
           {
-            "speaker": "GUESTS, LARINA",
-            "speakerTranslation": "GUESTS, LARINA",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Ah, young men are such hot-heads!\nNot a moment passes without some quarrel!\nThey argue, they quarrel,\nand suddenly they're ready for a fight!",
+            "translation": "At your service!\nI have heard quite enough.\nYou are mad, utterly mad!\nThis lesson may bring you to your senses.",
             "literalText": true,
-            "sourceStartIndex": 300,
+            "sourceStartIndex": 314,
             "sourceLineCount": 4
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Ah, why complain?\nHe cannot make me happy.\nI am doomed, my heart tells me as much,\nI know it!",
-            "literalText": true,
-            "sourceStartIndex": 304,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Ah, I'm not the least bit to blame!\nMen can't avoid quarrelling.\nThey argue, they quarrel, etc.",
-            "literalText": true,
-            "sourceStartIndex": 308,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Oh no! You are innocent, my angel,\nyou are innocent, innocent, my angel!\nHe is a vile, crafty, heartless betrayer!\nHe shall be punished!",
-            "literalText": true,
-            "sourceStartIndex": 311,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "… not the plaything of vulgar prejudice,\nnot an excitable boy,\nbut a grown man - I am to blame!",
-            "literalText": true,
-            "sourceStartIndex": 315,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Can it be, that after such revelry,\ntheir quarrel will end our day with a duel? etc.",
+            "translation": "Then we shall meet tomorrow\nand see who teaches whom!\nCall me mad if you like,\nbut you are a dishonourable seducer!",
             "literalText": true,
             "sourceStartIndex": 318,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Ah, I am doomed, etc.\nI dare not complain!",
-            "literalText": true,
-            "sourceStartIndex": 320,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Ah, men are such hot-heads, etc.\nI am not in the least to blame, not in the least!",
-            "literalText": true,
-            "sourceStartIndex": 322,
-            "sourceLineCount": 2
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Ah, young men are such hot-heads, etc.",
-        "participants": [
-          "LARINA",
-          "ONEGIN",
-          "LENSKY",
-          "GUESTS",
-          "OLGA"
-        ],
-        "sourceStartIndex": 324,
-        "sourceLineCount": 26,
-        "turns": [
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Ah, young men are such hot-heads, etc.\nYoung men are such hot-heads!",
-            "literalText": true,
-            "sourceStartIndex": 324,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "At the bottom of my heart,\nI am displeased with myself!\nBut there's nothing to be done -\nNow I must answer\nthe insult!\nI am at your service.\nEnough!\nI have heard you out: you're mad, you're mad!\nAnd you shall be taught a lesson!",
-            "literalText": true,
-            "sourceStartIndex": 326,
-            "sourceLineCount": 9
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Till tomorrow, then!\nWe shall see, who will teach whom a lesson!\nAll right, I'm mad, but you,\nyou are a dishonourable seducer!",
-            "literalText": true,
-            "sourceStartIndex": 335,
             "sourceLineCount": 4
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Hold your tongue, or I'll kill you!",
+            "translation": "Be silent, or I shall kill you!",
             "literalText": true,
-            "sourceStartIndex": 339,
+            "sourceStartIndex": 322,
             "sourceLineCount": 1
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
             "original": "",
-            "translation": "Onegin hurls himself upon Lensky, but the two men are separated and restrained. Onegin moves to one side and turns his back. Tatyana is in tears.",
+            "translation": "What a scandal!\nWe shall never permit this duel.\nWe simply must keep them from leaving the house!\nHold them back, hold them back!\nWe won't let them go!",
             "literalText": true,
-            "sourceStartIndex": 340,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "What a scandal! We won't allow them\nto fight a duel, shed blood in a dispute!\nWe just won't allow them to leave.\nHold them, hold them, hold them!\nIndeed, they shall not leave the house!",
-            "literalText": true,
-            "sourceStartIndex": 341,
+            "sourceStartIndex": 323,
             "sourceLineCount": 5
           },
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "Vladimir, calm down, I implore you!",
+            "translation": "Vladimir, calm yourself, I beg you!",
             "literalText": true,
-            "sourceStartIndex": 346,
+            "sourceStartIndex": 328,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Oh Olga, Olga! Farewell for ever!",
+            "translation": "Ah, Olga! Olga!\nFarewell for ever!",
             "literalText": true,
-            "sourceStartIndex": 347,
-            "sourceLineCount": 1
+            "sourceStartIndex": 329,
+            "sourceLineCount": 2
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Lensky rushes out; Onegin also leaves quickly. Olga runs after Lensky, but falls fainting into her mother's arms.",
+            "translation": "He hurries away.",
             "literalText": true,
-            "sourceStartIndex": 348,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 331,
             "sourceLineCount": 1
           },
           {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
+            "speaker": "Guests",
+            "speakerTranslation": "Guests",
             "original": "",
-            "translation": "There'll be a duel!",
+            "translation": "There will be a duel!",
             "literalText": true,
-            "sourceStartIndex": 349,
+            "sourceStartIndex": 332,
             "sourceLineCount": 1
           }
         ]
@@ -1222,10 +972,10 @@ export const oneginAct2Scenes=[
     ]
   },
   {
-    "number": 2,
+    "number": 5,
     "originalHeading": "",
-    "translatedHeading": "Scene 5 — The duel",
-    "summary": "A mill by a wooded stream · English reading text only; no aligned Russian source verified.",
+    "translatedHeading": "Scene 5 — The old mill",
+    "summary": "Early in a winter morning, Lensky and Onegin meet for their duel.",
     "sections": [
       {
         "type": "Passage",
@@ -1233,67 +983,79 @@ export const oneginAct2Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "What's this?",
+        "translatedTitle": "No. 17 — Introduction, scene and Lensky's aria",
         "participants": [
-          "ZARETSKY",
-          "LENSKY"
+          "Zaretsky",
+          "Lensky"
         ],
-        "sourceStartIndex": 350,
-        "sourceLineCount": 19,
+        "sourceStartIndex": 333,
+        "sourceLineCount": 58,
         "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "A rustic water-mill on the banks of a wooded stream. Early morning; the sun has barely risen. It is winter. Lensky is sitting under a tree, lost in thought. His second, Zaretsky, is pacing up and down.",
+            "translation": "An old abandoned mill, the appointed place for the duel. Early winter morning. Lensky and Zaretsky await Onegin.",
             "literalText": true,
-            "sourceStartIndex": 350,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 333,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ZARETSKY",
-            "speakerTranslation": "ZARETSKY",
+            "speaker": "Zaretsky",
+            "speakerTranslation": "Zaretsky",
             "original": "",
-            "translation": "What's this?\nIt seems your opponent hasn't appeared.",
+            "translation": "Well, then?\nIt seems our opponent hasn't arrived.",
             "literalText": true,
-            "sourceStartIndex": 351,
+            "sourceStartIndex": 334,
             "sourceLineCount": 2
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "He'll be here any minute.",
+            "translation": "He will be here presently.",
             "literalText": true,
-            "sourceStartIndex": 353,
+            "sourceStartIndex": 336,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ZARETSKY",
-            "speakerTranslation": "ZARETSKY",
+            "speaker": "Zaretsky",
+            "speakerTranslation": "Zaretsky",
             "original": "",
-            "translation": "Even so, it strikes me as rather strange\nthat he isn't here; it's seven o'clock.\nI thought he'd be waiting for us!",
+            "translation": "Still, I find it rather strange\nthat he isn't here already.\nIt's nearly seven o'clock!\nI thought he would be waiting for us.",
             "literalText": true,
-            "sourceStartIndex": 354,
-            "sourceLineCount": 3
+            "sourceStartIndex": 337,
+            "sourceLineCount": 4
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Zaretsky goes over to the mill and enters into conversation with the miller, who has just appeared at his door.",
+            "translation": "Zaretsky walks towards the mill. Lensky sits lost in thought.",
             "literalText": true,
-            "sourceStartIndex": 357,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 341,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Where, oh where have you gone,\ngolden days of my youth?\nWhat does the coming day hold for me?\nMy gaze searches in vain;\nall is shrouded in darkness!\nNo matter: Fate's law is just.\nShould I fall, pierced by the arrow,\nor should it fly wide,\n‘tis all one; both sleeping and waking\nhave their appointed hour.\nBlessed is the day of care,",
+            "translation": "Where, where have you gone,\ngolden days of my springtime?\nWhat does tomorrow hold for me?\nMy gaze tries vainly to discover it;\nit is hidden in the deepest darkness.\nIt matters little:\nthe law of fate is just.\n\nWhether I fall, pierced by the bullet,\nor whether the bullet passes me by,\nall is for the best;\nthe hour allotted for waking and for sleep\ncomes to each of us.\nBlessed be the day with all its cares,\nand blessed the coming of the night.\n\nTomorrow morning's first ray may shine;\nbright day will begin again,\nwhile I, perhaps, shall have descended\nto the secret shadows of the grave.\nAnd slow-flowing Lethe will swallow\nthe memory of a youthful poet.\nThe world will forget me.\n\nBut you—you, Olga—\ntell me, lovely maiden,\nwill you come to shed a tear\nover my early grave?\nWill you remember:\n“He loved me;\nto me alone he dedicated\nthe sad dawn of his storm-tossed life”?\n\nAh, Olga, how I loved you!\nTo you alone I dedicated\nthe sad dawn of my storm-tossed life.\nAh, Olga, how I loved you!\n\nDearest friend, beloved friend,\ncome, come to me!\nBeloved friend, come; I am your bridegroom.\nCome; I am your bridegroom!\nCome, come!\nI await you, my beloved.\nCome, come; I am your bridegroom.\n\nWhere, where have you gone,\ngolden days, golden days of my spring?",
             "literalText": true,
-            "sourceStartIndex": 358,
-            "sourceLineCount": 11
+            "sourceStartIndex": 342,
+            "sourceLineCount": 48
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Onegin appears with his valet Guillot. Zaretsky sees them and approaches Lensky.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 390,
+            "sourceLineCount": 1
           }
         ]
       },
@@ -1303,192 +1065,134 @@ export const oneginAct2Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "blessed, too, the coming of darkness!",
+        "translatedTitle": "No. 18 — The duel",
         "participants": [
-          "LENSKY",
-          "ZARETSKY",
-          "ONEGIN",
-          "LENSKY, ONEGIN"
+          "Zaretsky",
+          "Onegin",
+          "Lensky"
         ],
-        "sourceStartIndex": 369,
-        "sourceLineCount": 65,
+        "sourceStartIndex": 391,
+        "sourceLineCount": 45,
         "turns": [
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Zaretsky",
+            "speakerTranslation": "Zaretsky",
             "original": "",
-            "translation": "blessed, too, the coming of darkness!\nEarly in the morning the dawn-light gleams\nand the day begins to brighten,\nwhile I, perhaps, will enter\nthe mysterious shadow of the grave!\nAnd the memory of a young poet\nwill be engulfed by Lethe's sluggish stream.\nThe world will forget me; but you,\nYou! … Olga …\nSay,\nwill you come, maid of beauty,\nto shed a tear on the untimely urn\nand think: he loved me!\nTo me alone he devoted\nthe sad dawn of his storm-tossed life!\nOh, Olga, I loved you,\nto you alone I devoted\nthe sad dawn of my storm-tossed life!\nOh, Olga, I loved you!\nMy heart's beloved, my desired one,\ncome, oh come! My desired one,\ncome, I am your betrothed, come, come!\nI wait for you, my desired one,\ncome, come; I am your betrothed!\nWhere, where, where have you gone,\ngolden days, golden days of my youth?",
+            "translation": "Ah, here they are!\nBut who is that with your friend?\nI cannot make him out.",
             "literalText": true,
-            "sourceStartIndex": 369,
-            "sourceLineCount": 26
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Zaretsky returns to Lensky.",
-            "literalText": true,
-            "sourceStartIndex": 395,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ZARETSKY",
-            "speakerTranslation": "ZARETSKY",
-            "original": "",
-            "translation": "Ah, here they are!\nBut who's your friend with?\nI can't make it out!",
-            "literalText": true,
-            "sourceStartIndex": 396,
+            "sourceStartIndex": 391,
             "sourceLineCount": 3
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Onegin comes in with his manservant, Guillot, who carries the pistols.",
+            "translation": "Forgive me for being late.\nI have kept you waiting a little.",
             "literalText": true,
-            "sourceStartIndex": 399,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I ask your pardon.\nI'm a little late.",
-            "literalText": true,
-            "sourceStartIndex": 400,
+            "sourceStartIndex": 394,
             "sourceLineCount": 2
           },
           {
-            "speaker": "ZARETSKY",
-            "speakerTranslation": "ZARETSKY",
+            "speaker": "Zaretsky",
+            "speakerTranslation": "Zaretsky",
             "original": "",
-            "translation": "Forgive me! Where's your second?\nWhere duelling's concerned, I’m particular pedantic;\nI heartily approve of method\nand I don't allow a man\nto be stretched out cold just anyhow,\nbut according to the strict rules of the art,\nfollowing the old tradition.",
+            "translation": "One moment! Where is your second?\nI am a classicist, a pedant, in matters of duelling;\nI value proper methods so highly\nthat when I lay a man out flat\nI insist upon doing it according\nto all the rules of the art,\nin keeping with ancient custom.",
             "literalText": true,
-            "sourceStartIndex": 402,
+            "sourceStartIndex": 396,
             "sourceLineCount": 7
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "For which we must praise you!\nMy second?\nThis is he: Monsieur Guillot.\nI don't envisage any objection\nto my choice;\nalthough he's not well known,\nstill, he's a decent fellow, of course.",
+            "translation": "A principle for which\nyou deserve every compliment!\nMy second? Here he is:\nMonsieur Guillot!\nI do not foresee any objection\nto my introduction.\nHe may not be an important person,\nbut he is certainly an honest fellow.\nShall we begin?",
             "literalText": true,
-            "sourceStartIndex": 409,
-            "sourceLineCount": 7
+            "sourceStartIndex": 403,
+            "sourceLineCount": 9
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "Guillot bows deeply, Zaretsky returns his bow coldly.",
+            "translation": "We may as well begin!",
             "literalText": true,
-            "sourceStartIndex": 416,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Well? Shall we begin?",
-            "literalText": true,
-            "sourceStartIndex": 417,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Let's begin, if you please!",
-            "literalText": true,
-            "sourceStartIndex": 418,
+            "sourceStartIndex": 412,
             "sourceLineCount": 1
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The two seconds withdraw to one side to discuss the conditions of the duel. Lensky and Onegin stand with their backs to each other, waiting.",
+            "translation": "Zaretsky and Guillot prepare the weapons and the ground. Lensky and Onegin stand silently, each lost in thought.",
             "literalText": true,
-            "sourceStartIndex": 419,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 413,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY, ONEGIN",
-            "speakerTranslation": "LENSKY, ONEGIN",
+            "speaker": "Lensky, Onegin",
+            "speakerTranslation": "Lensky, Onegin",
             "original": "",
-            "translation": "Enemies! Is it long since the thirst\nfor blood drove us apart?\nIs it so long since we shared everything,\nour meals, our thoughts, our leisure,\nas friends together? Now in anger,\nlike hereditary enemies,\nwe silently and coldbloodedly\nprepare to destroy each other.\nOh, should we not burst out laughing\nbefore we stain our hands with blood,\nand should we not part friends?\nNo! No! No! No!",
+            "translation": "Enemies!\nWas it long ago that thirst for blood\ndrove us apart?\nWas it so long ago that we shared\nour free hours, our meals,\nour thoughts, our undertakings as friends?\nAnd now, in hatred,\nlike hereditary foes,\nwe prepare in silence\nto bring about each other's death\nwith cold deliberation.\n\nAh! Should we not laugh instead,\nbefore blood has stained our hands,\nand part from one another as friends?\nNo! No! No! No!",
             "literalText": true,
-            "sourceStartIndex": 420,
-            "sourceLineCount": 12
+            "sourceStartIndex": 414,
+            "sourceLineCount": 16
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The seconds have loaded the pistols and in measured the distance. Zaretsky separates the principals and hands them their pistols. Everything is done in silence. Guillot, in embarrassment, hides behind a tree.",
+            "translation": "Zaretsky places the adversaries apart and hands them their pistols. Guillot hides behind a tree.",
             "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 430,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Zaretsky",
+            "speakerTranslation": "Zaretsky",
+            "original": "",
+            "translation": "Now approach each other!",
+            "literalText": true,
+            "sourceStartIndex": 431,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Zaretsky claps his hands three times. The opponents advance four paces each and take aim. Onegin fires first. Lensky falls. Onegin and Zaretsky rush towards him.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 432,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ZARETSKY",
-            "speakerTranslation": "ZARETSKY",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Now advance!",
+            "translation": "Is he dead?",
             "literalText": true,
             "sourceStartIndex": 433,
             "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Dead?",
-        "participants": [
-          "ONEGIN",
-          "ZARETSKY"
-        ],
-        "sourceStartIndex": 434,
-        "sourceLineCount": 4,
-        "turns": [
+          },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Zaretsky",
+            "speakerTranslation": "Zaretsky",
             "original": "",
-            "translation": "He claps his hands three times. The adversaries take four steps forward. Onegin raises his pistol. As he does so, Lensky begins to take aim. Onegin fires. Lensky falls. Zaretsky and Onegin rush towards him. Zaretsky examines him intently.",
+            "translation": "Dead!",
             "literalText": true,
             "sourceStartIndex": 434,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Dead?",
-            "literalText": true,
-            "sourceStartIndex": 435,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ZARETSKY",
-            "speakerTranslation": "ZARETSKY",
-            "original": "",
-            "translation": "Dead.",
-            "literalText": true,
-            "sourceStartIndex": 436,
-            "sourceLineCount": 1
-          },
-          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Aghast, Onegin clasps his head in his hands.",
+            "translation": "Onegin seizes his head in horror.",
             "literalText": true,
-            "sourceStartIndex": 437,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 435,
             "sourceLineCount": 1
           }
         ]
