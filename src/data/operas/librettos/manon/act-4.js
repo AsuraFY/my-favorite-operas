@@ -181,7 +181,7 @@ export const manonActFourScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Tout en jouant honnêtement,\nje n'ai jamais fait autrement! etc.\nPOUSSETTE, JAVOTTE et ROSETTE",
-            "translation": "While playing fairly,\nI've never done it any other way! etc.\nSTROLLER, JAVOTTE and ROSETTE",
+            "translation": "While playing fairly,\nI've never done it any other way! etc.\nPOUSSETTE, JAVOTTE and ROSETTE",
             "literalText": true
           },
           {
@@ -220,7 +220,7 @@ export const manonActFourScenes = [
             "speaker": "POUSSETTE",
             "speakerTranslation": "POUSSETTE",
             "original": "L'or vient tout seul aux plus belles!\nPOUSSETTE, JAVOTTE et ROSETTE\nEt c'est nous qui gagnons toujours!",
-            "translation": "Gold comes to the most beautiful women all by itself!\nSTROLLER, JAVOTTE and ROSETTE\nAnd we're the ones who always win!",
+            "translation": "Gold comes to the most beautiful women all by itself!\nPOUSSETTE, JAVOTTE and ROSETTE\nAnd we're the ones who always win!",
             "literalText": true
           },
           {
@@ -257,7 +257,7 @@ export const manonActFourScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Et c'est ce bruit, ce bruit charmant\nqui lui sert d'accompagnement!\nC'est ce bruit, ce bruit charmant, ce bruit charmant\nqui lui sert d'accompagnement !\nCelle que j'aime...\nJe me pique d'être plein de discrétion…\nPourtant... Je vous dirai son nom... son nom...\nPOUSSETTE, JAVOTTE et ROSETTE\nOui, son nom!...\nC'est Pallas, la Dame de pique!\nEt là s'arrête ma chanson!\nPOUSSETTE, JAVOTTE, ROSETTE, LESCAUT et LES AIGREFINS\nEt c'est ce bruit, ce bruit charmant\nqui lui sert d'accompagnement!... etc.",
-            "translation": "And it's that sound, that charming sound\nwhich serves as an accompaniment!\nIt's that sound, that charming sound, that charming sound\nwhich serves as an accompaniment!\nThe one I love...\nI pride myself on being very discreet…\nHowever... I will tell you his name... his name...\nSTROLLER, JAVOTTE and ROSETTE\nYes, his name!...\nIt's Pallas, the Queen of Spades!\nAnd that's where my song ends!\nPUSSETTE, JAVOTTE, ROSETTE, LESCAUT and THE SCAMMERS\nAnd it's that sound, that charming sound\nwhich serves as an accompaniment to it!... etc.",
+            "translation": "And it's that sound, that charming sound\nwhich serves as an accompaniment!\nIt's that sound, that charming sound, that charming sound\nwhich serves as an accompaniment!\nThe one I love...\nI pride myself on being very discreet…\nHowever... I will tell you his name... his name...\nPOUSSETTE, JAVOTTE and ROSETTE\nYes, his name!...\nIt's Pallas, the Queen of Spades!\nAnd that's where my song ends!\nPOUSSETTE, JAVOTTE, ROSETTE, LESCAUT and THE SCAMMERS\nAnd it's that sound, that charming sound\nwhich serves as an accompaniment to it!... etc.",
             "literalText": true
           },
           {
@@ -301,7 +301,7 @@ export const manonActFourScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "J'enfourche aussi Pégase\nde temps en temps,\nainsi, moi, j'ai sur le Régent\nfait des vers très malins,\nmais en homme prudent...\nJe gaze...\net passe les mots dangereux...\nVous allez voir, on ne comprend que mieux!\nQuand le...\nC'est le Régent...\nVa voir...\nC'est sa Maîtresse...\nIl dit...\nOn me comprend.\nElle répond...\nDe votre Altesse...\nTra la la! la la la! etc.\nAh! c'est badin, c'est léger!\nPOUSSETTE, JAVOTTE, ROSETTE et LESCAUT\nEt l'on ne court aucun danger!\nAh! c'est piquant! C'est badin! c'est léger!\nTra la la la la! etc.\nPOUSSETTE, JAVOTTE, ROSETTE, GUILLOT et LESCAUT\nChut!",
-            "translation": "I'm also riding Pegasus\nfrom time to time,\nSo, I have on the Regent\nmakes very clever worms,\nbut as a prudent man...\nI'm gasping...\nand passes over the dangerous words...\nYou'll see, it makes things much clearer!\nWhen the...\nIt's the Regent...\nGo see...\nThat's his mistress...\nHe said...\nYou understand me.\nShe replies...\nFrom Your Highness...\nTra la la! la la la! etc.\nAh! It's playful, it's lighthearted!\nSTROLLER, JAVOTTE, ROSETTE and LESSAUT\nAnd there's no danger!\nAh! It's spicy! It's playful! It's light!\nTra la la la la! etc.\nSTROLLER, JAVOTTE, ROSETTE, GUILLOT and LESCAUT\nShh!",
+            "translation": "From time to time, I too\nmount Pegasus;\nI've written some very clever verse\nabout the Regent,\nbut being a prudent man...\nI veil my meaning...\nand leave out dangerous words...\nYou'll see: it's clearer that way!\nWhen the...\nIt's the Regent...\nGoes to see...\nIt's his mistress...\nHe says...\nYou know what I mean.\nShe replies...\nYour Highness...\nTra la la! la la la! etc.\nAh, it's playful and light!\nPOUSSETTE, JAVOTTE, ROSETTE and LESCAUT\nAnd we run no risk!\nAh, how witty, playful and light!\nTra la la la la! etc.\nPOUSSETTE, JAVOTTE, ROSETTE, GUILLOT and LESCAUT\nHush!",
             "literalText": true
           },
           {
@@ -333,7 +333,7 @@ export const manonActFourScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Mais qui donc nous arrive et fait tout ce\ntapage?\nPOUSSETTE, JAVOTTE et ROSETTE\nC'est la belle Manon avec son Chevalier!",
-            "translation": "But who is it that is happening to us and doing all this?\nNoise?\nSTROLLER, JAVOTTE and ROSETTE\nThat's the beautiful Manon with her Knight!",
+            "translation": "But who is it that is happening to us and doing all this?\nNoise?\nPOUSSETTE, JAVOTTE and ROSETTE\nThat's the beautiful Manon with her Knight!",
             "literalText": true
           },
           {
@@ -727,7 +727,7 @@ export const manonActFourScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ces ivresses folles... C'est la vie!\nAh! c'est la vie!\nPOUSSETTE, JAVOTTE et ROSETTE\nC'est la vie!\nOu du moins\nc'est celle que je veux!",
-            "translation": "These crazy bouts of intoxication... That's life!\nAh! That's life!\nSTROLLER, JAVOTTE and ROSETTE\nThat's life!\nOr at least\nThat's the one I want!",
+            "translation": "These crazy bouts of intoxication... That's life!\nAh! That's life!\nPOUSSETTE, JAVOTTE and ROSETTE\nThat's life!\nOr at least\nThat's the one I want!",
             "literalText": true
           },
           {
@@ -741,14 +741,14 @@ export const manonActFourScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ce bruit de l'or, ce rire et ces éclats joyeux!\nÀ nous les amours et les roses!\nChanter, aimer, sont douces choses!\nQui sait si nous vivrons demain!\nÀ nous les amours, à nous les amours et les roses!\nPOUSSETTE, JAVOTTE et ROSETTE\nChanter, aimer, sont douces choses!",
-            "translation": "The sound of gold, the laughter, and the joyful bursts!\nLove and roses, here we come!\nSinging and loving are sweet things!\nWho knows if we'll live tomorrow!\nLove is ours, love and roses are ours!\nSTROLLER, JAVOTTE and ROSETTE\nSinging and loving are sweet things!",
+            "translation": "The sound of gold, the laughter, and the joyful bursts!\nLove and roses, here we come!\nSinging and loving are sweet things!\nWho knows if we'll live tomorrow!\nLove is ours, love and roses are ours!\nPOUSSETTE, JAVOTTE and ROSETTE\nSinging and loving are sweet things!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "MANON, puis POUSSETTE",
-            "translation": "MANON, then STROLLER",
+            "translation": "MANON, then POUSSETTE",
             "literalText": true,
             "shortCue": true
           },
@@ -756,7 +756,7 @@ export const manonActFourScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Qui sait si nous vivrons demain! etc.\nLa jeunesse passe,\nla beauté s'efface ;\nque tous nos désirs\nsoient pour les plaisirs!\nL'amour et les fièvres\nsur toutes les lèvres!\nPour Manon encor,\nde l'or! de l'or! encor! de l'or!\nPOUSSETTE, JAVOTTE et ROSETTE\nDe l'or!\nÀ nous les amours et les roses!\nMANON, puis POUSSETTE, etc.\nChanter, aimer, sont douces choses!\nQui sait si nous vivrons demain! demain!\nÀ nous les amours, à nous les amours et les roses!\nPour nous de l'or! de l'or!\nDe l'or!... de l'or!\nPOUSSETTE, JAVOTTE et ROSETTE\nDe l'or!\nQui sait si nous vivrons demain!\nPour nous de l'or! de l'or!\nLES JOUEURS et LES AIGREFINS\nAu jeu ! Au jeu!",
-            "translation": "Who knows if we'll live tomorrow! etc.\nYouth passes,\nbeauty fades;\nthat all our desires\nLet's be for pleasure!\nLove and fevers\nOn everyone's lips!\nFor Manon again,\nGold! Gold! More gold! Gold!\nSTROLLER, JAVOTTE and ROSETTE\nGold!\nLove and roses, here we come!\nMANON, then STROLLER, etc.\nSinging and loving are sweet things!\nWho knows if we'll live tomorrow! Tomorrow!\nLove is ours, love and roses are ours!\nGold for us! Gold!\nGold!... gold!\nSTROLLER, JAVOTTE and ROSETTE\nGold!\nWho knows if we'll live tomorrow!\nGold for us! Gold!\nTHE GAMBLER'S AND THE SCAMMERS\nLet the games begin! Let the games begin!",
+            "translation": "Who knows if we'll live tomorrow! etc.\nYouth passes,\nbeauty fades;\nthat all our desires\nLet's be for pleasure!\nLove and fevers\nOn everyone's lips!\nFor Manon again,\nGold! Gold! More gold! Gold!\nPOUSSETTE, JAVOTTE and ROSETTE\nGold!\nLove and roses, here we come!\nMANON, then POUSSETTE, etc.\nSinging and loving are sweet things!\nWho knows if we'll live tomorrow! Tomorrow!\nLove is ours, love and roses are ours!\nGold for us! Gold!\nGold!... gold!\nPOUSSETTE, JAVOTTE and ROSETTE\nGold!\nWho knows if we'll live tomorrow!\nGold for us! Gold!\nTHE GAMBLER'S AND THE SCAMMERS\nLet the games begin! Let the games begin!",
             "literalText": true
           }
         ]
@@ -973,7 +973,7 @@ export const manonActFourScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "POUSSETTE, JAVOTTE, ROSETTE, LESCAUT et LES AIGREFINS\nMessieurs! voyons! voyons, Messieurs!\nLE CHŒUR et LES JOUEURS\nMessieurs! voyons! voyons, Messieurs!\nPOUSSETTE, etc.\nMessieurs! Voyons! Messieurs!\nLE CHŒUR et LES JOUEURS\nMessieurs! Messieurs!",
-            "translation": "PUSSETTE, JAVOTTE, ROSETTE, LESCAUT and THE SCAMMERS\nGentlemen! Come now! Come now, gentlemen!\nTHE CHOIR and THE PLAYERS\nGentlemen! Come now! Come now, gentlemen!\nSTROLLER, etc.\nGentlemen! Come on! Gentlemen!\nTHE CHOIR and THE PLAYERS\nGentlemen! Gentlemen!",
+            "translation": "POUSSETTE, JAVOTTE, ROSETTE, LESCAUT and THE SCAMMERS\nGentlemen! Come now! Come now, gentlemen!\nTHE CHOIR and THE PLAYERS\nGentlemen! Come now! Come now, gentlemen!\nPOUSSETTE, etc.\nGentlemen! Come on! Gentlemen!\nTHE CHOIR and THE PLAYERS\nGentlemen! Gentlemen!",
             "literalText": true
           }
         ]
@@ -1086,7 +1086,7 @@ export const manonActFourScenes = [
             "speaker": "LES AIGREFINS",
             "speakerTranslation": "The Swindlers",
             "original": "Faites vos jeux, Messieurs!\nPOUSSETTE, JAVOTTE et ROSETTE\nNon, non, jamais!\nJamais on n'a volé!\nVoyons, Messieurs! Messieurs!",
-            "translation": "Place your bets, gentlemen!\nSTROLLER, JAVOTTE and ROSETTE\nNo, no, never!\nWe never stole anything!\nCome now, gentlemen! Gentlemen!",
+            "translation": "Place your bets, gentlemen!\nPOUSSETTE, JAVOTTE and ROSETTE\nNo, no, never!\nWe never stole anything!\nCome now, gentlemen! Gentlemen!",
             "literalText": true
           },
           {
@@ -1145,7 +1145,7 @@ export const manonActFourScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "POUSSETTE, JAVOTTE, ROSETTE, LESCAUT et LES AIGREFINS",
-            "translation": "PUSSETTE, JAVOTTE, ROSETTE, LESCAUT and THE SCAMMERS",
+            "translation": "POUSSETTE, JAVOTTE, ROSETTE, LESCAUT and THE SCAMMERS",
             "literalText": true
           },
           {
@@ -1339,7 +1339,7 @@ export const manonActFourScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ô douleur! L'avenir nous sépare!\nEt d'effroi mon cœur est tremblant!\nUn tourment trop cruel me dévore à jamais!\nEst-ce donc fait de mon bonheur?\nPOUSSETTE, JAVOTTE et ROSETTE\nAh! cédez à ses pleurs!\nPour sa jeunesse! Grâce!\nTant de beauté mérite que l'on ait pitié!",
-            "translation": "Oh, the pain! The future separates us!\nAnd my heart trembles with fear!\nA torment too cruel to bear will devour me forever!\nIs this the end of my happiness?\nSTROLLER, JAVOTTE and ROSETTE\nAh! Give in to her tears!\nFor his youth! Grace!\nSuch beauty deserves our pity!",
+            "translation": "Oh, the pain! The future separates us!\nAnd my heart trembles with fear!\nA torment too cruel to bear will devour me forever!\nIs this the end of my happiness?\nPOUSSETTE, JAVOTTE and ROSETTE\nAh! Give in to her tears!\nFor his youth! Grace!\nSuch beauty deserves our pity!",
             "literalText": true
           }
         ]
