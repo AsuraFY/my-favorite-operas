@@ -308,3 +308,21 @@ must triumph over feeling!`],
     ]]
   ])
 ];
+
+// Re-index every translated passage sequentially across both tableaux in Act III.
+// The page index is now local to the independent reading translation (not Opera Guide).
+{
+  let index=0;
+  for(const scene of oneginAct3Scenes){
+    for(const section of scene.sections){
+      const first=index;
+      for(const turn of section.turns){
+        turn.sourceStartIndex=index;
+        turn.sourceLineCount=turn.translation.split('\\n').length;
+        index+=turn.sourceLineCount;
+      }
+      section.sourceStartIndex=first;
+      section.sourceLineCount=index-first;
+    }
+  }
+}
