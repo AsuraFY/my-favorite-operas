@@ -318,7 +318,7 @@ must triumph over feeling!`],
       const first=index;
       for(const turn of section.turns){
         turn.sourceStartIndex=index;
-        turn.sourceLineCount=turn.translation.split('\\n').length;
+        turn.sourceLineCount=turn.translation.split('\n').length;
         index+=turn.sourceLineCount;
       }
       section.sourceStartIndex=first;
