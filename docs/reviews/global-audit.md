@@ -2,7 +2,7 @@
 
 > **SINGLE ACTIVE REVIEW FILE.** This document is the operational source of truth for audit findings, repair sequencing, statuses, evidence, and handover. Do not create another active review, separate master roadmap, or competing issue-status file. Historical reports are in [../archive/](../archive/).
 
-**Last synchronized:** 2026-11-02 (UTC / Africa-Dakar)  
+**Last synchronized:** 2026-11-05 (UTC / Africa-Dakar)  
 **Repository:** [AsuraFY/my-favorite-operas](https://github.com/AsuraFY/my-favorite-operas) · **Working branch:** `Update` · **Production branch:** `main` (never modify or merge without separate explicit approval)  
 **Scope:** All 35 current operas **and every future opera**, shared reader, outlines, information pages, CI and release.  
 **Current focus:** Phase C editorial acceptance and Phase D visual/manual sign-off. On 2026-11-02 the latest application commit `b7d0130c` passed the current Node + browser test gate and verified `Update` preview (run 41437867374). A later audit-only commit does not change tested application code.
@@ -237,6 +237,13 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 - Inspected *Carmen* Act I's 20 sections / **331 turns** across spoken dialogue, sung sections and stage directions. French-to-English line checks identified one semantic mistake: `T'émouchant à tour de bras` refers to chasing flies away, not `Waving fans`; corrected to `Shooing flies away from you with all their might.` Also repaired three obvious French textual spacing/transcription defects (`dans 'e régiment`, `pourrésister`, `DonJosé`) without altering speaker identities, acts or navigation. Act commit `43cc943`.
 - Added focused `tests/carmen-act1-editorial.test.mjs` (`9015f7f`) checking original/English correction and 331-turn structural invariant. This is a **targeted editorial review, not full independently accepted Act I or all-four-act translation sign-off**.
 - The new changes require current-head CI/Chromium/Update preview verification; do not copy previous test pass to this checkpoint. `main` untouched.
+
+### 2026-11-05 — Issue 13 latest focused verification (not release acceptance)
+
+- Read back all three `Update` act modules after No. 12 correction and evaluated their JavaScript data without external imports. Verified three acts, **seven tableaux (3+2+2)**, **22 source-supported numbered sections (Nos. 1–22)**, **382 English turns**, and translation-line counts **668 / 436 / 270** across acts.
+- Checked consecutive source indexes and count equality for every turn and section, nonempty English translations, deliberately empty Russian columns, all 22 `Cyrillic (romanized)` section headings with English subtitles, the restored No. 12 boundary, and instrumental-only No. 19 Polonaise. Focused structural evaluation found **zero data failures**.
+- **Not checked / not claimable:** No comprehensive published-score-to-translation verse-level collation; no complete Node suite execution; no all-35 Chromium assertions; no independent visual or accessibility review of the current Update commit; no SHA-matched GitHub preview deployment confirmed. GitHub's available commit-run lookup did not provide a current full verification record.
+- Accordingly `AUD-20261101-13` remains **implemented and structurally checked, but NOT fully accepted**. Do not use prior tests from earlier application SHA as proof of this version. `main` remains untouched.
 
 ### 2026-11-05 — Issue 13 musical-number correction and acceptance checkpoint
 
