@@ -61,3 +61,15 @@ test('explicitly document that this is a project translation and not the histori
   assert.ok(!allText.includes('qa portable stove'));
   assert.ok(!allText.includes('principels'));
 });
+
+test('all 22 Eugene Onegin sections have Cyrillic titles followed by romanized Russian and separate English',()=>{
+  assert.equal(passages.length,22);
+  for(const section of passages){
+    assert.match(section.originalTitle, /[А-Яа-яЁё]/u, 'Cyrillic source-form title required');
+    assert.match(section.originalTitle, /\\([^()]+\\)$/u, 'romanization in final parentheses required');
+    assert.ok(section.translatedTitle, 'English heading retained');
+  }
+  assert.equal(passages[0].originalTitle,'№ 1 — Дуэт и квартет (Duet i kvartet)');
+  assert.equal(passages.at(-1).originalTitle,"№ 22 — Заключительная сцена (Zaklyuchitel'naya stsena)");
+  assert.ok(passages.some(p=>p.originalTitle==='Ответ Онегина (Otvet Onegina)'), 'unnumbered editorial closing section');
+});
