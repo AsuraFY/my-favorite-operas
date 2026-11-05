@@ -1,5 +1,5 @@
 // Bilingual reader draft: all passages translated, source and editorial review pending.
-import { parsifalActOneScenes } from "./act-1.js?v=cosi-classic-sections-20261027";
+import { parsifalActOneScenes } from "./act-1.js?v=parsifal-issue15-20261105";
 import { parsifalActTwoScenes } from "./act-2.js?v=cosi-classic-sections-20261027";
 import { parsifalActThreeScenes } from "./act-3.js?v=cosi-classic-sections-20261027";
 import { getOpera } from "../../catalog.js";
