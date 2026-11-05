@@ -193,7 +193,7 @@ export const oneginAct2Scenes = [
             "speaker": "Ladies",
             "speakerTranslation": "Ladies",
             "original": "",
-            "translation": "He is shockingly ill-mannered, madly eccentric;\nhe will not even kiss a lady's hand.\nHe is a freethinker, and drinks nothing\nbut red wine by the glass!",
+            "translation": "He is shockingly ill-mannered, madly eccentric;\nhe will not even kiss a lady's hand.\nHe is a Freemason, and drinks nothing\nbut red wine by the glass!",
             "literalText": true,
             "sourceStartIndex": 39,
             "sourceLineCount": 4
@@ -608,7 +608,7 @@ export const oneginAct2Scenes = [
             "speaker": "Onegin",
             "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "Not dancing, Lensky?\nYou stand there like some Lord Byron.\nWhat's the matter with you?",
+            "translation": "Not dancing, Lensky?\nYou stand there like Childe Harold.\nWhat's the matter with you?",
             "literalText": true,
             "sourceStartIndex": 167,
             "sourceLineCount": 3
