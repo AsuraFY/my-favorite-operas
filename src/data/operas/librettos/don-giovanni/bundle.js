@@ -1,5 +1,5 @@
 // Bilingual reader draft: all passages translated, source and editorial review pending.
-import { donGiovanniActOneScenes } from "./act-1.js?v=don-giovanni-classic-sections-20261027";
+import { donGiovanniActOneScenes } from "./act-1.js?v=don-giovanni-issue15-20261105";
 import { donGiovanniActTwoScenes } from "./act-2.js?v=don-giovanni-classic-sections-20261027";
 import { getOpera } from "../../catalog.js";
 import { operaInformation } from "../../information.js";
