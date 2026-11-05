@@ -238,6 +238,15 @@ Every resolved issue must cite **actual changed paths, commit SHA, source editio
 - Added focused `tests/carmen-act1-editorial.test.mjs` (`9015f7f`) checking original/English correction and 331-turn structural invariant. This is a **targeted editorial review, not full independently accepted Act I or all-four-act translation sign-off**.
 - The new changes require current-head CI/Chromium/Update preview verification; do not copy previous test pass to this checkpoint. `main` untouched.
 
+### 2026-11-05 — Issue 13 independent Russian-to-English translation work (partial, not released)
+
+- User approved replacing *Eugene Onegin*'s existing Opera Guide/Sottovoce English transcription with a fresh project translation from the historical Russian libretto, while preserving an English-first reader and **three acts/seven tableaux (3+2+2)**.
+- Primary translation reference: [Russian original, Wikisource/FEB](https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)); [Act I](https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)/Действие_первое), [Act II](https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)/Действие_второе), [Act III](https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)/Действие_третье). Authors: P. I. Tchaikovsky and K. S. Shilovsky, incorporating Pushkin's verse.
+- **Draft only:** A first-pass independent Act III translation is staged in `src/data/operas/librettos/eugene-onegin/draft-independent-act-3.js`. It is **not imported or displayed** by the reader. It remains subject to close Russian/English collation, speaker/section/verse checks and correction.
+- **Not completed:** Acts I and II; authoritative per-line collation and editorial approval of all three; production bundle replacement; translation-specific regression tests; current-head Node/browser/preview verification. **Do not describe Issue 13 as resolved or claim the site's libretto has already been replaced.**
+- The prior 1,434 source-record count is an invariant of the *old English transcription*, **not** a required count for the new independent translation. Establish new source-line coverage against Russian before changing tests. The original Russian column may remain blank in the public reader, but verification data must substantiate source coverage.
+- The working branch is `Update`; `main` is unchanged. Do not change production-facing act files until all scenes have a vetted translation and the new reader format passes tests.
+
 ### 2026-11-02 — Phase C targeted English transcription proofreading: Eugene Onegin
 
 - Proofread all three English-first act files for concrete transcription artifacts (malformed hyphens, misspellings and punctuation) and corrected **30 occurrences** across 22 exact replacement patterns without inventing a Russian text or substituting an alternate published translation. Examples: `principels → principles`, `qa portable stove → a portable stove`, `world?weariness → world-weariness`, `twenty?six → twenty-six`, `greetinngs → greetings`. Corrections are mechanical to the existing English reading edition, **not a full literary or semantic translation approval**. Act commits: `4cfd506`, `120b796`, `d32b4f7`.
