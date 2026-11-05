@@ -1,9 +1,9 @@
-// Jules Massenet, Manon — Act V, one tableau with five internal scenes.
-// French source: Meilhac and Gille, historical five-act libretto (1884),
-// collated with https://operone.de/libretto/manon-2/ (Acte cinquième).
-// English: new independent project reading translation directly from French (2026-11-05).
-// This replaces the 1895 J. C. Macy English adaptation used by the previous edition.
-// Manuscript and transcription variants require separate scholarly collation; not a performing score.
+// Jules Massenet, Manon — Act V, single tableau with five dramatic scenes.
+// French source collation: Henri Meilhac and Philippe Gille, historical five-act text,
+// https://operone.de/libretto/manon-2/ (Acte cinquième), consulted 2026-11-05.
+// English: original project reading translation directly from French, 2026-11-05;
+// no longer the English performing adaptation in the 1895 Macy printing.
+// Exact historical edition variant, repeated vocal lines and full critical collation remain open.
 export const manonActFiveScenes = [
   {
     "number": 1,
@@ -22,16 +22,16 @@ export const manonActFiveScenes = [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
-            "original": "La route du Hâvre. Des Grieux est seul, assis au bord de la route.",
-            "translation": "A road to Le Havre. Des Grieux sits alone beside the road.",
+            "original": "La route du Havre. Un chemin poudreux. Quelques arbres desséchés par le vent de la mer ; un talus à droite où poussent des genêts et des ajoncs ; au fond un chemin creux ; à l'horizon la mer. C'est la fin du jour. Des Grieux est assis sur le tertre.",
+            "translation": "The road to Le Havre. A dusty road, with a few trees dried out by the sea wind; a bank to the right, covered with broom and gorse; beyond it a sunken lane, and the sea on the horizon. Evening is falling. Des Grieux sits on the rise.",
             "literalText": true,
             "shortCue": false
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
-            "original": "Manon ! pauvre Manon ! Je te vois enchaînée avec ces misérables ! Et la charrette passe ! Ô cieux inexorables, faut-il désespérer ?",
-            "translation": "Manon! Poor Manon! I see you chained alongside those unfortunate women, and the cart rolls past! O pitiless heavens, must I despair?",
+            "original": "Manon ! pauvre Manon ! Je te vois enchaînée avec ces misérables, et la charrette passe ! Ô cieux inexorables, faut-il désespérer ? Non ! non !",
+            "translation": "Manon! Poor Manon! I see you chained with those unfortunate women, and the cart passes! O pitiless heavens, must I despair? No! No!",
             "literalText": true
           }
         ]
@@ -120,8 +120,8 @@ export const manonActFiveScenes = [
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
-            "original": "Frappez ! Que voulez-vous ? On est soldat le roi paie assez mal ! Alors, bien malgré soi, on devient un coquin, un homme abominable !",
-            "translation": "Strike me if you must! What can you expect? A soldier is poorly paid by the king; against his better nature he becomes a rogue, an abominable man!",
+            "original": "Frappez, je donnerais ma vie pour racheter les heures d'infamie ! Que voulez-vous ? On est soldat, le roi paie assez mal ; alors, bien malgré soi, on devient un coquin, un homme abominable !",
+            "translation": "Strike me! I would give my life to redeem those shameful hours! What can you expect? A soldier is paid so badly by the king that, despite himself, he becomes a rogue, a despicable man!",
             "literalText": true
           },
           {
@@ -138,13 +138,6 @@ export const manonActFiveScenes = [
             "translation": "They stop short and listen. The voices of soldiers can be heard in the distance.",
             "literalText": true,
             "shortCue": false
-          },
-          {
-            "speaker": "LES SOLDATS",
-            "speakerTranslation": "The Soldiers",
-            "original": "Capitaine, ô gué, es-tu fatigué de nous voir à pied ? Mais non, mais non ! La Ramée, on n'est pas trop mal sur un bon cheval pour mener l'armée.",
-            "translation": "Captain, hey there! Are you weary of seeing us on foot? No, no, La Ramée! A good horse is quite comfortable when you're leading the army!",
-            "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
@@ -191,8 +184,8 @@ export const manonActFiveScenes = [
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
-            "original": "Sequel ?",
-            "translation": "Which way?",
+            "original": "Lequel ?",
+            "translation": "Which one?",
             "literalText": true
           },
           {
@@ -845,8 +838,8 @@ export const manonActFiveScenes = [
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
-            "original": "Ô cruels remords !",
-            "translation": "Oh, cruel remorse!",
+            "original": "Ô cruels remords ! Ah ! puis-je oublier ces tristes jours de nos amours ! Oui, c'est bien ma main que cette main presse. Ah ! c'est bien sa voix ! Oui, c'est bien son cœur ! C'est bien la tendresse des jours d'autrefois ! Bientôt renaîtra le bonheur passé.",
+            "translation": "Oh, cruel remorse! Ah, can I forget the sad days of our love? Yes, it is my hand that this hand clasps; his voice, his heart! It's the same tenderness as in days gone by! Soon our former happiness will return.",
             "literalText": true
           },
           {
@@ -860,14 +853,14 @@ export const manonActFiveScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "N'est-ce pas ma main que cette main presse ? N'est-ce pas ma voix ? N'est-elle pour toi plus une caresse, tout comme autrefois ? Bientôt renaîtra le bonheur passé !",
-            "translation": "Isn't it my hand you're holding? Isn't that my voice? Isn't it a caress for you, just as before? Soon our former happiness will return!",
+            "translation": "Isn't it my hand you're holding? Isn't that my voice? Doesn't it still feel like a caress, just as before? Soon our former happiness will return!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
-            "original": "Ah ! puis-je oublier ces tristes jours de nos amours ? Oui, c'est bien ma main que cette main presse ; ah ! c'est bien sa voix ! Oui, c'est bien son cœur ! C'est bien la tendresse des jours d'autrefois ! Bientôt renaîtra le bonheur passé ! Ah ! je meurs !",
-            "translation": "Ah, can I forget the sad days of our love? Yes, it is my hand this hand is clasping; it is his voice, his heart! It is the tenderness of days gone by! Soon our former happiness will return! Ah, I'm dying!",
+            "original": "Ah ! je meurs !",
+            "translation": "Ah, I'm dying!",
             "literalText": true
           },
           {
@@ -887,7 +880,7 @@ export const manonActFiveScenes = [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
-            "original": "Elle meurt. Des Grieux jette un cri déchirant et tombe sur le corps de Manon. Rideau.",
+            "original": "Elle meurt. Fin.",
             "translation": "She dies. Des Grieux gives a heart-rending cry and collapses across Manon's body. Curtain.",
             "literalText": true,
             "shortCue": false
