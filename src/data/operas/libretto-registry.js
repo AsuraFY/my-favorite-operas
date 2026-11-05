@@ -28,7 +28,7 @@ import { dasRheingold } from "./librettos/das-rheingold/bundle.js?v=rheingold-co
 import {siegfried} from "./librettos/siegfried/bundle.js?v=siegfried-complete-20261029";
 import {gotterdammerung} from "./librettos/gotterdammerung/bundle.js?v=gotterdammerung-20261029";
 import {lesContesDHoffmann} from "./librettos/les-contes-dhoffmann/bundle.js?v=hoffmann-20261029";
-import {eugeneOnegin} from "./librettos/eugene-onegin/bundle.js?v=onegin-english-20261029";
+import {eugeneOnegin} from "./librettos/eugene-onegin/bundle.js?v=onegin-independent-20261105";
 const completeLibretti = { [eugeneOnegin.slug]:eugeneOnegin, [lesContesDHoffmann.slug]:lesContesDHoffmann, [gotterdammerung.slug]:gotterdammerung, [siegfried.slug]:siegfried, [dasRheingold.slug]:dasRheingold, [dieFledermaus.slug]:dieFledermaus, [hanselUndGretel.slug]: hanselUndGretel, [traviata.slug]: traviata, [aida.slug]: aida, [parsifal.slug]: parsifal, [donGiovanni.slug]: donGiovanni, [otello.slug]: otello, [laFanciullaDelWest.slug]: laFanciullaDelWest, [dieZauberflote.slug]: dieZauberflote, [cosi.slug]: cosi, [barbiere.slug]: barbiere, [tristan.slug]: tristan, [macbeth.slug]: macbeth, [turandot.slug]: turandot, [figaro.slug]: figaro, [carmen.slug]: carmen, [laBoheme.slug]: laBoheme, [madamaButterfly.slug]: madamaButterfly, [tosca.slug]: tosca, [samson.slug]: samson };
 export function getLibretto(slug) {
   return completeLibretti[slug] || null;
