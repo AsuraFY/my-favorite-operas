@@ -1,7 +1,7 @@
-// Independent project English reading translation from the historical Russian libretto.
-// Source: https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)
-// These line indices count translation lines, NOT historical Opera Guide English records.
-// New translation prepared 2026-11-05; source-by-source literary sign-off is tracked in docs/reviews/global-audit.md.
+// Independent English reading translation from Tchaikovsky/Shilovsky's Russian libretto.
+// Text reference: https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)/Действие_первое
+// Musical numbering cross-check: https://www.tchaikov.ru/onegin.html (No. 12 restored)
+// Author-created English reading version; still subject to independent literary audit.
 export const oneginAct1Scenes = [
   {
     "number": 1,
@@ -1797,11 +1797,10 @@ export const oneginAct1Scenes = [
         "originalTitle": "№ 11 — Хор девушек (Khor devushek)",
         "translatedTitle": "No. 11 — Girls' chorus",
         "participants": [
-          "Girls",
-          "Tatyana"
+          "Girls"
         ],
         "sourceStartIndex": 578,
-        "sourceLineCount": 36,
+        "sourceLineCount": 19,
         "turns": [
           {
             "speaker": "Stage direction",
@@ -1821,7 +1820,24 @@ export const oneginAct1Scenes = [
             "literalText": true,
             "sourceStartIndex": 579,
             "sourceLineCount": 18
-          },
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "№ 12 — Сцена и ария Онегина (Stsena i ariya Onegina)",
+        "translatedTitle": "No. 12 — Scene and Onegin's aria",
+        "participants": [
+          "Tatyana",
+          "Onegin",
+          "Girls"
+        ],
+        "sourceStartIndex": 597,
+        "sourceLineCount": 71,
+        "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
@@ -1869,24 +1885,7 @@ export const oneginAct1Scenes = [
             "stageDirectionKind": "extended",
             "sourceStartIndex": 613,
             "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "Ответ Онегина (Otvet Onegina)",
-        "translatedTitle": "Closing scene — Onegin's reply",
-        "participants": [
-          "Onegin",
-          "Tatyana",
-          "Girls"
-        ],
-        "sourceStartIndex": 614,
-        "sourceLineCount": 54,
-        "turns": [
+          },
           {
             "speaker": "Onegin",
             "speakerTranslation": "Onegin",
