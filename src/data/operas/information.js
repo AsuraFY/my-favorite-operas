@@ -348,7 +348,7 @@ export const operaInformation = {
   "synopsis": [
     "On her way to a convent, Manon meets the Chevalier des Grieux in Amiens. They fall in love and flee to Paris. Their happiness is unsettled by her desire for luxury: she accepts the protection of the wealthy de Brétigny while des Grieux is taken away at his father’s command.",
     "Manon later finds des Grieux at Saint-Sulpice and persuades him to return to her. At a gambling house, Guillot accuses him of cheating and has the couple arrested. Des Grieux is freed, but Manon is condemned to deportation. He meets her on the road to Le Havre, where she dies in his arms.",
-    "Editorial edition note: Acts I–IV use an independently translated working text; Act V follows a separate historical French–English performing edition from 1895. This compilation is not a single uniform edition. See the central opera-source register for provenance."
+    "Editorial source note: Acts I–IV use an independently prepared machine-assisted English working translation of the Opera Guide French text. Act V uses the historical French five-act libretto with a newly prepared English reading translation; five internal dramatic scenes are restored. The compilation is not yet a uniform critical edition. See the central source register."
   ],
   "characters": [
     [
