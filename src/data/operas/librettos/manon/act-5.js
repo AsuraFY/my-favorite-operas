@@ -1,25 +1,21 @@
-// Manon (Massenet), Act V — source transcription, 1895 J. C. Macy bilingual edition.
-// English and French independently collated from the public-domain printed edition.
-// University of Rochester, Sibley Music Library (1895), printed pp. 43–48.
-// https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemId=28674
-// Status: Act V drafted; NOT a complete five-act libretto. Do not register in the complete-libretto loader yet.
-// The source offers Act V as an alternate Scene II of Act IV; preserve this edition note.
+// Manon — Act V. Five dramatic scenes within the sixth tableau.
+// Historical French source: Meilhac/Gille, Manon (Paris: Tresse, 1884).
+// Full French reading text: https://operone.de/libretto/manon-2/ (Acte cinquième).
+// This revision restores the previously omitted sergeant-bribery episode and final duet.
+// English translation is being independently revised from French; historical Macy wording must be fully replaced before editorial sign-off.
 export const manonActFiveScenes = [
   {
     "number": 1,
-    "originalHeading": "LA ROUTE DU HÂVRE",
-    "translatedHeading": "The road to Havre",
-    "summary": "The road to Le Havre; Des Grieux and Lescaut attempt to free Manon.",
+    "originalHeading": "LA ROUTE DU HAVRE",
+    "translatedHeading": "The road to Le Havre",
+    "summary": "A five-scene finale on the road to Le Havre.",
     "sections": [
       {
-        "originalTitle": "Manon ! pauvre Manon !",
-        "translatedTitle": "Manon, dearest Manon!",
+        "originalTitle": "Scène I — Des Grieux seul",
+        "translatedTitle": "Scene I — Des Grieux alone",
         "type": "Passage",
-        "summary": "Des Grieux waits on the road to Le Havre as Lescaut's proposed rescue begins to collapse.",
         "participants": [
-          "Des Grieux",
-          "Lescaut",
-          "The Soldiers"
+          "Des Grieux"
         ],
         "turns": [
           {
@@ -36,7 +32,19 @@ export const manonActFiveScenes = [
             "original": "Manon ! pauvre Manon ! Je te vois enchaînée avec ces misérables ! Et la charrette passe ! Ô cieux inexorables, faut-il désespérer ?",
             "translation": "Manon, dearest Manon! I see thee herded with these wretched beings and have no power to aid! O Heaven! merciless Heaven! Must I then despair!",
             "literalText": true
-          },
+          }
+        ]
+      },
+      {
+        "originalTitle": "Scène II — Des Grieux et Lescaut",
+        "translatedTitle": "Scene II — Des Grieux and Lescaut",
+        "type": "Passage",
+        "participants": [
+          "Des Grieux",
+          "Lescaut",
+          "The Guards"
+        ],
+        "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
@@ -185,23 +193,7 @@ export const manonActFiveScenes = [
             "original": "Sequel ?",
             "translation": "How then?",
             "literalText": true
-          }
-        ]
-      },
-      {
-        "originalTitle": "Vous la verrez, je le promets !",
-        "translatedTitle": "Manon you'll see, I promise this.",
-        "type": "Passage",
-        "summary": "Lescaut persuades Des Grieux to stand aside and negotiates with the soldiers.",
-        "participants": [
-          "Lescaut",
-          "Des Grieux",
-          "The Soldiers",
-          "A Sergeant",
-          "A Soldier",
-          "Manon"
-        ],
-        "turns": [
+          },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
@@ -264,47 +256,88 @@ export const manonActFiveScenes = [
             "original": "À l'instant même !",
             "translation": "This very instant.",
             "literalText": true
-          },
+          }
+        ]
+      },
+      {
+        "originalTitle": "Scène III — Les archers et le sergent",
+        "translatedTitle": "Scene III — The guards and sergeant",
+        "type": "Passage",
+        "participants": [
+          "The Guards",
+          "A Guard",
+          "The Sergeant",
+          "Des Grieux",
+          "Lescaut"
+        ],
+        "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
-            "original": "Lescaut entraîne Des Grieux derrière le buisson. Les soldats approchent.",
-            "translation": "The soldiers come nearer. Lescaut draws Des Grieux behind some bushes.",
+            "original": "Lescaut entraîne Des Grieux derrière les buissons. Les archers approchent.",
+            "translation": "Lescaut leads Des Grieux behind the bushes as the guards approach.",
             "literalText": true,
             "shortCue": false
           },
           {
-            "speaker": "LES SOLDATS",
-            "speakerTranslation": "The Soldiers",
-            "original": "Capitaine, ô gué...",
-            "translation": "Captain, riding by...",
+            "speaker": "LES ARCHERS",
+            "speakerTranslation": "The Guards",
+            "original": "Capitaine, ô gué ! Es-tu fatigué de nous voir à pied ? Mais non ! Mais non, La Ramée ! On n'est pas trop mal sur un bon cheval pour mener l'armée ! Capitaine, ô gué ! Est-c' que je boirai ? Au gué !",
+            "translation": "Captain, hey there! Are you tired of seeing us walk? No, La Ramée! A horse makes leading the army easy. Captain, hey there—shall I have a drink?",
             "literalText": true
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "Les soldats paraissent.",
-            "translation": "The soldiers appear.",
-            "literalText": true,
-            "shortCue": true
+            "speaker": "UN ARCHER",
+            "speakerTranslation": "A Guard",
+            "original": "Après chanter, il faut boire !",
+            "translation": "After singing, we ought to drink!",
+            "literalText": true
           },
           {
             "speaker": "UN SERGENT",
             "speakerTranslation": "A Sergeant",
-            "original": "C'est bien la moins, car ce n'est pas la gloire d'escorter l'arme au bras et de faire embarquer des demoiselles sans vertu ! N'importe ! C'est le métier. Et que disent là-bas les captives ?",
-            "translation": "There is no glory in escorting such fair companions as ours. But no matter, 'tis our business. And what do the prisoners say?",
+            "original": "C'est bien le moins ! Car ce n'est pas la gloire d'escorter, l'arme au bras, et de faire embarquer des demoiselles sans vertu !",
+            "translation": "That's the least we deserve! Escorting women under arms and putting them on ships brings no glory.",
             "literalText": true
           },
           {
-            "speaker": "UN SOLDAT",
-            "speakerTranslation": "A Soldier",
+            "speaker": "LES ARCHERS",
+            "speakerTranslation": "The Guards",
+            "original": "C'est se moquer de nous !",
+            "translation": "They're making fools of us!",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "N'importe ! C'est le métier ! Et que disent là-bas les captives ?",
+            "translation": "Never mind. It's our job. What do the prisoners say?",
+            "literalText": true
+          },
+          {
+            "speaker": "UN ARCHER",
+            "speakerTranslation": "A Guard",
             "original": "Oh ! rien ! Elles ne bougent pas ! L'une d'elles est déjà malade, à demi morte.",
-            "translation": "Oh, nothing; they are very quiet, and one of them is already half dead.",
+            "translation": "Nothing! They hardly move. One is ill, almost dying.",
             "literalText": true
           },
           {
-            "speaker": "UN SERGENT",
-            "speakerTranslation": "A Sergeant",
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Laquelle ?",
+            "translation": "Which one?",
+            "literalText": true
+          },
+          {
+            "speaker": "UN ARCHER",
+            "speakerTranslation": "A Guard",
+            "original": "Eh ! celle qui cachait son visage et pleurait quand l'un de nous cherchait à lui parler.",
+            "translation": "The one who hid her face and wept when one of us tried to speak to her.",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
             "original": "Manon, alors ?",
             "translation": "Oh, that's Manon!",
             "literalText": true
@@ -319,18 +352,215 @@ export const manonActFiveScenes = [
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
-            "original": "Silence ! Laissez-moi faire. Hé, camarade !",
-            "translation": "Silence! Let me act. Hi, comrade!",
+            "original": "Silence ! Laissez-moi faire. Avez-vous de l'argent ?",
+            "translation": "Quiet! Let me handle this. Have you any money?",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
-            "original": "Lescaut et le sergent s'entretiennent.",
-            "translation": "Lescaut and the sergeant confer together.",
+            "original": "Des Grieux donne sa bourse à Lescaut, qui s'avance vers le sergent.",
+            "translation": "Des Grieux gives Lescaut his purse; Lescaut approaches the sergeant.",
             "literalText": true,
-            "shortCue": true
+            "shortCue": false
           },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "Hé, camarade !",
+            "translation": "Hey, comrade!",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Un soldat !",
+            "translation": "A soldier!",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "Mieux, je pense : un ami ! Vous êtes obligeant, j'en suis sûr. Je viens réclamer un service.",
+            "translation": "Better, I hope: a friend! You look obliging. I've come to ask a favour.",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Et lequel ?",
+            "translation": "What favour?",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "C'est, rien que pour un instant, de me laisser causer avec la pauvre fille dont vous parliez.",
+            "translation": "Only that you let me speak briefly with the poor girl you were discussing.",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Pourquoi ?",
+            "translation": "Why?",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "Je suis de sa famille.",
+            "translation": "I'm a relative.",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Impossible !",
+            "translation": "Impossible!",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "Ah !",
+            "translation": "Ah!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Lescaut lui donne une pièce de monnaie.",
+            "translation": "Lescaut gives him a coin.",
+            "literalText": true,
+            "shortCue": false
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Pourtant...",
+            "translation": "Then again...",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "En insistant ?",
+            "translation": "If I insist?",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Lescaut donne une seconde pièce.",
+            "translation": "Lescaut gives him another coin.",
+            "literalText": true,
+            "shortCue": false
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Peut-être !",
+            "translation": "Perhaps!",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "On insiste !",
+            "translation": "I insist!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Lescaut donne une troisième pièce.",
+            "translation": "Lescaut hands him a third coin.",
+            "literalText": true,
+            "shortCue": false
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Ah ! ma foi, si vous parlez en maître ! Accordé ! Je ne suis pas si noir que j'en ai l'air. Là-bas est le village; vous l'y ramènerez vous-même avant ce soir. Détachez-la !",
+            "translation": "Ah, if you speak so persuasively! Very well, agreed. I'm not as hard-hearted as I look. The village is over there; bring her back yourself before nightfall. Release her!",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "Merci, mon cher, et bon voyage !",
+            "translation": "Thank you, my friend; good journey!",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "N'allez pas, pour me remercier, essayer de nous l'enlever !",
+            "translation": "Don't repay me by trying to take her away from us!",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "J'en fais mon grand serment ! En faut-il davantage ?",
+            "translation": "You have my solemn word! Do you need more?",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "Non; d'ailleurs quelqu'un restera, qui de loin vous surveillera.",
+            "translation": "No. Someone will remain to watch you from a distance.",
+            "literalText": true
+          },
+          {
+            "speaker": "LESCAUT",
+            "speakerTranslation": "LESCAUT",
+            "original": "Merci, mon cher, et bon voyage !",
+            "translation": "Thank you, my friend; safe journey!",
+            "literalText": true
+          },
+          {
+            "speaker": "LE SERGENT",
+            "speakerTranslation": "The Sergeant",
+            "original": "En marche, allons !",
+            "translation": "March on!",
+            "literalText": true
+          },
+          {
+            "speaker": "DES GRIEUX",
+            "speakerTranslation": "DES GRIEUX",
+            "original": "Merci, Dieu de bonté !",
+            "translation": "Thank you, merciful God!",
+            "literalText": true
+          },
+          {
+            "speaker": "LES ARCHERS",
+            "speakerTranslation": "The Guards",
+            "original": "Capitaine, ô gué, es-tu fatigué de marcher à pied ? Capitaine, ô gué ! Pour mener l'armée !",
+            "translation": "Captain, hey there! Are you tired of marching on foot? Captain, hey there! To lead the army!",
+            "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Les archers s'éloignent en chantant; un archer reste pour surveiller.",
+            "translation": "The guards march away singing, leaving one guard to watch.",
+            "literalText": true,
+            "shortCue": false
+          }
+        ]
+      },
+      {
+        "originalTitle": "Scène IV — Des Grieux et Lescaut",
+        "translatedTitle": "Scene IV — The guards depart",
+        "type": "Passage",
+        "participants": [
+          "Des Grieux",
+          "Lescaut"
+        ],
+        "turns": [
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
@@ -362,8 +592,27 @@ export const manonActFiveScenes = [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
-            "original": "Lescaut sort avec le soldat. Manon paraît ; elle descend péniblement et comme brisée par la fatigue.",
-            "translation": "Lescaut leaves with the soldier. Manon appears, exhausted by fatigue.",
+            "original": "Lescaut fait sonner ce qui reste dans la bourse, cause avec l'archer et l'emmène.",
+            "translation": "Lescaut jingles the money left in the purse, speaks with the remaining guard and leads him away.",
+            "literalText": true,
+            "shortCue": false
+          }
+        ]
+      },
+      {
+        "originalTitle": "Scène V — Manon et Des Grieux",
+        "translatedTitle": "Scene V — Manon's farewell",
+        "type": "Passage",
+        "participants": [
+          "Manon",
+          "Des Grieux"
+        ],
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Manon descend péniblement le sentier, épuisée et vêtue simplement. Elle reconnaît Des Grieux et tombe dans ses bras.",
+            "translation": "Manon slowly descends the path, exhausted and plainly dressed. She recognizes Des Grieux and falls into his arms.",
             "literalText": true,
             "shortCue": false
           },
@@ -373,25 +622,21 @@ export const manonActFiveScenes = [
             "original": "Ah ! Des Grieux !",
             "translation": "Ah, Des Grieux!",
             "literalText": true
-          }
-        ]
-      },
-      {
-        "originalTitle": "Ô Manon ! Manon !",
-        "translatedTitle": "Oh, Manon, Manon!",
-        "type": "Passage",
-        "summary": "Reunited, Manon asks forgiveness and Des Grieux promises her a future together.",
-        "participants": [
-          "Des Grieux",
-          "Manon"
-        ],
-        "turns": [
+          },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
-            "original": "Ô Manon ! Manon ! Tu pleures !",
+            "original": "Ô Manon ! Manon ! Manon ! Tu pleures !",
             "translation": "Oh, Manon, Manon, Manon! Thou weepest!",
             "literalText": true
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "Manon se dégage des bras de Des Grieux, tombe et pleure amèrement.",
+            "translation": "Manon draws away from Des Grieux, collapses and weeps bitterly.",
+            "literalText": true,
+            "shortCue": false
           },
           {
             "speaker": "MANON",
@@ -473,22 +718,31 @@ export const manonActFiveScenes = [
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
-            "original": "Manon ! mon amour, ma femme, oui, ce jour radieux nous unit tous les deux !",
-            "translation": "Manon, my adored! Yet this day of delight shall our hearts re-unite.",
+            "original": "Oui, le ciel lui-même te pardonne. Je t'aime !",
+            "translation": "Yes, heaven itself forgives you. I love you!",
             "literalText": true
-          }
-        ]
-      },
-      {
-        "originalTitle": "Nous reparlerons du passé.",
-        "translatedTitle": "We'll speak again of bygone days.",
-        "type": "Passage",
-        "summary": "Manon remembers the lovers' past and dies in Des Grieux's arms.",
-        "participants": [
-          "Manon",
-          "Des Grieux"
-        ],
-        "turns": [
+          },
+          {
+            "speaker": "MANON",
+            "speakerTranslation": "MANON",
+            "original": "Ah ! je puis donc mourir !",
+            "translation": "Ah, then I can die!",
+            "literalText": true
+          },
+          {
+            "speaker": "DES GRIEUX",
+            "speakerTranslation": "DES GRIEUX",
+            "original": "Mourir ! Non, vivre ! Et sans dangers désormais pouvoir suivre deux à deux ce chemin où tout va refleurir !",
+            "translation": "Die? No, live! We shall walk safely together on this road where everything will bloom again!",
+            "literalText": true
+          },
+          {
+            "speaker": "MANON",
+            "speakerTranslation": "MANON",
+            "original": "Oui, je puis encore être heureuse !",
+            "translation": "Yes, I can still be happy!",
+            "literalText": true
+          },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
@@ -602,9 +856,16 @@ export const manonActFiveScenes = [
             "literalText": true
           },
           {
+            "speaker": "DES GRIEUX",
+            "speakerTranslation": "DES GRIEUX",
+            "original": "N'est-ce pas ma main que cette main presse ? N'est-ce pas ma voix ? N'est-elle pour toi plus une caresse, tout comme autrefois ? Bientôt renaîtra le bonheur passé !",
+            "translation": "Isn't it my hand you are holding? Isn't it my voice? Is my touch no longer a caress, as it was before? Soon our former happiness will return!",
+            "literalText": true
+          },
+          {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
-            "original": "Ah ? puis-je oublier les tristes jours de nos amours ! Oui, c'est bien sa main que cette main presse ; ah ! c'est bien sa voix ! Oui, c'est bien son cœur ! C'est bien la tendresse des jours d'autrefois ! Bientôt renaîtra le bonheur passé ! Ah ! je meurs !",
+            "original": "Ah ! puis-je oublier ces tristes jours de nos amours ? Oui, c'est bien ma main que cette main presse ; ah ! c'est bien sa voix ! Oui, c'est bien son cœur ! C'est bien la tendresse des jours d'autrefois ! Bientôt renaîtra le bonheur passé ! Ah ! je meurs !",
             "translation": "Oh! can I forget the day of anguish and of love! Yes; is it not my hand that thine own now presses? Ah! it is his voice, and upon his heart, full of love surpassing, once again I rest! Now upon me dawneth a day of peace! I die!",
             "literalText": true
           },
