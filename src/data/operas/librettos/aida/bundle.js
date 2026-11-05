@@ -3,7 +3,7 @@ import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
 import { aidaActOneScenes } from './act-1.js?v=aida-act1-20261028';
 import { aidaActTwoScenes } from './act-2.js?v=aida-act2-20261028';
-import { aidaActThreeScenes } from './act-3.js?v=aida-act3-20261028';
+import { aidaActThreeScenes } from './act-3.js?v=aida-issue15-20261105';
 import { aidaActFourScenes } from './act-4.js?v=aida-act4-20261028';
 const info = operaInformation.aida;
 export const aida = {
