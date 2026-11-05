@@ -1,8 +1,9 @@
-// Manon — Act V. Five dramatic scenes within the sixth tableau.
-// Historical French source: Meilhac/Gille, Manon (Paris: Tresse, 1884).
-// Full French reading text: https://operone.de/libretto/manon-2/ (Acte cinquième).
-// This revision restores the previously omitted sergeant-bribery episode and final duet.
-// English translation is being independently revised from French; historical Macy wording must be fully replaced before editorial sign-off.
+// Jules Massenet, Manon — Act V, one tableau with five internal scenes.
+// French source: Meilhac and Gille, historical five-act libretto (1884),
+// collated with https://operone.de/libretto/manon-2/ (Acte cinquième).
+// English: new independent project reading translation directly from French (2026-11-05).
+// This replaces the 1895 J. C. Macy English adaptation used by the previous edition.
+// Manuscript and transcription variants require separate scholarly collation; not a performing score.
 export const manonActFiveScenes = [
   {
     "number": 1,
@@ -22,7 +23,7 @@ export const manonActFiveScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "La route du Hâvre. Des Grieux est seul, assis au bord de la route.",
-            "translation": "A lonely spot on the road to Havre. Des Grieux is seated by the wayside.",
+            "translation": "A road to Le Havre. Des Grieux sits alone beside the road.",
             "literalText": true,
             "shortCue": false
           },
@@ -30,7 +31,7 @@ export const manonActFiveScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Manon ! pauvre Manon ! Je te vois enchaînée avec ces misérables ! Et la charrette passe ! Ô cieux inexorables, faut-il désespérer ?",
-            "translation": "Manon, dearest Manon! I see thee herded with these wretched beings and have no power to aid! O Heaven! merciless Heaven! Must I then despair!",
+            "translation": "Manon! Poor Manon! I see you chained alongside those unfortunate women, and the cart rolls past! O pitiless heavens, must I despair?",
             "literalText": true
           }
         ]
@@ -57,28 +58,28 @@ export const manonActFiveScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Non ! C'est lui ! Prépare ton escorte ! Les archers sont là-bas ; ils arrivent ici. Tes hommes sont armés ? Ils nous prêtent main-forte et nous la délivrons ! — quoi ? N'est-ce pas ainsi que tout est convenu ? Tu gardes le silence !",
-            "translation": "No, he comes! Thy fellows now make ready; see, the soldiers are yonder; they will soon reach this place. Thy men are fully armed; they will rescue Manon and give her back to me! What! Can it not be done? Are all my fond hopes vain! Oh! why dost thou keep silence?",
+            "translation": "No! There he is! Prepare your escort! The guards are over there, coming this way. Your men are armed? They'll help us, and we'll free her! What? Wasn't that the agreement? Why are you silent?",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Monsieur le chevalier...",
-            "translation": "Sir, I have done my best—",
+            "translation": "Chevalier...",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Eh bien ?",
-            "translation": "Go on!",
+            "translation": "Well?",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Je pense que tout est perdu !",
-            "translation": "And grieve to say that all is lost.",
+            "translation": "I fear all is lost!",
             "literalText": true
           },
           {
@@ -92,49 +93,49 @@ export const manonActFiveScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Dès qu'au soleil ont lui les mousquets des archers, tous ces lâches ont fui !",
-            "translation": "Scarce had the sun shone on the arms of the soldiers ere all our men fled.",
+            "translation": "As soon as the guards' muskets shone in the sun, every one of those cowards fled!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Tu mens ! Le ciel a pris pitié de ma souffrance. C'est l'instant de la délivrance, tout à l'heure Manon va tomber dans mes bras !",
-            "translation": "'Tis false! 'Tis false! Great Heaven hath taken pity on my suffering, and at last comes the hour expected! In a moment my Manon shall be free.",
+            "translation": "You're lying! Heaven has taken pity on my anguish. This is the moment of her deliverance! Soon Manon will fall into my arms!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Je ne vous trompe pas !",
-            "translation": "Since I have told the truth—",
+            "translation": "I'm not deceiving you!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Va-t'en !",
-            "translation": "Away!",
+            "translation": "Go away!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Frappez ! Que voulez-vous ? On est soldat le roi paie assez mal ! Alors, bien malgré soi, on devient un coquin, un homme abominable !",
-            "translation": "Strike, if you will. 'Tis soldier's fare. He's by the King ill-paid; and then, whate'er his worth, the good folks shake their heads and call him 'wretched fellow.'",
+            "translation": "Strike me if you must! What can you expect? A soldier is poorly paid by the king; against his better nature he becomes a rogue, an abominable man!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Va-t'en !",
-            "translation": "Away!",
+            "translation": "Get out!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Ils écoutent, interdits. Des voix de soldats se font entendre au loin.",
-            "translation": "They listen. Voices of soldiers are heard in the distance.",
+            "translation": "They stop short and listen. The voices of soldiers can be heard in the distance.",
             "literalText": true,
             "shortCue": false
           },
@@ -142,105 +143,105 @@ export const manonActFiveScenes = [
             "speaker": "LES SOLDATS",
             "speakerTranslation": "The Soldiers",
             "original": "Capitaine, ô gué, es-tu fatigué de nous voir à pied ? Mais non, mais non ! La Ramée, on n'est pas trop mal sur un bon cheval pour mener l'armée.",
-            "translation": "Captain, riding by, dost thou pitying sigh, as we march left, right? No, no! 'Tis not so. For a gallant bay carries thee all day, and thy heart is light.",
+            "translation": "Captain, hey there! Are you weary of seeing us on foot? No, no, La Ramée! A good horse is quite comfortable when you're leading the army!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Qu'est-ce là ?",
-            "translation": "Who is that?",
+            "translation": "What is that?",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Ce sont eux, sans doute. Je les vois sur la route !",
-            "translation": "Down the road they are coming, and almost close at hand.",
+            "translation": "It must be them. I can see them on the road!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Manon ! Je n'ai que mon épée, mais nous allons les attaquer tous deux !",
-            "translation": "Manon! My sword is all I have, but let us both boldly attack them.",
+            "translation": "Manon! I have only my sword, but the two of us shall attack them!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Quelle folle équipée !",
-            "translation": "Oh, what madness is this!",
+            "translation": "What a mad undertaking!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Allons !",
-            "translation": "Come on.",
+            "translation": "Come along!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Vous la perdrez ! Croyez-moi, il vaut mieux prendre un autre moyen.",
-            "translation": "All will be lost. Take advice. It is better to use other means.",
+            "translation": "You'll destroy her! Believe me, we'd better find another way.",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Sequel ?",
-            "translation": "How then?",
+            "translation": "Which way?",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Je vous en prie, partons !",
-            "translation": "For Manon's sake let us go.",
+            "translation": "Please, let's leave!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Non ! non !",
-            "translation": "No, no!",
+            "translation": "No! No!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Vous la verrez, je le promets !",
-            "translation": "Manon you'll see. I promise this.",
+            "translation": "You'll see her, I promise!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Partir ! Lorsque son cœur me crie : « Viens à moi ! » Non, jamais !",
-            "translation": "What, go when her poor weary heart cries, 'Come to me?' Oh, no!",
+            "translation": "Leave, when her heart is crying, 'Come to me'? Never!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Si vous l'aimez, venez !",
-            "translation": "Sir, if you love her, come.",
+            "translation": "If you love her, come!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Ah ! si je l'aime ! Quand je veux tout braver ; quand je voudrais mourir pour elle !",
-            "translation": "If I love her? Would I not lose my all? Would I not gladly die that she might live?",
+            "translation": "If I love her! I would defy anything; I would gladly die for her!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Venez !",
-            "translation": "Pray, come.",
+            "translation": "Come!",
             "literalText": true
           },
           {
@@ -254,7 +255,7 @@ export const manonActFiveScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "À l'instant même !",
-            "translation": "This very instant.",
+            "translation": "At this very moment!",
             "literalText": true
           }
         ]
@@ -565,35 +566,35 @@ export const manonActFiveScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Manon ! Je vais la voir !",
-            "translation": "Am I to see her?",
+            "translation": "Manon! I'm going to see her!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Et bientôt, je l'espère, vous pourrez l'emmener.",
-            "translation": "And soon I hope to carry her off.",
+            "translation": "And soon, I hope, you'll be able to take her away.",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Ce soldat ?",
-            "translation": "That soldier!",
+            "translation": "That soldier?",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "J'en fais mon affaire ! J'ai très bien fait de ne pas tout donner !",
-            "translation": "I will attend to him. I know better than to give away all the money.",
+            "translation": "I'll take care of him! I'm glad I didn't give him all the money!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Lescaut fait sonner ce qui reste dans la bourse, cause avec l'archer et l'emmène.",
-            "translation": "Lescaut jingles the money left in the purse, speaks with the remaining guard and leads him away.",
+            "translation": "Lescaut rattles the coins left in the purse, talks with the guard and leads him away.",
             "literalText": true,
             "shortCue": false
           }
@@ -612,7 +613,7 @@ export const manonActFiveScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Manon descend péniblement le sentier, épuisée et vêtue simplement. Elle reconnaît Des Grieux et tombe dans ses bras.",
-            "translation": "Manon slowly descends the path, exhausted and plainly dressed. She recognizes Des Grieux and falls into his arms.",
+            "translation": "Manon slowly comes down the path, exhausted and simply dressed. Seeing Des Grieux, she cries out with joy and falls into his arms.",
             "literalText": true,
             "shortCue": false
           },
@@ -627,14 +628,14 @@ export const manonActFiveScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Ô Manon ! Manon ! Manon ! Tu pleures !",
-            "translation": "Oh, Manon, Manon, Manon! Thou weepest!",
+            "translation": "Oh, Manon! Manon! Manon! You're crying!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Manon se dégage des bras de Des Grieux, tombe et pleure amèrement.",
-            "translation": "Manon draws away from Des Grieux, collapses and weeps bitterly.",
+            "translation": "Manon breaks from Des Grieux's arms, sinks down and weeps bitterly.",
             "literalText": true,
             "shortCue": false
           },
@@ -642,49 +643,49 @@ export const manonActFiveScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Oui, de honte sur moi ; mais de douleur sur toi !",
-            "translation": "Yes; with shame for myself, but with sorrow for thee.",
+            "translation": "Yes, with shame for myself—but with sorrow for you!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Manon ! Lève la tête et ne songe qu'aux heures d'un bonheur qui revient !",
-            "translation": "Manon, be of good heart, dear love. Think of the happy hours that remain for us both.",
+            "translation": "Manon, raise your head and think only of the hours of happiness returning to us!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ah ! pourquoi me tromper ?",
-            "translation": "Ah! sweet deceiving vision.",
+            "translation": "Why deceive me?",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Non, ces terres lointaines, dont ils te menaçaient, tu ne les verras pas ! Nous fuirons tous les deux ! Au-delà de ces plaines nous porterons nos pas ! Manon, réponds-moi donc !",
-            "translation": "No; those far-away countries, where they would drag thee now, thou shalt never see. Both together we'll fly to a place of sweet rest, where trouble may not come. Manon, wilt thou not speak?",
+            "translation": "No! You will never see those distant lands with which they threatened you. We'll flee together, beyond these plains! Manon, answer me!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Seul amour de mon âme ! Je ne sais qu'aujourd'hui la bonté de ton cœur. Et si bas qu'elle soit, hélas ! Manon réclame pardon, pitié pour son erreur ! Non ! non ! encor ! Mon cœur fut léger et volage. Et même en vous aimant éperdument, j'étais ingrate !",
-            "translation": "Oh, my heart's only love; only now do I feel all thy goodness of soul, and, though fallen so low, Manon craves pity and pardon for all her sins. No, no; I must speak. Ah! Careless was I and light-hearted; even in loving thee beyond compare, most ungrateful.",
+            "translation": "Only love of my life! Only today do I understand the goodness of your heart. And however low she has fallen, Manon begs for forgiveness and pity for her mistake! No, no, let me speak! My heart was light and fickle; even when I loved you wildly, I was ungrateful!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Ah ! pourquoi ce langage ?",
-            "translation": "Love, cease these reproaches.",
+            "translation": "Why speak this way?",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Et je ne puis m'imaginer comment et par quelle folie j'ai pu vous chagriner un seul jour de ma vie !",
-            "translation": "Vainly I bid my wicked heart say why—by what excess of madness I have given thee pain on one day of my wasted life.",
+            "translation": "I cannot imagine how, or through what madness, I could have caused you grief for a single day of my life!",
             "literalText": true
           },
           {
@@ -698,21 +699,21 @@ export const manonActFiveScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Je me hais et maudis en pensant à ces douces amours par ma faute brisées, et je ne paierais pas assez de tout mon sang la moitié des douleurs que je vous ai causées ! Pardonnez-moi ! Ah ! pardonnez-moi !",
-            "translation": "With remorse and contempt I am filled when I think of our love, by my own act destroyed. Ah! would that I could now atone with all my blood for but one of the griefs thou hast endured through me! Pardon Manon! Oh, pardon Manon!",
+            "translation": "I hate and curse myself when I think of the sweet love I destroyed. Not even all my blood could repay half the suffering I caused you! Forgive me! Oh, forgive me!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Qu'ai-je à te pardonner, quand ton cœur à mon cœur vient de se redonner !",
-            "translation": "What! speakest thou of pardon when thy heart to my heart is given back again?",
+            "translation": "What have I to forgive, when your heart has just returned to mine?",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ah ! je sens une pure flamme m'éclairer de ses feux. Je vois enfin les jours heureux !",
-            "translation": "Ah! I feel 'tis purest passion, a love free from all alloy! I hail a future full of joy!",
+            "translation": "Ah, a pure flame is lighting up my heart! At last I see happy days ahead!",
             "literalText": true
           },
           {
@@ -726,147 +727,147 @@ export const manonActFiveScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ah ! je puis donc mourir !",
-            "translation": "Ah, then I can die!",
+            "translation": "Ah, then I may die!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Mourir ! Non, vivre ! Et sans dangers désormais pouvoir suivre deux à deux ce chemin où tout va refleurir !",
-            "translation": "Die? No, live! We shall walk safely together on this road where everything will bloom again!",
+            "translation": "Die? No, live! From now on we shall walk together, free from danger, on a road where everything will bloom again!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Oui, je puis encore être heureuse !",
-            "translation": "Yes, I can still be happy!",
+            "translation": "Yes, I may yet be happy!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Nous reparlerons du passé. De l'auberge, du coche, et de la route ombreuse. Du billet par ta main tracé, de la petite table et de ta robe noire à Saint-Sulpice. Ah ! j'ai bonne mémoire !",
-            "translation": "Happiness once more is mine. We'll talk of past days—of the inn, the coach and the tree-shaded route; of the letter thou didst write; of our little table and thy black robe at St. Sulpice. Ah! how well I remember.",
+            "translation": "We'll speak again of the past: the inn, the carriage, the shady road, the note you wrote, the little table, and your black robe at Saint-Sulpice. Ah, how well I remember!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est un rêve charmant ! Tout s'apprête pour notre liberté !",
-            "translation": "'Tis a dream of delight. Come, Manon, come; liberty is ours.",
+            "translation": "What a lovely dream! Everything is ready for our freedom!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Non ! Il m'est impossible d'avancer davantage, je sens le sommeil qui me gagne, un sommeil sans réveil ! J'étouffe — je succombe !",
-            "translation": "No! Vain words! All my strength is departing! Deep sleep o'er my senses is stealing! I shall wake never more!",
+            "translation": "No! I cannot walk any farther. Sleep is overtaking me—a sleep without waking! I cannot breathe; I'm dying!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Reviens à toi. Voici la nuit qui tombe ; c'est la première étoile !",
-            "translation": "Do not give way. See now, 'tis nearly nightfall. The evening star shineth o'er us.",
+            "translation": "Come back to yourself. Night is falling; there's the first star!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ah ! le beau diamant ! Tu vois je suis encore coquette !",
-            "translation": "Oh! what lovely gems! Thou knowest I was always fond of jewels.",
+            "translation": "Ah, what a beautiful diamond! You see, I'm still a coquette!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "On vient ! partons ! Manon !",
-            "translation": "Some one comes! Let us go, Manon!",
+            "translation": "Someone's coming! Let's go, Manon!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Je t'aime ! Et ce baiser — c'est un adieu suprême !",
-            "translation": "I love thee! Take thou this kiss; 'tis my farewell forever.",
+            "translation": "I love you! And this kiss is a final farewell!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Non ! je ne veux pas croire ! Écoute-moi ! rappelle-toi ! N'est-ce plus ma main que cette main presse ?",
-            "translation": "No; believe it I will not. O Manon, hear me? Recall thyself. Is it not my hand that thine own now presses?",
+            "translation": "No! I refuse to believe it! Listen to me; remember! Isn't it my hand your hand is holding?",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ne me réveille pas !",
-            "translation": "I pray thee, wake me not.",
+            "translation": "Don't wake me!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "N'est-elle pour toi plus une caresse ?",
-            "translation": "Shall I never more give thee sweet caresses?",
+            "translation": "Does it no longer feel like a caress?",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Berce-moi dans tes bras !",
-            "translation": "Oh! rock me in thine arms.",
+            "translation": "Cradle me in your arms!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Reconnais ma voix à travers mes larmes !",
-            "translation": "Know'st thou not my voice, broken though with grief?",
+            "translation": "Recognize my voice through my tears!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Oublions le passé !",
-            "translation": "The past let us forget.",
+            "translation": "Let's forget the past!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Souvenirs pleins de charmes !",
-            "translation": "The past, so full of sweetness!",
+            "translation": "Memories full of enchantment!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ô cruels remords !",
-            "translation": "O most dire remorse!",
+            "translation": "Oh, cruel remorse!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Je t'ai pardonné ! Tout est oublié !",
-            "translation": "I have pardon'd thee. All is forgotten.",
+            "translation": "I have forgiven you! Everything is forgotten!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "N'est-ce pas ma main que cette main presse ? N'est-ce pas ma voix ? N'est-elle pour toi plus une caresse, tout comme autrefois ? Bientôt renaîtra le bonheur passé !",
-            "translation": "Isn't it my hand you are holding? Isn't it my voice? Is my touch no longer a caress, as it was before? Soon our former happiness will return!",
+            "translation": "Isn't it my hand you're holding? Isn't that my voice? Isn't it a caress for you, just as before? Soon our former happiness will return!",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Ah ! puis-je oublier ces tristes jours de nos amours ? Oui, c'est bien ma main que cette main presse ; ah ! c'est bien sa voix ! Oui, c'est bien son cœur ! C'est bien la tendresse des jours d'autrefois ! Bientôt renaîtra le bonheur passé ! Ah ! je meurs !",
-            "translation": "Oh! can I forget the day of anguish and of love! Yes; is it not my hand that thine own now presses? Ah! it is his voice, and upon his heart, full of love surpassing, once again I rest! Now upon me dawneth a day of peace! I die!",
+            "translation": "Ah, can I forget the sad days of our love? Yes, it is my hand this hand is clasping; it is his voice, his heart! It is the tenderness of days gone by! Soon our former happiness will return! Ah, I'm dying!",
             "literalText": true
           },
           {
@@ -880,14 +881,14 @@ export const manonActFiveScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Il le faut, il le faut ! Et c'est là l'histoire de Manon Lescaut !",
-            "translation": "Better so; better so. Now is ended the story of Manon Lescaut.",
+            "translation": "It must be so, it must be! And that is the story of Manon Lescaut!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Elle meurt. Des Grieux jette un cri déchirant et tombe sur le corps de Manon. Rideau.",
-            "translation": "She dies. Des Grieux utters a distracted cry and falls upon her body. The curtain slowly descends.",
+            "translation": "She dies. Des Grieux gives a heart-rending cry and collapses across Manon's body. Curtain.",
             "literalText": true,
             "shortCue": false
           }
