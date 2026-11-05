@@ -17,7 +17,12 @@ function makeScene(number, heading, summary, items) {
       return turn;
     });
     return { type:'Passage', incipitOnly:true, sourceTitlesOnly:true, threeLineOutline:true,
-      originalTitle:'', translatedTitle:title, sourceStartIndex:start,
+      originalTitle:title, translatedTitle:({
+      19:'No. 19 — Polonaise',
+      20:'No. 20 — Scene, écossaise and Gremin’s aria',
+      21:'No. 21 — Scene, Onegin’s arioso and écossaise',
+      22:'No. 22 — Final scene'
+    })[Number(title.match(/^№ (\d+)/)?.[1])] || title, sourceStartIndex:start,
       sourceLineCount:cursor-start,
       participants:[...new Set(turns.map(t=>t.speaker).filter(s=>s!=='Stage direction'&&!s.includes(',')))],
       turns };
@@ -26,10 +31,10 @@ function makeScene(number, heading, summary, items) {
 }
 export const oneginAct3Scenes = [
   makeScene(6, 'Scene 6 — A ball in Saint Petersburg', 'A ball at the home of a Petersburg dignitary; the encounter with Prince Gremin and Tatyana.', [
-    ['No. 19 — Polonaise', [
+    ['№ 19 — Полонез (Polonez)', [
       ['Stage direction', 'At a ball in the house of a dignitary in Saint Petersburg, the guests dance a polonaise. Onegin stands apart, looking on.']
     ]],
-    ['No. 20 — Scene, écossaise and Gremin’s aria', [
+    ['№ 20 — Сцена, экосез и ария Гремина (Stsena, ekosez i ariya Gremina)', [
       ['Onegin', `Even here I find no pleasure!
 Neither the brilliance nor the commotion of high society
 can drive away my unending, weary sadness.
@@ -135,7 +140,7 @@ life, youth and happiness!
 Come along, then; I shall introduce you.`],
       ['Stage direction', 'Gremin leads Onegin towards Tatyana.']
     ]],
-    ['No. 21 — Scene, Onegin’s arioso and écossaise', [
+    ['№ 21 — Сцена и ариозо Онегина, экосез (Stsena i ariozo Onegina, ekosez)', [
       ['Gremin', 'My dear, allow me to introduce a kinsman and friend of mine: Onegin!'],
       ['Stage direction', 'Onegin bows.'],
       ['Tatyana', 'I am very pleased. We have met before.'],
@@ -174,7 +179,7 @@ everywhere she stands before me!`],
     ]]
   ]),
   makeScene(7, 'Scene 7 — Tatyana’s room', 'In Prince Gremin’s home, Tatyana reads Onegin’s letter and confronts him.', [
-    ['No. 22 — Final scene', [
+    ['№ 22 — Заключительная сцена (Zaklyuchitel'naya stsena)', [
       ['Stage direction', 'A room in Prince Gremin’s house. Tatyana is reading Onegin’s letter.'],
       ['Tatyana', `Oh, how heavily this weighs on me!
 Once again Onegin has crossed my path
