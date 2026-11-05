@@ -1,11 +1,11 @@
 // Manon, Jules Massenet — five-act bilingual working reading edition.
 import {getOpera} from '../../catalog.js';
 import {operaInformation} from '../../information.js';
-import {manonActOneScenes} from './act-1.js?v=manon-editorial-20261105';
-import {manonActTwoScenes} from './act-2.js?v=manon-editorial-20261105';
-import {manonActThreeScenes} from './act-3.js?v=manon-editorial-20261105';
-import {manonActFourScenes} from './act-4.js?v=manon-editorial-20261105';
-import {manonActFiveScenes} from './act-5.js?v=manon-editorial-20261105';
+import {manonActOneScenes} from './act-1.js?v=manon-act2-editorial-20261105';
+import {manonActTwoScenes} from './act-2.js?v=manon-act2-editorial-20261105';
+import {manonActThreeScenes} from './act-3.js?v=manon-act2-editorial-20261105';
+import {manonActFourScenes} from './act-4.js?v=manon-act2-editorial-20261105';
+import {manonActFiveScenes} from './act-5.js?v=manon-act2-editorial-20261105';
 const info=operaInformation['manon'];
 export const manon={
  slug:'manon',opera:getOpera('manon'),
