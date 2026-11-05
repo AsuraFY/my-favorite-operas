@@ -93,7 +93,7 @@ They say he is a gambler!
 
 He is shockingly ill-mannered, madly eccentric;
 he will not even kiss a lady's hand.
-He is a freethinker, and drinks nothing
+He is a Freemason, and drinks nothing
 but red wine by the glass!
 
 **ONEGIN (aside)**
@@ -333,7 +333,7 @@ Come along!
 **ONEGIN**
 
 Not dancing, Lensky?
-You stand there like some Lord Byron.
+You stand there like Childe Harold.
 What's the matter with you?
 
 **LENSKY**
