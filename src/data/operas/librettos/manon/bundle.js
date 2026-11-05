@@ -23,7 +23,7 @@ export const manon={
   {number:5,originalHeading:'CINQUIÈME ACTE',scenes:manonActFiveScenes},
  ],
  synopsis:{
- eyebrow:'Five-act bilingual working reader · English Acts I–IV machine translated, editorial review pending',
+ eyebrow:'Five-act bilingual working reader · Act V independently translated from historical French · Acts I–IV editorial review pending',
  paragraphs:info.synopsis,characters:info.characters
  },
  source: "Original libretto and English translation provenance: docs/info/operas-origins.md"
