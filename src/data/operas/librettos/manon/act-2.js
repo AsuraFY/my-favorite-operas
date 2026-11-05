@@ -69,7 +69,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "J'écris à mon père; et je tremble\nque cette lettre où j'ai mis tout mon cœur\nne l'irrite.",
-            "translation": "I am writing to my father; and I tremble\nthat this letter into which I poured my heart\nIt doesn't irritate him.",
+            "translation": "I'm writing to my father, and I fear\nthat this letter, into which I have poured my heart,\nmay anger him.",
             "literalText": true
           },
           {
@@ -112,7 +112,7 @@ export const manonActTwoScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "On l'appelle Manon, elle eut hier seize ans;\nen elle tout séduit, la beauté, la jeunesse, la grâce;\nnulle voix n'a plus de doux accents,\nnul regard plus de charme avec plus de tendresse!",
-            "translation": "Her name is Manon, she turned sixteen yesterday;\nIn her everything is seductive: beauty, youth, grace;\nno voice has sweeter accents,\nNo more looks, more charm, more tenderness!",
+            "translation": "Her name is Manon; she turned sixteen yesterday;\neverything about her enchants—beauty, youth, and grace;\nno voice has sweeter tones,\nno gaze more charm or tenderness!",
             "literalText": true
           },
           {
@@ -133,7 +133,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Vous aimer?... Vous aimer?...\nManon!... Je t'adore!",
-            "translation": "Do you love me?... Do you love me?...\nManon!... I adore you!",
+            "translation": "Love you?... Love you?...\nManon! I adore you!",
             "literalText": true
           },
           {
@@ -147,7 +147,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Comme l'oiseau qui suit en tous lieux le printemps,\nsa jeune âme a la vie, sa jeune âme est ouverte sans cesse;\nsa lèvre en fleur sourit et parle\nau zéphyr parfumé qui passe et la caresse!",
-            "translation": "Like the bird that follows spring everywhere,\nHer young soul has life, her young soul is constantly open;\nher blooming lip smiles and speaks\nto the fragrant zephyr that passes and caresses her!",
+            "translation": "Like a bird that follows spring wherever it goes,\nher young soul is forever open to life;\nher blooming lips smile and speak\nto the scented breeze that passes and caresses her!",
             "literalText": true
           },
           {
@@ -168,7 +168,7 @@ export const manonActTwoScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Il ne te suffit pas alors de nous aimer?",
-            "translation": "Is it not enough for you to love us?",
+            "translation": "Isn't it enough for you that we love each other?",
             "literalText": true
           },
           {
@@ -215,7 +215,7 @@ export const manonActTwoScenes = [
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "Oui, je vais la porter!",
-        "translatedTitle": "Yes, I'm going to wear it!",
+        "translatedTitle": "Yes, I'll deliver it!",
         "participants": [
           "Des Grieux",
           "Manon",
@@ -228,7 +228,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Oui, je vais la porter!",
-            "translation": "Yes, I'm going to wear it!",
+            "translation": "Yes, I'll deliver it!",
             "literalText": true
           },
           {
@@ -243,7 +243,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Voilà des fleurs qui sont fort belles; d'où te\nvient ce bouquet, Manon?",
-            "translation": "These are some very beautiful flowers; where did you\nWhere is this bouquet coming from, Manon?",
+            "translation": "Those flowers are lovely; where did\nyou get that bouquet, Manon?",
             "literalText": true
           },
           {
@@ -264,21 +264,21 @@ export const manonActTwoScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Beau motif de querelles! Par la fenêtre, on\nl'a lancé d'en bas... Comme il était joli, je l'ai\ngardé... Je pense que tu n'es pas jaloux?",
-            "translation": "A fine cause for quarrels! Through the window, one\nHe threw it from below... Because it was so pretty, I...\nKept... I don't think you're jealous?",
+            "translation": "What a reason to quarrel! Someone threw it\nup through the window from below. It was so lovely\nthat I kept it. You're not jealous, are you?",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Non, je puis te jurer que je n'ai de ton cœur\naucune défiance...",
-            "translation": "No, I can swear to you that I have no love for your heart.\nno distrust...",
+            "translation": "No, I swear I have no reason\nto distrust your heart...",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Et tu fais bien! Ce cœur est à toi tout\nentier!...",
-            "translation": "And you're right! This heart is all yours.\nentire!...",
+            "translation": "And you're right! My heart belongs\nentirely to you!",
             "literalText": true
           },
           {
@@ -300,7 +300,7 @@ export const manonActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "entre, effarée",
-            "translation": "between, horrified",
+            "translation": "entering in alarm",
             "literalText": true,
             "shortCue": true
           },
@@ -322,7 +322,7 @@ export const manonActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "bas à Manon et vite",
-            "translation": "Goodbye to Manon and quickly",
+            "translation": "quietly",
             "literalText": true,
             "shortCue": true
           },
@@ -337,7 +337,7 @@ export const manonActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "bas",
-            "translation": "down",
+            "translation": "quietly",
             "literalText": true,
             "shortCue": true
           },
@@ -352,7 +352,7 @@ export const manonActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "bas",
-            "translation": "down",
+            "translation": "quietly",
             "literalText": true,
             "shortCue": true
           },
@@ -396,7 +396,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Vous m'avez, l'autre jour, brûlé la politesse,\nMonsieur le drôle!",
-            "translation": "You were very rude to me the other day,\nYou funny man!",
+            "translation": "You snubbed me the other day,\nyou scoundrel!",
             "literalText": true
           },
           {
@@ -410,21 +410,21 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Plus doucement!",
-            "translation": "More gently!",
+            "translation": "More quietly!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Plus doucement!",
-            "translation": "More gently!",
+            "translation": "More quietly!",
             "literalText": true
           },
           {
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "C'est à tomber foudroyé sur la place!\nJ'arrive pour venger l'honneur de notre race,\nje suis le redresseur, je suis le châtiment!\nEt c'est à moi qu'on dit de parler doucement!\nDe parler doucement!",
-            "translation": "It's absolutely stunning!\nI have come to avenge the honor of our race,\nI am the rectifier, I am the punishment!\nAnd I'm the one being told to speak quietly!\nSpeak softly!",
+            "translation": "It's enough to strike me dead where I stand!\nI've come to avenge our family's honour;\nI am the avenger, I am justice itself!\nAnd they tell me to speak quietly!\nTo speak quietly!",
             "literalText": true
           }
         ]
@@ -454,7 +454,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Coquin!",
-            "translation": "Naughty boy!",
+            "translation": "Scoundrel!",
             "literalText": true
           },
           {
@@ -468,7 +468,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est bien! Je vais vous couper les oreilles!",
-            "translation": "That's good! I'm going to cut off your ears!",
+            "translation": "Very well! I'll cut off your ears!",
             "literalText": true
           },
           {
@@ -562,7 +562,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Coquin!",
-            "translation": "Naughty boy!",
+            "translation": "Scoundrel!",
             "literalText": true
           },
           {
@@ -577,7 +577,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Retenez-moi! Retenez-moi! Retenez-moi!\nDrôle! Retenez-moi!\nJe sais de quoi je suis capable!\nQuand il faut punir un coupable!\nRetenez-moi! Retenez-moi!\nDrôle! Coquin! Drôle!\nRetenez-moi! Retenez-moi!\nCoquin! Je veux punir!\nRetenez-moi! Retenez-moi! Retenez-moi!",
-            "translation": "Hold me back! Hold me back! Hold me back!\nFunny! Hold me back!\nI know what I'm capable of!\nWhen a guilty person must be punished!\nHold me back! Hold me back!\nFunny! Naughty! Funny!\nHold me back! Hold me back!\nYou rascal! I want to punish you!\nHold me back! Hold me back! Hold me back!",
+            "translation": "Hold me back! Hold me back! Hold me back!\nRascal! Hold me back!\nI know what I'm capable of\nwhen a guilty man must be punished!\nHold me back! Hold me back!\nRascal! Scoundrel! Rascal!\nHold me back!",
             "literalText": true
           }
         ]
@@ -698,7 +698,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT, BRÉTIGNY",
             "speakerTranslation": "LESCAUT and BRÉTIGNY",
             "original": "Voilà l'affaire!",
-            "translation": "That's the problem!",
+            "translation": "That's the matter settled!",
             "literalText": true
           },
           {
@@ -757,7 +757,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Voilà l'affaire!",
-            "translation": "That's the problem!",
+            "translation": "That's the matter settled!",
             "literalText": true
           }
         ]
@@ -810,7 +810,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Allons tous deux,\npour y mieux voir,\nnous placer près de la fenêtre\net là nous lirons votre lettre.",
-            "translation": "Let's both go,\nto see better,\nwe position ourselves near the window\nAnd then we will read your letter.",
+            "translation": "Let's go together,\nwhere the light is better,\nand stand beside the window;\nthere we'll read your letter.",
             "literalText": true
           },
           {
@@ -846,7 +846,7 @@ export const manonActTwoScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "J'ai voulu vous avertir moi-même\nque ce soir de chez vous, on compte l'enlever.",
-            "translation": "I wanted to warn you myself.\nthat this evening from your home, we plan to remove it.",
+            "translation": "I came to warn you myself\nthat tonight they intend to abduct him from your home.",
             "literalText": true
           },
           {
@@ -874,7 +874,7 @@ export const manonActTwoScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "Oui, ce soir, ici-même\non viendra l'arracher.",
-            "translation": "Yes, tonight, right here.\nWe will come and tear it out.",
+            "translation": "Yes, tonight, right here,\nthey will come and drag him away.",
             "literalText": true
           },
           {
@@ -896,7 +896,7 @@ export const manonActTwoScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "Prévenez-le, c'est la misère pour lui, pour vous...\nNe le prévenez pas...\nEt c'est la fortune, au contraire,\nqui vous attend.",
-            "translation": "Warn him, it's a disaster for him, for you...\nDon't warn him...\nAnd that, on the contrary, is good fortune.\nwho awaits you.",
+            "translation": "Warn him, and misery awaits him—and you.\nSay nothing to him,\nand instead, good fortune\nwill be yours.",
             "literalText": true
           },
           {
@@ -939,7 +939,7 @@ export const manonActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny",
-            "translation": "in Brétigny",
+            "translation": "to Brétigny",
             "literalText": true,
             "shortCue": true
           },
@@ -1012,7 +1012,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Ah! Lescaut, c'est que je l'adore!\nLaissez-moi vous le dire encore!",
-            "translation": "Ah! Lescaut, I adore him!\nLet me tell you again!",
+            "translation": "Ah, Lescaut, I adore her!\nLet me say it once again!",
             "literalText": true
           },
           {
@@ -1040,14 +1040,14 @@ export const manonActTwoScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "Voici l'heure prochaine\nde votre liberté!",
-            "translation": "Here is the next time\nof your freedom!",
+            "translation": "The hour is almost here\nwhen you'll be free!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est que je l'adore!",
-            "translation": "I absolutely love it!",
+            "translation": "I adore her!",
             "literalText": true
           },
           {
@@ -1111,7 +1111,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est que je l'adore!",
-            "translation": "I absolutely love it!",
+            "translation": "I adore her!",
             "literalText": true
           },
           {
@@ -1160,7 +1160,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "«...sa jeune âme à la vie... »",
-            "translation": "\"...his young soul to life...\"",
+            "translation": "\"...her young soul, open to life...\"",
             "literalText": true
           },
           {
@@ -1181,7 +1181,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est que je l'adore!",
-            "translation": "I absolutely love it!",
+            "translation": "I adore her!",
             "literalText": true
           },
           {
@@ -1216,7 +1216,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est que je l'adore!",
-            "translation": "I absolutely love it!",
+            "translation": "I adore her!",
             "literalText": true
           },
           {
@@ -1284,14 +1284,14 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "et vous cousin,\nje vous rends mon estime!\nPrenez ma main, car ce serait un crime,\nde vous tenir rigueur;\nenfants, je vous bénis.\nLes larmes... le bonheur!",
-            "translation": "And you, cousin?\nI reciprocate your esteem!\nTake my hand, for it would be a crime.\nto hold you accountable;\nChildren, I bless you.\nTears... happiness!",
+            "translation": "And as for you, cousin,\nI offer you my esteem!\nTake my hand, for it would be wrong\nto hold a grudge against you;\nchildren, I give you my blessing.\nTears... happiness!",
             "literalText": true
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "à Brétigny",
-            "translation": "in Brétigny",
+            "translation": "to Brétigny",
             "literalText": true,
             "shortCue": true
           },
@@ -1379,7 +1379,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Puisse du bonheur où j'aspire,\nle jour se lever souriant!",
-            "translation": "May happiness, which I long for,\nThe day dawns with a smile!",
+            "translation": "May the day of the happiness I long for\ndawn with a smile!",
             "literalText": true
           },
           {
@@ -1408,14 +1408,14 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est vrai pourtant. Et je n'ai pas encor porté\nma lettre.",
-            "translation": "It's true, though. And I haven't worn it yet.\nmy letter.",
+            "translation": "That's true, and I still haven't delivered\nmy letter.",
             "literalText": true
           },
           {
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Eh bien, va la porter.",
-            "translation": "Well, go wear it.",
+            "translation": "Well, go and deliver it.",
             "literalText": true
           },
           {
@@ -1508,7 +1508,7 @@ export const manonActTwoScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "Adieu, notre petite table,\nqui nous réunit si souvent!\nAdieu, adieu, notre petite table,\nsi grande pour nous cependant!\nOn tient, c'est inimaginable...\nSi peu de place... en se serrant...\nAdieu, notre petite table!\nUn même verre était le nôtre,\nchacun de nous, quand il buvait\ny cherchait les lèvres de l'autre …\nAh! pauvre ami, comme il m'aimait!\nAdieu, notre petite table, adieu!",
-            "translation": "Goodbye, our little table,\nwhich brings us together so often!\nGoodbye, goodbye, our little table,\nSo great for us, though!\nWe're holding on, it's unimaginable...\nSo little space... even when squeezing in...\nGoodbye, our little table!\nWe all shared the same glass.\neach of us, when he drank\nhe was searching for the other's lips…\nAh! My poor friend, how he loved me!\nGoodbye, our little table, goodbye!",
+            "translation": "Farewell, our little table,\nwhich so often brought us together!\nFarewell, farewell, our little table,\nyet so large for the two of us!\nSomehow we fitted—imagine it—\ninto so little space, pressed close together.\nFarewell, our little table!\nWe shared a single glass;\nwhen either of us drank,\nwe sought the other's lips upon its rim...\nAh, poor darling, how he loved me!\nFarewell, our little table, farewell!",
             "literalText": true
           },
           {
@@ -1544,7 +1544,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Si fait, ta main tremble...",
-            "translation": "If you do, your hand trembles...",
+            "translation": "Yes, you are! Your hand is trembling...",
             "literalText": true
           },
           {
@@ -1558,7 +1558,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "C'est vrai … ma tête est folle …\nMais le bonheur est passager,\net le ciel l'a fait si léger,\nqu'on a toujours peur qu'il s'envole!\nÀ table!",
-            "translation": "It's true… my head is spinning…\nBut happiness is fleeting.\nand the sky made it so light,\nWe're always afraid it will fly away!\nDinner's ready!",
+            "translation": "It's true... my head is reeling...\nBut happiness is fleeting,\nand heaven has made it so light\nthat we're always afraid it will fly away!\nCome to the table!",
             "literalText": true
           }
         ]
@@ -1579,14 +1579,14 @@ export const manonActTwoScenes = [
             "speaker": "MANON",
             "speakerTranslation": "MANON",
             "original": "À table!",
-            "translation": "Dinner's ready!",
+            "translation": "Come to the table!",
             "literalText": true
           },
           {
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Instant charmant, où la crainte fait trêve,\noù nous sommes deux seulement!\nTiens, Manon, en marchant,\nje viens de faire un rêve.",
-            "translation": "A delightful moment, where fear gives way.\nwhere there are only two of us!\nHey, Manon, while we're walking,\nI just had a dream.",
+            "translation": "A lovely moment, when fear calls a truce,\nwhen there's only the two of us!\nYou know, Manon, while I was walking,\nI had a dream.",
             "literalText": true
           },
           {
@@ -1608,7 +1608,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "En fermant les yeux, je vois là-bas une humble retraite,\nune maisonnette toute blanche au fond des bois!\nSous ses tranquilles ombrages,\nles clairs et joyeux ruisseaux,\noù se mirent les feuillages,\nchantent avec les oiseaux!\nC'est le Paradis!\nOh! non! Tout est là triste et morose,\ncar il y manque une chose:\nil y faut encor Manon!",
-            "translation": "Closing my eyes, I see a humble retreat over there,\nA little white house deep in the woods!\nBeneath its tranquil shade,\nthe clear and cheerful streams,\nwhere the leaves were reflected,\nThey sing with the birds!\nThis is Paradise!\nOh no! Everything here is sad and gloomy.\nbecause one thing is missing:\nWe still need Manon!",
+            "translation": "Closing my eyes, I see a humble retreat,\na little white cottage deep in the woods!\nBeneath its quiet shade,\nthe clear and cheerful streams,\nreflecting the leaves overhead,\nsing along with the birds!\nIt's paradise!\nOh no! Everything there is sad and dreary,\nfor one thing is missing:\nManon must be there!",
             "literalText": true
           },
           {
@@ -1687,7 +1687,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Pourquoi?",
-            "translation": "For what?",
+            "translation": "Why?",
             "literalText": true
           },
           {
@@ -1701,7 +1701,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Enfant... laisse-moi!...",
-            "translation": "Child... leave me alone!...",
+            "translation": "My child... let me go!...",
             "literalText": true
           },
           {
@@ -1715,7 +1715,7 @@ export const manonActTwoScenes = [
             "speaker": "DES GRIEUX",
             "speakerTranslation": "DES GRIEUX",
             "original": "Que t'importe!...",
-            "translation": "What do you care!...",
+            "translation": "What does it matter to you?...",
             "literalText": true
           },
           {
