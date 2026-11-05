@@ -35,7 +35,7 @@ export const manonActThreeScenes = [
             "speaker": "LES VENDEURS",
             "speakerTranslation": "The Vendors",
             "original": "Voyez mules à fleurettes!\nRouge, mouches et manchettes!\nFichus et coqueluchons!\nAchetez-moi mes chansons!\nBillets pour la loterie!\nPoudre, râpes à tabac!\nRubans, cannes et chapeau !\nÉlixir pour l'estomac!\nIl est temps qu'on se régale!\nBonnets, paniers, collerettes!\nPlumes et fines aigrettes!\nGaze, linons et manchons!\nBonbons et pâtisserie!\nJouets, balles et sabots!\nMa cuisine est sans égale, etc.\nLES VENDEURS, BOURGEOIS et BOURGEOISES\nC'est fête au Cours-la-Reine!\nOn y rit, on y boit à la santé du Roi!\nOn y rit, on y boit,\npendant une semaine!\nOn y rit, on y boit à la santé du Roi!\nC'est fête au Cours-la-Reine!\nOn y boit à la santé du Roi.",
-            "translation": "Look at the flowery mules!\nRed, flies and cuffs!\nFichus and coqueluchons!\nBuy me my songs!\nLottery tickets!\nPowder, tobacco graters!\nRibbons, canes and a hat!\nElixir for the stomach!\nIt's time we enjoyed ourselves!\nHats, baskets, ruffs!\nFeathers and fine egrets!\nGauze, linens and sleeves!\nSweets and pastries!\nToys, balls and hooves!\nMy cooking is unparalleled, etc.\nTHE SALESMEN, BOURGEOIS and BOURGEOIS WOMEN\nIt's party time at Cours-la-Reine!\nThere, people laugh and drink to the King's health!\nPeople laugh there, they drink there,\nfor a week!\nThere, people laugh and drink to the King's health!\nIt's party time at Cours-la-Reine!\nThey drink to the King's health.",
+            "translation": "See these flowered slippers!\nRouge, beauty patches and cuffs!\nShawls and little hoods!\nBuy my songs!\nLottery tickets!\nPowder and snuff graters!\nRibbons, canes and hats!\nA remedy for the stomach!\nIt's time to treat yourselves!\nCaps, hoop skirts and collars!\nFeathers and fine plumes!\nGauze, fine lawn and muffs!\nSweets and pastries!\nToys, balls and wooden clogs!\nMy cooking is second to none, etc.\nTHE VENDORS, TOWNSMEN AND TOWNWOMEN\nIt's festival time at the Cours-la-Reine!\nThey laugh and drink to the King's health!\nThey laugh and drink,\nall week long!\nThey laugh and drink to the King's health!\nIt's festival time at the Cours-la-Reine!\nThey drink to the King's health.",
             "literalText": true
           },
           {
@@ -123,7 +123,7 @@ export const manonActThreeScenes = [
             "speaker": "POUSSETTE, JAVOTTE",
             "speakerTranslation": "POUSSETTE and JAVOTTE",
             "original": "Mais que Guillot n'en sache rien!\nPOUSSETTE, JAVOTTE and ROSETTE\nRien!\nLa charmante promenade!\nAh ! que ce séjour est doux! Que c'est bon!\nQue c'est bon une escapade,\nloin des regards d'un jaloux!",
-            "translation": "But Guillot mustn't know anything about it!\nSTROLLER, JAVOTTE and ROSETTE\nNothing!\nWhat a lovely walk!\nAh! How sweet this stay is! How wonderful!\nHow wonderful a getaway is!\nFar from the eyes of a jealous person!",
+            "translation": "But Guillot mustn't know anything about it!\nPOUSSETTE, JAVOTTE and ROSETTE\nNothing!\nWhat a lovely walk!\nAh! How sweet this stay is! How wonderful!\nHow wonderful a getaway is!\nFar from the eyes of a jealous person!",
             "literalText": true
           },
           {
@@ -233,7 +233,7 @@ export const manonActThreeScenes = [
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Bonjour, Poussette!",
-            "translation": "Hello, Stroller!",
+            "translation": "Hello, Poussette!",
             "literalText": true
           },
           {
@@ -320,14 +320,14 @@ export const manonActThreeScenes = [
             "speaker": "BRÉTIGNY",
             "speakerTranslation": "BRÉTIGNY",
             "original": "Et Poussette?",
-            "translation": "And what about the stroller?",
+            "translation": "And what about Poussette?",
             "literalText": true
           },
           {
             "speaker": "GUILLOT",
             "speakerTranslation": "GUILLOT",
             "original": "Poussette aussi!",
-            "translation": "Stroller too!",
+            "translation": "Poussette too!",
             "literalText": true
           },
           {
@@ -585,7 +585,7 @@ export const manonActThreeScenes = [
             "speaker": "UN MARCHAND",
             "speakerTranslation": "A Merchant",
             "original": "Poudre, râpes à tabac!",
-            "translation": "Powder, tobacco graters!",
+            "translation": "Powder and snuff graters!",
             "literalText": true
           },
           {
