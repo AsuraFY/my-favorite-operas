@@ -577,7 +577,7 @@ export const manonActTwoScenes = [
             "speaker": "LESCAUT",
             "speakerTranslation": "LESCAUT",
             "original": "Retenez-moi! Retenez-moi! Retenez-moi!\nDrôle! Retenez-moi!\nJe sais de quoi je suis capable!\nQuand il faut punir un coupable!\nRetenez-moi! Retenez-moi!\nDrôle! Coquin! Drôle!\nRetenez-moi! Retenez-moi!\nCoquin! Je veux punir!\nRetenez-moi! Retenez-moi! Retenez-moi!",
-            "translation": "Hold me back! Hold me back! Hold me back!\nRascal! Hold me back!\nI know what I am capable of!\nWhen I must punish a guilty man!\nHold me back! Hold me back!\nRascal! Scoundrel! Rascal!\nHold me back!\nHold me back!\nHold me back!",
+            "translation": "Hold me back! Hold me back! Hold me back!\nRascal! Hold me back!\nI know what I'm capable of!\nWhen there is a guilty man to punish!\nHold me back! Hold me back!\nRascal! Scoundrel! Rascal!\nHold me back! Hold me back!\nScoundrel! I want to punish him!\nHold me back! Hold me back! Hold me back!",
             "literalText": true
           }
         ]
