@@ -66,7 +66,7 @@ test('all 22 Eugene Onegin sections have Cyrillic titles followed by romanized R
   assert.equal(passages.length,22);
   for(const section of passages){
     assert.match(section.originalTitle, /[А-Яа-яЁё]/u, 'Cyrillic source-form title required');
-    assert.match(section.originalTitle, /\\([^()]+\\)$/u, 'romanization in final parentheses required');
+    assert.match(section.originalTitle, /\([^()]+\)$/u, 'romanization in final parentheses required');
     assert.ok(section.translatedTitle, 'English heading retained');
   }
   assert.equal(passages[0].originalTitle,'№ 1 — Дуэт и квартет (Duet i kvartet)');
