@@ -19,8 +19,8 @@ const loaders = Object.freeze({
   "the-magic-flute": () => import("./librettos/the-magic-flute/bundle.js?v=zauberflote-outline-20261026").then(module => module.dieZauberflote),
   "la-fanciulla-del-west": () => import("./librettos/la-fanciulla-del-west/bundle.js?v=fanciulla-all-acts-20261026").then(module => module.laFanciullaDelWest),
   "otello": () => import("./librettos/otello/bundle.js?v=cosi-classic-20261027").then(module => module.otello),
-  "parsifal": () => import("./librettos/parsifal/bundle.js?v=cosi-classic-20261027").then(module => module.parsifal),
-  "don-giovanni": () => import("./librettos/don-giovanni/bundle.js?v=classic-sections-20261027").then(module => module.donGiovanni),
+  "parsifal": () => import("./librettos/parsifal/bundle.js?v=parsifal-issue15-20261105").then(module => module.parsifal),
+  "don-giovanni": () => import("./librettos/don-giovanni/bundle.js?v=don-giovanni-issue15-20261105").then(module => module.donGiovanni),
   "il-trovatore": () => import("./librettos/il-trovatore/bundle.js?v=trovatore-act1-20261028").then(module => module.trovatore),
   "lelisir-damore": () => import("./librettos/lelisir-damore/bundle.js?v=elisir-both-acts-20261029").then(module => module.elisir),
   "pagliacci": () => import("./librettos/pagliacci/bundle.js?v=pagliacci-complete-20261029").then(module => module.pagliacci),
@@ -32,8 +32,8 @@ const loaders = Object.freeze({
   "hansel-und-gretel": () => import("./librettos/hansel-und-gretel/bundle.js?v=hansel-complete-20261029").then(module => module.hanselUndGretel),
   "nabucco": () => import("./librettos/nabucco/bundle.js?v=nabucco-complete-20261029").then(module => module.nabucco),
   "rigoletto": () => import("./librettos/rigoletto/bundle.js?v=rigoletto-act1-20261028").then(module => module.rigoletto),
-  "la-traviata": () => import("./librettos/la-traviata/bundle.js?v=traviata-all-acts-20261028").then(module => module.traviata),
-  "aida": () => import("./librettos/aida/bundle.js?v=aida-act4-20261028").then(module => module.aida),
+  "la-traviata": () => import("./librettos/la-traviata/bundle.js?v=traviata-issue15-20261105").then(module => module.traviata),
+  "aida": () => import("./librettos/aida/bundle.js?v=aida-issue15-20261105").then(module => module.aida),
   "samson-et-dalila": () => import("./librettos/samson-et-dalila/bundle.js?v=on-demand-20261023").then(module => module.samson)
 });
 const pending = new Map();
