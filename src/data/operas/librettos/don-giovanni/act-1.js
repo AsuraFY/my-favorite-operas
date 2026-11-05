@@ -978,7 +978,7 @@ export const donGiovanniActOneScenes = [
             "speakerTranslation": "ELVIRA",
             "literalText": true,
             "original": "Cosa puoi dire,\nDopo azion sì nera? In casa mia\nEntri furtivamente. A forza d'arte,\nDi giuramenti e di lusinghe, arrivi\nA sedurre il cor mio;\nM'innamori, o crudele,\nMi dichiari tua sposa, e poi, mancando\nDella terra e del cielo al santo dritto,\nCon enorme delitto\nDopo tre dì da Burgos t'allontani,\nM'abbandoni, mi fuggi, e mi lasci in preda\nAl rimorso ed al pianto,\nPer pena forse che t'amai cotanto!",
-            "translation": "What can you say,\nAfter such a black deed?\nYou enter my house furtively.\nBy force of art,\nOaths and flattery, you succeed\nTo seduce my heart;\nYou fall in love with me, cruel one,\nYou declare me your bride, and then, failing\nThe holy right of earth and heaven,\nWith enormous crime\nAfter three days from Burgos you depart,\nYou abandon me, you flee me, and you leave me prey\nTo remorse and tears,\nPerhaps out of pity for having loved you so much!"
+            "translation": "What can you say,\nafter such a wicked deed?\nYou slip secretly into my house;\nwith all your scheming,\nyour vows and flatteries, you manage\nto seduce my heart.\nYou make me fall in love, cruel man;\nyou declare me your bride, then violate\nthe sacred laws of earth and heaven\nwith an enormous crime:\nafter three days you leave Burgos,\nabandon me, flee me, and leave me prey\nto remorse and tears—perhaps to punish me for loving you so deeply!"
           },
           {
             "speaker": "Stage direction",
