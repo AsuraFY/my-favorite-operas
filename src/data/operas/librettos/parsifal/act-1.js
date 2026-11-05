@@ -113,7 +113,7 @@ export const parsifalActOneScenes = [
             "speakerTranslation": "Zweiter Ritter",
             "literalText": true,
             "original": "Das wähnest du, der doch Alles weiß?\nIhm kehrten sehrender nur\ndie Schmerzen bald zurück: –\nschlaflos von starken Bresten,\nbefahl er eifrig uns das Bad.",
-            "translation": "You think so, you who know everything?\nOnly the pains soon returned to him, much worse: – sleepless with severe afflictions, he eagerly ordered us to take a bath."
+            "translation": "You think so, though you know everything?\nHis pains soon returned, more grievous than before;\nunable to sleep through his suffering,\nhe urgently ordered us\nto prepare the bath for him."
           },
           {
             "speaker": "Stage direction",
