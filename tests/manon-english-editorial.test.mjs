@@ -39,3 +39,24 @@ test('Manon Act I opening corrects the point of view of the impatient guest',()=
  assert.match(opening.translation,/How long must we shout/);
  assert.doesNotMatch(opening.translation,/How long should you shout/);
 });
+
+test('Manon Act II retains French-to-English line counts and corrects key meaning',()=>{
+ const act=manon.acts[1];
+ assert.equal(act.scenes.length,1);
+ const sections=act.scenes[0].sections;
+ assert.equal(sections.length,10);
+ const lines=sections.flatMap(section=>section.turns);
+ assert.equal(lines.length,226);
+ for(const turn of lines){
+  assert.equal(turn.translation.split('\n').length,turn.original.split('\n').length,
+    'line alignment mismatch: '+turn.original.slice(0,50));
+ }
+ const translated=(fragment)=>lines.find(turn=>turn.original.startsWith(fragment))?.translation;
+ assert.match(translated("J'écris à mon père"),/may anger him/);
+ assert.equal(translated('Oui, je vais la porter!'),"Yes, I'll deliver it!");
+ assert.match(translated("J'ai voulu vous avertir"),/abduct him/);
+ assert.match(translated('Oui, ce soir, ici-même'),/drag him away/);
+ assert.equal(translated('Eh bien, va la porter.'),'Well, go and deliver it.');
+ assert.match(translated('Adieu, notre petite table'),/Farewell, our little table/);
+ assert.equal(translated('C'est que je l'adore!'),'I adore her!');
+});
