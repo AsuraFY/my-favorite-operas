@@ -179,7 +179,7 @@ everywhere she stands before me!`],
     ]]
   ]),
   makeScene(7, 'Scene 7 — Tatyana’s room', 'In Prince Gremin’s home, Tatyana reads Onegin’s letter and confronts him.', [
-    ['№ 22 — Заключительная сцена (Zaklyuchitel'naya stsena)', [
+    ["№ 22 — Заключительная сцена (Zaklyuchitel'naya stsena)", [
       ['Stage direction', 'A room in Prince Gremin’s house. Tatyana is reading Onegin’s letter.'],
       ['Tatyana', `Oh, how heavily this weighs on me!
 Once again Onegin has crossed my path
