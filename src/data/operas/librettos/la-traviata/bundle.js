@@ -2,7 +2,7 @@
 // The original Italian is public domain. English is independently AI-translated, pending editorial review.
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
-import { traviataActOneScenes } from './act-1.js?v=traviata-act1-20261028';
+import { traviataActOneScenes } from './act-1.js?v=la-traviata-issue15-20261105';
 import { traviataActTwoScenes } from './act-2.js?v=traviata-all-acts-20261028';
 import { traviataActThreeScenes } from './act-3.js?v=traviata-all-acts-20261028';
 const info = operaInformation['la-traviata'];
