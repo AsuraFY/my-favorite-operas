@@ -1,897 +1,310 @@
-// English reading text sourced from existing Sottovoce/Opera Guide transcription.
-// Russian column intentionally blank: no aligned Russian original has been verified.
-export const oneginAct3Scenes=[
-  {
-    "number": 1,
-    "originalHeading": "",
-    "translatedHeading": "Scene 6 — Ball in St. Petersburg",
-    "summary": "Onegin meets the now-married Tatyana · English reading text only; no aligned Russian source verified.",
-    "sections": [
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "I'm bored here too.",
-        "participants": [
-          "ONEGIN",
-          "GUESTS",
-          "TATYANA",
-          "PRINCE GREMIN"
-        ],
-        "sourceStartIndex": 0,
-        "sourceLineCount": 65,
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "A salon adjoining the ballroom of a nobleman's mansion in St. Petersburg. A ball is just beginning with the introductory polonaise, and couples pass through, dancing, from time to time. When it ends, several seat themselves or stand around, conversing.\nOnegin is standing near the wall, alone.",
-            "literalText": true,
-            "sourceStartIndex": 0,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I'm bored here too.\nThe brilliance and bustle of society\ncannot dispel my constant\nworld-weariness!\nHaving killed my best friend in a duel,\nhaving no aim, no work,\nI have reached the age of twenty-six\nwearied by the idleness of leisure;\nwithout employment, wife or occupation,\nI've found nothing to which I could devote myself!\nRestlessness held me in thrall,\nthe desire for constant change of scene,\nan extremely vexing trait,\na cross that few would choose!\nI left my country estates,\nthe solitude of woods and fields,\nwhere a bloodstained ghost\nconfronted me every day!\nI began to travel, aimlessly,\ngoing where fancy led me …\nAnd what happened? I found, to my disgust,\nthat travel was boring, too!\nI returned and went, like Chatsky,\nstraight from a ship to a ball!",
-            "literalText": true,
-            "sourceStartIndex": 2,
-            "sourceLineCount": 24
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "The guests dance an écossaise. As it ends, Prince Gremin enters with Tatyana on his arm, richly but very tastefully dressed. She seats herself on a sofa. Guests come up to her continually and greet her with deference.",
-            "literalText": true,
-            "sourceStartIndex": 26,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Princess Gremina! Look!\nLook!\nWhich is she?\nOver there, look!\nThe one who's just sat down by that table.\nHer serene beauty is delightful!",
-            "literalText": true,
-            "sourceStartIndex": 27,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "examining Tatyana intently through his lorgnette",
-            "literalText": true,
-            "sourceStartIndex": 33,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Can that be Tatyana? Surely … no! …\nWhat? From the backwoods of that village in the steppes?\nIt's impossible! Impossible!\nAnd how unaffected, how dignified,\nhow perfectly at ease!\nShe bears herself like a queen!",
-            "literalText": true,
-            "sourceStartIndex": 34,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Tatyana turns to those near her and indicates with a glance that she is referring to Onegin, who has just been approached by Prince Gremin.",
-            "literalText": true,
-            "sourceStartIndex": 40,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Tell me, who is that … over there with my husband?\nI can't quite make him out.",
-            "literalText": true,
-            "sourceStartIndex": 41,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "One who affects eccentricity\na strange, extravagant melancholic.\nHe's been travelling abroad …\nAnd now, here's Onegin back with us!",
-            "literalText": true,
-            "sourceStartIndex": 43,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Eugene?",
-            "literalText": true,
-            "sourceStartIndex": 47,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "GUESTS",
-            "speakerTranslation": "GUESTS",
-            "original": "",
-            "translation": "Do you know him?",
-            "literalText": true,
-            "sourceStartIndex": 48,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "He's a neighbour of ours in the country.",
-            "literalText": true,
-            "sourceStartIndex": 49,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "aside",
-            "literalText": true,
-            "sourceStartIndex": 50,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "O God, help me to hide\nthe dreadful tumult in my heart! …",
-            "literalText": true,
-            "sourceStartIndex": 51,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "to Prince Gremin, indicating Tatyana",
-            "literalText": true,
-            "sourceStartIndex": 53,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Tell me, prince, do you happen to know\nwho that is over there in the scarlet turban\ntalking to the Spanish ambassador?",
-            "literalText": true,
-            "sourceStartIndex": 54,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "PRINCE GREMIN",
-            "speakerTranslation": "PRINCE GREMIN",
-            "original": "",
-            "translation": "Ah! It’s some time since vou were last in society!\nWait a moment, and I'll present you.",
-            "literalText": true,
-            "sourceStartIndex": 57,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "But who is she?",
-            "literalText": true,
-            "sourceStartIndex": 59,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PRINCE GREMIN",
-            "speakerTranslation": "PRINCE GREMIN",
-            "original": "",
-            "translation": "My wife!",
-            "literalText": true,
-            "sourceStartIndex": 60,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "So you're married? I didn't know!\nHave you been married long?",
-            "literalText": true,
-            "sourceStartIndex": 61,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "PRINCE GREMIN",
-            "speakerTranslation": "PRINCE GREMIN",
-            "original": "",
-            "translation": "About two years.",
-            "literalText": true,
-            "sourceStartIndex": 63,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "To whom?",
-            "literalText": true,
-            "sourceStartIndex": 64,
-            "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "To Larin's daughter …",
-        "participants": [
-          "PRINCE GREMIN",
-          "ONEGIN",
-          "TATYANA"
-        ],
-        "sourceStartIndex": 65,
-        "sourceLineCount": 52,
-        "turns": [
-          {
-            "speaker": "PRINCE GREMIN",
-            "speakerTranslation": "PRINCE GREMIN",
-            "original": "",
-            "translation": "To Larin's daughter …",
-            "literalText": true,
-            "sourceStartIndex": 65,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Tatyana!",
-            "literalText": true,
-            "sourceStartIndex": 66,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PRINCE GREMIN",
-            "speakerTranslation": "PRINCE GREMIN",
-            "original": "",
-            "translation": "Have you met?",
-            "literalText": true,
-            "sourceStartIndex": 67,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I'm a neighbour of theirs!",
-            "literalText": true,
-            "sourceStartIndex": 68,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PRINCE GREMIN",
-            "speakerTranslation": "PRINCE GREMIN",
-            "original": "",
-            "translation": "Love is no respecter of age,\nits transports bless alike\nthose in the bloom of youth\nyet unacquainted with the world\nand the grey-headed warrior\ntempered by experience!\nOnegin, I shan't disguise the fact\nthat I love Tatyana to distraction!\nMy life was slipping drearily away;\nshe appeared and brightened it\nlike a ray of sunlight in a stormy sky,\nand brought me life and youth, yes, youth and happiness!\nAmong these sly, poor-spirited,\nfoolish, pampered children,\nthese scoundrels both absurd and boring,\ndull, fractious arbiters,\namong the pious coquettes\nand sycophantic slaves,\namid affable, modish hypocrisy\ncourteous, affectionate infidelities,\namid the icy censure\nof cruel-hearted vanity,\namid the vexing vacuity\nof calculation, thought and conversation,\nshe shines like a star\nin the night's darkest hour, in a pure, clear sky,\nand to me she always appears\nin the radiant,\nradiant nimbus of an angel!\nLove is no respecter of age, etc.\nSo come, I'll present you to her.",
-            "literalText": true,
-            "sourceStartIndex": 69,
-            "sourceLineCount": 31
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "He leads Onegin to Tatyana.",
-            "literalText": true,
-            "sourceStartIndex": 100,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PRINCE GREMIN",
-            "speakerTranslation": "PRINCE GREMIN",
-            "original": "",
-            "translation": "My dear, allow me to introduce\nan old friend and relation of mine,\nOnegin.",
-            "literalText": true,
-            "sourceStartIndex": 101,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Onegin bows deeply. Tatyana responds simply and with no apparent trace of embarrassment.",
-            "literalText": true,
-            "sourceStartIndex": 104,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "I’m delighted.\nWe've met before.",
-            "literalText": true,
-            "sourceStartIndex": 105,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "In the country! Yes … a longtime ago.",
-            "literalText": true,
-            "sourceStartIndex": 107,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Where have you come from?\nFrom our parts perhaps?",
-            "literalText": true,
-            "sourceStartIndex": 108,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Oh, no! I've been abroad\nfor quite a time.",
-            "literalText": true,
-            "sourceStartIndex": 110,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "How long have you been back?",
-            "literalText": true,
-            "sourceStartIndex": 112,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Only today.",
-            "literalText": true,
-            "sourceStartIndex": 113,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "to Prince Gremin",
-            "literalText": true,
-            "sourceStartIndex": 114,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "My dear, I'm tired.",
-            "literalText": true,
-            "sourceStartIndex": 115,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Tatyana leaves on Prince Gremin's arm, returning the greetings of the guests. Onegin follows her with his eyes.",
-            "literalText": true,
-            "sourceStartIndex": 116,
-            "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Can this really be the same Tatyana",
-        "participants": [
-          "ONEGIN"
-        ],
-        "sourceStartIndex": 117,
-        "sourceLineCount": 24,
-        "turns": [
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Can this really be the same Tatyana\nto whom, tête-à-tête,\nin the depths of a distant countryside,\nI, in a fine moral outburst,\nonce read a lecture on principles?\nThe same girl, whom\nin her humble station I disdained?\nWas this really her,\nso poised, so self-possessed?\nBut what's the matter with me?\nI must be dreaming!\nWhat is stirring in the depths\nof my cold and slothful heart?\nVexation, vanity or, once again,\nthat preoccupation of youth – love?\nAlas, there's no doubt, I'm in love,\nin love like a boy, a passionate youth!\nLet me perish, but first\nlet me summon, in dazzling hope\nthe magic poison of desire,\nintoxicate myself with dreams!\nEverywhere, everywhere I look\nI see that beloved, desired image!\nWherever I look, I see her!",
-            "literalText": true,
-            "sourceStartIndex": 117,
-            "sourceLineCount": 24
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "number": 2,
-    "originalHeading": "",
-    "translatedHeading": "Scene 7 — Prince Gremin's house",
-    "summary": "Tatyana and Onegin's last meeting · English reading text only; no aligned Russian source verified.",
-    "sections": [
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "O, how distressed I am!",
-        "participants": [
-          "TATYANA",
-          "ONEGIN"
-        ],
-        "sourceStartIndex": 141,
-        "sourceLineCount": 21,
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "The drawing room of Prince Gremin's house in St. Petersburg.\nTatyana, in elegant morning dress, enters holding a letter.",
-            "literalText": true,
-            "sourceStartIndex": 141,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "O, how distressed I am!\nOnce more Onegin has crossed my path\nlike a relentless apparition!\nHis burning glance\nhas troubled my heart\nand reawakened my dormant passion\nso that I feel like a young girl again\nand as if nothing had ever parted us!",
-            "literalText": true,
-            "sourceStartIndex": 143,
-            "sourceLineCount": 8
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She weeps.\nOnegin appears at the door. He stands for a moment gazing passionately at the weeping Tatyana, then runs to her and falls to his knees at her feet. She looks at him, evincing neither anger nor surprise, then motions him to rise.",
-            "literalText": true,
-            "sourceStartIndex": 151,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Enough, get up, I must\ntalk to you frankly.\nOnegin, do you remember that time\nwhen, in the avenue in our garden,\nfate brought us together and I listened\nso meekly to your lecture?",
-            "literalText": true,
-            "sourceStartIndex": 153,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "O spare me, have pity!\nI was so mistaken; I have been cruelly punished!",
-            "literalText": true,
-            "sourceStartIndex": 159,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Onegin, I was younger then,",
-            "literalText": true,
-            "sourceStartIndex": 161,
-            "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "and a better person, I think!",
-        "participants": [
-          "TATYANA",
-          "ONEGIN",
-          "TATYANA, ONEGIN"
-        ],
-        "sourceStartIndex": 162,
-        "sourceLineCount": 64,
-        "turns": [
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "and a better person, I think!\nAnd I loved you, but what, then,\nwhat response did I find\nin your heart? Only severity!\nAm I not right in thinking, that\nA simple young girl's love was no novelty to you?\nEven now … dear God, my blood runs cold\nwhenever I recall that cold look,\nthat sermon!\nBut I do not blame you …\nIn that dreadful moment\nyou behaved honourably,\nyou acted correctly towards me.\nAt that time, I suppose, in the back of beyond,\nfar from the frivolity of social gossip,\nyou didn't find me attractive. Why, then,\ndo you pursue me now?\nWhy am I the object of such attentions?\nCould it be because I now\nfrequent the highest circles,\nbecause I am rich and of the nobility,\nbecause my husband, wounded in battle,\nenjoys, on that account, the favour of the court?\nCould it not be that my disgrace\nwould now be generally remarked\nand would confer upon you\nthe reputation of a seducer?",
-            "literalText": true,
-            "sourceStartIndex": 162,
-            "sourceLineCount": 27
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Oh! My God!\nIs it possible that in my humble pleading\nyour cold look sees nothing\nbut the wiles of a despicable cunning?\nYour reproach torments me!\nIf you only knew how terrible\nit is to suffer love's torments,\nto endure and to constantly check\nthe fever in the blood by reason,\nto long to clasp your knees\nand, weeping at your feet,\npour out prayers, avowals, reproaches,\nall, all that words can express!",
-            "literalText": true,
-            "sourceStartIndex": 189,
-            "sourceLineCount": 13
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "I am weeping!",
-            "literalText": true,
-            "sourceStartIndex": 202,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Weep on, those tears are dearer\nthan all the treasures in the world!",
-            "literalText": true,
-            "sourceStartIndex": 203,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Ah! Happiness was within our reach,\nso close! So close!",
-            "literalText": true,
-            "sourceStartIndex": 205,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Alas!",
-            "literalText": true,
-            "sourceStartIndex": 207,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA, ONEGIN",
-            "speakerTranslation": "TATYANA, ONEGIN",
-            "original": "",
-            "translation": "Happiness was within our reach,\nso close! So close! So close!",
-            "literalText": true,
-            "sourceStartIndex": 208,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "But my fate has already been decided, and irrevocably!\nI am married; you must,\nI beg you, leave me!",
-            "literalText": true,
-            "sourceStartIndex": 210,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Leave you? Leave you! What! … Leave you?\nNo! No!\nTo see you hourly,\nto dog your footsteps, to follow\nyour every smile, movement and glance\nwith loving eyes,\nto listen to you for hours, to understand\nin my heart all your perfection,",
-            "literalText": true,
-            "sourceStartIndex": 213,
-            "sourceLineCount": 8
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "falling to his knees, he seizes Tatyana’s hand and covers it with kisses",
-            "literalText": true,
-            "sourceStartIndex": 221,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "to swoon before you in passionate torment\nturn pale and pass away: this is bliss,\nthis is my only dream, my only happiness!",
-            "literalText": true,
-            "sourceStartIndex": 222,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "somewhat frightened, she withdraws her hand",
-            "literalText": true,
-            "sourceStartIndex": 225,
-            "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Onegin, your heart knows",
-        "participants": [
-          "TATYANA",
-          "ONEGIN"
-        ],
-        "sourceStartIndex": 226,
-        "sourceLineCount": 65,
-        "turns": [
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Onegin, your heart knows\nboth pride and true honour!",
-            "literalText": true,
-            "sourceStartIndex": 226,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I cannot leave you!",
-            "literalText": true,
-            "sourceStartIndex": 228,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Eugene! You must. I beg you\nto leave me.",
-            "literalText": true,
-            "sourceStartIndex": 229,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Oh, have pity!",
-            "literalText": true,
-            "sourceStartIndex": 231,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Why hide it, why pretend?\nAh! I love you!",
-            "literalText": true,
-            "sourceStartIndex": 232,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Overwhelmed by her confession, she sinks on Onegin's breast. He embraces her, but she recovers her composure quickly and frees herself.",
-            "literalText": true,
-            "sourceStartIndex": 234,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "What do I hear?\nWhat was that word you spoke?\nO joy! Oh, my life!\nYou are again the Tatyana of former days!",
-            "literalText": true,
-            "sourceStartIndex": 235,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "No! No!\nYou cannot bring back the past!\nI am another's now,\nmy fate is already decided,\nI shall always be true to him.",
-            "literalText": true,
-            "sourceStartIndex": 239,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She tries to leave, but sinks down, overcome. Onegin kneels before her.",
-            "literalText": true,
-            "sourceStartIndex": 244,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Oh, do not drive me away; you love me!\nAnd I will not leave you!\nYou will ruin your life for nothing!\nThis is the will of Heaven: you are mine!\nAll your life has been a pledge\nof our union!\nAnd be assured, I was sent to you by God,\nI am your protector to the grave!\nYou cannot refuse me.\nFor me you must forsake\nthis hateful house, the clamour of society -\nYou have no choice!",
-            "literalText": true,
-            "sourceStartIndex": 245,
-            "sourceLineCount": 12
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "rising lo her feet",
-            "literalText": true,
-            "sourceStartIndex": 257,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Onegin, I shall remain firm; …",
-            "literalText": true,
-            "sourceStartIndex": 258,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "No, you cannot …\n… refuse me …",
-            "literalText": true,
-            "sourceStartIndex": 259,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "… to another by fate …\n… have I been given,\nwith him will I live and never leave him; …",
-            "literalText": true,
-            "sourceStartIndex": 261,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "… For me …\n… you must forsake all, all -\nhateful house and social clamour!\nYou have no choice!\nOh, do not drive me from you, I implore!\nYou love me; you will ruin\nyour life for nothing!\nYou are mine, mine for ever!",
-            "literalText": true,
-            "sourceStartIndex": 264,
-            "sourceLineCount": 8
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "… No, I must remember my vows!\nDeep in my heart his desperate appeal\nstrikes an answering chord,\nbut having stifled the sinful flame,\nhonour’s severe and sacred duty\nwill triumph over the passion!\nI leave you!",
-            "literalText": true,
-            "sourceStartIndex": 272,
-            "sourceLineCount": 7
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "No! No! No! No!",
-            "literalText": true,
-            "sourceStartIndex": 279,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Enough!",
-            "literalText": true,
-            "sourceStartIndex": 280,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Oh, I implore you: do not go!",
-            "literalText": true,
-            "sourceStartIndex": 281,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "No, I am resolved!",
-            "literalText": true,
-            "sourceStartIndex": 282,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I love you! I love you!",
-            "literalText": true,
-            "sourceStartIndex": 283,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Leave me!",
-            "literalText": true,
-            "sourceStartIndex": 284,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I love you!",
-            "literalText": true,
-            "sourceStartIndex": 285,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Farewell for ever!",
-            "literalText": true,
-            "sourceStartIndex": 286,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She leaves the room.\nHe stands stupefied for a moment, plunged in despair.",
-            "literalText": true,
-            "sourceStartIndex": 287,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Ignominy! … Anguish! …\nOh, my pitiable fate!",
-            "literalText": true,
-            "sourceStartIndex": 289,
-            "sourceLineCount": 2
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "He rushes out.",
-        "participants": [],
-        "sourceStartIndex": 291,
-        "sourceLineCount": 1,
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "He rushes out.",
-            "literalText": true,
-            "sourceStartIndex": 291,
-            "sourceLineCount": 1
-          }
-        ]
-      }
-    ]
-  }
+// Independent English reading translation prepared from the historical Russian libretto.
+// Reference: https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)/Действие_третье
+// The sourceLineCount/index fields count lines of THIS translation, not Opera Guide records.
+// This is a first-pass translation: literary collation against the Russian original is pending.
+function makeScene(number, heading, summary, items) {
+  let cursor = 0;
+  const sections = items.map(([title, dialogue]) => {
+    const start = cursor;
+    const turns = dialogue.map(([speaker, translation]) => {
+      const sourceLineCount = translation.split('\n').length;
+      const turn = {
+        speaker, speakerTranslation: speaker, original: '',
+        translation, literalText: true, sourceStartIndex: cursor, sourceLineCount,
+        ...(speaker === 'Stage direction' ? { stageDirectionKind: 'extended' } : {})
+      };
+      cursor += sourceLineCount;
+      return turn;
+    });
+    return { type:'Passage', incipitOnly:true, sourceTitlesOnly:true, threeLineOutline:true,
+      originalTitle:'', translatedTitle:title, sourceStartIndex:start,
+      sourceLineCount:cursor-start,
+      participants:[...new Set(turns.map(t=>t.speaker).filter(s=>s!=='Stage direction'&&!s.includes(',')))],
+      turns };
+  });
+  return {number, originalHeading:'', translatedHeading:heading, summary, sections};
+}
+export const oneginAct3Scenes = [
+  makeScene(6, 'Scene 6 — A ball in Saint Petersburg', 'A ball at the home of a Petersburg dignitary; the encounter with Prince Gremin and Tatyana.', [
+    ['No. 19 — Polonaise', [
+      ['Stage direction', 'At a ball in the house of a dignitary in Saint Petersburg, the guests dance a polonaise. Onegin stands apart, looking on.']
+    ]],
+    ['No. 20 — Scene, écossaise and Gremin’s aria', [
+      ['Onegin', `Even here I find no pleasure!
+Neither the brilliance nor the commotion of high society
+can drive away my unending, weary sadness.
+I killed a friend in a duel.
+I reached the age of twenty-six
+without purpose, without honest work,
+languishing in the emptiness of idle days:
+no profession, no wife, no occupation;
+nothing could hold my attention.
+Restlessness seized me,
+an urge to go from place to place—
+a painful affliction,
+a cross that few would choose to bear.
+I abandoned my country estates,
+the solitude of their woods and fields,
+where every day I saw again
+a blood-stained shadow before me.
+I wandered without an aim,
+following every passing feeling.
+And what came of it? To my misery,
+travel itself became tiresome!
+So I returned, and like Chatsky,
+stepped straight from a ship into a ballroom!`],
+      ['Stage direction', 'The guests dance an écossaise. Onegin draws aside. Prince Gremin enters with Tatyana on his arm.'],
+      ['Guests', 'Princess Gremina! Look—look!'],
+      ['Stage direction', 'The company steps back respectfully to make way for Gremin and Tatyana.'],
+      ['A group of men', 'Which one is she?'],
+      ['Another group', 'Look over here!'],
+      ['Ladies', 'The one who has just sat down by the table.'],
+      ['Men', 'She is lovely in her unstudied grace!'],
+      ['Onegin', `Could it be Tatyana? Yes ... no!
+From the wilderness of those distant villages?
+Impossible! It cannot be!
+How natural she seems, how majestic,
+how entirely unselfconscious—
+she looks like a queen!`],
+      ['Stage direction', 'Onegin takes Gremin aside.'],
+      ['Tatyana', 'Tell me, who is that man beside my husband? I cannot see him clearly.'],
+      ['Guests', `An eccentric of society,
+a melancholy, strange and whimsical fellow.
+He has been travelling abroad;
+now Onegin has returned to us!`],
+      ['Tatyana', 'Eugene?'],
+      ['Guests', 'Do you know him?'],
+      ['Tatyana', `He was our neighbour in the country.
+[Aside] Oh God, help me conceal
+this dreadful turmoil in my heart!`],
+      ['Onegin', `Prince, tell me—do you know
+that lady in a crimson beret
+who is speaking to the Spanish ambassador?`],
+      ['Gremin', 'Ah, you have been away from society for a long time! Come, let me introduce you.'],
+      ['Onegin', 'But who is she?'],
+      ['Gremin', 'My wife!'],
+      ['Onegin', 'You are married? I had no idea! How long ago?'],
+      ['Gremin', 'About two years.'],
+      ['Onegin', 'To whom?'],
+      ['Gremin', 'To a Larina ...'],
+      ['Onegin', 'Tatyana!'],
+      ['Gremin', 'You know her?'],
+      ['Onegin', 'I was their neighbour.'],
+      ['Gremin', `Love has power over every age,
+and its impulses bring blessing
+both to a young man in his prime,
+who has scarcely entered life,
+and to a grey-haired soldier
+hardened by all that fate has dealt him.
+Onegin, I shall not hide it:
+I love Tatyana beyond all reason!
+My life had passed in dreariness;
+she came and, like a shaft of sun in a storm,
+brought me life and youth again—
+yes, youth and happiness!
+
+Among the false and faint of heart,
+the spoiled and thoughtless children,
+the petty villains, foolish and wearisome,
+the dull and importunate judges;
+among the pious coquettes,
+the people who willingly make themselves servants,
+the daily parade of fashionable scenes,
+the polite and smiling betrayals,
+the cold judgments of a heartless world,
+and the weary emptiness
+of calculation, talk and empty thought—
+there she shines like a star
+in the pure heavens of a dark night.
+She always appears to me
+in the radiant light of an angel.
+
+Love has power over every age,
+and its impulses bring blessing
+both to a young man in his prime
+and to a grey-haired soldier
+hardened by fate!
+Onegin, I shall not hide it:
+I love Tatyana beyond all reason.
+My life had passed in dreariness;
+she came, like sunlight amid the storm,
+and gave me life and youth again,
+yes, youth and happiness—
+life, youth and happiness!
+
+Come along, then; I shall introduce you.`],
+      ['Stage direction', 'Gremin leads Onegin towards Tatyana.']
+    ]],
+    ['No. 21 — Scene, Onegin’s arioso and écossaise', [
+      ['Gremin', 'My dear, allow me to introduce a kinsman and friend of mine: Onegin!'],
+      ['Stage direction', 'Onegin bows.'],
+      ['Tatyana', 'I am very pleased. We have met before.'],
+      ['Onegin', 'In the country ... yes ... a long time ago.'],
+      ['Tatyana', 'Where have you come from? Surely not from our part of the country?'],
+      ['Onegin', 'Oh no. I have returned from distant travels.'],
+      ['Tatyana', 'And have you been back long?'],
+      ['Onegin', 'Only today.'],
+      ['Tatyana', 'My dear, I am tired.'],
+      ['Stage direction', 'Tatyana leaves on Gremin’s arm. Onegin follows her with his eyes.'],
+      ['Onegin', `Can this really be that same Tatyana
+to whom, alone in that remote countryside,
+I once delivered a lecture
+in my well-meaning zeal to teach?
+That girl whose humble lot
+I had so little regard for?
+Was it she who stood before me
+so composed, so fearless, so indifferent?
+But what is happening to me?
+I seem to be dreaming!
+What has stirred in the depths
+of my indolent, cold heart?
+Vexation, vanity—or once again
+that torment of youth, love?
+Alas, there can be no doubt:
+I am in love, as recklessly
+as any boy in the first heat of passion!
+Let me perish if I must, but first
+I shall surrender to blinding hope,
+taste the enchanted poison of desire
+and lose myself in a dream that cannot come true.
+Everywhere, everywhere before me
+stands her dear, longed-for image;
+everywhere she stands before me!`],
+      ['Stage direction', 'Onegin hurries away. The guests continue dancing the écossaise.']
+    ]]
+  ]),
+  makeScene(7, 'Scene 7 — Tatyana’s room', 'In Prince Gremin’s home, Tatyana reads Onegin’s letter and confronts him.', [
+    ['No. 22 — Final scene', [
+      ['Stage direction', 'A room in Prince Gremin’s house. Tatyana is reading Onegin’s letter.'],
+      ['Tatyana', `Oh, how heavily this weighs on me!
+Once again Onegin has crossed my path
+like a pitiless spectre.
+His burning glance has shaken my soul;
+he has rekindled a passion long suppressed,
+as though I had become a young girl once more,
+as though nothing had ever separated us!`],
+      ['Stage direction', 'Onegin enters. Seeing Tatyana, he hastens towards her and falls to his knees.'],
+      ['Tatyana', `Enough. Stand up; I must
+speak openly with you.
+Onegin, do you remember that hour
+when fate brought us together in the garden,
+among the paths, and I listened so humbly
+to the lesson you gave me?`],
+      ['Onegin', 'Have mercy on me, have mercy! I was so mistaken, and I have been so severely punished!'],
+      ['Tatyana', `Onegin! I was younger then,
+and perhaps a better person than I am now.
+I loved you. But what did I find
+within your heart? What answer did you give?
+Only severity!
+A shy young girl’s love
+was hardly something new to you.
+And now ... God, my blood runs cold
+whenever I remember that distant look
+and that sermon!
+Yet I do not blame you.
+In that dreadful hour you acted honourably;
+you were fair towards me.
+
+Then, in the wilderness,
+far from society’s noisy gossip,
+you had no liking for me.
+Why, then, do you pursue me now?
+Why have I attracted your notice?
+Is it because I now appear in the highest circles,
+because I have wealth and rank,
+because my husband was wounded in battle
+and the court shows us its favour?
+Is it because my disgrace
+would now be plain for everyone to see,
+and could bring you the tantalizing glory
+of a public scandal?`],
+      ['Onegin', `Ah, God! Can your cold gaze
+see nothing in my humble pleading
+but a contemptible scheme of deceit?
+Your reproaches torment me!
+If only you knew how terrible it is
+to ache with longing for love,
+to burn, while every hour the mind
+must hold back the tumult of the blood;
+to yearn to clasp your knees,
+to weep aloud at your feet,
+to pour out prayers and confessions and regrets—
+everything the heart could ever express!`],
+      ['Tatyana', 'I am crying!'],
+      ['Onegin', 'Then weep. Those tears are worth more than every treasure in the world!'],
+      ['Tatyana', 'Oh, happiness was so possible, so near—so very near!'],
+      ['Tatyana, Onegin', 'Happiness was so possible, so near, so very near—near!'],
+      ['Tatyana', `But my fate has already been decided,
+and that decision cannot be undone.
+I am married. You must—
+I beg you—leave me!`],
+      ['Onegin', `Leave you? Leave you?
+How could I leave you?
+No, no!
+To see you at every moment,
+to follow you wherever you go,
+to catch each smile upon your lips,
+each movement of your eyes, with a lover’s gaze;
+to listen to you for long hours,
+to understand with my whole soul
+all that is perfect in you;
+to grow faint before you in passionate agony,
+to turn pale and fade away—
+that is bliss!
+That is my single dream, my only bliss!`],
+      ['Tatyana', 'Onegin, there is pride in your heart, and there is true honour too!'],
+      ['Onegin', 'I cannot leave you!'],
+      ['Tatyana', 'Eugene, you must. I beg you to leave me.'],
+      ['Onegin', 'Have mercy!'],
+      ['Tatyana', 'Why should I conceal it? Why pretend? I love you!'],
+      ['Onegin', `What do I hear?
+What words have you spoken?
+Oh joy! My life!
+You have become the Tatyana I once knew!`],
+      ['Tatyana', `No, no!
+The past cannot be brought back!
+I belong to another now;
+my fate is settled.
+I shall remain faithful to him all my life.`],
+      ['Onegin', `Do not drive me away—you love me!
+And I shall never abandon you.
+You will waste your life for nothing!
+Heaven itself has willed it: you are mine!
+Your whole life was a promise
+that you would be joined to me!
+Know this: God sent me to you,
+to be your protector until the grave!
+You cannot reject me.
+For me you must leave
+that hateful home and noisy world.
+There is no other path for you!`],
+      ['Tatyana', 'Onegin, my resolve will not falter ...'],
+      ['Onegin', 'No, you cannot reject me ...'],
+      ['Tatyana', 'Fate has given me to another ... I shall live beside him and never leave him.'],
+      ['Onegin', `For me you must abandon everything,
+everything—the hateful house and the world’s clamour.
+There is no other way!
+Do not cast me off, I implore you!
+You love me;
+you will only destroy your life in vain!
+You are mine, forever mine!`],
+      ['Tatyana', `No, I must remember my vows!
+[Aside] His desperate appeal
+cuts deep into my heart,
+but I shall master this forbidden passion.
+The stern and sacred duty of honour
+must triumph over feeling!`],
+      ['Tatyana', 'I am going.'],
+      ['Onegin', 'No! No, no, no!'],
+      ['Tatyana', 'Enough!'],
+      ['Onegin', 'I beg you—do not go!'],
+      ['Tatyana', 'No. I shall stand firm.'],
+      ['Onegin', 'I love you, I love you!'],
+      ['Tatyana', 'Leave me!'],
+      ['Onegin', 'I love you!'],
+      ['Tatyana', 'Farewell, forever!'],
+      ['Stage direction', 'Tatyana leaves.'],
+      ['Onegin', 'Shame! ... Despair! ... Oh, what a wretched fate is mine!']
+    ]]
+  ])
 ];
