@@ -1,11 +1,13 @@
-// English reading text sourced from existing Sottovoce/Opera Guide transcription.
-// Russian column intentionally blank: no aligned Russian original has been verified.
-export const oneginAct1Scenes=[
+// Independent project English reading translation from the historical Russian libretto.
+// Source: https://ru.wikisource.org/wiki/Евгений_Онегин_(опера)
+// These line indices count translation lines, NOT historical Opera Guide English records.
+// New translation prepared 2026-11-05; source-by-source literary sign-off is tracked in docs/reviews/global-audit.md.
+export const oneginAct1Scenes = [
   {
     "number": 1,
     "originalHeading": "",
-    "translatedHeading": "Scene 1 — Garden of the Larin estate",
-    "summary": "The Larin estate and its garden · English reading text only; no aligned Russian source verified.",
+    "translatedHeading": "Scene 1 — The Larins' garden",
+    "summary": "At the family estate; Tatyana and Olga sing, the peasants visit, and Onegin arrives.",
     "sections": [
       {
         "type": "Passage",
@@ -13,467 +15,432 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "Have you not heard, from beyond the grove at night,",
+        "translatedTitle": "No. 1 — Duet and quartet",
         "participants": [
-          "TATYANA, OLGA",
-          "LARINA",
-          "FILIPYEVNA",
-          "LARINA, FILIPYEVNA"
+          "Tatyana",
+          "Olga",
+          "Larina",
+          "Filipyevna"
         ],
         "sourceStartIndex": 0,
-        "sourceLineCount": 65,
+        "sourceLineCount": 72,
         "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Introduction\nThe garden of the Larin country estate. On the left a house with a terrace; on the right, a shady tree. It is early evening.\nMadame Larina is sitting under the tree making jam on a portable stove; Filipyevna is helping her. The doors leading from the house onto the terrace are open and the voices of the two girls, singing a duet, can be heard coming from within.",
+            "translation": "The house and garden of the Larin family. Evening is falling. Madame Larina and the nurse are making preserves. Tatyana and Olga sing from within the house.",
             "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 0,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana, Olga",
+            "speakerTranslation": "Tatyana, Olga",
+            "original": "",
+            "translation": "Have you heard, beyond the grove at night,\nthe voice of one who sang of love, who sang of sorrow?\nWhen the fields were silent in the early morning,\nhave you heard the sound of a shepherd's pipe,\nso plaintive and so plain?\nHave you heard it?",
+            "literalText": true,
+            "sourceStartIndex": 1,
+            "sourceLineCount": 6
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "They are singing. And I, too, once sang,\nin those long-departed years.\nDo you remember? I used to sing as well.",
+            "literalText": true,
+            "sourceStartIndex": 7,
             "sourceLineCount": 3
           },
           {
-            "speaker": "TATYANA, OLGA",
-            "speakerTranslation": "TATYANA, OLGA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "Have you not heard, from beyond the grove at night,\nthe voice that sings of love and sings of sorrow?\nWhen, at the morning hour, the fields lay silent,\nthe music of the pipe, simple and sad,\nhave you not heard? …\nThen the music of the pipe, simple and sad,\nhave you not heard? …",
-            "literalText": true,
-            "sourceStartIndex": 3,
-            "sourceLineCount": 7
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "They are singing, and I, too,\nUsed to sing that song in days gone by.\nDo you remember? I used to sing it too.",
+            "translation": "You were young in those days!",
             "literalText": true,
             "sourceStartIndex": 10,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "You were young then.",
-            "literalText": true,
-            "sourceStartIndex": 13,
             "sourceLineCount": 1
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Tatyana, Olga",
+            "speakerTranslation": "Tatyana, Olga",
             "original": "",
-            "translation": "The duet continues as the older women chat and reminisce.",
+            "translation": "Have you sighed as you listened to the quiet voice\nof one who sang of love, who sang of sorrow?\nWhen you saw a young man among the trees\nand met the gaze of his dimmed eyes,\ndid you sigh? Did you sigh?",
             "literalText": true,
-            "sourceStartIndex": 14,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA, OLGA",
-            "speakerTranslation": "TATYANA, OLGA",
-            "original": "",
-            "translation": "Have you not sighed\nOn hearing that sweet voice\nsing of love\nand of its sorrows?\nWhen in the forest …",
-            "literalText": true,
-            "sourceStartIndex": 15,
+            "sourceStartIndex": 11,
             "sourceLineCount": 5
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "How I loved Richardson!",
+            "translation": "How fond I was of Richardson!",
             "literalText": true,
-            "sourceStartIndex": 20,
+            "sourceStartIndex": 16,
             "sourceLineCount": 1
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "You were young then.",
+            "translation": "You were young in those days.",
             "literalText": true,
-            "sourceStartIndex": 21,
+            "sourceStartIndex": 17,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "Not that I'd read his books.\nbut in the old days Princess Alina.\nmy cousin in Moscow,\nkept on to me about him.",
+            "translation": "Not that I had ever read his books;\nbut in those days Princess Alina,\nmy cousin who lived in Moscow,\nwas forever talking about him.",
             "literalText": true,
-            "sourceStartIndex": 22,
+            "sourceStartIndex": 18,
             "sourceLineCount": 4
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "Yes, I remember.",
+            "translation": "Yes, I remember, I remember.",
             "literalText": true,
-            "sourceStartIndex": 26,
+            "sourceStartIndex": 22,
             "sourceLineCount": 1
           },
           {
-            "speaker": "TATYANA, OLGA",
-            "speakerTranslation": "TATYANA, OLGA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "… you saw a youth\nand met the gaze\nof his sunken eyes …",
+            "translation": "Ah, Grandison! Ah, Grandison!",
             "literalText": true,
-            "sourceStartIndex": 27,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Ah, Grandison! Ah, Richardson!",
-            "literalText": true,
-            "sourceStartIndex": 30,
+            "sourceStartIndex": 23,
             "sourceLineCount": 1
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "At that time your husband\nwas still courting you, but against your will;\nyou were dreaming of another,\none who pleased you much more\nin heart and mind!",
+            "translation": "Yes, I remember, I remember.\nYour husband was courting you then;\nbut your heart was fixed upon another man,\nsomeone you liked much better\nfor his mind and for his heart.",
             "literalText": true,
-            "sourceStartIndex": 31,
+            "sourceStartIndex": 24,
             "sourceLineCount": 5
           },
           {
-            "speaker": "TATYANA, OLGA",
-            "speakerTranslation": "TATYANA, OLGA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "… did you not sigh? Did you not sigh? etc.",
+            "translation": "Such a fashionable young gentleman he was,\na gambler and a sergeant in the Guards!",
+            "literalText": true,
+            "sourceStartIndex": 29,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Those days are far behind us!",
+            "literalText": true,
+            "sourceStartIndex": 31,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "And how elegantly I always dressed!",
+            "literalText": true,
+            "sourceStartIndex": 32,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Always in the latest fashion!",
+            "literalText": true,
+            "sourceStartIndex": 33,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Always fashionable, always becoming!",
+            "literalText": true,
+            "sourceStartIndex": 34,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Always fashionable, always becoming!",
+            "literalText": true,
+            "sourceStartIndex": 35,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "But then, without so much as asking me—",
             "literalText": true,
             "sourceStartIndex": 36,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "Ah, Richardson!\nWhy, he was a fine dandy,\na gambler and an ensign in the Guards!",
+            "translation": "You were suddenly carried off to be married!\nAnd afterwards, to ease your sorrow—",
             "literalText": true,
             "sourceStartIndex": 37,
-            "sourceLineCount": 3
+            "sourceLineCount": 2
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "Years long gone by!",
+            "translation": "How bitterly I wept at first!\nI almost parted from my husband!",
             "literalText": true,
-            "sourceStartIndex": 40,
-            "sourceLineCount": 1
+            "sourceStartIndex": 39,
+            "sourceLineCount": 2
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "How well I always used to dress!",
+            "translation": "Your husband soon brought you here.\nYou took charge of the household,\ngrew accustomed to it all,\nand finally became content.",
             "literalText": true,
             "sourceStartIndex": 41,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Always in the latest fashion!",
-            "literalText": true,
-            "sourceStartIndex": 42,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Always in the fashion and becomingly!",
-            "literalText": true,
-            "sourceStartIndex": 43,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Always in the fashion and becomingly!",
-            "literalText": true,
-            "sourceStartIndex": 44,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA, OLGA",
-            "speakerTranslation": "TATYANA, OLGA",
-            "original": "",
-            "translation": "… Did you not sigh,\nwhen you met the gaze\nof his sunken eyes,\ndid you not sigh, did you not sigh, etc.",
-            "literalText": true,
-            "sourceStartIndex": 45,
             "sourceLineCount": 4
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "But suddenly, without even asking me …",
+            "translation": "I took charge of the household,\ngrew accustomed to it all,\nand finally became content.",
             "literalText": true,
-            "sourceStartIndex": 49,
+            "sourceStartIndex": 45,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Thank heavens for that!",
+            "literalText": true,
+            "sourceStartIndex": 48,
             "sourceLineCount": 1
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Larina, Filipyevna",
+            "speakerTranslation": "Larina, Filipyevna",
             "original": "",
-            "translation": "… They married you off without further ado!\nThen, to relieve your unhappiness …",
+            "translation": "Habit is given to us from above;\nit takes the place of happiness.\nYes, indeed, that is how it is!\nHabit is given to us from above;\nit takes the place of happiness.",
             "literalText": true,
-            "sourceStartIndex": 50,
-            "sourceLineCount": 2
+            "sourceStartIndex": 49,
+            "sourceLineCount": 5
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "Oh, how I cried to begin with!\nI nearly left my husband!",
-            "literalText": true,
-            "sourceStartIndex": 52,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "… the master came straight here.\nHere you busied yourself with the household,\nbecame resigned and settled down.",
+            "translation": "The corset, the album, Princess Polina,\nthe notebook of sentimental verses—\nI forgot them all.",
             "literalText": true,
             "sourceStartIndex": 54,
             "sourceLineCount": 3
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "I busied myself with the household,\nbecame resigned and settled down.",
+            "translation": "You began to call Selina by the name Akulka,\nand finally exchanged—",
             "literalText": true,
             "sourceStartIndex": 57,
             "sourceLineCount": 2
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "And God be thanked!",
+            "translation": "Ah!",
             "literalText": true,
             "sourceStartIndex": 59,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LARINA, FILIPYEVNA",
-            "speakerTranslation": "LARINA, FILIPYEVNA",
+            "speaker": "Larina, Filipyevna",
+            "speakerTranslation": "Larina, Filipyevna",
             "original": "",
-            "translation": "Habit is sent us from above\nin place of happiness.\nYes, that is how it is:\nHabit is sent us from above,\nin place of happiness.",
+            "translation": "The fashionable gown for a padded housecoat and a cap!\nHabit is given to us from above;\nit takes the place of happiness.\nYes, indeed, that is how it is!\nHabit is given to us from above;\nit takes the place of happiness.",
             "literalText": true,
             "sourceStartIndex": 60,
-            "sourceLineCount": 5
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Corset, album, Princess Pauline,",
-        "participants": [
-          "LARINA",
-          "FILIPYEVNA",
-          "LARINA, FILIPYEVNA",
-          "PEASANT LEADER",
-          "PEASANTS",
-          "LEADER"
-        ],
-        "sourceStartIndex": 65,
-        "sourceLineCount": 45,
-        "turns": [
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Corset, album, Princess Pauline,\nthe book of sentimental verse,\nI forgot them all.",
-            "literalText": true,
-            "sourceStartIndex": 65,
-            "sourceLineCount": 3
+            "sourceLineCount": 6
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "You began\nto call the maid Akulka instead of “Céline”\nand restored at last …",
+            "translation": "But my husband loved me dearly.",
+            "literalText": true,
+            "sourceStartIndex": 66,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Yes, the master loved you dearly.",
+            "literalText": true,
+            "sourceStartIndex": 67,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "He trusted me in everything, without a worry.",
             "literalText": true,
             "sourceStartIndex": 68,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Ah …",
-            "literalText": true,
-            "sourceStartIndex": 71,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LARINA, FILIPYEVNA",
-            "speakerTranslation": "LARINA, FILIPYEVNA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "… the quilted dressing gown and mob cap!\nHabit is sent us from above,\nin place of happiness.\nYes, that is how it is:\nhabit is sent us from above,\nin place of happiness.",
+            "translation": "He trusted you in everything, without a worry.",
             "literalText": true,
-            "sourceStartIndex": 72,
-            "sourceLineCount": 6
+            "sourceStartIndex": 69,
+            "sourceLineCount": 1
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Larina, Filipyevna",
+            "speakerTranslation": "Larina, Filipyevna",
             "original": "",
-            "translation": "But my husband loved me truly …",
+            "translation": "Habit is given to us from above;\nit takes the place of happiness.",
+            "literalText": true,
+            "sourceStartIndex": 70,
+            "sourceLineCount": 2
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "",
+        "translatedTitle": "No. 2 — Peasants' chorus and dance",
+        "participants": [
+          "Solo Singer",
+          "Peasants",
+          "Larina"
+        ],
+        "sourceStartIndex": 72,
+        "sourceLineCount": 71,
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Peasants are heard singing in the distance.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 72,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Solo Singer",
+            "speakerTranslation": "Solo Singer",
+            "original": "",
+            "translation": "My nimble feet are aching\nfrom all their walking.",
+            "literalText": true,
+            "sourceStartIndex": 73,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Peasants",
+            "speakerTranslation": "Peasants",
+            "original": "",
+            "translation": "Those nimble feet from all their walking!",
+            "literalText": true,
+            "sourceStartIndex": 75,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Solo Singer",
+            "speakerTranslation": "Solo Singer",
+            "original": "",
+            "translation": "My fair hands are aching\nfrom all their labour.",
+            "literalText": true,
+            "sourceStartIndex": 76,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Peasants",
+            "speakerTranslation": "Peasants",
+            "original": "",
+            "translation": "Those fair hands from all their labour!\nMy ardent heart aches\nwith care and worry.\nI do not know what to do\nor how to forget my beloved!\nMy nimble feet are aching\nfrom all their walking.\nMy fair hands are aching\nfrom all their labour,\nmy fair hands from all their labour.",
             "literalText": true,
             "sourceStartIndex": 78,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "But the master loved you truly …",
-            "literalText": true,
-            "sourceStartIndex": 79,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "… and trusted me unreservedly.",
-            "literalText": true,
-            "sourceStartIndex": 80,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "… And trusted you unreservedly.",
-            "literalText": true,
-            "sourceStartIndex": 81,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA, FILIPYEVNA",
-            "speakerTranslation": "LARINA, FILIPYEVNA",
-            "original": "",
-            "translation": "Habit is sent us from above,\nin place of happiness.",
-            "literalText": true,
-            "sourceStartIndex": 82,
-            "sourceLineCount": 2
+            "sourceLineCount": 10
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The singing of an approaching band of peasants is heard in the distance.",
+            "translation": "The peasants enter, carrying a decorated sheaf of grain.",
             "literalText": true,
-            "sourceStartIndex": 84,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PEASANT LEADER",
-            "speakerTranslation": "PEASANT LEADER",
-            "original": "",
-            "translation": "My swift little feet ache from walking.",
-            "literalText": true,
-            "sourceStartIndex": 85,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PEASANTS",
-            "speakerTranslation": "PEASANTS",
-            "original": "",
-            "translation": "... Ache from walking.",
-            "literalText": true,
-            "sourceStartIndex": 86,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LEADER",
-            "speakerTranslation": "LEADER",
-            "original": "",
-            "translation": "My white hands ache from working.",
-            "literalText": true,
-            "sourceStartIndex": 87,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PEASANTS",
-            "speakerTranslation": "PEASANTS",
-            "original": "",
-            "translation": "… Ache from working.\nMy ardent heart aches from caring.\nI don't know what to do,\nhow to forget my sweetheart.\nMy swift little feet, etc.",
-            "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 88,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Peasants",
+            "speakerTranslation": "Peasants",
+            "original": "",
+            "translation": "Greetings, dear lady, our mistress!\nGreetings, our generous provider!\nHere we have come before you;\nwe have brought a decorated sheaf.\nOur harvest work is done!",
+            "literalText": true,
+            "sourceStartIndex": 89,
             "sourceLineCount": 5
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "The peasant band enters, the leaders bearing a decorated sheaf.",
-            "literalText": true,
-            "sourceStartIndex": 93,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "PEASANTS",
-            "speakerTranslation": "PEASANTS",
-            "original": "",
-            "translation": "Greetings, your ladyship,\ngreetings, benefactress!\nWe come before your Grace\nbearing the decorated sheaf!\nThe harvest is all gathered in!",
+            "translation": "Well, splendid! Enjoy yourselves.\nI am happy for you. Sing us something livelier!",
             "literalText": true,
             "sourceStartIndex": 94,
-            "sourceLineCount": 5
+            "sourceLineCount": 2
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Peasants",
+            "speakerTranslation": "Peasants",
             "original": "",
-            "translation": "So, that's excellent. Now make merry!\nI'm pleased to see you all.\nSing us something jolly!",
+            "translation": "Gladly, mistress; we shall entertain you!\nCome, girls, gather in a ring!\nCome along; take your places!",
             "literalText": true,
-            "sourceStartIndex": 99,
+            "sourceStartIndex": 96,
             "sourceLineCount": 3
-          },
-          {
-            "speaker": "PEASANTS",
-            "speakerTranslation": "PEASANTS",
-            "original": "",
-            "translation": "If that's what you'd like, little mother!\nCome, let's entertain the lady.\nNow, girls, stand in a ring!\nCome along now, all get ready!",
-            "literalText": true,
-            "sourceStartIndex": 102,
-            "sourceLineCount": 4
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The girls form a circle and dance around the sheaf. During the singing, Tatyana and Olga come out onto the balcony.",
+            "translation": "The young peasants form a circle around the sheaf and dance. The others sing. Tatyana, holding a book, and Olga appear on the balcony.",
             "literalText": true,
-            "sourceStartIndex": 106,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 99,
             "sourceLineCount": 1
           },
           {
-            "speaker": "PEASANTS",
-            "speakerTranslation": "PEASANTS",
+            "speaker": "Peasants",
+            "speakerTranslation": "Peasants",
             "original": "",
-            "translation": "One day across the bridge, the little bridge,\nalong the hazel planks,\nVayinu, vayinu, vayinu, vayinu,",
+            "translation": "Along the little bridge,\nover the boards of guelder rose—\nVainu, vainu, vainu, vainu—\nover the boards of guelder rose!\n\nThere passed a handsome young fellow,\nrosy as a raspberry—\nVainu, vainu, vainu, vainu—\nrosy as a raspberry!\n\nHe carried a club upon his shoulder,\nand beneath his coat a bagpipe—\nVainu, vainu, vainu, vainu—\nbeneath his coat a bagpipe!\nUnder the other side, a little fiddle.\nGuess it, dearest friend—\nVainu, vainu, vainu, vainu—\nguess it, dearest friend!\n\nThe sun has set. Are you not sleeping?\nEither come outside or send someone out—\nVainu, vainu, vainu, vainu—\neither come outside or send someone out!\nSend Sasha, or send Masha,\nor dear Parasha—\nVainu, vainu, vainu, vainu—\nor dear Parasha!\n\nSend Sasha, or send Masha,\nor dear Parasha!\nLittle Parasha came outdoors\nand spoke with her sweetheart—\nVainu, vainu, vainu, vainu—\nand spoke with her sweetheart:\n\n“Do not judge me, dearest friend;\nI came out dressed just as I was,\nin my worn little shift,\nin my short little underskirt—\nVainu, vainu, vainu, vainu—\nin my worn little shift,\nin my short little underskirt!”\nVainu!",
             "literalText": true,
-            "sourceStartIndex": 107,
-            "sourceLineCount": 3
+            "sourceStartIndex": 100,
+            "sourceLineCount": 43
           }
         ]
       },
@@ -483,873 +450,49 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "along the hazel planks,",
+        "translatedTitle": "No. 3 — Scene and Olga’s aria",
         "participants": [
-          "PEASANTS",
-          "TATYANA",
-          "OLGA",
-          "LARINA"
+          "Tatyana",
+          "Olga"
         ],
-        "sourceStartIndex": 110,
-        "sourceLineCount": 65,
+        "sourceStartIndex": 143,
+        "sourceLineCount": 34,
         "turns": [
           {
-            "speaker": "PEASANTS",
-            "speakerTranslation": "PEASANTS",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "along the hazel planks,\ncame a fine young fellow,\nfresh and ruddy as a raspberry,\nVayinu …\nfresh and ruddy as a raspberry.\nOver his shoulder he carries a cudgel,\nunder one coat-skirt he carries bagpipes,\nVayinu …\nunder one coat-skirt he carries bagpipes,\nunder the other is a fiddle.\nNow just you guess, my dearest,\nVayinu …\nNow just you guess, my dearest.\nThe sun has set, aren't you asleep, then?\nCome out yourself or else send out,\nVayinu …\nCome out yourself or else send out\nSasha or Masha\nor dear little Parasha,\nVayinu …\nSend dear little Parasha,\nSasha, etc.\nParashenka came out,\nand had a talk with her sweetheart\nVayinu …\nhad a talk with her sweetheart:\n“Don't grumble at me, my dearest,\nI've come out just as I was,\nin my shabby little blouse\nand my short skirt.\nVayinu …\nIn my shabby little blouse\nand my short skirt!\nDon't you grumble at me, etc.”\nVayinu, etc.",
+            "translation": "When I hear these songs,\nhow I love to let my thoughts drift away,\nfar away into a world of dreams!",
             "literalText": true,
-            "sourceStartIndex": 110,
-            "sourceLineCount": 35
+            "sourceStartIndex": 143,
+            "sourceLineCount": 3
           },
           {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "a book in her hand",
-            "literalText": true,
-            "sourceStartIndex": 145,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "How I love to dream when I hear these songs,\nand float away\nsomewhere, somewhere far off!",
+            "translation": "Oh, Tanya, Tanya!\nYou are always dreaming.\nI am so unlike you;\na song always puts me in a cheerful mood.",
             "literalText": true,
             "sourceStartIndex": 146,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Ah, Tanya, Tanya!\nYou're always dreaming!\nBut I am quite unlike you,\nI feel merry when I hear singing.",
-            "literalText": true,
-            "sourceStartIndex": 149,
             "sourceLineCount": 4
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "dancing a few steps",
+            "translation": "She dances a few steps.",
             "literalText": true,
-            "sourceStartIndex": 153,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 150,
             "sourceLineCount": 1
           },
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "'Across the bridge, the little bridge,\nalong the hazel planks …'\nI was not made for melancholy singing,\nI do not like to dream in silence,\nnor, on the balcony in the dark night,\nto sigh, to sigh,\nto sigh from the depths of my soul.\nWhy should I sigh, when full of happiness,\nmy youthful days flow gently by?\nI am carefree and full of fun,\nand everyone calls me a child!\nFor me life will always, always be sweet,\nand I shall retain, as I always have,\nlight-hearted confidence,\nbe playful, carefree, merry!\nLight-hearted confidence, etc.\nI was not made for melancholy sighing, etc.",
+            "translation": "“Along the little bridge,\nover the boards of guelder rose ...”\n\nI am not made for languishing in sorrow;\nI do not care to dream in solitude,\nor sigh on a balcony\nin the darkness of night,\nsigh and sigh from the depths of my heart.\nWhy should I sigh when my young days\nare passing so happily?\nI am lighthearted and mischievous;\neveryone still calls me a child.\nLife will always be dear to me;\nand I shall remain as I have always been,\nlike carefree, shifting hope itself:\nplayful, heedless, joyful.\n\nI am not made for languishing in sorrow;\nI do not care to dream in solitude,\nor sigh on a balcony\nin the darkness of night,\nsigh and sigh from the depths of my heart.\nWhy should I sigh when my young days\nare passing so happily?\nI am lighthearted and mischievous;\neveryone still calls me a child.",
             "literalText": true,
-            "sourceStartIndex": 154,
-            "sourceLineCount": 17
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Well, my frolicsome one,\nmerry and playful little bird that you are,\nI expect you're ready to dance now,\nisn't that so?",
-            "literalText": true,
-            "sourceStartIndex": 171,
-            "sourceLineCount": 4
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Tanyusha! Hey, Tanyusha!",
-        "participants": [
-          "FILIPYEVNA",
-          "TATYANA",
-          "LARINA",
-          "PEASANTS",
-          "OLGA",
-          "LENSKY",
-          "ONEGIN"
-        ],
-        "sourceStartIndex": 175,
-        "sourceLineCount": 62,
-        "turns": [
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Filipyevna and Tatyana have moved away from the others.",
-            "literalText": true,
-            "sourceStartIndex": 175,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Tanyusha! Hey, Tanyusha!\nIs anything the matter?\nYou're not ill, are you?",
-            "literalText": true,
-            "sourceStartIndex": 176,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "No, nurse, I’m quite well.",
-            "literalText": true,
-            "sourceStartIndex": 179,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "to the peasants",
-            "literalText": true,
-            "sourceStartIndex": 180,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Well, my dears, thank you for the songs.\nGo over to the annexe.",
-            "literalText": true,
-            "sourceStartIndex": 181,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "to Filipyevna",
-            "literalText": true,
-            "sourceStartIndex": 183,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Filipyevna , see that they have some wine.\nGoodbye, my friends!",
-            "literalText": true,
-            "sourceStartIndex": 184,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "PEASANTS",
-            "speakerTranslation": "PEASANTS",
-            "original": "",
-            "translation": "Goodbye, little mother!",
-            "literalText": true,
-            "sourceStartIndex": 186,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "They leave, accompanied by Filipyevna.\nTatyana sits down on the steps of the terrace and becomes engrossed in her book.",
-            "literalText": true,
-            "sourceStartIndex": 187,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Mama, just look at Tanya!",
-            "literalText": true,
-            "sourceStartIndex": 189,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "What is it? Indeed, my dear,\nyou're very pale.",
-            "literalText": true,
-            "sourceStartIndex": 190,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "I always am,\ndon't worry, Mama!\nIt's very interesting, this book I'm reading.",
-            "literalText": true,
-            "sourceStartIndex": 192,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Is that why you're so pale?",
-            "literalText": true,
-            "sourceStartIndex": 195,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Why yes, of course, Mama!\nThe account of the torments\nsuffered by these true lovers moves me;\nI'm so sorry for them, poor things!\nOh, how they suffer, how they suffer!",
-            "literalText": true,
-            "sourceStartIndex": 196,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "That's enough, Tanya!\nI used to get upset, just like you,\nwhen I read such books.\nIt's only fiction. As the years went by,\nI came to see that there are no heroes in real life.\nNow I take things calmly.",
-            "literalText": true,
-            "sourceStartIndex": 201,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "You shouldn't take things quite so calmly!\nLook, you've forgotten to take off your apron!\nSupposing Lensky should arrive, what then?\nMme Larina hastily removes her apron.\nListen! Someone's coming, it's him!",
-            "literalText": true,
-            "sourceStartIndex": 207,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "It is indeed!",
-            "literalText": true,
-            "sourceStartIndex": 212,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "looking down from the terrace",
-            "literalText": true,
-            "sourceStartIndex": 213,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "He's not alone …",
-            "literalText": true,
-            "sourceStartIndex": 214,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Who could it be?",
-            "literalText": true,
-            "sourceStartIndex": 215,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "hurriyng in",
-            "literalText": true,
-            "sourceStartIndex": 216,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Madam, the young gentleman Lensky has arrived.\nMr. Onegin is with him!",
-            "literalText": true,
-            "sourceStartIndex": 217,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Oh, quick, I'll run away!",
-            "literalText": true,
-            "sourceStartIndex": 219,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "restraining her",
-            "literalText": true,
-            "sourceStartIndex": 220,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Where are you off to, Tanya?\nPeople will talk!\nGracious, my cap's on crooked!",
-            "literalText": true,
-            "sourceStartIndex": 221,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Have them shown in, then!",
-            "literalText": true,
-            "sourceStartIndex": 224,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "to Filipyevna",
-            "literalText": true,
-            "sourceStartIndex": 225,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Quick, ask them to come in!",
-            "literalText": true,
-            "sourceStartIndex": 226,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Filipyevna bustles out. The others, in extreme excitement, prepare to receive the guests. Lensky and Onegin are shown in. Lensky kisses Mme Larina’s hand and bows politely to the girls.",
-            "literalText": true,
-            "sourceStartIndex": 227,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Mesdames! I've taken the liberty\nof bringing a friend along.\nMay I introduce Onegin, my neighbour.",
-            "literalText": true,
-            "sourceStartIndex": 228,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I'm very honoured.",
-            "literalText": true,
-            "sourceStartIndex": 231,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "rather flustered",
-            "literalText": true,
-            "sourceStartIndex": 232,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Oh please … We're delighted to see you …\nDo sit down!\nThese are my daughters.",
-            "literalText": true,
-            "sourceStartIndex": 233,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I'm very happy to meet you!",
-            "literalText": true,
-            "sourceStartIndex": 236,
-            "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Come into the house …",
-        "participants": [
-          "LARINA",
-          "LENSKY",
-          "ONEGIN",
-          "TATYANA",
-          "OLGA"
-        ],
-        "sourceStartIndex": 237,
-        "sourceLineCount": 65,
-        "turns": [
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "Come into the house …\nOr perhaps you'd prefer\nto stay out of doors?\nI beg you,\ndon't stand on ceremony; we’re neighbours,\nso there's no need for formality!",
-            "literalText": true,
-            "sourceStartIndex": 237,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "It's delightful here! I love\nthis garden, so shady and secluded,\none is so comfortable here!",
-            "literalText": true,
-            "sourceStartIndex": 243,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "That's splendid!\nI'll go and see to things in the house",
-            "literalText": true,
-            "sourceStartIndex": 246,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "to the girls",
-            "literalText": true,
-            "sourceStartIndex": 248,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
-            "original": "",
-            "translation": "You entertain our guests.\nI won't be long.",
-            "literalText": true,
-            "sourceStartIndex": 249,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She leaves, making a sign to Tatyana not to be shy.\nLensky and Onegin walk over to the right, conversing;\nTatyana and Olga stand on the opposite side, soliloquizing.",
-            "literalText": true,
-            "sourceStartIndex": 251,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Tell me, which is Tatyana?\nI'm very curious to know.",
-            "literalText": true,
-            "sourceStartIndex": 254,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Why, the one who is sad\nand silent, like Svetlana!",
-            "literalText": true,
-            "sourceStartIndex": 256,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Can you really be in love with the younger one?",
-            "literalText": true,
-            "sourceStartIndex": 258,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Why?",
-            "literalText": true,
-            "sourceStartIndex": 259,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I should have chosen the other,\nhad I been, like you, a poet!",
-            "literalText": true,
-            "sourceStartIndex": 260,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "My waiting is over, my eyes have been opened!\nI know, I know that this is he!",
-            "literalText": true,
-            "sourceStartIndex": 262,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Oh, I knew, I knew that the appearance\nof Onegin would make\na great impression on everyone\nand give the neighbours plenty to talk about!\nThere will be no end to the conjectures …",
-            "literalText": true,
-            "sourceStartIndex": 264,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Ah, my friend …",
-            "literalText": true,
-            "sourceStartIndex": 269,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "There's no life in Olga's features,\nshe's just like a Van Dyck madonna.\nHer face is as round and rosy …",
-            "literalText": true,
-            "sourceStartIndex": 270,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "… wave and rock,\npoetry and prose, ice and flame,\nare not as different as we are!",
-            "literalText": true,
-            "sourceStartIndex": 273,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Now, alas, my days and nights\nand burning, solitary dreams,\nwill always be filled with his dear image!",
-            "literalText": true,
-            "sourceStartIndex": 276,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Everyone will start to whisper,\njoke, judge - not without malice!\nThere will be no end to the conjectures, etc.",
-            "literalText": true,
-            "sourceStartIndex": 279,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Wave and rock, ice and flame …\n… poetry and prose, ice and flame,\nare not as different as we are …",
-            "literalText": true,
-            "sourceStartIndex": 282,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "… as that stupid moon\non that dull horizon!",
-            "literalText": true,
-            "sourceStartIndex": 285,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Ceaselessly, with magical power,\neverything will speak to me of him,\nmy soul will be seared with the fire of love!",
-            "literalText": true,
-            "sourceStartIndex": 287,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "… Joke, and judge - not without malice -\nand appoint him Tanya's suitor!",
-            "literalText": true,
-            "sourceStartIndex": 290,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "… in our contrasting natures!",
-            "literalText": true,
-            "sourceStartIndex": 292,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Her face is as round and rosy …",
-            "literalText": true,
-            "sourceStartIndex": 293,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Wave and rock, ice and fire,\npoetry and prose …",
-            "literalText": true,
-            "sourceStartIndex": 294,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "… as that stupid moon\non that dull horizon!",
-            "literalText": true,
-            "sourceStartIndex": 296,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Everything will speak to me of him,\nmy soul …",
-            "literalText": true,
-            "sourceStartIndex": 298,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "There will be no end to the conjectures,\nand they'll appoint him …",
-            "literalText": true,
-            "sourceStartIndex": 300,
-            "sourceLineCount": 2
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "… are not as different as we are,",
-        "participants": [
-          "LENSKY",
-          "ONEGIN",
-          "TATYANA",
-          "OLGA"
-        ],
-        "sourceStartIndex": 302,
-        "sourceLineCount": 64,
-        "turns": [
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "… are not as different as we are,\nin our contrasting natures!",
-            "literalText": true,
-            "sourceStartIndex": 302,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I should have chosen the other!",
-            "literalText": true,
-            "sourceStartIndex": 304,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "… will he seared by love's fire!",
-            "literalText": true,
-            "sourceStartIndex": 305,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "… Tanya's suitor!",
-            "literalText": true,
-            "sourceStartIndex": 306,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Lensky approaches Olga. Onegin looks nonchalantly at Tatyana, who is standing with her eyes cast down; then he approaches her and engages her in conversation.\nto Olga",
-            "literalText": true,
-            "sourceStartIndex": 307,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "How happy, how happy I am!\nI see you once again!",
-            "literalText": true,
-            "sourceStartIndex": 309,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "We saw each other yesterday, I think!",
-            "literalText": true,
-            "sourceStartIndex": 311,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Oh, yes,\nBut all the same, a whole long day\nhas gone by since we saw each other last!\nAn eternity!",
-            "literalText": true,
-            "sourceStartIndex": 312,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
-            "original": "",
-            "translation": "Eternity!\nWhat a dreadful word!\nEternity, just one day …",
-            "literalText": true,
-            "sourceStartIndex": 316,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "Yes, a dreadful word,\nbut not for my love!",
-            "literalText": true,
-            "sourceStartIndex": 319,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Olga and Lensky stroll off into the garden.\nto Tatyana",
-            "literalText": true,
-            "sourceStartIndex": 321,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "Tell me,\nis it not dreadfully boring for you\nhere in the depths of the country,\nwhich, though lovely, is so far away?\nI don't suppose you get much amusement.",
-            "literalText": true,
-            "sourceStartIndex": 323,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "I read a great deal …",
-            "literalText": true,
-            "sourceStartIndex": 328,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "It's true\nthat reading provides abundant food\nfor thought and feeling,\nbut one can't sit over a book the whole time!",
-            "literalText": true,
-            "sourceStartIndex": 329,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "I daydream sometimes, strolling in the garden.",
-            "literalText": true,
-            "sourceStartIndex": 333,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "What do you dream about?",
-            "literalText": true,
-            "sourceStartIndex": 334,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Dreams have been my companions\nsince my earliest days.",
-            "literalText": true,
-            "sourceStartIndex": 335,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
-            "original": "",
-            "translation": "I see vou're a terrible dreamer!\nI used to be the same at one time.",
-            "literalText": true,
-            "sourceStartIndex": 337,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "They stroll away; Olga and Lensky return.",
-            "literalText": true,
-            "sourceStartIndex": 339,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
-            "original": "",
-            "translation": "I love you,\nI love you, Olga, as only\na poet's frantic heart\ncan still be fated to love.\nAlways, everywhere, one dream alone,\none constant longing,\none insistent sadness!\nAs a boy I was captivated by you,\nwhen heartache was still unknown;\nI witnessed, with tender emotion,\nyour childish games.\nBeneath the grove's protecting boughs\nI shared those games.\nAh,\nI love you,\nI love you with that love\nknown only to a poet's heart.\nFor you alone I dream.\nfor you alone I long,\nyou are my joy and my suffering.\nI love you,\nI love you, eternally, and nothing -\nnot the chilling distance,\nthe hour of parting, nor pleasure's clamour -\ncan quench that heart\naflame with love's virgin fire!",
-            "literalText": true,
-            "sourceStartIndex": 340,
+            "sourceStartIndex": 151,
             "sourceLineCount": 26
           }
         ]
@@ -1360,141 +503,783 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "In rural tranquillity …",
+        "translatedTitle": "No. 4 — Scene",
         "participants": [
-          "OLGA",
-          "LENSKY",
-          "LARINA",
-          "FILIPYEVNA",
-          "ONEGIN"
+          "Larina",
+          "Filipyevna",
+          "Tatyana",
+          "Peasants",
+          "Olga"
         ],
-        "sourceStartIndex": 366,
-        "sourceLineCount": 33,
+        "sourceStartIndex": 177,
+        "sourceLineCount": 47,
         "turns": [
           {
-            "speaker": "OLGA",
-            "speakerTranslation": "OLGA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "In rural tranquillity …\n… we grew up together;\nand do you remember how our parents\ndestined us, even as children, for each other?",
+            "translation": "There you are, you little scamp,\nmy bright and lively bird!\nI suppose you are ready\nto start dancing right now, aren't you?",
             "literalText": true,
-            "sourceStartIndex": 366,
+            "sourceStartIndex": 177,
             "sourceLineCount": 4
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "I love you! …\nI love you, I love you!",
+            "translation": "Tanyusha! Ah, Tanyusha, what is wrong?\nAre you ill?",
             "literalText": true,
-            "sourceStartIndex": 370,
+            "sourceStartIndex": 181,
             "sourceLineCount": 2
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "No, nurse, I am well.",
+            "literalText": true,
+            "sourceStartIndex": 183,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Thank you, my dears, for your songs.\nGo over to the servants’ wing.\n*To Filipyevna:* And see that they are given wine.\nFarewell, my friends!",
+            "literalText": true,
+            "sourceStartIndex": 184,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Peasants",
+            "speakerTranslation": "Peasants",
+            "original": "",
+            "translation": "Farewell, dear mistress!",
+            "literalText": true,
+            "sourceStartIndex": 188,
+            "sourceLineCount": 1
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Mme Larina and Filipyevna come out onto the terrace. It has grown darker, and within minutes night will have fallen.",
+            "translation": "The peasants leave; the nurse follows. Tatyana sits on the terrace steps, absorbed in her book.",
             "literalText": true,
-            "sourceStartIndex": 372,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 189,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "Ah, there you are!\nBut wherever has Tanya got to?",
+            "translation": "Mamma, just look at Tanya!",
             "literalText": true,
-            "sourceStartIndex": 373,
+            "sourceStartIndex": 190,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "What about her? *Looking more closely:* Why, my dear,\nyou are terribly pale.",
+            "literalText": true,
+            "sourceStartIndex": 191,
             "sourceLineCount": 2
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "She must be strolling by the lake with our guest;\nI'll go and call her.",
+            "translation": "That is how I always look; please do not worry, Mamma.\nWhat I am reading is so interesting!",
             "literalText": true,
-            "sourceStartIndex": 375,
+            "sourceStartIndex": 193,
             "sourceLineCount": 2
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "And tell her from me\nthat it's time to come indoors\nand let our hungry guests take pot-luck at table!",
+            "translation": "So that is why you are pale?",
             "literalText": true,
-            "sourceStartIndex": 377,
+            "sourceStartIndex": 195,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Of course, Mamma! The story of two lovers\nand all their heartache moves me so deeply.\nI feel so sorry for them.\nHow terribly they suffer, both of them!",
+            "literalText": true,
+            "sourceStartIndex": 196,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Enough, Tanya.\nI used to be just like you;\nsuch books stirred me once, too.\nBut all of it is make-believe.\nThe years passed, and I learned\nthat life has no such heroes.\nNow I am quite at peace.",
+            "literalText": true,
+            "sourceStartIndex": 200,
+            "sourceLineCount": 7
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "A little too much at peace!\nLook—you forgot to take off your apron.\nWhat will you do when Lensky arrives?",
+            "literalText": true,
+            "sourceStartIndex": 207,
             "sourceLineCount": 3
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Filipyevna leaves. To Lensky.",
+            "translation": "Larina hurriedly removes her apron as Olga laughs. Wheels approach and sleigh bells are heard.",
             "literalText": true,
-            "sourceStartIndex": 380,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 210,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LARINA",
-            "speakerTranslation": "LARINA",
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
             "original": "",
-            "translation": "Please come in.",
+            "translation": "Listen! Someone is arriving. It must be him!",
             "literalText": true,
-            "sourceStartIndex": 381,
+            "sourceStartIndex": 211,
             "sourceLineCount": 1
           },
           {
-            "speaker": "LENSKY",
-            "speakerTranslation": "LENSKY",
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
             "original": "",
-            "translation": "We're coming",
+            "translation": "So it is!",
             "literalText": true,
-            "sourceStartIndex": 382,
+            "sourceStartIndex": 212,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "He is not alone.",
+            "literalText": true,
+            "sourceStartIndex": 213,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Who can it be?",
+            "literalText": true,
+            "sourceStartIndex": 214,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Madam, Mr Lensky has arrived;\nMr Onegin is with him!",
+            "literalText": true,
+            "sourceStartIndex": 215,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Oh! I must run away!",
+            "literalText": true,
+            "sourceStartIndex": 217,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Where are you going, Tanya?\nPeople will think ill of you!\nGood heavens, my cap is crooked!",
+            "literalText": true,
+            "sourceStartIndex": 218,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "Tell them to come in!",
+            "literalText": true,
+            "sourceStartIndex": 221,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Go, quickly! Ask them in at once!",
+            "literalText": true,
+            "sourceStartIndex": 222,
             "sourceLineCount": 1
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Mme Larina, Olga and Lensky enter the house. Tatyana and Onegin return, followed by Filipyevna who is trying to eavesdrop on their conversation. Tatyana is still painfully shy.",
+            "translation": "The servant hurries away. Everyone prepares in great agitation to receive the visitors. Filipyevna straightens Tatyana’s clothes, gestures reassuringly to her, and withdraws.",
             "literalText": true,
-            "sourceStartIndex": 383,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 223,
+            "sourceLineCount": 1
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "",
+        "translatedTitle": "No. 5 — Scene and quartet",
+        "participants": [
+          "Lensky",
+          "Onegin",
+          "Larina",
+          "Tatyana",
+          "Olga"
+        ],
+        "sourceStartIndex": 224,
+        "sourceLineCount": 56,
+        "turns": [
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Lensky and Onegin enter. Lensky kisses Larina's hand and bows respectfully to the two daughters.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 224,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
             "original": "",
-            "translation": "My uncle was a man of the highest principles;\nwhen he finally took to his bed\nhe forced the respect of all\nand it was the best thing he could do.\nMay others profit from his example!\nBut, my God, what a bore it was,\nsitting by an invalid day and night,\nnever daring to move a step away!",
+            "translation": "Ladies, I have taken the liberty\nof bringing a friend with me.\nMay I present Onegin, my neighbour?",
             "literalText": true,
-            "sourceStartIndex": 384,
-            "sourceLineCount": 8
+            "sourceStartIndex": 225,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "I am delighted!",
+            "literalText": true,
+            "sourceStartIndex": 228,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Oh, not at all! We are delighted to see you.\nDo sit down. These are my daughters.",
+            "literalText": true,
+            "sourceStartIndex": 229,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "I am very, very pleased!",
+            "literalText": true,
+            "sourceStartIndex": 231,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Shall we go inside?\nOr would you rather remain in the open air?\nPlease, no ceremony.\nWe are neighbours; there is no need\nto stand on formalities!",
+            "literalText": true,
+            "sourceStartIndex": 232,
+            "sourceLineCount": 5
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "How charming it is here!\nI love this quiet, shaded garden.\nIt feels so welcoming.",
+            "literalText": true,
+            "sourceStartIndex": 237,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Excellent! I shall go and see to the house.\nPlease entertain our guests. I shall be back.",
+            "literalText": true,
+            "sourceStartIndex": 240,
+            "sourceLineCount": 2
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "following them at a distance",
+            "translation": "Onegin draws near Lensky and speaks quietly. Tatyana and Olga stand apart, lost in thought.",
             "literalText": true,
-            "sourceStartIndex": 392,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 242,
             "sourceLineCount": 1
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "There goes my little dove,\nwith meekly drooping head, downcast eyes.\nShe's dreadfully shy!\nI wonder!\nSuppose she's taken a fancy to this new young man? …",
+            "translation": "Tell me, which one is Tatyana?",
             "literalText": true,
-            "sourceStartIndex": 393,
+            "sourceStartIndex": 243,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "The one who is sad and silent,\njust like Svetlana.",
+            "literalText": true,
+            "sourceStartIndex": 244,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "How curious!\nAre you really in love with the younger sister?",
+            "literalText": true,
+            "sourceStartIndex": 246,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "Why do you ask?",
+            "literalText": true,
+            "sourceStartIndex": 248,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "Were I a poet like you,\nI would have chosen the other one.",
+            "literalText": true,
+            "sourceStartIndex": 249,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "At last! My eyes have opened!\nI know it—I know that he is the one!",
+            "literalText": true,
+            "sourceStartIndex": 251,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "Ah, I knew that Onegin's arrival\nwould make a great impression on everyone,\ngiving all the neighbours something to talk about.\nThere will be guess after guess ...",
+            "literalText": true,
+            "sourceStartIndex": 253,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "Ah, my dear friend ...",
+            "literalText": true,
+            "sourceStartIndex": 257,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "There is no life in Olga’s features,\njust like the Madonna in a Van Dyck painting.\nHer face is round and rosy,\nlike that foolish moon\nin that foolish sky!",
+            "literalText": true,
+            "sourceStartIndex": 258,
+            "sourceLineCount": 5
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "A wave and a rock,\npoetry and prose, ice and flame,\nare not so unlike each other\nas you and I are different!",
+            "literalText": true,
+            "sourceStartIndex": 263,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Alas, from now on day and night,\neven my most feverish solitary dreams,\nwill bring his beloved image back to me!",
+            "literalText": true,
+            "sourceStartIndex": 267,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "They will whisper among themselves,\ntease us, gossip, and pass judgment!\nOne guess will follow another.",
+            "literalText": true,
+            "sourceStartIndex": 270,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "A mysterious power will speak\nof him to me without ceasing\nand set my very soul ablaze with love!",
+            "literalText": true,
+            "sourceStartIndex": 273,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "They will tease and gossip and judge\nand find a husband for Tanya!",
+            "literalText": true,
+            "sourceStartIndex": 276,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Everything will speak of him to me\nand set my soul ablaze with love!",
+            "literalText": true,
+            "sourceStartIndex": 278,
+            "sourceLineCount": 2
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "",
+        "translatedTitle": "No. 6 — Scene and Lensky’s arioso",
+        "participants": [
+          "Lensky",
+          "Olga",
+          "Onegin",
+          "Tatyana"
+        ],
+        "sourceStartIndex": 280,
+        "sourceLineCount": 59,
+        "turns": [
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "How happy I am—how happy!\nI see you again!",
+            "literalText": true,
+            "sourceStartIndex": 280,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "But surely we saw each other yesterday.",
+            "literalText": true,
+            "sourceStartIndex": 282,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "Yes, of course!\nAnd yet a whole long day\nhas passed while we were apart.\nIt seemed an eternity!",
+            "literalText": true,
+            "sourceStartIndex": 283,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "An eternity!\nWhat a dreadful word!",
+            "literalText": true,
+            "sourceStartIndex": 287,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "Perhaps ...\nbut it does not frighten my love.",
+            "literalText": true,
+            "sourceStartIndex": 289,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Lensky and Olga walk deeper into the garden.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 291,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "Tell me, don't you find life\ndreadfully tedious in this remote place,\ncharming though it is?\nI cannot imagine you have\nvery many diversions.",
+            "literalText": true,
+            "sourceStartIndex": 292,
+            "sourceLineCount": 5
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "I read a great deal.",
+            "literalText": true,
+            "sourceStartIndex": 297,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "Indeed. Reading provides endless nourishment\nfor the mind and heart.\nBut one cannot always sit with a book!",
+            "literalText": true,
+            "sourceStartIndex": 298,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Sometimes I wander through the garden\nand lose myself in dreams.",
+            "literalText": true,
+            "sourceStartIndex": 301,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "What do you dream about?",
+            "literalText": true,
+            "sourceStartIndex": 303,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Thoughtfulness has been my companion\never since I lay in the cradle.",
+            "literalText": true,
+            "sourceStartIndex": 304,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "I see that you are very much a dreamer.\nI was like that once myself.",
+            "literalText": true,
+            "sourceStartIndex": 306,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Onegin and Tatyana continue their conversation as they walk away along a garden path. Lensky and Olga return.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 308,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "I love you;\nI love you, Olga,\nwith the passion that only\na poet's restless soul can feel.\nOne dream, one longing, one sorrow—\nalways the same, wherever I go!\nYou captivated me when I was still a boy,\nbefore I knew the pain of love.\nTenderly I watched your childhood games.\nIn the shelter of the grove\nI shared those games with you.\nI love you, I love you,\nas only the soul of a poet can love.\nYou alone live in my dreams;\nyou are my only desire,\nmy joy and my suffering.\nI love you, I love you.\nAnd nothing, nothing—\nnot the chill of distance,\nnot an hour of separation,\nnot the noise of celebration—\ncan sober a soul warmed\nby the first pure flame of love!",
+            "literalText": true,
+            "sourceStartIndex": 309,
+            "sourceLineCount": 23
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "Beneath the shelter of our quiet country home\nyou and I grew up together.",
+            "literalText": true,
+            "sourceStartIndex": 332,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "I love you!",
+            "literalText": true,
+            "sourceStartIndex": 334,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Olga",
+            "speakerTranslation": "Olga",
+            "original": "",
+            "translation": "And do you remember how our fathers\nplanned to marry us\nwhen we were still children?",
+            "literalText": true,
+            "sourceStartIndex": 335,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "I love you, I love you!",
+            "literalText": true,
+            "sourceStartIndex": 338,
+            "sourceLineCount": 1
+          }
+        ]
+      },
+      {
+        "type": "Passage",
+        "incipitOnly": true,
+        "sourceTitlesOnly": true,
+        "threeLineOutline": true,
+        "originalTitle": "",
+        "translatedTitle": "No. 7 — Closing scene",
+        "participants": [
+          "Larina",
+          "Filipyevna",
+          "Lensky",
+          "Onegin"
+        ],
+        "sourceStartIndex": 339,
+        "sourceLineCount": 26,
+        "turns": [
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "Ah, there you are! Where has Tanya gone?",
+            "literalText": true,
+            "sourceStartIndex": 339,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "She must be walking by the pond with our guest.\nI shall go and call her.",
+            "literalText": true,
+            "sourceStartIndex": 340,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Larina",
+            "speakerTranslation": "Larina",
+            "original": "",
+            "translation": "And tell her that it is time to go inside\nand offer our hungry guests whatever\nthe house can provide.\n*To Lensky:* Do come in, please.",
+            "literalText": true,
+            "sourceStartIndex": 342,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Lensky",
+            "speakerTranslation": "Lensky",
+            "original": "",
+            "translation": "We will follow you.",
+            "literalText": true,
+            "sourceStartIndex": 346,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Larina enters the house. Olga and Lensky follow a little way behind. Tatyana and Onegin come slowly towards the house from the pond, with the nurse walking at a distance.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 347,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "My uncle was a man of the strictest honour.\nWhen he became seriously ill\nhe made everyone show him proper respect;\nhe could not have devised a better plan.\nLet others learn from his example!",
+            "literalText": true,
+            "sourceStartIndex": 348,
             "sourceLineCount": 5
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "She enters the house, thoughtfully shaking her head.",
+            "translation": "They have reached the terrace.",
             "literalText": true,
-            "sourceStartIndex": 398,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 353,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "But heavens, what terrible boredom\nto sit with a sick man day and night,\nnever leaving him for an instant!",
+            "literalText": true,
+            "sourceStartIndex": 354,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Onegin and Tatyana enter the house.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 357,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "My little dove walks quietly along,\nher head bent, her eyes cast down,\nso shy and modest!\nWell, now—\ncould she have taken a fancy\nto this new gentleman?",
+            "literalText": true,
+            "sourceStartIndex": 358,
+            "sourceLineCount": 6
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "The nurse walks into the house, shaking her head thoughtfully.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 364,
             "sourceLineCount": 1
           }
         ]
@@ -1505,7 +1290,7 @@ export const oneginAct1Scenes=[
     "number": 2,
     "originalHeading": "",
     "translatedHeading": "Scene 2 — Tatyana's room",
-    "summary": "Tatyana writes her letter to Onegin · English reading text only; no aligned Russian source verified.",
+    "summary": "Late evening; Tatyana confides in the nurse and writes her letter.",
     "sections": [
       {
         "type": "Passage",
@@ -1513,102 +1298,167 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "Well, I've let my tongue run on!",
+        "translatedTitle": "No. 8 — Entr'acte and scene with the nurse",
         "participants": [
-          "FILIPYEVNA",
-          "TATYANA"
+          "Filipyevna",
+          "Tatyana"
         ],
-        "sourceStartIndex": 399,
-        "sourceLineCount": 28,
+        "sourceStartIndex": 365,
+        "sourceLineCount": 55,
         "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Tatyana's room. It is very simply furnished with oldfashioned white wooden chairs, a chest of drawers with a mirror, a bookshelf beside the bed and a table with writing materials beneath the window.\nTatyana, in a white nightdress, is sitting before her mirror, lost in thought. Filipyevna stands beside her.",
+            "translation": "Tatyana's room. Late in the evening.",
             "literalText": true,
-            "sourceStartIndex": 399,
-            "sourceLineCount": 2
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 365,
+            "sourceLineCount": 1
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "Well, I've let my tongue run on!\nIt's time for bed, Tanya,\nI'll wake you early for mass;\ngo to sleep quickly.",
+            "translation": "Well, how I've chattered on!\nIt's late now, Tanya.\nI'll have to wake you early for church;\nyou should go to sleep.",
             "literalText": true,
-            "sourceStartIndex": 401,
+            "sourceStartIndex": 366,
             "sourceLineCount": 4
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "I’m not sleepy, nurse, it's so stuffy in here!\nOpen the window and come and sit by me.",
+            "translation": "I cannot sleep, nurse. It's so stifling here!\nOpen the window, and come and sit beside me.",
             "literalText": true,
-            "sourceStartIndex": 405,
+            "sourceStartIndex": 370,
             "sourceLineCount": 2
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "What is it, Tanya? What is wrong?",
+            "literalText": true,
+            "sourceStartIndex": 372,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "I'm restless. Let's talk about the old days.",
+            "literalText": true,
+            "sourceStartIndex": 373,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "What shall I tell you, Tanya?\nThere was a time when I remembered\nso many old tales, true and invented,\nof wicked spirits and young maidens.\nBut now my memory has grown dim;\neverything I knew has slipped away.\nAh, yes! An evil time has come.\nMy mind has failed me.",
+            "literalText": true,
+            "sourceStartIndex": 374,
+            "sourceLineCount": 8
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Tell me, nurse, about your young days.\nWere you in love back then?",
+            "literalText": true,
+            "sourceStartIndex": 382,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Good heavens, Tanya! In our day\nwe never even heard such talk of love!\nMy late mother-in-law\nwould have driven me to my grave!",
+            "literalText": true,
+            "sourceStartIndex": 384,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "But how did you come to marry, nurse?",
+            "literalText": true,
+            "sourceStartIndex": 388,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "It must have been God's will!\nMy Vanya was younger than I,\nmy darling, and I was only thirteen.\nFor two weeks a matchmaker\ncame to visit my family,\nand in the end my father blessed the marriage.\nI wept bitterly with fear;\nthey unbraided my hair as I cried,\nand led me singing into church.\nAnd so they brought me into a stranger's family ...\nBut you are not listening to me!",
+            "literalText": true,
+            "sourceStartIndex": 389,
+            "sourceLineCount": 11
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Oh, nurse, nurse, I am suffering!\nSuch longing is tearing at me;\nI feel so wretched, my dear.\nI could burst into tears and sob my heart out!",
+            "literalText": true,
+            "sourceStartIndex": 400,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "My child, you must be ill!\nMay the Lord have mercy and save you!\nLet me sprinkle you with holy water.\nYou are burning up!",
+            "literalText": true,
+            "sourceStartIndex": 404,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "I am not ill.\nYou see, nurse, I ... I am in love.\nLeave me alone, please leave me.\nI am in love.",
+            "literalText": true,
+            "sourceStartIndex": 408,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "But how can—",
+            "literalText": true,
+            "sourceStartIndex": 412,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Go now, leave me to myself.\nBring me a pen, some paper,\nand move the table nearer.\nI shall go to bed soon.\nGood night.",
+            "literalText": true,
+            "sourceStartIndex": 413,
+            "sourceLineCount": 5
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Good night, Tanya.",
+            "literalText": true,
+            "sourceStartIndex": 418,
+            "sourceLineCount": 1
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Filipyevna opens the window and sits on a chair near Tatyana.",
+            "translation": "She goes out.",
             "literalText": true,
-            "sourceStartIndex": 407,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Why, Tanya, what's the matter with you?",
-            "literalText": true,
-            "sourceStartIndex": 408,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "I'm bored.\nLet's talk about the old days.",
-            "literalText": true,
-            "sourceStartIndex": 409,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "But what about them, Tanya?\nI used to know any number\nof old tales and fairy stories\nabout evil spirits and beautiful maidens,\nbut now my memory's gone:\nI've forgotten all I knew, that's a fact!\nI'm getting old.\nDecrepit.",
-            "literalText": true,
-            "sourceStartIndex": 411,
-            "sourceLineCount": 8
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Tell me, nurse,\nabout your past:\nwere you in love when you were young?",
-            "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 419,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Get along with you, Tanya! In those days\none didn't talk of love,\nor my late mother-in-law\nwould have chased me from the face of the earth!",
-            "literalText": true,
-            "sourceStartIndex": 422,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Then how did you get married, nurse?",
-            "literalText": true,
-            "sourceStartIndex": 426,
             "sourceLineCount": 1
           }
         ]
@@ -1619,192 +1469,106 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "It was God's will, I suppose! My Vanya",
+        "translatedTitle": "No. 9 — Letter scene",
         "participants": [
-          "FILIPYEVNA",
-          "TATYANA"
+          "Tatyana"
         ],
-        "sourceStartIndex": 427,
-        "sourceLineCount": 65,
+        "sourceStartIndex": 420,
+        "sourceLineCount": 108,
         "turns": [
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "It was God's will, I suppose! My Vanya\nwas even younger than me, my love,\nand I was only thirteen!\nFor a week or two the marriage broker\nkept calling on my parents, and finally\nmy father gave his consent.\nI cried bitterly with fright;\nI wept when they undid my maiden plait\nand led me with songs to the church.\nAnd I found myself installed in a strange family …\nBut you're not listening to me!",
+            "translation": "Let me perish, if perish I must.\nBut first, in dazzling hope,\nI call to a happiness I scarcely understand;\nI shall taste the sweetness of being alive.\nI drink the magical poison of desire;\ndreams follow wherever I turn!\nEverywhere—everywhere before me\nstands the man who will decide my fate,\nmy irresistible temptation!\nEverywhere he stands before me!",
             "literalText": true,
-            "sourceStartIndex": 427,
-            "sourceLineCount": 11
+            "sourceStartIndex": 420,
+            "sourceLineCount": 10
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Oh nurse, nurse, I'm consumed with longing,\nI’m all upset, my dear;\nI’m ready to burst into tears.",
+            "translation": "She begins writing quickly, then at once tears up what she has written.",
             "literalText": true,
-            "sourceStartIndex": 438,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "You’re not well, my child;\nLord have mercy on us!\nLet me sprinkle you with holy water.\nYou're feverish.",
-            "literalText": true,
-            "sourceStartIndex": 441,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "I'm not ill,\nI … Do you know, nurse, … I'm … in love …\nLeave me, leave me …\nI’m in love …",
-            "literalText": true,
-            "sourceStartIndex": 445,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "But of course …",
-            "literalText": true,
-            "sourceStartIndex": 449,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 430,
             "sourceLineCount": 1
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "Go, leave me alone.\nGive me a pen and some paper, nurse,\nand move the table up; I'll soon go to bed.",
+            "translation": "No, no, that is not it. I'll begin again.\nWhat is happening to me? I am aflame!\nI cannot even find the words to begin.",
             "literalText": true,
-            "sourceStartIndex": 450,
+            "sourceStartIndex": 431,
             "sourceLineCount": 3
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "Filipyevna does as Tatyana has asked, then shuts the window, draws the curtains and kisses her good night.",
+            "translation": "She thinks for a moment, then resumes writing.",
             "literalText": true,
-            "sourceStartIndex": 453,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 434,
             "sourceLineCount": 1
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "Good night.",
+            "translation": "I am writing to you—what more can I say?\nWhat else is left for me to tell you?\nNow I know you have the power\nto punish me with your contempt.\nYet if you feel the smallest pity\nfor my unhappy lot,\nyou will not turn away from me.\n\nAt first I meant to say nothing.\nBelieve me, you would never,\nnever have known my shame.\nNever!",
             "literalText": true,
+            "sourceStartIndex": 435,
+            "sourceLineCount": 12
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "She stops to think.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 447,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Yes, I swore to hide deep in my heart\nthe confession of this wild, consuming love.\nAlas! I can no longer command my soul!\nWhatever must befall me, let it come!\nI shall confess everything to him.\nCourage—he must know!",
+            "literalText": true,
+            "sourceStartIndex": 448,
+            "sourceLineCount": 6
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "She continues writing.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 454,
             "sourceLineCount": 1
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "Sleep well",
+            "translation": "Why, oh why did you come to visit us?\nIf you had never come to our forgotten village,\nI should not have known you;\nI should not have known this bitter torment.\nIn time I might have mastered\nthe passions of my inexperienced soul.\nWho knows? I might have found a friend\nwho understood my heart,\nbecome a faithful wife\nand a devoted mother.\n\nAnother man? No—never!\nThere is no one in the world\nto whom I could have given my heart.\nThis was decided in heaven;\nit is heaven's will: I am yours!\nMy entire life was a pledge\nthat I would one day meet you.\nI know that God sent you to me:\nuntil the grave you are my guardian.\n\nYou appeared to me in dreams.\nThough unseen, you were already dear to me;\nyour wonderful gaze disturbed my heart,\nyour voice rang within my soul.\nIt was long ago—no, it was not merely a dream!\nThe moment you came in, I knew you.\nI was overcome, my whole body burning,\nand I thought: Here he is!\nHere he is!\n\nSurely I have heard you before?\nYou spoke to me in the stillness\nwhen I brought aid to the poor,\nor when I turned to prayer\nto quiet the sorrow troubling my soul.\nAnd at that very moment,\nwas it not you, beloved vision,\nwho appeared in the half-light\nand gently bent beside my pillow?\nWas it not you who whispered\nwords of hope and tender love?\n\nWho are you?\nMy guardian angel,\nor a treacherous tempter?\nEnd these doubts of mine.\nPerhaps it is all an empty dream,\nthe delusion of an untried heart,\nand some entirely different fate awaits me.\nBut so be it!\n\nFrom this hour I place my destiny in your hands;\nI weep before you\nand beg you to protect me.\nI beg you!\nImagine it: I am alone here;\nno one understands me.\nMy reason is exhausted;\nI must suffer in silence until I am lost.\n\nI wait for you!\nI wait for you!\nWith a single word, revive\nthe hope within my heart;\nor break this oppressive dream,\nalas, with a reproach I have deserved.\n\nI am finished. I am afraid to read it again.\nI tremble with fear and shame.\nYet your honour is my safeguard;\nI put my trust in it without reserve.",
             "literalText": true,
             "sourceStartIndex": 455,
-            "sourceLineCount": 1
+            "sourceLineCount": 72
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "She goes out. Tatyana remains sunk in thought, then rises in a state of great agitation with an expression of determination on her face.",
+            "translation": "The sun rises. Tatyana opens the window.",
             "literalText": true,
-            "sourceStartIndex": 456,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Let me perish, but first\nlet me summon, in dazzling hope,\nbliss as yet unknown.\nLife's sweetness is known to me!\nI drink the magic potion of desire!\nI am beset by visions!\nEverywhere, everywhere I look,\nI see my fatal tempter!\nWherever I look, I see him!",
-            "literalText": true,
-            "sourceStartIndex": 457,
-            "sourceLineCount": 9
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She goes to the writing table, sits down, writes, then pauses.",
-            "literalText": true,
-            "sourceStartIndex": 466,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "No, that's all wrong!\nI'll begin again!",
-            "literalText": true,
-            "sourceStartIndex": 467,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "she tears up the unfinished letter",
-            "literalText": true,
-            "sourceStartIndex": 469,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Ah, what's the matter with me! I'm all on fire!\nI don't know how to begin!",
-            "literalText": true,
-            "sourceStartIndex": 470,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She writes, then pauses and reads it over.",
-            "literalText": true,
-            "sourceStartIndex": 472,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "'I write to you, - and then?\nWhat more is there to say?\nNow, I know, it is within your power\nto punish me with disdain!\nBut if you nourish one grain of pity\nfor my unhappy lot,\nyou will not abandon me.\nAt first I wished to remain silent;\nthen, believe me, you would never\nhave known my shame,\nnever!'",
-            "literalText": true,
-            "sourceStartIndex": 473,
-            "sourceLineCount": 11
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She puts the letter aside.",
-            "literalText": true,
-            "sourceStartIndex": 484,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "O yes, I swore to lock within my breast\nthis avowal of a mad and ardent passion.\nAlas, I have not the strength to subdue my heart!\nCome what may, I am prepared!\nI will confess all! Courage!\nHe shall know all!",
-            "literalText": true,
-            "sourceStartIndex": 485,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She writes.",
-            "literalText": true,
-            "sourceStartIndex": 491,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 527,
             "sourceLineCount": 1
           }
         ]
@@ -1815,307 +1579,205 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "'Why, oh why did you visit us?",
+        "translatedTitle": "No. 10 — Scene and duet",
         "participants": [
-          "TATYANA"
+          "Tatyana",
+          "Filipyevna"
         ],
-        "sourceStartIndex": 492,
-        "sourceLineCount": 62,
+        "sourceStartIndex": 528,
+        "sourceLineCount": 50,
         "turns": [
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "'Why, oh why did you visit us?\nBuried in this remote countryside,\nI should never have known you,\nnor should I have known this torment.\nThe turbulence of a youthful heart,\ncalmed by time, who knows? -\nmost likely I would have found another,\nhave proved a faithful wife\nand virtuous mother…'",
+            "translation": "Ah, the night is over.\nEverything awakens; the sun is rising.\nA shepherd plays his pipe; all is at peace.\nBut I—what has become of me?",
             "literalText": true,
-            "sourceStartIndex": 492,
-            "sourceLineCount": 9
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She becomes lost in thought, then rises suddenly.",
-            "literalText": true,
-            "sourceStartIndex": 501,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Another! No, not to any other in the world\nwould I have given my heart!\nIt is decreed on high,\nIt is the will of heaven: I am yours!\nMy whole life has been a pledge\nof this inevitable encounter;\nI know this: God sent you to me,\nyou are my keeper till the grave!\nYou appeared before me in my dreams;\nas yet unseen, you were already dear,\nyour wondrous gaze filled me with longing,\nyour voice resounded in my heart\nlong ago … no, it was no dream!\nAs soon as you arrived, I recognized you,\nI almost swooned, began to blaze with passion,\nand to myself I said: 'Tis he!\n'Tis he!\nI know it! I have heard you …\nHave you not spoken to me in the silence\nwhen I visited the poor\nor sought in prayer some solace\nfor the anguish of my soul?\nAnd just this very moment,\nwas it not you, dear vision,\nthat flamed in the limpid darkness,\nstooped gently at my bedside\nand with joy and love\nwhispered words of hope?",
-            "literalText": true,
-            "sourceStartIndex": 502,
-            "sourceLineCount": 28
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She returns to the table and sits down again to write.",
-            "literalText": true,
-            "sourceStartIndex": 530,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "'Who are you'? My guardian angel\nor a wily tempter?\nPut my doubts at rest.\nMaybe this is all an empty dream,\nthe self-deception of an inexperienced soul,\nand something quite different is to be …'",
-            "literalText": true,
-            "sourceStartIndex": 531,
-            "sourceLineCount": 6
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She rises again and paces pensively to and fro.",
-            "literalText": true,
-            "sourceStartIndex": 537,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "But so be it! My fate\nhenceforth I entrust to you;\nin tears before you,\nyour protection I implore,\nI implore.\nImagine: I am all alone here!\nNo one understands me!\nI can think no more,\nand must perish in silence!\nI wait for you,\nI wait for you! Speak the word\nto revive my heart's fondest hopes\nor shatter this oppressive dream\nwith, alas, the scorn,\nalas, the scorn I have deserved!",
-            "literalText": true,
-            "sourceStartIndex": 538,
-            "sourceLineCount": 15
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "She goes swiftly to the table, hurriedly finishes the letter and signs and seals it.",
-            "literalText": true,
-            "sourceStartIndex": 553,
-            "sourceLineCount": 1
-          }
-        ]
-      },
-      {
-        "type": "Passage",
-        "incipitOnly": true,
-        "sourceTitlesOnly": true,
-        "threeLineOutline": true,
-        "originalTitle": "",
-        "translatedTitle": "Finished! It's too frightening to read over,",
-        "participants": [
-          "TATYANA",
-          "FILIPYEVNA"
-        ],
-        "sourceStartIndex": 554,
-        "sourceLineCount": 59,
-        "turns": [
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Finished! It's too frightening to read over,\nI swoon from shame and fear,\nbut his honour is my guarantee\nand in that I put my trust!",
-            "literalText": true,
-            "sourceStartIndex": 554,
+            "sourceStartIndex": 528,
             "sourceLineCount": 4
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "She goes to the window and draws aside the curtains. The room is immediately flooded with a rosy dawnlight. A shepherd's pipe is heard in the distance.",
+            "translation": "She falls into thought. The nurse enters.",
             "literalText": true,
-            "sourceStartIndex": 558,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 532,
             "sourceLineCount": 1
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "Ah, night is past,\neverything is awake …\nand the sun is rising.\nThe shepherd is playing his pipe …\nEverything is peaceful.\nWhile I … I …",
+            "translation": "It's time to rise, my child, wake up!\nBut look, my pretty girl is dressed already.\nMy little early bird!\nHow worried I was last night.\nThank heaven you are well again;\nall your nighttime sadness has vanished.\nYour cheeks are red as poppies!",
             "literalText": true,
-            "sourceStartIndex": 559,
-            "sourceLineCount": 6
+            "sourceStartIndex": 533,
+            "sourceLineCount": 7
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Ah, nurse, will you do something for me?",
+            "literalText": true,
+            "sourceStartIndex": 540,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Certainly, my darling. Just tell me.",
+            "literalText": true,
+            "sourceStartIndex": 541,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Please don't suspect anything ...\nbut you see ... oh, don't refuse me!",
+            "literalText": true,
+            "sourceStartIndex": 542,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "My dear, God is my witness!",
+            "literalText": true,
+            "sourceStartIndex": 544,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Then send your grandson quietly\nwith this note to O— to that ...\nthat neighbour, and tell him\nnot to say a word to anyone,\nnot to mention my name.",
+            "literalText": true,
+            "sourceStartIndex": 545,
+            "sourceLineCount": 5
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "To whom, dear heart?\nMy head has grown so muddled lately.\nThere are so many neighbours round about\nthat I could never count them all.\nTell me plainly, whom do you mean?",
+            "literalText": true,
+            "sourceStartIndex": 550,
+            "sourceLineCount": 5
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Oh nurse, how slow you are to understand!",
+            "literalText": true,
+            "sourceStartIndex": 555,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "My dearest girl, I am old now.\nMy wits are growing dull, Tanya.\nBut once I used to be sharp enough.\nIn the old days, when my mistress spoke a word—",
+            "literalText": true,
+            "sourceStartIndex": 556,
+            "sourceLineCount": 4
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Oh, nurse, this is no time for that!\nWhy should I care how sharp your wits are?\nCan't you see this is about a letter?",
+            "literalText": true,
+            "sourceStartIndex": 560,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Yes, yes, the letter!\nDon't be cross with me, my child;\nyou know I have trouble understanding—",
+            "literalText": true,
+            "sourceStartIndex": 563,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "To Onegin!",
+            "literalText": true,
+            "sourceStartIndex": 566,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "Oh, yes. Now I understand.",
+            "literalText": true,
+            "sourceStartIndex": 567,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "To Onegin!\nSend your grandson with the letter,\nnurse—to Onegin!",
+            "literalText": true,
+            "sourceStartIndex": 568,
+            "sourceLineCount": 3
+          },
+          {
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
+            "original": "",
+            "translation": "There now, don't be angry, sweetheart.\nYou know how confused I have become.",
+            "literalText": true,
+            "sourceStartIndex": 571,
+            "sourceLineCount": 2
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The door opens softly and Filipyevna enters the room.",
+            "translation": "Filipyevna takes the letter. Tatyana turns pale.",
             "literalText": true,
-            "sourceStartIndex": 565,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "It's time, my child! Get up!\nWhy, you're up already, my pretty one!\nMy little early bird!\nI was so anxious last night …\nWell, my child, thank God you're well!\nNot a trace of last night's upset.\nYour cheeks are red as poppies!",
-            "literalText": true,
-            "sourceStartIndex": 566,
-            "sourceLineCount": 7
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Oh, nurse, be a darling …",
-            "literalText": true,
+            "stageDirectionKind": "extended",
             "sourceStartIndex": 573,
             "sourceLineCount": 1
           },
           {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
+            "speaker": "Filipyevna",
+            "speakerTranslation": "Filipyevna",
             "original": "",
-            "translation": "Of course, pet, tell me what you want.",
+            "translation": "Why have you gone pale again?",
             "literalText": true,
             "sourceStartIndex": 574,
             "sourceLineCount": 1
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "Don't think … truly … don't suspect …\nbut you see … oh, don't say no!",
+            "translation": "It's nothing, nurse; really, nothing!\nPlease send your grandson now.",
             "literalText": true,
             "sourceStartIndex": 575,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "My dearest, as God's my witness!",
-            "literalText": true,
-            "sourceStartIndex": 577,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Then, send your grandson, on the quiet,\nwith this note to O … to that …\nto our neighbour, and tell him\nnot to breathe a word\nand not to mention my name.",
-            "literalText": true,
-            "sourceStartIndex": 578,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "To whom, my dear?\nI'm not as bright as I was!\nWe've lots of neighbours round about,\ndo you want me to go through them all?\nWhich one do you mean? Talk sense!",
-            "literalText": true,
-            "sourceStartIndex": 583,
-            "sourceLineCount": 5
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "How dense you are, nurse!",
-            "literalText": true,
-            "sourceStartIndex": 588,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Dear heart, I'm getting old!\nI’m old; my wits are dull, Tanya;\nbut in the old days I was bright enough.\nIn the old days, one word from the master …",
-            "literalText": true,
-            "sourceStartIndex": 589,
-            "sourceLineCount": 4
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "Oh, nurse, nurse, none of that matters!\nWhat do I want with your wits?\nYou see nurse, it's about a letter …",
-            "literalText": true,
-            "sourceStartIndex": 593,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Well, all right, all right!",
-            "literalText": true,
-            "sourceStartIndex": 596,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "What do I want with your wits, nurse …",
-            "literalText": true,
-            "sourceStartIndex": 597,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Don't be angry, dear heart!\nYou know how slow I am.",
-            "literalText": true,
-            "sourceStartIndex": 598,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "… To Onegin …",
-            "literalText": true,
-            "sourceStartIndex": 600,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "All right, all right: I understand!",
-            "literalText": true,
-            "sourceStartIndex": 601,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "… to Onegin …\n… with a letter …\n… to Onegin, send your grandson, nurse!",
-            "literalText": true,
-            "sourceStartIndex": 602,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "FILIPYEVNA",
-            "speakerTranslation": "FILIPYEVNA",
-            "original": "",
-            "translation": "Well, well, don't be angry, dear heart!\nYou know I'm slow!\n… Gracious, why have you turned pale again?",
-            "literalText": true,
-            "sourceStartIndex": 605,
-            "sourceLineCount": 3
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "It's nothing, nurse, really nothing!\nGo and send your grandson!",
-            "literalText": true,
-            "sourceStartIndex": 608,
             "sourceLineCount": 2
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The nurse takes the letter, and after some hesitation, finally signifies that she understands and leaves.\nTatyana sits at the table and, resting her elbows upon it, again becomes lost in thought.\nAnother part of the garden of the Larin estate. Thick lilac and acacia bushes, neglected flower beds and an old wooden bench. Servant girls, picking fruit in the background, sing as they work.",
+            "translation": "The nurse leaves. Tatyana sits at the table and sinks back into thought.",
             "literalText": true,
-            "sourceStartIndex": 610,
-            "sourceLineCount": 3
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 577,
+            "sourceLineCount": 1
           }
         ]
       }
@@ -2124,8 +1786,8 @@ export const oneginAct1Scenes=[
   {
     "number": 3,
     "originalHeading": "",
-    "translatedHeading": "Scene 3 — Garden of the Larin estate",
-    "summary": "Onegin responds to Tatyana · English reading text only; no aligned Russian source verified.",
+    "translatedHeading": "Scene 3 — Secluded part of the garden",
+    "summary": "The girls sing while Tatyana awaits Onegin's reply.",
     "sections": [
       {
         "type": "Passage",
@@ -2133,76 +1795,79 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "Pretty maidens,",
+        "translatedTitle": "No. 11 — Girls' chorus",
         "participants": [
-          "SERVANT GIRLS",
-          "TATYANA",
-          "ONEGIN"
+          "Girls",
+          "Tatyana"
         ],
-        "sourceStartIndex": 613,
-        "sourceLineCount": 49,
+        "sourceStartIndex": 578,
+        "sourceLineCount": 36,
         "turns": [
           {
-            "speaker": "SERVANT GIRLS",
-            "speakerTranslation": "SERVANT GIRLS",
-            "original": "",
-            "translation": "Pretty maidens,\ndear companions,\ncome on out to play, girls!\nTrip merrily, my friends,\nand sing a song,\na favourite song\nto lure a handsome lad\nto join our dance!\nWhen the handsome lad is lured,\nwhen he approaches us,\nlet's run away, my friends,\npelting him with cherries,\nwith cherries, with berries,\nwith redcurrants!\nDon't you come eavesdropping\non our favourite songs,\ndon't you come spying\non our girlish play!\nPretty maidens, etc.",
-            "literalText": true,
-            "sourceStartIndex": 613,
-            "sourceLineCount": 19
-          },
-          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The servant girls move off, their singing dies away.\nTatyana enters, running quickly, and sinks exhausted onto the bench.",
+            "translation": "A secluded part of the Larins' garden. Young servant girls pick berries and sing.",
             "literalText": true,
-            "sourceStartIndex": 632,
-            "sourceLineCount": 2
-          },
-          {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
-            "original": "",
-            "translation": "He's here! He's here, Eugene!\nDear God! Dear God, what must he have thought?\nWhat will he say? Oh why\ndid I obey my aching heart alone,\nand, lacking all self control,\nwrite him that letter!\nIndeed, my heart now tells me\nthat my fatal tempter\nwill only laugh at me!\nOh my God! How miserable I am,\nhow contemptible!\nFootsteps … they are drawing closer …\nYes, it is he, it is he!",
-            "literalText": true,
-            "sourceStartIndex": 634,
-            "sourceLineCount": 13
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "Onegin enters. Tatyana leaps to her feet and stands with lowered head as he approaches.",
-            "literalText": true,
-            "sourceStartIndex": 647,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 578,
             "sourceLineCount": 1
           },
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Girls",
+            "speakerTranslation": "Girls",
             "original": "",
-            "translation": "You wrote to me.\nDon't deny it. I have read\nthe avowal of a trusting heart,\nthe outpouring of an innocent love;\nyour candour touched me deeply.\nIt has stirred\nfeelings long since dormant.\nI won't commend you for this,\nBut I will repay you\nwith an equally guileless avowal.\nHear my confession,\nthen judge me as you will!",
+            "translation": "Young maidens, lovely maidens,\ndearest friends and companions!\nLaugh and play, you girls,\nmake merry, my dear ones!\nRaise a song together,\na song we know by heart.\nEntice a young man here,\ndraw him into our dancing circle!\nOnce he has been lured to us,\nonce we see him in the distance,\nwe shall scatter, dear friends,\nshowering him with cherries,\ncherries, raspberries,\nand bright red currants!\nDo not come to overhear\nour secret songs;\ndo not come spying on\nthe games we girls are playing!",
             "literalText": true,
-            "sourceStartIndex": 648,
+            "sourceStartIndex": 579,
+            "sourceLineCount": 18
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "The girls withdraw farther into the garden. Tatyana runs in, visibly distressed, and sinks exhausted onto a bench.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 597,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "He is here! Eugene is here!\nOh heavens! What must he be thinking?\nWhat will he say?\nWhy—why did I give way\nto the cries of my troubled heart,\nwhy couldn't I control myself?\nWhy did I write that letter to him?\nMy heart tells me now\nthat the man who has bewitched me\nwill only laugh at me.\nOh God, how unhappy I am!\nHow utterly wretched!",
+            "literalText": true,
+            "sourceStartIndex": 598,
             "sourceLineCount": 12
           },
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "collapsing again onto the bench",
+            "translation": "She hears approaching footsteps and listens.",
             "literalText": true,
-            "sourceStartIndex": 660,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 610,
             "sourceLineCount": 1
           },
           {
-            "speaker": "TATYANA",
-            "speakerTranslation": "TATYANA",
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
             "original": "",
-            "translation": "O God! How humiliating and how painful!",
+            "translation": "Footsteps—they are coming closer.\nYes, it is he! It is he!",
             "literalText": true,
-            "sourceStartIndex": 661,
+            "sourceStartIndex": 611,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Stage direction",
+            "speakerTranslation": "Stage direction",
+            "original": "",
+            "translation": "Onegin appears.",
+            "literalText": true,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 613,
             "sourceLineCount": 1
           }
         ]
@@ -2213,49 +1878,78 @@ export const oneginAct1Scenes=[
         "sourceTitlesOnly": true,
         "threeLineOutline": true,
         "originalTitle": "",
-        "translatedTitle": "If I wished to pass my life",
+        "translatedTitle": "Closing scene — Onegin's reply",
         "participants": [
-          "ONEGIN",
-          "SERVANT GIRLS"
+          "Onegin",
+          "Tatyana",
+          "Girls"
         ],
-        "sourceStartIndex": 662,
-        "sourceLineCount": 42,
+        "sourceStartIndex": 614,
+        "sourceLineCount": 54,
         "turns": [
           {
-            "speaker": "ONEGIN",
-            "speakerTranslation": "ONEGIN",
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
             "original": "",
-            "translation": "If I wished to pass my life\nwithin the confines of the family circle,\nand a kindly fate had decreed for me\nthe role of husband and father,\nthen, most like, I would not choose\nany other bride than you.\nBut I was not made for wedded bliss,\nit is foreign to my soul,\nyour perfections are vain,\nI am quite unworthy of them.\nBelieve me, I give you my word,\nmarriage would be a torment for us.\nNo matter how much I loved you,\nhabit would kill that love.\nJudge what a thorny bed of roses\nHymen would prepare for us,\nand, perhaps, to be endured at length!\nOne cannot return to dreams and youth,\nI cannot renew my soul!\nI love you with a brother's love,\na brother's love\nor, perhaps, more than that!\nPerhaps, perhaps more than that!\nListen to me without getting angry,\nmore than once will a girl exchange\none passing fancy for another.\nLearn to control your feelings; …\n… Not everyone will understand you as I do.\nInexperience leads to disaster!",
+            "translation": "You wrote to me.\nDo not deny it. I have read\nthe confession of a trusting soul,\nthe outpouring of innocent love.\nYour sincerity is precious to me.\nIt stirred feelings that had long lain silent.\nBut I shall not offer you mere praise.\nI shall repay your candour\nwith an equally plain confession.\nListen to what I have to say,\nand be my judge.",
             "literalText": true,
-            "sourceStartIndex": 662,
-            "sourceLineCount": 29
-          },
-          {
-            "speaker": "Stage direction",
-            "speakerTranslation": "Stage direction",
-            "original": "",
-            "translation": "in the distance",
-            "literalText": true,
-            "sourceStartIndex": 691,
-            "sourceLineCount": 1
-          },
-          {
-            "speaker": "SERVANT GIRLS",
-            "speakerTranslation": "SERVANT GIRLS",
-            "original": "",
-            "translation": "Pretty maidens,\ndear companions,\ncome on out to play, girls! …\n… Trip it merrily, my friends.\nWhen a handsome lad is lured,\nwhen he approaches us,\nlet's run away, my friends,\npelting him with cherries.\nDon't you come eavesdropping,\ndon't you come spying\non our girlish play!",
-            "literalText": true,
-            "sourceStartIndex": 692,
+            "sourceStartIndex": 614,
             "sourceLineCount": 11
           },
           {
+            "speaker": "Tatyana",
+            "speakerTranslation": "Tatyana",
+            "original": "",
+            "translation": "Oh God! How humiliating, how painful!",
+            "literalText": true,
+            "sourceStartIndex": 625,
+            "sourceLineCount": 1
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "If I had wished to confine my life\nwithin the circle of a family,\nif fate had called me\nto the pleasant lot of father and husband,\nthen surely I would have sought no bride\nother than you.\n\nBut happiness of that sort is not for me;\nmy soul is a stranger to it.\nYour virtues are wasted on me;\nI am not worthy of them.\nBelieve me—my conscience gives its word—\nmarriage would be torment for us both.\n\nHowever deeply I might love you,\nonce accustomed to you, my love would vanish.\nConsider what kind of joys\nthe god of marriage would have prepared for us,\nperhaps for many years to come!\nDreams and youth will never return;\nthere is no going back.\nI cannot renew my soul.\n\nI love you with a brother's affection,\nas a brother loves,\nperhaps with something even more tender—\nyes, perhaps more tender still.\nListen to me without resentment:\na young girl will change her fleeting dreams\nfor other dreams more than once.",
+            "literalText": true,
+            "sourceStartIndex": 626,
+            "sourceLineCount": 30
+          },
+          {
+            "speaker": "Girls",
+            "speakerTranslation": "Girls",
+            "original": "",
+            "translation": "Lovely maidens, dearest friends!\nLaugh and play, you girls; make merry!",
+            "literalText": true,
+            "sourceStartIndex": 656,
+            "sourceLineCount": 2
+          },
+          {
+            "speaker": "Onegin",
+            "speakerTranslation": "Onegin",
+            "original": "",
+            "translation": "Learn to govern your feelings.\nNot everyone would understand you as I do;\ninexperience can lead to disaster.",
+            "literalText": true,
+            "sourceStartIndex": 658,
+            "sourceLineCount": 3
+          },
+          {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "",
-            "translation": "The voices of the servant girls die away. Onegin offers Tatyana his arm; after giving him a long, imploring look, she rises mechanically, accepts his arm and they leave slowly.",
+            "translation": "Onegin offers Tatyana his arm, and they walk towards the house. The girls continue their song as they move away.",
             "literalText": true,
-            "sourceStartIndex": 703,
+            "stageDirectionKind": "extended",
+            "sourceStartIndex": 661,
             "sourceLineCount": 1
+          },
+          {
+            "speaker": "Girls",
+            "speakerTranslation": "Girls",
+            "original": "",
+            "translation": "Once we have lured a young man here,\nonce we see him in the distance,\nwe shall scatter and shower him with cherries.\nDo not come to overhear,\ndo not come spying on\nthe games we girls are playing!",
+            "literalText": true,
+            "sourceStartIndex": 662,
+            "sourceLineCount": 6
           }
         ]
       }
