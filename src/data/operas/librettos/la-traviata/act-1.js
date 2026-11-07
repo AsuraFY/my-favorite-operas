@@ -69,7 +69,7 @@ export const traviataActOneScenes = [
             "speaker": "TUTTI",
             "speakerTranslation": "All",
             "original": "Sì, la vita s'addoppia al gioir.\nSCENA II\n(Detti, il Visconte Gastone de Letorières, Alfredo Germont. Servi affacendati intorno alla mensa)",
-            "translation": "Yes, pleasure doubles life! (Scene II. Gastone arrives with Alfredo; servants prepare the table.)",
+            "translation": "Yes, pleasure doubles life.\nSCENE II\n(The same, joined by Viscount Gastone de Letorières and Alfredo Germont; servants are busy around the table.)",
             "literalText": true
           }
         ]
@@ -131,7 +131,7 @@ export const traviataActOneScenes = [
             "speaker": "GASTONE",
             "speakerTranslation": "Gastone",
             "original": "(ad Alfredo)\nT'ho detto:\nL'amistà qui s'intreccia al diletto.\n(I servi frattanto avranno imbandito le vivande)",
-            "translation": "(To Alfredo.) As I told you, friendship and pleasure are woven together here.",
+            "translation": "(To Alfredo)\nI told you:\nhere friendship is woven together with pleasure.\n(Meanwhile the servants have laid out the food.)",
             "literalText": true
           },
           {
@@ -145,7 +145,7 @@ export const traviataActOneScenes = [
             "speaker": "TUTTI",
             "speakerTranslation": "All",
             "original": "Ben diceste le cure segrete\nFuga sempre l'amico licor.\n(Siedono in modo che Violetta resti tra Alfredo e Gastone, di fronte vi sarà Flora, tra il Marchese ed il Barone, gli altri siedono a piacere. V'ha un momento di silenzio; frattanto passano i piatti, e Violetta e Gastone parlano sottovoce tra loro, poi:)",
-            "translation": "Well said. Friendly wine always dispels secret worries. (The company sits and dinner begins.)",
+            "translation": "You spoke well: friendly wine always\ndrives away secret cares.\n(They sit so that Violetta is between Alfredo and Gastone, facing Flora between the Marquis and the Baron; the others sit where they please. There is a moment of silence as the dishes are passed. Violetta and Gastone speak quietly together, then:)",
             "literalText": true
           },
           {
@@ -412,7 +412,7 @@ export const traviataActOneScenes = [
             "speaker": "TUTTI",
             "speakerTranslation": "All",
             "original": "Godiam la tazza e il cantico\nLa notte abbella e il riso;\nIn questo paradiso\nNe scopra il nuovo dì.\n(S'ode musica dal'altra sala)\nChe è ciò?",
-            "translation": "Enjoy wine, songs and laughter! (Music is heard in another room.) What is that?",
+            "translation": "Let us enjoy our wine and song,\nwhich lend beauty and laughter to the night;\nin this paradise\nmay the new day find us.\n(Music is heard from another room.)\nWhat is that?",
             "literalText": true
           }
         ]
@@ -448,7 +448,7 @@ export const traviataActOneScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Usciamo dunque\n(S'avviano alla porta di mezzo, ma Violetta è colta da subito pallore)\nOhimé!",
-            "translation": "Then let us go. (She turns pale at the door.) Oh dear!",
+            "translation": "Then let us go.\n(They head toward the central door, but Violetta suddenly turns pale.)\nOh, dear!",
             "literalText": true
           },
           {
@@ -476,7 +476,7 @@ export const traviataActOneScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Usciamo\n(Fa qualche passo, ma è obbligata a nuovamente fermarsi e sedere)\nOh Dio!",
-            "translation": "Let us go. (She has to stop again and sit.) Oh God!",
+            "translation": "Let us go.\n(She takes a few steps but must stop again and sit down.)\nOh, God!",
             "literalText": true
           },
           {
@@ -511,7 +511,7 @@ export const traviataActOneScenes = [
             "speaker": "TUTTI",
             "speakerTranslation": "All",
             "original": "Come bramate\n(Tutti passano all'altra sala, meno Alfredo che resta indietro)\nSCENA III\n(Violetta, Alfredo e Gastone a tempo)",
-            "translation": "As you wish. (The guests leave, but Alfredo remains. Scene III.)",
+            "translation": "As you wish.\n(Everyone goes into the other room except Alfredo, who remains behind.)\nSCENE III\n(Violetta and Alfredo; Gastone appears briefly.)",
             "literalText": true
           }
         ]
@@ -814,7 +814,7 @@ export const traviataActOneScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "Di più non bramo.\n(Esce)\nSCENA IV\n(Violetta e tutti gli altri che tornano dalla sala riscaldati dalle danze)",
-            "translation": "I ask no more. (He leaves. Scene IV: the guests return from dancing.)",
+            "translation": "I ask for nothing more.\n(He leaves.)\nSCENE IV\n(Violetta and all the others return from the adjoining room, flushed from dancing.)",
             "literalText": true
           }
         ]
