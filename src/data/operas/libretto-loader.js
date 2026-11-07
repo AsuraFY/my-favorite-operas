@@ -32,7 +32,7 @@ const loaders = Object.freeze({
   "hansel-und-gretel": () => import("./librettos/hansel-und-gretel/bundle.js?v=hansel-complete-20261029").then(module => module.hanselUndGretel),
   "nabucco": () => import("./librettos/nabucco/bundle.js?v=nabucco-complete-20261029").then(module => module.nabucco),
   "rigoletto": () => import("./librettos/rigoletto/bundle.js?v=rigoletto-act1-20261028").then(module => module.rigoletto),
-  "la-traviata": () => import("./librettos/la-traviata/bundle.js?v=la-traviata-line-fidelity-20261107").then(module => module.traviata),
+  "la-traviata": () => import("./librettos/la-traviata/bundle.js?v=traviata-fidelity-pass2-20261107").then(module => module.traviata),
   "aida": () => import("./librettos/aida/bundle.js?v=aida-line-fidelity-20261107").then(module => module.aida),
   "samson-et-dalila": () => import("./librettos/samson-et-dalila/bundle.js?v=on-demand-20261023").then(module => module.samson)
 });
