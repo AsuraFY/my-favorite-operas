@@ -890,7 +890,7 @@ export const traviataActOneScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Ah, fors'è lui che l'anima\nSolinga ne' tumulti\nGodea sovente pingere\nDe' suoi colori occulti!\nLui che modesto e vigile\nAll'egre soglie ascese,\nE nuova febbre accese,\nDestandomi all'amor.\nA quell'amor ch'è palpito\nDell'universo intero,\nMisterioso, altero,\nCroce e delizia al cor.\nA me fanciulla, un candido\nE trepido desire\nQuesti effigiò dolcissimo\nSignor dell'avvenire,\nQuando ne' cieli il raggio\nDi sua beltà vedea,\nE tutta me pascea\nDi quel divino error.\nSentìa che amore è palpito\nDell'universo intero,\nMisterioso, altero,\nCroce e delizia al cor!",
-            "translation": "Ah, perhaps he is the one my lonely soul\nso often painted secretly amid the crowd\nwith hidden colours and imagined dreams.\nModest and attentive, he came to my sickbed\nand kindled a new fever in my heart:\nhe awakened me to love.\nThat love is the pulse of the whole universe,\nmysterious, proud, both torment and delight.\nAs a young girl I imagined a tender desire,\na sweet lord of the years to come;\nI saw the rays of his beauty in the sky\nand fed my heart upon that radiant dream.\nI felt love as the heartbeat of the universe:\nmysterious, proud, torment and delight.",
+            "translation": "Ah, perhaps he is the one my soul,\nlonely amid the crowds,\nso often delighted in painting\nwith its secret colours!\nHe who, modest and watchful,\ncame to my sickroom,\nand kindled a new fever,\nawakening me to love.\nTo that love which is the heartbeat\nof the entire universe,\nmysterious and proud,\nthe heart's torment and delight.\nWhen I was a girl, a pure\nand trembling longing\npictured him as the sweetest\nlord of my future,\nwhen in the heavens I saw\nthe radiance of his beauty,\nand nourished my whole being\non that divine illusion.\nI felt that love is the heartbeat\nof the entire universe,\nmysterious and proud,\nthe heart's torment and delight!",
             "literalText": true
           }
         ]
@@ -910,7 +910,7 @@ export const traviataActOneScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(Resta concentrata un istante, poi dice)\nFollie! follie delirio vano è questo!\nPovera donna, sola\nAbbandonata in questo\nPopoloso deserto\nChe appellano Parigi,\nChe spero or più?\nChe far degg'io!\nGioire,\nDi voluttà nei vortici perire.",
-            "translation": "(She pauses, then speaks.)\nFolly! Folly! This is only empty delirium!\nA poor woman, alone and forsaken\nin the crowded desert called Paris—\nwhat hope can I still cherish?\nWhat should I do?\nEnjoy myself!\nLose myself in the whirl of pleasure.",
+            "translation": "(She remains lost in thought for a moment, then says:)\nFolly! Folly! This is empty delirium!\nA poor woman, alone,\nabandoned in this\ncrowded desert\nthey call Paris—\nwhat can I hope for now?\nWhat must I do?\nEnjoy myself,\nand lose myself in whirlpools of pleasure.",
             "literalText": true
           }
         ]
@@ -930,7 +930,7 @@ export const traviataActOneScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Sempre libera degg'io\nFolleggiar di gioia in gioia,\nVo' che scorra il viver mio\nPei sentieri del piacer,\nNasca il giorno, o il giorno muoia,\nSempre lieta ne' ritrovi\nA diletti sempre nuovi\nDee volare il mio pensier.\n(Entra a sinistra)",
-            "translation": "Forever free, I must\nfly from one pleasure to another.\nI want my life to follow\nthe paths of enjoyment.\nWhether a day is born or dies,\nalways joyful among companions,\nmy thoughts must speed toward\never-new delights. (She exits.)",
+            "translation": "Forever free, I must\ndance from joy to joy,\nI want my life to flow\nalong the paths of pleasure;\nwhether day dawns or ends,\nalways happy at gatherings,\ntoward ever-new delights\nmy thoughts must fly.\n(She exits to the left.)",
             "literalText": true
           }
         ]
