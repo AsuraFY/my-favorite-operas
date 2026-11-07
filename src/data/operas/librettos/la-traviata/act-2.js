@@ -1339,14 +1339,65 @@ export const traviataActTwoScenes = [
         "originalTitle": "Sì, sì, allegri... Or pria tentiamo",
         "translatedTitle": "Yes, let us be merry! Now let us test the whims of fortune at the gaming table.",
         "participants": [
+          "Gastone and the Matadors",
+          "The Others",
           "All"
         ],
         "turns": [
           {
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
-            "original": "(Detti, Gastone ed altri mascherati da Mattadori, Piccadori spagnuoli, ch'entrano vivamente dalla destra)\nGASTONE E MATTADORI\nDi Madride noi siam mattadori,\nSiamo i prodi del circo de' tori,\nTesté giunti a godere del chiasso\nChe a Parigi si fa pel bue grasso;\nE una storia, se udire vorrete,\nQuali amanti noi siamo saprete.\nGLI ALTRI\nSì, sì, bravi: narrate, narrate:\nCon piacere l'udremo\nGASTONE E MATTADORI\nAscoltate.\nÈ Piquillo un bel gagliardo\nBiscaglino mattador:\nForte il braccio, fiero il guardo,\nDelle giostre egli è signor.\nD'andalusa giovinetta\nFollemente innamorò;\nMa la bella ritrosetta\nCosì al giovane parlò:\nCinque tori in un sol giorno\nVò vederti ad atterrar;\nE, se vinci, al tuo ritorno\nMano e cor ti vò donar.\nSì, gli disse, e il mattadore,\nAlle giostre mosse il pie';\nCinque tori, vincitore\nSull'arena egli stendé.\nGLI ALTRI\nBravo, bravo il mattadore,\nBen gagliardo si mostrò\nSe alla giovane l'amore\nIn tal guisa egli provò.\nGASTONE E MATTADORI\nPoi, tra plausi, ritornato\nAlla bella del suo cor,\nColse il premio desiato\nTra le braccia dell'amor.\nGLI ALTRI\nCon tai prove i mattadori\nSan le belle conquistar!\nGASTONE E MATTADORI\nMa qui son più miti i cori;\nA noi basta folleggiar",
-            "translation": "Friends at Flora's gambling party.",
+            "original": "(Detti, Gastone ed altri mascherati da Mattadori, Piccadori spagnuoli, ch'entrano vivamente dalla destra)",
+            "translation": "(The preceding guests remain. Gastone and others enter briskly from the right, disguised as matadors and Spanish picadors.)",
+            "literalText": true
+          },
+          {
+            "speaker": "GASTONE E MATTADORI",
+            "speakerTranslation": "Gastone and the Matadors",
+            "original": "Di Madride noi siam mattadori,\nSiamo i prodi del circo de' tori,\nTesté giunti a godere del chiasso\nChe a Parigi si fa pel bue grasso;\nE una storia, se udire vorrete,\nQuali amanti noi siamo saprete.",
+            "translation": "We are matadors from Madrid,\nbrave men of the bullring,\njust arrived to join the revels\nheld in Paris for Carnival;\nand if you wish to hear our story,\nyou shall learn what lovers we are.",
+            "literalText": true
+          },
+          {
+            "speaker": "GLI ALTRI",
+            "speakerTranslation": "The Others",
+            "original": "Sì, sì, bravi: narrate, narrate:\nCon piacere l'udremo",
+            "translation": "Yes, bravo! Tell us, tell us!\nWe shall hear it with pleasure.",
+            "literalText": true
+          },
+          {
+            "speaker": "GASTONE E MATTADORI",
+            "speakerTranslation": "Gastone and the Matadors",
+            "original": "Ascoltate.\nÈ Piquillo un bel gagliardo\nBiscaglino mattador:\nForte il braccio, fiero il guardo,\nDelle giostre egli è signor.\nD'andalusa giovinetta\nFollemente innamorò;\nMa la bella ritrosetta\nCosì al giovane parlò:\nCinque tori in un sol giorno\nVò vederti ad atterrar;\nE, se vinci, al tuo ritorno\nMano e cor ti vò donar.\nSì, gli disse, e il mattadore,\nAlle giostre mosse il pie';\nCinque tori, vincitore\nSull'arena egli stendé.",
+            "translation": "Listen.\nPiquillo was a fine young fellow,\na matador from Biscay;\nhis arm was strong, his gaze proud,\nhe was master of the bullring.\nHe fell madly in love\nwith a young Andalusian girl;\nbut the reluctant beauty\nspoke to the young man thus:\n'I want to see you bring down\nfive bulls in a single day;\nand if you win, upon your return,\nmy hand and heart shall be yours.'\n'Yes,' he told her; and the matador\nset out for the contests;\nvictorious, he brought five bulls\nto the ground in the arena.",
+            "literalText": true
+          },
+          {
+            "speaker": "GLI ALTRI",
+            "speakerTranslation": "The Others",
+            "original": "Bravo, bravo il mattadore,\nBen gagliardo si mostrò\nSe alla giovane l'amore\nIn tal guisa egli provò.",
+            "translation": "Bravo, bravo, matador!\nHe showed himself a brave man,\nsince he proved his love\nfor the girl in such a way.",
+            "literalText": true
+          },
+          {
+            "speaker": "GASTONE E MATTADORI",
+            "speakerTranslation": "Gastone and the Matadors",
+            "original": "Poi, tra plausi, ritornato\nAlla bella del suo cor,\nColse il premio desiato\nTra le braccia dell'amor.",
+            "translation": "Then, returning amid applause\nto the beloved of his heart,\nhe received the prize he sought\nin the arms of love.",
+            "literalText": true
+          },
+          {
+            "speaker": "GLI ALTRI",
+            "speakerTranslation": "The Others",
+            "original": "Con tai prove i mattadori\nSan le belle conquistar!",
+            "translation": "With such feats, matadors\nknow how to win fair ladies!",
+            "literalText": true
+          },
+          {
+            "speaker": "GASTONE E MATTADORI",
+            "speakerTranslation": "Gastone and the Matadors",
+            "original": "Ma qui son più miti i cori;\nA noi basta folleggiar",
+            "translation": "But here our hearts are gentler;\nfor us, merriment is enough.",
             "literalText": true
           },
           {
