@@ -29,7 +29,7 @@ export const traviataActTwoScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "(deponendo il fucile)\nLunge da lei per me non v'ha diletto!\nVolaron già tre lune\nDacché la mia Violetta\nAgi per me lasciò, dovizie, onori,\nE le pompose feste\nOve, agli omaggi avvezza,\nVedea schiavo ciascun di sua bellezza\nEd or contenta in questi ameni luoghi\nTutto scorda per me. Qui presso a lei\nIo rinascer mi sento,\nE dal soffio d'amor rigenerato\nScordo ne' gaudii suoi tutto il passato.\nDe' miei bollenti spiriti\nIl giovanile ardore\nElla temprò col placido\nSorriso dell'amore!\nDal dì che disse: vivere\nIo voglio a te fedel,\nDell'universo immemore\nIo vivo quasi in ciel.",
-            "translation": "Far from her I find no joy. Three months have passed since she left her old life to live with me. Love has renewed my world.",
+            "translation": "(Laying down his gun)\nFar from her I can find no pleasure!\nThree months have already flown\nsince my Violetta\ngave up comfort, wealth and honours for me,\nand the splendid celebrations\nwhere, accustomed to adoration,\nshe saw everyone enslaved by her beauty.\nNow, content in these pleasant surroundings,\nshe forgets everything for my sake. Here beside her\nI feel myself reborn,\nand renewed by the breath of love,\nI forget the whole past in her happiness.\nThe youthful ardour\nof my burning spirit\nshe tempered with the gentle\nsmile of love!\nFrom the day she said: 'I wish\nto live faithfully for you,'\nforgetting all the world,\nI live almost in heaven.",
             "literalText": true
           }
         ]
@@ -502,7 +502,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "Sì.\nPura siccome un angelo\nIddio mi die' una figlia;\nSe Alfredo nega riedere\nIn seno alla famiglia,\nL'amato e amante giovane,\nCui sposa andar dovea,\nOr si ricusa al vincolo\nChe lieti ne rendea\nDeh, non mutate in triboli\nLe rose dell'amor.\nAi preghi miei resistere\nNon voglia il vostro cor.",
-            "translation": "Yes. I have a daughter pure as an angel. Her marriage is endangered because Alfredo will not return home. Do not destroy her happiness.",
+            "translation": "Yes.\nPure as an angel,\nGod gave me a daughter;\nif Alfredo refuses to return\nto the bosom of his family,\nthe young man she loved, and who loved her,\nwhom she was to marry,\nnow refuses the bond\nthat would have made them happy.\nAh, do not turn to thorns\nthe roses of their love.\nMay your heart not resist\nmy prayers.",
             "literalText": true
           },
           {
@@ -551,7 +551,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Ah, no giammai!\nNon sapete quale affetto\nVivo, immenso m'arda in petto?\nChe né amici, né parenti\nIo non conto tra i viventi?\nE che Alfredo m'ha giurato\nChe in lui tutto io troverò?\nNon sapete che colpita\nD'altro morbo è la mia vita?\nChe già presso il fin ne vedo?\nCh'io mi separi da Alfredo?\nAh, il supplizio è si spietato,\nChe morir preferirò.",
-            "translation": "No, never! You do not know the immense love in my heart. I have no family, no friends—Alfredo is everything to me!",
+            "translation": "Ah, no, never!\nDo you not know what a love\nimmense and living burns within me?\nThat neither friends nor relatives\ncan I count among the living?\nAnd that Alfredo swore to me\nthat in him I would find everything?\nDo you not know that my life\nhas been struck by another illness?\nThat I already see its end drawing near?\nThat I should part from Alfredo?\nAh, the torment would be so cruel\nthat I would rather die.",
             "literalText": true
           },
           {
@@ -1095,7 +1095,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "Di Provenza il mar, il suol - chi dal cor ti cancello?\nAl natio fulgente sol - qual destino ti furò?\nOh, rammenta pur nel duol - ch'ivi gioia a te brillò;\nE che pace colà sol - su te splendere ancor può.\nDio mi guidò!\nAh! il tuo vecchio genitor - tu non sai quanto soffrì\nTe lontano, di squallor il suo tetto si coprì\nMa se alfin ti trovo ancor, - se in me speme non fallì,\nSe la voce dell'onor - in te appien non ammutì,\nDio m'esaudì!\n(abbracciandolo)\nNé rispondi d'un padre all'affetto?",
-            "translation": "The sea and soil of Provence—who has erased them from your heart? Remember your bright native sun, your peaceful home, and the father who loves and waits for you.",
+            "translation": "The sea and soil of Provence—who erased them from your heart?\nWhat fate stole you from your bright native sun?\nRemember, even in sorrow, how joy once shone for you there,\nand that only there may peace shine upon you again.\nGod guided me!\nAh, you do not know how your old father suffered;\nwith you far away, his home was covered in gloom.\nBut if at last I have found you again, if my hope was not in vain,\nif the voice of honour has not fallen silent within you,\nGod has heard me!\n(Embracing him)\nWill you not answer a father's love?",
             "literalText": true
           },
           {
@@ -1290,7 +1290,7 @@ export const traviataActTwoScenes = [
             "speaker": "ZINGARE",
             "speakerTranslation": "Gypsy chorus",
             "original": "Noi siamo zingarelle\nVenute da lontano;\nD'ognuno sulla mano\nLeggiamo l'avvenir.\nSe consultiam le stelle\nNull'avvi a noi d'oscuro,\nE i casi del futuro\nPossiamo altrui predir.\nI.\nVediamo! Voi, signora,\n(Prendono la mano di Flora e l'osservano)\nRivali alquante avete.\n(Fanno lo stesso al Marchese)\nII.\nMarchese, voi non siete\nModel di fedeltà.",
-            "translation": "We are gypsy women from far away; we read the future in people's palms and uncover what they hide. Let us see what your hands reveal.",
+            "translation": "We are young fortune-tellers\nwho have come from far away;\nin every person's palm\nwe read what lies ahead.\nWhen we consult the stars,\nnothing is hidden from us,\nand future happenings\nwe can foretell to others.\nFIRST GROUP\nLet us see! You, madam,\n(They take Flora's hand and examine it.)\nhave several rivals.\n(They do the same to the Marquis.)\nSECOND GROUP\nMarquis, you are hardly\na model of fidelity.",
             "literalText": true
           },
           {
