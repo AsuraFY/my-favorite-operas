@@ -628,7 +628,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "Sì, piangi, o misera - supremo, il veggo,\nÈ il sacrificio - ch'ora io ti chieggo.\nSento nell'anima - già le tue pene;\nCoraggio e il nobile - cor vincerà.\n(Silenzio)",
-            "translation": "Weep, poor woman. I see what a terrible sacrifice I demand; your courage touches my heart.",
+            "translation": "Yes, weep, poor woman! Supreme, I see,\nis the sacrifice I now ask of you.\nAlready I feel your pain within my soul;\ntake courage, and your noble heart shall prevail.\n(Silence.)",
             "literalText": true
           },
           {
@@ -989,7 +989,7 @@ export const traviataActTwoScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "Ah, vive sol quel core all'amor mio!\n(Siede, prende a caso un libro, legge alquanto, quindi si alza guarda l'ora sull'orologio sovrapposto al camino)\nÈ tardi: ed oggi forse\nPiù non verrà mio padre.",
-            "translation": "Her heart lives only for my love! (He tries to read, then becomes restless.)",
+            "translation": "Ah, her heart lives only for my love!\n(He sits, picks up a book at random and reads a little; then rises and checks the clock above the fireplace.)\nIt is late; perhaps today\nmy father will not come after all.",
             "literalText": true
           },
           {
@@ -1038,7 +1038,7 @@ export const traviataActTwoScenes = [
             "speaker": "COMMISSIONARIO",
             "speakerTranslation": "Messenger",
             "original": "Una dama\nDa un cocchio, per voi, di qua non lunge,\nMi diede questo scritto\n(Dà una lettera ad Alfredo, ne riceve qualche moneta e parte)",
-            "translation": "A lady in a carriage entrusted me with this letter for you.",
+            "translation": "A lady\nin a carriage not far from here\ngave me this letter for you.\n(He hands Alfredo a letter, receives a few coins and leaves.)",
             "literalText": true
           }
         ]
@@ -1172,7 +1172,7 @@ export const traviataActTwoScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "(Scuotendosi, getta a caso gli occhi sulla tavola, vede la lettera di Flora, esclama:)\nAh! ell'è alla festa! volisi\nL'offesa a vendicar.\n(Fugge precipitoso)",
-            "translation": "(Noticing Flora's invitation.) Ah, she will be there tonight! I shall go to Flora's.",
+            "translation": "(Rousing himself, he glances at the table, notices Flora's letter and exclaims:)\nAh! She is at the party! Let me fly\nto avenge the insult.\n(He rushes away.)",
             "literalText": true
           },
           {
@@ -1318,7 +1318,7 @@ export const traviataActTwoScenes = [
             "speaker": "TUTTI",
             "speakerTranslation": "All",
             "original": "Su via, si stenda un velo\nSui fatti del passato;\nGià quel ch'è stato è stato,\nBadate/Badiamo all'avvenir.\n(Flora ed il Marchese si stringono la mano)",
-            "translation": "Come, draw a veil over the past. What happened has happened; think of what is to come.",
+            "translation": "Come, let us draw a veil\nover the events of the past;\nwhat has happened has happened;\nlet us look toward the future.\n(Flora and the Marquis shake hands.)",
             "literalText": true
           }
         ]
@@ -2155,14 +2155,14 @@ export const traviataActTwoScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "(da sé)\n(Ah sì che feci! ne sento orrore.\nGelosa smania, deluso amore\nMi strazia l'alma più non ragiono.\nDa lei perdono - più non avrò.\nVolea fuggirla non ho potuto!\nDall'ira spinto son qui venuto!\nOr che lo sdegno ho disfogato,\nMe sciagurato! - rimorso n'ho.",
-            "translation": "(To himself.) What have I done? Jealous madness and disappointed love have destroyed my reason. I am horrified; she will never forgive me.",
+            "translation": "(To himself)\n(Ah, what have I done? I shudder at it.\nJealous frenzy and disappointed love\ntear at my soul; I can no longer think.\nShe will never forgive me.\nI wanted to flee from her but could not!\nDriven by rage, I came here!\nNow that I have given vent to my anger,\nwretched me! I am consumed by remorse.)",
             "literalText": true
           },
           {
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(riavendosi)\nAlfredo, Alfredo, di questo core\nNon puoi comprendere tutto l'amore;\nTu non conosci che fino a prezzo\nDel tuo disprezzo - provato io l'ho!\nMa verrà giorno in che il saprai\nCom'io t'amassi confesserai\nDio dai rimorsi ti salvi allora;\nIo spenta ancora - pur t'amerò.",
-            "translation": "(Recovering.) Alfredo, you cannot understand how much this heart loves you. I proved that love even at the cost of your scorn. One day you shall know everything.",
+            "translation": "(Recovering)\nAlfredo, Alfredo, you cannot understand\nall the love within this heart;\nyou do not know that even at the price\nof your contempt, I proved that love!\nBut the day will come when you shall know,\nand confess how much I loved you.\nMay God then spare you the torments of remorse;\neven in death I shall still love you.",
             "literalText": true
           },
           {
