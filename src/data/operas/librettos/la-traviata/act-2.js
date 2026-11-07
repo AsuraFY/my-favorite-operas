@@ -198,7 +198,7 @@ export const traviataActTwoScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "O mio rimorso! O infamia\ne vissi in tale errore?\nMa il turpe sogno a frangere\nil ver mi balenò.\nPer poco in seno acquétati,\no grido dell'onore;\nM'avrai securo vindice;\nquest'onta laverò.",
-            "translation": "Oh, my remorse and shame! How could I be so blind? The truth has shattered my dishonourable dream.",
+            "translation": "O my remorse! O shame!\nHow could I live in such error?\nBut the truth flashed before me\nand shattered my shameful dream.\nBe still for a little while within me,\nO cry of honour;\nyou shall have me as your sure avenger,\nand I shall wash away this disgrace.",
             "literalText": true
           }
         ]
@@ -369,7 +369,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(alzandosi risentita)\nDonna son io, signore, ed in mia casa;\nCh'io vi lasci assentite,\nPiù per voi che per me.\n(per uscire)",
-            "translation": "I am a woman, sir, and in my own home. I listen to you out of respect, but do not insult me.",
+            "translation": "(Rising indignantly)\nI am a woman, sir, and in my own home;\nI allow you to remain and speak\nmore for your sake than for mine.\n(She makes to leave.)",
             "literalText": true
           },
           {
@@ -600,7 +600,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "Un dì, quando le veneri\nIl tempo avrà fugate,\nFia presto il tedio a sorgere\nChe sarà allor? pensate\nPer voi non avran balsamo\nI più soavi affetti|\nPoiché dal ciel non furono\nTai nodi benedetti.",
-            "translation": "One day your beauty will fade and boredom may come. What future will you have without a bond blessed by family?",
+            "translation": "One day, when time\nhas driven away your beauty,\nweariness will soon arise;\nwhat will happen then? Consider.\nEven the sweetest affections\nwill bring you no comfort,\nfor heaven has not blessed\nthese bonds of yours.",
             "literalText": true
           },
           {
@@ -621,7 +621,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(con estremo dolore)\n(Così alla misera - ch'è un dì caduta,\nDi più risorgere - speranza è muta!\nSe pur beneficio - le indulga Iddio,\nL'uomo implacabile - per lei sarà)\n(a Germont, piangendo)\nDite alla giovine - sì bella e pura\nCh'avvi una vittima - della sventura,\nCui resta un unico - raggio di bene\nChe a lei il sacrifica - e che morrà!",
-            "translation": "(In deep anguish.) So a woman who once fell has no hope of rising again! God may forgive, but humanity does not. Tell the innocent girl what I sacrifice for her.",
+            "translation": "(With the deepest anguish)\n(So a wretched woman who once fell\nhas no hope of rising again!\nEven if God mercifully pardons her,\nhumanity will remain relentless toward her.)\n(To Germont, weeping)\nTell that girl, so beautiful and pure,\nthat there is a victim of misfortune\nto whom one ray of goodness remains,\nwho sacrifices it for her—and will die!",
             "literalText": true
           },
           {
@@ -677,7 +677,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Qual figlia m'abbracciate forte\nCosì sarò.\n(S'abbracciano)\nTra breve ei vi fia reso,\nMa afflitto oltre ogni dire. A suo conforto\nDi colà volerete.\n(Indicandogli il giardino, va per scrivere)",
-            "translation": "Embrace me as a daughter, and I shall do it. Soon your son will be returned to you. Do not let him curse me!",
+            "translation": "Embrace me closely as though I were your daughter;\nthen I shall be one.\n(They embrace.)\nSoon he will be restored to you,\nbut grief-stricken beyond words. For his comfort,\nhurry to him from there.\n(Indicating the garden, she goes to write.)",
             "literalText": true
           }
         ]
@@ -938,7 +938,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(molto agitata)\nCh'ei qui non mi sorprenda\nLascia che m'allontani... tu lo calma\n(mal frenato il pianto)\nAi piedi suoi mi getterò divisi\nEi più non ne vorrà sarem felici\nPerché tu m'ami, Alfredo, non è vero?",
-            "translation": "(In anguish.) Do not let him find me here. Let me go away while you calm him. (She struggles to hide her tears.)",
+            "translation": "(Very agitated)\nDo not let him surprise me here.\nLet me leave... you must calm him.\n(Hardly able to hold back her tears)\nI shall throw myself at his feet; once separated,\nhe will no longer oppose it; we shall be happy.\nFor you love me, Alfredo, do you not?",
             "literalText": true
           },
           {
@@ -1017,7 +1017,7 @@ export const traviataActTwoScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "Va forse d'ogni avere\nAd affrettar la perdita. Ma Annina\nLo impedirà.\n(Si vede il padre attraversare in lontananza il giardino)\nQualcuno è nel giardino!\nChi è là?\n(per uscire)",
-            "translation": "Perhaps she has gone to sell everything faster. Annina will stop her. (His father approaches.)",
+            "translation": "Perhaps she has gone to hasten\nthe loss of all her possessions. But Annina\nwill prevent it.\n(His father can be seen crossing the garden in the distance.)\nSomeone is in the garden!\nWho is there?\n(He moves to leave.)",
             "literalText": true
           },
           {
