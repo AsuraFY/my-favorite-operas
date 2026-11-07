@@ -562,7 +562,7 @@ export const traviataActThreeScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Ch'io ti perdoni? la rea son io:\nMa solo amore tal mi rendé.\nA DUE:\nNull'uomo o demone, angelo mio,\nMai più staccarti potrà da me.\nParigi, o cara/o noi lasceremo,\nLa vita uniti trascorreremo:\nDe' corsi affanni compenso avrai,\nLa mia/tua salute rifiorirà.\nSospiro e luce tu mi sarai,\nTutto il futuro ne arriderà.",
-            "translation": "Forgive you? I am the guilty one, but only love made me so. Together: No one, mortal, demon or angel, shall ever part us again. We will leave Paris, live together and forget the past.",
+            "translation": "Forgive you? I am the guilty one:\nbut only love made me so.\nTOGETHER:\nNo man or demon, my angel,\nwill ever part you from me again.\nWe shall leave Paris, my beloved,\nand spend our lives united:\nyou shall be repaid for all past troubles,\nmy/your health shall bloom anew.\nYou shall be my breath and light,\nand all the future shall smile on us.",
             "literalText": true
           },
           {
@@ -583,7 +583,7 @@ export const traviataActThreeScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "È nulla, sai!\nGioia improvvisa non entra mai\nSenza turbarlo in mesto core\n(Si abbandona come sfinita sopra una sedia col capo cadente all'indietro)",
-            "translation": "It is nothing. Sudden joy unsettles a grieving heart. (She collapses into a chair.)",
+            "translation": "It is nothing, you know!\nSudden joy can never enter\na grieving heart without disturbing it.\n(Exhausted, she sinks into a chair, her head falling backward.)",
             "literalText": true
           }
         ]
@@ -640,7 +640,7 @@ export const traviataActThreeScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(alzandosi)\nNo voglio uscire.\n(Annina le presenta una veste ch'ella fa per indossare e impedita dalla debolezza, esclama:)\nGran Dio! non posso!\n(Getta con dispetto la veste e ricade sulla sedia)",
-            "translation": "(Getting up.) No, I want to go out. (Unable to put on her dress, she cries out.) Great God, I cannot!",
+            "translation": "(Rising)\nNo, I want to go out.\n(Annina offers her a dress; she tries to put it on, but weakness stops her, and she exclaims:)\nGreat God! I cannot!\n(She throws down the dress in frustration and falls back onto the chair.)",
             "literalText": true
           },
           {
@@ -654,7 +654,7 @@ export const traviataActThreeScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(ad Annina)\nDigli che Alfredo\nÈ ritornato all'amor mio\nDigli che vivere ancor vogl'io\n(Annina parte\nad Alfredo)\nMa se tornando non m'hai salvato,\nA niuno in terra salvarmi è dato.\n(sorgendo impetuosa)\nGran Dio! morir sì giovane,\nIo che penato ho tanto!\nMorir sì presso a tergere\nIl mio sì lungo pianto!\nAh, dunque fu delirio\nLa cruda mia speranza;\nInvano di costanza\nArmato avrò il mio cor!\nAlfredo! oh, il crudo termine\nSerbato al nostro amor!",
-            "translation": "Tell him Alfredo has returned to my love. Tell him I still want to live. But if your return cannot save me, no one on earth can. Great God! Must I die so young after so much suffering, just as my tears might finally dry? Our love has been given such a cruel end!",
+            "translation": "(To Annina)\nTell him that Alfredo\nhas returned to my love;\ntell him that I still want to live.\n(Annina leaves;\nto Alfredo)\nBut if your return has not saved me,\nno one on earth can save me.\n(Rising in agitation)\nGreat God! Must I die so young,\nI who have suffered so much?\nDie when so close to drying\nmy long-flowing tears?\nAh, then my cruel hope\nwas only a delusion;\nin vain have I armed my heart\nwith fortitude!\nAlfredo! Oh, what a cruel end\nhas been reserved for our love!",
             "literalText": true
           },
           {
@@ -747,7 +747,7 @@ export const traviataActThreeScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(frattanto avrà aperto a stento un ripostiglio della toilette, e toltone un medaglione dice:)\nPiù a me t'appressa ascolta, amato Alfredo.\nPrendi: quest'è l'immagine\nDe' miei passati giorni;\nA rammentar ti torni\nColei che sì t'amò.\nSe una pudica vergine\nDegli anni suoi nel fiore\nA te donasse il core\nSposa ti sia lo vo'.\nLe porgi questa effigie:\nDille che dono ell'è\nDi chi nel ciel tra gli angeli\nPrega per lei, per te.",
-            "translation": "(With difficulty taking a portrait medallion.) Come closer, beloved Alfredo. Take this portrait of me; may it remind you of the woman who loved you. When you marry a gentle young woman, give it to her; tell her a soul in heaven prays for both of you.",
+            "translation": "(She has with difficulty opened a drawer of the dressing table and taken out a portrait medallion; she says:)\nCome closer and listen, beloved Alfredo.\nTake this: it is the image\nof my days gone by;\nlet it remind you\nof the woman who loved you so much.\nIf a virtuous young woman\nin the flower of her years\nshould give her heart to you,\nI wish her to be your wife.\nOffer her this portrait;\ntell her it is a gift\nfrom one who, among the angels in heaven,\nprays for her and for you.",
             "literalText": true
           },
           {
