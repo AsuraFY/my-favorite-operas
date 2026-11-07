@@ -23,7 +23,7 @@ export const traviataActThreeScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "ATTO TERZO\nSCENA I\n(Camera da letto di Violetta. Nel fondo è un letto con cortine mezze tirate; una finestra chiusa da imposte interne; presso il letto uno sgabello su cui una bottiglia di acqua, una tazza di cristallo, diverse medicine. A metà della scena una toilette, vicino un canapé; più distante un altro mobile, sui cui arde un lume da notte; varie sedie ed altri mobili. La porta è a sinistra; di fronte v'è un caminetto con fuoco acceso.\nVioletta dorme sul letto. Annina, seduta presso il caminetto, è pure addormentata)",
-            "translation": "Act III, Scene I. Violetta's bedroom. She lies gravely ill; Annina keeps watch nearby.",
+            "translation": "ACT III\nSCENE I\n(Violetta's bedroom. At the back stands a bed with curtains partly drawn; there is a shuttered window. Beside the bed is a stool holding a bottle of water, a crystal cup and various medicines. Near the middle is a dressing table beside a sofa; farther away, a piece of furniture supports a night lamp. Several chairs and other furnishings fill the room. The door is on the left, opposite a fireplace with a fire burning.\nVioletta sleeps in bed. Annina is also asleep, seated by the fireplace.)",
             "literalText": true
           },
           {
@@ -338,7 +338,7 @@ export const traviataActThreeScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(Trae dal seno una lettera)\n\"Teneste la promessa... la disfida\nEbbe luogo! il barone fu ferito,\nPerò migliora Alfredo\nÈ in stranio suolo; il vostro sacrifizio\nIo stesso gli ho svelato;\nEgli a voi tornerà pel suo perdono;\nIo pur verrò. Curatevi... meritate\nUn avvenir migliore. -\nGiorgio Germont\".\n(desolata)\nÈ tardi!\n(Si alza)\nAttendo, attendo né a me giungon mai! . . .\n(Si guarda allo specchio)\nOh, come son mutata!\nMa il dottore a sperar pure m'esorta!\nAh, con tal morbo ogni speranza è morta.",
-            "translation": "(Taking out a letter.) \"You kept your promise. The duel took place; the Baron was wounded but is recovering. Alfredo is abroad; I told him of your sacrifice. He will return to ask forgiveness, and I shall come as well. Take care of yourself, for you deserve a better future. — Giorgio Germont.\" (Desolate.) Too late! I wait, and no one comes. (Looking in the mirror.) How changed I am! The Doctor tells me to hope, but with this illness all hope is dead.",
+            "translation": "(She takes a letter from her bodice.)\n'You kept your promise... The duel\ntook place! The Baron was wounded,\nbut he is recovering. Alfredo\nis abroad; I myself revealed\nyour sacrifice to him.\nHe shall return to ask your forgiveness;\nI too shall come. Take care of yourself... you deserve\na better future. —\nGiorgio Germont.'\n(Desolate)\nToo late!\n(She rises.)\nI wait and wait, but they never come!\n(She looks at herself in the mirror.)\nOh, how changed I am!\nYet the doctor still bids me hope!\nAh, with this illness every hope is dead.",
             "literalText": true
           }
         ]
@@ -358,7 +358,7 @@ export const traviataActThreeScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Addio, del passato bei sogni ridenti,\nLe rose del volto già son pallenti;\nL'amore d'Alfredo pur esso mi manca,\nConforto, sostegno dell'anima stanca\nAh, della traviata sorridi al desio;\nA lei, deh, perdona; tu accoglila, o Dio,\nOr tutto finì.\nLe gioie, i dolori tra poco avran fine,\nLa tomba ai mortali di tutto è confine!\nNon lagrima o fiore avrà la mia fossa,\nNon croce col nome che copra quest'ossa!\nAh, della traviata sorridi al desio;\nA lei, deh, perdona; tu accoglila, o Dio.\nOr tutto finì!\n(Siede)",
-            "translation": "Farewell, happy dreams of the past.\nThe roses of my face have faded.\nEven Alfredo's love is lost to me,\ncomfort and support of my tired soul.\nO God, smile upon the lost woman's wish;\nforgive and receive her.\nNow everything is over.\nSoon joy and sorrow alike will end;\nthe grave is the boundary of all mortal lives.\nNo tear or flower will adorn my grave,\nno cross bearing my name will cover these bones.\nO God, smile upon the lost woman:\nforgive her, receive her.\nAll is ended. (She sits.)",
+            "translation": "Farewell, happy dreams of the past,\nthe roses have already faded from my cheeks;\neven Alfredo's love is lacking to me,\nthe comfort and support of my weary soul.\nAh, smile upon the fallen woman's desire;\nforgive her, O God, and receive her,\nnow all is ended.\nSoon joys and sorrows alike shall end;\nthe grave marks the limit of all mortal things!\nNo tear or flower shall adorn my grave,\nno cross bearing my name shall cover these bones!\nAh, smile upon the fallen woman's desire;\nforgive her, O God, and receive her.\nNow all is ended!\n(She sits.)",
             "literalText": true
           }
         ]
@@ -378,7 +378,7 @@ export const traviataActThreeScenes = [
             "speaker": "CORO DI MASCHERE",
             "speakerTranslation": "Masked chorus (offstage)",
             "original": "CORO DI MASCHERE\n(all'esterno)\nLargo al quadrupede\nSir della festa,\nDi fiori e pampini\nCinto la testa\nLargo al più docile\nD'ogni cornuto,\nDi corni e pifferi\nAbbia il saluto.\nParigini, date passo\nAl trionfo del Bue grasso.\nL'Asia, né l'Africa\nVide il più bello,\nVanto ed orgoglio\nD'ogni macello\nAllegre maschere,\nPazzi garzoni,\nTutti plauditelo\nCon canti e suoni!\nParigini, date passo\nAl trionfo del Bue grasso.",
-            "translation": "(Outside.) Make way for the four-legged lord of the festival,\nhis head crowned with flowers and vine leaves!\nWelcome the gentlest of horned creatures,\ngreet him with horns and pipes!\nParisians, make way for the triumphant fat ox.\nNeither Asia nor Africa has seen a finer one,\nthe pride and glory of every butcher!\nJoyful masks and merry young people,\napplaud him with songs and music!\nParisians, make way for the triumphant fat ox.",
+            "translation": "CHORUS OF MASKED REVELLERS\n(Outside)\nMake way for the four-legged\nlord of the festival,\nwith flowers and vine leaves\nwreathing his head!\nMake way for the tamest\nof all horned beasts,\ngreet him with horns\nand with pipes!\nParisians, make way\nfor the triumph of the fat ox!\nNeither Asia nor Africa\nhas seen a finer one,\nthe pride and glory\nof every butcher's stall!\nMerry masks,\nwild young fellows,\nall applaud him\nwith song and sound!\nParisians, make way\nfor the triumph of the fat ox!",
             "literalText": true
           }
         ]
