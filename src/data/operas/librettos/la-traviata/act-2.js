@@ -276,7 +276,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(la prende)\nSta bene. In breve\ngiungerà un uom d'affari, entri all'istante.\n(Annina e Giuseppe escono)",
-            "translation": "Thank you. When my business visitor comes, admit him immediately.",
+            "translation": "(She takes it.)\nVery well. A business agent\nwill soon arrive; admit him immediately.\n(Annina and Giuseppe exit.)",
             "literalText": true
           }
         ]
@@ -313,7 +313,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "(leggendo la lettera)\nAh, ah, scopriva Flora il mio ritiro!\nE m'invita a danzar per questa sera!\nInvan m'aspetterà\n(Getta il foglio sul tavolino e siede)",
-            "translation": "(Reading.) Flora has found our retreat! She invites me to dance tonight. She will wait for me in vain.",
+            "translation": "(Reading the letter)\nAh! Flora has discovered my hiding place!\nShe invites me to dance this evening!\nShe will wait for me in vain.\n(She throws the letter onto the little table and sits.)",
             "literalText": true
           },
           {
@@ -761,7 +761,7 @@ export const traviataActTwoScenes = [
             "speaker": "VIOLETTA",
             "speakerTranslation": "Violetta",
             "original": "Non ci vedrem più forse.\n(S'abbracciano)\nA DUE\nSiate felice Addio!\n(Germont esce per la porta del giardino)",
-            "translation": "Perhaps we will never meet again. Farewell, be happy. (Germont leaves.)",
+            "translation": "Perhaps we shall never see each other again.\n(They embrace.)\nTOGETHER\nBe happy. Farewell!\n(Germont leaves through the garden door.)",
             "literalText": true
           }
         ]
@@ -2148,7 +2148,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "(con dignitoso fuoco)\nDi sprezzo degno se stesso rende\nChi pur nell'ira la donna offende.\nDov'è mio figlio? più non lo vedo:\nIn te più Alfredo - trovar non so.\n(Io sol fra tanti so qual virtude\nDi quella misera il sen racchiude\nIo so che l'ama, che gli è fedele,\nEppur, crudele, - tacer dovrò!)",
-            "translation": "(Entering angrily.) Whoever insults a woman, even in fury, makes himself worthy of contempt. Where is my son? I no longer recognize Alfredo in you. (Only I know the truth of her sacrifice.)",
+            "translation": "(With dignified indignation)\nHe makes himself worthy of contempt\nwho insults a woman, even in anger.\nWhere is my son? I no longer see him:\nin you I can no longer find Alfredo.\n(I alone among them know the virtue\nthat this wretched woman holds within her.\nI know she loves him and is faithful to him,\nand yet, cruelly, I must remain silent!)",
             "literalText": true
           },
           {
