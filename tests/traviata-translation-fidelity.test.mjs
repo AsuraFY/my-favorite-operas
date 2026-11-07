@@ -46,3 +46,20 @@ test('Act III final scene preserves singers and stage transitions',()=>{
  assert.match(passage.translation,/FINAL SCENE/);
  assert.match(passage.translation,/Annina, Signor Germont and the Doctor/);
 });
+
+test('La traviata preserves Act I original text and full Violetta arias',()=>{
+ for(const fragment of ['Ah, fors\'è lui','Sempre libera degg\'io']){
+  const passage=find(1,fragment);
+  assert.equal(passage.translation.split('\\n').length,passage.original.split('\\n').length);
+ }
+ assert.match(find(1,"Ah, fors'è lui").translation,/the heart's torment and delight!/);
+});
+
+test('La traviata final act retains Violetta farewell and medallion instructions',()=>{
+ const farewell=find(3,'Ch\'io ti perdoni?');
+ assert.match(farewell.translation,/all the future shall smile on us/);
+ assert.equal(farewell.translation.split('\\n').length,farewell.original.split('\\n').length);
+ const medallion=find(3,'Più a me t\'appressa');
+ assert.match(medallion.translation,/prays for her and for you/);
+ assert.equal(medallion.translation.split('\\n').length,medallion.original.split('\\n').length);
+});
