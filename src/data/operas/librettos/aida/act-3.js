@@ -25,14 +25,14 @@ export const aidaActThreeScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Le rive del Nilo\n \nRocce di granito fra cui crescono palmizi. Sul vertice delle rocce il tempio d'Iside per metà nascota tra le fronde. è notte stellata. Splendore di luna",
-            "translation": "The banks of the Nile. Granite rocks and palms; the temple of Isis stands partly hidden among foliage. A starry night beneath the moon.",
+            "translation": "The banks of the Nile\n\nGranite rocks with palm trees growing between them. Above the rocks, the temple of Isis lies half concealed by foliage. A starry night in bright moonlight.",
             "literalText": true
           },
           {
             "speaker": "SACERDOTESSE, SACERDOTI",
             "speakerTranslation": "Priestesses and priests",
             "original": "(nel tempio)\nO tu che sei d'Osiride\nMadre immortale e sposa,\nDiva che i casti palpiti\nDesti agli umani in cor,\nSoccorri a noi pietosa,\nMadre d'immenso amor.\n(Da una barca che approda alla riva discendono Amneris, Ramfis, alcune donne coperte da fitto velo e Guardie)",
-            "translation": "(In the temple.) O you, immortal mother and consort of Osiris, goddess who awakened pure devotion in human hearts, come to us in mercy, mother of infinite love.",
+            "translation": "(In the temple)\nO you who are to Osiris\nimmortal mother and spouse,\ngoddess who awakened pure\nfeelings in human hearts,\nhave mercy and help us,\nmother of boundless love.\n(Amneris, Ramfis, veiled women and guards disembark from a boat coming to shore.)",
             "literalText": true
           },
           {
@@ -46,28 +46,28 @@ export const aidaActThreeScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Sì; io pregherò che Radamès mi doni\nTutto il suo cor, come il mio cor a lui\nSacro è per sempre.",
-            "translation": "Yes, I shall pray that Radamès give his whole heart to me as I have given mine to him.",
+            "translation": "Yes, I shall pray that Radamès may give me\nall of his heart, as my heart\nis consecrated to him forever.",
             "literalText": true
           },
           {
             "speaker": "RAMFIS",
             "speakerTranslation": "Ramfis",
             "original": "Andiamo.\nPregherai fino all'alba; io sarò teco.\n(Tutti entrano nel tempio)",
-            "translation": "Come. You shall pray until dawn; I shall stay with you.",
+            "translation": "Come.\nYou shall pray until dawn; I shall be with you.\n(Everyone enters the temple.)",
             "literalText": true
           },
           {
             "speaker": "SACERDOTESSE, SACERDOTI",
             "speakerTranslation": "Priestesses and priests",
             "original": "Soccorri a noi pietosa,\nMadre d'immenso amor.",
-            "translation": "Be merciful to us, mother of endless love.",
+            "translation": "Help us in your mercy,\nmother of boundless love.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "(entra cautamente)\nQui Radamès verrà!... Che vorrà dirmi?\nIo tremo... Ah! se tu vieni\nA recarmi, o crudel, l'ultimo addio,\nDel Nilo i cupi vortici\nMi daran tomba... e pace forse, e oblio.\nO patria mia, mai più ti revedrò!\nO cieli azzurri, o dolci aure native,\nDove sereno il nio mattin brillò,\nO verdi colli, o profumate rive,\nO patria mia, mai più ti revedrò!\nO fresche valli, o queto asil beato,\nChe un dì promesso dall'amor mi fu;\nOr che d'amore il sogno è dileguato,\nO patria mia, non ti vedrò mai più!\n(Entra Amonasro)\nCiel! mio padre!",
-            "translation": "(Entering cautiously.) Radamès will come here! What will he tell me? I tremble. If you come, cruel one, to bid farewell, the Nile's dark waters will give me a grave and perhaps peace and oblivion. O my country, never again shall I see you! Blue skies, sweet native breezes, green hills and scented shores, the peaceful valleys where my childhood dawned: I shall never see you again. (Amonasro enters.) Heaven! My father!",
+            "translation": "(Enters cautiously.)\nRadamès will come here! What will he say to me?\nI tremble. Ah, if you come,\ncruel man, to bring me your last farewell,\nthe Nile's dark whirlpools\nwill give me a grave—perhaps peace and oblivion.\nO my homeland, I shall never see you again!\nO blue skies, O sweet breezes of my native land,\nwhere my peaceful morning once shone,\nO green hills, O fragrant shores,\nO my homeland, I shall never see you again!\nO cool valleys, O tranquil and blessed refuge\nonce promised to me by love,\nnow that love's dream has vanished,\nO my homeland, I shall never see you again!\n(Amonasro enters.)\nHeavens! My father!",
             "literalText": true
           }
         ]
@@ -88,63 +88,63 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "A te grave cagion\nM'adduce, Aida. Nulla sfugge al mio\nSguardo. D'amor ti struggi\nPer Radamès... ei t'ama... qui lo attendi.\nDei Faraon la figlia è tua rivale...\nRazza infame, aborrita e a noi fatale!",
-            "translation": "A grave reason brings me here, Aida. Nothing escapes my eyes. You are wasting away with love for Radamès; he loves you and you await him. Pharaoh's daughter is your rival. Accursed race, hated and fatal to us!",
+            "translation": "A grave reason\nbrings me to you, Aida. Nothing escapes\nmy gaze. You are wasting away\nwith love for Radamès; he loves you; you await him here.\nPharaoh's daughter is your rival—\nthat hated race, so fatal to our people!",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "E in suo potere io sto! Io, d'Amonasro\nFiglia!",
-            "translation": "And I am in her power, I, Amonasro's daughter!",
+            "translation": "And I am in her power! I, Amonasro's\ndaughter!",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "In poter di lei! No!... se lo brami\nLa possente rival tu vincerai,\nE patria, e trono, e amor, tutto tu avrai.\nRivedrai le foreste imbalsamate,\nLe fresche valli, i nostri templi d'or.",
-            "translation": "In her power? No! If you wish, you can defeat your powerful rival and return to our homeland, beloved as Radamès's wife.",
+            "translation": "In her power? No! If you wish it,\nyou can overcome that powerful rival,\nand have homeland, throne and love—all of them.\nYou shall see once more the fragrant forests,\nthe cool valleys and our temples of gold.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Rivedrò le foreste imbalsamate,\nLe fresche valli, i nostri templi d'or.",
-            "translation": "I shall see again the fragrant forests, cool valleys and golden temples.",
+            "translation": "I shall see the fragrant forests again,\nthe cool valleys and our temples of gold.",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Sposa felice a lui che amasti tanto,\nTripudii immensi ivi potrai gioir.",
-            "translation": "As a happy bride beside the man you love, you may enjoy endless rejoicing.",
+            "translation": "A happy bride to the man you love so much,\nyou may rejoice in boundless celebrations there.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Un giorno solo dì si dolce incanto,\nUn'ora, un'ora di tal gioia, e poi morir!",
-            "translation": "One day of such enchantment, one hour of such happiness, and then let me die!",
+            "translation": "One single day of that sweet enchantment,\none hour—one hour of such joy, and then let me die!",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Pur rammenti che a noi l'egizio immite,\nLe case, i templi, e l'are profanò,\nTrasse in ceppi le vergini rapite;\nMadri, vecchi, fanciulli ei trucidò.",
-            "translation": "But remember how the pitiless Egyptian profaned our houses, temples and altars; carried maidens off in chains and murdered mothers, old people and children.",
+            "translation": "But remember how the pitiless Egyptian\nprofaned our homes, temples and altars,\nled captured maidens away in chains,\nand slaughtered mothers, elders and children.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Ah! ben rammento quegl'infausti giorni!\nRammento i lutti che il mio cor soffrì.\nDeh! fate, o Numi, che per soi ritorni\nL'alba invocata de'sereni dì.",
-            "translation": "Ah! I remember those unhappy days and the mourning my heart endured.",
+            "translation": "Ah, I remember those dreadful days so well!\nI remember the grief my heart endured.\nO gods, grant that for our people there return\nthe longed-for dawn of peaceful days.",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Rammenta...\nNon fia che tardi. In armi ora si desta\nIl popol nostro, tutto è pronto già.\nVittoria avrem... Solo a saper mi resta.\nQual sentier il nemico seguirà.",
-            "translation": "Remember them! It will not be long: our people rise in arms, everything is ready. We shall win. I need only discover which road the enemy will take.",
+            "translation": "Remember...\nIt shall not be long. Our people now arise\nin arms; all is ready.\nVictory shall be ours. I need only learn\nthe path the enemy will follow.",
             "literalText": true
           },
           {
@@ -172,21 +172,21 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Radamès so che qui attendi... Ei t'ama...\nEi conduce gli Egizi... Intendi?...",
-            "translation": "I know you await Radamès here. He loves you. He commands the Egyptians. Do you understand?",
+            "translation": "I know you await Radamès here. He loves you.\nHe commands the Egyptians. Do you understand?",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Orrore!\nChe mi consigli tu? No! no! giammai!",
-            "translation": "Horror! What are you asking of me? No, never!",
+            "translation": "Horror!\nWhat are you asking of me? No! No! Never!",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "(con impeto selvaggio)\nSu, dunque! sorgete,\nEgizie coorti!\nCol fuoco struggete\nLe nostre città.\nSpargete il terrore.\nLe stragi, la morte...\nAl vostro fuore\nPiù freno non v'ha.",
-            "translation": "(With savage force.) Arise, Egyptian armies! Destroy our cities with fire; spread terror, slaughter and death, for nothing restrains your fury!",
+            "translation": "(With savage force)\nRise up, then,\nEgyptian troops!\nDestroy with fire\nour cities.\nSpread terror,\nslaughter and death!\nYour fury now\nknows no restraint.",
             "literalText": true
           },
           {
@@ -200,7 +200,7 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Mia figlia\nTi chiami!",
-            "translation": "You call yourself my daughter!",
+            "translation": "You dare\ncall yourself my daughter!",
             "literalText": true
           },
           {
@@ -214,7 +214,7 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Flutti di sangue scorrono\nSulle città dei vinti.\nVedi? Dai negri vortici\nSi levano gli estinti.\nTi additan essi e gridano:\nPer te la patria muor!",
-            "translation": "Rivers of blood course through the conquered cities. See the dead rise from their dark whirlpools. They point at you and cry: because of you our country dies!",
+            "translation": "Streams of blood are flowing\nthrough the conquered cities.\nSee! From the dark whirlpools\nthe dead rise up.\nThey point to you and cry:\n'Because of you our homeland dies!'",
             "literalText": true
           },
           {
@@ -228,7 +228,7 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Una larva orribile\nFra l'ombre a noi s'affaccia.\nTrema! le scarne braccia...",
-            "translation": "A dreadful phantom appears amid the shadows. Tremble! Its wasted arms rise toward you...",
+            "translation": "A horrible spectre\nappears before us in the shadows.\nTremble! Its bony arms...",
             "literalText": true
           },
           {
