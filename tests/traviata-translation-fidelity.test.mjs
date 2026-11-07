@@ -25,7 +25,7 @@ test('The Act II matadors ballad has speaking singers and full translated verse'
  assert.equal(ballad.speaker,'GASTONE E MATTADORI');
  assert.ok(ballad.translation.includes('five bulls'));
  assert.ok(all.some(t=>t.speaker==='GLI ALTRI'&&/matador/.test(t.translation)));
- assert.ok(all.some(t=>t.original.includes('di Madride')&&t.translation.split('\n').length===t.original.split('\n').length));
+ assert.ok(all.some(t=>t.original.includes('Di Madride')&&t.translation.split('\n').length===t.original.split('\n').length));
  assert.ok(!all.some(t=>t.translation==='Friends at Flora\'s gambling party.'));
 });
 test('Act II dramatic arias retain previously omitted source content',()=>{
