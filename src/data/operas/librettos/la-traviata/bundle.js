@@ -3,7 +3,7 @@
 import { getOpera } from '../../catalog.js';
 import { operaInformation } from '../../information.js';
 import { traviataActOneScenes } from './act-1.js?v=la-traviata-issue15-20261105';
-import { traviataActTwoScenes } from './act-2.js?v=traviata-all-acts-20261028';
+import { traviataActTwoScenes } from './act-2.js?v=traviata-verse-fidelity-20261107';
 import { traviataActThreeScenes } from './act-3.js?v=traviata-all-acts-20261028';
 const info = operaInformation['la-traviata'];
 export const traviata = {
