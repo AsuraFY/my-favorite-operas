@@ -23,28 +23,28 @@ export const aidaActFourScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Scena 1: Sala nel palazzo del Re\n \nAlla sinistra, una gran porta che mette all sala sotterranea delle sentenze. Andito a destra che conduce alla prigione di Radamès",
-            "translation": "A hall in the King's palace. To the left a great door leads to the subterranean hall of judgment; to the right a passage leads to Radamès's prison.",
+            "translation": "Scene I: A hall in the King's palace\n\nTo the left is a great door leading to the underground hall of judgment; a passage on the right leads to Radamès's prison.",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "(mestamente appoggiata davanti la porta del sotterraneo)\nL'aborrita rivale a me sfuggia...\nDai Sacerdoti Radamès attende\nDei traditor la pena.--Traditore\nEgli non è... Pur rivelò di guerra\nL'alto segreto... egli fuggir volea...\nCon lei fuggire... Traditori tutti!\nA morte! A morte!... Oh! che mai parlo? Io l'amo,\nIo l'amo sempre... Disperato, insano\nè quest'amor che la mia vita strugge.\nOh! s'ei potesse amarmi!\nVorrei salvarlo. E come?\nSi tenti! Guardie: Radamès qui venga.\n(Radamès è condotto dalla Guardie)",
-            "translation": "(Leaning sadly at the entrance to the underground hall.) My hated rival escaped. Radamès awaits judgment from the priests for treason. He is no traitor, yet he disclosed a military secret and wished to flee with her. Traitors, both of them! Death! But what am I saying? I still love him. This desperate, mad love consumes my life. If he could love me, I would save him. Let me try. Guards, bring Radamès! (He is led in.)",
+            "translation": "(Leaning sadly beside the entrance to the underground hall)\nMy hated rival has escaped me...\nRadamès awaits from the priests\nthe punishment of traitors. A traitor\nhe is not... Yet he revealed the great\nsecret of war... he wanted to flee...\nto flee with her... Traitors, both of them!\nDeath! Death! Ah, what am I saying? I love him,\nI still love him... Desperate, mad\nis this love that consumes my life.\nAh, if only he could love me!\nI want to save him. But how?\nLet me try! Guards, bring Radamès here.\n(The guards lead Radamès in.)",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Già i Sacerdoti adunansi\nArbitri del tuo fato;\nPur dell'accusa orribile\nScolparti ancor t'è dato;\nTi scolpa e la tua grazia Io pregherò dal trono,\nE nunzia di perdono,\nDi vita te sarò.",
-            "translation": "The priests are gathering to decide your fate. You can still clear yourself of this dreadful charge. Defend yourself and I shall ask the throne to pardon you; I shall bring you life and forgiveness.",
+            "translation": "Already the priests are gathering\nto decide your fate;\nyou can still clear yourself\nof the dreadful accusation;\ndefend yourself and I shall ask the throne for mercy,\nand as the messenger of your pardon\nI shall bring you life.",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Di mie discolpe i giudici\nMai non urdan l'accento;\nDinanzi ai Numi, agl'uomini,\nNé vil, né reo mi sento.\nProfferse il labbro incauto\nFatal segreto, è vero,\nMa puro il mio pensiero\nE l'onor mio restò.",
-            "translation": "My judges will never hear a defence from me. Before gods and men I feel neither base nor guilty. My unwary lips betrayed a fatal secret, yes, but my thoughts and honour remained pure.",
+            "translation": "My judges shall never hear\na word of defence from me;\nbefore gods and men\nI feel neither base nor guilty.\nIt is true that my careless lips\nuttered a fatal secret,\nbut my thoughts remained pure\nand so did my honour.",
             "literalText": true
           },
           {
@@ -72,21 +72,21 @@ export const aidaActFourScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "La vita\nAborro; d'ogni gaudio\nLa fante inaridita,\nSvanita ogni speranza,\nSol bramo di morir.",
-            "translation": "I hate life, deprived of every joy; only death remains for me.",
+            "translation": "I hate\nlife; deprived of every joy,\nwith hope dried up,\nevery expectation vanished,\nI only long to die.",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Morire! Ah, tu dêi vivere!\nSì, all'amor mio vivrai;\nPer te le angosce orribili\nDi morte io già provai;\nT'amai... soffersi tanto...\nVegliai le notti in pianto...\nE patria, e trono, e vita\nTutto darei per te.",
-            "translation": "Die? You must live! Live for my love. I have known death's terrible anguish for you; I loved and suffered, wept through nights. Homeland, throne and life I would give for you.",
+            "translation": "Die? Ah, you must live!\nYes, live for my love;\nfor you I have already endured\nthe dreadful anguish of death;\nI loved you... I suffered so much...\nI spent the nights weeping...\nMy homeland, my throne and my life—\nI would give them all for you.",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Per essa anch'io la patria\nE l'onor mio tradia...",
-            "translation": "For her I betrayed my homeland and honour.",
+            "translation": "For her I too betrayed my homeland\nand my honour...",
             "literalText": true
           },
           {
@@ -100,14 +100,14 @@ export const aidaActFourScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "L'infamia\nM'attende e vuoi ch'io viva?\nMisero appien mi festi,\nAida a me togliesti,\nSpenta l'hai forse e in dono\nOffri la vita a me?",
-            "translation": "Disgrace awaits me, and you want me to live?",
+            "translation": "Disgrace\nawaits me, and you want me to live?\nYou have made me utterly wretched,\nyou took Aida away from me,\nperhaps you caused her death, and as a gift\nyou offer me my life?",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Io, di sua morte origine!\nNo! Vive Aida!",
-            "translation": "Am I the cause of her death? No! Aida lives!",
+            "translation": "Am I the cause of her death?\nNo! Aida is alive!",
             "literalText": true
           },
           {
@@ -121,28 +121,28 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Nei disperato anelito\nDell'orde fuggitive\nSol cadde il padre.\n\nRADAM`ES\nEd ella?",
-            "translation": "Among the fleeing forces only her father fell.",
+            "translation": "In the desperate flight\nof the fleeing troops,\nonly her father fell.\n\nRADAMÈS\nAnd she?",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Sparve, né più novella\nS'ebbe...",
-            "translation": "She vanished, and no word of her has come.",
+            "translation": "She disappeared, and no further news\nhas come...",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Gli Dei l'adducano\nSalva alle patrie mura,\nE ignori la sventura\nDi chi per lei morrà!",
-            "translation": "May the gods lead her safely home and keep her ignorant of the misfortune of the man who will die for her.",
+            "translation": "May the gods lead her\nsafely to her homeland,\nand keep her unaware of the misfortune\nof the man who will die for her!",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Ma, s'io ti salvo, giurami\nChe più non la vedrai.",
-            "translation": "But if I save you, swear you will never see her again.",
+            "translation": "But if I save you, swear to me\nyou will never see her again.",
             "literalText": true
           },
           {
@@ -156,7 +156,7 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "A lei rinunzia\nPer sempre... e tu vivrai!",
-            "translation": "Renounce her forever and you shall live!",
+            "translation": "Renounce her\nforever... and you shall live!",
             "literalText": true
           },
           {
@@ -170,7 +170,7 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Ancor una volta:\nA lei rinunzia.",
-            "translation": "Once again: renounce her!",
+            "translation": "One more time:\nrenounce her.",
             "literalText": true
           },
           {
@@ -198,28 +198,28 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Chi ti salva, sciagurato,\nDalla sorte che t'aspetta?\nIn furore hai tu cangiato\nUn amor ch'egual non ha.\nDe' miei pianti la vendetta\nOr dal ciel si compirà.",
-            "translation": "Who will save you, wretched man, from the fate awaiting you? You have turned a love without equal into fury; heaven will now avenge my tears.",
+            "translation": "Who will save you, wretched man,\nfrom the fate awaiting you?\nYou have transformed into fury\na love without equal.\nHeaven itself shall now avenge\nthe tears I have shed.",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "È la morte un ben supremo\nSe per lei morir m'`e dato;\nNel subir l'estremo fato\nGaudii immensi il cor avrà;\nL'ira umana più non temo,\nTemo sol la tua pietà.",
-            "translation": "Death is the highest blessing if I may die for her. Facing my final fate my heart will know boundless joy. I no longer fear human anger, only your mercy.",
+            "translation": "Death would be the greatest blessing\nif I may die for her;\nas I meet my final fate,\nmy heart will know boundless joy;\nI fear human wrath no longer,\nI fear only your pity.",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Ah! chi ti salva?\nDe' miei pianti la vendetta\nOr dal ciel si compirà.\n(Radamès parte circondato dalle Guardie)",
-            "translation": "Who can save you? My tears cry to heaven for revenge!",
+            "translation": "Ah! Who will save you?\nHeaven itself shall now avenge\nthe tears I have shed.\n(Radamès departs, surrounded by guards.)",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "(cade desolata su di un sedile)\nOhimè!... morir mi sento! Oh! chi lo salva?\nE in poter di costoro\nIo stessa lo gettai! Ora a te impreco.\nAtroce gelosia, che la sua morte\nE il lutto eterno del mio cor segnasti!\n(Si volge e vede i Sacerdoti che attraversano la scena per entrare nel sotterraneo)\nEcco i fatali,\nGl'inesorati minstri di morte!\nOh! ch'io non vegga quelle bianche larve!\n(Si copre il volto colle mani)\nE in poter di costoro\nIo stessa lo gettai!",
-            "translation": "(Collapsing into a chair.) Alas, I feel I am dying! Who can save him? I placed him in their power myself. I curse you, cruel jealousy, that doomed him to death and condemned my heart to endless mourning! Here come the inexorable ministers of death! Let me not see their pale faces!",
+            "translation": "(She collapses in despair onto a seat.)\nAlas! I feel I am dying! Who can save him?\nI myself delivered him\ninto their power! Now I curse you,\ncruel jealousy, that marked him for death\nand my heart for endless mourning!\n(She turns and sees the priests crossing toward the underground hall.)\nHere are the fateful ones,\nthe relentless ministers of death!\nOh, spare me the sight of those pale spectres!\n(She covers her face with her hands.)\nI myself delivered him\ninto their power!",
             "literalText": true
           }
         ]
@@ -242,14 +242,14 @@ export const aidaActFourScenes = [
             "speaker": "RAMFIS, SACERDOTI",
             "speakerTranslation": "Ramfis and priests",
             "original": "(nel sotterraneo)\nSpirto del Nume, sovra noi discendi!\nNe avviva al raggio dell'eterna luce;\nPel labbro nostro tua giustizia apprendi.",
-            "translation": "(From the underground hall.) Spirit of the god, descend upon us. Illuminate us with eternal light, and through our lips speak your justice.",
+            "translation": "(In the underground hall)\nSpirit of the god, descend upon us!\nEnliven us with the rays of eternal light;\nlet your justice be heard through our lips.",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Numi, pietà del mio straziato core.\nEgli è innocente, lo salvate, o Numi!\nDisperato, tremendo `e il mio dolore!\n(Radamès fra le Guardie attraversa la scena e scende nel sotteraneo. Amneris, al vederlo, mette un grido)",
-            "translation": "Gods, have pity on my tormented heart. He is innocent; save him!",
+            "translation": "Gods, have mercy on my tormented heart.\nHe is innocent! Save him, O gods!\nMy sorrow is desperate and terrible!\n(Radamès, between the guards, crosses the stage and descends underground; Amneris cries out on seeing him.)",
             "literalText": true
           },
           {
@@ -263,14 +263,14 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Oh! chi lo salva!\nMi sento morir! Ohim`e!",
-            "translation": "Who will save him? I feel I shall die!",
+            "translation": "Oh, who will save him?\nI feel I am dying! Alas!",
             "literalText": true
           },
           {
             "speaker": "RAMFIS",
             "speakerTranslation": "Ramfis",
             "original": "Radamès! Radamès! Radamès! Tu rivelasti\nDella patria i segreti allo straniero!\nDiscolpati.",
-            "translation": "Radamès! You revealed your country's secrets to the foreigner. Defend yourself!",
+            "translation": "Radamès! Radamès! Radamès! You revealed\nthe secrets of your homeland to a foreigner!\nDefend yourself!",
             "literalText": true
           },
           {
@@ -305,7 +305,7 @@ export const aidaActFourScenes = [
             "speaker": "RAMFIS",
             "speakerTranslation": "Ramfis",
             "original": "Radamès! Radamès! Radamès! Tu disertasti\nDal campo il dì che precedea la pugna.\nDiscolpati.",
-            "translation": "Radamès! You deserted the camp on the eve of battle. Defend yourself!",
+            "translation": "Radamès! Radamès! Radamès! You deserted\nthe camp on the day before the battle.\nDefend yourself!",
             "literalText": true
           },
           {
@@ -340,7 +340,7 @@ export const aidaActFourScenes = [
             "speaker": "RAMFIS",
             "speakerTranslation": "Ramfis",
             "original": "Radamès! Radamès! Radamès! Tu fè violasti\nAlla patria spergiuro, al Re, all'onore.\nDiscolpati.",
-            "translation": "Radamès! You broke faith with your homeland, king and honour. Defend yourself!",
+            "translation": "Radamès! Radamès! Radamès! You broke faith\nwith homeland, king and honour.\nDefend yourself!",
             "literalText": true
           },
           {
