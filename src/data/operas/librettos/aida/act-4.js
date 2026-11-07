@@ -375,14 +375,14 @@ export const aidaActFourScenes = [
             "speaker": "RAMFIS, SACERDOTI",
             "speakerTranslation": "Ramfis and priests",
             "original": "Radamès, è deciso il tuo fato;\nDegli infami la morte tu avrai;\nSotto l'ara del Nume sdegnato\nA te vivo fia schiuso l'avel.",
-            "translation": "Radamès, your fate is decided. You shall die a shameful death; under the altar of the offended god a tomb will open for you while you live.",
+            "translation": "Radamès, your fate is decided;\nyou shall suffer the death of the dishonoured;\nbeneath the altar of the offended god\na tomb shall open for you while you live.",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "A lui vivo la tomba... Oh, gl'infami!\nN'e di sangue son paghi giammai...\nE si chiaman ministri del ciel!",
-            "translation": "A living tomb for him! Insatiable in blood, they still call themselves ministers of heaven!",
+            "translation": "A living tomb for him! Oh, villains!\nTheir thirst for blood can never be satisfied...\nAnd they call themselves ministers of heaven!",
             "literalText": true
           },
           {
@@ -412,7 +412,7 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "(investendo i Sacerdoti che escono dal sotterraneo)\nSacerdoti: compiste un delitto!\nTigri infami di sangue assetate,\nVoi la terra ed i Numi oltraggiate...\nVoi punite chi colpe non ha!",
-            "translation": "(Confronting the priests as they emerge.) Priests, you have committed a crime! Bloodthirsty tigers, you insult earth and heaven and punish a man without guilt!",
+            "translation": "(Confronting the priests emerging from the underground hall)\nPriests, you have committed a crime!\nInfamous tigers thirsting for blood,\nyou insult earth and the gods...\nyou punish a man who bears no guilt!",
             "literalText": true
           },
           {
@@ -440,7 +440,7 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "(a Ramfis)\nSacerdote: quest'uomo che uccidi.\nTu lo sai, da me un giorno fu amato.\nL'anatema d'un core straziato\nCol suo sangue su te ricadrà!",
-            "translation": "(To Ramfis.) Priest, this man you kill was once beloved of me. The curse of my broken heart shall fall upon you with his blood!",
+            "translation": "(To Ramfis)\nPriest, this man you are killing—\nyou know I once loved him.\nMay the curse of my broken heart\nfall upon you with his blood!",
             "literalText": true
           },
           {
@@ -468,21 +468,21 @@ export const aidaActFourScenes = [
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Voi la terra ed i Numi oltraggiate,\nVoi punite chi colpe non ha.\nAh no, non `e traditor, pietà!",
-            "translation": "You outrage earth and the gods; you punish the innocent. No, he is no traitor! Mercy!",
+            "translation": "You insult earth and the gods,\nyou punish a man who bears no guilt.\nNo, he is no traitor! Mercy!",
             "literalText": true
           },
           {
             "speaker": "RAMFIS, SACERDOTI",
             "speakerTranslation": "Ramfis and priests",
             "original": "Morrà!\nÈ traditor! Morrà!\n(Si allontanano lentamente)\nTraditor! Traditor! Traditor!",
-            "translation": "He shall die! He is a traitor!",
+            "translation": "He shall die!\nHe is a traitor! He shall die!\n(They move slowly away.)\nTraitor! Traitor! Traitor!",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Empia razza! Anatema su voi!\nLa vendetta del ciel scenderà!\nAnatema su voi!\n(Esce disperata)",
-            "translation": "Impious men! A curse upon you! Heaven's vengeance will descend! (She leaves in despair.)",
+            "translation": "Impious race! A curse upon you!\nMay heaven's vengeance descend on you!\nA curse upon you!\n(She leaves in despair.)",
             "literalText": true
           }
         ]
@@ -514,14 +514,14 @@ export const aidaActFourScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "L'interno del tempio di Vulcano e la tomba di Radamès\n \nLa scena è divisa in due piani. Il piano speriore rappresenta l'interno del tempio splendente d'oro e di luce, il piano inferiore un sotterraneo. Lunghe file d'arcate si perdono nell'oscurità. Statue colossali d'Osiride colle mani incrociate sostengono i pilastri della volta. \nRadamès è nel sotterraneo sui gradini della scala, per cui è disceso. Al di sopra, due Sacerdoti intenti a chiudere la pietra del sotterraneo",
-            "translation": "The temple of Vulcan above and Radamès's tomb below. The upper level glows with gold and light; the lower is a crypt with massive pillars and statues. Priests seal the stone above Radamès.",
+            "translation": "The temple of Vulcan and Radamès's tomb\n\nThe stage is divided into two levels. Above is the temple, resplendent with gold and light; below, a crypt whose long arcades recede into darkness. Colossal statues of Osiris, hands crossed, support the vault's pillars.\nRadamès stands on the crypt's steps. Above, two priests are sealing the stone that closes the vault.",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "La fatal pietra sovra me si chiuse...\nEcco la tomba mia. Del dì la luce\nPiù non vedrò... Non revedrò più Aida.\nAida, ove sei tu? Possa tu almeno\nViver felice e la mia sorte orrenda\nSempre ignorar! Qual gemito!... Una larva...\nUna vision... No! forma umana È questa.\nCiel! Aida!",
-            "translation": "The fatal stone has closed above me. Here is my tomb; never again shall I see daylight or Aida. Where are you? May you live happily and never know my fate! What moan is that? A phantom? No, a human figure! Heaven! Aida!",
+            "translation": "The fatal stone has closed above me...\nHere is my tomb. Daylight\nI shall never see again... Nor shall I see Aida again.\nAida, where are you? May you at least\nlive happily, forever unaware\nof my dreadful fate! What moan is that? A phantom...\na vision... No! It is a human form.\nHeavens! Aida!",
             "literalText": true
           },
           {
@@ -542,35 +542,35 @@ export const aidaActFourScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Presago il core della tua condanna,\nIn questa tomba che per te s'apriva\nIo penetrai furtiva...\nE qui lontana da ogni umano sguardo\nNelle tue braccia desiai morire.",
-            "translation": "Foreseeing your sentence, I slipped into this tomb before it closed. Here, unseen by all, I longed to die in your arms.",
+            "translation": "Foreseeing in my heart that you would be condemned,\nI slipped secretly into this tomb\nthat was opening for you...\nAnd here, far from every human gaze,\nI longed to die in your arms.",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Morir! sì pura e bella!\nMorir per me d'amore...\nDegli anni tuoi nel fiore\nFuggir la vita!\nT'avea il cielo per l'amor creata,\nEd io t'uccido per averti amata!\nNo, non morrai!\nTroppo t'amai!\nTroppo sei bella!",
-            "translation": "Die, so pure and beautiful, die for love of me!",
+            "translation": "To die! So pure and beautiful!\nTo die for love of me...\nIn the flower of your youth\nto leave this life!\nHeaven created you for love,\nand I kill you by having loved you!\nNo, you shall not die!\nI have loved you too much!\nYou are too beautiful!",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "(vaneggiando)\nVedi?... di morte l'angelo\nRadiante a noi s'appressa,\nNe adduce eterni gaudii\nSovra i suoi vanni d'or.\nGià veggo il ciel dischiudersi,\nIvi ogni affanno cessa,\nIvi comincia l'estasi\nD'un immortale amor.",
-            "translation": "(In a vision.) See, the angel of death approaches shining, bearing eternal joy upon golden wings. I see heaven opening, where all sorrow ends and the ecstasy of immortal love begins.",
+            "translation": "(In a vision)\nSee? The angel of death\ndraws near to us, shining,\nbringing us eternal joys\nupon his golden wings.\nAlready I see heaven opening;\nthere all suffering ceases,\nthere begins the ecstasy\nof immortal love.",
             "literalText": true
           },
           {
             "speaker": "SACERDOTESSE",
             "speakerTranslation": "Priestesses",
             "original": "(al di sopra, nel tempio)\nImmenso Fthà, del mondo\nSpirito animator...",
-            "translation": "(Above, in the temple.) Boundless Fthà, life-giving spirit of the world...",
+            "translation": "(Above, in the temple)\nInfinite Fthà,\nlife-giving spirit of the world...",
             "literalText": true
           },
           {
             "speaker": "SACERDOTI",
             "speakerTranslation": "Priests",
             "original": "(al di sopra, nel tempio)\nAh!",
-            "translation": "Ah!",
+            "translation": "(Above, in the temple)\nAh!",
             "literalText": true
           },
           {
@@ -584,7 +584,7 @@ export const aidaActFourScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Il tripudio\nDei Sacerdoti.",
-            "translation": "The priests rejoice.",
+            "translation": "The rejoicing\nof the priests.",
             "literalText": true
           },
           {
@@ -598,7 +598,7 @@ export const aidaActFourScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "(cercando di smuovere la pietra del sotterraneo)\nNé le mie forti braccia\nSmuoverti potranno, o fatal pietra!",
-            "translation": "(Trying to move the stone.) Cannot my strong arms move you, fatal stone?",
+            "translation": "(Trying to move the stone of the vault)\nCannot even my strong arms\nmove you, fatal stone?",
             "literalText": true
           },
           {
@@ -612,14 +612,14 @@ export const aidaActFourScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Invan!... tutto è finito\nSulla terra per noi.",
-            "translation": "In vain. All is ended for us upon earth.",
+            "translation": "In vain! Everything is over\nfor us on earth.",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "È vero! È vero!\n(Si avvicina ad Aida e la sorregge)",
-            "translation": "It is true! (He approaches and supports her.)",
+            "translation": "It is true! It is true!\n(He approaches Aida and supports her.)",
             "literalText": true
           }
         ]
@@ -641,7 +641,7 @@ export const aidaActFourScenes = [
             "speaker": "AIDA E RADAMÈS",
             "speakerTranslation": "Aida and Radamès",
             "original": "O terra, addio; addio, valle di pianti...\nSogno di gaudio che in dolor svanì.\nA noi si schiude il ciel e l'alme erranti\nVolano al raggio dell'interno dì.",
-            "translation": "Farewell, earth; farewell, valley of tears. Dream of joy dissolved into sorrow. Heaven opens to us; our wandering souls fly into eternal day.",
+            "translation": "Farewell, earth; farewell, valley of tears...\nDream of happiness that vanished in pain.\nHeaven opens to us, and our wandering souls\nfly into the light of an eternal day.",
             "literalText": true
           },
           {
@@ -655,14 +655,14 @@ export const aidaActFourScenes = [
             "speaker": "AIDA E RADAMÈS",
             "speakerTranslation": "Aida and Radamès",
             "original": "Ah! si schiude il ciel.\nO terra, addio; addio, valli di pianti...",
-            "translation": "Ah, heaven opens. Farewell, earth and valley of tears...",
+            "translation": "Ah! Heaven opens.\nFarewell, earth; farewell, valley of tears...",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "(in abito di lutto appare nel tempio e va a prostrarsi sulla pietra che chiude il sotterraneo)\nPace t'imploro...",
-            "translation": "(Dressed in mourning, kneeling above the stone.) I beg you for peace...",
+            "translation": "(Dressed in mourning, she appears in the temple and kneels above the stone closing the vault.)\nI beg you for peace...",
             "literalText": true
           },
           {
@@ -739,21 +739,21 @@ export const aidaActFourScenes = [
             "speaker": "AIDA E RADAMÈS",
             "speakerTranslation": "Aida and Radamès",
             "original": "... si schiude il ciel!\n(Aida cade e muore nelle braccia di Radams)",
-            "translation": "...heaven opens! (Aida dies in Radamès's arms.)",
+            "translation": "... heaven opens!\n(Aida falls and dies in Radamès's arms.)",
             "literalText": true
           },
           {
             "speaker": "AMNERIS",
             "speakerTranslation": "Amneris",
             "original": "Pace t'imploro,\n... pace, pace...\n... pace!",
-            "translation": "I beg for peace, peace, peace!",
+            "translation": "I beg you for peace,\n... peace, peace...\n... peace!",
             "literalText": true
           },
           {
             "speaker": "SACERDOTI, SACERDOTESSE",
             "speakerTranslation": "Priests and priestesses",
             "original": "Immenso Fthà!\n\nFine libretto",
-            "translation": "Boundless Fthà! (End of the opera.)",
+            "translation": "Infinite Fthà!\n\nEnd of libretto",
             "literalText": true
           }
         ]
