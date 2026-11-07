@@ -661,7 +661,7 @@ export const traviataActThreeScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "Oh mio sospiro, oh palpito,\nDiletto del cor mio!\nLe mie colle tue lagrime\nConfondere degg'io\nMa più che mai, deh, credilo,\nM'è d'uopo di costanza,\nAh! tutto alla speranza\nNon chiudere il tuo cor.\nVioletta mia, deh, calmati,\nM'uccide il tuo dolor.\n(Violetta s'abbatte sul canapé)\nSCENA ULTIMA\n(Detti, Annina, il signor Germont, ed il Dottore)",
-            "translation": "Beloved breath of my heart, I must mingle my tears with yours. More than ever I must have strength, and place my hopes in your recovery.",
+            "translation": "O my sigh, my heartbeat,\nbeloved of my heart!\nI must mingle my tears\nwith yours.\nBut more than ever, believe me,\nI must be steadfast;\nah, do not close your heart\nto every hope.\nMy Violetta, please be calm,\nyour suffering is killing me.\n(Violetta falls back onto the sofa.)\nFINAL SCENE\n(The same, with Annina, Signor Germont and the Doctor.)",
             "literalText": true
           },
           {
