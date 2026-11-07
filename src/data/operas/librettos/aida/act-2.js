@@ -25,7 +25,7 @@ export const aidaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Una sala nell'appartamento di Amneris\n \nAmneris circondata dalle schiave che l'abbigliano per la festa trionfale. Dai tripodi si eleva il profumo degli aromi. Giovani schiavi mori danzando agitano i ventagli di piume.\nAmneris circondata dalle schiave che l'abbigliano per la festa trionfale",
-            "translation": "A room in Amneris's apartments. Attendants dress her for the triumphal celebration; incense rises from tripods while young enslaved boys dance and wave feather fans.",
+            "translation": "A room in Amneris's apartments.\n\nAmneris is surrounded by servants dressing her for the triumphal celebration. Fragrant smoke rises from tripods. Young enslaved boys dance and wave feather fans.\nAmneris is surrounded by servants dressing her for the triumphal celebration.",
             "literalText": true
           },
           {
@@ -351,7 +351,7 @@ export const aidaActTwoScenes = [
             "speaker": "Stage direction",
             "speakerTranslation": "Stage direction",
             "original": "Uno degli ingressi della città di Tebe\n \nSul davanti, un gruppo di palme. A destra, il tempio di Ammone. A sinistra, un trono sormontato da un baldacchino di porpora. Nel fondo, una porta trionfale. La scena è ingombra di popolo. \nEntra il Re, seguito dai Ministri, Sacerdoti, Capitani, Flabelliferi, Porta insegne ecc. Quindi Amneris con Aida e Schiave. Il Re va a sedere sul trono. Amneris prende posto alla sinistra del Re",
-            "translation": "One of the gates of Thebes. Palms stand in front; the temple of Ammon is on the right, a purple-canopied throne on the left, and a triumphal gateway behind. A crowd fills the space. The King enters with ministers, priests and officers; then Amneris, Aida and attendants.",
+            "translation": "One of the gates of Thebes.\n\nIn front stands a group of palms. On the right is the temple of Ammon, and on the left a throne beneath a purple canopy. At the rear is a triumphal gate. The place is crowded with people.\nThe King enters, followed by ministers, priests, captains, fan-bearers and standard-bearers. Then Amneris enters with Aida and female attendants. The King sits on the throne; Amneris takes her place to his left.",
             "literalText": true
           },
           {
@@ -386,7 +386,7 @@ export const aidaActTwoScenes = [
             "speaker": "RAMFIS, SACERDOTI",
             "original": "Grazie agli Dei rendete\nNel fortunato dì.",
             "speakerTranslation": "Ramfis and priests",
-            "translation": "Give thanks to the gods on this fortunate day.",
+            "translation": "Give thanks to the gods\non this fortunate day.",
             "literalText": true
           }
         ]
