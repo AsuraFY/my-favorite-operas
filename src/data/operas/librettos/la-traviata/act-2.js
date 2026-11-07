@@ -432,7 +432,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "(dopo averle scorse coll'occhio)\nCiel! che discopro!\nD'ogni vostro avere\nOr volete spogliarvi?\nAh, il passato perché, perché v'accusa?",
-            "translation": "Heavens! You are selling all your own possessions? Why?",
+            "translation": "(Having glanced over them)\nHeavens! What do I discover?\nDo you now intend to divest yourself\nof everything you own?\nAh, why does the past still accuse you?",
             "literalText": true
           },
           {
@@ -614,7 +614,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "Ah, dunque sperdasi\nTal sogno seduttore\nSiate di mia famiglia\nL'angiol consolatore\nVioletta, deh, pensateci,\nNe siete in tempo ancor.\nÈ Dio che ispira, o giovine\nTai detti a un genitor.",
-            "translation": "Then put aside this tempting dream. Be the consoling angel of my family, Violetta.",
+            "translation": "Ah, then cast aside\nthat seductive dream;\nbe for my family\nits consoling angel.\nVioletta, please think on it,\nthere is still time.\nIt is God who inspires, young woman,\nthese words in a father's heart.",
             "literalText": true
           },
           {
@@ -996,7 +996,7 @@ export const traviataActTwoScenes = [
             "speaker": "GIUSEPPE",
             "speakerTranslation": "Giuseppe",
             "original": "(entrando frettoloso)\nLa signora è partita\nL'attendeva un calesse, e sulla via\nGià corre di Parigi. Annina pure\nPrima di lei spariva.",
-            "translation": "(Entering.) Madame has left in a carriage for Paris.",
+            "translation": "(Entering hurriedly)\nMadame has departed;\na carriage was waiting for her, and she is already\non her way to Paris. Annina, too,\nleft before her.",
             "literalText": true
           },
           {
@@ -1074,7 +1074,7 @@ export const traviataActTwoScenes = [
             "speaker": "ALFREDO",
             "speakerTranslation": "Alfredo",
             "original": "Di Violetta! Perché son io commosso!\nA raggiungerla forse ella m'invita\no tremo! Oh ciel! Coraggio!\n(Apre e legge)\n\"Alfredo, al giungervi di questo foglio\"\n(come fulminato grida)\nAh!\n(Volgendosi si trova a fronte del padre, nelle cui braccia si abbandona esclamando:)\nPadre mio!",
-            "translation": "From Violetta! Why am I trembling? Does she ask me to join her? (He reads, cries out in grief.)",
+            "translation": "From Violetta! Why am I so moved?\nPerhaps she asks me to join her?\nI tremble! O heavens! Courage!\n(He opens and reads the letter.)\n'Alfredo, when this letter reaches you...'\n(As though struck by lightning, he cries out.)\nAh!\n(Turning, he finds his father before him and collapses into his arms, exclaiming:)\nMy father!",
             "literalText": true
           },
           {
@@ -1165,7 +1165,7 @@ export const traviataActTwoScenes = [
             "speaker": "GERMONT",
             "speakerTranslation": "Germont",
             "original": "Dunque invano trovato t'avrò!\nNo, non udrai rimproveri;\nCopriam d'oblio il passato;\nL'amor che m'ha guidato,\nSa tutto perdonar.\nVieni, i tuoi cari in giubilo\nCon me rivedi ancora:\nA chi penò finora\nTal gioia non negar.\nUn padre ed una suora\nT'affretta a consolar.",
-            "translation": "Have I found you again in vain? I will not reproach you. Let us forget the past; a father's love forgives everything. Come home.",
+            "translation": "Have I found you again in vain?\nNo, you shall hear no reproaches;\nlet the past be covered by oblivion;\nthe love that guided me\nknows how to forgive everything.\nCome and see your loved ones\nrejoicing with me again;\ndo not refuse such happiness\nto those who have suffered until now.\nA father and a sister\nhasten to console you.",
             "literalText": true
           },
           {
@@ -1404,7 +1404,7 @@ export const traviataActTwoScenes = [
             "speaker": "TUTTI",
             "speakerTranslation": "All",
             "original": "Sì, sì, allegri... Or pria tentiamo\nDella sorte il vario umor;\nLa palestra dischiudiamo\nAgli audaci giuocator.\n(Gli uomini si tolgono la maschera, chi passeggia e chi si accinge a giuocare)",
-            "translation": "Yes, let us be merry! Now let us test the whims of fortune at the gaming table.",
+            "translation": "Yes, yes, let us be merry! First let us try\nthe changing whims of fortune;\nlet us open the playing field\nto bold gamblers.\n(The men remove their masks; some stroll, while others prepare to play.)",
             "literalText": true
           }
         ]
