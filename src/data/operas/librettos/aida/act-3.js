@@ -291,28 +291,28 @@ export const aidaActThreeScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "(nel massimo terrore)\nAh no! ah no!\nPadre, pietà! pietà!",
-            "translation": "(In greatest terror.) Ah no! No!",
+            "translation": "(In greatest terror)\nAh, no! Ah, no!\nFather, have mercy! Mercy!",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "(respingendola)\nNon sei mia figlia!\nDei Faraoni tu sei la schiava!",
-            "translation": "(Pushing her away.) You are not my daughter!",
+            "translation": "(Pushing her away)\nYou are not my daughter!\nYou are the slave of the Pharaohs!",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Ah! Pietà, pietà! pietà!\nPadre, a costoro schiava non sono...\nNon maledirmi... non imprecarmi;\nAncor tua figlia potrai chiamarmi,\nDella mia patria degna sarò.",
-            "translation": "Mercy, father! I am not their slave. Do not curse me; you may still call me your daughter. I shall prove worthy of my homeland.",
+            "translation": "Ah, have mercy! Mercy! Mercy!\nFather, I am not their slave...\nDo not curse me, do not revile me;\nyou shall still be able to call me your daughter,\nand I shall be worthy of my homeland.",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Pensa che un popolo, vinto, straziato,\nPer te soltanto risorger può...",
-            "translation": "Remember that a conquered, tormented people can rise again through you alone.",
+            "translation": "Remember: a conquered, suffering people\ncan rise again through you alone...",
             "literalText": true
           },
           {
@@ -326,7 +326,7 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Coraggia! ei giunge... là tutto udrò.\n(Si nasconde fra i palmizi)",
-            "translation": "Courage! He comes; I shall hear everything from there. (Hides among the palms.)",
+            "translation": "Courage! He is coming; from there I shall hear all.\n(He hides among the palms.)",
             "literalText": true
           }
         ]
@@ -348,7 +348,7 @@ export const aidaActThreeScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "(entrando)\nPur ti riveggo, mia dolce Aida...",
-            "translation": "(Entering.) At last I see you again, sweet Aida!",
+            "translation": "(Entering)\nAt last I see you again, my sweet Aida...",
             "literalText": true
           },
           {
@@ -369,21 +369,21 @@ export const aidaActThreeScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Te i riti attendono d'um altro amor.\nD'Amneris sposo...",
-            "translation": "Another love's marriage awaits you at the altar. Amneris will be your wife.",
+            "translation": "The rites of another love await you.\nAs the husband of Amneris...",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Che parli mai?\nTe sola, Aida, te deggia amar.\nGli Dei m'ascoltano, tu mia sarai.",
-            "translation": "What are you saying? I must love only you, Aida!",
+            "translation": "What are you saying?\nYou alone, Aida, are the one I must love.\nThe gods hear me: you shall be mine.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "D'uno spergiuro non ti macchiar!\nProde t'amai, non t'amerei spergiuro.",
-            "translation": "Do not stain yourself with perjury. I loved you noble and brave; I could not love a perjurer.",
+            "translation": "Do not stain yourself with a broken oath!\nI loved you as a hero; I could not love an oath-breaker.",
             "literalText": true
           },
           {
@@ -397,21 +397,21 @@ export const aidaActThreeScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "E come\nSperi sottrarti d'Amneris ai vezzi,\nDel Re Al voler, del tuo popolo ai voti,\nDei Sacerdoti all'ira?",
-            "translation": "How can you hope to escape Amneris's charms, the King's commands and your people's wishes?",
+            "translation": "And how\ndo you hope to escape Amneris's charms,\nthe King's will and your people's wishes,\nand the anger of the priests?",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Odimi, Aida.\nNel fiero anelito di nuova guerra\nIl suolo Etiope si ridestò;\nI tuoi già invadono la nostra terra,\nIo degli Egizi duce sarò.\nFra il suon, fra i plausi della vittoria,\nAl Re mi prostro, gli svelo il cor;\nSarai tu il serto della mia gloria,\nVivrem beati d'eterno amore.",
-            "translation": "Listen, Aida: Ethiopia has renewed the war; your people enter our land. I shall command Egypt's forces. After victory I shall fall at the King's feet and reveal my heart. You will crown my glory and we shall live happily in everlasting love.",
+            "translation": "Listen to me, Aida.\nIn the fierce longing for another war,\nthe Ethiopian land has awakened;\nyour people already invade our country.\nI shall lead the Egyptian forces.\nAmid the sounds and cheers of victory,\nI shall kneel before the King and lay bare my heart;\nyou will be the crown of my glory,\nand we shall live happily in eternal love.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Nè d'Amneris paventi\nIl vindice furor? La sua vendetta\nCome folgor tremenda,\nCadrà su me, sul padre mio, su tutti.",
-            "translation": "Do you not fear Amneris's vengeful fury? Her vengeance would be terrible.",
+            "translation": "Do you not fear\nAmneris's vengeful fury? Her revenge,\nterrible as a thunderbolt,\nwill fall on me, my father, and everyone.",
             "literalText": true
           },
           {
@@ -425,7 +425,7 @@ export const aidaActThreeScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Invan, tu nol potresti.\nPur... se tu ami... ancor s'apre una via\nDi scampo a noi...",
-            "translation": "In vain; you cannot. Yet if you love me, one road to safety remains.",
+            "translation": "In vain; you could not do it.\nYet... if you love me... another way\nof escape is still open to us...",
             "literalText": true
           },
           {
@@ -439,21 +439,21 @@ export const aidaActThreeScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Fuggir...\n\nRADAMES\nFuggire!",
-            "translation": "Flight!",
+            "translation": "To flee...\n\nRADAMÈS\nTo flee!",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Fuggiam gli ardori inospiti\nDi queste lande ignude;\nUna novella patria\nAl nostro amor si schiude.\nLà... tra foreste vergini\nDi fiori profumate,\nIn estasi beate\nLa terra scorderem.",
-            "translation": "Let us flee this barren, burning land. A new homeland will open to our love. Among fragrant virgin forests we shall forget the world in joy.",
+            "translation": "Let us flee the hostile heat\nof these bare lands;\na new homeland\nopens itself to our love.\nThere, among untouched forests\nfragrant with flowers,\nin blessed ecstasy\nwe shall forget the world.",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Sovra una terra estrania\nTeco fuggir dovrei!\nAbbandonar la patria,\nL'are dei nostri Dei!\nIl suol dov'io raccolsi\nDi gloria i primi allori,\nIl ciel dei nostri amori\nCome scordar potrem?",
-            "translation": "Am I to flee with you to a foreign land? Abandon my homeland and my gods' altars? How could I forget the land of my first glory and the sky of our love?",
+            "translation": "Must I flee with you\nto a foreign land?\nAbandon my homeland,\nthe altars of our gods!\nThe land where I gathered\nthe first laurels of glory,\nthe sky above our love—\nhow could we forget them?",
             "literalText": true
           },
           {
@@ -467,28 +467,28 @@ export const aidaActThreeScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Il ciel dei nostri amori\nCome scordar potrem?\nIl ciel dei nostri amori\nCome scordar potrem?",
-            "translation": "How could we forget the heavens of our love?",
+            "translation": "The sky above our love—\nhow could we forget it?\nThe sky above our love—\nhow could we forget it?",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Sotto il mio ciel, più libero\nL'amor ne fia concesso;\nIvi nel tempio istesso\nGli stessi Numi avrem.\nFuggiam, fuggiam...",
-            "translation": "Under my skies our love will be freer; the same sun will shine for us.",
+            "translation": "Beneath my sky, our love\nwill be allowed more freely;\nthere, in the very same temple,\nwe shall worship the same gods.\nLet us flee, let us flee...",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Abbandonar la patria\nL'are dei nostri Dei!\nIl ciel dei nostri amori\nCome scordar potrem?",
-            "translation": "Abandon the homeland and the altars of our gods!",
+            "translation": "Abandon my homeland,\nthe altars of our gods!\nThe sky above our love—\nhow could we forget it?",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "(esitante)\nAida!",
-            "translation": "(Hesitating.) Aida!",
+            "translation": "(Hesitating)\nAida!",
             "literalText": true
           },
           {
@@ -516,14 +516,14 @@ export const aidaActThreeScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Mortal giammai né Dio\nArse d'amor al par del mio possente.",
-            "translation": "Never has mortal or god burned with love as powerful as mine.",
+            "translation": "Neither mortal nor god\nhas ever burned with a love as mighty as mine.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Va... va... t'attende all'ara\nAmneris...",
-            "translation": "Go, Amneris awaits you at the altar.",
+            "translation": "Go... go... Amneris awaits you\nat the altar...",
             "literalText": true
           },
           {
@@ -537,28 +537,28 @@ export const aidaActThreeScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Giammai, dicesti?\nAllor piombi la scure\nSu me, sul padre mio...",
-            "translation": "Never, you said? Then let the axe fall upon my father and me!",
+            "translation": "Never, you said?\nThen let the axe fall\non me and my father...",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Ah no! Fuggiamo!\nSì, fuggiam da queste mura,\nAl deserto insiem fuggiamo;\nQui sol regna la sventura,\nLà si schiude un ciel d'amor,\nI deserti interminati\nA noi talamo saranno,\nSu noi gli astri brilleranno\nDi più limpido fulgor.",
-            "translation": "Ah no! Let us flee these walls, together into the desert, where a heaven of love awaits. The endless sands will be our bridal chamber; the stars will shine more brightly over us.",
+            "translation": "Ah, no! Let us flee!\nYes, let us flee these walls,\nlet us flee together into the desert;\nonly sorrow reigns here,\nbut there a heaven of love opens before us.\nThe endless deserts\nwill be our bridal chamber,\nand above us the stars will shine\nwith purer brilliance.",
             "literalText": true
           },
           {
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "Nella terra avventurata\nDe' miei padri, il ciel ne attende;\nIvi l'aura è imbalsamata,\nIvi il suolo è aromi e fior.\nFresche valli e verdi prati\nA noi talamo saranno,\nSu noi gli astri brilleranno\nDi più limpido fulgor.",
-            "translation": "In my ancestors' blessed land the sky awaits us: perfumed air, flowers, fresh valleys, green meadows. The stars will shine more brightly over us.",
+            "translation": "In the blessed land\nof my ancestors, the sky awaits us;\nthere the air is fragrant,\nthe earth full of perfume and flowers.\nCool valleys and green meadows\nshall be our bridal chamber,\nand above us the stars shall shine\nwith purer brilliance.",
             "literalText": true
           },
           {
             "speaker": "AIDA E RADAMÈS",
             "speakerTranslation": "Aida and Radamès",
             "original": "Vieni meco, insiem fuggiamo\nQuesta terra di dolore.\nVieni meco t'amo, t'amo!\nA noi duce fia l'amor.\n(Si allontanano rapidamente)",
-            "translation": "Come, let us flee this land of grief together. I love you; love shall guide us. (They move away quickly.)",
+            "translation": "Come with me; together let us flee\nthis land of suffering.\nCome with me; I love you, I love you!\nLove shall guide us.\n(They hurry away.)",
             "literalText": true
           }
         ]
@@ -582,14 +582,14 @@ export const aidaActThreeScenes = [
             "speaker": "AIDA",
             "speakerTranslation": "Aida",
             "original": "(arrestandosi all'improviso)\nMa dimmi; per qual via\nEviterem le sciere\nDegli armati?",
-            "translation": "(Stopping suddenly.) But tell me, which road shall we take to avoid the soldiers?",
+            "translation": "(Stopping suddenly)\nBut tell me, by which path\nshall we avoid the ranks\nof armed soldiers?",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Il sentier scelto dai nostri\nA piombar sul nemico fia deserto\nFino a domani.",
-            "translation": "The route our troops have chosen for their attack will be deserted until tomorrow.",
+            "translation": "The road our troops have chosen\nfor their attack on the enemy will be deserted\nuntil tomorrow.",
             "literalText": true
           },
           {
@@ -603,14 +603,14 @@ export const aidaActThreeScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Le gole\nDi Napata...\n(Si fa avanti Amonasro)",
-            "translation": "The gorges of Napata. (Amonasro steps forward.)",
+            "translation": "The gorges\nof Napata...\n(Amonasro steps forward.)",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Di Napata le gole!\nIvi saranno i miei.",
-            "translation": "The gorges of Napata! My men will be there.",
+            "translation": "The gorges of Napata!\nThere my men will be waiting.",
             "literalText": true
           },
           {
@@ -631,7 +631,7 @@ export const aidaActThreeScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Tu!... Amonasro!... tu!... il Re?...\nNumi! che dissi?\nNo!... non è ver!... no!... sogno... delirio è questo...",
-            "translation": "You! Amonasro! The King! Gods, what have I said?",
+            "translation": "You! Amonasro! You—the King?\nGods, what have I said?\nNo, it cannot be true! No! This is a dream, a delirium...",
             "literalText": true
           },
           {
@@ -666,7 +666,7 @@ export const aidaActThreeScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "Io son disonorato!\nPer te tradii la patria!",
-            "translation": "I am dishonoured! For you I have betrayed my country!",
+            "translation": "I am dishonoured!\nFor your sake I betrayed my country!",
             "literalText": true
           },
           {
@@ -680,7 +680,7 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "No: tu non sei colpevole,\nEra voler del fato.",
-            "translation": "No, you are not guilty; fate willed it.",
+            "translation": "No, you are not guilty;\nfate willed it.",
             "literalText": true
           },
           {
@@ -729,7 +729,7 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "Vien: oltre il Nil ne attendono\nI prodi a noi devoti.\nLà del tuo core i voti\nCoronerà l'amor.\n(trascinando Radamès)\nVieni, vieni, vieni.\n(Amneris, Ramfis, Sacerdoti e Guardie escono dal tempio)",
-            "translation": "Come: beyond the Nile our faithful warriors await. There love shall crown your heart's desire. (He pulls Radamès with him; Amneris, Ramfis, priests and guards emerge from the temple.)",
+            "translation": "Come: beyond the Nile await us\nbrave men faithful to our cause.\nThere your heart's wishes\nwill be crowned by love.\n(Dragging Radamès away)\nCome, come, come.\n(Amneris, Ramfis, priests and guards emerge from the temple.)",
             "literalText": true
           },
           {
@@ -750,14 +750,14 @@ export const aidaActThreeScenes = [
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "(avventandosi su Amneris con un pugnale)\nL'opra mia a strugger vieni!\nMuori!...",
-            "translation": "(Lunging at Amneris with a dagger.) You would destroy my work! Die!",
+            "translation": "(Rushing at Amneris with a dagger)\nYou have come to destroy my work!\nDie!",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "(frapponendosi)\nArresta, insano!...",
-            "translation": "(Intervening.) Stop, madman!",
+            "translation": "(Stepping between them)\nStop, madman!",
             "literalText": true
           },
           {
@@ -778,28 +778,28 @@ export const aidaActThreeScenes = [
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "(ad Aida ed Amonasro)\nPresto! fuggite!",
-            "translation": "(To Aida and Amonasro.) Quick, flee!",
+            "translation": "(To Aida and Amonasro)\nQuick! Flee!",
             "literalText": true
           },
           {
             "speaker": "AMONASRO",
             "speakerTranslation": "Amonasro",
             "original": "(trascinando Aida)\nVieni, o figlia!",
-            "translation": "(Dragging Aida.) Come, daughter!",
+            "translation": "(Dragging Aida away)\nCome, my daughter!",
             "literalText": true
           },
           {
             "speaker": "RAMFIS",
             "speakerTranslation": "Ramfis",
             "original": "(alle Guardie)\nL'inseguite!",
-            "translation": "(To the guards.) Pursue them!",
+            "translation": "(To the guards)\nPursue them!",
             "literalText": true
           },
           {
             "speaker": "RADAMÈS",
             "speakerTranslation": "Radamès",
             "original": "(a Ramfis)\nSacerdote, io resto a te",
-            "translation": "(To Ramfis.) Priest, I surrender to you.",
+            "translation": "(To Ramfis)\nPriest, I remain in your power.",
             "literalText": true
           }
         ]
